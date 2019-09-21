@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,32 +16,33 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849000"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163300"
 ---
 # <a name="set-or-change-your-passcode"></a>设置或更改密码
 
-如果 iOS 设备与公司支持人员的密码策略不符，则会出现一条消息，其中简要描述该问题并说明使你的密码符合要求所需执行的操作。
+创建新密码或更改现有密码，以满足组织的要求。 密码会阻止未经授权的人员解锁和使用你的设备。 
 
-公司支持人员可以设置多个密码要求。 例如，密码可能必须包含一定数量的字符，并且可能需要混合使用数字、字母和字符。 由于可能会设置有多个要求，这些说明只能解释如何设置或更改密码。 而不对每种可能组合的要求进行解释。 例如，这些密码用于在锁定屏幕中访问你的设备。
+你的组织可以设置多个密码要求。 有关常见密码要求的列表，请参阅已[注册设备的设备密码要求](password-does-not-meet-it-administrator-requirements.md)。  
 
-若在设置符合密码要求的密码时遇到问题，请联系公司支持人员获得帮助。
+如果在创建或更改密码时遇到问题，请与 IT 支持人员联系。  
+
 
 ## <a name="set-your-passcode"></a>设置密码
 
 1. 点击**设置**  >  **Touch ID 和密码**。
-2. 在“Touch ID 和密码”菜单上，点击“启用密码”。
+2. 在“Touch ID 和密码”  菜单上，点击“启用密码”  。
 3. 输入符合公司支持人员要求的新密码，然后再次输入以确认密码。
 
 ## <a name="change-your-passcode"></a>更改密码
 
 1. 点击**设置**  >  **Touch ID 和密码**。
-2. 输入密码： 此时将打开“Touch ID 和密码”菜单。
-2. 点击“更改密码”，然后输入旧密码。
+2. 输入密码： 此时将打开“Touch ID 和密码”  菜单。
+2. 点击“更改密码”  ，然后输入旧密码。
 3. 输入符合公司支持人员要求的新密码，然后再次输入以确认密码。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545869"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099816"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>如果安装公司门户应用并在 Intune 中注册 iOS 设备后会怎样？
 
@@ -37,7 +37,10 @@ ms.locfileid: "67545869"
 
 - 自动设置公司电子邮件帐户。
 
-在 Intune 中注册设备时，会向公司支持人员授予管理设备的权限，以帮助保护设备上的公司信息。
+> [!NOTE]
+> 我们不会出于任何原因向任何第三方出售我们服务收集的任何数据。  
+
+在 Intune 中注册设备时，会向公司支持人员授予管理设备的权限，以帮助保护设备上的公司信息。  
 
 注册设备后，公司支持人员可以：
 
@@ -64,5 +67,7 @@ ms.locfileid: "67545869"
 - 在设备上启用或禁用语音漫游。 如果允许语音漫游，则可能会产生漫游费用。
 
 - 处于漫游模式下时，在设备上启用或禁用自动文件同步。 如果允许自动文件同步，则可能会产生漫游费用。
+
+
 
 如有疑问，请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

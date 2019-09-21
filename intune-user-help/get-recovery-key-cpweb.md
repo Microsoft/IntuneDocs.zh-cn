@@ -18,25 +18,26 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0ac5e31061612c0513499385a8ac9be12a933b4
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 37f76f0e4a382dc356f6d5994c31178ad6f496df
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383937"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166517"
 ---
-# <a name="get-a-recovery-key-for-a-macos-device"></a>获取 macOS 设备的恢复密钥 
+# <a name="get-a-recovery-key-for-a-macos-device"></a>获取 macOS 设备的恢复密钥
+
 使用公司门户网站获取已锁定 macOS 设备的恢复密钥。 如果忘记了设备密码，可以从另一台设备登录到公司门户来检索密钥。  
 
-此选项仅适用于你的组织使用 FileVault 加密的设备。 它不适用于已进行个人加密的设备。 
+此选项仅适用于你的组织使用 FileVault 加密的设备。 它不适用于已进行个人加密的设备。
 
 1. 在任何设备上，登录到[公司门户网站](https://portal.manage.microsoft.com)，然后选择 ">**设备**"**菜单**按钮。  
 2. 选择加密的 macOS 设备。  
 3. 选择“获取恢复密钥”  。  
 
     ![公司门户网站的屏幕截图，突出显示 "获取恢复密钥" 部分。](./media/1907-recovery2-cpweb-intune.PNG)  
-    
-1. 将显示你的恢复密钥。   
+
+4. 将显示你的恢复密钥。
 
     ![公司门户网站的屏幕截图，显示恢复密钥。](./media/1907-recovery-cpweb-intune.PNG)  
 
@@ -44,10 +45,12 @@ ms.locfileid: "70383937"
 
 如果未找到密钥，但你的设备已正确加密，请与你的组织的支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
 
-## <a name="it-pro-support"></a>IT 专业人员支持  
-如果你是 IT 支持人员，并且想要为 macOS 设备配置和管理 FileVault 加密，请参阅[将设备加密与 Intune 配合使用](https://docs.microsoft.com/intune/encrypt-devices)。    
+## <a name="it-pro-support"></a>IT 专业人员支持
 
-## <a name="next-steps"></a>后续步骤  
+如果你是 IT 支持人员，并且想要为 macOS 设备配置和管理 FileVault 加密，请参阅[将设备加密与 Intune 配合使用](https://docs.microsoft.com/intune/encrypt-devices.md)。
+
+## <a name="next-steps"></a>后续步骤
+
 查看公司门户网站中的其他操作。 请参阅[使用 Intune 公司门户网站](using-the-intune-company-portal-website.md)获取操作列表。  
 
 仍需帮助？ 联系你的 IT 支持人员。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

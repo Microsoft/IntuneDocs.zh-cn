@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713237"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167190"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Microsoft Intune App SDK for Android 开发人员测试指南
 
@@ -30,20 +30,20 @@ ms.locfileid: "67713237"
 ## <a name="prerequisite-test-accounts"></a>必备项测试帐户
 选择性使用预生成的数据创建新帐户。 创建新帐户：
 1. 导航到 [Microsoft 演示](https://demos.microsoft.com/environments/create/tenant)站点。 
-2. [设置 Intune](https://docs.microsoft.com/intune/setup-steps) 以启用移动设备管理 (MDM)。
-3. [创建用户](https://docs.microsoft.com/intune/users-add)。
-4. [创建组](https://docs.microsoft.com/intune/groups-add)。
-5. 根据测试[分配许可证](https://docs.microsoft.com/intune/licenses-assign)。
+2. [设置 Intune](setup-steps.md) 以启用移动设备管理 (MDM)。
+3. [创建用户](users-add.md)。
+4. [创建组](groups-add.md)。
+5. 根据测试[分配许可证](licenses-assign.md)。
 
 
 ## <a name="azure-portal-policy-configuration"></a>Azure 门户策略配置
-在 [Azure 门户的 Intune 边栏选项卡](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)中，[创建和分配应用保护策略](https://docs.microsoft.com/intune/app-protection-policies)。 也可以在 Intune 边栏选项卡中创建和分配[应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-overview)。
+在 [Azure 门户的 Intune 边栏选项卡](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)中，[创建和分配应用保护策略](app-protection-policies.md)。 也可以在 Intune 边栏选项卡中创建和分配[应用配置策略](app-configuration-policies-overview.md)。
 
 > [!NOTE]
 > 如果在 Azure 门户中未列出应用，则可以使用策略解决该问题，方法是选择“更多应用”选项并在文本框中提供包名称  。
 
 > [!IMPORTANT]
-> 要使应用配置策略得以应用，[Intune 应用保护策略](https://docs.microsoft.com/intune/app-protection-policy)必须面向注册的用户。
+> 要使应用配置策略得以应用，[Intune 应用保护策略](app-protection-policy.md)必须面向注册的用户。
 
 ## <a name="test-cases"></a>测试用例
 
@@ -103,7 +103,7 @@ ms.locfileid: "67713237"
 ### <a name="unenrollment"></a>取消注册
 不再对包含解密公司电子邮件和文档以及个人数据的托管应用进行管理时，可以远程将其擦除，如下所示：
 
-1. 从 Azure 门户中，[发出擦除](https://docs.microsoft.com/intune/apps-selective-wipe)。
+1. 从 Azure 门户中，[发出擦除](apps-selective-wipe.md)。
 2. 如果应用未注册任何擦除处理程序，请确认以下情况：
     - 完全擦除应用。
 3. 如果应用已注册 `WIPE_USER_DATA` 或 `WIPE_USER_AUXILARY_DATA`，请确认以下情况：
@@ -123,7 +123,7 @@ ms.locfileid: "67713237"
 ### <a name="app-configuration-optional"></a>应用配置（可选）
 可以配置托管应用的行为，如下所示：
 
-1. 如果应用使用任何应用配置设置，应测试应用是否正确处理你（如管理员）可设置的所有值。 可以使用 Intune 创建和分配[应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-overview)。
+1. 如果应用使用任何应用配置设置，应测试应用是否正确处理你（如管理员）可设置的所有值。 可以使用 Intune 创建和分配[应用配置策略](app-configuration-policies-overview.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

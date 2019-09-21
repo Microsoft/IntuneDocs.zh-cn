@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158025"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162872"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune 中的 MacOS 终结点保护设置  
 
@@ -83,7 +83,7 @@ ms.locfileid: "70158025"
 有关 Apple FileVault 设置的详细信息, 请参阅 Apple 开发人员内容中的[FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) 。 
 
 > [!IMPORTANT]  
-> 10.15 macOS, FileVault 配置要求用户批准 MDM 注册。 
+> 10.15 macOS，FileVault 配置要求用户批准 MDM 注册。 
 
 - **FileVault**  
   可以在运行 macOS 10.13 和更高版本的设备上通过 FileVault 使用 XTS-AES 128*启用*完整磁盘加密。  
@@ -95,23 +95,16 @@ ms.locfileid: "70158025"
   - **恢复密钥类型**  
     为设备创建*个人密钥*恢复密钥。 为个人密钥配置以下设置。  
 
-    - **个人恢复密钥的位置**-向用户指定一条简短消息, 说明他们可在何处检索个人恢复密钥。 如果忘记了密码, 则系统会在提示输入其个人恢复密钥时, 将此文本插入用户在其登录屏幕上看到的消息。  
+    - **个人恢复密钥的位置**-向用户指定一条简短消息，说明他们可在何处检索个人恢复密钥。 如果忘记了密码，则系统会在提示输入其个人恢复密钥时，将此文本插入用户在其登录屏幕上看到的消息。  
       
     - **个人恢复密钥轮换**-指定设备的个人恢复密钥将旋转的频率。 您可以选择 "**未配置**" 或 " **1**到**12**个月" 的默认值。  
 
   - **注销时禁用提示**  
-    禁止提示用户在注销时启用 FileVault。如果设置为 "禁用", 则在注销时会禁用提示, 而是在用户登录时提示用户。  
+    禁止提示用户在注销时启用 FileVault。如果设置为 "禁用"，则在注销时会禁用提示，而是在用户登录时提示用户。  
     - 未配置   
     - **禁用**-在注销时禁用提示。
 
     **默认值**：未配置  
-
-     > [!IMPORTANT]  
-     > 将设置“注销时禁用提示”  设置为“禁用”  时，存在一个已知问题。 设置为“禁用”  时，必须将“允许的免验证次数”  设置为一个值，且不能设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备会将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
-     > 
-     > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置* **允许绕过的次数**, 也不能具有值。  
-     > 
-     > 此问题将在将来的更新中解决。 
 
   - **允许绕过的次数**  
   设置用户在需要 FileVault 之前允许用户登录所需的提示的次数。  
@@ -122,5 +115,5 @@ ms.locfileid: "70158025"
  
     **默认值**：未配置  
 
-有关 FileVault 与 Intune 的详细信息, 请参阅[FileVault 恢复密钥](encryption-monitor.md#filevault-recovery-keys)。
+有关 FileVault 与 Intune 的详细信息，请参阅[FileVault 恢复密钥](encryption-monitor.md#filevault-recovery-keys)。
 

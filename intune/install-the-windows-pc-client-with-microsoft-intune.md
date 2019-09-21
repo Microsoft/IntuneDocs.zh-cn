@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44ba77609b3fafd5518378f3edcbbbace0f6a551
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 2a31c55d030cd8d12bb00a6e0873a24612df70bf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354075"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167691"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
@@ -48,7 +48,7 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
 1. 在 [Microsoft Intune 管理控制台](https://manage.microsoft.com/)中，单击“管理员”  &gt;“客户端软件下载”  。
 
-   ![下载 Intune PC 客户端](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![下载 Intune PC 客户端](./media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. 在“客户端软件下载”  页上，单击“下载客户端软件”  。 然后将包含该软件的 **Microsoft_Intune_Setup.zip** 包保存到网络上的安全位置。
 

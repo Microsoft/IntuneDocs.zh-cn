@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,21 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546803"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163361"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何从公司门户网站重置设备密码
 
-如果丢失了设备 PIN 或密码，可使用[公司门户网站](https://portal.manage.microsoft.com)进行重置。  
+如果丢失了设备 PIN 或密码，可使用[公司门户网站](https://portal.manage.microsoft.com)进行重置。 
 
-如果使用的是公司注册设备，则可能看不到重置设备密码的选项。 请联系公司支持人员为你重置密码。
+对于企业注册的设备，可能不会显示 "重置密码" 选项。 在这种情况下，请与公司支持人员联系，让其重置。  
 
-   > [!NOTE]
-   > 无法重置运行 Android 7.0 或更高版本的设备的密码。 如果忘记密码，必须将设备重置为出厂设置。 
+密码重置不适用于运行 Android 7.0 及更高版本的设备。 如果在其中一个设备上忘记了密码，则必须将其重置为出厂设置。  
 
 ## <a name="reset-your-passcode"></a>重置密码
 
@@ -76,7 +75,7 @@ ms.locfileid: "67546803"
 
 **Android**：删除现有密码，然后创建由字母和数字组成的临时密码。
 
-**iOS**：删除现有密码且不创建临时密码。 如果使用 Touch ID 指纹扫描仪打开设备或进行购物，则必须重新进行设置。  
+**iOS**：删除现有密码且不创建临时密码。 如果使用 Touch ID 打开设备或进行购买，则必须重新设置。  
 
 **Windows 10 移动版**：删除现有密码，然后创建由字母和数字组成的临时密码。 Windows Hello 面部识别将仍在设备上有效（如果已设置）。
 

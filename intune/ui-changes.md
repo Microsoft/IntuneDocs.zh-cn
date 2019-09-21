@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046327"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166999"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>在 Azure 中我的 Intune 功能处于哪个位置？
 我们已将 Intune 移动到 Azure 门户，借此机会我们以更有逻辑的方式整理了某些任务。 但每一次改进都需要熟悉新的布局整理。 本参考指南面向非常熟悉经典门户中的 Intune 且想知道如何使用 Azure 门户中的 Intune 完成工作的用户。 如果本文不含要查找的功能，请在文章末尾处留下评论，以便我们能够更新本文。
@@ -77,7 +77,7 @@ Azure 门户中 Intune 使用 [Azure Active Directory (AD)](https://docs.microso
 ## <a name="where-did-my-compliance-policies-go"></a>符合性策略去哪了？
 你的租户迁移到 Azure 门户后，租户的符合性策略将继续强制使用。 但是，你无法在 Azure 门户中的 Intune 中查看或修改这些策略。
 
-如果希望在 Azure 门户中查看和修改符合性策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](https://docs.microsoft.com/intune/device-compliance-get-started)。 
+如果希望在 Azure 门户中查看和修改符合性策略，需要从经典门户中删除旧策略。 然后在 Azure 门户中创建策略。 有关设备符合性策略的详细信息，请参阅 [Intune 中的设备符合性策略入门](device-compliance-get-started.md)。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP 处于哪个位置？
 在经典门户中，可以将 Intune 设置为与 Apple 设备注册计划进行集成，并手动请求与 Apple 服务同步：

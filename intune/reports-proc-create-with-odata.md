@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894332"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167860"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 源创建 Intune 报表
 
-本文介绍如何使用 Power BI Desktop 用户交互式筛选器创建 Intune 数据的树状图可视化。 例如, 你的 CFO 可能想知道设备的总体分布在公司拥有的设备和个人设备之间的比较情况。 树状图可提供关于设备类型总数的深入见解。 可以查看 iOS、Android 和 Windows 设备的总数，无论它们属于公司还是个人。
+本文介绍如何使用 Power BI Desktop 用户交互式筛选器创建 Intune 数据的树状图可视化。 例如，你的 CFO 可能想知道设备的总体分布在公司拥有的设备和个人设备之间的比较情况。 树状图可提供关于设备类型总数的深入见解。 可以查看 iOS、Android 和 Windows 设备的总数，无论它们属于公司还是个人。
 
 ## <a name="overview-of-creating-the-chart"></a>创建图表概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "69894332"
 
 你是在 Power BI 中使用表。 表包含数据字段。 每个数据字段有一个数据类型。 字段只能包含该数据类型的数据。 数据类型包括数字、文本和日期等。 当加载模型时，Power BI 中的表格将填充来自租户的最新历史数据。 尽管特定数据会随时间而变化，但只要不更新基础数据模型，表结构就不会发生更改。
 
-你可能对术语*实体*和*表*的使用感到困惑。 数据模型可通过 OData (Open Data Protocol) 源进行访问。 在 Power BI 中被称为“表”的容器，在 OData 中实则被称为“实体”。 这两个术语意思相同，都指保存数据的容器。 有关 OData 的详细信息, 请参阅[Odata 概述](/odata/overview)。
+你可能对术语*实体*和*表*的使用感到困惑。 数据模型可通过 OData （Open Data Protocol）源进行访问。 在 Power BI 中被称为“表”的容器，在 OData 中实则被称为“实体”。 这两个术语意思相同，都指保存数据的容器。 有关 OData 的详细信息，请参阅[Odata 概述](/odata/overview)。
 
 ## <a name="install-power-bi-desktop"></a>安装 Power BI Desktop
 
@@ -91,11 +91,11 @@ ms.locfileid: "69894332"
 
 ![Power BI 树状图可视化效果](media/reports-create-03-treemap.png)
 
-1. 在 "**可视化效果**" 窗格中, 找到并选择 "**树状图**"。 **树状图**图将添加到报表画布。
-2. 在 "**字段**" 窗格中, `devices`查找表。
-3. 展开该表, 然后`manufacturer`选择数据字段。 `devices`
-4. 将数据字段拖到报表画布上, 并将其放在树状图图表上。  `manufacturer`
-5.    将表中的数据字段拖放到"可视化效果"窗格中,并将其放在标记为"在此处添加数据字段"框中的"值"部分下。`deviceKey` `devices`  
+1. 在 "**可视化效果**" 窗格中，找到并选择 "**树状图**"。 **树状图**图将添加到报表画布。
+2. 在 "**字段**" 窗格中， `devices`查找表。
+3. 展开该表，然后`manufacturer`选择数据字段。 `devices`
+4. 将数据字段拖到报表画布上，并将其放在树状图图表上。  `manufacturer`
+5.    将表中的数据字段拖放到"可视化效果"窗格中，并将其放在标记为"在此处添加数据字段"框中的"值"部分下。`deviceKey` `devices`  
 
 现在就有了一个视觉对象，它显示组织中设备制造商的分布情况。
 
@@ -106,20 +106,20 @@ ms.locfileid: "69894332"
 可以向树状图添加筛选器，以便使用应用解答其他问题。
 
 1. 要添加筛选器，请选择报表画布，然后选择“可视化效果”  下的切片器图标  （带数据模型和支持的关系的树状图![](media/reports-create-slicer.png)）。 空**切片器**可视化将显示在画布上。
-2. 在 "**字段**" 窗格中, `ownerTypes`查找表。
-3. 展开该表, 然后`ownerTypeName`选择数据字段。 `ownerTypes`
-4. `ownerTypes`将 "    数据" 字段从表拖到 "筛选器" 窗格, 并将其放在 "在此处添加数据字段" 部分的 "筛选器" 下。 `onwerTypeName`  
+2. 在 "**字段**" 窗格中， `ownerTypes`查找表。
+3. 展开该表，然后`ownerTypeName`选择数据字段。 `ownerTypes`
+4. `ownerTypes`将 "    数据" 字段从表拖到 "筛选器" 窗格，并将其放在 "在此处添加数据字段" 部分的 "筛选器" 下。 `onwerTypeName`  
 
-   在下`OwnerTypeKey`表中, 有一个名为的数据字段, 其中包含一个设备是公司拥有的数据还是个人设备。 `OwnerTypes` 由于要在此筛选器中显示易记名称，因此查找 `ownerTypes` 表，并将“ownerTypeName”  拖到切片器中。 此示例说明数据模型如何支持表之间的关系。
+   在下`OwnerTypeKey`表中，有一个名为的数据字段，其中包含一个设备是公司拥有的数据还是个人设备。 `OwnerTypes` 由于要在此筛选器中显示易记名称，因此查找 `ownerTypes` 表，并将“ownerTypeName”  拖到切片器中。 此示例说明数据模型如何支持表之间的关系。
 
 ![包含“支持表之间的关系”筛选器的树状图](media/reports-create-08_ownertype.png)
 
 现在有了一个交互式筛选器，可用于在公司自有设备和个人拥有的设备之间切换。 可使用此筛选器查看分布变化情况。
 
-1. 在切片器中选择 "**公司**", 以查看公司拥有的设备分布。
+1. 在切片器中选择 "**公司**"，以查看公司拥有的设备分布。
 2. 选择切片器中的 "**个人**" 以查看个人拥有的设备。
 
 ## <a name="next-steps"></a>后续步骤
 
 - 有关[创建和管理关系](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)的详细信息，请参阅 Power BI 文档中的 Power BI Desktop 部分。
-- 咨询 [Intune 数据仓库模型](https://docs.microsoft.com/intune/reports-ref-data-model)。
+- 咨询 [Intune 数据仓库模型](reports-ref-data-model.md)。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756529"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166368"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 控制台上的 Intune 和旧版 Intune PC 客户端
 
@@ -31,7 +31,7 @@ Intune 使用基于 Azure 的 SaaS 应用程序服务体系结构。 Azure 在�
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>使用 MDM 管理 Windows 10 设备
 
-我们建议使用[移动设备管理 (MDM) 来管理 Windows 10 设备](https://docs.microsoft.com/intune/device-restrictions-windows-10)，而不是使用旧 Intune PC 客户端进行管理。 Azure 门户上的 Intune 提供了通过 MDM 管理 Windows 10 的功能。 Windows 10 MDM 提供了许多旧 Intune PC 客户端没有的新的管理和安全功能。
+我们建议使用[移动设备管理 (MDM) 来管理 Windows 10 设备](device-restrictions-windows-10.md)，而不是使用旧 Intune PC 客户端进行管理。 Azure 门户上的 Intune 提供了通过 MDM 管理 Windows 10 的功能。 Windows 10 MDM 提供了许多旧 Intune PC 客户端没有的新的管理和安全功能。
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>旧 PC 客户端功能仅适用于 Silverlight 控制台
 
@@ -54,7 +54,7 @@ Intune PC 客户端管理工作流使用[基于 Silverlight 的 Intune 管理控
 
 ## <a name="mdm-capabilities"></a>MDM 功能
 
-有关 PC 客户端和 MDM 功能之间的详细比较，请参阅[对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md)。 MDM 更新将继续为注册 MDM 的 Windows 10 设备带来新的管理功能，其中包括评估 Win 32 应用的选项。 查看[新增功能](https://docs.microsoft.com/intune/whats-new)以了解添加到服务的最新版本。
+有关 PC 客户端和 MDM 功能之间的详细比较，请参阅[对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md)。 MDM 更新将继续为注册 MDM 的 Windows 10 设备带来新的管理功能，其中包括评估 Win 32 应用的选项。 查看[新增功能](whats-new.md)以了解添加到服务的最新版本。
 
 ## <a name="switch-from-pc-client-to-mdm"></a>从 PC 客户端切换到 MDM
 
@@ -62,9 +62,7 @@ Intune PC 客户端管理工作流使用[基于 Silverlight 的 Intune 管理控
 
 1. 在 Silverlight 控制台中，执行选择性擦除  以从 PC 客户端中取消注册设备。
   ![选择了 "选择性擦除设备" 单选按钮的警告弹出窗口](media/intune-legacy-pc-client/image02.png)
-2. 通过使用 [MDM（和/或 Azure AD 加入）](https://docs.microsoft.com/intune/windows-enroll)重新注册设备。 
+2. 通过使用 [MDM（和/或 Azure AD 加入）](windows-enroll.md)重新注册设备。
 
 ## <a name="next-steps"></a>后续步骤
-[注册 Windows 设备](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[注册 Windows 设备](windows-enroll.md)

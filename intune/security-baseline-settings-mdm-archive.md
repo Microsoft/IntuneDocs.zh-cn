@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df943fdc0105b0f32401b79434045811f065bef
-ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
+ms.openlocfilehash: 19307f2ffc234a1eacf30b3aa43fe9c626073f6c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864539"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167828"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -34,12 +34,12 @@ ms.locfileid: "70864539"
 
 如果不再支持使用基准版本, 则会将其从本文中删除。
 
-- 查看[当前 MDM 安全基线](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)中可用的设置。 
+- 查看[当前 MDM 安全基线](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)中可用的设置。
 - 了解[安全基线](security-baselines.md), 以及如何升级安全基准配置文件中的基准版本。
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>预览版：2018 年 10 月的 MDM 安全基线  
 
-*此基线被[MDM 安全基线取代，可能为 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)*
+*此基线被[MDM 安全基线取代，可能为 2019](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)*
 
 ### <a name="above-lock"></a>锁定时  
 
@@ -1441,5 +1441,5 @@ ms.locfileid: "70864539"
  
 ## <a name="next-steps"></a>后续步骤  
 
-[查看当前基线版本](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
+[查看当前基线版本](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)  
 [使用新基线版本升级配置文件](security-baselines.md#change-the-baseline-version-for-a-profile)

@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545728"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099846"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 
@@ -46,7 +46,7 @@ ms.locfileid: "67545728"
 若要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)。  
 
 ## <a name="get-your-device-managed"></a>托管设备  
-使用以下步骤注册运行 OS X El Capitan 10.11 和更高版本的 macOS 设备。   
+使用以下步骤注册运行 macOS 10.12 和更高版本的 macOS 设备。   
 
 
 1. 若要访问公司门户网站，请在“Safari”中打开新窗口，并转到 https://portal.manage.microsoft.com  。  

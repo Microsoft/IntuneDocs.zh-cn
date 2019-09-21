@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa723942c9633a3851f75e3e08bf843cbb4bdf55
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 850c7a28c4df1638e9f635713695dcf2e914ffce
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842167"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166931"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -61,7 +61,7 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
   3. 导航到[Azure Active Directory 用户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)"。
   4. 选择受影响的用户，然后单击 "**设备**"。
   5. 如果用户超过设置限制，则删除不再需要的任何过时记录。
-- 对于 iOS DEP 设备，请确保用户在 Intune 设备概述边栏选项卡中列出为 "**用户已注册**"。 如果显示 NA，则部署 Intune 公司门户的配置策略。 有关详细信息，请参阅[配置公司门户应用](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)。
+- 对于 iOS DEP 设备，请确保用户在 Intune 设备概述边栏选项卡中列出为 "**用户已注册**"。 如果显示 NA，则部署 Intune 公司门户的配置策略。 有关详细信息，请参阅[配置公司门户应用](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 应用安装疑难解答
 

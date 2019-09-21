@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbaeb5efa2b23a7fad4761878b25118786609447
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 4b24387636408d2e28891aae13962c2febf9f329
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842126"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167206"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -161,7 +161,7 @@ Intune|iOS|Android|描述|
 
   * 如果你正在开发一套不会发送到应用商店的业务应用，则你应能够通过你的组织访问 Microsoft Intune。 你还可以在 [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) 中注册为期 1 个月的免费试用。
 
-  * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](https://docs.microsoft.com/intune/licenses-assign)。
+  * 如果使用最终用户帐户在移动设备上测试应用，请确保已使用管理员帐户登录 Microsoft 365 管理中心网站，并向该帐户授予 Intune 许可证，请参阅[分配 Microsoft Intune 许可证](licenses-assign.md)。
 
 * **Intune 应用保护策略**：若要针对所有 Intune 应用保护策略对应用进行测试，则应了解针对每个策略设置，应用的预期行为。 请参阅 [iOS 应用保护策略](app-protection-policy-settings-ios.md)和 [Android 应用保护策略](app-protection-policy-settings-android.md)的说明。 如果应用已集成 Intune SDK，但尚未在 Azure 门户中作为目标应用列出，则可以使用策略将其设置为目标，方法是选择“+ 更多应用”选项并在文本框中提供捆绑包 ID (iOS) 或包名称 (Android)。
 

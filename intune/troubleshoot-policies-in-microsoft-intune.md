@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298404"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071706"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>在 Intune 中对策略和配置文件进行故障排除
 
@@ -31,7 +31,7 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 本文列出了一些常见的故障排除技术，并介绍可能会遇到的一些问题。
 
 ## <a name="check-tenant-status"></a>检查租户状态
-检查[租户状态](tenant-status.md)并确认订阅处于活动状态。 此外可以查看活动事件和可能会影响你的策略或配置文件部署的建议的详细信息。
+检查[租户状态](tenant-status.md)并确认订阅处于活动状态。 你还可以查看可能影响策略或配置文件部署的活动事件和建议的详细信息。
 
 ## <a name="use-built-in-troubleshooting"></a>使用内置的故障排除功能
 
@@ -118,10 +118,10 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="policy-troubleshooting-resources"></a>Policy 疑难解答资源
 
-- [IOS 或 Android 的策略不将应用于设备的疑难解答](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)（将打开另一个 Microsoft 站点）
-- [Windows 10 Intune 策略故障排除](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)（将打开一篇博客）
-- [排查 CSP 适用于 Windows 10 自定义设置](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)（将打开另一个 Microsoft 站点）
-- [Windows 10 组策略与 Intune MDM 策略](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)（将打开另一个 Microsoft 站点）
+- [排除不适用于设备的 iOS 或 Android 策略](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)（打开另一个 Microsoft 站点）
+- [Windows 10 Intune 策略故障疑难解答](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)（打开博客）
+- [适用于 Windows 10 的 CSP 自定义设置疑难解答](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)（打开另一个 Microsoft 站点）
+- [Windows 10 组策略 Vs INTUNE MDM 策略](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)（打开另一个 Microsoft 站点）
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>警报：将访问规则保存到 Exchange 中的操作失败
 
@@ -135,7 +135,7 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 Windows Phone 设备不允许使用 MDM 或 EAS 设置安全策略后降低其安全性。 例如，将“最小字符密码数”设置为 8，然后尝试将其减少到 4  。 对设备应用更严格的策略。
 
-当你取消分配策略 （停止部署） 时，Windows 10 设备可能无法删除安全策略。 您可能需要保留策略分配，然后将安全设置更改回默认值。
+当你取消分配策略（停止部署）时，Windows 10 设备可能无法删除安全策略。 你可能需要保留分配的策略，然后将安全设置改回默认值。
 
 如果要将策略更改为安全级别较低的值，可能需要重置安全策略，具体视设备平台而定。
 
