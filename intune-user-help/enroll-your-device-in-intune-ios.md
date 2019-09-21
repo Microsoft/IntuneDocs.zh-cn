@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/24/2019
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,21 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: f207f1f94d34e6aa1768bb5ae0f5179710839c71
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402702"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099871"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>设置 iOS 设备对公司资源的访问  
 
 通过 Intune 公司门户应用注册 iOS 设备，以便获取对组织的电子邮件、文件和应用的安全访问权限。
 
 注册设备后，它将成为托管设备  。 组织可通过移动设备管理 (MDM) 提供程序（如 Intune）为该设备分配策略和应用。  
+
+> [!NOTE]
+> 我们不会出于任何原因向任何第三方出售我们服务收集的任何数据。  
 
 若要持续拥有从设备访问工作或学校信息的权限，则需要配置设备以匹配组织的首选设置。 本文介绍如何使用公司门户注册设备并维护组织的设置要求。  
 </br>
