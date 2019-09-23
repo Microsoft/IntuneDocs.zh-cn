@@ -18,31 +18,33 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: 9066fefccde39ccac281f3bda9008168ea28b77f
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783025"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166615"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>在管理中注册组织提供的 macOS 设备
 
 了解如何在 Intune 中管理新的 macOS 设备。  
 
-工作单位或学校提供的设备通常会在分配前进行预配置。 首次打开并登录设备后，组织会将预配置的设置发送到设备。 设备完成设置后，将获得工作单位或学校资源的访问权限。 
+工作单位或学校提供的设备通常会在分配前进行预配置。 首次打开并登录设备后，组织会将预配置的设置发送到设备。 设备完成设置后，将获得工作单位或学校资源的访问权限。
 
-要开始管理设置，请打开设备电源并使用工作单位或学校凭据登录。 本文的其余部分介绍使用“设置助理”过程中将看到的步骤和屏幕。   
+要开始管理设置，请打开设备电源并使用工作单位或学校凭据登录。 本文的其余部分介绍使用“设置助理”过程中将看到的步骤和屏幕。
 
 ## <a name="what-is-apple-dep"></a>什么是 Apple DEP？
-组织可以通过“Apple 设备注册计划”(DEP) 购买设备  。 组织可通过 Apple DEP 购买大量的 iOS 或 macOS 设备。 然后，组织可以在其首选的移动设备管理提供程序（例如 Intune）中配置和管理这些设备。 如果你是管理员并想了解有关 Apple DEP 的详细信息，请参阅[使用 Apple 设备注册计划自动注册 macOS 设备](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)。  
 
-## <a name="get-your-device-managed"></a>托管设备 
+组织可以通过“Apple 设备注册计划”(DEP) 购买设备  。 组织可通过 Apple DEP 购买大量的 iOS 或 macOS 设备。 然后，组织可以在其首选的移动设备管理提供程序（例如 Intune）中配置和管理这些设备。 如果你是管理员并想了解有关 Apple DEP 的详细信息，请参阅[使用 Apple 设备注册计划自动注册 macOS 设备](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos.md)。  
+
+## <a name="get-your-device-managed"></a>托管设备
+
 完成以下步骤以在管理中注册 macOS 设备。 如果使用的是自己的设备，而不是组织提供的设备，请按照[个人设备和自带设备](enroll-your-device-in-intune-macos-cp.md)步骤进行操作。  
 
-1. 打开 macOS 设备电源。 
+1. 打开 macOS 设备电源。
 2. 选择你所在的国家/地区，再单击“继续”  。  
 
-   ![macOS 设备设置助理“欢迎”屏幕的屏幕截图，显示可供选择的语言列表。](./media/macos-dep-welcome-1808.png)   
+   ![macOS 设备设置助理“欢迎”屏幕的屏幕截图，显示可供选择的语言列表。](./media/macos-dep-welcome-1808.png)
 3. 选择键盘布局。 此列表根据你选择的国家/地区显示一个或多个选项。 若要查看所有布局选项（无论你选择的是哪个国家/地区），请单击“全部显示”  。 完成后，单击“继续”  。  
 
    ![macOS 设备设置助理“键盘布局”屏幕的屏幕截图，显示可供选择的键盘语言列表、未选中的“全部显示”选项以及“后退”和“继续”按钮。](./media/macos-dep-keyboard-1808.png)  
@@ -62,14 +64,17 @@ ms.locfileid: "68783025"
     * 创建计算机帐户
     * 引导完成快速设置
     * 设置 Mac  
-## <a name="get-the-company-portal-app"></a>获取公司门户应用      
-在设备上下载适用于 macOS 的 Intune 公司门户应用。 使用此应用可以监视、同步、添加并删除管理中的设备，并可安装应用。 这些步骤还介绍了如何使用公司门户注册设备。  
-1. 在 macOS 设备上，转到 https://portal.manage.microsoft.com/EnrollmentRedirect.aspx 。
+
+## <a name="get-the-company-portal-app"></a>获取公司门户应用
+
+在设备上下载适用于 macOS 的 Intune 公司门户应用。 使用此应用可以监视、同步、添加并删除管理中的设备，并可安装应用。 这些步骤还介绍了如何使用公司门户注册设备。
+
+1. 在 macOS 设备上，转到 [https://portal.manage.microsoft.com/EnrollmentRedirect.aspx](https://portal.manage.microsoft.com/EnrollmentRedirect.aspx)。
 2. 使用工作或学校帐户登录到公司门户网站。 
 3. 单击“获取应用”下载适用于 macOS 的公司门户安装程序  。
 4. 出现提示时，打开 .pkg 文件并完成安装步骤。
-4. 打开公司门户应用并使用工作或学校帐户登录。
-5. 找到设备，然后单击“注册”  。
-6. 单击“继续” > “完成”   。 你的设备现在应作为公司兼容设备出现在公司门户应用中。
+5. 打开公司门户应用并使用工作或学校帐户登录。
+6. 找到设备，然后单击“注册”  。
+7. 单击“继续” > “完成”   。 你的设备现在应作为公司兼容设备出现在公司门户应用中。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
