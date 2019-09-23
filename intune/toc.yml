@@ -321,30 +321,33 @@
           href: device-profiles.md
         - name: 创建配置文件
           href: device-profile-create.md
-        - name: 管理模板
+        - name: Windows 上的管理模板
           href: administrative-templates-windows.md
-        - name: 设备功能
+          displayName: 'group policy, gpo, admx'
+        - name: iOS 和 MacOS 上的设备功能
           href: device-features-configure.md
         - name: 限制设备设置和功能
           href: device-restrictions-configure.md
           displayName: Device restrictions
-        - name: 提供更新
+        - name: Updates
           href: delivery-optimization-windows.md
-          displayName: delivery optimization; updates
+          displayName: delivery optimization; Windows update
         - name: 升级版本和 S 模式
           href: edition-upgrade-configure-windows-10.md
-        - name: 配置电子邮件
+        - name: Email
           href: email-settings-configure.md
-        - name: 启用展台模式
+        - name: 网亭和专用设备
           href: kiosk-settings.md
-        - name: 添加 VPN
+        - name: 共享的多用户设备
+          href: shared-user-device-settings.md
+        - name: VPN
           href: vpn-settings-configure.md
           items:
             - name: 面向 Android 的每应用 VPN
               href: android-pulse-secure-per-app-vpn.md
             - name: 面向 iOS 的每应用 VPN
               href: vpn-setting-configure-per-app.md
-        - name: 添加无线 Wi-fi 网络
+        - name: Wi-Fi 网络
           href: wi-fi-settings-configure.md
           displayName: wifi
           items:
@@ -354,8 +357,6 @@
           href: kernel-extensions-overview-macos.md
         - name: 教育参加测验应用
           href: education-settings-configure.md
-        - name: 共享的多用户设备
-          href: shared-user-device-settings.md
         - name: Zebra 设备上的移动性扩展
           href: android-zebra-mx-overview.md
           displayName: mx
@@ -594,6 +595,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB 应用
                   href: lob-apps-macos.md
+            - name: Android 企业系统应用
+              href: apps-ae-system.md
             - name: Win32 应用管理
               href: apps-win32-app-management.md
             - name: PowerShell 脚本
@@ -623,12 +626,24 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 托管设备
               href: app-configuration-policies-use-android.md
-            - name: 配置 Managed Home Screen
-              href: app-configuration-managed-home-screen-app.md
-            - name: 托管应用
+            - name: 无需注册即可配置托管应用
               href: app-configuration-policies-managed-app.md
             - name: 使用 iOS 应用预配配置文件
               href: app-provisioning-profile-ios.md
+            - name: 配置特定应用
+              items:
+                - name: 配置 Managed Home Screen
+                  href: app-configuration-managed-home-screen-app.md
+                - name: 配置公司门户
+                  href: company-portal-app.md
+                - name: 配置 Managed Browser
+                  href: app-configuration-managed-browser.md
+                - name: 配置 Microsoft Launcher
+                  href: configure-microsoft-launcher.md
+                - name: 配置 Microsoft Edge
+                  href: manage-microsoft-edge.md
+                - name: 配置 Outlook
+                  href: app-configuration-policies-outlook.md
             - name: 批量采购的应用和书籍
               items:
                 - name: 管理 VPP 应用和书籍
@@ -640,14 +655,6 @@
                   href: windows-store-for-business.md
                 - name: iOS 电子图书
                   href: vpp-ebooks-ios.md
-            - name: 配置公司门户
-              href: company-portal-app.md
-            - name: 配置 Managed Browser
-              href: app-configuration-managed-browser.md
-            - name: 配置 Microsoft Edge
-              href: manage-microsoft-edge.md
-            - name: 配置 Outlook
-              href: app-configuration-policies-outlook.md
         - name: 保护应用
           items:
             - name: 选择性地擦除应用

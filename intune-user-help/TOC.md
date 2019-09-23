@@ -60,7 +60,7 @@
 ##### [使用 Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [使用 iOS 设备](using-your-iOS-device-with-intune.md)
-### [注册 iOS 设备会发生什么情况？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [iOS 设备重置的影响](effects-of-device-reset-company-portal-ios.md)
 ### [安装和登录到公司门户](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [注册 iOS 设备](enroll-your-device-in-intune-ios.md)
 ### [注册组织提供的 iOS 设备](enroll-your-device-dep-ios.md)

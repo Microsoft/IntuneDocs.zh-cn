@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775842"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166328"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>减少对 Android 设备管理员的支持 
-Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2.2 发布）是一种管理 Android 设备的方法。 不过，[Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise)（随 Android 5.0 发布）现在提供改进的管理功能。 为了实现更现代化、更丰富、更安全的设备管理，Google 正在减少新 Android 版本中对设备管理员的支持。
+Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2.2 发布）是一种管理 Android 设备的方法。 不过，[Android Enterprise](../connect-intune-android-enterprise.md)（随 Android 5.0 发布）现在提供改进的管理功能。 为了实现更现代化、更丰富、更安全的设备管理，Google 正在减少新 Android 版本中对设备管理员的支持。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 由于 Google 的这些变化，Intune 用户将受到以下几个方面的影响： 
@@ -66,7 +66,7 @@ https://firebase.google.com/docs/cloud-messaging/
 #### <a name="additional-information"></a>其他信息 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>更改计划：Intune 将于 9 月开始支持 iOS 11 及更高版本 <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>更改计划：Intune 将于 9 月开始支持 iOS 11 及更高版本 <!-- 4665324-->
 我们预计 Apple 将于 9 月发布 iOS 13。 Intune 注册、公司门户和 Managed Browser 将在 iOS 13 发布后不久开始支持 iOS 11 及更高版本。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
@@ -76,7 +76,7 @@ https://aka.ms/intune_fullscreen
 - iPhone 5c
 - iPad（第 4 代）
 
-从 7 月开始，使用 iOS 10 和公司门户的 MDM 注册设备将收到升级其 OS 或设备的提示。 如果使用应用程序保护策略 (APP)，则还可以设置“要求最低 iOS 操作系统(仅警告)”访问设置。
+如果使用应用程序保护策略 (APP)，则还可以设置“要求最低 iOS 操作系统(仅警告)”访问设置。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 检查 Intune 报告，查看可能受影响的设备或用户。 转到“设备”   > “所有设备”  ，并按“OS”进行筛选。 可以添加其他列，帮助确定组织中哪些人员拥有运行 iOS 10 的设备。 要求最终用户在 9 月前将其设备升级到支持的 OS 版本。
@@ -96,7 +96,7 @@ https://aka.ms/intune_fullscreen
 还应更新文档或开发人员指南（如适用），将此更改添加到其中，以支持 SDK。
 
 #### <a name="additional-information"></a>其他信息
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[准备业务线应用以使用应用保护策略](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>更改计划：Intune 中的新 Windows 更新设置 <!-- 4464404 -->
 从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重启(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。 
