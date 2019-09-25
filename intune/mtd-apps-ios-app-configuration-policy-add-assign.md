@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 55132570683742bd3e8dcec1c20726b9eb2c4b16
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660954"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166824"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用  
 
@@ -35,8 +35,8 @@ ms.locfileid: "68660954"
 需要在 [Azure 门户](https://portal.azure.com/)中完成以下步骤。 请务必熟悉以下过程：
 
 - [将应用添加到 Intune](apps-add.md)。
-- [将 iOS 应用配置策略添加到 Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
-- [使用 Intune 分配应用](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+- [将 iOS 应用配置策略添加到 Intune](app-configuration-policies-use-ios.md)。
+- [使用 Intune 分配应用](apps-deploy.md)。
 
 > [!TIP]
 > Intune 公司门户在 Android 设备上以中转站的方式工作，以便用户能够让 Azure AD 检查自己的标识。
@@ -136,7 +136,7 @@ ms.locfileid: "68660954"
   - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](store-apps-android.md)，查看相关操作说明。 在第 7 步中使用此 [Wandera Mobile 应用商店 URL](https://play.google.com/store/apps/details?id=com.wandera.android)  。 对于  “最低操作系统”，请选择“Android 5.0”  。
 
 - **iOS**
-  - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios)，查看相关说明。 在步骤 11 中将“应用商店 URL”设为此 [SEP Mobile 应用商店 URL](https://itunes.apple.com/app/wandera/id605469330)。  
+  - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](store-apps-ios.md)，查看相关说明。 在步骤 11 中将“应用商店 URL”设为此 [SEP Mobile 应用商店 URL](https://itunes.apple.com/app/wandera/id605469330)。  
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>使用 iOS 应用配置策略配置 MTD 应用  
 

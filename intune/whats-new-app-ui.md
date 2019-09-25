@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061689"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167879"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 了解 Microsoft Intune 应用的最新更新。 我们会定期新增内容和改进 Intune 公司门户应用和网站。 如果你是 Intune 管理员或支持人员，则本文提供了以下方面所需的信息：
@@ -120,7 +120,7 @@ ms.locfileid: "71061689"
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日当周
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows 公司门户键盘快捷方式 <!-- 2771518 -->
-最终用户现在可以[使用键盘快捷方式（快捷键）](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)在 Windows 公司门户中触发应用和设备操作。
+最终用户现在可以[使用键盘快捷方式（快捷键）](company-portal-app.md#windows-company-portal-keyboard-shortcuts)在 Windows 公司门户中触发应用和设备操作。
 
 ## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日当周
 
@@ -572,4 +572,4 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 ## <a name="see-also"></a>另请参阅
 * [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [云平台路线图](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune 中的新增功能](https://docs.microsoft.com/intune/whats-new)
+* [Intune 中的新增功能](whats-new.md)

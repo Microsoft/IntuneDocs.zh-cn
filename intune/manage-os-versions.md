@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 4465a8715b84e06e337fb7dee5af4308cdd153ae
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427104"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167657"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>使用 Intune 管理操作系统版本
 在新式移动和桌面平台上，主要更新、修补程序和新版本的发布速度很快。 你在 Windows 上具有完全管理更新和修补程序的控制权限，但在 iOS 和 Android 等平台上，最终用户也需参与此过程。  Microsoft Intune 可帮助构建跨不同平台的操作系统版本管理。
@@ -32,30 +32,34 @@ Intune 能解决的常见方案包括：
   
 ## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a>使用 Intune 移动设备管理 (MDM) 注册限制的操作系统版本控制
 Intune MDM 注册限制让你可以定义客户端设备要求，然后再允许设备注册。 其目的是要求最终用户在获得访问组织资源的权限之前，仅注册符合的设备。 设备要求包括受支持的平台上所允许的最低和最高操作系统版本。
- 
-![平台配置限制边栏选项卡](./media/os-version-platform-configurations.png) 
- 
+
+![平台配置限制边栏选项卡](./media/os-version-platform-configurations.png)
+
 ### <a name="in-practice"></a>具体实践
-组织使用设备类型限制来控制对组织资源的访问，其设置如下所示： 
-1. 使用最低操作系统版本，确保最终用户处于组织中当前和受支持的平台上。 
+
+组织使用设备类型限制来控制对组织资源的访问，其设置如下所示：
+
+1. 使用最低操作系统版本，确保最终用户处于组织中当前和受支持的平台上。
 2. 不指定最高操作系统（无限制），或将其设置为组织中最新验证的版本，以便为新操作系统发布的内部测试留出时间。
 
-有关详细信息，请参阅[设置设备类型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)。
- 
+有关详细信息，请参阅[设置设备类型限制](enrollment-restrictions-set.md#create-a-device-type-restriction)。
+
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>操作系统版本报告和对 Intune MDM 设备符合性策略的符合性
-Intune MDM 设备符合性策略提供以下工具： 
+
+Intune MDM 设备符合性策略提供以下工具：
+
 - 指定符合性规则
 - 通过报告查看符合性状态
 - 通过设备隔离和条件访问处理不符合性
 
 与注册限制类似，设备符合性策略同时包含最低和最高操作系统版本。 策略还具有符合性时间线，以向你的用户提供用于获得符合性的宽限期。 设备符合性策略可确保所注册的最终用户设备符合组织策略。
 
-![设备符合性 - 针对不符合设备的操作](./media/os-version-actions-noncompliance.png) 
+![设备符合性 - 针对不符合设备的操作](./media/os-version-actions-noncompliance.png)
 
 ### <a name="in-practice"></a>具体实践
 对于相同的方案，组织正使用与注册限制一致的设备符合性策略。 这些策略确保用户处于组织中已验证的当前操作系统版本。 当最终用户设备不符合时，可通过条件访问阻止其对组织资源的访问，直至最终用户处于受组织支持的操作系统范围内。 将不符合状态通知给最终用户，并为其提供重获访问权限的步骤。   
 
-有关详细信息，请参阅[设备符合性入门](https://docs.microsoft.com/intune/device-compliance-get-started)。
+有关详细信息，请参阅[设备符合性入门](device-compliance-get-started.md)。
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>使用 Intune 应用保护策略的操作系统版本控制    
 使用 Intune 应用保护策略和移动应用程序管理 (MAM) 访问设置，可在应用层级指定最低操作系统版本。 如此一来便可通知、鼓励或要求最终用户将操作系统更新至指定的最低版本。
@@ -70,7 +74,7 @@ Intune MDM 设备符合性策略提供以下工具：
 ### <a name="in-practice"></a>具体实践
 当前，在打开或恢复应用时，组织通过使用应用保护策略设置提醒最终用户需确保其应用处于最新版本。 例如这个示例配置：如果版本为最新版本减一，则将警告最终用户；如果版本为最新版本减二，则将阻止最终用户。
  
-有关详细信息，请参阅[如何创建和分配应用保护策略](https://docs.microsoft.com/intune/app-protection-policies)。
+有关详细信息，请参阅[如何创建和分配应用保护策略](app-protection-policies.md)。
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>管理新操作系统版本的推出
 可使用本文所述 Intune 功能，在自定义的时间线内将组织移至新操作系统版本。 以下是关于某个示例部署模型的步骤说明，该示例在七天内将用户从操作系统 v1 移至操作系统 v2。
@@ -84,8 +88,9 @@ Intune MDM 设备符合性策略提供以下工具：
   - 这些策略要求更新设备，以便继续访问组织数据。 当与设备条件访问配合使用时，受保护的服务将被阻止。 启用了应用保护策略的应用在打开时或访问组织数据时将被阻止。
 
 ## <a name="next-steps"></a>后续步骤
-使用以下资源在组织中管理操作系统版本： 
 
-- [设置设备类型限制](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
-- [设备符合性入门](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [如何创建和分配应用保护策略](https://docs.microsoft.com/intune/app-protection-policies)
+使用以下资源在组织中管理操作系统版本：
+
+- [设置设备类型限制](enrollment-restrictions-set.md#create-a-device-type-restriction)
+- [设备符合性入门](device-compliance-get-started.md)
+- [如何创建和分配应用保护策略](app-protection-policies.md)

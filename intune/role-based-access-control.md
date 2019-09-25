@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080033"
+ms.locfileid: "71094661"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的基于角色的访问控制 (RBAC)
 
@@ -43,7 +43,7 @@ ms.locfileid: "71080033"
 - **分配**：[角色分配]( assign-role.md)列表，用于定义有权访问哪些用户/设备的用户。 一个角色可以有多个分配，并且一个用户可以位于多个分配中。
 
 ### <a name="built-in-roles"></a>内置角色
-无需进一步配置，即可向组分配内置角色。 无法删除或编辑内置角色的名称、说明、类型或权限。 有关每个内置角色的完整权限列表，请参阅 [Intune RBAC 表](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)。
+无需进一步配置，即可向组分配内置角色。 无法删除或编辑内置角色的名称、说明、类型或权限。
 
 - **支持人员操作员**：对用户和设备执行远程任务，并可以将应用或策略分配到用户或设备。
 - **策略和配置文件管理员**：管理符合性策略、配置文件、Apple 注册、企业设备标识符和安全性基线。

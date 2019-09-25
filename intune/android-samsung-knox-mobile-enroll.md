@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071648"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167421"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -105,7 +105,7 @@ ms.locfileid: "71071648"
 
 - **不含用户名关联：** 在 Knox 门户中，对于已添加设备，将“设备详细信息”  下的“用户 ID”  和“密码”  字段留空。 此选项要求最终用户必须在注册 Intune 时输入用户名和密码。
 
-- **含用户名关联：** 在 Knox 门户中，对于已添加设备，填写“设备详细信息”  下的“用户 ID”  （如，已分配用户的用户名或[设备注册管理员](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)帐户）。 此选项预填充用户名，并要求最终用户必须在注册 Intune 时输入密码。
+- **含用户名关联：** 在 Knox 门户中，对于已添加设备，填写“设备详细信息”  下的“用户 ID”  （如，已分配用户的用户名或[设备注册管理员](device-enrollment-manager-enroll.md)帐户）。 此选项预填充用户名，并要求最终用户必须在注册 Intune 时输入密码。
 
 > [!NOTE]
 >

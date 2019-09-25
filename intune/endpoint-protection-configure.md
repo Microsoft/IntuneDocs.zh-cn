@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 8248991e1facc78def580d75a5b7e7e6ba353c98
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482774"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163686"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中添加终结点保护设置  
 
@@ -54,7 +54,6 @@ ms.locfileid: "68482774"
    配置文件随即创建并显示在“配置文件列表”页中。 要向组分配此配置文件，请参阅[分配设备配置文件](device-profile-assign.md)。  
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>为 Windows 10 设备添加自定义防火墙规则  
-***公共预览版提供自定义防火墙规则。***  
 
 在将 Windows Defender 防火墙配置为包含 Windows 10 Endpoint Protection 规则的配置文件的一部分后，可以为防火墙配置自定义规则。 通过自定义规则，可以扩展 Windows 10 支持的预定义防火墙规则集。  
 

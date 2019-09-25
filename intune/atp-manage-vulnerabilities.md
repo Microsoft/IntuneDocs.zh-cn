@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270280"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167248"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>使用 Intune 修正由 Microsoft Defender ATP 标识的漏洞  
 
@@ -37,13 +37,15 @@ ms.locfileid: "68270280"
 接受任务后，Intune 管理员会通过 Intune 使用作为安全任务的一部分提供的指导修正漏洞。  
 
 修正的常见操作包括：  
+
 - **阻止**应用程序运行  
 - **部署**操作系统更新，从而缓解漏洞。  
 - **修改**注册表值。  
 - **禁用**或**启用**某个配置，从而影响漏洞。  
 - **需要引起注意**警告管理员有关无合适建议的威胁。  
 
-示例工作流：  
+示例工作流：
+
 - 在 Microsoft Defender ATP 中，发现了名为 Contoso Media Player v4 的应用的漏洞，管理员会创建一个安全任务来更新该应用。 Contoso Media Player 是使用 Intune 部署的非托管应用。  
 
   此安全任务显示在 Intune 控制台中，状态为“挂起”：  
@@ -61,13 +63,16 @@ ms.locfileid: "68270280"
 ## <a name="prerequisites"></a>必备条件  
 
 **订阅**：  
+
 - Microsoft Intune  
 - Microsoft Defender 高级威胁防护（[注册免费试用](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)。）  
 
 **ATP 的 Intune 配置**：  
+
 - 配置与 Microsoft Defender ATP 的服务间连接。  
 - 将配置文件类型为 Microsoft Defender ATP（Windows 10 桌面版）  的设备符合性策略部署到具有由 ATP 评估出来的风险的设备。
-  有关如何将 Intune 设置为使用 ATP 的信息，请参阅[使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune)。  
+
+  有关如何将 Intune 设置为使用 ATP 的信息，请参阅[使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)。  
 
 ## <a name="work-with-security-tasks"></a>使用安全任务  
 
@@ -89,6 +94,6 @@ ms.locfileid: "68270280"
 修正成功后，根据已修正设备中的新信，ATP 中的风险危险性分数可能会下降。 
 
 ## <a name="next-steps"></a>后续步骤
-了解有关 Intune 和 [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection) 的详细信息  
-查看 Intune [移动威胁防御](https://docs.microsoft.com/intune/mobile-threat-defense)  
+了解有关 Intune 和 [Microsoft Defender ATP](advanced-threat-protection.md) 的详细信息  
+查看 Intune [移动威胁防御](mobile-threat-defense.md)  
 查看 Microsoft Defender ATP 中的[威胁和漏洞管理仪表板](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18d01692f8c42b67605c223f59e13b1e5197a8db
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: f68ee794ce1fce2fbdbae8898c412309906b3f5c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71017132"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167072"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用导入的 PKCS 证书
 
@@ -43,7 +43,7 @@ S/MIME 加密很有挑战性，因为电子邮件是使用特定证书进行加�
 
   新版本可用时，此连接器可自动更新。 要使用更新功能，必须确保防火墙已打开，以便连接器从端口 443 访问 autoupdate.msappproxy.net   。  
 
-  有关连接器访问的所有网络终结点的详细信息，请参阅 [Intune 网络配置要求和带宽](https://docs.microsoft.com/intune/network-bandwidth-use)。
+  有关连接器访问的所有网络终结点的详细信息，请参阅 [Intune 网络配置要求和带宽](network-bandwidth-use.md)。
 
 
 - **Windows Server**：  
