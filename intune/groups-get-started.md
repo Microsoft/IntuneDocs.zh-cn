@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/31/2019
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e912c14418d54321b0998dad3081f297ae81114d
-ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
+ms.openlocfilehash: 7837ab6e24c5d4fa848218b662cbd89dfbbe7b72
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867426"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71301885"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 经典组
 
@@ -38,20 +37,20 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 
 你可能使用过的某些 Intune 组功能在 Azure AD 中不可用：
 
-- “未分组用户”和“未分组设备”Intune 组将不再可用。
-- Azure 门户中不存在从某个组中“排除特定成员”的选项。 但是，可使用具有高级规则的 Azure AD 安全组复制此行为。 例如，若要在安全组中创建包含销售部门所有成员的高级规则，但排除职位中含有“助手”一词的组，可使用此高级规则：
+- “未分组用户”  和“未分组设备”  Intune 组将不再可用。
+- Azure 门户中不存在从某个组中“排除特定成员”  的选项。 但是，可使用具有高级规则的 Azure AD 安全组复制此行为。 例如，若要在安全组中创建包含销售部门所有成员的高级规则，但排除职位中含有“助手”一词的组，可使用此高级规则：
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
-- Intune 经典控制台中的“所有 Exchange ActiveSync 管理的设备”组未迁移到 Azure AD。 但仍可从 Azure 门户访问 EAS 托管设备的相关信息。
+- Intune 经典控制台中的“所有 Exchange ActiveSync 管理的设备”  组未迁移到 Azure AD。 但仍可从 Azure 门户访问 EAS 托管设备的相关信息。
 
 ## <a name="how-to-get-started"></a>如何开始？
 
 - 阅读以下主题，了解 Azure AD 安全组及其工作原理：
-    -  [使用 Azure Active Directory 组管理对资源的访问](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
-    -  [在 Azure Active Directory 中管理组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
-    -  [使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
--  确保将需要创建组的管理员添加到 **Intune 服务管理员** Azure AD 角色。 Azure AD 服务管理员角色没有**管理组**权限。
--  如果 Intune 组使用“排除特定成员”选项，需确定是否可在不排除项的情况下重新设计这些组，或是否需要高级规则以满足业务需求。
+  - [使用 Azure Active Directory 组管理对资源的访问](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)。
+  - [在 Azure Active Directory 中管理组](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)。
+  - [使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)。
+- 确保将需要创建组的管理员添加到 **Intune 服务管理员** Azure AD 角色。 Azure AD 服务管理员角色没有**管理组**权限。
+- 如果 Intune 组使用“排除特定成员”  选项，需确定是否可在不排除项的情况下重新设计这些组，或是否需要高级规则以满足业务需求。
 
 
 ## <a name="what-happened-to-intune-groups"></a>Intune 组出现了什么情况？
@@ -79,7 +78,7 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 |设备组的组织单位 (OU) 属性|动态组的 OU 属性。|
 |设备组的域名属性|动态组的域名属性。|
 |作为用户组属性的安全组|在 Azure AD 动态查询中组不能作为属性。 动态组只能包含用户或设备特定的属性。|
-|用户组的管理器属性|动态组中管理器属性的高级规则|
+|用户组的管理器属性|动态组中管理器  属性的高级规则|
 |父用户组中的所有用户|包含该组（作为成员）的静态组|
 |父设备组中的所有移动设备|包含该组（作为成员）的静态组|
 |由 Intune 托管的所有移动设备|动态组值为“MDM”的管理类型属性|

@@ -6,9 +6,8 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/27/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,29 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 88681696716080b38d0f7d9e79264d002f335029
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798113"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303302"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 数据仓库
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 使用 Intune 数据仓库生成报表，获取有关企业移动环境的见解。 例如，一些报表包括：
--   用户注册 Intune 的趋势，可帮助优化许可证购买
--   应用和操作系统版本细目，可供查看移动设备的状态
--   注册和设备符合性趋势，有助于顺利推出策略更新
+- 用户注册 Intune 的趋势，可帮助优化许可证购买
+- 应用和操作系统版本细目，可供查看移动设备的状态
+- 注册和设备符合性趋势，有助于顺利推出策略更新
 
 ## <a name="data-warehouse-benefits"></a>数据仓库优势
 
 相比 Azure 门户，通过数据仓库可访问更多有关移动环境的信息。 借助 Intune 数据仓库可访问：
 
-  -  Intune 历史数据
-  -  每日刷新的数据
-  -  一个使用 OData 标准的数据模型
+- Intune 历史数据
+- 每日刷新的数据
+- 一个使用 OData 标准的数据模型
 
 > [!Note]
 > 如果将共同管理的移动设备管理 (MDM) 与 System Center Configuration Manager 和 Microsoft Intune 配合使用，则需要从 Configuration Manager 检索数据。 Intune 数据仓库仅包含 Intune 数据。 可将 Configuration Manager Power BI 仪表板用于自定义报表。 有关详细信息，请参阅 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)（宣布推出适用于 System Center Configuration Manager 的 Power BI 解决方案模板）和[适用于 Dynamics 365 的 Power BI 内容](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)。

@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461152"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302181"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 
@@ -78,15 +77,14 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 
 ### <a name="configure-general-settings"></a>配置常规设置
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格上，选择“设备配置”。
-2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”。
-5.  在“配置文件”窗格上，选择“创建配置文件”。
-6.  在“创建配置文件”窗格上，输入 iOS 教育配置文件的“名称”和“说明”。
-7.  在“平台”下拉列表中，选择“iOS”。
-8.  在“配置文件类型”下拉列表中，选择“教育”。
-9.  选择“设置” > “配置”。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在“Intune”窗格上，选择“设备配置”   。
+2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”    。
+5. 在“配置文件”窗格上，选择“创建配置文件”  。
+6. 在“创建配置文件”窗格上，输入 iOS 教育配置文件的“名称”和“说明”    。
+7. 在“平台”  下拉列表中，选择“iOS”  。
+8. 在“配置文件类型”  下拉列表中，选择“教育”  。
+9. 选择“设置”   > “配置”  。
 
 
 下一部分，你将创建证书，以便在教师和学生 iPad 之间建立信任关系。 证书用于在无提示情况下对设备间的连接进行无缝式身份验证，而无需输入用户名和密码。
@@ -100,58 +98,58 @@ iOS 教育配置文件仅支持 PFX 证书。 不支持 SCEP 证书。
 
 ### <a name="configure-teacher-certificates"></a>配置教师证书
 
-在“教育”窗格上，选择“教师证书”。
+在“教育”  窗格上，选择“教师证书”  。
 
 #### <a name="configure-teacher-root-certificate"></a>配置教师根证书
 
-在“教师根证书”下，选择浏览按钮。 选择包含以下任一扩展名的根证书：
+在“教师根证书”  下，选择浏览按钮。 选择包含以下任一扩展名的根证书：
 - 扩展名 .cer（DER 或 Base64 编码） 
 - 扩展名 .P7B（包含或不包含完整的链路）
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>配置教师 PKCS#12 证书
 
-在“教师 PKCS#12 证书”下，配置下列值：
+在“教师 PKCS#12 证书”  下，配置下列值：
 
-- 使用者名称格式 - Intune 自动为教师证书添加前缀为 leader 的公用名。 为学生证书添加前缀为 member 的公用名。
-- 证书颁发机构 - Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
+- 使用者名称格式  - Intune 自动为教师证书添加前缀为 leader  的公用名。 为学生证书添加前缀为 member  的公用名。
+- 证书颁发机构  - Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
 - **证书颁发机构名称** - 输入你的证书颁发机构的名称。
 - **证书模板名称** - 输入已添加到发证 CA 的证书模板的名称。 
 - **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
 - **证书有效期** - 指定距离证书过期的剩余时间量。
 你可以指定比指定证书模板中的有效期小的值，但不能指定较大的值。 例如，证书模板中的证书有效期为 2 年，则你可以指定值 1 年，但不能指定值 5 年。 该值还必须小于发证 CA 证书的剩余有效期。
 
-完成证书配置后，选择“确定”。
+完成证书配置后，选择“确定”  。
 
 ### <a name="configure-student-certificates"></a>配置学生证书
 
-1.  在“教育”窗格上，选择“学生证书”。
-2.  在“学生证书”窗格的“学生设备证书”类型列表中，选择“1:1”。
+1. 在“教育”  窗格上，选择“学生证书”  。
+2. 在“学生证书”  窗格的“学生设备证书”  类型列表中，选择“1:1”  。
 
 #### <a name="configure-student-root-certificate"></a>配置学生根证书
 
-在“学生根证书”下，选择浏览按钮。 选择包含以下任一扩展名的根证书：
+在“学生根证书”  下，选择浏览按钮。 选择包含以下任一扩展名的根证书：
 - 扩展名 .cer（DER 或 Base64 编码） 
 - 扩展名 .P7B（包含或不包含完整的链路）
 
 #### <a name="configure-student-pkcs12-certificate"></a>配置学生 PKCS#12 证书
 
-在“学生 PKCS#12 证书”下，配置下列值：
+在“学生 PKCS#12 证书”  下，配置下列值：
 
-- 使用者名称格式 - Intune 自动为教师证书添加前缀为 leader 的公用名。 为学生证书添加前缀为 member 的公用名。
-- 证书颁发机构 - Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
+- 使用者名称格式  - Intune 自动为教师证书添加前缀为 leader  的公用名。 为学生证书添加前缀为 member  的公用名。
+- 证书颁发机构  - Windows Server 2008 R2 企业版或更高版本上运行的企业证书颁发机构 (CA)。 不支持独立 CA。 
 - **证书颁发机构名称** - 输入你的证书颁发机构的名称。
 - **证书模板名称** - 输入已添加到发证 CA 的证书模板的名称。 
 - **续订阈值(%)** - 指定设备请求证书续订之前剩余的证书有效期限的百分比。
 - **证书有效期** - 指定距离证书过期的剩余时间量。
 你可以指定比指定证书模板中的有效期小的值，但不能指定较大的值。 例如，证书模板中的证书有效期为 2 年，则你可以指定值 1 年，但不能指定值 5 年。 该值还必须小于发证 CA 证书的剩余有效期。
 
-完成证书配置后，选择“确定”。
+完成证书配置后，选择“确定”  。
 
 ## <a name="finish-up"></a>完成
 
-1.  在“教育”窗格上，选择“确定”。
-2.  在“创建配置文件”窗格上，选择“创建”。
-    
+1. 在“教育”  窗格上，选择“确定”。
+2. 在“创建配置文件”  窗格上，选择“创建”  。
+
 配置文件随即创建并显示在“配置文件列表”窗格中。
 
 将该配置文件分配给与 Azure AD 同步学校数据时创建的教室组中的学生设备（请参阅[如何分配设备配置文件](device-profile-assign.md)）。

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884244"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239458"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>在 Intune 中添加适用于 Windows 10 及更高版本设备的 Wi-Fi 设置
 
@@ -62,6 +62,9 @@ ms.locfileid: "67884244"
     
       > [!NOTE]
       > 保存 Wi-Fi 配置文件时，出于安全原因，不会显示输入的 PSK 值。 即使 PSK 保存在配置文件中，预共享密钥水印也仍显示为“未配置”  。 要更改 PSK，请输入新的密钥，然后保存配置文件。 如果保存 PSK、编辑策略，并将 PSK 留空，则仍使用现有的 PSK。
+      
+      > [!IMPORTANT]
+      > 对于作为 profule 目标的所有设备，PSK 是相同的。 如果密钥已泄露，则任何设备都可以使用它连接到 Wi-fi 网络。 确保 Psk 安全，以避免未经授权的访问。
 
 - 公司代理设置：选择使用组织内的代理设置  。 选项包括：
   - 无：不配置任何代理设置  。

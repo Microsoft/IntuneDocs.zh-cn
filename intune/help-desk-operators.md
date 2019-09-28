@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,20 +16,20 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 8a4e6cbf2d9edcff83ae756c2dbcf098cae0ae54
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798392"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "71301860"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-通过故障排除门户，技术支持人员和 Intune 管理员可查看用户信息，处理用户求助请求。 设有支持人员的组织可以为一组用户分配技术支持人员。 技术支持人员可使用“疑难解答”窗格。
+通过故障排除门户，技术支持人员和 Intune 管理员可查看用户信息，处理用户求助请求。 设有支持人员的组织可以为一组用户分配技术支持人员  。 技术支持人员可使用“疑难解答”窗格  。
 
-“疑难解答”窗格中也显示用户注册问题。 问题的相关详细信息和建议的修正步骤可帮助管理员和支持人员排查问题。 某些注册问题可能无法捕获，还有某些错误可能没有修正建议。
+“疑难解答”窗格中也显示用户注册问题  。 问题的相关详细信息和建议的修正步骤可帮助管理员和支持人员排查问题。 某些注册问题可能无法捕获，还有某些错误可能没有修正建议。
 
 有关添加技术支持人员角色的相关步骤，请参阅 [Intune 的基于角色的管理控制 (RBAC)](/intune/role-based-access-control)
 
@@ -45,27 +44,26 @@ ms.locfileid: "58798392"
 
 ## <a name="to-review-troubleshooting-details"></a>查看疑难解答详细信息
 
-在“疑难解答”窗格中，选择“选择用户”以查看用户信息。 用户信息可以帮助你了解用户及其设备的当前状态。  
+在“疑难解答”窗格中，选择“选择用户”以查看用户信息  。 用户信息可以帮助你了解用户及其设备的当前状态。  
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”。 Intune 位于“监视 + 管理”部分中。
-3. 在“Intune”窗格中，选择“疑难解答”。
-4. 单击“选择”，选择要进行故障排除的用户。
-5. 通过键入名称或电子邮件地址选择用户。 单击“选择”。 有关用户的疑难解答信息将显示在“疑难解答”窗格中。 下表介绍了相关信息。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 在“Intune”窗格中，选择“疑难解答”   。
+4. 单击“选择”，选择要进行故障排除的用户  。
+5. 通过键入名称或电子邮件地址选择用户。 单击“选择”  。 有关用户的疑难解答信息将显示在“疑难解答”窗格中。 下表介绍了相关信息。
 
 > [!Note]  
-> 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格。
+> 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格  。
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>疑难解答仪表板区域
 
-可使用“疑难解答”窗格来查看用户信息。
+可使用“疑难解答”窗格来查看用户信息  。
 
-![](/intune/media/troubleshooting-dash.png)
+![故障排除仪表板，其中包含下表描述的编号区域](/intune/media/troubleshooting-dash.png)
 
 | 领域 | 名称 | 描述 |
 | ---  | ---  | ---         |
-| 1.   | 帐户状态  | 显示当前 Intune 租户状态为“活动”或“非活动”。       |
-| 2.   | 用户选择  | 当前所选用户的名称。 单击“更改用户”可选择新用户。       |
+| 1.   | 帐户状态  | 显示当前 Intune 租户状态为“活动”或“非活动”   。       |
+| 2.   | 用户选择  | 当前所选用户的名称。 单击“更改用户”可选择新用户  。       |
 | 3.   | 用户状态  | 显示用户的 Intune 许可证状态、设备数目、每个设备的符合性、应用数目以及应用的符合性。       |
 | 4.   | 用户信息  | 使用该列表在窗格中选择要查看的详细信息。 <br>可选内容如下： <ul><li>客户端应用<li>相容性策略<li> 配置策略<li>应用保护策略 <li>注册限制</ul>      |
 | 5.   | 组成员资格  | 显示所选用户所属的当前组。       |
@@ -108,7 +106,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection status
 
-An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -121,7 +119,7 @@ An app protection policy is available to mobile apps that integrate with Enterpr
 
 ## App protection policies reference
 
-An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 ### Properties
 
@@ -154,7 +152,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ## Compliance policies reference
 
-Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
 ### Properties
 
@@ -186,7 +184,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -199,7 +197,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 ## Configuration policies reference
 
-An app configuration policy is available to mobile apps with vendor-specific configuration. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
 ### Properties
 
@@ -232,7 +230,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -294,11 +292,11 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 ## <a name="collect-available-data-from-mobile-device"></a>从移动设备收集可用数据
 
 对用户设备问题进行故障排除时，请使用以下资源帮助收集设备数据：
-  - [将 iOS 注册错误发送给 IT 管理员](/intune-user-help/send-errors-to-your-it-admin-ios)
-  - [利用详细日志记录帮助公司支持人员修复设备问题](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
-  - [使用 USB 电缆将 Android 日志发送给公司支持人员](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-  - [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
-  - [将 Android 注册错误发送给 IT 管理员](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
+- [将 iOS 注册错误发送给 IT 管理员](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [利用详细日志记录帮助公司支持人员修复设备问题](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+- [使用 USB 电缆将 Android 日志发送给公司支持人员](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+- [将 Android 注册错误发送给 IT 管理员](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>后续步骤
 

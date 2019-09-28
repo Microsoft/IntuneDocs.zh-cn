@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167543"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238964"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>取消注册 Android 设备管理  
 
@@ -64,7 +64,7 @@ ms.locfileid: "71167543"
 
 还有最后一种办法，以设备管理员的身份从设备卸载该应用。  
 
-如果有公司拥有的设备，组织可能会要求始终在该设备上安装公司门户。 卸载该应用后，除非重新安装它，否则可能无法访问受保护的公司资源，例如电子邮件、应用、Wi-Fi 或 VPN。 若要详细了解如何安装、更新或删除所需应用，请参阅[向 Microsoft Intune 添加应用](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune)。  
+如果有公司拥有的设备，组织可能会要求始终在该设备上安装公司门户。 卸载该应用后，除非重新安装它，否则可能无法访问受保护的公司资源，例如电子邮件、应用、Wi-Fi 或 VPN。 若要详细了解如何安装、更新或删除所需应用，请参阅[向 Microsoft Intune 添加应用](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune)。  
 
 以下是以设备管理员身份禁用公司门户的步骤。 在 Android 设备上，每项设置的实际名称可能会有所不同。  
 

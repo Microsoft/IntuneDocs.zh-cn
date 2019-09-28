@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ed863378616f8001beab89177c642404287e7d3
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: 57a860edd99bfbbd41ff7df8fd98d0343f4f5ba6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59424928"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304120"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Windows 8.1 设置
 
@@ -37,7 +36,7 @@ ms.locfileid: "59424928"
 
 ## <a name="before-you-begin"></a>在开始之前
 
-[创建合规性策略](create-compliance-policy.md#create-the-policy)。 对于“平台”，请选择“Windows Phone 8.1”或“Windows 8.1 及更高版本”。
+[创建合规性策略](create-compliance-policy.md#create-the-policy)。 对于“平台”，请选择“Windows Phone 8.1”或“Windows 8.1 及更高版本”    。
 
 ## <a name="device-properties"></a>设备属性
 
@@ -50,17 +49,17 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
 
 ### <a name="password"></a>密码
 
-- 需要密码才可解锁移动设备：要求用户在访问其设备之前输入密码。
-- 简单密码：设置为“阻止”后，用户无法创建简单密码，如 1234 或 1111。 设置为“未配置”以允许用户创建密码，例如 1234 或 1111。
+-  需要密码才可解锁移动设备：要求  用户在访问其设备之前输入密码。
+-  简单密码：设置为“阻止”  后，用户无法创建简单密码，如 1234  或 1111  。 设置为“未配置”  以允许用户创建密码，例如 1234  或 1111  。
 - **最短密码长度**：输入密码必须包含的最小位数或最小字符数。
 
   对于运行 Windows 且通过 Microsoft 帐户访问的设备，无法正确评估符合性策略：
   - 如果最短密码长度大于 8 个字符
   - 或者，如果最小字符集数超过两个
 
-- 密码类型：选择密码是应仅包含数值字符，还是应混合使用数字和其他字符（字母数字）。
+-  密码类型：  选择密码是应仅包含数值字符，还是应混合使用数字和其他字符（字母数字）  。
   
-  - 密码中的非字母数字字符数：如果“所需的密码类型”设置为“字母数字”，此设置将指定密码必须包含的最小字符集数。 四个字符集为：
+  -  密码中的非字母数字字符数：如果“所需的密码类型”设置为“字母数字”，此设置将指定密码必须包含的最小字符集数   。 四个字符集为：
     - 小写字母
     - 大写字母
     - 符号
@@ -72,14 +71,14 @@ Windows 8.1 PC 返回版本 **3**。 对于 Windows，如果操作系统版本�
     - 或字符集数下限超过两个
 
 - **要求提供密码之前的非活动最大分钟数**：输入用户必须重新输入其密码前的空闲时间。
-- 密码过期(天)：选择密码过期之前的天数，然后必须创建一个新密码。
+-  密码过期(天)：选择密码过期之前的天数，然后必须创建一个新密码。
 - **要防止重用的以前的密码数**：输入以前用过的不能使用的密码数。
 
 ### <a name="encryption"></a>加密
 
-- 需要对移动设备进行加密：要求对设备进行加密以连接到数据存储资源。
+-  需要对移动设备进行加密：要求对设备进行加密以连接到数据存储资源  。
 
-选择“确定” > “创建”以保存所做的更改。
+选择“确定”   > “创建”  以保存所做的更改。
 
 ## <a name="next-steps"></a>后续步骤
 

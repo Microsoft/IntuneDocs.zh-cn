@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
+ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527957"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71302465"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>使用 Intune 公司门户注册 Windows 10 设备
 
@@ -45,7 +45,7 @@ ms.locfileid: "67527957"
 
     ![选择“访问工作学校帐户”](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. 输入工作或学校电子邮件地址，然后选择“下一步”  。  
+4. 若要转到你的组织的 Intune 登录页，请输入你的工作或学校电子邮件地址。 然后选择“下一步”  。  
 
 
    ![输入你的工作或学校帐户](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

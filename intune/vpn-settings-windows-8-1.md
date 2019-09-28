@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a4a48ef30a56ded80ca6d84aa1a8eee56654a13
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 521243d2c6560fbac77a4ee2aba6ed9577d3abe1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565651"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71303243"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>在 Microsoft Intune 中为运行 Windows 8.1 的设备配置 VPN 设置
 
@@ -34,15 +33,15 @@ ms.locfileid: "57565651"
 ## <a name="base-vpn-settings"></a>基础 VPN 设置
 
 
-- **将所有设置仅应用于 Windows 8.1** - 可以在 Intune 经典门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置只应用于 Windows 8.1 设备。 如果将此项设置为“未配置”，则这些设置还会应用于 Windows 10 设备。
+- **将所有设置仅应用于 Windows 8.1** - 可以在 Intune 经典门户中配置此设置。 在 Azure 门户中无法更改此设置。 如果将此项设置为“已配置”，则任何设置只应用于 Windows 8.1 设备  。 如果将此项设置为“未配置”，则这些设置还会应用于 Windows 10 设备  。
 - **连接名称** - 输入此连接的名称。 用户在他们的设备上浏览可用 VPN 连接的列表时会看到此名称。
 - **服务器** - 添加设备连接到的一个或多个 VPN 服务器。
-    - **添加** - 这将打开“添加行”页面，可在其中指定以下信息：
-        - **说明** - 为服务器指定一个描述性名称，例如“Contoso VPN 服务器”。
-        - IP 地址或 FQDN - 提供设备连接到的 VPN 服务器的 IP 地址或完全限定的域名。 示例：**192.168.1.1**、**vpn.contoso.com**。
-        - **默认服务器** - 启用此服务器作为设备建立连接时使用的默认服务器。 请确保只将一台服务器设置为默认服务器。
-    - **导入** - 在格式描述、IP 地址或 FQDN 以及默认服务器中，浏览到包含以逗号分隔的服务器列表的文件。 选择“确定”，将这些内容导入到“服务器”列表。
-    - **导出** - 将服务器列表导出到逗号分隔值 (csv) 文件。
+  - **添加** - 这将打开“添加行”页面，可在其中指定以下信息  ：
+    - **说明** - 为服务器指定一个描述性名称，例如“Contoso VPN 服务器”  。
+    - IP 地址或 FQDN - 提供设备连接到的 VPN 服务器的 IP 地址或完全限定的域名  。 示例：**192.168.1.1**、**vpn.contoso.com**。
+    - **默认服务器** - 启用此服务器作为设备建立连接时使用的默认服务器。 请确保只将一台服务器设置为默认服务器。
+  - **导入** - 在格式描述、IP 地址或 FQDN 以及默认服务器中，浏览到包含以逗号分隔的服务器列表的文件。 选择“确定”  ，将这些内容导入到“服务器”  列表。
+  - **导出** - 将服务器列表导出到逗号分隔值 (csv) 文件。
 
 - **连接类型** - 从以下供应商列表中选择 VPN 连接类型：
 - **Check Point Capsule VPN**
@@ -63,23 +62,25 @@ ms.locfileid: "57565651"
 
 **Pulse Secure 的示例：**
 
-```
+```xml
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
 **CheckPoint Mobile VPN 的示例：**
-```
+
+```xml
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
 **SonicWall Mobile Connect 的示例：**
-```
+
+```xml
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
 **F5 Edge Client 的示例：**
 
-```
+```xml
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
@@ -89,8 +90,8 @@ ms.locfileid: "57565651"
 ## <a name="proxy-settings"></a>代理设置
 
 - **自动检测代理设置** - 如果 VPN 服务器要求使用代理服务器进行连接，请指定是否希望设备自动检测连接设置。 有关详细信息，请参阅 Windows Server 文档。
-- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的“代理服务器 URL”。 例如，输入 `http://proxy.contoso.com`。
+- **自动配置脚本** - 使用文件配置代理服务器。 输入包含配置文件的“代理服务器 URL”  。 例如，输入 `http://proxy.contoso.com`。
 - **使用代理服务器** - 如果想要手动输入代理服务器设置则启用此选项。
-    - **地址** - 输入代理服务器地址（作为 IP 地址）。
-    - **端口号** - 输入与代理服务器关联的端口号。
+  - **地址** - 输入代理服务器地址（作为 IP 地址）。
+  - **端口号** - 输入与代理服务器关联的端口号。
 - **不对本地地址使用代理服务器** - 如果 VPN 服务器要求使用代理服务器进行连接，在不想对指定的本地地址使用代理服务器时选择此选项。 有关详细信息，请参阅 Windows Server 文档。

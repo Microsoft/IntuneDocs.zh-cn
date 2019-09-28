@@ -5,23 +5,26 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 08/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
+ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e37d6a2b7371cf20cd36a6f3f75a4dd252c332f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8e13c2dce5e8da2ce71b97de496d5234096c3b22
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048049"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "71301955"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune 中用于配置电子邮件、身份验证和同步的 Android Enterprise 设备设置
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 本文列出并介绍了可以在 Android Enterprise 设备上控制的各种电子邮件设置。 在移动设备管理 (MDM) 解决方案中，使用这些设置可配置电子邮件服务器、使用 SSL 加密电子邮件等。
 
@@ -31,7 +34,7 @@ Intune 管理员可以为工作配置文件中的 Android Enterprise 设备创�
 
 ## <a name="before-you-begin"></a>在开始之前
 
-[创建设备配置文件](email-settings-configure.md#create-a-device-profile)，并选择工作配置文件。
+创建[设备配置文件](email-settings-configure.md#create-a-device-profile)（选择工作配置文件）或创建[应用配置策略](app-configuration-policies-use-android.md)。
 
 ## <a name="android-enterprise"></a>Android Enterprise
 
