@@ -1,13 +1,12 @@
 ---
-title: 使用 StageNow 登录 Microsoft Intune-Azure 中的 Android 斑马设备 |Microsoft Docs
-description: 在使用 Microsoft Intune 的 Android 设备上使用 StageNow 时，请参阅常见问题和解决方法。 此外了解如何获取日志，并查看有关如何读取成功或错误日志的示例。
+title: 在 Microsoft Intune 中使用 Android 斑马设备上的 StageNow 日志-Azure |Microsoft Docs
+description: 请参阅在 Android 设备上使用 StageNow 时的常见问题和解决方法 Microsoft Intune。 还了解如何获取日志，并查看有关如何读取日志以获取成功或错误的示例。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: ''
 ms.technology: ''
@@ -17,63 +16,63 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36476820805c00cefafcd9f64dd2f08a014762c0
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 6110476aace30daa27450326aea3f4abd4fb3ea0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490535"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71303893"
 ---
-# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>进行故障排除和 Microsoft Intune 中 Android 斑马设备上看到的潜在问题
+# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>排查和查看 Microsoft Intune 中的 Android 斑马设备上出现的潜在问题
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-您可以使用 Microsoft Intune[斑马移动扩展 (MX) 来管理 Android 斑马设备](android-zebra-mx-overview.md)。 使用斑马设备时，StageNow 管理设置，在创建配置文件并将其上载到 Intune。 Intune 使用 StageNow 应用在设备上应用的设置。 StageNow 应用还会创建用于进行故障排除的设备上的详细的日志文件。
+在 Microsoft Intune 中，可以使用[斑马移动扩展（MX）来管理 Android 斑马设备](android-zebra-mx-overview.md)。 使用斑马设备时，可在 StageNow 中创建配置文件来管理设置，并将其上传到 Intune。 Intune 使用 StageNow 应用来应用设备上的设置。 StageNow 应用还会在设备上创建用于排除故障的详细日志文件。
 
 此功能适用于：
 
 - Android
 
-例如，StageNow 将设备配置为在创建配置文件。 当创建 StageNow 配置文件时，最后一步将生成一个文件，为测试配置文件。 使用此文件，其 StageNow 应用在设备上。
+例如，在 StageNow 中创建配置文件以配置设备。 创建 StageNow 配置文件时，最后一步会生成一个文件，用于测试配置文件。 将此文件与设备上的 StageNow 应用一起使用。
 
-在另一个示例中，在 StageNow，创建配置文件并对其进行测试。 在 Intune 中，添加 StageNow 配置文件，并再将其分配给斑马设备。 检查分配的配置文件的状态，该配置文件将显示高级状态。
+在另一个示例中，将在 StageNow 中创建一个配置文件，并对其进行测试。 在 Intune 中添加 StageNow 配置文件，然后将其分配给斑马设备。 检查分配的配置文件的状态时，配置文件将显示高级状态。
 
-在这两个这些情况下，可以从 StageNow 日志文件每次 StageNow 配置文件应用在设备保存获取更多详细信息。
+在这两种情况下，你都可以从 StageNow 日志文件中获取更多详细信息，该日志文件会在每次应用 StageNow 配置文件时保存在设备上。
 
-某些问题 StageNow 配置文件的内容不相关，不会反映在这些日志。
+某些问题与 StageNow 配置文件的内容不相关，并且不会反映在日志中。
 
-本文演示如何读取 StageNow 日志，并与在日志中可能不会反映出来的斑马设备列出其他潜在的问题。
+本文介绍了如何读取 StageNow 日志，并列出了可能不会在日志中反映的斑马设备的一些其他潜在问题。
 
-[使用和管理与斑马移动扩展斑马设备](android-zebra-mx-overview.md)具有此功能的详细信息。
+[使用和管理斑马移动扩展的斑马设备](android-zebra-mx-overview.md)包含有关此功能的详细信息。
 
 ## <a name="get-the-logs"></a>获取日志
 
 ### <a name="use-the-stagenow-app-on-the-device"></a>在设备上使用 StageNow 应用
-在您测试的配置文件在计算机上的而不是使用上直接使用 StageNow [Intune 部署配置文件](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow)，StageNow 应用在设备上的从测试保存日志。 若要获取的日志文件，请使用**详细 （...）** StageNow 应用在设备上的选项。
+当你在计算机上使用 StageNow 直接测试配置文件，而不是使用[Intune 部署配置文件](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow)时，设备上的 StageNow 应用将保存测试中的日志。 若要获取日志文件，请在设备上的 StageNow 应用中使用 "**更多（...）** " 选项。
 
-### <a name="get-logs-using-android-debug-bridge"></a>获取日志使用 Android 调试桥
-若要获取日志配置文件已使用 Intune 部署后，请将设备连接到的计算机[Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb) （打开 Android 的 web 站点）。
+### <a name="get-logs-using-android-debug-bridge"></a>使用 Android Debug Bridge 获取日志
+若要在配置文件已使用 Intune 部署后获取日志，请将设备连接到具有[Android Debug Bridge （adb）](https://developer.android.com/studio/command-line/adb)的计算机（打开 Android 的网站）。
 
-在设备上日志保存在 `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
+在设备上，日志保存在 `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
 
 ### <a name="get-logs-from-email"></a>从电子邮件获取日志
-若要获取日志配置文件已使用 Intune 部署后，最终用户可以发送电子邮件将电子邮件应用使用设备上的日志。 斑马设备上打开公司门户应用，并[将日志发送](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android)。 使用发送日志功能还会创建 PowerLift 事件 ID，如果联系 Microsoft 支持部门可以引用。
+若要在配置文件已使用 Intune 部署后获取日志，最终用户可以使用设备上的电子邮件应用通过电子邮件向你发送日志。 在斑马设备上，打开公司门户应用并[发送日志](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android)。 使用 "发送日志" 功能还会创建 PowerLift 事件 ID，如果联系 Microsoft 支持部门，你可以参考该 ID。
 
 ## <a name="read-the-logs"></a>读取日志
 
-查看日志时，只要存在着错误，请参阅`<characteristic-error>`标记。 错误详细信息将写入`<parm-error>`标记 >`desc`属性。
+查看日志时，只要看到 `<characteristic-error>` 标记，就会出错。 错误详细信息将写入 `<parm-error>` 标记 > `desc` 属性。
 
 ## <a name="error-types"></a>错误类型
 
-斑马设备包括不同的错误报告级别：
+斑马设备包含不同的错误报告级别：
 
-- 在设备上不支持 CSP。 例如，设备不是移动电话的设备并不会有移动电话网络管理器。
-- MX 或 OSX 版本不匹配。 每个 CSP 受版本控制。 有关完全支持矩阵，请参阅[斑马的文档](http://techdocs.zebra.com/mx/)（打开斑马的 web 站点）。
-- 设备将报告另一个问题或错误。
+- 设备上不支持 CSP。 例如，设备不是移动设备，也没有移动电话管理器。
+- MX 或 OSX 版本不匹配。 每个 CSP 都是版本控制的。 有关完整的支持矩阵，请参阅[斑马的文档](http://techdocs.zebra.com/mx/)（打开斑马的网站）。
+- 设备报告其他问题或错误。
 
 ## <a name="examples"></a>示例
 
-例如，您具有以下输入配置文件：
+例如，你有以下输入配置文件：
 
 ```xml
 <wap-provisioningdoc>
@@ -86,7 +85,7 @@ ms.locfileid: "58490535"
 </wap-provisioningdoc>
 ```
 
-在日志中，XML 是与输入相同的。 此匹配输出表明已成功应用到设备并且没有错误的配置文件：
+在日志中，XML 与输入完全相同。 此匹配输出表示配置文件已成功应用到设备且无错误：
 
 ```xml
 <wap-provisioningdoc>
@@ -99,7 +98,7 @@ ms.locfileid: "58490535"
 </wap-provisioningdoc>
 ```
 
-在另一个示例中，您具有以下输入：
+在另一个示例中，你具有以下输入：
 
 ```xml
 <wap-provisioningdoc>
@@ -113,7 +112,7 @@ ms.locfileid: "58490535"
 </wap-provisioningdoc>
 ```
 
-该日志显示错误，因为它包含`<characteristic-error>`标记。 在此方案中，尝试在给定的路径中安装 Android 包 (APK) 不存在的配置文件：
+日志显示错误，因为它包含 `<characteristic-error>` 的标记。 在此方案中，配置文件尝试安装给定路径中不存在的 Android 包（APK）：
 
 ```xml
 <wap-provisioningdoc>
@@ -129,26 +128,26 @@ ms.locfileid: "58490535"
 
 ## <a name="other-potential-issues-with-zebra-devices"></a>斑马设备的其他潜在问题
 
-本部分列出了使用斑马设备通过设备管理器时可能会看到其他可能的问题。 StageNow 日志中不会报告这些问题。
+本部分列出了在将斑马设备与设备管理员一起使用时可能会遇到的其他问题。 StageNow 日志中不报告这些问题。
 
-### <a name="android-system-webview-is-out-of-date"></a>Android System WebView 已过期
+### <a name="android-system-webview-is-out-of-date"></a>Android System WebView 过期
 
-当使用公司门户应用登录较旧的设备时，用户可能会看到一条消息 System WebView 组件已过时，并需要升级。 如果该设备已安装 Google Play 中，将其连接到 internet，并检查更新。 如果设备没有安装 Google Play、 获取更新的版本的组件，并将其应用到设备。 或者，更新到最新的设备颁发的 Zebra 的操作系统。
+当旧设备使用公司门户应用登录时，用户可能会看到一条消息，指出系统 Web 视图组件已过期，需要升级。 如果设备已安装 Google Play，请将其连接到 internet，然后检查更新。 如果设备未安装 Google Play，请获取组件的更新版本，并将其应用于设备。 或者，更新到由斑马颁发的最新设备操作系统。
 
 ### <a name="management-actions-take-a-long-time"></a>管理操作需要很长时间
 
-如果通过 Google Play services 不可用，某些任务需要 8 小时才能完成。 [适用于 Android 的限制的 Intune 公司门户应用](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china)（将打开另一个 Microsoft 网站上） 可能会很好的资源。
+如果 Google Play 服务不可用，则一些任务最多需要8小时才能完成。 [适用于 Android 的 Intune 公司门户应用程序](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china)（打开另一个 Microsoft 网站）的限制可能是一个不错的资源。
 
-### <a name="device-spoofing-suspected-shows-in-intune"></a>在 Intune 中显示了"欺骗怀疑有问题的设备"
+### <a name="device-spoofing-suspected-shows-in-intune"></a>Intune 中显示了 "怀疑设备欺骗"
 
-此错误意味着 Intune 怀疑其型号和制造商为斑马设备报告非斑马 Android 设备。
+此错误表示，Intune 怀疑某个非斑马的 Android 设备将其模型和制造商报告为斑马设备。
 
-### <a name="company-portal-app-is-older-than-minimum-required-version"></a>公司门户应用是早于所需最低版本
+### <a name="company-portal-app-is-older-than-minimum-required-version"></a>公司门户应用早于所需最低版本
 
-Intune 可能会更新公司门户应用要求的最低版本。 如果在设备上未安装 Google Play，公司门户应用不会获取自动更新。 如果所需的最低版本高于已安装的版本，公司门户应用将停止工作。 更新到最新的公司门户应用程序使用[斑马设备上的旁加载](android-zebra-mx-overview.md#sideload-the-company-portal-app)。
+Intune 可能会更新公司门户应用程序所需的最低版本。 如果设备上未安装 Google Play，则公司门户应用不会自动更新。 如果所需的最低版本比安装的版本更新，则公司门户应用将停止工作。 使用[斑马设备上的旁加载](android-zebra-mx-overview.md#sideload-the-company-portal-app)更新到最新的公司门户应用。
 
 ## <a name="next-steps"></a>后续步骤
 
-[斑马讨论板](https://developer.zebra.com/community/home/discussions)（打开斑马的 web 站点）
+[斑马讨论板](https://developer.zebra.com/community/home/discussions)（打开斑马的网站）
 
-[使用和管理斑马斑马移动扩展在 Intune 中的设备](android-zebra-mx-overview.md)
+[通过 Intune 中的 Zebra Mobility Extensions 使用和管理 Zebra 设备](android-zebra-mx-overview.md)
