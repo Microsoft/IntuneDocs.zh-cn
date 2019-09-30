@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 09/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: 657f30748d3c4e6c4a819c5ed888c541bcb7b5c1
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061683"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238232"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -56,7 +56,14 @@ ms.locfileid: "71061683"
 
 ## <a name="week-of-september-16-2019"></a>2019 年 9 月 16 日当周
 
-### <a name="app-management"></a>应用管理
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理 
+
+#### <a name="managed-google-play-private-lob-apps----1464182----"></a>托管 Google Play 专用 LOB 应用 <!-- 1464182  -->
+现在，借助 Intune，IT 管理员可以通过在 Intune 控制台中嵌入的 iframe 将专用 Android LOB 应用发布到托管 Google Play。  以前，IT 管理员需要将 LOB 应用直接发布到 Google Play 发布控制台，这需要执行几个步骤，并且很耗时。 这项新功能可让你轻松地使用一组最少的步骤发布 LOB 应用，而无需离开 Intune 控制台。  管理员不再需要使用 Google 手动注册为开发人员，并且不再需要向 Google 支付 25 美元注册费。  使用托管 Google Play 的任何 Android 企业管理方案都可以利用此功能（工作配置文件、专用、完全托管和非注册设备）。 在 Intune 中，选择“客户端应用”   > “应用”   > “添加”  。 从“应用类型”  列表中，选择“托管的 Google Play”  。 有关托管的 Google Play 应用的详细信息，请参阅[使用 Intune 将托管的 Google Play 应用添加到 Android Enterprise 设备](apps-add-android-for-work.md)。
+
+#### <a name="windows-company-portal-experience----1473353-3598357---"></a>Windows 公司门户体验 <!-- 1473353, 3598357 -->
+Windows 公司门户正在更新。 你将能够在 Windows 公司门户中的“应用”页上使用多个筛选器。 “设备详细信息”页也正在使用改进的用户体验进行更新。 我们正在将这些更新推出给所有客户，希望在下周结束前完成。
 
 #### <a name="macos-support-for-web-apps----3174427---"></a>Web 应用的 macOS 支持 <!-- 3174427 -->
 可以使用 macOS 公司门户将 Web 应用（此类应用可将快捷方式添加到网页 URL）安装到 Dock。 最终用户可以从 macOS 公司门户中的 Web 应用的应用详细信息页访问安装  操作。 有关 Web 链接  应用类型的详细信息，请参阅[将应用添加 Microsoft Intune](apps-add.md)和[将 Web 应用添加到 Microsoft Intune](web-app.md)。
@@ -68,6 +75,183 @@ ms.locfileid: "71061683"
 - 帮助防止安装的应用副本数超过所拥有的数目。
 
 有关 Intune 和 VPP 的系详细信息，请参阅[使用 Microsoft Intune 管理批量购买的应用和书籍](vpp-apps.md)。
+
+#### <a name="managed-google-play-iframe-support----2871756----"></a>托管 Google Play iframe 支持 <!-- 2871756  -->
+Intune 现在支持通过托管的 Google Play iframe 直接在 Intune 控制台中添加和管理 Web 链接。  这使 IT 管理员可以提交 URL 和图标图形，然后将这些链接部署到设备，就像常规 Android 应用一样。 使用托管 Google Play 的任何 Android 企业管理方案都可以利用此功能（工作配置文件、专用、完全托管和非注册设备）。 在 Intune 中，选择“客户端应用”   > “应用”   > “添加”  。 从“应用类型”  列表中，选择“托管的 Google Play”  。 有关托管的 Google Play 应用的详细信息，请参阅[使用 Intune 将托管的 Google Play 应用添加到 Android Enterprise 设备](apps-add-android-for-work.md)。
+
+#### <a name="silently-install-android-lob-apps-on-zebra-devices----4252734----"></a>在 Zebra 设备上以无提示方式安装 Android LOB 应用 <!-- 4252734  -->
+当在 [Zebra 设备](android-zebra-mx-overview.md)上安装 Android 业务线 (LOB) 应用时，不会提示你下载并安装 LOB 应用，而是能够以无提示方式安装应用。 在 Intune 中，选择“客户端应用” > “应用” > “添加”    。 在“添加应用”  窗格中，选择“业务线应用”  。 有关详细信息，请参阅[将 Android 业务线应用添加到 Microsoft Intune](lob-apps-android.md)。
+
+目前，下载 LOB 应用后，会在用户的设备上显示下载成功  通知。 只能通过在通知底纹中点击“全部清除”  来消除通知。 此通知问题将在即将发布的版本中得到解决，安装将完全无提示且无可视指示器。
+
+#### <a name="read-and-write-graph-api-operations-for-intune-apps----5031704----"></a>针对 Intune 应用的读取和写入 Graph API 操作 <!-- 5031704  -->
+应用程序可以使用应用标识（而无需使用用户凭据）来调用 Intune Graph API 读写操作。 若要详细了解如何访问用于 Intune 的 Microsoft Graph API，请参阅[在 Microsoft Graph 中使用 Intune](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)。
+
+#### <a name="protected-data-sharing-and-encryption-for-intune-app-sdk-for-ios----3586942----"></a>适用于 iOS 的 Intune App SDK 受保护的数据共享和加密 <!-- 3586942  -->
+应用保护策略启用加密时，适用于 iOS 的 Intune App SDK 将使用 256 位加密密钥。 所有应用都需要 SDK 8.1.1 版本才能进行受保护的数据共享。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438-----"></a>支持适用于 iOS 的 IKEv2 VPN 配置文件 <!-- 1943438   -->
+在此更新中，可以使用 IKEv2 协议为 iOS 本机 VPN 客户端创建 VPN 配置文件。 IKEv2 是以下位置中的新连接类型：“设备配置”   > “配置文件”   > “创建配置文件”   > 针对平台选择“iOS”  > 针对配置文件类型选择“VPN”  >“连接类型”  。
+
+这些 VPN 配置文件配置本机 VPN 客户端，因此不会安装 VPN 客户端应用，也不会将其推送到托管设备。 此功能要求设备在 Intune （MDM 注册）中注册。
+
+要查看当前可配置的 VPN 设置，请转到[在 iOS 设备上配置 VPN 设置](vpn-settings-ios.md)。
+
+适用于：
+- iOS
+
+#### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type----4886161-----"></a>适用于 iOS 和 macOS 设置的设备功能、设备限制和扩展配置文件按注册类型显示 <!-- 4886161   -->
+
+在 Intune 中，为 iOS 和 macOS 设备创建配置文件（依次选择“设备配置”   > “配置文件”   > “创建配置文件”   >  针对平台选择“iOS”或“macOS”   > 针对配置文件类型选择“设备功能”、“设备限制”或“扩展”    ）。 
+
+在此更新中，Intune 门户中的可用设置按它们适用的注册类型分类：
+
+- iOS
+  - 用户注册
+  - 设备注册
+  - 自动设备注册（监督）
+  - 所有注册类型
+
+- macOS
+  - 用户已批准
+  - 设备注册
+  - 自动设备注册
+  - 所有注册类型
+
+适用于：
+- iOS
+
+#### <a name="new-voice-control-settings-for-supervised-ios-devices-running-in-kiosk-mode----4892835-----"></a>在展台模式下运行的受监督 iOS 设备的新语音控制设置 <!-- 4892835   -->
+在 Intune 中，你可以创建策略以将受监督的 iOS 设备作为展台或专用设备运行（“设备配置”   >  **“配置文件”**  > “创建配置文件”   > 针对平台选择“iOS”>  针对配置文件类型选择“设备限制”>“展台”   ）。 
+
+在此更新中，可以控制以下新设置：
+- **语音控件**：在展台模式下启用设备上的语音控件。
+- **修改语音控件**：允许用户在展台模式下更改设备上的语音控件设置。
+
+若要查看当前设置，请转到 [iOS 展台设置](device-restrictions-ios.md#kiosk)。
+
+适用于：
+- iOS 13.0 及更高版本
+
+#### <a name="use-single-sign-on-for-apps-and-websites-on-your-ios-and-macos-devices----4893175-----"></a>在 iOS 和 macOS 设备上对应用和网站使用单一登录 <!-- 4893175   -->
+在此更新中，有一些用于 iOS 和 macOS 设备的新单一登录设置（依次选择“设备配置”   > “配置文件”   > “创建配置文件”   >  针对平台选择“iOS”或“macOS”   > 针对配置文件类型选择“设备功能”  ）。
+
+使用这些设置来配置单一登录体验，特别是对于使用 Kerberos 身份验证的应用和网站。 你可以在通用凭据单一登录应用扩展和 Apple 的内置 Kerberos 扩展之间进行选择。
+
+若要查看可配置的当前设备功能，请转到 [iOS 设备功能](ios-device-features-settings.md)和 [macOS 设备功能](macos-device-features-settings.md)。
+
+适用于：
+- iOS 13.0 及更高版本
+- macOS 10.15 及更高版本
+
+#### <a name="associate-domains-to-apps-on-macos-1015-devices----4898079-----"></a>将域关联到 macOS 10.15 + 设备上的应用 <!-- 4898079   -->
+在 macOS 设备上，可以配置不同的功能，并使用策略将这些功能推送到设备（依次选择“设备配置”   > “配置文件”   > 创建配置文件   > 针对平台选择“macOS”  > 针对配置文件选择“设备功能”  ）。 在此更新中，你可以将域关联到应用。 此功能可帮助与应用相关的网站共享凭据，并可与 Apple 的单一登录扩展、通用链接和密码自动填充配合使用。 
+
+若要查看可配置的当前功能，请转到 [Intune 中的 macOS 设备功能设置](macos-device-features-settings.md)。
+
+适用于：
+- macOS 10.15 及更高版本
+
+#### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474-----"></a>显示或隐藏 iOS 受监督设备上的应用时，请使用 iTunes 应用商店 URL 中的“itunes”和“应用” <!-- 4928474   --> 
+在 Intune 中，你可以创建策略以显示或隐藏受监督 iOS 设备上的应用（依次选择“设备配置”   > “配置文件”   > “创建配置文件”   > 针对平台选择“iOS”>  针对配置文件类型选择“设备限制”>  “显示或隐藏应用”  ）。 
+
+可以输入 iTunes 应用商店 URL，例如 `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`。 在此更新中，`apps` 和`itunes` 均可用于 URL，例如：
+- `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
+- `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
+
+有关这些设置的详细信息，请参阅[显示或隐藏应用](device-restrictions-ios.md#show-or-hide-apps)。
+
+适用于：
+- iOS
+
+#### <a name="windows-10-compliance-policy-password-type-values-are-clearer-and-match-csp---5138985---"></a>Windows 10 合规性策略密码类型值更加清晰且匹配 CSP<!-- 5138985 -->
+在 Windows 10 设备上，你可以创建需要特定密码功能的合规性策略（依次选择“设备合规性”   > “策略”   > “创建策略”   > 针对平台选择“Windows 10 及更高版本”>  “系统安全”  ）。 在此更新中：
+- “密码类型”  值更加清晰，并更新以匹配 [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)。
+- “密码过期(天)”  设置将更新为允许 1-730 天内的值。 
+
+有关 Windows 10 合规性设置的详细信息，请参阅 [Windows 10 及更高版本设置以将设备标记为合规或不合规](compliance-policy-create-windows.md)。 
+
+适用于：
+- Windows 10 及更高版本
+
+ #### <a name="updated-ui-for-configuring-microsoft-exchange-on-premises-access-------4092920---"></a>更新了用于配置 Microsoft Exchange 本地访问的 UI    <!-- 4092920 -->  
+我们更新了控制台，你可在其中[配置 Microsoft Exchange 本地访问权限](conditional-access-exchange-create.md)。 现在，可以在控制台上用于*启用 Exchange 本地访问控制*的同一个窗格中提供 Exchange 本地访问权限的所有配置。  
+
+#### <a name="allow-or-restrict-adding-app-widgets-to-the-home-screen-on-android-enterprise-work-profile-devices----1109650----"></a>允许或限制将应用小组件添加到 Android Enterprise 工作配置文件设备上的主屏幕 <!-- 1109650  --> 
+在 Android Enterprise 设备上，你可以配置工作配置文件中的功能（依次选择“设备配置”   > “配置文件”   > 创建配置文件”   > 针对平台选择“Android Enterprise”>  “仅限工作配置文件”>  针对配置文件类型选择“设备限制”）。 在此更新中，可以允许用户将工作配置文件应用公开的小组件添加到设备主屏幕。
+
+要查看可以配置的设置，请转到[便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置](device-restrictions-android-for-work.md)。
+
+适用于：
+- Android Enterprise 工作配置文件
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="new-tenants-will-default-away-from-android-device-administrator-management----4869790-----"></a>新租户将默认离开 Android 设备管理员管理 <!-- 4869790   -->
+Android Enterprise 已取代 Android 的设备管理员功能。 因此，建议改为使用 Android Enterprise 进行新注册。 在将来的更新中，新租户需要在 Android 注册中完成以下先决条件步骤，才能使用设备管理员管理：转到“Intune”   > “设备注册”   > “Android 注册”   > “个人和企业所有的具有设备管理权限的设备”   > “使用设备管理员管理设备”  。
+
+现有租户的环境不会有任何变化。 
+
+有关 Intune 中 Android 设备管理员的详细信息，请参阅 [Android 设备管理员注册](https://docs.microsoft.com/intune/android-enroll-device-administrator)。
+
+#### <a name="list-of-dep-devices-associated-with-a-profile----5012045-idmiss---"></a>与配置文件关联的 DEP 设备的列表 <!-- 5012045 idmiss -->
+你现在可以查看与配置文件关联的 Apple 自动设备注册计划 (DEP) 设备的页面列表。 你可以从列表中的任何页面搜索列表。 要查看列表，请转到“Intune”   > “设备注册”   > “Apple 注册”   > “注册计划令牌”  > 选择令牌 >“配置文件”  > 选择配置文件 >“分配的设备”  （在“监视器”下  ）。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+
+#### <a name="more-android-fully-managed-support----3464667-4631425-4631440-5227935-4062195-----"></a>更多 Android 完全托管支持 <!-- 3464667, 4631425, 4631440, 5227935, 4062195   -->
+我们为 Android 完全托管设备添加了以下支持：
+
+- 完全托管 Android 的 SCEP 证书可用于作为设备所有者管理的设备上的证书身份验证。 工作配置文件设备上已支持 SCEP 证书。  有了针对设备所有者的 SCEP 证书，你将能够： <!-- 5227935 -->
+    - 在 Android Enterprise 的 DO 部分下创建 SCEP 配置文件
+    - 将 SCEP 证书链接到 DO Wi-Fi 配置文件以进行身份验证
+    - 将 SCEP 证书链接到 DO VPN 配置文件以进行身份验证
+    - 将 SCEP 证书链接到 DO 电子邮件配置文件以进行身份验证（通过 AppConfig）
+- Android Enterprise 设备支持系统应用。 在 Intune 中，通过选择“客户端应用”   > “应用”   > “添加”  来添加 Android Enterprise 系统应用。 在“应用类型”  列表中，选择“Android Enterprise 系统应用”  。 有关详细信息，请参阅[将 Android Enterprise 系统应用添加到 Microsoft Intune](apps-ae-system.md)。 <!-- 4062195 -->
+- 在“设备合规性”   > “Android Enterprise”   > “设备所有者”  中，你可以创建用于设置 Google SafetyNet 证明级别的合规性策略。   <!-- 4631425 -->
+- 在 Android Enterprise 完全托管设备上，支持移动威胁防御提供程序。 在“设备合规性”   > “Android Enterprise”   > “设备所有者”  中，可以选择可接受的威胁级别。 <!-- 4631440 --> [使用 Intune 将设备标记为符合或不符合的 Android Enterprise 设置](compliance-policy-create-android-for-work.md#device-owner)会列出当前设置。
+- 在 Android Enterprise 完全托管的设备上，现在可以通过应用保护策略配置 Microsoft Launcher 应用，以便在完全托管的设备上实现标准化的最终用户体验。 Microsoft Launcher 应用可用于个性化 Android 设备。 将该应用与 Microsoft 帐户或工作/学校帐户结合使用，可以访问个性化源中的日历、文档和最近活动。 <!-- 5334044 -->
+
+有了此更新，我们很高兴地宣布 Intune 对 Android Enterprise 完全托管的支持现已正式发布。 
+
+适用于： 
+- Android Enterprise 完全托管设备
+
+#### <a name="send-custom-notifications-to-a-single-device-----4928910---"></a>向单个设备发送自定义通知  <!-- 4928910 -->
+现在，你可以选择单个设备，然后使用远程设备操作[仅向该设备发送自定义通知](custom-notifications.md#send-a-custom-notification-to-a-single-device)。
+
+#### <a name="wipe-and-passcode-reset-actions-arent-available-for-ios-devices-that-are-enrolled-by-using-user-enrollment----4950491---"></a>擦除和密码重置操作不适用于通过使用“用户注册”注册的 iOS 设备 <!-- 4950491 -->
+用户注册是一种新的 Apple 设备注册类型。 使用“用户注册”注册设备时，“擦除”和“密码重置”远程操作对此类设备不可用。
+
+#### <a name="intune-support-for-ios-13-and-macos-catalina-devices----4665317---"></a>Intune 对 iOS 13 和 macOS Catalina 设备的支持 <!-- 4665317 -->
+Intune 现在支持管理 iOS 13 和 macOS Catalina 设备。 有关详细信息，请参阅 [Microsoft Intune 对 iOS 13 和 iPadOS 的支持博客文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-and-iPadOS/ba-p/861998)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>设备安全性
+
+#### <a name="bitlocker-support-for-client-driven-recovery-password-rotation-------3444125---"></a>对客户端驱动的恢复密码轮转的 BitLocker 支持   <!--  3444125 -->
+使用 Intune 终结点保护设置，可为运行 Windows 版本 1909 或更高版本的设备上的 BitLocker 配置[客户端驱动的恢复密码轮转](endpoint-protection-windows-10.md#windows-encryption)。
+
+在 OS 驱动器恢复（通过使用 bootmgr 或 WinRE）和固定数据驱动器上的恢复密码解锁后，此设置启动客户端驱动的恢复密码刷新。 此设置将刷新使用的特定恢复密码，而卷上的其他未使用的密码仍保持不变。 有关详细信息，请参阅 BitLocker CSP 文档 [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)。
+
+#### <a name="tamper-protection-for-windows-defender-antivirus-----4705448----------"></a>Windows Defender 防病毒的篡改防护  <!-- 4705448        -->
+使用 Intune 管理 Windows Defender 防病毒的篡改防护  。 当将设备配置文件用于 Windows 10 终结点保护时，你将在 Microsoft Defender 安全中心组中找到[篡改防护设置](endpoint-protection-windows-10.md#windows-defender-security-center)。 你可以将“篡改防护”设置为“启用”  以开启篡改防护限制，设置为“禁用”  以关闭限制，或者设置为“未配置”  以保持设备的当前配置。  
+
+有关篡改防护的详细信息，请参阅 Windows 文档中的[篡改防护防止安全设置更改](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)。 
+
+#### <a name="advanced-settings-for-windows-defender-firewall-are-now-generally-available-----5317392---------"></a>Windows Defender 防火墙高级设置现在已正式发布 <!--  5317392       -->  
+[用于终结点保护的 Windows Defender 自定义防火墙规则](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices)（配置为设备配置文件的一部分）已脱离公共预览版，并已正式发布 (GA)。  可以使用这些规则指定应用程序、网络地址和端口的入站和出站行为。 这些规则已在 7 月作为公共预览版发布。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="scope-tags-now-support-terms-of-use-policies----2358863-idmiss---"></a>作用域标记现在支持“使用条款”策略 <!-- 2358863 idmiss -->
+现在，你可以将[作用域标记](scope-tags.md)分配给“使用条款”策略。 为此，请转到“Intune”   > “设备注册”   > “条款和条件”  > 在列表中选择一项 >“属性”   > “作用域标记”  > 选择作用域标记。
 
 ## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日当周
 
@@ -333,7 +517,7 @@ Android 设备管理员注册选项已添加到“Android 注册”页（依次�
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="updates-for-enrollment-restrictions-----2871968---"></a>更新了注册限制  <!-- 2871968 -->
-新租户的注册限制已更新为，默认允许 Android Enterprise 工作配置文件。 现有租户不会有任何变化。 若要使用 Android Enterprise 工作配置文件，仍需[将 Intune 帐户连接到托管的 Google Play 帐户](https://docs.microsoft.com/intune/connect-intune-android-enterprise)。
+新租户的注册限制已更新为，默认允许 Android Enterprise 工作配置文件。 现有租户不会有任何变化。 若要使用 Android Enterprise 工作配置文件，仍需[将 Intune 帐户连接到托管的 Google Play 帐户](connect-intune-android-enterprise.md)。
 
 #### <a name="ui-updates-for-apple-enrollment-and-enrollment-restrictions---4089575-4089579----"></a>更新了用于 Apple 注册和注册限制的 UI <!--4089575, 4089579  -->
 以下两个过程都使用向导样式的用户界面：
@@ -341,7 +525,7 @@ Android 设备管理员注册选项已添加到“Android 注册”页（依次�
 - 注册限制创建。 有关详细信息，请参阅[创建注册限制](enrollment-restrictions-set.md)。
 
 #### <a name="handling-pre-configuration-of-corporate-device-identifiers-for-android-q-devices----4711509--idmiss---"></a>处理如何预配置 Android Q 设备的企业设备标识符 <!-- 4711509  idmiss -->
-在 Android Q (v10) 中，Google 将撤消旧版托管（设备管理员）Android 设备上的 MDM 代理收集设备标识符信息的功能。  Intune 有一项功能，可便于 IT 管理员[预配置设备序列号或 IMEI 列表](https://docs.microsoft.com/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number)，以便自动将这些设备标记为企业所有。 此功能不适用于由设备管理员托管的 Android Q 设备。  无论设备的序列号或 IMEI 是否已上传，设备在 Intune 注册过程中始终被视为个人设备。  注册后，可以手动将所有权切换给企业。  这只影响新注册，而现有已注册设备则不受影响。  使用工作配置文件托管的 Android 设备不受此更改的影响，并将继续按目前的方式运行。  另外，注册为设备管理员的 Android Q 设备无法再将 Intune 控制台中的序列号或 IMEI 作为设备属性进行报告。
+在 Android Q (v10) 中，Google 将撤消旧版托管（设备管理员）Android 设备上的 MDM 代理收集设备标识符信息的功能。  Intune 有一项功能，可便于 IT 管理员[预配置设备序列号或 IMEI 列表](corporate-identifiers-add.md#identify-corporate-owned-devices-with-imei-or-serial-number)，以便自动将这些设备标记为企业所有。 此功能不适用于由设备管理员托管的 Android Q 设备。  无论设备的序列号或 IMEI 是否已上传，设备在 Intune 注册过程中始终被视为个人设备。  注册后，可以手动将所有权切换给企业。  这只影响新注册，而现有已注册设备则不受影响。  使用工作配置文件托管的 Android 设备不受此更改的影响，并将继续按目前的方式运行。  另外，注册为设备管理员的 Android Q 设备无法再将 Intune 控制台中的序列号或 IMEI 作为设备属性进行报告。
 
 #### <a name="icons-have-changed-for-android-enterprise-enrollments-work-profile-dedicated-devices-and-fully-managed-devices----4977730---"></a>更改了用于 Android Enterprise 注册（工作配置文件、专用设备和完全托管设备）的图标 <!-- 4977730 -->
 Android Enterprise 注册配置文件的图标已更改。 若要查看新图标，请先依次转到“Intune”   > “注册”   > “Android 注册”  ，再查看“注册配置文件”  下。
@@ -467,7 +651,7 @@ iOS 应用管理提示中的公司名称将替换当前的“i.manage.microsoft.
 #### <a name="some-kiosk-settings-on-ios-devices-are-set-using-block-replacing-allow----4404075----"></a>iOS 设备上的一些展台设置是使用“阻止”（替代“允许”）设置的 <!-- 4404075  -->
 在 iOS 设备上创建设备限制配置文件时（“设备配置”   > “配置文件”   > “创建配置文件”   > 平台为“iOS”  >配置文件类型为“设备限制”  >“展台”  ），可以设置“自动锁定”  、“响铃切换”  、“屏幕旋转”  、“屏幕睡眠按钮”  和“音量按钮”  。 
 
-在此次更新中，值是“阻止”  （阻止此功能）或“未配置”  （允许此功能）。 若要查看设置，请转到[允许或限制功能的 iOS 设备设置](device-restrictions-ios.md#kiosk-supervised-only)。 
+在此次更新中，值是“阻止”  （阻止此功能）或“未配置”  （允许此功能）。 若要查看设置，请转到[允许或限制功能的 iOS 设备设置](device-restrictions-ios.md#kiosk)。 
 
 适用于：iOS
 
@@ -668,7 +852,7 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 
 
 #### <a name="intune-user-interface-update---autopilot-enrollment-profile-creation-----4593669---"></a>Intune 用户界面更新 - Autopilot 注册配置文件创建  <!-- 4593669 -->
-用于创建 Autopilot 注册配置文件的用户界面已更新为与 Azure 用户界面样式保持一致。 有关详细信息，请参阅[创建 Autopilot 注册配置文件](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile)。 接下来，其他 Intune 方案将更新为此新 UI 样式。
+用于创建 Autopilot 注册配置文件的用户界面已更新为与 Azure 用户界面样式保持一致。 有关详细信息，请参阅[创建 Autopilot 注册配置文件](enrollment-autopilot.md#create-an-autopilot-deployment-profile)。 接下来，其他 Intune 方案将更新为此新 UI 样式。
 
 #### <a name="enable-autopilot-reset-for-all-windows-devices----4225665---"></a>为所有 Windows 设备启用 Autopilot 重置 <!-- 4225665 -->
 Autopilot 重置现在适用于所有 Windows 设备，甚至包括那些未配置为使用注册状态页的设备。 如果在初始设备注册过程中未为设备配置注册状态页，则设备将在登录后直接转到桌面。 可能最多需要 8 小时才能同步并在 Intune 中显示符合。 有关详细信息，请参阅[使用远程 Windows Autopilot 重置功能重置设备](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote)。
@@ -917,7 +1101,7 @@ Microsoft Visio Pro for Office 365 现在称为 Microsoft Visio Online 计划 2 
 Intune 管理员可以指定 Intune APP“限制使用其他应用剪切、复制和粘贴”策略设置的例外情况  。  管理员可以指定可能会从托管应用中剪切或复制的字符数。 此设置允许将指定数量的字符共享到任何应用，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制。 请注意，适用于 Android 的 Intune 公司门户应用版本需要 5.0.4364.0 或更高版本。 有关详细信息，请参阅 [iOS 数据保护](app-protection-policy-settings-ios.md#data-protection)、[Android 数据保护](app-protection-policy-settings-android.md#data-protection)和[查看客户端应用保护日志](app-protection-policy-settings-log.md#app-protection-policy-settings)。
 
 #### <a name="office-deployment-tool-odt-xml-for-office-proplus-deployment----3192477-----"></a>用于进行 Office ProPlus 部署的 Office 部署工具 (ODT) XML <!-- 3192477   -->
-在 Intune 管理控制台中创建 Office Pro Plus 实例时，将能够提供 Office 部署工具 (ODT) XML。 如果现有的 Intune UI 选项无法满足需求，这将允许进行更多自定义。 有关详细信息，请参阅[使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](https://docs.microsoft.com/intune/apps-add-office365)以及 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
+在 Intune 管理控制台中创建 Office Pro Plus 实例时，将能够提供 Office 部署工具 (ODT) XML。 如果现有的 Intune UI 选项无法满足需求，这将允许进行更多自定义。 有关详细信息，请参阅[使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](apps-add-office365.md)以及 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
 
 #### <a name="app-icons-will-now-be-displayed-with-an-automatically-generated-background----1429026----"></a>现在将显示自动生成背景的应用图标 <!-- 1429026  -->
 在 Windows 公司门户应用中，现在将显示应用图标，其中的背景根据图标主色（如果可检测到）自动生成。 如果适用，此背景将替换以前应用磁贴上显示的灰色边框。 用户将在 10.3.3451.0 之后的公司门户版本中看到此更改。
@@ -1043,7 +1227,7 @@ Microsoft Edge 将增加对最终用户体验的改进，支持与 Intune 托管
 在 Intune 中，选择“客户端应用” > “应用”>“应用名称”>“设备安装状态”    。 “状态详细信息”列中将提供新的错误消息  。
 
 #### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780----"></a>适用于 Windows 10 的公司门户应用中的全新应用类别屏幕<!-- 3834780  -->
-添加了名为“应用类别”的新屏幕，以改善适用于 Windows 10 的公司门户中的应用浏览和选择体验  。 用户现在可以看到他们的应用按照“特别推荐”、“教育”和“工作效率”等类别进行排序    。 此更改将出现在公司门户 10.3.3451.0 版及更高版本中。 要查看新屏幕，请参阅[应用 UI 中的新增功能](https://docs.microsoft.com/intune/whats-new-app-ui)。 有关公司门户中应用的详细信息，请参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)。  
+添加了名为“应用类别”的新屏幕，以改善适用于 Windows 10 的公司门户中的应用浏览和选择体验  。 用户现在可以看到他们的应用按照“特别推荐”、“教育”和“工作效率”等类别进行排序    。 此更改将出现在公司门户 10.3.3451.0 版及更高版本中。 要查看新屏幕，请参阅[应用 UI 中的新增功能](whats-new-app-ui.md)。 有关公司门户中应用的详细信息，请参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)。  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI 合规性应用 <!-- 1455231 doc-work-item -->
 使用 [Intune 合规性（数据仓库）](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)应用访问 Power BI Online 中的 Intune 数据仓库。 使用此 Power BI 应用，可立即访问和共享预创建的报表，无需任何设置，也无需离开 Web 浏览器。 有关详细信息，请参阅[更改日志 - Power BI 合规性应用](reports-changelog.md#power-bi-compliance-app)。
