@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,14 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04b864689bce1814eba78dc2435905d4df82e8c0
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 2358ec854e9cc78cbc36570c45a96b98d2844f5d
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022681"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302586"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 Wi-Fi 设置
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 iOS 设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，添加 PKS 或 SCEP 证书等。
 
@@ -33,6 +35,9 @@ ms.locfileid: "69022681"
 ## <a name="before-you-begin"></a>在开始之前
 
 [创建设备配置文件](device-profile-create.md)。
+
+> [!NOTE]
+> 这些设置适用于所有注册类型。 有关注册类型的详细信息，请参阅[iOS 注册](ios-enroll.md)。
 
 ## <a name="basic-profiles"></a>基本配置文件
 
@@ -74,18 +79,12 @@ ms.locfileid: "69022681"
     - 服务器信任   - 证书服务器名称  ：将由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称添加到无线网络访问服务器  。 例如：添加 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 输入此信息时，可在用户设备连接到此 Wi-Fi 网络时，绕过该设备上显示的动态信任窗口。
     - 用于服务器验证的根证书  ：选择现有的受信任根证书配置文件。 此证书使客户端可以信任无线网络访问服务器的证书。
 
-      选择“确定”，保存所做更改  。
-
     - 客户端身份验证   - 用于客户端身份验证的客户端证书（标识证书）  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
-
-      选择“确定”，保存所做更改  。
 
   - EAP-TTLS  ：此外请输入：
 
     - 服务器信任   - 证书服务器名称  ：将由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称添加到无线网络访问服务器  。 例如：添加 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 输入此信息时，可在用户设备连接到此 Wi-Fi 网络时，绕过该设备上显示的动态信任窗口。
     - 用于服务器验证的根证书  ：选择现有的受信任根证书配置文件。 此证书使客户端可以信任无线网络访问服务器的证书。
-
-      选择“确定”，保存所做更改  。
 
     - 客户端身份验证  - 选择一种身份验证方法  。 选项包括：
 
@@ -96,8 +95,6 @@ ms.locfileid: "69022681"
 
       - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
 
-        选择“确定”，保存所做更改  。
-
       - 标识隐私（外部标识）  ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
   - **LEAP**
@@ -107,15 +104,11 @@ ms.locfileid: "69022681"
     - 服务器信任   - 证书服务器名称  ：将由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称添加到无线网络访问服务器  。 例如：添加 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 输入此信息时，可在用户设备连接到此 Wi-Fi 网络时，绕过该设备上显示的动态信任窗口。
     - 用于服务器验证的根证书  ：选择现有的受信任根证书配置文件。 此证书使客户端可以信任无线网络访问服务器的证书。
 
-      选择“确定”，保存所做更改  。
-
     - 客户端身份验证  - 选择一种身份验证方法  。 选项包括：
 
       - 用户名和密码  ：提示用户输入用户名和密码以对连接进行身份验证。 
 
       - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
-
-        选择“确定”，保存所做更改  。
 
       - 标识隐私（外部标识）  ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
@@ -124,12 +117,8 @@ ms.locfileid: "69022681"
   - 手动  ：输入代理服务器地址  作为 IP 地址及其端口号  。
   - 自动  ：使用文件配置代理服务器。 输入包含配置文件的代理服务器 URL  （例如 `http://proxy.contoso.com`）。
 
-选择“确定”   > “创建”  以保存所做更改。 配置文件随即创建并出现在配置文件列表中。
-
 ## <a name="next-steps"></a>后续步骤
 
-配置文件已创建，但未执行任何操作。 下一步，[分配此配置文件](device-profile-assign.md)。
+配置文件已创建，但未执行任何操作。 下一步是[分配此配置文件](device-profile-assign.md)，并[监视配置文件状态](device-profile-monitor.md)。
 
-## <a name="more-resources"></a>更多资源
-
-[Wi-Fi 设置概述](wi-fi-settings-configure.md)，包含其他可用平台。
+在[android](wi-fi-settings-android.md)、 [android Enterprise](wi-fi-settings-android-enterprise.md)、 [macOS](wi-fi-settings-macos.md)和[Windows 10](wi-fi-settings-windows.md)设备上配置 wi-fi 设置。

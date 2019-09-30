@@ -6,9 +6,8 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/11/2019
+ms.date: 08/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
-ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
-ms.translationtype: HT
+ms.openlocfilehash: 0aaa305ac216e0f80f82116e626b21f3ae7a8510
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59571801"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303317"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
@@ -32,7 +31,7 @@ ms.locfileid: "59571801"
 随时了解 Intune 数据仓库的更新。
 
 ## <a name="1903-part-2"></a>1903（第 2 部分）
-发行日期：2019 年 4 月
+发行日期：2019 年 4 月 
 
 ### <a name="beta-changes"></a>beta 版本更改
 
@@ -46,9 +45,9 @@ ms.locfileid: "59571801"
 |    workPlaceJoinStateTypes             |    已删除    |    请改用 [devices](intune-data-warehouse-collections.md#devices) 和 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 集合中的 `azureAdRegistered` 属性。                                                                                                                                                                                                             |
 |    clientRegistrationStateTypes        |    已删除    |    请改用 [deviceRegistrationStates](intune-data-warehouse-collections.md#deviceregistrationstates)。                                                                                                                                                                                                                                                                             |
 |    currentUser                         |    已删除    |    请改用 [users](intune-data-warehouse-collections.md#users) 集合。                                                                                                                                                                                                                                                                                                      |
-|    mdmDeviceInventoryHistories         |    已删除    |    许多属性都是冗余的，或者现在可在 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 或 [devices](intune-data-warehouse-collections.md#devices) 集合中找到。 这两个集合中未列出的所有 mdmDeviceInventoryHistories 属性都不再可用。 请查看下面的详细信息。    |
+|    mdmDeviceInventoryHistories         |    已删除    |    许多属性都是冗余的，或者现在可在 [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) 或 [devices](intune-data-warehouse-collections.md#devices) 集合中找到。 这两个集合中未列出的所有 mdmDeviceInventoryHistories 属性都不再可用  。 请查看下面的详细信息。    |
 
-下表列出了以前在 mdmDeviceInventoryHistories 集合中找到的旧属性以及 change/replacement。 已删除 mdmDeviceInventoryHistories 中未在下面列出的所有属性。
+下表列出了以前在 mdmDeviceInventoryHistories 集合中找到的旧属性以及 change/replacement  。 已删除 mdmDeviceInventoryHistories 中未在下面列出的所有属性  。
 
 |    旧属性                |    Change/replacement                                                           |
 |--------------------------------|---------------------------------------------------------------------------------|
@@ -172,25 +171,25 @@ ms.locfileid: "59571801"
 |    isCurrent                |    已删除               |
 
 ## <a name="1903"></a>1903
-发行时间：2019 年 3 月
+发行时间：2019 年 3 月 
 
 ### <a name="v10-changes-reflecting-back-to-beta"></a>V1.0 更改在 beta 版本中体现
 V1.0 在 1808 版本首次引入后，它在某些重要方面与 beta 版 API 有所不同。 在 1903 版本中，这些更改将在 beta 版 API 中体现。 如果有使用 beta 版 API 的重要报表，我们强烈建议将这些报表切换到 V1.0 以避免中断性变更。 要详细了解数据仓库 API 版本和后向兼容性，请参阅 [API 版本信息](reports-api-url.md)。 
 
 ## <a name="1902"></a>1902 
-发布时间：2019 年 2 月
+发布时间：2019 年 2 月 
 
 ### <a name="power-bi-compliance-app"></a>Power BI 合规性应用 
 
-使用 [Intune 合规性（数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)应用访问 Power BI Online 中的 Intune 数据仓库。 使用此 Power BI 应用，可立即访问和共享预创建的报表，无需任何设置，也无需离开 Web 浏览器。 
+使用 [Intune 合规性（数据仓库）](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)应用访问 Power BI Online 中的 Intune 数据仓库。 使用此 Power BI 应用，可立即访问和共享预创建的报表，无需任何设置，也无需离开 Web 浏览器。 
 
 > [!NOTE]
 > 可将两个附加筛选器应用于 Intune Compliance 应用。
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>将附加筛选器添加到 Intune Compliance 应用
-1. 在 Web 浏览器中打开 [Intune Compliance（数据仓库）](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)应用。
-2. 在“complianceStatus”筛选器中单击“不符合设备”并选择“不符合”。 
-3. 在“complianceStatus”筛选器中单击“未知设备”并选择“尚未提供”。 
+1. 在 Web 浏览器中打开 [Intune Compliance（数据仓库）](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)应用。
+2. 在“complianceStatus”筛选器中单击“不符合设备”并选择“不符合”    。 
+3. 在“complianceStatus”筛选器中单击“未知设备”并选择“尚未提供”    。 
 
 ## <a name="1812"></a>1812 
 _2018 年 12 月发布_
@@ -200,7 +199,7 @@ _2018 年 12 月发布_
 注册活动集合现已在 v1.0 中提供。 可以使用此集合来了解环境中的注册失败量和趋势。 有关详细信息，请参阅 [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities)、[enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses)、[enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) 和 [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons)。
 
 ## <a name="1808"></a>1808
-发布于 2018 年 8 月
+发布于 2018 年 8 月 
 
 ### <a name="v10-collections"></a>v1.0 集合  
 
@@ -212,15 +211,15 @@ _2018 年 12 月发布_
 
 
 ## <a name="1805"></a>1805
-发行时间：2018 年 5 月
+发行时间：2018 年 5 月 
 
-### <a name="correction-to-device-count-in-devices-collection"></a>更正“设备”集合中的设备计数 
+### <a name="correction-to-device-count-in-devices-collection"></a>更正“设备”  集合中的设备计数 
 
-已对“设备”集合进行修复，可能会降低 `isDeleted` 属性筛选的总设备计数。 此下降是更正的结果，而非错误。 有关“设备”集合的详细信息，请参阅[设备实体引用](reports-ref-devices.md)。 
+已对“设备”  集合进行修复，可能会降低 `isDeleted` 属性筛选的总设备计数。 此下降是更正的结果，而非错误。 有关“设备”  集合的详细信息，请参阅[设备实体引用](reports-ref-devices.md)。 
 
 
 ## <a name="1801"></a>1801
-2018 年 1 月发布
+2018 年 1 月发布 
 
 ### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Intune 数据仓库仅应用程序身份验证 <!-- 1867540 -->
 
@@ -229,7 +228,7 @@ _2018 年 12 月发布_
 ### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Azure AD 和 Intune 凭据要求 <!-- 2077525 -->
 
 - 在访问 Intune 数据仓库（包括 API）时，不再需要向用户分配 Intune 许可证。
-- Intune 角色名称已从“报表”更改为“Intune 数据仓库”。 
+- Intune 角色名称已从“报表”更改为“Intune 数据仓库”   。 
 
     有关详细信息，请参阅 [Azure AD 和 Intune 凭据要求](reports-api-url.md#azure-ad-and-intune-credential-requirements)。
 
@@ -239,20 +238,20 @@ _2018 年 12 月发布_
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>数据仓库数据模型中的新实体 <!-- 2077804 -->
 
- - 已添加实体 [MobileAppDeviceuserInstallStatus](reports-ref-application.md)。 MobileAppDeviceUserInstallStatus 表示给定设备和用户的移动应用安装状态。
- - 已添加实体 [MobileAppInstallState](reports-ref-application.md#mobileappinstallstate)。 MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的移动应用程序的安装状态。 
+- 已添加实体 [MobileAppDeviceuserInstallStatus](reports-ref-application.md)  。 MobileAppDeviceUserInstallStatus  表示给定设备和用户的移动应用安装状态。
+- 已添加实体 [MobileAppInstallStates](reports-ref-application.md#mobileappinstallstates)  。 MobileAppInstallState 实体表示已分配到包含设备和/或用户的组的移动应用程序的安装状态  。 
 
 ## <a name="1710"></a>1710
-发布于 2017 年 11 月
+发布于 2017 年 11 月 
 
 ### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1544273---"></a>名为“当前用户”的新实体集合仅限于当前活动的用户数据 <!-- 1544273 -->
 
-User 实体集合包含企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
+User  实体集合包含企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。 这些记录包含数据收集期间的用户状态（即使用户已被删除）。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
-相比之下，新的“当前用户”实体集合只包含尚未被删除的用户。 “当前用户”实体集合仅包含当前活动的用户。 有关“当前用户”实体集合的信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。
+相比之下，新的“当前用户”  实体集合只包含尚未被删除的用户。 “当前用户”  实体集合仅包含当前活动的用户。 有关“当前用户”  实体集合的信息，请参阅[引用当前用户实体](reports-ref-current-user.md)。
 
 ## <a name="1709"></a>1709
-发布于 2017 年 10 月
+发布于 2017 年 10 月 
 
 ### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>添加到 Intune 数据仓库数据模型的用户设备关联实体集合 <!-- 1187917 -->
 
@@ -260,9 +259,9 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>数据仓库数据模型中的新实体 <!-- 1479526 --><!-- -->
 
- - 添加了实体 [UserDeviceAssociation](reports-ref-user-device.md)。 UserDeviceAssociation 包含组织中的用户设备关联。 现在可使用用户设备关联信息（该信息将用户和设备实体集合相关联）生成报表和数据可视化效果。  
- - 添加了 [IntuneManagementExtension](reports-ref-intunemanagementextension.md) 实体。 IntuneManagementExtension 包含移动设备的实体，可用于跟踪版本和安装状态等信息。
+- 添加了实体 [UserDeviceAssociation](reports-ref-user-device.md)  。 UserDeviceAssociation 包含组织中的用户设备关联  。 现在可使用用户设备关联信息（该信息将用户和设备实体集合相关联）生成报表和数据可视化效果。  
+- 添加了 [IntuneManagementExtension](reports-ref-intunemanagementextension.md) 实体  。 IntuneManagementExtension 包含移动设备的实体，可用于跟踪版本和安装状态等信息  。
 
 ## <a name="next-steps"></a>后续步骤
- - 了解 [Intune 每周新增功能](whats-new.md)。 另外，还可找到即将发生的更改、有关服务的重要说明，以及有关过去版本的信息。
- - 请参阅 [Microsoft Intune 博客](https://go.microsoft.com/fwlink/?LinkID=273882)。
+- 了解 [Intune 每周新增功能](whats-new.md)。 另外，还可找到即将发生的更改、有关服务的重要说明，以及有关过去版本的信息。
+- 请参阅 [Microsoft Intune 博客](https://go.microsoft.com/fwlink/?LinkID=273882)。
