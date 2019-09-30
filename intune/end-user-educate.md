@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569774"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239794"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何使最终用户了解 Microsoft Intune
 
@@ -58,9 +57,9 @@ __Intune 会给用户带来哪些不便？__  认识并尊重用户安装应用�
 
 * __提供易于访问的内容。__ 告知用户可以在哪里为其设备问题寻求帮助。 当[自定义公司门户](company-portal-customize.md)时，请确保包含 IT 管理员的联系信息。
 
-* __提供个性化内容。__ 提供特定于你的组织部署的说明。 该行为向会用户表明你关心他们的体验。 使用此[可自定义的 Intune 用户注册模板](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c)为用户创建你自己的注册说明。
+* __提供个性化内容。__ 提供特定于你的组织部署的说明。 该行为向会用户表明你关心他们的体验。 使用此可自定义的 [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) 为用户创建你自己的注册说明。
 
-* __寻找不同的沟通方式。__ 用户有[不同的学习方式](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)和偏好的信息使用方式。 对于视觉型学习者，Intune 在第 9 频道提供了[如何注册各种设备类型的视频版本](https://channel9.msdn.com/Series/IntuneEnrollment)。 视频可以直接嵌入到你自己的 [SharePoint 站点](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)中。 也可以下载视频或音轨的本地副本。
+* __寻找不同的沟通方式。__ 用户有[不同的学习方式](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/)和偏好的信息使用方式。 对于视觉型学习者，Intune 在第 9 频道提供了[如何注册各种设备类型的视频版本](https://channel9.msdn.com/Series/IntuneEnrollment)。 视频可以直接嵌入到你自己的 [SharePoint 站点](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)中。 也可以下载视频或音轨的本地副本。
 
 * __深入了解。__ Intune 的用户体验也会影响工作效率。 了解用户体验可以让你更轻松地解决设备和用户问题。 例如，可以学习和了解用户获取应用的方式。 提前了解此信息可以更加快速容易地诊断和解决问题。
 

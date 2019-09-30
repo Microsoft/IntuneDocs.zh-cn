@@ -7,7 +7,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 11/29/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32be10340e1e77d2f994c5f038e6328ea42a6303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d158cb01dbd13f032916f4dc2bf443ed0f6bfaae
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394776"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "71238588"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune 的常见使用方式
 
@@ -56,7 +55,7 @@ Intune 还支持对需要安全访问本地数据的移动应用（例如业务�
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>保护 Office 365 电子邮件和数据以供移动设备安全访问
 在 Office 365 中保护公司数据（电子邮件、文档、即时消息、联系人）既方便了你，又给用户带来了更加顺畅的体验。
 
-Intune 和 Microsoft 企业移动性 + 安全性提供了独一无二的集成式条件性访问解决方案，确保用户、应用或设备在符合公司的合规性要求（已执行[多重身份验证](multi-factor-authentication.md)，已向 Intune 注册，使用托管应用、受支持的 OS 版本、设备 PIN 和低用户风险配置文件等等）之前无法访问 Office 365 数据。
+Intune 和 Microsoft 企业移动性 + 安全性提供了独一无二的集成式条件性访问解决方案，确保用户、应用或设备在符合公司的合规性要求（已执行[多重身份验证](multi-factor-authentication.md)，已向 Intune 注册，使用托管应用、受支持的 OS 版本、设备 pin 和低用户风险配置文件等等）之前无法访问 Office 365 数据。
 
 
 相应应用商店中的 Office 移动应用备有可通过 Intune 配置的数据包含策略。 这使你能够避免与未由 IT 管理的应用（例如本机电子邮件应用）和存储位置（例如 Dropbox）共享数据。 此功能完全内置于 Office 365 和 EMS 中。 无需部署其他基础结构便可获得此功能。

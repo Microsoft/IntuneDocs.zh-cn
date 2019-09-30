@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569124"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239389"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>帮助最终用户理解公司门户应用消息
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> 以下信息仅适用于 Android 6.0 及更高版本设备。
+> 以下信息仅适用于 Android 6.0 及更高版本和 iOS 10 及更高版本的设备。
 
 了解最终用户可能在公司门户中看到的不同应用消息。 这些应用消息通常在注册过程中的不同阶段显示。 了解消息出现的位置、消息的意义以及如果用户拒绝访问将出现的情况。 此外，了解如何最好地向用户说明消息。
 
 - __是否允许公司门户发起和管理电话呼叫?__
 - __是否允许公司门户访问设备上的照片、媒体和文件?__
+
+> [!NOTE]
+> 我们不会出于任何原因向任何第三方出售我们服务收集的任何数据。
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>是否允许公司门户发起和管理电话呼叫?
 
@@ -57,7 +59,7 @@ ms.locfileid: "59569124"
 如果用户稍后决定允许访问，可转到“设置” > “应用” > “公司门户” > “权限” > “电话”，然后开启权限。
 
 ### <a name="how-to-explain-this-to-your-users"></a>如何就此向用户解释
-将用户转到[在 Intune 中注册 Android 设备](/intune-user-help/enroll-your-device-in-intune-android)，使其获取详细信息。
+将用户转到[在 Intune 中注册 Android 设备](/intune-user-help/enroll-device-android-company-portal)，使其获取详细信息。
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>是否允许公司门户访问你的联系人？
 
@@ -78,7 +80,7 @@ ms.locfileid: "59569124"
 如果用户稍后决定允许访问，可转到“设置” > “应用” > “公司门户” > “权限” > “电话”，然后开启权限。
 
 ### <a name="how-to-explain-this-to-your-users"></a>如何就此向用户解释
-将用户转到[在 Intune 中注册 Android 设备](/intune-user-help/enroll-your-device-in-intune-android)，使其获取详细信息。
+将用户转到[在 Intune 中注册 Android 设备](/intune-user-help/enroll-device-android-company-portal)，使其获取详细信息。  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>是否允许公司门户访问你设备上的照片、媒体和文件？
 
@@ -140,5 +142,5 @@ ms.locfileid: "59569124"
     此时，应该能够启动并使用公司应用。
 
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 [最终用户需了解的 Intune 使用情况](end-user-educate.md)

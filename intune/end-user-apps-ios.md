@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394247"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239324"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 用户如何获取其应用
 
@@ -36,7 +35,7 @@ ms.locfileid: "57394247"
 
 **托管应用** - 可通过策略管理，并由 Intune“包装”或使用 Intune 应用软件开发工具包 (SDK) 生成的应用。 这些应用可以由 Intune 进行管理，应用保护策略可以应用于它们。
 
-**非托管应用** - 可通过策略管理，并且未由 Intune 包装或不包含 Intune App SDK 的应用。 应用程序策略不能应用于这些应用。
+**非托管应用**--用户可从 iOS App Store 下载的未与 Intune 应用 SDK 集成的应用。 Intune 不能控制这些应用的分发、管理或选择性擦除。  
 
 Apple 限制禁止公司门户应用列出业务线应用和托管应用商店应用。 要解决这一问题，用户可根据 iOS 公司门户应用中磁贴的指示，在同一位置（公司门户网站）切换到其他视图，以查看所有应用。
 
@@ -53,7 +52,7 @@ Apple 限制禁止公司门户应用列出业务线应用和托管应用商店�
 
 有关如何添加应用的相关信息，请参阅[如何将应用添加到 Microsoft Intune](apps-add.md)。
 
-### <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>另请参阅
 [Android 用户如何获取其应用](end-user-apps-android.md)
 
 [Windows 用户如何获取其应用](end-user-apps-windows.md)

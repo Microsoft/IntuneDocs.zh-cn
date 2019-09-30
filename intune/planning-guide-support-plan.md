@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548327"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166810"
 ---
 # <a name="develop-a-support-plan"></a>制定支持计划
 
@@ -84,7 +84,7 @@ ms.locfileid: "67548327"
 
 - 问与答
 
-[Intune 文档](https://docs.microsoft.com/intune/)提供 Intune 概述、详细的功能说明及一些故障排除信息。 [Intune 论坛](https://social.technet.microsoft.com/Forums/home)是基于社区的资源，涉及 Intune 文档中未涵盖的问题及主题。
+[Intune 文档](index.yml)提供 Intune 概述、详细的功能说明及一些故障排除信息。 [Intune 论坛](https://social.technet.microsoft.com/Forums/home)是基于社区的资源，涉及 Intune 文档中未涵盖的问题及主题。
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>让支持团队及早参与可带来哪些机会？
 

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166328"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71279898"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
 
@@ -66,38 +66,6 @@ https://firebase.google.com/docs/cloud-messaging/
 #### <a name="additional-information"></a>其他信息 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>更改计划：Intune 将于 9 月开始支持 iOS 11 及更高版本 <!-- 4665324-->
-我们预计 Apple 将于 9 月发布 iOS 13。 Intune 注册、公司门户和 Managed Browser 将在 iOS 13 发布后不久开始支持 iOS 11 及更高版本。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-如果 iOS 11.0 及更高版本上支持 O365 移动应用，这可能不会对你造成任何影响。你可能已升级了 OS 或设备。 但如果你拥有下面列出的任何设备，或者决定要注册下面列出的任何设备，请注意，以下设备不支持 iOS 10 以上的 OS。 需将这些设备升级为支持 iOS 11 或更高版本的设备：
-
-- iPhone 5
-- iPhone 5c
-- iPad（第 4 代）
-
-如果使用应用程序保护策略 (APP)，则还可以设置“要求最低 iOS 操作系统(仅警告)”访问设置。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-检查 Intune 报告，查看可能受影响的设备或用户。 转到“设备”   > “所有设备”  ，并按“OS”进行筛选。 可以添加其他列，帮助确定组织中哪些人员拥有运行 iOS 10 的设备。 要求最终用户在 9 月前将其设备升级到支持的 OS 版本。
-
-### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>更改计划：支持 Intune App SDK for iOS 的 8.1.1 版及更高版本 <!-- 3586942-->
-从 2019 年 9 月起，Intune 将通过 Intune App SDK 8.1.1 及更高版本支持 iOS 应用。 不再支持使用低于 SDK 8.1.1 版本构建的应用。 此更改将随 Apple iOS 13 的发布（预计将于 9 月发布，并且已在 MC181399 中公布）而生效。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-借助 Intune App SDK 或 App Wrapping 集成，可通过数据加密保护公司数据免受未经批准的应用程序和用户的影响。 Intune 应用保护策略 (APP) 启用加密时，Intune App SDK for iOS 将默认使用 256 位加密密钥。 在此更改之后，在 SDK 8.1.1 之前的版本上使用 128 位加密密钥的任何 iOS 应用都不能再与集成了 SDK 8.1.1 或使用 256 位密钥的应用程序共享数据。 所有的 iOS 应用都需要 SDK 8.1.1 版本或更高版本，才能进行受保护的数据共享。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
-检查 Microsoft、第三方和业务线 (LOB) 应用。 确保所有受 Intune APP 保护的应用程序都使用 SDK 版本 8.1.1 或更高版本。
-
-- 对于 LOB 应用：可能需要重新发布与 SDK 8.1.1 版本或更高版本集成的应用。 建议使用最新的 SDK 版本。 要了解如何针对应用保护策略准备好 LOB 应用，请参阅[针对应用保护策略准备好业务线应用](../apps-prepare-mobile-application-management.md)。
-- Microsoft/第三方应用：确保向用户部署这些应用的最新版本。
-
-还应更新文档或开发人员指南（如适用），将此更改添加到其中，以支持 SDK。
-
-#### <a name="additional-information"></a>其他信息
-[准备业务线应用以使用应用保护策略](../apps-prepare-mobile-application-management.md)
-
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>更改计划：Intune 中的新 Windows 更新设置 <!-- 4464404 -->
 从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重启(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。 
 
@@ -132,3 +100,19 @@ Intune 将于 10 月份支持 Android 5.x (Lollipop) 及更高版本。 使用�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 使用最新的 Intune App SDK 包装应用。 还可以设置“要求最低操作系统版本(仅警告)”条件启动设置来通知个人设备上的最终用户进行升级。
+
+
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 更改计划：即将结束对 Windows 7 的支持 <!-- 3042987 -->
+如我们在 2018 年 9 月发布的 MC148476 和在 2019 年 3 月再次发布的 MC176794 所述，将于 2020 年 1 月 14 日结束对 Windows 7 的延长支持。 到那时，Intune 将停止对运行 Windows 7 的设备的支持，因此我们可以将投资集中在支持较新的技术和提供出色的最终用户体验上。 在该日期后，有助于保护你的 Windows 7 PC 的技术协助和自动更新将不能再通过 Intune 获得。 Microsoft 强烈建议你在 2020 年 1 月之前迁移到 Windows 10，以避免所需服务或支持不再可用的情况。 有关 Windows 支持生命周期的详细信息，请参阅[此处](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+你收到此消息是因为你当前正在使用旧版 Intune PC 软件代理来管理 Windows 7 PC。 由于 Windows 7 延长支持结束之前的剩余时间已不到一年，我们强烈建议你的组织尽快开始升级到 Windows 10。 PC 管理功能直接内置于 Windows 10 操作系统中，你不再需要安装客户端代理，例如适用于 Windows 7 的 Intune 软件客户端。 从 Windows 8.1 开始，Microsoft 使用移动设备管理 (MDM) 体系结构来预配、配置、更新和管理 Windows PC。 设置 Intune 后，可以通过 MDM 通道[将 Windows 10 PC 注册到 Intune](..\windows-enroll.md)，从而简化 Windows 注册。 建议使用此“无代理”MDM 管理解决方案来管理 Windows 10 PC。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+我们鼓励你的组织立即考虑此操作计划：
+
+- 在 2020 年 1 月 14 日之前计划并将 Windows 7 队伍升级到 Windows 10。
+- 浏览 [Windows 10 部署支持](https://docs.microsoft.com/windows/deployment/)，了解有关如何将现有的 Windows 7 PC 队伍升级到 Windows 10 的详细信息。
+- 查看帮助实现 Microsoft 应用程序兼容性保证的快速跟踪人员所提供的[桌面应用保证](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1)。
+- 将现有的旧版 Intune 软件客户端托管设备转换为 Microsoft 推荐的解决方案，以便使用 MDM 管理来管理 Windows 10。 在 Azure 门户中使用 Intune 的 MDM 管理注册所有新的 Windows 10 PC。
+- 有关详细信息，请参阅[此处发布的博客](https://aka.ms/Windows7_Intune)。

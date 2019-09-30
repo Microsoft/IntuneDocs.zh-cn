@@ -6,9 +6,8 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 33d5c994e4a51542c39c61a1f2311fda5a0a7caf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567239"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71239508"
 ---
 # <a name="configure-a-custom-domain-name"></a>配置自定义域名
 
@@ -33,9 +32,9 @@ ms.locfileid: "59567239"
 
 组织注册 Microsoft 基于云的服务（如 Intune）时，你将获得一个 Azure Active Directory (AD) 中托管的初始域名，其形式如下所示：your-domain.onmicrosoft.com。 在此示例中，your-domain 是你在注册时选择的域名。 onmicrosoft.com 是分配给订阅中所添加帐户的后缀。 可通过为组织配置自定义域来访问 Intune，而不是使用订阅提供的域名。
 
-在创建用户帐户或同步本地 Active Directory 之前，我们强烈建议你决定是仅使用 .onmicrosoft.com 域还是添加一个或多个自定义域名。 要简化用户管理，请在添加用户前先设置自定义域。 这样，用户就能使用访问其他域资源所用的凭据进行登录。
+在创建用户帐户或同步本地 Active Directory 之前，我们强烈建议你决定是仅使用 .onmicrosoft.com 域还是添加一个或多个自定义域名。 要简化用户管理，请在添加用户前先设置自定义域。 通过设置客户域，用户就能使用访问其他域资源所用的凭据进行登录。
 
-在向 Microsoft 订阅基于云的服务时，该服务的实例将成为为你基于的云服务提供身份和目录服务的 Microsoft [Azure AD 租户](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)。 由于将 Intune 配置为使用组织自定义域名的任务对于其他 Azure AD 租户都相同，因此你可以使用[添加你的域](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)中的信息和过程。
+在向 Microsoft 订阅基于云的服务时，该服务的实例将成为为你基于的云服务提供身份和目录服务的 Microsoft [Azure AD 租户](https://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)。 由于将 Intune 配置为使用组织自定义域名的任务对于其他 Azure AD 租户都相同，因此你可以使用[添加你的域](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)中的信息和过程。
 
 > [!TIP]
 > 若要深入了解自定义域，请参阅 [Azure Active Directory 中自定义域名的概念性概述](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/)。
@@ -53,7 +52,10 @@ ms.locfileid: "59567239"
 4. “验证域”对话框将打开，为你提供用于在 DNS 托管提供者中创建 TXT 记录的值。
     - **GoDaddy 用户**：Microsoft 365 管理中心将你重定向到 GoDaddy 的登录页。 输入你的凭据并接受域更改权限协议后，自动创建 TXT 记录。 你还可以[创建 TXT 记录](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)。
     - **Register.com 用户**：按照[分步说明](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)创建 TXT 记录。
+5. [可能需要为 Intune 注册创建其他 DNS 记录](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium)。
 
 也可在 [Azure Active Directory 中执行](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)添加和验证自定义域的步骤。
 
 可了解更多[关于 Office 365 中的初始 onmicrosoft.com 域](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)的信息
+
+可了解更多关于如何通过创建将注册重定向到 Intune 服务器的 DNS CNAME 来[简化 Windows 注册（不使用 Azure AD Premium）](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium)的信息。

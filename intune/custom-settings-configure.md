@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3bd7deaf96d399dbf07e215309bf146b072c10f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 854e8fc7a46f431ce36c4e30682c196e6484b93e
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043024"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163112"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>使用 Intune 中的自定义设置创建配置文件
 
@@ -39,7 +39,7 @@ Microsoft Intune 含有许多内置设置，用于控制设备上的不同功能
 
 - [Outlook Web Access (OWA)](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
@@ -51,7 +51,7 @@ Microsoft Intune 含有许多内置设置，用于控制设备上的不同功能
 
 - [Outlook Web Access (OWA)](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc495e6356a35215943415e03a46496a72bddf1
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: c8c9375449e55d2e6cac511cb0e279355ec95294
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071047"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163274"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android 设备管理员注册
 
@@ -49,8 +49,9 @@ Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2
 
 默认情况下，Intune 允许使用设备管理员功能注册 Android 设备。
 
-1. 若准备管理移动设备，必须将移动设备管理 MDM 机构设置为“Microsoft Intune”  。 请参阅[设置 MDM 机构](mdm-authority-set.md)，了解有关说明。 第一次设置 Intune 以进行移动设备管理时，只需设置一次此项目
-2. [告知用户如何注册其设备](/intune-user-help/enroll-your-device-in-intune-android)。  
+1. 若准备管理移动设备，必须将移动设备管理 MDM 机构设置为“Microsoft Intune”。 请参阅[设置 MDM 机构](mdm-authority-set.md)，了解有关说明。 第一次设置 Intune 以进行移动设备管理时，只需设置一次此项目。
+2. 转到“Intune” > “设备注册” > “Android 注册” > “个人和企业所有的具有设备管理权限的设备” > “使用设备管理员管理设备”。
+3. [告知用户如何注册其设备](/intune-user-help/enroll-your-device-in-intune-android)。  
 
 用户注册后，可开始在 Intune 中管理其设备，包括[分配符合性策略](compliance-policy-create-android.md)、[管理应用](app-management.md)等。
 

@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459894"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238332"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>向用户分配许可证，以便他们能够在 Intune 中注册设备
 
@@ -45,7 +44,7 @@ ms.locfileid: "57459894"
 4. 现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
 
 > [!NOTE]
-> 用户仅在注册设备后才会显示在管理控制台中。 此外，你还可以选择要立即编辑的一组用户，为所选的用户选择添加或替换许可证。
+> 只有在使用 Intune PC 客户端注册了设备后，用户才会出现在经典 Intune 门户中。 此外，你还可以选择要立即编辑的一组用户，为所选的用户选择添加或替换许可证。
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>使用 Azure Active Directory 分配 Intune 许可证
 
@@ -63,7 +62,7 @@ ms.locfileid: "57459894"
 请参阅此[学校数据同步概述](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)，了解有关 SDS 的详细信息。
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>用户和设备许可证如何影响对服务的访问
-* 每个你向其分配用户软件许可证的**用户**，均可访问和使用联机服务和相关软件（包括 System Center 软件）来管理应用程序和多达 15 台的设备。
+* 每个你向其分配用户软件许可证的用户，均可访问和使用联机服务和相关软件（包括 System Center 软件）来管理应用程序和多达 15 台的 MDM 设备。 Intune PC 代理允许每个用户许可证对应 5 台物理计算机和 1 台虚拟机。
 * 可以从用户许可证中单独为任何设备购买许可证。 不需要将设备许可证分配给设备。 访问和使用在线服务及相关软件（包括 System Center 软件）的每台设备都必须拥有设备许可证。
 * 如果设备由多个用户使用，则每位用户均需要设备软件许可证，或所有用户都需要用户软件许可证。
 

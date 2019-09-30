@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460608"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239573"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支持的操作系统和浏览器
 
@@ -115,12 +114,12 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 ### <a name="intune-classic-portal"></a>Intune 经典门户
 
-Intune 经典功能（例如 Intune 电脑软件客户端和与 Mobile Threat Defense 合作伙伴的集成）仅适用于 Intune 经典门户 (https://manage.microsoft.com)。 Intune 经典门户需要 Silverlight 浏览器支持。
+Intune 经典门户仅用于管理向 Intune PC 软件客户端注册的设备 (https://manage.microsoft.com))。 Intune 经典门户需要 Silverlight 浏览器支持。
 
 以下 Silverlight 浏览器支持 Intune 控制台：
 - Internet Explorer 10 或更高版本
 - Google Chrome（42 版之前的版本）
-- 启用了 Silverlight 的 Mozilla Firefox [了解详细信息](https://go.microsoft.com/fwlink/?linkid=836872)
+- 启用了 Silverlight 的 Mozilla Firefox（56 版之前的版本）
 
 > [!Note]
 > Intune 经典门户不支持 Microsoft Edge 浏览器和移动浏览器，因为这些浏览器不支持 [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx)。
