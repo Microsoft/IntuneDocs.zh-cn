@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279898"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71726396"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>减少对 Android 设备管理员的支持 
-Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2.2 发布）是一种管理 Android 设备的方法。 不过，[Android Enterprise](../connect-intune-android-enterprise.md)（随 Android 5.0 发布）现在提供改进的管理功能。 为了实现更现代化、更丰富、更安全的设备管理，Google 正在减少新 Android 版本中对设备管理员的支持。
+Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2.2 发布）是一种管理 Android 设备的方法。 不过，[Android Enterprise](../enrollment/connect-intune-android-enterprise.md)（随 Android 5.0 发布）现在提供改进的管理功能。 为了实现更现代化、更丰富、更安全的设备管理，Google 正在减少新 Android 版本中对设备管理员的支持。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 由于 Google 的这些变化，Intune 用户将受到以下几个方面的影响： 
@@ -67,10 +67,11 @@ https://firebase.google.com/docs/cloud-messaging/
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>更改计划：Intune 中的新 Windows 更新设置 <!-- 4464404 -->
-从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重启(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。 
+从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重启(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
-如果在环境中管理 Windows 10 设备： 
+如果在环境中管理 Windows 10 设备：
+
 - 对于 8 月 Intune 更新或 1908，除了旧的预定重启设置，你还会在控制台中看到新的截止时间设置。
 - 如果同时配置了这两个旧设置和新设置，则截止时间设置值将重写预定重启设置值。
 - 截止时间设置将替换 1910 更新控制台中的“允许用户重新启动(预定重启)”选项。
@@ -78,7 +79,7 @@ https://aka.ms/intune_fullscreen
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
 开始使用 1908 中的截止时间设置，方法是使用所需的值对其进行配置。 准备就绪后，可以将预定重启设置设为“未配置”，以便在 10 月从控制台中删除这些设置。
 
-如果需要，请更新文档和任何自动化脚本。 
+如果需要，请更新文档和任何自动化脚本。
 
 删除预定重启设置之前，我们会随时为你提供最新消息并将提醒发送到消息中心。
 
@@ -86,12 +87,13 @@ https://aka.ms/intune_fullscreen
 Intune 将于 10 月份支持 Android 5.x (Lollipop) 及更高版本。 使用最新的 Intune App SDK 更新所有包装好的应用，并更新设备。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
-如果没有使用或未计划使用适用于 Android 的 SDK 或应用，此更改不会影响你。 如果正在使用 Intune App SDK，请确保更新到最新版本，并将设备更新到 Android 5.x 和更高版本。 如果不更新，应用将不会收到更新，并且随着时间推移其体验质量将会降低。 
+如果没有使用或未计划使用适用于 Android 的 SDK 或应用，此更改不会影响你。 如果正在使用 Intune App SDK，请确保更新到最新版本，并将设备更新到 Android 5.x 和更高版本。 如果不更新，应用将不会收到更新，并且随着时间推移其体验质量将会降低。
 
 下面是运行 Android 版本 4.x 的 Intune 中注册的常用设备列表。 如果有其中一个设备，请执行相应的步骤，确保该设备将支持 Android 版本 5.0 或更高版本，或者将其替换为支持 Android 版本 5.0 或更高版本的设备。 这个列表并未包含所有可能需要评估的设备：
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -100,7 +102,6 @@ Intune 将于 10 月份支持 Android 5.x (Lollipop) 及更高版本。 使用�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 使用最新的 Intune App SDK 包装应用。 还可以设置“要求最低操作系统版本(仅警告)”条件启动设置来通知个人设备上的最终用户进行升级。
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 更改计划：即将结束对 Windows 7 的支持 <!-- 3042987 -->
 如我们在 2018 年 9 月发布的 MC148476 和在 2019 年 3 月再次发布的 MC176794 所述，将于 2020 年 1 月 14 日结束对 Windows 7 的延长支持。 到那时，Intune 将停止对运行 Windows 7 的设备的支持，因此我们可以将投资集中在支持较新的技术和提供出色的最终用户体验上。 在该日期后，有助于保护你的 Windows 7 PC 的技术协助和自动更新将不能再通过 Intune 获得。 Microsoft 强烈建议你在 2020 年 1 月之前迁移到 Windows 10，以避免所需服务或支持不再可用的情况。 有关 Windows 支持生命周期的详细信息，请参阅[此处](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
