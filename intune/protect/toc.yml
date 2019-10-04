@@ -1,0 +1,269 @@
+- name: 使用 Intune 保护数据和设备
+  href: index.yml
+- name: 概述
+  expanded: true
+  items:
+    - name: 设备保护概述
+      href: device-protect.md
+      displayName: compliant; noncompliant; mfa
+- name: 快速入门
+  items:
+    - name: 创建设备合规性策略
+      href: quickstart-set-password-length-android.md
+    - name: 将通知发送到不符合的设备
+      href: quickstart-send-notification.md
+- name: 教程
+  items:
+    - name: 保护受管理设备上的电子邮件
+      href: tutorial-protect-email-on-enrolled-devices.md
+    - name: 保护非管理的设备上的电子邮件
+      href: tutorial-protect-email-on-unmanaged-devices.md
+- name: 概念
+  items:
+    - name: 隐私和个人数据
+      href: privacy-personal-data.md
+      items:
+        - name: 数据收集
+          href: privacy-data-collect.md
+        - name: 数据存储和处理
+          href: privacy-data-store-process.md
+        - name: 数据安全和共享
+          href: privacy-data-secure-share.md
+          items:
+            - name: Apple 发送到 Intune 的数据
+              href: data-apple-sends-to-intune.md
+            - name: Google 发送到 Intune 的数据
+              href: data-google-sends-to-intune.md
+            - name: Intune 向 Apple 发送的数据
+              href: data-intune-sends-to-apple.md
+            - name: Intune 向 Google 发送的数据
+              href: data-intune-sends-to-google.md
+            - name: 从 Jamf Pro 共享到 Intune 的信息
+              href: data-jamf-sends-to-intune.md
+        - name: 视图和正确的个人数据
+          href: privacy-data-view-correct.md
+        - name: 审核、导出、删除
+          href: privacy-data-audit-export-delete.md
+        - name: Windows 信息保护
+          href: windows-information-protection-configure.md
+- name: 操作方式指南
+  items:
+    - name: 在设备上设置规则，以允许访问资源
+      items:
+        - name: 符合性概述
+          href: device-compliance-get-started.md
+        - name: 创建策略
+          href: create-compliance-policy.md
+        - name: 基于位置的符合性
+          href: use-network-locations.md
+        - name: 对不符合设备的操作
+          href: actions-for-noncompliance.md
+        - name: 监视设备符合性
+          href: compliance-policy-monitor.md
+    - name: 加密设备
+      items:
+        - name: 加密设备
+          href: encrypt-devices.md
+        - name: 监视设备加密
+          href: encryption-monitor.md
+    - name: 条件性访问
+      items:
+        - name: 条件访问概述
+          href: conditional-access.md
+          displayName: ca
+        - name: 条件性访问的常见使用方式
+          href: conditional-access-intune-common-ways-use.md
+        - name: 安装 Exchange 本地连接器
+          href: exchange-connector-install.md
+        - name: 创建并分配条件性访问策略
+          href: conditional-access-exchange-create.md
+        - name: 基于设备的条件访问策略
+          href: create-conditional-access-intune.md
+        - name: 从 Intune 经典门户重新分配条件性访问策略
+          href: conditional-access-intune-reassign.md
+        - name: 基于应用的条件性访问
+          href: app-based-conditional-access-intune.md
+        - name: 设置基于应用的条件访问
+          href: app-based-conditional-access-intune-create.md
+        - name: ADAL 和 Intune
+          href: app-modern-authentication-block.md
+        - name: 将 Jamf Pro 与 Intune 集成以实现合规
+          href: conditional-access-integrate-jamf.md
+        - name: 在使用 Jamf Pro 管理的 Mac 上强制实现符合性
+          href: conditional-access-assign-jamf.md
+    - name: 威胁防护
+      items:
+        - name: 移动威胁防御
+          href: mobile-threat-defense.md
+          items:
+            - name: 设置 Intune for MTD
+              items:
+                - name: 添加 MTD 应用
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: 创建 MTD 设备符合性策略
+                  href: mtd-device-compliance-policy-create.md
+                - name: 在 Intune 中启用 MTD
+                  href: mtd-connector-enable.md
+            - name: MTD 应用
+              items:
+                - name: 设置更佳的移动
+                  href: better-mobile-threat-defense-connector.md
+                  items:
+                    - name: 更佳的移动和 Intune 集成
+                      href: better-mobile-mtd-connector-integration.md
+                      displayName: sso
+                - name: 设置 Check Point
+                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                  items:
+                    - name: Check Point 和 Intune 集成
+                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                - name: 设置 Lookout
+                  href: lookout-mobile-threat-defense-connector.md
+                  items:
+                    - name: Lookout 和 Intune 集成
+                      href: lookout-mtd-connector-integration.md
+                - name: 设置 Pradeo
+                  href: pradeo-mobile-threat-defense-connector.md
+                  items:
+                    - name: Pradeo 和 Intune 集成
+                      href: pradeo-mtd-connector-integration.md
+                - name: 设置 Sophos Mobile
+                  href: sophos-mtd-connector.md
+                  items:
+                    - name: Sophos Mobile 和 Intune 集成
+                      href: sophos-mtd-connector-integration.md
+                - name: 设置 Symantec
+                  href: skycure-mobile-threat-defense-connector.md
+                  items:
+                    - name: Symantec 和 Intune 集成
+                      href: skycure-mtd-connector-integration.md
+                - name: 设置 Wandera
+                  href: wandera-mtd-connector.md
+                  items:
+                    - name: Wandera 和 Intune 集成
+                      href: wandera-mtd-connector-integration.md
+                - name: 设置 Zimperium
+                  href: zimperium-mobile-threat-defense-connector.md
+                  items:
+                    - name: Zimperium 和 Intune 集成
+                      href: zimperium-mtd-connector-integration.md
+        - name: Microsoft Defender
+          items:
+            - name: Microsoft Defender ATP
+              href: advanced-threat-protection.md
+            - name: 安全任务
+              href: atp-manage-vulnerabilities.md
+    - name: 安全基线
+      items:
+        - name: 安全基线
+          href: security-baselines.md
+        - name: 监视基线
+          href: security-baselines-monitor.md
+    - name: Endpoint Protection
+      href: endpoint-protection-configure.md
+    - name: 网络访问控制
+      href: network-access-control-integrate.md
+    - name: Windows Hello
+      items:
+        - name: Windows Hello
+          href: windows-hello.md
+        - name: 标识保护
+          href: identity-protection-configure.md
+    - name: 证书
+      items:
+        - name: 使用证书进行身份验证
+          href: certificates-configure.md
+        - name: SCEP
+          items:
+            - name: SCEP 基础结构
+              href: certificates-scep-configure.md
+              displayName: ksp
+            - name: SCEP 证书配置文件
+              href: certificates-profile-scep.md
+            - name: 结合使用第三方证书颁发机构和 SCEP
+              href: certificate-authority-add-scep-overview.md
+        - name: PKCS
+          items:
+            - name: PKCS
+              href: certficates-pfx-configure.md
+              displayName: ksp
+            - name: 导入的 PKCS
+              href: certificates-imported-pfx-configure.md
+            - name: 使用 S/MIME 加密电子邮件
+              href: certificates-s-mime-encryption-sign.md
+              displayName: csr
+        - name: 使用 DigiCert PKI
+          href: certificates-digicert-configure.md
+          displayName: ca; pkcs; pki; ra; registration authority
+        - name: 删除 SCEP 或 PKCS 证书
+          href: remove-certificates.md
+    - name: 软件更新
+      items:
+        - name: Windows 更新
+          items:
+            - name: 适用于企业的 Windows 更新设置
+              href: windows-update-for-business-configure.md
+            - name: Windows Update 符合性报告
+              href: windows-update-compliance-reports.md
+        - name: iOS 更新策略
+          href: software-updates-ios.md
+    - name: 故障排除
+      items:
+        - name: 策略和配置文件疑难解答
+          href: troubleshoot-policies-in-microsoft-intune.md
+        - name: 条件访问疑难解答
+          href: troubleshoot-conditional-access.md
+        - name: 证书连接器疑难解答
+          href: troubleshoot-certificate-connector-events.md
+        - name: Exchange Connector 疑难解答
+          items:
+            - name: Exchange Connector 疑难解答
+              href: troubleshoot-exchange-connector.md
+            - name: 常见问题
+              href: troubleshoot-exchange-connector-common-problems.md
+            - name: 常见错误
+              href: troubleshoot-exchange-connector-common-errors.md
+        - name: BitLocker 策略疑难解答
+          href: troubleshoot-bitlocker-policies.md
+        - name: Jamf Pro 集成故障排除
+          href: troubleshoot-jamf.md
+- name: 参考
+  items:
+    - name: 用于添加第三方证书颁发机构的 API
+      href: scep-libraries-apis.md
+    - name: 合规性策略设置
+      items:
+        - name: 安全基线
+          items:
+            - name: Windows 10 MDM 基线设置
+              href: security-baseline-settings-mdm-all.md
+            - name: Microsoft Defender ATP 基准设置
+              href: security-baseline-settings-defender-atp.md
+        - name: Windows 更新设置
+          href: windows-update-settings.md
+        - name: 合规性策略设置 - Android
+          href: compliance-policy-create-android.md
+        - name: 合规性策略设置 - Android Enterprise
+          href: compliance-policy-create-android-for-work.md
+        - name: 合规性策略设置 - iOS
+          href: compliance-policy-create-ios.md
+        - name: 合规性策略设置 - macOS
+          href: compliance-policy-create-mac-os.md
+        - name: 合规性策略设置 - Windows 10
+          href: compliance-policy-create-windows.md
+        - name: 合规性策略设置 - Windows 8.1
+          href: compliance-policy-create-windows-8-1.md
+        - name: 合规性策略设置 - Windows Phone 8.1
+          href: compliance-policy-create-windows-8-1.md
+    - name: 错误代码和描述
+      items:
+        - name: 软件更新错误
+          href: software-update-agent-error-codes.md
+- name: 方案实现指南
+  items:
+    - name: 保护 Exchange Online
+      href: exchange-online-protect.md
+    - name: 防止未经授权的访问
+      href: data-outside-protect.md
+    - name: 防止非受管理设备上的数据泄露
+      href: data-leak-prevention.md
