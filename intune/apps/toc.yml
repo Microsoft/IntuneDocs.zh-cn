@@ -32,6 +32,7 @@
       items:
         - name: 添加应用概述
           href: apps-add.md
+          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
         - name: 受 Intune 保护的应用
           href: apps-supported-intune-apps.md
         - name: 应用商店应用
@@ -104,12 +105,24 @@
           href: app-configuration-policies-use-ios.md
         - name: Android 托管设备
           href: app-configuration-policies-use-android.md
-        - name: 配置 Managed Home Screen
-          href: app-configuration-managed-home-screen-app.md
         - name: 托管应用
           href: app-configuration-policies-managed-app.md
         - name: 使用 iOS 应用预配配置文件
           href: app-provisioning-profile-ios.md
+        - name: 配置特定应用
+          items:
+            - name: 配置 Managed Home Screen
+              href: app-configuration-managed-home-screen-app.md
+            - name: 配置公司门户
+              href: company-portal-app.md
+            - name: 配置 Managed Browser
+              href: app-configuration-managed-browser.md
+            - name: 配置 Microsoft Launcher
+              href: configure-microsoft-launcher.md
+            - name: 配置 Microsoft Edge
+              href: manage-microsoft-edge.md
+            - name: 配置 Outlook
+              href: app-configuration-policies-outlook.md
         - name: 批量采购的应用和书籍
           items:
             - name: 管理 VPP 应用和书籍
@@ -121,16 +134,6 @@
               href: windows-store-for-business.md
             - name: iOS 电子图书
               href: vpp-ebooks-ios.md
-        - name: 配置公司门户
-          href: company-portal-app.md
-        - name: 配置 Managed Browser
-          href: app-configuration-managed-browser.md
-        - name: 配置 Microsoft Edge
-          href: manage-microsoft-edge.md
-        - name: 配置 Microsoft Launcher
-          href: configure-microsoft-launcher.md
-        - name: 配置 Outlook
-          href: app-configuration-policies-outlook.md
     - name: 保护应用
       items:
         - name: 选择性地擦除应用
