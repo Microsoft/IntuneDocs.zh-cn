@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6ec8f8a613d3b0a0b17f2615de634e70fa282fd7
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8483ed3d4198e228bdaaf4723b2c9c0dca9cecfc
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68229212"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830513"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -18,4 +18,4 @@ ms.locfileid: "68229212"
   - Azure AD 全局管理员
   - Intune 服务管理员
   - 具有对“Intune 数据仓库”资源的基于角色的访问权限的用户 
-  - 使用[仅应用程序身份验证](../data-warehouse-app-only-auth.md)的无用户身份验证 
+  - 使用[仅应用程序身份验证](../developer/data-warehouse-app-only-auth.md)的无用户身份验证 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: f87848b43e040681085f3e89b063d5006f904464
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166468"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720912"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 开放源代码行为准则
 
@@ -23,7 +23,7 @@ ms.locfileid: "71166468"
 * 使用你的浏览器：有两个选项  ： 
 
     **选项 1：从 docs.microsoft.com 直接编辑**  
-    1. 转到主题，如 [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md)。 
+    1. 转到主题，如 [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](intune/protect/troubleshoot-policies-in-microsoft-intune.md)。 
     2. 选择“编辑”（右上角）  。 这将在 GitHub 存储库中显示 markdown 文件。
     3. 选择铅笔图标。 将鼠标悬停在铅笔图标上方时，将看到“编辑此文件”工具提示  。 
     4. 进行更改，然后“提交”所做的更改  。 

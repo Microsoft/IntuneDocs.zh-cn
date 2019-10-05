@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: bca7ff55653d12d352b4fb90163f4622a9e573ab
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239412"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721012"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>在管理中注册组织提供的 iOS 设备
 
@@ -31,11 +31,11 @@ ms.locfileid: "71239412"
 
 工作单位或学校提供的 iOS 设备通常会在分配前进行预配置。 首次打开并登录设备后，组织会将预配置的设置发送到设备。 设备完成设置后，将获得工作单位或学校资源的访问权限。  
 
-要开始设置，请打开设备电源并使用工作单位或学校凭据登录。 本文的其余部分介绍使用“设置助理”过程中将看到的步骤和屏幕。 
+要开始设置，请打开设备电源并使用工作单位或学校凭据登录。 本文的其余部分介绍使用“设置助理”过程中将看到的步骤和屏幕。
 
 ## <a name="what-is-apple-dep"></a>什么是 Apple DEP？
 
-组织可以通过“Apple 设备注册计划”(DEP) 购买设备  。 组织可通过 Apple DEP 购买大量的 iOS 或 macOS 设备。 然后，组织可以在其首选的移动设备管理提供程序（例如 Intune）中配置和管理这些设备。 如果你是管理员并想了解有关 Apple DEP 的详细信息，请参阅[使用 Apple 设备注册计划自动注册 iOS 设备](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)。  
+组织可以通过“Apple 设备注册计划”(DEP) 购买设备  。 组织可通过 Apple DEP 购买大量的 iOS 或 macOS 设备。 然后，组织可以在其首选的移动设备管理提供程序（例如 Intune）中配置和管理这些设备。 如果你是管理员并想了解有关 Apple DEP 的详细信息，请参阅[使用 Apple 设备注册计划自动注册 iOS 设备](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-ios.md)。  
 
 ## <a name="set-up-your-ios-device"></a>设置 iOS 设备
 
@@ -51,7 +51,7 @@ ms.locfileid: "71239412"
 4. 连接 Wi-Fi 后，随即显示“配置”屏幕  。 它会显示“[你的公司] 将自动配置你的设备”  。
 
    **配置允许 [你的公司] 无线管理此设备。管理员可以帮助你设置电子邮件和网络帐户、安装和配置应用以及远程管理设置。管理员可能禁用功能、安装和删除应用、监视和限制 Internet 流量以及远程擦除此设备。**
- 
+
    配置提供者：[贵公司的] iOS 团队 [地址] 
 
 5. 使用 Apple ID 登录。 登录后，可安装公司门户应用，并能够安装管理配置文件，让公司允许你访问其资源，如电子邮件和应用。
