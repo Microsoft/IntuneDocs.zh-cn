@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: 开发人员指南
+summary: 了解如何使用 Intune 开发人员资源，如用于保护 LOB 应用的 Intune App SDK 和 App Wrapping Tool、用于监视 Intune 成功情况的 Intune 数据仓库报告和 API，以及用于通过 Azure AD 访问 Intune 功能的 Microsoft Graph。
+metadata:
+  title: 开发人员指南
+  description: 了解如何使用 Intune 开发人员资源，如用于保护 LOB 应用的 Intune App SDK 和 App Wrapping Tool、用于监视 Intune 成功情况的 Intune 数据仓库报告和 API，以及用于通过 Azure AD 访问 Intune 功能的 Microsoft Graph。
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/23/2019
+  ms.openlocfilehash: f7d48e1b5473d84743adee4a7ef7b6c83b960d19
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728867"
+landingContent:
+- title: 使用 Intune App SDK 保护应用
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft Intune App SDK 概述
+      url: app-sdk.md
+  - linkListType: concept
+    links:
+    - text: Microsoft Intune App SDK 入门
+      url: app-sdk-get-started.md
+    - text: 准备业务线应用以使用应用保护
+      url: apps-prepare-mobile-application-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune APP SDK for iOS
+      url: app-sdk-ios.md
+    - text: 准备 iOS 应用以使用应用保护策略
+      url: app-wrapper-prepare-ios.md
+    - text: Intune App SDK for Android
+      url: app-wrapper-prepare-android.md
+- title: 使用 Intune 数据仓库
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 数据仓库概述
+      url: reports-nav-create-intune-reports.md
+    - text: 更改数据仓库 API 的日志
+      url: reports-changelog.md
+    - text: Intune 数据仓库 API 概述
+      url: reports-nav-intune-data-warehouse.md
+    - text: Intune 数据仓库数据模型概述
+      url: reports-ref-data-model.md
+  - linkListType: concept
+    links:
+    - text: Intune 数据仓库收集
+      url: intune-data-warehouse-collections.md
+  - linkListType: how-to-guide
+    links:
+    - text: 使用 Power BI 连接到数据仓库
+      url: reports-proc-get-a-link-powerbi.md
+    - text: 使用 Power BI 从 OData 源创建 Intune 报表
+      url: reports-proc-create-with-odata.md
+    - text: 使用 REST 客户端从 Intune 数据仓库 API 获取数据
+      url: reports-proc-data-rest.md
+    - text: Intune 数据仓库 API 终结点
+      url: reports-api-url.md
+- title: 访问 Microsoft Graph Intune API
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Intune 使用的图形 API 以及匹配的 Windows 10 CSP
+      url: graph-apis-used-by-intune-device-configuration-windows.md
+  - linkListType: how-to-guide
+    links:
+    - text: 使用 Azure AD 访问 Microsoft Graph Intune API
+      url: intune-graph-apis.md
+  - linkListType: reference
+    links:
+    - text: Intune Graph API 参考
+      url: https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta

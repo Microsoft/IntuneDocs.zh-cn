@@ -1,0 +1,79 @@
+- name: 开发人员指南
+  href: index.yml
+- name: 操作方式指南
+  expanded: true
+  items:
+    - name: 使用 Intune App SDK 保护应用
+      href: app-sdk.md
+      items:
+        - name: Intune App SDK 入门
+          href: app-sdk-get-started.md
+        - name: 准备 LOB 应用以实现应用保护
+          href: apps-prepare-mobile-application-management.md
+        - name: iOS 应用包装工具
+          href: app-wrapper-prepare-ios.md
+        - name: Intune App SDK for iOS
+          href: app-sdk-ios.md
+        - name: Android 应用包装工具
+          href: app-wrapper-prepare-android.md
+          displayName: dex
+        - name: Intune App SDK for Android
+          href: app-sdk-android.md
+          items:
+            - name: Intune App SDK for Android 测试指南
+              href: app-sdk-android-testing-guide.md
+        - name: Intune App SDK Xamarin Bindings
+          href: app-sdk-xamarin.md
+    - name: 使用 Intune 数据仓库
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: 更改数据仓库的日志
+          href: reports-changelog.md
+        - name: 使用 Power BI 连接到数据仓库
+          href: reports-proc-get-a-link-powerbi.md
+        - name: 使用 Power BI 从 OData 数据源创建报表
+          href: reports-proc-create-with-odata.md
+    - name: 使用 Intune 数据仓库 API 的报表
+      href: reports-nav-intune-data-warehouse.md
+      items:
+        - name: 使用 REST 客户端从数据仓库 API 获取数据
+          href: reports-proc-data-rest.md
+        - name: 数据仓库 API 终结点
+          href: reports-api-url.md
+        - name: 数据仓库仅应用程序身份验证
+          href: data-warehouse-app-only-auth.md
+        - name: 数据库仓库数据模型
+          href: reports-ref-data-model.md
+          items:
+            - name: 数据仓库集合
+              href: intune-data-warehouse-collections.md
+            - name: 数据仓库集合（Beta 版本）
+              items:
+                - name: 使用 Intune 数据仓库中的生存期表示形式
+                  href: reports-ref-user-timeline.md
+                - name: 应用程序实体引用
+                  href: reports-ref-application.md
+                - name: 数据实体引用
+                  href: reports-ref-date.md
+                - name: 设备实体引用
+                  href: reports-ref-devices.md
+                - name: Intune 管理扩展实体引用
+                  href: reports-ref-intunemanagementextension.md
+                - name: 移动应用管理 (MAM) 实体引用
+                  href: reports-ref-mobile-app-management.md
+                - name: 策略实体引用
+                  href: reports-ref-policy.md
+                - name: 用户设备关联实体引用
+                  href: reports-ref-user-device.md
+                - name: 用户实体引用
+                  href: reports-ref-user.md
+        - name: 移动 Intune 数据仓库帐户数据
+          href: data-warehouse-account-move.md
+    - name: 访问 Microsoft Graph Intune API
+      items:
+        - name: 使用 Azure AD 访问 Microsoft Graph Intune API
+          href: intune-graph-apis.md
+        - name: Intune API 参考
+          href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: 用于配置设备的图形 API
+          href: graph-apis-used-by-intune-device-configuration-windows.md

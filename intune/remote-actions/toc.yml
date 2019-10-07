@@ -1,0 +1,67 @@
+- name: 远程操作
+  href: index.yml
+- name: 概述
+  expanded: true
+  items:
+    - name: 设备管理概述
+      href: device-management.md
+- name: 操作方式指南
+  items:
+    - name: 锁和密码
+      items:
+        - name: 锁定设备
+          href: device-remote-lock.md
+        - name: 重置密码
+          href: device-passcode-reset.md
+        - name: Windows 10 PIN 重置
+          href: device-windows-pin-reset.md
+    - name: 删除和重启
+      items:
+        - name: 删除设备
+          href: devices-wipe.md
+        - name: 管理 Windows Fresh Start
+          href: device-fresh-start.md
+        - name: 重启设备
+          href: device-restart.md
+    - name: Apple 设备操作
+      items:
+        - name: 找到丢失的 iOS 设备
+          href: device-locate.md
+        - name: 启用 iOS 丢失模式
+          href: device-lost-mode.md
+        - name: 开启 iOS 监督模式
+          href: device-supervised-mode.md
+        - name: 清除 macOS 设备
+          href: device-erase.md
+        - name: 绕过激活锁定
+          href: device-activation-lock-bypass.md
+    - name: 用户操作
+      items:
+        - name: 注销当前用户
+          href: device-logout-user.md
+        - name: 删除用户
+          href: device-remove-user.md
+        - name: 查找主要用户
+          href: find-primary-user.md
+    - name: 其他操作
+      items:
+        - name: 重命名设备
+          href: device-rename.md
+        - name: 发送通知
+          href: custom-notifications.md
+        - name: 远程控制移动设备
+          href: teamviewer-support.md
+        - name: 同步设备
+          href: device-sync.md
+        - name: 检查设备清单
+          href: device-inventory.md
+    - name: 疑难解答
+      items:
+        - name: 排除设备操作故障
+          href: troubleshoot-device-actions.md
+- name: 资源
+  items:
+    - name: 方案实现指南
+      items:
+        - name: 削减支持人员成本
+          href: password-reset.md

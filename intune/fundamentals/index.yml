@@ -1,0 +1,85 @@
+### YamlMime:Landing
+title: Microsoft Intune 基础知识
+summary: Microsoft Intune 是一种基于云的服务，可帮助员工提高工作效率，同时保护企业数据。 了解 Intune 规划、迁移和设置的基础知识。
+metadata:
+  title: Intune 基础知识
+  description: 了解 Intune 规划、迁移和设置的基础知识。
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/29/2019
+  ms.openlocfilehash: c0d75116a31c668971950d144645009a9564654c
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728731"
+landingContent:
+- title: 关于 Microsoft Intune
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是 Intune？
+      url: what-is-intune.md
+    - text: 新功能
+      url: whats-new.md
+    - text: 开发过程中的功能
+      url: in-development.md
+  - linkListType: tutorial
+    links:
+    - text: Azure 门户中的 Intune 演练
+      url: tutorial-walkthrough-intune-portal.md
+  - linkListType: concept
+    links:
+    - text: 什么是设备管理？
+      url: what-is-device-management.md
+    - text: 体系结构概况
+      url: high-level-architecture.md
+    - text: Intune 的常见使用方式
+      url: common-scenarios.md
+    - text: 通过 EMS 启用 BYOD 的技术决策
+      url: byod-technology-decisions.md
+- title: Intune 采用
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 计划通信
+      url: migration-guide-communication-plan.md
+    - text: 规划指南
+      url: planning-guide.md
+    - text: 迁移指南
+      url: migration-guide.md
+    - text: Intune Adoption Kit
+      url: https://www.microsoft.com/download/details.aspx?id=58348
+- title: 设置 Intune
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 免费试用 Intune
+      url: free-trial-sign-up.md
+  - linkListType: concept
+    links:
+    - text: 支持的配置
+      url: supported-devices-browsers.md
+    - text: 网络配置要求
+      url: network-bandwidth-use.md
+    - text: Intune 网络终结点
+      url: intune-endpoints.md
+    - text: 基于角色的访问控制
+      url: role-based-access-control.md
+    - text: Intune 许可证
+      url: licenses.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune 设置步骤
+      url: setup-steps.md
+    - text: 添加用户
+      url: users-add.md
+    - text: 添加组
+      url: groups-add.md
+    - text: 使用作用域标记
+      url: scope-tags.md

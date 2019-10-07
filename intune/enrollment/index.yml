@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: 在 Microsoft Intune 中注册设备
+summary: 可通过几种方法来注册员工的设备。 每种方法取决于设备的所有权（个人或公司）、设备类型（iOS、Windows、Android）和管理需求（重置、关联、锁定）。
+metadata:
+  title: 在 Microsoft Intune 中注册
+  description: 用于在 Microsoft Intune 中注册的登陆页
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: enrollment
+  ms.topic: landing-page
+  author: dougeby
+  ms.author: dougeby
+  manager: dougeby
+  ms.date: 08/07/2019
+  ms.openlocfilehash: a32d8c309e1008f28816fffdd7b101537af7947a
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728799"
+landingContent:
+- title: 了解注册
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是设备注册？
+      url: device-enrollment.md
+    - text: 已注册设备管理功能
+      url: device-management-capabilities.md
+    - text: 注册选项
+      url: enrollment-options.md
+- title: Windows 注册
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于 Windows 注册
+      url: windows-enrollment-methods.md
+    - text: 注册方法的功能
+      url: enrollment-method-capab.md
+  - linkListType: quickstart
+    links:
+    - text: 设置适用于 Windows 10 设备的自动注册
+      url: quickstart-setup-auto-enrollment.md
+    - text: 注册 Windows 10 设备
+      url: quickstart-enroll-windows-device.md
+  - linkListType: tutorial
+    links:
+    - text: 使用 Autopilot 注册 Windows 设备
+      url: tutorial-use-autopilot-enroll-devices.md
+  - linkListType: how-to-guide
+    links:
+    - text: 设置 Windows 注册
+      url: windows-enroll.md
+    - text: 设置 Windows 设备批量注册
+      url: windows-bulk-enroll.md
+- title: Android 注册
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于 Android 注册
+      url: android-enroll.md
+  - linkListType: how-to-guide
+    links:
+    - text: 将 Intune 帐户连接到托管的 Google Play 帐户
+      url: connect-intune-android-enterprise.md
+    - text: 设置 Android Enterprise 工作配置文件设备的注册
+      url: android-work-profile-enroll.md
+    - text: 设置 Android Enterprise 工作配置文件设备的注册
+      url: android-work-profile-enroll.md
+    - text: 设置 Android Enterprise 专用设备的注册
+      url: android-kiosk-enroll.md
+    - text: 设置 Android Enterprise 完全托管设备的 Intune 注册（预览）
+      url: android-fully-managed-enroll.md
+- title: iOS 注册
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于 iOS 注册
+      url: ios-enroll.md
+  - linkListType: tutorial
+    links:
+    - text: 使用 Apple 的 公司设备注册功能注册 iOS 设备
+      url: tutorial-use-device-enrollment-program-enroll-ios.md
+  - linkListType: how-to-guide
+    links:
+    - text: 设置 iOS 注册
+      url: ios-enroll.md
+    - text: 通过 Apple 设备注册计划自动注册 iOS 设备
+      url: device-enrollment-program-enroll-ios.md
+    - text: 通过 Apple School Manager 设置 iOS 设备注册
+      url: apple-school-manager-set-up-ios.md
+    - text: 通过 Apple Configurator 设置 iOS 设备注册
+      url: apple-configurator-enroll-ios.md
+- title: macOS 注册
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于 macOS 注册
+      url: macos-enroll.md
+  - linkListType: tutorial
+    links:
+    - text: 使用 Apple 的 公司设备注册功能注册 iOS 设备
+      url: tutorial-use-device-enrollment-program-enroll-ios.md
+  - linkListType: how-to-guide
+    links:
+    - text: 设置 macOS 注册
+      url: macos-enroll.md
+    - text: 使用“设备注册计划”或 Apple School Manager 自动注册 macOS 设备
+      url: device-enrollment-program-enroll-macos.md
+    - text: 通过 Apple Configurator 设置 iOS 设备注册
+      url: apple-configurator-enroll-ios.md

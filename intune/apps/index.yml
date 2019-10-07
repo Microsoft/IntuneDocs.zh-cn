@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: 管理应用
+summary: 可以使用 Microsoft Intune 管理组织使用的客户端应用。 可以配置、添加、分配、保护、监视、更新和停用各种平台和用户的应用。
+metadata:
+  title: 管理应用
+  description: 管理并保护应用
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/25/2019
+  ms.openlocfilehash: ba12c3a3253fd35bf803342214b73fc094abc3aa
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729003"
+landingContent:
+- title: 应用入门
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 应用管理概述
+      url: app-management.md
+  - linkListType: quickstart
+    links:
+    - text: 添加和分配应用
+      url: quickstart-add-assign-app.md
+  - linkListType: concept
+    links:
+    - text: 应用生命周期
+      url: app-lifecycle.md
+- title: 添加应用
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 添加应用概述
+      url: apps-add.md
+    - text: 受 Intune 保护的应用
+      url: apps-supported-intune-apps.md
+  - linkListType: how-to-guide
+    links:
+    - text: 应用商店应用
+      url: store-apps-android.md
+    - text: 业务线应用
+      url: lob-apps-android.md
+    - text: Win32 应用管理（Intune 独立版）
+      url: apps-win32-app-management.md
+    - text: 在 Windows 10 设备上使用 PowerShell 脚本
+      url: intune-management-extension.md
+    - text: 将应用分配给组
+      url: apps-deploy.md
+- title: 分配应用
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 将应用分配给组
+      url: apps-deploy.md
+    - text: 包括和排除应用
+      url: apps-inc-exl-assignments.md
+    - text: 部署 Windows 10 应用
+      url: apps-windows-10-app-deploy.md
+    - text: 将应用部署到政府环境
+      url: apps-deploy-gcc-dod.md
+- title: 配置应用
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 选择性地擦除应用
+      url: apps-selective-wipe.md
+    - text: iOS 托管设备
+      url: app-configuration-policies-use-ios.md
+    - text: Android Enterprise 托管设备
+      url: app-configuration-policies-use-android.md
+    - text: 无需设备注册的托管设备
+      url: app-configuration-policies-managed-app.md
+    - text: 配置 Managed Browser
+      url: app-configuration-managed-browser.md
+    - text: 管理 VPP 应用和书籍
+      url: vpp-apps.md
+- title: 保护应用
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 应用保护策略概述
+      url: app-protection-policy.md
+  - linkListType: how-to-guide
+    links:
+    - text: 创建和分配应用保护策略
+      url: app-protection-policies.md
+    - text: 验证应用保护策略
+      url: app-protection-policies-validate.md
+    - text: 监视应用保护用户状态
+      url: app-protection-policies-monitor.md
+    - text: 创建和分配 WIP 应用保护策略
+      url: windows-information-protection-policy-create.md
+    - text: 管理 iOS 应用之间的数据传输
+      url: data-transfer-between-apps-manage-ios.md
+- title: 应用疑难解答
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 应用安装问题疑难解答
+      url: troubleshoot-app-install.md
+    - text: 移动应用程序管理故障排除
+      url: troubleshoot-mam.md
+    - text: 查看应用保护日志
+      url: app-protection-policy-settings-log.md

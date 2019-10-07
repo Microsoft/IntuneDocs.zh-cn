@@ -1,0 +1,264 @@
+- name: Microsoft Intune 基础知识
+  href: index.yml
+- name: 概述
+  expanded: true
+  items:
+    - name: Microsoft Intune 概述
+      href: what-is-intune.md
+      displayName: ems; emm; azure ad; active directory; ad
+    - name: Intune 可以为公司带来什么好处？
+      href: get-started-evaluation.md
+    - name: 新增功能
+      href: whats-new.md
+      items:
+        - name: 应用 UI 中的新增功能
+          href: whats-new-app-ui.md
+        - name: 开发过程中的功能
+          href: in-development.md
+- name: 快速入门
+  items:
+    - name: 免费试用 Intune
+      href: free-trial-sign-up.md
+      displayName: 'tenant; trial; get started, start; help'
+    - name: 创建用户
+      href: quickstart-create-user.md
+    - name: 创建组
+      href: quickstart-create-group.md
+    - name: 创建和分配自定义角色
+      href: quickstart-create-custom-role.md
+- name: 教程
+  items:
+    - name: Azure 门户中的 Intune 演练
+      href: tutorial-walkthrough-intune-portal.md
+- name: 概念
+  items:
+    - name: 什么是设备管理？
+      href: what-is-device-management.md
+      displayName: teamviewer
+    - name: 什么是 Intune for Education？
+      href: introduction-intune-education.md
+    - name: 体系结构概况
+      href: high-level-architecture.md
+    - name: 设备生命周期
+      href: device-lifecycle.md
+    - name: 应用生命周期
+      href: ../apps/app-lifecycle.md
+    - name: 常见方案
+      href: common-scenarios.md
+    - name: 通过 EMS 启用 BYOD 的技术决策
+      href: byod-technology-decisions.md
+    - name: 管理操作系统版本
+      href: manage-os-versions.md
+    - name: 管理 Windows Holographic
+      href: windows-holographic-for-business.md
+- name: 操作方式指南
+  items:
+    - name: 规划部署
+      items:
+        - name: 规划指南
+          href: planning-guide.md
+          items:
+            - name: 确定目标
+              href: planning-guide-deployment-goals.md
+            - name: 确定方案
+              href: planning-guide-scenarios.md
+            - name: 确定要求
+              href: planning-guide-requirements.md
+            - name: 制定推出计划
+              href: planning-guide-rollout-plan.md
+            - name: 制定通信计划
+              href: planning-guide-communication-plan.md
+            - name: 制定支持计划
+              href: planning-guide-support-plan.md
+            - name: 设计
+              href: planning-guide-design.md
+            - name: 实施
+              href: planning-guide-onboarding.md
+            - name: 测试和验证
+              href: planning-guide-test-validation.md
+            - name: 其他资源
+              href: planning-guide-resources.md
+        - name: 迁移指南
+          href: migration-guide.md
+          items:
+            - name: 准备 Intune
+              href: migration-guide-prepare.md
+              items:
+                - name: 基本设置
+                  href: migration-guide-setup.md
+                - name: 配置设备和应用管理策略
+                  href: migration-guide-configure-policies.md
+                - name: 配置应用保护策略
+                  href: migration-guide-app-protection-policies.md
+                - name: 迁移注意事项
+                  href: migration-guide-considerations.md
+            - name: 迁移活动
+              href: migration-guide-campaign.md
+              items:
+                - name: 计划通信
+                  href: migration-guide-communication-plan.md
+                - name: 推进采用
+                  href: migration-guide-drive-adoption.md
+                - name: 典型迁移周期
+                  href: migration-guide-cycle.md
+        - name: 计划通信
+          href: migration-guide-communication-plan.md
+        - name: 向用户提供培训
+          items:
+            - name: 了解如何告知最终用户
+              href: end-user-educate.md
+            - name: 公司门户消息
+              href: end-user-company-portal-messages.md
+            - name: Android 上的应用保护
+              href: end-user-mam-apps-android.md
+            - name: iOS 上的应用保护
+              href: end-user-mam-apps-ios.md
+            - name: 如何获取 Android 应用
+              href: end-user-apps-android.md
+            - name: 如何获取 iOS 应用
+              href: end-user-apps-ios.md
+            - name: 如何获取 Windows 应用
+              href: end-user-apps-windows.md
+            - name: Intune 向 Apple 发送的数据
+              href: ../protect/data-intune-sends-to-apple.md
+            - name: Intune 向 Google 发送的数据
+              href: ../protect/data-intune-sends-to-google.md
+            - name: Apple 发送到 Intune 的数据
+              href: ../protect/data-apple-sends-to-intune.md
+            - name: Google 发送到 Intune 的数据
+              href: ../protect/data-google-sends-to-intune.md
+    - name: 设置 Intune
+      items:
+        - name: Intune 设置步骤
+          href: setup-steps.md
+          displayName: fasttrack
+        - name: 支持的配置
+          href: supported-devices-browsers.md
+          items:
+            - name: 网络配置
+              href: network-bandwidth-use.md
+            - name: Intune 终结点
+              href: intune-endpoints.md
+            - name: Intune 美国政府终结点
+              href: intune-us-government-endpoints.md
+        - name: 登录到 Intune
+          href: account-sign-up.md
+        - name: 配置域
+          href: custom-domain-name-configure.md
+        - name: 添加用户
+          href: users-add.md
+        - name: 添加组
+          href: groups-add.md
+        - name: 分配许可证
+          href: licenses-assign.md
+        - name: Intune 许可证
+          href: licenses.md
+        - name: 设置 MDM 机构
+          href: mdm-authority-set.md
+        - name: 管理角色
+          items:
+            - name: 基于角色的访问控制
+              href: role-based-access-control.md
+            - name: 向用户分配角色
+              href: assign-role.md
+            - name: 创建自定义角色
+              href: create-custom-role.md
+            - name: 使用作用域标记
+              href: scope-tags.md
+    - name: 注册设备
+      href: ../enrollment/index.yml
+    - name: 远程管理设备
+      href: ../remote-actions/index.yml
+    - name: 创建符合性规则
+      href: ../protect/index.yml
+    - name: 控制设备功能和设置
+      href: ../configuration/index.yml
+    - name: 保护设备和数据
+      href: ../protect/index.yml
+    - name: 管理和保护应用
+      href: ../apps/index.yml
+    - name: 开发人员指南
+      href: ../developer/index.yml
+    - name: 获得帮助和支持
+      items:
+        - name: 租户状态
+          href: tenant-status.md
+        - name: 帮助用户排查问题
+          href: help-desk-operators.md
+        - name: Intune 活动的审核日志
+          href: monitor-audit-logs.md
+        - name: 使用 Azure Monitor 查看日志
+          href: review-logs-using-azure-monitor.md
+        - name: 使用 Intune 文档
+          href: use-docs.md
+        - name: 获取支持
+          href: get-support.md
+- name: 参考
+  items:
+    - name: 错误代码和描述
+      items:
+        - name: 公司资源访问权限问题疑难解答
+          href: troubleshoot-company-resource-access-problems.md
+- name: 资源
+  items:
+    - name: 存档
+      items:
+        - name: 新增功能存档
+          items:
+            - name: 新增功能存档（Azure 门户）
+              href: whats-new-archive.md
+            - name: 新增功能存档（经典门户）
+              href: whats-new-archive-classic.md
+        - name: Azure 中的 Intune 经典功能
+          href: ui-changes.md
+        - name: Intune 经典组
+          href: groups-get-started.md
+        - name: iOS 教育设置
+          items:
+            - name: iPad
+              href: education-settings-configure-ios.md
+            - name: 共享的 iPad
+              href: education-settings-configure-ios-shared.md
+        - name: 旧版 Intune PC 客户端
+          href: intune-legacy-pc-client.md
+        - name: 使用软件代理管理电脑
+          href: manage-windows-pcs-with-microsoft-intune.md
+          items:
+            - name: 比较电脑管理
+              href: pc-management-comparison.md
+            - name: 安装电脑客户端
+              href: install-the-windows-pc-client-with-microsoft-intune.md
+            - name: 常见电脑管理任务
+              href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+              items:
+                - name: 电脑策略
+                  href: use-policies-to-simplify-windows-pc-management.md
+                - name: 查看库存
+                  href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+                - name: 停用电脑
+                  href: retire-a-windows-pc-with-microsoft-intune.md
+                - name: 关联电脑与用户
+                  href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+                - name: 远程协助
+                  href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+            - name: 保护 Windows 电脑的策略
+              href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+              items:
+                - name: 软件更新
+                  href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+                - name: Windows 防火墙
+                  href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+                - name: Endpoint Protection
+                  href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+            - name: 为 Intune 客户端电脑添加应用
+              href: add-apps-for-windows-pcs-in-microsoft-intune.md
+            - name: 管理许可协议
+              href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+            - name: 解决策略冲突
+              href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: 软件更新疑难解答
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: 终结点保护常见错误
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Intune 最终用户文档
+      href: /intune-user-help/use-managed-devices-to-get-work-done
