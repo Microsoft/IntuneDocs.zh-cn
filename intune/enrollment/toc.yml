@@ -89,6 +89,10 @@
       items:
         - name: 设备注册程序
           href: device-enrollment-program-enroll-ios.md
+        - name: 设置 iOS 和 iPadOS 用户注册
+          href: ios-user-enrollment.md
+        - name: 用户注册支持的操作和选项
+          href: ios-user-enrollment-supported-actions.md
         - name: Apple School Manager
           href: apple-school-manager-set-up-ios.md
         - name: Apple Configurator
