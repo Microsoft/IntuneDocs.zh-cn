@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0d495265580bc9801a1fadb636a62274a4f728a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b630709646b2f4489cbfea6284689c9436798ca
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725746"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71916368"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -67,7 +67,7 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 | 来自应用商店的应用 | 是 | 是 | 否 | 是 | 是 |
 | 更新应用 | 是 | 是 | 否 | 是 | 是 |
 
-<sup>1</sup>请考虑使用 [Windows 信息保护](../windows-information-protection-configure.md)来保护运行 Windows 10 的设备上的应用。<br>
+<sup>1</sup>请考虑使用 [Windows 信息保护](../protect/windows-information-protection-configure.md)来保护运行 Windows 10 的设备上的应用。<br>
 <sup>2</sup> 仅适用于由 Intune 管理的设备。<br>
 <sup>3</sup> Intune 支持 Android Enterprise 设备上托管 Google Play 商店中的可用应用。<br>
 <sup>4</sup> Intune 不提供在标准 Android Enterprise 设备上以 Web 链接的形式安装应用的快捷方式。 但是，为[多应用专用 Android Enterprise 设备](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)提供了 Web 链接支持。 

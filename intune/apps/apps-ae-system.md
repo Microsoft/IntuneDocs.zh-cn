@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725161"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960882"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>将 Android Enterprise 系统应用添加到 Microsoft Intune
 
@@ -42,9 +42,13 @@ ms.locfileid: "71725161"
 5. 选择“确定”  。
 6. 选择“添加”  。
 
+> [!NOTE]
+> 需要与设备的 OEM 合作，查找要启用/禁用的应用的包名称。
+
 此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 
 
 Android Enterprise 系统应用将启用或禁用已成为平台一部分的应用。 若要启用应用，请将系统应用分配为“必需”  。 若要禁用应用，请将系统应用分配为“卸载”  。 无法将系统应用分配为可供用户使用。
+
 
 ## <a name="next-steps"></a>后续步骤
 

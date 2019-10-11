@@ -127,6 +127,8 @@
               href: manage-microsoft-edge.md
             - name: 配置 Outlook
               href: app-configuration-policies-outlook.md
+            - name: 配置 Google Chrome for Android
+              href: apps-configure-chrome-android.md
         - name: 批量采购的应用和书籍
           items:
             - name: 管理 VPP 应用和书籍

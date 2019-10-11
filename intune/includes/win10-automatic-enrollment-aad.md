@@ -1,33 +1,33 @@
 ---
-ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "71302601"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71912747"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>启用 Windows 10 自动注册
 
 自动注册允许用户在 Intune 中注册其 Windows 10 设备。 为了进行注册，用户将其工作帐户添加到其个人拥有的设备或将公司拥有的设备加入 Azure Active Directory。 在后台，设备进行注册并加入 Azure Active Directory。 注册后，使用 Intune 管理设备。
 
 **必备条件**
+
 - Azure Active Directory Premium 订阅（[试用订阅](http://go.microsoft.com/fwlink/?LinkID=816845)）
 - Microsoft Intune 订阅
-
 
 ### <a name="configure-automatic-mdm-enrollment"></a>配置自动 MDM 注册
 
 1. 登录 [Azure 门户](https://portal.azure.com)，然后选择“Azure Active Directory”  。
 
-   ![Azure 门户的屏幕截图](../media/auto-enroll-azure-main.png)
+   ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. 选择“移动性(MDM 和 MAM)”  。
 
-   ![Azure 门户的屏幕截图](../media/auto-enroll-mdm.png)
+   ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. 选择“Microsoft Intune”  。
 
-   ![Azure 门户的屏幕截图](../media/auto-enroll-intune.png)
+   ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. 配置“MDM 用户作用域”  。 指定应由 Microsoft Intune 管理的用户的设备。 这些 Windows 10 设备可自动注册，以使用 Microsoft Intune 进行管理。
 
@@ -43,7 +43,7 @@ ms.locfileid: "71302601"
    > [!NOTE]
    > 必须将 MDM 用户作用域设置为包含用户对象的 Azure AD 组。
 
-   ![Azure 门户的屏幕截图](../media/auto-enroll-scope.png)
+   ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. 对以下 URL 使用默认值：
     - **MDM 使用条款 URL**

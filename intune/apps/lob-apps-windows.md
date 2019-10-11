@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9b579e944827e511700073f0b3348b5ef20adc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724693"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036460"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>将 Windows 业务线应用添加到 Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 业务线 (LOB) 应用是从应用安装文件添加的应用。 此类应用通常在内部编写。 以下步骤提供指导，以帮助将 Windows LOB 应用添加到 Microsoft Intune。
+
+> [!IMPORTANT]
+> 使用带 .msi  扩展名的安装文件部署 Win32 应用时，请考虑使用 [Intune 管理扩展](../apps/intune-management-extension.md)。 如果在 AutoPilot 注册期间混合安装 Win32 应用和业务线应用，则应用安装可能会失败。  
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步骤 1：指定软件安装程序文件
 
