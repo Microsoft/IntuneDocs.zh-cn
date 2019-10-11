@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323376"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302601"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>启用 Windows 10 自动注册
 
@@ -17,22 +17,22 @@ ms.locfileid: "56323376"
 
 ### <a name="configure-automatic-mdm-enrollment"></a>配置自动 MDM 注册
 
-1. 登录 [Azure 门户](https://portal.azure.com)，然后选择“Azure Active Directory”。
+1. 登录 [Azure 门户](https://portal.azure.com)，然后选择“Azure Active Directory”  。
 
    ![Azure 门户的屏幕截图](../media/auto-enroll-azure-main.png)
 
-2. 选择“移动性(MDM 和 MAM)”。
+2. 选择“移动性(MDM 和 MAM)”  。
 
    ![Azure 门户的屏幕截图](../media/auto-enroll-mdm.png)
 
-3. 选择“Microsoft Intune”。
+3. 选择“Microsoft Intune”  。
 
    ![Azure 门户的屏幕截图](../media/auto-enroll-intune.png)
 
-4. 配置“MDM 用户作用域”。 指定应由 Microsoft Intune 管理的用户的设备。 这些 Windows 10 设备可自动注册，以使用 Microsoft Intune 进行管理。
+4. 配置“MDM 用户作用域”  。 指定应由 Microsoft Intune 管理的用户的设备。 这些 Windows 10 设备可自动注册，以使用 Microsoft Intune 进行管理。
 
    - **无** - MDM 自动注册已禁用
-   - **部分** - 选择可以自动注册 Windows 10 设备的组
+   - **部分** - 选择可以自动注册 Windows 10 设备的组 
    - **全部** - 所有用户都可以自动注册 Windows 10 设备
 
       > [!IMPORTANT]
@@ -41,7 +41,7 @@ ms.locfileid: "56323376"
       > 对于企业设备，如果启用了两个范围，则 MDM 用户范围优先。 设备注册 MDM。
 
    > [!NOTE]
-   > 必须将 MAM 用户作用域设置为用户组或集合。
+   > 必须将 MDM 用户作用域设置为包含用户对象的 Azure AD 组。
 
    ![Azure 门户的屏幕截图](../media/auto-enroll-scope.png)
 
@@ -50,6 +50,6 @@ ms.locfileid: "56323376"
     - **MDM 发现 URL**
     - **MDM 符合性 URL**
 
-6. 选择“保存”。
+6. 选择“保存”  。
 
 默认情况下，不会为该服务启用双因素身份验证。 但是，在注册设备时，建议启用双重身份验证。 要启用双因素身份验证，请在 Azure AD 中配置一个双因素身份验证提供程序，并为用户帐户配置多重身份验证。 请参阅[Azure 多重身份验证服务器入门](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。

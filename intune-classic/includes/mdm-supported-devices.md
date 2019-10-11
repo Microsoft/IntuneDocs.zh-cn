@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
-ms.translationtype: MTE75
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882011"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "71721248"
 ---
 ### <a name="apple"></a>Apple
 - Apple iOS 9.0 及更高版本
@@ -26,6 +26,6 @@ ms.locfileid: "67882011"
 - Google Android 4.0 及更高版本（包括 Samsung KNOX Standard 4.0 及更高版本）*
 - Google 的 Android for Work（[要求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")）
 
-*Samsung Galaxy Ace 电话的以下型号都不能由 Intune 作为 Samsung KNOX Standard 设备进行管理：SM-G313HU、SM-G313HY、SM-G313M、SM-G313MY 和 SM-G313U。 这些设备作为标准的 Android 设备进行管理。 有关详细信息，请参阅 [Samsung KNOX 网站](https://www.samsungknox.com/en)。
+*Intune 不能将 Samsung Galaxy Ace 手机的某些型号作为 Samsung KNOX 标准版设备进行管理：SM-G313HU、SM-G313HY、SM-G313M、SM-G313MY 和 SM-G313U。 这些设备作为标准的 Android 设备进行管理。 有关详细信息，请参阅 [Samsung KNOX 网站](https://www.samsungknox.com/en)。
 
 有关设备和管理方法的完整列表，请参阅 [Intune 支持的设备](/intune/supported-devices-browsers#intune-supported-devices)。

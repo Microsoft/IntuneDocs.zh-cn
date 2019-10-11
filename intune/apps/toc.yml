@@ -43,18 +43,20 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 应用商店应用
               href: store-apps-windows-phone-8-1.md
-            - name: Microsoft 应用商店应用
-              items:
-                - name: Windows 应用
-                  href: store-apps-windows.md
-                - name: 公司门户应用
-                  href: store-apps-company-portal-app.md
+            - name: Windows 应用
+              href: store-apps-windows.md
+            - name: 适用于企业的 Microsoft 应用商店应用
+              href: windows-store-for-business.md
             - name: 托管的 Google Play 应用
               href: apps-add-android-for-work.md
+        - name: Office 365 套件
+          items:
             - name: 适用于 Windows 10 的 Office 365 应用
               href: apps-add-office365.md
             - name: 适用于 macOS 的 Office 365 应用
               href: apps-add-office365-macos.md
+        - name: Android 企业系统应用
+          href: apps-ae-system.md
         - name: Web 应用
           href: web-app.md
           displayName: web; web link; weblink; web-link
@@ -74,10 +76,12 @@
               href: app-sideload-windows.md
             - name: macOS LOB 应用
               href: lob-apps-macos.md
-        - name: Android 企业系统应用
-          href: apps-ae-system.md
-        - name: Win32 应用管理
-          href: apps-win32-app-management.md
+            - name: Win32 应用管理
+              href: apps-win32-app-management.md
+        - name: 添加特定应用
+          items:
+            - name: 公司门户应用
+              href: store-apps-company-portal-app.md
         - name: PowerShell 脚本
           href: intune-management-extension.md
     - name: 分配应用

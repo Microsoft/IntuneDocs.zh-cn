@@ -1,0 +1,51 @@
+---
+title: 使用 Microsoft Intune 重命名设备 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 重命名设备。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 07/05/2019
+ms.topic: conceptual
+ms.service: microsoft-intune
+ms.localizationpriority: high
+ms.technology: ''
+ms.assetid: ''
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-azure
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71728502"
+---
+# <a name="rename-a-device-in-intune"></a>在 Intune 中重命名设备
+
+
+[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+ 通过“重命名设备”操作可以重命名在 Intune 中注册的设备。 设备的名称将在 Intune 和设备中更改。
+
+可以重命名下列类型的设备：
+- 公司拥有的 Windows 
+- 受到 iOS 监督
+- 公司拥有的 MacOS 10
+
+此功能暂不支持重命名混合 Azure AD Windows 设备。
+
+## <a name="rename-a-device"></a>重命名设备
+
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+3. 选择“设备”   > “所有设备”  > 选择设备 >“更多”   >   “重命名设备”。
+4. 在“重命名设备”  边栏选项卡的文本框中键入新名称。 可以使用字母、数字及连字符。 名称必须至少包含一个字母或连字符。
+5. 如果要在重命名设备后重新启动该设备，请选择“重命名后重新启动”旁边的“是”   。
+6. 选择“重命名”  。
+
+
+
+## <a name="next-steps"></a>后续步骤
+
+若要查看“重命名”设备操作的状态  ，请查看设备的“概述”  页。
