@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b16dca0b6a73e7228e65c840bfbc91f3577bb59a
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723549"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999285"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -109,7 +109,8 @@ ms.locfileid: "71723549"
 
 > [!NOTE]
 >
->用户关联仅适用于 Android 注册。 在定义用户关联后，只有关联的用户才可以使用 KME 来注册设备。 即使对设备恢复出厂设置后，也是如此。 当未在 Knox 门户中定义用户关联时，拥有有效 Intune 许可证的任何用户都可以使用 KME 来注册设备。
+>用户关联仅适用于 Android 设备管理员注册。 在定义用户关联后，只有关联的用户才可以使用 KME 来注册设备。 即使对设备恢复出厂设置后，也是如此。 当未在 Knox 门户中定义用户关联时，拥有有效 Intune 许可证的任何用户都可以使用 KME 来注册设备。
+>对于 Android Enterprise 完全托管设备，即使定义了用户关联，也不会将其传递到该设备或将设备与用户关联。
 >
 
 ## <a name="distribute-devices"></a>分配设备
@@ -126,7 +127,7 @@ ms.locfileid: "71723549"
 
 - **恢复出厂设置才能注册到 Android Enterprise：** 若要重新利用已设置的设备，必须在注册到 Android Enterprise 时对设备恢复出厂设置。
 
-- **使用 Google Play 帐户更新：** 向 Microsoft Intune 注册设备不需要使用 Google Play 帐户。 但未来对 Intune 公司门户应用的更新可能会要求在设备上使用 Google Play 帐户。 注册 Google 设备所有者不需要使用 Google Play 帐户。
+- **使用 Google Play 帐户更新：** 向 Microsoft Intune 注册设备不需要使用 Google Play 帐户。 但是，对于 Android 设备管理员注册，未来对 Intune 公司门户应用的更新可能会要求在设备上使用 Google Play 帐户。 注册 Google 设备所有者不需要使用 Google Play 帐户。
 
 - **“密码”字段被忽略：** 如果“密码”  字段是使用 Knox 门户中的“设备详细信息”  进行填充，它便会在 Android 注册期间被 Intune 公司门户应用忽略。 最终用户必须在设备上输入密码才能完成设备注册。
 

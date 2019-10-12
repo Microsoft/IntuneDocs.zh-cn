@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e9b5eb15cf446b317818a93baa075cdbd33afd2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19389a21aa28f5fa957f62c988753f46bf1bc731
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723302"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008344"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS 设备
 
@@ -31,6 +31,9 @@ ms.locfileid: "71723302"
 若要启用 DEP 注册，需同时使用 Intune 和 Apple DEP 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
 顺便提一下，DEP 注册无法与[设备注册管理器](device-enrollment-manager-enroll.md)配合使用。
+
+> [!NOTE]
+> DEP 设置最终用户无法删除的设备配置。 因此，在[迁移到 DEP](../fundamentals/migration-guide-considerations.md) 之前，必须擦除设备，使其返回到全新状态。
 
 ## <a name="dep-and-the-company-portal"></a>DEP 和公司门户
 

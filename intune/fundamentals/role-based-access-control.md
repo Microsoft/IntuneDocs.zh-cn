@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab50a21ea01cd4075bd78add980d2839606a1a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721872"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163510"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的基于角色的访问控制 (RBAC)
 
@@ -66,6 +66,7 @@ ms.locfileid: "71721872"
 | 安全性读者 | 只读 | 只读 |
 | 合规性管理员 | 无 | 只读 |
 | 符合性数据管理员 | 无 | 只读 |
+| 全局读取者 | 只读 | 只读 |
 
 > [!TIP]
 > Intune 还显示三个 Azure AD 扩展：“用户”  、“组”  和“条件访问”  （使用 Azure AD RBAC 进行控制）。 此外，**用户帐户管理员**仅执行 AAD 用户/组活动，而不具备在 Intune 中执行所有活动的完全权限。 有关详细信息，请参阅 [RBAC 与 Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)。

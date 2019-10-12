@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f9b78685e2bbe40a91c80fe71403123dbfaac90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722847"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036428"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中添加合作伙伴证书颁发机构
 
@@ -124,6 +124,7 @@ Microsoft 创建了与 Intune 集成的 API。 通过该 API，可验证证书�
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [Venafi](https://www.venafi.com/platform/enterprise-mobility)
 - [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 如果第三方 CA 有兴趣将产品与 Intune 集成，请查看 API 指南：

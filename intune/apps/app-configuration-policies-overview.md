@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af81552942805bed07e818d6005231e9305b3460
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725785"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940345"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的应用配置策略
 
@@ -88,6 +88,77 @@ ms.locfileid: "71725785"
 
       ![应用配置的屏幕截图](./media/app-configuration-policies-overview/app-configuration.png)
 
+## <a name="diagnostic-logs"></a>诊断日志
+
+### <a name="ios-configuration-on-unmanaged-devices"></a>非托管设备上的 iOS 配置
+
+可以在托管应用配置的非托管设备上使用 Intune 诊断日志  验证 iOS 配置。
+
+1. 如果尚未安装在设备上，请从应用商店下载并安装 Intune Managed Browser  。 有关详细信息，请参阅[受 Microsoft Intune 保护的应用](apps-supported-intune-apps.md)。
+2. 启动 Intune Managed Browser  ，并从导航栏中选择“关于”   > “Intune 帮助”  。
+3. 单击“开始使用”  。
+4. 单击“共享日志”  。
+5. 使用你选择的邮件应用将日志发送给你自己，以便可以在你的电脑上查看它们。 
+6. 查看文本文件查看器中的 IntuneMAMDiagnostics.txt  。
+7. 搜索 `ApplicationConfiguration`。 结果将显示如下：
+
+    ``` JSON
+        {
+            (
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.BlockListURLs";
+                    Value = "https://www.aol.com";
+                },
+                {
+                    Name = "com.microsoft.intune.mam.managedbrowser.bookmarks";
+                    Value = "Outlook Web|https://outlook.office.com||Bing|https://www.bing.com";
+                }
+            );
+        },
+        {
+            ApplicationConfiguration =             
+            (
+                {
+                Name = IntuneMAMUPN;
+                Value = "CMARScrubbedM:13c45c42712a47a1739577e5c92b5bc86c3b44fd9a27aeec3f32857f69ddef79cbb988a92f8241af6df8b3ced7d5ce06e2d23c33639ddc2ca8ad8d9947385f8a";
+                },
+                {
+                Name = "com.microsoft.outlook.Mail.NotificationsEnabled";
+                Value = false;
+                }
+            );
+        }
+    ```
+
+应用程序配置详细信息应与为租户配置的应用程序配置策略匹配。 
+
+![目标应用配置](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
+
+### <a name="ios-configuration-on-managed-devices"></a>托管设备上的 iOS 配置
+
+可以在托管应用配置的托管设备上使用 Intune 诊断日志  验证 iOS 配置。
+
+1. 如果尚未安装在设备上，请从应用商店下载并安装 Intune Managed Browser  。 有关详细信息，请参阅[受 Microsoft Intune 保护的应用](apps-supported-intune-apps.md)。
+2. 启动 Intune Managed Browser  ，并从导航栏中选择“关于”   > “Intune 帮助”  。
+3. 单击“开始使用”  。
+4. 单击“共享日志”  。
+5. 使用你选择的邮件应用将日志发送给你自己，以便可以在你的电脑上查看它们。 
+6. 查看文本文件查看器中的 IntuneMAMDiagnostics.txt  。
+7. 搜索 `AppConfig`。 结果应与为租户配置的应用程序配置策略匹配。
+
+### <a name="android-configuration-on-managed-devices"></a>托管设备上的 Android 配置
+
+可以在托管应用配置的托管设备上使用 Intune 诊断日志  验证 iOS 配置。
+
+若要从 Android 设备中收集日志，你或最终用户必须通过 USB 连接（或设备上等效的文件资源管理器  ）从设备下载日志。 下面是相关步骤：
+
+1. 使用 USB 电缆将 Android 设备连接到计算机。
+2. 在计算机上，查找具有你的设备名的目录。 在该目录中，查找 `Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal`。
+3. 在 `com.microsoft.windowsintune.companyportal` 文件夹中，打开 Files 文件夹并打开 `OMADMLog_0`。
+3. 搜索 `AppConfigHelper` 以查找与应用配置相关的消息。 结果将如以下数据块所示：
+
+    `2019-06-17T20:09:29.1970000       INFO   AppConfigHelper     10888  02256  Returning app config JSON [{"ApplicationConfiguration":[{"Name":"com.microsoft.intune.mam.managedbrowser.BlockListURLs","Value":"https:\/\/www.aol.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.bookmarks","Value":"Outlook Web|https:\/\/outlook.office.com||Bing|https:\/\/www.bing.com"},{"Name":"com.microsoft.intune.mam.managedbrowser.homepage","Value":"https:\/\/www.arstechnica.com"}]},{"ApplicationConfiguration":[{"Name":"IntuneMAMUPN","Value":"AdeleV@M365x935807.OnMicrosoft.com"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled","Value":"false"},{"Name":"com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed","Value":"false"}]}] for user User-875363642`
+    
 ## <a name="graph-api-support-for-app-configuration"></a>应用配置的图形 API 支持
 
 可使用图形 API 完成应用配置任务。 有关详细信息，请参阅[针对 Graph API 参考 MAM 的配置](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。

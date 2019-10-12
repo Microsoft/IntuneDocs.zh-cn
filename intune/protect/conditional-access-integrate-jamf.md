@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 09/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b439067d06cf49a4ff83288e109d1fccd3801106
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d7a63f3ff1e2936eff0961d4a9b368b0289e2b65
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722717"
+ms.locfileid: "71813967"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
 适用于：Azure 门户中的 Intune
 
-如果你的组织使用 [Jamf Pro](https://www.jamf.com) 管理最终用户的 Mac，则可以将 Microsoft Intune 符合性策略用于 Azure Active Directory 条件访问，从而确保组织中的设备满足合规要求。
+你的组织使用 [Jamf Pro](https://www.jamf.com) 管理 macOS 设备时，可以将 Microsoft Intune 符合性策略用于 Azure Active Directory (Azure AD) 条件访问，从而确保组织中的设备满足符合性要求，然后才能访问公司资源。 本文将帮助你配置 Jamf 与 Intune 的集成。
+
+将 Jamf Pro 与 Intune 集成时，可以通过 Azure AD 将 macOS 设备中的清单数据与 Intune 同步。 Intune 的符合性引擎随后会分析清单数据以生成报表。 Intune 的分析与有关设备用户的 Azure AD 标识的智能结合使用，以通过条件访问来驱动强制执行。 符合条件访问策略的设备可以访问受保护的公司资源。
+
+配置集成后，将在使用 Jamf 管理的设备上[配置 Jamf 和 Intune 以使用条件访问强制实现符合性](conditional-access-assign-jamf.md)。  
+
 
 ## <a name="prerequisites"></a>必备条件
 
+### <a name="products-and-services"></a>产品和服务
 需要满足以下要求才能通过 Jamf Pro 配置条件访问：
 
 - Jamf Pro 10.1.0 或更高版本
 - [适用于 macOS 的公司门户应用](https://aka.ms/macoscompanyportal)
 - 带有 OS X 10.11 Yosemite 或更高版本的 macOS 设备
+
+### <a name="network-ports"></a>网络端口
+<!-- source: https://support.microsoft.com/en-us/help/4519171/troubleshoot-problems-when-integrating-jamf-with-microsoft-intune -->
+要使 Jamf 和 Intune 正确集成，应可访问以下端口： 
+- **Intune**：端口 443
+- **Apple**：端口 2195、2196 和 5223（向 Intune 推送通知）
+- **Jamf**：端口 80 和 5223
+
+若要允许 APNS 在网络上正常运行，还必须启用与以下位置的传出连接，以及来自以下位置的重定向：
+- 通过所有客户端网络中的 TCP 端口 5223 和 443 的 Apple 17.0.0.0/8 块。   
+- Jamf Pro 服务器中的端口 2195 和 2196。  
+
+有关这些端口的详细信息，请参阅以下文章：  
+- [Intune 网络配置要求和带宽](../fundamentals/network-bandwidth-use.md)。
+- jamf.com 上的 [Jamf Pro 使用的网络端口](https://www.jamf.com/jamf-nation/articles/34/network-ports-used-by-jamf-pro)。
+- support.apple.com 上的 [Apple 软件产品使用的 TCP 和 UDP 端口](https://support.apple.com/HT202944)
+
 
 ## <a name="connect-intune-to-jamf-pro"></a>将 Intune 连接到 Jamf Pro
 
@@ -70,7 +93,7 @@ ms.locfileid: "71722717"
 
    选择“添加权限”  以保存此配置。  
 
-8. 在“API 权限”  页上，选择“为 Microsoft 授予管理员同意”  ，然后选择“是”  。  
+8. 在“API 权限”  页上，选择“为 \<你的租户> 授予管理员许可”，然后选择“是”  。  成功注册应用后，API 权限应显示如下：![成功的权限](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 
    将完成 Azure AD 中的应用注册过程。
 
@@ -99,6 +122,7 @@ ms.locfileid: "71722717"
 ## <a name="set-up-compliance-policies-and-register-devices"></a>设置符合性策略并注册设备
 
 配置 Intune 和 Jamf 之间的集成后，需要[将符合性策略应用到 Jamf 托管的设备](conditional-access-assign-jamf.md)。
+
 
 ## <a name="disconnect-jamf-pro-and-intune"></a>断开 Jamf Pro 和 Intune 的连接 
 

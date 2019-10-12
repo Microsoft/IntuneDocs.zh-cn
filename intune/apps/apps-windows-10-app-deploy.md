@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724966"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830563"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>使用 Microsoft Intune 部署 Windows 10 应用 
 
@@ -36,6 +36,8 @@ Microsoft Intune 当前支持 Windows 10 设备上的各种应用类型和部署
 > - 对于 Windows 10 1709，[2018 年 6 月 21 日 - KB4284822（操作系统内部版本 16299.522）](https://support.microsoft.com/help/4284822)。
 >
 > 如果未关联主要用户，只有 Windows 10 1803 及更高版本支持安装应用。
+>
+> 在运行 Windows 10 家庭版的设备上不支持 LOB 应用部署。
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 业务线应用
 

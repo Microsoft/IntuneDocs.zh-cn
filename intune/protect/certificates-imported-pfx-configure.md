@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721599"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999345"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用导入的 PKCS 证书
 
@@ -168,7 +168,7 @@ PowerShell 模块提供了使用 Windows 加密创建密钥的方法。 你也�
 
 7. 通过运行 `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject`，将 UserPFXCertificate  对象导入到 Intune
 
-8. 要验证证书是否已导入，请运行 `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"`
+8. 要验证证书是否已导入，请运行 `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"`
 
 有关其他可用命令的详细信息，请参阅 [GitHub 上 的 PFXImport PowerShell Project ](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell) 中的自述文件。
 
@@ -186,7 +186,7 @@ PowerShell 模块提供了使用 Windows 加密创建密钥的方法。 你也�
 
 3. 转到“设置”  ，输入以下属性：
 
-   - **预期目的**：指定为此配置文件导入的证书的预期目的。 管理员可以导入具有不同预期目的（如身份验证、S/MIME 签名或 S/MIME 加密）的证书。 证书配置文件中选择的预期目的将证书配置文件与正确的导入证书相匹配。 “预期目的”是一种将导入的证书分组在一起的标记，并不保证使用该标记导入的证书能满足预期目的。  
+   - **预期目的**：指定为此配置文件导入的证书的预期目的。 管理员可以导入具有不同预期目的（如 S/MIME 签名或 S/MIME 加密）的证书。 证书配置文件中选择的预期目的将证书配置文件与正确的导入证书相匹配。 “预期目的”是一种将导入的证书分组在一起的标记，并不保证使用该标记导入的证书能满足预期目的。  
    - **证书有效期**：除非证书模板中的有效期发生了更改，否则此选项默认为一年。  
    - **密钥存储提供程序 (KSP)** ：对于 Windows，请选择在设备上存储密钥的位置。  
 

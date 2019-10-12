@@ -17,62 +17,68 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 449e799dfc0531958c1578179cf07440d348ecf8
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721456"
+ms.locfileid: "71813953"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro 向 Intune 发送的数据
 
 使用 [Jamf Pro](https://www.jamf.com) 管理使用 Intune 的最终用户 Mac 时，Jamf Pro 会捕获有关托管的 macOS 设备的清单信息。 
 
 ## <a name="data"></a>数据  
-Jamf Pro 向 Intune 报告以下信息：  
+有关 Jamf Pro 与 Intune 共享的数据列表，请参阅 Jamf Pro 技术文档中的[附录：与 Microsoft Intune 共享的清单信息](https://docs.jamf.com/technical-papers/jamf-pro/microsoft-intune/10.9.0/Appendix__Inventory_Information_Shared_with_Microsoft_Intune.html)。 
 
-* 设备 Azure AD ID
-* JAMF 清单状态（Jamf Pro 在过去 24 小时内签入的计算机的清单状态）
-* 操作系统版本
-* 用户 Azure AD ID
-* 已加密（FileVault 2）
-* 网关守卫状态
-* 密码：最小字符集数
-* 密码过期(天)
-* 密码类型 - 简单、字母数字字符或未知
-* 防止自动登录
-* 所需的密码长度
-* 密码：阻止重用的曾用密码数
-* 系统完整性保护
-* 上次签入时间
-* 体系结构类型
-* 可用的 RAM 槽
-* 电池容量
-* 启动 ROM
-* 总线速度
-* 缓存大小
-* 设备名称
-* 域加入
+<!--  
+Jamf Pro reports the following information to Intune:  
+
+* Device Azure AD ID
+* JAMF Inventory State (inventory state of a computer checked in with Jamf Pro within the last 24 hours)
+* OS Version
+* User Azure AD ID
+* Encrypted (FileVault 2)
+* Gatekeeper Status
+* Password: minimum number of character sets
+* Password expiration (days)
+* Password Type - simple, alphanumeric, or unknown
+* Prevent Auto Login
+* Required Passcode Length
+* Password: number of previous passwords to prevent reuse
+* System Integrity Protection
+* Last Check-In Time
+* Architecture Type
+* Available RAM Slots
+* Battery Capacity
+* Boot ROM
+* Bus Speed
+* Cache Size
+* Device Name
+* Domain Join
 * Jamf ID
-* MAC 地址
-* 品牌
-* 型号
-* 模型标识符
-* NIC 速度
-* 内核数量
-* 处理器数目
-* 操作系统
-* 平台
-* 处理器速度
-* 处理器类型
-* 辅助 MAC 地址
-* 序列号
-* SMC 版本
-* 总 RAM
+* MAC address
+* Make
+* Model
+* Model Identifier
+* NIC Speed
+* Number of Cores
+* Number of Processors
+* OS
+* Platform
+* Processor Speed
+* Processor Type
+* Secondary MAC Address
+* Serial Number
+* SMC Version
+* Total RAM
 * UDID
-* 用户电子邮件
+* User Email
+--> 
 
-通过在“所有设备”视图中选择“删除”，可从 Intune 控制台中删除 Jamf 托管设备   。 通过选择多个设备并单击“删除”，可启用批量设备删除  。
+<!-- 
+You can remove a Jamf-managed device from the Intune console by selecting **Delete** in the **All devices** view. Bulk device deletion can be enabled by selecting multiple devices and clicking **Delete**.
+-->
 
 ## <a name="next-steps"></a>后续步骤
 获取有关如何[在 Jamf Pro 文档中删除 Jamf 托管设备](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的信息。还可通过 [Jamf 支持](https://www.jamf.com/support/)提交支持票证，获取更多帮助。 
