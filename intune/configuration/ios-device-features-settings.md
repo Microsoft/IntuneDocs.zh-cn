@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8cd38174b9332f285e0dc4f938d99dbd5aecf74
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 341609afeec02c67b4ea0d85a541fca61345ced4
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816885"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036474"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>用于使用 Intune 中常见 iOS 功能的 iOS 和 iPadOS 设备设置
 
@@ -32,7 +32,7 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 
 本文列出了这些设置，并介绍了每个设置的用途。 有关这些功能的详细信息，请参阅[添加 iOS 或 macOS 设备功能设置](../device-features-configure.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建 iOS 设备配置文件](../device-features-configure.md)。
 
@@ -42,6 +42,9 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 ## <a name="airprint"></a>AirPrint
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>设置适用于：所有注册类型
+
+> [!NOTE]
+> 请确保将所有打印机添加到同一个配置文件。 Apple 禁止多个 AirPrint 配置文件定位于同一设备。
 
 - **IP 地址**：输入打印机的 IPv4 或 IPv6 地址。 如果使用主机名标识打印机，可以通过在“终端”中对打印机执行 ping 操作来获取 IP 地址。 （本文中的）获取 IP 地址和路径提供了更多详细信息。
 - **路径**：网络中打印机的路径通常是 `ipp/print`。 （本文中的）获取 IP 地址和路径提供了更多详细信息。

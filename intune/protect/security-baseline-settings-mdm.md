@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735995"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237268"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>适用于 Intune 的 MDM 安全基线设置  
 
@@ -1196,7 +1196,7 @@ ms.locfileid: "71735995"
   **默认值**：是
   
 - **管理员提升权限提示行为**  
-  此策略设置控制针对管理员的提升权限提示的行为。 选项包括： 
+  此策略设置控制针对管理员的提升权限提示的行为。 其选项为： 
   - 不提示，直接提升  - 允许有权限的帐户执行需要提升的操作，而无需同意或凭据。 注意：此选项仅用在大多数受限制的环境中。 
   - 在安全桌面上提示提供凭据  - 当某项操作需要特权提升时，将在安全桌面上提示用户输入有权限的用户名和密码。 如果用户输入有效的凭据，则该操作将使用用户的最高可用权限继续执行。 
   - 在安全桌面上提示提供同意  - 当某项操作需要特权提升时，系统将在安全桌面上提示用户选择“允许”或“拒绝”。 如果用户选择“允许”，则该操作将使用用户的最高可用权限继续执行。 
@@ -1209,7 +1209,7 @@ ms.locfileid: "71735995"
   默认值  ：在安全桌面上提示提供同意
   
 - **基于 NTLM SSP 的客户端的最低会话安全性**  
-  此安全设置允许客户端要求对 128 位加密和/或 NTLMv2 会话安全性进行协商。 这些值取决于 LAN Manager 身份验证级别安全设置值。 选项包括：
+  此安全设置允许客户端要求对 128 位加密和/或 NTLMv2 会话安全性进行协商。 这些值取决于 LAN Manager 身份验证级别安全设置值。 其选项为：
   - 需要 NTLMv2 会话安全性  - 如果未协商 NTLMv 2 协议，则连接将失败。 
   - 需要 128 位加密  - 如果未协商强加密（128 位），则连接将失败。
   - 需要 NTLMv2 和 128 位加密  。  
@@ -1219,7 +1219,7 @@ ms.locfileid: "71735995"
   默认值  ：需要 NTLM V2 128 加密
   
 - **智能卡移除行为**  
-  此安全设置确定从智能卡读卡器中取下登录用户的智能卡时发生的情况。 选项包括：
+  此安全设置确定从智能卡读卡器中取下登录用户的智能卡时发生的情况。 其选项为：
   - 无操作  。 
   - *锁定工作站* - 取下智能卡时将锁定工作站，用户可离开该区域，随身携带智能卡，并仍可维护受保护的会话。
   - 强制注销  - 取下智能卡时自动注销用户。
@@ -1256,7 +1256,7 @@ ms.locfileid: "71735995"
   默认值  ：自动拒绝提升请求
   
 - **需要管理员的管理员批准模式**  
-  此策略设置控制计算机的所有用户帐户控制 (UAC) 策略设置的行为。 如果您更改此策略设置，则必须重新启动计算机。 选项包括：   
+  此策略设置控制计算机的所有用户帐户控制 (UAC) 策略设置的行为。 如果您更改此策略设置，则必须重新启动计算机。 其选项为：   
   - 未配置  - 禁用管理员批准模式以及所有相关的 UAC 策略设置。 注意：如果禁用此策略设置，则安全中心将通知你操作系统的整体安全性已降低。 
   - 是  - 启用管理员批准模式。 必须启用此策略，并且必须对相关的 UAC 策略设置进行了适当设定，才能允许内置 Administrator 帐户以及所有其他属于管理员组成员的用户在管理员批准模式下运行。  
 
@@ -1280,7 +1280,7 @@ ms.locfileid: "71735995"
   **默认值**：O:BAG:BAD:(A;;RC;;;BA) 
 
 - **使用管理员批准模式**  
-  此策略设置控制内置 Administrator 帐户的管理员批准模式行为。 选项包括： 
+  此策略设置控制内置 Administrator 帐户的管理员批准模式行为。 其选项为： 
   - 是  - 内置 Administrator 帐户使用管理员批准模式。 默认情况下，任何需要提升权限的操作都将提示用户批准该操作。 
   - 未配置  - 内置 Administrator 帐户使用完全管理权限运行所有应用程序。 
 
@@ -1298,7 +1298,7 @@ ms.locfileid: "71735995"
   **默认值**：是
 
 - **检测应用程序安装和提示提升权限**  
-  此策略设置控制计算机应用程序安装检测的行为。 选项包括： 
+  此策略设置控制计算机应用程序安装检测的行为。 其选项为： 
   - 启用  - 当检测到某个应用程序安装包需要特权提升时，系统将提示用户输入管理用户名和密码。 如果用户输入有效的凭据，则该操作将使用适用的权限继续执行。 
   - 禁用  - 不检测应用程序安装包和提示提升权限。 运行标准用户桌面并使用组策略软件安装或系统管理服务器 (SMS) 等委派安装技术的企业应该禁用此策略设置。 在这种情况下，安装程序检测是没有必要的。  
   
@@ -1396,7 +1396,7 @@ ms.locfileid: "71735995"
   
   **默认值**：已启用
 
-## <a name="remote-assistance"></a>远程帮助
+## <a name="remote-assistance"></a>远程协助
 - **请求远程协助**  
   此策略设置允许您在此计算机上启用或关闭 "请求的（要求）" 远程协助。 
   - *如果启用此策略设置*，则此计算机上的用户可以使用电子邮件或文件传输请求他人提供帮助。 此外，用户可以使用即时消息程序来允许连接到此计算机，并且可以配置其他远程协助设置。 
@@ -1539,7 +1539,7 @@ ms.locfileid: "71735995"
 
   **默认值**：是
   
-## <a name="system"></a>System (系统)  
+## <a name="system"></a>System  
 有关详细信息，请参阅 Windows 文档 [olicy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system)（策略 CSP - System）。  
 
 - **系统引导启动驱动程序初始化**  
@@ -1622,7 +1622,7 @@ ms.locfileid: "71735995"
 
 - **电子邮件内容执行类型**  
   此规则可以阻止从 Microsoft Outlook 或 Webmail（如 Gmail.com 或 Outlook.com）的电子邮件中运行或启动以下文件类型：可执行文件（例如 .exe、.dll 或 .scr）、脚本文件（如 PowerShell .ps、VisualBasic .vbs 或 JavaScript .js 文件）、脚本存档文件。  
-  [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [了解详细信息](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **默认值**：阻止
 
@@ -1632,7 +1632,7 @@ ms.locfileid: "71735995"
 
 - **网络保护类型**  
   此策略可用于在 Windows Defender 攻击防护中启用或禁用网络保护（阻止/审核）。 网络保护是 Windows Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。 值类型为整数。 如果启用此设置，则会启用网络保护，且员工无法将其禁用。 可通过以下选项控制其行为：阻止和审核。 如果启用此策略并使用“阻止”选项，则会阻止用户和应用连接到危险的域。 可在 Windows Defender 安全中心看到此活动。 如果启用此策略并使用“审核”选项，则不会阻止用户/应用连接到危险的域。 但是，仍可在 Windows Defender 安全中心看到此活动。 如果禁用此策略，则不会阻止用户/应用连接到危险的域。 无法在 Windows Defender 安全中心看到任何网络活动。 如果未配置此策略，则默认禁用网络阻止。  
-  [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [了解详细信息](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **默认值**：启用
   

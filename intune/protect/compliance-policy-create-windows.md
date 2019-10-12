@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732823"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251582"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Windows 10 及更高版本设置
 
@@ -35,11 +35,11 @@ ms.locfileid: "71732823"
 
 作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建合规性策略](create-compliance-policy.md#create-the-policy)。 在“平台”中，选择“Windows 10 及更高版本”   。
 
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>设备运行状况
 
 - **需要启用 BitLocker**：设置为“需要”时，在系统关闭或处于休眠状态时，设备能够保护存储在驱动器上的数据免受未经授权的访问  。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据。 此外，它还有助于确认计算机不被篡改，即使它处于无人参与、丢失或被盗状态，也不例外。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 因此，仅当 TPM 验证计算机状态后，才能访问密钥。
 
@@ -138,6 +138,9 @@ ms.locfileid: "71732823"
 - **防火墙**：设置为 "**需要**启用 Microsoft Defender 防火墙"，并阻止用户关闭。 **未配置**（默认）不控制 Microsoft Defender 防火墙，也不更改现有设置。
 
   [防火墙 CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > 如果设备在重新启动后立即同步，或立即同步从睡眠状态唤醒，则此设置可能会报告为**错误**。 此方案可能不影响整体设备符合性状态。 若要重新评估符合性状态，请手动[同步设备](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)。
 
 - **受信任的平台模块（TPM）** ：当设置为 "必需" 时，Intune 将检查版本是否符合**要求**。 如果 TPM 芯片版本大于0（零），则设备是合规的。 如果设备上没有 TPM 版本，则设备不合规。 如果**未配置**，Intune 不会检查设备的 TPM 芯片版本。
 
