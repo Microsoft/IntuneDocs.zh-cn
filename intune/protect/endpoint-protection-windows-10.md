@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
-ms.translationtype: HT
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732719"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163583"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Windows 10（及更高版本）设置，用于保护使用 Intune 的设备  
 
@@ -31,7 +31,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 若要配置 Windows Defender 防病毒软件，请参阅 [Windows 10 设备限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
 
-## <a name="before-you-begin"></a>在开始之前  
+## <a name="before-you-begin"></a>开始之前  
 
 [创建 Endpoint Protection 设备配置配置文件](endpoint-protection-configure.md)。  
 
@@ -776,26 +776,27 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender 攻击防护  
 
-使用 [Windows Defender 攻击防护](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard)管理和减少员工所用应用的受攻击面。  
+使用[exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)来管理和减少员工使用的应用的受攻击面。  
 
 ### <a name="attack-surface-reduction"></a>攻击面减少  
 
-有关*攻击面减少*规则的详细信息，请参阅 Windows Defender 攻击防护文档中的[通过 Windows Defender 攻击防护减小攻击面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)。  
+攻击面减少规则可帮助防止恶意软件通常使用来感染具有恶意代码的计算机。  
 
 #### <a name="attack-surface-reduction-rules"></a>攻击面减少规则  
 
 - **标记从 Windows 本地安全机构子系统窃取的凭据**  
   **默认值**：未配置  
-  攻击防护：[攻击面减少规则](https://go.microsoft.com/fwlink/?linkid=874499)
+  规则：[阻止从 Windows 本地安全机构子系统 (lsass.exe) 中窃取凭据](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   帮助防止操作和应用（通常被寻找漏洞的恶意软件所利用）感染计算机。  
+
   - 未配置   
   - **启用** - 标记从 Windows 本地安全机构子系统 (lsass.exe) 窃取的凭据。  
   - **仅审核**  
 
 - **从 Adobe Reader （beta 版本）创建进程**  
   **默认值**：未配置  
-  攻击防护：[攻击面减少规则](https://go.microsoft.com/fwlink/?linkid=853979)  
+  规则：[阻止 Adobe Reader 创建子进程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - 未配置   
   - **Enable** -阻止从 Adobe Reader 创建的子进程。  
@@ -807,7 +808,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **Office 应用插入其他进程（无异常）**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=872974)  
+  规则：[阻止 Office 应用程序将代码注入其他进程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - 未配置   
   - **阻止**Office 应用插入其他进程。  
@@ -815,7 +816,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **Office 应用/宏创建可执行内容**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=872975)  
+  规则：[阻止 Office 应用程序创建可执行内容](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - 未配置   
   - **阻止**Office 应用和宏创建可执行内容。  
@@ -823,7 +824,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **Office 应用启动子进程**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=872976)  
+  规则：[阻止所有 Office 应用程序创建子进程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - 未配置   
   - **阻止**Office 应用启动子进程。  
@@ -831,7 +832,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   
 - **Win32 从 Office 宏代码导入**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=872977)  
+  规则：[阻止来自 Office 宏的 Win32 API 调用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - 未配置   
   - **块**区 Win32 从 Office 中的宏代码导入。  
@@ -839,7 +840,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   
 - **从 Office communication 产品创建进程**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=874499)  
+  规则：[阻止 Office 通信应用程序创建子进程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - 未配置   
   - **Enable** -阻止从 Office communication apps 创建子进程。  
@@ -851,7 +852,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **不确定的 js/vbs/ps/宏代码**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=872978)    
+  规则：[阻止执行可能经过模糊处理的脚本](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - 未配置   
   - **Block** -阻止任何模糊的 js/vbs/ps/宏代码。  
@@ -859,7 +860,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **js/vbs 执行从 Internet 下载的有效负载（无异常）**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=872979)  
+  规则：[阻止 JavaScript 或 VBScript 启动下载的可执行内容](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - 未配置   
   - **块**区 js/vbs 执行从 Internet 下载的有效负载。  
@@ -867,7 +868,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **来自 PSExec 和 WMI 命令的进程创建**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=874500)  
+  规则：[阻止来自 PSExec 和 WMI 命令的进程创建](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - 未配置   
   - **阻止** - 阻止来自 PSExec 和 WMI 命令的进程创建。  
@@ -876,7 +877,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **从 USB 运行的不受信任和未签名的进程**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=874502)    
+  规则：[阻止从 USB 运行的不受信任和未签名的进程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - 未配置   
   - **阻止** - 阻止从 USB 运行的不受信任和未签名的进程。  
@@ -884,7 +885,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   
 - **不符合普及程度、年龄或信任列表条件的可执行文件**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=874503)    
+  规则：[阻止可执行文件的运行，除非这些文件符合普及程度、年龄或信任列表条件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - 未配置   
   - **阻止** - 阻止可执行文件的运行，除非这些文件符合普及程度、年龄或信任列表条件。  
@@ -896,7 +897,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **执行从电子邮件（webmail/邮件客户端）中删除的可执行内容（exe、dll、ps、js、vbs 等）（无异常）**  
   **默认值**：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=872980)  
+  规则：[阻止来自电子邮件客户端和 Web 邮件的可执行内容](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - 未配置   
   - **阻止** - 阻止执行从电子邮件（webmail/邮件客户端）中删除的可执行内容（exe、dll、ps、js、vbs 等）。  
@@ -906,7 +907,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **高级勒索软件防护**  
   默认值：未配置  
-  [攻击防护文档](https://go.microsoft.com/fwlink/?linkid=874504)  
+  规则：[对勒索软件启用高级防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - 未配置   
   - **启用** - 使用激进的勒索软件防护。  
@@ -932,7 +933,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 ### <a name="controlled-folder-access"></a>受控文件夹访问权限  
 
-帮助[防止重要数据](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)受到恶意应用和威胁（如勒索软件）的攻击。  
+帮助[防止重要数据](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders)受到恶意应用和威胁（如勒索软件）的攻击。  
 
 - **文件夹保护**  
   **默认值**：未配置  
@@ -979,7 +980,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 - **上传 XML**  
   **默认值**：未配置   
 
-  若要使用利用防护来[保护设备免受攻击](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，请创建一个包含所需的系统和应用程序缓解设置的 XML 文件。 可以通过两种方法来创建 XML 文件：  
+  若要使用利用防护来[保护设备免受攻击](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，请创建一个包含所需的系统和应用程序缓解设置的 XML 文件。 可以通过两种方法来创建 XML 文件：  
 
   - *PowerShell* - 使用一个或多个 Get-ProcessMitigation、Set-ProcessMitigation 和 ConvertTo-ProcessMitigationPolicy PowerShell cmdlet    。 这些 cmdlet 配置缓解设置并导出它们的 XML 表示形式。  
 
@@ -1311,7 +1312,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   - **强制注销** - 取下智能卡时自动注销用户。  
   - **如果是远程桌面服务会话，则断开连接** - 取下智能卡会断开会话，但不会注销用户。 使用此选项，用户可以稍后插入智能卡并恢复会话，或者在另一台配备智能卡读卡器的计算机上恢复会话，而无需再次登录。 如果是本地会话，则此策略与“锁定工作站”的功能相同。  
 
-#### <a name="display"></a>显示  
+#### <a name="display"></a>显示器  
 
 - **锁定屏幕上的用户信息**  
   **默认值**：未配置  

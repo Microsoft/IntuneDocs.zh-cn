@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734786"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251546"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -30,7 +30,7 @@ ms.locfileid: "71734786"
 > [!Note]
 > 并非所有选项在所有版本的 Windows 上都可用。 若要查看受支持的版本，请参阅 [policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)（策略 CSP）（打开另一个 Microsoft 网站）。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](device-restrictions-configure.md#create-the-profile)。
 
@@ -100,7 +100,7 @@ ms.locfileid: "71734786"
 - **手动 Wi-Fi 配置**：选择“阻止”可阻止设备连接到 MDM 服务器安装的网络之外的 Wi-Fi  。 选择“未配置”（默认）则允许终端用户添加和配置自己的 Wi-Fi 连接网络 SSID  。
 - **Wi-Fi 扫描间隔**：输入设备扫描 Wi-Fi 网络的频率。 输入从 1（频率最高）到 500（频率最低）的值。 默认值为 `0`。
 
-### <a name="bluetooth"></a>蓝牙
+### <a name="bluetooth"></a>Bluetooth
 
 这些设置使用[蓝牙策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth)，该策略还列出了受支持的 Windows 版本。
 
@@ -157,7 +157,7 @@ ms.locfileid: "71734786"
   - **隐私**：选择“阻止”可阻止访问设备上设置应用的隐私区域  。 选择“未配置”（默认）则允许访问  。
   - **更新安全**：选择“阻止”可阻止访问设备上设置应用的更新安全区域  。 选择“未配置”（默认）则允许访问  。
 
-## <a name="display"></a>显示
+## <a name="display"></a>显示器
 
 这些设置使用[显示策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display)，该策略还列出了受支持的 Windows 版本。
 
@@ -561,7 +561,7 @@ ms.locfileid: "71734786"
   - **中等**：针对成人内容的中等筛选。 不会筛选有效的搜索结果。
 - **在搜索中显示 Web 结果**：设置为“阻止”时，用户无法搜索，且搜索中不会显示 Web 结果  。 选择“未配置”（默认）允许用户搜索 Web，并在设备上显示结果  。
 
-## <a name="start"></a>启动
+## <a name="start"></a>以管理员身份启动
 
 这些设置使用[开始策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start)，该策略还列出了受支持的 Windows 版本。  
 
@@ -665,29 +665,55 @@ ms.locfileid: "71734786"
 
 这些设置使用[defender 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)，该策略还列出了受支持的 Windows 版本。
 
-- **实时监控**：选择“启用”可禁止对恶意软件、间谍软件和其他不需要的软件的实时扫描  。 选择“未配置”（默认）则允许此功能  。
+- **实时监控**：选择“启用”可启用对恶意软件、间谍软件和其他不需要的软件的实时扫描  。 用户不能将其关闭。 
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此功能，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **行为监控**：选择“启用”可禁止 Defender 检查设备上是否存在某些已知模式的可疑活动  。 选择“未配置”（默认）则允许 Windows Defender 行为监视  。
+- **行为监控**：选择“启用”可启用行为监控，并检查设备上是否存在某些已知模式的可疑活动  。 用户无法关闭行为监视。 
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用行为监视，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **网络检查系统 (NIS)** ：NIS 可帮助保护设备免遭基于网络的攻击。 它使用 Microsoft Endpoint Protection 中心中的已知漏洞签名来帮助检测和阻止恶意流量。
 
-  “未配置”（默认设置）会禁用此功能  。 不会阻止用户连接到已知的漏洞。 如果设置为 "**启用**"，则会启用网络保护和网络阻止功能，并且用户无法将其关闭。 阻止用户连接到已知的漏洞。
+  **启用启用**网络保护和网络阻止。 用户不能将其关闭。 启用后，阻止用户连接到已知的漏洞。
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用 NIS，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **扫描所有下载**：**未配置**（默认）具有 Defender 扫描从 Internet 下载的所有文件。 如果设置为 "**启用**"，则将禁用此功能。 因此，Defender 不会扫描所有下载的 Internet 文件。
+- **扫描所有下载**：**启用启用**此设置，而 Defender 扫描从 Internet 下载的所有文件。 用户无法关闭此设置。 
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此设置，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **扫描 Microsoft Web 浏览器中加载的脚本**：选择“未配置”（默认）允许 Defender 扫描在 Internet Explorer 中使用的脚本  。 选择“启用”可阻止此扫描  。
+- **扫描 Microsoft Web 浏览器中加载的脚本**：选择“启用”  可允许 Defender 扫描在 Internet Explorer 中使用的脚本。 用户无法关闭此设置。 
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此设置，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **Defender 的最终用户访问权限**：选择“阻止”可对最终用户隐藏 Windows Defender 用户界面  。 所有 Windows Defender 通知也被禁止。 选择“未配置”（默认）则允许用户访问 Windows Defender UI  。 此设置更改后，在最终用户的电脑下次重启时生效。
+- **Defender 的最终用户访问权限**：选择“阻止”可对最终用户隐藏 Microsoft Defender 用户界面  。 所有 Microsoft Defender 通知也被禁止。
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果阻止设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统允许用户访问 Microsoft Defender UI，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+
+  此设置更改后，在最终用户的电脑下次重启时生效。
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ ms.locfileid: "71734786"
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **在扫描期间限制 CPU 使用率**：限制允许扫描使用的 CPU 量（从 `0` 到 `100`）。
-- **扫描存档文件**：**允许**关闭 Defender 扫描存档文件（如 Zip 或 Cab 文件）。 选择“未配置”（默认）则允许扫描文件  。
+- **扫描存档文件**：**启用启用**Defender，使其扫描存档文件（如 Zip 或 Cab 文件）。 用户无法关闭此设置。
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此扫描，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **扫描传入的电子邮件**：选择“启用”可允许 Defender 在电子邮件到达设备时扫描它们  。 选择“未配置”（默认）会阻止电子邮件扫描  。
+- **扫描传入的电子邮件**：选择“启用”可允许 Defender 在电子邮件到达设备时扫描它们  。 启用后，引擎会分析邮箱和邮件文件，以分析邮件正文和附件。 可以扫描 .pst （Outlook）、.dbx、. mbx、MIME （Outlook Express）和 BinHex （Mac）格式。
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会关闭此扫描，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **完全扫描期间扫描可移动驱动器**：选择“启用”可阻止完全扫描可移动驱动器  。 选择“未配置”（默认）则允许 Defender 扫描可移动驱动器，如 U 盘  。
+- **完全扫描期间扫描可移动驱动器**：在完全扫描期间**启用**Defender 可移动驱动器扫描。 用户无法关闭此设置。
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统允许 Defender 扫描可移动驱动器（如 USB 棒），并允许用户更改此设置。
 
   在快速扫描过程中，可能仍会扫描可移动驱动器。
 
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+
   [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- **完全扫描期间扫描映射的网络驱动器**：选择“启用”可允许 Defender 扫描映射网络驱动器上的文件  。 选择“未配置”（默认）则阻止完全扫描  。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
+- **完全扫描期间扫描映射的网络驱动器**：选择“启用”  可允许 Defender 扫描映射网络驱动器上的文件。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。 用户无法关闭此设置。
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此功能，并允许用户对其进行更改。
 
   在快速扫描过程中，可能仍会扫描映射的网络驱动器。
 
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **扫描从网络文件夹打开的文件**：选择“未配置”（默认）可允许 Defender 扫描共享网络驱动器上的文件（例如，从 UNC 路径访问的文件）  。 选择“启用”可阻止此扫描  。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
+- **扫描从网络文件夹打开的文件**： **Enable 允许**Defender 扫描从网络文件夹或共享的网络驱动器打开的文件，例如从 UNC 路径访问的文件。 用户无法关闭此设置。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会扫描从网络文件夹打开的文件，并允许用户对其进行更改。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **Cloud 保护**：选择“未配置”（默认）允许 Microsoft Active Protection Service 接收来自你管理的设备的恶意软件活动的相关信息  。 选择“启用”可阻止此功能  。
+- **云保护**：选择“启用”可启用 Microsoft Active Protection Service 以接收来自你管理的设备的恶意软件活动的相关信息  。 用户无法更改此设置。 
+
+  当设置为 "**未配置**" （默认值）时，Intune 不会接触此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统允许 Microsoft Active Protection Service 接收信息，并允许用户更改此设置。
+
+  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
 
   [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 

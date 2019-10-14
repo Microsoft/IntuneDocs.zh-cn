@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 10/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5cdb6bbdcce229fbc217726a1ee118f77beff
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9e8fadb625073af2a70d605d3ceabb9ba97906ae
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733408"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008337"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>使用 Power BI 连接到数据仓库
 
@@ -76,9 +76,10 @@ Power BI [Intune 符合性（数据仓库）](https://aka.ms/intune/datawarehous
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 单击 "概述" 边栏选项卡右侧的 "**其他任务**" 部分下的 "**设置 Intune 数据仓库**"。 将显示 " **Intune 数据仓库**" 边栏选项卡。
-3. 在报表边栏选项卡中检索自定义源 URL，例如：`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
+3. 在报表边栏选项卡中检索自定义源 URL，例如：<br>
+    `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. 打开 Power BI Desktop  。
-5. 选择“开始” > “获取数据”   。 选择“OData 源”  。
+5. 选择 " **File** > **获取数据**"。 选择“OData 源”  。
 6. 选择“基本”  。
 7. 在 URL 框中键入或粘贴 OData URL  。
 8. 选择“确定”  。

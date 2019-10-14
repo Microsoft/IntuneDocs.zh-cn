@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732953"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163490"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
@@ -86,7 +86,7 @@ ms.locfileid: "71732953"
 ## <a name="attack-surface-reduction"></a>攻击面减少  
 
 - **Office 应用启动子进程类型**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“阻止”  时，不会允许 Office 应用创建子进程。 Office 应用包括 Word、Excel、PowerPoint、OneNote 和 Access。 创建子进程是典型的恶意软件行为，尤其是在基于宏的攻击中，该行为试图使用 Office 应用启动或下载恶意可执行文件。  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，不会允许 Office 应用创建子进程。 Office 应用包括 Word、Excel、PowerPoint、OneNote 和 Access。 创建子进程是典型的恶意软件行为，尤其是在基于宏的攻击中，该行为试图使用 Office 应用启动或下载恶意可执行文件。  
 
   **默认值**：阻止
 
@@ -101,7 +101,7 @@ ms.locfileid: "71732953"
   **默认值**：启用
 
 - **电子邮件内容执行类型**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“阻止”  时，此规则可以阻止从 Microsoft Outlook 或 Webmail （如 Gmail.com 或 Outlook.com）的电子邮件中运行或启动以下文件类型：  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，此规则可以阻止从 Microsoft Outlook 或 Webmail （如 Gmail.com 或 Outlook.com）的电子邮件中运行或启动以下文件类型：  
 
   - 可执行文件（如 .exe、.dll 或 .scr）  
   - 脚本文件（如 PowerShell .ps、VisualBasic .vbs 或 JavaScript .js 文件）  
@@ -110,17 +110,17 @@ ms.locfileid: "71732953"
   **默认值**：阻止
 
 - **Adobe Reader 在子进程中启动**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“启用”  时，此规则可阻止 Adobe Reader 创建子进程。 通过社会工程或攻击，恶意软件可以下载并启动其他有效负载并中断 Adobe Reader。  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“启用”  时，此规则可阻止 Adobe Reader 创建子进程。 通过社会工程或攻击，恶意软件可以下载并启动其他有效负载并中断 Adobe Reader。  
 
   **默认值**：启用
 
 - **脚本混淆的宏代码类型**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 恶意软件和其他威胁可能会尝试在某些脚本文件中混淆或隐藏其恶意代码。 此规则可阻止运行混淆的脚本。  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 恶意软件和其他威胁可能会尝试在某些脚本文件中混淆或隐藏其恶意代码。 此规则可阻止运行混淆的脚本。  
     
   **默认值**：阻止
 
 - **不受信任的 USB 进程类型**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“阻止”  时，无法运行 USB 可移动驱动器和 SD 卡中的未签名或不受信任的可执行文件。
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，无法运行 USB 可移动驱动器和 SD 卡中的未签名或不受信任的可执行文件。
 
   可执行文件包括：
   - 可执行文件（如 .exe、.dll 或 .scr）
@@ -129,22 +129,22 @@ ms.locfileid: "71732953"
   **默认值**：阻止
 
 - **Office 应用其他进程注入类型**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“阻止”  时，Office 应用（包括 Word、Excel、PowerPoint 和 OneNote）无法将代码注入到其他进程中。 恶意软件通常会使用代码注入来运行恶意代码，试图对防病毒扫描引擎隐藏活动。  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，Office 应用（包括 Word、Excel、PowerPoint 和 OneNote）无法将代码注入到其他进程中。 恶意软件通常会使用代码注入来运行恶意代码，试图对防病毒扫描引擎隐藏活动。  
 
   **默认值**：阻止
 
 - **Office 宏代码运行 Win32 导入类型**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“阻止”  时，此规则可尝试阻止包含可导入 Win32 DLL 的宏代码的 Office 文件。 Office 文件包括 Word、Excel、PowerPoint 和 OneNote。 恶意软件可以在 Office 文件中使用宏代码来导入和加载 Win32 DLL，然后使用这些 DLL 进行 API 调用，以在整个系统中实现进一步感染。  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，此规则可尝试阻止包含可导入 Win32 DLL 的宏代码的 Office 文件。 Office 文件包括 Word、Excel、PowerPoint 和 OneNote。 恶意软件可以在 Office 文件中使用宏代码来导入和加载 Win32 DLL，然后使用这些 DLL 进行 API 调用，以在整个系统中实现进一步感染。  
 
   **默认值**：阻止
 
 - **Office 通信应用在子进程中启动**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“启用”  时，此规则可阻止 Outlook 创建子进程。 通过阻止创建子进程，此规则可防止社会工程攻击，并防止攻击代码滥用 Outlook 中的漏洞。  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“启用”  时，此规则可阻止 Outlook 创建子进程。 通过阻止创建子进程，此规则可防止社会工程攻击，并防止攻击代码滥用 Outlook 中的漏洞。  
 
   **默认值**：启用
 
 - **Office 应用可执行内容创建或启动类型**  
-  [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - 设置为“阻止”  时，Office 应用无法创建可执行文件内容。 Office 应用包括 Word、Excel、PowerPoint、OneNote 和 Access。  
+  [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，Office 应用无法创建可执行文件内容。 Office 应用包括 Word、Excel、PowerPoint、OneNote 和 Access。  
 
   此规则针对创建或启动可执行文件的可疑和恶意外接程序和脚本（扩展）使用的典型行为。 这是典型的恶意软件技术。 将阻止 Office 应用使用扩展。 这些扩展通常使用 Windows Scripting Host（.wsh 文件）来运行脚本，自动执行某些任务或提供用户创建的外接程序功能。
 
@@ -273,7 +273,7 @@ ms.locfileid: "71732953"
 ## <a name="exploit-protection"></a>Exploit Protection  
 
 - **Exploit protection XML**  
-  有关详细信息，请参阅 Windows 文档中的[导入、导出和部署 exploit protection 配置](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml)。  
+  有关详细信息，请参阅 Windows 文档中的[导入、导出和部署 exploit protection 配置](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml)。  
 
   使 IT 管理员能够将表示所需系统和应用程序缓解选项的配置推送到组织中的所有设备。 配置由 XML 表示。 
 
