@@ -29,7 +29,7 @@ ms.locfileid: "71724771"
 将 Intune 应用保护策略和 Microsoft Edge 结合使用，可帮助确保始终在具有足够安全措施的情况下访问公司网站。 提供了 Intune 策略启用的以下 Microsoft Edge 企业功能：
 
 - **双重标识。** 用户可以同时添加工作帐户以及个人帐户以进行浏览。 两个标识完全独立，这类似于 Office 365 和 Outlook 中的体系结构和体验。 Intune 管理员可以为工作帐户中受保护的浏览体验设置所需的策略。
-- **Intune 应用保护策略集成。** 由于 Microsof Edge 已与 Intune SDK 集成，因此可以针对性地使用应用保护策略，防止数据丢失。 这些功能包括控制剪切、复制和粘贴，阻止屏幕捕获，以及确保用户选择的链接仅在其他托管应用中打开。
+- **Intune 应用保护策略集成。** 由于 Microsoft Edge 已与 Intune SDK 集成，因此可以针对性地使用应用保护策略，防止数据丢失。 这些功能包括控制剪切、复制和粘贴，阻止屏幕捕获，以及确保用户选择的链接仅在其他托管应用中打开。
 - **Azure 应用程序代理集成。** 可控制对软件即服务 (SaaS) 应用和 Web 应用的访问。 这有助于确保仅在安全的 Microsoft Edge 浏览器中运行基于浏览器的应用，不论最终用户是从公司网络连接还是从 Internet 连接。
 - **应用程序配置。** 可利用应用程序配置设置来加强组织的安全状况，并为最终用户配置易用功能。 例如，可定义书签、主页快捷方式、允许或阻止的站点和 Azure Active Directory (Azure AD) 应用程序代理。
 
@@ -43,7 +43,7 @@ Microsoft Edge 的 Microsoft Intune 保护策略有助于保护组织的数据�
 
 ## <a name="application-protection-policies-for-microsoft-edge"></a>Microsoft Edge 的应用程序保护策略
 
-由于 Microsof Edge 已与 Intune SDK 集成，因此你可向其应用应用保护策略。
+由于 Microsoft Edge 已与 Intune SDK 集成，因此你可向其应用应用保护策略。
 
 可将这些设置应用于：
 - 已注册 Intune 的设备。
@@ -100,7 +100,7 @@ SSO 要求设备通过 Microsoft Authenticator 应用（iOS 设备）或 Intune 
 2. 选择“客户端应用”   > “应用配置策略”   > “添加”  。
 3. 在“添加配置策略”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”    。
 4. 对于“设备注册”类型，选择“托管应用”   。
-5. 选择“选择所需应用”  。 然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”或“Edge”    。
+5. 选择“选择所需应用”  。 然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”或“Microsoft Edge”    。
 6. 选择“确定”，返回到“添加配置策略”边栏选项卡   。
 7. 选择“配置设置”  。 在“配置”  边栏选项卡上，定义键值对来为 Microsoft Edge 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
 
@@ -156,7 +156,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 - Microsoft Edge 应用必须分配 [Intune 应用保护策略](app-protection-policy.md)。
 
 > [!NOTE]
-> 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 和 Microsof Edge 中生效。
+> 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 和 Microsoft Edge 中生效。
 
 #### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>步骤 1：从 Outlook 启用指向 Microsoft Edge 的自动重定向
 为 Outlook 配置应用保护策略，该策略启用“使用策略托管浏览器共享 Web 内容”  设置。

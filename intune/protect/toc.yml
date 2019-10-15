@@ -210,7 +210,7 @@
     - name: 故障排除
       items:
         - name: 策略和配置文件疑难解答
-          href: troubleshoot-policies-in-microsoft-intune.md
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
         - name: 条件访问疑难解答
           href: troubleshoot-conditional-access.md
         - name: 证书连接器疑难解答

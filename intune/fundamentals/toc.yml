@@ -6,8 +6,9 @@
     - name: Microsoft Intune 概述
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: Intune 可以为公司带来什么好处？
-      href: get-started-evaluation.md
+    - name: 设备管理概述
+      href: what-is-device-management.md
+      displayName: teamviewer
     - name: 新增功能
       href: whats-new.md
       items:
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: 概念
   items:
-    - name: 什么是设备管理？
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: 什么是 Intune for Education？
       href: introduction-intune-education.md
     - name: 体系结构概况
