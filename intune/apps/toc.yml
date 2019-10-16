@@ -158,7 +158,7 @@
                   href: app-protection-policy-settings-android.md
                 - name: iOS 设置
                   href: app-protection-policy-settings-ios.md
-                - name: 访问操作
+                - name: 条件启动
                   href: app-protection-policies-access-actions.md
                 - name: 数据传输例外情况
                   href: app-protection-policies-exception.md

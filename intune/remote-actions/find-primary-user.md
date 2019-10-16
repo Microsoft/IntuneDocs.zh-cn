@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728359"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379699"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>查找 Intune 设备的主要用户
 
@@ -46,7 +46,7 @@ ms.locfileid: "71728359"
 
 如果 Intune 设备未分配主要用户，则公司门户应用会将其视为共享设备。 共享设备可通过设备磁贴上显示的“共享”标签直观识别。 在此模式下，公司门户仍可用于请求和安装可用应用。 但是，自助服务操作（重置/重命名/停用）不可用。  
 
-若要显示在共享设备上的公司门户中，必须将可用应用分配给用户组。 它们将安装在系统上下文或用户上下文中，具体取决于 IT 管理员配置应用的方式。 有关应用上下文的详细信息，请参阅[在 Windows 10 设备上安装应用](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices)。 此功能要求使用公司门户版本 10.3.4651.0 或更高版本。
+若要显示在共享设备上的公司门户中，必须将可用应用分配给用户组。 它们将安装在系统上下文或用户上下文中，具体取决于 IT 管理员配置应用的方式。 有关应用上下文的详细信息，请参阅[在 Windows 10 设备上安装应用](../apps/apps-windows-10-app-deploy.md)。 此功能要求使用公司门户版本 10.3.4651.0 或更高版本。
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>谁被分配为主要用户？
