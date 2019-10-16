@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4b82124fe8f6da7116c8333e293f219d7c667f9c
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036428"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310919"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中添加合作伙伴证书颁发机构
 
@@ -31,7 +31,7 @@ ms.locfileid: "72036428"
 **第 1 部分 - 使用开源代码 API**  
 Microsoft 创建了与 Intune 集成的 API。 通过该 API，可验证证书、发送成功或失败通知，以及使用 SSL（特别是 SSL 套接字工厂）与 Intune 进行通信。
 
-[Intune SCEP API 公共 GitHub 存储库](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)中提供了该 API，你可以下载和在解决方案中使用。 SCEP 向设备预配证书之前，将此 API 与第三方 SCEP 服务器配合使用，以针对 Intune 运行自定义质询验证。
+[Intune SCEP API 公共 GitHub 存储库](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)中提供了该 API，你可以下载和在解决方案中使用。 SCEP 向设备预配证书之前，将此 API 与第三方 SCEP 服务器配合使用，以针对 Intune 运行自定义质询验证。
 
 [与 Intune SCEP 管理解决方案集成](scep-libraries-apis.md)可提供有关使用 API、其方法以及测试构建的解决方案的详细信息。
 
@@ -129,11 +129,11 @@ Microsoft 创建了与 Intune 集成的 API。 通过该 API，可验证证书�
 
 如果第三方 CA 有兴趣将产品与 Intune 集成，请查看 API 指南：
 
-- [Intune SCEP API GitHub 存储库](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Intune SCEP API GitHub 存储库](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [适用于第三方 CA 的 Intune SCEP API 指南](scep-libraries-apis.md)
 
 ## <a name="see-also"></a>另请参阅
 
 - [配置证书配置文件](certificates-scep-configure.md)
-- [Intune SCEP API GitHub 存储库](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Intune SCEP API GitHub 存储库](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [适用于第三方 CA 的 Intune SCEP API 指南](scep-libraries-apis.md)

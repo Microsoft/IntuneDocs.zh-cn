@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0d4bf6a52fd860695433e0020e9ec7390f98eca6
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724290"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314648"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>使用 Windows 10 模板在 Microsoft Intune 中配置组策略设置
 
@@ -38,7 +38,7 @@ Windows 设置类似于 Active Directory (AD) 中的组策略 (GPO) 设置。 �
 
 - 其中一些设置从 Windows 10 版本 1703 (RS2) 开始提供。 所有 Windows 版本中均不包含某些设置。 为获得最佳体验，建议使用 Windows 10 企业版 1903 (19H1) 及更高版本。
 
-- Windows 设置使用 [Windows 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)。 CSP 适用于不同版本的 Windows，例如家庭版、专业版和企业版等。 要查看 CSP 是否适用于特定版本，请转到 [Windows 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies)。
+- Windows 设置使用 [Windows 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)。 CSP 适用于不同版本的 Windows，例如家庭版、专业版和企业版等。 要查看 CSP 是否适用于特定版本，请转到 [Windows 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies)。
 
 ## <a name="create-a-template"></a>创建模板
 

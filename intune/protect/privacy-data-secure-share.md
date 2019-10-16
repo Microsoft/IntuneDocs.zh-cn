@@ -1,5 +1,6 @@
 ---
 title: Intune 中的数据安全性和数据共享
+titleSuffix: Microsoft Intune
 description: 了解 Intune 中如何保护和共享个人数据。
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 53480b7a2e008af46f4f8929cc6321e10b042b33
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721950"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306751"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune 中的数据安全性和数据共享
 

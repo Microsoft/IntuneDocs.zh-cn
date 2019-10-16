@@ -1,5 +1,6 @@
 ---
 title: 视图和正确的个人数据
+titleSuffix: Microsoft Intune
 description: 了解如何查看和更正个人数据。
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9261c451a7a5bdf5f718193adbfcb2389fa285a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9b6ca291f55511be9e88b0ff898d9383691542bf
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727917"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310902"
 ---
 # <a name="view-and-correct-personal-data"></a>视图和正确的个人数据
 
@@ -43,7 +44,7 @@ Microsoft 使用严格的控制来管理对客户数据的访问权限，以授�
 
 可使用基于角色的管理控制 (RBAC) 来保护和控制对最终用户个人数据的访问权限。 有关详细信息，请参阅 [RBAC 与 Microsoft Intune](../fundamentals/role-based-access-control.md)。
 
-有关 Microsoft 数据实践的详细信息，请参阅 Online Services 条款和 [Microsoft Online Services 隐私声明](http://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)。 
+有关 Microsoft 数据实践的详细信息，请参阅 Online Services 条款和 [Microsoft Online Services 隐私声明](https://go.microsoft.com/fwlink/p/?linkid=131004&clcid=0x409)。 
 
 ## <a name="correct-end-user-personal-data"></a>更正最终用户的个人数据
 

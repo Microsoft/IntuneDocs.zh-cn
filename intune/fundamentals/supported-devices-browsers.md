@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c87cb90ee7803b0848c57b91a801976b2aa4d6e9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d2777f2caabc24a457fc407b3e47facb1f6fc3c
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721703"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314618"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支持的操作系统和浏览器
 
 设置 Microsoft Intune 之前，请查看所支持的操作系统和浏览器。
 
-若要获取在设备上安装 Intune 方面的帮助，请参阅[使用托管设备完成工作 https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) 和 [Intune 网络带宽使用情况](network-bandwidth-use.md)。
+若要获取在设备上安装 Intune 方面的帮助，请参阅[使用托管设备完成工作](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions)和 [Intune 网络带宽使用情况](network-bandwidth-use.md)。
 
 有关配置服务提供商支持的详细信息，请访问[配置服务提供商参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)。
 

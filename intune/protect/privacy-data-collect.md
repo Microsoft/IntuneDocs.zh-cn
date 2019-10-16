@@ -1,5 +1,6 @@
 ---
 title: Intune 中的数据收集
+titleSuffix: Microsoft Intune
 description: 了解 Intune 中收集个人数据的方式。
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e07ee5e3f69a3fb1d4d92e771c389df340e9c012
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: cd1d0de4b1ae930ebeff07539f9cfa8848f0b7ce
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722015"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306910"
 ---
 # <a name="data-collection-in-intune"></a>Intune 中的数据收集
 

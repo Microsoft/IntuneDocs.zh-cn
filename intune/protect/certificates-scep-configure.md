@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39858a74cd9503ff40de51ab3680ccf509d25c49
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722912"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310942"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>配置基础结构以支持在 Intune 中使用 SCEP  
   
@@ -37,7 +37,7 @@ Intune 支持使用简单证书注册协议 (SCEP) 来[验证体验与应用和�
 
 ### <a name="servers-and-server-roles"></a>服务器和服务器角色  
 以下本地基础结构必须在已加入 Active Directory 域的服务器上运行，Web 应用程序代理服务器除外。  
-- 证书颁发机构  - 使用在 Windows Server 2008 R2 企业版 Service Pack 1 或更高版本上运行的 Microsoft Active Directory 证书服务企业证书颁发机构 (CA)。 所用 Windows Server 版本必须仍受 Microsoft 支持。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](http://technet.microsoft.com/library/jj125375.aspx)。 如果 CA 运行的是 Windows Server 2008 R2 SP1，则必须[安装修补程序 KB2483564](http://support.microsoft.com/kb/2483564/)。  
+- 证书颁发机构  - 使用在 Windows Server 2008 R2 企业版 Service Pack 1 或更高版本上运行的 Microsoft Active Directory 证书服务企业证书颁发机构 (CA)。 所用 Windows Server 版本必须仍受 Microsoft 支持。 不支持独立 CA。 有关详细信息，请参阅[安装证书颁发机构](https://technet.microsoft.com/library/jj125375.aspx)。 如果 CA 运行的是 Windows Server 2008 R2 SP1，则必须[安装修补程序 KB2483564](https://support.microsoft.com/kb/2483564/)。  
 
 - NDES 服务器角色  - 必须在 Windows Server 2012 R2 或更高版本上配置网络设备注册服务 (NDES) 服务器角色。 本文的后面部分介绍了如何[安装 NDES](#set-up-ndes)。  
 
@@ -45,7 +45,7 @@ Intune 支持使用简单证书注册协议 (SCEP) 来[验证体验与应用和�
   - 不可使用在托管企业 CA 的服务器上安装的 NDES。  
   - 可以将 Microsoft Intune 证书连接器安装在托管 NDES 的同一服务器上。  
 
-  要详细了解 NDES，请参阅 Windows Server 文档[网络设备注册服务指南](http://technet.microsoft.com/library/hh831498.aspx)以及 [Using a Policy Module with the Network Device Enrollment Service（将策略模块与网络设备注册服务配合使用）](https://technet.microsoft.com/library/dn473016.aspx)。  
+  要详细了解 NDES，请参阅 Windows Server 文档[网络设备注册服务指南](https://technet.microsoft.com/library/hh831498.aspx)以及 [Using a Policy Module with the Network Device Enrollment Service（将策略模块与网络设备注册服务配合使用）](https://technet.microsoft.com/library/dn473016.aspx)。  
 
 - Microsoft Intune 证书连接器  - 需要 Microsoft Intune 证书连接器才可在 Intune 中使用 SCEP 证书配置文件。 本文介绍了如何[安装此连接器](#install-the-intune-certificate-connector)。  
 
@@ -61,7 +61,7 @@ Intune 支持使用简单证书注册协议 (SCEP) 来[验证体验与应用和�
 
 - Web 应用程序代理服务器  （可选）- 使用运行 Windows Server 2012 R2 或更高版本的服务器作为 Web 应用程序代理 (WAP) 服务器来将 NDES URL 发布到 Internet。  这允许面向 Intranet 和面向 Internet 的设备获取证书。
 
-  承载 WAP 的服务器[必须安装此更新](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](http://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](http://support.microsoft.com/kb/3011135)。  
+  承载 WAP 的服务器[必须安装此更新](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx)以支持网络设备注册服务所使用的长 URL。 该更新包括在 [2014 年 12 月的更新汇总中](https://support.microsoft.com/kb/3013769)，或单独更新自 [KB3011135](https://support.microsoft.com/kb/3011135)。  
 
   WAP 服务器必须具有与发布到外部客户端的名称匹配的 SSL 证书，并且信任托管 NDES 服务的计算机上使用的 SSL 证书。 这些证书使 WAP 服务器可以终止来自客户端的 SSL 连接，并创建与 NDES 服务的新 SSL 连接。  
 
