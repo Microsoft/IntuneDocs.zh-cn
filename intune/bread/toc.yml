@@ -1,0 +1,39 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: 企业移动性 + 安全性
+      tocHref: /enterprise-mobility-security/
+      topicHref: /enterprise-mobility-security/
+      items:
+        - name: Intune
+          tocHref: /intune/
+          topicHref: /intune/
+          items:
+            - name: 教育的 Intune
+              tocHref: /intune-education/
+              topicHref: /intune-education/
+            - name: Intune 用户帮助
+              tocHref: /intune-user-help/
+              topicHref: /intune-user-help/
+            - name: 应用
+              tocHref: /intune/apps/
+              topicHref: /intune/apps/
+            - name: 基础知识
+              tocHref: /intune/fundamentals/
+              topicHref: /intune/fundamentals/
+            - name: 注册
+              tocHref: /intune/enrollment/
+              topicHref: /intune/enrollment/
+            - name: 远程操作
+              tocHref: /intune/remote-actions/
+              topicHref: /intune/remote-actions/
+            - name: 配置
+              tocHref: /intune/configuration/
+              topicHref: /intune/configuration/
+            - name: 保护
+              tocHref: /intune/protect/
+              topicHref: /intune/protect/
+            - name: 开发人员
+              tocHref: /intune/developer/
+              topicHref: /intune/developer/
