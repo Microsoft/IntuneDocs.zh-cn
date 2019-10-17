@@ -6,17 +6,18 @@ metadata:
   description: Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 将这些设置和功能添加到“配置文件”，然后即可以使用 Intune 将此配置文件应用到或“分配”给设备。
   services: service
   ms.service: microsoft-intune
+  ms.subservice: configuration
   ms.topic: landing-page
   ms.collection: collection
   author: dougeby
   ms.author: dougeby
   ms.date: 09/16/2019
-  ms.openlocfilehash: 38324e042e1d3b4bcfc3f16e05520118374bb5ff
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: afd555e5f245ee9bc28bd21268ae64ae69afbad3
+  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71728935"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72492534"
 landingContent:
 - title: 在设备上应用应用功能和设置
   linkLists:
