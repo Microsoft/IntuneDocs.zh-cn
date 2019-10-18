@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721261"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306800"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>教程：保护非托管设备上的 Exchange Online 电子邮件
 
@@ -113,7 +113,7 @@ ms.locfileid: "71721261"
    3. 清除其他复选框。  
    4. 选择“完成”   > “完成”  ，返回到“新建策略”窗格。  
 
-   ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![选择移动应用和客户端](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. 在“访问控制”  下，选择“授予”  。 
      
@@ -123,11 +123,11 @@ ms.locfileid: "71721261"
    4. 在“对于多个控件”  下，选择“需要所有已选控件”  。 此设置可确保当设备尝试访问电子邮件时强制执行所选的这两项要求。
    5. 选择“选择”  。
      
-   ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![选择控件](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. 在“启用策略”  下，选择“启用”  ，然后选择“创建”  。  
      
-    ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![创建策略](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 将创建新式身份验证客户端条件访问策略。 现在可以为 Exchange Active Sync 客户端创建一个策略。
 
@@ -153,14 +153,14 @@ ms.locfileid: "71721261"
    4. 清除所有其他复选框。  
    5. 选择“完成”  ，然后再次选择“完成”  。  
     
-   ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![应用于支持的平台](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. 在“访问控制”  下，选择“授予”  。  
    1. 在“授予”  窗格上，选择“授予访问权限”  。  
    2. 选择“需要已批准的客户端应用”  。 清除所有其他复选框。  
    3. 选择“选择”  。  
      
-   ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![需要已批准的客户端应用](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. 在“启用策略”  下，选择“开启”  。  
 

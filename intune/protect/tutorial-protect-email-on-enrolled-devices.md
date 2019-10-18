@@ -1,5 +1,5 @@
 ---
-title: 教程 - 保护 Intune 托管设备上的 Exchange Online 电子邮件
+title: 教程 - 保护托管设备上的 Exchange Online 电子邮件
 titleSuffix: Microsoft Intune
 description: 了解如何使用 iOS Intune 符合性策略和 Azure AD 条件访问保护 Exchange Online，以要求托管设备和 Outlook 应用。
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727930"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306865"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教程：保护托管设备上的 Exchange Online 电子邮件
 了解如何使用设备符合性策略与条件访问，以确保 iOS 设备仅在由 Intune 托管并使用已批准的电子邮件应用时才可以访问 Exchange Online 电子邮件。 
@@ -95,7 +95,7 @@ ms.locfileid: "71727930"
     2. 在“包含”  选项卡上，选择“任何设备”  ，然后选择“完成”  。 
     3. 再次选择“完成”  。
    
-    ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![包括任何设备](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. 在“分配”  下，选择“条件”   > “客户端应用”  。
      
@@ -103,7 +103,7 @@ ms.locfileid: "71727930"
     2. 对于本教程，请选择“移动应用和桌面客户端”  以及“新式身份验证客户端”  （是指 Outlook for iOS 和 Outlook for Android 等应用）。 清除所有其他复选框。
     3. 选择“完成”  ，然后再次选择“完成”  。
     
-    ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![选择应用和客户端](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. 在“访问控制”  下，选择“授予”  。 
      
@@ -113,11 +113,11 @@ ms.locfileid: "71727930"
     4. 在“对于多个控件”  下，选择“需要所有已选控件”  。 此设置可确保当设备尝试访问电子邮件时强制执行所选的这两项要求。
     5. 选择“选择”  。
      
-    ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![选择控件](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. 在“启用策略”  下，选择“开启”  。
      
-    ![选择 Office 365 Exchange Online 应用](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![启用策略](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. 选择“创建”  。
 

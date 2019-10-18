@@ -1,26 +1,26 @@
 ---
-title: Microsoft Intune 中的设备符合性策略 - Azure | Microsoft Docs
-description: 在 Microsoft Intune 中：开始使用设备符合性策略，状态和严重性级别概述，使用 InGracePeriod 状态，使用条件访问，处理不具有分配策略的设备，以及 Azure 门户和经典门户中的符合性的差别
+title: 在 Microsoft Intune 中创建设备符合性策略 - Azure | Microsoft Docs
+description: 在 Microsoft Intune 中：创建设备符合性策略，状态和严重性级别概述，使用 InGracePeriod 状态，使用条件访问，处理不具有分配策略的设备，以及 Azure 门户和经典门户中的符合性的差别
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722626"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306577"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建符合性策略
 
@@ -95,15 +95,15 @@ ms.locfileid: "71722626"
 
 4. 完成后，选择“确定” > “创建”，保存所做更改   。 此时，策略创建完成，并出现在列表中。 接下来，向组分配策略。
 
-## <a name="assign-user-groups"></a>分配用户组
+## <a name="assign-the-policy"></a>分配策略
 
 创建策略后，下一步是向组分配策略：
 
 1. 选择已创建的策略。 现有策略位于“设备符合性”   > “策略”  中。
 2. 选择策略，然后选择“分配”  。 可以包括或排除 Azure Active Directory (AD) 安全组。
-3. 选择“所选组”  查看 Azure AD 安全组。 选择想要应用此策略的用户组，然后选择“保存”  向用户部署该策略。
+3. 选择“所选组”  查看 Azure AD 安全组。 先选择要应用此策略的组，再选择“保存”，以部署此策略  。
 
-此时，已将策略应用于用户。 需对策略目标用户所用的设备进行符合性评估。
+当策略所面向的用户或设备使用 Intune 签入时，会对其进行评估以确定是否满足符合性要求。
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>评估所面向的用户数
 

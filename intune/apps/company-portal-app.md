@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724914"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350009"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -165,7 +165,7 @@ ms.locfileid: "71724914"
 - **同步** - 此操作会使用 Intune 服务启动设备签入。 在公司门户中，它显示为“检查状态”。 
 - **远程锁定** - 锁定设备，需要提供用于解锁的 PIN。
 - **重置密码** - 此操作用于重置设备密码。 在 iOS 设备上，将删除密码，最终用户需要在设置中输入新密码。 在支持的 Android 设备上，Intune 将生成新密码，此密码将暂时在公司门户中显示。
-- **密钥恢复** - 此操作用于恢复加密设备的加密密钥。
+- **密钥恢复** – 此操作用于从公司门户网站恢复加密 macOS 设备的个人恢复密钥。 
 
 ### <a name="self-service-actions"></a>自助操作
 
@@ -180,7 +180,7 @@ ms.locfileid: "71724914"
 
 
 <sup>(1)</sup> 加入 Azure AD 的 Windows 设备始终禁用“停用”。<br>
-<sup>(2)</sup> 仅可通过 Web 门户使用用于 MacOS 的密钥恢复。<br>
+<sup>(2)</sup> 仅可通过公司门户网站使用用于 macOS 的个人密钥恢复。<br> 
 <sup>(3)</sup> 使用设备注册管理器时，将禁用所有的远程操作。<br>
 <sup>(4)</sup> 重命名仅更改在公司门户应用或网站中的设备名称，不会更改设备上的名称。<br>
 <sup>(5)</sup> 远程擦除在 MacOS 设备上不可用。<br>

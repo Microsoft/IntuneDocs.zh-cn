@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830579"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349979"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>将 Web 应用添加到 Microsoft Intune
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830579"
 
 Intune 支持包括 Web 应用在内的各种应用类型。 Web 应用是客户端-服务器应用程序。 服务器提供 Web 应用，其中包括 UI、内容和功能。 此外，新式 Web 托管平台通常会提供安全性、负载均衡和其他优势。 Web 应用是单独在 Web 上进行维护的。 可以使用 Microsoft Intune 指向此应用类型。 还可分配可以访问此应用的用户组。 
 
-必须先向 Intune 添加应用，然后才能为用户管理和分配此应用。 Intune 在用户的设备主屏幕上创建一个转至 Web 应用的快捷方式。
+必须先向 Intune 添加应用，然后才能为用户管理和分配此应用。 
+
+Intune 在用户的设备上创建一个转至 Web 应用的快捷方式。 对于 iOS 设备，转至 Web 应用的快捷方式将添加到主屏幕。 对于 Android 设备，转至 Web 应用的快捷方式将添加到 Intune 公司门户小组件，用户必须手动固定该小组件。 对于 Windows 设备，转至 Web 应用的快捷方式将放置在“开始”菜单上。
 
 > [!Note]
 > Android 工作配置文件设备上不支持 Web 应用。 若要启动 Web 应用，必须在用户的设备上安装浏览器。

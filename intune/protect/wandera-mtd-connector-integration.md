@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf8fd189e50a704e96fc24d0804c5c5d6f91bb4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728216"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306658"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>将 Wandera 移动威胁防御与 Intune 集成  
 
@@ -72,7 +72,7 @@ Wandera 移动威胁防御应用授权流程：
 
 7. 在 RADAR 控制台中，复制显示在“EMM 标签”下的“SyncOnly”组的名称   。 此名称将用于在 Intune 中配置组与 Wandera 的同步。
 
-   ![集成和权限](./media/wandera-mtd-connector-integration/sync-group-name.png) 
+   ![同步组](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
 8. 返回到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 控制台，并编辑 Wandera MTD Connector。 将可用的开关设置为“开”  ，然后“保存”  配置。  
 

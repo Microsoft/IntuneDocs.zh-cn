@@ -1,7 +1,7 @@
 ---
-title: 使用 Intune 设置 Sophos Mobile 集成
+title: 将 Sophos Mobile 与 Intune 结合使用
 titleSuffix: Intune on Azure
-description: 如何使用 Microsoft Intune 设置 Sophos Mobile 解决方案以控制移动设备对公司资源的访问。
+description: 如何将 Sophos Mobile 解决方案与 Microsoft Intune 结合使用以控制移动设备对公司资源的访问。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 550dfe58687806f7ead65dab2d7e15b310ae4b6e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9bacc784b9d9498196186b1fac0ef948789832b5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721911"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306839"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>通过 Intune 启用 Sophos Mobile Threat Defense 连接器
 可以根据 Sophos Mobile（与 Microsoft Intune 集成的 Mobile Threat Defense (MTD) 解决方案）进行的风险评估，使用条件访问控制移动设备对公司资源的访问。 风险是基于从运行 Sophos Mobile 应用的设备收集到的遥测进行评估的。

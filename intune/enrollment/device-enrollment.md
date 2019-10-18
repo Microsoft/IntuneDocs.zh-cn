@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb9af260b8fddc78b644b8ede056c90bac24d0
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: 304e869460a5396a486b6de0cd5c2f549c192b70
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999348"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379868"
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -80,7 +80,7 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 
 
 ## <a name="bring-your-own-device"></a>自带设备办公
-自带设备办公 (BYOD) 指代的设备包括个人电话、平板电脑和电脑。 用户安装并运行公司门户应用，以注册 BYOD。 此程序可让用户访问电子邮件等公司资源。
+自带设备办公 (BYOD) 指代的设备包括个人拥有的电话、平板电脑和电脑。 用户安装并运行公司门户应用，以注册 BYOD。 此程序可让用户访问电子邮件等公司资源。
 
 ## <a name="corporate-owned-device"></a>公司拥有的设备
 [公司拥有的设备 (COD)](corporate-identifiers-add.md) 包括组织拥有并分发给员工的电话、平板电脑和电脑。 COD 注册支持多种方案，例如自动注册、共享设备或预授权注册需求。 管理员或经理注册 COD 的常用方法是使用设备注册管理器 (DEM)。 可直接通过 Apple 提供的设备注册计划 (DEP) 工具注册 iOS 设备。 也可将具有 IMEI 号码的设备标识并标记为“公司拥有”。

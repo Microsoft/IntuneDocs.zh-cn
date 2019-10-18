@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac86e9155f08683ab073ae0b46ea3f2780060c90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723341"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314672"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -35,7 +35,7 @@ ms.locfileid: "71723341"
 - 使用[设备注册管理员](device-enrollment-manager-enroll.md)帐户进行注册（所有平台）
 - 通过 Apple [设备注册计划](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md) 或 [Apple 配置器](apple-configurator-enroll-ios.md)进行注册（仅限 iOS）
 - 使用国际移动设备标识符 (IMEI) 号码（具有 IMEI 号码的所有平台）或序列号（iOS 和 Android）[在注册前标识为“公司自有”](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- 作为 Windows 10 企业版设备加入 Azure Active Directory
+- 使用工作或学校凭据加入 Azure Active Directory。 [已向 Azure Active Directory 注册的设备](https://docs.microsoft.com/azure/active-directory/devices/overview)将标记为“个人”。
 - 在[设备的属性列表](#change-device-ownership)中设置为“公司”
 
 注册后，可[更改所有权设置](#change-device-ownership) -“个人”和“公司”   。

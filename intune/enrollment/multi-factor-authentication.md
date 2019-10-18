@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726370"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379818"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>对 Intune 设备注册要求多重身份验证
 
@@ -56,7 +56,7 @@ iOS、Android、Windows 8.1 或更高版本、Windows Phone 8.1、Windows 10 移
 6. 在“分配”部分中，选择“用户和组”   。 
 7. 在“用户和组”中，选择“选择用户或组”，然后选择“用户和组”    。 然后选择将接收此策略的用户和/或组，再选择“完成”  。
 8. 在“分配”部分中，选择“云应用”   。
-9. 在“云应用”的“包括”选项卡上，选择“选择应用”，然后选择“选择” > “Microsoft Intune 注册”，然后选择“完成”       。
+9. 在“云应用”的“包括”选项卡上，选择“选择应用”，然后选择“选择” > “Microsoft Intune 注册”，然后选择“完成”       。 通过选择“Microsoft Intune 注册”  ，条件访问 MFA 仅应用于设备注册（一次性 MFA 提示）。
 10. 在“分配”部分中，对于“条件”，无需为 MFA 配置任何设置   。
 11. 在“访问控制”部分中，选择“授予”   。
 12. 在“授予”中，选择“授予访问权限”，然后选择“要求多重身份验证”    。 不要选择“要求设备标记为合规”，因为设备要注册之后才能进行评估以确定其是否合规  。 然后选取“选择”  。

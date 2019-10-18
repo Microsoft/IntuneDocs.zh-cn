@@ -14,16 +14,14 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9ecc1cabb00122d2812580b663fcd0c1dfabc3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728086"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314718"
 ---
 # <a name="manage-software-updates-in-intune"></a>在 Intune 中管理软件更新
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 使用 Intune 定义更新通道，以指定 Windows 即服务更新 Windows 10 设备的方式和时间。 更新通道是分配给设备组的策略。 通过使用更新通道，你可以创建反映业务需求的更新策略。 有关详细信息，请参阅[使用 Windows Update for Business 更新管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
@@ -92,7 +90,7 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 ### <a name="delete"></a>删除  
 选择“删除”  可停止强制执行所选 Windows 10 更新通道的设置。 删除通道会从 Intune 中删除其配置，以便 Intune 不再应用并强制执行这些设置。  
 
-从 Intune 中删除通道不会修改已分配有更新通道的设备上的设置。  相反，设备将保留其当前设置。 这是因为，设备不会保留先前设置的历史记录，并且设备可能会从保持活动状态的其他更新通道接收设置。  
+从 Intune 中删除通道不会修改已分配有更新通道的设备上的设置。  相反，设备将保留其当前设置。 设备不会保留它们之前保存的设置的历史记录。 设备还可以从保持活动状态的其他更新通道接收设置。  
 
 #### <a name="to-delete-a-ring"></a>删除通道  
 1. 在查看更新通道的概述页时，选择“删除”  。  
@@ -129,6 +127,12 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 
 ### <a name="uninstall"></a>“卸载”  
 Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通道或暂停的更新通道的最新功能  更新或最新质量  更新。 卸载一种类型后，还可以卸载其他类型。 Intune 不支持也不管理用户卸载更新的功能。  
+
+> [!IMPORTANT] 
+> 使用“卸载”选项时，Intune 会立即将卸载请求传递到设备  。 
+> - Windows 设备在收到 Intune 策略更改后立即开始删除更新。 更新删除并不限于维护计划，即使它们作为更新通道的一部分进行配置时也是如此。 
+> - 如果更新删除需要重新启动设备，则设备将重新启动，而不会向设备用户提供延迟选项。
+
 
 若要成功卸载，必须符合以下先决条件：  
 - 设备必须运行 Windows 10 2018 年 4 月更新（版本 1803）或更高版本。  

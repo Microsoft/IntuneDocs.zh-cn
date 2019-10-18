@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999304"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251561"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>在 Microsoft Intune 中使用证书进行身份验证  
 
@@ -51,7 +51,8 @@ ms.locfileid: "71999304"
 | 平台              | 受信任的证书配置文件 | PKCS 证书配置文件 | SCEP 证书配置文件 | PKCS 导入的证书配置文件  |
 |--|--|--|--|---|
 | Android 设备管理员 | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png)|  ![支持](./media/certificates-configure/green-check.png) |
-| Android Enterprise <br> - 设备所有者   | ![支持](./media/certificates-configure/green-check.png) |   |  |   |
+| Android Enterprise <br> - 完全托管（设备所有者）   | ![支持](./media/certificates-configure/green-check.png) |   | ![支持](./media/certificates-configure/green-check.png) |   |
+| Android Enterprise <br> - 专用（设备所有者）   |  |   |  |   |
 | Android Enterprise <br> - 工作配置文件    | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |
 | iOS                   | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |
 | macOS                 | ![支持](./media/certificates-configure/green-check.png) |   |![支持](./media/certificates-configure/green-check.png)|![支持](./media/certificates-configure/green-check.png)|

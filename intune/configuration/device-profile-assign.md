@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724108"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237211"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724108"
 创建一个配置文件，其中包含你输入的所有设置。 下一步是部署配置文件或将其“分配”给 Azure Active Directory (Azure AD) 用户或设备组。 分配后，用户和设备会收到你的配置文件，并且会应用你输入的设置。
 
 本文演示如何分配配置文件，并介绍有关对配置文件使用作用域标记的一些信息。
+
+> [!NOTE]  
+> 当策略被删除或不再分配到设备时，此设置可能会保留现有值。 此设置不会还原到默认值。 若要将设置更改为其他值，请创建新策略并进行分配。
 
 ## <a name="assign-a-device-profile"></a>分配设备配置文件
 

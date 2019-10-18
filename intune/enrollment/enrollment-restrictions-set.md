@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdeb88f3a69db160dca61bf3038c5a7d0235f2b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722457"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379816"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -48,7 +48,7 @@ ms.locfileid: "71722457"
 - 适用于 iOS、Android 设备管理员、Android Enterprise 工作配置文件、Windows 和 Windows Mobile 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
   - 最低版本。
   - 最高版本。
-- 限制个人拥有的设备（仅限 iOS、Android 设备管理员、Android Enterprise 工作配置文件、macOS、Windows 和 Windows Mobile）。
+- 限制[个人拥有的设备](device-enrollment.md#bring-your-own-device)（仅限 iOS、Android 设备管理员、Android Enterprise 工作配置文件、macOS、Windows 和 Windows Mobile）。
 
 ## <a name="default-restrictions"></a>默认限制
 
@@ -68,9 +68,9 @@ ms.locfileid: "71722457"
      支持的版本格式包括：
     - Android 设备管理员和 Android Enterprise 工作配置文件支持 major.minor.rev.build。
     - iOS 支持 major.minor.rev。操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
-    - Windows 仅对 Windows 10 支持 major.minor.rev.build。
+    - Windows 仅对 Windows 10 支持 major.minor.build.rev。
     > [!Note]
-    > Windows 10 注册过程中不提供生成号，因此对于实例，如果输入 10.0.17134.100 而设备是 10.0.17134.174，则在注册过程中将阻止该实例。
+    > Windows 10 注册过程中不提供修订号，因此对于实例，如果输入 10.0.17134.100 而设备是 10.0.17134.174，则在注册过程中将阻止该实例。
 
 8. 在“个人拥有”中，对想要允许作为个人拥有的设备的平台选择“允许”。  
 9. 选择“下一步”，转到“分配”页。  
@@ -151,6 +151,12 @@ ms.locfileid: "71722457"
 - 通过 Windows 设置中的[仅 MDM 注册]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)选项。
 
 \* 如果通过 Autopilot 注册，则不会受到阻止。
+
+
+## <a name="blocking-personal-ios-devices"></a>阻止个人 iOS 设备
+默认情况下，Intune 将 iOS 设备分类为个人拥有的设备。 若要分类为公司拥有的设备，iOS 设备必须满足以下条件之一：
+- 已使用序列号或 IMEI 注册。
+- 已使用自动设备注册（以前称为设备注册计划）注册
 
 
 ## <a name="change-enrollment-restriction-priority"></a>更改注册限制优先级

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d50fdbb766068e643604cdf729e62cdd07d22b62
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a1c2acc2ebe5528e30c344a31c9551ac64bdf3ca
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723510"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306778"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>通过 Apple Configurator 设置 iOS 设备注册
 
@@ -60,6 +60,9 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
     - 通过用户关联进行注册 - 为属于用户且想要使用公司门户获取服务（如安装应用）的设备选择此选项  。 设备必须通过设置助理与某个用户关联，然后才可访问公司数据和电子邮件。 仅设置助理注册支持。 用户关联需要 [WS-Trust 1.3 用户名/混合终结点](https://technet.microsoft.com/library/adfs2-help-endpoints)。 [了解详细信息](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
     - 不通过用户关联进行注册 - 为不属于单个用户的设备选择此选项  。 为无需访问本地用户数据即可执行任务的设备使用此选项。 需要用户隶属关系的应用（包括用于安装业务线应用的公司门户应用）无法运行。 直接注册需要此设置此选项。
+
+     > [!NOTE]
+     > 选择“通过用户关联进行注册”  时，请确保设备在注册后的前 24 小时内通过设置助理与某个用户关联。 否则，注册可能会失败，需要恢复出厂设置才能注册设备。
 
 4. 如果选择“通过用户关联进行注册”，则可选择让用户不使用 Apple 设置助理而使用公司门户进行身份验证。 
 

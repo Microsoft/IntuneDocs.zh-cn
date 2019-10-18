@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bac049aebfb0fec6c9d86e1e08e81237867175d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bf862e59e135a875f5f18af731c581f3e5ea89d5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723107"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306617"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 已注册设备管理功能
 
@@ -43,6 +43,7 @@ ms.locfileid: "71723107"
 |配置策略<br><br>自定义策略| 让你可在组织中管理移动设备上多个设置和功能。 例如，你可以申请密码、限制失败尝试次数、限制屏幕锁定前的时间量、设置密码过期时间，以及阻止使用以前用过的密码。 你还可以控制硬件和软件功能的使用，例如设备的摄像头或 Web 浏览器。<br><br>配置策略不包含所需设置时，请使用自定义策略。 对于 iOS 设备，你可以导入你从 Apple 配置工具中导出的设置。 对于其他设备，你可以使用开放移动联盟统一资源标识符 (OMA-URI) 设置配置设备上的设置和功能。|[使用 Microsoft Intune 策略管理设备上的设置和功能](../protect/device-compliance-get-started.md)|
 |远程擦除、远程锁定和密码重置|在设备丢失或被盗时，清除敏感数据。 例如，你可以远程锁定设备、将其还原为出厂设置或仅擦除企业数据。<br><br>你可以在用户无法访问其设备时重置密码，锁定遗失或被盗的设备，甚至擦除遗失或被盗设备的数据。|使用[远程锁定](../remote-actions/device-remote-lock.md)和[密码重置](../remote-actions/device-passcode-reset.md)功能帮助保护设备|
 |展台模式|允许你锁定移动设备的某些功能，如屏幕捕捉和电源开关。 此外允许您限制设备运行您指定的单个应用程序。 |[Microsoft Intune 中的 iOS 配置策略设置](../configuration/device-restrictions-ios.md)|
+|Autopilot 重置|将任务发送到设备以远程启动重置过程，从而使 IT 员工或其他管理员无需访问每台计算机即可启动该过程。 如果设备使用 Autopilot 重置，设备的主要用户将会遭删除。 在重置后登录的下一个用户将被设置为主要用户。|[远程 Windows Autopilot 重置](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>应用管理
 

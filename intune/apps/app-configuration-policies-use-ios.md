@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 542d9c7890f9484311ca8e6400d0a75a41e13d7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 94480c8dcfe44dc451ea6a2409f52f06c2a87cf5
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725694"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350079"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -108,7 +108,7 @@ Microsoft Intune 提供对应用而言唯一的配置设置。 可对已注册�
 | **值** | <ul><li>**启用**：唯一允许的帐户是由 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 键定义的托管用户帐户。</li><li>**禁用**（或任何不是与“启用”  值大小写严格匹配的值）：允许任何帐户。</li></ul> |。
 
    > [!NOTE]
-   > 当仅允许多身份配置的组织帐户时，必须使用 OneDrive for iOS 10.34 或更高版本以及 Outlook for iOS 2.99.0 或更高版本，且应用必须以 [Intune 应用保护策略](app-protection-policy.md)为目标。
+   > 当仅允许多身份配置的组织帐户时，必须使用 OneDrive for iOS 10.34 或更高版本、Outlook for iOS 2.99.0 或更高版本或者 Edge for iOS 44.8.7 或更高版本，且应用必须以 [Intune 应用保护策略](app-protection-policy.md)为目标。
 
 ## <a name="enter-xml-data"></a>输入 XML 数据
 
