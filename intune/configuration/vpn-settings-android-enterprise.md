@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 08/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 642e054f7ba400fcc8b38b83ba19731c8e0998da
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734162"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72491926"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Android 企业设备设置，用于在 Intune 中配置 VPN
 
@@ -33,12 +34,12 @@ Intune 管理员可以创建 VPN 设置，并将它们分配到 Android Enterpri
 
 ## <a name="before-you-begin"></a>在开始之前
 
-[创建设备配置文件](vpn-settings-configure.md#create-a-device-profile)，并选择“Android Enterprise”。
+[创建设备配置文件](vpn-settings-configure.md#create-a-device-profile)，并选择“Android Enterprise”  。
 
 ## <a name="device-owner-only"></a>仅设备所有者
 
 - **连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。 例如，输入 `Contoso VPN`。
-- **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com。
+- **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com   。
 
   - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 选项包括：
   
@@ -54,7 +55,7 @@ Intune 管理员可以创建 VPN 设置，并将它们分配到 Android Enterpri
 ## <a name="work-profile-only"></a>仅工作配置文件
 
 - **连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。 例如，输入 `Contoso VPN`。
-- **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com。
+- **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com   。
 
   - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 选项包括：
   

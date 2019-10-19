@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 2e427fe0889dcfb51ba5be322ed4db566cc29e9d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251582"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502462"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Windows 10 及更高版本设置
 
@@ -35,11 +36,11 @@ ms.locfileid: "72251582"
 
 作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建合规性策略](create-compliance-policy.md#create-the-policy)。 在“平台”中，选择“Windows 10 及更高版本”   。
 
-## <a name="device-health"></a>设备运行状况
+## <a name="device-health"></a>Device health
 
 - **需要启用 BitLocker**：设置为“需要”时，在系统关闭或处于休眠状态时，设备能够保护存储在驱动器上的数据免受未经授权的访问  。 Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用 TPM 来帮助保护 Windows 操作系统和用户数据。 此外，它还有助于确认计算机不被篡改，即使它处于无人参与、丢失或被盗状态，也不例外。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 因此，仅当 TPM 验证计算机状态后，才能访问密钥。
 

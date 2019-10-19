@@ -9,6 +9,7 @@ ms.date: 11/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
 searchScope:
@@ -18,19 +19,19 @@ ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2637b80136293361ba8936a64e3bf2fa95c6e803
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e812966118ed694e3f764b56ce1759f157e8db83
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840784"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507870"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>开启 Windows Defender 防火墙
 
 你的单位或学校希望确保访问其资源的设备受到保护。 要确保设备设置为可访问这些资源，方法之一是开启 Windows Defender 防火墙。 防火墙的开启方法如下：
 
-1. 转到“开始”并打开“控制面板”。
-2. 打开“系统和安全” > “Windows Defender 防火墙”。
-3. 为域、专用网络和公用网络选择“自定义设置” > “打开或关闭 Windows 防火墙”。
+1. 转到“开始”并打开“控制面板”   。
+2. 打开“系统和安全” > “Windows Defender 防火墙”   。
+3. 为域、专用网络和公用网络选择“自定义设置” > “打开或关闭 Windows 防火墙”   。
 
 仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

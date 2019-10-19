@@ -7,8 +7,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
 searchScope:
@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebc7a9a1e9cc355a06baa4b7134216ecc6cd0da5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61825741a5651daa55727c706ba683628e723c8a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545282"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490280"
 ---
 # <a name="installing-the-company-portal-app-for-windows-10"></a>安装适用于 Windows 10 的公司门户应用  
 
@@ -37,7 +37,7 @@ ms.locfileid: "67545282"
 
 - 在手机丢失或被盗时将它重置为出厂设置。
 
-当已准备好安装公司门户和注册设备，请参阅[开始使用 Windows 注册](windows-enrollment-company-portal.md)。  
+准备好安装公司门户并注册设备后，请参阅[Windows 注册入门](windows-enrollment-company-portal.md)。  
 
 在添加计算机时：
 

@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1306bfea1880061980413d283943e6521c1ac213
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734487"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506694"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>在 Intune 中配置和使用内核扩展的 macOS 设备设置
 
@@ -57,14 +58,14 @@ ms.locfileid: "71734487"
 
 - **允许的内核扩展**：使用此设置可允许特定内核扩展。 仅允许或信任输入的内核扩展。 
 
-  **添加**要加载的内核扩展的捆绑标识符和团队标识符。 对于未签名的旧版内核扩展，请使用空的团队标识符。 可以添加多个内核扩展。 团队标识符必须为字母数字（字母和数字）并且包含10个字符。 例如，为 "**捆绑 ID**" 输入 `com.contoso.appname.macos`，为 "**团队标识符**" 键入 `ABCDE12345`。
+  **添加**要加载的内核扩展的捆绑标识符和团队标识符。 对于未签名的旧版内核扩展，请使用空的团队标识符。 可以添加多个内核扩展。 团队标识符必须为字母数字（字母和数字）并且包含10个字符。 例如，为 "**捆绑 ID**" 和 "**团队标识符**" `ABCDE12345` 输入 `com.contoso.appname.macos`。
 
   > [!TIP]
   > 若要在 macOS 设备上获取内核扩展（Kext）的捆绑 ID，可以执行以下操作：
   >
   > 1. 在终端中，运行 `kextstat | grep -v com.apple`，并记下输出。 安装所需的软件或 Kext。 再次运行 `kextstat | grep -v com.apple`，并查找更改。
   >
-  >    在终端中，`kextstat` 列出 OS 上的所有内核扩展。 
+  >    在终端中，`kextstat` 列出操作系统上的所有内核扩展。 
   >
   > 2. 在设备上，打开 Kext 的信息属性列表文件（info.plist）。 将显示捆绑 ID。 每个 Kext 都有一个存储在中的 info.plist 文件。 
 

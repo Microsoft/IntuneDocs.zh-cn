@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b472d26c9f20cbd678ab118b87746e47a613743
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735046"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506921"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用适用于 macOS 设备的自定义设置
 
@@ -58,7 +59,7 @@ ms.locfileid: "71735046"
 - **自定义配置文件名称**：输入策略的名称。 此名称将在设备上和 Intune 状态中显示。
 - **配置文件**：浏览到使用 Apple Configurator 或 Apple 配置文件管理器创建的配置文件。 已导入的文件显示在“文件内容”区域中  。
 
-  你还可以将设备令牌添加到 @no__t 0 文件中。 设备令牌用于添加特定于设备的信息。 例如，若要显示序列号，请输入 `{{serialnumber}}`。 在设备上，文本显示的内容类似于 "`123456789ABC`"，对于每个设备都是唯一的。 输入变量时，请务必使用大括号 `{{ }}`。 [应用配置令牌](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可用变量的列表。 还可以使用 `deviceid` 或任何其他特定于设备的值。
+  你还可以将设备令牌添加到 `.mobileconfig` 文件中。 设备令牌用于添加特定于设备的信息。 例如，若要显示序列号，请输入 `{{serialnumber}}`。 在设备上，显示的文本类似于 `123456789ABC`，这对于每个设备都是唯一的。 输入变量时，请务必使用大括号 `{{ }}`。 [应用配置令牌](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)包含可用变量的列表。 还可以使用 `deviceid` 或任何其他特定于设备的值。
 
   > [!NOTE]
   > 变量不在 UI 中进行验证，且区分大小写。 因此，可能会看到使用不正确输入保存的配置文件。 例如，如果输入 `{{DeviceID}}` 而不是 `{{deviceid}}`，则显示文本字符串而不是设备的唯一 ID。 请确保输入正确的信息。

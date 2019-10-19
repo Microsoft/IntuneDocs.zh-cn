@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac2ec4224bead13455752488f6ea34af6e012bc8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f473e376278b454ca2d173c7c147137226a9fc9
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733044"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601514"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 iOS 设置
 
@@ -73,7 +74,7 @@ ms.locfileid: "71733044"
 ### <a name="password"></a>密码
 
 > [!NOTE]
-> 符合性或配置策略应用到 iOS 设备后，系统会每 15 分钟提示用户一次，要求设置密码。 系统会持续提示用户，直到用户设置密码。
+> 符合性或配置策略应用到 iOS 设备后，系统会每 15 分钟提示用户一次，要求设置密码。 系统会持续提示用户，直到用户设置密码。 为 iOS 设备设置密码时，加密过程将自动启动。 在禁用密码之前，设备一直保持加密状态。
 
 -  需要密码才可解锁移动设备：要求  用户在访问其设备之前输入密码。 使用密码的 iOS 设备已加密。
 -  简单密码：设置为“阻止”  后，用户无法创建简单密码，如 1234  或 1111  。 设置为“未配置”  以允许用户创建密码，例如 1234  或 1111  。

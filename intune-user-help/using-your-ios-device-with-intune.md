@@ -9,6 +9,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ced8f1ec37f652b7e283328141bc591b5961587
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: ec3f1996052e31a70ca44c40c277a7c5ff93819a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099833"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507995"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>通过 Intune 公司门户使用 iOS 设备
 本文列出了特定于用于 iOS 的公司门户的任务和信息。 使用该应用有助于对 iOS 设备进行故障排除和管理。 单击任一链接查看更多详细信息、步骤和屏幕截图。

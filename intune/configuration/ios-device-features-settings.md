@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 341609afeec02c67b4ea0d85a541fca61345ced4
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036474"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506740"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>用于使用 Intune 中常见 iOS 功能的 iOS 和 iPadOS 设备设置
 
@@ -32,7 +33,7 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
 
 本文列出了这些设置，并介绍了每个设置的用途。 有关这些功能的详细信息，请参阅[添加 iOS 或 macOS 设备功能设置](../device-features-configure.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建 iOS 设备配置文件](../device-features-configure.md)。
 

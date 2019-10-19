@@ -9,6 +9,7 @@ ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c5accdf3699770444b7aafeb39d431755f9d3ba9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491009"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501816"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>通过 Windows 公司门户使用 iOS 设备
 
@@ -47,7 +48,7 @@ ms.locfileid: "61491009"
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>在公司门户中设置设备
 - [将我的 Windows 设备托管在公司门户中](windows-enrollment-company-portal.md)  
-- [对设备进行管托管意味着什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+- [对设备进行管托管意味着什么？](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) 
 - [公司可以在我的设备上看到哪些信息？](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [对设备进行加密](encrypt-your-device-windows.md)
 - [设置或更改设备密码](set-or-change-your-password-windows.md)

@@ -9,6 +9,7 @@ ms.date: 04/19/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b042cbf79b284a4539e915fe80ce40dfbfcecd6f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e1a6e2a001e8c323ba73dd7e9ad4dd82df968e6d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841430"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506203"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>在电信费用管理中注册 Android 设备
 
@@ -33,21 +34,21 @@ ms.locfileid: "55841430"
 
 选择适当的选项，随后将收到从 Google Play 商店安装 [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) 应用的通知。 组织可使用 Datalert 应用测量数据的使用情况。 如果贵组织已配置工作或学校注册选项，则要求使用工作或学校帐户进行登录。 如果尚未启用此选项，则需要提供电话号码等信息，并使用验证码来验证设备以便从应用注册 Datalert 服务。
 
-点击屏幕右上角的“下一步”箭头继续。 公司支持人员应该会告诉你是使用 Microsoft 工作或学校帐户登录，还是使用电话号码登录。
+点击屏幕右上角的“下一步”  箭头继续。 公司支持人员应该会告诉你是使用 Microsoft 工作或学校帐户登录，还是使用电话号码登录   。
 
   ![Datalert 应用欢迎屏幕的屏幕截图，屏幕上简要介绍如何使用 Datalert 充分利用数据计划，然后提示进入下一屏幕。](./media/and-enroll-12-tem-datalert-setup.png)
 
 ## <a name="enroll-into-datalert-using-your-microsoft-work-or-school-account"></a>使用 Microsoft 工作或学校帐户注册 Datalert
 
-1. 选择“使用 Microsoft 帐户注册”。
+1. 选择“使用 Microsoft 帐户注册”  。
 
    ![Datalert 应用的设置屏幕的图像，在屏幕的上半部分显示提供注册设备的电话号码字段，在底部显示“使用 Microsoft 帐户注册”，只要你拥有 Microsoft Office 365 帐户和 Intune 订阅。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
-2. 从可用的帐户中选择你的工作或学校帐户。 如果未列出你的帐户，则可以使用“添加帐户”按钮来进行登录。
+2. 从可用的帐户中选择你的工作或学校帐户。 如果未列出你的帐户，则可以使用“添加帐户”  按钮来进行登录。
 
    ![“选取帐户”屏幕的屏幕截图，显示一个示例帐户和“添加帐户”按钮。](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 
-3. Datalert 安装程序将工作一段时间，然后就应该会完成。 完成后，请点击“完成”。
+3. Datalert 安装程序将工作一段时间，然后就应该会完成。 完成后，请点击“完成”  。
 
 ## <a name="enroll-into-datalert-using-your-phone-number"></a>使用电话号码注册 Datalert
 
@@ -55,11 +56,11 @@ ms.locfileid: "55841430"
 
    ![显示 Datalert 应用请求电话号码的屏幕截图。](./media/and-enroll-13-tem-datalert-phone-number.png)
 
-2. 随后会收到一条内含验证码的短信。 提供代码并点击“确定”。
+2. 随后会收到一条内含验证码的短信。 提供代码并点击“确定”  。
 
    ![显示 Datalert 应用请求短信验证码的屏幕截图。](./media/and-enroll-14-tem-datalert-sms.png)
 
-3. 提供验证码后，Datalert 安装将随即完成。 点击“完成”，随后便能从 Datalert 应用中监视数据。
+3. 提供验证码后，Datalert 安装将随即完成。 点击“完成”  ，随后便能从 Datalert 应用中监视数据。
 
    ![显示 Datalert 应用监视今日数据使用情况的屏幕截图。](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 

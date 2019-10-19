@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099801"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508305"
 ---
 # <a name="sign-in-to-company-portal"></a>登录到公司门户  
 
@@ -39,7 +40,7 @@ ms.locfileid: "71099801"
 
 1. 在设备上打开应用，然后点击 "**登录**"。  
 
-   [![公司门户登录页的示例屏幕截图。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [公司门户登录页 ![Example 屏幕截图。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. 输入“工作或学校帐户”，然后单击“下一步”   。
@@ -78,7 +79,7 @@ ms.locfileid: "71099801"
 
    ![通过使用工作计算机的唯一密码访问 https://microsoft.com/devicelogin 页面，然后使用验证码进行登录可获得说明。](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. 在其他设备（用于进行身份验证的设备）上，打开浏览器并进入[https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)。 输入或粘贴代码。  
+3. 在其他设备（用于进行身份验证的设备）上，打开浏览器并中转到[https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)。 输入或粘贴代码。  
 
    ![用户工作计算机上用户浏览器的图像，而不是公司门户应用的图像。 显示的“设备登录”页将提示用户输入他们在公司门户应用中收到的验证码。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 

@@ -7,24 +7,24 @@ ms.author: erikje
 ms.date: 07/13/2017
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: 99dcf916-d80f-42c5-863b-a4595e1ec67a
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45a88e4cc1f84c157b5ece1204bddfb7ebe01b57
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1484aa2cf9ab665796b6c02e060d2d7c4cb4fcd1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736086"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502790"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > 可使用 Microsoft Intune 管理 Windows 电脑，将其作为[使用移动设备管理 (MDM) 的移动设备](../enrollment/windows-enroll.md)或具有 Intune 软件客户端的计算机，如下所述。 但是，Microsoft 建议客户尽可能[使用 MDM 管理解决方案](../enrollment/windows-enroll.md)。 有关详细信息，请参阅[对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md) 

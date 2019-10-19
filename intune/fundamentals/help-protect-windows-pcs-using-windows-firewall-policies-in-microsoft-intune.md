@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4de635066b2f054b9061f6944bc4010a56d54526
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735813"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502827"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows PC
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > 本主题中的信息仅适用于通过使用 Intune 软件客户端作为电脑进行管理的 Windows 桌面。 如果要管理注册为移动设备的 Windows 电脑的防火墙设置，请参阅[在 Intune 中添加 endpoint protection 设置](../protect/endpoint-protection-configure.md)。
@@ -43,7 +44,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 > [!NOTE]
 > 如果将 Microsoft Intune 策略和组策略都配置为管理 PC 上的相同设置，则组策略设置将替代 Microsoft Intune 策略。 有关如何避免 Intune 策略与组策略之间的冲突的信息，请参阅[解决 GPO 与 Microsoft Intune 之间的策略冲突](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 >
-> 如果你想要将 Windows 防火墙设置部署到运行 Windows Vista 的计算机，则必须先安装[热修复补丁 KB971800](http://support2.microsoft.com/kb/971800) 到这些计算机上。
+> 如果你想要将 Windows 防火墙设置部署到运行 Windows Vista 的计算机，则必须先安装[热修复补丁 KB971800](https://support2.microsoft.com/kb/971800) 到这些计算机上。
 
 > [!IMPORTANT]
 > 若要使用 Intune 管理 Windows 防火墙，请确保在要托管的计算机上启用以下两项服务：
@@ -84,7 +85,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 以上每个设置的默认值都是“是”  ，这是最安全的值。
 
 > [!IMPORTANT]
-> 如果你的环境中包括运行 Windows Vista（未安装 Service Pack）的被管理的计算机，则必须安装与 Microsoft 知识库[文章 971800](http://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置  。
+> 如果你的环境中包括运行 Windows Vista（未安装 Service Pack）的被管理的计算机，则必须安装与 Microsoft 知识库[文章 971800](https://go.microsoft.com/fwlink/?LinkId=188405) 相关的更新，或在部署到这些计算机的策略中禁用“阻止所有传入连接”策略设置  。
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Windows 防火墙阻止新程序时通知用户
 

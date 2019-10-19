@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/28/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4ddb5708b6ea43a1054ca07893eb8a09b5ff29
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 306c67e2744c38cfc8214d1c8dee2732cd0bd1ce
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736203"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504998"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>使用策略帮助保护运行 Intune 客户端软件的 Windows 电脑
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 当 Windows 电脑由 [Intune 客户端软件](../manage-windows-pcs-with-microsoft-intune.md)管理时，Microsoft Intune 提供三个可用于帮助确保它们的安全性的策略。
 

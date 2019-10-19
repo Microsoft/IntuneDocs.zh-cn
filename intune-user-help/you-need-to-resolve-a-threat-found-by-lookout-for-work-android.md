@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03463bebfd9279173179dff56ce8df9d80b1707b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848010"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507826"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁  
 
@@ -38,7 +39,7 @@ Lookout for Work 应用是一项移动威胁防御服务，可识别 Android 设
 ## <a name="troubleshoot-virus-or-security-threat"></a>排查病毒或安全威胁  
 当 Lookout for Work 应用检测到安全或病毒威胁时，重新获取对公司资源的访问权限。  
 
-1. 如果检测到病毒或安全威胁，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)。  
+1. 如果检测到病毒或安全威胁，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)  。  
 
     ![Lookout for Work 错误消息示例屏幕截图，其中包含指向公司门户网站的链接和蓝色的“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)
 

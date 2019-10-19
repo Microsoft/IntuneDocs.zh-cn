@@ -9,6 +9,7 @@ ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721167"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507663"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>设备已加密，但应用以其他方式
 
@@ -31,7 +32,7 @@ ms.locfileid: "71721167"
 
 ## <a name="add-a-startup-pin"></a>添加启动 PIN
 
-某些 Android 设备需要创建启动 PIN，确保设备安全。 此设置的位置将在设备的 "**设置**" 应用中。 设置的名称和位置可能会有所不同。 例如，在 Samsung Galaxy S7 上，此设置称为 "**安全启动**"。 若要启用和创建密码，请在 "**设置**"  > **锁屏界面和安全** >  "**安全启动**"。  
+某些 Android 设备需要创建启动 PIN，确保设备安全。 此设置的位置将在设备的 "**设置**" 应用中。 设置的名称和位置可能会有所不同。 例如，在 Samsung Galaxy S7 上，此设置称为 "**安全启动**"。 若要启用和创建密码，请参阅 "**设置**"  > **锁定屏幕和安全** >  安全**启动**"。  
 
 ## <a name="encrypt-the-entire-device"></a>加密整个设备
 

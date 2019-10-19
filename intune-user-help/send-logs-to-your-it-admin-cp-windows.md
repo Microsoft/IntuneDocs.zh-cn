@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 4ee2a83945e4b9e6c5509abff7c32605f64ca545
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528766"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508358"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>通过适用于 Windows 的公司门户使用电子邮件将有关问题发送给公司支持人员
 

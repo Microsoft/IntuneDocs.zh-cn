@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736372"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584469"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune 中的 Windows 更新设置  
 
@@ -216,45 +217,9 @@ ms.locfileid: "71736372"
   - **关闭所有通知，不包括重新启动警告**
   - **关闭所有通知，包括重新启动警告**  
 
-- **允许用户重启(预定重启)**  
-  **默认值**：未配置  
-  > [!IMPORTANT]  
-  > 不再建议使用*预定重新启动*设置。 相反，请使用新的*截止时间*设置，该设置取代了*预定的重新启动*设置。 Intune 将在将来的更新中[弃用对*预定重启*设置的支持](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)。
-
-  Windows 10 版本1803及更高版本支持预定重启。 
-
-  > [!NOTE]  
-  > Windows 10 版本 1809 引入了其他重启提醒期设置，可向功能和质量更新应用单独的设置。 但是，由 Intune 管理的设置不会单独应用于不同的更新类型。 相反，Intune 向功能和质量更新应用相同的值。  
-  
-  - 未配置   
-  - **必需** - 当设置为“必需”  时，将为 Windows 10 更新启用预定重启选项。 这些设置预定设备用户，以帮助管理在安装需要重启的更新后重启设备的时间。  
-
-  有关此选项的详细信息，请参阅 Windows 10 文档中的[重启提醒期](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart)以部署更新。  
-
-  以下设置用于控制何时进行重启提醒期操作。  
-
-  - **在自动重启后将用户转换为重启提醒期(天)**  
-    **默认值**：未配置 Windows 更新 CSP： [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    指定更新安装后多久设备才执行预定重启行为（2 到 30 天）   。 在配置的天数后，用户将收到重启设备的提示。  
-
-  - **推迟重启提醒期提醒(天)**  
-    **默认值**：未配置    
-    Windows 更新 CSP： [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    指定一个介于**1**和**3**之间的值，用于暂停重启提示符的时间长度。  推迟期限过后，将再次提供重启提示。 在到达安装截止时间前，用户可以继续推迟提醒。  
-
-  - **设置等待重启的截止时间(天)**  
-    **默认值**：未配置  
-    Windows 更新 CSP： [Update/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    指定在设备强制实施所需的重启前，开始执行预定重启行为后要等待的最大天数（2 到 30 天）   。 此重启将提示用户保存其工作。
-
 - **使用截止时间设置**  
   **默认值**：未配置  
-  > [!IMPORTANT]  
-  > 从 Intune 的8月更新版开始，我们建议使用以下用于替代预定重启设置的截止时间设置。 Intune 将在 Intune 的将来更新中[弃用对*预定重启*设置的支持](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)。  
-
+ 
   允许用户使用截止时间设置。  
 
   - 未配置 
@@ -263,21 +228,21 @@ ms.locfileid: "71736372"
   如果设置为 "*允许*"，则可以为截止时间配置以下设置：
 
   - **功能更新截止时间**  
-    **默认值**：7  
+    **默认值**：未配置   
     Windows 更新 CSP： [Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     指定用户在其设备上自动安装功能更新前的天数（2-30）。
 
   - **质量更新截止时间**  
-    **默认值**：7  
+    **默认值**：未配置   
     Windows 更新 CSP： [Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     指定用户在其设备上自动安装质量更新前的天数（2-30）。
 
   - **宽限期**  
-    **默认值**： 2 Windows 更新 CSP： [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **默认值**：*未配置*Windows 更新 CSP： [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    指定截止时间晚到截止时间的最小天数（0-7）。
+    指定截止时间晚到截止时间的最小天数（2-7）。
 
   - **截止时间之前自动重启**  
     **默认值**：是 Windows 更新 CSP： [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ ms.locfileid: "71736372"
     指定设备是否应在截止时间之前自动重新启动。
     - **是**
     - **否**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>传递优化下载模式  
 

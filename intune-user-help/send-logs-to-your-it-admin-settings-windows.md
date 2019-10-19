@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 038747fb-5b52-47c4-a2b6-f9218da4cfe1
 searchScope:
@@ -18,20 +19,20 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f8d1ff89f948715890eb9a31535e90b8787a856
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9e88fa55391ace4f8a86416412489ca055083503
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849854"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502046"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>通过 Windows 10 的“设置”应用将日志发送给公司支持人员
 
-使用“设置”应用对适用于 Windows 10 的公司门户进行故障排除。 如果在 Windows 10 设备上使用应用时遇到问题，可以向支持团队发送电子邮件寻求帮助。 公司门户应用中发生的事件和错误将保存在设备上一个名为“诊断日志”的特殊文档中。 它们可以包含关于错误的额外见解，并且在导出时对支持团队非常有用。
+使用“设置”应用对适用于 Windows 10 的公司门户进行故障排除。 如果在 Windows 10 设备上使用应用时遇到问题，可以向支持团队发送电子邮件寻求帮助。 公司门户应用中发生的事件和错误将保存在设备上一个名为“诊断日志”  的特殊文档中。 它们可以包含关于错误的额外见解，并且在导出时对支持团队非常有用。
 
-1. 若要打开“设置”应用，请转到“启动”菜单 >“设置”。 还可以在搜索栏中搜索“设置”。
-2. 转至“帐户” > “访问工作或学校”。
-3. 选择“导出管理日志文件”。
+1. 若要打开“设置”应用，请转到“启动”菜单 >“设置”    。 还可以在搜索栏中搜索“设置”  。
+2. 转至“帐户”   > “访问工作或学校”  。
+3. 选择“导出管理日志文件”  。
 
    ![“访问工作或学校屏幕”显示了“相关设置”标题下的“导出”选项。](./media/w10-export-logs.png)
 

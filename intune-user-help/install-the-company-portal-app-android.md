@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 0e4ed29d6a2da79b7bfd3502ebf8ce53259f1ae6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546343"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506069"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>安装 Android 适用的公司门户应用
 
-公司门户应用使你可以访问公司或学校的应用、电子邮件和 Internet 连接。 此应用可通过保护设备安全来帮助保护组织信息的安全 - 例如保持公司应用处于最新版本，或确保设备在一段特定时间后自行锁定。 若要了解有关公司门户和它在设备管理中的部件的功能的详细信息，请参阅[为什么要注册 Android 设备](why-enroll-android-device.md)。  
+公司门户应用使你可以访问公司或学校的应用、电子邮件和 Internet 连接。 此应用可通过保护设备安全来帮助保护组织信息的安全 - 例如保持公司应用处于最新版本，或确保设备在一段特定时间后自行锁定。 若要详细了解公司门户及其在设备管理中的部分功能，请参阅[为什么要注册 Android 设备](why-enroll-android-device.md)。  
 
 1. 点击“主页”   > “Play Store”  。
 

@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862203"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506295"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>使用 Microsoft Intune 应用注册公司设备
 
@@ -78,19 +79,19 @@ ms.locfileid: "68862203"
 
    ![“设置工作电话”屏幕的示例图像，其中突出显示“安装”按钮。](./media/fully-managed-intune-app-11.png)   
 
-10. 点击 **"** 开始" 打开 Microsoft Intune 应用并注册设备。 
+10. 点击 "**开始**" 打开 Microsoft Intune 应用并注册设备。 
 
     ![“设置工作电话”屏幕的示例图像，其中突出显示了“开始”按钮。](./media/fully-managed-intune-app-17.png)   
 
-11. 点击 **"登录** ", 然后**点击** "下一步" 开始注册。 当你看到注册已完成的消息时, 点击 **"** 完成"。  
+11. 点击 **"登录"** ，然后点击 "**下一步**" 开始注册。 当你看到注册已完成的消息时，点击 "**完成**"。  
 
-    ![示例图像: 设置访问权限, 注册设备屏幕, 突出显示 "完成" 按钮。](./media/fully-managed-intune-app-19.png)   
+    ![示例图像：设置访问权限，注册设备屏幕，突出显示 "完成" 按钮。](./media/fully-managed-intune-app-19.png)   
 
 10. 收到设备准备就绪的消息后，点击“完成”  。  
 
     ![“设置工作电话”屏幕的示例图像，其中突出显示了“完成”按钮。](./media/fully-managed-intune-app-18.png)   
 
-如果在访问组织的资源时遇到问题, 可能需要更新设备上的其他设置。 登录到 Microsoft Intune 应用以检查所需的更新。   
+如果在访问组织的资源时遇到问题，可能需要更新设备上的其他设置。 登录到 Microsoft Intune 应用以检查所需的更新。   
 
 
 ## <a name="qr-code-enrollment"></a>QR 码设备注册  

@@ -9,6 +9,7 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adc0024549a821b4e9f7ac5f001b8fc17e1fd258
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 309672805b89275e3a9aef7fae6b20754a923916
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848775"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500717"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁  
 
@@ -38,7 +39,7 @@ Lookout for Work 应用是一项移动威胁防御服务，可识别 iOS 设备�
 ## <a name="troubleshoot-virus-or-security-threat"></a>排查病毒或安全威胁  
 当 Lookout for Work 应用检测到安全或应用威胁时，重新获取对公司资源的访问权限。  
 
-1. 如果检测到病毒或安全威胁，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)。  
+1. 如果检测到病毒或安全威胁，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)  。  
 
     ![Lookout for Work 错误消息示例屏幕截图，其中包含指向公司门户网站的链接和蓝色的“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)  
 

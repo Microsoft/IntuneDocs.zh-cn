@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251546"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493898"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -30,7 +31,7 @@ ms.locfileid: "72251546"
 > [!Note]
 > 并非所有选项在所有版本的 Windows 上都可用。 若要查看受支持的版本，请参阅 [policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)（策略 CSP）（打开另一个 Microsoft 网站）。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建设备配置文件](device-restrictions-configure.md#create-the-profile)。
 
@@ -100,7 +101,7 @@ ms.locfileid: "72251546"
 - **手动 Wi-Fi 配置**：选择“阻止”可阻止设备连接到 MDM 服务器安装的网络之外的 Wi-Fi  。 选择“未配置”（默认）则允许终端用户添加和配置自己的 Wi-Fi 连接网络 SSID  。
 - **Wi-Fi 扫描间隔**：输入设备扫描 Wi-Fi 网络的频率。 输入从 1（频率最高）到 500（频率最低）的值。 默认值为 `0`。
 
-### <a name="bluetooth"></a>Bluetooth
+### <a name="bluetooth"></a>蓝牙
 
 这些设置使用[蓝牙策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth)，该策略还列出了受支持的 Windows 版本。
 
@@ -157,7 +158,7 @@ ms.locfileid: "72251546"
   - **隐私**：选择“阻止”可阻止访问设备上设置应用的隐私区域  。 选择“未配置”（默认）则允许访问  。
   - **更新安全**：选择“阻止”可阻止访问设备上设置应用的更新安全区域  。 选择“未配置”（默认）则允许访问  。
 
-## <a name="display"></a>显示器
+## <a name="display"></a>显示
 
 这些设置使用[显示策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display)，该策略还列出了受支持的 Windows 版本。
 
@@ -561,7 +562,7 @@ ms.locfileid: "72251546"
   - **中等**：针对成人内容的中等筛选。 不会筛选有效的搜索结果。
 - **在搜索中显示 Web 结果**：设置为“阻止”时，用户无法搜索，且搜索中不会显示 Web 结果  。 选择“未配置”（默认）允许用户搜索 Web，并在设备上显示结果  。
 
-## <a name="start"></a>以管理员身份启动
+## <a name="start"></a>启动
 
 这些设置使用[开始策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start)，该策略还列出了受支持的 Windows 版本。  
 

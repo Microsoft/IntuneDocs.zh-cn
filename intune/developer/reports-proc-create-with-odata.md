@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733473"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490473"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 源创建 Intune 报表
 
@@ -57,7 +58,7 @@ ms.locfileid: "71733473"
 2. 选择“Microsoft Intune - 概述”  边栏选项卡右侧“其他任务”  下的数据仓库链接，打开“Intune 数据仓库”  窗格。
 3. 复制自定义源 URL。 例如：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. 打开 Power BI Desktop。
-5. 从菜单栏中选择 "**文件** > **获取数据** > **Odata 源**。
+5. 从菜单栏中选择 "**文件** > **获取数据** > **Odata 源**"。
 6. 将从前面的步骤中复制的自定义源 URL 粘贴到 " **OData 源**" 窗口的 "URL" 框中。
 7. 选择“基本”  。
 
@@ -92,10 +93,10 @@ ms.locfileid: "71733473"
 ![Power BI 树状图可视化效果](./media/reports-proc-create-with-odata/reports-create-03-treemap.png)
 
 1. 在 "**可视化效果**" 窗格中，找到并选择 "**树状图**"。 **树状图**图将添加到报表画布。
-2. 在 "**字段**" 窗格中，查找 @no__t 表。
-3. 展开 @no__t 表，然后选择 @no__t 数据字段。
+2. 在 "**字段**" 窗格中，查找 `devices` 表。
+3. 展开 `devices` 表，然后选择 `manufacturer` 数据字段。
 4. 将 `manufacturer` 数据字段拖动到报表画布上，并将其放在**树状图**图表上。
-5. 将 `deviceKey` "数据字段从" @no__t "表拖到"**可视化效果**"窗格，并将其放在标记" 在**此处添加数据字段**"框中的"**值**"部分下。  
+5. 将 `devices` 表中的 `deviceKey` 数据字段拖动到 "**可视化效果**" 窗格中，并将其放在标记为 "在**此处添加数据字段**" 框中的 "**值**" 部分下。  
 
 现在就有了一个视觉对象，它显示组织中设备制造商的分布情况。
 
@@ -106,11 +107,11 @@ ms.locfileid: "71733473"
 可以向树状图添加筛选器，以便使用应用解答其他问题。
 
 1. 要添加筛选器，请选择报表画布，然后选择“可视化效果”  下的切片器图标  （带数据模型和支持的关系的树状图![](./media/reports-proc-create-with-odata/reports-create-slicer.png)）。 空**切片器**可视化将显示在画布上。
-2. 在 "**字段**" 窗格中，查找 @no__t 表。
-3. 展开 @no__t 表，然后选择 @no__t 数据字段。
-4. 将 @no__t @no__t 的数据字段从 "筛选器" 窗格拖到 "**筛选器**" 窗格，并将其放在 "在**此处添加数据字段**" 部分的 "**筛选器**" 下。  
+2. 在 "**字段**" 窗格中，查找 `ownerTypes` 表。
+3. 展开 `ownerTypes` 表，然后选择 `ownerTypeName` 数据字段。
+4. 将 `ownerTypes` 表中的 `onwerTypeName` 数据字段拖放到 "**筛选器**" 窗格中，并将其放在 "在**此处添加数据字段**" 部分的 "**筛选器**" 下。  
 
-   在 `OwnerTypes` 表下，有一个名为 @no__t 的数据字段包含一个数据，其中包含设备是公司拥有的还是个人的。 由于要在此筛选器中显示易记名称，因此查找 `ownerTypes` 表，并将“ownerTypeName”  拖到切片器中。 此示例说明数据模型如何支持表之间的关系。
+   在 `OwnerTypes` 表中，有一个名为 `OwnerTypeKey`that 的数据字段包含一个数据，即设备是公司拥有的还是个人的。 由于要在此筛选器中显示易记名称，因此查找 `ownerTypes` 表，并将“ownerTypeName”  拖到切片器中。 此示例说明数据模型如何支持表之间的关系。
 
 ![包含“支持表之间的关系”筛选器的树状图](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

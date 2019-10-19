@@ -9,6 +9,7 @@ ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98fd937ee379d71874f61152d88ddc94fa5b7a09
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012432"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501854"
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 若要从设备访问工作或学校资源，需要使用 Intune 公司门户应用或 Microsoft Intune 应用注册设备。 
@@ -81,12 +82,12 @@ Microsoft Intune 应用适用于公司拥有的 Android 设备，并且不包含
 当重置设备时，公司门户会尝试将计算机或设备重置回制造商默认设置。 将从设备中删除所有工作或学校数据，并删除所有个人数据。 例如，如果丢失了设备，则重置会很有用。 你可以从公司门户网站远程重置它。  
 
 ## <a name="can-you-remove-a-device-from-the-microsoft-intune-app"></a>是否可以从 Microsoft Intune 应用中删除设备？
-不能, 无法从 Microsoft Intune 应用中删除企业拥有的设备。  
+不能，无法从 Microsoft Intune 应用中删除企业拥有的设备。  
 
 ## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>如果在公司门户或 Microsoft Intune 应用程序中看不到我的设备该怎么办？
 若要查看公司门户中的设备，必须先进行注册。 如果注册后仍未看到所有设备，请尝试通过公司门户同步或检查访问权限。 你无法查看你公司所拥有和管理的设备。
 
-在 Microsoft Intune 应用中，只会看到当前正在使用的设备。 在应用中, 其他已注册的设备将不会显示。  
+在 Microsoft Intune 应用中，只会看到当前正在使用的设备。 在应用中，其他已注册的设备将不会显示。  
 
 ## <a name="where-else-can-i-go-for-help"></a>可以从其他哪些地方获取帮助？  
 若要解决常见问题，请查看以下特定于平台的文档：  
@@ -96,7 +97,7 @@ Microsoft Intune 应用适用于公司拥有的 Android 设备，并且不包含
 - [解决 macOS 设备的常见问题](troubleshoot-your-device-macos.md)
 - [解决 Windows 设备的常见问题](troubleshoot-your-device-windows.md)
 
-你还可以与你的 IT 支持人员联系。 公司门户和 Microsoft Intune 应用提供了帮助和支持页面, 其中列出了联系信息和报告问题的方式。 你的组织的[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上也提供联系信息。  
+你还可以与你的 IT 支持人员联系。 公司门户和 Microsoft Intune 应用提供了帮助和支持页面，其中列出了联系信息和报告问题的方式。 你的组织的[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)上也提供联系信息。  
 
 ## <a name="next-steps"></a>后续步骤  
 

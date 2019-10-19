@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c535dbd91605a41fdc1c526ecd8ff9d9fc9e2448
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733668"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490969"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -203,7 +204,7 @@ ms.locfileid: "71733668"
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| 在应用包装工具可用的命令行属性上显示详细的使用情况信息。 |
-|**-aa**|（可选） `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`，即 `login.windows.net/common` |
+|**-aa**|（可选） `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` 即 `login.windows.net/common` |
 |**-ac**|（可选） `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` 这是 "客户端 ID" 字段中的 guid 来自应用注册边栏选项卡中应用的列表。 |
 |**-ar**|（可选） `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` 这是在应用注册中配置的重定向 URI。 通常，它将是 Microsoft Authenticator 应用程序在中转身份验证后返回到的应用程序的 URL 协议。 |
 |**-v**| （可选）将详细信息输出到控制台。 建议使用此标志来调试任何错误。 |

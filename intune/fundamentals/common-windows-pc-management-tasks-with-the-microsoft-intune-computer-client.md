@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77f272053f9034cf89476922649576556de634d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: edf13046a66f825b5f976491d1dd3c22c9f320ac
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735670"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509129"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>使用 Intune 软件客户端的常见 Windows 电脑管理任务
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 本主题列出了通过安装 Intune 软件客户端，管理作为电脑管理的桌面可执行的任务。 本主题不涉及将电脑作为移动设备进行管理。 如果尚未在电脑上安装客户端，请参阅[安装 Intune 软件客户端](install-the-windows-pc-client-with-microsoft-intune.md)。
 

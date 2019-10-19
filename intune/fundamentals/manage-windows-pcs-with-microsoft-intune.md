@@ -5,27 +5,32 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 10/15/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f481c17e6cb1285147c7f6361bfff73801b2bba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736125"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510100"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
+
+> [!WARNING]
+> Microsoft 宣布，[Windows 7 支持将于 2020 年 1 月 14 日结束](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。 到时，Intune 还将停止对运行 Windows 7 的设备的支持。 Microsoft 强烈建议移动至 Windows 10 以避免任何服务或支持出现中断。
+> 
+> 有关详细信息，请参阅[Intune 计划更改：即将结束对 Windows 7 的支持](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-)。
 
 > [!NOTE]
 > 可使用 Microsoft Intune 管理 Windows 电脑，将其作为[使用移动设备管理 (MDM) 的移动设备](../enrollment/windows-enroll.md)或具有 Intune 软件客户端的计算机，如下所述。 但是，Microsoft 建议客户尽可能[使用 MDM 管理解决方案](../enrollment/windows-enroll.md)。 有关详细信息，请参阅[对比作为计算机或移动设备管理 Windows 电脑](pc-management-comparison.md) 
@@ -35,7 +40,6 @@ Intune 提供了可供组织管理移动设备的全面的解决方案。 Intune
 Intune 软件客户端最适合运行旧版操作系统（例如 Windows 7）且无法将其作为移动设备进行管理的 Windows 电脑。 Intune 软件客户端使用“组策略”等管理功能管理云中的电脑。
 
 Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为计算机进行管理。 对于更大规模的部署，可将 Windows 10 电脑作为移动设备进行管理。 Intune 的每个版本和 Windows 10 的每个更新均包含基于移动设备管理体系结构的管理功能。 强烈建议将你的组织迁移到作为移动设备进行管理的 Windows 10 中。
-
 
 > [!NOTE]
 > 可使用 Intune 客户端软件将 Windows 8.1 和更高版本设备作为电脑或移动设备进行管理。 但不能在同一个设备上同时使用这两种方法。 请在谨慎考虑后再决定是否通过 Intune 客户端软件管理电脑。 本主题仅适用于通过运行 Intune 客户端软件将设备作为电脑管理。
@@ -60,9 +64,6 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 |管理权限|安装客户端软件的帐户必须具有该设备的本地管理员权限。|
 |Windows Installer 3.1|PC 至少必须安装 Windows Installer 3.1。<br /><br />查看 PC 上 Windows Installer 的版本：<br /><br />  在电脑上，右键单击 **%windir%\System32\msiexec.exe**，然后单击“属性”  。<br /><br />你可以从 Microsoft Developer Network 网站上的 [Windows Installer Redistributables（Windows Installer 可再分发文件）](http://go.microsoft.com/fwlink/?LinkID=234258) 中下载最新版本的 Windows Installer。|
 |删除不兼容的客户端软件|安装 Intune 客户端软件之前，需从该电脑卸载任何 Configuration Manager、Operations Manager 和 Service Manager 客户端软件。|
-
-> [!WARNING]
-> Microsoft 宣布，[Windows 7 支持将于 2020 年 1 月 14 日结束](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。 到时，Intune 还将停止对运行 Windows 7 的设备的支持。 Microsoft 强烈建议移动至 Windows 10 以避免任何服务或支持出现中断。 
 
 ## <a name="deploying-the-intune-software-client"></a>部署 Intune 软件客户端
 可以以 Intune 管理员身份通过各种方式向用户提供 Intune 软件客户端。 请参阅[在 Windows 电脑上安装 Intune 软件客户端](../install-the-windows-pc-client-with-microsoft-intune.md)，获取相关指南。

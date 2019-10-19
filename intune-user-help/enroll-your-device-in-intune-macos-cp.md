@@ -9,6 +9,7 @@ ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: ee725d118353e18924858569ac861992d19f839a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099846"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506183"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
 

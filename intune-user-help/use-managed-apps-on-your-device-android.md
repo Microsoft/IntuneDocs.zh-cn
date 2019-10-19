@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546037"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501897"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 配置托管应用，以满足组织的安全要求，并保护工作和学校数据。 这些应用面向设备提供，以供自动安装和使用。 
@@ -52,18 +53,18 @@ ms.locfileid: "67546037"
 - Microsoft Word、Excel 和 PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>如何获取托管应用？
-有三种方法来获取托管的应用。  
+有三种方法可获取托管应用程序。  
 * 注册时，组织将自动向你的设备安装应用。  
 * 从 Google Play 商店安装应用，然后使用工作或学校帐户登录应用。    
-* 组织在公司门户中提供托管应用。 转到公司门户应用或网站，以搜索、查看和安装可用应用。 有关这些应用程序的详细信息，请参阅下一部分中，[可用的应用](#available-apps)。  
+* 组织在公司门户中提供托管应用。 转到公司门户应用或网站，以搜索、查看和安装可用应用。 有关这些应用程序的详细信息，请参阅下一节 "[可用应用](#available-apps)"。  
 
 ### <a name="available-apps"></a>可用应用   
- 你的组织可以选择在工作或学校，为你进行适当且有用和使其可供您在公司门户应用。  
+ 你的组织可以选择适用于你工作单位或学校的应用，并在公司门户中使其可供你使用。  
 
  也可以根据设备类型使用应用。 例如，如果使用适用于 Android 的公司门户应用，则可以访问 Android 应用，但不能访问 iOS 应用。   
 
 ## <a name="request-an-app-for-work-or-school"></a>请求用于工作或用于学校的应用   
- 如果未在公司门户中找到需要的应用，则可以请求该应用。 查找联系人详细信息您**支持人员**中任一应用程序**联系 IT 部门**选项卡。可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。   
+ 如果未在公司门户中找到需要的应用，则可以请求该应用。 在应用的 "**联系 IT** " 选项卡中查找**支持人员**的联系人详细信息。可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到相同的联系详情。   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>我的公司支持人员可管理应用中的哪些内容？  
 以下列表描述公司支持人员可以在应用内管理的设置。 这些设置将影响查看、访问或使用设备上工作或学校数据的方式：

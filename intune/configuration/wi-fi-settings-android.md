@@ -6,21 +6,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
+ms.reviewer: maholdaa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d341aeace950f62ae699aa7760a65c0fd2f74fa
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4a9bd1691b7943f02c9577e962fb1bcd5d9cf40a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734032"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585328"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android 的设备添加 Wi-Fi 设置
 
@@ -38,14 +40,12 @@ ms.locfileid: "71734032"
 
 - Wi-Fi 类型  ：选择“基本”  。
 - **SSID**：输入**服务集标识符**，它是设备连接到的无线网络的真实名称。 但是，用户在选择连接时只会看到你已配置的网络名称  。
-- 自动连接  ：选择“启用”  将在设备处于范围内时自动连接到此网络。 选择“禁用”  以防止设备自动连接。
 - 隐藏网络  ：选择“启用”  以在设备上的可用网络列表中隐藏此网络。 不广播 SSID。 选择“禁用”  以在设备上的可用网络列表中显示此网络。
 
 ## <a name="enterprise"></a>企业
 
 - Wi-Fi 类型  ：选择“企业”  。
 - **SSID**：输入**服务集标识符**，它是设备连接到的无线网络的真实名称。 但是，用户在选择连接时只会看到你已配置的网络名称  。
-- 自动连接  ：选择“启用”  将在设备处于范围内时自动连接到此网络。 选择“禁用”  以防止设备自动连接。
 - 隐藏网络  ：选择“启用”  以在设备上的可用网络列表中隐藏此网络。 不广播 SSID。 选择“禁用”  以在设备上的可用网络列表中显示此网络。
 - EAP 类型  ：选择用于对安全无线连接进行身份验证的可扩展身份验证协议 (EAP) 类型。 选项包括： 
 

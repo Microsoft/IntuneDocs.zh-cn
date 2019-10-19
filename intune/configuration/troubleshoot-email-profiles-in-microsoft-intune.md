@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3a5a5aa4d30dcac0f954057f0cc51ffde6a950
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734292"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506583"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中电子邮件配置文件的常见问题和解决方法
 
@@ -65,7 +66,7 @@ Samsung KNOX 不使用主机名识别配置文件。 不建议创建多个电子
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 依次选择“设备配置”   > “配置文件”  。
-3. 选择电子邮件配置文件 >**属性**@no__t**设置**。
+3. 选择电子邮件配置文件 >**属性** > **设置**"。
 4. 设置 "**允许从第三方应用程序发送电子邮件**" 设置为 "**启用**"。
 
 ### <a name="configuration-manager-hybrid"></a>Configuration Manager 混合

@@ -1,34 +1,52 @@
 ---
-title: 使用详细日志记录帮助公司支持人员修复设备问题 | Microsoft Docs
+title: 配置 Intune apps 中的日志记录设置 |Microsoft Docs
 description: 通过使用详细日志记录帮助公司支持人员修复设备问题
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068915"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508005"
 ---
-# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>利用详细日志记录帮助公司支持人员修复设备问题
+# <a name="configure-logging-settings"></a>配置日志记录设置
 
-在 Intune 中注册 Android 设备后，可使用“详细日志记录”让公司门户应用和 Intune 托管应用记录有关设备上所发生情况的详细日志。 这些日志可帮助公司支持人员修复在你使用公司门户或 Intune 托管应用时可能遇到的任何问题。 默认情况下，设备上已启用详细日志记录，且发送给公司支持人员的日志包含你的电子邮件地址。
+配置日志记录设置，让公司门户应用、Microsoft Intune 应用和 Intune 托管应用记录应用操作。 如果在应用中遇到问题，然后对其进行报告，则支持团队将查看这些日志以了解更多详细信息。 
 
-若要打开或关闭“详细日志记录”，请使用工作或学校凭据登录到公司门户应用，点击“设置”，然后点击“详细日志记录”旁边的开/关按钮。
+> [!NOTE]
+> 发送给支持团队的日志将包括你的电子邮件地址。  
 
-仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。
+## <a name="configure-company-portal-logging"></a>配置公司门户日志记录
+详细日志记录记录在公司门户应用中执行的每个操作。 默认情况下，在设备上启用它。 若要在公司门户中启用详细日志记录：  
+
+1. 登录到公司门户应用。
+2. 点击 "**设置**"。
+3. 在**详细日志记录**旁边，将开关翻转到**Off**。
+
+## <a name="configure-microsoft-intune-app-logging"></a>配置 Microsoft Intune 应用日志记录
+在 Microsoft Intune 应用程序中，你可以配置日志详细信息的级别。 级别默认为 "**重要**"。 调整日志记录详细信息：  
+
+1. 打开 Microsoft Intune 应用。  
+2. 点击 "**设置**"。  
+3. 在 "**日志级别详细信息**" 下，选择 "**详细**" 以增加记录的详细信息级别，或选择 "**关闭**" 以关闭日志记录。  
+
+## <a name="next-steps"></a>后续步骤  
+
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  

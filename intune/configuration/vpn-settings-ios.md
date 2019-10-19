@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734149"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593787"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 VPN 设置
 
@@ -71,6 +72,8 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 
     > [!NOTE]
     > 如果用户名和密码被用作 Cisco IPsec VPN 的身份验证方法，则它们必须通过自定义 Apple 配置器配置文件来提供 SharedSecret。
+
+  - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。
 
 - **排除的 URL**（仅限 Zscaler）：连接到 Zscaler VPN 时，可从 Zscaler 云外部访问列出的 URL。 
 
@@ -135,8 +138,8 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - **中**（默认）：每10分钟发送一次 keepalive 消息。
   - **High**：每60秒发送一条 keepalive 消息。
 
-- **TLS 版本最小值**：输入要使用的最低 tls 版本。 输入 `1.0`、`1.1` 或 `1.2`。 如果留空，则使用默认值 `1.0`。
-- **Tls 版本范围最大值**：输入要使用的最大 tls 版本。 输入 `1.0`、`1.1` 或 `1.2`。 如果留空，则使用默认值 `1.2`。
+- **TLS 版本最小值**：输入要使用的最低 tls 版本。 输入 `1.0`、`1.1` 或 `1.2`。 如果留空，则使用 `1.0` 的默认值。
+- **Tls 版本范围最大值**：输入要使用的最大 tls 版本。 输入 `1.0`、`1.1` 或 `1.2`。 如果留空，则使用 `1.2` 的默认值。
 - **完全向前保密**：选择 "**启用**" 以启用 "完全向前保密（PFS）"。 PFS 是一项 IP 安全功能，可降低会话密钥泄露时的影响。 **Disable** （默认值）不使用 PFS。
 - **证书吊销检查**：选择 "**启用**" 以确保在允许 VPN 连接成功之前证书未被吊销。 这项检查最为重要。 如果 VPN 服务器在确定证书是否已吊销之前超时，则授予访问权限。 **禁用**（默认）不检查吊销的证书。
 
@@ -155,7 +158,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
     - SHA2-384
     - SHA2-512
   - **Diffie-hellman 组**：选择所需的组。 默认值为组 `2`。
-  - **生存期**（分钟）：选择安全关联保持活动状态的时间，直到密钥旋转。 输入介于 `10` 和 `1440` 之间的一个整数值（1440分钟为24小时）。 默认值为 `1440`。
+  - **生存期**（分钟）：选择安全关联保持活动状态的时间，直到密钥旋转。 输入 `10` 和 `1440` 之间的一个整数值（1440分钟为24小时）。 默认值为 `1440`。
 
 - **为子安全关联配置单独的参数集**： iOS 允许你为 IKE 连接和任何子连接配置单独的参数。 
 
@@ -174,7 +177,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
     - SHA2-384
     - SHA2-512
   - **Diffie-hellman 组**：选择所需的组。 默认值为组 `2`。
-  - **生存期**（分钟）：选择安全关联保持活动状态的时间，直到密钥旋转。 输入介于 `10` 和 `1440` 之间的一个整数值（1440分钟为24小时）。 默认值为 `1440`。
+  - **生存期**（分钟）：选择安全关联保持活动状态的时间，直到密钥旋转。 输入 `10` 和 `1440` 之间的一个整数值（1440分钟为24小时）。 默认值为 `1440`。
 
 ## <a name="automatic-vpn-settings"></a>自动 VPN 设置
 

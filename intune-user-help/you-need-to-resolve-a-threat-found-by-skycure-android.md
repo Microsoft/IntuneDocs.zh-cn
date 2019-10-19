@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b008130ec089b99ab64fe0dbbef7ae89b753817
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 28577f3414125e9dba866d738e63a5df491530c4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068895"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507800"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>解决 Symantec Endpoint Protection Mobile 发现的威胁
 
@@ -37,7 +38,7 @@ Symantec Endpoint Protection (SEP) Mobile 是一项移动威胁防御服务，�
 
 ## <a name="resolve-virus-or-security-threat"></a>解决病毒或安全威胁  
 
-1. 尝试访问公司电子邮件或网站时，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)。
+1. 尝试访问公司电子邮件或网站时，将收到一条消息，如以下屏幕截图所示。 点击“设备管理门户”链接，打开[公司门户网站](https://portal.manage.microsoft.com/devices)  。
 
     ![Lookout for Work 错误消息示例屏幕截图，其中包含指向公司门户网站的链接和蓝色的“确定”按钮。](./media/mtd-go-to-device-management-portal-android.png)  
 

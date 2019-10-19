@@ -10,6 +10,7 @@ ms.date: 01/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 48ef8e17-db03-4a1b-95a2-bc594979734c
 searchScope:
@@ -19,12 +20,12 @@ ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8080b07a937b7e827ed0dca3a9fb2c3072b41c5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ff648357c4a787367dc30951fdcdd0dc9203e35
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847380"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508068"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>需要更新 iOS 设备以安装 Outlook 应用
 
@@ -35,6 +36,6 @@ Outlook 应用帮助数百万用户在 [iOS](https://itunes.apple.com/app/micros
 
 安装应用有时可能会失败，尤其是当设备不是最新版本时。 
 
-若要更新，请点击“设置” > “常规” > “软件更新”。
+若要更新，请点击“设置” > “常规” > “软件更新”    。
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

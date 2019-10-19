@@ -9,6 +9,7 @@ ms.date: 11/08/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: d16dd2de-3ed5-474f-a04b-36dcd350162c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d51e9db367925442c7b6c735b1de86891e05856
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3e8fd6941a94a24dd3b6bf98daf6adc9a47f9fa7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55845272"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501944"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>打开 Windows Defender 以访问公司资源
 
@@ -33,22 +34,22 @@ ms.locfileid: "55845272"
 
 ## <a name="turn-on-windows-defender"></a>打开 Windows Defender
 
-1. 在“开始”中，打开“控制面板”。
-2. 打开“管理工具” > “编辑组策略”。 这将在一个新窗口中打开“本地组策略编辑器”。
-3. 打开“计算机配置” > “管理模板” > “Windows 组件” > “Windows Defender 防病毒”。 “关闭 Windows Defender 防病毒”设置位于其他设置文件夹下方。 
-4. 打开“关闭 Windows Defender 防病毒”，并确保将其设置为“禁用”或“未配置”。
+1. 在“开始”中，打开“控制面板”   。
+2. 打开“管理工具” > “编辑组策略”   。 这将在一个新窗口中打开“本地组策略编辑器”  。
+3. 打开“计算机配置” > “管理模板” > “Windows 组件” > “Windows Defender 防病毒”     。 “关闭 Windows Defender 防病毒”设置位于其他设置文件夹下方  。 
+4. 打开“关闭 Windows Defender 防病毒”，并确保将其设置为“禁用”或“未配置”    。
 
 ## <a name="turn-on-real-time-protection"></a>启用实时保护
 
-要确保实时保护已开启，请转到“开始”并搜索“Windows Defender 安全中心”以进行检查。 选择“病毒和威胁防护设置”，并确认“实时保护”和“云提供的保护”都已切换到“开”。 如果未显示这些选项，请执行以下操作启用它们：
+要确保实时保护已开启，请转到“开始”并搜索“Windows Defender 安全中心”以进行检查   。 选择“病毒和威胁防护设置”，并确认“实时保护”和“云提供的保护”都已切换到“开”     。 如果未显示这些选项，请执行以下操作启用它们：
 
-1. 在“开始”中，打开“控制面板”。
-2. 打开“管理工具” > “编辑组策略”。 这将在一个新窗口中打开“本地组策略编辑器”。
-3. 打开“计算机配置” > “管理模板” > “Windows 组件” > “Windows Defender 安全中心” > “病毒和威胁防护”。
-4. 打开“病毒和威胁防护区域”设置，并将其设置为“禁用”。
+1. 在“开始”中，打开“控制面板”   。
+2. 打开“管理工具” > “编辑组策略”   。 这将在一个新窗口中打开“本地组策略编辑器”  。
+3. 打开“计算机配置” > “管理模板” > “Windows 组件” > “Windows Defender 安全中心” > “病毒和威胁防护”      。
+4. 打开“病毒和威胁防护区域”设置，并将其设置为“禁用”   。
 
 ## <a name="update-your-antivirus-definitions"></a>更新防病毒定义
 
-要确保防病毒定义是最新的，请转到“开始”并搜索“Windows Defender 安全中心”以进行检查。 选择“保护更新”和“检查更新”，确保设备针对病毒具有最新保护。 如果未显示此选项，请按照[启用实时保护](turn-on-defender-windows.md#turn-on-real-time-protection)中的步骤进行操作
+要确保防病毒定义是最新的，请转到“开始”并搜索“Windows Defender 安全中心”以进行检查   。 选择“保护更新”和“检查更新”，确保设备针对病毒具有最新保护   。 如果未显示此选项，请按照[启用实时保护](turn-on-defender-windows.md#turn-on-real-time-protection)中的步骤进行操作
 
 仍需帮助？ 请与公司支持人员联系。 有关他们的联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

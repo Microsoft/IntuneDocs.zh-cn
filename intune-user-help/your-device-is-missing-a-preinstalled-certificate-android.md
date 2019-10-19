@@ -9,6 +9,7 @@ ms.date: 01/04/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a91a6c934ba3b1a32ea2ef10da0256019fc25392
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 753fce1e37014e0ad4dac44f1eeb9284482e8f83
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862115"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500168"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>你的 Android 设备缺少通常随附安装在电话上的证书
 

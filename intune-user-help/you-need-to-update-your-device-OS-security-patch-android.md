@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
@@ -17,28 +18,28 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83ff4d6b50a656c996d1a7987f10da7065cb40f9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f72ecdea6fc9743ad4ee225b2d490e791363be1f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844270"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507719"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>需更新 Android 设备的操作系统
 
-如果看到消息告知“Android 安全修补程序级别过低”，则需要安装更新以确保设备保持安全。 修补程序发布用于维护软件以使其顺畅运行且处于最新版本。 公司支持人员要求安装此修补程序来确保公司数据在你的设备上尽可能地受到保护。 所需的安全修补程序的位置不定，具体取决于所使用的 Android 设备类型。
+如果看到消息告知“Android 安全修补程序级别过低”，则需要安装更新以确保设备保持安全。  修补程序发布用于维护软件以使其顺畅运行且处于最新版本。 公司支持人员要求安装此修补程序来确保公司数据在你的设备上尽可能地受到保护。 所需的安全修补程序的位置不定，具体取决于所使用的 Android 设备类型。
 
-如果你拥有 Samsung 设备，请转到“设置” > “关于手机”，然后查看屏幕上是否有“Knox”一词。 如果有，则请遵循下面的 Samsung Knox 说明。
+如果你拥有 Samsung 设备，请转到“设置”   > “关于手机”  ，然后查看屏幕上是否有“Knox”一词。 如果有，则请遵循下面的 Samsung Knox 说明。
 
 [!INCLUDE [wit_nextref](includes/end-user-os-update-guidance.md)]
 
 ## <a name="for-most-android-devices-non-samsung-knox"></a>适用于大多数 Android 设备（非 Samsung Knox）
 
-转到“设置” > “关于” > “软件更新”。 安装更新，然后设备应该已安装了正确的安全修补程序。
+转到“设置”   > “关于”   > “软件更新”  。 安装更新，然后设备应该已安装了正确的安全修补程序。
 
 ## <a name="for-samsung-knox-android-devices"></a>适用于 Samsung Knox Android 设备
 
-转到“设置” > “系统更新” > “检查新的系统更新”。 安装更新，然后 Samsung Knox 设备应该已安装了正确的安全修补程序。
+转到“设置”   > “系统更新”   > “检查新的系统更新”  。 安装更新，然后 Samsung Knox 设备应该已安装了正确的安全修补程序。
 
 
 

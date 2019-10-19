@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/08/2017
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
@@ -16,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3507e863904d914fbc7791e5a89510dd806a67f4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8c3f96b6a548536459162e81d0ea34d102ef8d1c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735449"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509751"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 此页列出了之前在[“新增功能”页](whats-new.md)中列出的适用于 Intune 经典门户的新功能和通告。
 

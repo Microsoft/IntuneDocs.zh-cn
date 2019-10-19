@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa4dbfb7c13d767df41655b391767fc7aa13d914
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817581"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508858"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>解决 Intune Exchange Connector 的常见错误
 
@@ -76,7 +77,7 @@ ms.locfileid: "71817581"
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-如果使用代理服务器连接到 Internet，并阻止到 Intune 服务的流量，则会出现此错误。 若要确定是否正在使用代理，请在 **"控制面板**"  >  "**Internet 选项**" 中，选择 "**连接**" 选项卡，然后单击 " **LAN 设置**"。
+如果使用代理服务器连接到 Internet，并阻止到 Intune 服务的流量，则会出现此错误。 若要确定是否正在使用代理，请在 **"控制面板**"  >  **"Internet 选项**" 中，选择 "**连接**" 选项卡，然后单击 " **LAN 设置**"。
 
 **解决方法**：  
 
@@ -131,7 +132,7 @@ IOS 设备无法在 Intune 中注册，并生成以下错误消息之一：
 
 1. 以管理员或 Administrators 组成员的身份登录到计算机。
 2. 运行**secpol.msc**以打开 "本地安全策略"。
-3. 中转到 "**安全设置** > **本地策略**"，然后选择 "**用户权限分配**"。
+3. 请参阅 "**安全设置**"  > **本地策略**"，然后选择"**用户权限分配**"。
 4. 在右侧窗格中，双击“作为服务登录”  。
 5. 选择 "**添加用户或组**"，将 " **WIEC_USER** " 添加到策略，然后选择 **"确定"** 两次。
 

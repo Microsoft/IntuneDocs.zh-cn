@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
@@ -15,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62fad2a881332470a6c3e95b7cdcab0403ba1839
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 92d81e383a9964aaecbdd151397879236ffcb726
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734656"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493555"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune 中用于配置电子邮件、身份验证和同步的 Android Enterprise 设备设置
 
