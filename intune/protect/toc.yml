@@ -197,6 +197,8 @@
           displayName: ca; pkcs; pki; ra; registration authority
         - name: 删除 SCEP 或 PKCS 证书
           href: remove-certificates.md
+    - name: 派生凭据
+      href: derived-credentials.md
     - name: 软件更新
       items:
         - name: Windows 更新

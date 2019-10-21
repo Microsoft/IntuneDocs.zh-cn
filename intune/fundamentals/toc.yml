@@ -41,6 +41,16 @@
       href: device-lifecycle.md
     - name: 应用生命周期
       href: ../apps/app-lifecycle.md
+    - name: 指导方案
+      items:
+        - name: 指导方案概述
+          href: guided-scenarios-overview.md
+        - name: 部署 Microsoft Edge for Mobile
+          href: guided-scenarios-edge.md
+        - name: 云托管的新式桌面
+          href: guided-scenarios-cloud-managed-pc.md
+        - name: 保护 Microsoft Office 移动应用的安全
+          href: guided-scenarios-office-mobile.md
     - name: 常见方案
       href: common-scenarios.md
     - name: 通过 EMS 启用 BYOD 的技术决策
@@ -175,6 +185,8 @@
       href: ../protect/index.yml
     - name: 管理和保护应用
       href: ../apps/index.yml
+    - name: 使用策略集
+      href: ~/fundamentals/policy-sets.md
     - name: 开发人员指南
       href: ../developer/index.yml
     - name: 获得帮助和支持
