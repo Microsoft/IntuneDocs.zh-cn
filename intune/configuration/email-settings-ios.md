@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bd91891fa6da770404dc0af6d59016aeefe30b3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4cbf9c29a1e694726b1b42f7072eea859f812751
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734591"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593800"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加邮件设置
 
@@ -55,7 +56,7 @@ ms.locfileid: "71734591"
       - **要使用的自定义域名**：输入 Intune 用于域名的值，如 `contoso.com` 或 `contoso`
 
 - **AAD 中的电子邮件地址属性**：选择生成用户的电子邮件地址的方式。 选择“用户主体名称”（`user1@contoso.com` 或 `user1`），使用完整的用户主体名称作为电子邮件地址  。 选择**主 SMTP 地址** (`user1@contoso.com`)，使用主 SMTP 地址登录 Exchange。
-- **身份验证方法**：选择“用户名和密码”或“证书”作为电子邮件配置文件所用的身份验证方法   。 不支持 Azure 多重身份验证。
+- **身份验证方法**：选择“用户名和密码”、“证书”或“派生凭据”作为电子邮件配置文件所用的身份验证方法    。 不支持 Azure 多重身份验证。
   - 如果已选择“证书”  ，请选择之前创建的、用于对 Exchange 连接进行身份验证的客户端 SCEP 或 PKCS 证书配置文件。
 - **SSL**：选择“启用”后，可在发送电子邮件、接收电子邮件以及与 Exchange 服务器通信时使用安全套接字层 (SSL) 通信  。
 - **OAuth**：选择“启用”后，可在发送电子邮件、接收电子邮件以及与 Exchange 通信时使用 Open Authorization (OAuth) 通信  。 如果 OAuth 服务器使用证书身份验证，请选择“证书”作为“身份验证方法”，并将证书包含在配置文件中   。 否则，请选择“用户名和密码”作为“身份验证方法”   。 使用 OAuth 时，请确保：

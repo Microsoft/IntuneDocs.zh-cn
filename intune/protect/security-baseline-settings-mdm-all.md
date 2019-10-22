@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f462b04166a2204d47f288d225e1490f8d3ea2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0be7627403cc95316a99e841127a137e0279ff1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736021"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508986"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>适用于 Intune 的 Windows MDM 安全基线设置
 查看 Microsoft Intune 运行 Windows 10 或更高版本的设备所支持的 MDM 安全基线设置。 此基线中的设置的默认值表示适用设备的推荐配置，并且可能与其他安全基线或此基线的其他版本不匹配基线默认值。
@@ -171,19 +172,19 @@ ms.locfileid: "71736021"
 有关详细信息，请参阅 Windows 文档中的[策略 CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser)。  
 
 - **Microsoft Edge SmartScreen**  
-  默认情况下，Microsoft Edge 使用 Windows Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。 此外，默认情况下，用户不能禁用（关闭）Windows Defender SmartScreen。 启用此策略将关闭 Windows Defender SmartScreen，并阻止用户将其打开。 请勿配置此策略，以允许用户选择打开或关闭 Windows Defender SmartScreen。  
+  默认情况下，Microsoft Edge 使用 Microsoft Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。 此外，默认情况下，用户不能禁用（关闭）Microsoft Defender SmartScreen。 启用此策略将关闭 Microsoft Defender SmartScreen，并阻止用户将其打开。 请勿配置此策略，以允许用户选择打开或关闭 Microsoft Defender SmartScreen。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **默认值**：是  
   
 - **阻止恶意网站访问**  
-  默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意站点的 Windows Defender SmartScreen 警告，以便他们继续访问该站点。 但是使用此策略，可配置 Microsoft Edge，阻止用户绕过警告，并阻止他们继续访问该站点。  
+  默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意站点的 Microsoft Defender SmartScreen 警告，以便他们继续访问该站点。 但是使用此策略，可配置 Microsoft Edge，阻止用户绕过警告，并阻止他们继续访问该站点。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **默认值**：是  
   
 - **阻止下载未经验证的文件**  
-  默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意文件的 Windows Defender SmartScreen 警告，以便他们继续下载未经验证的文件。 启用此策略可防止用户绕过警告，阻止他们下载未经验证的文件。  
+  默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意文件的 Microsoft Defender SmartScreen 警告，以便他们继续下载未经验证的文件。 启用此策略可防止用户绕过警告，阻止他们下载未经验证的文件。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **默认值**：是  
@@ -272,8 +273,8 @@ ms.locfileid: "71736021"
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **基于虚拟化的安全** 
-  **默认值**：使用安全启动启用 VBS
+- **默认情况下**，**基于虚拟化的安全性** 
+  ：通过安全引导启用 VBS
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
@@ -1670,7 +1671,7 @@ ms.locfileid: "71736021"
 
   **默认值**：已启用
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 有关详细信息，请参阅 Windows 文档 [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)（策略 CSP - Defender）。  
 
 - **扫描传入的电子邮件**  
@@ -1686,7 +1687,7 @@ ms.locfileid: "71736021"
   **默认值**：阻止
   
 - **Defender 示例提交同意类型**  
-  检查 Windows Defender 中用户的同意级别是否可发送数据。 如果已授予所需同意，则 Windows Defender 将提交它们。 如果没有（并且用户已指定从不询问），则系统会先启动 UI 征得用户同意（允许 Defender/AllowCloudProtection 时），然后才发送数据。  
+  检查 Microsoft Defender 中用户的同意级别是否可发送数据。 如果已获取所需同意，Microsoft Defender 会将其提交。 如果没有（并且用户已指定从不询问），则系统会先启动 UI 征得用户同意（允许 Defender/AllowCloudProtection 时），然后才发送数据。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **默认值**：自动发送安全示例 
@@ -1702,7 +1703,7 @@ ms.locfileid: "71736021"
   **默认值**：阻止
   
 - **防止凭据窃取类型**  
-  Windows Defender 凭据保护使用基于虚拟化的安全性来隔离密钥，以便只有特权系统软件可以访问它们。 未经授权的访问这些密钥可能会导致凭据被盗攻击，如哈希传递或票证传递。 Windows Defender 凭据保护可通过保护 NTLM 密码哈希、Kerberos 票证授予票证和由应用程序存储为域凭据的凭据来防止这些攻击。  
+  Microsoft Defender 凭据保护使用基于虚拟化的安全性来隔离密钥，以便只有特权系统软件可以访问它们。 未经授权的访问这些密钥可能会导致凭据被盗攻击，如哈希传递或票证传递。 Microsoft Defender 凭据保护可通过保护 NTLM 密码哈希、Kerberos 票证授予票证和由应用程序存储为域凭据的凭据来防止这些攻击。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **默认值**：启用
@@ -1721,9 +1722,9 @@ ms.locfileid: "71736021"
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **网络保护类型**  
-  此策略可用于在 Windows Defender 攻击防护中启用或禁用网络保护（阻止/审核）。 网络保护是 Windows Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。 值类型为整数。 如果启用此设置，则会启用网络保护，且员工无法将其禁用。 可通过以下选项控制其行为：阻止和审核。 如果启用此策略并使用“阻止”选项，则会阻止用户和应用连接到危险的域。 可在 Windows Defender 安全中心看到此活动。 如果启用此策略并使用“审核”选项，则不会阻止用户/应用连接到危险的域。 但是，仍可在 Windows Defender 安全中心看到此活动。 如果禁用此策略，则不会阻止用户/应用连接到危险的域。 无法在 Windows Defender 安全中心看到任何网络活动。 如果未配置此策略，则默认禁用网络阻止。  
-  [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067102)  
+- **网络保护**  
+  此策略可用于在 Microsoft Defender 攻击防护中启用或禁用网络保护（阻止/审核）。 网络保护是 Microsoft Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。 值类型为整数。 如果启用此设置，则会启用网络保护，且员工无法将其禁用。 可通过以下选项控制其行为：阻止和审核。 如果启用此策略并使用“阻止”选项，则会阻止用户和应用连接到危险的域。 可在 Microsoft Defender 安全中心看到此活动。 如果启用此策略并使用“审核”选项，则不会阻止用户/应用连接到危险的域。 但是，仍可在 Microsoft Defender 安全中心看到此活动。 如果禁用此策略，则不会阻止用户/应用连接到危险的域。 无法在 Microsoft Defender 安全中心看到任何网络活动。 如果未配置此策略，则默认禁用网络阻止。  
+  [了解详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **默认值**：启用
   
@@ -1733,13 +1734,13 @@ ms.locfileid: "71736021"
   **默认值**：每天
   
 - **云提供的保护**  
-  为了更好地保护你的电脑，Windows Defender 会将所发现的任何问题的相关信息发送到 Microsoft。 Microsoft 会分析该信息，详细了解影响你和其他客户的问题，并提供改进的解决方案。  
+  为了更好地保护你的电脑，Microsoft Defender 会将所发现的任何问题的相关信息发送到 Microsoft。 Microsoft 会分析该信息，详细了解影响你和其他客户的问题，并提供改进的解决方案。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **默认值**：是  
 
 - **Defender 可能不需要的应用操作**  
-  Windows Defender 防病毒中的可能不需要的应用程序 (PUA) 保护功能可以识别和阻止在网络中的终结点上下载和安装 PUA。 这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能在终结点上执行对性能或使用产生不利影响的操作。 PUA 也指视为信誉不佳的应用程序。 典型 PUA 行为包括：各种类型的软件捆绑 广告注入到 Web 浏览器 检测问题、要求付费修复错误但始终保留在终结点上且不会进行任何更改或优化的驱动程序和注册表优化程序（也称为“流氓防病毒”程序）。 这些应用程序可能会增加网络受到恶意软件感染的风险、增加恶意软件感染的识别难度，而清理这些应用程序也会造成 IT 资源的浪费。  
+  Microsoft Defender 防病毒中的可能不需要的应用程序 (PUA) 保护功能可以识别和阻止在网络中的终结点上下载和安装 PUA。 这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能在终结点上执行对性能或使用产生不利影响的操作。 PUA 也指视为信誉不佳的应用程序。 典型 PUA 行为包括：各种类型的软件捆绑 广告注入到 Web 浏览器 检测问题、要求付费修复错误但始终保留在终结点上且不会进行任何更改或优化的驱动程序和注册表优化程序（也称为“流氓防病毒”程序）。 这些应用程序可能会增加网络受到恶意软件感染的风险、增加恶意软件感染的识别难度，而清理这些应用程序也会造成 IT 资源的浪费。  
   [了解详细信息](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **默认值**：阻止  
@@ -1751,7 +1752,7 @@ ms.locfileid: "71736021"
   **默认值**：阻止
   
 - **完全扫描期间扫描可移动驱动器**  
-  允许 Windows Defender 在完全扫描期间扫描可移动驱动器（例如闪存驱动器）中的恶意软件和不需要的软件。 Windows Defender 防病毒软件将在执行前扫描 USB 设备上的所有文件。  
+  允许 Microsoft Defender 在完全扫描期间扫描可移动驱动器（例如闪存驱动器）中的恶意软件和不需要的软件。 Microsoft Defender 防病毒软件将在执行前扫描 USB 设备上的所有文件。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **默认值**：是  
@@ -1762,7 +1763,7 @@ ms.locfileid: "71736021"
   **默认值**：是
   
 - **行为监视**  
-  允许或不允许 Windows Defender 行为监视功能。 这些传感器内嵌于 Windows 10，收集并处理来自操作系统的行为信号，并将该传感器数据发送至 Microsoft Defender ATP 的专用独立云实例。  
+  允许或禁止 Microsoft Defender 行为监视功能。 这些传感器内嵌于 Windows 10，收集并处理来自操作系统的行为信号，并将该传感器数据发送至 Microsoft Defender ATP 的专用独立云实例。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **默认值**：是
@@ -1816,7 +1817,7 @@ ms.locfileid: "71736021"
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## <a name="windows-defender-firewall"></a>Windows Defender 防火墙  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 防火墙  
 有关详细信息，请参阅 Windows 协议文档中的[2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) 。  
 
 - **防火墙配置文件域**  
@@ -1985,11 +1986,11 @@ ms.locfileid: "71736021"
   - **电子邮件邀请方法**
 
 
-*[新]* [**WIndows Defender**](#windows-defender)：
+*[新增]* [**Microsoft Defender**](#microsoft-defender)：
 - **Adobe Reader 在子进程中启动**  
 - **Office 通信应用在子进程中启动** 
 
-*[新]* [**Windows Defender 防火墙**](#windows-defender-firewall)
+*[新增]* [ **Microsoft Defender 防火墙**](#microsoft-defender-firewall)
 - **防火墙配置文件域**  
   - **已阻止入站连接**  
   - **需要出站连接**  

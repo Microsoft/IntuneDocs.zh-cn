@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcd86cedc7684f31483d7cd3c8294a76a9c306b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734903"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584890"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
 
@@ -140,13 +141,13 @@ ms.locfileid: "71734903"
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>设置适用于：设备注册，自动设备注册（监督）
 
 > [!IMPORTANT]
-> 在用户注册的设备上，如果配置任何密码设置，则**简单密码**设置会自动设置为 "**阻止**"，并强制实施6位 PIN。
+> 在用户注册设备上，如果配置任何密码设置，则“简单密码”  设置将自动设置为“阻止”  ，并强制使用 6 位 PIN。
 >
-> 例如，配置 "**密码过期**" 设置，并将此策略推送到 "用户注册的设备"。 在设备上，将发生以下情况：
+> 例如，配置“密码过期”  设置，并将此策略推送到用户注册的设备。 在设备上，会出现以下情况：
 >
-> - **密码过期**设置被忽略。
-> - 不允许使用简单的密码，例如 `1111` 或 `1234`。
-> - 强制实施6位 pin。
+> - 将忽略“密码过期”  设置。
+> - 不允许使用简单密码，如 `1111` 或 `1234`。
+> - 强制使用 6 位 pin。
 
 - **简单密码**：选择“阻止”  ，进而需要更复杂的密码。 “未配置”  则允许使用简单密码，如 `0000` 和 `1234`。
 
@@ -267,6 +268,11 @@ ms.locfileid: "71734903"
 
   从 iOS 13.0 开始，此设置需要受监督的设备。
 
+- **访问文件应用中的网络驱动器**：使用服务器消息块（SMB）协议，设备可以访问网络服务器上的文件或其他资源。 **禁用**阻止访问网络 SMB 驱动器上的文件。 选择“未配置”（默认）则允许访问  。
+
+  此功能适用于：  
+  - iOS 和 iPadOS 13.0 及更高版本
+
 ## <a name="built-in-apps"></a>内置应用
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>设置适用于：所有注册类型
@@ -377,7 +383,7 @@ ms.locfileid: "71734903"
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>设置适用于：自动化设备注册（监督）
 
-- **应用类型列表**：创建要显示或隐藏的应用列表。 选项包括：
+- **应用类型列表**：创建要显示或隐藏的应用列表。 可以显示或隐藏内置应用程序和业务线应用。 Apple 网站具有[内置的 apple 应用](https://support.apple.com/HT208094)列表。 选项包括：
 
   - **隐藏应用**：输入对用户隐藏的应用列表。 用户无法查看，或打开这些应用。
   - **可见应用**：输入用户可以查看和启动的应用列表。 无法查看或启动其他应用。
@@ -432,7 +438,12 @@ ms.locfileid: "71734903"
   - iOS 12.2 及更高版本
 
 - **加入仅使用配置文件的 Wi-Fi 网络**：“必需”  可强制设备仅使用通过 Intune 配置文件设置的 Wi-Fi 网络。 “未配置”（默认）允许设备使用其他 Wi-Fi 网络  。
-- **修改 wi-fi 状态**：**未配置**（默认）允许用户在设备上启用或关闭 wi-fi。 **阻止**打开或关闭 wi-fi。
+- **Wi-fi 始终打开**：设置为 "**要求**" 时，wi-fi 将停留在 "设置" 应用程序中。 即使在设备处于飞行模式下，也不能在 "设置" 或 "控制中心" 中关闭它。 "**未配置**" （默认值）允许用户控制启用或禁用 wi-fi。
+
+  配置此设置不会阻止用户选择 Wi-fi 网络。
+
+  此功能适用于：  
+  - iOS 和 iPadOS 13.0 及更高版本
 
 ## <a name="connected-devices"></a>连接的设备
 
@@ -458,6 +469,11 @@ ms.locfileid: "71734903"
 
   此功能适用于：  
   - iOS 11.0 及更高版本
+
+- 对**usb 驱动器上文件的访问**：设备可以连接并打开 usb 驱动器上的文件。 当 USB 连接到设备时，**禁用**会阻止设备访问文件应用中的 usb 驱动器。 禁用此功能还会阻止最终用户将文件传输到连接到 iPad 的 USB 驱动器。 "**未配置**" （默认）允许访问 "文件" 应用中的 USB 驱动器。
+
+  此功能适用于：  
+  - iOS 和 iPadOS 13.0 及更高版本
 
 ## <a name="keyboard-and-dictionary"></a>键盘和字典
 
@@ -533,7 +549,7 @@ ms.locfileid: "71734903"
 
   此设置适用于：  
   - iOS 13.0 及更高版本
-  - iPadOS 13.0 和更高版本
+  - iPadOS 13.0 及更高版本
   
   > [!TIP]
   > 如果你的 LOB 应用可供你的组织使用，而在 iOS 13.0 发布时，在第0天没有**语音控制**准备，则建议你将此设置保留为 "**未配置**"。
@@ -553,7 +569,7 @@ ms.locfileid: "71734903"
 
   此设置适用于：  
   - iOS 13.0 及更高版本
-  - iPadOS 13.0 和更高版本
+  - iPadOS 13.0 及更高版本
 
 - **VoiceOver 控制**：“允许”  可允许更改画外音，以允许用户更新 VoiceOver 功能，例如朗读屏幕上文本的速度。 “未配置”  则阻止 voiceover 更改。
 - **缩放控件**：“允许”  可允许用户所做的缩放更改。 “未配置”  则阻止缩放更改。

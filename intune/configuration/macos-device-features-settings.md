@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816870"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506669"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 设备功能设置
 
@@ -80,7 +81,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
   - `/Applications/Microsoft Office/root/Office16/winword.exe`
   - `/Users/UserName/music/itunes.app`
   
-  添加任何应用、文件夹或文件时，请确保输入正确的路径。 并非所有项都在 `Applications` 文件夹中。 如果用户将项从一个位置移到另一个位置，则路径会更改。 当用户登录时，此移动的项目将不会打开。
+  添加任何应用、文件夹或文件时，请确保输入正确的路径。 并非所有项都位于 `Applications` 文件夹中。 如果用户将项从一个位置移到另一个位置，则路径会更改。 当用户登录时，此移动的项目将不会打开。
 
 ## <a name="login-window"></a>登录窗口
 
@@ -200,15 +201,15 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 
 - **应用 ID**：输入要与网站关联的应用的应用标识符。 应用标识符包括团队 ID 和捆绑 ID： `TeamID.BundleID`。
 
-  团队 ID 是由 Apple 为应用开发人员生成的由10个字符组成的字母数字（字母和数字）字符串，如 `ABCDE12345`。 [找到你的团队 ID](https://help.apple.com/developer-account/#/dev55c3c710c)  （打开 Apple 的网站）包含详细信息。
+  团队 ID 是由 Apple 为应用开发人员生成的由10个字符组成的字母数字（字母和数字）字符串，如 `ABCDE12345`。 [找到你的团队 ID](https://help.apple.com/developer-account/#/dev55c3c710c)   （打开 Apple 网站）中包含详细信息。
 
-  捆绑 ID 唯一标识应用，通常采用反向域名表示法格式。 例如，查找器的绑定 ID 为 `com.apple.finder`。 若要查找捆绑 ID，请使用终端中的 AppleScript：
+  捆绑 ID 唯一标识应用，通常采用反向域名表示法格式。 例如，查找器的绑定 ID 是 `com.apple.finder`。 若要查找捆绑 ID，请使用终端中的 AppleScript：
 
   `osascript -e 'id of app "ExampleApp"'`
 
 - **域**：输入要与应用关联的网站域。 域包括服务类型和完全限定的主机名，例如 `webcredentials:www.contoso.com`。
 
-  可以通过在域开始之前输入 `*.` （星号通配符和句点）来匹配关联域的所有子域。 时间段是必需的。 与通配符域相比，精确的域具有更高的优先级。 因此，*如果*在完全限定的子域中找不到匹配项，则会匹配父域中的模式。
+  您可以通过在域开始之前输入 `*.` （星号通配符和句点）来匹配关联域的所有子域。 时间段是必需的。 与通配符域相比，精确的域具有更高的优先级。 因此，*如果*在完全限定的子域中找不到匹配项，则会匹配父域中的模式。
 
   服务类型可以是：
 

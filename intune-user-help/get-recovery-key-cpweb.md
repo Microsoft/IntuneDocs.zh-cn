@@ -9,6 +9,7 @@ ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8048b29bdd456f9db8bb3d01e84bad5899e0b9a6
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 822d995443ca23eac7f96f8314f9926804e0be24
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163564"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508517"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>获取 macOS 设备的恢复密钥
 
@@ -45,7 +46,7 @@ ms.locfileid: "72163564"
 
 如果未找到密钥，但你的设备已正确加密，请与你的组织的支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
 
-## <a name="it-pro-support"></a>IT 专业人员支持
+## <a name="it-pro-support"></a>IT 专业支持
 
 如果你是 IT 支持人员，并且想要为 macOS 设备配置和管理 FileVault 加密，请参阅[将设备加密与 Intune 配合使用](/intune/protect/encrypt-devices)。
 

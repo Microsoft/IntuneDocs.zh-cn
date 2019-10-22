@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 2056d37b00f5e2ae7b36c6e1c02f20dc244eb290
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163361"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502126"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>如何从公司门户网站重置设备密码
 
@@ -39,15 +40,15 @@ ms.locfileid: "71163361"
 
 2. 选择需要重置密码的设备。  
 
-    ![“设备”页面的屏幕截图，其中 2 个磁贴用于显示无法识别的、以一般方式命名的设备。 灰色横幅位于设备的正下方，提示用户识别他们正在使用的设备或添加新的设备。](./media/rename-reset-device-step2-1808.png) 
+    ![“设备”页面的屏幕截图，其中两个磁贴用于显示无法识别的、以一般方式命名的设备。 灰色横幅位于设备的正下方，提示用户识别他们正在使用的设备或添加新的设备。](./media/rename-reset-device-step2-1808.png) 
 
 3. 选择“重置密码”  。 如果页面顶部未显示密码选项，请选择“更多(…)” > “重置密码”   。   
 
    ![公司门户网站上已选设备的设备详细信息页，其顶部具有显示“重命名”、“删除”、“重置设备”、“重置密码”和“远程锁定”的链接列表。 ](./media/rename-reset-device-1808.png)   
 
-    ![“更多”图标的放大视图，用红色箭头突出显示。](./media/rename-reset-device-step3-more-1808.png)  
+    ![“更多”图标的屏幕截图，用红色箭头突出显示。](./media/rename-reset-device-step3-more-1808.png)  
 
-4. 出现提示时，单击“注销”  。再次出现提示时，重新登录。 必须在五分钟内重新登录公司门户网站，否则公司门户网站将不会重置设备密码。  
+4. 出现提示时，单击“注销”  。再次出现提示时，重新登录。 在五分钟内重新登录公司门户网站，否则公司门户网站将不会重置设备密码。  
 
    > [!NOTE]
    > 必须重新登录以确认身份。 这是为了防止恶意尝试重置设备密码。

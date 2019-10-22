@@ -1,14 +1,15 @@
 ---
-title: 解决托管 Samsung Knox 设备的常见问题 | Microsoft Docs
-description: 了解如何解决 Samsung Knox 设备的常见问题。
+title: 解决托管 Samsung Knox 设备的常见问题 |Microsoft Docs
+description: 对 Samsung Knox 设备进行故障排除。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 78c08b30-dc5f-46d9-9ee8-6cc8dee1e404
 searchScope:
@@ -17,18 +18,18 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f78c2460130068652b91b27ddcf5726a077e59e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 54a8eaafba0705968672275ba67449d9672f5c46
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833457"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502085"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>解决 Samsung Knox 设备的常见问题
 
-有时，Samsung Knox 设备出现的一些问题可通过疑难解答进行解决。 下面列出了一些我们见过的你可以先尝试自行修复的问题。 对于更复杂的问题，建议你[联系 Android 公司门户团队](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md)。
+排查与托管 Samsung Knox 设备相关的常见问题。 若要报告此处未列出的问题，可以通过公司门户或 Microsoft Intune 应用[发送诊断日志](send-logs-to-microsoft-android.md)。 Microsoft 开发人员将查看特定于应用的日志来诊断问题并找到解决方案。    
 
-## <a name="network-activation-error"></a>网络激活错误
+## <a name="network-activation-error"></a>网络激活错误  
 
 可能会看到如下消息：
 
@@ -50,6 +51,6 @@ ms.locfileid: "55833457"
 
 |错误消息|应尝试执行的操作|
 |---|---|
-|**Samsung Knox 激活错误** - 无法激活 Samsung KNOX 许可证。 这可能是因为开启了省电模式。 请在设备设置中关闭省电模式，并再试一次。 |设备的电源设置可能不正确，无法使用公司资源。 详细了解如何[设置省电模式](power-saving-mode-android.md)。|
+|**Samsung Knox 激活错误** - 无法激活 Samsung KNOX 许可证。 这可能是因为开启了省电模式。 请在设备设置中关闭省电模式，并再试一次。 |设备的电源设置可能不正确，无法使用公司资源。 若要了解有关此设置的详细信息，请参阅省[电模式](power-saving-mode-android.md)。|  
 
 仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。

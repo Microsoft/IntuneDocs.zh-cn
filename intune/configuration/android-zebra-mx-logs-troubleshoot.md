@@ -6,8 +6,9 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 324550836cd8e7c8ea2786d15618d5f5010a043f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735241"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506995"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>排查和查看 Microsoft Intune 中的 Android 斑马设备上出现的潜在问题
 
@@ -60,7 +61,7 @@ ms.locfileid: "71735241"
 
 ## <a name="read-the-logs"></a>读取日志
 
-查看日志时，只要看到 `<characteristic-error>` 标记，就会出错。 错误详细信息将写入 `<parm-error>` 标记 > `desc` 属性。
+查看日志时，只要看到 `<characteristic-error>` 标记，就会出错。 错误详细信息将写入 `<parm-error>` 标记 > `desc` 属性中。
 
 ## <a name="error-types"></a>错误类型
 
@@ -112,7 +113,7 @@ ms.locfileid: "71735241"
 </wap-provisioningdoc>
 ```
 
-日志显示错误，因为它包含 `<characteristic-error>` 的标记。 在此方案中，配置文件尝试安装给定路径中不存在的 Android 包（APK）：
+日志显示错误，因为它包含 `<characteristic-error>` 标记。 在此方案中，配置文件尝试安装给定路径中不存在的 Android 包（APK）：
 
 ```xml
 <wap-provisioningdoc>

@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736294"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585249"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>使用审核日志跟踪和监视 Microsoft Intune 中的事件
 
@@ -49,7 +50,8 @@ ms.locfileid: "71736294"
 
 ![通过在 Intune 中选择“导出数据”设置，将日志数据导出到 Azure Monitor](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-有关此功能的详细信息，请参阅[将日志数据发送到存储、事件中心或 Log Analytics](review-logs-using-azure-monitor.md)。
+> [!NOTE]
+> 有关此功能的详细信息以及若要查看使用该功能的先决条件，请参阅[将日志数据发送到存储、事件中心或 log analytics](review-logs-using-azure-monitor.md)。
 
 ## <a name="review-audit-events"></a>查看审核事件
 
@@ -67,11 +69,11 @@ ms.locfileid: "71736294"
 
 要查看更具体的事件信息，请在列表中选择某项：
 
-![更具体地了解谁在 Intune 中的审计日志中执行了哪些操作](./media/monitor-audit-logs/monitor-audit-log-detail.png "审核日志详细信息")
+![更具体地了解谁在 Intune 中的审计日志中执行了哪些操作](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
 
 > [!NOTE]
 > 发起人（参与者）显示了谁在何处运行了此任务  。 例如，如果在 Azure 门户的 Intune 中运行活动，“应用”  会始终列出“Microsoft Intune 门户扩展”  ，“应用 ID”  会始终使用相同的 GUID。
-> 
+>
 > “目标”  部分将列出已更改的多个目标和属性。  
 
 ## <a name="filter-audit-events"></a>筛选审核事件

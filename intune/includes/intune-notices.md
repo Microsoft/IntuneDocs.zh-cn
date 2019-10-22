@@ -7,33 +7,38 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5ebab881a524bc361e271856b6762776974cea20
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726396"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601528"
 ---
-本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。 
+本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
 
+### <a name="end-of-support-for-legacy-pc-management"></a>停止支持旧版 PC 管理
+
+将于 2020 年 10 月 15 日停止支持旧版 PC 管理。 请将设备升级到 Windows 10，并将它们重新注册为 MDM 设备，以便继续由 Intune 托管它们。
+
+[了解详细信息](https://go.microsoft.com/fwlink/?linkid=2107122)
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>减少对 Android 设备管理员的支持 
 Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2.2 发布）是一种管理 Android 设备的方法。 不过，[Android Enterprise](../enrollment/connect-intune-android-enterprise.md)（随 Android 5.0 发布）现在提供改进的管理功能。 为了实现更现代化、更丰富、更安全的设备管理，Google 正在减少新 Android 版本中对设备管理员的支持。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
-由于 Google 的这些变化，Intune 用户将受到以下几个方面的影响： 
-- Intune 将只能在 2020 年夏季之前为运行 Android 10 和更高版本（也称为 Android Q）的设备管理员管理的 Android 设备提供支持。 此日期是预计发布 Android 下一个主要版本的时间。  
-- 在 2020 年夏季以后运行 Android 10 或更高版本的设备管理员管理的设备将无法再进行完全管理。    
-- 设备管理员管理的仍在低于 Android 10 的 Android 版本上运行 Android 设备将不会受到影响，可以继续由设备管理员进行完全管理。  
-- 对于所有 Android 10 及更高版本的设备，Google 限制了设备管理员管理代理（如公司门户）访问设备标识符信息的能力。 在设备更新到 Android 10 或更高版本后，这将影响以下 Intune 功能： 
-    - VPN 的网络访问控制将不再有效。  
-    - 使用 IMEI 或序列号将设备识别为公司拥有的设备将不会自动将设备标记为公司拥有的设备。 
+由于 Google 的这些变化，Intune 用户将受到以下几个方面的影响：  
+- Intune 将只能在 2020 年夏季之前为运行 Android 10 和更高版本（也称为 Android Q）的设备管理员管理的 Android 设备提供支持。 此日期是预计发布 Android 下一个主要版本的时间。   
+- 在 2020 年夏季以后运行 Android 10 或更高版本的设备管理员管理的设备将无法再进行完全管理。       
+- 设备管理员管理的仍在低于 Android 10 的 Android 版本上运行 Android 设备将不会受到影响，可以继续由设备管理员进行完全管理。    
+- 对于运行 Android 10 及更高版本的所有设备，Google 限制了设备管理员管理代理（如公司门户）访问设备标识符信息的能力。 在设备更新到 Android 10 或更高版本后，这将影响以下 Intune 功能：  
+    - VPN 的网络访问控制将不再有效。   
+    - 使用 IMEI 或序列号将设备识别为公司拥有的设备将不会自动将设备标记为公司拥有的设备。  
     - 在 Intune 中，IMEI 和序列号将不再对 IT 管理员可见。 
-        > [!Note]
+        > [!NOTE]
         > 这只会影响 Android 10 及更高版本上设备管理员管理的设备，并且不会影响作为 Android Enterprise 管理的设备。 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-为避免在即将到来的 2020 年夏季出现功能降低的情况，建议采取如下操作：
+为避免在即将到来的 2020 年夏季出现功能缩减的情况，建议采取如下操作：
 - 不要将新设备加入设备管理员管理中。
 - 如果希望设备接收到 Android 10 的更新，请将其从设备管理员管理迁移到 Android Enterprise 管理和/或应用保护策略。
 
@@ -45,20 +50,20 @@ Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2
 Intune 定期发布 Android 公司门户应用的更新。 在 2018 年 11 月，我们发布了一次公司门户更新，其中包括后端开关，以便为 Google 从现有通知平台更改为 Google 的 Firebase 云消息传递 (FCM) 做好准备。 随着 Google 停用其现有通知平台并迁移到 FCM，最终用户需要将他们的公司门户应用至少更新到 2018 年 11 月版本，以便继续与 Google Play 商店通信。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
-我们的遥测显示，你的设备的公司门户版本低于 5.0.4269.0。 如果未安装该版本或更高版本的公司门户应用，那么，由 IT 专业人员发起的设备操作（如擦除、重置密码）、可用和所需的应用安装以及证书注册可能无法按预期方式工作。 如果设备是在 Intune 中注册的 MDM，可以通过依次进入“客户端应用”、“发现的应用”查看公司门户版本和用户。 选择早期版本的公司门户，可以查看哪些最终用户的设备尚未更新公司门户。
+我们的遥测显示，你的设备的公司门户版本低于 5.0.4269.0。 如果未安装该版本或更高版本的公司门户应用，那么，由 IT 专业人员发起的设备操作（如擦除、重置密码）、可用和所需的应用安装以及证书注册可能无法按预期方式工作。 如果设备是在 Intune 中注册的 MDM，可以通过依次进入“客户端应用”、“发现的应用”查看公司门户版本和用户。 选择早期版本的公司门户应用，可以查看哪些最终用户的设备尚未更新公司门户应用。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-要求尚未更新的 Android 设备的最终用户通过 Google Play 更新公司门户。 如果某个用户未自动更新公司门户应用，请通知支持人员。 有关 Google FCM 平台和更改的更多信息，请参阅“其他信息”中的链接。
+要求尚未更新的 Android 设备的最终用户通过 Google Play 更新公司门户应用。 如果某个用户未自动更新公司门户应用，请通知支持人员。 有关 Google FCM 平台和更改的更多信息，请参阅“其他信息”  中的链接。
 
 #### <a name="additional-information"></a>其他信息
 https://firebase.google.com/docs/cloud-messaging/
 
 
-### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Intune 即将推出新的全屏幕体验 <!--4593669-->
+### <a name="new-full-screen-experience-coming-to-intune---4593669--"></a>Intune 即将推出新的全屏幕体验 <!--4593669-->
 我们将在 Azure 门户中向 Intune 推出更新的创建和编辑 UI 体验。 此新体验将使用压缩在一个边栏选项卡中的向导样式格式简化现有工作流。 此更新将消除“边栏选项卡扩展”或需要向下钻取到深度边栏选项卡体验的任何创建和编辑流。 创建工作流也将更新为包含分配（应用分配除外）。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
-接下来的几个月里，将同时在 portal.azure.com 和 devicemanagement.microsoft.com 推出 Intune 全屏幕体验。 此 UI 更新不会影响现有策略和配置文件的功能，但你将看到一个稍经修改的工作流。 例如，创建新策略时，你将能够将某些分配设置为此流的一部分，而不是在创建策略后执行此操作。 有关控制台中新体验的屏幕截图，请参阅附加信息中的博客文章。
+接下来的几个月里，将同时在 portal.azure.com 和 devicemanagement.microsoft.com 推出 Intune 全屏幕体验。 此 UI 更新不会影响现有策略和配置文件的功能，但你将看到一个稍经修改的工作流。 例如，创建新策略时，你将能够将某些分配设置为此流的一部分，而不是在创建策略后执行此操作。 有关控制台中新体验的屏幕截图，请参阅附加信息中的博客文章  。
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
 不需要执行任何操作，但可以考虑在必要时更新 IT 专业人员指南。 当在 Azure 门户上向 Intune 中的各种边栏选项卡推出此体验时，我们将更新文档。
@@ -66,22 +71,6 @@ https://firebase.google.com/docs/cloud-messaging/
 #### <a name="additional-information"></a>其他信息 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>更改计划：Intune 中的新 Windows 更新设置 <!-- 4464404 -->
-从 Intune 服务的 8 月版本或 1908 开始，我们将添加新的“截止时间设置”，可以对此进行配置，而不是“允许用户重启(预定重启)”设置。 我们计划在 1909 或 9 月更新中的 UI 上禁用预定重启设置，然后在 10 月底之前将它们从控制台中完全删除。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-如果在环境中管理 Windows 10 设备：
-
-- 对于 8 月 Intune 更新或 1908，除了旧的预定重启设置，你还会在控制台中看到新的截止时间设置。
-- 如果同时配置了这两个旧设置和新设置，则截止时间设置值将重写预定重启设置值。
-- 截止时间设置将替换 1910 更新控制台中的“允许用户重新启动(预定重启)”选项。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
-开始使用 1908 中的截止时间设置，方法是使用所需的值对其进行配置。 准备就绪后，可以将预定重启设置设为“未配置”，以便在 10 月从控制台中删除这些设置。
-
-如果需要，请更新文档和任何自动化脚本。
-
-删除预定重启设置之前，我们会随时为你提供最新消息并将提醒发送到消息中心。
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>更改计划：适用于 Android 的 Intune App SDK 和应用保护策略将于 10 月份支持 Android 5.0 和更高版本 <!--4911065 -->
 Intune 将于 10 月份支持 Android 5.x (Lollipop) 及更高版本。 使用最新的 Intune App SDK 更新所有包装好的应用，并更新设备。
@@ -103,17 +92,20 @@ Intune 将于 10 月份支持 Android 5.x (Lollipop) 及更高版本。 使用�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 使用最新的 Intune App SDK 包装应用。 还可以设置“要求最低操作系统版本(仅警告)”条件启动设置来通知个人设备上的最终用户进行升级。
 
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 更改计划：即将结束对 Windows 7 的支持 <!-- 3042987 -->
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 更改计划：即将停止支持 Windows 7 <!-- 3042987 -->
 如我们在 2018 年 9 月发布的 MC148476 和在 2019 年 3 月再次发布的 MC176794 所述，将于 2020 年 1 月 14 日结束对 Windows 7 的延长支持。 到那时，Intune 将停止对运行 Windows 7 的设备的支持，因此我们可以将投资集中在支持较新的技术和提供出色的最终用户体验上。 在该日期后，有助于保护你的 Windows 7 PC 的技术协助和自动更新将不能再通过 Intune 获得。 Microsoft 强烈建议你在 2020 年 1 月之前迁移到 Windows 10，以避免所需服务或支持不再可用的情况。 有关 Windows 支持生命周期的详细信息，请参阅[此处](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
-你收到此消息是因为你当前正在使用旧版 Intune PC 软件代理来管理 Windows 7 PC。 由于 Windows 7 延长支持结束之前的剩余时间已不到一年，我们强烈建议你的组织尽快开始升级到 Windows 10。 PC 管理功能直接内置于 Windows 10 操作系统中，你不再需要安装客户端代理，例如适用于 Windows 7 的 Intune 软件客户端。 从 Windows 8.1 开始，Microsoft 使用移动设备管理 (MDM) 体系结构来预配、配置、更新和管理 Windows PC。 设置 Intune 后，可以通过 MDM 通道[将 Windows 10 PC 注册到 Intune](..\windows-enroll.md)，从而简化 Windows 注册。 建议使用此“无代理”MDM 管理解决方案来管理 Windows 10 PC。
+你收到此消息是因为你当前正在使用旧版 Intune PC 软件代理来管理 Windows 7 PC。 由于 Windows 7 延长支持结束之前的剩余时间已不到一年，我们强烈建议你的组织尽快开始升级到 Windows 10。  
+
+PC 管理功能直接内置于 Windows 10 操作系统中，你不再需要安装客户端代理，例如适用于 Windows 7 的 Intune 软件客户端。 从 Windows 8.1 开始，Microsoft 使用移动设备管理 (MDM) 体系结构来预配、配置、更新和管理 Windows PC。 设置 Intune 后，可以通过 MDM 通道[将 Windows 10 PC 注册到 Intune](..\windows-enroll.md)，从而简化 Windows 注册。 建议使用此“无代理”MDM 管理解决方案来管理 Windows 10 PC。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
 我们鼓励你的组织立即考虑此操作计划：
 
 - 在 2020 年 1 月 14 日之前计划并将 Windows 7 队伍升级到 Windows 10。
-- 浏览 [Windows 10 部署支持](https://docs.microsoft.com/windows/deployment/)，了解有关如何将现有的 Windows 7 PC 队伍升级到 Windows 10 的详细信息。
-- 查看帮助实现 Microsoft 应用程序兼容性保证的快速跟踪人员所提供的[桌面应用保证](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1)。
+- 浏览 [Windows 10 部署支持](https://docs.microsoft.com/windows/deployment/)，详细了解如何将现有的一系列 Windows 7 PC 升级到 Windows 10。
+- 查看帮助实现 Microsoft 应用程序兼容性保证的 FastTrack 所提供的[桌面应用保证](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1)。
 - 将现有的旧版 Intune 软件客户端托管设备转换为 Microsoft 推荐的解决方案，以便使用 MDM 管理来管理 Windows 10。 在 Azure 门户中使用 Intune 的 MDM 管理注册所有新的 Windows 10 PC。
-- 有关详细信息，请参阅[此处发布的博客](https://aka.ms/Windows7_Intune)。
+
+有关详细信息，请参阅[此处的博客文章](https://aka.ms/Windows7_Intune)。

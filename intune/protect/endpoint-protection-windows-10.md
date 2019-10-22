@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163583"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502283"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Windows 10（及更高版本）设置，用于保护使用 Intune 的设备  
 
@@ -31,7 +32,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 若要配置 Windows Defender 防病毒软件，请参阅 [Windows 10 设备限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
 
-## <a name="before-you-begin"></a>开始之前  
+## <a name="before-you-begin"></a>在开始之前  
 
 [创建 Endpoint Protection 设备配置配置文件](endpoint-protection-configure.md)。  
 
@@ -414,7 +415,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   - **无线**  
   - **局域网**  
 
-- **仅允许来自这些用户的连接**  
+- **只允许来自下列用户的连接**  
   **默认值**：所有用户 *（在未指定列表时默认为 "所有*用户"）  
   防火墙 CSP： [FirewallRules/*FirewallRuleName*/LocalUserAuthorizationList](https://aka.ms/intunefirewallauthorizedusers)  
 
@@ -1312,7 +1313,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   - **强制注销** - 取下智能卡时自动注销用户。  
   - **如果是远程桌面服务会话，则断开连接** - 取下智能卡会断开会话，但不会注销用户。 使用此选项，用户可以稍后插入智能卡并恢复会话，或者在另一台配备智能卡读卡器的计算机上恢复会话，而无需再次登录。 如果是本地会话，则此策略与“锁定工作站”的功能相同。  
 
-#### <a name="display"></a>显示器  
+#### <a name="display"></a>显示  
 
 - **锁定屏幕上的用户信息**  
   **默认值**：未配置  
@@ -1423,7 +1424,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   - **需要 128 位加密**  
   - **NTLMv2 和 128 位加密**  
 
-- **LAN 管理器身份验证级别**  
+- **LAN Manager 身份验证级别**  
   **默认值**： LM 和 NTLM  
   LocalPoliciesSecurityOptions CSP： [NetworkSecurity_LANManagerAuthenticationLevel](https://aka.ms/policy-csp-localpoliciessecurityoptions-lanmanagerauthenticationlevel)  
 

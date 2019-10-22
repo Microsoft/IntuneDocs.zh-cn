@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 197ad888dc8a07cc35efbaec538fde93c76c81c3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 440eb2d457783ac71b905d064a6d83abaa966cfe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817620"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503954"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune 中的 BitLocker 策略进行故障排除
 
@@ -32,7 +33,7 @@ BitLocker 驱动器加密是 Microsoft Windows 操作系统提供的一种服务
 
 使用 Microsoft Intune，你可以使用以下方法来管理 Windows 10 设备上的 BitLocker：
 
-- **设备配置策略**-在 Intune 管理控制台中，在**设备配置** > **Endpoint Protection** > **Windows 加密策略**中提供某些内置策略选项。 可以在以下位置找到所有可用的开关和功能： [Windows Encryption](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)。
+- **设备配置策略**-某些内置策略选项在 Intune 管理控制台中的 "**设备配置**"  > **Endpoint Protection**  > **Windows 加密策略**"中提供。 可以在以下位置找到所有可用的开关和功能： [Windows Encryption](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)。
 
 - **安全基线** - [安全基线](security-baselines.md)是一组已知的设置和默认值，这些值由相关安全团队建议，以帮助确保 Windows 设备的安全。 不同的基准源（如*MDM 安全基线*或*Microsoft Defender ATP 基线*）可以管理相同的设置和其他设置。 他们还可以管理你用设备配置策略管理的相同设置。 
 
@@ -66,14 +67,14 @@ BitLocker 驱动器加密是 Microsoft Windows 操作系统提供的一种服务
  
 ### <a name="use-control-panel-on-the-client"></a>在客户端上使用控制面板  
 
-在启用了 BitLocker 并对驱动器进行加密的设备上，你可以从 "设备" 控制面板查看 BitLocker 状态。 在设备上，打开 **"控制面板** > **系统和安全** > "**BitLocker 驱动器加密**"。 确认如下图所示。  
+在启用了 BitLocker 并对驱动器进行加密的设备上，你可以从 "设备" 控制面板查看 BitLocker 状态。 在设备上，打开 **"控制面板"**  > **系统和安全** > **BitLocker 驱动器加密**"。 确认如下图所示。  
 
 ![BitLocker 已在 "控制面板" 中打开](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
 ### <a name="use-a-command-prompt"></a>使用命令提示符  
 
-在启用了 BitLocker 并加密了驱动器的设备上，使用管理员凭据启动命令提示符，然后运行 `manage-bde -status`。 结果应类似于以下示例：  
-状态命令 ![ 的0A 结果](./media/troubleshooting-bitlocker-policies/command.png)
+在启用了 BitLocker 并加密了驱动器的设备上，使用管理员凭据启动命令提示符，然后运行 `manage-bde -status`。 结果应与下面的示例类似：  
+状态命令 ![A 结果 ](./media/troubleshooting-bitlocker-policies/command.png)
 
 在示例中： 
 - **BitLocker 保护**已**启用**，  
@@ -150,7 +151,7 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
   策略以单个单元的形式向下移动到设备，因此，如果应用了某些设置，而其他设置则不是这样，则可以确信接收到策略本身。 在这种情况下，设备上的 Windows 版本可能不支持有问题的设置。 有关每个设置的版本要求的详细信息，请参阅 Windows 文档中的[BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) 。  
 
   1. **BitLocker 在所有硬件上都不受支持**。  
-  即使您的 Windows 版本正确，基础设备硬件也有可能不符合 BitLocker 加密的要求。 你可以在 Windows 文档中找到 "BitLocker 的系统要求（ https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) ）"，但要检查的主要问题是设备具有兼容的 TPM 芯片（1.2 或更高版本）和符合信任计算组（TCG）的 BIOS 或 UEFI 固件。
+  即使您的 Windows 版本正确，基础设备硬件也有可能不符合 BitLocker 加密的要求。 您可以在 Windows 文档中找到 "BitLocker 的系统要求（ https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) ），但要检查的主要问题是设备具有兼容的 TPM 芯片（1.2 或更高版本）和符合信任计算组（TCG）的 BIOS 或 UEFI 固件。
 
 **示例调查**-将 BitLocker 策略部署到 Windows 10 设备，并在门户中将 "**加密设备**" 设置显示为 "**错误**"。
 
@@ -168,7 +169,7 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 
 - 由于 BitLocker 依赖于 TPM，因此你可能会得出结论，因为 Intune 或策略有问题，BitLocker 不会失败，而是因为设备本身没有 TPM 芯片或在 BIOS 中禁用 TPM。
 
-  作为附加提示，你可以在**应用程序和服务日志** >  事件查看器**WINDOWS** > **BitLocker API**下的 windows 中确认是否相同。 在**BITLOCKER API**事件日志中，你会发现一个表示 TPM 不可用的事件 ID 853：
+  作为附加提示，你可以在 "**应用程序和服务日志** > **WINDOWS**  > **BitLocker API**" 下的 windows 事件查看器中确认是否相同。 在**BITLOCKER API**事件日志中，你会发现一个表示 TPM 不可用的事件 ID 853：
 
   ![事件 ID 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

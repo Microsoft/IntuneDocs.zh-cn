@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5adde9049f1e5f88df4a55b473f59f1d4a08e396
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733863"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593767"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 Wi-Fi 设置
 
@@ -79,7 +80,13 @@ ms.locfileid: "71733863"
     - 服务器信任   - 证书服务器名称  ：将由受信任的证书颁发机构 (CA) 颁发的证书中使用的一个或多个常用名称添加到无线网络访问服务器  。 例如：添加 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 输入此信息时，可在用户设备连接到此 Wi-Fi 网络时，绕过该设备上显示的动态信任窗口。
     - 用于服务器验证的根证书  ：选择现有的受信任根证书配置文件。 此证书使客户端可以信任无线网络访问服务器的证书。
 
-    - 客户端身份验证   - 用于客户端身份验证的客户端证书（标识证书）  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
+    - **客户端身份验证**：选择一种身份验证方法  。 选项包括：
+      
+      - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。
+      
+      - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
+
+    - 标识隐私（外部标识）  ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
   - EAP-TTLS  ：此外请输入：
 
@@ -88,6 +95,8 @@ ms.locfileid: "71733863"
 
     - 客户端身份验证  - 选择一种身份验证方法  。 选项包括：
 
+      - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。  
+      
       - 用户名和密码  ：提示用户输入用户名和密码以对连接进行身份验证。 此外请输入：
         - 非 EAP 方法（内部标识）  ：选择验证连接的方式。 请确保选择在你的 Wi-Fi 网络上配置同一协议。
 
@@ -106,6 +115,8 @@ ms.locfileid: "71733863"
 
     - 客户端身份验证  - 选择一种身份验证方法  。 选项包括：
 
+      - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。  
+      
       - 用户名和密码  ：提示用户输入用户名和密码以对连接进行身份验证。 
 
       - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。

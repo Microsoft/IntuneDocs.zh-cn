@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c46caf4d1c9f9a32a7f324fc5e1734dbe8043bd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735254"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550818"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企业设备 OEMConfig
 
@@ -120,7 +121,7 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 
     在配置设计器中所做的任何更改也会在 JSON 编辑器中自动进行。 同样，在 JSON 编辑器中所做的任何更改都将自动在配置设计器中进行。 如果输入包含无效值，则在解决问题之前无法在配置设计器和 JSON 编辑器之间切换。
 
-6. 选择 **"确定"**  >  "**添加**" 保存更改。 此时，策略创建完成，并出现在列表中。
+6. 选择“确定” > “添加”，保存所做更改   。 此时，策略创建完成，并出现在列表中。
 
 请务必[分配配置文件](device-profile-assign.md)，并[监视配置文件状态](device-profile-monitor.md)。
 
@@ -144,13 +145,14 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 | 斑马技术 | 斑马. oemconfig | [斑马 OEMConfig 概述](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | datalogic. oemconfig | [Datalogic OEMConfig 的用户文档](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell. oemconfig |  |
+| Kyocera | 日本. kyocera. enterprisedeviceconfig |  |
 
 -----------------
 
-如果设备上存在 OEMConfig 应用程序，但它不在上表中，或未显示在 Intune 控制台中，请通过电子邮件 `IntuneOEMConfig@microsoft.com`。
+如果设备的 OEMConfig 应用程序已存在，但它不在上表中，或未显示在 Intune 控制台中，请通过电子邮件 `IntuneOEMConfig@microsoft.com`。
 
 > [!NOTE]
-> OEMConfig 应用必须由 Intune 在载入上进行配置，然后才能使用 OEMConfig 配置文件进行配置。 在应用受支持后，你无需联系 Microsoft，就在你的租户中设置它。 只需按照本页上的说明操作即可。
+> OEMConfig 应用必须由 Intune 在载入上进行配置，然后才能使用 OEMConfig 配置文件进行配置。 在应用受支持后，你无需联系 Microsoft，就在你的租户中设置它。 只须按照此页面上的指令进行操作即可。
 
 ## <a name="next-steps"></a>后续步骤
 

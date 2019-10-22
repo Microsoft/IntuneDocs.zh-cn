@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de367f28f3f1c7731e5ab67d904aec799925cc03
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733720"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503432"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -108,7 +109,7 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 有关集成 Intune App SDK 的完整概述，请参阅[面向 Android 开发人员的 Microsoft Intune App SDK for Android 指南](app-sdk-android.md)。 阅读本指南并将 Intune App SDK 与 Xamarin 应用集成时，下面几部分着重介绍用 Java 开发的本机 Android 应用和用 C# 开发的 Xamarin 应用的实现之间的差异。 这些部分应视为补充部分，不能因此不阅读完整指南。
 
 #### <a name="remapper"></a>Remapper
-从1.4428.1 版本开始，可以将 `Microsoft.Intune.MAM.Remapper` 包作为[生成工具](app-sdk-android.md#build-tooling)添加到 Xamarin Android 应用程序，以执行 MAM 类、方法和系统服务的替换。 如果包括 Remapper，则在生成应用程序时，将自动执行已重命名方法和 MAM 应用程序部分的 MAM 等效替换部分。
+从1.4428.1 版本开始，可以将 `Microsoft.Intune.MAM.Remapper` 包作为[生成工具](app-sdk-android.md#build-tooling)添加到 Xamarin Android 应用程序，以执行 MAM 类、方法和系统服务替换。 如果包括 Remapper，则在生成应用程序时，将自动执行已重命名方法和 MAM 应用程序部分的 MAM 等效替换部分。
 
 若要从 i 中排除类，可以将以下属性添加到项目 `.csproj` 文件中。
 
@@ -125,7 +126,7 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `OnCreate()` 并调用 `base.OnCreate()`）时，`Activity` 必须替代 `OnMAMCreate()` 并调用 `base.OnMAMCreate()`。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 应用程序](app-sdk-android.md#mamapplication)
-应用必须定义 `Android.App.Application` 类。 如果手动集成 MAM，则必须从 `MAMApplication` 继承。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
+应用必须定义 `Android.App.Application` 类。 如果手动集成 MAM，则它必须从 `MAMApplication` 继承。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
 
 ```csharp
     [Application]
