@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 7/8/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
@@ -18,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1af106227442e91121f6c8c653c261bd677f3a9f
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 327e0d56400a2aac545d1bae92279e242aa2006a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814182"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585221"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
@@ -55,7 +56,7 @@ Intune 现在需要 macOS 版本 10.12 或更高版本。 使用以前的 macOS 
 ### <a name="app-management"></a>应用管理
 
 #### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>卸载公司拥有的受监督 iOS 设备上的应用 <!-- 1281677 -->
-你可以删除公司拥有的受监督 iOS 设备上的应用。 可以通过以“卸载”分配类型的用户或设备组为目标来删除任何应用。 对于个人或无监督的 iOS 设备，你将继续只能删除使用 Intune 安装的应用。
+你可以删除公司拥有的受监督 iOS 设备上的应用。 可以通过以“卸载”分配类型的用户或设备组为目标来删除任何应用  。 对于个人或无监督的 iOS 设备，你将继续只能删除使用 Intune 安装的应用。
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>下载 Intune Win32 应用内容 <!-- 2617320 -->
 Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 目前，可以通过组策略配置传递优化。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。
@@ -64,11 +65,11 @@ Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用�
 最终用户现在可以使用设备上的上下文菜单和应用来触发常见操作，例如，重命名设备或检查合规性。
 
 #### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>在托管的主屏幕应用中设置自定义背景  <!-- 3041945 -->
-我们将添加一种设置，使你可自定义 Android Enterprise、多应用和展台模式设备上托管的主屏幕应用的背景外观。  要配置“自定义 URL 背景”，请转到的 Azure 门户中的 Intune >“设备配置”。 选择当前设备配置文件或创建新配置文件以编辑其展台设置。
+我们将添加一种设置，使你可自定义 Android Enterprise、多应用和展台模式设备上托管的主屏幕应用的背景外观。  要配置“自定义 URL 背景”，请转到的 Azure 门户中的 Intune >“设备配置”  。 选择当前设备配置文件或创建新配置文件以编辑其展台设置。
 若要查看展台设置，请参阅 [Android Enterprise 设备限制](../configuration/device-restrictions-android-for-work.md)。
 
 #### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>应用保护策略分配将保存并应用 <!-- 3104570 -->
-现在可以更好地控制[应用保护策略分配](../apps/app-protection-policies.md#deploy-a-policy-to-users)。 选择“分配”以设置或编辑策略的分配时，必须先保存你的配置才能使更改生效。 使用“放弃”以清除你所做的所有更改，而不保存对包括或排除列表进行的任何更改。  通过要求“保存”或“放弃”，仅向你预期的用户分配应用保护策略。
+现在可以更好地控制[应用保护策略分配](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)。 选择“分配”  以设置或编辑策略的分配时，必须先  保存你的配置才能使更改生效。 使用“放弃”  以清除你所做的所有更改，而不保存对包括或排除列表进行的任何更改。  通过要求“保存”或“放弃”，仅向你预期的用户分配应用保护策略。
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>适用于 Windows 10 及更高版本的新 Microsoft Edge 浏览器设置 <!-- 3174639 -->
 此更新包括用于帮助控制和管理设备上的 Microsoft Edge 浏览器的新设置。 有关这些设置的列表，请参阅[适用于 Windows 10（及更高版本）的设备限制](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)。
@@ -80,13 +81,13 @@ Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用�
 - PowerApps（Android、iOS）
 - Flow（Android、iOS）
 
-使用应用保护策略来保护这些应用（如其他 Intune 策略托管应用）的公司数据和控制数据传输。 注意：如果 Flow 在控制台中尚不可见，则在创建或编辑应用保护策略时添加 Flow。 若要执行此操作，请使用“+ 更多应用”选项，然后在输入字段中指定 Flow 的“应用 ID”。 对于 Android，请使用“com.microsoft.flow”，对于 iOS，请使用“com.microsoft.procsimo”。
+使用应用保护策略来保护这些应用（如其他 Intune 策略托管应用）的公司数据和控制数据传输。 注意：如果 Flow 在控制台中尚不可见，则在创建或编辑应用保护策略时添加 Flow。 若要执行此操作，请使用“+ 更多应用”  选项，然后在输入字段中指定 Flow 的“应用 ID”  。 对于 Android，请使用“com.microsoft.flow”  ，对于 iOS，请使用“com.microsoft.procsimo”  。
 
 
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>支持 iOS 电子邮件配置文件中的 iOS 12 OAuth <!--2155106 -->
-Intune 的 iOS 电子邮件配置文件支持 iOS 12 Open Authorization (OAuth)。 要查看此功能，请创建新配置文件（“设备配置” > “配置文件” > “创建配置文件” >  iOS 平台 >“电子邮件”配置文件类型），或更新现有的 iOS 电子邮件配置文件。 如果在已部署到用户的配置文件中启用 OAuth，则会提示用户重新进行身份验证，然后再次下载其电子邮件。
+Intune 的 iOS 电子邮件配置文件支持 iOS 12 Open Authorization (OAuth)。 要查看此功能，请创建新配置文件（“设备配置” > “配置文件” > “创建配置文件” >  iOS 平台 >“电子邮件”配置文件类型），或更新现有的 iOS 电子邮件配置文件      。 如果在已部署到用户的配置文件中启用 OAuth，则会提示用户重新进行身份验证，然后再次下载其电子邮件。
 
 [iOS 电子邮件配置文件](../configuration/email-settings-ios.md)提供了有关在电子邮件配置文件中使用 OAuth 的详细信息。
 
@@ -96,7 +97,7 @@ Citrix 已向 Citrix Gateway 发布更新以允许对 Intune 中的 Citrix SSO f
 [在 iOS 设备上配置 VPN 设置](../configuration/vpn-settings-ios.md#base-vpn-settings)提供了有关使用 NAC 的详细信息，包括一些附加要求。 
 
 #### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>将显示 iOS 和 macOS 的版本号和生成号 <!-- 1892471 -->
-在“设备符合性” > “设备符合性”中，iOS 和 macOS 操作系统版本都会显示，并且可在符合性策略中使用。 此更新包括可为这两个平台配置的生成号。
+在“设备符合性” > “设备符合性”中，iOS 和 macOS 操作系统版本都会显示，并且可在符合性策略中使用   。 此更新包括可为这两个平台配置的生成号。
 Apple 每次发布安全更新时，会保留版本号，更新生成号。 通过在符合性策略中使用生成号，可轻松地检查是否已安装漏洞更新。
 若要使用此功能，请参阅 [iOS](../protect/compliance-policy-create-ios.md#device-health) 和 [macOS](../protect/compliance-policy-create-mac-os.md#device-properties) 符合性策略。
 
@@ -132,7 +133,7 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 可以选择在“注册状态”页面上跟踪的应用。 在安装这些应用之前，用户无法使用该设备。 有关详细信息，请参阅[设置注册状态页](../enrollment/windows-enrollment-status.md)。
 
 #### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>按序列号搜索 Autopilot 设备 <!--2595788 -->
-现在可以按序列号搜索 Autopilot 设备。 若要执行此操作，请选择“设备注册” > “Windows 注册” > “设备”> 在“按序列号搜索”框中键入序列号 > 按 Enter。
+现在可以按序列号搜索 Autopilot 设备。 若要执行此操作，请选择“设备注册”   > “Windows 注册”   > “设备”  > 在“按序列号搜索”框中键入序列号  > 按 Enter。
 
 #### <a name="track-installation-of-office-proplus---2620217---"></a>跟踪 Office 专业增强版的安装过程 <!--2620217 -->
 用户可以使用[注册状态页面](../enrollment/windows-enrollment-status.md)来跟踪 [Office 专业增强版](../apps/apps-add-office365.md)的安装进度。 有关详细信息，请参阅[设置注册状态页](../enrollment/windows-enrollment-status.md)。
@@ -153,7 +154,7 @@ Intune 现在支持对 Apple School Manager 帐户使用 macOS 设备上的设�
 若要查看展台设置，请参阅 [Android Enterprise 设备限制](../configuration/device-restrictions-android-for-work.md)。
 
 #### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>启用 Android Enterprise 展台设备上的虚拟主页按钮  <!-- 3042021 -->
-新的设置将允许用户点击其设备上的软键按钮，以在其多应用展台设备上托管的主屏幕应用和其他已分配的应用之间进行切换。 此设置在用户的展台应用未对“后退”按钮及时做出响应的情况下特别有用。 可为公司拥有的一次性 Android 设备配置此设置。 要启用或禁用“虚拟主页”按钮，请转至 Azure 门户中的 Intune >“设备配置”。 选择当前设备配置文件或创建新配置文件以编辑其展台设置。
+新的设置将允许用户点击其设备上的软键按钮，以在其多应用展台设备上托管的主屏幕应用和其他已分配的应用之间进行切换。 此设置在用户的展台应用未对“后退”按钮及时做出响应的情况下特别有用。 可为公司拥有的一次性 Android 设备配置此设置。 要启用或禁用“虚拟主页”按钮，请转至 Azure 门户中的 Intune >“设备配置”  。 选择当前设备配置文件或创建新配置文件以编辑其展台设置。
 若要查看展台设置，请参阅 [Android Enterprise 设备限制](../configuration/device-restrictions-android-for-work.md)。
 
 
@@ -177,10 +178,10 @@ Intune 现在支持对 Apple School Manager 帐户使用 macOS 设备上的设�
 现在可以为通过 ActiveSync 协议进行基本身份验证的本地用户创建适用于 iOS 和 Android 的 Outlook for iOS 和 Outlook for Android 应用配置策略。 将为 Outlook for iOS 和 Outlook for Android 启用和添加其他配置设置。
 
 #### <a name="office-365-pro-plus-language-packs----1833450---"></a>Office 365 Pro Plus 语言包 <!-- 1833450 -->
-作为 Intune 管理员，你将能够为通过 Intune 管理的 Office 365 Pro Plus 应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”。 在“应用套件设置”边栏选项卡中选择“语言”。
+作为 Intune 管理员，你将能够为通过 Intune 管理的 Office 365 Pro Plus 应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）  。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”     。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”     。 在“应用套件设置”边栏选项卡中选择“语言”   。
 
 #### <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Windows 业务线 (LOB) 应用文件扩展名 <!-- 1884873 -->
-Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle。 可以在 Microsoft Intune 中添加应用，方法是通过选择“客户端应用” > “应用” > “添加”。 将显示“添加应用”窗格，可选择“应用类型”。 对于 Windows LOB 应用，选择“业务线”应用作为应用类型，选择“应用包文件”，然后输入带有扩展名的安装文件。
+Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.msix 和 .msixbundle      。 可以在 Microsoft Intune 中添加应用，方法是通过选择“客户端应用” > “应用” > “添加”    。 将显示“添加应用”窗格，可选择“应用类型”   。 对于 Windows LOB 应用，选择“业务线”应用作为应用类型，选择“应用包文件”，然后输入带有扩展名的安装文件   。
 
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>使用 Intune 部署 Windows 10 应用 <!-- 2309001 -->
 在业务线 (LOB) 应用和适用于企业的 Microsoft Store 应用的现有支持上进行构建时，管理员可以使用 Intune 将其组织的大部分现有应用程序部署到 Windows 10 设备上的最终用户。 管理员可以使用各种格式（例如 MSI、Setup.exe 或 MSP）为 Windows 10 用户添加、安装和卸载应用程序。 Intune 将在下载和安装、使用 Windows 10 操作中心通知最终用户状态或重新启动需求之前评估要求规则。 此功能将有效地清除对将此工作负荷转移到 Intune 和云感兴趣的组织所存在的阻碍。 此功能目前处于公共预览状态，我们预计在未来的几个月内为此功能添加重要的新功能。 
@@ -195,7 +196,7 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 最终用户现在可以使用键盘快捷方式（快捷键）在 Windows 公司门户中触发应用和设备操作。
 
 #### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>在指定的超时后需要非生物识别 PIN <!-- 1506985 -->
-在管理员指定的超时时长后要求输入非生物识别 PIN，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用管理 (MAM) 的应用提升安全性。 这些设置会影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置会使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”。 选择“客户端应用” > “应用保护策略” > “添加策略” > “设置”。 找到特定设置的“访问”部分。 有关访问设置的信息，请参阅 [iOS 设置](../apps/app-protection-policy-settings-ios.md#access-requirements)和 [Android 设置](../apps/app-protection-policy-settings-android.md#access-requirements)。
+在管理员指定的超时时长后要求输入非生物识别 PIN，Intune 会限制使用生物识别来访问公司数据，从而为启用了移动应用管理 (MAM) 的应用提升安全性。 这些设置会影响依靠 Touch ID (iOS)、Face ID (iOS)、Android Biometric 或其他未来生物识别身份验证方法访问启用了 APP/MAM 的应用程序的用户。 这些设置会使 Intune 管理员能够更精细地控制用户访问，让带有多个指纹或其他生物识别访问方法的设备只能向正确的用户显示公司数据。 在 Azure 门户中，打开“Microsoft Intune”  。 选择“客户端应用” > “应用保护策略” > “添加策略” > “设置”     。 找到特定设置的“访问”部分  。 有关访问设置的信息，请参阅 [iOS 设置](../apps/app-protection-policy-settings-ios.md#access-requirements)和 [Android 设置](../apps/app-protection-policy-settings-android.md#access-requirements)。
 
 #### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>iOS MDM 注册设备上的 Intune 应用数据传输设置 <!-- 2244713 -->
 可以将 iOS MDM 注册设备上的 Intune 应用数据传输设置控制与指定注册用户的身份（也称为用户主体名称 (UPN)）分开。 不使用 IntuneMAMUPN 的管理员不会观察到行为更改。 当此功能可用时，使用 IntuneMAMUPN 控制已注册设备上的数据传输行为的管理员应检查新设置，并根据需要更新其应用设置。
@@ -207,23 +208,23 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 最终用户无需登录设备即可安装 Win32 应用或执行 PowerShell 脚本。 
 
 #### <a name="troubleshooting-client-app-installation----1363711---"></a>客户端应用安装疑难解答 <!-- 1363711 -->
-可以通过查看“故障排除”边栏选项卡中标有“应用安装”的列来解决客户端应用的安装问题。 要查看“故障排除”边栏选项卡，请在 Intune 门户中，选择“故障排除”下的“帮助和支持”。
+可以通过查看“故障排除”边栏选项卡中标有“应用安装”的列来解决客户端应用的安装问题   。 要查看“故障排除”边栏选项卡，请在 Intune 门户中，选择“故障排除”下的“帮助和支持”    。
 
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>在运行 Windows 10 的设备上的 VPN 配置文件中创建 DNS 后缀<!-- 1333668 -->
-在创建 VPN 设备配置的配置文件（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”平台>“VPN”配置文件类型）时，需要输入一些 DNS 设置。 通过此更新，还可以在 Intune 中输入多个 DNS 后缀。 使用 DNS 后缀时，可以使用其短名称而不是完全限定的域名 (FQDN) 搜索网络资源。 此更新还允许在 Intune 中更改 DNS 后缀的顺序。
+在创建 VPN 设备配置的配置文件（“设备配置”   > “配置文件”   > “创建配置文件”   > “Windows 10 及更高版本”  平台>“VPN”  配置文件类型）时，需要输入一些 DNS 设置。 通过此更新，还可以在 Intune 中输入多个 DNS 后缀  。 使用 DNS 后缀时，可以使用其短名称而不是完全限定的域名 (FQDN) 搜索网络资源。 此更新还允许在 Intune 中更改 DNS 后缀的顺序。
 [Windows 10 VPN 设置](../configuration/vpn-settings-windows-10.md#dns-settings)列出了当前的 DNS 设置。
 适用于：Windows 10 设备
 
 #### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>支持 Android 企业工作配置文件的始终可用 VPN <!-- 1333705 -->
 在此更新中，可以在具有托管工作配置文件的 Android 企业设备上使用始终可用的 VPN 连接。 始终可用 VPN 连接一直保持连接状态，或在用户解锁设备、设备重启或无线网络更改时立即重新连接。 还可以将连接置于“锁定”模式，该模式会阻止所有网络流量，直到 VPN 连接处于活动状态。
-可以在“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Android 企业版”>“设备限制” > “连接”设置中启用始终可用的 VPN。
+可以在“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Android 企业版”>“设备限制” > “连接”设置中启用始终可用的 VPN       。
 
 #### <a name="issue-scep-certificates-to-user-less-devices----1744554---"></a>向无用户设备颁发 SCEP 证书 <!-- 1744554 -->
-目前证书的颁发对象是用户。 通过此更新，SCEP 证书可以颁发给设备，包括无用户设备，例如网亭（“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Windows 10 及更高版本”> 配置文件的“SCEP 证书”）。 其他更新包括：
-- SCEP 配置文件中的“使用者”属性现在是自定义文本框，可以包含新的变量。 
-- SCEP 配置文件中的“使用者可选名称(SAN)”属性现在是表格式，可以包含新的变量。 在表中，管理员可以添加属性并在自定义文本框中填写值。 SAN 将支持以下属性： 
+目前证书的颁发对象是用户。 通过此更新，SCEP 证书可以颁发给设备，包括无用户设备，例如网亭（“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Windows 10 及更高版本”> 配置文件的“SCEP 证书”）      。 其他更新包括：
+- SCEP 配置文件中的“使用者”  属性现在是自定义文本框，可以包含新的变量。 
+- SCEP 配置文件中的“使用者可选名称(SAN)”  属性现在是表格式，可以包含新的变量。 在表中，管理员可以添加属性并在自定义文本框中填写值。 SAN 将支持以下属性： 
   - DNS
   - 电子邮件地址
   - UPN
@@ -258,7 +259,7 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 适用于：Windows 10 及更高版本和 iOS，支持用于 Wi-fi
 
 #### <a name="remotely-lock-uncompliant-devices----2064495---"></a>远程锁定不兼容的设备 <!-- 2064495 -->
-如果设备不兼容，可以根据符合性策略创建一个可以远程锁定设备的操作。 在 Intune >“设备符合性”中，创建新的策略或选择现有策略 >“属性”。 选择“针对非符合性的操作” > “添加”，然后选择远程锁定设备。
+如果设备不兼容，可以根据符合性策略创建一个可以远程锁定设备的操作。 在 Intune >“设备符合性”中，创建新的策略或选择现有策略 >“属性”   。 选择“针对非符合性的操作”   > “添加”  ，然后选择远程锁定设备。
 在以下设备上受支持： 
 - Android
 - iOS
@@ -267,14 +268,14 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 - Windows Phone 8.1 及更高版本 
 
 #### <a name="windows-10-and-later-kiosk-profile-improvements-in-the-azure-portal----2748224---"></a>Azure 门户中的 Windows 10 和更高版本的展台配置文件改进 <!-- 2748224 -->
-此更新包括对 Windows 10 网亭设备配置文件的以下改进（“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Windows 10 及更高版本”> 配置文件类型的“网亭预览”）： 
+此更新包括对 Windows 10 网亭设备配置文件的以下改进（“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Windows 10 及更高版本”> 配置文件类型的“网亭预览”）      ： 
 - 目前，用户可以在同一设备上创建多个网亭配置文件。 利用此更新，Intune 将支持每台设备只有一个网亭配置文件。 如果你仍需要在单台设备上创建多个网亭配置文件，可以使用自定义 URI。
-- 在“多应用网亭”配置文件中，可以在应用程序网格中对“开始菜单布局”选择应用程序磁贴大小和顺序。 如果需要更多自定义设置，可以继续上传 XML 文件。
-- 网亭浏览器设置移入“网亭”设置。 目前，“网亭 Web 浏览器”设置在 Azure 门户中具有其自己的类别。
+- 在“多应用网亭”配置文件中，可以在应用程序网格中对“开始菜单布局”选择应用程序磁贴大小和顺序   。 如果需要更多自定义设置，可以继续上传 XML 文件。
+- 网亭浏览器设置移入“网亭”  设置。 目前，“网亭 Web 浏览器”  设置在 Azure 门户中具有其自己的类别。
 适用于：Windows 10 及更高版本
 
 #### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>当你在 iOS 设备上更改指纹或 Face ID 时，系统将提示你输入 PIN  <!-- 2637704  -->
-当用户在其 iOS 设备上进行生物识别更改后，系统将提示用户输入 PIN。 这包括对已注册的指纹或 Face ID 的更改。 出现提示的时间取决于如何配置“以下时间(以分钟为单位)之后重新检查访问要求”超时。  未设置 PIN 时，会提示用户设置一个 PIN。 
+当用户在其 iOS 设备上进行生物识别更改后，系统将提示用户输入 PIN。 这包括对已注册的指纹或 Face ID 的更改。 出现提示的时间取决于如何配置“以下时间(以分钟为单位)之后重新检查访问要求”  超时。  未设置 PIN 时，会提示用户设置一个 PIN。 
  
 此功能仅适用于 iOS，并且需要集成了 Intune APP SDK for iOS 版本 9.0.1 或更高版本的应用程序参与。 必须集成 SDK，以便可以在目标应用程序上强制执行行为。 此集成陆续进行，取决于特定应用程序团队。 参与的一些应用包括 WXP、Outlook、Managed Browser 和 Yammer。
 
@@ -290,13 +291,13 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 适用于：iOS
 
 #### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>即使只有一个电子邮件配置文件，也可从设备中删除该电子邮件配置文件 <!-- 1818139 -->
-以前，如果只有唯一一个电子邮件配置文件，则无法从设备删除该电子邮件配置文件。 有了此更新，该行为发生了变化。 现在，即使设备上只有唯一一个电子邮件配置文件，也可删除该电子邮件配置文件。 有关详细信息，请参阅[使用 Intune 向设备添加电子邮件设置](../configuration/email-settings-configure.md)。
+以前，如果只有唯一一个电子邮件配置文件，则无法从设备删除该电子邮件配置文件  。 有了此更新，该行为发生了变化。 现在，即使设备上只有唯一一个电子邮件配置文件，也可删除该电子邮件配置文件。 有关详细信息，请参阅[使用 Intune 向设备添加电子邮件设置](../configuration/email-settings-configure.md)。
 
 #### <a name="powershell-scripts-and-aad----2309469---"></a>PowerShell 脚本和 AAD <!-- 2309469 -->
 Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>适用于 Android、Android 企业版的新的“所需密码类型”默认设置<!-- 2649963 -->
-创建新的符合性策略时（“Intune” > “设备符合性” > “策略” > “创建策略” > > Android 或 Android Enterprise 平台 >“系统安全性”），所需密码类型的默认值会更改：
+创建新的符合性策略时（“Intune” > “设备符合性” > “策略” > “创建策略” > > Android 或 Android Enterprise 平台 >“系统安全性”），所需密码类型的默认值会更改：       
 
 从“设备默认值”更改为“至少为数字”
 
@@ -319,7 +320,7 @@ Intune 中的 PowerShell 脚本可应用于 AAD 设备安全组。
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="apply-autopilot-profile-to-enrolled-win-10-devices-not-already-registered-for-autopilot----1558983---"></a>将 Autopilot 配置文件应用到尚未注册 Autopilot 的已注册 Win 10 设备 <!-- 1558983 -->
-可以将 Autopilot 配置文件应用到尚未注册 Autopilot 的已注册 Win 10 设备。 在 Autopilot 配置文件中，选择“将所有目标设备转换为 Autopilot”选项，以使用 Autopilot 部署服务自动注册非 Autopilot 设备。 等待 48 小时来处理注册。 取消注册设备并重置后，Autopilot 将对其进行配置。
+可以将 Autopilot 配置文件应用到尚未注册 Autopilot 的已注册 Win 10 设备。 在 Autopilot 配置文件中，选择“将所有目标设备转换为 Autopilot”  选项，以使用 Autopilot 部署服务自动注册非 Autopilot 设备。 等待 48 小时来处理注册。 取消注册设备并重置后，Autopilot 将对其进行配置。
 
 #### <a name="create-and-assign-multiple-enrollment-status--page-profiles-to-azure-ad-groups----2526564---"></a>创建多个注册状态页配置文件并将其分配给 Azure AD 组 <!-- 2526564 -->
 现在可以[创建](../enrollment/windows-enrollment-status.md)多个注册状态页面配置文件并将其分配给 Azure AD 组。
@@ -331,7 +332,7 @@ Apple Business Manager (ABM) 在 Intune 中工作，可以将你的帐户从设�
 警报和注册失败现在显示在“设备注册概述”页的单独选项卡上。
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>注册放弃报告 <!-- 1382924 -->
-我们在“设备注册” > “监视”下发布了新报表，其中提供了有关已放弃注册的详细信息。 有关详细信息，请参阅[公司门户放弃报表](../enrollment/enrollment-report-company-portal-abandon.md)。
+我们在“设备注册” > “监视”下发布了新报表，其中提供了有关已放弃注册的详细信息   。 有关详细信息，请参阅[公司门户放弃报表](../enrollment/enrollment-report-company-portal-abandon.md)。
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新的 Azure Active Directory 使用条款功能 <!-- 2870393 -->
 Azure Active Directory 具备可供使用的使用条款功能，而不必再使用现有的 Intune 条款和条件。 Azure AD 使用条款功能在显示哪些条款以及何时显示这些条款方面更加灵活，并能更好地支持本地化，更好地控制条款的呈现方式以及改进报告。 Azure AD 使用条款功能需要 Azure Active Directory Premium P1，后者也是企业移动性 + 安全性 E3 套件的一部分。 要了解详情，请参阅[管理公司的用户访问条款和条件](../enrollment/terms-and-conditions-create.md)一文。
@@ -356,7 +357,7 @@ Azure Active Directory 具备可供使用的使用条款功能，而不必再使
 设置的功能不会更改，但在处理策略创作流程时会更容易找到它们。
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-android-devices----2451462----"></a>限制应用，并阻止对 Android 设备上公司资源的访问 <!-- 2451462  -->  
-在“设备符合性” > “策略” > “创建策略” > “Android” > “系统安全”中，“设备安全”部分下有一个名为“受限制的应用”的新设置。 如果设备上安装了某些应用，“受限制的应用”设置将使用符合性策略来阻止对公司资源的访问。 除非从设备中删除受限制的应用，否则设备会一直被视为不符合要求。
+在“设备符合性” > “策略” > “创建策略” > “Android” > “系统安全”中，“设备安全”部分下有一个名为“受限制的应用”的新设置        。 如果设备上安装了某些应用，“受限制的应用”设置将使用符合性策略来阻止对公司资源的访问  。 除非从设备中删除受限制的应用，否则设备会一直被视为不符合要求。
 适用于： 
 - Android
 
@@ -380,7 +381,7 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 
 对于参与部署的客户，此新体验取代了一组静态预选选项的当前“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。  
 
-我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
+*我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
 
 有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[“帮助和支持”体验](get-support.md#help-and-support-experience)。  
 
@@ -393,7 +394,7 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 ### <a name="app-management"></a>应用管理
 
 #### <a name="remove-duplication-of-app-protection-status-tiles----3083391---"></a>删除应用保护状态磁贴的副本 <!-- 3083391 -->
-“iOS 用户状态”和“Android 用户状态”磁贴都会出现在“客户端应用 - 概述”页，以及“客户端应用 - 应用保护状态”页。 已从“客户端应用 - 概述”页删除状态磁贴，以避免重复。 
+“iOS 用户状态”和“Android 用户状态”磁贴都会出现在“客户端应用 - 概述”页，以及“客户端应用 - 应用保护状态”页     。 已从“客户端应用 - 概述”页删除状态磁贴，以避免重复  。 
 
 ### <a name="device-configuration"></a>设备配置
 
@@ -403,7 +404,7 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="intune-moves-to-support-ios-10-and-later----2454656---"></a>Intune 转为支持 iOS 10 及更高版本 <!-- 2454656 -->  
-Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及更高版本的 iOS 设备。 若要查看组织中受影响的设备或用户，请转到 Azure 门户中的 Intune >“设备” > “所有设备”。 按 OS 进行筛选，然后单击“列”以显示 OS 版本详细信息。 请让这些用户将其设备升级到受支持的 OS 版本。  
+Intune 注册、公司门户和托管浏览器现在仅支持运行 iOS 10 及更高版本的 iOS 设备。 若要查看组织中受影响的设备或用户，请转到 Azure 门户中的 Intune >“设备” > “所有设备”   。 按 OS 进行筛选，然后单击“列”以显示 OS 版本详细信息  。 请让这些用户将其设备升级到受支持的 OS 版本。  
 
 如果拥有下面列出的任何设备，或者想要注册下面列出的任何设备，请注意，它们仅支持 iOS 9 及更早版本。  若要继续访问 Intune 公司门户，必须将这些设备升级到支持 iOS 10 或更高版本的设备：  
 
@@ -430,11 +431,11 @@ Microsoft 365 的承诺之一是简化管理，多年来我们整合了后端 Mi
 - Pulse Secure - 如果不确定使用哪个值，请查阅 VPN 提供商的文档。
 
 #### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>延迟 iOS 软件更新在设备上的显示时间 <!-- 1949583 -->
-在 Intune >“软件更新” > “适用于 iOS 的更新策略”中，可配置不希望设备安装任何更新的日期和时间段。 在未来的某个更新中，可延迟软件更新在设备上的显示时间（1-90 天）。 
+在 Intune >“软件更新”   > “适用于 iOS 的更新策略”  中，可配置不希望设备安装任何更新的日期和时间段。 在未来的某个更新中，可延迟软件更新在设备上的显示时间（1-90 天）。 
 [在 Microsoft Intune 中配置 iOS 更新策略](../protect/software-updates-ios.md)列出了当前设置。
 
 #### <a name="office-365-proplus-version----2213968---"></a>Office 365 专业增强版 <!-- 2213968 -->
-如果使用 Intune 将 Office 365 专业增强版应用分配到 Windows 10 设备，则可选择 Office 的版本。 在 Azure 门户中，选择“Microsoft Intune” > “应用” > “添加应用”。 然后，从“类型”下拉列表中选择“Office 365 专业增强版套件(Windows 10)”。 选择“应用套件设置”以显示关联的边栏选项卡。 将“更新通道”设置为一个值，如“每月”。 （可选）选择“是”，从最终用户设备中删除其他版本的 Office (msi)。 选择“特定”，在最终用户设备上为所选通道安装特定的 Office 版本。 此时，可选择要使用的“特定版本”的 Office。 可用版本会随时间发生变化。 因此，在创建新部署时，可用版本可能为更新的版本，而不再提供某些较旧版本。 当前部署会继续部署旧版本，但版本列表会持续按通道更新。 有关详细信息，请参阅 [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
+如果使用 Intune 将 Office 365 专业增强版应用分配到 Windows 10 设备，则可选择 Office 的版本。 在 Azure 门户中，选择“Microsoft Intune” > “应用” > “添加应用”    。 然后，从“类型”  下拉列表中选择“Office 365 专业增强版套件(Windows 10)”  。 选择“应用套件设置”  以显示关联的边栏选项卡。 将“更新通道”  设置为一个值，如“每月”  。 （可选）选择“是”  ，从最终用户设备中删除其他版本的 Office (msi)。 选择“特定”  ，在最终用户设备上为所选通道安装特定的 Office 版本。 此时，可选择要使用的“特定版本”  的 Office。 可用版本会随时间发生变化。 因此，在创建新部署时，可用版本可能为更新的版本，而不再提供某些较旧版本。 当前部署会继续部署旧版本，但版本列表会持续按通道更新。 有关详细信息，请参阅 [Office 365 专业增强版的更新频道概述](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)。
 
 #### <a name="support-for-register-dns-setting-for-windows-10-vpn----2282852---"></a>支持面向 Windows 10 VPN 的注册 DNS 设置 <!-- 2282852 -->
 通过此次更新，可将 Windows 10 VPN 配置文件配置为使用内部 DNS 动态注册分配给 VPN 接口的 IP 地址，而无需使用自定义配置文件。
@@ -448,14 +449,14 @@ Microsoft 365 的承诺之一是简化管理，多年来我们整合了后端 Mi
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="windows-hello-will-target-users-and-devices----1106609---"></a>Windows Hello 面向用户和设备 <!-- 1106609 -->
-创建 [Windows hello 企业版](../protect/windows-hello.md)策略后，该策略会应用到组织中的所有用户（租户范围）。 进行此更新后，还可使用设备配置策略（“设备配置” > “配置文件” > “创建配置文件” > “标识保护” > “Windows Hello 企业版”），将此策略应用于特定用户或特定设备。
-在 Intune Azure 门户中，Windows Hello 配置和设置现在同时存在于“设备注册”和“设备配置”中。 **设备注册**面向整个组织（租户范围内），并支持 Windows AutoPilot (OOBE)。 **设备配置**面向使用某种策略的设备和用户，该策略会在签入期间应用。
+创建 [Windows hello 企业版](../protect/windows-hello.md)策略后，该策略会应用到组织中的所有用户（租户范围）。 进行此更新后，还可使用设备配置策略（“设备配置”   > “配置文件”   > “创建配置文件”   > “标识保护”   > “Windows Hello 企业版”  ），将此策略应用于特定用户或特定设备。
+在 Intune Azure 门户中，Windows Hello 配置和设置现在同时存在于“设备注册”和“设备配置”中   。 **设备注册**面向整个组织（租户范围内），并支持 Windows AutoPilot (OOBE)。 **设备配置**面向使用某种策略的设备和用户，该策略会在签入期间应用。
 此功能适用于：  
 - Windows 10 及更高版本
 - Windows Holographic for Business
 
 #### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858---"></a>Zscaler 是适用于 iOS 上 VPN 配置文件的可用连接 <!-- 1769858 -->
-创建 iOS VPN 设备配置文件时（“设备配置” > “配置文件” > “创建配置文件” > “iOS”“平台”>“VPN 配置文件类型”），有几种连接类型，包括 Cisco、Citrix 等。 此次更新将 Zscaler 添加为一个连接类型。 
+创建 iOS VPN 设备配置文件时（“设备配置”   > “配置文件”   > “创建配置文件”   > “iOS”  “平台”>“VPN  配置文件类型”），有几种连接类型，包括 Cisco、Citrix 等。 此次更新将 Zscaler 添加为一个连接类型。 
 [运行 iOS 的设备的 VPN 设置](../configuration/vpn-settings-ios.md)列出了可用的连接类型。
 
 #### <a name="fips-mode-for-enterprise-wi-fi-profiles-for-windows-10----1879077---"></a>适用于 Windows 10 企业 Wi-Fi 配置文件的 FIPS 模式 <!-- 1879077 -->
@@ -463,7 +464,7 @@ Microsoft 365 的承诺之一是简化管理，多年来我们整合了后端 Mi
 有关如何创建 Wi-Fi 配置文件，请参阅 [Intune 中适用于 Windows 10 及更高版本设备的 Wi-Fi 设置](../configuration/wi-fi-settings-windows.md)。
 
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>在 Windows 10 和更高版本设备上的控制 S 模式 - 公共预览版 <!-- 1958649 -->
-利用该功能更新，可创建一个设备配置文件，用于将 Windows 10 设备从 S 模式下切换出来，或用于防止用户将设备从 S 模式下切换出来。 此功能的位置：Intune >“设备配置” > “配置文件” >  “Windows 10 及更高版本” > “版本升级和模式切换”。
+利用该功能更新，可创建一个设备配置文件，用于将 Windows 10 设备从 S 模式下切换出来，或用于防止用户将设备从 S 模式下切换出来。 此功能的位置：Intune >“设备配置” > “配置文件” >  “Windows 10 及更高版本” > “版本升级和模式切换”     。
 [S 模式下的 Windows 10 简介](https://www.microsoft.com/windows/s-mode)提供了有关 S 模式的详细信息。
 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/windows-insider/at-work-pro/)版本（预览版）。
 
@@ -476,7 +477,7 @@ Microsoft 365 的承诺之一是简化管理，多年来我们整合了后端 Mi
 适用于：最新的 [Windows 预览体验](https://docs.microsoft.com/windows-insider/at-work-pro/)版本（预览版）。
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>限制应用，并阻止对 iOS 和 Android Enterprise 设备上公司资源的访问 <!-- 2451462 -->
-在“设备符合性” > “策略” > “创建策略” > “iOS” > “系统安全”中，有一个新的“受限制的应用程序”设置。 如果设备上安装了某些应用，此新设置会使用符合性策略来阻止对公司资源的访问。 除非从设备中删除受限制的应用，否则设备会一直被视为不符合要求。
+在“设备符合性” > “策略” > “创建策略” > “iOS” > “系统安全”中，有一个新的“受限制的应用程序”设置       。 如果设备上安装了某些应用，此新设置会使用符合性策略来阻止对公司资源的访问。 除非从设备中删除受限制的应用，否则设备会一直被视为不符合要求。
 适用于：iOS
 
 #### <a name="modern-vpn-support-updates-for-ios----2459928-1819876-and-2650856---"></a>适用于 iOS 的新式 VPN 支持更新 <!-- 2459928, 1819876, and 2650856 -->
@@ -484,13 +485,13 @@ Microsoft 365 的承诺之一是简化管理，多年来我们整合了后端 Mi
 - F5 Access（版本 3.0.1 及更高版本）
 - Citrix SSO
 - 此次更新还包含 Palo Alto Networks GlobalProtect 版本 5.0 及更高版本：
-- iOS 的现有“F5 访问”连接类型已重命名为“旧版 F5 访问”。
-- iOS 的现有“Palo Alto Networks GlobalProtect”连接类型已重命名为“旧版 Palo Alto Networks GlobalProtect”。
+- iOS 的现有“F5 访问”连接类型已重命名为“旧版 F5 访问”   。
+- iOS 的现有“Palo Alto Networks GlobalProtect”连接类型已重命名为“旧版 Palo Alto Networks GlobalProtect”   。
 使用这些连接类型的现有配置文件将继续使用其各自的旧版 VPN 客户端。 如果要将 Cisco 旧式 AnyConnect、旧版 F5 访问、Citrix VPN 或 Palo Alto Networks GlobalProtect 4.1 及更早版本与 iOS 配合使用，则应改为使用新应用。 尽快执行此操作以确保可在更新到 iOS 12 的 iOS 设备上实现 VPN 访问。
 有关 iOS 12 和 VPN 配置文件的详细信息，请参阅 [Microsoft Intune 支持团队博客](https://go.microsoft.com/fwlink/?linkid=2013806)。
 
 #### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal----2469637---"></a>导出 Azure 经典门户的符合性策略，以在 Intune Azure 门户中重新创建这些策略 <!-- 2469637 -->
-将弃用 Azure 经典门户中创建的符合性策略。 可查看和删除任何现有符合性策略，但无法更新它们。 如果需要将任何符合性策略迁移到最新的 Intune Azure 门户，可将策略导出为逗号分隔的文件（.csv 文件）。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
+将弃用 Azure 经典门户中创建的符合性策略。 可查看和删除任何现有符合性策略，但无法更新它们。 如果需要将任何符合性策略迁移到最新的 Intune Azure 门户，可将策略导出为逗号分隔的文件（.csv 文件）  。 然后使用文件中的详细信息在 Intune Azure 门户中重新创建这些策略。
 
 > [!IMPORTANT]
 > Azure 经典门户停用后，将无法访问或查看符合性策略。 因此，在 Azure 经典门户停用之前，务必导出策略并在 Azure 门户中重新创建这些策略。
@@ -528,12 +529,12 @@ Intune 现支持将 macOS 设备注册到 Apple 设备注册计划 (DEP) 中。 
 ### <a name="device-management"></a>设备管理
 
 #### <a name="delete-jamf-devices----2653306--"></a>删除 Jamf 设备 <!-- 2653306-->
-通过转到“设备”>“选择 Jamf 设备”>“删除”，可以删除 JAMF 托管的设备。
+通过转到“设备”>“选择 Jamf 设备”>“删除”，可以删除 JAMF 托管的设备   。
 
 #### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>将术语更改为“停用”和“擦除” <!-- 2175759 -->
 为了与 Graph API 保持一致，Intune 用户界面和文档已更改以下术语：
-- “删除公司数据”更改为“停用”
-- “恢复出厂设置”将更改为“擦除”
+- “删除公司数据”更改为“停用” 
+- “恢复出厂设置”  将更改为“擦除” 
 
 #### <a name="confirmation-dialog-if-admin-tries-to-delete-mdm-push-certificate----297909500--"></a>管理员尝试删除 MDM 推送证书时出现的确认对话框 <!-- 297909500-->
 如果有人尝试删除 Apple MDM 推送证书，确认对话框会显示相关的 iOS 和 macOS 设备数。 删除证书后，需要重新注册这些设备。
@@ -574,24 +575,24 @@ Intune 现支持将 macOS 设备注册到 Apple 设备注册计划 (DEP) 中。 
 ### <a name="app-management"></a>应用管理
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>对 macOS 的业务线 (LOB) 应用支持 <!-- 1895847 -->
-Microsoft Intune 允许将 macOS LOB 应用部署为“必需”或“注册时可用”。 最终用户可通过适用于 macOS 公司门户或[公司门户网站](https://portal.manage.microsoft.com)获得部署为“可用”的应用。
+Microsoft Intune 允许将 macOS LOB 应用部署为“必需”或“注册时可用”   。 最终用户可通过适用于 macOS 公司门户或[公司门户网站](https://portal.manage.microsoft.com)获得部署为“可用”的应用  。
 
 #### <a name="ios-built-in-app-support-for-kiosk-mode----2051098---"></a>iOS 内置应用支持展台模式 <!-- 2051098 -->
 除了应用商店应用和托管应用，现在可以选择在 iOS 设备上以展台模式运行的内置应用（例如 Safari）。
 
 #### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>编辑 Office 365 Pro Plus 应用部署 <!-- 2150145 -->
-作为 Microsoft Intune 管理员，现在可以对 Office 365 专业增强版应用部署进行更多编辑。 此外，不再需要删除部署以更改任何套件属性。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用”。 从应用列表中选择你的 Office 365 Pro Plus 套件。  
+作为 Microsoft Intune 管理员，现在可以对 Office 365 专业增强版应用部署进行更多编辑。 此外，不再需要删除部署以更改任何套件属性。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用”    。 从应用列表中选择你的 Office 365 Pro Plus 套件。  
 
 #### <a name="updated-intune-app-sdk-for-android-is-now-available----2744271--"></a>现推出了更新的 Intune App SDK for Android <!-- 2744271-->
 现在提供 Intune App SDK for Android 的更新版本，以支持 Android P 版本。 如果你是应用开发人员并使用 Intune SDK for Android，则必须安装 Intune app SDK 的更新版本，以确保 Android 应用中的 Intune 功能在 Android P 设备上运行正常。 此版本的 Intune App SDK 提供执行 SDK 更新的内置插件。 你无需重写集成的任何现有代码。 有关详细信息，请参阅 [Intune SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)。 如果你使用的是 Intune 的旧标记样式，我们建议你使用公文包图标。 有关品牌打造的详细信息，请参阅[此 GitHub 存储库](https://github.com/msintuneappsdk/intune-app-partner-badge)。
 
 #### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的更多同步机会  
-适用于 Windows 的公司门户应用现在允许直接从 Windows 任务栏和“开始”菜单启动同步。 如果唯一任务是同步设备并访问公司资源，那么此功能特别有用。 要访问新功能，请右键单击固定到任务栏或“开始”菜单的公司门户图标。 在菜单选项（也称为跳转列表）中，选择“同步此设备”。 公司门户将打开“设置”页面并启动同步。若要了解新功能，请参阅 [UI 中的新增功能](../whats-new-app-ui.md)。   
+适用于 Windows 的公司门户应用现在允许直接从 Windows 任务栏和“开始”菜单启动同步。 如果唯一任务是同步设备并访问公司资源，那么此功能特别有用。 要访问新功能，请右键单击固定到任务栏或“开始”菜单的公司门户图标。 在菜单选项（也称为跳转列表）中，选择“同步此设备”  。 公司门户将打开“设置”页面并启动同步  。若要了解新功能，请参阅 [UI 中的新增功能](../whats-new-app-ui.md)。   
 
 #### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>适用于 Windows 的公司门户应用中的新浏览体验  
-现在，在适用于 Windows 的公司门户应用中浏览或搜索应用时，用户能在现有的“磁贴”视图和新添加的“详细信息”视图之间切换。 新视图列出应用程序详细信息，如名称、发布服务器、发布日期和安装状态。  
+现在，在适用于 Windows 的公司门户应用中浏览或搜索应用时，用户能在现有的“磁贴”视图和新添加的“详细信息”视图之间切换   。 新视图列出应用程序详细信息，如名称、发布服务器、发布日期和安装状态。  
 
-通过“应用”页的“已安装”视图可查看已完成和正在进行的应用安装的详细信息。 若要查看新视图的外观，请参阅 [UI 中的新增功能](../whats-new-app-ui.md)。  
+通过“应用”页的“已安装”视图可查看已完成和正在进行的应用安装的详细信息   。 若要查看新视图的外观，请参阅 [UI 中的新增功能](../whats-new-app-ui.md)。  
 
 #### <a name="improved-company-portal-app-experience-for-device-enrollment-managers"></a>针对设备注册管理员，改进了公司门户应用体验  
 现在，当设备注册管理员 (DEM) 登录到适用于 Windows 的公司门户应用时，该应用将仅列出 DEM 当前正在运行的设备。 以前应用尝试显示所有 DEM 注册设备，会出现较长的超时，此改进则将减少超时时间。  
@@ -603,7 +604,7 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 
 如果未满足策略要求，则用户将无法访问目标应用程序。 根据设置，用户可能会被阻止或选择性地删除应用中的用户企业数据。 在 iOS 设备上，需使用一些应用程序（例如 WXP、Outlook、Managed Browser 和 Yammer）与 Intune APP SDK 进行集成，才能在目标应用程序中强制实施此功能。 此集成陆续进行，取决于特定应用程序团队。 在 Android 上，此功能需要使用最新的公司门户。 
 
-在最终用户设备上，Intune 客户端将根据 Intune 边栏选项卡中针对应用程序保护策略所指定的字符串的简单匹配来执行操作。 这完全取决于设备报告的值。 为此，建议 IT 管理员确保预期行为的准确性。 这可以通过根据面向较小规模用户组的各种设备制造商和型号对此设置进行测试来实现。 在 Microsoft Intune 中，选择“客户端应用” > “应用保护策略”，可查看和添加应用保护策略。 有关应用保护策略的详细信息，请参阅[什么是应用保护策略](../apps/app-protection-policy.md)和[在 Intune 中使用应用保护策略访问操作选择性地擦除数据](../apps/app-protection-policies-access-actions.md)。
+在最终用户设备上，Intune 客户端将根据 Intune 边栏选项卡中针对应用程序保护策略所指定的字符串的简单匹配来执行操作。 这完全取决于设备报告的值。 为此，建议 IT 管理员确保预期行为的准确性。 这可以通过根据面向较小规模用户组的各种设备制造商和型号对此设置进行测试来实现。 在 Microsoft Intune 中，选择“客户端应用” > “应用保护策略”，可查看和添加应用保护策略   。 有关应用保护策略的详细信息，请参阅[什么是应用保护策略](../apps/app-protection-policy.md)和[在 Intune 中使用应用保护策略访问操作选择性地擦除数据](../apps/app-protection-policies-access-actions.md)。
 
 #### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>访问 macOS 公司门户预发布版本 <!-- 1734766 -->
 借助 Microsoft 自动更新，可通过加入预览体验计划注册抢先收到内部版本。 注册后，即可在公司门户更新版向最终用户推出前使用它。 有关详细信息，请参阅 [Microsoft Intune 博客](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/)。
@@ -611,23 +612,23 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>在 macOS 设备上使用防火墙设置创建设备合规性策略 <!-- 1497640 -->
-创建新的 macOS 符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: macOS” > “系统安全性”）时，有一些新的可用“防火墙”设置： 
+创建新的 macOS 符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: macOS” > “系统安全性”）时，有一些新的可用“防火墙”设置       ： 
 
-- 防火墙：配置环境对传入连接的处理方式。
-- 传入连接：阻止所有传入连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务。
-- 隐藏模式：启用隐藏模式以防止设备响应探测请求。 设备会继续回应已授权应用的传入请求。
+-  防火墙：配置环境对传入连接的处理方式。
+-   传入连接：阻止所有传入连接，DHCP、Bonjour 和 IPSec 等基本 Internet 服务需要的连接除外。 此设置还会阻止所有共享服务。
+-   隐藏模式：启用隐藏模式以防止设备响应探测请求。 设备会继续回应已授权应用的传入请求。
 
 适用于：macOS 10.12 及更高版本
 
 #### <a name="new-wi-fi-device-configuration-profile-for-windows-10-and-later----1879077---"></a>Windows 10 及更高版本的新 Wi-Fi 设备配置文件 <!-- 1879077 -->
 目前，可以使用 XML 文件导入和导出 Wi-Fi 配置文件。 通过此次更新，能够直接在 Intune 中创建 Wi-Fi 设备配置文件，与在某些其他平台上的操作一样。
 
-若要创建配置文件，打开“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “Wi-Fi”。 
+若要创建配置文件，打开“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “Wi-Fi”      。 
 
 适用于 Windows 10 和更高版本。
 
 #### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998---"></a>展台 - 已过时显示为灰色，无法更改 <!-- 2149998 -->
-展台（预览）功能（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “设备限制”）已过时，并替换为[适用于 Windows 10 和更高版本的展台设置](../configuration/kiosk-settings.md)。 更新后，“展台 - 已过时”功能显示为灰色，并且无法更改或更新用户界面。 
+展台（预览）功能（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “设备限制”）已过时，并替换为[适用于 Windows 10 和更高版本的展台设置](../configuration/kiosk-settings.md)      。 更新后，“展台 - 已过时”功能显示为灰色，并且无法更改或更新用户界面  。 
 
 若要启用展台模式，请参阅 [Windows 10 及更高版本的 Kiosk 设置](../configuration/kiosk-settings.md)。
 
@@ -639,32 +640,32 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 目前 Intune 支持[使用 Active Directory 证书服务的 SCEP 请求](../protect/certificates-scep-configure.md)。
 
 #### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser----2455253---"></a>切换以显示或不显示展台浏览器上的“结束会话”按钮 <!-- 2455253 -->
-现可配置展台浏览器是否显示“结束会话”按钮。 可以在“设备配置” > “Kiosk（预览）” > “Kiosk Web 浏览器”中看到控件。 若关闭，用户单击按钮时，应用会提示是否结束会话。 确定结束时，浏览器清除所有浏览数据并导航回到默认 URL。
+现可配置展台浏览器是否显示“结束会话”按钮。 可以在“设备配置” > “Kiosk（预览）” > “Kiosk Web 浏览器”中看到控件    。 若关闭，用户单击按钮时，应用会提示是否结束会话。 确定结束时，浏览器清除所有浏览数据并导航回到默认 URL。
 
 #### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>创建 eSIM 卡移动电话配置文件 <!-- 2564077 -->
-在“设备配置”中，可创建 eSIM 手机网络配置文件。 可以导入包含移动运营商提供的移动电话激活码的文件。 然后，可以将这些配置文件部署到支持 eSIM LTE 的 Windows 10 设备，例如 Surface Pro LTE 和其他支持 eSIM 卡的设备。
+在“设备配置”中，可创建 eSIM 手机网络配置文件  。 可以导入包含移动运营商提供的移动电话激活码的文件。 然后，可以将这些配置文件部署到支持 eSIM LTE 的 Windows 10 设备，例如 Surface Pro LTE 和其他支持 eSIM 卡的设备。
 
 检查[设备是否支持 eSIM 卡配置文件](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data)。
 
 适用于 Windows 10 和更高版本。
 
 #### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>使用“访问工作单位或学校”设置选择设备类别 <!-- 1058963 eenotready --> 
-如果已启用[设备组映射](../enrollment/device-group-mapping.md)，Windows 10 用户现将在通过“设置” > “帐户” > “访问工作或学校帐户”中的“连接”按钮注册后，看到选择设备类别的提示。 
+如果已启用[设备组映射](../enrollment/device-group-mapping.md)，Windows 10 用户现将在通过“设置”   > “帐户”   > “访问工作或学校帐户”  中的“连接”  按钮注册后，看到选择设备类别的提示。 
 
 #### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>使用 sAMAccountName 作为电子邮件配置文件的帐户用户名 <!-- 1500307 -->
-可使用本地“sAMAccountName”作为 Android、iOS 和 Windows 10 的电子邮件配置文件的帐户用户名。 还可从 Azure Active Directory (Azure AD) 中的 `domain` 或 `ntdomain` 属性获取域。 或者，输入自定义静态域。
+可使用本地“sAMAccountName”作为 Android、iOS 和 Windows 10 的电子邮件配置文件的帐户用户名  。 还可从 Azure Active Directory (Azure AD) 中的 `domain` 或 `ntdomain` 属性获取域。 或者，输入自定义静态域。
 
 若要使用此功能，必须将本地 Active Directory 环境中的 `sAMAccountName` 属性同步到 Azure AD。
 
 适用于 [Android](../configuration/email-settings-android.md)、[iOS](../configuration/email-settings-ios.md)、[Windows 10 及更高版本](../configuration/email-settings-windows-10.md)
 
 #### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>查看冲突的设备配置文件 <!-- 1556983 -->
-“设备配置”中将显示现有配置文件列表。 此更新中添加了新列，用于提供有冲突的配置文件的详细信息。 可选中冲突的行以查看存在冲突的设置和配置文件。 
+“设备配置”中将显示现有配置文件列表  。 此更新中添加了新列，用于提供有冲突的配置文件的详细信息。 可选中冲突的行以查看存在冲突的设置和配置文件。 
 
 可在[管理配置文件](../configuration/device-profile-monitor.md#view-conflicts)中查看详细信息。
 
 #### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>设备合规性中的设备新状态 <!-- 2308882 -->
-在“设备符合性” > “策略”>“选择策略”>“概述”中，添加以下新状态：
+在“设备符合性” > “策略”>“选择策略”>“概述”中，添加以下新状态    ：
 - 成功
 - 错误
 - 冲突
@@ -672,24 +673,24 @@ Intune IT 管理员可通过 Intune 应用保护策略强制实施指定的 Andr
 - 不适用 还显示了图像，展示其他平台的设备计数。 例如，如果正在查看 iOS 配置文件，则新磁贴会显示同时分配给到配置文件的非 iOS 设备数。 请参阅[设备符合性策略](../protect/compliance-policy-monitor.md#view-status-of-device-policies)。
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>设备合规性支持第三方防病毒解决方案 <!-- 2325484 -->
-当创建设备符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: Windows 10 及更高版本” > “设置” > “系统安全”）时，会出现新的[设备安全性](../protect/compliance-policy-create-windows.md)选项： 
-- 防病毒：当设置为“需要”时，可使用在 Windows 安全中心注册的防病毒解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
-- 反间谍软件：当设置为“需要”时，可以使用在 Windows 安全中心注册的反间谍软件解决方案（如 Symantec 和 Windows Defender）来检查符合性。 
+当创建设备符合性策略（“设备符合性” > “策略” > “创建策略” > “平台: Windows 10 及更高版本” > “设置” > “系统安全”）时，会出现新的[设备安全性](../protect/compliance-policy-create-windows.md)选项        ： 
+- 防病毒  ：当设置为“需要”时，可使用在 Windows 安全中心注册的防病毒解决方案（如 Symantec 和 Windows Defender）来检查符合性  。 
+- 反间谍软件  ：当设置为“需要”时，可以使用在 Windows 安全中心注册的反间谍软件解决方案（如 Symantec 和 Windows Defender）来检查符合性  。 
 
 适用于：Windows 10 及更高版本 
 
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="automatically-mark-android-devices-enrolled-by-using-samsung-knox-mobile-enrollment-as-corporate----2404851---"></a>自动标记使用 Samsung Knox 移动注册为“公司”注册的 Android 设备。 <!-- 2404851 -->
-默认情况下，使用 Samsung Knox 移动注册的 Android 设备现在标记为“设备所有权”下的“公司”。 使用 Knox 移动注册之前，不需要使用 IMEI 或序列号手动识别公司设备。
+默认情况下，使用 Samsung Knox 移动注册的 Android 设备现在标记为“设备所有权”下的“公司”   。 使用 Knox 移动注册之前，不需要使用 IMEI 或序列号手动识别公司设备。
 
 #### <a name="devices-without-profiles-column-in-the-list-of-enrollment-program-tokens----1853904---"></a>注册计划令牌列表中没有配置文件列的设备 <!-- 1853904 -->
-注册计划令牌列表中存在一个新列，显示未分配配置文件的设备数量。 这有助于管理员在将配置文件分发给用户之前，先为这些设备分配配置文件。 若要查看新列，请转到“设备注册” > “Apple 注册” > “注册计划令牌”。
+注册计划令牌列表中存在一个新列，显示未分配配置文件的设备数量。 这有助于管理员在将配置文件分发给用户之前，先为这些设备分配配置文件。 若要查看新列，请转到“设备注册” > “Apple 注册” > “注册计划令牌”    。
 
 ### <a name="device-management"></a>设备管理
 
 #### <a name="bulk-delete-devices-on-devices-blade----1793693---"></a>在设备边栏选项卡上批量删除设备 <!-- 1793693 -->
-现在可在“设备”边栏选项卡上一次删除多个设备。 选择“设备” > “所有设备”>“选择要删除的设备”>“删除”。 对于无法删除的设备，会出现警告。
+现在可在“设备”边栏选项卡上一次删除多个设备。 选择“设备” > “所有设备”>“选择要删除的设备”>“删除”    。 对于无法删除的设备，会出现警告。
 
 #### <a name="google-name-changes-for-android-for-work-and-play-for-work---842873---"></a>Android for Work 和 Play for Work 的 Google 名称更改 <!--842873 -->
 Intune 已更新“Android for Work”术语，以反映 Google 品牌的更改。 不再使用术语“Android for Work”和“Play for Work”。 根据上下文使用不同的术语：
@@ -698,17 +699,17 @@ Intune 已更新“Android for Work”术语，以反映 Google 品牌的更改�
 - “托管的 Google Play”指 Google 应用商店。
 
 #### <a name="rules-for-removing-devices----1609459---"></a>删除设备的规则 <!-- 1609459 -->
-提供新规则，用于自动删除未在设置天数内进行签入的设备。 要查看新规则，请转到“Intune”窗格，依次选择“设备”和“设备清理规则”。
+提供新规则，用于自动删除未在设置天数内进行签入的设备。 要查看新规则，请转到“Intune”窗格，依次选择“设备”和“设备清理规则”    。
 
 #### <a name="corporate-owned-single-use-support-for-android-devices----1630973---"></a>支持公司拥有的单一用途 Android 设备 <!-- 1630973 -->
 
-Intune 现支持受到高度管控的锁定展台式 Android 设备。 这使管理员可以将设备的使用进一步锁定到单个应用或一小组应用，并阻止用户在设备上启用其他应用或执行其他操作。 若要设置 Android 展台，请转到 Intune >“设备注册” > “Android 注册” > “展台和任务设备注册”。 有关详细信息，请参阅[设置 Android 企业展台设备的注册](../enrollment/android-kiosk-enroll.md)。
+Intune 现支持受到高度管控的锁定展台式 Android 设备。 这使管理员可以将设备的使用进一步锁定到单个应用或一小组应用，并阻止用户在设备上启用其他应用或执行其他操作。 若要设置 Android 展台，请转到 Intune >“设备注册” > “Android 注册” > “展台和任务设备注册”    。 有关详细信息，请参阅[设置 Android 企业展台设备的注册](../enrollment/android-kiosk-enroll.md)。
 
 #### <a name="per-row-review-of-duplicate-corporate-device-identifiers-uploaded----2203794--"></a>逐行查看上传的重复公司设备标识符 <!-- 2203794-->
-上传企业 ID 时，Intune 现提供重复项列表，你可以选择替换或保留现有信息。 选择“设备注册” > “公司设备标识符” > “添加标识符”后，如果有重复项，将显示报告。 
+上传企业 ID 时，Intune 现提供重复项列表，你可以选择替换或保留现有信息。 选择“设备注册” > “公司设备标识符” > “添加标识符”后，如果有重复项，将显示报告    。 
 
 #### <a name="manually-add-corporate-device-identifiers----2203803---"></a>手动添加公司设备标识符 <!-- 2203803 -->
-现在可以手动添加公司设备 ID。 选择“设备注册” > “公司设备标识符” > “添加”。 
+现在可以手动添加公司设备 ID。 选择“设备注册” > “公司设备标识符” > “添加”    。 
 
 
 <!-- ########################## -->
@@ -744,7 +745,7 @@ Intune 现在可以检索适用于企业的 Microsoft Store (WSfB) 应用的应�
 有关详细信息，请参阅[配置和使用 SCEP 证书](../protect/certificates-scep-configure.md)和[配置和使用 PKCS 证书](../protect/certficates-pfx-configure.md)。
 
 #### <a name="support-for-palo-alto-networks-globalprotect-vpn-profiles----1333680----"></a>支持 Palo Alto Networks GlobalProtect VPN 配置文件 <!-- 1333680 ! -->
-通过此更新，可选择 Palo Alto Networks GlobalProtect 作为 Intune 中 VPN 配置文件的 VPN 连接类型（“设备配置” > “配置文件” > “创建配置文件” > “配置文件类型” > “VPN”）。 在此版本中，支持以下平台： 
+通过此更新，可选择 Palo Alto Networks GlobalProtect 作为 Intune 中 VPN 配置文件的 VPN 连接类型（“设备配置” > “配置文件” > “创建配置文件” > “配置文件类型” > “VPN”）      。 在此版本中，支持以下平台： 
 
 - iOS
 - Windows 10
@@ -753,12 +754,12 @@ Intune 现在可以检索适用于企业的 Microsoft Store (WSfB) 应用的应�
 现在可以配置适用于 Windows 10 设备的其他本地设备安全选项设置。 其他设置在 Microsoft 网络客户端、Microsoft 网络服务器、网络访问和安全性和交互式登录的区域内可用。 创建 Windows 10 设备配置策略时，可以在终结点保护类别中查找这些设置。
 
 #### <a name="enable-kiosk-mode-on-windows-10-devices----1560072----"></a>在 Windows 10 设备上启用展台模式 <!-- 1560072 ! -->
-在 Windows 10 设备上，可以创建配置文件并启用展台模式（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10” > “设备限制” > “展台”）。 在此更新中，“展台(预览版)”设置被重命名为“展台(旧版)”。 不再推荐使用“展台(旧版)”，但该版本在 7 月更新之前仍能正常使用。 “展台(旧版)”被替换为新的“展台”配置文件类型（“创建配置文件” > “Windows 10” > “展台(预览版)”），该类型将包含配置 Windows 10 RS4 和更高版本上的展台的设置。
+在 Windows 10 设备上，可以创建配置文件并启用展台模式（“设备配置”   > “配置文件”   > “创建配置文件”   > “Windows 10”   > “设备限制”   > “展台”  ）。 在此更新中，“展台(预览版)”  设置被重命名为“展台(旧版)”  。 不再推荐使用“展台(旧版)”  ，但该版本在 7 月更新之前仍能正常使用。 “展台(旧版)”  被替换为新的“展台”  配置文件类型（“创建配置文件”   > “Windows 10”   > “展台(预览版)”  ），该类型将包含配置 Windows 10 RS4 和更高版本上的展台的设置。
 
 适用于 Windows 10 和更高版本。
 
 #### <a name="device-profile-graphical-user-chart-is-back----2160133---"></a>设备配置文件图形用户图表已恢复 <!-- 2160133 -->
-为了改进设备配置文件图形图表上显示的计数（“设备配置” > “配置文件”> 选择现有配置文件 >“概述”），图形用户图表曾被暂时删除。
+为了改进设备配置文件图形图表上显示的计数（“设备配置”   > “配置文件”  > 选择现有配置文件 >“概述”  ），图形用户图表曾被暂时删除。
 
 在此更新中，图形用户图表得到恢复，并显示在 Azure 门户中。
 
@@ -768,10 +769,10 @@ Intune 现在可以检索适用于企业的 Microsoft Store (WSfB) 应用的应�
 Intune 现在支持无需用户身份验证的 Windows Autopilot 注册。 这是 Windows Autopilot 部署配置文件中的新选项，“Autopilot 部署模式”设置为“自部署”。  设备必须运行 Windows 10 Insider Preview 内部版本 17672 或更高版本并且具有 TPM 2.0 芯片，才能成功完成此类型的注册。 由于不需要用户身份验证，因此应仅将此选项分配给你具有物理控制权限的设备。
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>配置 Autopilot 的 OOBE 时的新语言/区域设置 <!-- 1821766 -->
-在 Out of Box Experience 期间，会提供新的配置设置，以设置 Autopilot 配置文件的语言和区域。 要查看新设置，请选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件” > “部署模式” = “自部署” > “默认配置”。
+在 Out of Box Experience 期间，会提供新的配置设置，以设置 Autopilot 配置文件的语言和区域。 要查看新设置，请选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件” > “部署模式” = “自部署” > “默认配置”        。
 
 #### <a name="new-setting-for-configuring-device-keyboard----1821768---"></a>配置设备键盘的新设置 <!-- 1821768 -->
-在 Out of Box Experience 期间，将提供新的设置，以配置 Autopilot 配置文件的键盘。 要查看新设置，请选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件” > “部署模式” = “自部署” > “默认配置”。
+在 Out of Box Experience 期间，将提供新的设置，以配置 Autopilot 配置文件的键盘。 要查看新设置，请选择“设备注册” > “Windows 注册” > “部署配置文件” > “创建配置文件” > “部署模式” = “自部署” > “默认配置”        。
 
 #### <a name="autopilot-profiles-moving-to-group-targeting----1877935---"></a>将 AutoPilot 配置文件移动到组目标 <!-- 1877935 -->
 AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD 组。
@@ -779,24 +780,24 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 ### <a name="device-management"></a>设备管理
 
 #### <a name="set-compliance-by-device-location----851881----"></a>按设备位置设置合规性 <!-- 851881 ! -->
-在某些情况下，你可能想要将访问企业资源的权限限制到某个特定位置（该位置由网络连接定义）。 现在可以基于设备的 IP 地址来创建符合性策略（“设备符合性” > “位置”）。 如果设备移动到 IP 范围以外，则该设备将无法访问企业资源。
+在某些情况下，你可能想要将访问企业资源的权限限制到某个特定位置（该位置由网络连接定义）。 现在可以基于设备的 IP 地址来创建符合性策略（“设备符合性” > “位置”）   。 如果设备移动到 IP 范围以外，则该设备将无法访问企业资源。
 
 适用于：拥有更新的公司门户应用的 Android 设备 6.0 及更高版本
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>在 Windows 10 企业版 RS4 AutoPilot 设备上阻止使用者应用和体验<!-- 1621980 -->
-你将能够阻止在 Windows 10 企业版 RS4 AutoPilot 设备上安装使用者应用和体验。 要查看此功能，请转到“Intune” > “设备配置” > “配置文件” > “创建配置文件” > “平台” = “Windows 10 或更高版本” > “配置文件类型” = “设备限制” > “配置” > “Windows 聚焦” > “使用者功能”。 
+你将能够阻止在 Windows 10 企业版 RS4 AutoPilot 设备上安装使用者应用和体验。 要查看此功能，请转到“Intune” > “设备配置” > “配置文件” > “创建配置文件” > “平台” = “Windows 10 或更高版本” > “配置文件类型” = “设备限制” > “配置” > “Windows 聚焦” > “使用者功能”            。 
 
 #### <a name="uninstall-the-latest-from-windows-10-software-updates----1732948---"></a>从 Windows 10 软件更新中卸载最新版本 <!-- 1732948 -->
-如果发现 Windows 10 计算机上存在重大问题，则可以选择卸载（回滚）最新的功能更新或最新的质量更新。 卸载某功能或质量更新仅适用于设备所在的服务通道。 卸载将触发恢复 Windows 10 计算机上的先前更新的策略。 特别是对于功能更新，可以限制卸载最新版本的时间（2-60 天）。 要设置软件更新卸载选项，请从 Azure 门户中的“Microsoft Intune ”边栏选项卡中选择“软件更新”。 然后，从“软件更新”边栏选项卡中选择“Windows 10 更新通道”。 然后，可以从“概述”部分选择“卸载”选项。
+如果发现 Windows 10 计算机上存在重大问题，则可以选择卸载（回滚）最新的功能更新或最新的质量更新。 卸载某功能或质量更新仅适用于设备所在的服务通道。 卸载将触发恢复 Windows 10 计算机上的先前更新的策略。 特别是对于功能更新，可以限制卸载最新版本的时间（2-60 天）。 要设置软件更新卸载选项，请从 Azure 门户中的“Microsoft Intune ”边栏选项卡中选择“软件更新”   。 然后，从“软件更新”边栏选项卡中选择“Windows 10 更新通道”   。 然后，可以从“概述”部分选择“卸载”选项   。
 
 #### <a name="search-all-devices-for-imei-and-serial-number----1793685---"></a>搜索所有设备以获取 IMEI 和序列号 <!-- 1793685 -->
-现在可以在“所有设备”边栏选项卡上搜索 IMEI 和序列号（电子邮件、UPN、设备名称和管理名称仍然可用）。 在 Intune 中，选择“设备” > “所有设备”> 在搜索框中输入你的搜索。
+现在可以在“所有设备”边栏选项卡上搜索 IMEI 和序列号（电子邮件、UPN、设备名称和管理名称仍然可用）。 在 Intune 中，选择“设备” > “所有设备”> 在搜索框中输入你的搜索   。
 
 #### <a name="management-name-field-will-be-editable----1875989---"></a>管理名称字段将可编辑 <!-- 1875989 -->
-现在可以在设备的“属性”边栏选项卡上编辑管理名称字段。 若要编辑此字段，请选择“设备” > “所有设备”> 选择设备 >“属性”。 可以使用管理名称字段来唯一标识设备。
+现在可以在设备的“属性”边栏选项卡上编辑管理名称字段  。 若要编辑此字段，请选择“设备”   > “所有设备”  > 选择设备 >“属性”  。 可以使用管理名称字段来唯一标识设备。
 
 #### <a name="new-all-devices-filter-device-category----1878520---"></a>新建所有设备筛选器：设备类别 <!-- 1878520 -->
-现在可以按设备类别筛选“所有设备”列表。 为此，请选择“设备” > “所有设备” > “筛选器” > “设备类别”。
+现在可以按设备类别筛选“所有设备”列表  。 为此，请选择“设备” > “所有设备” > “筛选器” > “设备类别”     。
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>使用 TeamViewer 共享 iOS 和 MacOS 设备的屏幕 <!-- 1985547 -->
 管理员现在可以连接到 [TeamViewer](../remote-actions/teamviewer-support.md)，并启动与 iOS 和 macOS 设备之间的屏幕共享会话。 iPhone、iPad 和 macOS 用户可以与任何其他桌面或移动设备实时共享其屏幕。 
@@ -804,24 +805,24 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 #### <a name="multiple-exchange-connector-support----2070451---"></a>多个 Exchange 连接器支持 <!-- 2070451 -->
 你不再受到每租户一个 Microsoft Intune Exchange Connector 的限制。 Intune 现在支持多个 Exchange Connector，你可以设置多个本地 Exchange 组织的 Intune 条件访问。
 
-凭借 Intune 本地 Exchange 连接器，可以根据设备是否已在 Intune 中注册且是否符合 Intune 设备符合性策略来管理设备对本地 Exchange 邮箱的访问。 若要设置连接器，请从 Azure 门户下载 Intune 本地 Exchange 连接器，并将它安装在 Exchange 组织中的服务器上。 在 Microsoft Intune 仪表板上，选择“本地访问”，然后在“设置”下选择“Exchange ActiveSync 连接器”。 下载 Exchange 本地连接器，并将它安装在 Exchange 组织中的服务器上。 由于你已经不再受到每租户一个 Exchange 连接器的限制，因此，如果拥有其他的 Exchange 组织，则可以按照此相同的过程为其他每个 Exchange 组织下载并安装连接器。
+凭借 Intune 本地 Exchange 连接器，可以根据设备是否已在 Intune 中注册且是否符合 Intune 设备符合性策略来管理设备对本地 Exchange 邮箱的访问。 若要设置连接器，请从 Azure 门户下载 Intune 本地 Exchange 连接器，并将它安装在 Exchange 组织中的服务器上。 在 Microsoft Intune 仪表板上，选择“本地访问”，然后在“设置”下选择“Exchange ActiveSync 连接器”    。 下载 Exchange 本地连接器，并将它安装在 Exchange 组织中的服务器上。 由于你已经不再受到每租户一个 Exchange 连接器的限制，因此，如果拥有其他的 Exchange 组织，则可以按照此相同的过程为其他每个 Exchange 组织下载并安装连接器。
 
 #### <a name="new-device-hardware-detail-ccid----2156657---"></a>新的设备硬件详细信息：CCID <!-- 2156657 -->
-现在每台设备均包含芯片卡接口设备 (CCID) 信息。 要查看该信息，请选择“设备” > “所有设备”> 选择一台设备 >“硬件”> 在“网络详情”下查看>
+现在每台设备均包含芯片卡接口设备 (CCID) 信息。 要查看该信息，请选择“设备” > “所有设备”> 选择一台设备 >“硬件”> 在“网络详情”下查看     >
 
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>将所有用户和所有设备分配为范围组 <!-- 2196803 -->
-现在可以分配所有用户、所有设备，以及范围组中的所有用户和所有设备。 要执行此操作，请选择“Intune 角色” > “所有角色” > “策略和配置文件管理器” > “分配”> 选择一项分配 >“范围(组)”。
+现在可以分配所有用户、所有设备，以及范围组中的所有用户和所有设备。 要执行此操作，请选择“Intune 角色” > “所有角色” > “策略和配置文件管理器” > “分配”> 选择一项分配 >“范围(组)”      。
 
 #### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>现包括在 iOS 和 macOS 设备中的 UDID 信息 <!-- 2219806 -->
-要查看适用于 iOS 和 macOS 设备的唯一设备标识符 (UDID)，请转到“设备” > “所有设备”> 选择一台设备 >“硬件”。 UDID 仅适用于公司设备（如“设备” > “所有设备”> 选择一台设备 >“属性” > “设备所有权”下的设置）。
+要查看适用于 iOS 和 macOS 设备的唯一设备标识符 (UDID)，请转到“设备” > “所有设备”> 选择一台设备 >“硬件”    。 UDID 仅适用于公司设备（如“设备” > “所有设备”> 选择一台设备 >“属性” > “设备所有权”下的设置）     。
 
 ### <a name="intune-apps"></a>Intune 应用
 
 #### <a name="improved-troubleshooting-for-app-installation----928990---"></a>改进了对应用安装的故障排除 <!-- 928990 -->
-在 Microsoft Intune MDM 托管的设备上，有时应用安装可能会失败。 当这些应用安装失败时，可能难以了解失败原因或解决此问题。 我们将发布我们的应用疑难解答功能的公共预览版。 你将在每个设备下注意到名为“托管应用”的新节点。 该节点列出了通过 Intune MDM 提供的应用。 在该节点内，将看到应用安装状态的列表。 如果选择单个应用，将看到该特定应用的疑难解答视图。 在疑难解答视图中，将看到应用的端到端生命周期，例如，应用创建、修改、设为目标和提供给设备的时间。 此外，如果应用安装失败，将向你显示错误代码以及有有助于了解错误原因的消息。 
+在 Microsoft Intune MDM 托管的设备上，有时应用安装可能会失败。 当这些应用安装失败时，可能难以了解失败原因或解决此问题。 我们将发布我们的应用疑难解答功能的公共预览版。 你将在每个设备下注意到名为“托管应用”  的新节点。 该节点列出了通过 Intune MDM 提供的应用。 在该节点内，将看到应用安装状态的列表。 如果选择单个应用，将看到该特定应用的疑难解答视图。 在疑难解答视图中，将看到应用的端到端生命周期，例如，应用创建、修改、设为目标和提供给设备的时间。 此外，如果应用安装失败，将向你显示错误代码以及有有助于了解错误原因的消息。 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune 应用保护策略和 Microsoft Edge <!-- 1818968 -->
-移动设备（iOS 和 Android）的 Microsoft Edge 浏览器现在支持 Microsoft Intune 应用保护策略。 在 Microsoft Edge 应用程序中使用其企业 Azure AD 帐户登录的 iOS 和 Android 设备用户将受 Intune 保护。 在 iOS 设备上，“需要使用托管浏览器获取 Web 内容”的策略允许用户在托管的 Microsoft Edge 中打开链接。
+移动设备（iOS 和 Android）的 Microsoft Edge 浏览器现在支持 Microsoft Intune 应用保护策略。 在 Microsoft Edge 应用程序中使用其企业 Azure AD 帐户登录的 iOS 和 Android 设备用户将受 Intune 保护。 在 iOS 设备上，“需要使用托管浏览器获取 Web 内容”的策略允许用户在托管的 Microsoft Edge 中打开链接  。
 
 <!-- ########################## -->
 ## <a name="may-2018"></a>2018 年 5 月
@@ -830,7 +831,7 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 
 #### <a name="configuring-your-app-protection-policies----2144597-part-2---"></a>配置应用保护策略 <!-- 2144597 Part 2 -->
 
-在 Azure 门户中，现在只需转到 Intune，而不是转到 Intune 应用保护服务边栏选项卡。 Intune 中现在只有一个应用保护策略位置。 请注意，所有应用保护策略都位于 Intune 中“移动应用”边栏选项卡上的“应用保护策略”下。 此集成将有助于简化云管理。 请记住，Intune 中已具备所有应用保护策略，并且你可以修改先前配置的任何策略。 Intune 应用策略保护 (APP) 和条件访问 (CA) 策略现在位于“Microsoft Intune”边栏选项卡中“管理”部分的“条件访问”下，或“Azure Active Directory”边栏选项卡中“安全性”部分的“条件访问”下。 有关修改条件访问策略的详细信息，请参阅 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 有关其他信息，请参阅[什么是应用保护策略？](../apps/app-protection-policy.md)
+在 Azure 门户中，现在只需转到 Intune，而不是转到 Intune 应用保护服务边栏选项卡。 Intune 中现在只有一个应用保护策略位置。 请注意，所有应用保护策略都位于 Intune 中“移动应用”边栏选项卡上的“应用保护策略”下   。 此集成将有助于简化云管理。 请记住，Intune 中已具备所有应用保护策略，并且你可以修改先前配置的任何策略。 Intune 应用策略保护 (APP) 和条件访问 (CA) 策略现在位于“Microsoft Intune”边栏选项卡中“管理”部分的“条件访问”下，或“Azure Active Directory”边栏选项卡中“安全性”部分的“条件访问”下      。 有关修改条件访问策略的详细信息，请参阅 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 有关其他信息，请参阅[什么是应用保护策略？](../apps/app-protection-policy.md)
 
 ### <a name="device-configuration"></a>设备配置
 
@@ -857,30 +858,30 @@ AutoPilot 部署配置文件可以分配给包含 AutoPilot 设备的 Azure AD �
 Intune 管理员能够设置应用程序启动要求以强制使用密码而不是数字 MAM PIN。 如果进行此配置，在访问启用 MAM 的应用程序前，用户需要在出现提示时设置并使用密码。 密码是至少包含一个特殊字符或大写/小写字母的数字 PIN。 Intune 对密码的支持与支持现有数字 PIN 类似，可通过管理员控制台设置最短长度并且允许重复字符和序列。 此功能需要最新版 Android 公司门户。 此功能已可应用于 iOS。
 
 #### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>对 macOS 的业务线 (LOB) 应用支持 <!-- 1473977 -->
-Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 使用 GitHub 中提供的工具对 macOS LOB 应用进行预处理后，可以将该应用添加到 Intune。 在 Azure 门户的“Intune”边栏选项卡中，选择“客户端应用”。 在“客户端应用”边栏选项卡上，选择“应用” > “添加”。 在“添加应用”边栏选项卡，选择“业务线应用”。 
+Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 使用 GitHub 中提供的工具对 macOS LOB 应用进行预处理后，可以将该应用添加到 Intune。 在 Azure 门户的“Intune”边栏选项卡中，选择“客户端应用”   。 在“客户端应用”边栏选项卡上，选择“应用” > “添加”    。 在“添加应用”边栏选项卡，选择“业务线应用”   。 
 
 #### <a name="built-in-all-users-and-all-devices-group-for-android-enterprise-work-profile-app-assignment----1813073---"></a>面向 Android Enterprise 工作配置文件应用分配的内置“所有用户”和“所有设备”组 <!-- 1813073 -->
-可以利用面向 Android Enterprise 工作配置文件应用分配的内置“所有用户”和“所有设备”组。 有关详细信息，请参阅[在 Microsoft Intune 中包括和排除应用分配](../apps/apps-inc-exl-assignments.md)。
+可以利用面向 Android Enterprise 工作配置文件应用分配的内置“所有用户”和“所有设备”组   。 有关详细信息，请参阅[在 Microsoft Intune 中包括和排除应用分配](../apps/apps-inc-exl-assignments.md)。
 
 #### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>Intune 将重新安装用户卸载的所需应用 <!-- 1947010 -->
 如果最终用户卸载所需应用，Intune 将在 24 小时内自动重新安装该应用，而不是等待 7 天的重新评估周期。
 
 #### <a name="update-where-to-configure-your-app-protection-policies----2144597---"></a>更新配置应用保护策略的位置 <!-- 2144597 -->
 
-在 Microsoft Intune 服务的 Azure 门户中，我们将从“Intune 应用保护服务”边栏选项卡暂时重定向到“移动应用”边栏选项卡。 请注意，Intune 中“应用配置”下的“移动应用”边栏选项卡已包括所有应用保护策略。 直接转到 Intune 即可，无需转到“Intune 应用保护”。 在 2018 年 4 月，我们将停止重定向并将完全删除“Intune 应用保护服务”边栏选项卡，以便在 Intune 中只存在应用保护策略的一个位置。 
+在 Microsoft Intune 服务的 Azure 门户中，我们将从“Intune 应用保护服务”  边栏选项卡暂时重定向到“移动应用”  边栏选项卡。 请注意，Intune 中“应用配置”下的“移动应用”  边栏选项卡已包括所有应用保护策略。 直接转到 Intune 即可，无需转到“Intune 应用保护”。 在 2018 年 4 月，我们将停止重定向并将完全删除“Intune 应用保护服务”  边栏选项卡，以便在 Intune 中只存在应用保护策略的一个位置。 
 
 **这会对我产生哪些影响？**
 此更改将同时影响 Intune 独立版客户和混合版（带 Configuration Manager 的 Intune）客户。 此集成将有助于简化云管理。
 
 **我需要如何准备应对此项变化？**
-请将 Intune 标记为收藏（而不是“Intune 应用保护”服务边栏选项卡），并确保熟悉 Intune 的“移动应用”边栏选项卡中的应用保护策略工作流。 我们将重定向一小段时间，然后删除“应用保护”边栏选项卡。 请记住，Intune 中已具备所有应用保护策略，并且你可以修改任何条件访问策略。 有关修改条件访问策略的详细信息，请参阅 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 有关其他信息，请参阅[什么是应用保护策略？](../apps/app-protection-policy.md) 
+请将 Intune 标记为收藏（而不是“Intune 应用保护”服务边栏选项卡），并确保熟悉 Intune 的“移动应用”边栏选项卡中的应用保护策略工作流    。 我们将重定向一小段时间，然后删除“应用保护”边栏选项卡  。 请记住，Intune 中已具备所有应用保护策略，并且你可以修改任何条件访问策略。 有关修改条件访问策略的详细信息，请参阅 [Azure Active Directory 中的条件访问](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 有关其他信息，请参阅[什么是应用保护策略？](../apps/app-protection-policy.md) 
 
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="device-profile-chart-and-status-list-show-all-devices-in-a-group----1449153---"></a>设备配置文件图表和状态列表将显示组中的所有设备 <!-- 1449153 -->
-配置设备配置文件（“设备配置” > “配置文件”）时，选择设备配置文件，如 iOS。 将此配置文件分配到包括 iOS 设备和非 iOS 设备的组。 图形图表显示应用到 iOS 和非 iOS 设备的配置文件计数（“设备配置” > “配置文件”> 选择一个现有配置文件 >“概述”）。 选择“概述”选项卡中的图形图表时，“设备状态”将列出组中的所有设备，而不仅仅是 iOS 设备。 
+配置设备配置文件（“设备配置” > “配置文件”）时，选择设备配置文件，如 iOS   。 将此配置文件分配到包括 iOS 设备和非 iOS 设备的组。 图形图表显示应用到 iOS 和非 iOS 设备的配置文件计数（“设备配置” > “配置文件”> 选择一个现有配置文件 >“概述”）     。 选择“概述”选项卡中的图形图表时，“设备状态”将列出组中的所有设备，而不仅仅是 iOS 设备   。 
 
-此次更新后，图形图表（“设备配置” > “配置文件”>选择一个现有配置文件>“概述”）将仅显示特定设备配置文件的计数。 例如，如果配置设备配置文件应用于 iOS 设备，则图表仅列出 iOS 设备的计数。 选中图形图表并打开“设备状态”后，将仅列出 iOS 设备。
+此次更新后，图形图表（“设备配置”   > “配置文件”  >选择一个现有配置文件>“概述”  ）将仅显示特定设备配置文件的计数。 例如，如果配置设备配置文件应用于 iOS 设备，则图表仅列出 iOS 设备的计数。 选中图形图表并打开“设备状态”后，将仅列出 iOS 设备  。
 
 当此更新正在进行时，用户图形图表将暂时删除。 
 
@@ -896,12 +897,12 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 
 #### <a name="new-printer-settings-for-education-profiles----1308900---"></a>教育配置文件的新打印机设置 <!-- 1308900 -->
 
-对于教育配置文件，新的设置在“打印机”类别下可用：“打印机”、“默认打印机”、“添加新的打印机”。
+对于教育配置文件，新的设置在“打印机”  类别下可用：“打印机”  、“默认打印机”  、“添加新的打印机”  。
 
 #### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile---1098984---"></a>在个人资料中显示呼叫方 ID - Android Enterprise 工作配置文件 <!--1098984 -->
 在设备上使用个人资料时，最终用户可能不会看到工作联系人的呼叫方 ID 详细信息。 
 
-进行此更新后，“Android Enterprise” > “设备限制” > “工作配置文件设置”中将出现新设置：
+进行此更新后，  “Android Enterprise” >   “设备限制” > “工作配置文件设置”  中将出现新设置：
 - 在个人资料中显示工作联系人呼叫方 ID
 
 启用（不配置）后，工作联系人的呼叫方详细信息将显示在个人资料中。 阻止后，工作联系人的呼叫方号码不会显示在个人资料中。 
@@ -910,22 +911,22 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>添加到 Endpoint Protection 设置的新 Windows Defender Credential Guard 设置 <!--1102252 --><!--from 1802 and 1804-->
 
-此次更新后，[Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard)（“设备配置” > “配置文件” > “Endpoint Protection”）将包括以下设置： 
+此次更新后，[Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard)（“设备配置”   > “配置文件”   > “Endpoint Protection”  ）将包括以下设置： 
 
-- Windows Defender Credential Guard：以基于虚拟化的安全性启用 Credential Guard。 启用此功能可帮助在下次同时启用“使用安全启动的平台安全级别”和“基于虚拟化的安全性”而重新启动时保护凭据。 选项包括：
-  - 禁用：如果之前已使用“无锁启用”选项启用 Credential Guard，则会远程关闭 Credential Guard。
+-  Windows Defender Credential Guard：以基于虚拟化的安全性启用 Credential Guard。 启用此功能可帮助在下次同时启用“使用安全启动的平台安全级别”  和“基于虚拟化的安全性”  而重新启动时保护凭据。 选项包括：
+  -  禁用：如果之前已使用“无锁启用”  选项启用 Credential Guard，则会远程关闭 Credential Guard。
 
-  - 使用 UEFI 锁启用：可确保 Credential Guard 不能使用注册表项或使用组策略禁用。 若要使用此设置来禁用 Credential Guard，必须将组策略设置为“禁用”。 然后，与实际存在的用户一起，从每台计算机中删除安全功能。 这些步骤清除保留在 UEFI 中的配置。 只要 UEFI 配置仍然存在，Credential Guard 就会保持启用状态。
+  -  使用 UEFI 锁启用：可确保 Credential Guard 不能使用注册表项或使用组策略禁用。 若要使用此设置来禁用 Credential Guard，必须将组策略设置为“禁用”。 然后，与实际存在的用户一起，从每台计算机中删除安全功能。 这些步骤清除保留在 UEFI 中的配置。 只要 UEFI 配置仍然存在，Credential Guard 就会保持启用状态。
 
-  - 无锁启用：允许使用组策略远程禁用 Credential Guard。 使用此设置的设备必须至少在 Windows 10（版本 1511）上运行。
+  -  无锁启用：允许使用组策略远程禁用 Credential Guard。 使用此设置的设备必须至少在 Windows 10（版本 1511）上运行。
 
 配置 Credential Guard 时，会自动启用以下相关技术： 
 
-- 启用基于虚拟化的安全性 (VBS)：在下次重新启动时启用基于虚拟化的安全性 (VBS)。 基于虚拟化的安全性使用 Windows 虚拟机监控程序提供对安全服务的支持，并要求“安全启动”。
-- 安全启动和直接内存访问 (DMA)：通过“安全启动”和直接内存访问启用 VBS。 DMA 保护需要硬件支持，并且仅在正确配置的设备上启用。 
+-  启用基于虚拟化的安全性 (VBS)：在下次重新启动时启用基于虚拟化的安全性 (VBS)。 基于虚拟化的安全性使用 Windows 虚拟机监控程序提供对安全服务的支持，并要求“安全启动”。
+-  安全启动和直接内存访问 (DMA)：通过“安全启动”和直接内存访问启用 VBS。 DMA 保护需要硬件支持，并且仅在正确配置的设备上启用。 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>对 SCEP 证书使用自定义使用者名称 <!-- 2064190 -->
-可以使用“OnPremisesSamAccountName”作为 SCEP 证书配置文件中自定义使用者的公用名称。 例如，你可以使用 `CN={OnPremisesSamAccountName})`。
+可以使用“OnPremisesSamAccountName”  作为 SCEP 证书配置文件中自定义使用者的公用名称。 例如，你可以使用 `CN={OnPremisesSamAccountName})`。
 
 #### <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>在 Android Enterprise 工作配置文件上阻止照相机和屏幕捕获 <!-- 1098977 -->
 配置 Android 设备的设备限制时，可以阻止两个新属性： 
@@ -936,7 +937,7 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 
 #### <a name="use-cisco-anyconnect-client-for-ios----1333708---"></a>对 iOS 使用 Cisco AnyConnect 客户端 <!-- 1333708 -->
 
-为 iOS 创建新的 VPN 配置文件时，现在提供两个选项：Cisco AnyConnect 和 Cisco Legacy AnyConnect。 Cisco AnyConnect 配置文件支持 4.0.7x 和更新版本。 现有 iOS Cisco AnyConnect VPN 配置文件将被标记为“Cisco Legacy AnyConnect”，并将继续适用于 Cisco AnyConnect 4.0.5x 和较旧版本，如现在一样。
+为 iOS 创建新的 VPN 配置文件时，现在提供两个选项：Cisco AnyConnect  和 Cisco Legacy AnyConnect  。 Cisco AnyConnect 配置文件支持 4.0.7x 和更新版本。 现有 iOS Cisco AnyConnect VPN 配置文件将被标记为“Cisco Legacy AnyConnect”  ，并将继续适用于 Cisco AnyConnect 4.0.5x 和较旧版本，如现在一样。
 
 > [!NOTE]
 > 此更改仅适用于 iOS。 将继续只提供一个适用于 Android、Android Enterprise 工作配置文件和 macOS 平台的 Cisco AnyConnect 选项。
@@ -945,7 +946,7 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="new-enrollment-steps-for-users-on-devices-with-macos-high-sierra-10132---1734567---"></a>用户在使用 macOS High Sierra 10.13.2+ 的设备上的新注册步骤 <!--1734567 -->
-macOS High Sierra 10.13.2 引入了“用户批准的”MDM 注册的概念。 批准的注册将允许 Intune 管理某些安全敏感设置。 有关详细信息，请参阅此处的 Apple 支持文档： https://support.apple.com/HT208019。
+macOS High Sierra 10.13.2 引入了“用户批准的”MDM 注册的概念。 批准的注册将允许 Intune 管理某些安全敏感设置。 有关详细信息，请参阅此处的 Apple 支持文档： https://support.apple.com/HT208019 。
 
 如果最终用户未打开“系统首选项”并手动批准，使用 macOS 公司门户注册的设备将被视为“未经用户批准”。 为此，macOS 公司门户现直接在注册过程末尾指示使用 macOS 10.13.2 及以上版本的用户手动批准注册。 Intune 管理员控制台将就注册设备的用户批准情况进行报告。
 
@@ -953,7 +954,7 @@ macOS High Sierra 10.13.2 引入了“用户批准的”MDM 注册的概念。 �
 macOS 公司门户版本 1.3 和 1.4 未成功向 Intune 注册 Jamf 设备。 macOS 门户版本 1.4.2 可修复此问题。
 
 #### <a name="updated-help-experience-in-company-portal-app-for-android----1631531---"></a>更新了适用于 Android 的公司门户应用的帮助体验 <!-- 1631531 -->
-我们更新了 Android 适用的公司门户应用中的帮助体验，使其符合 Android 平台的最佳做法。 现在如果在使用应用时遇到问题，用户可以点击“菜单” > “帮助”，然后进行以下操作：
+我们更新了 Android 适用的公司门户应用中的帮助体验，使其符合 Android 平台的最佳做法。 现在如果在使用应用时遇到问题，用户可以点击“菜单” > “帮助”，然后进行以下操作   ：
 - 将诊断日志上传到 Microsoft。
 - 向公司支持人员发送内含问题描述和事件 ID 的电子邮件。  
 
@@ -983,12 +984,12 @@ Intune 管理员可以[删除 AutoPilot 设备](../enrollment/enrollment-autopil
 #### <a name="improved-device-deletion-experience---1832333---"></a>设备删除体验改进 <!--1832333 -->
 [删除 Intune 中的设备](../remote-actions/devices-wipe.md#delete-devices-from-the-intune-portal)前，将不再需要删除公司数据或将设备恢复出厂设置。
 
-要感受新体验，请登录 Intune，选择“设备” > “所有设备”> 设备的名称 >“删除”。
+要感受新体验，请登录 Intune，选择“设备” > “所有设备”> 设备的名称 >“删除”    。
 
-如果仍希望确认擦除/停用，可使用标准设备生命周期流程，即在“删除”前执行“删除公司数据”和“恢复出厂设置”。 
+如果仍希望确认擦除/停用，可使用标准设备生命周期流程，即在“删除”前执行“删除公司数据”和“恢复出厂设置”    。 
 
 #### <a name="play-sounds-on-ios-when-in-lost-mode----1947769---"></a>“丢失”模式下在 iOS 上播放声音 <!-- 1947769 -->
-当受监督的 iOS 设备处于移动设备管理 (MDM)[丢失模式](../remote-actions/device-lost-mode.md)时，可以[播放声音](../remote-actions/device-locate.md#activate-lost-mode-sound-alert-on-an-ios-device)（“设备” > “所有设备”>选择一个 iOS 设备 >“概述” > “更多”）。 声音将持续播放，直到将该设备移除“丢失”模式或用户在该设备上禁用声音。 适用于 iOS 9.3 和更高版本的设备。
+当受监督的 iOS 设备处于移动设备管理 (MDM)[丢失模式](../remote-actions/device-lost-mode.md)时，可以[播放声音](../remote-actions/device-locate.md#activate-lost-mode-sound-alert-on-an-ios-device)（“设备”   > “所有设备”  >选择一个 iOS 设备 >“概述”   > “更多”  ）。 声音将持续播放，直到将该设备移除“丢失”模式或用户在该设备上禁用声音。 适用于 iOS 9.3 和更高版本的设备。
 
 #### <a name="block-or-allow-web-results-in-searches-made-on-an-intune-device---1972804--"></a>阻止或允许在 Intune 设备上所执行的搜索中出现 Web 结果 <!--1972804-->
 
@@ -1016,7 +1017,7 @@ Intune 管理员可以[删除 AutoPilot 设备](../enrollment/enrollment-autopil
 若要查看更新后的外观，请转到[应用 UI 中的新增功能](../whats-new-app-ui.md)。
 
 #### <a name="protect-on-premises-exchange-data-using-intune-app-and-ca----1056954---"></a>使用 Intune APP 和 CA 保护本地 Exchange 数据 <!-- 1056954 -->
-现在可以使用 Intune 应用策略保护 (APP) 和条件访问 (CA) 保护通过 Outlook Mobile 对本地 Exchange 数据的访问权限。 若要在 Azure 门户中添加或修改应用保护策略，请选择“Microsoft Intune” > “客户端应用” > “应用保护策略”。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。
+现在可以使用 Intune 应用策略保护 (APP) 和条件访问 (CA) 保护通过 Outlook Mobile 对本地 Exchange 数据的访问权限。 若要在 Azure 门户中添加或修改应用保护策略，请选择“Microsoft Intune” > “客户端应用” > “应用保护策略”    。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。
 
 
 ### <a name="user-interface"></a>用户界面
@@ -1047,17 +1048,17 @@ Windows 10 Intune 公司门户应用已更新 [Fluent 设计系统的导航视�
 
 #### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>使用十六进制代码自定义公司门户主题 <!--1049561 -->
 
-可以使用十六进制代码自定义公司门户应用中的主题颜色。 输入十六进制代码时，Intune 会确定文本颜色，用于提供文本颜色和背景颜色之间的最大对比度。 可以在“客户端应用” > “公司门户”中预览文本颜色和公司徽标之间的颜色对比。
+可以使用十六进制代码自定义公司门户应用中的主题颜色。 输入十六进制代码时，Intune 会确定文本颜色，用于提供文本颜色和背景颜色之间的最大对比度。 可以在“客户端应用” > “公司门户”中预览文本颜色和公司徽标之间的颜色对比   。
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups-for-android-enterprise----1813081---"></a>根据 Android Enterprise 组包括和排除应用分配 <!-- 1813081 -->
 
-Android Enterprise（以前称为 Android for Work）支持包含和排除组，但不支持预创建的“所有用户”和“所有设备”内置组。 有关详细信息，请参阅[在 Microsoft Intune 中包括和排除应用分配](../apps/apps-inc-exl-assignments.md)。
+Android Enterprise（以前称为 Android for Work）支持包含和排除组，但不支持预创建的“所有用户”和“所有设备”内置组   。 有关详细信息，请参阅[在 Microsoft Intune 中包括和排除应用分配](../apps/apps-inc-exl-assignments.md)。
 
 
 ### <a name="device-management"></a>设备管理
 
 ### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>在 IE、Microsoft Edge 或 Chrome 中将所有设备导出到 CSV 文件中 <!-- 2258071 -->
-在“设备” > “所有设备”中，可以将设备“导出”为 CSV 格式的列表。 设备数量 >10,000 台的 Internet Explorer (IE) 用户可以将其设备成功地导出到多个文件中。 每个文件中的设备数量最多为 10,000 台。
+在“设备” > “所有设备”中，可以将设备“导出”为 CSV 格式的列表    。 设备数量 >10,000 台的 Internet Explorer (IE) 用户可以将其设备成功地导出到多个文件中。 每个文件中的设备数量最多为 10,000 台。
 
 设备数量 >30,000 台的 Microsoft Edge 和 Chrome 用户可以将其设备成功地导出到多个文件中。 每个文件中的设备数量最多为 30,000 台。
 
@@ -1065,18 +1066,18 @@ Android Enterprise（以前称为 Android for Work）支持包含和排除组，
 
 #### <a name="new-security-enhancements-in-the-intune-service-----1637539---"></a>Intune 服务中新的安全性增强功能  <!-- 1637539 -->   
 
-我们在 Azure 中引入了 Intune 的切换键。Intune 独立客户可以使用它将未分配任何策略的设备视为“符合”（安全功能关闭时），或将这些设备视为“不符合”（安全功能开启时）。 这样可以确保只在对设备符合性进行评估后才能访问资源。
+我们在 Azure 中引入了 Intune 的切换键。Intune 独立客户可以使用它将未分配任何策略的设备视为“符合”（安全功能关闭时），或将这些设备视为“不符合”（安全功能开启时）   。 这样可以确保只在对设备符合性进行评估后才能访问资源。
 
 不同的用户受此功能的影响不同，具体取决于其是否已分配有符合性策略。
 
-- 如果是新帐户或现有帐户，且没有已分配符合性策略的任何设备，切换键将自动设置为“符合”。 该功能在控制台中的默认设置为“关闭”。 对最终用户没有任何影响。
-- 如果是现有帐户，且具有已分配符合性策略的设备，切换键将自动设置为“不符合”。 三月版更新推出后，此功能的默认设置为“启用”。
+- 如果是新帐户或现有帐户，且没有已分配符合性策略的任何设备，切换键将自动设置为“符合”  。 该功能在控制台中的默认设置为“关闭”。 对最终用户没有任何影响。
+- 如果是现有帐户，且具有已分配符合性策略的设备，切换键将自动设置为“不符合”  。 三月版更新推出后，此功能的默认设置为“启用”。
 
 如果通过条件访问 (CA) 使用符合性策略，且该功能已启用，CA 现在会阻止所有未分配至少 1 个符合性策略的设备。 除非向所有设备分配至少 1 个符合性策略，否则与这些设备关联的最终用户（以前允许访问电子邮件）会失去访问权限。   
 
 请注意，尽管 Intune 服务三月更新版推出后，默认的切换状态会立即显示在 UI 中，但此切换状态不会立即强制执行。 我们将帐户设置为具有有效的切换键之前，你对切换键所作的任何更改都不会影响设备的符合性。 对帐户的设置完成时，我们将通过消息中心告知。 此操作可能会在 Intune 服务更新至三月版后几天内完成。
 
-其他信息：[https://aka.ms/compliance_policies](https://aka.ms/compliance_policies)
+其他信息：[https://aka.ms/compliance_policies](https://aka.ms/compliance_policies) 
 
 #### <a name="enhanced-jailbreak-detection----846515---"></a>增强型越狱检测 <!-- 846515 -->
 
@@ -1090,7 +1091,7 @@ Android Enterprise（以前称为 Android for Work）支持包含和排除组，
 可以将用户组中的用户设为应用符合性策略的目标用户。 进行此更新后，可以将设备组中的设备设为应用符合性策略的目标设备。 目标设备组中的设备不会收到任何符合性操作。
 
 #### <a name="new-management-name-column----1333586---"></a>新的管理名称列 <!-- 1333586 -->
- 设备边栏选项卡上提供一个名为“管理名称”的新列。 这是基于以下公式按每设备分配的自动生成、不可编辑的名称：
+ 设备边栏选项卡上提供一个名为“管理名称”的新列  。 这是基于以下公式按每设备分配的自动生成、不可编辑的名称：
 - 所有设备的默认名称：<username><em><devicetype></em><enrollmenttimestamp>
 - 对于批量添加的设备：<PackageId/ProfileId><em><DeviceType></em><EnrollmentTime>
 
@@ -1103,29 +1104,29 @@ Android Enterprise（以前称为 Android for Work）支持包含和排除组，
 Intune 使你能够使用 [Windows 更新通道设置](../protect/windows-update-for-business-configure.md)控制自动更新的安装。 进行此更新后，可以安排定期更新，包括每周更新、每日更新，甚至具体到某个时间更新。
 
 #### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763---"></a>将完全可分辨名称用作 SCEP 证书的使用者 <!--2221763 -->
-创建 SCEP 证书配置文件时，输入使用者名称。 进行此更新后，即可将完全可分辨名称用作使用者。 对于“使用者名称”，选择“自定义”，然后输入 `CN={{OnPrem_Distinguished_Name}}`。 要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure Active Directory (AD) 连接](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
+创建 SCEP 证书配置文件时，输入使用者名称。 进行此更新后，即可将完全可分辨名称用作使用者。 对于“使用者名称”，选择“自定义”，然后输入 `CN={{OnPrem_Distinguished_Name}}`   。 要使用 `{{OnPrem_Distinguished_Name}}` 变量，请务必使用 [Azure Active Directory (AD) 连接](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)将 `onpremisesdistingishedname` 用户属性同步到 Azure AD。
 
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983---"></a>启用蓝牙联系人共享 - Android for Work <!--1098983 -->
 Android 默认禁止通过蓝牙设备同步工作配置文件中的联系人。 因此，工作配置文件联系人不会显示在蓝牙设备的主叫方 ID 中。
 
-进行此更新后，“Android for Work” > “设备限制” > “Work 配置文件设置”中将出现新设置：
+进行此更新后，“Android for Work” > “设备限制” > “Work 配置文件设置”中将出现新设置    ：
 - 通过蓝牙共享联系人
 
 Intune 管理员可以配置这些设置，启用共享。 将设备与显示免提的主叫方 ID 的车载蓝牙设备配对时，这非常有用。 启用时，显示工作配置文件联系人。 未启用时，不会显示工作配置文件联系人。
 
 #### <a name="configure-gatekeeper-to-control-macos-app-download-source----1690459---"></a>配置网关守卫以控制 macOS 应用下载源 <!-- 1690459 -->
 
-可以配置网关守卫，通过控制可以下载应用的位置保护设备免受应用侵害。 可以配置以下下载源：Mac App Store、Mac App Store 和已识别的开发人员，或任意位置。 还可以配置用户是否可以通过按住 Control 并单击以替代这些网关守卫控件来安装应用。
+可以配置网关守卫，通过控制可以下载应用的位置保护设备免受应用侵害。 可以配置以下下载源：Mac App Store、Mac App Store 和已识别的开发人员，或任意位置    。 还可以配置用户是否可以通过按住 Control 并单击以替代这些网关守卫控件来安装应用。
 
-可以在“设备配置” -> “创建配置文件” -> “macOS” -> “终结点保护”下找到这些设置。
+可以在“设备配置” -> “创建配置文件” -> “macOS” -> “终结点保护”下找到这些设置     。
 
 #### <a name="configure-the-mac-application-firewall----1690461---"></a>配置 Mac 应用程序防火墙 <!-- 1690461 -->
 
 可以配置 Mac 应用程序防火墙。 可以使用此操作以基于每个应用程序来控制连接，而不是基于每个端口来进行控制。 这样一来，可以更轻松地获得防火墙保护的优势，还有助于防止不良应用控制为合法应用打开的网络端口。
 
-可以在“设备配置” -> “创建配置文件” -> “macOS” -> “终结点保护”下找到此功能。
+可以在“设备配置” -> “创建配置文件” -> “macOS” -> “终结点保护”下找到此功能     。
 
 启用防火墙设置后，即可使用两种策略来配置防火墙：
 
@@ -1150,7 +1151,7 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
   - mDNSResponder - 实现 Bonjour
   - racoon - 实现 IPSec
 
-    若要使用共享服务，请确保将“传入连接”设置为“未配置”（不“阻止”）。
+    若要使用共享服务，请确保将“传入连接”设置为“未配置”（不“阻止”）    。
 
 - 隐藏模式
 
@@ -1211,7 +1212,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 能够创建自定义电子书类别，然后将 VPP 电子书分配到自定义电子书类别。 最终用户即可以看到新建的电子书类别以及分配给该类别的书籍。 有关系详细信息，请参阅[使用 Microsoft Intune 管理批量购买的应用和书籍](../apps/vpp-apps.md)。  
 
 #### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>支持对 Windows 公司门户应用中的“发送反馈”选项进行更改 <!-- 2070166 -->
-从 2018 年 4 月 30 日起，Windows 公司门户应用中的“发送反馈”选项将仅适用于运行 Windwos 10 周年更新 (1607) 和更高版本的设备。 当在以下版本中使用 Windows 公司门户应用时，将不再支持“发送反馈”选项：  
+从 2018 年 4 月 30 日起，Windows 公司门户应用中的“发送反馈”  选项将仅适用于运行 Windwos 10 周年更新 (1607) 和更高版本的设备。 当在以下版本中使用 Windows 公司门户应用时，将不再支持“发送反馈”选项：  
 - Windows 10（1507 版本）  
 - Windows 10（1511 版本）  
 - Windows Phone 8.1 
@@ -1243,7 +1244,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 我们一直在努力增强用户对其数据和隐私的控制权，作为此工作的一部分，我们更新了一些文档，在其中介绍了如何通过公司门户应用查看和删除存储在本地的数据。 了解这些更新的方式如下：
 
 - **Android**[如何从 Intune 删除 Android 设备](/intune-user-help/unenroll-your-device-from-intune-android)
-- **Android（如果用户拒绝了使用条款）**：[拒绝“使用条款”后如何删除设备管理](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **Android（如果用户拒绝了使用条款）** ：[拒绝“使用条款”后如何删除设备管理](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
 - **iOS**：[从 Intune 删除 iOS 设备](/intune-user-help/unenroll-your-device-from-intune-ios)
 - **Windows**：[从 Intune 删除 Windows 设备](/intune-user-help/unenroll-your-device-from-intune-windows)
 
@@ -1259,7 +1260,7 @@ Intune 现支持最多通过 100 个不同的 [Apple 设备注册计划 (DEP)](.
 迁移后，通过 Graph 管理 Apple DEP 或 ASM 的 beta 版本 Graph API 和已发布脚本将不再有效。 新的 beta 版本 Graph API 正在进行开发，将在迁移后发布。
 
 #### <a name="see-enrollment-restrictions-per-user----1634444-eeready-wnready---"></a>请参阅每个用户的注册限制 <!-- 1634444 eeready wnready -->
-在“故障排除”边栏选项卡上，现可通过选择“分配”列表中的“注册限制”，查看对每个用户有效的[注册限制](../enrollment/enrollment-restrictions-set.md)。
+在“故障排除”边栏选项卡上，现可通过选择“分配”列表中的“注册限制”，查看对每个用户有效的[注册限制](../enrollment/enrollment-restrictions-set.md)    。
 
 #### <a name="new-option-for-user-authentication-for-apple-bulk-enrollment----747625-eeready---"></a>新增了 Apple 批量注册所需的用户身份验证选项 <!-- 747625 eeready -->
 
@@ -1283,7 +1284,7 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 迁移后，通过 Graph 管理 Apple DEP 或 ASM 的 beta 版本 Graph API 和已发布脚本将不再有效。 新的 beta 版本 Graph API 正在进行开发，将在迁移后发布。
 
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>通过安全网络远程打印 <!-- 1709994  -->
-使用 PrinterOn 的无线移动打印解决方案，用户将可以随时随地通过安全网络进行远程打印。 PrinterOn 将集成适用于 iOS 和 Android 的 Intune APP SDK。 将可以通过管理控制台中的 Intune“应用保护策略”边栏选项卡，将应用保护策略定目标到此应用。 最终用户将能够通过 Play 商店或 iTunes 下载“PrinterOn for Microsoft”应用，以便在 Intune 生态系统内使用。
+使用 PrinterOn 的无线移动打印解决方案，用户将可以随时随地通过安全网络进行远程打印。 PrinterOn 将集成适用于 iOS 和 Android 的 Intune APP SDK。 将可以通过管理控制台中的 Intune“应用保护策略”  边栏选项卡，将应用保护策略定目标到此应用。 最终用户将能够通过 Play 商店或 iTunes 下载“PrinterOn for Microsoft”应用，以便在 Intune 生态系统内使用。
 
 ### <a name="macos-company-portal-support-for-enrollments-that-use-the-device-enrollment-manager----1352411---"></a>对使用设备注册管理器的注册的 macOS 公司门户支持 <!-- 1352411 -->
 
@@ -1300,32 +1301,32 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 - 完全扫描
 - 需要干预的其他代理状态
 
-每个状态类别的深入报告列出需要注意的各个电脑，或者报告为“清理”的电脑。
+每个状态类别的深入报告列出需要注意的各个电脑，或者报告为“清理”的电脑  。
 
 #### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>设备限制的新隐私设置 <!--1308926 -->
 现在将为设备提供[两个新的隐私设置](../configuration/device-restrictions-windows-10.md#privacy)：
-- **发布用户活动**：将此设置为“阻止”以阻止任务切换程序中最近使用资源的共享体验和发现。
-- **仅限本地活动**：将此设置为“阻止”以仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现。
+- **发布用户活动**：将此设置为“阻止”以阻止任务切换程序中最近使用资源的共享体验和发现  。
+- **仅限本地活动**：将此设置为“阻止”以仅基于本地活动阻止任务切换程序中最近使用资源的共享体验和发现  。
 
 #### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Microsoft Edge 浏览器的新设置 <!--1469166 -->
-现在将为具有 Microsoft Edge 浏览器的设备提供[两个新设置](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)：“到收藏夹文件的路径”和“对收藏夹的更改”。
+现在将为具有 Microsoft Edge 浏览器的设备提供[两个新设置](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)：“到收藏夹文件的路径”和“对收藏夹的更改”   。
 
 ### <a name="app-management"></a>应用管理
 
 #### <a name="protocol-exceptions-for-applications---1035509---"></a>应用程序的协议异常 <!--1035509 -->
 
-现在可以为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况以打开特定的非托管应用程序。 此类应用程序必须受到 IT 的信任。 除创建的例外情况外，当数据传输策略设置为“仅限托管应用”时，数据传输仍仅限于由 Intune 托管的应用程序。 可以使用协议 (iOS) 或包 (Android) 创建限制。
+现在可以为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况以打开特定的非托管应用程序。 此类应用程序必须受到 IT 的信任。 除创建的例外情况外，当数据传输策略设置为“仅限托管应用”时，数据传输仍仅限于由 Intune 托管的应用程序  。 可以使用协议 (iOS) 或包 (Android) 创建限制。
 
 例如，可以将 Webex 包作为异常添加到 MAM 数据传输策略。 这样使托管 Outlook 电子邮件消息中的 Webex 链接可以直接在 Webex 应用程序中打开。 其他非托管的应用程序中将继续限制数据传输。 有关详细信息，请参阅[应用的数据传输策略例外情况](../apps/app-protection-policies-exception.md)。
 
 #### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Windows 搜索结果中的 Windows 信息保护 (WIP) 加密数据 <!-- 1469193 -->
-借助 Windows 信息保护 (WIP) 策略中的设置，现在可以控制是否在 Windows 搜索结果中包含 WIP 加密数据。 通过在 Windows 信息保护策略的“高级设置”中选择“允许 Windows Search 索引器搜索加密项”设置此应用保护策略选项。 应用保护策略必须设置为 Windows 10 平台，应用策略“注册状态”必须设置为“已注册”。 有关详细信息，请参阅[允许 Windows Search 索引器搜索加密项](../apps/windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items)。
+借助 Windows 信息保护 (WIP) 策略中的设置，现在可以控制是否在 Windows 搜索结果中包含 WIP 加密数据。 通过在 Windows 信息保护策略的“高级设置”中选择“允许 Windows Search 索引器搜索加密项”设置此应用保护策略选项   。 应用保护策略必须设置为 Windows 10 平台，应用策略“注册状态”必须设置为“已注册”    。 有关详细信息，请参阅[允许 Windows Search 索引器搜索加密项](../apps/windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items)。
 
 #### <a name="configuring-a-self-updating-mobile-msi-app----1740840---"></a>配置自我更新的移动 MSI 应用 <!-- 1740840 -->
-可以配置已知的自我更新移动 MSI 应用以忽略版本检查过程。 此功能有助于避免出现争用条件。 例如，在应用是由应用开发者自动更新并且也由 Intune 更新时，可能会出现此类争用条件。 两者都可能在 Windows 客户端上尝试强制执行一个应用版本，这可能会产生冲突。 对于这些自动更新的 MSI 应用，可以在“应用信息”边栏选项卡中配置“忽略应用版本”设置。 当此设置切换为“是”时，Microsoft Intune 将会忽略在 Windows 客户端上安装的应用版本。
+可以配置已知的自我更新移动 MSI 应用以忽略版本检查过程。 此功能有助于避免出现争用条件。 例如，在应用是由应用开发者自动更新并且也由 Intune 更新时，可能会出现此类争用条件。 两者都可能在 Windows 客户端上尝试强制执行一个应用版本，这可能会产生冲突。 对于这些自动更新的 MSI 应用，可以在“应用信息”边栏选项卡中配置“忽略应用版本”设置   。 当此设置切换为“是”时，Microsoft Intune 将会忽略在 Windows 客户端上安装的应用版本  。
 
 #### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Intune 中支持的应用许可证的相关集 <!-- 1864117 -->
-Azure 门户中的 Intune 现在支持应用许可证的相关集，以作为 UI 中的单个应用项。 此外，任何从适用于企业的 Microsoft Store 同步的脱机许可的应用都将合并到单个应用条目中，并且各个包中的任何部署详细信息都将迁移到单个条目中。 若要在 Azure 门户中查看相关的应用许可证集，请从“客户端应用”边栏选项卡中选择“应用许可证”。
+Azure 门户中的 Intune 现在支持应用许可证的相关集，以作为 UI 中的单个应用项。 此外，任何从适用于企业的 Microsoft Store 同步的脱机许可的应用都将合并到单个应用条目中，并且各个包中的任何部署详细信息都将迁移到单个条目中。 若要在 Azure 门户中查看相关的应用许可证集，请从“客户端应用”边栏选项卡中选择“应用许可证”   。
 
 ### <a name="device-configuration"></a>设备配置
 #### <a name="windows-information-protection-wip-file-extensions-for-automatic-encryption----1463582---"></a>自动加密的 Windows 信息保护 (WIP) 文件扩展名 <!-- 1463582 -->
@@ -1337,7 +1338,7 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 
 资源帐户由 Surface Hub 用于对 Skype/Exchange 进行身份验证，以便它可以加入会议。
 需要创建一个唯一的资源帐户，以使 Surface Hub 可以作为会议室出现在会议中。
-例如“会议室 B41/6233”等资源帐户。
+例如“会议室 B41/6233”等资源帐户  。
 
 > [!NOTE]
 > - 如果将字段留空，则将替代之前在设备上配置的特性。
@@ -1377,7 +1378,7 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 
 #### <a name="prevent-end-users-from-manually-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>防止最终用户手动添加或删除工作配置文件中的帐户 <!-- 1728700 -->
 
-将 Gmail 应用部署到 Android for Work 配置文件中后，现在可防止最终用户通过使用 Android for Work 设备限制配置文件中的“添加和删除帐户”设置手动添加或删除工作配置文件中的帐户。
+将 Gmail 应用部署到 Android for Work 配置文件中后，现在可防止最终用户通过使用 Android for Work 设备限制配置文件中的“添加和删除帐户”设置手动添加或删除工作配置文件中的帐户  。
 
 <!-- ########################## -->
 ## <a name="january-2018"></a>2018 年 1 月
@@ -1406,10 +1407,10 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 ### <a name="app-management"></a>应用管理
 
 #### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>撤销 iOS 批量采购计划应用  <!-- 820863 -->
-对于具有一个或多个 iOS 批量采购计划 (VPP) 应用的给定设备，可以撤销相关的基于设备的应用许可证。 撤销应用许可证将不会从设备中卸载相关的 VPP 应用。 若要卸载 VPP 应用，必须将分配操作更改为“卸载”。 有关详细信息，请参阅[如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用](../apps/vpp-apps-ios.md)。
+对于具有一个或多个 iOS 批量采购计划 (VPP) 应用的给定设备，可以撤销相关的基于设备的应用许可证。 撤销应用许可证将不会从设备中卸载相关的 VPP 应用。 若要卸载 VPP 应用，必须将分配操作更改为“卸载”  。 有关详细信息，请参阅[如何使用 Microsoft Intune 管理通过批量采购计划购买的 iOS 应用](../apps/vpp-apps-ios.md)。
 
 #### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>使用内置应用类型将 Office 365 移动应用分配到 iOS 和 Android 设备 <!-- 1332318 -->
-借助内置应用类型，可更轻松地创建 Office 365 应用并将其分配到管理的 iOS 和 Android 设备。 这些应用包括 Word、Excel、PowerPoint 和 OneDrive 等 Office 365 应用。 可将特定应用分配到应用类型并编辑应用信息配置。
+借助内置应用类型，可更轻松地创建 Office 365 应用并将其分配到管理的 iOS 和 Android 设备  。 这些应用包括 Word、Excel、PowerPoint 和 OneDrive 等 Office 365 应用。 可将特定应用分配到应用类型并编辑应用信息配置。
 
 #### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>根据组添加和排除应用分配 <!-- 1406920 -->
 
@@ -1419,14 +1420,14 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 
 #### <a name="you-can-assign-an-application-configuration-policy-to-groups-by-including-and-excluding-assignments-----1480316---"></a>可通过包括和排除分配来向组分配应用程序配置策略  <!-- 1480316 -->
 
-可通过结合使用包括分配和排除分配来向一组用户和设备分配应用程序配置策略。 可通过自定义选择组或虚拟组的方式来选择分配。 虚拟组包括“所有用户”、“所有设备”或“所有用户 + 所有设备”。
+可通过结合使用包括分配和排除分配来向一组用户和设备分配应用程序配置策略。 可通过自定义选择组或虚拟组的方式来选择分配。 虚拟组包括“所有用户”、“所有设备”或“所有用户 + 所有设备”    。
 
 #### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>支持 Windows 10 版本升级策略   <!-- 903672(archived), 1119689 -->  
 可以创建 Windows 10 版本升级策略，将 Windows 10 设备升级到 Windows 10 教育版、Windows 10 教育版 N、Windows 10 专业版、Windows 10 专业版 N、Windows 10 专业教育版和 Windows 10 专业教育版 N。有关 Windows 10 版本升级的详细信息，请参阅[如何配置 Windows 10 版本升级](../configuration/edition-upgrade-configure-windows-10.md)。
 
 #### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal-----1737088-1634311---"></a>适用于 Intune 的条件访问策略只能通过 Azure 门户访问  <!-- 1737088 1634311 -->
 
-从本次发布开始，必须在 [Azure 门户](https://portal.azure.com)中通过“Azure Active Directory” > “条件访问”配置和管理“条件访问”策略。 为方便起见，还可在 Azure 门户中通过“Intune” > “条件访问”，从 Intune 访问此边栏选项卡。
+从本次发布开始，必须在 [Azure 门户](https://portal.azure.com)中通过“Azure Active Directory” > “条件访问”配置和管理“条件访问”策略   。 为方便起见，还可在 Azure 门户中通过“Intune” > “条件访问”，从 Intune 访问此边栏选项卡   。
 
 #### <a name="updates-to-compliance-emails---1637547---"></a>更新了合规性电子邮件 <!--1637547 -->
 
@@ -1436,7 +1437,7 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 
 #### <a name="new-functionality-for-the-resolve-action-for-android-devices---1583480--"></a>Android 设备的“解决”操作的新功能 <!--1583480-->
 
-适用于 Android 的公司门户应用正在展开更新设备设置的“解决”操作，从而解决[设备加密问题](/intune-user-help/encrypt-your-device-android)。
+适用于 Android 的公司门户应用正在展开更新设备设置的“解决”  操作，从而解决[设备加密问题](/intune-user-help/encrypt-your-device-android)。
 
 #### <a name="remote-lock-available-in-company-portal-app-for-windows-10---676506--"></a>适用于 Windows 10 的公司门户应用中提供远程锁定 <!--676506-->
 最终用户现在可以从适用于 Windows 10 的公司门户应用远程锁定他们的设备。 此功能将不会为他们当前使用的本地设备显示。
@@ -1450,14 +1451,14 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 ### <a name="device-configuration"></a>设备配置
 
 #### <a name="new-automatic-redeployment-setting----1469168---"></a>新的自动重新部署设置 <!-- 1469168 -->
-使用“自动重新部署”设置，具有管理权限的用户可在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置。 设备会自动进行重新配置并重新注册到管理。 此设置可在“Windows 10”>“设备限制”>“常规”>“自动重新部署”中找到。 有关详细信息，请参阅[适用于 Windows 10 的 Intune 设备限制设置](../configuration/device-restrictions-windows-10.md#general)。
+使用“自动重新部署”设置，具有管理权限的用户可在设备锁定屏幕上使用 CTRL+Win+R 删除所有用户数据和设置   。 设备会自动进行重新配置并重新注册到管理。 此设置可在“Windows 10”>“设备限制”>“常规”>“自动重新部署”中找到。 有关详细信息，请参阅[适用于 Windows 10 的 Intune 设备限制设置](../configuration/device-restrictions-windows-10.md#general)。
 
 #### <a name="support-for-additional-source-editions-in-the-windows-10-edition-upgrade-policy-----903672--1119689---"></a>支持在 Windows 10 版本升级策略中指定其他源版本  <!-- 903672,  1119689 -->
 现在可以使用 Windows 10 版本升级策略从其他 Windows 10 版本（Windows 10 专业版、Windows 10 专业教育版、Windows 10 云端版等）升级。 在此版本发布前，支持的版本升级路径更加受限。 有关详细信息，请参阅[如何配置 Windows 10 版本升级](../configuration/edition-upgrade-configure-windows-10.md)。
 
 #### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>新的 Windows Defender 安全中心 (WDSC) 设备配置文件设置 <!-- 1335507 -->
 
-Intune 在名为“Windows Defender 安全中心”的端点保护下添加了一个新的设备配置文件设置部分。 IT 管理员可以配置最终用户能访问 Windows Defender 安全中心应用的支柱类型。 如果 IT 管理员在 Windows Defender 安全中心应用中隐藏支柱，则与隐藏支柱相关的所有通知都不会显示在用户设备上。
+Intune 在名为  “Windows Defender 安全中心”的端点保护下添加了一个新的设备配置文件设置部分。 IT 管理员可以配置最终用户能访问 Windows Defender 安全中心应用的支柱类型。 如果 IT 管理员在 Windows Defender 安全中心应用中隐藏支柱，则与隐藏支柱相关的所有通知都不会显示在用户设备上。
 
 以下是管理员可以在 Windows Defender 安全中心设备配置文件设置中隐藏的支柱：
 - 病毒和威胁防护
@@ -1474,7 +1475,7 @@ IT 管理员还可以自定义用户接收的通知。 例如，你可以配置�
 
 这项新功能支持以下方案：
 
-- 高可用性
+-  高可用性
 
 每个 NDES 连接器从 Intune 中拉取证书请求。  如果一个 NDES 连接器脱机，另一个连接器可以继续处理请求。
 
@@ -1490,17 +1491,17 @@ IT 管理员还可以自定义用户接收的通知。 例如，你可以配置�
 
 #### <a name="new-ios-device-action------1424701---"></a>新的 iOS 设备操作   <!-- 1424701 -->
 
-现在可以关闭 iOS 10.3 监管的设备。 此操作会立即关闭设备，而不会向最终用户发出警告。 当你在“设备”工作负载中选择设备时，可以在设备属性中找到“关闭（仅监督）”操作。
+现在可以关闭 iOS 10.3 监管的设备。 此操作会立即关闭设备，而不会向最终用户发出警告。   当你在“设备”工作负载中选择设备时，可以在设备属性中找到“关闭（仅监督）”操作。
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>禁止对 Samsung Knox 设备更改日期/时间 <!-- 1468103 -->
 
-我们新增了一项功能，以便用户能够禁止对 Samsung Knox 设备更改日期和时间。 此功能位于“设备配置文件” > “设备限制(Android)” > “常规”中。
+我们新增了一项功能，以便用户能够禁止对 Samsung Knox 设备更改日期和时间。 此功能位于“设备配置文件”   > “设备限制(Android)”   > “常规”  中。
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>支持的 Surface Hub 资源帐户 <!-- 1566442  -->
 
 我们新增了一项设备操作，以便管理员能够定义和更新与 Surface Hub 关联的资源帐户。
 
-资源帐户由 Surface Hub 用于通过 Skype/Exchange 进行身份验证，以便它可以加入会议。 可以创建一个唯一的资源帐户，以使 Surface Hub 作为会议室出现在会议中。 例如，资源帐户可能会显示为“会议室 B41/6233”。 通常需要针对会议室位置以及何时需要更改其他资源帐户参数来配置 Surface Hub 的资源帐户（称为设备帐户）。
+资源帐户由 Surface Hub 用于通过 Skype/Exchange 进行身份验证，以便它可以加入会议。 可以创建一个唯一的资源帐户，以使 Surface Hub 作为会议室出现在会议中。 例如，资源帐户可能会显示为“会议室 B41/6233”  。 通常需要针对会议室位置以及何时需要更改其他资源帐户参数来配置 Surface Hub 的资源帐户（称为设备帐户）。
 
 如果管理员需要更新设备上的资源帐户，他们必须提供与该设备关联的当前 Active Directory/Azure Active Directory 凭据。 如果为设备启用了密码轮换，则管理员必须转到 Azure Active Directory 以查找密码。
 
@@ -1509,14 +1510,14 @@ IT 管理员还可以自定义用户接收的通知。 例如，你可以配置�
 
 以下是管理员可以配置的设置：
 
-- 资源帐户
+-  资源帐户
   - **Active Directory 用户**
 
     域名\用户名或用户主体名称 (UPN)：user@domainname.com
 
   - **密码**
 
-- 可选的资源帐户参数（必须使用指定的资源帐户设置）
+-  可选的资源帐户参数（必须使用指定的资源帐户设置）
 
   - **密码轮转周期**
 
@@ -1553,9 +1554,9 @@ IT 管理员还可以自定义用户接收的通知。 例如，你可以配置�
 
 #### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1667026---"></a>名为“当前用户”的新实体集合仅限于当前活动的用户数据 <!-- 1667026 -->
 
-User 实体集合包含企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
+User  实体集合包含企业中分配有许可证的所有 Azure Active Directory (Azure AD) 用户。 例如，在上个月期间，可能将某个用户添加到 Intune 然后又将其删除。 尽管在提交报告时该用户已不存在，但在数据中仍然会显示该用户及其状态。 可以创建一个报告，该报告将显示用户的历史记录在你的数据中存在的持续时间。
 
-相比之下，新的“当前用户”实体集合只包含尚未被删除的用户。 “当前用户”实体集合仅包含当前活动的用户。 有关“当前用户”实体集合的信息，请参阅[引用当前用户实体](../developer/reports-ref-data-model.md)。
+相比之下，新的“当前用户”  实体集合只包含尚未被删除的用户。 “当前用户”  实体集合仅包含当前活动的用户。 有关“当前用户”  实体集合的信息，请参阅[引用当前用户实体](../developer/reports-ref-data-model.md)。
 
 ### <a name="updated-graph-apis----1736360---"></a>更新了 Graph API <!-- 1736360 -->
 
@@ -1571,7 +1572,7 @@ User 实体集合包含企业中分配有许可证的所有 Azure Active Directo
 
 ### <a name="troubleshoot-enrollment-issues-----746324---"></a>排查注册问题  <!-- 746324 -->
 
-“疑难解答”工作区现在显示用户注册问题。 问题的相关详细信息和建议的修正步骤可帮助管理员和支持人员排查问题。 某些注册问题可能无法捕获，还有某些错误可能没有修正建议。
+“疑难解答”工作区现在显示用户注册问题  。 问题的相关详细信息和建议的修正步骤可帮助管理员和支持人员排查问题。 某些注册问题可能无法捕获，还有某些错误可能没有修正建议。
 
 ### <a name="group-assigned-enrollment-restrictions----747598---"></a>组分配注册限制 <!-- 747598 -->
 
@@ -1590,7 +1591,7 @@ NDES 允许无域凭据运行的移动设备基于简单证书注册协议 (SCEP
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>独立于 Android 设备管理 Android for Work 设备 <!-- 1490731 EEready-->
 
-Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 这些设置位于“设备注册” > “注册限制” > “设备类型限制”下。 （这些设置之前位于“设备注册” > “Android for Work 注册” > “Android for Work 注册设置”下。）
+Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 这些设置位于“设备注册” > “注册限制” > “设备类型限制”下    。 （这些设置之前位于“设备注册” > “Android for Work 注册” > “Android for Work 注册设置”下    。）
 
 默认情况下，Android for Work 设备的设置与 Android 设备的设置相同。 但是，更改 Android for Work 设置后则不再相同。
 
@@ -1609,7 +1610,7 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 | Setting | 默认设备类型限制中的 Android for Work 状态 | 注意 |
 | --- | --- | --- |
 | **将所有设备作为 Android 管理** | 已阻止 | 所有 Android 设备均不注册 Android for Work。 |
-| 将受支持设备作为 Android for Work 管理 | 然后用户才能访问 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
+| 将受支持设备作为 Android for Work 管理  | 然后用户才能访问 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
 | **仅为这些组中的用户将受支持设备作为 Android for Work 管理** | 已阻止 | 创建单独的设备类型限制策略替代默认值。 此策略将之前选择的组定义为允许 Android for Work 注册。 允许所选组中的用户继续注册 Android for Work 设备。 所有其他用户则不能注册 Android for Work。 |
 
 所有情况下都将保留预期规则。 对你来说，无需任何操作即可维护环境中的 Android for Work 全局或按组允许。
@@ -1617,7 +1618,7 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 ### <a name="google-play-protect-support-on-android----908720---"></a>Android 上的 Google Play Protect 支持 <!-- 908720 -->
 
 随着 Android Oreo 的发布，Google 引入了一系列名为 Google Play Protect 的安全功能，以便用户和组织可以运行安全的应用和 Android 映像。 Intune 现支持 Google Play Protect 功能，包括 SafetyNet 远程认证。 管理员可以设置符合性策略要求，要求配置和正常运行 Google Play Protect。
-“SafetyNet 设备认证”设置要求设备连接到 Google 服务，以验证设备是否正常运行且未遭到入侵。 管理员还可以对 Android for Work 设置配置文件设置，以要求 Google Play 服务对已安装的应用进行验证。 如果设备不符合 Google Play Protect 要求，条件访问可能会阻止用户访问公司资源。
+“SafetyNet 设备认证”  设置要求设备连接到 Google 服务，以验证设备是否正常运行且未遭到入侵。 管理员还可以对 Android for Work 设置配置文件设置，以要求 Google Play 服务对已安装的应用进行验证。 如果设备不符合 Google Play Protect 要求，条件访问可能会阻止用户访问公司资源。
 
 - 了解[如何创建用于启用 Google Play 保护的设备符合性策略](../protect/compliance-policy-create-android.md)。
 
@@ -1628,7 +1629,7 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 
 ### <a name="app-install-report-updated-to-include-install-pending-status----1249446---"></a>已更新应用安装报表以包括安装挂起状态 <!-- 1249446 -->  
 
-通过“客户端应用”工作负荷中的“应用”列表，可获取每个应用的“应用安装状态”报表，该报表现在包括用户和设备的“安装挂起”计数。
+通过“客户端应用”工作负荷中的“应用”列表，可获取每个应用的“应用安装状态”报表，该报表现在包括用户和设备的“安装挂起”计数     。
 
 ### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>移动威胁检测的 iOS 11 应用清单 API <!-- 1391759 -->
 
@@ -1662,7 +1663,7 @@ Intune 从个人和公司所有的设备收集应用清单信息，这些信息�
 可使用设备操作触发受监督的 iOS 10.3+ 设备重启。 要详细了解如何使用设备重启操作，请参阅[使用 Intune 远程重启设备](../remote-actions/device-restart.md)。
 
 > [!Note]
-> 此命令需要受监督的设备和“设备锁定”访问权限。 设备会立即重启。 密码锁定的 iOS 设备重启后不会重新加入 Wi-Fi 网络；重启后，它们可能无法与服务器进行通信。
+> 此命令需要受监督的设备和“设备锁定”访问权限  。 设备会立即重启。 密码锁定的 iOS 设备重启后不会重新加入 Wi-Fi 网络；重启后，它们可能无法与服务器进行通信。
 
 ### <a name="single-sign-on-support-for-ios----1333645---"></a>iOS 的单一登录支持 <!-- 1333645 -->  
 
@@ -1673,7 +1674,7 @@ Intune 从个人和公司所有的设备收集应用清单信息，这些信息�
 
 ### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>使用 Intune 远程锁定受管理的 macOS 设备 <!-- 1437691 -->
 
-可锁定丢失的 macOS 设备并设置 6 位数的恢复 PIN。 锁定时，“设备概述”边栏选项卡会显示 PIN，直到发送另一个设备操作。
+可锁定丢失的 macOS 设备并设置 6 位数的恢复 PIN。 锁定时，“设备概述”边栏选项卡会显示 PIN，直到发送另一个设备操作  。
 
 有关详细信息，请参阅[使用 Intune 远程锁定受管理设备](../remote-actions/device-remote-lock.md)。
 
@@ -1703,15 +1704,15 @@ The Company Portal app for Android can now use geofencing to protect access to c
 
 
 ### <a name="window-10-update-ring-assignments-are-displayed----1621837---"></a>显示 Windows 10 更新通道分配 <!-- 1621837 -->
-进行故障排除时，对于正在查看的用户，可看到任何 Windows 10 更新通道分配。  
+进行故障排除时，对于正在查看的用户，可看到任何 Windows 10 更新通道分配  。  
 
 ### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings-----1455974----"></a>Windows Defender 高级威胁防护报告频率设置  <!-- 1455974  -->
-Windows Defender 高级威胁防护 (WDATP) 服务允许管理员对受管理设备的报告频率进行管理。 借助新的“提高遥测报告频率”选项，WDATP 可提高收集数据和评估风险的频率。 报告的默认值可优化速度和性能。 提高报告频率十分适合高风险设备。 在“设备配置”的“Windows Defender ATP”配置文件中可找到此设置。
+Windows Defender 高级威胁防护 (WDATP) 服务允许管理员对受管理设备的报告频率进行管理。 借助新的“提高遥测报告频率”选项，WDATP 可提高收集数据和评估风险的频率  。 报告的默认值可优化速度和性能。 提高报告频率十分适合高风险设备。 在“设备配置”的“Windows Defender ATP”配置文件中可找到此设置   。
 
 ### <a name="audit-updates----1412961---"></a>审核更新 <!-- 1412961 -->  
 Intune 审核提供与 Intune 相关的更改操作记录。  捕获所有创建、更新、删除和远程任务操作，并保留一年。  通过 Azure 门户，可查看每个工作负荷中过去 30 天的审核数据，还可对这些数据进行筛选。  利用相应的图形 API，可检索过去一年存储的审核数据。
 
-“审核”位于“监视”组下。 每个工作负荷都有一个“审核日志”菜单项。
+“审核”位于“监视”组下  。 每个工作负荷都有一个“审核日志”菜单项  。
 
 ### <a name="company-portal-app-for-macos-is-available---1541700--"></a>现已提供适用于 macOS 的公司门户应用 <!--1541700-->
 macOS 上的 Intune 公司门户提供了经过优化的更新体验，可以清楚地显示用户所需要的针对已注册的所有设备的所有信息和符合性通知。 而且，Intune 公司门户部署到设备后，Microsoft AutoUpdate for macOS 将为其提供更新。 从 macOS 设备登录到 Intune 公司门户网站，可以下载适用于 macOS 的新 Intune 公司门户。
@@ -1730,12 +1731,12 @@ macOS 上的 Intune 公司门户提供了经过优化的更新体验，可以清
 共同管理是一种解决方案，可在传统管理与现代管理之间架起一座桥梁，为你提供利用分阶段的方法实现转换的途径。 共同管理本质上是一种解决方案，其中 Configuration Manager 和 Microsoft Intune 同时管理 Windows 10 设备，并且这些设备可联接到 Active Directory (AD) 和 Azure Active Directory (Azure AD)。  此配置提供以适合组织的步调（如果无法即刻完成所有迁移）逐步实现现代化的方式。  
 
 ### <a name="restrict-windows-enrollment-by-os-version----245498---"></a>通过 OS 版本限制 Windows 注册 <!-- 245498 -->
-作为 Intune 管理员，现在可为设备注册指定 Windows 10 的最低和最高版本。 可以在“平台配置”边栏选项卡中设置这些限制。
+作为 Intune 管理员，现在可为设备注册指定 Windows 10 的最低和最高版本。 可以在“平台配置”边栏选项卡中设置这些限制  。
 
 Intune 将继续支持 Windows 8.1 电脑和手机注册。 但只有对 Windows 10 才可设置最高和最低版本限制。 若要允许注册 8.1 设备，请将最低限制留空。
 
 ### <a name="alerts-for-windows-autopilot-unassigned-devices-----1631236---"></a>Windows Autopilot 未分配设备警报  <!-- 1631236 -->
-在“Microsoft Intune” > “设备注册” > “概述”页中，为 Windows AutoPilot 未分配设备提供了一个新警报。 此警报显示有多少来自 AutoPilot 计划的设备尚未分配 AutoPilot 部署配置文件。 使用警报中的信息可创建配置文件，并将其分配到未分配的设备。 单击警报时，会看到 Windows AutoPilot 设备的完整列表，以及与之相关的详细信息。 有关详细信息，请参阅[使用 Windows AutoPilot Deployment 计划注册 Windows 设备](../enrollment/enrollment-autopilot.md)。
+在“Microsoft Intune” > “设备注册” > “概述”页中，为 Windows AutoPilot 未分配设备提供了一个新警报    。 此警报显示有多少来自 AutoPilot 计划的设备尚未分配 AutoPilot 部署配置文件。 使用警报中的信息可创建配置文件，并将其分配到未分配的设备。 单击警报时，会看到 Windows AutoPilot 设备的完整列表，以及与之相关的详细信息。 有关详细信息，请参阅[使用 Windows AutoPilot Deployment 计划注册 Windows 设备](../enrollment/enrollment-autopilot.md)。
 
 
 ### <a name="refresh-button-for-devices-list-------1333581---"></a>设备列表的刷新按钮    <!-- 1333581 -->
@@ -1760,7 +1761,7 @@ Intune 现在支持 Symantec 云 CA，允许 Intune 证书连接器从 Symantec 
 > 此功能仅适用于在安装了 Android 6.0 及更高版本的设备上限制由 Google 发布的安全修补程序。
 
 ### <a name="app-conditional-launch-support----1193313---"></a>应用条件启动支持 <!-- 1193313 -->
-IT 管理员现可通过 Azure 管理门户设置要求，通过移动应用管理 (MAM) 强制要求在应用程序启动时输入密码，而不是输入数字 PIN。 如果进行此配置，在访问启用 MAM 的应用程序前，用户需要在出现提示时设置并使用密码。 密码是至少包含一个特殊字符或大写/小写字母的数字 PIN。 此版本的 Intune 仅在 iOS 上支持此功能。 Intune 对密码的支持与支持数字 PIN 类似，设置了最短长度并且允许重复字符和序列。 该功能需要一些应用程序（例如 WXP、Outlook、Managed Browser、Yammer）的参与，将 Intune APP SDK 与代码集成，以便此功能准备就绪并在目标应用程序中强制实施密码设置。
+IT 管理员现可通过 Azure 管理门户设置要求，通过移动应用管理 (MAM) 强制要求在应用程序启动时输入密码，而不是输入数字 PIN。 如果进行此配置，在访问启用 MAM 的应用程序前，用户需要在出现提示时设置并使用密码。 密码是至少包含一个特殊字符或大写/小写字母的数字 PIN。 此版本的 Intune 仅在 iOS 上支持此功能  。 Intune 对密码的支持与支持数字 PIN 类似，设置了最短长度并且允许重复字符和序列。 该功能需要一些应用程序（例如 WXP、Outlook、Managed Browser、Yammer）的参与，将 Intune APP SDK 与代码集成，以便此功能准备就绪并在目标应用程序中强制实施密码设置。
 
 ### <a name="app-version-number-for-line-of-business-in-device-install-status-report----1233999---"></a>设备安装状态报表中业务线的应用版本号 <!-- 1233999 -->
 在此版本中，设备安装状态报告显示适用于 iOS 和 Android 的业务线应用的应用版本号。 可使用此信息对应用进行故障排除，或者查找正在运行过时应用版本的设备。
@@ -1781,10 +1782,10 @@ IT 管理员现可通过 Azure 管理门户设置要求，通过移动应用管�
 ### <a name="window-defender-exploit-guard-is-a-new-set-of-intrusion-prevention-capabilities-for-windows-10----1063615---"></a>Windows Defender 攻击防护是面向 Windows 10 的一组新入侵防护功能 <!-- 1063615 -->   
 Windows Defender 攻击防护内含自定义规则，可降低应用程序受到攻击的可能性、预防宏和脚本威胁、自动阻止网络连接到可信度较低的 IP 地址，以及保护数据免受勒索软件和未知威胁的攻击。 Windows Defender 攻击防护包含以下组成部分：
 
-- “攻击面减少”提供用于预防宏、脚本和电子邮件威胁的规则。
-- “控制文件夹访问”可自动阻止访问受保护文件夹中的内容。
-- “网络筛选器”可阻止从任何应用到低可信度 IP/域的出站连接
-- “攻击防护”提供内存、控制流和策略限制，可用于保护应用程序免受攻击。
+- “攻击面减少”提供用于预防宏、脚本和电子邮件威胁的规则  。
+- “控制文件夹访问”可自动阻止访问受保护文件夹中的内容  。
+- “网络筛选器”可阻止从任何应用到低可信度 IP/域的出站连接 
+- “攻击防护”提供内存、控制流和策略限制，可用于保护应用程序免受攻击  。
 
 ### <a name="manage-powershell-scripts-in-intune-for-windows-10-devices----790537---"></a>在 Intune 中管理 PowerShell 脚本以供 Windows 10 设备使用 <!-- 790537 -->
 
@@ -1798,7 +1799,7 @@ Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows
 ### <a name="windows-10-kiosk-mode-device-restrictions----1308872---"></a>Windows 10 设备的展台模式限制 <!-- 1308872 -->   
 可将 Windows 10 设备的用户限制为使用展台模式，从而限制这些用户仅使用一组预定义的应用。  为此，需创建 Windows 10 设备限制配置文件并设置展台设置。
 
-展台模式支持两种模式：“单应用”模式（仅允许用户运行一个应用）或“多应用”模式（允许访问多个应用）。  可定义用户帐户和设备名，确定受支持的应用。  用户登录时，仅可访问定义的应用。  有关详细信息，请参阅 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)。 
+展台模式支持两种模式：“单应用”模式（仅允许用户运行一个应用）或“多应用”模式（允许访问多个应用）   。  可定义用户帐户和设备名，确定受支持的应用。  用户登录时，仅可访问定义的应用。  有关详细信息，请参阅 [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)。 
 
 展台模式要求：
 
@@ -1807,7 +1808,7 @@ Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows
 - 设备必须[正确预配](https://docs.microsoft.com/windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions)。
 
 ### <a name="new-device-configuration-profile-for-creating-network-boundaries----1311967---"></a>用于创建网络边界的新设备配置文件 <!-- 1311967 -->   
-名为“网络边界”的新设备配置文件与其他设备配置文件可以位于同一位置。 使用此配置文件定义要视为公司资源和受信任资源的在线资源。 必须先为设备定义网络边界，然后才能在设备上使用 Windows Defender 应用程序防护和 Windows 信息保护等功能。 仅可为每个设备定义一个网络边界，这一点非常重要。
+名为“网络边界”的新设备配置文件与其他设备配置文件可以位于同一位置  。 使用此配置文件定义要视为公司资源和受信任资源的在线资源。 必须先为设备定义网络边界，然后才能在设备上使用 Windows Defender 应用程序防护和 Windows 信息保护等功能  。 仅可为每个设备定义一个网络边界，这一点非常重要。
 
 可以定义可信任的企业云资源、IP 地址范围和内部代理服务器。 定义后，Windows Defender 应用程序防护和 Windows 信息保护等功能即可使用网络边界。
 
@@ -1816,13 +1817,13 @@ Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows
 
 | | |
 |---|---|
-| 未配置 | “未配置”使用 Windows Defender 防病毒软件的默认阻止级别，并提供强大的检测功能而不会增加检测出合法文件的风险。 |
-| 高 | “高”级别执行级别较高的检测。
-| 高 +  | “高 +”级别执行“高”级别检测，同时采取额外的保护措施，但可能会影响客户端性能。
-| 零容差  | “零容差”可阻止所有未知的可执行文件。 |
+| 未配置 | “未配置”使用 Windows Defender 防病毒软件的默认阻止级别，并提供强大的检测功能而不会增加检测出合法文件的风险  。 |
+| 高 | “高”级别执行级别较高的检测  。
+| 高 +  | “高 +”级别执行“高”级别检测，同时采取额外的保护措施，但可能会影响客户端性能  。
+| 零容差  | “零容差”可阻止所有未知的可执行文件  。 |
 
-级别设置为“高”可能导致检测出一些合法文件，但出现此情况的可能性不大。
-建议将文件阻止级别设置为默认级别，即“未配置”。
+级别设置为“高”可能导致检测出一些合法文件，但出现此情况的可能性不大  。
+建议将文件阻止级别设置为默认级别，即“未配置”  。
 
 **云扫描文件的超时延长**  
 
@@ -1831,7 +1832,7 @@ Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows
 | 秒数 (0 - 50) | 指定等待云返回结果时，Windows Defender 防病毒软件应阻止文件的最长时间。 默认值为 10 秒：此处指定的任意额外时间（最多 50 秒）都将与这 10 秒相加。 大多数情况下，扫描所需的时间远少于最大值。 延长时间可使云对可疑文件进行全面调查。 建议启用此设置，并至少指定 20 秒的延长时间。 |
 
 ### <a name="citrix-vpn-added-for-windows-10-devices----1512457---"></a>添加了适用于 Windows 10 设备的 Citrix VPN <!-- 1512457 -->  
-可为 Windows 10 设备配置 Citrix VPN。 为 Windows 10 或更高版本配置 VPN 时，可在“基础 VPN”边栏选项卡中的“选择连接类型”列表中选择“Citrix VPN”。
+可为 Windows 10 设备配置 Citrix VPN。 为 Windows 10 或更高版本配置 VPN 时，可在“基础 VPN”边栏选项卡中的“选择连接类型”列表中选择“Citrix VPN”   。
 
 > [!Note]
 > 适用于 iOS 和 Android 的 Citrix 配置已存在。
@@ -1852,7 +1853,7 @@ Intune 管理扩展允许你在 Intune 中上传 PowerShell 脚本以在 Windows
 
 
 ### <a name="user-entity-contains-latest-user-data-in-data-warehouse-data-model----1544273---"></a>用户实体包含数据仓库数据模型中的最新用户数据 <!-- 1544273 -->
-Intune 数据库仓库数据模型的第一个版本只包含 Intune 的最近历史数据。 报表制作者无法捕获用户的当前状态。 在此更新中，用户实体将包含最新用户数据。
+Intune 数据库仓库数据模型的第一个版本只包含 Intune 的最近历史数据。 报表制作者无法捕获用户的当前状态。 在此更新中，用户实体将包含最新用户数据  。
 
 <!-- ########################## -->
 ## <a name="october-2017"></a>2017 年 10 月
@@ -1861,7 +1862,7 @@ Intune 数据库仓库数据模型的第一个版本只包含 Intune 的最近�
 
 现在，Intune 中的应用会显示 iOS 和 Android 业务线应用的版本号。 版本号会在 Azure 门户、应用列表和应用概述边栏选项卡中显示。 最终用户可在公司门户应用和 Web 门户中查看应用的版本号。
 
-__完整版本号__ 完整版本号标识应用的特定版本。 该号码显示为“版本号(内部版本号)”。 例如：2.2(2.2.17560800)
+__完整版本号__ 完整版本号标识应用的特定版本。 该号码显示为“版本号(内部版本号)”   。 例如：2.2(2.2.17560800)
 
 完整版本号包含两个部分：
 
@@ -1889,7 +1890,7 @@ __完整版本号__ 完整版本号标识应用的特定版本。 该号码显�
 适用于 Windows 10 的公司门户应用的“设置”页面已更新，以使设置和预期的用户操作在所有设置中更加一致。 其更新也旨在匹配其他 Windows 应用的布局。 你可以在[应用 UI 中的新增功能](../whats-new-app-ui.md)页找到更新之前/之后的图像。
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-windows-10-devices---1337920--"></a>告知最终用户可以查看 Windows 10 设备的哪些设备信息 <!--1337920-->
-我们已在适用于 Windows 10 的公司门户应用的“设备详细信息”屏幕上添加了“所有权类型”。 这样，用户便可直接在 Intune 最终用户文档的此页中发现详细隐私信息。用户还将在“关于”屏幕中找到此信息。
+我们已在适用于 Windows 10 的公司门户应用的“设备详细信息”屏幕上添加了“所有权类型”  。 这样，用户便可直接在 Intune 最终用户文档的此页中发现详细隐私信息。用户还将在“关于”屏幕中找到此信息。 
 
 ### <a name="feedback-prompts-for-the-company-portal-app-for-android---1165249--"></a>适用于 Android 的公司门户应用的反馈提示 <!--1165249-->
 适用于 Android 的公司门户应用现在可请求最终用户反馈。 将此反馈直接发送给 Microsoft，让最终用户有机会在公用 Google Play 商店中查看应用。 反馈不是必需的，很容易消除，所以用户可以继续使用该应用。
@@ -1905,7 +1906,7 @@ The Company Portal app for Android can now use geofencing to protect access to c
 
 ### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>适用于 Android 设备的新“解决”操作 <!-- 1583480 -->
 
-Android 版公司门户应用在“更新设备设置”页中引入了“解决”操作。 选择此选项会将最终用户直接转至导致其设备不符合的设置。 Android 版公司门户应用当前为以下设置提供此操作：[设备密码](/intune-user-help/set-your-pin-or-password-android)、[USB 调试](/intune-user-help/you-need-to-turn-off-usb-debugging-android)和[未知源](/intune-user-help/you-need-to-turn-off-unknown-sources-android)。
+Android 版公司门户应用在“更新设备设置”页中引入了“解决”操作  。 选择此选项会将最终用户直接转至导致其设备不符合的设置。 Android 版公司门户应用当前为以下设置提供此操作：[设备密码](/intune-user-help/set-your-pin-or-password-android)、[USB 调试](/intune-user-help/you-need-to-turn-off-usb-debugging-android)和[未知源](/intune-user-help/you-need-to-turn-off-unknown-sources-android)。
 
 ### <a name="device-setup-progress-indicator-in-android-company-portal----1565657---"></a>适用于 Android 的公司门户中的设备设置进度指示器 <!-- 1565657 -->
 适用于 Android 的公司门户应用在用户注册设备时显示设备设置进度指示器。 该指示器将显示最新状态，从“设置设备...”，再“注册设备...”，接着“完成设备注册...”，然后“完成设备设置...”。
@@ -1921,12 +1922,12 @@ Android 版公司门户应用在“更新设备设置”页中引入了“解决
 现在可将 Microsoft Intune 与 Windows AutoPilot Deployment 计划配合使用，授权用户在不劳烦 IT 的情况下设置其企业设备。 可以自定义全新体验 (OOBE)，引导用户将设备加入 Azure AD 并在 Intune 中注册。 在配合使用 Microsoft Intune 与 Windows AutoPilot 时，完全无需部署、维护和管理操作系统映像。 有关详细信息，请参阅 [Enroll Windows devices using Windows AutoPilot Deployment Program](../enrollment/enrollment-autopilot.md)（使用 Windows AutoPilot Deployment 计划注册 Windows 设备）。
 
 ### <a name="quickstart-for-device-enrollment-----1425655---"></a>设备注册快速入门  <!-- 1425655 --> 
-快速入门当前在“设备注册”中可用，此外还提供了用于管理平台和配置注册过程的参考表格。 对每个项目的简短说明和包含分步说明的文档链接提供了有用的文章，可帮助简化入门过程。
+快速入门当前在“设备注册”中可用，此外还提供了用于管理平台和配置注册过程的参考表格  。 对每个项目的简短说明和包含分步说明的文档链接提供了有用的文章，可帮助简化入门过程。
 
 ### <a name="device-categorization----1427491---"></a>设备分类 <!-- 1427491 -->
-“设备”>“概述”边栏选项卡中的已注册设备平台图可以按平台（包括 Android、iOS、macOS、Windows 和 Windows Mobile）整理设备。  运行其他操作系统的设备将被分到“其他”组。  这包括由 Blackberry 和 NOKIA 等厂家生产的设备。  
+“设备”>“概述”边栏选项卡中的已注册设备平台图可以按平台（包括 Android、iOS、macOS、Windows 和 Windows Mobile）整理设备  。  运行其他操作系统的设备将被分到“其他”组。  这包括由 Blackberry 和 NOKIA 等厂家生产的设备。  
 
-要了解租户中的哪些设备会受到影响，请选择“管理”>“所有设备”，然后使用“筛选器”限制“操作系统”字段。
+要了解租户中的哪些设备会受到影响，请选择“管理”>“所有设备”，然后使用“筛选器”限制“操作系统”字段    。
 
 ### <a name="zimperium---new-mobile-threat-defense-partner------954681---"></a>Zimperium - 新移动威胁防御合作伙伴   <!-- 954681 -->  
 可根据 Zimperium 进行的风险评估，使用条件访问控制移动设备对公司资源的访问，Zimperium 是与 Microsoft Intune 集成的移动威胁防御解决方案。
@@ -1943,9 +1944,9 @@ Android 版公司门户应用在“更新设备设置”页中引入了“解决
 Intune 现在可以使用 [TeamViewer](https://www.teamviewer.com) 软件（单独购买），为运行 Windows 和 Windows Mobile 设备的用户提供远程协助。
 
 ### <a name="scan-devices-with-windows-defender----1280988--1280990-----"></a>使用 Windows Defender 扫描设备 <!-- 1280988  1280990   -->
-现可在托管的 Windows 10 设备上，使用 Windows Defender 防病毒运行“快速扫描”、“完全扫描”和“更新签名”。 在设备的“概览”边栏选项卡上，选择要在设备上运行的操作。 在命令发送到设备之前，系统会提示用户确认操作。 
+现可在托管的 Windows 10 设备上，使用 Windows Defender 防病毒运行“快速扫描”、“完全扫描”和“更新签名”    。 在设备的“概览”边栏选项卡上，选择要在设备上运行的操作。 在命令发送到设备之前，系统会提示用户确认操作。 
 
-**快速扫描**：快速扫描可扫描恶意软件注册启动的位置，如注册表项和已知的 Windows 启动文件夹。 快速扫描平均需要五分钟才能完成。 “始终开启实时保护”设置可在用户打开、关闭文件、转到文件夹时扫描文件。与此设置配合使用，快速扫描可有助于保护系统或内核免遭潜在恶意软件威胁。 扫描完成时，用户可以在设备上查看扫描结果。 
+**快速扫描**：快速扫描可扫描恶意软件注册启动的位置，如注册表项和已知的 Windows 启动文件夹。 快速扫描平均需要五分钟才能完成。 “始终开启实时保护”  设置可在用户打开、关闭文件、转到文件夹时扫描文件。与此设置配合使用，快速扫描可有助于保护系统或内核免遭潜在恶意软件威胁。 扫描完成时，用户可以在设备上查看扫描结果。 
 
 **完全扫描**：完全扫描非常适合受恶意软件威胁的设备，以确定是否需要更彻底地清理任何停用组件，并且十分适用于运行按需扫描。 完全扫描可能需要一小时才能完成。 扫描完成时，用户可以在设备上查看扫描结果。 
 
@@ -1968,10 +1969,10 @@ Intune 现在可以使用 [TeamViewer](https://www.teamviewer.com) 软件（单�
 ### <a name="prevent-users-of-android-devices-from-changing-their-device-date-and-time-----1333292---"></a>禁止 Android 设备用户更改其设备日期和时间  <!-- 1333292 -->
 将可以使用 [Android 自定义设备策略](../configuration/custom-settings-android.md)，禁止 Android 设备用户更改设备日期和时间。
 
-为此，请将 URI ./Vendor/MSFT/PolicyManager/My/System/AllowDateTimeChange 设置为 TRUE，配置 Android 自定义策略，再将策略分配给相应组。
+为此，请将 URI ./Vendor/MSFT/PolicyManager/My/System/AllowDateTimeChange 设置为 TRUE  ，配置 Android 自定义策略，再将策略分配给相应组。
 
 ### <a name="bitlocker-device-configuration----1397398---"></a>BitLocker 设备配置 <!-- 1397398 -->
-在“Windows 加密”>“基本设置”中，现可以使用新的“针对其他磁盘加密的警告”设置，从而禁止对用户设备上可能使用的其他磁盘加密显示[警告提示](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowwarningforotherdiskencryption)。  警告提示要求先征得最终用户同意，然后才能在设备上设置 BitLocker，并且会在最终用户确认之前禁止设置 BitLocker。  这一新设置可以禁用最终用户警告。
+在“Windows 加密”>“基本设置”中，现可以使用新的“针对其他磁盘加密的警告”设置，从而禁止对用户设备上可能使用的其他磁盘加密显示[警告提示](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowwarningforotherdiskencryption)   。  警告提示要求先征得最终用户同意，然后才能在设备上设置 BitLocker，并且会在最终用户确认之前禁止设置 BitLocker。  这一新设置可以禁用最终用户警告。
 
 
 ### <a name="volume-purchase-program-for-business-apps-will-now-sync-to-your-intune-tenant----800882---"></a>适用于企业的 Volume Purchase Program 应用现在将同步到你的 Intune 租户 <!-- 800882 -->  
@@ -1987,7 +1988,7 @@ Intune 现在可以使用 [TeamViewer](https://www.teamviewer.com) 软件（单�
 
 
 ### <a name="block-copy-and-paste-between-work-and-personal-profiles-in-android-for-work----1098994---"></a>在 Android for Work 中，禁止在工作配置文件与个人配置文件之间进行复制粘贴 <!-- 1098994 -->
-在此版本中，将可以配置 Android for Work 工作配置文件，以禁止在工作应用与个人应用之间进行复制粘贴。 可以转到 Android for Work 平台的“设备限制”配置文件，在“工作配置文件设置”中找到这一新设置。
+在此版本中，将可以配置 Android for Work 工作配置文件，以禁止在工作应用与个人应用之间进行复制粘贴。 可以转到 Android for Work  平台的“设备限制”  配置文件，在“工作配置文件设置”  中找到这一新设置。
 
 ### <a name="create-ios-apps-limited-to-specific-regional-apple-app-stores----1281692---"></a>创建特定区域 Apple App Store 专属的 iOS 应用 <!-- 1281692 -->
 将可以在创建 Apple App Store 管理的应用期间，指定国家/地区区域设置。
@@ -2008,10 +2009,10 @@ Intune 现在可以使用 [TeamViewer](https://www.teamviewer.com) 软件（单�
 将可以在“软件更新”>“每个更新通道的部署状态”中检查 Windows 10 更新通道的策略报告。 策略报告包括已配置的更新通道的部署状态。 
 
 ### <a name="new-report-that-lists-ios-devices-with-older-ios-versions------1352223---"></a>列出使用较旧 iOS 版本的 iOS 设备的新报表   <!-- 1352223 -->
-可在“软件更新”工作区中获取“过期 iOS 设备”报告。 在报表中，可以查看已应用 iOS 更新策略且具有可用更新的受监督 iOS 设备的列表。 可以查看每个设备的状态，了解该设备未自动更新的原因。 
+可在“软件更新”工作区中获取“过期 iOS 设备”报告   。 在报表中，可以查看已应用 iOS 更新策略且具有可用更新的受监督 iOS 设备的列表。 可以查看每个设备的状态，了解该设备未自动更新的原因。 
 
 ### <a name="view-app-protection-policy-assignments-for-troubleshooting-----1475003---"></a>查看应用保护策略分配以进行故障排除 <!--  1475003 -->
-在即将发布的这一版本中，“应用保护策略”选项将添加到“疑难解答”边栏选项卡上的“分配”下拉列表中。 现在可以选择应用保护策略，查看分配给选定用户的应用保护策略。
+在即将发布的这一版本中，“应用保护策略”  选项将添加到“疑难解答”边栏选项卡上的“分配”  下拉列表中。 现在可以选择应用保护策略，查看分配给选定用户的应用保护策略。
 
 
 
@@ -2038,7 +2039,7 @@ Android Oreo 中启用的新 UI 元素有进一步的优化。  最终用户将�
 
 除非在个人配置文件中使用已启用 MAM 的应用，否则 Android 公司门户应用不再提供任何服务。 为了改善工作配置文件体验，Intune 将在成功使用工作配置文件注册后自动隐藏个人公司门户应用。
 
-随时都可以在 [Play Store 中搜索公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)并点击“启用”，从而在个人配置文件中启用 Android 公司门户应用。
+随时都可以在 [Play Store 中搜索公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)并点击“启用”  ，从而在个人配置文件中启用 Android 公司门户应用。
 
 ### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode---1428681--"></a>适用于 Windows 8.1 和 Windows Phone 8.1 的公司门户将移至维护模式 <!--1428681-->
 
@@ -2055,7 +2056,7 @@ Android Oreo 中启用的新 UI 元素有进一步的优化。  最终用户将�
 Android 托管的应用和公司门户应用需要使用 Android 4.4 和更高版本访问公司资源。 截至 12 月，所有注册的设备都将在 12 月内被强制停用，进而将无法再访问公司资源。 如果使用应用保护策略而不使用 MDM，应用将不会收到更新，并且随着时间推移其体验质量将会降低。
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-on-enrolled-devices---1165314--"></a>告知最终用户可在已注册设备上查看哪些设备信息 <!--1165314-->
-我们将在所有公司门户应用的“设备详细信息”屏幕上添加“所有权类型”。 这样，用户便可直接在[公司可看到哪些信息？](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)文章中发现详细隐私信息。 近期将在所有公司门户应用中推出此更新。 我们在 [9 月](#september-2017)宣布了面向 iOS 的此项更新。
+我们将在所有公司门户应用的“设备详细信息”屏幕上添加“所有权类型”  。 这样，用户便可直接在[公司可看到哪些信息？](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)文章中发现详细隐私信息。 近期将在所有公司门户应用中推出此更新。 我们在 [9 月](#september-2017)宣布了面向 iOS 的此项更新。
 
 <!-- ########################## -->
 ## <a name="september-2017"></a>2017 年 9 月
@@ -2071,7 +2072,7 @@ Intune 支持 iOS 11。 此信息之前已在 [Intune 支持博客](https://blog
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>通知最终用户可查看哪些 iOS 设备信息 <!--739894-->
 
-我们已在适用于 iOS 的公司门户应用的“设备详细信息”屏幕上添加“所有权类型”。 这样，用户便可直接在 Intune 最终用户文档的此页中发现详细隐私信息。用户还将能在“关于”屏幕中找到此信息。
+我们已在适用于 iOS 的公司门户应用的“设备详细信息”屏幕上添加“所有权类型”  。 这样，用户便可直接在 Intune 最终用户文档的此页中发现详细隐私信息。用户还将能在“关于”屏幕中找到此信息。
 
 ### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>允许最终用户无需进行注册便可访问适用于 Android 的公司门户应用 <!---1169910--->
 
@@ -2084,22 +2085,22 @@ Intune 支持 iOS 11。 此信息之前已在 [Intune 支持博客](https://blog
 
 ### <a name="windows-10-company-portal-app-added-to-windows-information-protection-allow-policy----677129---"></a>添加到 Windows 信息保护允许策略的 Windows 10 公司门户应用 <!-- 677129 -->
 
-Windows 10 公司门户应用已更新为支持 Windows 信息保护 (WIP)。 可以将应用添加到 WIP 允许策略。 此更改生效后，便无需再将应用添加到“豁免”列表。
+Windows 10 公司门户应用已更新为支持 Windows 信息保护 (WIP)。 可以将应用添加到 WIP 允许策略。 此更改生效后，便无需再将应用添加到“豁免”  列表。
 
 
 <!-- ########################## -->
 ## <a name="august-2017"></a>2017 年 8 月
 
 ### <a name="improvements-to-device-overview----1404453---"></a>设备概述改进 <!-- 1404453 -->  
-设备概述改进现在显示已注册设备，但不包含由 Exchange ActiveSync 管理的设备。 Exchange ActiveSync 设备没有与已注册设备相同的管理选项。 要在 Azure 门户的 Intune 中查看已注册设备数和各平台的已注册设备数，请转到“设备” > “概述”。
+设备概述改进现在显示已注册设备，但不包含由 Exchange ActiveSync 管理的设备。 Exchange ActiveSync 设备没有与已注册设备相同的管理选项。 要在 Azure 门户的 Intune 中查看已注册设备数和各平台的已注册设备数，请转到“设备”   > “概述”  。
 
 ### <a name="improvements-to-device-inventory-collected-by-intune"></a>Intune 所收集设备清单的改进
 <!-- 961134, 1104426, 1281327, 1333543 -->
 此版本中，我们对由你管理的设备收集的清单信息做出了以下改进：
  
-- 对于 Android 设备，现在可向设备清单添加一列，显示每个设备的最新修补程序级别。 将“安全修补程序级别”列添加到设备列表可查看此项。
+- 对于 Android 设备，现在可向设备清单添加一列，显示每个设备的最新修补程序级别。 将“安全修补程序级别”  列添加到设备列表可查看此项。
 - 筛选设备视图时，现在可按设备注册日期筛选设备。 例如，可仅显示于指定日期后注册的设备。
-- 我们已对“上次签入日期”项所用的筛选器做出了一些改进。
+- 我们已对“上次签入日期”  项所用的筛选器做出了一些改进。
 - 在设备列表中，现在可显示公司拥有设备的电话号码。
 此外，还可使用筛选器窗格按电话号码搜索设备。
 
@@ -2126,9 +2127,9 @@ Windows 10 公司门户应用已更新为支持 Windows 信息保护 (WIP)。 �
 <!--1459533 -->    
 此版本中，我们已对 BitLocker 设置在 Windows 10 终结点保护设备配置文件中的作用方式做出如下改进：
  
-- 在“BitLocker OS 驱动器设置”下，对于“包含非兼容 TPM 芯片的 BitLocker”设置，选择“阻止”后，以前这会导致实际上允许 BitLocker 的问题。 我们已修复此问题，在选中“阻止”后会阻止 BitLocker。
-- 在“BitLocker OS 驱动器设置”下，对于“基于证书的数据恢复代理”设置，现在可显式阻止基于证书的数据恢复代理。 但是，默认情况下允许此代理。
-- 在“BitLocker 固定数据驱动器设置”下，对于“数据恢复代理”设置，现在可显式阻止数据恢复代理。
+- 在“BitLocker OS 驱动器设置”  下，对于“包含非兼容 TPM 芯片的 BitLocker”  设置，选择“阻止”  后，以前这会导致实际上允许 BitLocker 的问题。 我们已修复此问题，在选中“阻止”后会阻止 BitLocker。
+- 在“BitLocker OS 驱动器设置”  下，对于“基于证书的数据恢复代理”  设置，现在可显式阻止基于证书的数据恢复代理。 但是，默认情况下允许此代理。
+- 在“BitLocker 固定数据驱动器设置”  下，对于“数据恢复代理”  设置，现在可显式阻止数据恢复代理。
 有关详细信息，请参阅[适用于 Windows 10 及更高版本的 Endpoint Protection 设置](../protect/endpoint-protection-windows-10.md)。
 
 
@@ -2136,7 +2137,7 @@ Windows 10 公司门户应用已更新为支持 Windows 信息保护 (WIP)。 �
 最终用户现在可以在不注册 Android 设备的情况下，使用 Android 公司门户应用浏览应用、管理设备以及查看 IT 联系人信息。 此外，如果最终用户已使用受 Intune 应用保护策略保护的应用，并启动了 Android 公司门户，最终用户不会再接收到注册设备的提示。
 
 ### <a name="new-setting-in-the-android-company-portal-app-to-toggle-battery-optimization---1405990--"></a>Android 公司门户应用中用于切换电池优化的新设置 <!--1405990-->
-适用于 Android 的公司门户应用的“设置”页添加了新设置，该设置可使用户轻松关闭公司门户和 Microsoft Authenticator 应用的电池优化。 设置中显示的应用名称将有所区别，具体取决于使用哪一应用管理工作帐户。 我们建议用户关闭电池优化，以提高用于同步电子邮件和数据的工作应用的性能。 
+适用于 Android 的公司门户应用的“设置”页添加了新设置，该设置可使用户轻松关闭公司门户和 Microsoft Authenticator 应用的电池优化  。 设置中显示的应用名称将有所区别，具体取决于使用哪一应用管理工作帐户。 我们建议用户关闭电池优化，以提高用于同步电子邮件和数据的工作应用的性能。 
 
 ### <a name="multi-identity-support-for-onenote-for-ios---------1234281---"></a>对适用于 iOS 的 OneNote 的多身份支持      <!-- 1234281 -->
 最终用户现在可对适用于 iOS 的 Microsoft OneNote 使用不同的帐户（工作帐户和个人帐户）。 应用保护策略可应用于工作笔记本中的公司数据，而不会影响个人笔记本。 例如，可通过应用策略允许用户查找工作笔记本中的信息，但阻止用户将工作笔记本中的公司数据复制粘贴到个人笔记本。
@@ -2163,7 +2164,7 @@ IT 管理员现可通过 Azure AD 工作负荷中的新条件访问策略 UI 设
 ## <a name="july-2017"></a>2017 年 7 月
 
 ### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>按 OS 版本限制 Android 和 iOS 设备注册  <!--- 1333256,  1245463 --->
-Intune 现在支持按操作系统版本号限制 iOS 和 Android 注册。 在“设备类型限制”下，IT 管理员现可设置平台配置，限制最低和最高操作系统值之间的注册。 Android 操作系统版本必须指定为 Major.Minor.Build.Rev，其中 Minor、Build 和 Rev 是可选的。 iOS 版本必须指定为 Major.Minor.Build，其中 Minor 和 Build 是可选的。 详细了解[设备注册限制](../enrollment/enrollment-restrictions-set.md)。
+Intune 现在支持按操作系统版本号限制 iOS 和 Android 注册。 在  “设备类型限制”下，IT 管理员现可设置平台配置，限制最低和最高操作系统值之间的注册。 Android 操作系统版本必须指定为 Major.Minor.Build.Rev，其中 Minor、Build 和 Rev 是可选的。 iOS 版本必须指定为 Major.Minor.Build，其中 Minor 和 Build 是可选的。 详细了解[设备注册限制](../enrollment/enrollment-restrictions-set.md)。
 
 >[!NOTE]
 >请勿通过 Apple 注册计划或 Apple Configurator 限制注册。
@@ -2171,7 +2172,7 @@ Intune 现在支持按操作系统版本号限制 iOS 和 Android 注册。 在�
 ### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment------1333272--1333275-1245709----"></a>限制 Android、iOS 和 macOS 设备的个人私有设备注册  <!--- 1333272,  1333275, 1245709 --->
 Intune 可通过将企业设备 IMEI 号码列入允许列表来限制个人设备注册。 Intune 现已使用设备序列号将此功能扩展到 iOS、Android 和 macOS。 通过将序列号上传到 Intune，可将设备预声明为企业所有的设备。 使用注册限制，可以阻止私人拥有的设备 (BYOD)，仅允许企业所有的设备进行注册。 详细了解[设备注册限制](../enrollment/enrollment-restrictions-set.md)。
 
-若要导入序列号，请转至“设备注册” > “公司设备标识符”，单击“添加”，然后上传一个 CSV 文件（无标头，含两列，分别是序列号和详细信息，如 IMEI 号）。 若要限制私人拥有的设备，请转到“设备注册” > “注册限制”。 在“设备类型限制”下，选择“默认”，然后选择“平台配置”。 可以针对 iOS、Android 和 macOS“允许”或“阻止”私人拥有的设备。
+若要导入序列号，请转至“设备注册”   > “公司设备标识符”  ，单击“添加”  ，然后上传一个 CSV 文件（无标头，含两列，分别是序列号和详细信息，如 IMEI 号）。 若要限制私人拥有的设备，请转到“设备注册” > “注册限制”   。 在“设备类型限制”下，选择“默认”，然后选择“平台配置”。    可以针对 iOS、Android 和 macOS“允许”或“阻止”私人拥有的设备。  
 
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>用于强制设备与 Intune 同步的新设备操作 <!-- 711369 -->
@@ -2207,12 +2208,12 @@ Intune 可通过将企业设备 IMEI 号码列入允许列表来限制个人设�
 
 
 ### <a name="additional-help-desk-troubleshooting-details------applies-to-1263399-1326964-1341642----"></a>有关支持人员故障排除的其他详细信息 <!---  Applies to 1263399, 1326964, 1341642 --->
-Intune 更新了故障排除的显示内容，并添加了提供给管理人员和支持人员的信息。 现在用户可以看到一个“分配”表，表中按组成员身份汇总了针对用户的所有分配。 此列表包括：
+Intune 更新了故障排除的显示内容，并添加了提供给管理人员和支持人员的信息。 现在用户可以看到一个“分配”表，表中按组成员身份汇总了针对用户的所有分配  。 此列表包括：
 - 移动应用
 - 相容性策略
 - 配置文件
 
-此外，“设备”表格现包括“Azure AD 联接类型”和“Azure AD 符合性”列。 有关详细信息，请参阅[帮助用户解决问题](../help-desk-operators.md)。
+此外，“设备”表格现包括“Azure AD 联接类型”和“Azure AD 符合性”列    。 有关详细信息，请参阅[帮助用户解决问题](../help-desk-operators.md)。
 
 
 
@@ -2254,7 +2255,7 @@ Intune 现支持上传 iOS、macOS 和 Android 序列号作为公司设备的标
 在后续版本中，我们计划提供一种方法，以便用户可以更轻松地在 Azure 门户中选择并分配内置应用。
 
 ### <a name="easier-installation-of-office-365-apps-----1121362----"></a>更简易的 Office 365 应用安装 <!--- 1121362 --->
-通过使用新的 Office 365 专业增强版应用类型，可轻松将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 最新版本的设备。 此外，如果拥有 Microsoft Project 和 Microsoft Visio 的许可证，还可以安装这两个应用。 所需的应用将被捆绑在一起，并且显示为 Intune 控制台的应用列表中的一个应用。
+通过使用新的 Office 365 专业增强版  应用类型，可轻松将 Office 365 专业增强版 2016 应用分配到所管理的运行 Windows 10 最新版本的设备。 此外，如果拥有 Microsoft Project 和 Microsoft Visio 的许可证，还可以安装这两个应用。 所需的应用将被捆绑在一起，并且显示为 Intune 控制台的应用列表中的一个应用。
 有关详细信息，请参阅[如何为 Windows 10 添加 Office 365 应用](../apps/apps-add-office365.md)。
 
 
@@ -2290,7 +2291,7 @@ Intune Managed Browser 现在可与 Azure AD 应用程序代理服务集成，�
 
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>适用于 Android 的公司门户应用现推出了全新的应用保护政策最终用户体验 <!--1305217-->
-根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
+根据客户反馈，已修改适用于 Android 的公司门户应用，以便显示“访问公司内容”  按钮。 其目的在于，使最终用户在仅需要访问支持应用保护策略（Intune 移动应用程序管理的一项功能）的应用时，无需完成不必要的注册过程。 可以在[应用 UI 的新增功能](whats-new-app-ui.md)页中查看这些更改。
 
 ### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>新增可轻松删除公司门户的菜单操作 <!--1164569-->
 根据用户反馈，适用于 Android 的公司门户应用新添加了一个菜单操作，可启动对设备中公司门户的删除。 此操作可从 Intune 管理中删除设备，这样用户就可以从设备中删除应用。 你可以在[应用 UI 中的新增功能](whats-new-app-ui.md)页和 [Android 最终用户文档](/intune-user-help/unenroll-your-device-from-intune-android)中查看这些更改。
@@ -2307,7 +2308,7 @@ Intune Managed Browser 现在可与 Azure AD 应用程序代理服务集成，�
 ### <a name="microsoft-intune-and-conditional-access-admin-consoles-are-generally-available"></a>Microsoft Intune 和条件性访问管理控制台正式发布
 我们要宣布的是，新的 Azure 门户中 Intune 管理控制台和条件访问管理控制台正式发布。 通过 Azure 门户中 Intune，现在可以在一个位置上统一管理所有 Intune MAM 和 MDM 功能，并利用 Azure AD 分组和定位功能。 Azure 中的条件访问可以跨 Azure AD 和 Intune 在一个统一的控制台中集成丰富的功能。 而且，从管理体验上来看，移动到 Azure 平台还可让你用上现代浏览器。
 
-现在，Intune 在 Azure 门户 (portal.azure.com) 中显示，但不随附“预览”标签。
+现在，Intune 在 Azure 门户 (portal.azure.com) 中显示，但不随附“预览”  标签。
 
 此时，现有客户无需进行任何操作，除非你已在消息中心收到过系列消息之一，请求你采取操作，以便我们迁移组。 你可能还收到过一则消息中心通知，通知你由于我方的 bug，迁移将花费更长时间。 我们正在继续努力工作，以迁移任何受影响的客户。
 
@@ -2402,7 +2403,7 @@ IT 支持人员用户现在可以在“疑难解答”边栏选项卡中查看�
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>证书配置更新 <!-- 918991 and 823198 -->
 创建 SCEP 证书配置文件时，对于“使用者名称格式”，可以使用适用于 iOS、 Android 和 Windows 设备的“自定义”选项。 在本次更新之前，“自定义”字段仅适用于 iOS 设备。 有关详细信息，请参阅[创建 SCEP 证书配置文件](../protect/certificates-profile-scep.md)。
 
-创建 PKCS 证书配置文件时，对于“使用者可选名称”，可以选择“自定义 Azure AD 属性”。 当选择“自定义 Azure AD 属性”时，将出现“部门”选项。 有关详细信息，请参阅[创建 PKCS 证书配置文件](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)。
+创建 PKCS 证书配置文件时，对于“使用者可选名称”  ，可以选择“自定义 Azure AD 属性”  。 当选择“自定义 Azure AD 属性”  时，将出现“部门”  选项。 有关详细信息，请参阅[创建 PKCS 证书配置文件](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)。
 
 #### <a name="configure-multiple-apps-that-can-run-when-an-android-device-is-in-kiosk-mode----662059---"></a>配置多个当 Android 设备处于展台模式时可以运行的应用 <!-- 662059 -->
 当 Android 设备处于展台模式时，你之前仅能配置一个允许运行的应用。 现在，你可以使用应用 ID、应用商店 URL，或通过选择一个已经管理的 Android 应用配置多个应用。 有关详细信息，请参阅[展台模式设置](../configuration/device-restrictions-android.md#kiosk)。
@@ -2453,7 +2454,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 
 - 完全打开或关闭指定应用的通知。
 - 在通知中心中打开或关闭指定应用的通知。
-- 指定警报类型：“无”、“横幅”或“提醒”。
+- 指定警报类型：“无”  、“横幅”  或“提醒”  。
 - 指定是否允许此应用的徽章。
 - 指定是否允许通知声音。
 
@@ -2521,7 +2522,7 @@ Play Store 中支持托管配置选项的 Android 应用现在可以由 Intune �
 ### <a name="support-for-ios-lost-mode---431695--"></a>对 iOS 丢失模式的支持 <!--431695-->
 对于 iOS 9.3 和更高版本设备，Intune 增加了对**丢失模式**的支持。 现在可以锁定设备以防止所有使用并显示设备锁定屏幕的消息和联系人电话号码。
 
-最终用户将无法解锁设备，直到管理员禁用丢失模式。 启用丢失模式后，可以使用“查找设备”操作在 Intune 控制台中的地图上显示该设备的地理位置。
+最终用户将无法解锁设备，直到管理员禁用丢失模式。 启用丢失模式后，可以使用“查找设备”  操作在 Intune 控制台中的地图上显示该设备的地理位置。
 
 此设备必须是处于监督模式下通过 EDP 注册的公司所有的 iOS 设备。
 

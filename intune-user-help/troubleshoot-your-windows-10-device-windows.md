@@ -9,6 +9,7 @@ ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: bbc251479652079cb33b1ca4dd08103103b91aa9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546686"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508194"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
 如果已注册设备，但仍无法访问工作或学校电子邮件和文件，请尝试执行以下故障排除步骤。  

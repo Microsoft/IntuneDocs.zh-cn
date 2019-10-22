@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfea74c70b81cadfa06c578dc33cdad401fa9e45
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940074"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490751"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -53,7 +54,7 @@ ms.locfileid: "71940074"
     > [!NOTE]
     > Intune App Wrapping Tool 不支持用于应用签名的 Google 的 v2 和即将推出 v3 签名方案。 使用 Intune App Wrapping Tool 包装 .apk 文件后，建议使用 [Google 提供的 Apksigner 工具]( https://developer.android.com/studio/command-line/apksigner)。 这将确保一旦应用安装到最终用户设备上，它就可以通过 Android 标准正确启动。 
 
-- （可选）有时，由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 Intune 应用包装工具会在换行时自动处理 DEX 文件溢出，其中最小 API 级别为21或更高（到 [v）。64。51。202。144 对于最小 API 级别为 < 21 的应用，最佳做法是使用包装的 `-UseMinAPILevelForNativeMultiDex` 标志增加最小 API 级别。 对于不能增加应用程序的最低 API 级别的客户，可以使用以下 DEX 溢出解决方法。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作：
+- （可选）有时，由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 Intune 应用包装工具会在换行过程中自动处理 DEX 文件溢出，其中最小 API 级别为21或更高（从 [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)。 对于最小 API 级别为 < 21 的应用，最佳做法是使用包装的 `-UseMinAPILevelForNativeMultiDex` 标志增加最小 API 级别。 对于不能增加应用程序的最低 API 级别的客户，可以使用以下 DEX 溢出解决方法。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作：
 * 使用 ProGuard 从应用的主 DEX 文件中删除未使用的类引用。
 * 对于使用 v 3.1.0 或更高版本的 Android Gradle 插件的客户，请禁用[D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)。  
 
