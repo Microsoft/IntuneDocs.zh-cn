@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735683"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509226"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备注册问题疑难解答
 
@@ -60,9 +61,9 @@ ms.locfileid: "71735683"
 
 #### <a name="resolution"></a>解决方法
 1. 登录到 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”   。
-3. 选择“设备注册” > “注册限制”   。
-4. 在 "**设备类型限制**" 下，选择要设置 >**属性**的限制  > **选择平台**> 选择 "**允许** **iOS**"，然后单击 **"确定"** 。
+2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
+3. 选择“设备注册” > “注册限制”。
+4. 在 "**设备类型限制**" 下，选择要设置 >**属性**的限制  > **选择 "平台**" > 选择 "对**IOS** **允许**"，然后单击 **"确定"** 。
 5. 选择 "**配置平台**"，选择 "**允许**个人拥有的 iOS 设备"，然后单击 **"确定"** 。
 6. 重新注册设备。
 
@@ -89,10 +90,10 @@ ms.locfileid: "71735683"
 **原因：** 用户尝试注册的设备数超过设备注册限制。
 
 #### <a name="resolution"></a>解决方法
-1. 打开[Intune 管理门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) >  个**设备** >  **-3 个设备，** 并检查用户已注册的设备数。
+1. 打开[Intune 管理门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **设备** > **所有设备**，并检查用户已注册的设备数。
     > [!NOTE]
     > 你还应将受影响的用户登录到[Intune 用户门户](https://portal.manage.microsoft.com/)并检查已注册的设备。 [Intune 用户门户](https://portal.manage.microsoft.com/)中可能出现设备，但在[intune 管理门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)中却没有出现，此类设备也会计入设备注册限制。
-2. 请参阅**管理员** > **移动设备管理** > **注册规则**> 检查设备注册限制。 默认情况下，此限制设置为15。 
+2. 请参阅**管理员** > **移动设备管理** > **注册规则**> 检查设备注册限制。 默认情况下，将此限制设置为 15 个。 
 3. 如果注册的设备数已达到限制，则删除不必要的设备，或者增加设备注册限制。 由于每个注册的设备都使用 Intune 许可证，因此建议你首先删除不必要的设备。
 4. 重新注册设备。
 
@@ -110,8 +111,8 @@ ms.locfileid: "71735683"
 **原因：** 尝试注册该设备的用户没有有效的 Intune 许可证。
 
 #### <a name="resolution"></a>解决方法
-1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**"  >  个 "**活动用户**"。
-2. 选择受影响的用户帐户 >**产品许可证** > **编辑**。
+1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**"  > **活动用户**"。
+2. 选择受影响的用户帐户 >**产品许可证** >  "**编辑**"。
 3. 验证是否为此用户分配了有效的 Intune 许可证。
 4. 重新注册设备。
 
@@ -119,7 +120,7 @@ ms.locfileid: "71735683"
 
 **原因：** 尝试注册该设备的用户没有有效的 Intune 许可证。
 
-1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**"  >  个 "**活动用户**"。
+1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**"  > **活动用户**"。
 2. 选择受影响的用户帐户，然后选择 "**产品许可证** > **编辑**"。
 3. 验证是否为此用户分配了有效的 Intune 许可证。
 4. 重新注册设备。
@@ -130,7 +131,7 @@ ms.locfileid: "71735683"
 
 #### <a name="resolution"></a>解决方法
 
-1. 在 iOS 设备上打开 "**设置**" >**常规** > **设备管理**。
+1. 在 iOS 设备上打开 "**设置**" >**常规** > **设备管理**"。
 2. 点击现有的管理配置文件，然后点击 "**删除管理**"。
 3. 重新注册设备。
 
@@ -183,7 +184,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解决方法
 
 1. 编辑注册配置文件。 您可以对配置文件进行任何更改。 目的是更新配置文件的修改时间。
-2. 同步 DEP 管理的设备：打开 Intune 门户 >**管理员** > **移动设备管理** > **iOS** > **设备注册计划** >  **立即同步**。 会向 Apple 发送同步请求。
+2. 同步 DEP 管理的设备：打开 Intune 门户 >**管理员** > **移动设备管理** > **iOS**  > **设备注册计划** > **立即同步**。 会向 Apple 发送同步请求。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>在用户登录时，DEP 注册停滞
 当你打开分配了注册配置文件的 DEP 管理的设备时，在输入凭据后，初始设置将会关闭。

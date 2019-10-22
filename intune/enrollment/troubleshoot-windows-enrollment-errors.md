@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ab0ebd9a7977b5433c814e9496276ce7a7fc900
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735735"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503096"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 设备注册问题疑难解答
 
@@ -56,11 +57,11 @@ ms.locfileid: "71735735"
 - 计算机运行的是 Windows 10 家庭版。 但是，仅在 Windows 10 专业版和更高版本上才支持在 Intune 中注册或加入 Azure AD。
 
 #### <a name="resolution"></a>解决方法
-此问题有几种可能的解决方法：
+该问题有以下几种可能的解决方法：
 
 ##### <a name="remove-devices-that-were-enrolled"></a>删除已注册的设备
 1. 登录到 [Azure 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。    
-2. 中转到 "**用户**" @no__t "**所有用户**"。    
+2. 中转到 "**用户**"  >  "**所有用户**"。    
 3. 选择受影响的用户帐户，然后单击 "**设备**"。    
 4. 选择任何未使用或不需要的设备，然后单击 "**删除**"。 
 
@@ -70,12 +71,12 @@ ms.locfileid: "71735735"
 > 此方法会增加所有用户的设备注册限制，而不只是受影响的用户。
 
 1. 登录到 [Azure 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
-2. 中转到 "**设备注册** > " "**注册限制**"，然后选择 "**设备限制**"。    
+2. 中转到 "**设备注册**"  >  "**注册限制**"，然后选择 "**设备限制**"。    
 3. 增加**设备限制**的值。 
 
 ##### <a name="check-device-type-restrictions"></a>查看设备类型限制
 1. 使用全局管理员帐户登录 [Intune 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
-2. 中转到 "**设备注册** > " "**注册限制**"，然后在 "**设备类型限制**" 下选择**默认**限制。    
+2. 中转到 "**设备注册**"  >  "**注册限制**"，然后在 "**设备类型限制**" 下选择**默认**限制。    
 3. 选择 "**平台**"，然后选择 "**允许** **Windows （MDM）** "。
 
     > [!IMPORTANT]
@@ -96,25 +97,25 @@ ms.locfileid: "71735735"
 
 #### <a name="resolution"></a>解决方法
 1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
-2. 请参阅**Azure Active Directory** > **设备** > **设备设置**。    
-3. 将“用户可以将设备加入 Azure AD”设置为“全部”   。    
+2. 请参阅 **Azure Active Directory** > **Devices** > **Device** 设置。    
+3. 将“用户可以将设备加入 Azure AD”设置为“全部”。    
 4. 再次注册设备。   
 
 ### <a name="the-device-is-already-enrolled"></a>设备已注册。
 
 错误8018000a： "出现错误。 设备已注册。  你可以与你的系统管理员联系并提供错误代码8018000a。 "
 
-**原因：** 满足以下条件之一：
-- 其他用户已在 Intune 中注册了设备，或已将设备加入 Azure AD。 若要确定是否是这种情况，请使用 "**设置**"  > **帐户** >  "**工作访问**"。 查找类似于以下内容的消息： "系统上的另一个用户已连接到工作或学校。 请删除此工作或学校连接，然后重试。 "    
+**原因：** 符合下列条件之一：
+- 其他用户已在 Intune 中注册了设备，或已将设备加入 Azure AD。 若要确定是否是这种情况，请参阅 "**设置**"  > **帐户** > **工作访问**"。 查找类似于以下内容的消息： "系统上的另一个用户已连接到工作或学校。 请删除此工作或学校连接，然后重试。 "    
 - Configuration Manager 客户端代理安装在计算机上。    
 
 #### <a name="resolution"></a>解决方法
 
-使用以下方法之一来解决此问题：
+使用以下某种方法解决该问题：
 
 ##### <a name="remove-the-other-work-or-school-account"></a>删除另一个工作或学校帐户
 1. 注销 Windows，然后使用已注册或已加入设备的其他帐户登录。    
-2. 请访问 "**设置**"  >  个**帐户** >  个 "**工作**"，然后删除工作或学校帐户。
+2. 请访问 "**设置**"  > **帐户**" > **工作**"，然后删除工作或学校帐户。
 3. 注销 Windows，并使用你的帐户登录。    
 4. 在 Intune 中注册设备，或将设备加入到 Azure AD。 
 
@@ -135,7 +136,7 @@ ms.locfileid: "71735735"
 
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>似乎未正确配置 MDM 使用条款终结点。
 
-**原因：** 满足以下条件之一： 
+**原因：** 符合下列条件之一： 
  - 在租户上使用 Office 365 和 Intune 的移动设备管理（MDM），尝试注册该设备的用户没有有效的 Intune 许可证或 Office 365 许可证。     
 - Azure AD 中的 MDM 条款和条件为空或不包含正确的 URL。    
 
@@ -147,10 +148,10 @@ ms.locfileid: "71735735"
 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home)，然后将 Intune 或 Office 365 许可证分配给用户。
 
 ##### <a name="correct-the-mdm-terms-of-use-url"></a>更正 MDM 使用条款 URL
-  1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”  。    
+  1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”。    
   2. 选择 "**移动性（MDM 和 MAM）** "，然后单击 " **Microsoft Intune**"。    
   3. 选择 "**还原默认 Mdm url**"，验证**MDM 使用条款 url**设置为 **https://portal.manage.microsoft.com/TermsofUse.aspx** 。    
-  4. 选择 **“保存”** 。    
+  4. 选择 **“保存”**。    
 
 
 ### <a name="something-went-wrong"></a>出现错误。
@@ -166,7 +167,7 @@ ms.locfileid: "71735735"
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>在 Azure 中禁用 MDM 自动注册。
 1. 登录到 [Azure 门户](https://portal.azure.com/)。    
-2. 请参阅**Azure Active Directory**@no__t 一种**移动性（MDM 和 MAM）** @no__t**Microsoft Intune**。    
+2. 请参阅**Azure Active Directory**  > **移动性（MDM 和 MAM）**  > **Microsoft Intune**。    
 3. 将 " **MDM 用户范围**" 设置为 "**无**"，然后单击 "**保存**"。    
      
 ##### <a name="uninstall"></a>“卸载”
@@ -180,7 +181,7 @@ ms.locfileid: "71735735"
 
 #### <a name="resolution"></a>解决方法
 1. 登录到 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 请参阅 "**管理员** > **客户端软件下载**"，然后单击 "**下载客户端软件**"。    
+2. 请在 "**管理**"  > **客户端软件下载**"，然后单击"**下载客户端软件**"。    
 3. 保存安装包，然后安装客户端软件。 
 
 
@@ -192,7 +193,7 @@ ms.locfileid: "71735735"
 
 #### <a name="resolution"></a>解决方法
 1. 登录到 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 请参阅 "**管理员** > **客户端软件下载**"，然后单击 "**下载客户端软件**"。    
+2. 请在 "**管理**"  > **客户端软件下载**"，然后单击"**下载客户端软件**"。    
 3. 保存安装包，然后安装客户端软件。    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>你的组织不支持此版本的 Windows。 
@@ -205,15 +206,15 @@ ms.locfileid: "71735735"
 若要在独立 Intune 环境中解决此问题，请执行以下步骤： 
  
 1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
-2. 选择左侧的 " **Intune** "，然后选择 "**设备注册** > **注册限制**"。    
+2. 选择左侧的 " **Intune** "，然后选择 "**设备注册**"  >  "**注册限制**"。    
 3. 在 "**设备类型限制**" 中，单击 "**平台**"，然后选择 "**允许** **Windows （MDM）** "。    
-4. 单击 **“保存”** 。    
+4. 单击 **“保存”**。    
  
 若要在具有 Intune 和 Configuration Manager 的混合 MDM 中解决此问题，请执行以下步骤： 
 1. 打开 Configuration Manager 控制台。    
 2. 选择 "**管理**"，然后选择 "**云服务**"。    
 3. 右键单击**Microsoft Intune 订阅**"，然后选择"**配置平台 "> Windows**。    
-4. 选中 "**启用 Windows 注册** > **应用**@no__t **" 确定 "** 。  
+4. 选中 "**启用 Windows 注册** > **应用** >  **" 确定 "** 。  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>大容量注册期间发生了设置失败。
@@ -223,7 +224,7 @@ ms.locfileid: "71735735"
 #### <a name="resolution"></a>解决方法
 1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
 2. **> 设备设置中转到 Azure Active Directory > 设备**"。    
-3. 将“用户可以将设备加入 Azure AD”  设置为“全部”  或“已选择”  。
+3. 将“用户可以将设备加入 Azure AD”设置为“全部”或“已选择”。
 
    如果选择 "选择" **，请单击**"**选择**"，然后单击 "**添加成员**" 添加可以加入其设备的所有用户 Azure AD。 请确保已添加预配包的所有 Azure AD 帐户。
  
@@ -235,7 +236,7 @@ ms.locfileid: "71735735"
 ### <a name="auto-mdm-enroll-failed"></a>自动 MDM 注册：失败 
 
 尝试使用组策略自动注册 Windows 10 设备时，会遇到以下问题： 
-- 在任务计划程序中，在**Microsoft** > **Windows** > **EnterpriseMgmt**下，**注册客户端为从 AAD 任务自动注册而创建的计划**的上次运行结果如下：**事件76自动 MDM 注册：失败（未知 Win32 错误代码：0x8018002b）**       
+- 在任务计划程序中，在**Microsoft**  > **Windows**  > **EnterpriseMgmt**下，**注册客户端通过 AAD 任务自动注册的计划创建**的上次运行结果如下：**事件76自动 MDM 注册：失败（未知 Win32 错误代码：0x8018002b）**       
 - 在事件查看器中，将在 "**应用程序和服务日志/Microsoft/Windows/设备---诊断-提供程序/管理员**" 下记录以下事件：   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -244,7 +245,7 @@ ms.locfileid: "71735735"
     Level: Error
     Description: Auto MDM Enroll: Failed (Unknown Win32 Error code: 0x80180002b)
     ```
-**原因：** 满足以下条件之一： 
+**原因：** 符合下列条件之一： 
 - UPN 包含未经验证或不可路由的域，如 local （如 joe@contoso.local）。    
 - **MDM 用户作用域**设置为 "**无**"。 
 
@@ -263,7 +264,7 @@ ms.locfileid: "71735735"
 
 如果**MDM 用户作用域**设置为 "**无**"，请执行以下步骤： 
  
-1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”  。
+1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”。
 2. 选择 "**移动性（MDM 和 MAM）** "，然后选择 " **Microsoft Intune**"。    
 3. 将**MDM 用户范围**设置为**All**。 或者，将 " **MDM 用户范围**" 设置为 "**部分**"，并选择可以自动注册其 Windows 10 设备的组。    
 4. 将**MAM 用户范围**设置为**None**。
@@ -280,7 +281,7 @@ ms.locfileid: "71735735"
 - 创建设备的唯一名称。 名称长度必须在 15 个字符或以下，可以包含字母（a-z、A-Z）、数字 (0-9) 和连字符 (‐)。
 - 名称不能全为数字。
 - 名称不能包含空格。
-- 使用 %SERIAL% 宏添加特定于硬件的序列号。 或者，使用% RAND： < 位数 >% 宏来添加数字的随机字符串，字符串包含 < 位数 > 位数。 例如，MYPC-% RAND： 6% 生成名称，如 MYPC-123456。
+- 使用 %SERIAL% 宏添加特定于硬件的序列号。 或者，使用% RAND： < 位数 >% 宏来添加数字的随机字符串，字符串包含 < 位数 > 位数。 例如，MYPC-% RAND：6% 生成名称，如 MYPC-123456。
 
 ### <a name="something-went-wrong-oobeidps"></a>出现错误。 OOBEIDPS.
 
@@ -335,7 +336,7 @@ Registering your device for mobile management (Previous step failed)
 
 #### <a name="resolution"></a>解决方法
 
-1. 中转到**Intune**@no__t 1**设备注册** > **Windows 注册** > **台设备**。
+1. 请参阅**Intune**  >  **设备注册** > **Windows 注册** > **设备**。
 2. 选择遇到问题 > 单击最右侧的省略号（...）。
 3. 选择 "**取消分配用户**" 并等待进程完成。
 4. 验证在重新尝试 OOBE 之前是否分配了混合 Azure AD Autopilot 配置文件。
@@ -370,17 +371,17 @@ Description:
 
 此问题通常是由于不正确地将权限委派给创建 Windows Autopilot 设备的组织单位引起的。 有关详细信息，请参阅[在组织单位中增加计算机帐户限制](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit)。
 
-1. 打开“Active Directory 用户和计算机(DSA.msc)”  。
-2. 右键单击将用于创建加入混合 Azure AD 的计算机的组织单位，然后选择“委派控制”  。
-3. 在“委派控制”向导中，选择“下一步” > “添加” > “对象类型”     。
-4. 在“对象类型”窗格中，选中“计算机”复选框，然后选择“确定”    。
-5. 在“选择用户、计算机或组”窗格的“输入要选择的对象名称”框中，输入安装连接器的计算机的名称     。
-6. 选择 "**检查名称**" 以验证输入 > **"确定" @no__t "** **下一步**"。
-7. 选择“创建要委派的自定义任务” > “下一步”   。
-8. 选择“仅文件夹中的以下对象”复选框，然后选择“计算机对象”、“在本文件夹中创建选定对象”和“在本文件夹中删除选定对象”复选框     。
-9. 选择“下一步”  。
-10. 在“权限”下，选择“完全控制”复选框   。 此操作将选择所有其他选项。
-11. 选择**下一步** > **完成**。
+1. 打开“Active Directory 用户和计算机(DSA.msc)”。
+2. 右键单击将用于创建加入混合 Azure AD 的计算机的组织单位，然后选择“委派控制”。
+3. 在“委派控制”向导中，选择“下一步” > “添加” > “对象类型”。
+4. 在“对象类型”窗格中，选中“计算机”复选框，然后选择“确定”。
+5. 在“选择用户、计算机或组”窗格的“输入要选择的对象名称”框中，输入安装连接器的计算机的名称。
+6. 选择 "**检查名称**" 以验证输入 > **"确定"  >  "** **下一步**"。
+7. 选择“创建要委派的自定义任务” > “下一步”。
+8. 选择“仅文件夹中的以下对象”复选框，然后选择“计算机对象”、“在本文件夹中创建选定对象”和“在本文件夹中删除选定对象”复选框。
+9. 选择“下一步”。
+10. 在“权限”下，选择“完全控制”复选框。 此操作将选择所有其他选项。
+11. 选择 "**下一步**"  > **完成**。
 
 ## <a name="next-steps"></a>后续步骤
 

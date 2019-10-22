@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71917980"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503652"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>解决 Intune Exchange connector 的常见问题
  
@@ -55,7 +56,7 @@ ms.locfileid: "71917980"
 请查看以下各节以解决电子邮件通知问题。
 
 ### <a name="check-the-notification-account-that-retrieves-autodiscover-settings"></a>检查用于检索自动发现设置的通知帐户
-1. 请确保在 Exchange 客户端访问服务上配置自动发现服务和 EWS。 有关详细信息，请参阅 Exchange Server 中的[客户端访问服务](https://docs.microsoft.com/Exchange/architecture/client-access/client-access)和[自动发现服务](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019)。
+1. 确保在 Exchange 客户端访问服务上配置自动发现服务和 EWS。 有关详细信息，请参阅 Exchange Server 中的[客户端访问服务](https://docs.microsoft.com/Exchange/architecture/client-access/client-access)和[自动发现服务](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019)。
 
 
 2. 验证你的通知帐户是否满足以下要求：
@@ -69,10 +70,10 @@ ms.locfileid: "71917980"
    1. 在命令提示符下，输入*NSLOOKUP*。  
 
    2. 输入*Autodiscover.SMTPdomain.com*。 输出应如下图所示：  
-      ![Nslookup results](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
+      ![Nslookup 结果 ](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   你还可以在 https://testconnectivity.microsoft.com 从 internet 测试自动发现服务。 或使用 Microsoft Connectivity Analyzer 工具从本地域中测试。 有关详细信息，请参阅[Microsoft 连接分析器工具](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))。 如有必要，请[下载 Microsoft 连接分析器工具](http://go.microsoft.com/fwlink/?LinkID=313782)。
+   你还可以在 https://testconnectivity.microsoft.com 从 internet 测试自动发现服务。 或使用 Microsoft Connectivity Analyzer 工具从本地域中测试。 有关详细信息，请参阅[Microsoft 连接分析器工具](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))。 如有必要，请[下载 Microsoft 连接分析器工具](https://go.microsoft.com/fwlink/?LinkID=313782)。
 
 
 ### <a name="check-autodiscovery"></a>检查自动发现  
@@ -82,7 +83,7 @@ ms.locfileid: "71917980"
 
 2. 在 Intune Exchange connector 配置文件中对 EWS URL 进行硬编码：
 
-   1. 确定 EWS URL。 Exchange 的默认 EWS URL 为 `https://<mailServerFQDN>/ews/exchange.asmx`，但 URL 可能不同。 请与 Exchange 管理员联系，以验证您的环境的正确 URL。
+   1. 确定 EWS URL。 Exchange 的默认 EWS URL 是 `https://<mailServerFQDN>/ews/exchange.asmx` 的，但 URL 可能不同。 请与 Exchange 管理员联系，以验证您的环境的正确 URL。
 
    2. 编辑 *OnPremisesExchangeConnectorServiceConfiguration.xml* 文件。 默认情况下，该文件位于运行 Exchange Connector 的计算机上的 *%ProgramData%\Microsoft\Windows Intune Exchange Connector*中。 在文本编辑器中打开文件，然后更改以下行，以反映环境的 EWS URL： `<ExchangeWebServiceURL>https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
     
