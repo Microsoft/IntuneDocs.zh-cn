@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96de28e517a989fc1e749176039e6c02ef51e0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723770"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72491762"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中创建 VPN 配置文件以连接到 VPN 服务器
 
@@ -52,7 +53,7 @@ ms.locfileid: "71723770"
 |Citrix SSO|- Android<br/>- Android Enterprise 工作配置文件：使用[应用配置策略](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |自定义 VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android Enterprise 工作配置文件<br/>- Android Enterprise 设备所有者（完全托管）<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2|Windows 10|
+|IKEv2| - iOS<br/>- Windows 10|
 |L2TP|Windows 10|
 |帕洛阿尔托网络全局保护|- Android Enterprise 工作配置文件：使用[应用配置策略](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |PPTP|Windows 10|
