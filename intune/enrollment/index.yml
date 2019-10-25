@@ -12,12 +12,12 @@ metadata:
   ms.author: dougeby
   manager: dougeby
   ms.date: 08/07/2019
-  ms.openlocfilehash: 817d902cfb1628d813bb20de271c9a98b50a03ec
-  ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+  ms.openlocfilehash: 20bdfb02f0a8dda4b9578fd7bc30cb72c7250adf
+  ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/04/2019
-  ms.locfileid: "71939910"
+  ms.lasthandoff: 10/24/2019
+  ms.locfileid: "72892587"
 landingContent:
 - title: 了解注册
   linkLists:
@@ -49,6 +49,8 @@ landingContent:
       url: tutorial-use-autopilot-enroll-devices.md
   - linkListType: how-to-guide
     links:
+    - text: 适用于 Windows 设备的 Intune 注册方法
+      url: windows-enrollment-methods.md
     - text: 设置 Windows 注册
       url: windows-enroll.md
     - text: 设置 Windows 设备批量注册
