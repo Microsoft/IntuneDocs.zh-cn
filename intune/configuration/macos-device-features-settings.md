@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506669"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776915"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 设备功能设置
 
@@ -42,7 +42,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册 
 
 - **IP 地址**：输入打印机的 IPv4 或 IPv6 地址。 如果使用主机名标识打印机，可以通过在“终端”应用中对打印机执行 ping 操作来获取 IP 地址。 （本文中的）[获取 IP 地址和路径](#get-the-ip-address-and-path)提供了更多详细信息。
 - **路径**：输入打印机的路径。 网络中打印机的路径通常是 `ipp/print`。 （本文中的）[获取 IP 地址和路径](#get-the-ip-address-and-path)提供了更多详细信息。
@@ -85,7 +85,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 
 ## <a name="login-window"></a>登录窗口
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册 
 
 #### <a name="window-layout"></a>Window 布局
 

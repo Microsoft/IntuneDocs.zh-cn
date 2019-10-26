@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550818"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915730"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企业设备 OEMConfig
 
@@ -66,7 +66,7 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 
 - 在 Intune 中注册的 Android 企业设备。
 - 由 OEM 生成并上载到 Google Play 的 OEMConfig 应用。 如果未 Google Play，请与 OEM 联系以获取详细信息。
-- Intune 管理员对**移动应用**和**DeviceConfigurations**具有基于角色的访问控制（RBAC）权限。 这些权限是必需的，因为 OEMConfig 配置文件使用托管应用配置来管理设备配置。
+- Intune 管理员具有适用于**移动应用**的基于角色的访问控制（RBAC）权限、**设备配置**以及**Android for Work**下的 "读取" 权限。 这些权限是必需的，因为 OEMConfig 配置文件使用托管应用配置来管理设备配置。
 
 ## <a name="prepare-the-oemconfig-app"></a>准备 OEMConfig 应用
 

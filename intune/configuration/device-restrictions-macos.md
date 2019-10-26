@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494023"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776886"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 macOS 设备设置
 
@@ -40,7 +40,7 @@ ms.locfileid: "72494023"
 
 ## <a name="general"></a>常规
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 
 - **定义查找**：“阻止”可阻止用户突出显示某个字词，然后在设备上查找其定义  。 “未配置”（默认）允许访问定义查找功能  。
 - **听写**：“阻止”可阻止用户通过语音输入输入文本  。 “未配置”（默认）允许用户使用听写输入  。
@@ -82,7 +82,7 @@ ms.locfileid: "72494023"
 
 ## <a name="password"></a>密码
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 
 - **密码**：选择“必需”  ，最终用户输入密码才能访问设备。 **未配置**（默认）不需要密码。 它也不会强制任何限制，如阻止简单密码或设置最小长度。
   - **所需密码类型**：指定密码是否可以仅由数值组成，还是必须为字母数字（包含字母和数字）。
@@ -114,7 +114,7 @@ ms.locfileid: "72494023"
 
 ## <a name="built-in-apps"></a>内置应用
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 
 - **阻止 Safari 自动填充**：“阻止”可禁用设备上 Safari 中的自动填充功能  。 “未配置”（默认）允许用户更改 Web 浏览器中的自动完成设置  。
 - **阻止照相机**：选择“阻止”可阻止访问设备上的照相机  。 “未配置”（默认）允许访问设备的照相机  。
@@ -127,7 +127,7 @@ ms.locfileid: "72494023"
 
 ## <a name="restricted-apps"></a>受限制的应用
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 
 - **限制应用列表的类型**：创建不允许用户安装或使用的应用的列表。 选项包括：
 
@@ -145,14 +145,14 @@ ms.locfileid: "72494023"
 
 ## <a name="connected-devices"></a>已连接的设备
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 
 - **阻止 AirDrop**：“阻止”可阻止在设备上使用 AirDrop  。 “未配置”（默认）允许使用 AirDrop 功能与附近的设备交换内容  。
 - **阻止 Apple Watch 自动解锁**：“阻止”可阻止用户使用 Apple Watch 解锁 macOS 设备  。 “未配置”（默认）允许用户使用其 Apple Watch 解锁 macOS 设备  。
 
 ## <a name="cloud-and-storage"></a>云和存储
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 
 - **阻止 iCloud 密钥链同步**：选择“阻止”  可禁止将密钥链中存储的凭据同步到 iCloud。 “未配置”（默认）允许用户同步这些凭据  。
 - **阻止 iCloud 文档同步**：“阻止”可阻止 iCloud 同步文档和数据  。 “未配置”（默认）允许将文档和键值同步到 iCloud 存储空间  。
@@ -170,7 +170,7 @@ ms.locfileid: "72494023"
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>设置适用于：设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 
 - **电子邮件域 URL**：向列表添加一个或多个 URL  。 当用户从所配置的域以外的域接收电子邮件时，该电子邮件在 macOS 邮件应用中被标记为不受信任。
 

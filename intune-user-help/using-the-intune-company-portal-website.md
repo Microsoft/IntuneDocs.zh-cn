@@ -19,17 +19,19 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a2c4e26c191f612705a4cc404955b96b4b5982c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50eb3495362d4b88071707e25a5faa39b76b6c3b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501845"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810358"
 ---
 # <a name="using-the-intune-company-portal-website"></a>使用 Intune 公司门户网站
-使用[公司门户网站](https://portal.manage.microsoft.com)查看、编辑、添加和删除托管设备。
+使用[公司门户网站](https://portal.manage.microsoft.com)搜索、安装和卸载学校或工作应用;以及查看、编辑、添加和删除已注册的设备。  
 
 可以从公司门户网站进行以下任何操作：
+
+- [管理应用](manage-apps-cpweb.md)  
 
 - [重命名设备](rename-your-device-cpwebsite.md)
 

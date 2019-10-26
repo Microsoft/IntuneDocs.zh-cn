@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584890"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785509"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
 
@@ -300,6 +300,11 @@ ms.locfileid: "72584890"
 
   此功能适用于：  
   - iOS 12.2 及更高版本
+
+  > [!NOTE]
+  > Apple 不推荐使用**服务器端日志记录 Siri 命令**设置。 在即将发布的版本中，将从 Intune 控制台中删除此设置。
+  >
+  > 目前，此设置对设备不起作用，即使设置显示在管理配置文件中。 若要从任何策略中删除此设置，请打开策略，进行细微的更改，然后保存策略。 此策略已更新，并从设备中删除了该设置。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>设置适用于：自动化设备注册（监督）
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585377"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915706"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置
 
@@ -193,7 +193,8 @@ ms.locfileid: "72585377"
 
 ### <a name="power-settings"></a>电源设置
 
-- **定时锁定屏幕**：设置设备锁定前所需的空闲时间。
+- **锁定屏幕时间**：输入用户在设备锁定之前可以设置的最长时间。 例如，如果将此设置设置为**10 分钟**，则用户可将时间设置为15秒到10分钟。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或控制此设置。
+
 - **设备接通电源时屏幕亮起**：选择接通电源时使设备屏幕保持亮起的电源。
 
 ### <a name="users-and-accounts-settings"></a>用户和帐户设置
