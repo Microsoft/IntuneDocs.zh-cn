@@ -6,7 +6,9 @@
 
 ## [设备密码要求](password-does-not-meet-it-administrator-requirements.md)
 
-## [登录到公司门户](sign-in-to-the-company-portal.md)
+## [登录到公司门户](sign-in-to-the-company-portal.md)  
+
+## [安装移动威胁防御应用](set-up-mobile-threat-defense.md)  
 
 ## 使用 Android 设备
 ### [为何注册 Android 设备](why-enroll-android-device.md)
