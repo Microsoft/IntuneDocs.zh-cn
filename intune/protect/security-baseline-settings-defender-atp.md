@@ -5,24 +5,24 @@ description: Intune 支持用于管理 Microsoft Defender 高级威胁防护的�
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: karthib
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cb5d7375ae5b76a24861872d4abf786f199dfd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508991"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923399"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
@@ -31,12 +31,6 @@ ms.locfileid: "72508991"
 当环境满足使用 [Microsoft Defender 高级威胁防护](advanced-threat-protection.md#prerequisites)的先决条件时，Microsoft Defender 高级威胁防护基线才可用。 
 
 此基线针对物理设备进行了优化，目前不建议在虚拟机（Vm）或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互式会话。 有关详细信息，请参阅 Windows 文档中的[提高 Microsoft Defender ATP 安全基线的符合性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
-
-
-> [!NOTE]  
-> ATP 基线设置处于预览状态  。 在预览状态下，可用设置的列表，以及此内容呈现这些设置的顺序可能与门户中提供的内容不匹配。  
->
-> 当基线设置不处于预览状态后，此内容将更新以反映 Intune 支持的安全基线设置的当前列表。
 
 ## <a name="application-guard"></a>应用程序防护  
 有关详细信息，请参阅 Windows 文档中的 [WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp)。  
@@ -55,13 +49,13 @@ ms.locfileid: "72508991"
 
   - **剪贴板行为** - *Settings/ClipboardSettings*  
     选择允许在本地电脑和应用程序防护虚拟浏览器之间执行的复制和粘贴操作。  选项包括：
-    - *未配置*  
-    - *阻止两者* - 无法在电脑和虚拟浏览器之间传输数据。  
-    - *阻止主机到容器* - 无法将数据从电脑传输到虚拟浏览器中。
-    - *阻止容器到主机* - 无法将数据从虚拟浏览器传输到主机电脑中。
-    - *均不阻止* - 不阻止任何内容。  
+    - 未配置  
+    - 阻止在 PC 和 browser 之间进行复制和粘贴。 无法在电脑和虚拟浏览器之间传输数据。  
+    - 仅允许从浏览器复制和粘贴-数据无法从电脑传输到虚拟浏览器。
+    - 仅允许从 PC 复制和粘贴-数据无法从虚拟浏览器传输到主机计算机。
+    - 允许在电脑和浏览器之间进行复制和粘贴-不存在内容的块。  
 
-    **默认值**：阻止两者  
+    **默认**：阻止在 PC 和 browser 之间进行复制和粘贴  
 
 - **Windows 网络隔离策略 - 企业网络域名**  
   有关详细信息，请参阅 Windows 文档中的 [Policy CSP - NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation)（策略 CSP - NetworkIsolation）。
@@ -101,7 +95,7 @@ ms.locfileid: "72508991"
 
   **默认值**：启用
 
-- **电子邮件内容执行类型**  
+- **电子邮件内容执行**  
   [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，此规则可以阻止从 Microsoft Outlook 或 Webmail （如 Gmail.com 或 Outlook.com）的电子邮件中运行或启动以下文件类型：  
 
   - 可执行文件（如 .exe、.dll 或 .scr）  
@@ -115,12 +109,12 @@ ms.locfileid: "72508991"
 
   **默认值**：启用
 
-- **脚本混淆的宏代码类型**  
+- **脚本混淆的宏代码**  
   [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 恶意软件和其他威胁可能会尝试在某些脚本文件中混淆或隐藏其恶意代码。 此规则可阻止运行混淆的脚本。  
     
   **默认值**：阻止
 
-- **不受信任的 USB 进程类型**  
+- **不受信任的 USB 进程**  
   [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，无法运行 USB 可移动驱动器和 SD 卡中的未签名或不受信任的可执行文件。
 
   可执行文件包括：
@@ -129,12 +123,12 @@ ms.locfileid: "72508991"
 
   **默认值**：阻止
 
-- **Office 应用其他进程注入类型**  
+- **Office 应用其他进程注入**  
   [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，Office 应用（包括 Word、Excel、PowerPoint 和 OneNote）无法将代码注入到其他进程中。 恶意软件通常会使用代码注入来运行恶意代码，试图对防病毒扫描引擎隐藏活动。  
 
   **默认值**：阻止
 
-- **Office 宏代码运行 Win32 导入类型**  
+- **Office 宏代码运行 Win32 导入**  
   [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，此规则可尝试阻止包含可导入 Win32 DLL 的宏代码的 Office 文件。 Office 文件包括 Word、Excel、PowerPoint 和 OneNote。 恶意软件可以在 Office 文件中使用宏代码来导入和加载 Win32 DLL，然后使用这些 DLL 进行 API 调用，以在整个系统中实现进一步感染。  
 
   **默认值**：阻止
@@ -144,7 +138,7 @@ ms.locfileid: "72508991"
 
   **默认值**：启用
 
-- **Office 应用可执行内容创建或启动类型**  
+- **Office 应用可执行内容创建或启动**  
   [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 设置为“阻止”  时，Office 应用无法创建可执行文件内容。 Office 应用包括 Word、Excel、PowerPoint、OneNote 和 Access。  
 
   此规则针对创建或启动可执行文件的可疑和恶意外接程序和脚本（扩展）使用的典型行为。 这是典型的恶意软件技术。 将阻止 Office 应用使用扩展。 这些扩展通常使用 Windows Scripting Host（.wsh 文件）来运行脚本，自动执行某些任务或提供用户创建的外接程序功能。
@@ -170,6 +164,10 @@ ms.locfileid: "72508991"
 
   - **加密方法**  
     **默认值**：AES 128 位 CBC
+
+- **加密存储卡（仅限移动设备）** 选择 *"是"* 将加密移动设备的存储卡。  
+
+   **默认值**：是
 
 - **Bit locker 固定驱动器策略**  
   此策略的值确定 BitLocker 用于加密固定驱动器的密码强度。 企业可以控制加密级别，增强安全性（AES-256 强于 AES-128）。 如果启用此设置，可以为固定的数据驱动器、操作系统驱动器和可移动数据驱动器单独配置加密算法和密钥加密强度。 对于固定的驱动器和操作系统驱动器，建议使用 XTS-AES 算法。 对于可移动驱动器，如果驱动器用于非运行 Windows 10（版本 1511 或更高版本）的其他设备，则应使用 AES-CBC 128 位或 AES-CBC 256 位。 如果驱动器已加密或正在进行加密，更改加密方法不会产生任何影响。 在这些情况下，将忽略此策略设置。
@@ -224,12 +222,12 @@ ms.locfileid: "72508991"
   - **删除匹配的硬件设备**  
     仅“按设备标识符安装硬件设备”设置为“阻止安装硬件设备”时，此设置才可用   。  
 
-    **默认值**：无默认配置 
+    **默认值**：是
 
   - **已阻止的硬件设备标识符**  
     仅“按设备标识符安装硬件设备”设置为“阻止安装硬件设备”时，此设置才可用   。 若要配置此设置，请展开该选项，选择“+ 添加”  ，然后指定要阻止的硬件设备标识符。  
 
-    **默认值**：不阻止任何设备   
+    **默认值**： PCI\CC_0C0A
 
 - **阻止直接内存访问**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - 使用此策略设置可以阻止设备上的所有热插拔 PCI 下游端口进行直接内存访问 (DMA)，直到用户登录 Windows。 用户登录后，Windows 会枚举连接到热插拔 PCI 端口的 PCI 设备。 用户每次锁定计算机都会阻止无子设备的热插拔 PCI 端口进行 DMA，直到用户再次登录。 已在计算机解锁时枚举的设备继续工作，直到拔出。 
@@ -249,23 +247,23 @@ ms.locfileid: "72508991"
   - **删除匹配的硬件设备**  
     仅“按安装程序类安装硬件设备”设置为“阻止硬件设备安装”时，此设置才可用   。  
  
-    **默认值**：无默认配置   
+    **默认值**：是  
 
   - **已阻止的硬件设备标识符**  
     仅“按安装程序类安装硬件设备”设置为“阻止硬件设备安装”时，此设置才可用。 若要配置此设置，请展开该选项，选择“+ 添加”  ，然后指定要阻止的硬件设备标识符。  
  
-    **默认值**：不阻止任何设备 
+    **默认值**： {d48179be-ec20-11d1-b6b8-00c04fa372a7}
 
 ## <a name="endpoint-detection-and-response"></a>终结点检测和响应  
 有关详细信息，请参阅 Windows 文档中的 [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp)。  
 
-- **提高遥测报告频率** - *Configuration/TelemetryReportingFrequency*  
+- **提高遥测报告频率** - *Configuration/TelemetryReportingFrequency*
 
   提高 Microsoft Defender 高级威胁防护遥测报告频率。  
 
   **默认值**：是
 
-- **所有文件的示例共享** - *Configuration/SampleSharing*  
+- **所有文件的示例共享** - *Configuration/SampleSharing* 
 
   返回或设置 Microsoft Defender 高级威胁防护示例共享配置参数。  
 
@@ -286,43 +284,7 @@ ms.locfileid: "72508991"
   [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) - 设置为“是”  可阻止用户更改 Windows Defender 安全中心的 exploit protection 设置区域。 如果禁用或未配置此设置，本地用户可以在 exploit protection 设置区域中进行更改。  
   **默认值**：是  
 
-- **受控文件夹访问权限**  
-  请参阅 [Defender/ControlledFolderAccessAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessallowedapplications) 和 [Defender/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) 
-  
-   阻止不友好应用对文件和文件夹进行未经授权的更改。
-
-  **默认值**：审核模式
-
-## <a name="web--network-protection"></a>Web 和网络保护  
-
-- **网络保护类型**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 此策略可用于在 Windows Defender 攻击防护中启用或禁用网络保护。 网络保护是 Windows Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。  
-
-  设置为“启用”  或“审核模式”  时，用户无法禁用网络保护，但可以使用 Windows Defender 安全中心查看有关连接尝试的信息。  
- 
-  -  “启用”将阻止用户和应用连接到危险的域。  
-  -  “审核模式”不会阻止用户和应用连接到危险的域。  
-
-  设置为“用户定义”  时，不会阻止用户和应用连接到危险的域，并且 Windows Defender 安全中心不会提供有关连接的信息。  
-
-  **默认值**：审核模式
-
-- **Microsoft Edge SmartScreen**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - 默认情况下，Microsoft Edge 使用 Windows Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。 默认情况下，此策略处于启用状态（设置为“是”  ），启用时可阻止用户关闭 Windows Defender SmartScreen。  设备的有效策略为未配置时，用户可以关闭 Windows Defender SmartScreen，这使设备不受保护。  
-
-  **默认值**：是
-  
-- **阻止恶意网站访问**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意站点的 Windows Defender SmartScreen 警告，以便用户继续访问该站点。 启用此策略（设置为“是”  ）时，Microsoft Edge 可阻止用户绕过警告，并阻止他们继续访问该站点。  
-
-  **默认值**：是
-
-- **阻止下载未经验证的文件**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意文件的 Windows Defender SmartScreen 警告，以便他们继续下载未经验证的文件。 启用此策略（设置为“是”  ）时，将阻止用户绕过警告，并且无法下载未经验证的文件。  
-
-  **默认值**：是
-
-## <a name="windows-defender-anti-virus----settings-review-pending-for-this-section"></a>Windows Defender 防病毒软件 [此部分的设置查看挂起]
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 防病毒  
 
 有关详细信息，请参阅 Windows 文档 [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)（策略 CSP - Defender）。
 
@@ -336,7 +298,7 @@ ms.locfileid: "72508991"
 
   **默认值**：是
 
-- **Defender 示例提交同意类型**  
+- **Defender 示例提交同意**  
   [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 检查 Windows Defender 中用户的同意级别是否可发送数据。 如果已获取所需同意，Windows Defender 会将其提交。 如果未获取（且用户已指定绝不要求），则发送数据前启动 UI 申请获取用户同意（当“云提供的保护”设置为“是”时   ）。  
 
   **默认值**：自动发送安全示例
@@ -594,6 +556,35 @@ ms.locfileid: "72508991"
 
 - **证书吊销列表验证**  
   **默认值**：设备默认值
+
+## <a name="web--network-protection"></a>Web 和网络保护  
+
+- **网络保护类型**  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 此策略可用于在 Windows Defender 攻击防护中启用或禁用网络保护。 网络保护是 Windows Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。  
+
+  设置为“启用”  或“审核模式”  时，用户无法禁用网络保护，但可以使用 Windows Defender 安全中心查看有关连接尝试的信息。  
+ 
+  -  “启用”将阻止用户和应用连接到危险的域。  
+  -  “审核模式”不会阻止用户和应用连接到危险的域。  
+
+  设置为“用户定义”  时，不会阻止用户和应用连接到危险的域，并且 Windows Defender 安全中心不会提供有关连接的信息。  
+
+  **默认值**：审核模式
+
+- **Microsoft Edge SmartScreen**  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - 默认情况下，Microsoft Edge 使用 Windows Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。 默认情况下，此策略处于启用状态（设置为“是”  ），启用时可阻止用户关闭 Windows Defender SmartScreen。  设备的有效策略为未配置时，用户可以关闭 Windows Defender SmartScreen，这使设备不受保护。  
+
+  **默认值**：是
+  
+- **阻止恶意网站访问**  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意站点的 Windows Defender SmartScreen 警告，以便用户继续访问该站点。 启用此策略（设置为“是”  ）时，Microsoft Edge 可阻止用户绕过警告，并阻止他们继续访问该站点。  
+
+  **默认值**：是
+
+- **阻止下载未经验证的文件**  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意文件的 Windows Defender SmartScreen 警告，以便他们继续下载未经验证的文件。 启用此策略（设置为“是”  ）时，将阻止用户绕过警告，并且无法下载未经验证的文件。  
+
+  **默认值**：是
 
 ## <a name="windows-hello-for-business"></a>Windows Hello 企业版  
 

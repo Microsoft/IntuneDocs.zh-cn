@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503096"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892546"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 设备注册问题疑难解答
 
@@ -97,8 +97,8 @@ ms.locfileid: "72503096"
 
 #### <a name="resolution"></a>解决方法
 1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
-2. 请参阅 **Azure Active Directory** > **Devices** > **Device** 设置。    
-3. 将“用户可以将设备加入 Azure AD”设置为“全部”。    
+2.  > **设备设置**中转到**Azure Active Directory** > **设备**"。    
+3. 将“用户可以将设备加入 Azure AD”设置为“全部”   。    
 4. 再次注册设备。   
 
 ### <a name="the-device-is-already-enrolled"></a>设备已注册。
@@ -148,10 +148,10 @@ ms.locfileid: "72503096"
 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home)，然后将 Intune 或 Office 365 许可证分配给用户。
 
 ##### <a name="correct-the-mdm-terms-of-use-url"></a>更正 MDM 使用条款 URL
-  1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”。    
+  1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”  。    
   2. 选择 "**移动性（MDM 和 MAM）** "，然后单击 " **Microsoft Intune**"。    
   3. 选择 "**还原默认 Mdm url**"，验证**MDM 使用条款 url**设置为 **https://portal.manage.microsoft.com/TermsofUse.aspx** 。    
-  4. 选择 **“保存”**。    
+  4. 选择 **“保存”** 。    
 
 
 ### <a name="something-went-wrong"></a>出现错误。
@@ -163,7 +163,7 @@ ms.locfileid: "72503096"
 - 在 Windows 10 计算机上安装 Intune PC 客户端（Intune PC 代理）或 Configuration Manager 客户端代理。
 
 #### <a name="resolution"></a>解决方法
-使用以下方法之一来解决此问题：
+使用以下某种方法解决该问题：
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>在 Azure 中禁用 MDM 自动注册。
 1. 登录到 [Azure 门户](https://portal.azure.com/)。    
@@ -208,7 +208,7 @@ ms.locfileid: "72503096"
 1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
 2. 选择左侧的 " **Intune** "，然后选择 "**设备注册**"  >  "**注册限制**"。    
 3. 在 "**设备类型限制**" 中，单击 "**平台**"，然后选择 "**允许** **Windows （MDM）** "。    
-4. 单击 **“保存”**。    
+4. 单击 **“保存”** 。    
  
 若要在具有 Intune 和 Configuration Manager 的混合 MDM 中解决此问题，请执行以下步骤： 
 1. 打开 Configuration Manager 控制台。    
@@ -224,7 +224,7 @@ ms.locfileid: "72503096"
 #### <a name="resolution"></a>解决方法
 1. 以管理员身份登录到 [Azure 门户](https://portal.azure.com/)。    
 2. **> 设备设置中转到 Azure Active Directory > 设备**"。    
-3. 将“用户可以将设备加入 Azure AD”设置为“全部”或“已选择”。
+3. 将“用户可以将设备加入 Azure AD”  设置为“全部”  或“已选择”  。
 
    如果选择 "选择" **，请单击**"**选择**"，然后单击 "**添加成员**" 添加可以加入其设备的所有用户 Azure AD。 请确保已添加预配包的所有 Azure AD 帐户。
  
@@ -264,7 +264,7 @@ ms.locfileid: "72503096"
 
 如果**MDM 用户作用域**设置为 "**无**"，请执行以下步骤： 
  
-1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”。
+1. 登录到 [Azure 门户](https://portal.azure.com/)，然后选择“Azure Active Directory”  。
 2. 选择 "**移动性（MDM 和 MAM）** "，然后选择 " **Microsoft Intune**"。    
 3. 将**MDM 用户范围**设置为**All**。 或者，将 " **MDM 用户范围**" 设置为 "**部分**"，并选择可以自动注册其 Windows 10 设备的组。    
 4. 将**MAM 用户范围**设置为**None**。
@@ -371,16 +371,16 @@ Description:
 
 此问题通常是由于不正确地将权限委派给创建 Windows Autopilot 设备的组织单位引起的。 有关详细信息，请参阅[在组织单位中增加计算机帐户限制](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit)。
 
-1. 打开“Active Directory 用户和计算机(DSA.msc)”。
-2. 右键单击将用于创建加入混合 Azure AD 的计算机的组织单位，然后选择“委派控制”。
-3. 在“委派控制”向导中，选择“下一步” > “添加” > “对象类型”。
-4. 在“对象类型”窗格中，选中“计算机”复选框，然后选择“确定”。
-5. 在“选择用户、计算机或组”窗格的“输入要选择的对象名称”框中，输入安装连接器的计算机的名称。
+1. 打开“Active Directory 用户和计算机(DSA.msc)”  。
+2. 右键单击将用于创建加入混合 Azure AD 的计算机的组织单位，然后选择“委派控制”  。
+3. 在“委派控制”向导中，选择“下一步” > “添加” > “对象类型”     。
+4. 在“对象类型”窗格中，选中“计算机”复选框，然后选择“确定”    。
+5. 在“选择用户、计算机或组”窗格的“输入要选择的对象名称”框中，输入安装连接器的计算机的名称     。
 6. 选择 "**检查名称**" 以验证输入 > **"确定"  >  "** **下一步**"。
-7. 选择“创建要委派的自定义任务” > “下一步”。
-8. 选择“仅文件夹中的以下对象”复选框，然后选择“计算机对象”、“在本文件夹中创建选定对象”和“在本文件夹中删除选定对象”复选框。
-9. 选择“下一步”。
-10. 在“权限”下，选择“完全控制”复选框。 此操作将选择所有其他选项。
+7. 选择“创建要委派的自定义任务” > “下一步”   。
+8. 选择“仅文件夹中的以下对象”复选框，然后选择“计算机对象”、“在本文件夹中创建选定对象”和“在本文件夹中删除选定对象”复选框     。
+9. 选择“下一步”  。
+10. 在“权限”下，选择“完全控制”复选框   。 此操作将选择所有其他选项。
 11. 选择 "**下一步**"  > **完成**。
 
 ## <a name="next-steps"></a>后续步骤
@@ -390,3 +390,4 @@ Description:
 - [查看 Microsoft Intune 支持团队博客](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [查看 Microsoft 企业移动性和安全性博客](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [获取对 Microsoft Intune 的支持](../fundamentals/get-support.md)
+- [查找共同管理注册错误](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
