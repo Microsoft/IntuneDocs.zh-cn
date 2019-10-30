@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507451"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889593"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "72507451"
 - **上次同步时间**：应用上次与 Intune 同步的时间。 
 
 >[!NOTE]
-> “上次同步时间”列在控制台内“用户状态”报表和“应用保护策略”[可导出的 .csv 报表](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv)中表示相同的值  。 差别在于两个报表中的值之间的同步存在较小延迟。 
+> “上次同步时间”列在控制台内“用户状态”报表和“应用保护策略”[可导出的 .csv 报表](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)中表示相同的值  。 差别在于两个报表中的值之间的同步存在较小延迟。 
 >
 > “上次同步时间”中引用的时间是 Intune 最后一次看到应用实例的时间。 当用户启动应用时，该应用可能会在启动期间通知 Intune 应用保护服务，具体取决于上次签入的时间。 请参阅[应用保护策略签入的重试间隔时间](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)。 如果用户在上次签入时间间隔（活动使用时间通常为 30 分钟）内未使用该特定应用，并且他们启动了应用，那么：
 >
