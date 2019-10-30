@@ -2,12 +2,13 @@
 title: 在 Microsoft Intune 中创建设备符合性策略 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中：创建设备符合性策略，状态和严重性级别概述，使用 InGracePeriod 状态，使用条件访问，处理不具有分配策略的设备，以及 Azure 门户和经典门户中的符合性的差别
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306577"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786082"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建符合性策略
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 使用 Intune 保护组织的资源时，设备符合性策略是一项关键功能。 在 Intune 中，可以创建规则和设置，设备必须满足这些设置（例如最低操作系统版本）才能被视为符合策略。 如果设备不符合，则可使用[条件访问](conditional-access.md)阻止对数据和资源的访问。
 
@@ -48,10 +47,10 @@ ms.locfileid: "72306577"
 
 - 使用支持的平台：
 
-  - Android
+  - Android 设备管理员
   - Android Enterprise
   - iOS
-  - macOS（预览）
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8.1
@@ -72,26 +71,40 @@ ms.locfileid: "72306577"
 
 3. 选择“策略” > “创建策略”   。 输入以下属性：
 
-    - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好为“将已越狱的 iOS 设备标记为不符合策略”  。
-    - **说明**：输入策略的说明。 此设置是可选的，但建议进行。
-    - **平台**：选择设备平台。 选项包括：  
+   - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好为“将已越狱的 iOS 设备标记为不符合策略”  。  
 
-       - **Outlook Web Access (OWA)**
-       - **Android 企业**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 及更高版本**
-       - **Windows 10 及更高版本**
+   - **说明**：输入策略的说明。 此设置是可选的，但建议进行。  
 
-    - **设置**：下面的文章列出并介绍了每个平台的设置：
+   - **平台**：选择设备平台。 选项包括：
+     - **Android 设备管理员**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 及更高版本**
+     - **Windows 10 及更高版本**
 
-        - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1、Windows 8.1 及更高版本](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 及更高版本](compliance-policy-create-windows.md)
+     对于 *Android Enterprise*，必须选择“配置文件类型”  ：
+     - **设备所有者**
+     - **工作配置文件**
+
+   - **设置**：下面的文章列出并介绍了每个平台的设置：
+     - [Android 设备管理员](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1、Windows 8.1 及更高版本](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 及更高版本](compliance-policy-create-windows.md)  
+
+   - **位置** *（Android 设备管理员）* ：在策略中，可根据设备位置强制执行符合性。 从现有位置进行选择。 尚无位置？ 在 Intune 中[使用的位置（网络围墙）](use-network-locations.md)提供一些指导。  
+
+   - **对不合规设备的操作**：对于不满足符合性策略要求的设备，可添加要自动应用的一系列操作。 可以在设备被标记为不符合时（例如，一天后）更改计划。 此外，还可以配置第二个操作，即在设备不符合时向用户发送电子邮件。
+    
+     [为不符合要求的设备添加操作](actions-for-noncompliance.md)提供了详细信息，包括为用户创建通知电子邮件。
+
+     例如，使用“位置”功能，并在符合性策略中添加位置。 选择至少一个位置时，将应用针对不符合的默认操作。 如果设备未连接到所选位置，则会被立即视为不符合要求。 可以为用户提供宽限期（例如，一天）。
+
+   - **作用域（标记）** ：作用域标记非常适合用于筛选策略并将其分配给特定组（例如，“销售”、“HR”、“所有 US-NC”员工等）。 添加设置后，还可以向符合性策略添加作用域标记。 [使用作用域标记筛选策略](../fundamentals/scope-tags.md)是不错的资源。
 
 4. 完成后，选择“确定” > “创建”，保存所做更改   。 此时，策略创建完成，并出现在列表中。 接下来，向组分配策略。
 
@@ -114,17 +127,18 @@ ms.locfileid: "72306577"
 
 如果“评估”按钮呈灰显状态，请确保策略已分配到一个或多个组  。
 
-## <a name="actions-for-noncompliance"></a>对不符合设备的操作
+<!-- ## Actions for noncompliance
 
-对于不满足符合性策略要求的设备，可添加要自动应用的一系列操作。 可以在设备被标记为不符合时（例如，一天后）更改计划。 此外，还可以配置第二个操作，即在设备不符合时向用户发送电子邮件。
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-[为不符合要求的设备添加操作](actions-for-noncompliance.md)提供了详细信息，包括为用户创建通知电子邮件。
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-例如，使用“位置”功能，并在符合性策略中添加位置。 选择至少一个位置时，将应用针对不符合的默认操作。 如果设备未连接到所选位置，则会被立即视为不符合要求。 可以为用户提供宽限期（例如，一天）。
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>作用域标记
+## Scope tags
 
-作用域标记非常适合用于筛选策略并将其分配给特定组（例如，“销售”、“HR”、“所有 US-NC”员工等）。 添加设置后，还可以向符合性策略添加作用域标记。 [使用作用域标记筛选策略](../fundamentals/scope-tags.md)是不错的资源。
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>刷新周期时间
 
