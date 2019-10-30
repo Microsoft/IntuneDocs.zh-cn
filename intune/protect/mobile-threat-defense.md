@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,15 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727865"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785723"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>什么是 Mobile Threat Defense 与 Intune 的集成？
-Intune 可以集成来自移动威胁防御供应商的数据，作为合规性策略和条件访问规则的信息源。 使用此信息，可通过阻止存在风险的移动设备的访问，来帮助保护 Exchange 和 SharePoint 等公司资源。  
+Intune 可以集成来自移动威胁防御供应商的数据，作为设备符合性策略和设备条件访问规则的信息源。 使用此信息，可通过阻止存在风险的移动设备的访问，来帮助保护 Exchange 和 SharePoint 等公司资源。
+
+Intune 可以使用 Intune 应用保护策略将此相同的数据用作未注册设备的源。 因此，管理员可以使用此信息帮助保护[受 Microsoft Intune 保护的应用](~/apps/apps-supported-intune-apps.md)中的公司数据，并发出阻止或选择性擦除。
 
 ## <a name="what-problem-does-this-solve"></a>还可以解决那些问题？
 集成来自移动威胁防御供应商的信息可帮助保护公司资源免受对移动平台造成影响的风险威胁。  
@@ -42,7 +45,7 @@ Intune 使用移动威胁防御连接器在 Intune 和所选的移动威胁防�
 
 启用后，Intune 将从个人和公司拥有的设备收集应用清单信息，这些信息可供移动威胁防御 (MTD) 提供程序提取，例如 Lookout for Work。 可通过 iOS 设备的用户收集应用清单。
 
-此服务为选择性加入；默认情况下不会共享任何应用清单信息。 Intune 管理员必须在服务设置中为 iOS 设备启用“应用同步”，然后才能共享应用清单信息。
+此服务为选择性加入；默认情况下不会共享任何应用清单信息。 Intune 管理员必须在移动威胁防御连接器设置中启用”适用于 iOS 设备的应用同步”，然后才能共享应用清单信息  。
 
 **应用清单**  
 如果为 iOS 设备启用“应用同步”，来自公司和个人拥有的 iOS 设备的清单将发送给 MTD 服务提供程序。 应用清单中的数据包括：
@@ -56,7 +59,7 @@ Intune 使用移动威胁防御连接器在 Intune 和所选的移动威胁防�
 - 应用是否经过验证
 - 应用是否受管理
 
-## <a name="sample-scenarios"></a>示例方案
+## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>使用设备符合性策略的已注册设备的示例方案
 
 移动威胁防御解决方案判定设备受到感染时：
 
@@ -66,14 +69,22 @@ Intune 使用移动威胁防御连接器在 Intune 和所选的移动威胁防�
 
 ![显示授予 Mobile Threat Defense 访问权限的图像](./media/mobile-threat-defense/MTD-image-2.png)
 
+## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>使用 Intune 应用保护策略的未注册设备的示例方案
+
+移动威胁防御解决方案判定设备受到感染时：<br>
+![显示 Mobile Threat Defense 受感染设备的图像](./media/mobile-threat-defense/MTD-image-3.png)
+
+修正设备时授予访问权限：<br>
+![显示授予 Mobile Threat Defense 访问权限的图像](./media/mobile-threat-defense/MTD-image-4.png)
+
 > [!NOTE] 
-> 不支持对 Intune 使用多个移动威胁防御供应商。 启用多个 MTD 工具将强制安装所有 MTD 应用并使其在多台设备中扫描威胁。
+> 不支持对 Intune 使用多个移动威胁防御供应商。 启用多个 MTD 连接器将强制安装所有 MTD 应用并使其在多台设备中扫描威胁。
 
 ## <a name="mobile-threat-defense-partners"></a>移动威胁防御合作伙伴
 
 了解如何根据设备、网络和应用程序风险，通过以下工具保护对公司资源的访问：
 
-- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e27997b45f0a68f6eb9247c69fafc363787fb457
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722587"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681365"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>创建基于设备的条件访问策略
 
@@ -61,7 +62,7 @@ ms.locfileid: "71722587"
 
     - **选择应用**：选择此选项，选择“选择”  ，然后使用应用程序列表搜索并选择要保护的应用或服务。
     
-      ![创建新的条件访问策略](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![配置条件访问策略的分配](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. 选择“完成”  。
 8. 在“分配”  下，选择“条件”  。
@@ -71,7 +72,7 @@ ms.locfileid: "71722587"
     - **客户端应用**：选择“是”  来指定策略是否应该应用于浏览器应用、移动应用和桌面客户端。 还可以选择“新式身份验证客户端”  （例如 Outlook for iOS 或 Outlook for Android）和“Exchange ActiveSync 客户端”  。
     - **设备状态**：条件访问策略将应用于所有设备状态，除非选择“是”，并专门排除“已加入设备混合 Azure AD”或“标记为兼容的设备”状态（或两者兼而有之）。
     
-      ![创建新的条件访问策略](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![设置条件访问策略的条件](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > 如果希望同时保护“新式身份验证”  客户端和“Exchange ActiveSync”客户端  ，请创建两个单独的条件访问策略，分别针对每种客户端类型。 虽然 Exchange ActiveSync 支持新式身份验证，但 Exchange ActiveSync 支持的惟一条件是平台。 不支持其他条件，包括多重身份验证。 为有效防止 Exchange ActiveSync 对 Exchange Online 的访问，请创建指定云应用 Office 365 Exchange Online 和客户端应用 Exchange ActiveSync 的条件访问策略，同时仅将策略应用于所选的支持平台。

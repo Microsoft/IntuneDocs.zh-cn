@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036419"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785665"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”  边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -126,3 +127,4 @@ ms.locfileid: "72036419"
 | **设备制造商** | 指定以分号分隔的制造商列表。 切勿在多值列表中使用空格。 这些值不区分大小写。 *操作*包括： <br><ul><li>**允许指定项（阻止非指定项）** - 仅与指定制造商匹配的设备才能使用该应用。 所有其他设备将被阻止。 </li></ul> <ul><li>**允许指定项（擦除非指定项）** - 从设备中擦除与应用程序关联的用户帐户。 </li></ul> 若要详细了解如何使用此设置，请参阅[条件启动操作](app-protection-policies-access-actions.md#android-policy-settings)。 |
 | **SafetyNet 设备证明** | 应用保护策略支持 Google Play Protect 的某些 API。 具体而言，此设置在最终用户设备上配置 Google 的 SafetyNet 证明。 指定“基本完整性”或“基本完整性和认证设备”   。 “基本完整性”描述设备的总体完整性  。 已取得根权限的设备、模拟器、虚拟设备以及具有篡改迹象的设备无法通过基本完整性检查。 “基本完整性和认证设备”描述设备与 Google 服务的兼容性  。 只有经过 Google 认证的未修改的设备才能通过此检查。 *操作*包括： <br><ul><li>**警告** - 如果基于配置的值，设备未通过 Google 的 SafetyNet 证明扫描检查，用户会看到一条通知。 可忽略此通知。 </li></ul><ul><li>**阻止访问** - 如果基于配置的值，设备未通过 Google 的 SafetyNet 证明扫描检查，会阻止用户访问。 </li></ul> <ul><li>**擦除数据** - 从设备中擦除与应用程序关联的用户帐户。 </li></ul> </li></ul> 有关此设置的常见问题，请参阅[有关 MAM 和应用保护的常见问题解答](mam-faq.md#app-experience-on-android)。 |
 | **对应用进行威胁扫描** | 应用保护策略支持 Google Play Protect 的某些 API。 具体而言，此设置确保为最终用户设备启用 Google 的“验证应用”扫描。 如果配置了此设置，将阻止最终用户访问，直至他们在其 Android 设备上启用 Google 的应用扫描设置。 *操作*包括： <br><ul><li>**警告** - 如果未在设备上启用 Google 的验证应用扫描，用户会看到一条通知。 可忽略此通知。 </li></ul><ul><li>**阻止访问** - 如果未在设备上启用 Google 的验证应用扫描，会阻止用户访问。 </li></ul></li></ul> Google 的验证应用扫描结果显示在控制台的“可能有害的应用”报告中  。 |
+| **允许的最大设备威胁级别** | 应用保护策略可以利用 Intune-MTD 连接器。 指定使用此应用可接受的最高威胁级别。 威胁由最终用户设备上选择的移动威胁防御 (MTD) 供应商应用确定。 指定安全、低、中或高     。 “安全”要求设备上没有任何威胁，是可配置的限制性最强的值，而“高”实质上要求存在 Intune 到 MTD 的活动连接   。 *操作*包括： <br><ul><li>**阻止访问** - 如果你选择的移动威胁防御 (MTD) 供应商应用确定最终用户设备上的威胁级别不满足此要求，则将阻止用户访问。</li></ul> <ul><li>**擦除数据** - 从设备中擦除与应用程序关联的用户帐户。</li></ul>有关使用此设置的详细信息，请参阅（##在未注册设备上设置 Intune for MTD）。 |

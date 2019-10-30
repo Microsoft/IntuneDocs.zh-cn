@@ -6,24 +6,28 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec60a618280caf6a5b7ef242c192cc64b5d839de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aad6268606dfcf69c304bb5c5b270c8c4795e4b2
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726669"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681286"
 ---
 # <a name="integrate-sophos-mobile-with-intune"></a>将 Sophos Mobile 与 Intune 相集成  
 
 完成以下步骤以将 Sophos Mobile Threat Defense 解决方案与 Intune 相集成。  
+
+> [!NOTE]
+> 未注册的设备不支持此移动威胁防御供应商。
 
 ## <a name="before-you-begin"></a>在开始之前  
 

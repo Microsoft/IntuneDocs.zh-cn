@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724771"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593692"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
@@ -204,7 +205,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 下面是一些详细信息：
 
-- 这些书签仅在用户使用企业模式的 Microsoft Edge 时才会显示。 
+- 这些书签仅在用户使用 Microsoft Edge 的[企业模式](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser)时才会显示。 
 - 用户无法删除或修改这些书签。
 - 这些书签显示在列表顶部。 用户创建的任何书签显示在这些书签下方。
 - 如果已启用应用程序代理重定向，可以使用应用程序代理 Web 应用的内部或外部 URL 添加这些 Web 应用。

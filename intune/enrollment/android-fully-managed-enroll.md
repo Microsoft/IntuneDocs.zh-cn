@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abf391ddbdb1f7087cd06ed1865b3da8b155178
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723575"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505592"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>设置 Android Enterprise 完全托管设备的 Intune 注册 
 
@@ -61,7 +62,7 @@ Intune 可帮助将应用和设置部署到 Android Enterprise 完全托管设�
 > [!NOTE]
 > 如果你定义了一个 Azure AD 条件访问策略，该策略使用“要求设备标记为符合策略”控件，并且适用于所有云应用、Android 和浏览器，则必须将 Microsoft Intune 云应用排除在该策略之外      。 这是因为 Android 安装进程使用 Chrome 选项卡在注册过程中对用户进行身份认证。 有关详细信息，请参阅 [Azure AD 条件访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
 
-如果此设置设置为“是”，将提供 Intune 租户的注册令牌（随机字符串）和 QR 码  。 此单个注册令牌对所有用户有效，并且不会过期。 可使用令牌或 QR 码注册展台设备，具体取决于 Android OS 和设备版本。
+如果此设置设置为“是”，将提供 Intune 租户的注册令牌（随机字符串）和 QR 码  。 此单个注册令牌对所有用户有效，并且不会过期。 根据设备的 Android OS 和版本，可使用令牌或 QR 码注册设备。
 
 ## <a name="enroll-the-fully-managed-devices"></a>注册完全托管的设备
 现在可以[注册完全托管的设备](android-dedicated-devices-fully-managed-enroll.md)。

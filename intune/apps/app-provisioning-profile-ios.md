@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624c6cec2a887396cb6ef6508ab26a16d72f8f7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725317"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584932"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 应用预配配置文件防止应用过期
 
@@ -44,14 +45,22 @@ ms.locfileid: "71725317"
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>如何创建 iOS 移动应用预配配置文件
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-1. 在“客户端应用”  工作负载中，选择“管理”   > “iOS 应用预配配置文件”  。
-2. 在配置文件窗格列表中，选择“创建配置文件”  。
-3. 在“创建配置文件”  窗格中，配置下列值：
+2. 在“Intune”窗格中，选择“客户端应用” > “iOS 应用预配配置文件” > “创建配置文件”     。
+3. 在“基本信息”页上，添加以下值  ：
     - **命名** - 为此移动预配配置文件提供一个名称。
     - **说明** -（可选）提供策略的说明。
     - **上传配置文件的文件** - 选择“打开”  图标，然后选择从 [Apple 开发者网站](https://developer.apple.com/)下载的 Apple 移动配置文件（扩展名为 `.mobileprovision`）。
-4. 完成后，选择“创建”  。
+
+   将用你在上面添加的 Apple 移动配置文件中的值填充“过期日期”  。<br>
+
+   <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
+
+4. 单击“下一步:  作用域标记”。<br>
+   在“作用域标记”页上，你可以选择配置作用域标记，以确定谁可以在 Intune 中查看 iOS 应用预配配置文件  。 若要详细了解作用域标记，请参阅[将基于角色的访问控制和作用域标记用于分布式 IT](../fundamentals/scope-tags.md)。
+5. 单击“下一步:  分配”。<br>
+   通过“分配”页面，可以将配置文件分配到用户和设备  。 值得注意的是，无论设备是否由 Intune 管理，都可以将配置文件分配到设备。
+6. 单击“下一步:**查看 + 创建”以查看你为配置文件输入的值  。
+7. 完成后，单击“创建”以在 Intune 中创建 iOS 应用预配配置文件  。 
 
 ## <a name="next-steps"></a>后续步骤
 

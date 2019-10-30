@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350009"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585011"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -128,6 +129,14 @@ ms.locfileid: "72350009"
 - 接受默认设置以接受所示的列表，或者 
 - 选择“自定义”，以自定义组织无法在托管的 iOS 设备上看到或执行的项目列表。  可以使用 [Markdown](https://daringfireball.net/projects/markdown/) 添加项目符号、粗体、斜体和链接。
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>公司门户的 iOS 设备派生凭据
+Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作，支持个人身份验证 (PIV) 和公共访问卡 (CAC) 派生凭据。 最终用户将在注册 iOS 设备后执行其他步骤，以在公司门户应用程序中验证其身份。 首先为租户设置凭据提供商，然后令使用派生凭据的配置文件面向用户或设备，从而为用户启用派生凭据。
+
+> [!NOTE]
+> 用户将根据你通过 Intune 指定的链接查看有关派生凭据的说明。
+
+有关 iOS 设备派生凭据的详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](~/protect/derived-credentials.md)。
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司门户键盘快捷方式
 
 最终用户可以使用键盘快捷方式（快捷键）在 Windows 公司门户中触发导航、应用和设备操作。
@@ -171,21 +180,25 @@ ms.locfileid: "72350009"
 
 一些平台和配置不支持自助设备操作。 下表提供了自助操作的详细信息：
 
-|     平台    |    停用    |    擦除     |    重命名<sup>(4)</sup>    |    同步    |    远程锁定    |    重置密码    |    密钥恢复    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    可用<sup>(1)</sup>    |    可用    |    可用    |    可用    |    仅限 Windows Phone    |    仅限 Windows Phone    |    NA    |
-|    iOS<sup>(3)</sup>    |    可用    |    可用    |    可用    |    可用    |    可用    |    可用    |    NA    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    可用    |    NA    |    可用    |    可用    |    可用    |    NA    |    可用<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    可用<sup>(7)</sup>    |    可用<sup>(7)</sup>    |    可用    |    可用    |    可用    |    可用<sup>(6)</sup>    |    NA    |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| 停用 | 可用<sup>(1)</sup> | 可用<sup>(8)</sup> | 可用 | 可用<sup>(7)</sup> |
+| 擦除 | 可用 | 可用 | NA | 可用<sup>(7)</sup> |
+| 重命名<sup>(4)</sup> | 可用 | 可用<sup>(8)</sup> | 可用 | 可用 |
+| 同步 | 可用 | 可用 | 可用 | 可用 |
+| 远程锁定 | 仅限 Windows Phone | 可用 | 可用 | 可用 |
+| 重置密码 | 仅限 Windows Phone | 可用 | NA | 可用<sup>(6)</sup> |
+| 密钥恢复 | NA | NA | 可用<sup>(2)</sup> | NA |
+| 深色模式 | NA | 可用 | NA | NA |
 
-
-<sup>(1)</sup> 加入 Azure AD 的 Windows 设备始终禁用“停用”。<br>
-<sup>(2)</sup> 仅可通过公司门户网站使用用于 macOS 的个人密钥恢复。<br> 
+<sup>(1)</sup> 加入 Azure AD 的 Windows 设备始终禁用 **“停用”** 。<br>
+<sup>(2)</sup> 仅可通过 Web 门户使用用于 MacOS 的 **“密钥恢复”** 。<br>
 <sup>(3)</sup> 使用设备注册管理器时，将禁用所有的远程操作。<br>
-<sup>(4)</sup> 重命名仅更改在公司门户应用或网站中的设备名称，不会更改设备上的名称。<br>
-<sup>(5)</sup> 远程擦除在 MacOS 设备上不可用。<br>
-<sup>(6)</sup> 一些 Android 和 Android Enterprise 配置不支持密码重置。 有关详细信息，请参阅[在 Intune 中重置或删除设备密码](../remote-actions/device-passcode-reset.md)。<br>
-<sup>(7)</sup> 停用和擦除在 Android Enterprise 设备所有者场景（COPE、COBO、COSU）中不可用。<br> 
+<sup>(4)</sup> **“重命名”** 仅更改在公司门户应用或网站中的设备名称，不会更改设备上的名称。<br>
+<sup>(5)</sup> **“远程擦除”** 在 MacOS 设备上不可用。<br>
+<sup>(6)</sup> 一些 Android 和 Android Enterprise 配置不支持 **“密码重置”** 。 有关详细信息，请参阅[在 Intune 中重置或删除设备密码](../remote-actions/device-passcode-reset.md)。<br>
+<sup>(7)</sup> **“停用”** 和 **“擦除”** 在 Android Enterprise 设备所有者场景（COPE、COBO、COSU）中不可用。<br> 
+<sup>(8)</sup> 所有类型的注册都可以使用 **“停用”** （删除设备）和 **“重命名”** 。 用户注册不支持进行其他操作。<br> 
 
 ## <a name="next-steps"></a>后续步骤
 

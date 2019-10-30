@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 05/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727813"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749451"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>使用 Intune 中的位置（网络围墙）
 
@@ -29,7 +30,7 @@ ms.locfileid: "71727813"
 
 可以创建基于位置的网络符合性策略，也称为网络隔离。 该策略确保设备必须连接到工作网络才符合要求。 该策略可以与条件访问策略一起使用，以便设备只有在连接到工作网络时才能访问工作资源  。 当设备未连接到工作网络时，该设备变得不符合要求，失去对工作资源的访问权限。
 
-请考虑以下方案：
+请考虑以下情形：
 
 在制造设施中，某些员工使用 Android 设备。 员工将 Android 设备带到设施或工厂外。 为防止未经授权的访问，可以执行以下操作：
 
@@ -68,9 +69,8 @@ ms.locfileid: "71727813"
 
 ## <a name="create-the-location-compliance-policy"></a>创建位置符合性策略
 
-在创建符合性策略时，请对“平台”选择“Android”   。 在“位置”中，可以选择一个或多个已添加的网络位置  。 这些位置是你为设备创建的网络围墙的一部分。
+在[创建符合性策略](create-compliance-policy.md)时，选择“Android”作为“平台”   。 在“位置”中，可以选择一个或多个已添加的网络位置  。 这些位置是你为设备创建的网络围墙的一部分。 
 
-[创建基于网络位置的符合性策略](compliance-policy-create-android.md#locations)提供了一些指导。
 
 ## <a name="configure-the-actions-for-noncompliance"></a>配置针对非符合性的操作
 

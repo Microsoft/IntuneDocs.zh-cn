@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 003ce5af-7ee1-43fb-8d16-9d08c7957a85
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e4d4b3326eda01a1345cd628af31dd66e14533
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724992"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786020"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保护的应用  
 
@@ -71,6 +72,7 @@ ms.locfileid: "71724992"
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | 可以在 iPhone 上随时随地免费查看 Visio 图表，并与之交互。 可以在任何运行 iOS 9.0 或更高版本的 iPhone 上，使用 Microsoft 帐户登录或从电子邮件打开 Visio 附件，并查看令人惊叹的 Visio 图表。 还可以与能在 iPhone 上或 Web 浏览器中查看 Visio 图表的任何人共享图表，即使他们尚未在 Windows 桌面上安装 Visio，也不例外。| [iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | 让 Word 文档在平板电脑和电话上的显示效果比以往更好。 可以让用户确信，所编辑或创建的文档在计算机、Mac、平板电脑和电话上的显示效果完全符合自己的需求。 因为有熟悉的 Office 外观，以及直观的触控体验，所以很快就能上手使用。<p><p>此应用可用作 Android 和 iOS 的多身份应用。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.office.word)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft 工作文件夹**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | 可便于各个员工使用工作文件夹这项Windows Server 功能，在企业环境内外安全地访问自己的文件。 | [iOS 应用商店链接](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
+| **Microsoft 白板**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | Microsoft 白板应用提供了一个自由形式的智能画布，团队可以通过云直观地进行构思、创建和协作。  它通过允许所有团队成员在画布上实时编辑和评论（无论他们在哪里）来增强团队合作。 你所有的工作都可以安全地存放在云端，随时可以从任何设备上取回。 | [iOS 应用商店链接](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | 使用 Yammer，可以打破组织层级障碍，并促进团队协作。 不仅可以与组织中的合适人员保持联系、跨团队共享和搜索信息，还能整理项目和想法，从而完成更多工作。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.yammer.v1)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>合作伙伴应用 

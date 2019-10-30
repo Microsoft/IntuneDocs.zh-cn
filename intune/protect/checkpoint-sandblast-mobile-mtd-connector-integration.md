@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
@@ -17,19 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c3c19c927618cec4b5cb55eb08f097ea21ebc47
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 54d02f46b3296770f1eb24917e7e874e7b3977ac
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722821"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681262"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>将 Check Point SandBlast Mobile 与 Intune 集成
 
+完成以下步骤，以将 Check Point SandBlast 移动威胁防御解决方案与 Intune 集成。
+
+> [!NOTE]
+> 未注册的设备不支持此移动威胁防御供应商。
+
 ## <a name="before-you-begin"></a>在开始之前
 
-> [!NOTE] 
-> 需要在 [Check Point SandBlast Mobile MTD 控制台](https://intune-4.eu1.locsec.net/)中执行以下步骤。
+本文中的说明在 [Check Point SandBlast 移动控制台](https://intune-4.eu1.locsec.net/)中提供。 
 
 开始将 Check Point SandBlast Mobile 与 Intune 集成之前，请确保你具有以下各项：
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726513"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585296"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持  
 
@@ -82,7 +83,7 @@ Intune 管理员可以使用“帮助和支持”选项，通过 Azure 门户为
   4. 选择链接“Intune 帮助和支持”页。
 
 > [!NOTE]  
-> 若 Intune 的实例托管在政府计算云（(GCC)，又称为主权云，如 Azure 政府）上，请参阅本文后续部分中的“政府计算云的 Intune 支持”。 直至今年稍后才可在 GCC 上使用 Intune 帮助和支持体验  。 
+> 若 Intune 的实例托管在政府实体的私有云（又称为主权云，如 Azure 政府）上，请参阅本文后续部分中的[政府私有云的 Intune 支持](#intune-support-for-private-cloud-for-government)。 今年晚些时候才可在政府私有云上使用 Intune 帮助和支持体验  。 
 
 
 打开“帮助和支持”时，门户将显示一个视图，具体取决于是否有未解决的支持事件，若你有顶级支持，将显示一些额外的元素和选项： 
@@ -162,20 +163,20 @@ Intune 管理员可以使用“帮助和支持”选项，通过 Azure 门户为
 
 使用左侧导航窗格“帮助 + 支持”或使用 Azure 门户右上角的“?”   时，将打开 Azure 帮助 + 支持体验，此体验不同于 Intune 帮助和支持体验。  
 
-自 2019 年 4 月起，只有订阅在政府计算云 (GCC) 上时，才可以访问 Azure 帮助 + 支持体验，进而获取与 Intune 相关的帮助。   
+自 2019 年 4 月起，只有订阅在政府实体私有云上时，才可以访问 Azure 帮助 + 支持体验，进而获取与 Intune 相关的帮助  。  
 
-若 Intune 的实例未在 GCC 上运行，通过 Azure 帮助 + 支持导航将重定向到 Intune 帮助和支持体验，创建并管理支持事件。    
+若 Intune 的实例未在政府私有云上运行，通过 Azure 帮助 + 支持导航将重定向到 Intune 帮助和支持体验，创建并管理支持事件   。  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>政府计算云的 Intune 支持  
+## <a name="intune-support-for-private-cloud-for-government"></a>政府私有云的 Intune 支持  
 
-Intune 订阅托管在政府计算云（(GCC)，又称为主权云，如 Azure 政府）上时，你尚无权访问新的 Intune 帮助和支持体验。  请改用以下信息获取 Intune 支持。 
+Intune 订阅托管在政府实体私有云（又称为主权云，如 Azure 政府）上时，你尚无权访问新的 Intune 帮助和支持体验。  请改用以下信息获取 Intune 支持。 
 
 
 ### <a name="create-an-online-support-ticket"></a>创建在线支持票证 
 
 >[!IMPORTANT]    
-> 随着“帮助和支持”过渡到尚不适用于 GCC 的新系统，当创建支持事件时，门户将使用 15 位标识号标识支持案例。  创建 15 位的案例后，将创建该案例的镜像，以供 Microsoft 支持部门使用。 在新支持系统中创建此镜像案例，它使用 8 位案例 ID，以便支持服务使用它跟踪所有支持事件的所有工作和通信。 创建 15 位案例后，你将很快收到电子邮件，其中将标识支持服务使用的镜像支持案例的 8 位编号。  
+> 随着“帮助和支持”过渡到尚不适用于政府私有云的新系统，当创建支持事件时，门户将使用 15 位标识号标识支持案例  。 创建 15 位的案例后，将创建该案例的镜像，以供 Microsoft 支持部门使用。 在新支持系统中创建此镜像案例，它使用 8 位案例 ID，以便支持服务使用它跟踪所有支持事件的所有工作和通信。 创建 15 位案例后，你将很快收到电子邮件，其中将标识支持服务使用的镜像支持案例的 8 位编号。  
 > 
 > 支持个人工作，并从 8 位支持案例进行通信，仅使用 8 位支持案例记录通信和跟踪事件进度。 因此，你将收到来自 8 位支持案例的电子邮件更新，它们是你的案例工作跟踪记录。 15 位支持事件不记录任何详细信息。 支持结束并且 8 位支持案例关闭时，15 位支持案例（可以从 Azure 门户中查看它）将反映此状态。  15 位支持案例应没有任何其他更新或状态更改。  
 > 
@@ -223,7 +224,7 @@ Intune 订阅托管在政府计算云（(GCC)，又称为主权云，如 Azure �
 2. 在“帮助 + 支持”页上，可以查看“最近的支持请求”列表   。
 
    > [!IMPORTANT]  
-   > 政府计算云客户仅可以查看 15 位支持案例号以及事件状态。 所有案例通信和工作跟踪或通知均通过电子邮件发送，并引用从 Intune 控制台打开支持案例镜像时所创建的 8 位支持案例号。   
+   > 政府私有云客户仅可以查看 15 位支持案例号以及事件状态。 所有案例通信和工作跟踪或通知均通过电子邮件发送，并引用从 Intune 控制台打开支持案例镜像时所创建的 8 位支持案例号。   
 
 ## <a name="additional-resources"></a>其他资源  
 

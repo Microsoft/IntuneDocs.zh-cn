@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237233"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749419"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -77,7 +78,7 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
     3. 对于“成员资格类型”  ，选择“已分配”  或“动态设备”  。
 3. 如果在上一步中选择“已分配”作为“成员资格类型”，请选择“组”边栏选项卡中的“成员”，并将 Autopilot 设备添加到组中     。
     尚未注册的 Autopilot 设备使用设备序列号作为名称。
-4. 如果选择“动态设备”  作为“成员资格类型”  ，请选择“组”  边栏选项卡中的“动态设备成员”  ，并在“高级规则”  框中键入以下任意代码。 这些规则仅收集 Autopilot 设备，因为它们的目标是仅由 Autopilot 设备拥有的属性。
+4. 如果选择“动态设备”  作为“成员资格类型”  ，请选择“组”  边栏选项卡中的“动态设备成员”  ，并在“高级规则”  框中键入以下任意代码。 这些规则仅收集 Autopilot 设备，因为它们的目标是仅由 Autopilot 设备拥有的属性。 创建基于非 Autopilot 属性的组不能保证组中包含的设备实际上已注册到 Autopilot。
     - 若要创建包括所有 Autopilot 设备的组，请键入：`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
     - Intune 的组标记字段映射到 Azure AD 设备上的 OrderID 属性。 若要创建包括所有具有特定组标记（Azure AD 设备 OrderID）的所有 Autopilot 设备的组，必须键入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - 若要创建包括所有具有特定采购订单 ID 的 Autopilot 设备的组，请键入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
@@ -167,6 +168,11 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
     ![友好名称的屏幕截图](./media/enrollment-autopilot/friendly-name.png)
 
 4. 选择“确定”  。
+
+## <a name="autopilot-deployments-report"></a>Autopilot 部署报告
+可以查看通过 Windows Autopilot 部署的每个设备的详细信息。
+若要查看该报告，请转到“Intune”，然后在“监视”下，选择“Autopilot 部署”    。
+数据在部署后的 30 天内可用。
 
 
 ## <a name="delete-autopilot-devices"></a>删除 Autopilot 设备

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dac7069e30c173d80f15977ba2f06fcabcb7179b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724433"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785535"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过 Apple Volume Purchase Program 购买的 iOS 和 macOS 应用
 
@@ -93,7 +94,7 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
         > 对于使用此令牌创建的应用，更改国家/地区将更新应用元数据，并在下次与 Apple 服务同步时存储 URL。 如果应用未在新的国家/地区应用商店中提供，则不会更新该应用。
 
     - **VPP 帐户类型** - 从“企业版”  或“教育版”  中进行选择。
-    - **自动应用更新** - 从“关”切换为“开”以启用或停用自动更新   。 启用后，Intune 将在应用商店内检测 VPP 应用更新，并在设备进行签入时自动将这些更新推送到设备中。 Apple VPP 应用的自动应用更新将仅自动更新通过“必需”的安装意向所部署的应用  。 对于通过“可用”安装意向部署的应用，自动更新会为管理员生成通知，提示该应用有可用的新版本  。 此外，即使安装了早期版本的应用，用户也可能无法在公司门户看到新安装的应用。 在这种情况下，用户从公司门户应用的应用详细信息屏幕单击“安装”，安装应用的更高版本，即可重新安装应用。 
+    - **自动应用更新** - 从“关”切换为“开”以启用或停用自动更新   。 启用后，Intune 将在应用商店内检测 VPP 应用更新，并在设备进行签入时自动将这些更新推送到设备中。 Apple VPP 应用的自动应用更新将仅自动更新通过“必需”的安装意向所部署的应用  。 对于通过“可用”安装意向部署的应用，自动更新会为 IT 管理员生成状态信息，提示该应用有可用的新版本  。 选择应用，选择“设备安装状态”，然后选中“状态详细信息”，即可查看此状态消息。 此外，即使安装了早期版本的应用，用户也可能无法在公司门户看到新安装的应用。 在这种情况下，用户从公司门户应用的应用详细信息屏幕单击“安装”，安装应用的更高版本，即可重新安装应用。 
 
         > [!NOTE]
         > 自动应用更新适用于针对 iOS 11.0 及更高版本或 macOS 10.12 及更高版本的设备和用户许可应用。

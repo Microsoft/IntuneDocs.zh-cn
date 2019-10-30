@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,20 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379816"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587956"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 作为 Intune 管理员，可创建和管理注册限制，这些限制可以定义注册接受 Intune 的管理的设备，其中包括：
-- 设备数
-- 操作系统和版本 可创建多个限制并将其应用于不同用户组。 可为不同限制设置[优先级顺序](#change-enrollment-restriction-priority)。
+- 设备数。
+- 操作系统和版本。
+
+可创建多个限制并将其应用于不同用户组。 可为不同限制设置[优先级顺序](#change-enrollment-restriction-priority)。
 
 >[!NOTE]
 >注册限制不是安全功能。 遭到入侵的设备可能会误报字符。 这些限制是针对非恶意用户的最合适的障碍。
@@ -69,8 +72,17 @@ ms.locfileid: "72379816"
     - Android 设备管理员和 Android Enterprise 工作配置文件支持 major.minor.rev.build。
     - iOS 支持 major.minor.rev。操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
     - Windows 仅对 Windows 10 支持 major.minor.build.rev。
-    > [!Note]
-    > Windows 10 注册过程中不提供修订号，因此对于实例，如果输入 10.0.17134.100 而设备是 10.0.17134.174，则在注册过程中将阻止该实例。
+    
+    > [!IMPORTANT]
+    > Android Enterprise（工作配置文件）和 Android 设备管理员平台具有以下行为：
+    > - 如果两个平台都允许用于同一组，则如果用户的设备支持工作配置文件，则用户将使用该工作配置文件注册，否则他们将注册为 DA。 
+    > - 如果两个平台都允许用于一个组，且针对特定非重叠版本进行了改进，那么用户将收到为其 OS 版本定义的注册流。 
+    > - 如果两个平台都是允许的，但阻止同时用于相同的版本，那么在具有受阻止版本的设备上，将按 Android 设备管理员注册流程注册用户，然后阻止其注册并提示其注销。 
+    >
+    > 值得注意的是，除非在 Android 中完成了适当的先决条件，否则工作配置文件或设备管理员注册都无法成功。 
+    
+   > [!Note]
+   > Windows 10 注册过程中不提供修订号，因此对于实例，如果输入 10.0.17134.100 而设备是 10.0.17134.174，则在注册过程中将阻止该实例。
 
 8. 在“个人拥有”中，对想要允许作为个人拥有的设备的平台选择“允许”。  
 9. 选择“下一步”，转到“分配”页。  

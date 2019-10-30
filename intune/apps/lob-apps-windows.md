@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036460"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601577"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>将 Windows 业务线应用添加到 Microsoft Intune
 
@@ -82,12 +83,12 @@ ms.locfileid: "72036460"
 
    > [!NOTE]
    > 为了让 Intune 服务成功地将新的 APPX 文件部署到设备上，必须在 APPX 包的 AppxManifest.xml 文件中递增 `Version` 字符串。
-    
+
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>配置自我更新的移动 MSI 应用以忽略版本检查过程
 
-可以配置已知的自我更新移动 MSI 应用以忽略版本检查过程。 
+可以配置已知的自我更新移动 MSI 应用以忽略版本检查过程。
 
-某些基于 MSI 安装程序的应用会由应用开发者自动更新。 对于这些自动更新的 MSI 应用，可以在“应用信息”  窗格中配置“忽略应用版本”  设置。 当此设置切换为“是”  时，Microsoft Intune 将不会强制执行在 Windows 客户端上安装的应用版本。 
+某些基于 MSI 安装程序的应用会由应用开发者或其他更新方法自动更新。 对于这些自动更新的 MSI 应用，可以在“应用信息”  窗格中配置“忽略应用版本”  设置。 当此设置切换为“是”  时，Microsoft Intune 将不会强制执行在 Windows 客户端上安装的应用版本。
 
 此功能有助于避免出现争用条件。 例如，当应用开发者自动更新应用并通过 Intune 更新时，就会出现争用条件。 两者都可能在 Windows 客户端上尝试强制执行一个应用版本，进而引发冲突。
 

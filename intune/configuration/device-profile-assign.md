@@ -5,9 +5,10 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237211"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550800"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -33,6 +34,10 @@ ms.locfileid: "72237211"
 
 > [!NOTE]  
 > 当策略被删除或不再分配到设备时，此设置可能会保留现有值。 此设置不会还原到默认值。 若要将设置更改为其他值，请创建新策略并进行分配。
+
+## <a name="before-you-begin"></a>在开始之前
+
+确保你拥有适当的角色来分配策略。 有关详细信息，请参阅 [Microsoft Intune 的基于角色的访问控制 (RBAC)](../fundamentals/role-based-access-control.md)。
 
 ## <a name="assign-a-device-profile"></a>分配设备配置文件
 

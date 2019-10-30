@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,17 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728502"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584540"
 ---
 # <a name="rename-a-device-in-intune"></a>在 Intune 中重命名设备
-
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
  通过“重命名设备”操作可以重命名在 Intune 中注册的设备。 设备的名称将在 Intune 和设备中更改。
 
@@ -44,6 +42,15 @@ ms.locfileid: "71728502"
 5. 如果要在重命名设备后重新启动该设备，请选择“重命名后重新启动”旁边的“是”   。
 6. 选择“重命名”  。
 
+## <a name="windows-device-rename-rules"></a>Windows 设备重命名规则
+重命名 Windows 设备时，新名称必须遵循以下规则：
+- 小于或等于 15 个字符（必须小于或等于 63 个字节，不包括尾随 NULL）
+- 非 Null 或空字符串
+- 允许的 ASCII：字母（a-z、A-Z），数字 (0-9) 和连字符
+- 允许的 Unicode：0x80 及以后的字符，必须是有效的 UTF8，必须是可映射到 IDN（即 RtlIdnToNameprepUnicode 成功；请参阅 RFC 3492）
+- 名称不得只包含数字
+- 名称中不能包含空格
+- 不允许的字符：{ | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>后续步骤

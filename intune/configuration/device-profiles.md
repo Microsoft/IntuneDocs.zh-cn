@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036447"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749353"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能和设置
 
@@ -48,7 +49,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 此功能支持：
 
-- Windows 10 及更高版本
+- 支持固件上的 Windows 10 1809 及更高版本。
 
 ## <a name="certificates"></a>证书
 
@@ -66,7 +67,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="custom-profile"></a>自定义配置文件
 
-[自定义设置](../custom-settings-configure.md)可让管理员分配未在 Intune 中内置的设备设置。 对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。
+[自定义设置](custom-settings-configure.md)可让管理员分配未在 Intune 中内置的设备设置。 对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。
 
 此功能支持：
 
@@ -78,7 +79,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="delivery-optimization"></a>传递优化
 
-[传递优化](../delivery-optimization-windows.md)提供了更好的传递软件更新体验。 这些设置将替换“软件更新”   >   “Windows 10 更新通道”设置。
+[传递优化](delivery-optimization-windows.md)提供了更好的传递软件更新体验。 这些设置将替换“软件更新”   >   “Windows 10 更新通道”设置。
 
 使用这些设置来控制如何将软件更新下载到组织中的设备。 例如，可以允许用户获取其自己的更新，或使用设备配置文件中的传递优化云服务获取更新。
 
@@ -88,12 +89,20 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="device-features"></a>设备功能
 
-[设备功能](../device-features-configure.md)控制 iOS 和 macOS 设备上的功能，例如 AirPrint、通知和锁屏消息。
+[设备功能](device-features-configure.md)控制 iOS 和 macOS 设备上的功能，例如 AirPrint、通知和锁屏消息。
 
 此功能支持：
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>设备固件配置接口
+
+[设备固件配置接口](device-firmware-configuration-interface-windows.md) (DFCI) 允许管理员使用 Intune 启用或禁用 UEFI (BIOS) 设置。 使用这些设置增强固件级别的安全性，这样通常可以更好地抵抗恶意攻击。
+
+此功能支持：
+
+- Windows 10 及更高版本
 
 ## <a name="device-restrictions"></a>设备限制
 
@@ -210,9 +219,9 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="update-policies"></a>更新策略
 
-[ iOS 更新策略](../software-updates-ios.md)展示了创建和分配 iOS 策略以在 iOS 设备上安装软件更新的方式。 你还可以查看安装状态。
+[ iOS 更新策略](../protect/software-updates-ios.md)展示了创建和分配 iOS 策略以在 iOS 设备上安装软件更新的方式。 你还可以查看安装状态。
 
-有关 Windows 设备上的更新策略，请参阅[传递优化](../delivery-optimization-windows.md)。 
+有关 Windows 设备上的更新策略，请参阅[传递优化](delivery-optimization-windows.md)。 
 
 此功能支持：
 
@@ -265,7 +274,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="manage-and-troubleshoot"></a>管理和故障排除
 
-[管理配置文件](../device-profile-monitor.md)以检查设备的状态和分配的配置文件。 还可以通过查看导致冲突的设置以及包含这些设置的配置文件来帮助解决冲突。 [常见问题和解决方法](device-profile-troubleshoot.md)可帮助管理员处理配置文件。 它介绍了删除配置文件时发生的情况，导致将通知发送到设备的原因等等。
+[管理配置文件](device-profile-monitor.md)以检查设备的状态和分配的配置文件。 还可以通过查看导致冲突的设置以及包含这些设置的配置文件来帮助解决冲突。 [常见问题和解决方法](device-profile-troubleshoot.md)可帮助管理员处理配置文件。 它介绍了删除配置文件时发生的情况，导致将通知发送到设备的原因等等。
 
 ## <a name="next-steps"></a>后续步骤
 

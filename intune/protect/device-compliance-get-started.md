@@ -2,29 +2,28 @@
 title: Microsoft Intune 中的设备符合性策略 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中：开始使用设备符合性策略，状态和严重性级别概述，使用 InGracePeriod 状态，使用条件访问，处理不具有分配策略的设备，以及 Azure 门户和经典门户中的符合性的差别
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a743bb3b2003b1dbdf8088aca19bce898c8e40a8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721417"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749173"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在设备上设置规则以允许使用 Intune 访问组织中的资源
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 为了有助于保护组织数据，许多移动设备管理 (MDM) 解决方案都会要求用户和设备必须符合一些要求。 在 Intune 中，此功能称为“符合性策略”。 符合性策略定义了用户和设备符合要求所必须满足的规则和设置。 通过结合使用条件访问，管理员可以阻止不符合规则的用户和设备。
 
@@ -89,7 +88,7 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
 
 - **将未分配到符合性策略的设备标记为**：此属性有两个值：
 
-  - **符合**（默认值）：安全功能关闭
+  - **符合**（默认值）：安全功能关闭 
   - **不符合**：安全功能开启
 
   如果设备未分配到符合性策略，则此设备在默认情况下被视为符合。 如果结合使用条件访问和符合性策略，建议将默认设置更改为“不符合”  。 如果最终用户因未分配有策略而不符合要求，[公司门户](../apps/company-portal-app.md)会显示“`No compliance policies have been assigned`”。
@@ -115,13 +114,13 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
 
 |**策略设置**| **平台** |
 | --- | ----|
-| **PIN 或密码配置** | - **Android 4.0 及更高版本**：已隔离</br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离</br>- **Android Enterprise**：已隔离</br></br>- **iOS 8.0 及更高版本**：已修正</br>- **macOS 10.11 及更高版本**：已修正</br></br>- **Windows 8.1 及更高版本**：已修正</br>- **Windows Phone 8.1 及更高版本**：已修正|
-| **设备加密** | - **Android 4.0 及更高版本**：已隔离</br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离</br>- **Android Enterprise**：已隔离</br></br>- **iOS 8.0 及更高版本**：已修正（通过设置 PIN）</br>- **macOS 10.11 及更高版本**：已修正（通过设置 PIN）</br></br>- **Windows 8.1 及更高版本**：“不适用”</br>- **Windows Phone 8.1 及更高版本**：已修正 |
-| **已越狱或取得 root 权限的设备** | - **Android 4.0 及更高版本**：已隔离（非设置）</br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离（非设置）</br>- **Android Enterprise**：已隔离（非设置）</br></br>- **iOS 8.0 及更高版本**：已隔离（非设置）</br>- **macOS 10.11 及更高版本**：“不适用”</br></br>- **Windows 8.1 及更高版本**：“不适用”</br>- **Windows Phone 8.1 及更高版本**：“不适用” |
-| **电子邮件配置文件** | - **Android 4.0 及更高版本**：“不适用”</br>- **Samsung Knox 标准版 4.0 及更高版本**：“不适用”</br>- **Android Enterprise**：“不适用”</br></br>- **iOS 8.0 及更高版本**：已隔离</br>- **macOS 10.11 及更高版本**：已隔离</br></br>- **Windows 8.1 及更高版本**：“不适用”</br>- **Windows Phone 8.1 及更高版本**：“不适用” |
-| **最低操作系统版本** | - **Android 4.0 及更高版本**：已隔离</br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离</br>- **Android Enterprise**：已隔离</br></br>- **iOS 8.0 及更高版本**：已隔离</br>- **macOS 10.11 及更高版本**：已隔离</br></br>- **Windows 8.1 及更高版本**：已隔离</br>- **Windows Phone 8.1 及更高版本**：已隔离 |
-| **最高操作系统版本** | - **Android 4.0 及更高版本**：已隔离</br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离</br>- **Android Enterprise**：已隔离</br></br>- **iOS 8.0 及更高版本**：已隔离</br>- **macOS 10.11 及更高版本**：已隔离</br></br>- **Windows 8.1 及更高版本**：已隔离</br>- **Windows Phone 8.1 及更高版本**：已隔离 |
-| **Windows 运行状况证明** | - **Android 4.0 及更高版本**：“不适用”</br>- **Samsung Knox 标准版 4.0 及更高版本**：“不适用”</br>- **Android Enterprise**：“不适用”</br></br>- **iOS 8.0 及更高版本**：“不适用”</br>- **macOS 10.11 及更高版本**：“不适用”</br></br>- **Windows 10 和 Windows 10 移动版**：已隔离</br>- **Windows 8.1 及更高版本**：已隔离</br>- **Windows Phone 8.1 及更高版本**：“不适用” |
+| **PIN 或密码配置** | - **Android 4.0 及更高版本**：已隔离<br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离<br>- **Android Enterprise**：已隔离  <br>  <br>- **iOS 8.0 及更高版本**：已修正<br>- **macOS 10.11 及更高版本**：已修正  <br>  <br>- **Windows 8.1 及更高版本**：已修正<br>- **Windows Phone 8.1 及更高版本**：已修正|
+| **设备加密** | - **Android 4.0 及更高版本**：已隔离<br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离<br>- **Android Enterprise**：已隔离<br><br>- **iOS 8.0 及更高版本**：已修正（通过设置 PIN）<br>- **macOS 10.11 及更高版本**：已修正（通过设置 PIN）<br><br>- **Windows 8.1 及更高版本**：“不适用”<br>- **Windows Phone 8.1 及更高版本**：已修正 |
+| **已越狱或取得 root 权限的设备** | - **Android 4.0 及更高版本**：已隔离（非设置）<br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离（非设置）<br>- **Android Enterprise**：已隔离（非设置）<br><br>- **iOS 8.0 及更高版本**：已隔离（非设置）<br>- **macOS 10.11 及更高版本**：“不适用”<br><br>- **Windows 8.1 及更高版本**：“不适用”<br>- **Windows Phone 8.1 及更高版本**：“不适用” |
+| **电子邮件配置文件** | - **Android 4.0 及更高版本**：“不适用”<br>- **Samsung Knox 标准版 4.0 及更高版本**：“不适用”<br>- **Android Enterprise**：“不适用”<br><br>- **iOS 8.0 及更高版本**：已隔离<br>- **macOS 10.11 及更高版本**：已隔离<br><br>- **Windows 8.1 及更高版本**：“不适用”<br>- **Windows Phone 8.1 及更高版本**：“不适用” |
+| **最低操作系统版本** | - **Android 4.0 及更高版本**：已隔离<br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离<br>- **Android Enterprise**：已隔离<br><br>- **iOS 8.0 及更高版本**：已隔离<br>- **macOS 10.11 及更高版本**：已隔离<br><br>- **Windows 8.1 及更高版本**：已隔离<br>- **Windows Phone 8.1 及更高版本**：已隔离 |
+| **最高操作系统版本** | - **Android 4.0 及更高版本**：已隔离<br>- **Samsung Knox 标准版 4.0 及更高版本**：已隔离<br>- **Android Enterprise**：已隔离<br><br>- **iOS 8.0 及更高版本**：已隔离<br>- **macOS 10.11 及更高版本**：已隔离<br><br>- **Windows 8.1 及更高版本**：已隔离<br>- **Windows Phone 8.1 及更高版本**：已隔离 |
+| **Windows 运行状况证明** | - **Android 4.0 及更高版本**：“不适用”<br>- **Samsung Knox 标准版 4.0 及更高版本**：“不适用”<br>- **Android Enterprise**：“不适用”<br><br>- **iOS 8.0 及更高版本**：“不适用”<br>- **macOS 10.11 及更高版本**：“不适用”<br><br>- **Windows 10 和 Windows 10 移动版**：已隔离<br>- **Windows 8.1 及更高版本**：已隔离<br>- **Windows Phone 8.1 及更高版本**：“不适用” |
 
 ---------------------------
 
@@ -156,8 +155,9 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
   - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows 10 及更高版本](compliance-policy-create-windows.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
-  - [Windows 8.1 和 Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows 8.1 及更高版本](compliance-policy-create-windows-8-1.md)
+  - [Windows 10 及更高版本](compliance-policy-create-windows.md)
 
 - [策略实体引用](../reports-ref-policy.md)包含有关 Intune 数据仓库策略实体的信息。

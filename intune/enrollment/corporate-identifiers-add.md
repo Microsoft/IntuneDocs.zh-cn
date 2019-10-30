@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314672"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503300"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -121,7 +122,7 @@ ms.locfileid: "72314672"
 
 ## <a name="change-device-ownership"></a>更改设备所有权
 
-设备属性显示 Intune 中每个设备记录的“所有权”  。 作为管理员，你可将设备所有权指定为“个人”  或“公司”  。
+设备属性显示 Intune 中每个设备记录的“所有权”  。 作为管理员，你可将设备所有权指定为“个人”  或“公司”  。 当设备的所有权类型从“个人”更改为“公司”时，Intune 会在 7 天内删除以前从该设备收集的所有应用信息。 如果适用，Intune 还将删除记录的电话号码。 
 
 **更改设备所有权：**
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，转到“设备”  并选择设备。

@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc777cc6d8b803c502d847114ef7cff04ceb26
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725330"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584962"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 将托管 Google Play 应用添加到 Android Enterprise 设备
 
@@ -48,9 +49,9 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 ## <a name="managed-google-play-app-types"></a>“托管 Google Play”应用类型
 托管 Google Play 提供三种类型的应用：
 
-* **托管的 Google Play 商店应用** - 已在 Play Store 中正式发布的公共应用。 通过浏览要管理的应用，批准它们，然后将其同步到 Intune 中，在 Intune 中管理这些应用。
-* **托管的 Google Play 专用应用** - 这些是由 Intune 管理员发布到托管 Google Play 的 LOB 应用。  这些应用是专用应用，仅适用于 Intune 租户。 这是通过托管 Google Play 和 Android Enterprise 管理和部署 LOB 应用的方式。
-* **托管的 Google Play Web 链接** - 包含可部署到 Android Enterprise 设备的 IT 管理员定义的图标的 Web 链接。 它们显示在设备应用列表中的设备上，就像常规应用一样。
+- **托管的 Google Play 商店应用** - 已在 Play Store 中正式发布的公共应用。 通过浏览要管理的应用，批准它们，然后将其同步到 Intune 中，在 Intune 中管理这些应用。
+- **托管的 Google Play 专用应用** - 这些是由 Intune 管理员发布到托管 Google Play 的 LOB 应用。  这些应用是专用应用，仅适用于 Intune 租户。 这是通过托管 Google Play 和 Android Enterprise 管理和部署 LOB 应用的方式。
+- **托管的 Google Play Web 链接** - 包含可部署到 Android Enterprise 设备的 IT 管理员定义的图标的 Web 链接。 它们显示在设备应用列表中的设备上，就像常规应用一样。
 
 ## <a name="managed-google-play-store-apps"></a>托管的 Google Play 商店应用
 有两种方式可使用 Intune 浏览和批准托管的 Google Play 商店应用：
@@ -209,8 +210,7 @@ Android Enterprise 需要用户先在托管的 Google Play Web 控制台中批�
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Android Enterprise 工作配置文件设备的其他托管 Google Play 应用报告
 
-对于部署到 Android Enterprise 工作配置文件设备的托管 Google Play 应用，可以查看设备上安装的应用的特定版本号。 这仅适用于所需的应用。 
-
+对于部署到 Android Enterprise 工作配置文件设备的托管 Google Play 应用，可以使用 Intune 查看设备上安装的应用的状态和版本号。 
 
 ## <a name="delete-managed-google-play-apps"></a>删除托管 Google Play 应用
 必要时，可以从 Microsoft Intune 中删除托管 Google Play 应用。 若要删除托管 Google Play 应用，请在 Azure 门户中打开“Microsoft Intune”，并依次选择“客户端应用”   > “应用”  。 在应用列表中，选择托管 Google Play 应用右侧的省略号 (...)，再从随即显示的列表中选择“删除”  。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。

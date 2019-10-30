@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722886"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585433"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中创建和分配 SCEP 证书配置文件
 
@@ -50,7 +50,7 @@ ms.locfileid: "71722886"
 
    2. 在“监视”下，证书报表不可用于设备所有者 SCEP 证书配置文件。
    
-   3. 设备所有者的 SCEP 证书配置文件设置的证书吊销不受 Intune 支持，但可通过外部进程或直接使用证书颁发机构进行管理。
+   3. 不能使用 Intune 撤销由 SCEP 证书配置文件为设备所有者预配的证书。 可以通过外部进程或直接通过证书颁发机构来实现撤销。 
 
 6. 选择“设置”，然后完成以下配置  ：
 
@@ -113,15 +113,13 @@ ms.locfileid: "71722886"
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** （仅适用于 Windows 和加入域的设备） 
         - **{{MEID}}**
-        
+
         可在文本框中指定这些变量，后跟变量的文本。 例如，可以将名为 Device1 的设备的公用名添加为 CN={{DeviceName}}Device1   。
 
         > [!IMPORTANT]  
         > - 指定变量时，请将变量名称括在大括号 {} 中（如示例中所示），以避免出现错误。  
         > - 在设备证书的使用者或 SAN 中使用的设备属性（例如 IMEI、SerialNumber 和 FullyQualifiedDomainName）可能被有权访问设备的人员仿造      。
         > - 设备必须支持在证书配置文件中为该配置文件指定的所有变量，才能在该设备上安装。  例如，如果在 SCEP 配置文件的使用者名称中使用 {{IMEI}} 并将其分配给没有 IMEI 号码的设备，则配置文件安装将失败  。  
- 
-
 
    - **使用者备用名称**：  
      选择 Intune 在证书请求中自动创建使用者可选名称 (SAN) 的方式。 SAN 的选项取决于所选的证书类型，即“用户”或“设备”   。  
@@ -198,15 +196,15 @@ ms.locfileid: "71722886"
      为证书的预期目的添加值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证  。 可根据需要添加其他密钥用法。
 
    - **续订阈值 (%)** ：  
-     输入设备请求证书续订之前剩余的证书有效期限的百分比。 例如，如果输入“20”，则在证书的到期时间还剩 20% 时将尝试续订证书，并将继续尝试，直到续订成功。 续订会生成新的证书，从而生成新的公钥/私钥对。
+     输入设备请求证书续订之前剩余的证书有效期限的百分比。 例如，如果输入“20”，将在证书的有效期限已使用 80% 时尝试续订证书。 将持续尝试续订，直到续订成功。 续订会生成新的证书，从而生成新的公钥/私钥对。
 
    - **SCEP 服务器 URL**：  
-     为通过 SCEP 颁发证书的 NDES 服务器输入 1 个或多个 URL。 例如，输入类似于 https://ndes.contoso.com/certsrv/mscep/mscep.dll 的内容  。 可根据需要添加其他用于负载均衡的 SCEP URL，因为 URL 会被随机推送到具有配置文件的设备。 如果某个 SCEP 服务器不可用，则 SCEP 请求将会失败，并且可能会在随后的设备签入中发出证书请求，该请求可能针对的是同一台已关闭的服务器。
+     为通过 SCEP 颁发证书的 NDES 服务器输入 1 个或多个 URL。 例如，输入类似于 https://ndes.contoso.com/certsrv/mscep/mscep.dll 的内容  。 可根据需要添加其他用于负载均衡的 SCEP URL，因为 URL 会被随机推送到具有配置文件的设备。 如果某台 SCEP 服务器不可用，则 SCEP 请求将会失败，并且在稍后的设备签入中，可能针对这台已关闭的服务器发出证书请求。
 
 7. 选择“确定”，然后选择“创建”   。 该配置文件已创建并显示在“设备配置 - 配置文件”  列表中。
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>避免证书签名请求中包含转义的特殊字符
-包含具有一个或多个以下特殊字符作为转义字符的使用者名称 (CN) 的 SCEP 证书请求存在一个已知问题。 包含一个特殊字符作为转义字符的使用者名称会导致使用者名称不正确的 CSR，进而导致 Intune SCEP 质询验证失败，并且未颁发证书。  
+包含用以下一个或多个特殊字符作为转义字符的使用者名称 (CN) 的 SCEP 和 PKCS 证书请求存在一个已知问题。 将其中一个特殊字符作为转义字符的使用者名称将导致 CSR 中使用者名称不正确。 错误的使用者名称会导致 Intune SCEP 质询验证失败，并且不会颁发证书。
 
 特殊字符为：
 - \+

@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 10/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: coryfe
+ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 1d34e44c6e046ddbc9b47bbe90900f5992df9e85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314718"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584563"
 ---
 # <a name="manage-software-updates-in-intune"></a>在 Intune 中管理软件更新
 
@@ -63,17 +64,30 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 
 ## <a name="create-and-assign-update-rings"></a>创建和分配更新通道
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 选择“软件更新” > “Windows 10 更新通道” > “创建”    。
-4. 输入名称和说明（可选），然后选择“配置”  。
-5. 在“设置”  中，配置可满足业务需求的设置。 若要了解可用的设置，请参阅 [Windows 更新设置](../windows-update-settings.md)。  
-6. 完成后，选择“确定”  。 在“创建更新频道”中，选择“创建”   。 新的更新通道显示在更新通道列表中。
-7. 要分配通道，请在更新通道列表中选择一个通道，然后在“\<通道名称>”选项卡上选择“分配”  。
-8. 使用“包含”  和“排除”  选项卡来定义将此通道分配到哪些组，然后选择“保存”  以完成分配。
+1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后选择“软件更新” > “Windows 10 更新通道” > “创建”    。  
+
+2. 在“基本信息”选项卡上，指定名称和描述（可选），然后选择“下一步”  。  
+
+   ![创建 Windows 10 更新通道工作流](./media/windows-update-for-business-configure/basics-tab.png)
+
+3. 在“更新通道设置”选项卡上，配置可满足业务需求的设置  。 若要了解可用的设置，请参阅 [Windows 更新设置](windows-update-settings.md)。 配置“更新”和“用户体验”设置之后，选择“下一步”    。  
+
+4. 若要在更新通道中应用作用域标记，则在“作用域标记”选项卡上，选择“选择作用域标记”以打开“选择标记”窗格    。  
+
+   - 在“选择标记”窗格中，选择一个或多个标记，然后单击“选择”以将其添加到更新通道，然后返回“作用域标记”窗格    。  
+
+   准备就绪后，选择“下一步”，转到“分配”   。 
+
+5. 在“分配”选项卡上，选择“选择要包括的组”，然后将更新通道分配到一个或多个组   。 使用“+ 选择要排除的组”对分配进行相应调整  。 选择“下一步”继续操作  。  
+
+6. 在“查看 + 创建”选项卡中，查看设置，然后在准备好保存 Windows 10 更新通道时选择“创建”   。 新的更新通道显会示在更新通道列表中。
 
 ## <a name="manage-your-windows-10-update-rings"></a>管理 Windows 10 更新通道
-在门户中，可以选择一个 Windows 10 更新通道以打开其“概述”  窗格。 通过此窗格可以查看通道分配状态并执行其他操作来管理通道。 
+
+在门户中，可以选择一个 Windows 10 更新通道以打开其“概述”  窗格。 通过此窗格可以查看通道分配状态并执行其他操作来管理通道。
+
 ### <a name="to-view-an-updates-rings-overview-pane"></a>若要查看更新通道“概述”窗格，请执行以下操作： 
+
 1. 登录到 Azure 门户。
 2. 导航到“Intune”   > “软件更新”   > “Windows 10 更新通道”  。
 3. 选择要查看或管理的更新通道。  
@@ -88,18 +102,22 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 ![可用操作](./media/windows-update-for-business-configure/overview-actions.png)
 
 ### <a name="delete"></a>删除  
+
 选择“删除”  可停止强制执行所选 Windows 10 更新通道的设置。 删除通道会从 Intune 中删除其配置，以便 Intune 不再应用并强制执行这些设置。  
 
 从 Intune 中删除通道不会修改已分配有更新通道的设备上的设置。  相反，设备将保留其当前设置。 设备不会保留它们之前保存的设置的历史记录。 设备还可以从保持活动状态的其他更新通道接收设置。  
 
 #### <a name="to-delete-a-ring"></a>删除通道  
+
 1. 在查看更新通道的概述页时，选择“删除”  。  
 2. 选择“确定”  。  
 
 ### <a name="pause"></a>暂停  
+
 选择“暂停”  可防止已分配的设备在暂停通道后长达 35 天的时间内接收功能更新或质量更新。 超出最长天数后，暂停功能自动过期，设备将扫描 Windows 更新以检查可用更新。 执行此扫描后，你可以再次暂停更新。 如果恢复已暂停的更新通道，然后再次暂停该通道，则暂停期将重置为 35 天。  
 
 #### <a name="to-pause-a-ring"></a>暂停通道  
+
 1. 在查看更新通道的概述页时，选择“暂停”  。  
 2. 选择“功能”  或“质量”  以暂停该类型的更新，然后选择“确定”  。  
 3. 在暂停一种更新类型后，可以再次选择“暂停”以暂停另一种更新类型。  
@@ -110,22 +128,27 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 > 发出暂停命令后，设备会在下次签入服务时收到此命令。 可能的情况是，在设备签入前，它们可能安装了计划更新。 此外，如果在发出暂停命令时关闭目标设备，则当打开它时，可能会在它使用 Intune 签入前下载并安装计划的更新。
 
 ### <a name="resume"></a>继续  
+
 暂停更新通道时，可以选择“恢复”  ，将该通道的“功能”和“质量”更新还原为活动操作。 恢复更新通道后，可以再次暂停该通道。  
 
 #### <a name="to-resume-a-ring"></a>恢复通道  
+
 1. 在查看已暂停更新通道的概述页时，选择“恢复”  。  
 2. 从可用选项中进行选择以恢复“功能”  或“质量”  更新，然后选择“确定”  。  
 3. 在恢复一种更新类型后，可以再次选择“恢复”以恢复另一种更新类型。  
 
 ### <a name="extend"></a>Extend  
+
 暂停更新通道时，可以选择“延长”  ，将该更新通道的“功能”和“质量”更新的暂停期重置为 35 天。  
 
 #### <a name="to-extend-the-pause-period-for-a-ring"></a>延长通道的暂停期  
+
 1. 在查看已暂停更新通道的概述页时，选择“延长”  。 
 2. 从可用选项中进行选择以恢复“功能”  或“质量”  更新，然后选择“确定”  。  
 3. 延长一种更新类型的暂停期后，可以再次选择“延长”以延长其他更新类型的暂停期。  
 
 ### <a name="uninstall"></a>“卸载”  
+
 Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通道或暂停的更新通道的最新功能  更新或最新质量  更新。 卸载一种类型后，还可以卸载其他类型。 Intune 不支持也不管理用户卸载更新的功能。  
 
 > [!IMPORTANT] 
@@ -153,11 +176,13 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
 有关 Windows 更新策略的详细信息，请参阅 Windows 客户端管理文档中的[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。  
 
 #### <a name="to-uninstall-the-latest-windows-10-update"></a>卸载最新的 Windows 10 更新  
+
 1. 在查看已暂停更新通道的概述页时，选择“卸载”  。  
 2. 从可用选项中进行选择以卸载“功能”  或“质量”  更新，然后选择“确定”  。  
 3. 触发一种更新类型的卸载后，可以再次选择“卸载”以卸载其余的更新类型。  
 
 ## <a name="migrate-update-settings-to-the-azure-portal"></a>将更新设置迁移到 Azure 门户  
+
 Azure 经典门户在设备配置文件中也有一定数量的其他 Windows 10 更新设置。 如果在迁移到 Azure 门户时配置了其中的任何设置，强烈建议执行以下操作：  
 
 1. 使用所需的设置在 Azure 门户中创建 Windows 10 更新通道。 Azure 门户不支持“允许预发布的功能”设置，因为它不再适用于最新的 Windows 10 版本  。 创建更新通道时，可以配置其他三项设置，以及其他 Windows 10 更新设置。  
@@ -168,6 +193,7 @@ Azure 经典门户在设备配置文件中也有一定数量的其他 Windows 10
 2. 删除经典门户中的更新设置。 迁移到 Azure 门户并将相同设置添加到更新通道后，必须删除经典门户中的设置，以避免任何潜在的策略冲突。 例如，为同一设置配置不同值时，将会出现冲突。 了解此情况并不容易，因为在经典门户中配置的设置不会显示在 Azure 门户中。  
 
 ## <a name="next-steps"></a>后续步骤
+
 [Intune 支持的 Windows 更新设置](../windows-update-settings.md)  
 
 [Intune 的更新符合性报告](../windows-update-compliance-reports.md)

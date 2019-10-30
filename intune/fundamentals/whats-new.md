@@ -6,9 +6,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/23/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71920120"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786125"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -50,8 +51,170 @@ ms.locfileid: "71920120"
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
-
 -->  
+
+
+<!-- ########################## -->
+
+## <a name="week-of-october-21-2019"></a>2019 年 10 月 21 日当周
+
+### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>适用于 Windows 10 及更高版本设备的新设备固件配置接口配置文件 <!-- 2266073 idready wnready -->
+
+在 Windows 10 及更高版本中，可以创建设备配置文件来控制设置和功能（适用于平台的“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”）     。 在此更新中，有一个新的设备固件配置接口配置文件类型，该类型允许 Intune 管理 UEFI (BIOS) 设置。
+
+有关此功能的详细信息，请参阅[在 Microsoft Intune 中使用 Windows 设备上的 DFCI 配置文件](../configuration/device-firmware-configuration-interface-windows.md)。
+
+适用于：
+
+- 支持固件上的 Windows 10 RS5 (1809) 及更高版本
+
+## <a name="week-of-october-14-2019"></a>2019 年 10 月 14 日当周
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理 
+
+#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956-----"></a>用于 Android 工作配置文件的可用 Google Play 应用报告 <!-- 3041956   -->
+对于 Android Enterprise 工作配置文件、专用和完全托管设备上的可用应用安装，可以查看应用安装状态以及托管 Google Play 应用的安装版本。 有关详细信息，请查看[如何监视应用保护策略](~/apps/app-protection-policies-monitor.md)、[使用 Intune 管理 Android 工作配置文件设备](~/enrollment/android-enterprise-overview.md)和[托管的 Google Play 应用类型](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)。
+
+#### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>适用于 Windows 10 和 MacOS 的 Microsoft Edge 77 及更高版本（公共预览版） <!-- 3872025, 4678761  -->
+Microsoft Edge 版本 77 及更高版本现在可以部署到运行 Windows 10 和 MacOS 的电脑上。 公共预览版为 Windows 10 提供了“开发”和“Beta”通道，为 macOS 提供了“Beta”通道    。 部署仅使用英语 (EN)，但最终用户可以在“设置” > “语言”下更改浏览器中的显示语言   。 Microsoft Edge 是一款安装在系统上下文和类似体系结构中的 Win32 应用（在 x86 OS 上安装为 x86 应用，在 x64 OS 上安装为 x64 应用）。 另外，默认“启用”浏览器自动更新，且无法卸载 Microsoft Edge  。 有关详细信息，请参阅[将 Microsoft Edge for Windows 10 添加到 Microsoft Intune](~/apps/apps-windows-edge.md) 和 [Microsoft Edge 文档](https://go.microsoft.com/fwlink/?linkid=2103823)。
+
+#### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>更新至应用保护 UI 和 iOS 应用预配 UI <!-- 4102027, 4102029   -->
+Intune 中用于创建和编辑应用保护策略和 iOS 应用预配配置文件的 UI 已更新。 UI 更改包括：
+- 简化了体验，现可使用压缩在一个边栏选项卡中的向导式格式。 
+- 对创建流进行了更新，使其包含分配。
+- 在创建新策略前查看属性时，或在编辑属性时，将显示包含已设置的所有内容的摘要页。 此外，编辑属性时，摘要将仅显示正在编辑的属性类别的项目列表。
+
+有关详细信息，请参阅[如何创建和分配应用保护策略](~/apps/app-protection-policies.md)和[使用 iOS 应用预配配置文件](~/apps/app-provisioning-profile-ios.md)。
+
+#### <a name="intune-guided-scenarios----4850318-4831296-3610611----"></a>Intune 引导式方案 <!-- 4850318, 4831296, 3610611  -->
+Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任务或一组任务。 引导式方案是围绕一个端到端用例而定制的一系列步骤（工作流）。 常见方案基于管理员、用户或设备在组织中扮演的角色定义。 这些工作流通常需要精心设计的配置文件、设置、应用程序和安全控件的集合，以提供最佳的用户体验和安全性。 新引导式方案包括：
+- [部署 Microsoft Edge for Mobile](~/fundamentals/guided-scenarios-edge.md)
+- [保护 Microsoft Office 移动应用的安全](~/fundamentals/guided-scenarios-office-mobile.md) 
+- [云托管的新式桌面](~/fundamentals/guided-scenarios-cloud-managed-pc.md)
+
+有关详细信息，请参阅 [Intune 引导式方案概述](guided-scenarios-overview.md)。
+
+#### <a name="additional-app-configuration-variable-available----4969237-----"></a>其他应用程序配置变量可用 <!-- 4969237   -->
+创建应用配置策略时，可以将 `AAD Device ID` 配置变量作为配置设置的一部分。 在 Intune 中，选择“客户端应用”   > “应用配置策略”   > “添加”  。 输入配置策略详细信息并选择“配置设置”以查看“配置设置”边栏选项卡   。 有关详细信息，请参阅[托管 Android Enterprise 设备的应用配置策略 - 使用配置设计器](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer)。
+
+
+#### <a name="create-groups-of-management-objects-called-policy-sets----3762880----"></a>创建称为策略集的管理对象组 <!-- 3762880  -->
+策略集允许创建对现有管理实体的一系列引用，这些实体需要作为单个概念单元进行标识、定位和监视。 策略集不会替换现有的概念或对象。 你可以继续在 Intune 中分配各个对象，也可以将各个对象作为策略集的一部分进行引用。 因此，对各对象的任何更改都将反映在策略集中。  在 Intune 中，选择“策略集” > “创建”来创建新的策略集   。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089-----------"></a>创建和编辑 Windows 10 更新通道的 UI 更新  <!-- 4099089         -->
+我们为 Intune 更新了[创建和编辑 Windows 10 更新通道](../protect/windows-update-for-business-configure.md#create-and-assign-update-rings)的 UI 体验。 对 UI 的更改包括：  
+- 将向导式格式压缩到单个控制台边栏选项卡中，它与配置更新通道时看到的扩展边栏选项卡无关。   
+- 修改后的工作流包括“分配”，分配在完成通道的初始配置之前进行。
+- 在保存和部署新更新通道之前，可以使用摘要页面来查看已进行的所有配置。 编辑更新通道时，摘要仅显示在你编辑的属性类别内设置的项目列表。
+
+#### <a name="ui-update-for-creating-and-editing-ios-software-update-policy-----4099090---------"></a>创建和编辑 iOS 软件更新策略的 UI 更新  <!-- 4099090       --> 
+我们为 Intune 更新了[创建](../protect/software-updates-ios.md#configure-the-policy)和[编辑](../protect/software-updates-ios.md#edit-a-policy) iOS 软件更新策略的 UI 体验。  对 UI 的更改包括：  
+- 将向导式格式压缩到单个控制台边栏选项卡中，它与配置更新策略时看到的扩展边栏选项卡无关。   
+- 修改后的工作流包括“分配”，分配在完成策略的初始配置之前进行。
+- 在保存和部署新策略之前，可以使用摘要页面来查看已进行的所有配置。 编辑策略时，摘要仅显示在你编辑的属性类别内设置的项目列表。
+
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings------4464404---wnready-----"></a>预定重启设置已从 Windows 更新通道中删除  <!--  4464404   WNReady   -->
+如前所述，Intune 的 Windows 10 更新通道现在[支持设置截止时间](../protect/windows-update-settings.md)，而不再支持预定重启  。 在 Intune 中配置或管理更新通道时，预定重启的设置将不再可用  。  
+
+此更改与最新的 [Windows 服务更改](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)一致。在运行 Windows 10 1903 或更高版本的设备上，截止时间将取代“预定重启”的配置   。
+
+#### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices----4760025-----"></a>防止在 Android Enterprise 工作配置文件设备上安装来自未知源的应用 <!-- 4760025   -->
+在 Android Enterprise 工作配置文件设备上，用户永远无法安装来自未知来源的应用。 此次更新添加了一个新设置 -“防止应用在个人配置文件中安装来自未知来源的应用”  。 默认情况下，此设置可以防止用户将来自未知来源的应用程序旁加载到设备上的个人配置文件中。
+
+要查看可以配置的设置，请转到[允许或限制使用 Intune 的功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
+
+适用于：
+- Android Enterprise 工作配置文件
+
+#### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339-----"></a>在 Android Enterprise 设备所有者设备上创建一个全局 HTTP 代理 <!-- 4816339   -->
+在 Android Enterprise 设备上，你可以配置全局 HTTP 代理，以满足组织的 Web 浏览标准（“设备配置” > “配置文件” > “创建配置文件” > 针对平台选择“Android Enterprise”> 设备所有者 > 针对配置文件类型选择“设备限制”>“连接”）       。 配置完成后，所有 HTTP 流量都将使用此代理。
+
+要配置此功能并查看所配置的所有设置，请转到[允许或限制使用 Intune 的功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
+
+适用于：
+- Android Enterprise 设备所有者
+
+#### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise----5021055-----"></a>在 Android 设备管理员和 Android Enterprise 的 Wi-Fi 配置文件中删除了“自动连接”设置 <!-- 5021055   -->
+在 Android 设备管理员和 Android Enterprise 设备上，你可以创建 Wi-Fi 配置文件以配置其他设置（“设备配置” > “配置文件” > “创建配置文件” > “Android 设备管理员”或针对平台选择“Android Enterprise”> 针对配置文件类型选择“Wi-Fi”）       。 在此更新中，删除了“自动连接”设置，因为它[不受 Android 支持](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29)  。 
+
+如果在 Wi-Fi 配置文件中使用此设置，则可能会注意到“自动连接”不起作用  。 无需执行任何操作，但请注意，此设置已在 Intune 用户界面中删除。
+
+若要查看当前设置，请转到 [Android Wi-Fi 设置](../configuration/wi-fi-settings-android.md)或 [Android Enterprise Wi-Fi 设置](../configuration/wi-fi-settings-android-enterprise.md)。
+
+适用于：
+- Android 设备管理员 
+- Android Enterprise
+
+
+#### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices----5199328-----"></a>受监督的 iOS 和 iPadOS 设备的新设备配置设置 <!-- 5199328   -->
+在 iOS 和 iPadOS 设备上，你可以创建配置文件以限制设备上的功能和设置（依次选择“设备配置” > “配置文件” > “创建配置文件” > 针对平台选择“iOS/iPadOS”> 针对配置文件类型选择“设备限制”）      。 在此更新中，可以控制以下新设置： 
+- 在“文件”应用中访问网络驱动器  
+- 在“文件”应用中访问 USB 驱动器 
+- Wi-Fi 始终打开 
+
+若要查看这些设置，请转到[允许或限制使用 Intune 的功能的 iOS 设备设置](../configuration/device-restrictions-ios.md)。
+
+适用于：
+- iOS 13.0 及更高版本
+- iPadOS 13.0 及更高版本
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697-----"></a>指定使用工作配置文件或设备管理员注册注册哪些 Android 设备操作系统版本 <!-- 4350697   -->
+使用 Intune 设备类型限制，你可以使用设备的 OS 版本来指定哪些用户设备将使用 Android Enterprise 工作配置文件注册或 Android 设备管理员注册。  有关详细信息，请参阅[创建注册限制](../enrollment/enrollment-restrictions-set.md)。
+
+#### <a name="windows-autopilot-deployment-reports----3856172---"></a>Windows Autopilot 部署报表 <!-- 3856172 -->
+新报告说明了通过 Windows Autopilot 部署的每个设备的详细信息。 有关详细信息，请参阅 [Autopilot 部署报告](../enrollment/enrollment-autopilot.md#autopilot-deployments-report)。 我们正在将此功能推出到所有客户，预计在下周末前完成。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>重命名 Windows 设备的新限制 <!-- 3478938  -->
+重命名 Windows 设备时，必须遵循新规则：
+- 小于或等于 15 个字符（必须小于或等于 63 个字节，不包括尾随 NULL）
+- 非 Null 或空字符串
+- 允许的 ASCII：字母（a-z、A-Z），数字 (0-9) 和连字符
+- 允许的 Unicode：0x80 及以后的字符，必须是有效的 UTF8，必须是可映射到 IDN（即 RtlIdnToNameprepUnicode 成功；请参阅 RFC 3492）
+- 名称不得只包含数字
+- 名称中不能包含空格
+- 不允许的字符：{ | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
+
+ 有关详细信息，请参阅[在 Intune 中重命名设备](../remote-actions/device-rename.md)。
+
+### <a name="new-android-report-on-devices-overview-page----4924364---"></a>“设备概述”页面上新增 Android 报告 <!-- 4924364 -->
+“设备概述”页面的新报告显示每个设备管理解决方案中注册了多少 Android 设备。 此图表显示工作配置文件、完全托管、专用和设备管理员注册的设备计数。 若要查看报告，请选择“Intune” > “设备” > “概述”    。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>设备安全性 
+
+#### <a name="pkcs-certificates-for-macos-----1333650---------"></a>适用于 macOS 的 PKCS 证书  <!-- 1333650       -->
+现在可以[在 macOS 上使用 PKCS 证书](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)。 可以选择 PKCS 证书作为 macOS 的配置文件类型，并部署具有[自定义主题和主题可选名称字段](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)的用户和设备证书。  
+
+MacOS 的 PKCS 证书还支持新设置“允许所有应用访问”  。 使用此设置，可以启用对证书私钥的所有关联应用访问。  有关此设置的更多信息，请参阅 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf 处的 Apple 文档。
+
+####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>派生凭据以向 iOS 移动设备提供证书      <!--  1736036, 1736037, 1772050, 2777333         -->  
+Intune 支持使用[派生凭据](../protect/derived-credentials.md)作为身份验证方法，并支持 iOS 设备的 S/MIME 签名和加密。 派生凭据是美国国家标准与技术研究院 (NIST) 800-157 标准的实现，用于将证书部署到设备  。  
+
+派生凭据依赖于使用个人身份验证 (PIV) 或通用访问卡 (CAC) 卡（如智能卡）。 若要获取移动设备的派生凭据，用户需从公司门户应用中开始，并遵循你所使用的提供商特有的注册工作流。  所有提供商都要求使用计算机上的智能卡向派生凭据提供商进行身份验证。 然后，该提供商向从用户智能卡派生的设备颁发证书。  
+
+Intune 支持以下派生凭据提供商：   
+- DISA Purebred
+- Entrust Datacard
+- Intercede
+
+使用派生凭据作为 VPN、Wi-Fi 和电子邮件的设备配置文件的身份验证方法。 还可以将它们用于应用身份验证、S/MIME 签名和加密。  
+
+有关该标准的详细信息，请参阅 www.nccoe.nist.gov 上的[派生 PIV 凭据](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials)。
+
+#### <a name="use-graph-api-to-specify-a-on-premises-user-principal-name-as-a-variable-for-scep-certificates--------5437939----------"></a>使用图形 API 将本地用户主体名称指定为 SCEP 证书的变量    <!--  5437939        -->  
+使用 [Intune 图形 API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0) 时，可以将 onPremisesUserPrincipalName 指定为 SCEP 证书的使用者可选名称 (SAN) 的变量。
+
+
 
 <!-- ########################## -->
 
@@ -367,7 +530,7 @@ Intune 现在支持管理 iOS 13 和 macOS Catalina 设备。 有关详细信息
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Windows 更新通道的“预定重启”设置替换为“截止时间”   <!-- 4464404        -->
 为了与最近的 [Windows 服务变更](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)保持一致，Intune 的 Windows 10 更新通道现在[支持“截止时间”设置](../protect/windows-update-settings.md)。 “截止时间”  确定设备何时安装功能和安全更新程序。  在运行 Windows 10 1903 或更高版本的设备上，“截止时间”  取代“预定重启”  配置。  未来在旧版 Windows 10 上，“截止时间”  也会取代“预定重启”  。  
 
-如果你未配置“截止时间”  ，设备会继续使用“预定重启”  设置，但在将来的更新中 [Intune 将会不支持“预定重启”设置](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)。  
+如果你未配置“截止时间”，设备会继续使用“预定重启”设置，但在将来的更新中 Intune 将会不支持“预定重启”设置   。  
 
 请计划对所有 Windows 10 设备使用“截止时间”  。 在“截止时间”  设置就位后，可以将 Intune 配置“预定重启”更改为“未配置”  。 设置为“未配置”后，Intune 会停止管理设备上的这些设置，但不会从设备中删除上次配置的这些设置。 因此，上次配置的“预定重启”  设置会继续处于活动状态并用于设备，直到这些设置被除 Intune 以外的其他方法修改。 稍后，当设备 Windows 版本发生更改时，或当 Intune 对“截止时间”  的支持扩展到设备 Windows 版本时，设备就会开始使用已就位的新设置。
 
