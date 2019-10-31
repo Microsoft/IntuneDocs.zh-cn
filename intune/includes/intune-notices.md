@@ -7,14 +7,28 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
+ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749368"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73057312"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
+
+### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>更改计划：“Siri 命令的服务器端日志记录”设置将从 Intune 控制台中删除 <!-- 5468501-->
+
+我们计划通过 Intune 服务的 11 月更新从 Intune 控制台中删除“Siri 命令的服务器端日志记录”设置。 此更改与已删除该设置的 Apple 保持一致。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+当 11 月更新或 1911 于 11 月中旬推出时，你会看到此设置已从 Intune 控制台中的 iOS 配置文件的“设备限制”菜单（内置应用）中删除。 它可能出现在策略和目标设备的管理配置文件中，但该设置对设备没有影响。 我们不会对功能造成很大的影响，因为它当前不能在设备上运行，即使你在管理配置文件中看到了它也是如此。
+
+可以选择以下两个路径之一：
+- 如果要从策略中删除此设置，则可以转到具有此设置的配置文件，进行次要编辑并保存策略。 此策略将在后端重新计算，并且将从策略中删除此设置。
+- 如果选择不执行此操作，则最终用户将在其设备的管理配置文件中看到此设置，但该设置没有任何影响。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+你可以根据上述部分执行操作或将策略保留原样。 当此更改推出时，我们将更新“新增功能”页和文档。
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>停止支持旧版 PC 管理
 
@@ -71,8 +85,8 @@ https://firebase.google.com/docs/cloud-messaging/
 #### <a name="additional-information"></a>其他信息 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>更改计划：适用于 Android 的 Intune App SDK 和应用保护策略将于 10 月份支持 Android 5.0 和更高版本 <!--4911065 -->
-Intune 将于 10 月份支持 Android 5.x (Lollipop) 及更高版本。 使用最新的 Intune App SDK 更新所有包装好的应用，并更新设备。
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>更改计划：适用于 Android 的 Intune App SDK 和应用保护策略将在即将发布的版本中支持 Android 5.0 及更高版本 <!--4911065 -->
+Intune 将在即将发布的版本中支持 Android 5.x (Lollipop) 及更高版本。 使用最新的 Intune App SDK 更新所有包装好的应用，并更新设备。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 如果没有使用或未计划使用适用于 Android 的 SDK 或应用，此更改不会影响你。 如果正在使用 Intune App SDK，请确保更新到最新版本，并将设备更新到 Android 5.x 和更高版本。 如果不更新，应用将不会收到更新，并且随着时间推移其体验质量将会降低。

@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 740a4ce34c5344fd6b2c09fe17116330bb5005f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2b3c82faab08248640e19573582ccbd232e0587d
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505541"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923350"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用设备注册管理员帐户在 Intune 中注册设备
 
-通过使用设备注册管理器 (DEM) 帐户，可以使用单个 Azure Active Directory 帐户注册多达 1,000 个移动设备。 DEM 是一种 Intune 权限，可以应用于 AAD 用户帐户，并允许用户最多注册 1,000 个设备。 将设备交付给设备的用户之前，使用 DEM 帐户注册和准备设备非常有用。 根据设计，Microsoft Intune 限制为 25 个设备注册管理员 (DEM) 帐户。
+通过使用设备注册管理器 (DEM) 帐户，可以使用单个 Azure Active Directory 帐户注册多达 1,000 个移动设备。 DEM 是一种 Intune 权限，可以应用于 AAD 用户帐户，并允许用户最多注册 1,000 个设备。 将设备交付给设备的用户之前，使用 DEM 帐户注册和准备设备非常有用。 根据设计，Microsoft Intune 限制为 150 个设备注册管理员 (DEM) 帐户。
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>使用 DEM 帐户注册的设备限制
 

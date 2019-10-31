@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504423"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810288"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 
@@ -44,7 +44,7 @@ MTD 应用的经典条件访问策略：
 要查看经典条件访问策略，请转到 [Azure](https://portal.azure.com/#home) 中的“Azure Active Directory” > “条件访问” > “经典策略”    。
 
 
-## <a name="to-enable-the-mtd-connector"></a>启用 MTD 连接器
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>启用移动威胁防御连接器
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 
@@ -58,20 +58,23 @@ MTD 应用的经典条件访问策略：
 
 7. 根据你组织的要求启用切换选项。 可见的切换选项因 MTD 合作伙伴而异。
 
-## <a name="mtd-toggle-options"></a>MTD 切换选项
+## <a name="mobile-threat-defense-toggle-options"></a>移动威胁防御切换选项
 
-可以根据组织要求决定需要启用哪些 MTD 切换选项。 下面是更多详细信息：
+根据组织要求，可以决定需要启用哪些移动威胁防御切换选项。 下面是更多详细信息：
 
-- **将 Android 4.1+ 设备连接到 [MTD 合作伙伴名称] for Work MTD**：如果启用此选项，可以让 Android 4.1 + 设备将安全风险报回 Intune。
-  - **如果未收到任何数据则标记为不符合**：如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
-<br></br>
-- **将 iOS 8.0+ 设备连接到 [MTD 合作伙伴名称] for Work MTD**：启用此选项后，可让 iOS 8.0+ 设备向 Intune 报告安全风险。
-  - **如果未收到任何数据则标记为不符合**：如果 Intune 未从 MTD 合作伙伴收到有关此平台上的设备的数据，则将设备视为不符合。
-<br></br>
+**MDM 符合性策略设置**
+- **将 Android 4.1+ 设备连接到 *\<MTD 合作伙伴名称>***：如果启用此选项，可以让 Android 4.1 + 设备将安全风险报回 Intune。
+- **将 iOS 8.0+ 设备连接到 *\<MTD 合作伙伴名称>***：启用此选项后，可让 iOS 8.0+ 设备向 Intune 报告安全风险。
 - **为 iOS 设备启用应用同步**：允许此 Mobile Threat Defense 合作伙伴请求 Intune 中的 iOS 应用程序的元数据，以用于威胁分析。
-
 - **阻止不受支持的操作系统版本**：如果设备运行的操作系统版本低于支持的最低版本，则阻止该版本。
 
+**应用保护策略设置**
+- **将版本 4.1 及更高版本的 Android 设备连接到 \<MTD 合作伙伴名称> 以进行应用保护策略评估**  ：启用此选项时，使用设备威胁级别规则的应用保护策略将评估包括来自此连接器的数据的设备。
+- **将 iOS 8.0 及更高版本设备连接到 \<MTD 合作伙伴名称> 以进行应用保护策略评估**  ：启用此选项时，使用设备威胁级别规则的应用保护策略将评估包括来自此连接器的数据的设备。
+
+若要了解有关使用移动威胁防御连接器进行 Intune 应用保护策略评估的详细信息，请参阅[为未注册的设备设置移动威胁防御](~/protect/mtd-enable-unenrolled-devices.md)。
+
+**常见的共享设置**
 - **合作伙伴无响应之前的天数**：在 Intune 由于连接断开将合作伙伴视为无响应之前的天数。 Intune 将忽略无响应 MTD 合作伙伴的符合性状态。
 
 > [!IMPORTANT] 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502201"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810221"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>设置 Lookout 移动终结点安全与 Intune 的集成
 在满足[先决条件](lookout-mobile-threat-defense-connector.md#prerequisites)的环境中，可以将 Lookout 移动终结点安全与 Intune 相集成。 本文中的信息将指导你设置集成，并指导你在 Lookout 中配置关键设置以与 Intune 结合使用。  
@@ -69,6 +69,9 @@ ms.locfileid: "72502201"
    收集此信息后，请联系 Lookout 支持人员（电子邮件：enterprisesupport@lookout.com）。 Lookout 支持将使用你提供的信息，与主要联系人合作提供订阅并创建 Lookout 企业帐户。  
 
 ## <a name="configure-your-lookout-subscription"></a>配置 Lookout 订阅  
+
+以下步骤将在 Lookout 企业管理控制台中完成，并且将为在 Intune 中注册的设备（通过设备符合性）和在 Intune 中未注册的设备（通过应用保护策略）启用与 Lookout 服务的连接  。
+
 Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系人发送电子邮件，附带登录 URL 的链接： https://aad.lookout.com/les?action=consent 。 
 
 ### <a name="initial-sign-in"></a>首次登录  
@@ -110,20 +113,7 @@ Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系
 6. 选择“创建连接器”，完成连接器配置。  如果稍后结果合意，可以将注册扩展到其他用户组。
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>将 Intune 配置为使用 Lookout 作为 Mobile Threat Defense 提供程序
-配置 Lookout MES 后，必须在 Intune 中建立 Lookout 连接。  
-
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-
-2. 转到“设备符合性” > “Mobile Threat Defense”，选择“添加”。   
-
-3. 在“添加连接器”窗格中，使用下拉列表选择“Lookout for Work”。    
-
-4. 选择“创建”  。 连接器与 Lookout MES 建立连接后，“连接器设置”变得可用。 
-
-5. 将“为 iOS 设备启用应用同步”设置为“启用”。   
-
-6. 选择“保存”，以完成配置。   Intune 和 Lookout MES 现已集成，并已准备就绪，可供使用。
-
+配置 Lookout MES 后，必须[在 Intune 中建立 Lookout 连接](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)。  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Lookout MES 控制台中的其他设置
 下面是可在 Lookout MES 控制台中配置的其他设置。  
@@ -146,8 +136,6 @@ Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系
 
   ![显示用户帐户的“首选项”页面屏幕截图](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
 
-
-
 ## <a name="configure-threat-classifications"></a>配置威胁分类  
 Lookout 移动终结点安全将移动威胁分为多种类型。 Lookout 威胁分类关联了默认风险等级。 可随时更改这些风险等级以满足公司需求。
 
@@ -167,4 +155,5 @@ Lookout 移动终结点安全将移动威胁分为多种类型。 Lookout 威胁
 
 ## <a name="next-steps"></a>后续步骤
 
-[设置 Lookout 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [为已注册的设备设置 Lookout 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [为未注册的设备设置 Lookout 应用](~/protect/mtd-add-apps-unenrolled-devices.md)

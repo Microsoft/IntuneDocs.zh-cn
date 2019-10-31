@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509435"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057522"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 启用 iOS 设备上的丢失模式
 
@@ -43,8 +43,10 @@ ms.locfileid: "72509435"
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 3. 依次选择“设备”和“所有设备”   。
-4. 从所管理设备的列表中，选择一个 iOS 设备，然后选择“...更多”  。 然后选择“丢失模式”远程操作  。
-5. 在“丢失模式”下，启用此功能  。 然后，输入要显示的消息和联系人电话号码。
+4. 从管理设备列表中，选择一台 iOS 设备，然后选择“丢失模式”（仅限被监督的设备）  。
+5. 在“丢失模式”下，选择“启用”   。
+6. 在“要在锁屏界面上显示的消息”  中，键入要在设备的锁屏界面上显示的消息。
+7. （可选）在“要显示的电话号码”框中输入电话号码  。
 6. 选择“确定”，保存所做更改  。
 
 启用丢失模式后，将阻止对该设备的所有使用。 最终用户无法访问设备，直到你禁用丢失模式。 尽管丢失模式已启用，但仍可使用[定位设备](device-locate.md)操作找到设备。

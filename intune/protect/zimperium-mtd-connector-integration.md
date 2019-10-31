@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ba94a649f9d7b49437d5d97bb621b0b0a94466c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508686"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810316"
 ---
 # <a name="integrate-zimperium-with-intune"></a>将 Zimperium 与 Intune 集成
 
@@ -31,8 +31,7 @@ ms.locfileid: "72508686"
 
 ## <a name="before-you-begin"></a>在开始之前
 
-> [!NOTE]
-> 以下步骤是在 [Zimperium MTD 控制台](https://www.zimperium.com/platform)中完成。
+以下步骤是在 [Zimperium MTD 控制台](https://www.zimperium.com/platform)中完成的，并且将为在 Intune 中注册的设备（使用设备符合性）和在 Intune 中未注册的设备（使用应用保护策略）启用与 Lookout 服务的连接。
 
 开始将 Zimperium 与 Intune 集成之前，请确保具有以下订阅和凭据：
 
@@ -90,4 +89,5 @@ Zimperium 应用授权流程如下：
 
 ## <a name="next-steps"></a>后续步骤
 
-- [设置 Zimperium 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [为已注册的设备设置 Zimperium 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [为未注册的设备设置 Zimperium 应用](~/protect/mtd-add-apps-unenrolled-devices.md)

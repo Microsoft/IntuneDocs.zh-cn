@@ -78,6 +78,8 @@
               href: lob-apps-macos.md
             - name: Win32 应用管理
               href: apps-win32-app-management.md
+            - name: Win32 应用 S 模式设备
+              href: apps-win32-s-mode.md
         - name: 添加特定应用
           items:
             - name: 公司门户应用
