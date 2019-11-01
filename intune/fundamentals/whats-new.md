@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786125"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057626"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -54,20 +54,90 @@ ms.locfileid: "72786125"
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日当周
 
+### <a name="app-management"></a>应用管理 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>适用于 iOS 公司门户的深色模式 <!-- 4911422 -->
+深色模式适用于 iOS 公司门户。 用户可以下载公司应用、管理其设备，并根据设备设置在所选的配色方案中获取 IT 支持。 iOS 公司门户将自动与最终用户的设备设置匹配，自动应用深色或浅色模式。 有关详细信息，请参阅[适用于 iOS 的 Microsoft Intune 公司门户上的深色模式简介](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453)。 有关 iOS 公司门户的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](~/apps/company-portal-app.md)。
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>Android 公司门户强制执行最低应用版本 <!-- 2378776 -->
+通过使用应用保护策略的最小公司门户版本设置，可以指定在最终用户设备上强制执行的公司门户的特定最低定义版本  。 使用此条件启动设置，可以在不满足值时将“阻止访问”、“擦除数据”和“警告”作为可能的操作    。 此值的可能格式遵循 [主版本].[次版本]、[主版本].[次版本].[内部版本] 或 [主版本].[次版本].[内部版本].[修订版本]    。 
+
+如果已配置最小公司门户版本设置，则将影响获取公司门户版本 5.0.4560.0 的任何最终用户以及公司门户的任何未来版本  。 此设置对使用版本低于与此功能一起发布的公司门户版本的用户没有任何影响。 在设备上使用应用自动更新的最终用户可能看不到此功能的任何对话框，因为他们可能使用最新的公司门户版本。 此设置仅适用于已注册和未注册设备具有应用保护的 Android。 有关详细信息，请参阅 [Android 应用保护策略设置 - 条件启动](~/apps/app-protection-policy-settings-android.md#conditional-launch)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+
+### <a name="microsoft-365-device-management"></a>Microsoft 365 设备管理
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>Microsoft 365 设备管理中的终结点安全节点简介    <!-- 5630102 -->
+
+终结点安全节点现已在 https://devicemanagement.microsoft.com 上的 Microsoft 365 设备管理专家工作区中公开发布，可将这些功能组合在一起以保护终结点，例如  ：
+
+- 安全基线：预配置的设置组，这些设置可帮助你应用 Microsoft 推荐的已知设置组和默认值。
+
+- 安全任务：利用 Microsoft Defender ATP 威胁和漏洞管理 (TVM)，并使用 Intune 修正终结点漏洞。
+
+- Microsoft Defender ATP：集成了 Microsoft Defender 高级威胁防护 (ATP) 来帮助阻止安全漏洞。
+
+这些设置仍能够从其他适用的节点（如设备）访问，并且，无论在何处访问和启用这些功能，当前配置的状态都是相同的。
+
+有关这些改进的详细信息，请参阅 Microsoft 技术社区网站上的 [Intune 客户成功博客文章](https://aka.ms/Endpoint_security_node)。
+
+### <a name="device-management"></a>设备管理
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>Intune 支持 iOS 11 及更高版本 <!-- 4665324  -->
+
+Intune 注册和公司门户现在支持 iOS 版本 11 及更高版本。 不支持早期版本。
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="updated-support-experience------5012398---"></a>更新的支持体验   <!-- 5012398 -->
+
+[获取 Intune 的帮助和支持](get-support.md)的控制台内体验已更新并简化。  我们改进了常见问题的控制台内搜索和反馈，以及用于联系支持人员的工作流。 打开支持问题时，你将看到需要回拨或电子邮件答复的实时估计，并且顶级和统一支持客户可以轻松地为其问题指定严重性，以帮助更快地获得支持。
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>2019 年 10 月 21 日当周
 
-### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>适用于 Windows 10 及更高版本设备的新设备固件配置接口配置文件 <!-- 2266073 idready wnready -->
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="microsoft-365-device-management"></a>Microsoft 365 设备管理
 
-在 Windows 10 及更高版本中，可以创建设备配置文件来控制设置和功能（适用于平台的“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”）     。 在此更新中，有一个新的设备固件配置接口配置文件类型，该类型允许 Intune 管理 UEFI (BIOS) 设置。
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>改进了 Microsoft 365 设备管理中的管理体验
+
+已刷新并简化的管理体验现已在 [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com) 上的 Microsoft 365 设备管理专家工作区中公开发布，其中包括：
+
+- **更新的导航**：你会发现简化的第一级导航（可对功能进行逻辑分组）。
+- **新平台筛选器**：可以在“设备和应用”页上选择单一平台，该平台仅显示所选平台的策略和应用。
+- **新主页**：在新主页上快速查看服务运行状况、租户状态、新闻等。
+
+有关这些改进的详细信息，请参阅 Microsoft 技术社区网站上的[企业移动性 + 安全性博客文章](https://go.microsoft.com/fwlink/?linkid=2109094)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>将移动威胁防御应用添加到未注册的设备 <!-- 3005337 -->
+可以创建可阻止的 Intune 应用保护策略，或者根据设备的运行状况选择性擦除用户的公司数据。 设备的运行状况使用所选的移动威胁防御 (MTD) 解决方案来确定。 此功能目前作为设备符合性设置存在于在 Intune 中注册的设备。 利用这项新功能，我们扩展了移动威胁防御供应商的威胁检测，使其在未注册的设备上正常工作。 在 Android 上，此功能需要在设备上使用最新的公司门户。 在 iOS 上，当应用集成最新的 Intune SDK (v 12.0.15+) 时，此功能将可供使用。 当第一个应用采用最新的 Intune SDK 时，我们将更新“新增功能”主题。 剩余的应用将陆续可用。 有关详细信息，请参阅[使用 Intune 创建移动威胁防御应用保护策略](~/protect/mtd-app-protection-policy.md)。
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>适用于 Windows 10 及更高版本设备的新设备固件配置接口配置文件 <!-- 2266073  -->
+
+在 Windows 10 及更高版本中，可以创建设备配置文件来控制设置和功能（适用于平台的“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”）     。 在此更新中，有一个新的设备固件配置接口配置文件类型，该类型允许 Intune 管理 UEFI (BIOS) 设置。 我们正在将此功能推出到所有客户，预计在下周末前完成。
 
 有关此功能的详细信息，请参阅[在 Microsoft Intune 中使用 Windows 设备上的 DFCI 配置文件](../configuration/device-firmware-configuration-interface-windows.md)。
 
 适用于：
-
 - 支持固件上的 Windows 10 RS5 (1809) 及更高版本
 
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>切换为在由全新体验 (OOBE) 预配的设备上仅显示注册状态页 <!--3959566-->
+现在，你可以选择在由 Autopilot OOBE 预配的设备上仅显示注册状态页。
+
+若要查看新的切换，请选择“Intune”   > “设备注册”   > “Windows 注册”   > “注册状态页”   > “创建配置文件”   > “设置”   >   “在由全新体验 (OOBE) 预配的设备上仅显示页”。
+
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>2019 年 10 月 14 日当周
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -77,7 +147,12 @@ ms.locfileid: "72786125"
 对于 Android Enterprise 工作配置文件、专用和完全托管设备上的可用应用安装，可以查看应用安装状态以及托管 Google Play 应用的安装版本。 有关详细信息，请查看[如何监视应用保护策略](~/apps/app-protection-policies-monitor.md)、[使用 Intune 管理 Android 工作配置文件设备](~/enrollment/android-enterprise-overview.md)和[托管的 Google Play 应用类型](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)。
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>适用于 Windows 10 和 MacOS 的 Microsoft Edge 77 及更高版本（公共预览版） <!-- 3872025, 4678761  -->
-Microsoft Edge 版本 77 及更高版本现在可以部署到运行 Windows 10 和 MacOS 的电脑上。 公共预览版为 Windows 10 提供了“开发”和“Beta”通道，为 macOS 提供了“Beta”通道    。 部署仅使用英语 (EN)，但最终用户可以在“设置” > “语言”下更改浏览器中的显示语言   。 Microsoft Edge 是一款安装在系统上下文和类似体系结构中的 Win32 应用（在 x86 OS 上安装为 x86 应用，在 x64 OS 上安装为 x64 应用）。 另外，默认“启用”浏览器自动更新，且无法卸载 Microsoft Edge  。 有关详细信息，请参阅[将 Microsoft Edge for Windows 10 添加到 Microsoft Intune](~/apps/apps-windows-edge.md) 和 [Microsoft Edge 文档](https://go.microsoft.com/fwlink/?linkid=2103823)。
+Microsoft Edge 版本 77 及更高版本将可以部署到运行 Windows 10 和 MacOS 的电脑上。 
+
+>[!NOTE]
+>此功能的推出已延迟到本月晚些时候。
+
+公共预览版为 Windows 10 提供了“开发”和“Beta”通道，为 macOS 提供了“Beta”通道    。 部署仅使用英语 (EN)，但最终用户可以在“设置” > “语言”下更改浏览器中的显示语言   。 Microsoft Edge 是一款安装在系统上下文和类似体系结构中的 Win32 应用（在 x86 OS 上安装为 x86 应用，在 x64 OS 上安装为 x64 应用）。 另外，默认“启用”浏览器自动更新，且无法卸载 Microsoft Edge  。 有关详细信息，请参阅[将 Microsoft Edge for Windows 10 添加到 Microsoft Intune](~/apps/apps-windows-edge.md) 和 [Microsoft Edge 文档](https://go.microsoft.com/fwlink/?linkid=2103823)。
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>更新至应用保护 UI 和 iOS 应用预配 UI <!-- 4102027, 4102029   -->
 Intune 中用于创建和编辑应用保护策略和 iOS 应用预配配置文件的 UI 已更新。 UI 更改包括：

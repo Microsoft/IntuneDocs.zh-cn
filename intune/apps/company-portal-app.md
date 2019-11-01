@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585011"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999530"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -137,6 +137,10 @@ Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作�
 
 有关 iOS 设备派生凭据的详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](~/protect/derived-credentials.md)。
 
+## <a name="dark-mode-for-ios-company-portal"></a>适用于 iOS 公司门户的深色模式
+
+深色模式适用于 iOS 公司门户。 用户可以下载公司应用、管理其设备，并根据设备设置在所选的配色方案中获取 IT 支持。 iOS 公司门户将自动与最终用户的设备设置匹配，自动应用深色或浅色模式。 
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司门户键盘快捷方式
 
 最终用户可以使用键盘快捷方式（快捷键）在 Windows 公司门户中触发导航、应用和设备操作。
@@ -180,25 +184,24 @@ Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作�
 
 一些平台和配置不支持自助设备操作。 下表提供了自助操作的详细信息：
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| 停用 | 可用<sup>(1)</sup> | 可用<sup>(8)</sup> | 可用 | 可用<sup>(7)</sup> |
-| 擦除 | 可用 | 可用 | NA | 可用<sup>(7)</sup> |
-| 重命名<sup>(4)</sup> | 可用 | 可用<sup>(8)</sup> | 可用 | 可用 |
+| 停用 | 可用<sup>(1)</sup> | 可用 | 可用 | 可用<sup>(7)</sup> |
+| 擦除 | 可用 | 可用<sup>(5)</sup> | NA | 可用<sup>(7)</sup> |
+| 重命名<sup>(4)</sup> | 可用 | 可用 | 可用 | 可用 |
 | 同步 | 可用 | 可用 | 可用 | 可用 |
 | 远程锁定 | 仅限 Windows Phone | 可用 | 可用 | 可用 |
-| 重置密码 | 仅限 Windows Phone | 可用 | NA | 可用<sup>(6)</sup> |
+| 重置密码 | 仅限 Windows Phone | 可用<sup>(8)</sup> | NA | 可用<sup>(6)</sup> |
 | 密钥恢复 | NA | NA | 可用<sup>(2)</sup> | NA |
-| 深色模式 | NA | 可用 | NA | NA |
 
 <sup>(1)</sup> 加入 Azure AD 的 Windows 设备始终禁用 **“停用”** 。<br>
 <sup>(2)</sup> 仅可通过 Web 门户使用用于 MacOS 的 **“密钥恢复”** 。<br>
 <sup>(3)</sup> 使用设备注册管理器时，将禁用所有的远程操作。<br>
-<sup>(4)</sup> **“重命名”** 仅更改在公司门户应用或网站中的设备名称，不会更改设备上的名称。<br>
-<sup>(5)</sup> **“远程擦除”** 在 MacOS 设备上不可用。<br>
+<sup>(4)</sup> **“重命名”** 仅更改在公司门户应用或 Web 门户中的设备名称，不会更改设备上的名称。<br>
+<sup>(5)</sup> **“擦除”** 在用户注册的 iOS 设备上不可用。<br>
 <sup>(6)</sup> 一些 Android 和 Android Enterprise 配置不支持 **“密码重置”** 。 有关详细信息，请参阅[在 Intune 中重置或删除设备密码](../remote-actions/device-passcode-reset.md)。<br>
 <sup>(7)</sup> **“停用”** 和 **“擦除”** 在 Android Enterprise 设备所有者场景（COPE、COBO、COSU）中不可用。<br> 
-<sup>(8)</sup> 所有类型的注册都可以使用 **“停用”** （删除设备）和 **“重命名”** 。 用户注册不支持进行其他操作。<br> 
+<sup>(8)</sup> 用户注册的 iOS 设备不支持 **“重置密码”** 。
 
 ## <a name="next-steps"></a>后续步骤
 

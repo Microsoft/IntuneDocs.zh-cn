@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785692"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999479"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用应用保护策略条件启动操作选择性地擦除数据
 
@@ -84,8 +84,11 @@ ms.locfileid: "72785692"
 - 最低修补程序版本
 - 设备制造商
 - SafetyNet 设备证明
-- 对应用进行威胁扫描
+- 要求对应用进行威胁扫描
+- 最小公司门户版本
 - 允许的最高设备威胁级别
+
+通过使用最小公司门户版本  ，可以指定在最终用户设备上强制执行的公司门户的特定最低定义版本。 使用此条件启动设置，可以在不满足每个值时将值设置为“阻止访问”、“擦除数据”和“警告”作为可能的操作    。 此值的可能格式遵循 [主版本].[次版本]、[主版本].[次版本].[内部版本] 或 [主版本].[次版本].[内部版本].[修订版本]    。 假设某些最终用户可能不希望立即强制更新应用，则在配置此设置时，“警告”选项可能是理想的选择。 Google Play 商店能够很好地仅为应用更新发送增量字节，但在更新数据时，仍可能有大量数据是用户不想使用的。 强制执行更新并下载更新的应用可能会导致更新时产生意外的数据费用。 如果已配置最小公司门户版本设置，则将影响获取公司门户版本 5.0.4560.0 的任何最终用户以及公司门户的任何未来版本  。 此设置对使用版本低于与此功能一起发布的公司门户版本的用户没有任何影响。 在设备上使用应用自动更新的最终用户可能看不到此功能的任何对话框，因为他们可能使用最新的公司门户版本。 此设置仅适用于已注册和未注册设备具有应用保护的 Android。
 
 若要使用“设备制造商”  设置，请输入 Android 制造商的分号分隔列表。 可以在设备设置下找到设备的 Android 制造商。<br>
 示例输入：制造商 A;制造商 B  

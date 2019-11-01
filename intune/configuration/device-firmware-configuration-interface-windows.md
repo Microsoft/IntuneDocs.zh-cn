@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f34e321476ea634030a5e602bc362d409eee8f5
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785551"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889573"
 ---
-# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 设备上的设备固件配置接口配置文件
+# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>在 Microsoft Intune 中使用 Windows 设备上的设备固件配置接口配置文件（公共预览版）
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+> [!Note]
+> 每个[每月更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)可能需要几天才能推出。 某些功能会在数周内推出，可能不能立即供所有客户使用。
 
 使用 Intune 管理 Autopilot 设备时，可以在登录设备之后使用设备固件配置接口 (DFCI) 管理 UEFI (BIOS) 设置。 有关优势、方案和先决条件的概述，请参阅 [ DFCI 概述](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)。
 
@@ -78,18 +81,18 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 此配置文件包含所配置的 DFCI 设置。
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”。
+2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
 3. 输入以下属性：
 
-    - **名称**：输入配置文件的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，“Windows：在 Windows 设备上配置 DFCI 设置”是个不错的配置文件名称。
+    - **名称**：输入配置文件的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，“Windows：  在 Windows 设备上配置 DFCI 设置”是个不错的配置文件名称。
     - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
-    - **平台**：选择“Windows 10 及更高版本”。
-    - **配置文件类型**：选择“设备固件配置接口”。
+    - **平台**：选择“Windows 10 及更高版本”  。
+    - **配置文件类型**：选择“设备固件配置接口”  。
 
 4. 配置设置：
 
     - **允许本地用户更改 UEFI (BIOS) 设置**：选项包括：
-      - **仅未配置的设置**：本地用户可以更改任何设置，但 Intune 显式设置为“启用”或“禁用”的设置除外。
+      - **仅未配置的设置**：本地用户可以更改任何设置，但 Intune 显式设置为“启用”或“禁用”的设置除外    。
       - **无**：本地用户可能不会更改任何 UEFI (BIOS) 设置，包括 DFCI 配置文件中未显示的设置。
 
     - **CPU 和 IO 虚拟化**：选项包括：
@@ -104,13 +107,13 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
         - **启用**：启用由 UEFI (BIOS) 直接管理的所有内置麦克风和扬声器。 USB 设备等外围设备不受影响。
         - **禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置麦克风和扬声器。 USB 设备等外围设备不受影响。
-    - **无线收发器（蓝牙、Wi-fi、NFC 等）**：选项包括：
+    - **无线收发器（蓝牙、Wi-fi、NFC 等）** ：选项包括：
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
         - **启用**：启用由 UEFI (BIOS) 直接管理的所有内置无线收发器。 USB 设备等外围设备不受影响。
         - **禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置无线收发器。 USB 设备等外围设备不受影响。
 
         > [!WARNING]
-        > 如果禁用“无线收发器”设置，则设备需要有线网络连接。 否则，可能无法管理设备。
+        > 如果禁用“无线收发器”设置，则设备需要有线网络连接  。 否则，可能无法管理设备。
 
     - **通过外部媒体 (USB、SD) 启动**：选项包括：
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
@@ -121,7 +124,7 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
         - **启用**：UEFI (BIOS) 支持通过内置网络接口启动。
         - **禁用**：UEFI (BIOS) 不支持启动内置网络接口。
 
-5. 完成后，选择“确定” > “创建”以保存所做的更改。 此时，配置文件创建完成，并出现在列表中。
+5. 完成后，选择“确定”   > “创建”  以保存所做的更改。 此时，配置文件创建完成，并出现在列表中。
 
 ## <a name="assign-the-profiles-and-reboot"></a>分配配置文件，并重启
 
@@ -148,7 +151,7 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 
 ### <a name="reuse"></a>重用
 
-如果计划重置 Windows 以更改设备用途，请[擦除设备](../remote-actions/devices-wipe.md)。 请勿删除 Autopilot 设备记录。
+如果计划重置 Windows 以更改设备用途，请[擦除设备](../remote-actions/devices-wipe.md)。 请勿删除 Autopilot 设备记录  。
 
 擦除设备之后，将设备移动到分配了新 DFCI 和 Autopilot 配置文件的组。 确保重启设备以重新运行 Windows 设置。
 
@@ -156,26 +159,20 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 
 准备好停用设备并解除管理之后，在退出状态下将 DFCI 配置文件更新为所需的 UEFI (BIOS) 设置。 通常最好启用所有设置。 例如：
 
-1. 打开 DFCI 配置文件（“设备配置” > “配置文件”）。
-2. 将“允许本地用户更改 UEFI (BIOS) 设置”更改为“仅未配置的设置”。
-3. 将所有其他设置设置为“未配置”。
+1. 打开 DFCI 配置文件（“设备配置” > “配置文件”）   。
+2. 将“允许本地用户更改 UEFI (BIOS) 设置”更改为“仅未配置的设置”   。
+3. 将所有其他设置设置为“未配置”  。
 4. 保存设置。
 
-这些步骤会解锁设备的 UEFI (BIOS) 菜单。 这些值与配置文件（“已启用”或“已禁用”）相同，并未重置为任何默认的 OS 值。
+这些步骤会解锁设备的 UEFI (BIOS) 菜单。 这些值与配置文件（“已启用”或“已禁用”）相同，并未重置为任何默认的 OS 值   。
 
 现在即可擦除设备。 擦除设备之后，删除 Autopilot 记录。 删除记录会阻止设备在重启时自动重新注册。
 
 ### <a name="recover"></a>恢复
 
-如果擦除设备，并在解锁 UEFI (BIOS) 菜单之前删除 Autopilot 记录，则菜单保持锁定。 Intune 无法发送配置文件更新以将其解锁。 若要解锁设备，可执行以下操作：
+如果擦除设备，并在解锁 UEFI (BIOS) 菜单之前删除 Autopilot 记录，则菜单保持锁定。 Intune 无法发送配置文件更新以将其解锁。
 
-- **选项 1**：要求 CSP 或 OEM 直接设备供应商将设备重新注册到 Autopilot。 在 Intune 中重新注册，以重新应用 Autopilot 和 DFCI 配置文件。
-
-  然后，按（本文中）[停用设备](#retire)中的步骤解锁 UEFI 菜单。
-
-- **选项 2**：打开 UEFI (BIOS) 菜单，然后选择恢复选项。 确认设备未注册 DFCI 管理，并解锁菜单。 恢复选项会将所有 UEFI (BIOS) 设置设为上一个 Intune DFCI 配置文件中的值。
-
-  然后，按（本文中）[停用设备](#retire)中的步骤解锁 UEFI 菜单。
+若要解锁设备，请打开 UEFI (BIOS) 菜单，然后从网络刷新管理。 恢复会解锁菜单，但会将所有 UEFI (BIOS) 设置设为先前 Intune DFCI 配置文件中的值。
 
 ## <a name="end-user-impact"></a>最终用户影响
 

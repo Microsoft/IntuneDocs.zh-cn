@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585600"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892576"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>将 Microsoft Edge for Windows 10 添加到 Microsoft Intune
 
@@ -94,7 +94,7 @@ ms.locfileid: "72585600"
 
 ## <a name="troubleshooting"></a>疑难解答
 **适用于 Windows 10 的 Microsoft Edge 77 及更高版本：**<br>
-Intune 使用 Intune 管理扩展下载 Microsoft Edge 安装程序并将其部署到指定的 Windows 10 设备，然后将部署设置发送到 Microsoft Edge 安装程序，后者直接从 CDN 下载并安装 Microsoft Edge 浏览器。 请参考 [Intune 管理扩展的先决条件](~/apps/intune-management-extension.md#prerequisites)以及“访问 Azure 更新服务”和 CDN 中概述的最佳做法，以确保你的网络配置允许 Windows 10 设备访问这些位置。
+Intune 使用 Intune 管理扩展下载 Microsoft Edge 安装程序并将其部署到指定的 Windows 10 设备，然后将部署设置发送到 Microsoft Edge 安装程序，后者直接从 CDN 下载并安装 Microsoft Edge 浏览器。 请参考 [Intune 管理扩展的先决条件](~/apps/intune-management-extension.md#prerequisites)以及“访问 Azure 更新服务”和 CDN 中概述的最佳做法，以确保你的网络配置允许 Windows 10 设备访问这些位置。 此外，若要允许从 CDN 访问安装文件来安装浏览器，需要允许访问 Windows 更新终结点。 有关详细信息，请参阅[管理适用于 Windows 10 版本 1809 的连接终结点 – Windows 更新](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update)和 [Microsoft Intune 的网络终结点](~/fundamentals/intune-endpoints.md)。
 
 ## <a name="next-steps"></a>后续步骤
 - [将应用分配给组](~/apps/apps-deploy.md)

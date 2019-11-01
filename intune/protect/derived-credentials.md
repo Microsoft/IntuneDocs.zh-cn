@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585821"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889546"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>在 Microsoft Intune 中使用派生凭据
 
@@ -64,7 +64,7 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 - **Entrust Datacard**： https://www.entrustdatacard.com/
 - **Intercede**： https://www.intercede.com/
 
-有关应用不同颁发者的关键详细信息，请查看该颁发者的指南，其中包括颁发者最终用户工作流。 更多信息，请参阅本文中的[派生凭据计划](#plan-for-derived-credentials)。
+有关应用不同颁发者的关键详细信息，请查看该颁发者的指南<!-- , including the issuers end-user workflow-->。 更多信息，请参阅本文中的[派生凭据计划](#plan-for-derived-credentials)。
 
 > [!IMPORTANT]  
 > 如果删除租户中的派生凭据颁发者，则通过该颁发者设置的派生凭据将会失效。  
@@ -101,11 +101,14 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) 查看所选颁发者的最终用户工作流
 
-以下是每个支持合作伙伴的关键注意事项，以及指向该颁发者最终用户工作流的链接。  了解这些信息，以确保 Intune 策略和配置不会阻止用户和设备成功注册该颁发者的派生凭据。
+下面是每个受支持合作伙伴的关键注意事项<!--  , and links to that issuers end-user workflow -->。  了解这些信息，以确保 Intune 策略和配置不会阻止用户和设备成功注册该颁发者的派生凭据。
 
 #### <a name="disa-purebred"></a>DISA Purebred
 
-查看 [DISA Purebred 的用户工作流](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred)。 此工作流的关键要求包括以下内容：  
+了解最终用户工作流和关键要求：  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - 用户需要访问可在其中使用智能卡向颁发者进行身份验证的计算机或网亭。 
 
@@ -120,8 +123,11 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 有关获取和配置 DISA Purebred 应用的信息，请参阅下文的[部署 DISA Purebred 应用](#deploy-the-disa-purebred-app)。  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-查看 [Entrust Datacard 的用户工作流](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust)。 此工作流的关键要求包括以下内容： 
 
+了解最终用户工作流和关键要求：  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - 用户需要访问可在其中使用智能卡向颁发者进行身份验证的计算机或网亭。 
 
 - 将注册派生凭据的设备必须安装 Intune 公司门户应用。
@@ -129,8 +135,11 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 - 使用设备相机扫描 QR 码，该 QR 码会将身份验证请求链接到移动设备的派生凭据请求。
 
 #### <a name="intercede"></a>Intercede
-查看 [Intercede 的用户工作流](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede)。 此工作流的关键要求包括以下内容： 
 
+了解最终用户工作流和关键要求：  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - 用户需要访问可在其中使用智能卡向颁发者进行身份验证的计算机或网亭。 
 
 - 将注册派生凭据的设备必须安装 Intune 公司门户应用。

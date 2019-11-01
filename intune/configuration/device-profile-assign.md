@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550800"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892639"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -69,19 +69,28 @@ ms.locfileid: "72550800"
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>从配置文件分配中排除组
 
-通过使用 Intune 设备配置文件，可将组从策略分配中排除。
+通过使用 Intune 设备配置文件，可在策略分配中包括和排除组。
 
-Intune 不会查看用户到设备组的关系。 如果在排除设备组的同时包含用户组，可能不会获得预期结果。 在用户组到用户组和设备组到设备组的方案中，排除优先于包含。
+最佳做法是专门为用户组创建和分配策略。 并且，专门为设备组创建和分配其他策略。 有关组的详细信息，请参阅[添加用于组织用户和设备的组](../fundamentals/groups-add.md)。
 
-例如，可将设备配置文件分配到“所有公司用户”  用户组，但排除“高级管理人员”  用户组中的成员。 由于两个组都是用户组，因此“高级管理人员  ”的所有成员都会从策略中排除，即使它们是“所有公司用户”  用户组的成员也是如此。
+如果分配策略，请在包括和排除组时使用下表。 复选标记表示支持分配：
 
-使用混合组（如用户组到设备组或设备组到用户组）时，包含优先于排除。
+![支持的选项在配置文件分配中包括或排除组](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-例如，需要向组织中除展台设备外的所有用户分配设备配置文件。 于是含入“所有用户”  组，而排除“所有设备”  组。 在这种情况下，所有用户及其设备均会获得策略，即使用户设备属于“所有设备”  组也是如此。
+### <a name="what-you-should-know"></a>应了解的内容
 
-排除仅考虑组的直接成员。 它不包含与用户关联的设备。 但是，没有用户的设备不会获得策略。 出现此行为是因为没有用户的设备与“所有用户”  组没有任何关系。
+- 在以下相同的组类型方案中，排除优先于包含：
 
-如果包括“所有设备”  ，而排除“所有用户”  ，则所有设备均接收策略。 在这种情况下，其目的是将与用户关联的设备从策略中排除。 但是，这样并不会排除设备，因为排除功能只比较直接组成员。
+  - 包括用户组和排除用户组
+  - 包括设备组和排除设备组
+
+  例如，可将设备配置文件分配到“所有公司用户”  用户组，但排除“高级管理人员”  用户组中的成员。 由于这两个组都是用户组，因此除“高级管理人员”之外的“所有公司用户”获取策略   。
+
+- Intune 不会评估用户到设备组的关系。 如果将策略分配到混合组，则结果可能不是你所预期的。
+
+  例如，将设备配置文件分配到“所有用户”用户组，但排除“所有个人设备”设备组   。 在此混合组策略分配中，  “所有用户”获取策略。 排除不适用。
+
+  因此，建议不要将策略分配到混合组。
 
 ## <a name="next-steps"></a>后续步骤
 
