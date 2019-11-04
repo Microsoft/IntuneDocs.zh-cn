@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c3f96b6a548536459162e81d0ea34d102ef8d1c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509751"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999519"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
 
@@ -179,7 +179,6 @@ IOS 10.3 发行版于 2017 年 3 月 27 面向 iOS 用户推出。 所有现有�
 由于中国地区没有 Google Play 商店，Android 设备必须从中国的市场获取应用。 公司门户将支持此工作流，方法是将中国的 Android 用户重定向为从本地应用商店下载公司门户和 Outlook 应用。 对于移动设备管理和移动应用程序管理，此举将改善启用条件性访问策略时的用户体验。 下列中文应用商店中提供适用于 Android 的公司门户和 Outlook 应用：
 
 - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
-- [小米](http://en.miui.com/thread-469541-1-1.html)
 - [腾讯](https://go.microsoft.com/fwlink/?linkid=836949)
 - [华为](https://go.microsoft.com/fwlink/?linkid=836948)
 - [豌豆荚](https://go.microsoft.com/fwlink/?linkid=836950)
@@ -329,7 +328,6 @@ __适用于 Android 的公司门户应用现已在中国推出__ <!--VSO 65809
 * [华为](https://go.microsoft.com/fwlink/?linkid=836948)
 * [腾讯](https://go.microsoft.com/fwlink/?linkid=836949)
 * [豌豆荚](https://go.microsoft.com/fwlink/?linkid=836950)
-* [小米](http://en.miui.com/thread-469541-1-1.html)
 
 Android 版公司门户应用使用 Google Play Services 与 Microsoft Intune 服务进行通信。 由于 Google Play Services 尚未在中国推出，因此执行以下任何任务最高可能需要 8 个小时才能完成。
 

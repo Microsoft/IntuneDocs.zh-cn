@@ -17,20 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490815"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413809"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
-
-[!INCLUDE[both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 可以使用 Intune 应用包装工具或 Intune App SDK 来支持应用使用应用保护策略。 通过此信息了解这两种方式以及何时使用这两种方式。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune 应用包装工具
+
 App Wrapping Tool 主要用于内部  业务线 (LOB) 应用。 此工具是一个命令行应用程序。它可以在应用周围创建包装器，之后包装器将允许 Intune 应用保护策略管理该应用。 在保护独立软件供应商 (ISV) 提供的应用时，请务必说明 ISV 是否仍然支持包装的应用。
 
 使用此工具不需要源代码，但需要签名凭据。 有关签名凭据的详细信息，请参阅 [Intune 博客](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)。 有关应用包装工具文档的信息，请参阅 [Android 应用包装工具](app-wrapper-prepare-android.md)和 [iOS 应用包装工具](app-wrapper-prepare-ios.md)。
@@ -40,6 +39,7 @@ App Wrapping Tool 主要用于内部  业务线 (LOB) 应用。 此工具是一�
 有关未在 Intune 中注册的设备上的应用保护策略应用包装工具的详细信息，请参阅[保护未在 Microsoft Intune 中注册的设备上的业务线应用及数据](../apps/apps-add.md)。
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用应用包装工具的原因
+
 * 应用未内置数据保护功能
 * 应用非常简单
 * 应用是在内部部署的
@@ -55,11 +55,13 @@ App Wrapping Tool 主要用于内部  业务线 (LOB) 应用。 此工具是一�
 |**Outlook Web Access (OWA)**|不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
+
 App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用并想使用 Intune 管理应用的客户。 但是，任何应用都可以利用集成 SDK 的优势，即使是业务线应用。
 
 若要了解有关 SDK 的详细信息，请参阅[概述](app-sdk.md)。 若要开始使用 SDK，请参阅 [Microsoft Intune App SDK 入门](app-sdk-get-started.md)。
 
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的原因
+
 * 应用未内置数据保护功能
 * 应用复杂且包含许多体验
 * 应用部署在 Google Play 商店或 Apple App Store 等公共应用商店中
@@ -74,10 +76,12 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |**iOS**|支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
 |**Outlook Web Access (OWA)**| 支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>不使用上面列出的应用开发平台？ 
+### <a name="not-using-an-app-development-platform-listed-above"></a>不使用上面列出的应用开发平台？
+
 Intune SDK 开发团队主动测试和维护对使用本机 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。 
 
 ## <a name="feature-comparison"></a>功能比较
+
 此表列出了可用于 App SDK 和应用包装工具的设置。
 
 > [!NOTE]

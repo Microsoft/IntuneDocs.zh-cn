@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915706"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143041"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置
 
@@ -42,7 +42,7 @@ ms.locfileid: "72915706"
   - **自动授予**：自动授予权限。
   - **自动拒绝**：自动拒绝权限。
 - **日期和时间更改**：选择“阻止”  可阻止用户手动设备日期和时间。 “未配置”  则允许用户设置设备上的日期和时间。
-- **卷更改**：选择“阻止”以阻止用户更改设备的卷  。 “未配置”  则允许使用设备上的音量设置。
+- **卷更改**：**阻止**用户更改设备的卷，还会静音主卷。 “未配置”  则允许使用设备上的音量设置。
 - **恢复出厂设置**：选择“阻止”  可阻止用户在设备设置中使用恢复出厂设置选项。 “未配置”  则允许用户在设备上使用此设置。
 - **安全启动**：选择“阻止”以防止用户将设备重新启动到安全模式  。 “未配置”  则允许用户在安全模式下重新启动设备。
 - **状态栏**：选择“阻止”  可阻止访问状态栏，包括通知和快速设置。 “未配置”  则允许用户访问状态栏。

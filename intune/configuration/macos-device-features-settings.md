@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776915"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143158"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 设备功能设置
 
@@ -129,7 +129,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>设置适用于：所有注册类型 
 
-- **SSO 应用扩展类型**：选择凭据 SSO 应用扩展的类型。 保存 SSO 应用扩展配置文件时，无法更改 SSO 应用扩展类型。 选项包括：
+- **SSO 应用扩展类型**：选择凭据 SSO 应用扩展的类型。 选项包括：
 
   - **未配置**：不使用应用扩展。 若要禁用 SSO 应用扩展，请将 SSO 应用扩展类型从**Kerberos**或**凭据**切换为 "**未配置**"。
   - **Credential**：使用通用的可自定义凭据应用扩展来使用 SSO。 请确保了解组织的 SSO 应用扩展的扩展 ID 和团队 ID。  
@@ -143,7 +143,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 
   [找到你的团队 ID](https://help.apple.com/developer-account/#/dev55c3c710c) （打开 Apple 网站）以了解详细信息。
 
-- **领域**：输入 Kerberos 领域的名称。 领域名称应大写，如 `CONTOSO.COM`。 通常情况下，你的领域名称与 DNS 域名相同，但全部为大写。
+- **领域**：输入身份验证领域的名称。 领域名称应大写，如 `CONTOSO.COM`。 通常情况下，你的领域名称与 DNS 域名相同，但全部为大写。
 - **域**：输入可以通过 SSO 进行身份验证的站点的域名或主机名。 例如，如果你的网站 `mysite.contoso.com`，则 `mysite` 为主机名，`contoso.com` 是域名。 当用户连接到这些站点中的任何一个时，应用扩展会处理身份验证质询。 此身份验证允许用户使用人脸 ID、Touch ID 或 Apple pincode/密码进行登录。
 
   - 单一登录应用扩展 Intune 配置文件中的所有域都必须是唯一的。 即使使用的是不同类型的 SSO 应用扩展，也不能在任何登录应用扩展配置文件中重复域。

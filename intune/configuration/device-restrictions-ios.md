@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785509"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414680"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
 
@@ -167,7 +167,33 @@ ms.locfileid: "72785509"
   iOS 具有内置的安全机制，这可能会影响此设置。 例如，iOS 可能会延迟触发策略，具体取决于登录失败的次数。 它还可以考虑重复输入相同的密码。 Apple 的[iOS 安全指南](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf)（打开 Apple 的网站）是一个不错的资源，并提供有关密码的更具体的详细信息。
   
 - **屏幕锁定后要求提供密码前的最大分钟数**<sup>1</sup>：输入用户必须重新输入密码前设备保持空闲状态的时间。 如果输入的时间大于设备上当前设置的时间，则设备将忽略输入的时间。 在 iOS 8.0 及更高版本的设备上受支持。
-- **屏幕锁定前的最大不活动分钟数**<sup>1</sup>：输入在屏幕锁定前在设备上允许的最大不活动分钟数。 如果输入的时间大于设备上当前设置的时间，则设备将忽略输入的时间。 如果设置为 "**立即**"，屏幕将根据设备的最小时间进行锁定。 在 iPhone 上，为30秒。 在 iPad 上，这是两分钟。
+
+- **屏幕锁定前的最大不活动分钟数**<sup>1</sup>：输入在屏幕锁定前在设备上允许的最大不活动分钟数。
+
+  **iOS 选项**：  
+
+  - **未配置**（默认）： Intune 不触及此设置。
+  - **立即**：30秒处于不活动状态后的屏幕锁定。
+  - **1**：在处于非活动状态1分钟后的屏幕锁。
+  - **2**：2分钟处于非活动状态后的屏幕锁。
+  - **3**：3分钟处于非活动状态后的屏幕锁定。
+  - **4**：在处于不活动状态4分钟后的屏幕锁定。
+  - **5**：屏幕在处于不活动状态5分钟后锁定。
+    
+  **iPadOS 选项**：  
+
+  - **未配置**（默认）： Intune 不触及此设置。
+  - **立即**：在2分钟处于非活动状态后的屏幕锁。
+  - **2**：2分钟处于非活动状态后的屏幕锁。
+  - **5**：屏幕在处于不活动状态5分钟后锁定。
+  - **10**：屏幕在处于不活动状态10分钟后锁定。
+  - **15**：在处于不活动状态15分钟后的屏幕锁定。
+
+  如果值不适用于 iOS 或 iPadOS，则 Apple 使用最*小*值。 例如，如果输入 "`4` 分钟"，则 iPadOS 设备使用 `2` 分钟。 如果输入 `10` 分钟，则 iOS 设备将使用 `5` 分钟。 这是一种 Apple 限制。
+  
+  > [!NOTE]
+  > 此设置的 Intune UI 不会分隔 iOS 和 iPadOS 支持的值。 在将来的版本中可能会更新 UI。
+
 - **密码过期(天数)** ：输入必须更改设备密码前的天数。
 - **防止重用以前的密码**：输入必须使用多少个新密码后才能重用旧密码。
 - **TOUCH id 和人脸 id 解锁**：选择 "**阻止**" 以防止使用指纹或面部来解锁设备。 “未配置”  则允许用户使用这些方式解锁设备。

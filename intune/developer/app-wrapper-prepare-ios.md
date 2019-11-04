@@ -17,24 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490969"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413863"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 使用适用于 iOS 的 Microsoft Intune 应用包装工具启用内部 iOS 应用的 Intune 应用保护策略，无需更改应用自身的代码。
 
 该工具是在应用周围创建包装程序的 macOS 命令行应用程序。 处理应用后，通过向其部署[应用保护策略](../apps/app-protection-policies.md)可更改应用功能。
 
 若要下载该工具，请参阅 GitHub 上的 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)（适用于 iOS 的 Microsoft Intune 应用包装工具）。
-
-
 
 ## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>应用包装工具的常规先决条件
 
@@ -74,6 +70,7 @@ ms.locfileid: "72490969"
 * 内部分发的预配配置文件。
 
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>创建 Apple 开发者企业帐户的步骤
+
 1. 转到 [Apple Developer Enterprise Program 站点](https://developer.apple.com/programs/enterprise/)。
 
 2. 在页面的右上角单击“注册”  。
@@ -86,11 +83,11 @@ ms.locfileid: "72490969"
 
 6. 在表单中填写组织的信息。 单击“继续”  。 这时，Apple 将与你联系，验证你是否有权注册组织。
 
-8. 验证之后，单击“同意许可”  。
+7. 验证之后，单击“同意许可”  。
 
-9. 同意许可之后，单击“购买和激活程序”  即可完成操作。
+8. 同意许可之后，单击“购买和激活程序”  即可完成操作。
 
-10. 如果你是团队代理（代表组织联接 Apple Developer Enterprise Program 的人员），首先通过邀请团队成员并分配角色来组建团队。 若要了解如何管理团队，请参阅关于[管理开发人员帐户团队](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)的 Apple 文档。
+9. 如果你是团队代理（代表组织联接 Apple Developer Enterprise Program 的人员），首先通过邀请团队成员并分配角色来组建团队。 若要了解如何管理团队，请参阅关于[管理开发人员帐户团队](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)的 Apple 文档。
 
 ### <a name="steps-to-create-an-apple-signing-certificate"></a>创建 Apple 签名证书的步骤
 
@@ -145,8 +142,6 @@ ms.locfileid: "72490969"
 
     ![iPhone 信息 - 指纹 SHA1 字符串](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
-
-
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>创建内部分发的预配配置文件的步骤
 
 1. 返回到[Apple 开发者帐户门户](https://developer.apple.com/account/)并使用组织的 Apple ID **登录**。
@@ -164,8 +159,6 @@ ms.locfileid: "72490969"
 6. 请按照此步骤将配置文件（扩展名为 .mobileprovision）下载到 macOS 计算机。
 
 7. 将文件保存在容易记住的位置。 使用应用包装工具时此文件将用于 -p 参数。
-
-
 
 ## <a name="download-the-app-wrapping-tool"></a>下载应用包装工具
 
@@ -195,6 +188,7 @@ ms.locfileid: "72490969"
 ```
 
 ### <a name="command-line-parameters"></a>命令行参数
+
 可将以下命令行参数用于应用包装工具：
 
 |属性|如何使用它|
@@ -216,6 +210,7 @@ ms.locfileid: "72490969"
 |**-f**|（可选）`<Path to a plist file specifying arguments.>` 如果选择使用 plist 模板指定其余 IntuneMAMPackager 属性（-i、-o 和 -p），使用 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 前的此标志。 请参阅“使用 plist 输入参数”。 |
 
 ### <a name="use-a-plist-to-input-arguments"></a>使用 plist 输入参数
+
 一种运行应用包装工具的简单方法是将所有命令参数置于 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 文件中。 Plist 是一种类似于 XML 的文件格式，可使用它通过窗体界面输入命令行参数。
 
 在 IntuneMAMPackager/Contents/MacOS 文件夹中，使用文本编辑器或 Xcode 打开 `Parameters.plist`（一个空白 plist 模板）。 为以下项输入参数：
@@ -236,7 +231,6 @@ ms.locfileid: "72490969"
 | 包括 Citrix XenMobile App SDK （仅限网络的变体）|布尔值|false| 与-citrix 相同|
 | 扩展预配配置文件路径 |字符串数组|empty| 应用的一系列扩展预配配置文件。
 
-
 将 IntuneMAMPackager 与 plist 一起作为唯一参数运行：
 
 ```bash
@@ -255,19 +249,24 @@ ms.locfileid: "72490969"
 现在便可以将应用部署到用户组，并将应用保护策略定向到该应用。 该应用可以在使用所指定的应用保护策略的设备上运行。
 
 ## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>我应该多久使用一次 Intune 应用包装工具来重新包装 iOS 应用程序？
+
 需要重新包装应用程序的主要方案如下：
+
 * 应用程序本身已发布新的版本。 该应用的以前版本已包装且已上传到 Intune 控制台。
 * Intune App Wrapping Tool for iOS 已发布新的版本，该版本提供了重要的 bug 修补程序或新的特定 Intune 应用程序保护策略功能。 GitHub 存储库每 6-8 周会发布一次 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 的新版本。
 
 对于 iOS，尽管可以使用不同于最初对应用进行签名所用的证书/预配配置文件进行包装，但如果新预配配置文件中不包括在应用中指定的权利，包装将会失败。 “-e”命令行选项可用于从应用中删除任何缺少的权利，若在此方案中使用此选项来强制保证包装不失败，则可能导致应用中出现功能中断。
 
 重新包装的一些最佳做法包括：
+
 * 确保另一个预配配置文件具有任何以前的预配配置文件所必需的所有权利。 
 
 ## <a name="error-messages-and-log-files"></a>错误消息和日志文件
+
 使用以下信息可排查应用包装工具出现的问题。
 
 ### <a name="error-messages"></a>错误消息
+
 如果应用包装工具失败，将在控制台显示以下错误消息之一：
 
 |错误消息|更多信息|
@@ -291,6 +290,7 @@ ms.locfileid: "72490969"
 |警告：你没有指定 SHA1 证书哈希。 确保你的已包装应用程序在部署前已签名。|确保 –c 命令行标志后指定了有效的 SHA1 哈希。 |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>应用包装工具的日志文件
+
 使用应用包装工具包装的应用生成写入 iOS 客户端设备控制台的日志。 在对应用程序存在疑问且如果该问题与应用包装工具有关并需要进行确定时，此信息有用。 若要检索此信息，请使用以下步骤：
 
 1. 通过运行应用，再现该问题。
@@ -310,7 +310,6 @@ ms.locfileid: "72490969"
 
     包装的应用也将向用户提供在应用损坏后直接通过电子邮件从设备发送日志的选项。 用户可以将日志发送给你进行检查，并在必要时转发给 Microsoft。
 
-
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>证书、预配配置文件和身份验证要求
 
 适用于 iOS 的应用包装工具必须满足一些要求才能确保功能的完整性。
@@ -321,8 +320,8 @@ ms.locfileid: "72490969"
 |iOS 签名证书|指定签名证书前，请确保其有效。 处理 iOS 应用时，该工具不会检查证书是否已过期。 如果提供了过期证书的哈希，工具将对应用进行处理并签名，但是应用将无法安装在设备上。<br /><br />确保提供用于对已包装应用进行签名的证书在预配配置文件中存在匹配项。 如果预配配置文件中存在提供用于对已包装应用程序进行签名的证书的匹配项，则该工具不会进行验证。|
 |身份验证|设备必须具有 PIN 以使加密起作用。 在部署了已包装应用的设备上，单击设备上的状态栏将要求用户使用工作或学校帐户重新登录。 已包装应用中的默认策略是“重新启动时进行身份验证”  。 iOS 通过退出应用然后重新启动来处理任何外部通知（例如电话呼叫）。
 
-
 ## <a name="setting-app-entitlements"></a>设置应用权利
+
 在包装应用之前，可以授予“权利”  ，以便为应用提供其他权限和功能，使其能够执行比一般情况下更多的操作。 *权利文件*在代码签名过程中用于指定应用内的特殊权限（例如，对共享密钥链的访问权限）。 在应用开发过程中，会在 Xcode 内启用称为“功能”  的特定应用服务。 启用后，功能即反映在权利文件中。 有关权利和功能的详细信息，请参阅 iOS 开发人员库中的[添加功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。 有关支持的功能的完整列表，请参阅[支持的功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)。
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>适用于 iOS 的应用包装工具支持的功能
@@ -363,6 +362,7 @@ ms.locfileid: "72490969"
 3. 确保已经满足所有先决条件，然后对应用进行包装。
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>排查与权利相关的常见错误
+
 如果适用于 iOS 的应用包装工具显示权利错误，请尝试下列故障排除步骤。
 
 |问题|原因|解决方法|
@@ -371,6 +371,7 @@ ms.locfileid: "72490969"
 |预配配置文件中缺少权利（已列出缺少的权利）。 使用具有这些权利的预配配置文件对应用重新封装。|预配配置文件中启用的权利与应用中启用的功能不匹配。 与特定功能（如应用组和密钥链访问）相关联的 ID 也存在这种不匹配。|通常情况下，你可以创建一个新的预配配置文件，在其中启用与应用相同的功能。 如果配置文件和应用之间的 ID 不匹配，应用包装工具将更换 ID（如果能）。 如果新建预配配置文件后仍然收到此错误，可以尝试使用 –e 参数从应用中删除权利（请参阅“使用 –e 参数从应用中删除权利”部分）。|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>查找已签名应用的现有权利
+
 若要查看已签名应用和预配配置文件的现有权利，请执行以下操作：
 
 1. 找到 .ipa 文件并将其扩展名更改为 .zip。
@@ -390,6 +391,7 @@ ms.locfileid: "72490969"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>使用 – e 参数从应用中删除权利
+
 此命令将删除不在权利文件中的应用中的任何已启用功能。 如果删除应用正在使用的功能，它会中断你的应用。 你可能会删除丢失功能的一个情况示例是拥有一个默认具有所有功能的供应商生产应用。
 
 ```bash
@@ -397,6 +399,7 @@ ms.locfileid: "72490969"
 ```
 
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>应用包装工具的安全和隐私
+
 使用应用包装工具时，请使用以下安全和隐私的最佳做法。
 
 - 指定的签名证书、预配配置文件和业务线应用必须位于运行应用包装工具的同一台 macOS 计算机上。 如果文件在 UNC 路径上，确保可以从 macOS 计算机上访问这些文件。 路径必须受到 IPsec 和 SMB 签名的保护。
@@ -414,6 +417,7 @@ ms.locfileid: "72490969"
 - 在你的设备上从包装的应用中监视文档文件夹时，可能会看到一个名为 .msftintuneapplauncher 的文件夹。 如果更改或删除了该文件，则可能影响受限制应用的正确运行。
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>具有 Citrix MDX mVPN 的 Intune App Wrapping Tool for iOS
+
 此功能是与适用于 iOS 的 Citrix MDX 应用包装器的集成。 对于常规的 Intune App Wrapping Tools，该集成只是一个附加的可选命令行标记 `-citrix`。
 
 ### <a name="requirements"></a>要求
@@ -424,6 +428,7 @@ ms.locfileid: "72490969"
 > 仅对 iOS 10+ 设备支持 Intune 与 Citrix 集成。
 
 ### <a name="use-the--citrix-flag"></a>使用 `-citrix` 标记
+
 只需运行常规的应用包装命令并附加 `-citrix` 标记。 `-citrix` 标记当前不带任何参数。
 
 **使用格式**：
@@ -439,6 +444,7 @@ ms.locfileid: "72490969"
 ```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>获取已包装应用的日志
+
 若要在疑难解答过程中获取已包装应用的日志，请按照以下步骤操作。
 
 1. 在设备上转到 iOS“设置”应用，并选择“LOB 应用”。

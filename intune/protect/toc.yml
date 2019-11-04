@@ -249,6 +249,8 @@
               href: security-baseline-settings-mdm-all.md
             - name: Microsoft Defender ATP 基准设置
               href: security-baseline-settings-defender-atp.md
+            - name: Microsoft Edge 基线设置
+              href: security-baseline-settings-edge.md
         - name: Windows 更新设置
           href: windows-update-settings.md
         - name: 合规性策略设置 - Android
