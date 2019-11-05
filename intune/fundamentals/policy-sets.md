@@ -72,7 +72,7 @@ ms.locfileid: "72585652"
    通过“设备注册”页面，可以将设备注册对象添加到策略集，例如[设备类型限制](~/enrollment/enrollment-restrictions-set.md)、[Windows Autopilot 部署配置文件](~/enrollment/enrollment-autopilot.md)和[注册状态页配置文件](~/enrollment/windows-enrollment-status.md)  。
 7. 单击“下一步:  分配”。<br>
    通过“分配”页面，可以将策略集分配到用户和设备  。 值得注意的是，无论设备是否由 Intune 管理，都可以将策略集分配到设备。
-8. 单击“下一步:**查看 + 创建”以查看你为配置文件输入的值  。
+8. 单击“**下一步:查看 + 创建**”以查看你为配置文件输入的值。
 9. 完成后，单击“创建”以在 Intune 中创建策略集  。 
 
 ## <a name="policy-sets-known-issues"></a>策略设置已知问题
