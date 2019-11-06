@@ -165,7 +165,7 @@ Intune 支持每个订阅有多个 Intune Exchange 连接器。 对于拥有多�
 
 若要进行故障转移，连接器需使用指定的 CAS 来创建与 Exchange 的成功连接。 然后发现该 Exchange 组织的其他 CAS。 如果有可用的 CAS，此发现可使连接器故障转移到其他 CAS，直到主 CAS 可用。 
 
-默认情况下，启用其他 CAS 的发现。 如果需要关闭故障转移：  
+默认情况下，发现其他 CAS 是启用的。 如果需要关闭故障转移：  
 1. 在安装 Exchange 连接器的服务器上，请转到 %ProgramData%\Microsoft\Windows Intune Exchange Connector  。 
 2. 使用文本编辑器打开“OnPremisesExchangeConnectorServiceConfiguration.xml”  。
 3. 将 \<IsCasFailoverEnabled>true\</IsCasFailoverEnabled>  更改为 \<IsCasFailoverEnabled>false\</IsCasFailoverEnabled>  。  
@@ -202,7 +202,7 @@ Exchange ActiveSync 支持 5,000 台或更多设备时，可以配置可选设�
 
 ## <a name="monitor-an-exchange-connector"></a>监视 Exchange 连接器
 
-在成功配置 Exchange 连接器之后，可以查看连接的状态和最后一次成功同步尝试的状态。 
+在成功配置 Exchange 连接器之后，可以查看连接的状态和上次成功同步尝试的状态。 
 
 验证 Exchange 连接器的连接：
 

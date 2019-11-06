@@ -63,7 +63,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 ## <a name="sign-in-to-the-azure-portal"></a>登录到 Azure 门户
 
 1. 打开新的浏览器窗口，在地址栏中输入 https://portal.azure.com  。 
-2. 使用在上述步骤中获得的凭据。
+2. 使用在上述步骤中获得的凭据来登录。
 
     ![Azure 门户登录页的图像](./media/free-trial-sign-up/azure-portal-signin.png)
 
@@ -74,7 +74,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 注册试用版时，还将收到一份电子邮件消息，其中包含你在注册过程中提供的帐户信息和电子邮件地址。 该电子邮件用于确认试用版处于活动状态。
 
 > [!TIP]
-> 使用 Azure 门户时，在常规模式而不是专用模式下使用浏览器，可能会获得更好的效果。
+> 使用 Azure 门户时，在常规模式而不是隐身模式下使用浏览器，可能会获得更好的效果。
 
 ## <a name="set-the-mdm-authority-to-intune"></a>将 MDM 机构设置为 Intune
 

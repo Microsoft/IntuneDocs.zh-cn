@@ -78,7 +78,7 @@ Intune 使用 Azure Active Directory (AD) [条件访问](https://docs.microsoft.
 
 ### <a name="without-conditional-access"></a>不使用条件访问
 
-还可在不使用任何条件访问的情况下使用设备符合性策略。 独立使用合规性策略时，会评估目标设备并报告其相容性状态。 例如，可以生成报告，了解未加密的设备数，或哪些设备已越狱或取得 root 权限。 如果在不使用条件访问的情况下使用符合性策略，对组织资源没有任何访问限制。
+还可在不使用任何条件访问的情况下使用设备符合性策略。 独立使用符合性策略时，会评估目标设备并报告其符合性状态。 例如，可以生成报告，了解未加密的设备数，或哪些设备已越狱或取得 root 权限。 如果在不使用条件访问的情况下使用符合性策略，对组织资源没有任何访问限制。
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>部署设备符合性策略的方法
 
@@ -98,7 +98,7 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
   启用此设置要求设备：
   - 在 OS 级别启用位置服务。
   - 允许公司门户使用位置服务。
-  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。 通过打开公司门户应用或将设备移动 500 米或更远距离来触发评估。 如果设备在 72 小时内未移动 500 米，则用户需要打开公司门户应用，以增强越狱评估。
+  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。 打开公司门户应用或将设备移动 500 米或更远距离会触发评估。 如果设备在 72 小时内未移动 500 米，则用户需要打开公司门户应用，以增强越狱评估。
 
 - **符合性状态有效期(天)** ：输入设备报告所有已收到符合性策略的状态的时间段。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。
 
@@ -148,10 +148,11 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
 
 ## <a name="next-steps"></a>后续步骤
 
-- [创建策略](create-compliance-policy.md)并查看系统必备组件。
+- [创建策略](create-compliance-policy.md)并查看先决条件。
 - 请查看不同设备平台的符合性设置：
 
-  - [Outlook Web Access (OWA)](compliance-policy-create-android.md)
+  - [Android
+](compliance-policy-create-android.md)
   - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)

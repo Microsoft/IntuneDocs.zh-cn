@@ -31,7 +31,7 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 
 如你在下表中所见，可通过几种方法来注册员工的设备。 每种方法取决于设备的所有权（个人或公司）、设备类型（iOS、Windows、Android）和管理需求（重置、关联、锁定）。
 
-默认情况下，适用于所有平台的设备都可在 Intune 中进行注册。 但是，可[通过平台限制设备](enrollment-restrictions-set.md#create-a-device-type-restriction)。
+默认情况下，所有平台的设备都可在 Intune 中进行注册。 但是，可[可按平台限制设备](enrollment-restrictions-set.md#create-a-device-type-restriction)。
 
 ## <a name="ios-enrollment-methods"></a>iOS 注册方法
 
@@ -84,13 +84,13 @@ Intune 可让你管理员工的设备和应用，以及他们访问公司数据�
 自带设备办公 (BYOD) 指代的设备包括个人拥有的电话、平板电脑和电脑。 用户安装并运行公司门户应用，以注册 BYOD。 此程序可让用户访问电子邮件等公司资源。
 
 ## <a name="corporate-owned-device"></a>公司拥有的设备
-[公司拥有的设备 (COD)](corporate-identifiers-add.md) 包括组织拥有并分发给员工的电话、平板电脑和电脑。 COD 注册支持多种方案，例如自动注册、共享设备或预授权注册需求。 管理员或经理注册 COD 的常用方法是使用设备注册管理器 (DEM)。 可直接通过 Apple 提供的设备注册计划 (DEP) 工具注册 iOS 设备。 也可将具有 IMEI 号码的设备标识并标记为“公司拥有”。
+[公司拥有的设备 (COD)](corporate-identifiers-add.md) 包括组织拥有并分发给员工的电话、平板电脑和电脑。 COD 注册支持多种方案，例如自动注册、共享设备或预授权注册需求。 管理员或经理注册 COD 的常用方法是使用设备注册管理器 (DEM)。 可直接通过 Apple 提供的设备注册计划 (DEP) 工具注册 iOS 设备。 也可识别具有 IMEI 号码的设备并将其标记为“公司拥有”。
 
 ### <a name="device-enrollment-manager"></a>设备注册管理器
 设备注册管理员 (DEM) 是一个特殊的用户帐户，用于注册和管理多个企业拥有的设备。 管理员可安装公司门户并注册多个无用户设备。 这些类型的设备非常适用于销售点或实用工具应用，但是不适用于需要访问电子邮件或公司资源的用户。 了解有关 [DEM](device-enrollment-manager-enroll.md) 的详细信息。
 
 ### <a name="apple-device-enrollment-program"></a>Apple 设备注册计划
-通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 和 macOS 设备。 用户第一次开启设备并运行设置助理时，将注册设备。 此方法支持 iOS 受监督模式，该模式可启用使用特定功能配置的设备。
+通过 Apple 设备注册计划 (DEP) 管理，可“无线”创建策略并将其部署到通过 DEP 购买和管理的 iOS 和 macOS 设备。 用户第一次开启设备并运行设置助理时，将注册设备。 此方法支持 iOS 受监督模式，该模式允许设备配置特定功能。
 
 了解有关 iOS DEP 注册的详细信息：
 
@@ -113,7 +113,8 @@ IT 管理员可通过 USB 使用 Apple Configurator，手动准备每台公司�
 若要了解有关 iOS 注册的详细信息，请参阅：
 
 - [决定 iOS 设备注册方式](ios-enroll.md)
-- [使用配置器和直接注册来注册 iOS 设备](apple-configurator-enroll-ios.md)
+- [使用 Configurator 和直接注册来注册 iOS 设备
+](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 证书过期后的移动设备清理
 

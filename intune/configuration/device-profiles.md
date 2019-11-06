@@ -28,7 +28,7 @@ ms.locfileid: "72749353"
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，使用 Intune 应用配置文件或将其“分配”给设备。
+Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加到“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，使用 Intune 应用配置文件或将其“分配”给设备。
 
 作为移动设备管理 (MDM) 解决方案的一部分，使用这些配置文件来完成不同的任务。 一些配置文件示例如下：
 
@@ -131,7 +131,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 [教育设置 - iOS](../fundamentals/education-settings-configure-ios-shared.md) 使用 iOS Classroom 应用来指导学习，并控制课堂中的学生设备。 可以将 iPad 设备配置为多名学生可以共享一台设备。
 
-## <a name="email"></a>Email
+## <a name="email"></a>电子邮件
 
 [电子邮件设置](email-settings-configure.md)创建、分配和监视设备上的 Exchange ActiveSync 电子邮件设置。 邮件配置文件可帮助确保一致性、减少支持呼叫，并让最终用户能够在不进行任何所需设置的情况下在其个人设备上访问公司电子邮件。 
 
@@ -186,7 +186,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 - Windows 10 及更高版本
 
-展台设置也可用作适用于 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 和 [ios](device-restrictions-ios.md#kiosk) 的设备限制。
+展台设置也可用作适用于 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 和 [iOS](device-restrictions-ios.md#kiosk) 的设备限制。
 
 ## <a name="oemconfig"></a>OEMConfig
 
