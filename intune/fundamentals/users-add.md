@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90066bf55f50819ba77babee1e1d4230bdead613
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504864"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415029"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 作为管理员，可直接添加用户或从本地 Active Directory 同步用户。 添加后，用户可注册设备并访问公司资源。 还可为用户提供更多权限，包括“全局管理员”和“服务管理员”权限   。
 
 ## <a name="add-users-to-intune"></a>添加用户到 Intune
+
 可通过 [Microsoft 365 管理中心](https://admin.microsoft.com)或 [Azure 门户](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)，手动将用户添加到 Intune 订阅。 管理员可以通过编辑用户帐户来分配 Intune 许可证。 可通过 Microsoft 365 管理中心或 Intune Azure 门户分配许可证。 若要深入了解如何使用 Microsoft 365管理中心，请参阅[向 Microsoft 365 管理中心逐一或批量添加用户](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)。
 
 ### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心添加 Intune 用户
+
 1. 使用全局管理员或用户管理管理员帐户登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
 2. 在 Office 365 菜单中，选择“管理员”  。
 3. 在管理中心，选择“添加用户”  。
@@ -56,6 +56,7 @@ ms.locfileid: "72504864"
 6. 选择“添加”创建新用户  。
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>在 Azure 门户中添加 Intune 用户
+
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 选择“用户” > “所有用户”   。
 3. 在管理中心，选择“新用户”  。
@@ -78,6 +79,7 @@ ms.locfileid: "72504864"
 在 Intune 订阅中添加用户后，最好为一些用户授予管理员权限。  若要授予管理员权限，请按照下列步骤操作：
 
 ### <a name="give-admin-permissions-in-office-365"></a>在 Office 365 中授予管理员权限
+
 1. 使用全局管理员帐户登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
 2. 在 Office 365 菜单中，选择“管理员”  。
 3. 在管理中心，选择“活动用户”，然后选择要为其授予管理员权限的用户  。
@@ -91,6 +93,7 @@ ms.locfileid: "72504864"
 6. 选择 **“保存”** 。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>在 Azure 门户中授予管理员权限
+
 1. 使用全局管理员帐户登录 [Azure 门户](https://portal.azure.com)。
 2. 在 Azure 门户中，依次选择“用户”  和要向其授予管理员权限的用户。
 3. 选择“目录角色”，然后选择权限  。
@@ -113,9 +116,11 @@ ms.locfileid: "72504864"
 若要访问 Microsoft 365 管理中心，必须将帐户设置为“允许登录”  。 在 Azure 门户中，将“配置文件”  下的“禁止登录”  设置为“否”  ，以允许访问。 此状态与拥有订阅许可证不同。 默认情况下，所有用户帐户均为“已允许”  。 无管理员权限的用户可使用 Microsoft 365 管理中心重置 Intune 密码。
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>同步 Active Directory 并将用户添加到 Intune
+
 可配置目录同步，将用户帐户从本地 Active Directory 导入到包含 Intune 用户的 Microsoft Azure Active Directory (Azure AD)。 让本地 Active Directory 服务与你所有基于 Azure Active Directory 的服务相连接，使管理用户标识变得更简单。 还可以配置单一登录功能，使用户的身份验证体验熟悉且简单。 通过将同一 [Azure AD 租户](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)与多个服务相链接，先前同步的用户帐户便可用于所有基于云的服务。
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>如何使用 Azure AD 同步本地用户
+
 使用 Azure AD 同步本地用户所需的唯一工具是 [Azure AD Connect 向导](https://www.microsoft.com/download/details.aspx?id=47594)。 Azure AD Connect 向导为将你的本地身份基础结构连接到云提供简化的指导式体验。 选择拓扑和需求（单个目录或多个目录、密码哈希同步、传递身份验证或联合身份验证）。 向导将部署和配置所有必需组件，以使连接正常运行。 其中包括：同步服务、Active Directory 联合身份验证服务 (AD FS) 和 Azure AD PowerShell 模块。
 
 > [!TIP]

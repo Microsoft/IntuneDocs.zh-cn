@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503023"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143172"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
@@ -191,7 +191,6 @@ ms.locfileid: "72503023"
 - 禁用 ESP 配置文件无法从设备删除 ESP 策略，用户首次登录到设备时仍然获得 ESP。 禁用 ESP 配置文件后未删除策略。 必须部署 OMA-URI 才能禁用 ESP。 有关如何使用 OMA-URI 禁用 ESP 的说明，请参阅上文。 
 - 重启挂起经常导致超时。 发生超时，因为设备需要重启。 需要重启才能为完成注册状态页跟踪的项留出时间。 重启将导致退出注册状态页，重启后在重启后执行帐户设置时无法进入设备。  请考虑无需重启的应用程序安装。 
 - 设备设置期间重启将强制用户输入凭据才能过渡到帐户设置阶段。 重启时不会保留用户凭据。 用户输入凭据后，注册状态页可继续使用。 
-- 使用 Windows Hello 企业版策略的 SCEP 证书将导致超时，因为用户无法完成 Hello PIN 配置，进而无法完成 SCEP 证书安装。  无解决方法。 预计于 2019 年夏季修复。 
 - 在 1903 之前的 Windows 10 版本上，执行添加工作和学校帐户注册时，注册状态页经常超时。 注册状态页将等待 Azure AD 注册完成。 已在 Windows 10 版本 1903 及更高版本中修复此问题。  
 - 使用 ESP 执行混合 Azure AD Autopilot 部署所需的时间超出 ESP 配置文件定义的超时持续时间。 在混合 Azure AD Autopilot 部署中，ESP 所需的时间比 ESP 配置文件设置的值超出 40 分钟。 此延迟为本地 AD 连接器创建 Azure AD 的新设备记录提供了时间。 
 - 在 Autopilot 用户驱动模式下，Windows 登录页未预填充用户名。 如果在 ESP 的设备设置阶段出现重启：

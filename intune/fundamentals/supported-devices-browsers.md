@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999686"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415037"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支持的操作系统和浏览器
 
@@ -37,14 +37,14 @@ ms.locfileid: "72999686"
 
 可以管理运行以下操作系统的设备：
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>受支持的 Samsung Knox Standard 设备
 
 要避免阻止 MDM 注册的 Knox 激活错误，则仅当[受支持的 Knox 设备列表](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中有相应设备时，“公司门户”应用才会在 MDM 注册期间尝试 Samsung Knox 激活。 不支持 Samsung Knox 激活的设备注册为标准 Android 设备。 Samsung 设备的一些型号支持 Knox，而另一些型号则不支持 Knox。 购买并部署 Samsung 设备前，请与设备经销商确认 Knox 兼容性。
 
 > [!NOTE]
-> 注册 Samsung Knox 设备可能需要[启用对 Samsung 服务器的访问权限](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)。 
+> 注册 Samsung Knox 设备可能需要[启用对 Samsung 服务器的访问权限](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)。
 
 以下列出的 Samsung 设备型号不支持 Knox。 它们由适用于 Android 的公司门户应用注册为 Android 本机设备：
 
@@ -85,18 +85,17 @@ ms.locfileid: "72999686"
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Windows 电脑软件客户端
 
-作为一种备用注册方法，可在 Windows 电脑上部署和安装 [Intune 软件客户端](../manage-windows-pcs-with-microsoft-intune.md)。 使用 Intune 经典门户时，此功能才可用。 可使用 Intune 软件客户端管理 Windows 7 和更高版本的电脑，Windows 10 家庭版除外。
+作为一种备用注册方法，可在 Windows 电脑上部署和安装 [Intune 软件客户端](manage-windows-pcs-with-microsoft-intune.md)。 使用 Intune 经典门户时，此功能才可用。 可使用 Intune 软件客户端管理 Windows 7 和更高版本的电脑，Windows 10 家庭版除外。
 
 > [!Note]
 > Microsoft 宣布，Windows 7 支持将于 2020 年 1 月 14 日结束。 到时，Intune 还将停止对运行 Windows 7 的设备的支持。
-
-> 有关详细信息，请参阅 [Intune 更改计划：即将结束对 Windows 7 的支持](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
-
+>
+> 有关详细信息，请参阅 [Intune 更改计划：即将结束对 Windows 7 的支持](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+>
 > Microsoft Intune 将于 2020 年 10 月 15 日停止对基于 Silverlight 的 Intune 控制台的支持。 此停用包括结束对 Silverlight 控制台配置的 PC 软件客户端（也称为 PC 代理）的支持
-
+>
 > 有关详细信息，请参阅 [Microsoft Intune 结束对基于 Silverlight 的管理控制台的支持](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 不同的管理任务要求使用以下管理网站之一。
 
-- [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure 门户](https://portal.azure.com/)
 
 此类门户支持以下浏览器：
+
 - Microsoft Edge（最新版本）
 - Microsoft Internet Explorer 11
 - Safari（最新版本，仅限 Mac）
 - Chrome（最新版本）
 - Firefox（最新版本）
 
-
-
-
 ### <a name="intune-classic-portal"></a>Intune 经典门户
 
 Intune 经典门户仅用于管理向 Intune PC 软件客户端注册的设备 (https://manage.microsoft.com) )。 Intune 经典门户需要 Silverlight 浏览器支持。
 
 以下 Silverlight 浏览器支持 Intune 控制台：
+
 - Internet Explorer 10 或更高版本
 - Google Chrome（42 版之前的版本）
 - 启用了 Silverlight 的 Mozilla Firefox（56 版之前的版本）

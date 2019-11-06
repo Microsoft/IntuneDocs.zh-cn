@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc298691ea3df923d1804005be61217325f52112
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510269"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413980"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS 用户如何获取其应用
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 使用此信息可了解最终用户如何以及在何处获取你通过 Microsoft Intune 分发的应用。
 
@@ -48,12 +46,12 @@ Apple 限制禁止公司门户应用列出业务线应用和托管应用商店�
 
 - **类别**指向公司门户网站的“类别”选项卡。
 
-
 ![iOS 公司门户应用屏幕](./media/end-user-apps-ios/ios-cp-app-main-apps-screen.png)
 
 有关如何添加应用的相关信息，请参阅[如何将应用添加到 Microsoft Intune](../apps/apps-add.md)。
 
 ## <a name="see-also"></a>另请参阅
+
 [Android 用户如何获取其应用](end-user-apps-android.md)
 
 [Windows 用户如何获取其应用](end-user-apps-windows.md)

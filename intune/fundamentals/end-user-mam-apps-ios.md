@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502851"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414557"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
  本主题介绍使用已应用了应用保护策略的应用时的用户体验。 仅在工作环境中使用应用时，应用保护策略才适用；例如，用户使用工作帐户访问应用，或访问公司 OneDrive 企业版位置存储的文件时。
 
@@ -35,7 +33,6 @@ ms.locfileid: "72502851"
 如果设备**未在 Intune 中注册**，则用户首次使用应用时需要重启该应用。 必须重启才能将应用保护策略应用到该应用。
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
-
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
@@ -56,8 +53,9 @@ ms.locfileid: "72502851"
 多标识应用程序允许用户添加多个帐户。  Intune 应用仅支持一个托管帐户。  Intune 应用不限制非托管帐户的数量。
 
 当应用程序中存在托管帐户时：
-* 如果用户尝试添加第二个托管帐户，则需要选择要使用的托管帐户。  另一个帐户则被删除。
-* 如果 IT 管理员将一个策略添加到第二个现有帐户，用户需要选择要使用的托管帐户。  另一个帐户则被删除。
+
+- 如果用户尝试添加第二个托管帐户，则需要选择要使用的托管帐户。  另一个帐户则被删除。
+- 如果 IT 管理员将一个策略添加到第二个现有帐户，用户需要选择要使用的托管帐户。  另一个帐户则被删除。
 
 阅读以下示例场景以更深入地了解如何处理多个用户帐户。
 
@@ -68,4 +66,5 @@ ms.locfileid: "72502851"
 如果使用 iOS 设备，则在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。 随即显示帐户，可从中选择要删除的帐户。
 
 ## <a name="next-steps"></a>后续步骤
+
 [Android 应用由应用保护策略托管时会出现的情况](end-user-mam-apps-android.md)

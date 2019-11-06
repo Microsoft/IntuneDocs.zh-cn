@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499717"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414741"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune 中的应用生命周期概述
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 当添加 Microsoft Intune 应用并进一步完成其他阶段时，该应用的生命周期便已开始，直到删除它。 通过了解这些阶段，可掌握在 Intune 中开始进行应用管理所需的详细信息。
 
@@ -34,7 +32,7 @@ ms.locfileid: "72499717"
 
 ## <a name="add"></a>添加
 
-应用部署的第一步是添加你要管理的应用并将其分配到 Intune 中。 尽管你可以使用许多不同的应用类型，但基本的过程都是相同的。 使用 Intune，可添加不同的应用类型，包括内部编写的应用（业务线）、应用商店中的应用、内置应用以及 Web 应用。 有关应用类型的详细信息，请参阅[如何将应用添加到 Microsoft Intune](apps-add.md)。 
+应用部署的第一步是添加你要管理的应用并将其分配到 Intune 中。 尽管你可以使用许多不同的应用类型，但基本的过程都是相同的。 使用 Intune，可添加不同的应用类型，包括内部编写的应用（业务线）、应用商店中的应用、内置应用以及 Web 应用。 有关应用类型的详细信息，请参阅[如何将应用添加到 Microsoft Intune](apps-add.md)。
 
 ## <a name="deploy"></a>部署
 
@@ -43,12 +41,14 @@ ms.locfileid: "72499717"
 ## <a name="configure"></a>用户密码重置策略
 
 作为应用生命周期的一部分，将定期发布新版本的应用。 Intune 提供一些工具，可轻松地[将你部署的应用更新](apps-add.md)到较新版本。 此外，你还可以为一些应用配置额外的功能，例如：
+
 - [iOS 应用配置策略](app-configuration-policies-use-ios.md)为应用运行时所使用的兼容 iOS 应用提供设置。 例如，某个应用可能需要特定的品牌设置或必须连接的服务器的名称。
 - [Managed Browser 策略](app-configuration-managed-browser.md)帮助你为 Intune Managed Browser 配置设置，该浏览器将取代默认设备浏览器并让你能够限制用户可以访问的网站。
 
 ## <a name="protect"></a>保护
 
 Intune 为你提供了许多方法来帮助保护你的应用中的数据。 主要方法是：
+
 - [条件访问](../protect/conditional-access.md)，根据指定的条件控制对电子邮件和其他服务的访问。 条件包括设备类型或者是否符合已部署的[设备合规性策略](../protect/device-compliance-get-started.md)。
 - [应用保护策略](app-protection-policy.md)作用于各个应用，以帮助保护它们使用的公司数据。 例如，你可以限制在非托管应用和你管理的应用之间复制数据，或者可以阻止应用在已越狱或取得 root 权限的设备上运行。
 

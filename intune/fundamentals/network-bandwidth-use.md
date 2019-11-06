@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505246"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415113"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 网络配置要求和带宽
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 你可以使用此信息来了解你的 Intune 部署的带宽要求。
 
 ## <a name="average-network-traffic"></a>平均网络流量
+
 该表列出了对于每个客户端在网络上传输的常见内容的近似大小和频率。
 
 > [!NOTE]
@@ -53,9 +52,11 @@ ms.locfileid: "72505246"
 |软件分发|变化不定<br /><br />大小取决于你部署的软件。|**变化不定**<br /><br />取决于你何时部署软件。|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>减少网络带宽使用的方式
+
 可以使用下列一种或多种方法来减少 Intune 客户端的网络带宽使用。
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>使用代理服务器来缓存内容请求
+
 代理服务器可以缓存内容来减少重复下载，并减少从 Internet 获取内容所使用的网络带宽。
 
 从客户端接收内容请求的缓存代理服务器可以检索该内容，并缓存 Web 响应和下载。 服务器使用缓存的数据来应答来自客户端的后续请求。
@@ -74,6 +75,7 @@ ms.locfileid: "72505246"
 有关使用代理服务器来缓存内容的信息，请参阅代理服务器解决方案的文档。
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>在计算机上使用后台智能传输服务 (BITS)
+
 在进行配置的数小时内，可以在 Windows 计算机上使用 BITS 来减少网络带宽。 可以在 Intune 代理策略的“网络带宽”  页上配置 BITS 策略。
 
 > [!NOTE]
@@ -82,14 +84,15 @@ ms.locfileid: "72505246"
 要详细了解 BITS 和 Windows 计算机，请参阅 TechNet 库中的 [后台智能传输服务](https://technet.microsoft.com/library/bb968799.aspx)。
 
 ### <a name="delivery-optimization"></a>传递优化
+
 借助传递优化，可使用 Intune 来减少 Windows 10 设备下载应用程序和更新时的带宽消耗。 通过使用自组织分布式缓存，可以从传统服务器和备用源（如网络对等）中提取下载内容。
 
 若要查看传递优化支持的 Windows 10 版本和内容类型的完整列表，请参阅 [Windows 10 更新的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements)一文。
 
 可以将[传递优化设置](../configuration/delivery-optimization-settings.md)为设备配置文件的一部分。
 
-
 ### <a name="use-branchcache-on-computers"></a>在计算机上使用 BranchCache
+
 Intune 客户端可以使用 BranchCache 来减少广域网 (WAN) 流量。 以下操作系统支持 BranchCache：
 
 - Windows 7

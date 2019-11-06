@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cd4dd270d276969d759bc9a9dccef80b281251
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502931"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414583"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 用户如何获取其应用
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 使用此信息可了解用户如何以及在何处获取你通过 Microsoft Intune 分发的应用。
 
@@ -39,5 +37,6 @@ ms.locfileid: "72502931"
 **非托管应用** - 可通过策略管理，并且未由 Intune 包装或不包含 Intune App SDK 的应用。 应用保护策略不能应用于这些应用。
 
 ## <a name="see-also"></a>另请参阅
+
 [Android 用户如何获取其应用](end-user-apps-android.md)
 [iOS 用户如何获取其应用](end-user-apps-android.md)

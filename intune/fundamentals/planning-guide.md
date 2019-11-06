@@ -18,16 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 950f74795c8f1a1a17c70d75125d9613beb7f20e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1bb1117be387d9be78358175022ee2fc024840
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509916"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414384"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune 部署规划、设计和实施指南
-
-[!INCLUDE [note for both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 成功的 Microsoft Intune 部署始于良好的规划和设计。 本指南旨在引导用户逐步完成制定开发计划、进行设计、载入 Intune 并执行生产推广等一系列流程。
 

@@ -16,16 +16,14 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507375"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414696"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 作为 Intune 管理员，可以将业务线 (LOB) 通用应用部署到 Windows 8.1 桌面版或 Windows 10 桌面版和移动版设备，包括公司门户应用。 若要将 .appx 应用部署到 Windows 8.1 桌面版或 Windows 10 桌面版和移动版设备，你可以使用 Windows 设备已信任的公共证书颁发机构颁发的代码签名证书，也可以使用自己的证书颁发机构。
 
@@ -53,6 +51,7 @@ ms.locfileid: "72507375"
 ### <a name="upload-the-code-signing-certificate"></a>上传代码签名证书
 
 如果 Windows 10 设备尚未信任证书颁发机构，则在你签署了 appx 包并将其上传到 Intune 服务后，需要将代码签名证书上传到 Intune 门户：
+
 1. 单击“客户端应用”
 2. 单击“Windows 企业证书”
 3. 选择代码签名证书下的“选择文件”
@@ -77,6 +76,7 @@ Windows 8.1 桌面版/Windows 10 桌面版和移动版
 如果证书期限已过期，则 appx 文件可能会停止启动。 你应当获得新的 .cer 文件，并按照说明对每个已部署的 appx 文件进行代码签名，然后将所有 appx 文件和更新的 .cer 文件重新上传到 Intune 门户的“Windows 企业证书”部分
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>手动部署 Windows 10 公司门户应用
+
 如果你不想提供 Microsoft Store 的访问权限，即使尚未将 Intune 与适用于企业的 Microsoft Store (MSFB) 集成，也可以直接从 Intune 手动部署 Windows 10 公司门户应用。 或者，如果已集成，则可以通过[使用 MSFB 部署应用](store-apps-windows.md)部署公司门户应用。
 
  > [!NOTE]
@@ -100,9 +100,11 @@ Windows 8.1 桌面版/Windows 10 桌面版和移动版
 有关 Intune 如何处理通用应用的依赖项的详细信息，请参阅[通过 Microsoft Intune MDM 部署具有依赖项的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  
 
 ### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>如果已从应用商店安装旧版应用，那么如何更新用户设备上的公司门户？
-如果你的用户已从应用商店安装 Windows 8.1 或 Windows Phone 8.1 公司门户应用，那么它们应自动更新到新版本，你或你的用户无需执行任何操作。 如果未更新，则要求用户检查他们是否在设备上启用了应用商店应用的自动更新。   
+
+如果你的用户已从应用商店安装 Windows 8.1 或 Windows Phone 8.1 公司门户应用，那么它们应自动更新到新版本，你或你的用户无需执行任何操作。 如果未更新，则要求用户检查他们是否在设备上启用了应用商店应用的自动更新。
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将我的旁加载 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
+
 我们推荐的迁移途径是通过将部署操作设置为“卸载”，删除 Windows 8.1 公司门户应用的部署。 完成此操作后，可以使用上面任意选项部署 Windows 10 公司门户应用。  
 
 如果需要旁加载应用并且在未使用 Symantec 证书进行签名的情况下部署了 Windows 8.1 公司门户，则直接通过上面的 Intune 部分按照“部署”中的步骤完成升级。
@@ -110,6 +112,7 @@ Windows 8.1 桌面版/Windows 10 桌面版和移动版
 如果需要旁加载应用，并且使用 Symantec 代码签名证书签名和部署了 Windows 8.1 公司门户，请按照以下部分内容的步骤操作。  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将已签名和旁加载的 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
+
 我们推荐的迁移路径是通过将部署操作设置为“卸载”，删除 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用的现有部署。 完成此操作后，Windows 10 公司门户应用便可以正常部署。  
 
 否则，Windows 10公司门户应用需要进行相应更新和签名，以确保遵循升级过程。  
