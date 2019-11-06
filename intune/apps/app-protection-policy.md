@@ -52,7 +52,7 @@ ms.locfileid: "72498949"
 - **未在任何移动设备管理解决方案中注册：** 此类设备通常是员工拥有的设备，且未在 Intune 或其他 MDM 解决方案中进行托管或注册。
 
 > [!IMPORTANT]
-> 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 此外，还可以通过为启用了混合现代身份验证的 Outlook for iOS 和 Outlook for Android 创建 Intune 应用保护策略来保护对 Exchange 本地邮箱的访问。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 连接到本地 Exchange 或 SharePoint 服务的其他应用不支持应用保护策略。
+> 可为连接到 Office 365 服务的 Office 移动应用创建移动应用管理策略。 此外，还可以通过为启用了混合现代身份验证的 iOS 和 Android 的 Outlook 创建 Intune 应用保护策略来保护对 Exchange 本地邮箱的访问。 使用此功能之前，请确保满足[适用于 iOS 和 Android 的 Outlook 要求](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)。 连接到本地 Exchange 或 SharePoint 服务的其他应用不支持应用保护策略。
 
 ## <a name="benefits-of-using-app-protection-policies"></a>使用应用保护策略的优点
 
@@ -75,7 +75,7 @@ ms.locfileid: "72498949"
 - 将不太严格的 MAM 策略应用于 Intune 托管设备，并将更严格的 MAM 策略应用于未注册 MDM 的设备。
 - 将 MAM 策略仅应用于未注册的设备。
 
-## <a name="supported-platforms-for-app-protection-policies"></a>应用保护策略的受支持平台
+## <a name="supported-platforms-for-app-protection-policies"></a>支持应用保护策略的平台
 
 Intune 提供各种功能，用于在设备上获取所需的应用，以便在其中运行。 有关详细信息，请参阅[按平台分类的应用管理功能](app-management.md#app-management-capabilities-by-platform)。
 
