@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892546"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712856"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 设备注册问题疑难解答
 
@@ -60,7 +60,7 @@ ms.locfileid: "72892546"
 该问题有以下几种可能的解决方法：
 
 ##### <a name="remove-devices-that-were-enrolled"></a>删除已注册的设备
-1. 登录到 [Azure 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。    
+1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。    
 2. 中转到 "**用户**"  >  "**所有用户**"。    
 3. 选择受影响的用户帐户，然后单击 "**设备**"。    
 4. 选择任何未使用或不需要的设备，然后单击 "**删除**"。 
@@ -70,12 +70,12 @@ ms.locfileid: "72892546"
 > [!NOTE]
 > 此方法会增加所有用户的设备注册限制，而不只是受影响的用户。
 
-1. 登录到 [Azure 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
+1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 中转到 "**设备注册**"  >  "**注册限制**"，然后选择 "**设备限制**"。    
 3. 增加**设备限制**的值。 
 
 ##### <a name="check-device-type-restrictions"></a>查看设备类型限制
-1. 使用全局管理员帐户登录 [Intune 门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
+1. 使用全局管理员帐户登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 中转到 "**设备注册**"  >  "**注册限制**"，然后在 "**设备类型限制**" 下选择**默认**限制。    
 3. 选择 "**平台**"，然后选择 "**允许** **Windows （MDM）** "。
 

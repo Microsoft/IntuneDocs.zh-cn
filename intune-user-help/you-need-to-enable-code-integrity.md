@@ -19,12 +19,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56982c6ce10f74617471307acd176a0506655398
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501232"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754999"
 ---
 # <a name="enable-code-integrity"></a>启用代码完整性
 
@@ -36,7 +36,7 @@ ms.locfileid: "72501232"
 
 ## <a name="additional-resources-for-it-administrators"></a>面向 IT 管理员的其他资源
 
-如果你是 Intune 管理员，并且想要了解有关 Intune 的设备运行状况符合性设置的详细信息，请参阅[在 intune 中添加适用于 Windows 10 设备的设备符合性策略](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows.md)。 有关可在 Intune 中执行的符合性操作的详细信息，请参阅[HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)。  
+如果你是 Intune 管理员，并且想要了解有关 Intune 的设备运行状况符合性设置的详细信息，请参阅[在 intune 中添加适用于 Windows 10 设备的设备符合性策略](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows)。 有关可在 Intune 中执行的符合性操作的详细信息，请参阅[HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)。  
 
 ## <a name="next-steps"></a>后续步骤
 

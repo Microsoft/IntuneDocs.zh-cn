@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492139"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754954"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>在 Intune 中对策略和配置文件进行故障排除
 
@@ -32,11 +32,12 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 本文列出了一些常见的故障排除技术，并介绍可能会遇到的一些问题。
 
 ## <a name="check-tenant-status"></a>检查租户状态
+
 检查[租户状态](../fundamentals/tenant-status.md)并确认订阅处于活动状态。 你还可以查看可能影响策略或配置文件部署的活动事件和建议的详细信息。
 
 ## <a name="use-built-in-troubleshooting"></a>使用内置的故障排除功能
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“故障排除”  ：
+1. 在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择 "**故障排除 + 支持**"：
 
     ![在 Intune 中，转到帮助和支持，并选择“故障排除”](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>不确定是否正确应用了配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备” > “所有设备”> 选择设备 >“设备配置”    。 
 
     每台设备均列出了其配置文件。 每个配置文件都具有“状态”  。 综合考虑所有分配的配置文件（包括硬件以及 OS 限制和要求）时，状态适用。 可能的状态包括：

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1eda7fef3ee9c2ca4e4a13d9b6effba2ed121b0e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 27a020f4b45ae878718bed4ee6e230c3d288f260
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506951"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755414"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>可以在 Intune 中使用的内置 iOS 应用的程序包 ID
 
@@ -46,7 +46,7 @@ ms.locfileid: "72506951"
 | com.apple.gamecenter        | 游戏中心  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | 运行状况       | Apple     |
-| com.apple.Home              | 住宅         | Apple     |
+| com.apple.Home              | 主页         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
@@ -55,6 +55,7 @@ ms.locfileid: "72506951"
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | 映射         | Apple     |
+| .com. 度量值           | 测量      | Apple     |
 | com.apple.MobileSMS         | 消息     | Apple     |
 | com.apple.Music             | 音乐        | Apple     |
 | com.apple.news              | 新闻         | Apple     |

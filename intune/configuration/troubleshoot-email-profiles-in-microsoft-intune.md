@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506583"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755005"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中电子邮件配置文件的常见问题和解决方法
 
@@ -32,7 +32,6 @@ ms.locfileid: "72506583"
 ## <a name="what-you-need-to-know"></a>须知内容
 
 - 电子邮件配置文件是为注册设备的用户部署的。 若要配置电子邮件配置文件，Intune 会在注册期间使用用户的电子邮件配置文件中的 Azure Active Directory （AD）属性。 [将电子邮件设置添加到设备](email-settings-configure.md)可能是一个不错的资源。
-- 从 Configuration Manager 混合迁移到 Intune 独立版后，Configuration Manager 混合中的电子邮件配置文件将在设备上保留7天。 这是预期行为。 如果需要尽快删除电子邮件配置文件，请联系[Intune 支持](../fundamentals/get-support.md)。
 - 对于 Android 企业版，使用托管 Google Play 商店部署 Gmail 或 9 for Work。 [添加托管 Google Play 应用](../apps/apps-add-android-for-work.md)列出了相关步骤。
 - 适用于 iOS 和 Android 的 Microsoft Outlook 不支持电子邮件配置文件。 而应部署应用配置策略。 有关详细信息，请参阅[Outlook 配置设置](../apps/app-configuration-policies-outlook.md)。
 - 可能无法将针对设备组（不是用户组）的电子邮件配置文件传递到设备。 如果设备具有主要用户，则设备目标应正常工作。 如果电子邮件配置文件包括用户证书，请确保以用户组为目标。
@@ -62,22 +61,10 @@ Samsung KNOX 不使用主机名识别配置文件。 不建议创建多个电子
 
 自动配置了电子邮件帐户的用户无法从其设备发送图片或图像。 未启用“允许从第三方应用程序发送电子邮件”时，可能会发生此情况  。
 
-### <a name="intune-solution"></a>Intune 解决方案
-
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 依次选择“设备配置”   > “配置文件”  。
+1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择 "**设备** > **配置文件**"。
 3. 选择电子邮件配置文件 >**属性** > **设置**"。
 4. 设置 "**允许从第三方应用程序发送电子邮件**" 设置为 "**启用**"。
-
-### <a name="configuration-manager-hybrid"></a>Configuration Manager 混合
-
-1. 打开 Configuration Manager 控制台 >“资产和符合性”  。
-
-2. 展开“概述” > “符合性设置” > “公司资源访问”，然后选择“电子邮件配置文件”     。
-
-3. 右键单击电子邮件配置文件，然后打开**属性**。
-
-4. 在**同步设置**选项卡上，选择**允许从第三方应用程序发送电子邮件**。
 
 ## <a name="next-steps"></a>后续步骤
 

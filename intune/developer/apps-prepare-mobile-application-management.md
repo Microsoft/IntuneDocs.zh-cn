@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413809"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635338"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -52,7 +52,8 @@ App Wrapping Tool 主要用于内部  业务线 (LOB) 应用。 此工具是一�
 |**应用包装工具** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |是|是|
-|**Outlook Web Access (OWA)**|不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
+|**Android
+**|不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 
@@ -74,11 +75,12 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
-|**Outlook Web Access (OWA)**| 支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
+|**Android
+**| 支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
 
 ### <a name="not-using-an-app-development-platform-listed-above"></a>不使用上面列出的应用开发平台？
 
-Intune SDK 开发团队主动测试和维护对使用本机 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。 
+Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。 
 
 ## <a name="feature-comparison"></a>功能比较
 
@@ -110,7 +112,7 @@ Intune SDK 开发团队主动测试和维护对使用本机 Android、iOS（Obj-
 |完全擦除应用数据|X|X|
 |多标识方案中的工作和学校数据的选择性擦除 <br><br>**注意：** 对于 iOS 设备，删除管理配置文件时，也会删除该应用。|X||
 |防止“另存为”|X||
-|目标应用程序配置（或通过 "MAM 通道" 的应用配置）|X|X|
+|目标应用程序配置（或通过 "MAM 通道" 的应用配置）|X||
 |支持多身份标识|X||
 |可自定义样式 |X|||
 |按需应用与 Citrix mVPN 的 VPN 连接|X|X| 

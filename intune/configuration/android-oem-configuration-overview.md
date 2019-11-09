@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915730"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756756"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企业设备 OEMConfig
 
@@ -80,8 +80,8 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 
 ## <a name="create-an-oemconfig-profile"></a>创建 OEMConfig 配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置”   > “配置文件”   > “创建配置文件”  。
+1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择 "**设备**" > **配置文件** > **创建配置文件**。
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。
@@ -108,11 +108,11 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
       - 许多设置都具有 OEM 提供的默认值。 若要查看是否有默认值，请将鼠标悬停在该设置旁边的 "信息" 图标上。 工具提示将显示该设置的默认值（如果适用），以及 OEM 提供的更多详细信息。
 
       - 单击 "**清除**" 将从配置文件中删除设置。 如果配置文件中没有设置，则应用配置文件时，设备上的值不会更改。
-        
+
       - 如果在配置设计器中创建了一个空的（未配置的）捆绑，则在切换到 JSON 编辑器时，会将其删除。
 
     - **Json 编辑器**：选择此选项时，将打开一个 JSON 编辑器，其中包含应用中嵌入的完整配置架构的模板。 在编辑器中，用不同设置的值自定义模板。 如果使用**配置设计器**来更改值，则 JSON 编辑器将使用配置设计器中的值覆盖模板。
-    
+
       - 如果要更新现有的配置文件，则 JSON 编辑器会显示上次与该配置文件一起保存的设置。
 
       - OEMConfig 架构可能很大且很复杂。 如果希望使用其他编辑器更新这些设置，请选择 "**下载 JSON 模板**" 按钮。 使用所选的编辑器，将配置值添加到模板。 然后，将更新的 JSON 复制并粘贴到 " **JSON 编辑器**" 属性中。
