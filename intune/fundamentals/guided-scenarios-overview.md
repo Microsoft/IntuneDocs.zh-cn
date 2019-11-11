@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c88366ea64182ccf8d45bc3e890a2579df20f1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585639"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635369"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune 引导式方案概述 
 
@@ -46,7 +46,7 @@ ms.locfileid: "72585639"
 
 ### <a name="launching"></a>启动  
 
-可从“[设备管理门户](https://devicemanagement.microsoft.com)” > “疑难解答 + 帮助” > “引导式方案”访问所有引导式方案    。 
+可从“[设备管理门户](https://devicemanagement.microsoft.com)” > “疑难解答 + 支持” > “引导式方案”访问所有引导式方案    。 
 
 引导式方案将首先介绍方案的目的和完成设置所需的任何先决条件。 此时，将检查你的管理权限，以验证你是否具有完成此方案所需的所有权限。  
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 9e2f654d9e505afba00a1a9090febe4c06ca77ff
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749419"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445335"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -87,7 +87,7 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 5. 选择“创建”  。  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>创建 Autopilot 部署配置文件
-Autopilot 部署配置文件用于配置 Autopilot 设备。
+Autopilot 部署配置文件用于配置 Autopilot 设备。 每个租户最多可创建 350 个配置文件。
 1. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册”   > “Windows 注册”   > “部署配置文件”   > “创建配置文件”  。
 2. 在“基本信息”页上，键入名称和可选说明    。
 

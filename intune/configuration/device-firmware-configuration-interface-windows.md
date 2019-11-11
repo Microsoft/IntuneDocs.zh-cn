@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,19 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
+ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889573"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432534"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>在 Microsoft Intune 中使用 Windows 设备上的设备固件配置接口配置文件（公共预览版）
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-> [!Note]
-> 每个[每月更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)可能需要几天才能推出。 某些功能会在数周内推出，可能不能立即供所有客户使用。
 
 使用 Intune 管理 Autopilot 设备时，可以在登录设备之后使用设备固件配置接口 (DFCI) 管理 UEFI (BIOS) 设置。 有关优势、方案和先决条件的概述，请参阅 [ DFCI 概述](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)。
 
@@ -45,7 +42,7 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 
 ## <a name="before-you-begin"></a>在开始之前
 
-- 设备制造商必须在制造过程中将 DFCI 添加到 UEFI 固件，或将其作为安装的固件更新进行添加。 与设备供应商合作确定支持 DFCI 的制造商或使用 DFCI 所需的固件版本。
+- 设备制造商必须在制造过程中将 DFCI 添加到 UEFI 固件，或将其作为安装的固件更新进行添加。 与设备供应商合作确定[支持 DFCI 的制造商](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci)或使用 DFCI 所需的固件版本。
 
 - 设备必须由 [Microsoft 云解决方案提供商 (CSP) 合作伙伴](https://partner.microsoft.com/cloud-solution-provider)注册为 Windows Autopilot，或由 OEM 直接注册。 
 

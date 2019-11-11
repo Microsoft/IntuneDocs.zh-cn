@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507572"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592090"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Web 访问
 
@@ -179,7 +179,7 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 > [!NOTE]
 > 在管理 Microsoft Edge 和应用配置指定的关联应用的应用保护策略中，确保设置了以下数据保护策略设置：
 > - 将组织数据发送到其他应用：**策略托管应用**
-> - 使用策略托管浏览器共享 Web 内容：**需要**
+> - 限制使用其他应用传输 Web 内容：**策略托管浏览器**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>如何为受保护的浏览器配置应用程序代理设置
 

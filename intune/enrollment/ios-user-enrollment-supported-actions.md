@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505416"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445298"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 用户注册支持的 Intune 操作和选项
 
 用户注册支持部分设备管理选项。 如果将预先存在的配置文件应用于用户注册设备，则只会将用户注册支持的设置应用于该设备。
+
+> [!NOTE]
+> Intune 中对 Apple 用户注册的支持目前处于预览状态。
 
 ## <a name="password-settings"></a>密码设置
 
@@ -97,6 +100,19 @@ ms.locfileid: "72505416"
 - 托管 APFS 卷之外的应用程序的 MDM 控制。
 - 应用程序保护策略仍将应用于这些应用。 但是，除非用户从其设备中删除这些应用，否则你无法接管管理或部署这些应用的托管版本。
 - 需要监督的操作、配置、设置和命令。 
+
+## <a name="options-not-supported-in-preview"></a>预览版不支持的选项
+- 允许/阻止个人拥有的设备的注册设备类型限制 
+
+## <a name="known-issues-in-preview"></a>预览版中的已知问题
+- VPP 许可证吊销：未显示已吊销许可证的通知。 当前行为是吊销成功，但不通知最终用户。 
+- VPP 应用程序报告：在位于“客户端应用”>“应用”>“[应用名称]”>“设备安装状态”的报表中，部署到用户注册设备的 VPP 应用程序将报告为“失败”，即使应用程序成功部署到设备也是如此。 
+- 应用程序报告：对于用户注册不支持的应用类型，报表可能会提供无关的错误消息。 
+- 公司门户应用体验：无论用户注册的设备是否支持这些应用程序类型，用户都会看到所有相关应用程序。 
+- 公司门户应用体验：用户会看到相同的文本，指出组织可以看到和不可以看到的用户和设备注册的内容。
+- 如果用户在注册过程中选择“我的组织拥有此设备”，则在 Intune 内仍会将设备标识为“个人”，除非在管理控制台中或通过关系图进行修改。 
+- 注册目标：iPadOS 未在平台选择器中列出。 iPadOS 在预览版中受支持，但在管理控制台中未显式声明。 
+
 
 ## <a name="next-steps"></a>后续步骤
 

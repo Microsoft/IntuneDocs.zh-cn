@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498799"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635478"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>使用 Intune 配置适用于 Android 设备的 Google Chrome 
 
@@ -46,7 +46,7 @@ ms.locfileid: "72498799"
 
 有关将托管的 Google Play 应用添加到 Intune 的详细信息，请参阅[托管的 Google Play 商店应用](~/apps/apps-add-android-for-work.md#managed-google-play-store-apps)。
 
-## <a name="add-an-app-configuration-policy-for-managed-android-enterprise-devices"></a>为托管的 Android Enterprise 设备添加应用配置策略
+## <a name="add-app-configuration-for-managed-ae-devices"></a>添加托管 AE 设备的应用配置
 
 1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 窗格中，选择“应用配置策略” > “添加”。  
 2. 添加策略名称，从“设备注册类型”下选择“托管设备”，并从“平台”下选择“Android”。  

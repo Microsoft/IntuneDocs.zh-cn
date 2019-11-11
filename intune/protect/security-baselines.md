@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d447f2bf45d1bf3e6355a9d5dcc42b4bc2f3a9f3
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999762"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413842"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 
@@ -79,7 +79,10 @@ ms.locfileid: "72999762"
   - [Microsoft Defender ATP 基线](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
-  > Microsoft Defender ATP 安全基线已针对物理设备进行了优化，目前不建议在虚拟机 (VM) 或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互式会话。  有关详细信息，请参阅 Windows 文档中的 [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)（提高 Microsoft Defender ATP 安全基线的符合性）。
+  > Microsoft Defender ATP 安全基线已针对物理设备进行了优化，目前不建议在虚拟机 (VM) 或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互式会话。  有关详细信息，请参阅 Windows 文档中的[提高 Microsoft Defender ATP 安全基线的符合性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
+
+- **Microsoft Edge 基线** 
+  - [预览版：Microsoft Edge 基线](security-baseline-settings-edge.md)
 
 可以继续使用和编辑之前基于预览版模板创建的配置文件，无需考虑该预览模板是否可用于创建新配置文件。
 

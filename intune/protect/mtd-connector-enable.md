@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: fae163cbcd97feb4f333d8ddfd44f2202dd343d6
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810288"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627687"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中启用移动威胁防御连接器
 
@@ -63,8 +63,8 @@ MTD 应用的经典条件访问策略：
 根据组织要求，可以决定需要启用哪些移动威胁防御切换选项。 下面是更多详细信息：
 
 **MDM 符合性策略设置**
-- **将 Android 4.1+ 设备连接到 *\<MTD 合作伙伴名称>***：如果启用此选项，可以让 Android 4.1 + 设备将安全风险报回 Intune。
-- **将 iOS 8.0+ 设备连接到 *\<MTD 合作伙伴名称>***：启用此选项后，可让 iOS 8.0+ 设备向 Intune 报告安全风险。
+- **将 Android 4.1+ 设备连接到 _\<MTD 合作伙伴名称>_** ：如果启用此选项，可以让 Android 4.1 + 设备将安全风险报回 Intune。
+- **将 iOS 8.0+ 设备连接到 _\<MTD 合作伙伴名称>_** ：启用此选项后，可让 iOS 8.0+ 设备向 Intune 报告安全风险。
 - **为 iOS 设备启用应用同步**：允许此 Mobile Threat Defense 合作伙伴请求 Intune 中的 iOS 应用程序的元数据，以用于威胁分析。
 - **阻止不受支持的操作系统版本**：如果设备运行的操作系统版本低于支持的最低版本，则阻止该版本。
 

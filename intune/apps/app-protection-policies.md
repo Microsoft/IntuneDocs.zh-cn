@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8e105dae43c4e7139c8e44a8c6535baebe31cc4
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 98976403d58c33f22f7ceeabec1d38f076f9bbe7
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585474"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592074"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -38,10 +38,6 @@ ms.locfileid: "72585474"
 如果你要查找 MAM 支持应用的列表，请参阅 [MAM 应用列表](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
 有关将组织的业务线 (LOB) 应用添加到 Microsoft Intune 以准备应用保护策略的信息，请参阅[将应用添加到 Microsoft Intune](apps-add.md)。
-
-当前，创建应用保护策略的流程因平台而异：
-- 面向 iOS/iPadOS 和 Android 应用的应用保护策略
-- 面向 Windows 10 应用的应用保护策略
 
 ## <a name="app-protection-policies-for-iosipados-and-android-apps"></a>面向 iOS/iPadOS 和 Android 应用的应用保护策略
 
@@ -68,7 +64,7 @@ ms.locfileid: "72585474"
     
     | 值/选项 | 描述 |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | 面向所有类型的设备上的应用 | 使用此选项使策略面向处于任何管理状态的设备上的应用。 选择“否”以面向特定类型的设备上的应用  。 |
+    | 面向所有类型的设备上的应用 | 使用此选项使策略面向处于任何管理状态的设备上的应用。 选择“否”以面向特定类型的设备上的应用  。 有关信息，请参阅[根据设备管理状态设置应用保护策略的适用对象](#target-app-protection-policies-based-on-device-management-state) |
     |     设备类型 | 使用此选项指定此策略适用于 MDM 受管理设备还是非托管的设备。 对于 iOS 应用策略，请从“非托管”和“受管理”设备中选择   。 对于 Android 应用策略，请从“非托管”、“Android 设备管理员”和“Android Enterprise”中选择    。  |
     | 公共应用 | 单击“选择公共应用”以选择要面向的应用  。 |
     | 自定义应用 | 单击“选择自定义应用”，根据捆绑包 ID 选择要面向的自定义应用  。 |
@@ -95,75 +91,24 @@ ms.locfileid: "72585474"
     - **iOS/iPadOS 条件启动** - 有关信息，请参阅 [iOS 应用保护策略设置 - 条件启动 ](~/apps/app-protection-policy-settings-ios.md#conditional-launch)。
     - **Android 条件启动** - 有关信息，请参阅 [Android 应用保护策略设置 - 条件启动 ](~/apps/app-protection-policy-settings-android.md#conditional-launch)。
 
-7. 单击“下一步”以显示“分配”页面   。<br>
-   通过“分配”页面，可以将应用保护策略分配到用户组  。 
-8. 单击“下一步:  查看 + 创建”，查看为此应用保护策略输入的值和设置。
-9. 完成后，单击“创建”以在 Intune 中创建应用保护策略  。 
+9. 单击“下一步”以显示“分配”页面   。<br>
+   通过“分配”页面，可以将应用保护策略分配到用户组  。
+   
+    >[!IMPORTANT]
+    > 如果配合使用 Intune 和 Configuration Manager 来管理设备，则该策略仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不受影响。
 
-## <a name="app-protection-policies-for-windows-10-apps"></a>面向 Windows 10 应用的应用保护策略
+10. 单击“**下一步:** 查看 + 创建”，查看为此应用保护策略输入的值和设置。
 
-为 Windows 10 应用创建应用保护策略时，将遵循经典的 Intune 流程。
+11. 完成后，单击“创建”以在 Intune 中创建应用保护策略  。 
 
-### <a name="create-a-windows-10-app-protection-policy"></a>创建 Windows 10 应用保护策略
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 Intune 门户中，选择“客户端应用” > “应用保护策略”   。 此选项会打开“应用保护策略”  详细信息，可在此创建新策略和编辑现有策略。
-3. 选择“创建策略”  。
-
-    <img alt="Screenshot of the 'Create policy' blade for Windows 10" src="~/apps/media/app-protection-policies/app-protection-add-policy.png" width="350">
-
-4. 为策略指定名称、添加简要说明并为策略选择平台类型。 可以为每个平台创建多个策略。
-
-4. 可以选择“面向所有应用类型”  。 使用此选项使策略，可面向处于任何管理状态的设备上的应用。 在策略冲突解决期间，如果用户具有针对特定管理状态的策略，则将取代此设置。 有关详细信息，请参阅[根据设备管理状态设置应用保护策略的适用对象](~/apps/app-protection-policies.md#target-app-protection-policies-based-on-device-management-state)。
-
-5. 选择“应用”以打开“应用”边栏选项卡，其中显示了可用应用的列表   。 从该列表中选择希望与正创建的策略关联的一个或多个应用。 至少需要选择一个应用才能创建策略。  
-
-6. 选中应用后，选择“选择”以保存选择  。
-
-7. 在“添加策略”边栏选项卡中，选择“配置所需设置”以打开“设置”    。
-
-   策略设置分为三类：
-   - **数据保护** - 此组包含数据丢失防护 (DLP) 控件，如剪切、复制、粘贴和另存为限制。 这些设置决定了用户与应用中的数据的交互方式。
-   - **访问要求** - 该组包含每个应用的 PIN 选项，用于确定最终用户在工作环境中访问应用的方式。  
-   - **条件启动** - 该组包含最低操作系统设置、已越狱和取得 Root 权限的设备检测以及脱机宽限期等设置。
-
-   为了帮助你入门，策略设置具有默认值。 如果默认值满足需求，则无须进行任何更改。
-
-   > [!TIP]
-   > 仅在工作环境中使用应用时，才强制执行这些策略设置。 最终用户使用应用执行个人任务时，不受这些策略的影响。 请注意，创建新文件时，会将该文件视为个人文件。 
-
-8. 选择“确定”，保存此配置  。 现将返回“添加策略”  边栏选项卡。
-9. 选择“创建”，创建策略并保存设置  。
-
-不会将你创建的新 Windows 10 策略分配到任何用户，除非你明确要求这么做。 若要分配 Windows 10 策略，请参阅[向用户分配 Windows 10 策略](~/apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)
-
-### <a name="assign-a-windows-10-policy-to-users"></a>向用户分配 Windows 10 策略 
-
-1. 在“应用保护策略”  窗格中，选择一个策略。
-
-2. 在“Intune 应用保护”窗格中，选择“分配”以打开“Intune 应用保护 - 分配”窗格    。 在“包括”选项卡上，选择“选择要包括的组”   。 
-
-   ![“分配”窗格的屏幕截图，其中包含“选择要包含的组”菜单](./media/app-protection-policies/app-protection-policy-add-users.png)
-
-3. 随即将显示“Azure Active Directory”中所有安全组的列表  。 可选择要应用此策略的用户组，然后选择“选择”  。 
-
-    ![“添加用户组”窗格的屏幕截图，其中包含 Azure AD 用户列表](./media/app-protection-policies/azure-ad-user-group-list.png)
-
-4. 包括和排除组后，选择“保存”  以保存配置并将策略部署到用户。 如果在保存配置之前选择“放弃”  ，则将放弃对  “包括”和“排除”  选项卡所做的所有更改。   
- 
-     ![显示保存和放弃选项的屏幕截图](./media/app-protection-policies/save-assignment.png)
-  
-现已创建策略并将其部署到用户。
-
-该策略仅影响分配有 Microsoft Intune 许可证的用户。 所选安全组中没有已分配的 Intune 许可证的用户不受影响。
-
->[!IMPORTANT]
-> 如果配合使用 Intune 和 Configuration Manager 来管理设备，则该策略仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不受影响。
+    > [!TIP]
+    > 仅在工作环境中使用应用时，才强制执行这些策略设置。 最终用户使用应用执行个人任务时，不受这些策略的影响。 请注意，创建新文件时，会将该文件视为个人文件。 
 
 最终用户可以从 App Store 或 Google Play 下载应用。 有关详情，请参阅：
 * [Android 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-android.md)
 * [iOS 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-ios.md)
 
-### <a name="change-existing-windows-10-policies"></a>更改现有 Windows 10 策略
+## <a name="change-existing-policies"></a>更改现有策略
 你可以编辑现有策略并将其应用于目标用户。 但是，更改现有策略时，已登录到应用的用户在 8 小时内将看不到更改。
 
 若要立即看到更改的效果，最终用户必须注销应用，然后重新登录。
@@ -172,33 +117,54 @@ ms.locfileid: "72585474"
 
 1. 在“应用保护策略”窗格中，选择要修改的策略  。
 
-2. 在“Intune 应用保护”窗格中，选择“目标应用”以打开应用列表   。
+2. 在“Intune 应用保护”  窗格中，选择“属性”  。
 
-3. 在列表中删除或添加应用，然后选择“保存”图标以保存所做的更改  。
+3. 在标题为“应用”  的部分旁边，选择“编辑”  。
 
+4. 通过“应用”页面，可以选择如何将此策略应用于不同设备上的应用  。 必须添加至少一个应用。<p>
+    
+    | 值/选项 | 描述 |
+    |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | 面向所有类型的设备上的应用 | 使用此选项使策略面向处于任何管理状态的设备上的应用。 选择“否”以面向特定类型的设备上的应用  。 有关信息，请参阅[根据设备管理状态设置应用保护策略的适用对象](#target-app-protection-policies-based-on-device-management-state) |
+    |     设备类型 | 使用此选项指定此策略适用于 MDM 受管理设备还是非托管的设备。 对于 iOS 应用策略，请从“非托管”和“受管理”设备中选择   。 对于 Android 应用策略，请从“非托管”、“Android 设备管理员”和“Android Enterprise”中选择    。  |
+    | 公共应用 | 单击“选择公共应用”以选择要面向的应用  。 |
+    | 自定义应用 | 单击“选择自定义应用”，根据捆绑包 ID 选择要面向的自定义应用  。 |
+
+    你选择的应用将显示在“公共和自定义应用”列表中。 
+
+5. 单击“查看 + 创建”  以查看为此策略选择的应用。
+
+6. 完成后，单击“保存”以更新应用保护策略  。
+ 
 #### <a name="to-change-the-list-of-user-groups"></a>更改用户组列表的步骤
 
 1. 在“应用保护策略”窗格中，选择要修改的策略  。
 
-2. 在“Intune 应用保护”窗格中，选择“分配”以打开“Intune 应用保护 - 分配”窗格，其中显示了具有此策略的当前用户组的列表    。
+2. 在“Intune 应用保护”  窗格中，选择“属性”  。
 
-3. 若要向策略添加新用户组，请在“包括”选项卡中选择“选择要包括的组”，然后选择用户组   。 选择“选择”  以添加组。 
+3. 在标题为“分配”  的部分旁边，选择“编辑”  。
 
-4. 若要排除用户组，在“排除”  选项卡中，选择“选择要排除的组”  ，然后选择用户组。 选择“选择”  以删除用户组。  
+4. 若要向策略添加新用户组，请在“包括”选项卡中选择“选择要包括的组”，然后选择用户组   。 选择“选择”  以添加组。 
 
-5. 若要删除之前已添加的组，在  “包括”或“排除”  选项卡上，选择省略号 (...)，然后选择“删除”  。 
+5. 若要排除用户组，在“排除”  选项卡中，选择“选择要排除的组”  ，然后选择用户组。 选择“选择”  以删除用户组。  
 
-5. 对分配所做的更改准备就绪后，选择“保存”  以保存配置并将策略部署到一组新用户。 如果在保存配置之前选择“放弃”  ，则将放弃对  “包括”和“排除”  选项卡所做的所有更改。
+6. 若要删除之前已添加的组，在  “包括”或“排除”  选项卡上，选择省略号 (...)，然后选择“删除”  。
 
-### <a name="to-change-windows-10-policy-settings"></a>更改 Windows 10 策略设置
+7. 单击“查看 + 创建”  以查看为此策略选择的用户组。
+
+8. 对分配所做的更改准备就绪后，选择“保存”  以保存配置并将策略部署到一组新用户。 如果在保存配置之前选择“取消”  ，则将放弃对  “包括”和“排除”  选项卡所做的所有更改。
+
+### <a name="to-change-policy-settings"></a>更改策略设置的步骤
 
 1. 在“应用保护策略”窗格中，选择要修改的策略  。
 
-2. 在“Intune 应用保护”窗格中，选择“属性”以打开可编辑的设置区域列表   。 
+2. 在“Intune 应用保护”  窗格中，选择“属性”  。
 
-3. 选择包含要更改的设置的设置区域，例如“数据重定位”或“访问要求”   。 然后将设置更改为新值。
+3. 在对应于要更改的设置的部分旁边，选择“编辑”  。 然后将设置更改为新值。
 
-4. 选择“保存”图标以保存所做的更改  。 重复此过程以选择设置区域并进行修改，然后保存所做的更改，直到所有更改已完成。 然后，可以关闭“Intune 应用保护 - 属性”窗格  。 
+7. 单击“查看 + 创建”  以查看此策略的更新设置。
+
+4. 选择“保存”以保存所做的更改  。 重复此过程以选择设置区域并进行修改，然后保存所做的更改，直到所有更改已完成。 然后，可以关闭“Intune 应用保护 - 属性”窗格  。 
 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>根据设备管理状态设置应用保护策略的适用对象
 在许多组织中，允许最终用户使用 Intune 移动设备管理 (MDM) 托管的设备（如公司拥有的设备）和使用仅由 Intune 应用保护策略提供保护的非托管设备的情况都很常见。 非托管设备通常称为“自带设备”(BYOD)。
@@ -207,24 +173,24 @@ Intune 应用保护策略是一种针对用户身份的策略，因此用户的�
 
 要创建这些策略，请在 Intune 控制台中浏览找到“客户端应用” > “应用保护策略”，然后选择“创建策略”    。 还可以编辑现有的应用保护策略。 要将应用保护策略同时应用到受管理和不受管理的设备，请导航至“应用”页面并确保将“面向所有类型的设备上的应用”设置为“是”（这是默认值）    。 如果希望根据管理状态逐渐分配，请将“面向所有类型的设备上的应用”设置为“否”   。 
 
-![“添加策略”边栏选项卡的屏幕截图，其中包含“面向所有应用类型”](./media/app-protection-policies/app-protection-policies-target-all.png)
+### <a name="device-types"></a>设备类型
 
-### <a name="app-types"></a>应用类型
+- **非托管**：非托管设备是未检测到 Intune MDM 管理的设备。 这包括由第三方 MDM 供应商托管的设备。
+- **Intune 托管设备**：托管设备由 Intune MDM 管理。
+- **Android 设备管理员**：使用 Android 设备管理 API 的 Intune 托管设备。
+- **Android Enterprise**：使用 Android Enterprise 工作配置文件或 Android Enterprise 完全设备管理的 Intune 托管设备。
 
-- **非托管设备上的应用**：非托管设备是未检测到 Intune MDM 管理的设备。 这包括第三方 MDM 供应商。
-- **Intune 托管设备上的应用**：托管设备由 Intune MDM 管理。
-- **Android 工作配置文件中的应用**：已注册为 Android Enterprise 工作配置文件设备的托管设备。
-
-> 请注意，无论选择哪种应用类型，Android 设备都将提示安装 Intune 公司门户应用。 例如，如果选择“Intune 托管设备上的应用”，则仍会提示使用非托管 Android 设备的用户。
+> [!NOTE]
+> 无论选择哪种设备类型，Android 设备都将提示安装 Intune 公司门户应用。 例如，如果选择“Android Enterprise”，则仍会提示使用非托管 Android 设备的用户。
 
 对于 iOS，需要额外的应用配置设置才能将应用保护策略 (APP) 设置定位到 Intune 注册设备上的应用：
 
 - 必须为所有 MDM 托管应用程序配置“IntuneMAMUPN”  。 有关详细信息，请参阅[如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
-- 必须为所有第三方和 LOB MDM 托管应用程序配置“IntuneMAMDeviceID”  。 应将“IntuneMAMDeviceID”配置为设备 ID 令牌  。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}` 。 有关详细信息，请参阅[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
+- 必须为所有第三方和业务线 MDM 托管应用程序配置“IntuneMAMDeviceID”  。 应将“IntuneMAMDeviceID”配置为设备 ID 令牌  。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}` 。 有关详细信息，请参阅[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
 - 若仅配置了“IntuneMAMDeviceID”，则 Intune 应用会将设备视为非托管设备  。
 
 > [!NOTE]
-> 有关根据设备管理状态分配应用保护策略的 iOS 具体支持信息，请参阅[根据管理状态应用 MAM 保护策略](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-)。
+> 有关根据设备管理状态分配应用保护策略的 iOS 具体支持信息，请参阅[根据管理状态应用 MAM 保护策略](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state)。
 
 ## <a name="policy-settings"></a>策略设置
 若要查看 iOS 和 Android 的策略设置的完整列表，请选择以下链接之一：

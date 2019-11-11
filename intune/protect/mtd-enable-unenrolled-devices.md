@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63079757ee3610d825601921da1d33aa94f851b6
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: b2744a27a733824bab9d920f4de0b49e951c1c34
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72794402"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627643"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>在 Intune 中为未注册的设备启用移动威胁防御连接器
 
@@ -51,8 +51,8 @@ ms.locfileid: "72794402"
 可以根据组织要求决定需要启用哪些 MTD 切换选项。 下面是更多详细信息：
 
 **应用保护策略设置**
-- **将 4.1 及更高版本的 Android 设备连接到 \<MTD 合作伙伴名称> 以进行应用保护策略评估**  ：启用此选项时，使用设备威胁级别规则的应用保护策略将评估包括来自此连接器的数据的设备。
-- **将 iOS 8.0 及更高版本设备连接到 \<MTD 合作伙伴名称> 以进行应用保护策略评估**  ：启用此选项时，使用设备威胁级别规则的应用保护策略将评估包括来自此连接器的数据的设备。
+- **将版本 4.4 及更高版本的 Android 设备连接到 *\<MTD 合作伙伴名称>* 以进行应用保护策略评估**：启用此选项时，使用设备威胁级别规则的应用保护策略将评估包括来自此连接器的数据的设备。
+- **将 iOS 11 及更高版本设备连接到 *\<MTD 合作伙伴名称>* 以进行应用保护策略评估**：启用此选项时，使用设备威胁级别规则的应用保护策略将评估包括来自此连接器的数据的设备。
 
 **常见的共享设置**
 - **合作伙伴无响应之前的天数**：在 Intune 由于连接断开将合作伙伴视为无响应之前的天数。 Intune 将忽略无响应 MTD 合作伙伴的符合性状态。

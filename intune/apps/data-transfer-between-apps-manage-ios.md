@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db583b1fc89edf72f329a605cc86363593eaaa9d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497913"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414638"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输
 
@@ -81,7 +81,7 @@ ms.locfileid: "72497913"
    |ManageEngine 移动设备管理器 | IntuneMAMUPN | 字符串 | %upn% |
 
 > [!NOTE]  
-> 对于 iOS 中的 Outlook 应用，如果通过“使用配置设计器”选项部署应用配置策略，将在后台自动为该策略配置 IntuneMAMUPN 配置键。 有关更多详细信息，请参阅[新的 Outlook for iOS 和 Outlook for Android 应用配置策略体验 – 常规应用配置](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)中的常见问题解答部分。 
+> 对于 Outlook for iOS，如果通过“使用配置设计器”选项部署托管设备应用配置策略并启用“仅允许工作或学校帐户”，将在后台自动为该策略配置 IntuneMAMUPN 配置键  。 可以在[新的 Outlook for iOS 和 Outlook for Android 应用配置策略体验 – 常规应用配置](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481)中的常见问题解答部分中找到更多详细信息。 
 
 
 ### <a name="example-2-end-user-experience"></a>示例 2：最终用户体验

@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509976"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415217"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 
@@ -36,6 +36,23 @@ ms.locfileid: "72509976"
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日当周  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>在适用于 Android 的公司门户应用中改进了清单设计 <!-- 5550857 -->  
+使用轻型设计和新图标更新了适用于 Android 的公司门户应用中的安装清单。 所做的更改与对适用于 iOS 的公司门户应用所做的最新更新一致。 我们正在将应用更新推出给所有客户，希望在下周结束前完成。 若要查看更新的注册步骤，请参阅[使用 Android 工作配置文件注册](/intune-user-help/enroll-device-android-work-profile)和[注册 Android 设备](/intune-user-help/enroll-device-android-company-portal)。  
+
+以下屏幕显示 Android 工作配置文件注册的更新清单：
+
+|已更新|上一个|  
+|---|---|  
+|![公司门户中工作配置文件设置的示例图像，显示了简化的清单和新图标。](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![公司门户中上一个工作配置文件设置的示例图像，显示了更繁忙的清单。](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+以下屏幕显示 Android 设备管理员注册的更新清单：  
+
+|已更新|上一个|  
+|---|---|  
+|![公司门户中 Android 设备管理员设置的示例图像，显示了简化的清单和新图标。](./media/whats-new-app-ui/android-checklist-1911.png)|![公司门户中上一个 Android 设备管理员设置的示例图像，显示了更繁忙的清单。](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日当周
 
@@ -53,7 +70,7 @@ ms.locfileid: "72509976"
     <img src="./media/whats-new-app-ui/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notification" width="300">   
 
 
-## <a name="week-of-june-24-2019"></a>2019 年 6 月 24 日的这一周  
+## <a name="week-of-june-24-2019"></a>2019 年 6 月 24 日当周  
 
 ### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>从新版公司门户网页查看所有已安装应用 <!-- 4224326 -->
 公司门户网站的新增“已安装应用”  页面将列出用户设备上安装的所有（要求安装和允许安装的）托管应用。 除了分配类型，用户还可以看到应用的发布者、发布日期和当前安装状态。 如果你并未要求或允许用户安装任何应用，则用户将看到一条消息，说明尚未安装任何公司应用。 若要在 Web 上查看新页面，请转到[公司门户网站](https://portal.manage.microsoft.com)，并单击“已安装应用”  。   
@@ -572,6 +589,6 @@ __之后__![现已更新版本加载页面的图像，其状态消息会显示�
 
 
 ## <a name="see-also"></a>另请参阅
-* [Microsoft Intune 博客](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Microsoft Intune 博客](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [云平台路线图](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune 中的新增功能](../whats-new.md)
+* [Intune 中的新增功能](whats-new.md)

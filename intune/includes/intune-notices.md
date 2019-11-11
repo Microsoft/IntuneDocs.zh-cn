@@ -4,17 +4,32 @@ description: 包含文件
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 03/28/2019
+ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415085"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73612002"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
+
+### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>更改计划：在 Intune 中注册 Android Enterprise 专用设备时更新了体验<!--5198878-->
+对于 Intune 11 月版或 1911 版，我们将添加对 SCEP 设备证书部署到 Android Enterprise 专用设备的支持，以便启用对 Wi-Fi 配置文件的基于证书的访问。 此更改还涉及在注册 Android Enterprise 专用设备时对流的一些次要更改。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+如果在你的环境中管理 Android Enterprise 专用设备，你会开始看到一些更改将于 11 月推出。
+
+- 对于新的 Android Enterprise 专用设备注册：最终用户会在注册过程中在设备上看到一组不同的步骤。 注册仍将以当前的方式开始（使用 QR、NFC、零接触或设备标识符），但在 11 月服务发布后，必须执行应用安装步骤。
+- 对于注册为专用设备的现有 Android 设备：Intune 将开始于 11 月初在设备上自动安装 Microsoft Intune 应用。 用户无需采取任何操作。 应用将在设备上自动下载并安装。 
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+你应该计划更新最终用户指南，并使支持人员知道此更改。 单击“其他信息”以了解更多详细信息和屏幕截图。 开始推出此更改时，我们将更新新增功能页面。
+
+#### <a name="additional-information"></a>其他信息
+[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>更改计划：“Siri 命令的服务器端日志记录”设置将从 Intune 控制台中删除 <!-- 5468501-->
 

@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509170"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414673"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>注册或登录到 Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 本主题指导系统管理员如何注册 Intune 帐户。
 
@@ -46,14 +44,17 @@ ms.locfileid: "72509170"
 2. 在“注册”页上登录或注册以管理 Intune 的新订阅。
 
 ## <a name="post-sign-up-considerations"></a>注册后的注意事项
+
 注册新订阅后，在注册过程中提供的电子邮件地址将收到一封含有帐户信息的电子邮件。 这封电子邮件将确认你的订阅处于活动状态。
 
 完成注册过程后，系统会定向到 Microsoft 365 管理中心，在此处可添加用户并为其分配许可证。 如果只有使用默认 onmicrosoft.com 域名的基于云的帐户，此时就可以继续操作，并添加用户和分配许可证。 但是，如果要使用组织的[自定义域名](custom-domain-name-configure.md)，或者从本地 Active Directory [同步用户帐户信息](users-add.md#sync-active-directory-and-add-users-to-intune)，则可关闭该浏览器窗口。
 
 ## <a name="sign-in-to-microsoft-intune"></a>登录 Microsoft Intune
+
 注册 Intune 后，可以使用任何装有[受支持的浏览器](supported-devices-browsers.md#intune-supported-web-browsers)设备登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，以管理服务。
 
 默认情况下，你的帐户必须在 Azure AD 中具有下列权限之一：
+
 - 全局管理员
 - Intune 服务管理员（也称为 Intune 管理员）
 
@@ -76,4 +77,5 @@ Microsoft 365 商业版： https://portal.microsoft.com/adminportal
 Office 365 移动设备管理： https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>另请参阅
+
 [无法登录 Office 365、Azure 或 Intune](https://support.microsoft.com/help/2412085)

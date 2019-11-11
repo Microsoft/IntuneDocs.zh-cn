@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c388e632f545b48a18ef6ed7b76132c290f16a9e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
+ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813457"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566179"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -166,8 +166,8 @@ Intune 在属性列表中支持以下数据类型：
 ### <a name="tokens-used-in-the-property-list"></a>属性列表中使用的令牌
 
 此外，Intune 还支持属性列表中的以下令牌类型：
-- \{\{userprincipalname\}\} - 例如 John@contoso.com 
-- \{\{mail\}\} - 例如 John@contoso.com 
+- \{\{userprincipalname\}\}—例如，John\@contoso.com 
+- \{\{mail\}\}—例如，John\@contoso.com 
 - \{\{partialupn\}\} - 例如 John 
 - \{\{accountid\}\} - 例如 fc0dc142-71d8-4b12-bbea-bae2a8514c81 
 - \{\{deviceid\}\} - 例如 b9841cd9-9843-405f-be28-b2265c59ef97 

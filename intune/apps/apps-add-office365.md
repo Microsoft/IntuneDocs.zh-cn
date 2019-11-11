@@ -1,12 +1,12 @@
 ---
-title: 使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
+title: 使用 Microsoft Intune 将 Office 365 应用添加到 Windows 10 设备
 titleSuffix: ''
 description: 了解如何使用 Microsoft Intune 在 Windows 10 设备上安装 Office 365 应用。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507305"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635407"
 ---
-# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备
+# <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用添加到 Windows 10 设备
 
 必须首先将应用添加到 Intune 中，才可以分配、监视、配置或保护它们。 其中一个可用的[应用类型](apps-add.md#app-types-in-microsoft-intune)是适用于 Windows 10 的 Office 365 应用。 通过在 Intune 中选择此应用类型，可以将 Office 365 应用分配并安装到所管理的运行 Windows 10 的设备。 还可以分配和安装适用于 Microsoft Project Online 桌面客户端和 Microsoft Visio Online 计划 2 的应用，前提是拥有它们的许可证。 可用的 Office 365 应用将显示为 Azure 内 Intune 控制台中应用列表中的一个条目。
 
@@ -142,12 +142,60 @@ ms.locfileid: "72507305"
 
 ## <a name="finish-up"></a>完成
 
-完成后，在“添加应用”  窗格中，选择“添加”  。 创建的应用将显示在应用列表中。
+完成后，在“添加应用”  窗格中，选择“添加”  。 创建的应用将显示在应用列表中。 下一步是将应用分配给所选的组。 有关详细信息，请参阅[将应用分配到组](~/apps/apps-deploy.md)。
+
+## <a name="deployment-details"></a>部署详细信息
+
+通过 [Office 配置服务提供程序 (CSP)](https://docs.microsoft.com/windows/client-management/mdm/office-csp) 将 Intune 中的部署策略分配给目标计算机后，最终设备将从 officecdn.microsoft.com 位置自动下载安装包  。 你将看到两个目录显示在“Program Files”目录中  ：
+
+![Program Files 目录中的 Office 安装包](./media/apps-add-office365/office-folder.png)
+
+在“Microsoft Office”  目录下，将创建存储安装文件的新文件夹：
+
+![Microsoft Office 目录下新建的文件夹](./media/apps-add-office365/created-folder.png)
+
+在“Microsoft Office 15”  目录下，将存储 Office 即点即用安装启动器文件。 如果需要分配类型，则将自动启动安装：
+
+![单击以运行安装启动器文件](./media/apps-add-office365/clicktorun-files.png)
+
+如果将 O365 套件的分配配置为“必需”，则安装将处于静默模式。 安装成功后，将删除已下载的安装文件。 如果将分配配置为“可用”  ，则 Office 应用程序将显示在公司门户应用程序中，以便最终用户能够手动触发安装。
 
 ## <a name="troubleshooting"></a>疑难解答
 Intune 使用 [Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)下载 Office 365 专业增强版并使用 [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks) 将其部署到客户端计算机。 参考[管理 Office 365 终结点](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)中所述的最佳做法，确保网络配置允许客户端直接访问 CDN（而不是通过中心代理路由 CDN 流量）以避免引入不必要的延迟。
 
 如果遇到安装或运行时问题，请在目标设备上运行 [Microsoft Office 365 支持和恢复助手](https://diagnostics.office.com)。
+
+### <a name="additional-troubleshooting-details"></a>其他疑难解答详细信息
+
+无法将 O365 应用安装到设备时，必须确定问题是与 Intune 相关还是与 OS/Office 相关。 如果你可以看到两个文件夹“Microsoft Office”和“Microsoft Office 15”显示在设备的“Program Files”目录中，则可以确认 Intune 已成功启动部署    。 如果看不到两个文件夹显示在“Program Files”下，则应确认以下情况  ：
+
+- 设备已在 Microsoft Intune 中正确注册。 
+- 设备上有活动的网络连接。 如果设备处于飞行模式、处于关闭状态，或位于无服务的位置，则在建立网络连接之前不会应用此策略。
+- 同时满足 Intune 和 Office 365 网络要求，并且可以根据以下文章访问相关的 IP 范围：
+
+  - [Intune 网络配置要求和带宽](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Office 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+
+- 已为 O365 应用套件分配了正确的组。 
+
+此外，还会监视目录 C:\Program Files\Microsoft Office\Updates\Download 的大小  。 从 Intune 云下载的安装包将存储在此位置。 如果大小不增加或仅缓慢增加，则建议仔细检查网络连接和带宽。
+
+可以得出 Intune 和网络基础结构按预期方式工作的结论后，应从 OS 的角度进一步分析问题。 考虑以下情况：
+
+- 目标设备必须在 Windows 10 创意者更新或更高版本上运行。
+- Intune 部署应用程序时，未打开任何现有 Office 应用。
+- 已正确从设备中删除 Office 的现有 MSI 版本。 Intune 利用与 Office MSI 不兼容的 Office 即点即用。 本文档进一步介绍了此行为：<br>
+  [不支持在同一台计算机上随即点即用和 Windows Installer 一起安装的 Office](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
+- 登录用户应拥有在设备上安装应用程序的权限。
+- 根据 Windows 事件查看器日志“Windows 日志”   -> “应用程序”  确认没有问题。
+- 在安装过程中捕获 Office 安装详细日志。 为此，请执行以下步骤：<br>
+    1. 在目标计算机上为 Office 安装激活详细日志记录。 为此，请运行以下命令以修改注册表：<br>
+        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
+    2. 将 Office 365 套件再次部署到目标设备。<br>
+    3. 等待大约 15 到 20 分钟，然后跳到“%temp%”文件夹和“%windir%\temp”文件夹，按“修改日期”排序    ，选取根据重现时间修改的“{Machine Name}-{TimeStamp}.log”文件  。<br>
+    4. 运行以下命令以禁用详细日志：<br>
+        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`<br>
+        详细日志可以提供有关安装过程的详细信息。
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>在安装应用套件期间出错
 
