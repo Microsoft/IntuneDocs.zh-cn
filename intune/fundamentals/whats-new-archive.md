@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 7/8/2019
+ms.date: 11/5/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -19,16 +19,700 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb7f9167602aa3f5b21e1c042aa3a049f02c952c
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414904"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635464"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+<!-- ########################## -->
+## <a name="april-2019"></a>2019 年 4 月
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios---2536024---"></a>iOS 版公司门户应用的用户体验更新<!-- 2536024 -->
+适用于 iOS 设备的公司门户应用的主页已经过重新设计。 经此更改后，主页将更好地遵循 iOS UI 模式，更易于查找应用和电子书。
+
+#### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users--3448635---"></a>对 iOS 12 设备用户的公司门户注册的更改<!--3448635 -->
+适用于 iOS 的公司门户的注册屏幕和步骤已更新，以与 Apple iOS 12.2 中发布的 MDM 注册更改保持一致。 更新的工作流提示用户执行以下操作：  
+
+* 允许 Safari 在返回公司门户应用之前打开公司门户网站并下载管理配置文件。  
+* 打开“设置”应用以在其设备上安装管理配置文件。
+* 返回公司门户应用以完成注册。  
+
+要了解更新的注册步骤和屏幕，请参阅[在 Intune 中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)。
+
+#### <a name="openssl-encryption-for-android-app-protection-policies---3747362---"></a>Android 应用保护策略的 OpenSSL 加密<!-- 3747362 -->
+Android 设备上的 Intune 应用保护策略 (APP) 现在使用符合 FIPS 140-2 标准的 OpenSSL 加密库。 有关详细信息，请参阅 [Microsoft Intune 中的 Android 应用保护策略设置](../apps/app-protection-policy-settings-android.md)的[加密](../apps/app-protection-policy-settings-android.md#encryption)部分。
+
+#### <a name="enable-win32-app-dependencies---2617348----"></a>启用 Win32 应用依赖项<!-- 2617348  -->
+管理员可以要求在安装 Win32 应用之前，将其他应用作为依赖项进行安装。 具体来说，设备必须先安装相关应用，再安装 Win32 应用。 在 Intune 中，选择“客户端应用” > “应用” > “添加”，以显示“添加应用”边栏选项卡     。 选择“Windows 应用(Win32)”作为“应用类型”   。 添加应用后，可以选择“依赖项”，添加在安装 Win32 应用之前必须安装的相关应用  。 有关详细信息，请参阅 [Intune 独立版 - Win32 应用管理](./../apps/app-management.md)。 
+
+#### <a name="app-version-installation-information-for-microsoft-store-for-business-apps---3537391-----"></a>适用于企业的 Microsoft Store 应用的应用版本安装信息<!-- 3537391   -->
+应用安装报告包括适用于企业的 Microsoft Store 应用的应用版本信息。 在 Intune 中，选择“客户端应用” > “应用”   。 选择“适用于企业的 Microsoft Store 应用”，然后在“监视”部分下选择“设备安装状态”    。
+
+#### <a name="additions-to-win32-apps-requirement-rules---3676883-----"></a>Win32 应用要求规则的新增内容<!-- 3676883   -->
+可以基于 PowerShell 脚本、注册表值和文件系统信息创建要求规则。 在 Intune 中，选择“客户端应用” > “应用” > “添加”    。 然后，在“添加应用”边栏选项卡中选择“Windows 应用(Win32)”作为“应用类型”    。  选择“要求” > “添加”，以配置其他要求规则   。 然后，选择“文件类型”、“注册表”或“脚本”作为“要求类型”     。 有关详细信息，请参阅 [Win32 应用管理](./../apps/app-management.md)。
+
+#### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices---3695227----"></a>配置在已注册到 Intune 并且已加入 Azure AD 的设备上安装Win32 应用<!-- 3695227  -->
+可以分配在已注册到 Intune 并且已加入 Azure AD 的设备上安装 Win32 应用。 有关 Intune 中 Win32 应用的详细信息，请参阅 [Win32 应用管理](./../apps/app-management.md)。
+
+#### <a name="device-overview-shows-primary-user--3794259----"></a>设备概述显示主要用户<!--3794259  -->
+“设备概述”页将显示主要用户，也称为用户设备相关性用户 (UDA)。 要查看设备的主要用户，请选择“Intune” > “设备” > “所有设备”> 选择一个设备    。 主要用户将显示在靠近“概述”页顶部的位置  。
+
+#### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices---4105925----"></a>Android Enterprise 工作配置文件设备的其他托管 Google Play 应用报告<!-- 4105925  -->
+对于部署到 Android Enterprise 工作配置文件设备的托管 Google Play 应用，可以查看设备上安装的应用的特定版本号。 这仅适用于所需的应用。  
+
+#### <a name="ios-third-party-keyboards---4111843-----"></a>iOS 第三方键盘<!-- 4111843   -->
+由于 iOS 平台更改，不再支持适用于针对 iOS 的“第三方键盘”设置的 Intune 应用保护策略 (APP) 的支持  。 你将无法在 Intune 管理控制台中配置此设置，并且此设置将不会在 Intune App SDK 中的客户端上强制执行。
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="updated-certificate-connectors---icm-113304612---"></a>更新了证书连接器<!-- ICM 113304612 -->
+我们已经发布了针对 [Microsoft Intune 的 Intune 证书连接器和 PFX 证书连接器](../protect/certficates-pfx-configure.md#whats-new-for-connectors)的更新。 新版本修复了几个已知问题。
+
+#### <a name="set-login-settings-and-control-restart-options-on-macos-devices---1210083----"></a>在 macOS 设备上设置登录设置和控制重启选项<!-- 1210083  -->
+在 macOS 设备上，可以创建设备配置文件（依次选择“设备配置” > “配置文件” > “创建配置文件” > 针对平台选择“macOS”> 针对配置文件类型选择“设备功能”）      。 此更新包括新的登录窗口设置，例如显示自定义横幅、选择用户登录方式、显示或隐藏电源设置等。
+
+要查看这些设置，请转到 [macOS 设备功能设置](../configuration/macos-device-features-settings.md)。
+
+#### <a name="configure-wifi-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode--3041940----"></a>在以多应用展台模式运行的 Android Enterprise 和设备所有者专用设备上配置 WiFi<!--3041940  -->
+可以在以多应用展台模式运行的 Android Enterprise 和设备所有者专用设备上启用设置。 在此更新中，可让用户配置和连接到 WiFi 网络（依次选择“Intune” > “设备配置” > “配置文件” > “创建配置文件” >  针对平台选择“Android Enterprise”> 针对配置文件类型选择“仅限设备所有者”>“设备限制”>“专用设备” > “展台模式”：“多应用” > “WiFi 配置”）           。
+
+要查看可以配置的所有设置，请转到[用于允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
+
+适用范围：运行多应用展台模式的 Android Enterprise 专用设备
+
+#### <a name="configure-bluetooth-and-pairing-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode---3041941----"></a>在以多应用展台模式运行的 Android Enterprise 和设备所有者专用设备上配置蓝牙和配对<!-- 3041941  -->
+可以在以多应用展台模式运行的 Android Enterprise 和设备所有者专用设备上启用设置。 在此更新中，你可以允许最终用户启用蓝牙并通过蓝牙进行设备配对（依次选择“Intune” > “设备配置” > “配置文件” > “创建配置文件” >  针对平台选择“Android Enterprise”> 针对配置文件类型选择“仅限设备所有者”>“设备限制”>“专用设备” > “展台模式”：“多应用” > “蓝牙配置”）           。
+
+要查看可以配置的所有设置，请转到[用于允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
+
+适用范围：运行多应用展台模式的 Android Enterprise 专用设备
+
+#### <a name="create-and-use-oemconfig-device-configuration-profiles-in-intune---3305883----"></a>在 Intune 中创建和使用 OEMConfig 设备配置文件<!-- 3305883  -->
+在此更新中，Intune 支持使用 OEMConfig 配置 Android Enterprise 设备。 具体来说，可以使用 OEMConfig 创建设备配置文件并将设置应用于 Android Enterprise 设备（依次选择“设备配置” > “配置文件” > “创建配置文件” >  针对平台选择“Android Enterprise”）     。
+
+对 OEM 的支持目前基于每个 OEM。 如果 OEMConfig 应用列表中未包含所需 OEMConfig 应用，请联系 `IntuneOEMConfig@microsoft.com`。
+
+要了解有关此功能的详细信息，请转到[在 Microsoft Intune 中通过 OEMConfig 使用和管理 Android Enterprise 设备](../configuration/android-oem-configuration-overview.md)。
+
+适用对象：Android Enterprise
+
+#### <a name="windows-update-notifications---3316758-3316782----"></a>Windows 更新通知<!-- 3316758, 3316782  -->
+我们已将两个“用户体验设置”添加到了你可以在 Intune 控制台中管理的 Windows 更新通道配置中  。 现在可以执行以下操作：
+- 阻止或允许用户[扫描 Windows 更新](../protect/windows-update-settings.md)。
+- 管理向用户显示的 [Windows 更新通知级别](../protect/windows-update-settings.md)。
+
+#### <a name="new-device-restriction-settings-for-android-enterprise-device-owner---3574254----"></a>针对 Android Enterprise 和设备所有者的新设备限制设置<!-- 3574254  -->
+在 Android Enterprise 设备上，可以创建设备限制配置文件，以允许或限制功能和设置密码规则等（依次选择“设备配置” > “配置文件” > “创建配置文件”> 针对平台选择“Android Enterprise”> 针对配置文件类型选择“仅限设备所有者”>“设备限制”      ）。 
+
+此更新包括新密码设置，允许完全托管设备对 Google Play 商店中应用的完全访问权限，等等。 要查看设置的当前列表，请转到[用于允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。 
+
+适用范围：Android Enterprise 完全托管设备
+
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---"></a>了解 Windows 10 设备合规性策略中的 TPM 芯片组<!-- 3617671 -->
+
+此功能已推迟，并计划稍后发布。
+
+#### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices---3775833-----"></a>更新了 Windows 10 及更高版本设备上 Microsoft Edge 浏览器的 UI 更改<!-- 3775833   -->
+创建设备配置文件时，可以允许或限制 Windows 10 及更高版本设备上的 Microsoft Edge 功能（依次选择“设备配置” > “配置文件” > “创建配置文件”> 针对平台选择“Windows 10 和更高版本”> 针对配置文件类型选择“设备限制”>“Microsoft Edge 浏览器”     >     ）。 在此更新中，Microsoft Edge 设置的描述更具体，更易于理解。
+
+要查看这些功能，请转到 [Microsoft Edge 浏览器设备限制设置](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="expanded-support-for-android-enterprise-fully-managed-devices--preview-----3903241-3903244-3903246-----"></a>扩展了对 Android Enterprise 完全托管设备（预览版）的支持<!--   3903241, 3903244, 3903246   -->
+我们继续在公开预览版中扩展了对 Android Enterprise 完全托管设备的支持（于 2019 年 1 月首次发布，包括以下内容：
+
+- 在完全托管设备和专用设备上，可以创建[合规性策略](../protect/compliance-policy-create-android-for-work.md)以包括密码规则和操作系统要求（依次选择“设备合规性” > “策略” > “创建策略”> 针对平台选择“Android Enterprise”> 针对配置文件类型选择“设备所有者”     >    ）。
+
+  在专用设备上，设备可能显示为“不合规”  。 在专用设备上无法进行条件访问。 请务必完成任何任务或操作，以确保专用设备符合分配的策略。
+
+- [条件访问](../protect/conditional-access.md) - 适用于 Android 的条件访问策略也适用于 Android Enterprise 完全托管设备。 用户现在可以使用 Microsoft Intune 应用在 Azure Active Directory 中注册其完全托管设备  。 然后，查看并解决任何合规性问题，以访问组织资源。
+
+- 新最终用户应用（Microsoft Intune 应用）- 有一种用于 Android 完全托管设备的新最终用户应用，名为 Microsoft Intune  。 此新应用是轻量型且新式的
+，可提供与公司门户应用类似的功能，但适用于完全托管设备。 有关详细信息，请参阅 [Google Play 上的 Microsoft Intune 应用](https://play.google.com/store/apps/details?id=com.microsoft.intune)。
+
+若要设置完全托管的 Android 设备，请转到“设备注册”   > “Android 注册”   >   “公司拥有的完全托管的用户设备”。 完全托管的 Android 设备的支持仍为预览版，某些 Intune 功能可能无法完全正常运行。  
+
+要详细了解此预览版，请参阅我们的博客 [Microsoft Intune - Preview 2 for Android Enterprise Fully Managed devices](https://aka.ms/preview2_AE_fullymanaged)（适用于 Android Enterprise 完全托管设备的 Microsoft Intune - 预览版 2）。
+
+#### <a name="use-compliance-manager-to-create-assessments-for-microsoft-intune---4404750---"></a>使用合规性管理器为 Microsoft Intune 创建评估<!-- 4404750 -->
+
+[合规性管理器](https://servicetrust.microsoft.com/ComplianceManager)（打开另一个 Microsoft 站点）是 Microsoft 服务信任门户中基于工作流的风险评估工具。 它使你能够跟踪、分配和验证组织中与 Microsoft 服务相关的法规遵从性活动。 可以使用 Office 365、Azure、Dynamics、专业服务和 Intune 创建自己的合规性评估。 Intune 提供两种评估：FFIEC 和 GDPR。
+
+合规性管理器可将控件分类（由 Microsoft 管理的控件和由组织管理的控件），从而帮助你节省精力。 你可以完成评估，然后导出并打印评估。
+
+[联邦金融机构检查委员会 (FFIEC)](https://www.microsoft.com/trustcenter/compliance/FFIEC)（打开另一个 Microsoft 站点）合规性是 FFIEC 发布的一套网上银行标准。 对于使用 Intune 的金融机构来说，这是最必不可少的评估。 它诠释了 Intune 如何帮助遵循与公有云工作负载相关的 FFIEC 网络安全指南。 Intune 的 FFIEC 评估是合规性管理器中的第二种 FFIEC 评估。
+
+以下示例介绍 FFIEC 控件的明细。 Microsoft 负责 64 个控件。 你负责其余 12 个控件。
+
+![请参阅 FFIEC 的 Intune 评估示例，其中包括客户操作和 Microsoft 操作](./media/whats-new/intune-ffiec-assessment-status.png)
+
+[一般数据保护条例 (GDPR)](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-overview)（打开另一个 Microsoft 站点）是欧盟 (EU) 法律，用于帮助保护个人及其数据的权利。 GDPR 是帮助遵守隐私法规的必不可少的评估。 
+
+以下示例介绍 GDPR 控件的明细。 Microsoft 负责 49 个控件。 你负责其余 66 个控件。
+
+![请参阅 GDPR 的 Intune 评估示例，其中包括客户操作和 Microsoft 操作](./media/whats-new/intune-assessment-status.png)
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="configure-profile-to-skip-some-screens-during-setup-assistant---2276470----"></a>将配置文件配置为在“设置助手”期间跳过某些屏幕<!-- 2276470  -->
+创建 macOS 注册配置文件时，可将其配置为在用户使用设置助手期间跳过以下任一屏幕：
+- 外观
+- 显示基调
+- iCloudStorage：如果你新建或编辑配置文件，选定跳过屏幕需要与 Apple MDM 服务器同步。  用户可以发起手动同步设备，这样在选取配置文件变更时就不会有任何延迟。
+有关详细信息，请参阅[通过设备注册计划或 Apple School Manager 自动注册 macOS 设备](../enrollment/device-enrollment-program-enroll-macos.md)。
+
+#### <a name="bulk-device-naming-when-enrolling-corporate-ios-devices--3566569----"></a>注册企业 iOS 设备时批量命名设备<!--3566569  -->
+使用 Apple 的任一企业注册方法 (DEP/ABM/ASM) 时，可以设置设备名格式，以自动命名传入的 iOS 设备。 可以在模板中指定包含设备类型和序列号的格式。 为此，请选择“Intune” > “设备注册” > “Apple 注册” > “注册程序令牌” > “选择令牌” >“创建配置文件” > “设备命名格式”        。 可以编辑现有配置文件，但只有新同步的设备才会应用该名称。
+
+#### <a name="updated-default-timeout-message-on-enrollment-status-page---3959331---"></a>更新了“注册状态”页上的默认超时消息<!-- 3959331 -->
+我们更新了在“注册状态”页 (ESP) 超过 ESP 配置文件中指定的超时值时用户看到的默认超时消息。 新的默认消息是用户看到的内容，可帮助他们了解 ESP 部署的下一步操作。  
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+
+#### <a name="retire-noncompliant-devices---1827291-----"></a>停用不合规的设备<!-- 1827291   -->
+此功能已推迟，并计划在将来版本中发布。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="intune-data-warehouse-v10-changes-reflecting-back-to-beta---4403765---"></a>Intune 数据仓库 V1.0 更改在 beta 版本中体现<!-- 4403765 -->
+V1.0 在 1808 版本首次引入后，它在某些重要方面与 beta 版 API 有所不同。 在 1903 版本中，这些更改将在 beta 版 API 中体现。 如果有使用 beta 版 API 的重要报表，我们强烈建议将这些报表切换到 V1.0 以避免中断性变更。 有关详细信息，请参阅 [Intune 数据仓库 API 的更改日志](../developer/reports-changelog.md#1903-part-2)。
+
+#### <a name="monitor-security-baseline-status-public-preview----3082047---"></a>监控安全基线状态（公共预览版） <!-- 3082047 --> 
+我们向安全基线的监控添加了[每个类别的视图](../protect/security-baselines-monitor.md#per-category-view)（安全基线仍为预览版）。 （安全基线仍为预览版）。 每个类别的视图显示基线中的每个类别以及属于该类别的每个状态组的设备百分比。 现可查看与各个类别不匹配、配置错误或不适用的设备数量。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="scope-tags-for-apple-vpp-tokens--2371886----"></a>Apple VPP 令牌的范围标记<!--2371886  -->
+现可将范围标记添加到 Apple VPP 令牌。 只有分配有相同范围标记的用户才能访问带有该标记的 Apple VPP 令牌。 使用该令牌购买的 VPP 应用和电子书会继承其范围标记。 有关范围标记的详细信息，请参阅[使用 RBAC 和范围标记](scope-tags.md)。
+
+<!-- ########################## -->
+## <a name="march-2019"></a>2019 年 3 月
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+#### <a name="deploy-microsoft-visio-and-microsoft-project---3725386----"></a>部署 Microsoft Visio 和 Microsoft Project<!-- 3725386  -->
+现可使用 Microsoft Intune，将 Microsoft Visio Pro for Office 365 和 Microsoft Project Online 桌面客户端作为独立应用部署到 Windows 10 设备（如果拥有这些应用的许可证）。 在 Intune 中，选择“客户端应用” > “应用” > “添加”，以显示“添加应用”边栏选项卡     。 在“添加应用”边栏选项卡上，选择“Windows 10”作为“应用类型”    。 然后，选择“配置应用套件”，以选择要安装的应用  。 有关适用于 Windows 10 设备的 Office 365 应用的详细信息，请参阅[使用 Microsoft Intune 将 Office 365 应用分配给 Windows 10 设备](../apps/apps-add-office365.md)。
+
+#### <a name="microsoft-visio-pro-for-office-365-product-name-change---3593653----"></a>Microsoft Visio Pro for Office 365 产品名称更改<!-- 3593653  -->
+Microsoft Visio Pro for Office 365 现在称为 Microsoft Visio Online 计划 2   。  有关 Microsoft Visio 的详细信息，请参阅 [Visio Online 计划 2](https://products.office.com/visio/visio-online-plan-2)。 有关适用于 Windows 10 设备的 Office 365 应用的详细信息，请参阅[使用 Microsoft Intune 将 Office 365 应用分配给 Windows 10 设备](../apps/apps-add-office365.md)。
+
+#### <a name="intune-app-protection-policy-app-character-limit-setting---3291302----"></a>Intune 应用保护策略 (APP) 字符限制设置<!-- 3291302  -->
+Intune 管理员可以指定 Intune APP“限制使用其他应用剪切、复制和粘贴”策略设置的例外情况  。  管理员可以指定可能会从托管应用中剪切或复制的字符数。 此设置允许将指定数量的字符共享到任何应用，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制。 请注意，适用于 Android 的 Intune 公司门户应用版本需要 5.0.4364.0 或更高版本。 有关详细信息，请参阅 [iOS 数据保护](../apps/app-protection-policy-settings-ios.md#data-protection)、[Android 数据保护](../apps/app-protection-policy-settings-android.md#data-protection)和[查看客户端应用保护日志](../apps/app-protection-policy-settings-log.md#app-protection-policy-settings)。
+
+#### <a name="office-deployment-tool-odt-xml-for-office-proplus-deployment---3192477-----"></a>用于进行 Office ProPlus 部署的 Office 部署工具 (ODT) XML<!-- 3192477   -->
+在 Intune 管理控制台中创建 Office Pro Plus 实例时，将能够提供 Office 部署工具 (ODT) XML。 如果现有的 Intune UI 选项无法满足需求，这将允许进行更多自定义。 有关详细信息，请参阅[使用 Microsoft Intune 将 Office 365 应用分配到 Windows 10 设备](../apps/apps-add-office365.md)以及 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
+
+#### <a name="app-icons-will-now-be-displayed-with-an-automatically-generated-background---1429026----"></a>现在将显示自动生成背景的应用图标<!-- 1429026  -->
+在 Windows 公司门户应用中，现在将显示应用图标，其中的背景根据图标主色（如果可检测到）自动生成。 如果适用，此背景将替换以前应用磁贴上显示的灰色边框。 用户将在 10.3.3451.0 之后的公司门户版本中看到此更改。
+
+#### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment---2751523-----"></a>在 Windows 批量注册后，使用公司门户应用安装可用的应用<!-- 2751523   -->
+使用 [Windows 批量注册](../enrollment/windows-bulk-enroll.md)（预配包）注册到 Intune 的 Windows 设备将能够使用公司门户应用安装可用的应用。 有关公司门户应用的详细信息，请参阅[手动添加 Windows 10 公司门户](../apps/store-apps-company-portal-app.md)和[如何配置 Microsoft Intune 公司门户应用](../apps/company-portal-app.md)。
+
+#### <a name="the-microsoft-teams-app-can-be-selected-as-part-of-the-office-app-suite---3828932----"></a>可以选择 Microsoft Teams 应用作为 Office 应用套件的一部分<!-- 3828932  -->
+在安装 Office Pro Plus 应用套件的过程中，可以包含或排除 Microsoft Teams 应用。 此功能适用于 Office Pro Plus 内部版本号 16.0.11328.20116+。 用户必须先注销，然后登录设备，才能完成安装。 在 Intune 中，选择“客户端应用” > “应用” > “添加”    。 选择一种“Office 365 套件”应用类型，然后选择“配置应用套件”   。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="automatically-start-an-app-when-running-multiple-apps-in-kiosk-mode-on-windows-10-and-later-devices---2351390---"></a>在 Windows 10 及更高版本的设备上以展台模式运行多个应用时自动启动应用<!-- 2351390 -->
+
+在 Windows 10 及更高版本的设备上，能够以展台模式运行设备，并运行许多应用。 在此更新中，可以进行自动启动设置（依次选择“设备配置” > “配置文件” > “创建配置文件” >  针对平台选择“Windows 10 和更高版本”> 针对配置文件类型选择“展台”>“多应用展台”）        。 使用此设置可在用户登录设备时自动启动应用。
+
+要查看所有展台设置的列表和说明，请参阅 [Intune 中作为展台运行的 Windows 10 和更高版本设备的设置](../configuration/kiosk-settings-windows.md)。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="operational-logs-also-show-details-on-non-compliant-devices---4063755----"></a>操作日志还显示有关不合规设备的详细信息<!-- 4063755  -->
+将 Intune 日志路由到 Azure 监视器功能时，还可以路由操作日志。 在此更新中，操作日志还提供有关不合规设备的信息。
+
+有关此功能的详细信息，请参阅[在 Intune 中将日志数据发送到存储、事件中心或日志分析](../review-logs-using-azure-monitor.md)。
+
+#### <a name="route-logs-to-azure-monitor-in-more-intune-workloads---3804627---"></a>在更多 Intune 工作负载中，将日志路由到 Azure Monitor<!-- 3804627 -->
+在 Intune 中，可以将审核和操作日志路由到 Azure Monitor 中的事件中心、存储和日志分析（依次选择“Intune” > “监视” > “诊断设置”）    。 在此更新中，可以路由更多 Intune 工作负载中的这些日志，包括合规性、配置、客户端应用等。
+
+要了解有关将日志路由到 Azure Monitor 的详细信息，请参阅[将日志数据发送到存储、事件中心或日志分析](../review-logs-using-azure-monitor.md)。
+
+#### <a name="create-and-use-mobility-extensions-on-android-zebra-devices-in-intune---3305880-----"></a>使用 Android Zebra 设备在 Intune 中创建和使用移动扩展<!-- 3305880   -->
+在此更新中，Intune 支持配置 Android Zebra 设备。 具体来说，可以创建设备配置文件，并使用 StageNow 生成的移动扩展 (MX) 配置文件将设置应用于 Android Zebra 设备（依次选择“设备配置” > “配置文件” > “创建配置文件” >  针对平台选择“Android”> 针对配置文件类型选择“MX 配置文件(仅限 Zebra)”）      。
+
+有关此功能的详细信息，请参阅[通过 Intune 中的移动扩展使用和管理 Zebra 设备](../configuration/android-zebra-mx-overview.md)。
+
+适用于 Android
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+#### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Windows 10 设备的加密报表（公共预览版）<!-- 2351538 -->
+使用新的[加密报表（预览版）](../protect/encryption-monitor.md)查看关于 Windows 10 设备加密状态的详细信息。 可用的详细信息包括设备 TPM 版本、加密准备和状态、错误报告等。  
+
+#### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview---2351547-----"></a>从 Intune 门户访问 BitLocker 恢复密钥（公共预览版）<!-- 2351547   -->
+现在可以使用 Intune 从 Azure Active Directory 查看有关 BitLocker 密钥 ID 和 BitLocker 恢复密钥的[详细信息](../protect/encryption-monitor.md)。
+
+#### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices---3411007---"></a>Microsoft Edge 支持 iOS 和 Android 设备上的 Intune 方案<!-- 3411007 -->
+Microsoft Edge 支持与 Intune Managed Browser 相同的所有管理方案，并新增了对最终用户体验的改进。 Intune 策略启用的 Microsoft Edge 企业功能包括双重标识、应用保护策略集成、Azure 应用程序代理集成、托管收藏夹和主页快捷方式。 有关详细信息，请参阅 [Microsoft Edge 支持](../apps/app-configuration-managed-browser.md#microsoft-edge-support)。
+
+#### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices--3105122----"></a>Exchange Online/Intune 连接器不再支持只有 EAS 的设备<!--3105122  -->
+Intune 控制台不再支持查看和管理使用 Intune 连接器连接到 Exchange Online 的只有 EAS 的设备。 但你有以下选项：
+- 在移动设备管理 (MDM) 中注册设备
+- 使用 Intune 应用保护策略管理设备
+- 使用 [Exchange Online 中的客户端和移动设备](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)中所述的 Exchange 控件
+
+#### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name--4254930---"></a>使用[名称]在“所有设备”页中精确搜索设备<!--4254930 -->
+现在可以精确搜索的设备名。 转到“Intune” > “设备” > “所有设备”> 在搜索框中，使用 {} 将设备名括起来，以精确搜索匹配项    。 例如，{Device12345}  。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="support-for-additional-connectors-on-the-tenant-status-page---3617202----"></a>支持“租户状态”页上的其他连接器<!-- 3617202  -->
+[“租户状态”页](../tenant-status.md)现可显示其他连接器的状态信息，包括 Windows Defender 高级威胁防护 (ATP) 和其他 Mobile Threat Defense 连接器  。
+
+#### <a name="support-for-the-power-bi-compliance-app-from-the-data-warehouse-blade-in-microsoft-intune---4260871---"></a>Microsoft Intune 中的“数据仓库”边栏选项卡中对 Power BI 合规性应用的支持<!-- 4260871 -->
+以前，“Intune 数据仓库”边栏选项卡中的“下载 Power BI 文件”链接会下载 Intune 数据仓库报表（.pbix 文件）   。 此报表已替换为 Power BI 合规性应用。 Power BI 合规性应用无需特殊加载或设置。 它将直接在 Power BI 在线门户中打开，并根据凭据专门向 Intune 租户显示数据。 在 Intune 中，选择“Intune”边栏选项卡右侧的“设置 Intune 数据仓库”链接  。 然后，单击“获取 Power BI 应用”  。 有关详细信息，请参阅[使用 Power BI 连接到数据仓库](../developer/reports-proc-get-a-link-powerbi.md)。
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles---3637917----"></a>向某些 Azure Active Directory 角色授予 Intune 只读访问权限<!-- 3637917  -->
+已向以下 Azure AD 角色授予 Intune 只读访问权限。 通过 Azure AD 角色授予的权限取代了通过 Intune 基于角色的访问控制 (RBAC) 授予的权限。
+
+对 Intune 审核数据的只读访问权限：
+
+- 合规性管理员
+- 符合性数据管理员
+
+对所有 Intune 数据的只读访问权限：
+
+- 安全管理员
+- 安全操作员
+- 安全读取者
+
+有关详细信息，请参阅[基于角色的访问控制](role-based-access-control.md)。
+
+#### <a name="scope-tags-for-ios-app-provisioning-profiles--2934430-----"></a>iOS 应用预配配置文件的范围标记<!--2934430   -->
+可以向 iOS 应用预配配置文件添加范围标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才能够访问 iOS 应用预配配置文件。 有关详细信息，请参阅[使用 RBAC 和范围标记](scope-tags.md)。
+
+#### <a name="scope-tags-for-app-configuration-policies--2371891-----"></a>应用配置策略的范围标记<!--2371891   -->
+可以向应用配置策略添加范围标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才能够访问应用配置策略。 应用配置策略仅针对或关联到分配有相同范围标记的应用。 有关详细信息，请参阅[使用 RBAC 和范围标记](scope-tags.md)。
+
+#### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices---3411007---"></a>Microsoft Edge 支持 iOS 和 Android 设备上的 Intune 方案<!-- 3411007 -->
+Microsoft Edge 将增加对最终用户体验的改进，支持与 Intune 托管浏览器相同的所有管理方案。 Intune 策略启用的 Microsoft Edge 企业功能包括双重标识、应用保护策略集成、Azure 应用程序代理集成、托管收藏夹和主页快捷方式。 有关详细信息，请参阅 [Microsoft Edge 支持](../apps/app-configuration-managed-browser.md#microsoft-edge-support)。
+
+
+
+
+<!-- ########################## -->
+## <a name="february-2019"></a>2019 年 2 月
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+#### <a name="intune-macos-company-portal-dark-mode---3300524----"></a>Intune macOS 公司门户深色模式<!-- 3300524  -->
+Intune macOS 公司门户现在支持 macOS 的深色模式。 在 macOS 10.14+ 设备上启用深色模式时，公司门户将调整其外观以反映该模式的颜色。
+
+#### <a name="intune-will-leverage-google-play-protect-apis-on-android-devices---2577355-----"></a>Intune 将在 Android 设备上使用 Google Play Protect API<!-- 2577355   -->
+某些 IT 管理员面临着 BYOD 情况，最终用户可能会使他们的手机获取 root 权限或越狱。 此行为虽然有时并非恶意，但会导致绕过许多 Intune 策略，这些策略是为了保护组织在最终用户设备上的数据而设置的。 因此，Intune 为已注册和未注册的设备提供 root 权限和越狱检测。 在此版本中，Intune 现在将利用 Google Play Protect API 添加到我们对未注册设备的现有 root 权限检测检查。 虽然 Google 不会共享发生的所有 root 权限检测检查，但我们预期这些 API 能够检测出因设备自定义而导致设备获取 root 权限的用户，以及能够在旧设备上获得较新 OS 更新的用户。 然后，可以阻止这些用户访问公司数据，或者可以从其启用策略的应用中删除其公司帐户。 为了获得额外价值，IT 管理员现在将在 Intune 应用保护边栏选项卡中进行多次报告更新 -“已标记的用户”报告将显示通过 Google Play Protect 的 SafetyNet API 扫描检测到的用户，“潜在有害应用”报告将显示通过 Google 的 Verify Apps API 扫描检测到的应用。 此功能在 Android 中可用。
+
+#### <a name="win32-app-information-available-in-troubleshooting-blade---2617342-----"></a>“故障排除”边栏选项卡显示的 Win32 应用信息<!-- 2617342   -->
+现在可以从 Intune 应用“排除故障”边栏选项卡收集 Win32 应用安装的失败日志文件  。 有关应用安装排除故障的详细信息，请参阅[排查应用安装问题](./../apps/troubleshoot-app-install.md)和[排查 Win32 应用问题](./../apps/troubleshoot-app-install.md#win32-app-installation-troubleshooting)。
+
+#### <a name="app-status-details-for-ios-apps---3761235-----"></a>iOS 应用的应用状态详细信息<!-- 3761235   -->
+将出现与以下内容相关的新应用安装错误消息：
+- 在共享 iPad 上安装 VPP 应用失败
+- 禁用 App Store 失败
+- 未能找到应用的 VPP 许可证
+- 无法使用 MDM 提供程序安装系统应用
+- 设备处于丢失模式或展台模式时无法安装应用
+- 用户未登录 App Store 时无法安装应用
+
+在 Intune 中，选择“客户端应用” > “应用”>“应用名称”>“设备安装状态”    。 “状态详细信息”列中将提供新的错误消息  。
+
+#### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780----"></a>适用于 Windows 10 的公司门户应用中的全新应用类别屏幕<!-- 3834780  -->
+添加了名为“应用类别”的新屏幕，以改善适用于 Windows 10 的公司门户中的应用浏览和选择体验  。 用户现在可以看到他们的应用按照“特别推荐”、“教育”和“工作效率”等类别进行排序    。 此更改将出现在公司门户 10.3.3451.0 版及更高版本中。 要查看新屏幕，请参阅[应用 UI 中的新增功能](whats-new-app-ui.md)。 有关公司门户中应用的详细信息，请参阅[在设备上安装和共享应用](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)。  
+
+#### <a name="power-bi-compliance-app---1455231-doc-work-item---"></a>Power BI 合规性应用<!-- 1455231 doc-work-item -->
+使用 [Intune 合规性（数据仓库）](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)应用访问 Power BI Online 中的 Intune 数据仓库。 使用此 Power BI 应用，可立即访问和共享预创建的报表，无需任何设置，也无需离开 Web 浏览器。 有关详细信息，请参阅[更改日志 - Power BI 合规性应用](../developer/reports-changelog.md#power-bi-compliance-app)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="powershell-scripts-can-run-in-a-64-bit-host-on-64-bit-devices---1862675-----"></a>PowerShell 脚本可以在 64 位设备上的 64 位主机上运行<!-- 1862675   -->
+将 PowerShell 脚本添加到设备配置概要文件时，该脚本始终以 32 位执行，即使在 64 位操作系统上也是如此。 通过此更新，管理员可以在 64 位设备上的 64 位 PowerShell 主机中运行该脚本（“设备配置” > “PowerShell 脚本” > “添加” > “配置” > “在 64 位 PowerShell 主机中运行脚本”）      。
+
+有关使用 PowerShell 的更多详细信息，请参阅 [Intune 中的 PowerShell 脚本](../apps/intune-management-extension.md)。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="macos-users-are-prompted-to-update-their-password---1873216---"></a>系统会提示 macOS 用户更新密码<!-- 1873216 -->
+Intune 会在 macOS 设备上强制实施 ChangeAtNextAuth 设置  。 此设置会影响具有合规性密码策略或设备限制密码配置文件的最终用户和设备。 系统会提示一次最终用户更新其密码。 每当用户首次运行需要身份验证的任务（例如，登录设备）时，就会出现此提示。 在执行需要管理权限的任何操作（例如，请求密钥链访问权限）时，系统也会提示用户更新密码。
+
+管理员更改任何新的或现有的密码策略时，系统会再次提示最终用户更新密码。
+
+适用于：  
+macOS
+
+#### <a name="assign-scep-certificates-to-a-userless-macos-device---2340521------"></a>将 SCEP 证书分配给无用户的 macOS 设备<!-- 2340521    -->
+可以使用设备属性将简单证书注册协议 (SCEP) 证书分配给 macOS 设备（包括没有用户关联的设备），并将证书配置文件与 Wi-Fi 或 VPN 配置文件相关联。 此操作扩展了现有的支持，可向[运行 Windows、iOS 和 Android 的具有和没有用户关联的设备分配 SCEP 证书](../protect/certificates-profile-scep.md)。  此更新添加了一个选项，可在配置 macOS 的 SCEP 证书配置文件时，选择设备的证书类型  。
+
+适用于：
+- macOS
+
+#### <a name="intune-conditional-access-ui-update---2432313-----"></a>Intune 条件访问 UI 更新<!-- 2432313   -->
+我们已对 Intune 控制台中条件访问的 UI 进行了改进。 这些地方包括：
+- 使用 Azure Active Directory 中的边栏选项卡替换了 Intune“条件访问”边栏选项卡  。 这将确保可在 Intune 控制台中访问[条件访问](../protect/conditional-access.md)的所有设置和配置，这仍是 Azure AD 技术。 
+- 我们已将“本地访问”边栏选项卡重命名为“Exchange 访问”，并将 Exchange 服务连接器设置重定位到此重命名的边栏选项卡    。  此更改合并了[配置和监视与 Exchange Online 和 Exchange 本地相关的详细信息](../protect/exchange-connector-install.md)的位置。  
+
+#### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode---2935135-----"></a>展台浏览器和 Microsoft Edge 浏览器应用能够在 Windows 10 设备上以展台模式运行<!-- 2935135   -->
+可以在展台模式下使用 Windows 10 设备运行一个应用或多个应用。 此更新包括在展台模式下使用浏览器应用的若干更改，包括：
+
+- 添加 Microsoft Edge 浏览器或 Kiosk Browser 以在展台设备上作为应用程序运行（“设备配置” > “配置文件” > “新配置文件” > “Windows 10 及更高版本”（针对平台）>“展台”（针对配置文件类型））      。
+- 可以允许或限制新的功能和设置（依次选择“设备配置” > “配置文件” > “新配置文件” >  针对平台选择“Windows 10 和更高版本”> 针对配置文件类型选择“设备限制”），包括      ：
+
+- Microsoft Edge 浏览器：
+  - 使用 Microsoft Edge 展台模式
+  - 空闲时间后刷新浏览器
+
+- 收藏夹和搜索：
+  - 允许更改搜索引擎
+
+有关这些设置的列表，请参阅：
+
+- [将 Windows 10 及更高版本设备设置为以展台形式运行
+](../configuration/kiosk-settings-windows.md)
+- [Microsoft Edge 浏览器的设备限制](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
+- [收藏夹和搜索设备限制](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+
+适用于：Windows 10 及更高版本
+
+#### <a name="new-device-restriction-settings-for-ios-and-macos-devices---3448774-----"></a>适用于 iOS 和 macOS 设备的新设备限制设置<!-- 3448774   -->
+你可以在运行 iOS 和 macOS 的设备上限制某些设置和功能（“设备配置” > “配置文件” > “新配置文件” > “iOS”或“macOS”（针对平台）>“设备限制”（针对配置文件类型））       。 此更新添加了可以控制的更多功能和设置，包括在 iOS 设备上设置屏幕时间、更改 eSIM 设置更改和蜂窝计划等。 此外，还包括在 macOS 设备上延迟用户见到软件更新的时间和阻止内容缓存。
+
+要查看可以限制的功能和设置，请参阅：
+
+- [iOS 设备限制设置](../configuration/device-restrictions-ios.md)
+- [macOS 设备限制设置](../configuration/device-restrictions-macos.md)
+
+适用于：
+
+- iOS
+- macOS
+
+#### <a name="kiosk-devices-are-now-called-dedicated-devices-on-android-enterprise-devices---3598402-----"></a>在 Android Enterprise 设备上，“展台”设备现在称为“专用设备”<!-- 3598402   -->
+为了与 Android 术语保持一致，“展台”将更改为适用于 Android Enterprise 设备的“专用设备”（依次选择“设备配置” > “配置文件” > “创建配置文件”> 针对平台选择“Android Enterprise”>“仅限设备所有者” > “设备限制” > “专用设备”）         。
+
+要查看可用设置，请转到[允许或限制功能的设备设置](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)。
+
+适用于：  
+Android Enterprise
+
+#### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui---3640850-3803313-----"></a>Safari 和“延迟用户软件更新可见性”iOS 设置将移至 Intune UI<!-- 3640850, 3803313   -->
+对于 iOS 设备，可以设置 Safari 设置并配置软件更新。 在此更新中，这些设置将移至 Intune UI 的不同部分：
+
+- Safari 设置已从“Safari”（“设备配置” > “配置文件” > “新配置文件” > “iOS”（针对平台）>“设备限制”（针对配置文件类型））移动到[内置应用](../configuration/device-restrictions-ios.md#built-in-apps)        。
+- 受监督的 iOS 设备的“延迟用户软件更新可见性”设置（“软件更新” > “iOS 的更新策略”）将移至“设备限制” >  [常规](../configuration/device-restrictions-ios.md#general)      。  有关对现有策略的影响的详细信息，请参阅 [iOS 软件更新](../protect/software-updates-ios.md#configure-the-policy)。
+
+有关设置列表，请参阅：
+
+- [iOS 设备限制](../configuration/device-restrictions-ios.md) 
+- [iOS 软件更新](../protect/software-updates-ios.md)
+
+此功能适用于：
+
+- iOS
+
+#### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices---3699164-----"></a>在 iOS 设备上将设备设置中的启用限制重命名为屏幕时间<!-- 3699164   -->
+可以在受监管的 iOS 设备上配置“设备设置中的启用限制”（“设备配置” > “配置文件” > “新配置文件” > “iOS”（针对平台）>“设备限制”（针对配置文件类型）>“常规”）        。 在此更新中，此设置将重命名为“屏幕时间(仅监管模式)”  。
+
+操作是相同的。 具体而言：
+
+- iOS 11.4.1 及更早版本：“阻止”阻止最终用户在设备设置中设置自己的限制  。 
+- iOS 12.0 及更高版本：“阻止”设置会阻止最终用户在设备设置中自行设置“屏幕时间”，包括内容和隐私限制   。 升级到 iOS 12.0 的设备将不再在设备设置中看到限制选项卡。 这些设置位于“屏幕时间”  。 
+
+有关设置列表，请参阅 [iOS 设备限制](../configuration/device-restrictions-ios.md#general)。
+
+适用于：
+- iOS
+
+
+#### <a name="intune-powershell-module---951068----"></a>Intune PowerShell 模块<!-- 951068  -->
+现在，[Microsoft PowerShell 库](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10)中提供了 Intune PowerShell 模块，该模块可通过 Microsoft Graph 提供对 Intune API 的支持。
+
+- [有关如何使用此模块的详细信息](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
+- [使用此模块的方案示例](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
+#### <a name="improved-support-for-delivery-optimization--3183757----"></a>改进了对传递优化的支持<!--3183757  -->
+我们扩展了 Intune 中对配置传递优化的支持。 现在可以配置[传递优化设置](../configuration/delivery-optimization-settings.md)的扩展列表，并直接从 Intune 控制台将其定向到设备。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+
+#### <a name="rename-an-enrolled-windows-device---1911112----"></a>重命名已注册的 Windows 设备<!-- 1911112  -->
+现在可以重命名已注册的 Windows 10 设备（RS4 或更高版本）。 若要执行此操作，请选择“Intune” > “设备” > “所有设备”> 选择设备 >“重命名设备”     。 此功能当前不支持重命名混合 Azure AD Windows 设备。
+
+#### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope---3173823----"></a>将范围标记自动分配给具有该范围的管理员创建的资源<!-- 3173823  -->
+管理员创建资源时，分配给管理员的任何范围标记都将自动分配给这些新资源。
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="failed-enrollment-report-moves-to-the-device-enrollment-blade---3560202----"></a>“失败注册”报表将移至“设备注册”边栏选项卡<!-- 3560202  -->
+“失败注册”报表已迁移到“设备注册”边栏选项卡的“监视”部分    。 已添加两个新列（“注册方法”和“OS 版本”）。
+
+#### <a name="company-portal-abandonment-report-renamed-to-incomplete-user-enrollments--3815076-eemiss---"></a>“公司门户放弃报表”已重命名为“部分用户注册”<!--3815076 eemiss -->
+“公司门户放弃报表”已重命名为“部分用户注册”   。
+
+
+
+
+
+
+<!-- ########################## -->
+## <a name="january-2019"></a>2019 年 1 月
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="intune-app-pin---2298397---"></a>Intune 应用 PIN<!-- 2298397 -->
+作为 IT 管理员，你现在可以配置在最终用户必须更改其 Intune 应用 PIN 之前可以等待的天数。 新设置是在该等待天数之后重置的 PIN，同时，通过选择“Intune”“客户端应用” > “应用保护策略” > “创建策略” > “设置” > “访问要求” > ，便会在 Azure 门户中提供新设置        。 可用于 [iOS](../apps/app-protection-policy-settings-ios.md) 和 [Android](../apps/app-protection-policy-settings-android.md) 设备，此功能支持正整数。
+
+#### <a name="intune-device-reporting-fields---2748738---"></a>Intune 设备报告字段<!-- 2748738 -->
+Intune 提供其他设备报告字段，包括 Android 注册 ID、Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，通过选择“客户端应用” > “应用保护状态”并选择“应用保护报告: iOS、Android”来获取这些字段    。 此外，这些参数将帮助你配置设备制造商“允许”  列表 (Android)、设备型号的“允许”  列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。
+
+#### <a name="toast-notifications-for-win32-apps---3136566-----"></a>Win32 应用的 Toast 通知<!-- 3136566   -->
+可以取消显示每个应用分配的最终用户 Toast 通知。 在 Intune 中，依次选择“客户端应用”   > “应用”  > 应用 >“分配”   > “包括组”  。
+
+#### <a name="intune-app-protection-policies-ui-update---3251427----"></a>Intune 应用保护策略用户界面更新<!-- 3251427  -->
+我们已更改 Intune 应用保护的设置和按钮的标签，以使用户更容易理解每个选项。 一些更改包括：  
+- 控件从“是” / “否”控件更改为主要“阻止” / “允许”和“禁用” / “启用”控件       。 标签也会更新。  
+- 将对设置重新设置格式，以在控件中并排显示设置及其标签，从而提供更好的浏览。
+
+默认设置和设置数目将保持不变，但此更改可使用户更轻松地了解、浏览以及利用设置，以应用所选的应用保护策略。 有关信息，请参阅 [iOS 设置](../apps/app-protection-policy-settings-ios.md)和 [Android 设置](../apps/app-protection-policy-settings-android.md)。
+
+#### <a name="additional-settings-for-outlook---3301182----"></a>Outlook 的其他设置<!-- 3301182  -->
+现在可以使用 Intune 为 iOS 和 Android 配置 Outlook 以下其他设置：
+
+- 仅允许在 iOS 和 Android 的 Outlook 中使用工作或学校帐户
+- 部署适用于 Office 365 和混合新式身份验证本地帐户的新式身份验证
+- 选择基本身份验证时，请使用 `SAMAccountName` 作为电子邮件配置文件中的用户名字段
+- 允许保存联系人
+- 配置外部收件人邮件提示
+- 配置“重点收件箱” 
+- 需要进行生物识别来访问适用于 iOS 的 Outlook
+- 阻止外部图像
+
+> [!NOTE]
+> 如果使用 Intune 应用保护策略来管理公司标识的访问权限，则应考虑不启用“需要生物识别”  。 有关详细信息，请参阅 [iOS 访问设置](../apps/app-protection-policy-settings-ios.md#access-requirements)和 [Android 访问设置](../apps/app-protection-policy-settings-android.md#access-requirements)的“必须有公司凭据才能访问”  。
+
+有关详细信息，请参阅 [Microsoft Outlook 配置设置](../apps/app-configuration-policies-outlook.md)。
+
+#### <a name="delete-android-enterprise-apps---1352553---"></a>删除 Android Enterprise 应用<!-- 1352553 -->
+可以从 Microsoft Intune 中删除托管 Google Play 应用。 若要删除托管 Google Play 应用，请在 Azure 门户中打开“Microsoft Intune”，并依次选择“客户端应用”   > “应用”  。 在应用列表中，选择托管 Google Play 应用右侧的省略号 (...)，再从随即显示的列表中选择“删除”  。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。
+
+#### <a name="managed-google-play-app-type---1352580---"></a>“托管 Google Play”应用类型<!-- 1352580 -->
+“托管的 Google Play”应用类型让你可以专门将[托管的 Google Play 应用](https://play.google.com/work/search?q=microsoft&c=apps)添加到 Intune  。 作为 Intune 管理员，现在可以在 Intune 中浏览、搜索、批准、同步和分配已批准的托管 Google Play 应用。  不再需要单独转到托管 Google Play 控制台，也不再需要重新进行身份验证。  在 Intune 中，选择“客户端应用” > “应用” > “添加”    。 在“应用类型”列表中，将应用类型选择为“托管的 Google Play”   。
+
+#### <a name="default-android-pin-keyboard---3802457---"></a>默认为 Android PIN 键盘<!-- 3802457 -->
+对于在 Android 设备上使用“数字”PIN 类型设置 Intune 应用保护策略 (APP) PIN 的最终用户来说，他们将看到默认的 Android 键盘，而不是之前设计的固定 Android 键盘 UI。 在 Android 和 iOS 上使用默认键盘时，此更改对于“数字”和/或“密码”这两种 PIN 类型是一致的。 有关 Android 上最终用户访问设置的详细信息，如应用 PIN，请参阅 [Android 访问要求](../apps/app-protection-policy-settings-android.md#access-requirements)。
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>管理模板为公共预览版，并移动到其自己的配置文件 <!-- 3322847 -->
+
+Intune 中的管理模板（“设备配置”   >   “管理模板”）当前为公共预览版。 借助此更新：
+
+- 管理模板包括大约 300 个可在 Intune 中托管的设置。 以前，这些设置仅存在于组策略编辑器中。
+- 管理模板现已推出公共预览版。
+- 管理模板从“设备配置” > “管理模板”移动到“设备配置” > “配置文件” > “创建配置文件”> 在“平台”中，选择“Windows 10 及更高版本” > 在“配置文件类型”中，选择“管理模板”。         
+- 已启用报告
+
+有关此功能的更多信息，请转到[用于配置组策略设置的 Windows 10 模板](../configuration/administrative-templates-windows.md)。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user---1333642---"></a>使用 S/MIME 对用户的多个设备进行加密和签名<!-- 1333642 -->
+此更新包括使用新导入的证书配置文件进行 S/MIME 电子邮件加密（“设备配置” > “配置文件” > “创建配置文件”>“选择平台”>“PKCS 导入的证书”配置文件类型）     。 在 Intune 中，可以 PFX 格式导入证书。 然后 Intune 可以将这些相同的证书传递给单个用户注册的多个设备。 还包括：
+- 原生 iOS 电子邮件配置文件支持使用 PFX 格式导入的证书启用 S/MIME 加密。
+- Windows Phone 10 设备上的原生电子邮件应用自动使用 S/MIME 证书。
+- 可以跨多个平台传递私有证书。 但并非所有电子邮件应用都支持 S/MIME。
+- 在其他平台上，可能需要手动配置电子邮件应用以启用 S/MIME。  
+- 支持 S/MIME 加密的电子邮件应用可能以 MDM 不支持的方式（例如从发布者的证书存储读取）处理对 S/MIME 电子邮件加密的证书检索。
+有关此功能的详细信息，请参阅[对电子邮件进行签名和加密的 S/MIME 概述](../protect/certificates-s-mime-encryption-sign.md)。
+支持的设备：Windows、Windows Phone 10、macOS、iOS、Android
+
+#### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices---1333665-2999078---"></a>在 Windows 10 及更高版本设备上使用 DNS 设置时自动连接并保留规则的新选项<!-- 1333665, 2999078 -->
+在 Windows 10 及更高版本设备上，可以创建包含 DNS 服务器列表的 VPN 配置文件来解析域，如 contoso.com。 这一升级包括名称解析的新设置（“设备配置” > “配置文件” > “创建配置文件”> 选择“Windows 10 及更高版本”作为平台 > 选择“VPN”作为配置文件类型 >“DNS 设置” >“添加”）        ： 
+- **自动连接**：如果为“已启用”  ，则当设备与所输入的域（如 contoso.com）通信时，会自动连接到 VPN。
+- **永久性**：默认情况下，只要使用此 VPN 配置文件连接设备，所有名称解析策略表 (NRPT) 规则就会处于活动状态。 当 NRPT 规则的此设置为  “已启用”时，该规则将在设备上保持活动状态，即使 VPN 断开连接也是如此。 该规则会保持活动状态，直到删除 VPN 配置文件或手动删除该规则，删除操作可以使用 PowerShell 完成。
+[Windows 10 VPN 设置](../configuration/vpn-settings-windows-10.md)介绍了设置。
+
+#### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices---1500165---"></a>在 Windows 10 设备上使用 VPN 配置文件的受信任网络检测<!-- 1500165 -->
+使用受信任的网络检测时，可以在用户已使用受信任的网络时阻止 VPN 配置文件自动创建 VPN 连接。 通过此更新，可以添加 DNS 后缀，以便在运行 Windows 10 及更高版本的设备上启用受信任的网络检测（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”作为平台 >“VPN”作为配置文件类型）      。
+[Windows 10 VPN 设置](../configuration/vpn-settings-windows-10.md)列出了当前的 VPN 设置。
+
+#### <a name="manage-windows-holographic-for-business-devices-used-by-multiple-users---1907917-1063203---"></a>管理多个用户使用的 Windows Holographic for Business 设备<!-- 1907917, 1063203 -->
+目前，你可以在使用自定义 OMA-URI 设置的 Windows 10 和 Windows Holographic for Business 设备上配置共享电脑设置。 通过此更新，会添加新的配置文件以配置共享设备设置（“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本” > “共享多用户设备”）      。
+若要了解关于此功能的更多信息，请转到[用于托管共享设备的 Intune 设置](../configuration/shared-user-device-settings.md)。
+适用于：Windows 10 及更高版本、Windows Holographic for Business
+
+#### <a name="new-windows-10-update-settings--2626030--2512994----"></a>新的 Windows 10 更新设置<!--2626030  2512994  -->
+对于 [Windows 10 更新通道](../protect/windows-update-for-business-configure.md)，可以配置：
+- **自动更新行为** - 使用新选项“重置为默认值”，在运行“2018 年 10 月更新”的 Windows 10 计算机上还原初始的自动更新设置  
+- **阻止用户暂停 Windows 更新** - 配置新的软件更新设置，使你能够阻止或允许用户通过其计算机的“设置”暂停更新安装  。
+
+#### <a name="ios-email-profiles-can-use-smime-signing-and-encryption---2662949---"></a>iOS 电子邮件配置文件可以使用 S/MIME 签名和加密<!-- 2662949 -->
+你可以创建包含不同设置的电子邮件配置文件。 此更新包括可用于在 iOS 设备上对电子邮件通信进行签名和加密的 S/MIME 设置（“设备配置” > “配置文件” > “创建配置文件”> 选择“iOS”作为平台 >“电子邮件”作为配置文件类型）      。
+[iOS 电子邮件配置设置](../configuration/email-settings-ios.md)列出了设置。
+
+#### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>某些 BitLocker 设置支持 Windows 10 专业版<!-- 2727036 -->
+你可以创建在 Windows 10 设备上设置 Endpoint Protection 设置的配置文件，包括 BitLocker。 此更新会为某些 BitLocker 设置添加对 Windows 10 专业版的支持。
+若要查看这些保护设置，请转到[适用于 Windows 10 的 Endpoint protection 设置](../protect/endpoint-protection-windows-10.md#windows-encryption)。
+
+#### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal---2809362---"></a>Azure 门户中的共享设备配置将重命名为适用于 iOS 设备的“锁屏消息”<!-- 2809362 -->
+创建适用于 iOS 设备的配置文件时，你可以添加“共享设备配置”设置以在锁屏上显示特定文本  。 此更新包括以下更改： 
+- Azure 门户中的“共享设备配置”  设置将重命名为“锁定屏幕消息(仅限受监督的设备)”（“设备配置”   > “配置文件”   > “创建配置文件”  > 选择“iOS”  作为平台 > 选择“设备功能”  作为配置文件类型 >“锁定屏幕消息”  ）。
+- 添加锁屏消息时，可以插入序列号、设备名称或另一个特定于设备的值作为“资产标记信息”和“锁屏脚注”中的变量   。 例如，可以使用大括号输入 `Device name: {{devicename}}` 或 `Serial number is {{serialnumber}}`。 [iOS 令牌](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)列出了可用的令牌。
+[用于在锁屏上显示消息的设置](../configuration/ios-device-features-settings.md#lock-screen-message)列出了设置。
+
+#### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>添加到 iOS 设备的新 App Store、文档查看和游戏设备限制设置<!-- 2827760-->
+在**设备配置** > **配置**文件 > **创建配置**文件 > **iOS**用于平台 >**设备**配置文件类型的配置文件类型 >**应用商店、文档查看、游戏**、以下设置已添加：允许托管应用将联系人写入非托管联系人帐户允许非托管应用将联系人写入非托管联系人帐户允许非管理的应用从托管的联系人帐户中查看这些设置，请访问[iOS 设备限制](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming)
+
+#### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Android Enterprise 设备所有者设备的新通知、提示和锁屏设置<!-- 3201839 3201843 -->
+以设备所有者身份运行时，此更新包括 Android Enterprise 设备上的多项新功能。 若要使用这些功能，请转到“设备配置”   > “配置文件”   > “创建配置文件”  > 在“平台”  中，选择“Android Enterprise”  > 在“配置文件类型”  中，选择“仅设备所有者”   > “设备限制”  。
+
+新的功能包括：
+
+- 禁止显示系统通知，包括传入呼叫、系统警报、系统错误等。
+- 建议跳过首次打开的应用的启动教程和提示。
+- 禁用高级锁屏设置，例如照相机、通知、指纹解锁等。
+
+若要查看这些设置，请转到 [Android Enterprise 设备限制设置](../configuration/device-restrictions-android-for-work.md)。
+
+#### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections---3202194---"></a>Android Enterprise 设备所有者设备可以使用 Always On VPN 连接<!-- 3202194 -->
+在此更新中，可以在 Android Enterprise 设备所有者设备上使用 Always-on VPN 连接。 Always-on VPN 连接一直保持连接状态
+，或在用户解锁设备、设备重启或无线网络更改时立即重新连接。 还可以将连接置于“锁定”模式，该模式会阻止所有网络流量，直到 VPN 连接处于活动状态。
+可以在“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Android 企业版”>“仅设备所有者”的“设备限制”>“连接”设置中启用 Always-on VPN       。 若要查看这些设置，请转到 [Android Enterprise 设备限制设置](../configuration/device-restrictions-android-for-work.md)。
+
+#### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices---3285177---"></a>Windows 10 设备上的任务管理器中的结束进程的新设置<!-- 3285177 --> 
+此更新包括使用 Windows 10 设备上的任务管理器来结束进程的新设置。 使用设备配置文件（“设备配置”   > “配置文件”   > “创建配置文件”  > 在  “平台”中，选择“Windows 10”  > 在  “配置文件类型”中，选择“设备限制”   >   “常规”设置），选择允许或阻止此设置。
+若要查看这些设置，请转到 [Windows 10 设备限制设置](../configuration/device-restrictions-windows-10.md)。
+适用于：Windows 10 及更高版本
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview---2055484-----"></a>结合使用 Microsoft 建议设置与安全基线（公共预览版）<!-- 2055484   -->
+
+Intune 可与其他专注于安全性的服务集成，包括 Windows Defender ATP 和 Office 365 ATP。 客户要求能在各项 Microsoft 365 服务中采用通用策略和一组统一的端到端安全工作流。 我们的目标是实现策略一致，构建连接安全操作和常见管理员任务的解决方案。 在 Intune 中，我们旨在通过发布一组 Microsoft 推荐的“安全基线”（“Intune” > “安全基线”）来实现这一目标   。  管理员可以直接通过这些基线创建安全策略，再将它们部署到用户。 还可以自定义最佳做法建议，以满足组织需求。 Intune 可确保设备始终符合这些基线，并通知不符合的用户管理员或设备。
+
+此功能存在于公共预览版，因此现在创建的任何配置文件都不会转移到通用 (GA) 的安全基线模板。 不应计划在生产环境中使用这些预览模板。
+
+若要详细了解安全基线，请参阅[在 Intune 中创建 Windows 10 安全基线](../protect/security-baselines-monitor.md)。
+
+此功能适用于 Windows 10 及更高版本
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>非管理员可以在已加入 Azure AD 的 Windows 10 设备上启用 BitLocker<!-- 2147379   -->
+在 Windows 10 设备上启用 BitLocker 设置时（“设备配置”   > “配置文件”   > “创建配置文件”   >   “Windows 10 及更高版本”作为平台 >  “Endpoint protection”作为配置文件类型 >“Windows 加密”  ），将添加 BitLocker 设置。
+
+此更新包括新的 BitLocker 设置，以允许标准用户（非管理员）启用加密。
+
+若要查看设置，请转到[适用于 Windows 10 的 Endpoint Protection 设置](../protect/endpoint-protection-windows-10.md#windows-encryption)。
+
+#### <a name="check-for-configuration-manager-compliance---2192052--eepublished----"></a>检查 Configuration Manager 合规性<!-- 2192052  eepublished  -->
+此更新包括新的 System Center Configuration Manager 符合性设置（“设备符合性”   > “策略”   > “创建策略”   > “Windows 10 及更高版本”   > “Configuration Manager 符合性  ）。 Configuration Manager 向 Intune 符合性发送信号。 使用此设置，可以要求所有 Configuration Manager 信号都返回“符合”。
+
+例如，要求所有软件更新都安装在设备上。 在 Configuration Manager 中，此要求具有“已安装”状态。 如果设备上的任意计划处于未知状态，此设备在 Intune 中不符合要求。
+
+[Configuration Manager 符合性](../protect/compliance-policy-create-windows.md#configuration-manager-compliance)介绍了此设置。
+
+适用于：Windows 10 及更高版本
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile---2809324-----"></a>使用设备配置配置文件在受监管的 iOS 设备上自定义壁纸<!-- 2809324   -->
+为 iOS 设备创建设备配置文件时，可以自定义一些功能（“设置配置”   > “配置文件”   > “创建配置文件”   > “iOS”  （作为平台）>“设备功能”  （作为配置文件类型））。 此更新包括新的墙纸  设置，可便于管理员在主屏幕或锁定屏幕上使用 .png、.jpg 或 .jpeg 格式图像。 这些壁纸设置仅适用于受监督的设备。 
+
+有关这些设置的列表，请参阅 [iOS 设备功能设置](../configuration/ios-device-features-settings.md)。
+
+#### <a name="windows-10-kiosk-is-generally-available---3594661----"></a>Windows 10 展台已全面推出<!-- 3594661  -->
+在此更新中，Windows 10 及更高版本设备上的展台功能已全面推出（正式版）。 若要查看可以添加和配置的所有设置，请参阅[适用于 Windows 10（及更高版本）的展台设置](../configuration/kiosk-settings.md)。
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise---3598396-----"></a>在“设备限制”>“Android Enterprise 的设备所有者”中删除“通过蓝牙共享联系人”<!-- 3598396   -->
+在创建 Android Enterprise 设备的设备限制配置文件时，会有一个“通过蓝牙共享联系人”设置  。 在此更新中，“通过蓝牙共享联系人”  设置遭删除（“设备配置”   > “配置文件”   > “创建配置文件”   > “Android Enterprise”  （作为平台）>“设备限制”  >“设备所有者”（作为配置文件类型）>“常规”  ）。
+
+Android Enterprise 设备所有者管理不支持“通过蓝牙共享联系人”设置  。 因此，在删除此设置时，即使在环境中启用并配置了此设置，此更改也不会影响任何设备或租户。
+
+要查看设置的当前列表，请转到[用于允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
+
+适用于： Android 企业设备所有者
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="more-detailed-enrollment-restriction-failure-messaging---3111564---"></a>更详细的注册限制失败消息<!-- 3111564 -->
+不满足注册限制时，会收到更详细的错误消息。 若要查看这些消息，请转到“Intune”   > “故障排除”  > 并检查“注册故障”表。 有关详细信息，请参阅[注册失败列表](help-desk-operators.md#enrollment-failure-reference)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+#### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices---1574342----"></a>对 Android 公司拥有的完全托管设备的支持（预览版）<!-- 1574342  -->
+Intune 现支持完全托管的 Android 设备，这是公司拥有的“设备所有者”方案，其中设备由 IT 管理员严格管理并与各个用户关联。 这样，管理员便可以管理整个设备、强制扩展不可用于工作配置文件的策略控制的范围并限制用户仅从托管的 Google Play 安装应用。 有关详细信息，请参阅[设置 Android 完全托管的设备的 Intune 注册](../enrollment/android-fully-managed-enroll.md)和[注册专用设备或完全托管的设备](../enrollment/android-dedicated-devices-fully-managed-enroll.md)。  请注意，此功能处于预览状态。 Android 完全托管的用户设备目前无法使用部分 Intune 功能，例如证书、符合性以及条件访问。
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices---1434452---"></a>对未注册的 WIP 设备的选择性擦除支持<!-- 1434452 -->
+未注册的 Windows 信息保护 (WIP-WE) 允许客户保护其在 Windows 10 设备上的公司数据，而不需要完整的 MDM 注册。 使用 WIP-WE 策略保护文档后，Intune 管理员可以选择性擦除受保护的数据。 通过选择用户和设备，并发送擦除请求，所有通过 WIP-WE 策略保护的数据都将不可用。 从 Azure 门户中的 Intune，选择“移动应用” > “应用选择性擦除”   。
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="tenant-status-dashboard---1124854---"></a>租户状态仪表板<!-- 1124854 -->
+新[租户状态页](tenant-status.md)会提供一个位置，可以在其中查看租户状态和相关详情。  该仪表板分为 4 个区域：
+- **租户详细信息** - 显示租户姓名和位置、MDM 机构、租户中的注册设备总数以及许可证计数等信息。 此部分还为租户列出当前服务版本。
+- **连接器状态** - 显示有关已配置的可用连接器的信息，还可以列出尚未启用的连接器。  
+   根据每个连接器的当前状态，将其标记为“正常”、“警告”或“不正常”。 选择要了解的连接器，并查看其详细信息或为其配置其他信息。
+- **Intune 服务运行状况** - 显示租户活动事件或服务中断情况的详细信息。 该部分信息直接检索自 Office 消息中心。
+- **Intune 新闻** - 显示租户的活动信息。 消息包括在租户收到最新 Intune 功能时的通知等。  该部分信息直接检索自 Office 消息中心。
+
+#### <a name="new-help-and-support-experience-in-company-portal-for-windows-10---1488939--"></a>适用于 Windows 10 的公司门户的新“帮助和支持”体验<!-- 1488939-->
+新的公司门户“帮助和支持”页有助于用户针对应用和访问问题进行故障排除和请求帮助。 在新页面中，用户可以通过电子邮件发送错误和诊断日志的详细信息，并查找其组织的支持人员详细信息。 用户还可以查找常见问题解答部分，其中带有相关 Intune 文档的链接。
+
+#### <a name="new-help-and-support-experience-for-intune---3307080---"></a>Intune 的新的“帮助和支持”体验<!-- #3307080 -->
+我们将在未来几天向所有租户推出新的“帮助和支持”体验。 可以在 Intune 上进行此新体验，并且可以在使用 [Azure 门户](https://portal.azure.com/)中的“Intune”边栏选项卡时对其进行访问。
+通过新体验，可以用自己的语言描述问题，并获得故障排除见解和基于 Web 的修复内容。 这些解决方案通过基于规则的机器学习算法提供并依赖于用户查询。 除特定于问题的指南之外，还会使用新的案例创建工作流，通过电子邮件或电话来打开支持案例。 此新体验取代了一组静态预选选项的先前的“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。
+有关详细信息，请参阅[如何获取对 Microsoft Intune 的支持](get-support.md)。
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services---3762211----"></a>新推出运行日志，以及向 Azure Monitor 服务发送日志的功能<!-- 3762211  -->
+Intune 有内置审核日志，可以在事件变更时跟踪事件。 此更新包含新日志功能，包括： 
+- 运行日志（预览版）显示已注册用户和设备的详细信息，其中包括成功和失败尝试次数。
+- 可将审核日志和运行日志发送到 Azure Monitor，包括存储帐户、事件中心和 Log Analytics。 借助这些服务，可以存储数据、使用分析工具（如 Splunk 和 QRadar），并能获取日志数据的可视化效果。
+
+[使用 Intune 将日志数据发送到存储、事件中心或 Log Analytics](../review-logs-using-azure-monitor.md) 详细介绍了此功能。
+
+#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device---2687509----"></a>在 iOS DEP 设备上跳过更多设置助理屏幕<!-- 2687509  -->
+除了当前可以跳过的屏幕之外，你可将 iOS DEP 设备设置为在用户注册设备时跳过设置助理中的以下屏幕：显示色调、隐私、Android 迁移、主页按钮、iMessage 和 FaceTime、载入、监视迁移、外观、屏幕时间、软件更新、SIM 安装程序。
+若要选择要跳过的屏幕，请转到“设备注册”   > “Apple 注册”   > “注册计划令牌”  > 选择令牌 >“配置文件”  > 选择配置文件 >“属性”   > “设置助理的自定义项”  > 对于要跳过的任何屏幕选择“隐藏”  >“确定”  。
+如果你新建或编辑配置文件，选定跳过屏幕需要与 Apple MDM 服务器同步。 用户可以发起手动同步设备，这样在选取配置文件变更时就不会有任何延迟。
+
+#### <a name="android-enterprise-app-we-app-deployment---1171203---"></a>Android Enterprise APP-WE 应用部署<!-- 1171203 -->
+对于没有注册 (APP-WE) 部署方案的未注册应用保护策略中的 Android 设备，现在可以使用托管的 Google Play 将应用商店应用和 LOB 应用部署到用户。 具体而言，可以向最终用户提供应用目录以及不再需要最终用户通过允许从未知源进行安装来放宽其设备的安全状况的安装体验。 此外，此部署方案将改进最终用户体验。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="scope-tags-for-apps---1081941---"></a>应用的作用域标记<!-- 1081941 -->
+可创建作用域标记来限制对角色和应用的访问。 可向应用添加作用域标记，以便只有具有特定角色（该角色也分配有该作用域标记）的人员才可以访问该应用。 目前，无法向从托管 Google Play 添加到 Intune 的应用或使用 Apple Volume Purchase Program (VPP) 购买的应用分配作用域标记（但计划在将来提供此支持）。 有关详细信息，请参阅[使用作用域标记筛选策略](scope-tags.md)。
+
+
+
 
 <!-- ########################## -->
 ## <a name="december-2018"></a>2018 年 12 月
@@ -69,7 +753,7 @@ Windows 10 RS3 及更高版本的客户端将在 Windows 10 客户端上使用�
 若要查看展台设置，请参阅 [Android Enterprise 设备限制](../configuration/device-restrictions-android-for-work.md)。
 
 #### <a name="app-protection-policy-assignment-save-and-apply---3104570---"></a>应用保护策略分配将保存并应用<!-- 3104570 -->
-现在可以更好地控制[应用保护策略分配](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users)。 选择“分配”  以设置或编辑策略的分配时，必须先  保存你的配置才能使更改生效。 使用“放弃”  以清除你所做的所有更改，而不保存对包括或排除列表进行的任何更改。  通过要求“保存”或“放弃”，仅向你预期的用户分配应用保护策略。
+现在可以更好地控制[应用保护策略分配](../apps/app-protection-policies.md)。 选择“分配”  以设置或编辑策略的分配时，必须先  保存你的配置才能使更改生效。 使用“放弃”  以清除你所做的所有更改，而不保存对包括或排除列表进行的任何更改。  通过要求“保存”或“放弃”，仅向你预期的用户分配应用保护策略。
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later---3174639---"></a>适用于 Windows 10 及更高版本的新 Microsoft Edge 浏览器设置<!-- 3174639 -->
 此更新包括用于帮助控制和管理设备上的 Microsoft Edge 浏览器的新设置。 有关这些设置的列表，请参阅[适用于 Windows 10（及更高版本）的设备限制](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)。
@@ -218,7 +902,8 @@ Windows LOB 应用的文件扩展名现在包括 .msi、.appx、.appxbundle、.m
 适用于：Windows 10 设备
 
 #### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles---1333705---"></a>支持 Android 企业工作配置文件的始终可用 VPN<!-- 1333705 -->
-在此更新中，可以在具有托管工作配置文件的 Android 企业设备上使用始终可用的 VPN 连接。 始终可用 VPN 连接一直保持连接状态，或在用户解锁设备、设备重启或无线网络更改时立即重新连接。 还可以将连接置于“锁定”模式，该模式会阻止所有网络流量，直到 VPN 连接处于活动状态。
+在此更新中，可以在具有托管工作配置文件的 Android 企业设备上使用始终可用的 VPN 连接。 Always-on VPN 连接一直保持连接状态
+，或在用户解锁设备、设备重启或无线网络更改时立即重新连接。 还可以将连接置于“锁定”模式，该模式会阻止所有网络流量，直到 VPN 连接处于活动状态。
 可以在“设备配置” > “配置文件” > “创建配置文件” >  适用于平台的“Android 企业版”>“设备限制” > “连接”设置中启用始终可用的 VPN       。
 
 #### <a name="issue-scep-certificates-to-user-less-devices---1744554---"></a>向无用户设备颁发 SCEP 证书<!-- 1744554 -->
@@ -381,7 +1066,7 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 
 对于参与部署的客户，此新体验取代了一组静态预选选项的当前“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。  
 
-*我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
+ 我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
 
 有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[“帮助和支持”体验](get-support.md#help-and-support-experience)。  
 
@@ -868,7 +1553,7 @@ Microsoft Intune 将提供从 Azure 门户安装 macOS LOB 应用的功能。 �
 
 #### <a name="update-where-to-configure-your-app-protection-policies---2144597---"></a>更新配置应用保护策略的位置<!-- 2144597 -->
 
-在 Microsoft Intune 服务的 Azure 门户中，我们将从“Intune 应用保护服务”  边栏选项卡暂时重定向到“移动应用”  边栏选项卡。 请注意，Intune 中“应用配置”下的“移动应用”  边栏选项卡已包括所有应用保护策略。 直接转到 Intune 即可，无需转到“Intune 应用保护”。 在 2018 年 4 月，我们将停止重定向并将完全删除“Intune 应用保护服务”  边栏选项卡，以便在 Intune 中只存在应用保护策略的一个位置。 
+在 Microsoft Intune 服务的 Azure 门户中，我们会将“Intune 应用保护”服务边栏选项卡暂时重定向到“移动应用”边栏选项卡   。 请注意，Intune 中“应用配置”下的“移动应用”  边栏选项卡已包括所有应用保护策略。 直接转到 Intune 即可，无需转到“Intune 应用保护”。 在 2018 年 4 月，我们将停止重定向并将完全删除“Intune 应用保护服务”  边栏选项卡，以便在 Intune 中只存在应用保护策略的一个位置。 
 
 **这会对我产生哪些影响？**
 此更改将同时影响 Intune 独立版客户和混合版（带 Configuration Manager 的 Intune）客户。 此集成将有助于简化云管理。
@@ -1607,7 +2292,7 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 
 如果之前已载入，那么情况取决于所选设置：
 
-| Setting | 默认设备类型限制中的 Android for Work 状态 | 注意 |
+| 设置 | 默认设备类型限制中的 Android for Work 状态 | 注意 |
 | --- | --- | --- |
 | **将所有设备作为 Android 管理** | 已阻止 | 所有 Android 设备均不注册 Android for Work。 |
 | 将受支持设备作为 Android for Work 管理  | 然后用户才能访问 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |

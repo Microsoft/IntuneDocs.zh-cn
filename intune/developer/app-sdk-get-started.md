@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503469"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592025"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK 入门
 
@@ -63,7 +63,7 @@ Intune App SDK 支持跨 iOS 或 Android 的类似方案，旨在跨平台为 IT
 如果应用的深层链接在将来发生更改，则需要重新注册应用。
 
 > [!NOTE]
-> 如果使用新版本的 Intune App SDK 更新应用，请告知我们。
+> 如果使用新版本的 Intune App SDK 更新应用，则必须告知我们。
 
 ## <a name="download-the-sdk-files"></a>下载 SDK 文件
 
@@ -181,6 +181,9 @@ Intune|iOS|Android|描述|
 5. 在搜索框中，输入“Microsoft 移动应用程序管理”  。
 6. 在“委托的权限”下，选择“DeviceManagementManagedApps.ReadWrite: 读取和写入用户的应用管理数据”*复选框   。
 7. 单击“添加权限”  。
+
+> [!NOTE]
+> 如果你的应用程序限制你登录，因为访问此资源时出错： https://intunemam.microsoftonline.com ，你必须使用应用的客户端 ID 发送 msintuneappsdk@microsoft.com 的注释。 这是当今手动的审批过程。
 
 ### <a name="badge-your-app-optional"></a>标记应用（可选）
 

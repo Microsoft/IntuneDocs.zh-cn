@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413863"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713475"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -44,7 +44,7 @@ ms.locfileid: "73413863"
 
   * 输入应用文件必须具有 **.ipa** 或 **.app** 扩展名。
 
-  * 输入应用必须针对 iOS 10 或更高版本。
+  * 输入应用必须针对 iOS 11 或更高版本。
 
   * 不能加密输入应用。
 
@@ -289,26 +289,27 @@ ms.locfileid: "73413863"
 |你指定的输入应用已包装，并且为最新的策略模板版本。|应用包装工具将不会用最新的策略模板版本重新包装现有的已包装应用。|
 |警告：你没有指定 SHA1 证书哈希。 确保你的已包装应用程序在部署前已签名。|确保 –c 命令行标志后指定了有效的 SHA1 哈希。 |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>应用包装工具的日志文件
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>从设备收集已包装的应用程序的日志
+若要在疑难解答过程中获取已包装应用的日志，请按照以下步骤操作。
 
-使用应用包装工具包装的应用生成写入 iOS 客户端设备控制台的日志。 在对应用程序存在疑问且如果该问题与应用包装工具有关并需要进行确定时，此信息有用。 若要检索此信息，请使用以下步骤：
+1. 在设备上转到 iOS“设置”应用，并选择“LOB 应用”。
+2. 将“诊断控制台”  切换为“开”  。
+3. 启动 LOB 应用。
+4. 单击“开始使用”链接。
+5. 现在可以通过电子邮件方式共享日志，也可以将日志复制到 OneDrive 位置。
+
+> [!NOTE]
+> 使用 Intune App Wrapping Tool 版本 7.1.13 或更高版本包装的应用已启用日志记录功能。
+
+### <a name="collecting-crash-logs-from-the-system"></a>从系统收集崩溃日志
+
+您的应用程序可能会将有用信息记录到 iOS 客户端设备控制台。 在应用程序方面存在问题，并且你需要确定问题与应用包装工具有关还是与应用本身有关时，此信息很有用。 若要检索此信息，请使用以下步骤：
 
 1. 通过运行应用，再现该问题。
 
 2. 通过按照 Apple 的 [调试已部署的 iOS 应用](https://developer.apple.com/library/ios/qa/qa1747/_index.html)说明操作，收集控制台输出。
 
-3. 通过各控制台输入以下脚本，筛选应用限制输出的已保持的日志：
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    你可以将筛选后的日志提交给 Microsoft。
-
-    > [!NOTE]
-    > 在日志文件中，“内部版本”代表 Xcode 的内部版本。
-
-    包装的应用也将向用户提供在应用损坏后直接通过电子邮件从设备发送日志的选项。 用户可以将日志发送给你进行检查，并在必要时转发给 Microsoft。
+包装的应用也将向用户提供在应用损坏后直接通过电子邮件从设备发送日志的选项。 用户可以将日志发送给你进行检查，并在必要时转发给 Microsoft。
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>证书、预配配置文件和身份验证要求
 
@@ -442,19 +443,6 @@ ms.locfileid: "73413863"
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>获取已包装应用的日志
-
-若要在疑难解答过程中获取已包装应用的日志，请按照以下步骤操作。
-
-1. 在设备上转到 iOS“设置”应用，并选择“LOB 应用”。
-2. 将“诊断控制台”  切换为“开”  。
-3. 启动 LOB 应用。
-4. 单击“开始使用”链接。
-5. 现在可以通过电子邮件方式共享日志，也可以将日志复制到 OneDrive 位置。
-
-> [!NOTE]
-> 使用 Intune App Wrapping Tool 版本 7.1.13 或更高版本包装的应用已启用日志记录功能。
 
 ## <a name="see-also"></a>另请参阅
 
