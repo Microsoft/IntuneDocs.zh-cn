@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 022df428658a3c8791a07cbd797145bfe9a392bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496467"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984081"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 
@@ -42,7 +42,6 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 ## <a name="before-you-start"></a>开始之前
 在开始之前，从 Apple 中获取 VPP 令牌并将其上传到 Intune 帐户。 此外：
 
-* 最多可以将 256 个 VPP 令牌与你的 Intune 帐户关联。
 * 如果你以前使用过不同产品的 VPP 令牌，必须生成一个新的令牌在 Intune 中使用。
 * 每个令牌的有效期为一年。
 * 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 可以随时开始手动同步。

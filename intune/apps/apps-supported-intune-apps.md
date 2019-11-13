@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
+ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786020"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73931013"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保护的应用  
 
@@ -53,7 +53,7 @@ ms.locfileid: "72786020"
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | 让 Excel 电子表格在平板电脑和电话上的显示效果比以往更好。 可以让用户确信，所编辑或创建的电子表格在计算机、Mac、平板电脑和电话上的显示效果完全符合自己的需求。 因为有熟悉的 Office 外观，以及直观的触控体验，所以很快就能上手使用。<p><p>此应用可用作 Android 和 iOS 的多身份应用。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.office.excel)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Microsoft Flow**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | 可随时随地使用 Microsoft Flow 的完整功能。 使用 Flow，可以在最常用的应用和服务之间创建自动化工作流，从而简化业务、节省时间并提高工作效率。| [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.flow)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
 | **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | 提供了 Web 浏览解决方案，以供企业 IT 管理员使用 Intune 移动应用管理策略进行管理。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
-| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | 使用 Microsoft Invoicing，小型企业可以轻松创建专业外观的报价单和发票、快速收款，并能节省时间。 无论是在工作，还是外出，都可以使用 Invoicing 快速创建并发送发票、联机接收付款、减少文书工作，同时掌握财务的最新动态。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.invoice&hl=en)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
+| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | 使用 Microsoft Invoicing，小型企业可以轻松创建专业外观的报价单和发票、快速收款，并能节省时间。 无论是在工作，还是外出，都可以使用 Invoicing 快速创建并发送发票、联机接收付款、减少文书工作，同时掌握财务的最新动态。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala 是一款移动应用和服务，适用于大型组通信和工作管理。 使用 Kaizala，可以轻松地与整个价值链联系并协调工作，包括现场员工、供应商、合作伙伴和客户（无论他们身在何处）。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer)、<br>[iOS 应用商店链接](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Microsoft Launcher（旧称为 Arrow Launcher）可以个性化设置 Android 设备，以采用个性化的壁纸、主题颜色和图标包等。 使用 Microsoft 帐户或工作/学校帐户，可以访问个性化源中的日历、文档和最近活动。 甚至可以在 Windows 电脑上打开照片、文档和网页，以便跨所有设备高效工作。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  
 | **Microsoft OneDrive for Business**<p><img alt="Microsoft app - Microsoft OneDrive for Business icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onedrive-for-business.png" width="100"> | 获取工作文件的联机存储，以与工作或学校中的其他人共享和协作处理文件。 此外，还可以在外出时轻松访问个人文件和工作文件。<p><p>此应用可用作 Android 和 iOS 的多身份应用。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.skydrive)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/onedrive-cloud-storage-for/id477537958?mt=8) |  
