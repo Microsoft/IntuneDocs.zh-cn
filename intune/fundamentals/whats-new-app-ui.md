@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415217"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801779"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 
@@ -40,7 +40,7 @@ ms.locfileid: "73415217"
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日当周  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>在适用于 Android 的公司门户应用中改进了清单设计 <!-- 5550857 -->  
-使用轻型设计和新图标更新了适用于 Android 的公司门户应用中的安装清单。 所做的更改与对适用于 iOS 的公司门户应用所做的最新更新一致。 我们正在将应用更新推出给所有客户，希望在下周结束前完成。 若要查看更新的注册步骤，请参阅[使用 Android 工作配置文件注册](/intune-user-help/enroll-device-android-work-profile)和[注册 Android 设备](/intune-user-help/enroll-device-android-company-portal)。  
+使用轻型设计和新图标更新了适用于 Android 的公司门户应用中的安装清单。 所做的更改与对适用于 iOS 的公司门户应用所做的最新更新一致。 若要查看更新的注册步骤，请参阅[使用 Android 工作配置文件注册](/intune-user-help/enroll-device-android-work-profile)和[注册 Android 设备](/intune-user-help/enroll-device-android-company-portal)。  
 
 以下屏幕显示 Android 工作配置文件注册的更新清单：
 

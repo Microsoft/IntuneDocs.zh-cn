@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/06/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c627f5c9074bf6ce0a391174f5fe74b95b7885
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504924"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712997"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>教程：Azure 门户中的 Microsoft Intune 演练
 
@@ -85,7 +85,7 @@ ms.locfileid: "72504924"
 
     ![设备配置窗格的屏幕截图](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，可以使用 Intune 将配置文件应用于组织中的设备。   
+    Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加到“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，可以使用 Intune 将配置文件应用于组织中的设备。   
 
     有关设备配置的详细信息，请参阅[对 Microsoft Intune 中使用设备配置文件的设备应用功能设置](../configuration/device-profiles.md)。
 
