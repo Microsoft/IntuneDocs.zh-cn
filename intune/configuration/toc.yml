@@ -28,7 +28,7 @@
       displayName: delivery optimization; updates
     - name: 升级版本和 S 模式
       href: edition-upgrade-configure-windows-10.md
-    - name: Email
+    - name: 电子邮件
       href: email-settings-configure.md
     - name: 网亭和专用设备
       href: kiosk-settings.md
@@ -84,7 +84,7 @@
           items:
             - name: 设备限制
               href: device-restrictions-android.md
-            - name: Email
+            - name: 电子邮件
               href: email-settings-android.md
             - name: VPN
               href: vpn-settings-android.md
@@ -99,7 +99,7 @@
           items:
             - name: 设备限制
               href: device-restrictions-android-for-work.md
-            - name: Email
+            - name: 电子邮件
               href: email-settings-android-enterprise.md
             - name: VPN
               href: vpn-settings-android-enterprise.md
@@ -113,7 +113,7 @@
               href: ios-device-features-settings.md
             - name: 设备限制
               href: device-restrictions-ios.md
-            - name: Email
+            - name: 电子邮件
               href: email-settings-ios.md
             - name: VPN
               href: vpn-settings-ios.md
@@ -129,6 +129,8 @@
               href: macos-device-features-settings.md
             - name: 设备限制
               href: device-restrictions-macos.md
+            - name: Endpoint Protection
+              href: ../protect/endpoint-protection-macos.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: VPN
               href: vpn-settings-macos.md
             - name: Wi-Fi
@@ -147,8 +149,12 @@
               href: device-restrictions-windows-10-teams.md
             - name: 版本升级和模式切换
               href: edition-upgrade-windows-settings.md
-            - name: Email
+            - name: 电子邮件
               href: email-settings-windows-10.md
+            - name: Endpoint Protection
+              href: ../protect/endpoint-protection-windows-10.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
+            - name: 标识保护
+              href: ../protect/identity-protection-windows-settings.md?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json
             - name: Kiosk
               href: kiosk-settings-windows.md
             - name: VPN
@@ -185,7 +191,7 @@
           items:
             - name: 设备限制
               href: device-restrictions-windows-phone-8-1.md
-            - name: Email
+            - name: 电子邮件
               href: email-settings-windows-phone-8-1.md
             - name: VPN
               href: vpn-settings-windows-phone-8-1.md

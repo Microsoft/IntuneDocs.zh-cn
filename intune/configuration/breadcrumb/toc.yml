@@ -10,9 +10,6 @@
           tocHref: /intune/
           topicHref: /intune/
           items:
-            - name: 应用
-              tocHref: /intune/fundamentals/
-              topicHref: /intune/apps/
-            - name: 应用
+            - name: 配置
               tocHref: /intune/protect/
-              topicHref: /intune/apps/
+              topicHref: /intune/configuration/

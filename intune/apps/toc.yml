@@ -185,7 +185,7 @@
     - name: 故障排除
       items:
         - name: 帮助用户排查问题
-          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: 应用安装问题疑难解答
           href: troubleshoot-app-install.md
         - name: 移动应用程序管理故障排除
