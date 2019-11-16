@@ -2,8 +2,8 @@
 title: Microsoft Intune 中的软件更新错误和说明 - Azure | Microsoft Docs
 description: 请参阅 Microsoft Intune 中的软件更新代理错误代码列表，包括错误代码、符号名称和错误说明。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/29/2019
 ms.topic: troubleshooting
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7e170680d2c7e2771c47b73bf744f8422b2e978
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c73ed7973fa15d796aee1e33efc37191777c222a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508890"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058065"
 ---
 # <a name="software-update-agent-error-codes-and-descriptions-in-microsoft-intune"></a>Microsoft Intune 中的软件更新代理错误代码和说明
 

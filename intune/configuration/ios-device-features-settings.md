@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057647"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117895"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>用于使用 Intune 中常见 iOS 功能的 iOS 和 iPadOS 设备设置
 
@@ -290,13 +290,13 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
   > 使用**凭据**类型时，你可以添加自己的配置值以通过扩展。 请考虑使用 Apple 在**Kerberos**类型中提供的内置配置设置。
 
 - **扩展 ID** （仅限凭据）：输入标识 SSO 应用扩展的绑定标识符，如 `com.apple.extensiblesso`。
-- **团队 ID** （仅凭据）：输入 SSO 应用扩展的团队标识符。 团队标识符是由 Apple 生成的10个字符的字母数字（数字和字母）字符串（例如 `ABCDE12345`）。 不需要团队 ID。
+- **团队 ID** （仅凭据）：输入 SSO 应用扩展的团队标识符。 团队标识符是由 Apple 生成的10个字符的字母数字（数字和字母）字符串，如 `ABCDE12345`。 不需要团队 ID。
 
   [找到你的团队 ID](https://help.apple.com/developer-account/#/dev55c3c710c) （打开 Apple 网站）以了解详细信息。
 
 - **领域**：输入 Kerberos 领域的名称。 领域名称应大写，如 `CONTOSO.COM`。 通常情况下，你的领域名称与 DNS 域名相同，但全部为大写。
 
-- **域**：输入可以通过 SSO 进行身份验证的站点的域名或主机名。 例如，如果你的网站 `mysite.contoso.com`，则 `mysite` 为主机名，`contoso.com` 是域名。 当用户连接到这些站点中的任何一个时，应用扩展会处理身份验证质询。 此身份验证允许用户使用人脸 ID、Touch ID 或 Apple pincode/密码进行登录。
+- **域**：输入可以通过 SSO 进行身份验证的站点的域名或主机名。 例如，如果你的网站 `mysite.contoso.com`，则 `mysite` 为主机名，`contoso.com` 为域名。 当用户连接到这些站点中的任何一个时，应用扩展会处理身份验证质询。 此身份验证允许用户使用人脸 ID、Touch ID 或 Apple pincode/密码进行登录。
 
   - 单一登录应用扩展 Intune 配置文件中的所有域都必须是唯一的。 即使使用的是不同类型的 SSO 应用扩展，也不能在任何登录应用扩展配置文件中重复域。
   - 这些域不区分大小写。
@@ -306,7 +306,7 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
   - **值类型**：输入数据的类型。 选项包括：
 
     - 字符串
-    - 布尔：在**配置值**中，输入 `True` 或 `False`。
+    - 布尔：在 "**配置值**" 中，输入 `True` 或 `False`。
     - 整数：在 "**配置值**" 中，输入一个数字。
     
   - **配置值**：输入数据。
@@ -322,11 +322,12 @@ Intune 包括一些内置设置，可便于 iOS 用户在自己的设备上使�
   > - 如果要使用多个领域，请**启用**此设置。 它将你输入的**领域**值设置为默认领域。
   > - 如果只有一个领域，请将其保留为 "**未配置**" （默认值）。
 
-- **主体名称**（仅 Kerberos）：输入 Kerberos 主体的用户名。 不需要包含领域名称。 例如，在 `user@contoso.com` 中，`user` 为主体名称，`contoso.com` 是领域名称。
+- **主体名称**（仅 Kerberos）：输入 Kerberos 主体的用户名。 不需要包含领域名称。 例如，在 `user@contoso.com`中，`user` 是主体名称，`contoso.com` 是领域名称。
 - **Active Directory 站点代码**（仅 kerberos）：输入 Kerberos 扩展应使用 Active Directory 站点的名称。 您可能不需要更改此值，因为 Kerberos 扩展可能会自动查找 Active Directory 站点代码。
 - **缓存名称**（仅 Kerberos）：输入 kerberos 缓存的一般安全服务（GSS）名称。 您很可能不需要设置此值。
 - **应用程序包 id** （仅 Kerberos）：**添加**应用捆绑标识符，这些标识符应在设备上使用单一登录。 这些应用将被授予对 Kerberos 票证授予票证（身份验证票证）的访问权限，并对用户进行身份验证，以对他们有权访问的服务进行身份验证。
 - **域领域映射**（仅 Kerberos）：**添加**应映射到领域的域 DNS 后缀。 当主机的 DNS 名称与领域名称不匹配时，请使用此设置。 您很可能不需要创建此自定义的域到领域映射。
+- **PKINIT 证书**（仅 Kerberos）：**选择**用于初始身份验证的公钥加密（PKINIT）证书，无需用户交互即可使用该证书来续订 Kerberos 凭据。 此证书应为之前添加到 Intune 的 PKCS 或 SCEP 证书。
 
 ## <a name="wallpaper"></a>壁纸
 

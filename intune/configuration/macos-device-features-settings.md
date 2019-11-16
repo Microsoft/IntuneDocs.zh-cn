@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143158"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117866"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 设备功能设置
 
@@ -139,12 +139,12 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
   > 使用**凭据**类型时，你可以添加自己的配置值以通过扩展。 请考虑使用 Apple 在**Kerberos**类型中提供的内置配置设置。
 
 - **扩展 ID** （仅限凭据）：输入标识 SSO 应用扩展的绑定标识符，如 `com.apple.ssoexample`。
-- **团队 ID** （仅凭据）：输入 SSO 应用扩展的团队标识符。 团队标识符是由 Apple 生成的10个字符的字母数字（数字和字母）字符串（例如 `ABCDE12345`）。 
+- **团队 ID** （仅凭据）：输入 SSO 应用扩展的团队标识符。 团队标识符是由 Apple 生成的10个字符的字母数字（数字和字母）字符串，如 `ABCDE12345`。 
 
   [找到你的团队 ID](https://help.apple.com/developer-account/#/dev55c3c710c) （打开 Apple 网站）以了解详细信息。
 
 - **领域**：输入身份验证领域的名称。 领域名称应大写，如 `CONTOSO.COM`。 通常情况下，你的领域名称与 DNS 域名相同，但全部为大写。
-- **域**：输入可以通过 SSO 进行身份验证的站点的域名或主机名。 例如，如果你的网站 `mysite.contoso.com`，则 `mysite` 为主机名，`contoso.com` 是域名。 当用户连接到这些站点中的任何一个时，应用扩展会处理身份验证质询。 此身份验证允许用户使用人脸 ID、Touch ID 或 Apple pincode/密码进行登录。
+- **域**：输入可以通过 SSO 进行身份验证的站点的域名或主机名。 例如，如果你的网站 `mysite.contoso.com`，则 `mysite` 为主机名，`contoso.com` 为域名。 当用户连接到这些站点中的任何一个时，应用扩展会处理身份验证质询。 此身份验证允许用户使用人脸 ID、Touch ID 或 Apple pincode/密码进行登录。
 
   - 单一登录应用扩展 Intune 配置文件中的所有域都必须是唯一的。 即使使用的是不同类型的 SSO 应用扩展，也不能在任何登录应用扩展配置文件中重复域。
   - 这些域不区分大小写。
@@ -154,7 +154,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
   - **值类型**：输入数据的类型。 选项包括：
 
     - 字符串
-    - 布尔：在**配置值**中，输入 `True` 或 `False`。
+    - 布尔：在 "**配置值**" 中，输入 `True` 或 `False`。
     - 整数：在 "**配置值**" 中，输入一个数字。
     
   - **配置值**：输入数据。
@@ -179,12 +179,13 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 - **最短密码期限**（仅限 Kerberos）：输入在用户可以更改密码之前，必须在域中使用该密码的天数。 "**未配置**" （默认值）在更改密码之前不会强制使用密码的最短期限。
 - **密码过期通知**（仅 Kerberos）：输入在密码过期之前用户收到其密码将过期的通知的天数。 **未配置**（默认）使用 `15` 天。
 - **密码过期**（仅 Kerberos）：输入必须更改设备密码前的天数。 "**未配置**" （默认值）表示用户密码永不过期。
-- **主体名称**（仅 Kerberos）：输入 Kerberos 主体的用户名。 不需要包含领域名称。 例如，在 `user@contoso.com` 中，`user` 为主体名称，`contoso.com` 是领域名称。
+- **主体名称**（仅 Kerberos）：输入 Kerberos 主体的用户名。 不需要包含领域名称。 例如，在 `user@contoso.com`中，`user` 是主体名称，`contoso.com` 是领域名称。
 - **Active Directory 站点代码**（仅 kerberos）：输入 Kerberos 扩展应使用 Active Directory 站点的名称。 您可能不需要更改此值，因为 Kerberos 扩展可能会自动查找 Active Directory 站点代码。
 - **缓存名称**（仅 Kerberos）：输入 kerberos 缓存的一般安全服务（GSS）名称。 您很可能不需要设置此值。  
 - **密码要求消息**（仅 Kerberos）：输入向用户显示的组织密码要求的文本版本。 如果不需要 Active Directory 的密码复杂性要求，或者不输入最小密码长度，则会显示消息。  
 - **应用程序包 id** （仅 Kerberos）：**添加**应用捆绑标识符，这些标识符应在设备上使用单一登录。 这些应用将被授予对 Kerberos 票证授予票证（身份验证票证）的访问权限，并对用户进行身份验证，以对他们有权访问的服务进行身份验证。
 - **域领域映射**（仅 Kerberos）：**添加**应映射到领域的域 DNS 后缀。 当主机的 DNS 名称与领域名称不匹配时，请使用此设置。 您很可能不需要创建此自定义的域到领域映射。
+- **PKINIT 证书**（仅 Kerberos）：**选择**用于初始身份验证的公钥加密（PKINIT）证书，无需用户交互即可使用该证书来续订 Kerberos 凭据。 此证书应为之前添加到 Intune 的 PKCS 或 SCEP 证书。
 
 ## <a name="associated-domains"></a>关联域
 

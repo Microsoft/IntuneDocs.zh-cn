@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/13/2018
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510044"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059198"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>对比作为计算机或移动设备管理 Windows 电脑
 
@@ -42,8 +42,8 @@ ms.locfileid: "72510044"
 |**软件更新管理**| Windows 更新和 Microsoft 应用更新<br>[利用软件更新使 Windows 电脑保持最新版本](../keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|针对 Windows 10 和 Microsoft 应用更新的适用于企业的 Microsoft 应用商店<br> [配置 Windows 更新商业版设置](../protect/windows-update-for-business-configure.md) |
 |**软件许可证管理**|可用 <br>[管理 Windows 电脑软件的许可协议](../manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|适用于企业的 Microsoft 应用商店（仅 .appx 应用）<br>[管理从适用于企业的 Microsoft 应用商店购买的应用](../apps/windows-store-for-business.md)|
 |**清单**|可用 <br>[查看 Windows 电脑的硬件和软件清单](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|可用 <br>[如何监视应用信息](../apps/apps-monitor.md)<br>[什么是设备管理](../remote-actions/device-management.md)|
-|**Windows 防火墙策略**|可用 <br>[使用 Windows 防火墙策略帮助保护 Windows 电脑](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |可用 <br>[Windows Defender 防火墙](../protect/endpoint-protection-windows-10.md#windows-defender-firewall)|
-|**反恶意软件保护**|Endpoint Protection<br>[使用 Endpoint Protection 帮助保障 Windows 电脑的安全](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[启用 Windows Defender](../protect/advanced-threat-protection.md)|
+|**Windows 防火墙策略**|可用 <br>[使用 Windows 防火墙策略帮助保护 Windows 电脑](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |可用 <br>[Microsoft Defender 防火墙](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
+|**反恶意软件保护**|Endpoint Protection<br>[使用 Endpoint Protection 帮助保障 Windows 电脑的安全](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[启用 Microsoft Defender](../protect/advanced-threat-protection.md)|
 |**远程协助** |TeamViewer<br>[请求并提供 Windows 电脑的远程协助](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [使用 TeamViewer 远程管理 Intune 设备](../remote-actions/teamviewer-support.md) |
 |**应用程序部署** | 不可用于适用于企业的 Microsoft 应用商店，<br>仅限 .exe、.appx 和多文件 .msi 格式<br>[为运行 Intune 软件客户端的 Windows 电脑添加应用](add-apps-for-windows-pcs-in-microsoft-intune.md)|可用于 Microsoft 应用商店应用和业务线应用<br>[如何添加 Windows 应用商店应用](../apps/store-apps-windows.md)<br>[如何添加 Windows 业务线 (LOB) 应用](../apps/lob-apps-windows.md)|
 |**应用保护**|不可用|可用 <br>[什么是应用保护策略？](../apps/app-protection-policy.md)|

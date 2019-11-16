@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709743"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984125"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
 
@@ -447,11 +447,20 @@ ms.locfileid: "73709743"
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>设置适用于：设备注册，自动设备注册（监督）
 
+需要注意的是数据漫游（提示或重要说明，以帮助客户混乱）：此设置不会显示在目标设备的管理配置文件上。 这是因为此设置被视为远程设备操作，每次在设备上更改数据漫游状态时，Intune 服务将再次阻止该状态。 尽管它不在管理配置文件中，但如果它在管理控制台中显示为 "成功"，则它将起作用。 
 - **数据漫游**：选择“阻止”  可阻止通过移动电话网络进行数据漫游。 “未配置”（默认）允许设备在处于移动电话网络时进行数据漫游  。
+
+  > [!IMPORTANT]
+  > 此设置被视为远程设备操作。 因此，该设置不会显示在设备上的管理配置文件中。 每次在设备上更改数据漫游状态时，Intune 服务都会阻止**数据漫游**。 在 Intune 中，如果报告状态显示为 "成功"，则知道它正在运行，即使该设置未显示在设备上的管理配置文件中。
+
 - **漫游时进行全局后台获取**：选择“阻止”  可阻止在通过移动电话网络漫游时使用全局后台获取功能。 “未配置”（默认）允许设备在通过移动电话网络漫游时提取数据，例如电子邮件  。
 - **语音拨号**：选择“阻止”  可阻止用户在设备上使用语音拨号功能。 “未配置”（默认）允许在设备上使用语音拨号  。
 - **语音漫游**：选择“阻止”  可阻止通过移动电话网络进行语音漫游。 “未配置”（默认）允许设备在处于移动电话网络时进行语音漫游  。
 - **个人热点**：“阻止”可关闭每次设备同步时用户设备上的个人热点  。此设置可能与某些运营商不兼容。 “未配置”（默认）将个人热点配置保留为用户设置的默认设置  。
+
+  > [!IMPORTANT]
+  > 此设置被视为远程设备操作。 因此，该设置不会显示在设备上的管理配置文件中。 每次设备上的个人热点状态发生变化时，Intune 服务都将阻止**个人热点**。 在 Intune 中，如果报告状态显示为 "成功"，则知道它正在运行，即使该设置未显示在设备上的管理配置文件中。
+
 - **移动网络的使用规则(仅限托管应用)** ：定义托管应用可在移动网络中使用的数据类型。 选项包括：
   - **阻止使用移动电话数据**：对“所有托管应用”或“选择特定应用”阻止使用移动电话数据   。
   - **阻止漫游时使用移动电话数据**：对“所有托管应用”或“选择特定应用”阻止漫游时使用移动电话数据   。

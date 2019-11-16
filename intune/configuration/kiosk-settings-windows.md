@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506679"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059348"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>使用 Intune 将 Windows 10 及更高版本设备作为展台运行的设置
 
@@ -40,6 +40,8 @@ ms.locfileid: "72506679"
 
   1. 创建此展台配置文件以在展台模式下运行设备。
   2. 创建[设备限制配置文件](device-restrictions-windows-10.md#microsoft-edge-browser)，并配置可在 Microsoft Edge 中使用的特定功能和设置。
+
+- 确保所有文件、脚本和快捷方式都在本地系统上。 有关详细信息，包括其他 Windows 要求，请参阅[自定义和导出开始布局](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)。
 
 > [!IMPORTANT]
 > 请务必将此展台配置文件和 [Microsoft Edge 配置文件](device-restrictions-windows-10.md#microsoft-edge-browser)分配给相同设备。
@@ -162,7 +164,7 @@ ms.locfileid: "72506679"
       > [!NOTE]
       > 使用 Microsoft 展台浏览器启用了自动登录功能的 Windows 10 网亭必须使用来自 Microsoft Store for Business 的脱机许可证。 此要求是因为自动登录使用的本地用户帐户没有 Azure Active Directory （AD）凭据。 因此，无法评估联机许可证。 有关详细信息，请参阅[分发脱机应用](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)。
 
-  - 应用程序 
+  - **应用程序**
 
     - 添加应用商店应用  ：从适用于企业的 Microsoft Store 中添加应用。 如果未列出任何应用，则可以获取应用，并[将其添加到 Intune](../apps/store-apps-windows.md)。 例如，可以添加展台浏览器、Excel、OneNote 等。
 
@@ -194,3 +196,5 @@ ms.locfileid: "72506679"
 [分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
 还可以为 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 和 [Windows Holographic for Business](kiosk-settings-holographic.md) 设备创建展台配置文件。
+
+另请参阅 Windows 指南中的[设置单应用展台](https://docs.microsoft.com/windows/configuration/kiosk-single-app)或[设置多应用展台](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps)。

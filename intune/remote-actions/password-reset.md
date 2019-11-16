@@ -3,8 +3,8 @@ title: 削减支持人员成本
 titleSuffix: Microsoft Intune
 description: 通过自助密码重置削减支持人员成本
 keywords: Azure Active Directory SSPR 密码重置
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -15,16 +15,17 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1da1758dcc1743087191f69bd4d57bc113774d81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08dc14a3abed634721b39fedaae840e2b18c151b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509299"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058112"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>通过自助密码重置削减支持人员成本
 
 可使员工在无需支持人员协助的情况下重置工作和学校帐户密码。 在下列情况下，建议使用这种类型的自助密码重置：
+
 * 公司和学校将 Azure Active Directory 用作工作帐户和学校帐户。
 * 员工和学生具有 Internet 访问。
 * 希望降低支持人员成本。
@@ -39,6 +40,7 @@ ms.locfileid: "72509299"
 ## <a name="next-steps"></a>后续步骤
 
 详细了解以下文章：
+
 * [密码最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [许可自助密码重置](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

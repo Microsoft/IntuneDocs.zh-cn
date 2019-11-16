@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,18 +19,18 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 2b26717e2e8beed2e92f47dca17cbea0ec47a82b
+ms.sourcegitcommit: 244a75622f9cebaaaf5b33aadd8931407a2e2e48
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754999"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74096745"
 ---
 # <a name="enable-code-integrity"></a>启用代码完整性
 
 你的组织可能要求你的电脑使用称为*代码完整性*的威胁防护功能来启用。 代码完整性检查设备上的驱动程序和系统文件，以获得损坏或恶意软件的迹象。 要使代码完整性在设备上工作，还必须启用另一个称为[*安全启动*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot)的安全功能。
 
-如果你的电脑不合规，因为代码完整性处于禁用状态，你应与组织的 IT 支持团队联系。 它们将帮助你启用安全启动，这将在你下次启动设备时触发代码完整性。
+如果你的电脑不合规，因为代码完整性已禁用，请联系你组织的 IT 支持人员。 你的支持人员将帮助你启用安全启动，这将在你下次启动设备时触发代码完整性。 
 
 如果你将自己标识为高级设备用户，并想要亲自尝试这些步骤，请参阅[重新启用安全启动](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot)。
 

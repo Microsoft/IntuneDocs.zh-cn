@@ -3,8 +3,8 @@ title: 用于载入第三方证书颁发机构的 API
 titleSuffix: Microsoft Intune
 description: 为第三方证书颁发机构 (CA) 添加或集成 SCEP GitHub 解决方案，以向 Microsoft Intune 中的设备颁发 SCEP 证书。 此解决方案包括 Java 和 C# API，它们用于验证、向 Intune 发送成功和失败通知，以及在与 Intune 通信时使用 SSL 套接字工厂。 另请查看测试 SCEP CA 配置的步骤概述。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cadadcb8379d2de73b166d863c0b471747f5f6c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504098"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058238"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 将 SCEP 的第三方 CA 添加到 Intune
 
