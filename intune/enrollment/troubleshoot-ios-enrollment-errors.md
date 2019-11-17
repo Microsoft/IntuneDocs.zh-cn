@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509226"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126149"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备注册问题疑难解答
 
@@ -61,8 +61,8 @@ ms.locfileid: "72509226"
 
 #### <a name="resolution"></a>解决方法
 1. 登录到 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”。
-3. 选择“设备注册” > “注册限制”。
+2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”   。
+3. 选择“设备注册” > “注册限制”   。
 4. 在 "**设备类型限制**" 下，选择要设置 >**属性**的限制  > **选择 "平台**" > 选择 "对**IOS** **允许**"，然后单击 **"确定"** 。
 5. 选择 "**配置平台**"，选择 "**允许**个人拥有的 iOS 设备"，然后单击 **"确定"** 。
 6. 重新注册设备。
@@ -84,6 +84,8 @@ ms.locfileid: "72509226"
 1. 从设备中删除公司门户应用。
 2. 从 **App Store** 下载并安装 **Microsoft Intune 公司门户**应用。
 3. 重新注册设备。
+ > [!NOTE]
+    > 如果用户尝试注册的设备数目超过设备注册配置允许的数量，也会出现此错误。 如果这些步骤不能解决**问题，请按照以下解决**方法步骤操作。
 
 ### <a name="device-cap-reached"></a>已达到设备上限
 
@@ -184,7 +186,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解决方法
 
 1. 编辑注册配置文件。 您可以对配置文件进行任何更改。 目的是更新配置文件的修改时间。
-2. 同步 DEP 管理的设备：打开 Intune 门户 >**管理员** > **移动设备管理** > **iOS**  > **设备注册计划** > **立即同步**。 会向 Apple 发送同步请求。
+2. 同步 DEP 管理的设备：打开 Intune 门户 >**管理员** > **移动设备管理** > **iOS**  > **设备注册计划** **立即同步**。 会向 Apple 发送同步请求。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>在用户登录时，DEP 注册停滞
 当你打开分配了注册配置文件的 DEP 管理的设备时，在输入凭据后，初始设置将会关闭。
