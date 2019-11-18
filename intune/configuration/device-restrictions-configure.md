@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b4597106d1fffb65f112feae750aa7c8feefc0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cfa640d5858479b5f98009e92f005312966f536a
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493986"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755279"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中配置设备限制设置
 
@@ -40,15 +40,16 @@ Intune 包含帮助管理员控制 Android、iOS、macOS 和 Windows 设备的�
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好是“iOS：阻止设备上的照相机”  。
     - **说明**：输入策略的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：  
 
-        - **Outlook Web Access (OWA)**
+        - **Android
+**
         - **Android 企业**
         - **iOS/iPadOS**
         - **macOS**

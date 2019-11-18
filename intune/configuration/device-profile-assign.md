@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 50b91251572e45669f197df7ac4e5ff94caf47a1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892639"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755331"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -41,8 +41,8 @@ ms.locfileid: "72892639"
 
 ## <a name="assign-a-device-profile"></a>分配设备配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件”   。 此时会列出所有配置文件。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”  。 此时会列出所有配置文件。
 3. 选择要分配的配置文件，单击“分配”  。
 4. 选择“包含”组或“排除”组，然后选择组   。 选择组时，会选择 Azure AD 组。 若要选择多个组，请按住 Ctrl，然后选择组  。
 
@@ -54,7 +54,7 @@ ms.locfileid: "72892639"
 
 分配配置文件后，还可以评估  受影响的用户数。 此功能计算用户数，不计算设备数。
 
-1. 在 Intune 中，选择“设备配置” > “配置文件”   。
+1. 在管理中心，选择“设备”   > “配置文件”  。
 2. 选择一个配置文件，依次单击“分配”   >   “评估”。 随即出现一条消息，显示此配置文件所面向的用户数。
 
 如果“评估”按钮呈灰显状态，请确保配置文件已分配到一个或多个组  。

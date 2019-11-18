@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a794d724fe162ad7d464760661fecb45bd874431
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 589fc32db22de02f70ba78f79ebb413a31e92f1d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506449"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754857"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中添加和使用设备上的 Wi-Fi 设置
 
@@ -49,14 +50,16 @@ Wi-Fi 配置文件支持以下设备平台：
 
 ## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 在 Intune 中，选择“设备配置” > “配置文件” > [创建配置文件](https://go.microsoft.com/fwlink/?linkid=2090973)    。
-2. 输入以下属性：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
+3. 输入以下属性：
 
     - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 WiFi 配置文件”  。
     - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：
 
-      - **Outlook Web Access (OWA)**
+      - **Android
+**
       - **Android Enterprise**
       - **iOS/iPadOS**
       - **macOS**
@@ -70,16 +73,17 @@ Wi-Fi 配置文件支持以下设备平台：
       > - 对于作为专用设备（展台）运行的 Android Enterprise  设备，依次选择“仅设备所有者”   > “Wi-Fi”  。
       > - 对于 Windows 8.1 及更高版本  ，可以选择“Wi-Fi 导入”  。 此选项允许你以之前从其他设备导出的 XML 文件形式导入 Wi-Fi 设置。
 
-3. 某些 Wi-Fi 设置针对每个平台会有所不同。 若要查看特定平台的设置，请选择你的平台：
+4. 某些 Wi-Fi 设置针对每个平台会有所不同。 若要查看特定平台的设置，请选择你的平台：
 
-    - [Outlook Web Access (OWA)](wi-fi-settings-android.md)
+    - [Android
+](wi-fi-settings-android.md)
     - [Android Enterprise](wi-fi-settings-android-enterprise.md)（包括专用设备）
     - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 及更高版本](wi-fi-settings-windows.md)
     - [Windows 8.1 及更高版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
 
-4. 完成后，依次选择“创建配置文件”   > “创建”  。
+5. 完成后，依次选择“创建配置文件”   > “创建”  。
 
 此时，配置文件创建，并显示在配置文件列表中（“设备配置”   > “配置文件”  ）。
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3ee6240d9efb0d09c41a6a9b1260cd4189927a8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8c31bbd8eb9efb2b748163223ce1b8fa555f0dc6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509427"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713526"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 
@@ -33,7 +33,7 @@ ms.locfileid: "72509427"
 
 ## <a name="get-to-your-devices"></a>找到你的设备
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 选择“设备”  。 此视图显示有关各设备的详细信息，以及可以使用该设备进行的操作，包括：
 
    - “概述”显示已注册设备的可视化快照，并显示正在使用不同平台（Android、iOS 等）的设备数量  。

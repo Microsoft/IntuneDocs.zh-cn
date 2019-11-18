@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507022"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756780"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>使用 Windows 10 模板在 Microsoft Intune 中配置组策略设置
 
@@ -43,8 +43,8 @@ Windows 设置类似于 Active Directory (AD) 中的组策略 (GPO) 设置。 �
 
 ## <a name="create-a-template"></a>创建模板
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入配置文件的名称。
@@ -59,7 +59,7 @@ Windows 设置类似于 Active Directory (AD) 中的组策略 (GPO) 设置。 �
     > [!TIP]
     > Intune 中的 Windows 设置与你在本地组策略编辑器中看到的本地组策略路径相关 (`gpedit`)。
 
-5. 默认情况下，下拉列表会显示“所有产品”  。 还可以从列表中筛选设置以仅显示 Windows  设置、仅显示 Office  设置，或仅显示 Microsoft Edge 版本 77 或更高版本设置  ：
+5. 在下拉列表中，选择“所有产品”  。 还可以从列表中筛选设置以仅显示 Windows  设置、仅显示 Office  设置，或仅显示 Microsoft Edge 版本 77 或更高版本设置  ：
 
     ![筛选列表以显示 Intune 中管理模板中的所有 Windows 或所有 Office 设置](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

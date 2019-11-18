@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509199"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709184"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教程：使用 Autopilot 在 Intune 中注册 Windows 设备
 
@@ -60,7 +60,7 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 2. 保存 CSV 文件。
 
-3. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册”   > “Windows 注册”   > “设备”   > “导入”  。
+3. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “设备”   > “导入”  。
 
     ![Windows Autopilot 设备的屏幕截图](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
 
@@ -78,7 +78,7 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 接下来，创建一个设备组，将刚加载的 Autopilot 设备置于该组中。
 
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal)内，选择“组” > “新建组”   。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“组”   > “新组”  。
 2. 在“组”边栏选项卡中  ：
     1. 对于“组类型”  ，选择“安全”  。
     2. 对于“组名称”  ，输入“Autopilot 组”  。 对于“组说明”  输入“Autopilot 设备的测试组”  。
@@ -90,7 +90,7 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 在创建设备组后，必须创建一个部署配置文件，以便可以配置 Autopilot 设备。
 
-1. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册”   > “Windows 注册”   > “部署配置文件”   > “创建配置文件”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “部署配置文件”   > “创建配置文件”  。
 2. 在“基本信息”  页上，对于“名称”  ，输入“Autopilot 配置文件”  。 对于“说明”  输入“Autopilot 设备的测试配置文件”  。
 3. 将“将所有目标设备转换为 Autopilot”  设置为“是”  。 此设置可确保列表中的所有设备均注册到 Autopilot 部署服务。 等待 48 小时来处理注册。
 4. 选择“下一步”  。
@@ -116,7 +116,7 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 1. 如果已在 Intune 中注册设备，必须先[从 Azure Active Directory 门户中删除设备](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)。
 
-2. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “设备”    。
+2. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “设备”  。
 
 3. 在“Windows Autopilot 设备”下，选择要删除的设备，然后选择“删除”   。
 

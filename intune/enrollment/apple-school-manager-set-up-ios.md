@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 645cb2c920d3da56bb0267073c1951d0b72d73de
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3a62a048ebb15bac620ad9aad57ed3903e9568cf
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505647"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712979"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 设置 iOS 设备注册
 
@@ -48,7 +48,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>步骤 1。 下载创建 Apple 令牌所需的 Intune 公钥证书
 
-1. 在 [Intune](https://aka.ms/intuneportal) 下选择“设备注册” > “Apple 注册” > “注册计划令牌” > “添加”。    
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Apple 注册”   > “注册程序令牌”   > “添加”  。
 
    ![获取注册计划令牌。](./media/apple-school-manager-set-up-ios/image01.png)
 
@@ -71,7 +71,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步骤 3. 保存用于创建此令牌的 Apple ID
 
-在 Azure 门户中的 Intune 中，提供 Apple ID 供未来参考。
+在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，提供 Apple ID 供将来参考。
 
 ![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/apple-school-manager-set-up-ios/image03.png)
 
@@ -81,7 +81,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
 至此，你已安装令牌，接下来可以为 Apple School 设备创建注册配置文件了。 设备注册配置文件定义注册时应用于设备组的设置。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”    。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Apple 注册”   > “注册程序令牌”  。
 2. 选择令牌，选择“配置文件”，然后选择“创建配置文件”   。
 
 3. 在“创建配置文件”下，输入配置文件的“名称”和“描述”以便于管理    。 用户看不到这些详细信息。 可以使用此“名称”字段在 Azure Active Directory 中创建动态组  。 使用配置文件名称定义 enrollmentProfileName 参数，以向设备分配此注册配置文件。 详细了解 [Azure Active Directory 动态组](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices)。
@@ -131,7 +131,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 13. 选择“设置助理设置”，配置以下配置文件设置  ：![设置助理自定义项。](./media/apple-school-manager-set-up-ios/setupassistantcustom.png)
 
 
-    |                 Setting                  |                                                                                               描述                                                                                               |
+    |                 设置                  |                                                                                               描述                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>部门名称</strong>     |                                                             用户在激活过程中轻点“关于配置”时显示。                                                              |
     |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。                                                          |
@@ -155,7 +155,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 ## <a name="connect-school-data-sync"></a>连接学校数据同步
 （可选）Apple School Manager 支持使用 Microsoft 学校数据同步 (SDS) 将学籍数据同步到 Azure Active Directory (AD)。 你只能同步一个包含 SDS 的令牌。 如果设置了其他包含学校数据同步的令牌，则会从之前包含 SDS 的令牌中将其删除。 新连接将替换当前的令牌。 请完成以下步骤以使用 SDS 来同步学校数据。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”    。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Apple 注册”   > “注册程序令牌”  。
 2. 选择 Apple School Manager 令牌，然后选择“学校数据同步”。 
 3. 在“学校数据同步”下，选择“允许”。   此设置将允许 Intune 与 Office 365 中的 SDS 连接。
 4. 若要允许 Apple School Manager 与 Azure AD 连接，请选择“设置 Microsoft 学校数据同步”  。详细了解[如何设置学校数据同步](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)。
@@ -165,7 +165,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
 在 Intune 分配有管理 Apple School Manager 设备的权限后，将 Intune 与 Apple 服务同步，以便在 Intune 中查看托管设备。
 
-在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”> 在列表中选择令牌 >“设备” > “同步”。      ![“注册计划设备”节点和“同步”链接的屏幕截图。](./media/apple-school-manager-set-up-ios/image06.png)
+在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Apple 注册”   > “注册程序令牌”  > 在列表中选择令牌 >“设备”   > “同步”  。![“注册计划设备”节点和“同步”链接的屏幕截图。](./media/apple-school-manager-set-up-ios/image06.png)
 
 为了遵守 Apple 有关可接受注册计划流量的条款，Intune 规定了以下限制：
 - 每七天只能运行一次完全同步。 在完全同步期间，Intune 将刷新分配给 Intune 的每一个 Apple 序列号。 如果在上一个完全同步的七天内尝试完全同步，则 Intune 只刷新已经不在 Intune 中列出的序列号。
@@ -178,7 +178,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 ## <a name="assign-a-profile-to-devices"></a>为设备分配配置文件
 必须先向 Intune 管理的 Apple School Manager 设备分配注册配置文件，然后才能注册设备。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Apple 注册” > “注册计划令牌”> 在列表中选择令牌。   
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Apple 注册”   > “注册程序令牌”  > 在列表中选择令牌。
 2. 选择“设备”> 在列表中选择设备 >“分配配置文件”。  
 3. 在“分配配置文件”  下，选择设备的配置文件，再选择“分配”  。
 

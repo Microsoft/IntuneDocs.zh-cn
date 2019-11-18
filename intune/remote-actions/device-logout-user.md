@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8336f5b29cd21bb6875285177071542080eb95f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509458"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713180"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>注销 Intune 管理的 iOS 设备上的当前用户
 
@@ -41,9 +41,7 @@ ms.locfileid: "72509458"
 
 ## <a name="how-to-log-out-the-current-user"></a>如何注销当前用户
 
-1. 登录 Azure 门户。
-2. 选择“更多服务”   > “监视 + 管理”   > “Intune”  。
-3. 在 Intune  边栏选项卡上，选择“设备  ”。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”  。
 4. 在“设备和组”  边栏选项卡上，选择“所有设备”  。
 5. 从管理的设备列表中，选择一台 iOS 设备，然后选择“注销当前用户”  设备远程操作。
 

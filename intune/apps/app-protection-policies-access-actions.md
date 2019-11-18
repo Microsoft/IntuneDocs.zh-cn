@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999479"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984019"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用应用保护策略条件启动操作选择性地擦除数据
 
@@ -44,9 +44,6 @@ ms.locfileid: "72999479"
 7. 选择“设置”，然后输入用户登录公司应用时必须满足的值   。 
 8. 如果用户不符合要求，请选择要采取的操作  。 在某些情况下，可为单个设置配置多项操作。 有关详细信息，请参阅[如何创建和分配应用保护策略](app-protection-policies.md)。
 
->[!NOTE]
-> 要使用“设备型号或设备制造商”设置，请输入以分号分隔的设备型号标识符列表 (iOS) 或设备制造商 (Android)  。 切勿在多值列表中使用空格。 这些值不区分大小写。 
-
 ## <a name="policy-settings"></a>策略设置 
 
 应用保护策略设置表包含“设置”、“值”和“操作”列    。
@@ -62,7 +59,7 @@ ms.locfileid: "72999479"
 - 设备型号
 - 允许的最高设备威胁级别
 
-若要使用“设备型号”  设置，请输入 iOS 型号标识符的分号分隔列表。 [HockeyApp 支持文档](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)中的“设备类型”列下列出了 iOS 型号标识符。<br>
+若要使用“设备型号”  设置，请输入 iOS 型号标识符的分号分隔列表。 这些值不区分大小写。 除了在需要输入“设备型号”的 Intune 报告中，还可以在 [HockeyApp 的支持文档](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)或此[第三方 GitHub 存储库](https://gist.github.com/adamawolf/3048717)中的“设备类型”列下找到 iOS 型号标识符。<br>
 示例输入：iPhone5,2;iPhone5,3 
 
 在最终用户设备上，Intune 客户端执行操作的依据为，Intune 中指定的设备型号字符串与应用程序保护策略的简单匹配情况。 匹配完全取决于设备报告的内容。 建议你（即 IT 管理员）务必要根据各种设备制造商和型号对小型用户组测试此设置，以确保行为按预期发生。 默认值为“未配置”  。<br>
@@ -90,7 +87,7 @@ ms.locfileid: "72999479"
 
 通过使用最小公司门户版本  ，可以指定在最终用户设备上强制执行的公司门户的特定最低定义版本。 使用此条件启动设置，可以在不满足每个值时将值设置为“阻止访问”、“擦除数据”和“警告”作为可能的操作    。 此值的可能格式遵循 [主版本].[次版本]、[主版本].[次版本].[内部版本] 或 [主版本].[次版本].[内部版本].[修订版本]    。 假设某些最终用户可能不希望立即强制更新应用，则在配置此设置时，“警告”选项可能是理想的选择。 Google Play 商店能够很好地仅为应用更新发送增量字节，但在更新数据时，仍可能有大量数据是用户不想使用的。 强制执行更新并下载更新的应用可能会导致更新时产生意外的数据费用。 如果已配置最小公司门户版本设置，则将影响获取公司门户版本 5.0.4560.0 的任何最终用户以及公司门户的任何未来版本  。 此设置对使用版本低于与此功能一起发布的公司门户版本的用户没有任何影响。 在设备上使用应用自动更新的最终用户可能看不到此功能的任何对话框，因为他们可能使用最新的公司门户版本。 此设置仅适用于已注册和未注册设备具有应用保护的 Android。
 
-若要使用“设备制造商”  设置，请输入 Android 制造商的分号分隔列表。 可以在设备设置下找到设备的 Android 制造商。<br>
+若要使用“设备制造商”  设置，请输入 Android 制造商的分号分隔列表。 这些值不区分大小写。 除 Intune 报告外，还可以在设备设置下找到设备的 Android 制造商。 <br>
 示例输入：制造商 A;制造商 B  
 
 >[!NOTE]

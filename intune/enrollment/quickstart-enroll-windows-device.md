@@ -2,7 +2,7 @@
 title: 快速入门 - 在 Microsoft Intune 中注册 Windows 10 桌面版设备
 description: 快速入门 - 使用公司门户将 Windows 10 桌面版设备注册到 Microsoft Intune。
 services: microsoft-intune
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 07/30/2019
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aeeb55804a2bdd3ef1143bbb88dee968892c5c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 91f20411f668428c8bf3af8b0bd4ae6f4b0b545f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509287"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713505"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入门：注册 Windows 10 设备
 
@@ -91,7 +91,7 @@ ms.locfileid: "72509287"
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>确认 Intune 中的设备注册
 
-1. 以全局管理员或 Intune 服务管理员身份登录 [Intune](https://aka.ms/intuneportal)。
+1. 以全局管理员或 Intune 服务管理员身份登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备” > “所有设备”以查看 Intune 中已注册的设备   。
 3. 验证已在 Intune 中注册其他设备。
 

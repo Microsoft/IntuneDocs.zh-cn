@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508563"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712197"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
@@ -53,7 +53,7 @@ ms.locfileid: "72508563"
 
 ### <a name="wiping-a-device"></a>擦除设备
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 选择“设备” > “所有设备”   。
 4. 选择要擦除的设备的名称。
 5. 在显示设备名称的窗格中，选择“擦除”  。
@@ -91,7 +91,7 @@ ms.locfileid: "72508563"
 |Wi-Fi 和 VPN 配置文件设置|删除。|
 |证书配置文件设置|已删除并吊销证书。|
 |管理代理|删除管理配置文件。|
-|Email|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
+|电子邮件|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
 |Azure AD 脱离|删除 Azure AD 记录。|
 
 ### <a name="android"></a>Android
@@ -107,7 +107,7 @@ ms.locfileid: "72508563"
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|
 |证书配置文件设置|已撤销证书，但未删除。|已删除并吊销证书。|
 |管理代理|撤销设备管理员权限。|撤销设备管理员权限。|
-|Email|N/A（Android 设备不支持电子邮件配置文件）|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
+|电子邮件|N/A（Android 设备不支持电子邮件配置文件）|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|
 |Azure AD 脱离|删除 Azure AD 记录。|删除 Azure AD 记录。|
 
 ### <a name="android-work-profile"></a>Android 工作配置文件
@@ -138,7 +138,7 @@ ms.locfileid: "72508563"
 |设置|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|
 |Wi-Fi 和 VPN 配置文件设置|删除。|删除。|不支持。|删除。|
 |证书配置文件设置|已删除并吊销证书。|已删除并吊销证书。|不支持。|已删除并吊销证书。|
-|Email|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。|不支持。|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。 删除由 Intune 预配的邮件帐户。|
+|电子邮件|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。|不支持。|删除通过 Intune 预配的电子邮件配置文件。 删除设备上缓存的电子邮件。|删除已启用 EFS 的电子邮件。 这包括适用于 Windows 的邮件应用中的电子邮件和附件。 删除由 Intune 预配的邮件帐户。|
 |Azure AD 脱离|不能。|不能。|删除 Azure AD 记录。|删除 Azure AD 记录。|
 
 > [!NOTE]
@@ -146,7 +146,7 @@ ms.locfileid: "72508563"
 
 ### <a name="retire"></a>停用
 
-1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 在“设备”窗格中，选择“所有设备”   。
 3. 选择要停用的设备的名称。
 4. 在显示设备名称的窗格中，选择“停用”  。 选择“是”以确认  。
@@ -157,12 +157,12 @@ ms.locfileid: "72508563"
 
 如果要从 Intune 门户中删除设备，可以从特定设备窗格中删除它们。 下次设备检入时，其上的任何公司数据都将被删除。
 
-1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择  “设备” >   “所有设备”>“选择要删除的设备”>“删除”  。
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>使用清理规则自动删除设备
 可配置 Intune 以自动删除看似非活动、过时或无响应的设备。 这些清理规则会持续监控设备清单，以便设备记录保持最新。 以这种方式删除的设备将从 Intune 管理中删除。
-1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备”   > “设备清理规则”   > “是”  。
 3. 在“删除这么多天尚未签入的设备”  框中，输入介于 30 和 270 的数字。
 4. 选择 **“保存”** 。
@@ -185,7 +185,7 @@ ms.locfileid: "72508563"
 
 如果想要通过 Intune 从管理完全删除 Apple DEP 设备，请按以下步骤进行操作：
 
-1. 登录到 [Azure 门户中的 Intune](https://aka.ms/intuneportal)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备” > “所有设备”，再依次选择相关设备和“停用”    。
 ![停用的屏幕截图](./media/devices-wipe/retire.png)
 3. 访问 [deploy.apple.com](http://deploy.apple.com)，并按序列号搜索设备。

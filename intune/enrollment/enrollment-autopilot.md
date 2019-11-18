@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e2f654d9e505afba00a1a9090febe4c06ca77ff
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445335"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709489"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -49,7 +49,7 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 
 可以通过导入具有 Windows Autopilot 设备信息的 CSV 文件来添加这些设备。
 
-1. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册”   > “Windows 注册”   > “设备”   > “导入”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “设备”   > “导入”  。
 
     ![Windows Autopilot 设备的屏幕截图](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -71,7 +71,7 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 
 ## <a name="create-an-autopilot-device-group"></a>创建 Autopilot 设备组
 
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal)内，选择“组” > “新建组”   。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“组”   > “新组”  。
 2. 在“组”边栏选项卡中  ：
     1. 对于“组类型”  ，选择“安全”  。
     2. 在“组名称”  和“组说明”  中，输入名称和说明。
@@ -88,7 +88,7 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 
 ## <a name="create-an-autopilot-deployment-profile"></a>创建 Autopilot 部署配置文件
 Autopilot 部署配置文件用于配置 Autopilot 设备。 每个租户最多可创建 350 个配置文件。
-1. 在 [Azure 门户中的“Microsoft Intune”](https://aka.ms/intuneportal)内，依次选择“设备注册”   > “Windows 注册”   > “部署配置文件”   > “创建配置文件”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “部署配置文件”   > “创建配置文件”  。
 2. 在“基本信息”页上，键入名称和可选说明    。
 
     ![“基本信息”页的屏幕截图](./media/enrollment-autopilot/create-profile-basics.png)
@@ -134,7 +134,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。 每个租户最多�
 ## <a name="edit-an-autopilot-deployment-profile"></a>编辑 Autopilot 部署配置文件
 在成功创建 Autopilot 部署配置文件后，可对该部署配置文件的某些部分进行编辑。   
 
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”  。
 2. 在“Windows 注册”下，选择“Windows Autopilot”部分中的“部署配置文件”    。
 3. 选择要编辑的配置文件。
 4. 单击左侧的“属性”以更改该部署配置文件的名称或说明  。 更改后请单击“保存”  。
@@ -155,7 +155,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。 每个租户最多�
 
 先决条件：配置了 Azure Active Directory 公司门户和 Windows 10 版本 1809 或更高版本。
 
-1. 在 [Azure 门户的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”   >   “Windows 注册” >    “设备”>“选择设备”>“分配用户”。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “设备”  > 选择设备 >“分配用户”  。
 
     ![分配用户的屏幕截图](./media/enrollment-autopilot/assign-user.png)
 

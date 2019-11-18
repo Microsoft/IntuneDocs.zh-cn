@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/31/2018
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: ericor
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84103c6264431773ab5928f1da22c37a80cc9036
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15af657ec63c664d91c370fa0f18ff8c4f140b47
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492709"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755222"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在公开预览版的 Intune 中配置 eSIM 手机网络配置文件
 
@@ -69,11 +70,10 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 
 移动运营商在以逗号分隔的文件 (csv) 中提供手机网络激活码。 如果有此文件，请使用以下步骤将其添加到 Intune：
 
-1. 登录到 [Azure 门户](https://portal.azure.com/)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
-3. 选择“设备配置” > “eSIM 手机网络配置文件” > “添加”    。
-4. 选择具有激活码的 CSV 文件。
-5. 选择“确定”，保存所做更改  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “eSIM 移动电话配置文件”   > “添加”  。
+3. 选择具有激活码的 CSV 文件。
+4. 选择“确定”，保存所做更改  。
 
 ### <a name="csv-file-requirements"></a>CSV 文件要求
 
@@ -111,8 +111,8 @@ eSIM 是一种嵌入式 SIM 芯片，可让你通过支持 eSIM 的设备（如 
 
 将配置文件分配给包含 eSIM 设备的 Azure AD 组。
 
-1. 在 [Azure 门户](https://portal.azure.com/)中，选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
-2. 选择“设备配置” > “eSIM 手机网络” > “配置文件”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “eSIM 移动电话配置文件”  。
 3. 在配置文件列表中，选择要分配的 eSIM 手机网络订阅池，然后选择“分配”  。
 4. 选择“包括”组或“排除”组，然后选择组   。
 
@@ -129,15 +129,15 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 
 分配配置文件后，可以监视订阅池的部署状态。
 
-1. 登录到 [Azure 门户](https://portal.azure.com/)。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
-3. 选择“设备配置” > “eSIM 手机网络配置文件”   。 随即会列出所有现有的 eSIM 手机网络订阅池。
-4. 选择订阅，然后查看“部署状态”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “eSIM 移动电话配置文件”  。 随即会列出所有现有的 eSIM 手机网络订阅池。
+3. 选择订阅，然后查看“部署状态”  。
 
 ### <a name="check-the-profile-status"></a>检查配置文件状态
+
 创建设备配置文件后，Intune 会提供图形图表。 这些图表显示配置文件的状态，例如成功分配给设备，或配置文件是否显示冲突。
 
-1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅   。
+1. 选择“设备”   > “eSIM 手机网络配置文件”  > 选择现有订阅。
 2. 在“概述”选项卡中，顶部图形图表显示分配给特定 eSIM 手机网络订阅池部署的设备数  。
 
     它还显示分配了相同设备配置文件的其他平台的设备数量。
@@ -153,7 +153,7 @@ eSIM 激活码为一次性使用。 Intune 在设备上安装激活码后，eSIM
 
 可以监视和查看可在“设备状态”中查看的设备详细列表。**
 
-1. 选择“设备配置” > “eSIM 手机网络配置文件”> 选择现有订阅   。
+1. 选择“设备”   > “eSIM 手机网络配置文件”  > 选择现有订阅。
 2. 选择“设备状态”  。 Intune 会显示有关设备的其他详细信息：
 
     - **设备名**：目标设备的名称

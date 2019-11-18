@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c438ebeaae8a7259efb74089f51a6ca92003cfea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 817f46558932c074abc37b45d2885496419a0db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509475"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712429"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 定位丢失或被盗的 iOS 设备
 
@@ -41,7 +41,7 @@ ms.locfileid: "72509475"
 
 ## <a name="locate-a-lost-or-stolen-device"></a>定位丢失或被盗的设备
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 依次选择“设备”和“所有设备”   。
 4. 从所管理设备的列表中，选择一个 iOS 设备，然后选择“...更多”  。 然后选择“定位设备”远程操作  。
 5. 定位设备后，其位置会在“定位设备”中显示  。

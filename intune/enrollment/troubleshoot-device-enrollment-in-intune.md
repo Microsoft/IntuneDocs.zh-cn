@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509268"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713496"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -64,9 +64,9 @@ ms.locfileid: "72509268"
 
 通过下述步骤，检查确保向用户分配的设备数未超过上限：
 
-1. 在 Intune 中，选择“设备注册” > “注册限制” > “设备限制”    。 记下“设备限制”列中的值  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “注册限制”   > “设备限制性限制”  。 记下“设备限制”列中的值  。
 
-2. 在 Intune 中，选择“用户” > “所有用户”，再依次选择相关用户和“设备”    。 记下设备的数量。
+2. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“用户”   > “所有用户”  > 选择用户 >“设备”  。 记下设备的数量。
 
 3. 如果用户注册的设备数已达到其设备限制，则在执行下述操作前无法再注册设备：
     - [删除现有设备](../remote-actions/devices-wipe.md)，或者

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff1dc2565ef52f81619abe8f14e78c58da0fce7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 294f06b078b06cfba9376ba6db0eb42cb884e141
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508615"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712314"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>使用“全新启动”重置使用 Intune 的 Windows 10 设备
 
@@ -30,7 +30,7 @@ ms.locfileid: "72508615"
 
 “全新启动”设备操作将删除在运行 Windows 10 版本 1703 或更高版本的电脑上安装的所有应用  。 “全新启动”有助于删除新电脑通常安装的预安装 (OEM) 应用。 
 
-1. 登录到 [Azure 门户](https://portal.azure.com)，然后转到 >“Microsoft Intune”   > “设备”   > “所有设备”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”   > “所有设备”  。
 2. 从管理的设备列表中，选择一个 Windows 10 桌面设备。
 3. 单击“全新启动”  。 
 4. 选择“在此设备上保留用户数据”  以：

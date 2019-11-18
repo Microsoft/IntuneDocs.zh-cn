@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057522"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712232"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 启用 iOS 设备上的丢失模式
 
@@ -41,7 +41,7 @@ ms.locfileid: "73057522"
 
 ## <a name="enable-lost-mode"></a>启用丢失模式
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 依次选择“设备”和“所有设备”   。
 4. 从管理设备列表中，选择一台 iOS 设备，然后选择“丢失模式”（仅限被监督的设备）  。
 5. 在“丢失模式”下，选择“启用”   。

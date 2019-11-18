@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502599"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713291"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的 Intune 条件访问
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 [Intune 应用保护策略](../apps/app-protection-policy.md)可帮助保护在 Intune 中已注册设备上的公司数据。 另外，应用保护策略还可用在没有注册 Intune 进行管理的员工自有设备上。 在这种情况下，即使你的公司不管理该设备，仍需要确保公司数据和资源受保护。
 
@@ -39,6 +37,7 @@ ms.locfileid: "72502599"
 仅允许 Microsoft Outlook 应用访问 Exchange Online 时，可阻止 iOS 和 Android 上的内置邮件应用。 此外，你还可以阻止未执行 Intune 应用保护策略的应用访问 SharePoint Online。
 
 ## <a name="prerequisites"></a>必备条件
+
 在创建基于应用的条件访问策略之前，必须具有：
 
 - 企业移动性 + 安全性 (EMS) 或 Azure Active Directory (AD) 高级订阅  
@@ -57,7 +56,7 @@ ms.locfileid: "72502599"
 在此示例中，管理员将应用保护策略应用到 Outlook 应用，然后应用条件访问规则，将 Outlook 应用添加到可在访问公司电子邮件时使用的已批准的应用列表。
 
 > [!NOTE]
-> 以下流程图结构可用于其他受管理的应用。
+> 以下流程图可用于其他托管的应用。
 
 ![流程图中所示的基于应用的条件访问过程](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

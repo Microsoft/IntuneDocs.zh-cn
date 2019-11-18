@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a813d3bb574ae940b0003ac451b6e76638a0dd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 02d0fb91df07d8bba233a6f814ffcf36d408e95d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508662"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712367"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受监督的 iOS 设备上绕过激活锁
 
@@ -74,7 +74,7 @@ Intune 可以请求运行 iOS 8.0 和更高版本的监管设备的激活锁定�
 
 Intune “绕过激活锁定”远程设备操作无需用户的 Apple ID 和密码即可去除 iOS 设备中的激活锁定  。 绕过激活锁后，启动“查找 iPhone”应用时设备将再次打开激活锁。 请仅在拥有对设备的物理访问权限的情况下绕过激活锁。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 在“Intune”边栏选项卡上，选择“设备”   。
 4. 在“设备”边栏选项卡上，选择“所有设备”   。
 5. 在管理的设备列表中，选择“绕过激活锁定”设备远程操作  。

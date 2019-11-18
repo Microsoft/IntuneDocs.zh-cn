@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030d455c366a9c447444c247e9690e5d31613982
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 772cdbe203b0489a9b2312a1cc10ea1b3182b35d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508608"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713162"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>从共享 iOS 设备中删除用户
 
@@ -41,12 +41,11 @@ ms.locfileid: "72508608"
 
 ## <a name="remove-a-user"></a>删除用户
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“设备”   。
-4. 在“设备”窗格中，选择“所有设备”   。
-5. 在所管理设备的列表中，选择一个 iOS 设备。
-6. 在设备的窗格中，选择“用户”  。
-7. 在列表中，右键单击想要删除的用户，然后选择“删除用户”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备” > “所有设备”   。
+3. 在所管理设备的列表中，选择一个 iOS 设备。
+4. 在设备的窗格中，选择“用户”  。
+5. 在列表中，右键单击想要删除的用户，然后选择“删除用户”  。
 
 ## <a name="next-steps"></a>后续步骤
 

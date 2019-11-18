@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143172"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709331"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
@@ -48,7 +48,7 @@ ms.locfileid: "73143172"
  可以配置以下设置，以自定义注册状态页的行为：
 
 <table>
-<th align="left">Setting<th align="left">是<th align="left">否
+<th align="left">设置<th align="left">是<th align="left">否
 <tr><td>显示应用和配置文件安装进度<td>显示注册状态页。<td>不显示注册状态页。
 <tr><td>在安装所有应用和配置文件之前阻止设备使用<td>可以使用此表中的设置自定义注册状态页的行为，以便用户可以解决潜在的安装问题。
 <td>显示注册状态页，其中不包含可解决安装故障的其他选项。
@@ -64,14 +64,14 @@ ms.locfileid: "73143172"
 
 若要启用注册状态页，请执行以下步骤。
  
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “注册状态页”。   
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”  。
 2. 在“注册状态页”边栏选项卡中，选择“默认” > “设置”    。
 3. 有关“显示应用和配置文件安装进度”，请选择“是”   。
 4. 选择要打开的其他设置，然后选择“保存”  。
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>创建注册状态页配置文件并将其分配到组
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “注册状态页” > “创建配置文件”。    
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”   > “创建配置文件”  。
 2. 提供名称和说明   。
 3. 选择“创建”  。
 4. 在“注册状态页”列表中选择新配置文件  。
@@ -82,7 +82,7 @@ ms.locfileid: "73143172"
 
 一个用户可以属于许多个组，并可以拥有许多注册状态页配置文件。 要处理此类冲突，可以为每个配置文件设置优先级。 注册时，如果用户具有多个注册状态页配置文件，则仅向正在注册的设备应用具有最高优先级的配置文件。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“设备注册” > “Windows 注册” > “注册状态页”。   
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”  。
 2. 将鼠标悬停在列表中的配置文件上。
 3. 使用三个垂直点，将该配置文件拖到列表中的所需位置。
 
@@ -90,7 +90,7 @@ ms.locfileid: "73143172"
 
 可以指定在用户可以访问桌面之前需要安装哪些应用。
 
-1. 在 Intune 中，选择“设备注册” > “Windows 注册” > “注册状态页”。   
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”  。
 2. 选择配置文件 >“设置”  。
 3. 有关“显示应用和配置文件安装进度”，请选择“是”   。
 4. 有关“在安装所有应用和配置文件之前阻止设备使用”，请选择“是”   。

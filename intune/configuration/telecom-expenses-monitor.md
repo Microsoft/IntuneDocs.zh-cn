@@ -6,24 +6,24 @@ keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
-ms.reviewer: sumitp
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506638"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755061"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
 
@@ -54,7 +54,7 @@ ms.locfileid: "72506638"
 
 ## <a name="prerequisites"></a>必备条件
 
-- 订阅 Microsoft Intune 和拥有 [Azure 门户](https://portal.azure.com)的访问权限
+- 订阅 Microsoft Intune，以及访问 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)
 - [Datalert](http://www.datalert.biz/) 订阅（打开 Datalert 网站）
 
 ## <a name="telecom-expense-management-providers"></a>电信费用管理提供商
@@ -109,9 +109,9 @@ Intune 与下列电信费用管理提供商集成：
 
 完成步骤 1 后，会自动启用连接。 在 Intune 中，连接状态显示“可用”。  请使用以下步骤确认状态为可用：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 选择“设备配置” > “电信费用管理”。   查找“可用”  连接状态：
+2. 选择“租户管理”   > “连接器和令牌”   > “电信费用管理”  。 查找“可用”  连接状态：
 
    ![显示 Datalert 连接状态为“活动”的 Intune 页面](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -138,7 +138,7 @@ Intune 与下列电信费用管理提供商集成：
 
 以下步骤将添加 Datalert 应用。 将以 iOS 为例。 有关这些步骤的详细信息，请参阅[添加应用](../apps/apps-add.md)和[使用作用域标记](../fundamentals/scope-tags.md)。
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“客户端应用” > “应用” > “添加”。    
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“应用”   > “所有应用”   > “添加”  。
 
 2. 选择“应用类型”。  例如，对于 iOS，则选择“Store 应用 - iOS”。 
 
@@ -156,7 +156,7 @@ Intune 与下列电信费用管理提供商集成：
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>将 Datalert 应用分配给公司设备组
 
-1. 在“客户端应用 - 应用”中，选择在上一步中添加的 Datalert 应用。 
+1. 在“应用”   > “所有应用”  中，选择在上一步中添加的 Datalert 应用。
 
 2. 选择“分配” > “添加组”   。 选择如何分配此应用。 有关这些设置的详细信息，请参阅[在 Intune 中将应用分配给组](../apps/apps-deploy.md)。
 
@@ -183,7 +183,7 @@ Datalert 服务现已可用。 它开始监视数据流量，并在超过所配�
 
 ## <a name="turn-off-the-datalert-service"></a>关闭 Datalert 服务
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“设备配置” > “电信费用管理”。   
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“租户管理”   > “连接器和令牌”   > “电信费用管理”  。
 2. 将“启用电信费用管理，并阻止设备上已超出配置的使用率配额的手机网络数据或漫游数据”设置为“禁用”。  
 3. 单击“保存”以保存更改  。
 

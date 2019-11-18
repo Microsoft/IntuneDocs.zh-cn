@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508583"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713132"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -57,10 +57,9 @@ ms.locfileid: "72508583"
 ## <a name="reset-a-passcode"></a>重置密码
 
 
-1. 使用以下任一角色登录 [Azure 门户](https://portal.azure.com)：Azure Active Directory 全局管理员、Azure Active Directory Intune 服务管理员、支持人员或角色管理员。
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
-3. 依次选择“设备”和“所有设备”   。
-4. 从你管理的设备列表中，选择一个设备，然后选择“...更多”  。 然后选择“删除密码”设备远程操作  。
+1. 使用以下任何角色登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)：Azure Active Directory 全局管理员、Azure Active Directory Intune 服务管理员、支持人员或角色管理员。
+2. 依次选择“设备”和“所有设备”   。
+3. 从你管理的设备列表中，选择一个设备，然后选择“...更多”  。 然后选择“删除密码”设备远程操作  。
 
 ## <a name="reset-android-work-profile-passcodes"></a>重置 Android 工作配置文件密码
 

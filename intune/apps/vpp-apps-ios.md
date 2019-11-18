@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785535"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984109"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过 Apple Volume Purchase Program 购买的 iOS 和 macOS 应用
 
@@ -72,7 +72,6 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 * 每个令牌的有效期为一年。
 * 默认情况下，Intune 与 Apple VPP 服务一天同步两次。 可以随时开始手动同步。
 * 在开始配合使用 Apple VPP 和 Intune 之前，先删除使用其他移动设备管理 (MDM) 供应商创建的任何现有 VPP 用户帐户。 作为安全措施，Intune 不会将那些用户帐户同步到 Intune 中。 Intune 将仅同步 Apple VPP 服务中由 Intune 创建的数据。
-* Intune 支持最多添加 256 个 VPP 令牌。
 * Apple 的设备注册配置文件 (DEP) 计划可将移动设备管理 (MDM) 注册自动化。 利用 DEP，可以在不触及企业设备的情况下对其进行配置。 可以使用用于 Apple VPP 的相同计划代理帐户在 DEP 计划中进行注册。 [Apple 部署计划](https://deploy.apple.com)网站下列出的计划具有唯一的 Apple 部署计划 ID，并且此 ID 可用于登录 Apple 服务，如 iTunes 商店。
 * 使用用户授权模型向用户或设备（具有用户关联）分配 VPP 应用时，每个 Intune 用户在其设备上接受 Apple 条款与条件时都需与一个唯一的 Apple ID 或电子邮件地址相关联。
 * 确保为新的 Intune 用户设置设备时，使用该用户的唯一 Apple ID 或电子邮件地址来配置设备。 Apple ID 或电子邮件地址与 Intune 用户配成唯一对，并且最多可用于 5 台设备。
@@ -89,6 +88,8 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 5. 在“创建 VPP 令牌”窗格中，指定下列信息  ：
     - **VPP 令牌文件** - 如果尚未注册，则请注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 注册后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
     - **Apple ID** - 输入与批量购买计划关联的帐户的 Apple ID。
+    - **控制另一个 MDM 的令牌** - 将此选项设置为“是”  以允许将令牌从另一个 MDM 重新分配给 Intune。
+    - **令牌名称** - 用于设置令牌名称的管理字段。    
     - **国家/地区** - 选择 VPP 国家/地区应用商店。  Intune 将同步指定 VPP 国家/地区应用商店中所有区域设置对应的 VPP 应用。
         > [!WARNING]  
         > 对于使用此令牌创建的应用，更改国家/地区将更新应用元数据，并在下次与 Apple 服务同步时存储 URL。 如果应用未在新的国家/地区应用商店中提供，则不会更新该应用。
@@ -98,6 +99,9 @@ Microsoft Intune 可帮助你管理通过此计划购买的多个应用副本，
 
         > [!NOTE]
         > 自动应用更新适用于针对 iOS 11.0 及更高版本或 macOS 10.12 及更高版本的设备和用户许可应用。
+
+    - **我授权 Microsoft 向 Apple 发送用户和设备信息。** - 必须选择“我同意”  才能继续。 若要查看 Microisoft 向 Apple 发送的数据，请参阅 [Intune 向 Apple 发送的数据](~/protect/data-intune-sends-to-apple.md)。
+
 6. 完成后，选择“创建”  。
 
 该令牌显示在“令牌列表”窗格中。

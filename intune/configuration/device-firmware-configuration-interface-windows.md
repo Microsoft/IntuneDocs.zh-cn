@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432534"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755349"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>在 Microsoft Intune 中使用 Windows 设备上的设备固件配置接口配置文件（公共预览版）
 
@@ -77,8 +77,8 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 
 此配置文件包含所配置的 DFCI 设置。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入配置文件的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，“Windows：  在 Windows 设备上配置 DFCI 设置”是个不错的配置文件名称。
@@ -127,9 +127,11 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 
 创建配置文件之后，[即可进行分配](../configuration/device-profile-assign.md)。 确保将配置文件分配到包含 DFCI 设备的 Azure AD 安全组。
 
-设备下次同步或重启时，将应用 DFCI 配置文件设置。 策略应用之后，设备重启。
+设备运行 Windows Autopilot 时，DFCI 可能会在“注册状态页”期间强制重启。 第一次重新启动会将 UEFI 注册到 Intune。 
 
-设备运行 Windows 设备设置时，DFCI 可能会在“注册状态页”期间强制重启。 完成设置之后，可以通过重启设备来确认 DFCI 设置是否生效。 然后，按设备制造商的说明打开 UEFI 菜单。
+如果要确认设备已注册，则可以再次重新启动该设备，但这不是必需的。 按设备制造商的说明打开 UEFI 菜单，确认 UEFI 现在已托管。
+
+设备下一次与 Intune 同步时，Windows 将接收 DFCI 设置。 重新启动设备。 需要第三次重新启动，UEFI 才能接收来自 Windows 的 DFCI 设置。
 
 ## <a name="update-existing-dfci-settings"></a>更新现有 DFCI 设置
 
@@ -156,7 +158,7 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 
 准备好停用设备并解除管理之后，在退出状态下将 DFCI 配置文件更新为所需的 UEFI (BIOS) 设置。 通常最好启用所有设置。 例如：
 
-1. 打开 DFCI 配置文件（“设备配置” > “配置文件”）   。
+1. 打开 DFCI 配置文件（“设备”   > “配置文件”  ）。
 2. 将“允许本地用户更改 UEFI (BIOS) 设置”更改为“仅未配置的设置”   。
 3. 将所有其他设置设置为“未配置”  。
 4. 保存设置。

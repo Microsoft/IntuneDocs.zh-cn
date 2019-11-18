@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86dc2e26e3c4091785cb6462a84e75b770634881
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508553"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713449"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>将设备与 Intune 同步以获取最新的策略和操作
 
@@ -38,8 +38,8 @@ ms.locfileid: "72508553"
 
 ## <a name="sync-a-device"></a>同步设备
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 
-3. 在 Intune 中，选择“设备” > “所有设备”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
+3. 选择“设备” > “所有设备”   。
 4. 在所管理的设备列表中，选择一个设备，打开其“概述”窗格，然后选择“同步”   。
 5. 选择“是”以确认  。
 

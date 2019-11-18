@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 7d94a2c7e47b3cfcc9f4592faf0a4c2a09a24ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 908319c588fe2a1bf55a376d3f02a03db780a3ad
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495242"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755403"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune 中的传递优化设置
 
@@ -32,27 +32,25 @@ ms.locfileid: "72495242"
 
 要了解 Windows 10 上的传递优化，请参阅 Windows 文档中的[传递优化更新](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。  
 
-
 > [!NOTE]
-> 软件更新 – Windows 10 更新通道  替换为“传递优化”  设置。 可以将现有更新通道更改为使用“传递优化”  设置。 [将现有更新通道迁移为传递优化](#move-existing-update-rings-to-delivery-optimization)（见本文） 
+> 软件更新 – Windows 10 更新通道  替换为“传递优化”  设置。 可以将现有更新通道更改为使用“传递优化”  设置。 [将现有更新通道迁移为传递优化](#move-existing-update-rings-to-delivery-optimization)（见本文）
+
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 选择“设备配置”   > “配置文件”   > “创建配置文件”  。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。
     - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
-    - **平台**：选择平台：  
-
-        - **Windows 10 及更高版本**
-
+    - **平台**：选择“Windows 10 及更高版本”  。
     - **配置文件类型**：选择“传递优化”  。
-    - **设置**：配置用于定义希望如何下载更新和应用的设置。 要了解可用设置，请参阅 [Intune 的传递优化设置](../delivery-optimization-settings.md)。
 
-4. 完成后，选择“确定” > “创建”，保存所做更改   。
+4. 选择“设置”   > “配置”  然后定义希望如何下载更新和应用。 要了解可用设置，请参阅 [Intune 的传递优化设置](../delivery-optimization-settings.md)。
+
+5. 完成后，选择“确定” > “创建”，保存所做更改   。
 
 配置文件随即创建并显示在列表中。 接下来，[分配配置文件](device-profile-assign.md)，然后[监视其状态](device-profile-monitor.md)。
 
@@ -62,7 +60,7 @@ ms.locfileid: "72495242"
 
 1. 创建传递优化配置文件：
 
-    1. 在 Intune 中，选择“设备配置”   > “配置文件”   > “创建配置文件”  。
+    1. 在 Microsoft 终结点管理器管理中心中，选择“设备”   > “配置文件”   > “创建配置文件”  。
     2. 输入以下属性：
 
         - **名称**：输入新配置文件的描述性名称。
@@ -78,10 +76,11 @@ ms.locfileid: "72495242"
             - **无对等互连的简单下载模式**
             - **Bypass 模式**
     3. 配置可能想要管理的任何其他设置。
-1. 将此新配置文件分配给与现有软件更新通道相同的设备和用户。 [分配配置文件](device-profile-assign.md)列出了具体步骤。
+
+2. 将此新配置文件分配给与现有软件更新通道相同的设备和用户。 [分配配置文件](device-profile-assign.md)列出了具体步骤。
 
 3. 取消配置现有的软件通道：
-    1. 在 Intune 中，转到“软件更新”  > Windows 10 更新通道。
+    1. 在 Microsoft 终结点管理器管理中心，转到“软件更新”  >“Windows 10 更新圈”。
     2. 在列表中，选择更新通道。
     3. 在设置中，将“传递优化下载模式”  设置为“未配置”  。
     4. 依次单击“确定”   > “保存”  更改。

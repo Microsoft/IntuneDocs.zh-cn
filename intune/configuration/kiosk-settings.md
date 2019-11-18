@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492355"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755165"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>使用 Intune 将 Windows 10 和 Windows Holographic for Business 设备作为专用展台运行的设置
 
@@ -39,8 +39,8 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置”   > “配置文件”   > “创建配置文件”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
    - **名称**：输入新配置文件的描述性名称。
@@ -60,7 +60,7 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
       - [Windows 10 展台设置](kiosk-settings-windows.md)
       - [Windows Holographic for Business 展台设置](kiosk-settings-holographic.md)
 
-5. 完成后，选择“确定”   > “创建”  以保存所做的更改。 
+5. 完成后，选择“确定”   > “创建”  以保存所做的更改。
 
 此时，配置文件创建完成，并出现在配置文件列表中。 下一步是[分配](device-profile-assign.md)配置文件。
 
@@ -69,7 +69,8 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 [分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
 可以为运行下列平台的设备创建展台配置文件：
-- [Outlook Web Access (OWA)](device-restrictions-android.md#kiosk)
+- [Android
+](device-restrictions-android.md#kiosk)
 - [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)
 - [Windows 10 及更高版本](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)

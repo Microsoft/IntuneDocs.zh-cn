@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882495"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -53,12 +53,20 @@ ms.locfileid: "73635340"
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>2019 年 11 月 4 日当周
+
+### <a name="device-security"></a>设备安全性
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Microsoft Azure 政府支持安全基线<!-- 4062552 -->
+
+Microsoft Azure 政府  上托管的 Intune 实例现在可以使用[安全基线](../protect/security-baselines.md)来帮助保护用户和设备的安全。
+
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日当周
 
 ### <a name="app-management"></a>应用管理
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>在适用于 Android 的公司门户应用中改进了清单设计<!-- 5550857 -->  
-使用轻型设计和新图标更新了适用于 Android 的公司门户应用中的安装清单。 所做的更改与对适用于 iOS 的公司门户应用所做的最新更新一致。 我们正在将应用更新推出给所有客户，希望在下周结束前完成。 有关更改的并行比较，请参阅[应用 UI 中的新增功能](whats-new-app-ui.md)。 若要查看更新的注册步骤，请参阅[使用 Android 工作配置文件注册](/intune-user-help/enroll-device-android-work-profile)和[注册 Android 设备](/intune-user-help/enroll-device-android-company-portal)。  
+使用轻型设计和新图标更新了适用于 Android 的公司门户应用中的安装清单。 所做的更改与对适用于 iOS 的公司门户应用所做的最新更新一致。 有关更改的并行比较，请参阅[应用 UI 中的新增功能](whats-new-app-ui.md)。 若要查看更新的注册步骤，请参阅[使用 Android 工作配置文件注册](/intune-user-help/enroll-device-android-work-profile)和[注册 Android 设备](/intune-user-help/enroll-device-android-company-portal)。  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Windows 10 S 模式设备上的 Win32 应用<!-- 3747604 --> 
 可以在 Windows 10 S 模式托管设备上安装和运行 Win32 应用。 为此，可以使用 Windows Defender 应用程序控制 (WDAC) PowerShell 工具为 S 模式创建一个或多个补充策略。 使用设备保护签名服务对补充策略进行签名，然后通过 Intune 上传和分发策略。 在 Intune 中，可以通过选择“客户端应用”   > “Windows 10 S 补充策略”  来查找此功能。 有关详细信息，请参阅[在 S 模式设备上启用 Win32 应用](~/apps/apps-win32-s-mode.md)。

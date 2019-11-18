@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 445737a1b0a72e380844af6225cdb735cd3ec02c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509351"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713099"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 在 Windows 设备上重置密码
 
@@ -64,11 +64,10 @@ ms.locfileid: "72509351"
 
 ## <a name="reset-the-passcode"></a>重置密码
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。 
-2. 选择“所有服务”，筛选“Intune”，然后选择“Microsoft Intune”    。
-3. 依次选择“设备”和“所有设备”   。
-4. 选择要重置密码的设备。 在设备属性中，选择“新建密码”  。
-5. 单击“是”  以确认。 密码已生成，并将在接下来的七天内显示在门户中。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
+2. 依次选择“设备”和“所有设备”   。
+3. 选择要重置密码的设备。 在设备属性中，选择“新建密码”  。
+4. 单击“是”  以确认。 密码已生成，并将在接下来的七天内显示在门户中。
 
 ## <a name="next-step"></a>下一步
 

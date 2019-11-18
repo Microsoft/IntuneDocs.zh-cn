@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681464"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755312"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -39,22 +39,23 @@ ms.locfileid: "72681464"
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 选择“设备配置”  。 有下列选项：
+2. 选择“设备”   > “配置文件”  。 有下列选项：
 
     - **概述**：列出配置文件的状态，并提供有关分配给用户和设备的配置文件的其他详细信息。
     - **管理**：创建设备配置文件，并上传自定义 [PowerShell 脚本](../apps/intune-management-extension.md)以在配置文件中运行，并使用 [eSIM](esim-device-configuration.md) 向设备添加数据计划。
     - **监视**：检查配置文件的状态（成功或失败），并查看配置文件中的日志。
     - **设置**：在配置文件中添加 SCEP 或 PFX 证书颁发机构，或启用[电信费用管理](telecom-expenses-monitor.md)。
 
-3. 依次选择“配置文件” > “创建配置文件”   。 输入以下属性：
+3. 选择“创建配置文件”  。 输入以下属性：
 
    - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 WP 电子邮件配置文件”  。
    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
    - **平台**：选择设备平台。 选项包括：  
 
-       - **Outlook Web Access (OWA)**
+       - **Android
+**
        - **Android 企业**
        - **iOS/iPadOS**
        - **macOS**

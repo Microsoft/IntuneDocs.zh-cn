@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26d0f2cf08786a36f51982901094969d4d014755
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bce5a89ecc49952f5c21536c429e9cd3309b13c3
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509384"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712268"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>使用 Intune 远程锁定设备
 
@@ -49,7 +49,7 @@ ms.locfileid: "72509384"
 
 ## <a name="remote-lock-a-device"></a>远程锁定设备
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 选择“设备” > “所有设备”   。
 4. 在设备列表中选择一个设备，然后选择“远程锁定”操作  。
 

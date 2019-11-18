@@ -1,7 +1,7 @@
 ---
 title: 应用的数据传输策略例外情况
 titleSuffix: Microsoft Intune
-description: 为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况。
+description: 为 Intune 应用保护策略（应用）数据传输策略创建例外情况。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813348"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984070"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>如何为 Intune 应用保护策略（应用）数据传输策略创建例外情况
 
-管理员可以为 Intune 移动应用程序管理 (MAM) 数据传输策略创建例外情况。 例外情况允许专门选择哪些非托管应用可与托管应用来回传输数据。 IT 必须信任例外情况列表中所包含的非托管应用。 
+作为管理员，你可以为 Intune 应用保护策略（应用）数据传输策略创建例外情况。 例外情况允许专门选择哪些非托管应用可与托管应用来回传输数据。 IT 必须信任例外情况列表中所包含的非托管应用。 
 
 >[!WARNING] 
 > 由你负责更改数据传输例外情况策略。 添加到此策略可允许非托管应用（未由 Intune 托管的应用）访问受托管应用保护的数据。 这种对受保护数据的访问可能会导致数据安全泄漏。 只为组织必须使用的应用添加数据传输例外情况，但不支持 Intune APP（应用程序保护策略）。 此外，仅为你认为不存在数据泄漏风险的应用添加例外情况。
@@ -65,6 +65,8 @@ ms.locfileid: "72813348"
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Android 证书安装程序  示例：若要将本机证书安装程序  应用设为例外，以便适用于 Android 的 Outlook 可以将 S/MIME 证书（以电子邮件附件形式传递）安装到 Android 密钥存储，必须为以下字符串添加数据传输例外： <code>com.android.certinstaller</code>。 有关详细信息，请参阅[适用于 iOS 和 Android 的敏感度标签和保护](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)。
 
 ## <a name="next-steps"></a>后续步骤
 

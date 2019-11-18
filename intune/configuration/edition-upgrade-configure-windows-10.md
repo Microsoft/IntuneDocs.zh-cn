@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5519429bae69fe277c72b12a2801a1875295824
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4cce3fafa1a8a074ea70692f855be1e032f0462f
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493787"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755243"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>使用 Microsoft Intune 在设备上升级 Windows 10 版本或切出 S 模式
 
@@ -96,16 +96,13 @@ ms.locfileid: "72493787"
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置”   > “配置文件”   > “创建配置文件”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。 例如，输入 `Windows 10 edition upgrade profile` 或 `Windows 10 switch off S mode` 等名称。
     - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
-    - **平台**：选择平台：  
-
-        - **Windows 10 及更高版本**
-
+    - **平台**：选择“Windows 10 及更高版本”  。
     - **配置文件类型**：选择“版本升级”  。
     - **设置**：输入要配置的设置。 有关所有设置及其用途的列表，请参阅：
 

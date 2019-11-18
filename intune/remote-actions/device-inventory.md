@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509493"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713194"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -33,7 +33,7 @@ ms.locfileid: "72509493"
 
 ## <a name="view-the-device-details"></a>查看设备详细信息
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 选择“设备” > “所有设备”，然后选择某个列出的设备以打开其详细信息   ：
 
    - “概述”显示设备名称，并列出设备的某些关键属性，例如该设备是否是自带设备办公 (BYOD) 设备和设备的签入时间等  。 可以在设备上执行以下操作：

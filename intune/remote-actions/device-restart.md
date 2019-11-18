@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42908f09dd47a22f1c545b60a97ca5e6b7fa068f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18cf8e3aec0c7ed7d8869c0f5b13b6e39df23d77
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508637"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713425"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 远程重启设备
 
@@ -44,7 +44,7 @@ ms.locfileid: "72508637"
 
 ## <a name="restart-a-device"></a>重启设备
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 选择“设备” > “所有设备”   。
 4. 在所管理的设备列表中，选择一个设备，选择“更多”，然后选择“重新启动”设备远程操作   。
 
