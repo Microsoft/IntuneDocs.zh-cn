@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54d7ccabf958c3b8532f1a115724559607783a57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 272a7303e7d529a4867334cbe05e6df31e6c5683
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495219"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755359"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中添加 iOS 或 macOS 设备功能设置
 
@@ -200,8 +200,8 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 ## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好是“macOS：配置登录屏幕”  。

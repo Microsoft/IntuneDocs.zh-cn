@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584540"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712214"
 ---
 # <a name="rename-a-device-in-intune"></a>在 Intune 中重命名设备
 
@@ -36,7 +36,7 @@ ms.locfileid: "72584540"
 
 ## <a name="rename-a-device"></a>重命名设备
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 选择“设备”   > “所有设备”  > 选择设备 >“更多”   >   “重命名设备”。
 4. 在“重命名设备”  边栏选项卡的文本框中键入新名称。 可以使用字母、数字及连字符。 名称必须至少包含一个字母或连字符。
 5. 如果要在重命名设备后重新启动该设备，请选择“重命名后重新启动”旁边的“是”   。

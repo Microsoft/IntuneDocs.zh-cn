@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635478"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801665"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>使用 Intune 配置适用于 Android 设备的 Google Chrome 
 
@@ -63,7 +63,7 @@ ms.locfileid: "73635478"
 
     下面是通用设置的示例：
     - **阻止访问 URL 列表**：`["*"]`
-    - **允许访问 URL 列表**：`["baidu.com", "yahoo.com", "chrome://*"]`
+    - **允许访问 URL 列表**：`["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **托管的书签**：`[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **隐身模式可用性**：`Incognito mode disabled`
 
@@ -71,7 +71,7 @@ ms.locfileid: "73635478"
 
     ![通用设置](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    上述设置将创建书签，并允许访问除 `baidu.com`、`yahoo.com` 和 `chrome://` 之外的所有网站。
+    上述设置将创建书签，并阻止访问除 `baidu.com``yahoo.com``chromium.org` 和 `chrome://` 之外的所有 URL。
 
 5. 单击“确定”和“添加”，将配置策略添加到 Intune。  
 6. 将此配置策略分配给用户组。 有关详细信息，请参阅[使用 Microsoft Intune 将应用分配到组](~/apps/apps-deploy.md)。 

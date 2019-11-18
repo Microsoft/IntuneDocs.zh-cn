@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492862"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755192"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>使用 Intune 向设备添加电子邮件设置
 
@@ -40,8 +40,8 @@ Microsoft Intune 包括各种电子邮件设置，可将这些设置部署到组
 
 ## <a name="create-a-device-profile"></a>创建设备配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “配置文件” > “创建配置文件”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，“所有 Windows 设备的电子邮件设置”  就是较好的策略名称。
@@ -72,7 +72,7 @@ Microsoft Intune 包括各种电子邮件设置，可将这些设置部署到组
 
 电子邮件配置文件分配给设备组，而不是用户组。 可以通过不同的方式从设备删除电子邮件配置文件，即使设备上只有一个电子邮件配置文件：
 
-- **选项 1**：打开电子邮件配置文件（“设备配置”   > “配置文件”  ），并选择“分配”  。 “包含”选项卡将显示已分配配置文件的组  。 右键单击“组”，然后单击“删除”  。 务必保存你的更改  。
+- **选项 1**：打开电子邮件配置文件（“设备”   > “配置文件”  > 选择你的配置文件），然后选择“分配”  。 “包含”选项卡将显示已分配配置文件的组  。 右键单击“组”，然后单击“删除”  。 务必保存你的更改  。
 
 - **选项 2**：[擦除或停用设备](../remote-actions/devices-wipe.md)。 这些操作可用于有选择地或完全删除数据和设置。
 
@@ -104,4 +104,4 @@ Microsoft Intune 包括各种电子邮件设置，可将这些设置部署到组
 
 ## <a name="next-steps"></a>后续步骤
 
-配置文件已创建，但它尚未起到任何作用。 下一步是[将配置文件分配到一些设备](../device-profile-assign.md)。
+配置文件已创建，但它尚未起到任何作用。 下一步需要[分配配置文件](../device-profile-assign.md)。
