@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72787877"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801711"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
@@ -142,13 +142,14 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
 > [!IMPORTANT]  
 > Microsoft Intune 证书连接器不能安装在颁发的证书颁发机构 (CA) 上，而必须安装在单独的 Windows 服务器上。  
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “认证连接器” > “添加”    。
-3. 下载连接器文件并将其保存到可从服务器上进行访问的位置，将在该服务器上安装连接器。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-    ![Microsoft Intune 证书连接器下载](./media/certficates-pfx-configure/download-ndes-connector.png)
+2. 选择“租户管理”   > “连接器和令牌”   > “证书连接器”   > “+ 添加”  。
+
+3. 针对 PKCS #12 的连接器单击“下载证书连接器软件”  并将文件保存到可从服务器上进行访问的位置，将在该服务器上安装连接器。
+
+   ![Microsoft Intune 证书连接器下载](./media/certficates-pfx-configure/download-ndes-connector.png)
  
-
 4. 下载完成后，登录服务器。 然后：
 
     1. 确保已安装 .NET 4.5 Framework 或更高版本，因为它是 NDES 证书连接器的必需项。 Windows Server 2012 R2 和更高版本中自动包含 .NET 4.5 Framework。
@@ -166,39 +167,46 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
 
 ## <a name="create-a-trusted-certificate-profile"></a>创建受信任的证书配置文件
 
-1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备配置” > “配置文件” > “创建配置文件”    。
-    ![导航到 Intune 并为受信任的证书创建新的配置文件](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 输入以下属性：
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
+
+   ![导航到 Intune 并为受信任的证书创建新的配置文件](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+
+3. 输入以下属性：
 
     - 配置文件的名称 
     - （可选）设置描述
     - 将配置文件部署到的平台 
     - 将配置文件类型  设置为“受信任的证书” 
 
-3. 转到“设置”  并输入之前导出的 .cer 文件根 CA 证书。
+4. 选择“设置”  并指定之前导出的 .cer 文件根 CA 证书。
 
    > [!NOTE]
    > 能否为证书选择“目标存储区”取决于步骤 2 中所选的平台   。
 
-   ![创建配置文件并上传受信任的证书](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
+   ![创建配置文件并上传受信任的证书](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png)
 
-4. 选择“确定”   > “创建”  以保存配置文件。
-5. 若要将新配置文件分配给一个或多个设备，请参阅[分配 Microsoft Intune 设备配置文件](../configuration/device-profile-assign.md)。
+5. 选择“确定”   > “创建”  以保存配置文件。
+
+6. 若要将新配置文件分配给一个或多个设备，请参阅[分配 Microsoft Intune 设备配置文件](../configuration/device-profile-assign.md)。
 
 ## <a name="create-a-pkcs-certificate-profile"></a>创建 PKCS 证书配置文件
 
-1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备配置” > “配置文件” > “创建配置文件”    。
-2. 输入以下属性：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 选择并转到“设备”   > “配置文件”   > “创建配置文件”  。
+
+3. 输入以下属性：
 
     - 配置文件的名称 
     - （可选）设置描述
     - 将配置文件部署到的平台 
     - 将“配置文件类型”设置为“PKCS 证书”  
 
-3. 转到“设置”，并配置适用于所选平台的属性  ：  
+4. 选择“设置”  ，并配置适用于所选平台的属性：
    
-   |Setting     | 平台     | 详细信息   |
+   |设置     | 平台     | 详细信息   |
    |------------|------------|------------|
    |续订阈值 (%)         |全部         |建议设为 20%  | 
    |证书有效期   |全部         |如果没有更改证书模板，则此选项可能设置为一年。 |
@@ -209,11 +217,12 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
    |**使用者名称格式**          |全部         |对于大多数平台，除非另有要求，否则请将此选项设置为“公用名”  。<br><br>对于 macOS，使用者名称格式由证书类型决定。 请参阅本文后面的 [macOS 的使用者名称格式](#subject-name-format-for-macos)。 |
    |**使用者可选名称**     |全部         |除非另有要求，否则将此选项设置为“用户主体名称 (UPN)”  。 |
    |**扩展密钥用法**           |**-** Android 设备管理员 <br>**-** Android Enterprise（*设备所有者* *工作配置文件*） <br> **-** Windows 10 |证书通常需要“客户端身份验证”，以便用户或设备能够对服务器进行身份验证  。 |
-   |**允许所有应用访问私钥** |macOS  |请将其设置为“启用”，以使为关联的 Mac 设备配置的应用可以访问 PKCS 证书私钥  。 <br><br> 有关此设置的详细信息，请参阅 Apple 开发人员文档中[配置文件参考](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)中的 *AllowAllAppsAccess* 证书有效负载部分。 |
+   |**允许所有应用访问私钥** |macOS  |请将其设置为“启用”，以使为关联的 Mac 设备配置的应用可以访问 PKCS 证书私钥  。 <br><br> 有关此设置的详细信息，请参阅 Apple 开发人员文档中[配置文件参考](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)中的 AllowAllAppsAccess 证书有效负载部分  。 |
    |**根证书**             |**-** Android 设备管理员 <br> **-** Android Enterprise（*设备所有者* *工作配置文件*） |选择以前分配的根 CA 证书配置文件。 |
 
-4. 选择“确定”   > “创建”  以保存配置文件。
-5. 若要将新配置文件分配给一个或多个设备，请参阅[分配 Microsoft Intune 设备配置文件](../configuration/device-profile-assign.md)。
+5. 选择“确定”   > “创建”  以保存配置文件。
+
+6. 若要将新配置文件分配给一个或多个设备，请参阅[分配 Microsoft Intune 设备配置文件](../configuration/device-profile-assign.md)。
 
    > [!NOTE]
    > 在应用了 Android Enterprise 配置文件的设备上，使用 PKCS 证书配置文件安装的证书在设备上不可见。 若要确认证书部署是否成功，请检查 Intune 控制台中配置文件的状态。
@@ -262,7 +271,7 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
   - **{{DeviceName}}**
   - **{{FullyQualifiedDomainName}}** （仅适用于 Windows 和加入域的设备） 
   - **{{MEID}}**
-   
+
   可在文本框中指定这些变量，后跟变量的文本。 例如，可以将名为 Device1 的设备的公用名添加为 CN={{DeviceName}}Device1   。
 
   > [!IMPORTANT]  
@@ -273,21 +282,25 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
 
 
 ## <a name="whats-new-for-connectors"></a>连接器的新增功能
-我们将定期发布这两个证书连接器的更新。 更新连接器时，你可以在此处阅读有关更改的信息。 
+
+我们将定期发布这两个证书连接器的更新。 更新连接器时，你可以在此处阅读有关更改的信息。
 
 Microsoft Intune 的 PFX 证书连接器[支持自动更新](#requirements)，而 Intune 证书连接器则需要手动更新   。
 
-### <a name="may-17-2019"></a>2019 年 5 月 17 日  
+### <a name="may-17-2019"></a>2019 年 5 月 17 日
+
 - **Microsoft Intune 的 PFX 证书连接器 - 版本 6.1905.0.404**  
   此版本中的更改：  
   - 修复了以下问题：因现有 PFX 证书持续重新处理而导致连接器停止处理新请求。 
 
-### <a name="may-6-2019"></a>2019 年 5 月 6 日  
+### <a name="may-6-2019"></a>2019 年 5 月 6 日
+
 - **Microsoft Intune 的 PFX 证书连接器 - 版本 6.1905.0.402**  
   此版本中的更改：  
   - 连接器的轮询间隔从 5 分钟降到了 30 秒。
  
-### <a name="april-2-2019"></a>2019 年 4 月 2日  
+### <a name="april-2-2019"></a>2019 年 4 月 2日
+
 - **Intune 证书连接器 - 版本 6.1904.1.0**  
   此版本中的更改：  
   - 解决了使用全局管理员帐户登录连接器后连接器可能无法注册到 Intune 的问题。  
