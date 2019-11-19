@@ -7,14 +7,48 @@ ms.topic: include
 ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612002"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74125410"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
+
+### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 更改计划：Windows 10 版本 1703 公司门户即将停止支持<!--5026679-->
+Windows 10 版本 1703（也称为 Windows 10 RS2）已于 2019 年 10 月 8 日停止提供针对企业版和教育版的服务。 自 2019 年 12 月 26 日开始，Intune 将终止对 RS2/RS1 的相应公司门户应用的支持。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+接下来，尽管我们会在 2019 年 12 月 26 日之前继续支持此版本的公司门户应用，但你将不会在特定版本的公司门户应用中看到新功能，包括根据需要向公司门户应用提供任何安全更新。 但是，由于 Windows 10 版本 1703 在停止提供服务后将不会收到任何安全更新，因此，我们强烈建议将 Windows 设备更新为最新的 Windows 版本，并确保使用的是最新的公司门户应用，以便继续获取新功能和其他功能。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+所要采取的步骤将取决于你配置环境的方式。 但一般情况下，应确定具有较旧操作系统版本的设备和/或设备上的公司门户，然后进行更新。 若要设置 Windows 10 更新通道，请登录到 Intune -> 软件更新 – Windows 10 更新通道。 公司门户的最新版本是版本 10.3.5601.0。 请指导用户从 Microsoft Store 获取该版本，以与最新版本保持同步。 此外，你还可以通过[适用于企业的 Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business) 使用 Intune 在 Windows 设备上安装最新版本。
+
+#### <a name="additional-information"></a>其他信息
+[使用 Microsoft Intune 手动添加 Windows 10 公司门户应用](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+
+
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>执行操作：使用 Microsoft Edge 获取受保护的 Intune 浏览器体验<!--5728447-->
+正如我们在过去一年中一直分享的那样，Microsoft Edge 移动版支持与 Managed Browser 相同的一组管理功能，同时提供了更好的最终用户体验。 为了让 Microsoft Edge 提供强大的体验，我们将停用 Intune Managed Browser。 自 2020 年 1 月 27 日开始，Intune 将不再支持 Intune Managed Browser。  
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？ 
+自 2020 年 2 月 1 日开始，Google Play 商店或 iOS 应用商店中将不再提供 Intune Managed Browser。 届时，虽然新用户将无法下载 Intune Managed Browser 应用，但你仍可以将新的应用保护策略定向到 Intune Managed Browser。 此外，在 iOS 上，向下推送到已注册 MDM 设备的新 Web 剪辑将在 Microsoft Edge 中打开，而不是在 Intune Managed Browser 中打开。  
+
+2020 年 3 月 31 日，Intune Managed Browser 将从 Azure 控制台中删除。 这意味着你将无法再为 Intune Managed Browser 创建新策略。 对于你现有的 Intune Managed Browser 策略，不会受到影响。 Intune Managed Browser 将在控制台中显示为无图标的 LOB 应用程序，但现有策略将仍显示为应用的定向策略。 届时，我们还会在“应用程序保护策略”的“数据保护”部分中删除将 Web 内容重定向到 Intune Managed Browser 的选项。  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？ 
+若要确保从 Intune Managed Browser 平稳过渡到 Microsoft Edge，我们建议你主动执行以下步骤： 
+
+1. 使用应用保护策略（也称为 MAM）和应用配置设置，将 Microsoft Edge 定向到 iOS 和 Android。 只需将这些现有策略定向到 Microsoft Edge，即可对 Microsoft Edge 重复使用 Intune Managed Browser 策略。  
+2. 确保环境中所有受 MAM 保护的应用都将应用保护策略设置“限制与其他应用的 Web 内容传输”设置为“策略托管浏览器”。 
+3. 通过将托管应用配置设置“com.microsoft.intune.useEdge”设置为 true 来定位所有受 MAM 保护的应用。 从下个月的 1911 版本开始，只需配置“限制与其他应用的 Web 内容传输”设置，以在应用保护策略的“数据保护”部分中选中“Microsoft Edge”，即可完成步骤 2 和步骤 3。 
+
+即将支持 iOS 和 Android 上的 Web 剪辑。 发布此支持后，你需要重定向预先存在的 Web 剪辑，以确保它们在 Microsoft Edge 中而不是在 Managed Browser 中打开。 
+
+#### <a name="additional-information"></a>其他信息
+如需了解更多信息，请访问有关[将 Microsoft Edge 与应用保护策略结合使用](../apps/manage-microsoft-edge.md)的文档，或查看我们的[支持博客文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)。
+
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>更改计划：在 Intune 中注册 Android Enterprise 专用设备时更新了体验<!--5198878-->
 对于 Intune 11 月版或 1911 版，我们将添加对 SCEP 设备证书部署到 Android Enterprise 专用设备的支持，以便启用对 Wi-Fi 配置文件的基于证书的访问。 此更改还涉及在注册 Android Enterprise 专用设备时对流的一些次要更改。
@@ -33,7 +67,7 @@ ms.locfileid: "73612002"
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>更改计划：“Siri 命令的服务器端日志记录”设置将从 Intune 控制台中删除 <!-- 5468501-->
 
-我们计划通过 Intune 服务的 11 月更新从 Intune 控制台中删除“Siri 命令的服务器端日志记录”设置。 此更改与已删除该设置的 Apple 保持一致。
+我们计划在 11 月对 Intune 服务更新后从 Intune 控制台中删除“Siri 命令的服务器端日志记录”设置。 此更改与已删除该设置的 Apple 保持一致。
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 当 11 月更新或 1911 于 11 月中旬推出时，你会看到此设置已从 Intune 控制台中的 iOS 配置文件的“设备限制”菜单（内置应用）中删除。 它可能出现在策略和目标设备的管理配置文件中，但该设置对设备没有影响。 我们不会对功能造成很大的影响，因为它当前不能在设备上运行，即使你在管理配置文件中看到了它也是如此。
