@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754954"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059275"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>在 Intune 中对策略和配置文件进行故障排除
 
@@ -103,7 +103,7 @@ Microsoft Intune 包含一些内置的故障排除功能。 使用这些功能�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>不确定是否正确应用了配置文件
 
-1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备” > “所有设备”> 选择设备 >“设备配置”    。 
 
     每台设备均列出了其配置文件。 每个配置文件都具有“状态”  。 综合考虑所有分配的配置文件（包括硬件以及 OS 限制和要求）时，状态适用。 可能的状态包括：

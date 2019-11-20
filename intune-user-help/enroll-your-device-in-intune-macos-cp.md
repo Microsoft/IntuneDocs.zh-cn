@@ -1,11 +1,11 @@
 ---
-title: 通过公司门户在 Intune 中注册 macOS 设备 | Microsoft Docs
-description: 介绍如何通过公司门户应用在 Intune 中注册 macOS 设备
+title: 向 Intune 公司门户注册 Mac |Microsoft Docs
+description: 了解如何通过公司门户应用在 Intune 中注册你的 Mac。
 keywords: Mac OS X、macOS、OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,93 +15,94 @@ ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: elocholi
+ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee725d118353e18924858569ac861992d19f839a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506183"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098131"
 ---
-# <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>通过公司门户应用在 Intune 中注册 macOS 设备
+# <a name="enroll-your-macos-device-using-the-company-portal-app"></a>使用公司门户应用注册 macOS 设备  
 
-通过 Intune 公司门户应用注册 macOS 设备，以便获取对组织的电子邮件、文件和应用的安全访问权限。
+通过 Intune 公司门户应用注册 macOS 设备，以便获取对工作或学校电子邮件、文件和应用的安全访问权限。
 
-组织通常会要求先托管设备，然后才能从中访问专有数据。 托管设备后，组织可以通过移动设备管理提供程序向该设备推送策略和应用。 若要从设备持续访问工作或学校信息，必须配置设备以匹配策略设置。  
+组织通常要求先注册设备，然后才能访问专用数据。 注册设备后，它将成为托管设备  。 组织可通过移动设备管理 (MDM) 提供程序（如 Intune）为该设备分配策略和应用。 若要在设备上持续访问工作或学校信息，必须配置设备以匹配组织的策略设置。  
 
-本文介绍适用于 macOS 的 Intune 公司门户应用如何帮助你注册、配置和维护设备，以满足组织需求。  
-</br>
-> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
+本文介绍如何使用 macOS 的公司门户应用来注册、配置和维护设备，以满足组织需求。  
+
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>公司门户应用的作用
 
-初始设置期间，应用要求你向组织验证自己的身份。 然后，它将告知你必须进行的所有设备设置。 例如，组织通常会设置密码的最小或最大字符数要求，必须满足此要求。    
+初始设置期间，公司门户应用需要你登录并向你的组织进行身份验证。 然后公司门户会通知你需要配置的任何设备设置，以满足组织的要求。 例如，组织通常会设置密码的最小或最大字符数要求，必须满足此要求。    
 
-注册设备后，公司门户应用将继续确保设备受到保护。 例如，如果安装的应用来自于不受信任的源，应用将发出警报，且有时会撤销对公司数据的访问权限。 诸如此类的应用保护策略在组织中很常见，通常需要卸载不受信任的应用，然后才能重新获得访问权限。
+注册设备后，公司门户将始终确保你的设备符合组织的要求。 例如，如果从不受信任的源安装应用程序，公司门户会提醒你，并可能会限制对组织资源的访问权限。 此类应用保护策略非常常见。 若要重新获得访问权限，可能需要卸载不受信任的应用。 
 
-如果注册后组织实施了新的安全要求（如多重身份验证），公司门户应用将对此进行通知。 可调整设置，以便可以继续通过该设备开展工作。  
+如果注册后组织实施了新的安全要求（如多重身份验证），公司门户将对此进行通知。 可调整设置，以便可以继续通过该设备开展工作。  
 
-若要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)。  
+要了解有关注册的详细信息，请参阅[安装公司门户应用并注册设备后会发生什么情况？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)。  
 
-## <a name="get-your-device-managed"></a>托管设备  
-使用以下步骤注册运行 macOS 10.12 和更高版本的 macOS 设备。   
+## <a name="get-your-macos-device-managed"></a>管理 macOS 设备  
+使用以下步骤将 macOS 设备注册到组织。 设备必须运行 macOS 10.12 或更高版本。   
+
+> [!NOTE]
+> 在此过程中，系统可能会提示你允许公司门户使用存储在密钥链中的机密信息。 这些提示是 Apple security 的组成部分。 收到提示时，键入登录密钥链密码，并选择 "**始终允许**"。 如果按**enter**键或在键盘上**返回**，则提示将改为选中 "**允许**"，这可能会导致其他提示。  
+
+### <a name="install-company-portal-app"></a>安装公司门户应用  
+1. 请参阅["注册我的 Mac"](https://go.microsoft.com/fwlink/?linkid=853070)。  
+2. 将下载公司门户 .pkg 文件。 打开安装程序，并继续执行这些步骤。 
+3. 同意软件许可协议。 
+4. 输入设备密码或已注册的指纹以安装软件。  
+5. 打开公司门户。 
+
+> [!IMPORTANT]
+> Microsoft 自动更新可能会打开以更新你的 Microsoft 软件。 安装所有更新之后，打开公司门户应用。 若要获得最佳安装体验，请安装最新版本的 Microsoft 自动更新和公司门户。  
 
 
-1. 若要访问公司门户网站，请在“Safari”中打开新窗口，并转到 https://portal.manage.microsoft.com  。  
-
-2. 使用工作或学校帐户登录到公司门户网站。
-
-   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+### <a name="enroll-your-mac"></a>注册 Mac  
 
 
-3. 转到页面左上角，单击“菜单” > “设备”   。  
+1. 用你的工作单位或学校帐户登录到公司门户。  
+2. 当应用程序打开时，请选择 "**开始**"。  
+3. 查看[你的组织可以](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)在你的已注册设备上看不到的内容。 然后，选择“继续”  。  
+4. 在 "**安装管理配置文件**" 屏幕上，选择 "**下载配置文件**"。   
 
-4. “设备”页将显示托管设备列表或横幅  。 显示的内容取决于是否已托管设备。 
-    * 若要添加未列出的设备，请选择显示为“点击此处告诉我们你正在使用的设备或添加新设备”  的横幅。
-    * 如果没有任何设备，横幅上将显示：“没有任何托管设备。  请点击此处添加设备。” 单击横幅添加设备。  
+    ![公司门户，安装管理配置文件屏幕的示例屏幕截图，突出显示 "下载配置文件" 按钮。](./media/install-mgmt-profile-mac-1911.PNG)   
+5. 设备的系统首选项将打开。 选择 "**安装**"，并再次选择 "**安装**"。 如果系统提示，请输入设备密码。  
 
-     ![“设备”页的屏幕截图，使用红色方框圈出横幅选项，以突出显示单击位置。](./media/CP-enroll-MACOS-1808.png)  
-5. 完成以下步骤，该步骤与公司门户当前显示的消息匹配。  
-    * 如果是第一次添加设备，系统将提示在设备上下载公司门户应用。 单击“下载”  继续。  
+    ![MacOS 系统首选项的示例屏幕截图，安装提示，突出显示 "安装" 按钮。](./media/system-preference-install-1911.PNG)  
+6. 安装配置文件后，它将显示在 "**管理配置文件**" 下的 "配置文件" 列表中。  
 
-         ![下载 macOS 公司门户应用提示屏幕的示例屏幕截图。 用户可以选择单击提示左下角的蓝色“下载”按钮，或单击右下角的灰色“取消”按钮。](./media/CP-enroll-download-macOS-1808.png)  
+   ![MacOS 系统首选项，配置文件屏幕的示例屏幕截图，突出显示已安装的管理配置文件。](./media/system-preference-verify-1911.PNG)   
+7. 返回公司门户。   
+8. 你的组织可能要求你更新设备设置。 完成更新设置后，选择 "**检查设置**"。  
 
-    * 如果已有托管的 macOS 设备，则将收到包含当前已托管 macOS 设备列表的提示。 选择“此处未列出我的设备”   > “下载”  ，以便在添加的设备上下载公司门户应用。  
+    ![公司门户，更新设备设置屏幕的示例屏幕截图，突出显示 "检查设置" 按钮。](./media/update-settings-mac-1911.PNG)  
+9. 安装完成后，选择 "**完成**"。  
 
-         ![下载 macOS 公司门户应用提示屏幕的示例屏幕截图。 用户可以选择“此处未列出我的设备”，或选择页面中间位置的特定设备。 提示的左下角将显示蓝色“下载”按钮，右下角将显示灰色“取消”按钮](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. 设备将进行检查，确认安装文件 CompanyPortal.pkg 可以安全打开  。 完成后，打开安装程序并完成安装。  
+ ## <a name="troubleshooting-and-feedback"></a>故障排除和反馈   
 
-7. 完成安装程序后，转到“启动板”  并打开“公司门户”  。  
+如果在注册过程中遇到问题，请参阅**帮助** > **发送诊断报告**，将问题报告给 Microsoft 应用开发人员。 此信息用于帮助改善应用。 如果 IT 支持人员对其进行帮助，他们还将使用此信息来帮助解决问题。  
 
-8. macOS 设备将提示确认是否想要打开公司门户应用。 单击“打开”  。  
+向 Microsoft 报告问题之后，你可以将你的体验的详细信息发送给你的 IT 支持人员。 选择 "**电子邮件详细信息**"。 在电子邮件正文中键入经验。 若要查找支持人员的电子邮件地址，请访问公司门户应用 > "**联系**"。 或查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
+ 
 
-   > [!TIP]
-   > Intune 需要访问你的计算机，以确保设备足够安全以访问你组织的资源。 如果计算机拒绝打开“公司门户”应用，请[关闭 Gatekeeper](https://support.apple.com/HT202491)。 然后打开该应用。
+此外，Microsoft Intune 公司门户团队需要倾听你的反馈意见。 请参阅 "**帮助**" > **发送反馈**，分享你的想法和观点。  
 
-9. 公司门户应用中显示的第一个屏幕将提示你登录  。 使用用于登录到公司门户网站的同一工作或学校帐户。
+## <a name="unverified-profiles"></a>未验证的配置文件  
+在“系统首选项”   > “配置文件”  中查看已安装的移动设备管理 (MDM) 配置文件时，某些配置文件可能会显示为“未验证”状态。 只要“管理配置文件”显示为“已验证”状态，便无需担心。  
 
-10. 公司门户确认帐户信息后会显示“设备注册”和“设备符合性”状态   。 黄色三角形突出显示保护学校或工作 macOS 设备需采取的操作。 单击“开始”  可开始注册。 
-
-11. 如果系统出现提示，请键入计算机的登录信息。  
-
-在管理中注册设备可能需要几分钟时间。 在此期间，可在设备上执行其他操作。 完成公司访问设置后，将收到一条消息，通知操作已完成。  
-
-## <a name="unverified-profiles"></a>未验证的配置文件
-查看已安装的 macOS 设备移动设备管理 (MDM) 配置文件时，某些配置文件可能会显示为“未验证”状态  。 只要“管理配置文件”显示为“已验证”状态，便无需担心   。  
-
-管理配置文件定义了 MDM 通道连接。 只要已验证管理配置文件，那么通过该通道传递给计算机的任何其他配置文件都会继承管理配置文件的安全特性。
-
-此外，由于这些其他配置文件不需要单独验证，因此它们可以更快地生成并传递到设备。 
+管理配置文件定义了 MDM 通道连接。 只要已验证管理配置文件，那么通过该通道传递给计算机的任何其他配置文件都会继承管理配置文件的安全特性。  
 
 ## <a name="updating-the-company-portal-app"></a>更新公司门户应用
 
-与更新任何其他 Office 应用相同，更新公司门户应用也通过 Microsoft AutoUpdate for Mac 完成。 在此处查找有关[更新适用于 macOS 的 Microsoft 应用](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)的详细信息。  
+与更新任何其他 Office 应用相同，更新公司门户应用也通过 Microsoft AutoUpdate for macOS 完成。 了解有关[更新适用于 macOS 的 Microsoft 应用](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)的详细信息。  
 
 ## <a name="next-steps"></a>后续步骤  
-是否需要额外帮助？ 请与公司支持人员联系。 可以在[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)中查找他们的联系信息。  
+仍需帮助？ 请与公司支持人员联系。 有关联系信息，请查看[公司门户网站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
 
 

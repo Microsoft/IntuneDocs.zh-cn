@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e69f1b11833da0906aaf831f8bb82b04241e442f
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755186"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059353"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>在 Intune 中添加 macOS 内核扩展
 
@@ -67,8 +67,8 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 
 ## <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 选择 "**设备**" > **配置文件** > **创建配置文件**。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。

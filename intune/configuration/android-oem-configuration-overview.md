@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756756"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059630"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企业设备 OEMConfig
 
@@ -80,8 +80,8 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 
 ## <a name="create-an-oemconfig-profile"></a>创建 OEMConfig 配置文件
 
-1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 选择 "**设备**" > **配置文件** > **创建配置文件**。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。
@@ -141,7 +141,7 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 
 | OEM | 捆绑 ID | OEM 文档（如果可用） |
 | --- | --- | ---|
-| Samsung | kpu （.com） | [Knox 服务插件管理员指南](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | kpu （.com） | [Knox 服务插件管理员指南](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | 斑马技术 | 斑马. oemconfig | [斑马 OEMConfig 概述](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | datalogic. oemconfig | [Datalogic OEMConfig 的用户文档](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell. oemconfig |  |

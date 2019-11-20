@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756730"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059620"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>通过 Microsoft Intune 中的 Zebra Mobility Extensions 来使用和管理 Zebra 设备
 
@@ -133,8 +133,8 @@ Intune 提供丰富的功能，包括管理应用和配置设备设置。 这些
 
 在 Intune 中，创建设备配置文件：
 
-1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 选择 "**设备**" > **配置文件** > **创建配置文件**。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。

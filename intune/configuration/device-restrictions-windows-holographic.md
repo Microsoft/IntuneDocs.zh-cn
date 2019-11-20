@@ -1,11 +1,11 @@
 ---
 title: Windows Holographic for Business 设备设置 - Microsoft Intune - Azure | Microsoft Docs
-description: 阅读在 Microsoft Intune 中配置适用于 Windows Holographic for Business 的设备限制的相关信息并进行配置，包括注销、地理位置、密码、从应用商店安装应用、Microsoft Edge 中的 Cookie 和弹出窗口、Windows Defender、搜索、云和存储、蓝牙连接、系统时间，以及 Azure 中的使用情况数据。
+description: 阅读在 Microsoft Intune 中配置适用于 Windows Holographic for Business 的设备限制的相关信息并进行配置，包括注销、地理位置、密码、从应用商店安装应用、Microsoft Edge 中的 Cookie 和弹出窗口、Microsoft Defender、搜索、云和存储、蓝牙连接、系统时间，以及 Azure 中的使用情况数据。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493925"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059508"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows Holographic for Business 设备设置
 
@@ -57,7 +57,7 @@ ms.locfileid: "72493925"
 - **密码管理器**：启用或禁用 Microsoft Edge 密码管理器功能。
 - **发送“请勿跟踪”标头**：配置 Microsoft Edge 浏览器，将“禁止跟踪”标头发送到用户访问的网站。
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智能屏幕
 
 - **Microsoft Edge SmartScreen**：启用 Microsoft Edge SmartScreen，以便访问网站和下载文件。
 

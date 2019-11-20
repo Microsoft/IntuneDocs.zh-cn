@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755005"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059845"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中电子邮件配置文件的常见问题和解决方法
 
@@ -61,8 +61,8 @@ Samsung KNOX 不使用主机名识别配置文件。 不建议创建多个电子
 
 自动配置了电子邮件帐户的用户无法从其设备发送图片或图像。 未启用“允许从第三方应用程序发送电子邮件”时，可能会发生此情况  。
 
-1. 登录到[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 选择 "**设备** > **配置文件**"。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”  。
 3. 选择电子邮件配置文件 >**属性** > **设置**"。
 4. 设置 "**允许从第三方应用程序发送电子邮件**" 设置为 "**启用**"。
 

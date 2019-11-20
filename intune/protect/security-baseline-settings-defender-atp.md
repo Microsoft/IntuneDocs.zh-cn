@@ -5,7 +5,7 @@ description: Intune 支持用于管理 Microsoft Defender 高级威胁防护的�
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923399"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060053"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
@@ -91,7 +91,7 @@ ms.locfileid: "72923399"
   **默认值**：阻止 
 
 - **防止凭据窃取类型**  
-  设置为“启用”  可[使用 Credential Guard 保护派生的域凭据](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)。 Windows Defender 凭据保护使用基于虚拟化的安全性来隔离密钥，以便只有特权系统软件可以访问它们。 未经授权的访问这些密钥可能会导致凭据被盗攻击，如哈希传递或票证传递。 Windows Defender 凭据保护可通过保护 NTLM 密码哈希、Kerberos 票证授予票证和由应用程序存储为域凭据的凭据来防止这些攻击。  
+  设置为“启用”  可[使用 Credential Guard 保护派生的域凭据](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)。 Microsoft Defender 凭据保护使用基于虚拟化的安全性来隔离密钥，以便只有特权系统软件可以访问它们。 未经授权的访问这些密钥可能会导致凭据被盗攻击，如哈希传递或票证传递。 Microsoft Defender 凭据保护可通过保护 NTLM 密码哈希、Kerberos 票证授予票证和由应用程序存储为域凭据的凭据来防止这些攻击。  
 
   **默认值**：启用
 
@@ -227,7 +227,7 @@ ms.locfileid: "72923399"
   - **已阻止的硬件设备标识符**  
     仅“按设备标识符安装硬件设备”设置为“阻止安装硬件设备”时，此设置才可用   。 若要配置此设置，请展开该选项，选择“+ 添加”  ，然后指定要阻止的硬件设备标识符。  
 
-    **默认值**： PCI\CC_0C0A
+    **默认值**： PCI \ CC_0C0A
 
 - **阻止直接内存访问**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - 使用此策略设置可以阻止设备上的所有热插拔 PCI 下游端口进行直接内存访问 (DMA)，直到用户登录 Windows。 用户登录后，Windows 会枚举连接到热插拔 PCI 端口的 PCI 设备。 用户每次锁定计算机都会阻止无子设备的热插拔 PCI 端口进行 DMA，直到用户再次登录。 已在计算机解锁时枚举的设备继续工作，直到拔出。 
@@ -281,7 +281,7 @@ ms.locfileid: "72923399"
   此外，还可将现有的 EMET 配置 XML 文件转换为和导入到 Exploit Protection 配置 XML。
 
 - **阻止 exploit protection 替代**  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) - 设置为“是”  可阻止用户更改 Windows Defender 安全中心的 exploit protection 设置区域。 如果禁用或未配置此设置，本地用户可以在 exploit protection 设置区域中进行更改。  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) - 设置为“是”  可阻止用户更改 Microsoft Defender 安全中心的 exploit protection 设置区域。 如果禁用或未配置此设置，本地用户可以在 exploit protection 设置区域中进行更改。  
   **默认值**：是  
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 防病毒  
@@ -289,17 +289,17 @@ ms.locfileid: "72923399"
 有关详细信息，请参阅 Windows 文档 [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)（策略 CSP - Defender）。
 
 - **扫描 Microsoft Web 浏览器中加载的脚本**  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) - 设置为“是”  可允许 Windows Defender 脚本扫描功能。  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) - 设置为“是”  可允许 Microsoft Defender 脚本扫描功能。  
 
   **默认值**：是
 
 - **扫描传入的电子邮件**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) - 设置为“是”  可允许 Windows Defender 扫描电子邮件。  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) - 设置为“是”  可允许 Microsoft Defender 扫描电子邮件。  
 
   **默认值**：是
 
 - **Defender 示例提交同意**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 检查 Windows Defender 中用户的同意级别是否可发送数据。 如果已获取所需同意，Windows Defender 会将其提交。 如果未获取（且用户已指定绝不要求），则发送数据前启动 UI 申请获取用户同意（当“云提供的保护”设置为“是”时   ）。  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 检查 Microsoft Defender 中用户的同意级别是否可发送数据。 如果已获取所需同意，Microsoft Defender 会将其提交。 如果未获取（且用户已指定绝不要求），则发送数据前启动 UI 申请获取用户同意（当“云提供的保护”设置为“是”时   ）。  
 
   **默认值**：自动发送安全示例
 
@@ -319,7 +319,7 @@ ms.locfileid: "72923399"
     **默认值**：是
 
 - **Defender 阻止访问时保护**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) - 设置为“是”  时，将启用 Windows Defender 访问时保护。  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) - 设置为“是”  时，将启用 Microsoft Defender 访问时保护。  
 
   **默认值**：是
 
@@ -346,30 +346,30 @@ ms.locfileid: "72923399"
   **默认值**：上午 2 点
 
 - **云提供的保护**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) - 设置为“是”  时，Windows Defender 会向 Microsoft 发送有关找到的任何问题的信息。 Microsoft 会分析该信息，详细了解影响你和其他客户的问题，并提供改进的解决方案。
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) - 设置为“是”  时，Microsoft Defender 会向 Microsoft 发送有关找到的任何问题的信息。 Microsoft 会分析该信息，详细了解影响你和其他客户的问题，并提供改进的解决方案。
 
   将此策略设置为“是”  时，可以使用“Defender 示例提交同意类型”  给予用户从其设备发送信息的控制权。  
 
   **默认值**：是
 
 - **Defender 可能不需要的应用操作**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) - Windows Defender 防病毒软件可以识别和阻止在网络中的终结点下载和安装可能不需要的应用程序 (PUA)  。 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) - Microsoft Defender 防病毒软件可以识别和阻止在网络中的终结点下载和安装可能不需要的应用程序 (PUA)  。 
  
-  - 设置为“阻止”  时，Windows Defender 会阻止 PUA，并将其与其他威胁一起列在历史记录中。
-  - 设置为“审核”  时，Windows defender 会检测到 PUA，但不会阻止它们。 可以通过搜索由事件查看器中的 Windows Defender 创建的事件找到有关 Windows Defender 要对其执行操作的应用程序的信息。  
+  - 设置为“阻止”  时，Microsoft Defender 会阻止 PUA，并将其与其他威胁一起列在历史记录中。
+  - 设置为“审核”  时，Microsoft Defender 会检测到 PUA，但不会阻止它们。 可以通过搜索由事件查看器中的 Microsoft Defender 创建的事件找到有关 Microsoft Defender 要对其执行操作的应用程序的信息。  
   - 设置为“设备默认值”  时，PUA 保护处于关闭状态。  
  
   **默认值**：阻止
 
 - **Defender 云扩展超时**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - 指定等待云返回结果时，Windows Defender 防病毒软件应阻止文件的最长延长时间。 Windows Defender 等待的基本时间为 10 秒。 在此处指定的任意延长时间（最多 50 秒）已添加到这 10 秒之后。 大多数情况下，扫描所需的时间少于最大值。 延长时间可使云对可疑文件进行全面调查。  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - 指定等待云返回结果时，Microsoft Defender 防病毒软件应阻止文件的最长延长时间。 Microsoft Defender 等待的基本时间为 10 秒。 在此处指定的任意延长时间（最多 50 秒）已添加到这 10 秒之后。 大多数情况下，扫描所需的时间少于最大值。 延长时间可使云对可疑文件进行全面调查。  
 
   默认情况下，扩大的时间值为 0（禁用）。 Intune 建议启用此设置，并至少指定 20 秒的延长时间。  
  
   **默认值**：0
 
 - **扫描存档文件**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) - 设置为“是”  可使 Windows Defender 扫描存档文件。  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) - 设置为“是”  可使 Microsoft Defender 扫描存档文件。  
 
   **默认值**：是
 
@@ -381,17 +381,17 @@ ms.locfileid: "72923399"
   **默认值**：用户定义
 
 - **行为监视**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) - 设置为“是”  可打开 Windows Defender 行为监视功能。 Windows Defender 行为监视传感器内嵌于 Windows 10，收集并处理来自操作系统的行为信号，并将该传感器数据发送至 Microsoft Defender ATP 的专用独立云实例。  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) - 设置为“是”  可打开 Microsoft Defender 行为监视功能。 Microsoft Defender 行为监视传感器内嵌于 Windows 10，收集并处理来自操作系统的行为信号，并将该传感器数据发送至 Microsoft Defender ATP 的专用独立云实例。  
 
   **默认值**：是
 
 - **扫描从网络文件夹中打开的文件**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) - 设置为“是”  可使 Windows Defender 扫描网络上的文件。 用户无法删除只读文件中检测到的恶意软件。  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) - 设置为“是”  可使 Microsoft Defender 扫描网络上的文件。 用户无法删除只读文件中检测到的恶意软件。  
 
   **默认值**：是
 
 - **Defender 云阻止级别**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) - 使用此策略确定 Windows Defender 防病毒软件在阻止和扫描可疑文件时的攻击程度如何。 选项包括：
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) - 使用此策略确定 Microsoft Defender 防病毒软件在阻止和扫描可疑文件时的攻击程度如何。 选项包括：
 
   - 高 - 主动阻止未知文件，同时针对客户端性能进行优化（误报的可能性更大）
   - 超高 - 主动阻止未知文件，并应用额外的保护措施（可能影响客户端的性能）
@@ -400,24 +400,24 @@ ms.locfileid: "72923399"
   **默认值**：未配置
 
 - **实时监视**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) - 设置为“是”  可允许 Windows Defender 实时监视。  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) - 设置为“是”  可允许 Microsoft Defender 实时监视。  
 
   **默认值**：是
 
 - **扫描期间 CPU 使用率限制**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) - 指定 Windows Defender 可在扫描期间使用的最大平均 CPU 使用率 (%)。  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) - 指定 Microsoft Defender 可在扫描期间使用的最大平均 CPU 使用率 (%)。  
 
   **默认值**：50
 
 - **在完全扫描期间扫描映射的网络驱动器**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) - 设置为“是”  可使 Windows Defender 扫描网络上的文件。 用户无法删除只读文件中检测到的恶意软件。
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) - 设置为“是”  可使 Microsoft Defender 扫描网络上的文件。 用户无法删除只读文件中检测到的恶意软件。
 
   此列表中的相关设置：Defender/AllowScanningNetworkFiles 
 
   **默认值**：是
 
 - **阻止最终用户访问 Defender**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) - 设置为“是”  可阻止最终用户访问其设备上的 Windows Defender UI。  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) - 设置为“是”  可阻止最终用户访问其设备上的 Microsoft Defender UI。  
 
   **默认值**：是
 
@@ -426,7 +426,7 @@ ms.locfileid: "72923399"
 
   **默认值**：上午 2 点
 
-## <a name="windows-defender-firewall"></a>Windows Defender 防火墙
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 防火墙
 有关详细信息，请参阅 Windows 文档中的 [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)（防火墙 CSP）。
 
 - **删除前的安全关联空闲时间** - *MdmStore/Global/SaIdleTime*   
@@ -560,29 +560,29 @@ ms.locfileid: "72923399"
 ## <a name="web--network-protection"></a>Web 和网络保护  
 
 - **网络保护类型**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 此策略可用于在 Windows Defender 攻击防护中启用或禁用网络保护。 网络保护是 Windows Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - 此策略可用于在 Microsoft Defender 攻击防护中启用或禁用网络保护。 网络保护是 Microsoft Defender 攻击防护的一项功能，可阻止员工使用任何应用访问 Internet 上的钓鱼邮件、攻击宿主站点和恶意内容。 这包括阻止第三方浏览器连接到危险站点。  
 
-  设置为“启用”  或“审核模式”  时，用户无法禁用网络保护，但可以使用 Windows Defender 安全中心查看有关连接尝试的信息。  
+  设置为“启用”  或“审核模式”  时，用户无法禁用网络保护，但可以使用 Microsoft Defender 安全中心查看有关连接尝试的信息。  
  
   -  “启用”将阻止用户和应用连接到危险的域。  
   -  “审核模式”不会阻止用户和应用连接到危险的域。  
 
-  设置为“用户定义”  时，不会阻止用户和应用连接到危险的域，并且 Windows Defender 安全中心不会提供有关连接的信息。  
+  设置为“用户定义”  时，不会阻止用户和应用连接到危险的域，并且 Microsoft Defender 安全中心不会提供有关连接的信息。  
 
   **默认值**：审核模式
 
 - **Microsoft Edge SmartScreen**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - 默认情况下，Microsoft Edge 使用 Windows Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。 默认情况下，此策略处于启用状态（设置为“是”  ），启用时可阻止用户关闭 Windows Defender SmartScreen。  设备的有效策略为未配置时，用户可以关闭 Windows Defender SmartScreen，这使设备不受保护。  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - 默认情况下，Microsoft Edge 使用 Microsoft Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。 默认情况下，此策略处于启用状态（设置为“是”  ），启用时可阻止用户关闭 Microsoft Defender SmartScreen。  设备的有效策略为未配置时，用户可以关闭 Microsoft Defender SmartScreen，这使设备不受保护。  
 
   **默认值**：是
   
 - **阻止恶意网站访问**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意站点的 Windows Defender SmartScreen 警告，以便用户继续访问该站点。 启用此策略（设置为“是”  ）时，Microsoft Edge 可阻止用户绕过警告，并阻止他们继续访问该站点。  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意站点的 Microsoft Defender SmartScreen 警告，以便用户继续访问该站点。 启用此策略（设置为“是”  ）时，Microsoft Edge 可阻止用户绕过警告，并阻止他们继续访问该站点。  
 
   **默认值**：是
 
 - **阻止下载未经验证的文件**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意文件的 Windows Defender SmartScreen 警告，以便他们继续下载未经验证的文件。 启用此策略（设置为“是”  ）时，将阻止用户绕过警告，并且无法下载未经验证的文件。  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 默认情况下，Microsoft Edge 允许用户绕过（忽略）有关潜在恶意文件的 Microsoft Defender SmartScreen 警告，以便他们继续下载未经验证的文件。 启用此策略（设置为“是”  ）时，将阻止用户绕过警告，并且无法下载未经验证的文件。  
 
   **默认值**：是
 

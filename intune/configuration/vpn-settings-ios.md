@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593787"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059814"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 VPN 设置
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使用这些设置创建和配置组织网络的 VPN 连接。 本文将说明这些设置。 某些设置仅适用于某些 VPN 客户端，例如 Citrix、Zscaler 等。
 
@@ -73,7 +71,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
     > [!NOTE]
     > 如果用户名和密码被用作 Cisco IPsec VPN 的身份验证方法，则它们必须通过自定义 Apple 配置器配置文件来提供 SharedSecret。
 
-  - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。
+  - **派生凭据**：使用从用户的智能卡派生的证书。 如果未配置任何派生凭据颁发者，Intune 会提示你添加一个。 有关详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](../protect/derived-credentials.md)。
 
 - **排除的 URL**（仅限 Zscaler）：连接到 Zscaler VPN 时，可从 Zscaler 云外部访问列出的 URL。 
 
@@ -102,7 +100,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - 启用 NAC 后，VPN 将每隔 24 小时断开一次连接。 可以立即重新连接 VPN。
   - 设备 ID 是配置文件的一部分，但不显示在 Intune 中。 Microsoft 不会将此 ID 存储在任何位置，也不会由 Microsoft 共享。
 
-  如果设备 ID 受 VPN 合作伙伴支持，Citrix SSO 等 VPN 客户端可获取该 ID。 然后，它可以查询 Intune 以确认该设备是否已注册，以及 VPN 配置文件是否符合要求。
+  对于支持设备 ID 的 VPN 合作伙伴，VPN 客户端（如 Citrix SSO）可以获取 ID。 然后，它可以查询 Intune 以确认该设备是否已注册，以及 VPN 配置文件是否符合要求。
 
   - 要删除此设置，请重新创建配置文件，不要选择“我同意”  。 然后，重新分配配置文件。
 
@@ -189,7 +187,10 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 - **按需 VPN**：配置用于控制何时启动 VPN 连接的条件规则。 例如，创建一个条件，仅在设备未连接到公司 Wi-fi 网络时才使用 VPN 连接。 或者创建条件。 例如，如果设备无法访问输入的 DNS 搜索域，则不启动 VPN 连接。
 
   - **SSID 或 DNS 搜索域**：选择此条件将使用无线网络“SSID”还是“DNS 搜索域”   。 选择“添加”以配置一个或多个 SSID 或搜索域  。
-  - **URL 字符串探测**：可选。 输入规则用作测试的 URL。 如果具有此配置文件的设备在不重定向的情况下访问此 URL，则会启动 VPN 连接。 并且，设备会连接到目标 URL。 用户看不到该 URL 字符串探测站点。 URL 字符串探测示例是审核 Web 服务器的地址，用于在连接 VPN 前检查设备的符合性。 另一种可能性是 URL 通过 VPN 将设备连接到目标 URL 前，测试 VPN 连接至站点的能力。
+  - **URL 字符串探测**：可选。 输入规则用作测试的 URL。 如果设备在不重定向的情况下访问此 URL，则会启动 VPN 连接。 并且，设备会连接到目标 URL。 用户看不到该 URL 字符串探测站点。
+
+    例如，URL 字符串探测是一个审核 Web 服务器 URL，用于在连接 VPN 前检查设备的符合性。 或者，该 URL 通过 VPN 在将设备连接到目标 URL 前，测试 VPN 连接到站点的能力。
+。
   - **域操作**：选择以下项之一：
     - 需要时连接
     - 从不连接

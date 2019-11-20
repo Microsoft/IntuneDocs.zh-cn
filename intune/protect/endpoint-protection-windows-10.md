@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中适用于 Windows 10 设备的保护设置 - Azure | Microsoft Docs
-description: 在 Windows 10 设备上，使用或配置 Endpoint Protection 设置，以在 Microsoft Intune 中对本地设备启用 Windows Defender 功能，包括应用程序防护、防火墙、SmartScreen、加密和 BitLocker、攻击防护、应用程序控制、安全中心和安全性。
+description: 在 Windows 10 设备上，使用或配置 Endpoint Protection 设置，以在 Microsoft Intune 中对本地设备启用 Microsoft Defender 功能，包括应用程序防护、防火墙、SmartScreen、加密和 BitLocker、攻击防护、应用程序控制、安全中心和安全性。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,20 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502283"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058429"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Windows 10（及更高版本）设置，用于保护使用 Intune 的设备  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Windows 10（及更高版本）设置，用于保护使用 Intune 的设备
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可以在 Windows 10 和更高版本的设备中启用和配置的所有设置。 这些设置是在 Intune 中的 Endpoint Protection 配置文件中创建的，用于控制安全性，包括 BitLocker 和 Microsoft Defender。  
 
-Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可以在 Windows 10 和更高版本的设备中启用和配置的所有设置。 这些设置是在 Intune 中的 Endpoint Protection 配置文件中创建的，用于控制安全性，包括 BitLocker 和 Windows Defender。  
-
-若要配置 Windows Defender 防病毒软件，请参阅 [Windows 10 设备限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
+若要配置 Microsoft Defender 防病毒软件，请参阅 [Windows 10 设备限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
 
 ## <a name="before-you-begin"></a>在开始之前  
 
@@ -38,9 +36,9 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 有关配置服务提供程序（Csp）的详细信息，请参阅[配置服务提供程序参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)。  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender 应用程序防护  
+## <a name="microsoft-defender-application-guard"></a>Microsoft Defender 应用程序防护  
 
-使用 Microsoft Edge 时，Windows Defender 应用程序防护可保护环境免受组织不信任的站点的影响。 用户访问独立网络边界中未列出的站点时，这些站点将在 Hyper-V 虚拟浏览会话中打开。 受信任的站点由在设备配置中配置的网络边界定义。  
+使用 Microsoft Edge 时，Microsoft Defender 应用程序防护可保护环境免受组织不信任的站点的影响。 用户访问独立网络边界中未列出的站点时，这些站点将在 Hyper-V 虚拟浏览会话中打开。 受信任的站点由在设备配置中配置的网络边界定义。  
 
 应用程序防护仅适用于 Windows 10（64 位）设备。 使用此配置文件将安装用于激活应用程序防护的 Win32 组件。  
 
@@ -122,7 +120,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   - **启用** - 用户可以从虚拟化浏览器将文件下载到主机操作系统。  
   - **未配置** - 将文件本地保存在设备上，而不会下载到主机文件系统。  
 
-## <a name="windows-defender-firewall"></a>Windows Defender 防火墙  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 防火墙  
  
 ### <a name="global-settings"></a>全局设置  
 
@@ -196,7 +194,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 #### <a name="general-settings"></a>常规设置  
 
-- **Windows Defender 防火墙**  
+- **Microsoft Defender 防火墙**  
   **默认值**：未配置  
   防火墙 CSP： [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   **默认值**：未配置  
   防火墙 CSP：[受防护](https://go.microsoft.com/fwlink/?linkid=872561)  
     - 未配置   
-    - **阻止**-当 Windows Defender 防火墙打开且此设置设置为 "*阻止*" 时，无论其他策略设置如何，都将阻止所有传入流量。 
+    - **阻止**-当 Microsoft Defender 防火墙已打开且此设置设置为 "*阻止*" 时，无论其他策略设置如何，都将阻止所有传入流量。 
     - **允许**-如果设置为 "*允许*"，则关闭此设置，并根据其他策略设置允许传入流量。
 
 - **针对多播广播的单播响应**  
@@ -264,7 +262,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 #### <a name="rule-merging"></a>规则合并  
 
-- **来自本地存储的已授权应用程序 Windows Defender 防火墙规则**  
+- **来自本地存储的已授权应用程序 Microsoft Defender 防火墙规则**  
   **默认值**：未配置  
   防火墙 CSP： [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   - **允许** -
    选择“启用”可应用本地存储中的防火墙规则，以便识别和强制执行它们 **** 。  
 
-- **来自本地存储的全局端口 Windows Defender 防火墙规则**  
+- **来自本地存储的全局端口 Microsoft Defender 防火墙规则**  
   **默认值**：未配置  
   防火墙 CSP： [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   - **阻止**-本地存储中的全局端口防火墙规则将被忽略且不会强制执行。  
   - **允许** - 应用本地存储中要识别和强制执行的全局端口防火墙规则。  
 
-- **来自本地存储的 Windows Defender 防火墙规则**  
+- **来自本地存储的 Microsoft Defender 防火墙规则**  
   **默认值**：未配置  
   防火墙 CSP： [AllowLocalPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -336,7 +334,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 #### <a name="application-settings"></a>应用程序设置  
 
 - **应用程序**  
-  **默认值**：全部  
+  **默认**：全部  
 
   控制应用程序或程序的连接。 选择以下选项之一，然后完成其他配置：  
   - **包系列名称**–指定包系列名称。 若要查找包系列名称，请使用 PowerShell 命令**add-appxpackage**。   
@@ -422,7 +420,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   指定此规则的已授权本地用户的列表。 如果此规则适用于 Windows 服务，则不能指定授权用户的列表。  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen 设置  
+## <a name="microsoft-defender-smartscreen-settings"></a>Microsoft Defender SmartScreen 设置  
  
 必须在设备上安装 Microsoft Edge。  
 
@@ -443,8 +441,6 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 ## <a name="windows-encryption"></a>Windows 加密  
  
 ### <a name="windows-settings"></a>Windows 设置  
-
-这些加密设置适用于所有版本的 Windows 10。  
 
 - **加密设备**  
   **默认值**：未配置  
@@ -775,7 +771,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
     - **阻止** - 允许对其他组织中配置的设备的写权限。  
     - **未配置**-拒绝写入访问权限。  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender 攻击防护  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender 攻击防护  
 
 使用[exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)来管理和减少员工使用的应用的受攻击面。  
 
@@ -971,21 +967,20 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
   此设置的目的是保护最终用户，使其能够访问 Internet 上的网页仿冒欺诈、利用中托管的网站和恶意内容。 它还阻止第三方浏览器连接到危险站点。  
 
-  - **未配置** - 禁用此功能。 不会阻止用户和应用连接到危险域。 管理员不能在 Windows Defender 安全中心看到此活动。  
-  - **启用**-启用网络保护，并阻止用户和应用连接到危险域。 管理员可在 Windows Defender 安全中心看到此活动。  
-  - **仅审核**：-不阻止用户和应用连接到危险域。 管理员可在 Windows Defender 安全中心看到此活动。  
+  - **未配置** - 禁用此功能。 不会阻止用户和应用连接到危险域。 管理员不能在 Microsoft Defender 安全中心看到此活动。  
+  - **启用**-启用网络保护，并阻止用户和应用连接到危险域。 管理员能在 Microsoft Defender 安全中心看到此活动。  
+  - **仅审核**：-不阻止用户和应用连接到危险域。 管理员能在 Microsoft Defender 安全中心看到此活动。  
 
 ### <a name="exploit-protection"></a>Exploit Protection  
- 
 
 - **上传 XML**  
   **默认值**：未配置   
 
-  若要使用利用防护来[保护设备免受攻击](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，请创建一个包含所需的系统和应用程序缓解设置的 XML 文件。 可以通过两种方法来创建 XML 文件：  
+  若要使用利用防护来[保护设备免受攻击](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，请创建一个包含所需的系统和应用程序缓解设置的 XML 文件。 可以通过两种方法来创建 XML 文件：  
 
   - *PowerShell* - 使用一个或多个 Get-ProcessMitigation、Set-ProcessMitigation 和 ConvertTo-ProcessMitigationPolicy PowerShell cmdlet    。 这些 cmdlet 配置缓解设置并导出它们的 XML 表示形式。  
 
-  - *Windows Defender 安全中心 UI* - 在 Windows Defender 安全中心，单击“应用和浏览器”控件，然后向下滚动到所看到的屏幕底部，找到 Exploit Protection。 首先，使用“系统”设置和“程序”设置选项卡来配置缓解措施设置。 然后，找到屏幕底部的“导出”设置链接，导出其 XML 表示形式。  
+  - Microsoft Defender 安全中心 UI  - 在 Microsoft Defender 安全中心，单击“应用和浏览器”控件，然后向下滚动到所看到的屏幕底部，找到 Exploit Protection。 首先，使用“系统”设置和“程序”设置选项卡来配置缓解措施设置。 然后，找到屏幕底部的“导出”设置链接，导出其 XML 表示形式。  
 
 - **用户编辑 exploit protection 接口**  
   **默认值**：未配置  
@@ -995,9 +990,9 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
   - **阻止**-上传可用于配置内存、控制流和策略限制的 XML 文件。 XML 文件中的设置可用于阻止应用程序遭受攻击。  
   - **未配置**-不使用自定义配置。  
 
-## <a name="windows-defender-application-control"></a>Windows Defender 应用程序控制  
+## <a name="microsoft-defender-application-control"></a>Microsoft Defender 应用程序控制  
 
-选择需要审核的其他应用，或者可以信任它以由 Windows Defender 应用程序控件运行。 自动信任 Windows 组件和来自 Windows 应用商店的所有应用运行。  
+选择需要审核的其他应用，或者可信任这些应用以由 Microsoft Defender 应用程序控件运行。 自动信任 Windows 组件和来自 Windows 应用商店的所有应用运行。  
 
 
 - **应用程序控制代码完整性策略**  
@@ -1012,9 +1007,9 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
  
   - **仅审核**-不阻止应用程序。 所有事件都记录在本地客户端的日志中。  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Microsoft Defender Credential Guard  
 
-Windows Defender Credential Guard 可防止凭据盗窃攻击。 它可隔离密码，以便仅特权系统软件才可以进行访问。  
+Microsoft Defender Credential Guard 可防止凭据盗窃攻击。 它可隔离密码，以便仅特权系统软件才可以进行访问。  
 
 - **Credential Guard**  
   **默认值**：禁用  
@@ -1036,19 +1031,19 @@ Windows Defender Credential Guard 可防止凭据盗窃攻击。 它可隔离密
   - **安全启动和直接内存访问**  
     通过“安全启动”和直接内存访问 (DMA) 保护启用 VBS。 DMA 保护需要硬盘支持并且将仅在正确配置的设备上启用。  
 
-## <a name="windows-defender-security-center"></a>Windows Defender 安全中心  
+## <a name="microsoft-defender-security-center"></a>Microsoft Defender 安全中心  
 
-Windows Defender 安全中心作为独立应用或每个单项功能中的进程运行。 它通过“操作中心”显示通知。 它用作收集器或查看状态和为每个功能运行某项配置的一个位置。 有关详细信息，请参阅 [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) 文档。  
+Microsoft Defender 安全中心作为独立应用或每个单项功能中的进程运行。 它通过“操作中心”显示通知。 它用作收集器或查看状态和为每个功能运行某项配置的一个位置。 在[Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)文档中了解详细信息。  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender 安全中心应用和通知  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>Microsoft Defender 安全中心应用和通知  
 
-阻止最终用户访问 Windows Defender 安全中心应用的各个区域。 隐藏某个部分还会阻止相关通知。  
+阻止最终用户访问 Microsoft Defender 安全中心应用的各个区域。 隐藏某个部分还会阻止相关通知。  
 
 - **病毒和威胁防护**  
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看病毒和威胁防护区域。 隐藏此部分也会阻止与病毒和威胁防护相关的所有通知。  
+  配置最终用户是否可以在 Microsoft Defender 安全中心查看病毒和威胁防护区域。 隐藏此部分也会阻止与病毒和威胁防护相关的所有通知。  
 
   - 未配置   
   - **隐藏**  
@@ -1057,7 +1052,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看勒索软件防护区域。 隐藏此部分也会阻止与勒索软件保护相关的所有通知。  
+  配置最终用户是否可以查看 Microsoft Defender 安全中心的勒索软件防护区域。 隐藏此部分也会阻止与勒索软件保护相关的所有通知。  
 
   - 未配置   
   - **隐藏**  
@@ -1066,7 +1061,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看帐户保护区域。 隐藏此部分也会阻止与帐户保护相关的所有通知。  
+  配置最终用户是否可以在 Microsoft Defender 安全中心查看帐户保护区域。 隐藏此部分也会阻止与帐户保护相关的所有通知。  
 
   - 未配置   
   - **隐藏**  
@@ -1075,7 +1070,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看防火墙和网络保护区域。 隐藏此部分也会阻止与防火墙和网络保护相关的所有通知。  
+  配置最终用户是否可以在 Microsoft Defender 安全中心查看防火墙和网络保护区域。 隐藏此部分也会阻止与防火墙和网络保护相关的所有通知。  
 
   - 未配置   
   - **隐藏**  
@@ -1084,7 +1079,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableAppBrowserUI](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看应用和浏览器控制区域。 隐藏此部分也会阻止与应用和浏览器控制相关的所有通知。  
+  配置最终用户是否可以在 Microsoft Defender 安全中心查看应用和浏览器控制区域。 隐藏此部分也会阻止与应用和浏览器控制相关的所有通知。  
 
   - 未配置   
   - **隐藏**  
@@ -1093,7 +1088,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看硬件保护区域。 隐藏此部分也会阻止与硬件保护相关的所有通知。  
+  配置最终用户是否可以查看 Microsoft Defender 安全中心的硬件保护区域。 隐藏此部分也会阻止与硬件保护相关的所有通知。  
 
   - 未配置   
   - **隐藏**  
@@ -1102,7 +1097,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看设备性能和运行状况区域。 隐藏此部分也会阻止与设备性能和运行状况相关的所有通知。  
+  配置最终用户是否可以在 Microsoft Defender 安全中心查看设备性能和运行状况区域。 隐藏此部分也会阻止与设备性能和运行状况相关的所有通知。  
   
   - 未配置   
   - **隐藏**  
@@ -1111,7 +1106,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  配置最终用户是否可以在 Windows Defender 安全中心查看 "家族选项" 区域。 隐藏此部分也会阻止与系列选项相关的所有通知。  
+  配置最终用户是否可以查看 Microsoft Defender 安全中心的 "家族选项" 区域。 隐藏此部分也会阻止与系列选项相关的所有通知。  
   
   - 未配置   
   - **隐藏**  
@@ -1120,7 +1115,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   **默认值**：未配置  
   WindowsDefenderSecurityCenter CSP： [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  选择要向最终用户显示的通知。 非关键通知包括 Windows Defender 防病毒活动摘要（包括扫描完成时的通知）。 所有其他通知被视为是关键通知。  
+  选择要向最终用户显示的通知。 非关键通知包括 Microsoft Defender 防病毒活动摘要（包括扫描完成时的通知）。 所有其他通知被视为是关键通知。  
 
   - 未配置   
   - **阻止非关键通知**  
@@ -1160,7 +1155,7 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
 
 ### <a name="it-contact-information"></a>IT 联系信息  
 
-提供要在 Windows Defender 安全中心应用和应用通知中显示的 IT 联系信息。  
+提供要在 Microsoft Defender 安全中心应用和应用通知中显示的 IT 联系信息。  
 
 可以选择“在应用和通知中显示”、“仅在应用中显示”、“仅在通知中显示”或“不显示”     。 输入“IT 组织名称”和至少以下一项联系选项  ：  
 
@@ -1639,6 +1634,240 @@ Windows Defender 安全中心作为独立应用或每个单项功能中的进程
   - **手动**
   - **自动**
   - **禁用**
+
+## <a name="user-rights"></a>用户权限
+
+- **作为受信任呼叫方的访问凭据管理器**  
+  **默认值**：未配置  
+  CSP： [UserRights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  在备份和还原操作期间，凭据管理器使用此用户权限。 如果为其他实体提供了此权限，则用户的保存的凭据可能会受到威胁。
+  - 未配置 
+  - **允许**
+
+- **允许本地登录**  
+  **默认值**：未配置  
+  CSP： [UserRights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  此用户权限决定哪些用户可以登录到计算机。
+  - 未配置 
+  - **允许**
+
+- **允许从网络进行访问**  
+  **默认值**：未配置  
+  CSP： [UserRights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  此用户权限确定允许哪些用户和组通过网络连接到计算机。
+  - 未配置 
+  - **允许**
+
+- **充当操作系统的一部分**  
+  **默认值**：未配置  
+  CSP： [UserRights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  充当操作系统的一部分
+  - 未配置 
+  - **允许**  
+
+- **备份文件和目录**  
+  **默认值**：未配置  
+  CSP： [UserRights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  此用户权限确定在备份文件和目录时哪些用户可以绕过文件、目录、注册表和其他持久对象权限。
+  - 未配置 
+  - **允许**
+
+- **更改系统时间**  
+  **默认值**：未配置  
+  CSP： [UserRights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  此用户权限将确定哪些用户和组可以更改计算机的内部时钟的时间和日期。
+  - 未配置 
+  - **允许**
+
+- **创建全局对象**  
+  **默认值**：未配置  
+  CSP： [UserRights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  此安全设置确定用户是否可以创建可供所有会话使用的全局对象。 可以创建全局对象的用户可能会影响在其他用户的会话下运行的进程，这可能会导致应用程序失败或数据损坏。
+  - 未配置 
+  - **允许**
+
+- **创建页面文件**  
+  **默认值**：未配置  
+  CSP： [UserRights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  此用户权限将确定哪些用户和组可以调用内部 API 来创建和更改页面文件的大小。
+  - 未配置 
+  - **允许**
+
+- **创建永久共享对象**  
+  **默认值**：未配置  
+  CSP： [UserRights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  此用户权限确定进程可使用哪些帐户通过对象管理器来创建目录对象。
+  - 未配置 
+  - **允许**
+
+- **创建符号链接**  
+  **默认值**：未配置  
+  CSP： [UserRights/CreateSymbolicLinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  此用户权限确定用户是否可以从其登录的计算机创建符号链接。
+  - 未配置 
+  - **允许**
+
+- **创建令牌**  
+  **默认值**：未配置  
+  CSP： [UserRights/appserviceloginhandler.createtoken](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  此用户权限确定进程使用内部 API 创建访问令牌时，哪些用户/组可由进程用来创建令牌，该令牌随后可用于访问任何本地资源。
+  - 未配置 
+  - **允许**
+
+- **调试程序**  
+  **默认值**：未配置  
+    CSP： [UserRights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  此用户权限确定哪些用户可以将调试器附加到任何进程或内核。
+  - 未配置 
+  - **允许**
+
+- **拒绝从网络访问**  
+  **默认值**：未配置  
+  CSP： [UserRights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  此用户权限决定了哪些用户通过网络无法访问计算机。
+  - 未配置 
+  - **允许**
+
+- **拒绝以服务登录**  
+  **默认值**：未配置  
+  CSP： [UserRights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  此安全设置确定阻止哪些服务帐户将进程注册为服务。
+  - 未配置 
+  - **允许**
+
+- **拒绝通过远程桌面服务登录**  
+  **默认值**：未配置  
+  CSP： [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  此用户权限确定禁止哪些用户和组作为远程桌面服务客户端登录。
+  - 未配置 
+  - **允许**
+
+- **启用委派**  
+  **默认值**：未配置  
+  CSP： [UserRights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ 此用户权限确定哪些用户可以对用户或计算机对象设置 "受信任的委派" 设置。
+  - 未配置 
+  - **允许**
+
+- **生成安全审核**  
+  **默认值**：未配置  
+  CSP： [UserRights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  此用户权限确定进程可使用哪些帐户向安全日志添加条目。 安全日志用于跟踪未经授权的系统访问。
+  - 未配置 
+  - **允许**
+
+- **模拟客户端**  
+  **默认值**：未配置  
+  CSP： [UserRights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  将此用户权限分配给用户后，就可以代表该用户运行的程序模拟客户端。 对于这种类型的模拟，要求此用户权限会阻止未经授权的用户说服客户端连接到已创建的服务，然后模拟该客户端，从而将未经授权的用户的权限提升到管理级别或系统级别。
+  - 未配置 
+  - **允许**
+
+- **提高日程安排的优先级**  
+  **默认值**：未配置  
+  CSP： [UserRights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  此用户权限确定哪些帐户可以使用对另一进程具有写入属性访问权限的进程，以提高分配给其他进程的执行优先级。
+  - 未配置 
+  - **允许**
+
+- **加载和卸载设备驱动程序**  
+  **默认值**：未配置  
+  CSP： [UserRights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  此用户权限确定哪些用户可以在内核模式下动态加载和卸载设备驱动程序或其他代码。
+  - 未配置 
+  - **允许**
+
+- **锁定内存页**  
+  **默认值**：未配置  
+  CSP： [UserRights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  此用户权限将确定哪些帐户可以使用进程将数据保留在物理内存中，从而阻止系统将数据分页到磁盘的虚拟内存中。
+  - 未配置 
+  - **允许**
+
+- **管理审核和安全日志**  
+  **默认值**：未配置  
+  CSP： [UserRights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  此用户权限确定哪些用户可以为个别资源（如文件、Active Directory 对象和注册表项）指定对象访问审核选项。
+  - 未配置 
+  - **允许**
+
+- **执行卷维护任务**  
+  **默认值**：未配置  
+  CSP： [UserRights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  此用户权限确定哪些用户和组可以在卷上运行维护任务，如远程碎片整理。
+  - 未配置 
+  - **允许**
+
+- **修改固件环境值**  
+  **默认值**：未配置  
+  CSP： [UserRights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  此用户权限决定谁可以修改固件环境的值。
+  - 未配置 
+  - **允许**
+
+- **修改对象标签**  
+  **默认值**：未配置  
+  CSP： [UserRights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  此用户权限将确定哪些用户帐户可以修改对象（如文件、注册表项或其他用户所拥有的进程）的完整性标签。
+  - 未配置 
+  - **允许**
+
+- **配置单一进程**  
+  **默认值**：未配置  
+  CSP： [UserRights/ProfileSingleProcess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  此用户权限确定哪些用户可以使用性能监视工具来监视系统进程的性能。
+  - 未配置 
+  - **允许**
+
+- **远程关机**  
+  **默认值**：未配置  
+  CSP： [UserRights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  此用户权限确定允许哪些用户从网络上的远程位置关闭计算机。 此用户权限的滥用可能导致拒绝服务。
+  - 未配置 
+  - **允许**
+  
+- **还原文件和目录**  
+  **默认值**：未配置  
+  CSP： [UserRights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  此用户权限确定在还原备份的文件和目录时哪些用户可以绕过文件、目录、注册表和其他持久对象权限，并确定哪些用户可以将任何有效的安全主体设置为对象的所有者。
+  - 未配置 
+  - **允许**
+  
+- **获得文件或对象的所有权**  
+  **默认值**：未配置  
+  CSP： [UserRights/TakeOwnership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  此用户权限确定哪些用户可以获得系统中任何安全对象的所有权，包括 Active Directory 对象、文件和文件夹、打印机、注册表项、进程和线程。
+  - 未配置 
+  - **允许**
 
 ## <a name="next-steps"></a>后续步骤
 

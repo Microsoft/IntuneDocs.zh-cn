@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中适用于 Windows 10 的设备限制设置 - Azure | Microsoft Docs
-description: 有关如何在 Windows 10 及更高版本设备上创建设备限制的信息，请参阅所有设置及其说明的列表。 使用配置文件中的这些设置可以控制 Microsoft Intune 中的屏幕截图、密码要求、展台设置、应用商店中的应用、Microsoft Edge 浏览器、Windows Defender、对云的访问权限、开始菜单等。
+description: 有关如何在 Windows 10 及更高版本设备上创建设备限制的信息，请参阅所有设置及其说明的列表。 使用配置文件中的这些设置可以控制 Microsoft Intune 中的屏幕截图、密码要求、展台设置、应用商店中的应用、Microsoft Edge 浏览器、Microsoft Defender、对云的访问权限、开始菜单等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
-ms.translationtype: MTE75
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755263"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059482"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -523,7 +523,7 @@ ms.locfileid: "73755263"
 
 - **共享使用情况数据**：选择已提交的诊断数据的级别。 选项包括：
   - **未配置**：不共享任何数据。
-  - **安全**：帮助保持 Windows 更安全所需的信息，包括有关“连接的用户体验”和“遥测组件”设置、恶意软件删除工具和 Windows Defender 的数据。
+  - **安全**：帮助保持 Windows 更安全所需的信息，包括有关“连接的用户体验”和“遥测组件”设置、恶意软件删除工具和 Microsoft Defender 的数据。
   - **基本**：基本设备信息，包括质量相关数据、应用兼容性、应用使用率数据和安全级别的数据。
   - **增强**：其他见解，包括：如何使用 Windows、Windows Server、System Center 和应用，它们的执行方式，高级可靠性数据以及基本级别和安全级别的数据。
   - **全部**：识别和帮助解决问题所需的所有数据，以及来自安全级别、基本级别和增强级别的数据。
@@ -632,19 +632,19 @@ ms.locfileid: "73755263"
   - **隐藏**：隐藏快捷方式并在设置应用中禁用设置。
   - **显示**：显示快捷方式并在设置应用中禁用设置。
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智能屏幕
 
-- **Microsoft Edge SmartScreen**：选择“需要”可关闭 Windows Defender SmartScreen，并阻止用户将其打开  。 选择“未配置”（默认）可启动 SmartScreen  。 帮助保护用户免受潜在威胁，防止用户将其关闭。
+- **Microsoft Edge SmartScreen**：选择“需要”可关闭 Microsoft Defender SmartScreen，并阻止用户将其打开  。 选择“未配置”（默认）可启动 SmartScreen  。 帮助保护用户免受潜在威胁，防止用户将其关闭。
 
-  Microsoft Edge 使用 Windows Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。
+  Microsoft Edge 使用 Microsoft Defender SmartScreen（已启用）防止用户受潜在网络钓鱼诈骗和恶意软件侵袭。
 
   [Browser/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **恶意网站访问**：选择“阻止”可阻止用户忽略 Windows Defender SmartScreen 筛选器警告，并阻止用户转到网站  。 选择“未配置”（默认）可允许用户忽略警告，继续访问网站  。
+- **恶意网站访问**：选择“阻止”可阻止用户忽略 Microsoft Defender SmartScreen 筛选器警告，并阻止用户转到网站  。 选择“未配置”（默认）可允许用户忽略警告，继续访问网站  。
 
   [Browser/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **未验证的文件下载**：选择“阻止”可阻止用户忽略 Windows Defender SmartScreen 筛选器警告，并阻止用户下载未验证的文件  。 选择“未配置”（默认）可允许用户忽略警告，继续访问下载未经验证的文件  。
+- **未验证的文件下载**：选择“阻止”可阻止用户忽略 Microsoft Defender SmartScreen 筛选器警告，并阻止用户下载未验证的文件  。 选择“未配置”（默认）可允许用户忽略警告，继续访问下载未经验证的文件  。
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -833,9 +833,9 @@ ms.locfileid: "73755263"
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **检测可能不需要的应用程序**：在 Windows 检测到可能不需要的应用程序时选择保护级别。 选项包括：
-  - **未配置**（默认）：禁用 Windows Defender 可能不需要的应用程序保护。
-  - **阻止**：Windows Defender 检测可能不需要的应用程序，并阻止检测到的项目。 这些项目与其他威胁一起显示在历史记录中。
-  - **审核**：Windows Defender 检测可能不需要的应用程序，但不执行任何操作。 可以查看有关 Windows Defender 将对其采取行动的应用程序的信息。 例如，在事件查看器中搜索 Windows Defender 创建的事件。
+  - **未配置**（默认）：禁用 Microsoft Defender 可能不需要的应用程序保护。
+  - **阻止**：Microsoft Defender 检测可能不需要的应用程序，并阻止检测到的项目。 这些项目与其他威胁一起显示在历史记录中。
+  - **审核**：Microsoft Defender 检测可能不需要的应用程序，但不执行任何操作。 可以查看有关 Microsoft Defender 将对其采取行动的应用程序的信息。 例如，在事件查看器中搜索 Microsoft Defender 创建的事件。
 
   有关可能不需要的应用程序的详细信息，请参阅[检测和阻止可能不需要的应用程序](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)。
 
@@ -850,11 +850,11 @@ ms.locfileid: "73755263"
   - **用户定义**
   - **阻止**
 
-  如果你的操作不可行，Windows Defender 将选择最佳选项以确保修正威胁。 
+  如果你的操作不可行，Microsoft Defender 会选择最佳的选项来确保修正威胁。 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 防病毒排除项
+### <a name="microsoft-defender-antivirus-exclusions"></a>Microsoft Defender 防病毒排除项
 
 - **要从扫描和实时保护排除的文件和文件夹**：向排除列表添加一个或多个文件和文件夹（如 C:\Path  或 %ProgramFiles%\Path\filename.exe  ）。 不会在任何实时或计划的扫描中包括这些文件和文件夹。
 - **要从扫描和实时保护排除的文件扩展名**：向排除列表添加一个或多个文件扩展名（如 jpg  或 txt  ）。 不会在任何实时或计划的扫描中包括具有这些扩展名的任何文件。

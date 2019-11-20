@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593767"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059217"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 Wi-Fi 设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 iOS 设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，添加 PKS 或 SCEP 证书等。
+可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 iOS 设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，添加 PKCS 或 SCEP 证书等。
 
 这些 Wi-Fi 设置分为两类：基本设置和企业级设置。
 
@@ -81,9 +79,9 @@ ms.locfileid: "72593767"
     - 用于服务器验证的根证书  ：选择现有的受信任根证书配置文件。 此证书使客户端可以信任无线网络访问服务器的证书。
 
     - **客户端身份验证**：选择一种身份验证方法  。 选项包括：
-      
-      - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。
-      
+
+      - **派生凭据**：使用从用户的智能卡派生的证书。 如果未配置任何派生凭据颁发者，Intune 会提示你添加一个。 有关详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](../protect/derived-credentials.md)。
+
       - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
 
     - 标识隐私（外部标识）  ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
@@ -95,8 +93,8 @@ ms.locfileid: "72593767"
 
     - 客户端身份验证  - 选择一种身份验证方法  。 选项包括：
 
-      - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。  
-      
+      - **派生凭据**：使用从用户的智能卡派生的证书。 如果未配置任何派生凭据颁发者，Intune 会提示你添加一个。 有关详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](../protect/derived-credentials.md)。
+
       - 用户名和密码  ：提示用户输入用户名和密码以对连接进行身份验证。 此外请输入：
         - 非 EAP 方法（内部标识）  ：选择验证连接的方式。 请确保选择在你的 Wi-Fi 网络上配置同一协议。
 
@@ -115,8 +113,8 @@ ms.locfileid: "72593767"
 
     - 客户端身份验证  - 选择一种身份验证方法  。 选项包括：
 
-      - **派生凭据**：如果未配置任何派生凭据颁发者，Intune 会提示你执行此操作。  
-      
+      - **派生凭据**：使用从用户的智能卡派生的证书。 如果未配置任何派生凭据颁发者，Intune 会提示你添加一个。 有关详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](../protect/derived-credentials.md)。
+
       - 用户名和密码  ：提示用户输入用户名和密码以对连接进行身份验证。 
 
       - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
