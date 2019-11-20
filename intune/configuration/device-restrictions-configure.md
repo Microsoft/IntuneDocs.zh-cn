@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa640d5858479b5f98009e92f005312966f536a
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 704da2ee4f0f2e6dce222c89704c83a35368c02c
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755279"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059540"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中配置设备限制设置
 
@@ -48,8 +48,7 @@ Intune 包含帮助管理员控制 Android、iOS、macOS 和 Windows 设备的�
     - **说明**：输入策略的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：  
 
-        - **Android
-**
+        - **Android**
         - **Android 企业**
         - **iOS/iPadOS**
         - **macOS**

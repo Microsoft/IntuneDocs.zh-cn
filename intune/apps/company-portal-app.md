@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999530"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199198"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -33,7 +33,7 @@ ms.locfileid: "72999530"
 。 此外，用户还可以通过公司门户应用安全地访问公司资源。 公司门户应用提供多个不同的页面，例如主页、应用、应用详细信息、设备和设备详细信息。 在应用页面上筛选应用，即可在公司门户内快速查找应用。
 
 > [!IMPORTANT]
-> 必须将 Android 公司门户应用更新到最新版本，才支持 Google 的 Firebase Cloud Messaging (FCM)。 有关详细信息，请参阅[将 Android 公司门户应用更新到最新版本](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-)。
+> 必须将 Android 公司门户应用更新到最新版本，才支持 Google 的 Firebase Cloud Messaging (FCM)。  
 
 > [!Tip]
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。 请注意，必须为用户分配 Intune 许可证才能访问公司门户网站。

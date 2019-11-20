@@ -2,8 +2,8 @@
 title: Microsoft Intune 中的应用保护策略和工作配置文件 - Azure | Microsoft Docs
 description: 了解决定在 Microsoft Intune 中为个人或 BYOD Android 企业设备使用应用保护策略或工作配置文件时的差异和优缺点。 比较使用未注册情况下的应用保护策略 (APP-WE) 和 Android 企业工作配置文件的不同和所获得的功能。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a2c71e04cf842fda7b16fb8ad4a05668ccbfaa84
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507596"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059798"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 中 Android 企业设备上的应用程序保护策略和工作配置文件
 

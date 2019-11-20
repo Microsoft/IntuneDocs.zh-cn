@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 589fc32db22de02f70ba78f79ebb413a31e92f1d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 61957140fa8d942be0f3dca2543da2aed6183535
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754857"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059259"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中添加和使用设备上的 Wi-Fi 设置
 
@@ -58,8 +58,7 @@ Wi-Fi 配置文件支持以下设备平台：
     - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：
 
-      - **Android
-**
+      - **Android**
       - **Android Enterprise**
       - **iOS/iPadOS**
       - **macOS**
@@ -75,8 +74,7 @@ Wi-Fi 配置文件支持以下设备平台：
 
 4. 某些 Wi-Fi 设置针对每个平台会有所不同。 若要查看特定平台的设置，请选择你的平台：
 
-    - [Android
-](wi-fi-settings-android.md)
+    - [Android](wi-fi-settings-android.md)
     - [Android Enterprise](wi-fi-settings-android-enterprise.md)（包括专用设备）
     - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)

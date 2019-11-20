@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984170"
+ms.locfileid: "74059311"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中创建 VPN 配置文件以连接到 VPN 服务器
 
@@ -76,8 +76,7 @@ ms.locfileid: "73984170"
     - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：
 
-      - **Android
-**
+      - **Android**
       - “Android Enterprise”   > “仅设备所有者” 
       - “Android Enterprise”   > “仅工作配置文件” 
       - **iOS/iPadOS**
