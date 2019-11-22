@@ -145,6 +145,8 @@
           items:
             - name: 网络配置
               href: network-bandwidth-use.md
+            - name: 配合使用 Windows 10 VM 和 Intune
+              href: windows-10-virtual-machines.md
             - name: Intune 终结点
               href: intune-endpoints.md
             - name: Intune 美国政府终结点
