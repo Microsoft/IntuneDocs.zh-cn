@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059630"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390835"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企业设备 OEMConfig
 
@@ -146,6 +146,11 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 | Datalogic | datalogic. oemconfig | [Datalogic OEMConfig 的用户文档](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell. oemconfig |  |
 | Kyocera | 日本. kyocera. enterprisedeviceconfig |  |
+| Spectralink-条形码 | spectralink。服务 |  |
+| Spectralink-按钮 | spectralink |  |
+| Spectralink-设备 | spectralink. slnkdevicesettings  |  |
+| Spectralink-日志记录 | spectralink. slnklogger |  |
+| Spectralink - VQO | spectralink. slnkvqo |  |
 
 -----------------
 

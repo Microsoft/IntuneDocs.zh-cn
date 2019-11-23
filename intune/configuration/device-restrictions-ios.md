@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984125"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390860"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
 
@@ -97,7 +97,7 @@ ms.locfileid: "73984125"
 - **阻止删除应用**：选择“阻止”以防止用户删除应用  。 “未配置”（默认）允许用户从设备中删除应用  。
 - **阻止 USB 受限模式**：选择“阻止”  可禁用受监督设备上的 USB 受限模式。 USB 受限模式可阻止 USB 附件与已锁定一个多小时的设备交换数据。 “未配置”（默认）允许“USB 受限”模式  。
 - **强制自动日期和时间**：“要求”  可强制受监督设备自动设置日期和时间。 当设备连接移动电话网络或启用了位置服务的 Wi-fi 时，将更新设备的时区。
-- **要求学生请求准许离开 Classroom 课程**：“要求”  可强制使用 Classroom 应用加入非托管课程的学生在获得教师许可后离开课程。 “未配置”（默认）不强制学生请求许可  。
+- **要求学生请求准许离开 Classroom 课程**：“必需”  可强制使用 Classroom 应用注册非托管课程的学生在退出该课程前先请求教师准许。 “未配置”（默认）不强制学生请求许可  。
 
   此功能适用于：  
   - iOS 11.3 及更高版本
@@ -130,9 +130,6 @@ ms.locfileid: "73984125"
     - iOS 11.3 及更高版本
 
 ## <a name="password"></a>密码
-
-> [!NOTE]
-> 在将来的版本中，将更新 Intune UI 中的这些密码设置以匹配注册类型。
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>设置适用于：所有注册类型
 
@@ -266,7 +263,7 @@ ms.locfileid: "73984125"
 - **需要 ITunes 商店密码才能进行所有购买**：**要求**用户输入每个应用内或 ITUNES 购买的 Apple ID 密码。 "**未配置**" （默认值）允许购买，无需每次都提示输入密码。
 - **应用内购买**：选择“阻止”  可阻止从应用商店进行应用内购买。 “未配置”  （默认）则允许在运行的应用中产生应用商店购买行为。
 - **从 iBook 商店下载标记为“成人作品”的内容**：选择“阻止”  可阻止用户从 iBook 商店下载标记为“成人作品”的媒体。 “未配置”  （默认）则允许用户下载类别为“成人作品”的书籍。
-- **允许托管应用将联系人写入非托管联系人帐户**：设置为 "**允许**" 时，托管应用（如 Outlook 移动应用）可以将联系人信息（包括业务和企业联系人）保存或同步到内置的 iOS 联系人应用. 设置为 "**未配置**" （默认值）时，托管应用无法将联系人信息保存或同步到设备上的内置 iOS 联系人应用。
+- **允许托管应用将联系人写入非托管联系人帐户**：设置为 "**允许**" 时，托管应用（如 Outlook 移动应用）可以将联系人信息（包括业务和企业联系人）保存或同步到内置的 iOS 联系人应用。 设置为 "**未配置**" （默认值）时，托管应用无法将联系人信息保存或同步到设备上的内置 iOS 联系人应用。
   
   若要使用此设置，请将“在非托管应用中查看企业文档”设置设为“阻止”   。
 
@@ -321,16 +318,6 @@ ms.locfileid: "73984125"
 - **Safari JavaScript**：“阻止”  可阻止在设备上运行浏览器中的 Java 脚本。 "**未配置**" （默认）允许 Java 脚本。
 
 - **Safari 弹出窗口**：“阻止”  可禁用 Web 浏览器中的弹出窗口阻止程序。 "**未配置**" （默认）允许弹出窗口阻止程序。
-
-- **Siri 命令的服务器端日志记录**：设置为 "**禁用**" 时，服务器端 Siri 日志记录已关闭。 它还可以阻止记录用户在 Siri 服务器上的请求。 **未配置**（默认值）在服务器端记录 Siri 命令。 此设置不依赖于被阻止或未配置的 Siri 设置。
-
-  此功能适用于：  
-  - iOS 12.2 及更高版本
-
-  > [!NOTE]
-  > Apple 不推荐使用**服务器端日志记录 Siri 命令**设置。 在即将发布的版本中，将从 Intune 控制台中删除此设置。
-  >
-  > 目前，此设置对设备不起作用，即使设置显示在管理配置文件中。 若要从任何策略中删除此设置，请打开策略，进行细微的更改，然后保存策略。 此策略已更新，并从设备中删除了该设置。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>设置适用于：自动化设备注册（监督）
 
