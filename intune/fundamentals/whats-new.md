@@ -1050,7 +1050,7 @@ Intune 的内置学校管理员角色现在对托管应用拥有创建、读取�
 
 ### <a name="app-management"></a>应用管理
 
-#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github---2653471---"></a>显示 GitHub 上提供的 Intune SDK 集成的新示例应用<!-- 2653471 -->
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github---2653471---"></a>可在 GitHub 上获取展示 Intune SDK 集成的新示例应用<!-- 2653471 -->
 msintuneappsdk GitHub 帐户新增了适用于 iOS (Swift)、Android、Xamarin.iOS、Xamarin Forms 和 Xamarin.Android 的新示例应用。 这些应用旨在补充现有文档并演示如何将 Intune APP SDK 集成到自己的移动应用中。 如果你是需要其他 Intune SDK 指南的应用开发人员，请参阅以下链接示例：
 - [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) - 使用 Azure Active Directory 身份验证库 (ADAL) 进行中转身份验证的原生 iOS (Swift) 即时消息应用
 。
@@ -1100,7 +1100,7 @@ Windows 公司门户应用将具有一个标记为“设备”的新页面  。 
 若要在已注册的 DEP 设备上安装公司门户，需要转到“Intune”>“客户端应用”，并将其作为具有应用配置策略的托管应用进行推送。 
 
 #### <a name="configure-how-end-users-update-a-line-of-business-lob-app-using-an-app-protection-policy---3568384---"></a>配置最终用户使用应用保护策略更新业务线 (LOB) 应用的方式<!-- 3568384 -->
-用户现在可以配置最终用户可获取业务线 (LOB) 应用的更新版本的位置。 最终用户将在“最低应用版本”  条件启动对话框中看到此功能，系统将提示最终用户更新到 LOB 应用的最低版本。 必须提供这些更新详细信息作为 LOB 应用保护策略（APP）的一部分。 此功能在 iOS 和 Android 中可用。 在 iOS 上，此功能要求应用与 Intune SDK for iOS v. 10.0.7 或更高版本集成（或使用包装工具包装）。 在 Android 上，此功能需要使用最新的公司门户。 若要配置最终用户更新 LOB 应用的方式，应用需要使用键 `com.microsoft.intune.myappstore` 发送给它的托管应用配置策略。 发送的值将定义最终用户从哪个应用商店中下载应用。 如果应用是通过公司门户部署的，则值必须为 `CompanyPortal`。 对于任何其他应用商店，必须输入完整的 URL。
+用户现在可以配置最终用户可获取业务线 (LOB) 应用的更新版本的位置。 最终用户将在“最低应用版本”  条件启动对话框中看到此功能，系统将提示最终用户更新到 LOB 应用的最低版本。 必须提供这些更新详细信息作为 LOB 应用保护策略（APP）的一部分。 此功能在 iOS 和 Android 中可用。 在 iOS 上，此功能要求应用与 Intune SDK for iOS v. 10.0.7 或更高版本集成（或使用包装工具包装）。 在 Android 上，此功能需要使用最新的公司门户。 若要配置最终用户更新 LOB 应用的方式，则需要向应用发送托管应用配置策略并在其中包含键 `com.microsoft.intune.myappstore`。 发送的值将定义最终用户从哪个应用商店中下载应用。 如果应用是通过公司门户部署的，则值必须为 `CompanyPortal`。 对于任何其他应用商店，必须输入完整的 URL。
 
 #### <a name="intune-management-extension-powershell-scripts---3734186----"></a>Intune 管理扩展 PowerShell 脚本<!-- 3734186  -->
 用户可以在设备上配置使用用户的管理员权限运行的 PowerShell 脚本。 有关详细信息，请参阅[在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本](../apps/intune-management-extension.md)和 [Win32 应用管理](../apps/app-management.md)。
@@ -1166,11 +1166,11 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 注册状态页现在没有预览版。 有关详细信息，请参阅[设置注册状态页](../enrollment/windows-enrollment-status.md)。
 
 
-#### <a name="intune-user-interface-update---autopilot-enrollment-profile-creation---4593669---"></a>Intune 用户界面更新 - Autopilot 注册配置文件创建<!-- 4593669 -->
+#### <a name="intune-user-interface-update---autopilot-enrollment-profile-creation---4593669---"></a>Intune 用户界面更新 - 创建 Autopilot 注册配置文件<!-- 4593669 -->
 用于创建 Autopilot 注册配置文件的用户界面已更新为与 Azure 用户界面样式保持一致。 有关详细信息，请参阅[创建 Autopilot 注册配置文件](../enrollment/enrollment-autopilot.md#create-an-autopilot-deployment-profile)。 接下来，其他 Intune 方案将更新为此新 UI 样式。
 
 #### <a name="enable-autopilot-reset-for-all-windows-devices---4225665---"></a>为所有 Windows 设备启用 Autopilot 重置<!-- 4225665 -->
-Autopilot 重置现在适用于所有 Windows 设备，甚至包括那些未配置为使用注册状态页的设备。 如果在初始设备注册过程中未为设备配置注册状态页，则设备将在登录后直接转到桌面。 可能最多需要 8 小时才能同步并在 Intune 中显示符合。 有关详细信息，请参阅[使用远程 Windows Autopilot 重置功能重置设备](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote)。
+Autopilot 重置现在适用于所有 Windows 设备，甚至包括那些未配置为使用注册状态页的设备。 如果在初始设备注册过程中未为设备配置注册状态页，则设备将在登录后直接转到桌面。 在 Intune 中可能需要多达 8 小时来进行同步并显示符合。 有关详细信息，请参阅[使用远程 Windows Autopilot 重置功能重置设备](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote)。
 
 #### <a name="exact-imei-format-not-required-when-searching-all-devices--30407680---"></a>搜索所有设备时不需要确切的 IMEI 格式<!--30407680 -->
 搜索“所有设备”  时，无需在 IMEI 号码中包含空格。

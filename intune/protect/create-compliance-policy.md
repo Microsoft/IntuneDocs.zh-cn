@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786082"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188261"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建符合性策略
 
@@ -61,19 +61,15 @@ ms.locfileid: "72786082"
 
 ## <a name="create-the-policy"></a>创建策略
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备符合性”  。 有下列选项：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-    - **概述**：显示摘要以及符合策略的设备数、未评估的设备数等。 另外，还列出了策略以及策略中的各项设置。 [监视 Intune 设备符合性策略](compliance-policy-monitor.md)提供了一些有用的信息。
-    - **管理**：创建设备策略，向不符合策略的设备发送[通知](quickstart-send-notification.md)，并启用[网络隔离](use-network-locations.md)。
-    - **监视**：在设置和策略级别检查设备的符合性状态。 [监视 Intune 设备符合性策略](compliance-policy-monitor.md)是不错的资源。 此外还查看日志并检查设备的威胁代理状态。
-    - **设置**：使用[内置的符合性策略](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)，启用 [Microsoft Defender 高级威胁防护 (ATP)](advanced-threat-protection.md)，添加[移动威胁防御连接器](mobile-threat-defense.md)，并使用 [Jamf](conditional-access-integrate-jamf.md)。
+2. 选择“设备” > “符合性策略” > “创建策略”。
 
-3. 选择“策略” > “创建策略”   。 输入以下属性：
+3. 指定以下属性：
 
-   - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好为“将已越狱的 iOS 设备标记为不符合策略”  。  
+   - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好为“将已越狱的 iOS 设备标记为不符合策略”。
 
-   - **说明**：输入策略的说明。 此设置是可选的，但建议进行。  
+   - **说明**：输入策略的说明。 此设置是可选的，但建议进行。
 
    - **平台**：选择设备平台。 选项包括：
      - **Android 设备管理员**
@@ -84,7 +80,7 @@ ms.locfileid: "72786082"
      - **Windows 8.1 及更高版本**
      - **Windows 10 及更高版本**
 
-     对于 *Android Enterprise*，必须选择“配置文件类型”  ：
+     对于 Android Enterprise，必须选择“配置文件类型”：
      - **设备所有者**
      - **工作配置文件**
 
@@ -96,36 +92,39 @@ ms.locfileid: "72786082"
      - [Windows Phone 8.1、Windows 8.1 及更高版本](compliance-policy-create-windows-8-1.md)
      - [Windows 10 及更高版本](compliance-policy-create-windows.md)  
 
-   - **位置** *（Android 设备管理员）* ：在策略中，可根据设备位置强制执行符合性。 从现有位置进行选择。 尚无位置？ 在 Intune 中[使用的位置（网络围墙）](use-network-locations.md)提供一些指导。  
+   - **位置***（Android 设备管理员）*：在策略中，可根据设备位置强制执行符合性。 从现有位置进行选择。 尚无位置？ 在 Intune 中[使用的位置（网络围墙）](use-network-locations.md)提供一些指导。  
 
    - **对不合规设备的操作**：对于不满足符合性策略要求的设备，可添加要自动应用的一系列操作。 可以在设备被标记为不符合时（例如，一天后）更改计划。 此外，还可以配置第二个操作，即在设备不符合时向用户发送电子邮件。
-    
+
      [为不符合要求的设备添加操作](actions-for-noncompliance.md)提供了详细信息，包括为用户创建通知电子邮件。
 
      例如，使用“位置”功能，并在符合性策略中添加位置。 选择至少一个位置时，将应用针对不符合的默认操作。 如果设备未连接到所选位置，则会被立即视为不符合要求。 可以为用户提供宽限期（例如，一天）。
 
-   - **作用域（标记）** ：作用域标记非常适合用于筛选策略并将其分配给特定组（例如，“销售”、“HR”、“所有 US-NC”员工等）。 添加设置后，还可以向符合性策略添加作用域标记。 [使用作用域标记筛选策略](../fundamentals/scope-tags.md)是不错的资源。
+   - **作用域（标记）**：作用域标记非常适合用于筛选策略并将其分配给特定组（例如，“销售”、“HR”、“所有 US-NC”员工等）。 添加设置后，还可以向符合性策略添加作用域标记。 [使用作用域标记筛选策略](../fundamentals/scope-tags.md)是不错的资源。
 
-4. 完成后，选择“确定” > “创建”，保存所做更改   。 此时，策略创建完成，并出现在列表中。 接下来，向组分配策略。
+4. 完成后，选择“确定” > “创建”，保存所做更改。 此时，策略创建完成，并出现在列表中。 接下来，向组分配策略。
 
 ## <a name="assign-the-policy"></a>分配策略
 
 创建策略后，下一步是向组分配策略：
 
-1. 选择已创建的策略。 现有策略位于“设备符合性”   > “策略”  中。
-2. 选择策略，然后选择“分配”  。 可以包括或排除 Azure Active Directory (AD) 安全组。
-3. 选择“所选组”  查看 Azure AD 安全组。 先选择要应用此策略的组，再选择“保存”，以部署此策略  。
+1. 选择已创建的策略。 现有策略位于“设备” > “符合性策略” > “策略”中。
+
+2. 选择策略  > “分配”。 可以包括或排除 Azure Active Directory (AD) 安全组。
+
+3. 选择“所选组”查看 Azure AD 安全组。 先选择要应用此策略的组，再选择“保存”，以部署此策略。
 
 当策略所面向的用户或设备使用 Intune 签入时，会对其进行评估以确定是否满足符合性要求。
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>评估所面向的用户数
 
-分配策略后，还可以评估  受影响的用户数。 此功能计算用户数，不计算设备数。
+分配策略后，还可以评估受影响的用户数。 此功能计算用户数，不计算设备数。
 
-1. 在 Intune 中，选择“设备符合性”   >   “策略”。
-2. 选择一个策略，然后依次选择“分配”   >   “评估”。 随即出现一条消息，显示此策略所面向的用户数。
+1. 在 Intune 中，选择“设备” > “符合性策略” > “策略”。
 
-如果“评估”按钮呈灰显状态，请确保策略已分配到一个或多个组  。
+2. 选择策略  > “分配” > “评估”。 随即出现一条消息，显示此策略所面向的用户数。
+
+如果“评估”按钮呈灰显状态，请确保策略已分配到一个或多个组。
 
 <!-- ## Actions for noncompliance
 
