@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中的设备功能和设置 - Azure | Microsoft Docs
-description: 不同 Microsoft Intune 设备配置文件的概述。 在 Azure 门户中获取有关功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Windows Defender、Windows 信息保护、管理模板，以及自定义设备配置设置的信息。 使用这些配置文件管理和保护公司内的数据和设备。
+description: 不同 Microsoft Intune 设备配置文件的概述。 在 Azure 门户中获取有关功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Microsoft Defender、Windows 信息保护、管理模板，以及自定义设备配置设置的信息。 使用这些配置文件管理和保护公司内的数据和设备。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749353"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059896"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能和设置
 
@@ -145,7 +145,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
 
-[适用于 Windows 10 的 Endpoint Protection 设置](../protect/endpoint-protection-windows-10.md)配置适用于 Windows 10 设备的 BitLocker 和 Windows Defender 设置。
+[适用于 Windows 10 的终结点保护设置](../protect/endpoint-protection-windows-10.md)配置了适用于 Windows 10 设备的 BitLocker 和 Microsoft Defender 设置。
 
 若要使用 Microsoft Intune 载入 Microsoft Defender 高级威胁防护 (WDATP)，请参阅[使用移动设备管理 (MDM) 工具配置终结点](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)。
 

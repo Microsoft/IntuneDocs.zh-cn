@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502456"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161594"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上强制实现符合性
 
@@ -37,12 +37,11 @@ ms.locfileid: "72502456"
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中设置设备符合性策略
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备符合性”   > “策略”  。 
-2. 如果使用以前创建的策略，请在控制台中选择该策略，然后转到此过程的下一步。  
-   
-   选择“创建策略”，然后使用 macOS 的平台指定策略的详细信息    。 配置“设置”和“对不合规项的操作”以满足组织要求，然后选择“创建”以保存策略    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-3. 在策略的“概述”窗格上，选择“分配”   。 使用可用选项配置哪些 Azure Active Directory (Azure AD) 用户和安全组接收此策略。 Jamf 与 Intune 的集成不支持针对设备组的符合性策略。 
+2. 选择“设备” > “符合性策略”   。 如果使用以前创建的策略，请在控制台中选择该策略，然后转到此过程的下一步。 若要创建新策略，请选择“创建策略”，然后使用 macOS 的平台指定策略的详细信息    。 配置“设置”和“对不合规项的操作”以满足组织要求，然后选择“创建”以保存策略    。
+
+3. 在策略的“概述”窗格上，选择“分配”   。 使用可用选项配置哪些 Azure Active Directory (Azure AD) 用户和安全组接收此策略。 Jamf 与 Intune 的集成不支持针对设备组的符合性策略。
 
 4. 选择“保存”  后，策略将部署到用户。  
 
@@ -103,7 +102,7 @@ ms.locfileid: "72502456"
 
 使用 Jamf Pro 控制台确认 Jamf Pro 与 Microsoft Intune 之间的通信是否成功。 
 
-- 在 Jamf Pro 中，转到“设置”   > “全局管理”   > “Microsoft Intune 集成”  ，然后选择“测试”  。 
+- 在 Jamf Pro 中，转到“设置”   > “全局管理”   > “Microsoft Intune 集成”  ，然后选择“测试”  。
 
     控制台将显示一条消息，指示连接成功或失败。  
 
@@ -112,7 +111,7 @@ ms.locfileid: "72502456"
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>从 Intune 删除 Jamf 托管设备
 
-通过在“所有设备”视图中选择“删除”，可从 Intune 控制台中删除 Jamf 托管设备   。 通过选择多个设备并单击“删除”，可启用批量设备删除  。
+若要删除 Jamf 管理的设备，请打开 Microsoft 终结点管理器管理中心，选择“设备” > “所有设备”，选择相应设备，然后选择“删除”    。  通过选择多个设备并单击“删除”，可启用批量设备删除  。
 
 获取有关如何[在 Jamf Pro 文档中删除 Jamf 托管设备](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的信息。还可通过 [Jamf 支持](https://www.jamf.com/support/)提交支持票证，获取更多帮助。 
 

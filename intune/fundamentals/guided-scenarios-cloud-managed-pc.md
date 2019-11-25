@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749326"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164560"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>引导式方案 - 云托管的新式桌面
 
-新式桌面是适用于信息工作者的最先进的生产力平台。 Office 365 专业增强版和 Windows 10 是新式桌面的核心组件，也是适用于 Windows 10 和 Windows Defender 高级威胁防护的最新安全基线。 
+新式桌面是适用于信息工作者的最先进的生产力平台。 Office 365 专业增强版和 Windows 10 是新式桌面的核心组件，也是适用于 Windows 10 和 Microsoft Defender 高级威胁防护的最新安全基线。 
 
 通过云管理新式桌面，增加在 Internet 范围内远程操作的额外优势。 云管理使用内置的 Windows 移动设备管理策略并且删除了对本地 Active Directory 组策略的依赖。 
 
@@ -33,7 +33,7 @@ ms.locfileid: "72749326"
 
 ## <a name="prerequisites"></a>必备条件
 - [将 MDM 机构设置为 Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) - 移动设备管理 (MDM) 机构设置决定了管理设备的方式。 作为 IT 管理员，必须先设置 MDM 机构，然后用户才能注册设备来进行管理。
-- 至少为 M356 E3（或 M365 E5 以获得最佳安全性）
+- 至少为 M365 E3（或 M365 E5 以获得最佳安全性）
 - Windows 10 1903 设备（使用 Windows Autopilot 进行注册以获得最佳的最终用户体验）
 - 完成此引导式方案所需的 Intune 管理员权限：
   - 设备配置读取、创建、删除、分配和更新
@@ -118,5 +118,5 @@ Windows Autopilot 自动配置新设备，这样用户就可以在无需 IT 人�
 
 ## <a name="next-steps"></a>后续步骤
 
-- 如果使用的是 Windows Defender 高级威胁检测，请创建 [Intune 符合性策略](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)以要求 Defender 威胁分析满足符合性要求。
+- 如果使用的是 Microsoft Defender 高级威胁检测，请创建 [Intune 符合性策略](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)以要求 Defender 威胁分析满足符合性要求。
 - 如果设备不满足 Intune 符合性，请创建[基于设备的条件访问策略](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy)以阻止访问。

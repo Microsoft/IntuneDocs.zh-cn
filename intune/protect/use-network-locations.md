@@ -2,10 +2,10 @@
 title: 通过 Microsoft Intune 中的网络位置绑定 Android 设备 - Azure | Microsoft Docs
 description: 在适用于 Android 设备的 Microsoft Intune 中创建或配置网络位置。 可以根据设备的网络位置将设备标记为不符合。 如果设备超出网络位置范围，则可以阻止其访问公司资源。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749451"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058154"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>使用 Intune 中的位置（网络围墙）
 
@@ -50,7 +50,7 @@ ms.locfileid: "72749451"
 
 ## <a name="create-a-location"></a>创建位置
 
-1. 在 Intune 中，选择“设备符合性” > “位置” > “创建”    。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > 符合性策略” > “位置” > “创建”     。
 
 2. 输入以下属性：  
 
@@ -69,8 +69,7 @@ ms.locfileid: "72749451"
 
 ## <a name="create-the-location-compliance-policy"></a>创建位置符合性策略
 
-在[创建符合性策略](create-compliance-policy.md)时，选择“Android”作为“平台”   。 在“位置”中，可以选择一个或多个已添加的网络位置  。 这些位置是你为设备创建的网络围墙的一部分。 
-
+在[创建符合性策略](create-compliance-policy.md)时，选择“Android”作为“平台”   。 在“位置”中，可以选择一个或多个已添加的网络位置  。 这些位置是你为设备创建的网络围墙的一部分。
 
 ## <a name="configure-the-actions-for-noncompliance"></a>配置针对非符合性的操作
 
@@ -83,5 +82,6 @@ ms.locfileid: "72749451"
 当设备连接到你的位置时，该设备会在公司门户应用中显示为符合。 当设备未连接到你的某个位置时，该设备会显示为不符合。
 
 ## <a name="next-steps"></a>后续步骤
+
 [监视设备符合性策略](compliance-policy-monitor.md)  
 [设备符合性策略入门](device-compliance-get-started.md)

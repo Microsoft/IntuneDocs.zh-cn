@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9802b85a9674535cea62ae28f135153352ef76c
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813267"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117879"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>如何将 macOS 业务线 (LOB) 应用添加到 Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 本文中提供的信息可帮助你将 macOS 业务线应用添加到 Microsoft Intune。 必须先下载一个外部工具来预处理 .pkg  文件，然后才能将业务线文件上载到 Microsoft Intune。 .pkg  文件的预处理必须在 macOS 设备上进行。
+
+> [!NOTE]
+> 从 macOS Catalina 10.15 发布开始，在将应用添加到 Intune 之前，请检查以确保 macOS LOB 应用已经过公证。 如果 LOB 应用的开发人员未公证其应用，应用将无法在用户的 macOS 设备上运行。 有关如何检查应用是否已公证的详细信息，请访问[公证 macOS 应用以便为 macOS Catalina 做准备](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579)。
 
 > [!NOTE]
 > 尽管 macOS 设备用户可删除部分内置 macOS 应用（如“股市”和“地图”），但无法使用 Intune 重新部署这些应用。 如果最终用户删除这些应用，则必须前往 App Store，并手动重新安装它们。

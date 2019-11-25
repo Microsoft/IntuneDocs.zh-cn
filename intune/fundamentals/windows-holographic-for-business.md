@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/18/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 0f82fce8cc31a831f2c032b85d6464e418bd215c
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889515"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058498"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>通过 Intune 管理和使用 Windows Holographic 和 HoloLens 设备上的不同设备管理功能
 
@@ -42,6 +42,7 @@ Azure Active Directory (AD) 是帮助管理和控制运行 Windows Holographic f
 - **[Windows 设备批量注册](../enrollment/windows-bulk-enroll.md)** ：可以将大量新 Windows 设备加入 Azure Active Directory (AD) 和 Intune。 此功能称为批量注册，并使用预配包。 这些包将运行 Windows Holographic for Business 的设备加入到 Azure AD 租户，并在 Intune 中注册它们。
 
 ## <a name="company-portal"></a>Company Portal
+
 **[配置公司门户应用](../apps/company-portal-app.md)**
 
 Intune 提供了公司门户应用，用户可使用该应用访问公司数据、注册设备、安装应用、联系 IT 部门等。 你可以为运行 Windows Holographic for Business 的设备自定义公司门户应用。
@@ -54,6 +55,7 @@ Intune 提供了公司门户应用，用户可使用该应用访问公司数据�
 - 从设置应用或公司门户应用[手动同步设备](/intune-user-help/sync-your-device-manually-windows)
 
 ## <a name="compliance-policy"></a>合规性策略
+
 **[创建设备符合性策略](../protect/compliance-policy-create-windows.md)**
 
 符合性策略即设备为符合要求必须满足的规则和设置。 可以将这些策略与条件访问结合使用，阻止不符合要求的设备访问公司资源。 在 Intune 中可以为运行 Windows Holographic for Business 的设备创建符合性策略，从而允许或阻止其访问权限。 例如，可以创建一个要求启用 Bitlocker 的策略。
@@ -61,6 +63,7 @@ Intune 提供了公司门户应用，用户可使用该应用访问公司数据�
 另请参阅[设备符合性策略入门](../protect/device-compliance-get-started.md)  。
 
 ## <a name="deploy-and-manage-apps"></a>部署和管理应用
+
 **[向 Intune 添加应用](../apps/apps-add.md)**
 
 使用 Intune 可以向运行 Windows Holographic for Business 的设备添加应用。 有多种部署应用的方法，包括：
@@ -83,6 +86,7 @@ Microsoft Intune 可以向运行 Windows Holographic for Business 的 Microsoft 
 > 运行 Windows 10 Holographic for Business 1607 的 HoloLens 设备不支持来自适用于企业的 Microsoft Store 的在线许可应用。 若要了解详细信息，请参阅[在 HoloLens 上安装应用](/hololens/holographic-store-apps)。
 
 ## <a name="device-actions"></a>设备操作
+
 Intune 具有一些内置操作，允许 IT 管理员在本地设备上执行不同的任务，或者在 Azure 门户中使用 Intune 远程执行不同的任务。 用户还可从 Intune 公司门户中向在 Intune 中注册的个人所有设备发出远程命令。
 
 使用运行 Windows Holographic for Business 的设备时，可使用以下操作： 
@@ -96,14 +100,16 @@ Intune 具有一些内置操作，允许 IT 管理员在本地设备上执行不
 **[什么是 Microsoft Intune 设备管理？](../remote-actions/device-management.md)** 是了解使用 Azure 门户管理设备的最佳资源。 
 
 ## <a name="device-categories-and-groups"></a>设备类别和组
+
 **[将设备分类为组](../enrollment/device-group-mapping.md)**
 
 使用 Intune 可以创建设备类别，例如销售、财务和人力资源等，并根据创建的类别将设备自动添加到组。 其目的是让管理运行 Windows Holographic for Business 的设备变得更轻松。
 
-## <a name="device-configuration-profiles"></a>设备配置文件 
+## <a name="device-configuration-profiles"></a>设备配置文件
+
 **[开始使用配置文件](../configuration/device-profiles.md)并[创建自己的配置文件](../configuration/device-profile-create.md)**
 
-Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能通过配置文件进行管理。 例如，可以创建一个在运行 Windows Holographic for Business 的设备上启用 Cortana 或使用 Windows Defender Smart Screen 的配置文件。
+Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能通过配置文件进行管理。 例如，可以在运行 Windows Holographic for Business 的设备上创建一个启用 Cortana 或使用 Microsoft Defender Smart Screen 的配置文件。
 
 在配置文件中，可以使用 OMA-URI 来自定义某些设置、创建设备限制并配置虚拟专用网络 (VPN) 和 Wi-Fi。
 
@@ -128,21 +134,29 @@ Intune 提供可在组织内的不同设备上启用或禁用的设置和功能�
 还可以在 Intune 中创建 Wi-Fi 配置文件，为 Windows Holographic for Business 设备分配无线网络设置。 分配 Wi-Fi 配置文件后，最终用户无需进行任何网络配置即可获得企业网络访问权限。 例如，可以创建一个仅供 Windows Holographic for Business 设备使用的 Wi-Fi 网络。
 
 ## <a name="shared-multi-user-devices"></a>共享的多用户设备
+
 [共享设备](../configuration/shared-user-device-settings-windows-holographic.md)
 
 运行 Windows Holographic for Business 的设备（如 Microsoft HoloLens）可以有多个用户。 Intune 包括在这些共享设备上控制不同功能的设置，如电源管理、使用本地存储和帐户管理。 配置文件还可以应用于具有不同操作系统的设备。 例如，设备组可以具有在同一组中运行 RS2 和 RS3 的设备。
 
 ## <a name="software-updates"></a>软件更新
+
 **[管理软件更新](../protect/windows-update-for-business-configure.md)**
 
 Intune 提供了一个名为“更新圈”的功能供 Windows 10 设备使用。 这些更新圈包括一组用于确定更新安装方式的设置。 例如，你可以创建一个维护时段来安装更新，也可以选择在安装更新后重新启动。 更新圈可应用于运行 Windows Holographic for Business 的多个设备。
 
 ## <a name="terms-and-conditions"></a>条款和条件
+
 **[设置公司的用户访问条款和条件](../enrollment/terms-and-conditions-create.md)**
 
 可以要求用户先接受你所在公司的条款和条件，然后才能注册设备和访问公司应用，包括电子邮件。 在 Intune 中可以定义条款和条件在公司门户中的显示方式，并将这些条款和条件分配给运行 Windows Holographic for Business 的设备。
 
 ## <a name="windows-hello-for-business"></a>Windows Hello 企业版
+
 **[使用 Windows Hello 企业版](../protect/windows-hello.md)**
 
 Windows Hello 企业版是使用 Azure Active Directory 帐户取代密码、智能卡或虚拟智能卡进行登录的一种替代方法。 Windows Holographic for Business 可以与 Windows Hello 企业版配合使用，使用你设置的最短 PIN 进行登录。
+
+## <a name="next-steps"></a>后续步骤
+
+[设置 Intune](setup-steps.md)。

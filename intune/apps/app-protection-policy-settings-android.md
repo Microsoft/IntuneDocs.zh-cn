@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983963"
+ms.locfileid: "74059779"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”  边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -45,7 +45,7 @@ ms.locfileid: "73983963"
 | **限制在其他应用间进行剪切、复制和粘贴** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。 | **任何应用** |
 | <ul><ui>**剪切和复制任何应用的字符限制** | 指定可从组织数据和帐户中剪切或复制的字符数。  这允许将指定数量的字符共享到任何应用程序，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制。<p>默认值 = 0<p>**注意**：需要 Intune 公司门户版本 5.0.4364.0 或更高版本。  | **0** |
 | **屏幕捕获和 Google 助手** | 选择“禁用”，则使用此应用时，会阻止设备的屏幕捕获和“Google 助手”功能   。 选择“禁用”还会导致在通过工作或学校帐户使用此应用时应用切换器预览图像模糊  。| **启用** |
-
+| **组织数据通知** | 指定针对组织帐户通过 OS 通知共享的组织数据量。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：不要在通知中共享组织数据。 例如“你有新邮件”，“你有个会议”。</li><UL><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。</ul> <p>**注意**：*此设置需要应用支持。目前，适用于 Android 4.75.0 版本或更高版本的 Outlook 将支持此设置，此设置预计在 2019 年 12 月 16 日当周发布。* | **允许**   |
   
 ### <a name="encryption"></a>加密
 | 设置 | 如何使用 | 默认值 |

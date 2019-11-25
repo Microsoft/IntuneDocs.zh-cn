@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709711"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126166"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>教程：使用 Apple 商务管理 (ABM) 中的 Apple 公司设备注册功能在 Intune 中注册 iOS 设备
 Apple 商务管理中的设备注册功能简化了注册设备过程。 Intune 还支持 Apple 的旧版设备注册计划 (DEP) 门户，但我们鼓励使用 Apple 商务管理重新开始注册。 借助 Microsoft Intune 和 Apple 公司设备注册，设备会在用户第一次打开设备时自动安全地进行注册。 因此可以向许多用户发送设备，而无需单独设置每个设备。 
@@ -90,7 +90,7 @@ Apple 商务管理中的设备注册功能简化了注册设备过程。 Intune 
 
 5. 确定是否希望自己的设备注册“用户关联”  。 用户关联专为特定用户将使用的设备而设计。 如果用户希望使用公司门户来获取安装应用等服务，请选择“注册用户关联”  。 如果用户不需要公司门户，或者你要为多位用户预配设备，请选择“不注册用户关联”  。
 
-6. 如果选择注册用户关联，请确定是否要使用公司门户或 Apple 设置助理进行身份验证。 如果要使用多重身份验证、允许用户在首次登录时更改密码，或者在注册过程中提示用户重置过期密码，请在“使用公司门户而不是 Apple 设置助理进行身份验证”下选择“是”   。 如果习惯通过 Apple 设置助理使用 Apple 提供的基本 HTTP 身份验证，请选择“否”  。
+6. 如果选择注册用户关联，请确定是否要使用公司门户或 Apple 设置助理进行身份验证。 如果要使用多重身份验证、允许用户在首次登录时更改密码，或者在注册过程中提示用户重置过期密码，请在“使用公司门户而不是 Apple 设置助理进行身份验证”下选择“是”   。 如果习惯通过 Apple 设置助理使用 Apple 提供的基本 HTTP 身份验证，请选择“否”  。 如果选择“是”  并且希望公司门户应用程序在最终用户的设备上自动更新，请通过 Apple 的批量采购计划 (VPP) 将公司门户作为必需的应用单独部署给这些用户。
 
 7. 如果选择了注册用户关联并使用公司门户进行身份验证，请确定是否要使用 Apple Volume Purchase Program (VPP) 安装公司门户。 如果使用 VPP 令牌安装公司门户，用户在注册期间无需输入 Apple ID 和密码即可从应用商店下载公司门户。 在“使用 VPP 安装公司门户”下选择“使用令牌:”来选择具有可用的公司门户免费许可证的 VPP 令牌   。 如果不想使用 VPP 部署公司门户，请在“使用 VPP 安装公司门户”下选择“不使用 VPP”   。 
 

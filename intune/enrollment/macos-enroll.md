@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbdef7cffa76beeb158c47ab3651d438de2d6ccc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503172"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098200"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中设置 macOS 设备注册
 
@@ -42,15 +42,16 @@ Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用
 - [设置 MDM 机构](../fundamentals/mdm-authority-set.md)
 - [创建组](../fundamentals/groups-add.md)
 - [配置公司门户](../apps/company-portal-app.md)
-- 在 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)分配用户许可证
+- 在 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)分配用户许可证
 - [获取 Apple MDM Push Certificate](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>用户拥有的 macOS 设备 (BYOD)
 
-可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 完成先决条件和分配的用户许可证后，用户可以通过以下方式注册其设备：
+可以让用户将其个人设备注册到 Intune 管理。 这称为“自带设备办公”或简称 BYOD。 完成先决条件并分配用户许可证后，用户可以通过以下方式注册其设备：
 - 转到[公司门户网站](https://portal.manage.microsoft.com)或
-- 下载公司门户应用。
-还可以向他们发送联机注册步骤链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
+- 在 [aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac) 下载 Mac 公司门户应用。
+
+你还可以向用户发送联机注册步骤的链接：[在 Intune 中注册 macOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
 
 有关其他最终用户任务的信息，请参阅以下文章：
 
@@ -77,12 +78,17 @@ Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用
 对于 VMware Fusion，需要[编辑 .vmx 文件](https://kb.vmware.com/s/article/1014782)，设置虚拟机的硬件模型和序列号。 建议运行虚拟机的设备的硬件类型与要创建的虚拟机的硬件类型相匹配。 可通过“Apple 菜单” > “关于此 Mac” > “系统报告” > “模型标识符”找到此硬件类型     。 
 
 ## <a name="user-approved-enrollment"></a>用户已批准注册
-
 用户批准的 MDM 注册是一种可用于管理某些安全敏感设置的 macOS 注册类型。 有关详细信息，请参阅 [Apple 的支持文档](https://support.apple.com/HT208019)。
 
-要使用户获得批准，最终用户必须在使用 macOS 公司门户注册后，使用系统首选项手动提供批准。 macOS 公司门户为 macOS 10.13.2 和更高版本的用户提供了执行此操作的说明。
+从 2019 年 11 月开始，所有新用户拥有的 macOS 注册都将是“用户已批准”，因为用户必须手动安装管理配置文件才能成功注册。 在[注册过程](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)中，用户将在“系统首选项”   > “配置文件”  中安装 Apple 管理配置文件。  MacOS 公司门户应用中提供了有关安装管理配置文件的说明。
 
-要确定设备是否为用户批准的，请转至 Intune 门户，然后选择“设备”   >   “所有设备”>“选择设备”>“硬件”  。 检查  “用户已批准”字段。
+如果用户未手动批准管理配置文件，则在 2019 年 11 月之前注册的设备可能不会是“用户已批准”状态。 但是，用户可以返回并批准管理配置文件，方法是转到“系统首选项”   > “配置文件”  > 选择“管理配置文件”   > “批准”  。
+
+### <a name="find-out-if-a-device-is-user-approved"></a>查明设备是否处于“用户已批准”状态
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备” > “所有设备”，再依次选择相关设备和“硬件”    。
+3. 选中  “用户已批准注册”字段。
+
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 908319c588fe2a1bf55a376d3f02a03db780a3ad
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755403"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059962"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune 中的传递优化设置
 
@@ -80,7 +80,7 @@ ms.locfileid: "73755403"
 2. 将此新配置文件分配给与现有软件更新通道相同的设备和用户。 [分配配置文件](device-profile-assign.md)列出了具体步骤。
 
 3. 取消配置现有的软件通道：
-    1. 在 Microsoft 终结点管理器管理中心，转到“软件更新”  >“Windows 10 更新圈”。
+    1. 在 Microsoft 终结点管理器管理中心，转到“软件更新”  >“Windows 10 更新通道”。
     2. 在列表中，选择更新通道。
     3. 在设置中，将“传递优化下载模式”  设置为“未配置”  。
     4. 依次单击“确定”   > “保存”  更改。

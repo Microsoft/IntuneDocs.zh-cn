@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee924a8c32c3c0591f968db0655044500c8c759d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754971"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059860"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -95,7 +95,7 @@ Zscaler Private Access (ZPA) 与 Azure Active Directory (Azure AD) 集成以进�
 
 VPN 配置文件包含附带客户端凭据的 SCEP 或 PKCS 证书、VPN 的连接信息以及每应用 VPN 标志，用于启用供 iOS 应用程序使用的每应用 VPN 功能。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “配置文件”   > “创建配置文件”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “配置文件” > “创建配置文件”    。
 2. 输入以下属性：
     - **名称**：输入自定义配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 iOS 每应用 VPN 配置文件”  。
     - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。

@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504561"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188282"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>了解条件访问和 Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+使用条件访问，可以控制可连接到电子邮件和公司资源的设备和应用。 
 
-条件访问是指控制允许连接到电子邮件和公司资源的设备和应用的方式。 在本主题中，了解基于设备和基于应用的条件访问，并查找使用 Intune 条件访问的常见方案。
-
-企业移动性 + 安全性 (EMS) 条件性访问不是一款独立的产品，它是作为 EMS 一部分的涉及全部服务和产品的解决方案。 它提供了精细的访问控制用以保护公司数据安全的同时，又考虑到了用户的体验，允许他们从任何设备、任何位置以最方便的方式完成工作。
+企业移动性 + 安全性 (EMS) 不是一个独立的产品。 它是一个解决方案，涉及作为 EMS 的一部分的所有服务和产品。 条件访问提供了精细的访问控制用以保护公司数据安全的同时，又考虑到了用户的体验，允许他们从任何设备、任何位置以最方便的方式完成工作。
 
 你可以根据位置、设备、用户状态和应用程序敏感度来定义获取公司数据访问权限的条件。
 
-> [!NOTE] 
+> [!NOTE]
 > 条件性访问还会将其功能扩展到 [Office 365 服务](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)。
 
-![条件访问体系结构图表](./media/conditional-access/ca-diagram-1.png)
+![条件访问图](./media/conditional-access/ca-diagram-1.png)
 
 ## <a name="use-conditional-access-with-intune"></a>使用 Intune 的条件访问
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498986"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164716"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune 
 
@@ -31,7 +31,7 @@ ms.locfileid: "72498986"
 
 必须首先将应用添加到 Microsoft Intune 中，才可分配、监视、配置或保护它们。
 
-在公司里，应用和设备的使用者（即公司员工）可能具有多个应用要求。 必须首先评估和了解若干应用基础知识，然后才能将应用添加到 Intune 并向员工提供。 必须了解适用于 Intune 的各种应用。 必须评估应用要求，如员工所需的平台和功能。 必须确定是要使用 Intune 管理设备（包括应用），还是要使用 Intune 管理应用（不包括设备）。 最后，必须确定员工所需的应用和功能，以及需要这些应用和功能的具体人员。 本文的信息可帮助你开始使用。
+公司的应用和设备用户（即公司员工）可能具有多个应用要求。 必须首先评估和了解若干应用基础知识，然后才能将应用添加到 Intune 并向员工提供。 必须了解适用于 Intune 的各种应用。 必须评估应用要求，如员工所需的平台和功能。 必须确定是要使用 Intune 管理设备（包括应用），还是要使用 Intune 管理应用（不包括设备）。 最后，必须确定员工所需的应用和功能，以及需要这些应用和功能的具体人员。 本文的信息可帮助你开始使用。
 
 ## <a name="app-types-in-microsoft-intune"></a>Microsoft Intune 中的应用类型
 
@@ -151,7 +151,7 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 - 上传的任意文件的文件大小不得超过 8 GB。
 
   > [!NOTE]
-  > 每个 Windows 业务线 (LOB) 应用的大小上限为 8 GB。 每个 iOS LOB 应用的大小上限为 4 GB。
+  > Windows 业务线 (LOB) 应用（包括 Win32、Windows Universal AppX、Windows Universal AppX 捆绑包、Windows Universal MSI X 和 Windows Universal MSI X 捆绑包）的每个应用的最大大小限制为 8 GB。 所有其他 LOB 应用（包括 iOS LOB 应用）的每个应用的最大大小限制为 2 GB。
 
 ## <a name="create-and-edit-categories-for-apps"></a>创建和编辑应用类别
 

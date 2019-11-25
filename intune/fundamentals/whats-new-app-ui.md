@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801779"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098222"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 最终用户应用的 UI 更新
 
@@ -36,6 +36,20 @@ ms.locfileid: "73801779"
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日当周  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>从 Windows 公司门户应用启动的 Web 应用<!-- 5030972 -->
+最终用户现在可以直接从 Windows 公司门户应用启动 Web 应用。 最终用户可以选择 Web 应用，然后选择选项“在浏览器中打开”  。 已发布的 Web URL 直接在 Web 浏览器中打开。 此功能将在下周推出。 有关 Web 应用的详细信息，请参阅[向 Microsoft Intune 添加 Web 应用](~/apps/web-app.md)。
+
+![从 Windows 公司门户应用启动的 Web 应用的示例图像](./media/whats-new-app-ui/webapp-open-in-browser.png)  
+
+### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>在公司门户中改进了 macOS 注册体验 <!-- 5074349 WNready -->  
+用于 macOS 注册的公司门户提供的注册过程更简单，与用于 iOS 注册的公司门户高度一致。 设备用户现在可以看到：  
+
+* 流畅的用户界面。  
+* 改进的注册清单。  
+* 更清晰的设备注册说明。  
+* 改进的疑难解答选项。  
 
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日当周  
 

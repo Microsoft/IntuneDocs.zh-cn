@@ -6,160 +6,129 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
-ms.reviewer: cacamp
+ms.reviewer: srik
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1049bfeaf3840e1e6a711fd4df10b0a29a88b6b8
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432545"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199314"
 ---
-# <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持  
-  
+# <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
+
 Microsoft 对 Microsoft Intune 提供全球技术、售前、帐单和订阅支持。 对于付费订阅和试用订阅，均通过在线和电话两种方式提供支持。 在线技术支持可通过英语和日语提供。 电话支持和联机帐单支持可使用其他语言。
 
-Intune 管理员可以使用“帮助和支持”选项，通过 Azure 门户为 Intune 提交在线支持票证  。 若要创建和管理支持事件，帐户必须有 Azure Active Directory (Azure AD) 角色，其中包含操作  microsoft.office365.supportTickets  。 有关创建支持票证所需的 Azure AD 角色和权限的信息，请参阅 [Azure Active Directory 中的管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。  
+Intune 管理员可以使用“帮助和支持”选项，通过 Azure 门户为 Intune 提交在线支持票证  。 若要创建和管理支持事件，帐户必须有 Azure Active Directory (Azure AD) 角色，其中包含操作  microsoft.office365.supportTickets  。 有关创建支持票证所需的 Azure AD 角色和权限的信息，请参阅 [Azure Active Directory 中的管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)。
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 > 有关可与 Intune 协作的第三方产品（例如 Saaswedo、Cisco 或 Lookout）的技术支持，请首先与该产品的供应商联系。 在对 Intune 支持发起请求之前，请确保已正确配置了其他产品。
 >
 > 若要详细了解如何对 Microsoft Intune 相关问题进行故障排除，请参阅 Intune 文档的[“故障排除”部分](help-desk-operators.md)。
 
-## <a name="known-issues-for-creating-support-incidents"></a>创建支持事件的已知问题
 
-如果帐户具有所需的权限，但无法成功访问“帮助和支持”，或无法创建或管理支持事件，请查看以下已知问题和解决方法：
+## <a name="help-and-support-experience"></a>帮助和支持体验
 
-- 帐户的过时用户令牌。 若要解决此问题，请注销所有活动的控制台会话，再次登录，然后尝试创建或管理支持事件。
-- 多个活动会话。 如果使用多个用户或会话登录，请保留一个控制台，注销其他所有控制台。 然后，使用单个活动会话，尝试创建或管理支持事件。
+可从 [Microsoft 365 设备管理门户](https://devicemanagement.microsoft.com)以及 Azure 门户中 Intune 下的所有边栏选项卡（或页面）获得 Intune 的帮助和支持体验。
 
-解决访问问题可能需要执行的其他操作：
+“帮助和支持”体验与 [Microsoft 365 管理中心](https://admin.microsoft.com/)中显示的体验类似，并取代了之前的“帮助 + 支持”，对于 Azure 的其他服务它保持不变。  
 
-- 清除活动浏览器会话的所有 cookie，然后重试创建或管理支持事件。
-- 使用 InPrivate 浏览会话登录 Intune，并尝试创建或管理支持事件。
+> [!TIP]
+> 从 2019 年 11 月 18 日开始，向租户推出已更新并简化的控制台内体验，以便用户获得帮助和支持。 如果你尚未能感受此新体验，敬请期待，很快就会推出。
 
-如果上述解决方法不起作用，请转到 [Microsoft 365 管理中心](https://admin.microsoft.com)并从那里创建支持票证。 我们目前正在开发的修补程序将于夏末推出。
+### <a name="options-to-access-help-and-support"></a>用于访问帮助和支持的选项
 
-## <a name="help-and-support-experience"></a>帮助和支持体验  
+- **在 Azure 门户中执行以下操作：**
 
-可从 [Microsoft 365 设备管理门户](https://devicemanagement.microsoft.com)以及 Azure 门户中 Intune 下的所有边栏选项卡（或页面）获得 Intune 的帮助和支持体验。 
+  - 从任何 Intune 边栏选项卡或页面选择“帮助和支持”  。
 
-![Intune 边栏选项卡](./media/get-support/intune-blades.png)
+  > [!NOTE]  
+  > 若 Intune 的实例托管在政府的私有云（又称为主权云，如 Azure 政府）上，请参阅本文后续部分中的[政府私有云的 Intune 支持](#intune-support-for-private-cloud-for-government)。 直至明年才可在政府私有云上使用 Intune 帮助和支持体验  。
 
-
-“帮助和支持”体验与 [Microsoft 365 管理中心](https://admin.microsoft.com/)中显示的体验类似，并取代了之前的“帮助 + 支持”，对于 Azure 的其他服务它保持不变。   
-
-若要访问“帮助和支持”，请使用以下选项：  
-- **设备管理仪表板：**
+- **从“设备管理”仪表板：**
   - 选择 Intune 的功能区后，选择“帮助和支持”选项。 
   - 从“设备管理”门户的任意节点，选择门户右上角的“?”  图标，然后使用下拉列表选择想要获得与其相关的帮助的服务。 “设备管理”门户中的“?”  图标支持多个服务，必须选择想要获得与其相关的帮助的特定服务。  
 
     ![选择服务](./media/get-support/select-a-service.png)
 
-    选择服务后，将看到该服务的“帮助和支持”页，然后可以针对想要求助的特定问题[详述详细信息](#specify-details-about-an-issue)。   
+    选择服务后，将看到该服务的“帮助和支持”页，你可以在此页针对特定问题指定详细信息来[查找解决方案](#find-solutions)。 
 
-    若搜索结果看上去不符合对服务的需求，请检查并确保已选择正确的服务。 服务选择将紧随“帮助和支持”之后显示。   若选择的服务不正确，请单击“选择服务”，返回服务选择下拉列表。    
+    若搜索结果看上去不符合对服务的需求，请检查并确保已选择正确的服务。 服务选择将紧随“帮助和支持”之后显示。   若选择的服务不正确，请单击“选择服务”，返回服务选择下拉列表。 
 
-    ![确认服务](./media/get-support/confirm-your-service-selection.png) 
+    ![确认服务](./media/get-support/confirm-your-service-selection.png)
 
+###  <a name="the-support-experience"></a>支持体验
 
-- **在 Azure 门户中执行以下操作：**
-  - 从任何 Intune 边栏选项卡或页面选择“帮助和支持” 
+  打开“帮助和支持”时，门户会显示“需要帮助?”窗口  ：
 
-  在 Azure 门户中，若从右上角选择“?”  图标，或从左侧导航窗格选择“帮助 + 支持”，将打开 Azure 的“帮助 + 支持”   。 从 Azure 的“帮助 + 支持”中，无法直接打开 Intune 支持事件，但可以执行以下操作，来转到 Intune“帮助和支持”页面：   
-  1. 选择“新建支持请求”。
-  2. 为“问题类型”指定“技术”。
-  3. 为“服务”指定“Microsoft Intune”。
-  4. 选择链接“Intune 帮助和支持”页。
+  ![查看“需要帮助”窗口](./media/get-support/need-help.png)
 
-> [!NOTE]  
-> 若 Intune 的实例托管在政府的私有云（又称为主权云，如 Azure 政府）上，请参阅本文后续部分中的[政府私有云的 Intune 支持](#intune-support-for-private-cloud-for-government)。 直至明年才可在政府私有云上使用 Intune 帮助和支持体验  。 
+  在左上角，可以选择三个图标来打开“需要帮助?”窗口的不同窗格  。 正在查看的窗格由下划线标识。
 
+  具有“顶级”或“统一”支持合同的客户具有支持的[其他选项](#premier-and-unified-support-customers)，并且在“需要帮助?”中看到的横幅如下图所示    ：![顶级横幅](./media/get-support/premier-banner.png)
 
-打开“帮助和支持”时，门户将显示一个视图，具体取决于是否有未解决的支持事件，若你有顶级支持，将显示一些额外的元素和选项： 
-- **没有未解决的支持事件**：将显示“需要帮助?”页，如“设备管理”仪表板中的下图所示。   
-- **未解决的支持事件**：将看到[支持票证](#view-support-cases)，它将显示未解决事件列表。  
-- **顶级支持约定**：体验与前两个选项相同，但“需要帮助?”页上将显示以下额外的元素： 
-  - 在页标题“需要帮助?”的后面，将看到“顶级支持”横幅：   
-    ![顶级支持横幅](./media/get-support/premier-banner.png)
-  - 在通过电话创建服务请求时，可以在页面的“获取支持”部分中设置初始严重性级别。  
+  “需要帮助?”将打开“查找解决方案”窗格   。 但是，如果具有活动支持案例，则该窗口将打开“服务请求”窗格，你可以在其中查看有关活动和已关闭支持案例的详细信息  。
 
+#### <a name="find-solutions"></a>查找解决方案
 
-![“设备管理”仪表板和“需要帮助?”页](./media/get-support/help-support-dashboard.png)
+![选择“查找解决方案”窗格](./media/get-support/find-solutions.png)
 
-在此视图中，可以执行以下操作：
+在“查找解决方案”窗格上，在提供的文本框中指定有关问题的一些详细信息  。 根据你提供的有关问题的文本，将使用可能匹配的见解填充该窗格。 你还将获得指向可帮助你解决问题的推荐文章的链接。
 
-1. 指定有关需要帮助的[特定问题的详细信息](#specify-details-about-an-issue)  
-2. [查看上下文相关的帮助](#view-context-sensitive-help)以及基于指定的详细信息的相关解决方案  
-3. 使用电子邮件或电话[获取支持](#get-support)  
-4. 查看先前使用此新工作流程打开的[支持案例](#view-support-cases)  
+如果找到了所描述的详细信息的高度匹配项，则“需要帮助?”窗口中就会显示故障排除提示  。
 
-### <a name="specify-details-about-an-issue"></a>指定有关问题的详细信息 
+例如，你可能会输入“密码同步错误”  。 结果包括直接在窗格中的故障排除指南，以及指向文档库中的推荐文章的链接。
 
-从新体验支持的位置打开“帮助和支持”时，会打开“需要帮助?”页  。 在此页上，可以指定有关问题的详细信息。 输入详细信息时，控制台会根据使用的关键字提供常见查询。 选择提供的选项或完成自己的问题描述。 如果输入自己的说明，请选择“获取帮助”进行提交  。 提交查询后，控制台将返回上下文相关信息，以帮助解决问题。
+![查看故障排除见解](./media/get-support/troubleshooting-insights.png)
 
-以下是可能提交的查询示例：
-  
-- 无法还原 iOS 设备   
-- *无法创建条件访问策略*  
+#### <a name="contact-support"></a>联系支持
 
-![在“需要帮助”页上指定问题](./media/get-support/describe-the-issue.png)
+![选择“联系支持人员”窗格](./media/get-support/contact-support.png)
 
-### <a name="view-context-sensitive-help"></a>查看上下文相关帮助 
+从“联系支持人员”  窗格中，可以提交请求以获得帮助。 在“查找解决方案”窗格中提供一些基本关键字后，可以使用此窗格  。
 
-选择提供的选项或提交自己的查询后，上下文相关的结果将显示在“查看解决方案”下  。 这些结果包括 Intune 特定的自助指导和基于查询条件的 Web 搜索返回的其他结果。  
-![查看结果](./media/get-support/view-results.png)
+请求帮助时，请根据需要尽可能多地提供该问题的说明。  确认你的电话和电子邮件联系人信息后，选择所需的联系方式。 此窗口将显示每个联系方式的响应时间，为你提供预期的联系时间。 在提交请求之前，附加有助于填写问题详细信息的文件（如日志或屏幕截图）。
 
-### <a name="get-support"></a>获取支持 
+![“联系支持人员”窗体](./media/get-support/contact-support-form.png)
 
-如果自助指导或基于 Web 的指导无法帮助你解决问题，可以使用控制台打开电子邮件或电话支持问题。  
-在“需要帮助?”页上，选择要使用的选项  。  
+填写所需信息后，选择“联系我”以提交请求  。
 
-  > [!NOTE] 
-  > 并非所有租户都可以使用电子邮件请求寻求支持。  
+#### <a name="service-requests"></a>服务请求
 
-- 对于电子邮件请求，请提供电子邮件地址，也可以选择在提交中添加附件。 选择“发送”以创建请求  。 
+![选择“服务请求”窗格](./media/get-support/service-requests.png)
 
-  ![电子邮件请求](./media/get-support/email-support.png)
-  
-- 对于电话请求，请提供电话号码。 （可选）可以包含电子邮件地址并在提交中添加附件。 选择“给我打电话”以提交请求。  
+“服务请求”窗格将显示你的案例历史记录  。 活动案例位于列表的顶部，已关闭的问题也可供查看。
 
+![查看服务请求列表](./media/get-support/service-requests-pane.png)
 
+如果具有活动支持案例编号，则可以在此处输入该编号以跳转到该问题，也可以从活动和已关闭事件的列表中选择任何事件以查看相关详细信息。
 
-   ![电话请求](./media/get-support/phone-support.png)
+查看事件的详细信息后，选择“服务请求”窗口顶部显示的向左箭头（就在三个“需要帮助?”窗格图标的正上方）  。 向后箭头将返回到已打开的支持事件的列表。
 
-**顶级支持**：  
-若你有顶级支持约定，你同样可以选择创建电话支持事件。 你还可以指定严重性以用于支持回拨，选择根据任务关键约定创建支持票证。   
+#### <a name="premier-and-unified-support-customers"></a>“顶级”和“统一”支持客户
 
-![顶级支持选项](./media/get-support/premier-phone-support-options.png)
+具有“顶级”或“统一”支持合同的客户可以指定问题的严重性，并计划特定时间和日期的支持回调   。 当你打开或提交新问题以及编辑活动支持案例时，可以使用这些选项。
 
+**严重性** - 用于指定问题严重性的选项取决于支持合同：
 
-### <a name="view-support-cases"></a>查看支持案例  
+- *顶级*：A、B 或 C 的严重性
+- *统一*：关键或非关键
 
-选择历史记录按钮以查看已创建的支持案例。  
+选择严重性 A 或关键问题限制为电话支持案例，该案例提供获取支持的最快选项   。
 
-![查看支持案例](./media/get-support/view-support-tickets.png)
+**回调计划** - 可以在特定日期和时间请求回调。
 
-- 在此工作流程中，只能看到使用新工作流程打开的支持案例。 若要查看这些案例，请使用设备管理控制台中的“帮助和支持”视图或 Azure 门户中的 Intune 边栏选项卡。 这些案例的数字长度为八位数。 此外，还可以从 Microsoft 365 管理中心查看这些案例。  
-
-- 在没有使用 Intune“帮助和支持”体验时打开的案例保持不变。 若要查看这些案例，必须使用不属于 Intune 体验或管理仪表板的“帮助和支持”视图。 这些案例的数字以 117 或 118 开头，长度为 15 位   。 查看管理共享：
-
-    1. 使用 Intune 管理员凭据登录到 Azure (<https://portal.azure.com>)，选择“?”  图标，然后选择“帮助 + 支持”  以转到 [Azure 帮助 + 支持](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。
-
-    2. 在“帮助 + 支持”页上，可以查看“最近的支持请求”列表，并选择它们以查看更多详细信息   。
- 
-
-## <a name="azure-help--support-experience"></a>Azure“帮助 + 支持”体验 
+## <a name="azure-help--support-experience"></a>Azure“帮助 + 支持”体验
 
 无法再使用 Azure“帮助 + 支持”体验获取与 Intune 相关的帮助，除非订阅在政府私有云上  。
 若 Intune 的实例未在政府私有云上运行，通过 Azure 帮助 + 支持导航将重定向到 Intune 帮助和支持体验，创建并管理支持事件   ：
@@ -181,20 +150,18 @@ Intune 管理员可以使用“帮助和支持”选项，通过 Azure 门户为
   ![新建支持请求](./media/get-support/new-request.png)
 
 
-## <a name="intune-support-for-private-cloud-for-government"></a>政府私有云的 Intune 支持  
+## <a name="intune-support-for-private-cloud-for-government"></a>政府私有云的 Intune 支持
 
 Intune 订阅托管在政府私有云（又称为主权云，如 Azure 政府）上时，你尚无权访问新的 Intune“帮助和支持”体验。  请改用以下信息获取 Intune 支持。
 
+### <a name="create-an-online-support-ticket"></a>创建在线支持票证
 
-### <a name="create-an-online-support-ticket"></a>创建在线支持票证 
-
->[!IMPORTANT]    
-> 随着“帮助和支持”过渡到尚不适用于政府私有云的新系统，当创建支持事件时，门户将使用 15 位标识号标识支持案例  。 创建 15 位的案例后，将创建该案例的镜像，以供 Microsoft 支持部门使用。 在新支持系统中创建此镜像案例，它使用 8 位案例 ID，以便支持服务使用它跟踪所有支持事件的所有工作和通信。 创建 15 位案例后，你将很快收到电子邮件，其中将标识支持服务使用的镜像支持案例的 8 位编号。  
-> 
-> 支持个人工作，并从 8 位支持案例进行通信，仅使用 8 位支持案例记录通信和跟踪事件进度。 因此，你将收到来自 8 位支持案例的电子邮件更新，它们是你的案例工作跟踪记录。 15 位支持事件不记录任何详细信息。 支持结束并且 8 位支持案例关闭时，15 位支持案例（可以从 Azure 门户中查看它）将反映此状态。  15 位支持案例应没有任何其他更新或状态更改。  
-> 
-> 在今年稍后完成支持工具过渡后，托管在政府云上的 Intune 支持体验将与当前适用于托管在公有云上的 Intune 订阅的默认帮助和支持体验相同。   
-
+>[!IMPORTANT]
+> 随着“帮助和支持”过渡到尚不适用于政府私有云的新系统，当创建支持事件时，门户将使用 15 位标识号标识支持案例  。 创建 15 位的案例后，将创建该案例的镜像，以供 Microsoft 支持部门使用。 在新支持系统中创建此镜像案例，它使用 8 位案例 ID，以便支持服务使用它跟踪所有支持事件的所有工作和通信。 创建 15 位案例后，你将很快收到电子邮件，其中将标识支持服务使用的镜像支持案例的 8 位编号。
+>
+> 支持个人工作，并从 8 位支持案例进行通信，仅使用 8 位支持案例记录通信和跟踪事件进度。 因此，你将收到来自 8 位支持案例的电子邮件更新，它们是你的案例工作跟踪记录。 15 位支持事件不记录任何详细信息。 支持结束并且 8 位支持案例关闭时，15 位支持案例（可以从 Azure 门户中查看它）将反映此状态。  15 位支持案例应没有任何其他更新或状态更改。
+>
+> 在今年稍后完成支持工具过渡后，托管在政府云上的 Intune 支持体验将与当前适用于托管在公有云上的 Intune 订阅的默认帮助和支持体验相同。 
 
 1. 使用 Intune 管理员凭据登录到 Azure 门户 (<https://portal.azure.us>)，选择“?”  图标，然后选择“帮助 + 支持”  以转到 [Azure 帮助 + 支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。
 
@@ -230,14 +197,14 @@ Intune 订阅托管在政府私有云（又称为主权云，如 Azure 政府）
 
 ### <a name="view-support-requests"></a>查看支持请求  
 
-可以在 Azure 门户中查看支持请求。 但提供的信息有限。  查看事件： 
+可以在 Azure 门户中查看支持请求。 但提供的信息有限。  查看事件：
 
 1. 使用 Intune 管理员凭据登录到 Azure (<https://portal.azure.com>)，选择“?”  图标，然后选择“帮助 + 支持”  以转到 [Azure 帮助 + 支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)页。
 
 2. 在“帮助 + 支持”页上，可以查看“最近的支持请求”列表   。
 
    > [!IMPORTANT]  
-   > 政府计算云客户仅可以查看 15 位支持案例号以及事件状态。 所有案例通信和工作跟踪或通知均通过电子邮件发送，并引用从 Intune 控制台打开支持案例镜像时所创建的 8 位支持案例号。   
+   > 政府私有云客户仅可以查看 15 位支持案例号以及事件状态。 所有案例通信和工作跟踪或通知均通过电子邮件发送，并引用从 Intune 控制台打开支持案例镜像时所创建的 8 位支持案例号。
 
 ## <a name="additional-resources"></a>其他资源  
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
-ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
+ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73882495"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199291"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -52,6 +52,46 @@ ms.locfileid: "73882495"
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-18-2019"></a>2019 年 11 月 18 日当周
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 功能更新（公开预览版）<!-- 2384877 -->
+
+你现在可以将 [Windows 10 功能更新](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)部署到 Windows 10 设备。 Windows 10 功能更新是一个新的软件更新策略，该策略用于设置你想要在设备中安装和保留的 Windows 10 版本。 可以将此新策略类型和现有的 Windows 10 更新通道一起使用。
+
+接收 Windows 10 功能更新策略的设备将安装指定版本的 Windows，然后一直保留该版本，直到策略被编辑或删除。 运行更高版本 Windows 的设备仍保持其当前版本。 保持在特定 Windows 版本的设备仍可以在 Windows 10 更新通道中安装该版本的质量和安全更新。
+
+此新类型的策略在本周开始向租户推出。 如果你的租户尚未能使用此策略，敬请期待，很快就可以使用。
+
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="updated-support-experience---5012398---"></a>更新的支持体验<!-- 5012398 -->
+
+从现在开始，针对[获取 Intune 的帮助和支持](get-support.md)将向租户推出已更新且简化的控制台内体验。 如果你尚未能感受此新体验，敬请期待，很快就会推出。
+
+我们改进了针对常见问题的控制台内搜索和反馈，以及用于联系支持人员的工作流。 打开支持问题时，你将看到需要回拨或电子邮件答复的实时估计，并且顶级和统一支持客户可以轻松地为其问题指定严重性，以帮助更快地获得支持。
+
+## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日当周  
+
+### <a name="app-management"></a>应用管理  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>在公司门户中改进了 macOS 注册体验 <!-- 5074349 WNready -->  
+用于 macOS 注册的公司门户提供的注册过程更简单，与用于 iOS 注册的公司门户高度一致。 设备用户现在可以看到：  
+
+* 流畅的用户界面。  
+* 改进的注册清单。  
+* 更清晰的设备注册说明。  
+* 改进的疑难解答选项。  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>从 Windows 公司门户应用启动的 Web 应用<!-- 5030972 -->
+最终用户现在可以直接从 Windows 公司门户应用启动 Web 应用。 最终用户可以选择 Web 应用，然后选择选项“在浏览器中打开”  。 已发布的 Web URL 直接在 Web 浏览器中打开。 此功能将在下周推出。 有关 Web 应用的详细信息，请参阅[向 Microsoft Intune 添加 Web 应用](~/apps/web-app.md)。  
+
+
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>适用于 Windows 10 的公司门户中的”新建分配类型”列 <!-- 5459950 WNready -->
+“公司门户”>“安装的应用” > “分配类型”列已重命名为“你的组织需要”    。  在该列下，用户将看到“是”或“否”值，以指示应用是其组织必需的还是可选的   。 之所以做出这些更改是因为设备用户对可用应用的概念感到困惑。 用户可以参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)以获取从公司门户安装应用的详细信息。 有关为用户配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](~/apps/company-portal-app.md)。  
+
 
 ## <a name="week-of-november-4-2019"></a>2019 年 11 月 4 日当周
 
@@ -139,7 +179,7 @@ Intune 注册和公司门户现在支持 iOS 版本 11 及更高版本。 不支
 
 ### <a name="device-configuration"></a>设备配置
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>适用于 Windows 10 及更高版本设备的新设备固件配置接口配置文件<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>适用于 Windows 10 及更高版本设备的新设备固件配置接口配置文件（公开预览版）<!-- 2266073  -->
 
 在 Windows 10 及更高版本中，可以创建设备配置文件来控制设置和功能（适用于平台的“设备配置” > “配置文件” > “创建配置文件” > “Windows 10 及更高版本”）     。 在此更新中，有一个新的设备固件配置接口配置文件类型，该类型允许 Intune 管理 UEFI (BIOS) 设置。
 
@@ -516,7 +556,7 @@ Intune 现在支持管理 iOS 13 和 macOS Catalina 设备。
 在 OS 驱动器恢复（通过使用 bootmgr 或 WinRE）和固定数据驱动器上的恢复密码解锁后，此设置启动客户端驱动的恢复密码刷新。 此设置将刷新使用的特定恢复密码，而卷上的其他未使用的密码仍保持不变。 有关详细信息，请参阅 BitLocker CSP 文档 [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)。
 
 #### <a name="tamper-protection-for-windows-defender-antivirus---4705448----------"></a>Windows Defender 防病毒的篡改防护<!-- 4705448        -->
-使用 Intune 管理 Windows Defender 防病毒的篡改防护  。 当将设备配置文件用于 Windows 10 终结点保护时，你将在 Microsoft Defender 安全中心组中找到[篡改防护设置](../protect/endpoint-protection-windows-10.md#windows-defender-security-center)。 你可以将“篡改防护”设置为“启用”  以开启篡改防护限制，设置为“禁用”  以关闭限制，或者设置为“未配置”  以保持设备的当前配置。  
+使用 Intune 管理 Windows Defender 防病毒的篡改防护  。 当将设备配置文件用于 Windows 10 终结点保护时，你将在 Microsoft Defender 安全中心组中找到[篡改防护设置](../protect/endpoint-protection-windows-10.md#microsoft-defender-security-center)。 你可以将“篡改防护”设置为“启用”  以开启篡改防护限制，设置为“禁用”  以关闭限制，或者设置为“未配置”  以保持设备的当前配置。  
 
 有关篡改防护的详细信息，请参阅 Windows 文档中的[篡改防护防止安全设置更改](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection)。
 

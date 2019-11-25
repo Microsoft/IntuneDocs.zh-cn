@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709201"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098180"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>设置 Windows 设备的注册
 
@@ -117,6 +117,15 @@ EnterpriseEnrollment-s.manage.microsoft.com 是用于注册的首选 FQDN，但�
 > 如果尚未启用自动 MDM 注册，但是具有已加入到 Azure AD 的 Windows 10 设备，则注册后可在 Intune 控制台中看到两条记录。 确保具有已加入 Azure AD 的设备的用户使用相同的帐户转到“帐户” > “访问工作或学校”和“连接”后，即可停止此操作    。 
 
 有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](../fundamentals/end-user-educate.md)。
+
+## <a name="registration-and-enrollment-cnames"></a>注册 CNAME
+Azure Active Directory 具有不同的 CNAME，适用于 iOS、Android 和 Windows 设备的设备注册。 Intune 条件访问需要注册设备，也称为“工作区加入”。 如果计划使用条件性访问，还应为每个公司名称配置 EnterpriseRegistration CNAME。
+
+| 类型 | 主机名 | 指向 | TTL |
+| --- | --- | --- | --- |
+| 名称 | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 小时|
+
+有关设备注册的详细信息，请参阅[使用 Azure 门户管理设备标识](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="next-steps"></a>后续步骤
 

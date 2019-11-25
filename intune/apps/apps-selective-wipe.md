@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498318"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199231"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何仅擦除 Intune 托管应用中的企业数据
 
@@ -44,23 +44,12 @@ ms.locfileid: "72498318"
 
 ## <a name="create-a-wipe-request"></a>创建擦除请求
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-
-2. 选择“所有服务”，在筛选器文本框中键入“Intune”，然后选择“Intune”    。 Intune 窗格随即打开，选择“客户端应用”窗格  。
-
-    ![Microsoft Intune 窗格的屏幕截图](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. 在“客户端应用”窗格中，选择“应用选择性擦除”   。
-
-4. 选择“新建擦除请求”  。 “新建擦除请求”窗格打开  。
-
-    ![“新建擦除请求”窗格的屏幕截图](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. 选择用户，然后选择“选择”，以选择你要擦除其应用数据的用户  。
-
-6. 然后，从“新建擦除请求”窗格中选择“设备”   。 此操作会打开“选择设备”窗格，其中列出了与所选用户关联的所有设备，还提供了两个列：“设备名称”（用户定义的友好名称）和“设备类型”（其设备平台）  。 选择要擦除的设备。
-
-7. 你现在已返回“新建擦除请求”窗格  。 选择“确定”以提出擦除请求  。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+2. 在“Intune”窗格中，选择“客户端应用” > “应用选择性擦除” > “创建擦除请求”    。<br>
+   将显示“创建擦除请求”  窗格。
+3. 单击“选择用户”，选择要擦除其应用数据的用户，然后单击“用户”窗格底部的“选择”    。
+4. 单击“选择设备”，选择设备，然后单击“选择设备”窗格底部的“选择”    。
+5. 选择“创建”以提出擦除请求  。
 
 服务会为设备上的每个受保护应用以及与擦除请求相关联的用户创建并跟踪单独的擦除请求。
 

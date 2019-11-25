@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
-ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
+ms.openlocfilehash: 6615933f604f2ff4156885bc6559af7e46d4ccb2
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627648"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188516"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -70,7 +70,7 @@ ms.locfileid: "73627648"
 2. 启用 Intune 以与 Jamf Pro 集成。
 3. 在 Jamf Pro 中配置条件访问。
 
-## <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中创建应用程序
+### <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中创建应用程序
 
 1. 在 [Azure 门户](https://portal.azure.com)中转到“Azure Active Directory” > “应用注册”，然后选择“新建注册”    。 
 
@@ -102,15 +102,17 @@ ms.locfileid: "73627648"
     > [!NOTE]
     > 如果客户端密码过期，则必须在 Azure 中创建一个新的客户端密码，然后更新 Jamf Pro 中的条件访问数据。 Azure 允许同时具有旧密钥和新密钥，以防止服务中断。
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>启用 Intune 以与 Jamf Pro 集成
+### <a name="enable-intune-to-integrate-with-jamf-pro"></a>启用 Intune 以与 Jamf Pro 集成
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“Microsoft Intune” > “设备符合性” > “合作伙伴设备管理”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 通过将上一步骤期间保存的应用程序 ID 粘贴到“Jamf Azure Active Directory 应用 ID”字段来启用 Jamf 的符合性连接器  。
+2. 选择“租户管理”   > “连接器和令牌”   > “合作伙伴设备管理”  。
 
-3. 选择“保存”  。
+3. 通过将上一步骤中保存的应用程序 ID 粘贴到“为 Jamf 指定 Azure Active Directory 应用 ID”字段来启用 Jamf 的符合性连接器   。
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中配置 Microsoft Intune 集成
+4. 选择“保存”  。
+
+### <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中配置 Microsoft Intune 集成
 
 1. 在 Jamf Pro 中，导航到“全局管理”   > “条件访问”  。 单击“macOS Intune 集成”选项卡上的“编辑”按钮   。
 
@@ -125,17 +127,22 @@ ms.locfileid: "73627648"
 配置 Intune 和 Jamf 之间的集成后，需要[将符合性策略应用到 Jamf 托管的设备](conditional-access-assign-jamf.md)。
 
 
-## <a name="disconnect-jamf-pro-and-intune"></a>断开 Jamf Pro 和 Intune 的连接 
+## <a name="disconnect-jamf-pro-and-intune"></a>断开 Jamf Pro 和 Intune 的连接
 
-如果不再使用 Jamf Pro 管理组织中的 Mac 并希望用户由 Intune 管理，则必须删除 Jamf Pro 和 Intune 之间的连接。 使用 Jamf Pro 控制台删除连接。 
+如果不再使用 Jamf Pro 管理组织中的 Mac 并希望用户由 Intune 管理，则必须删除 Jamf Pro 和 Intune 之间的连接。 使用 Jamf Pro 控制台删除连接。
 
 1. 在 Jamf Pro 中，转到“全局管理”   > “条件访问”  。 在“macOS Intune 集成”  选项卡上，选择“编辑”  。
+
 2. 清除“启用适用于 macOS 的 Intune 集成”  复选框。
+
 3. 选择“保存”  。 Jamf Pro 将配置发送到 Intune，并且将终止集成。
-4. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 转到“Microsoft Intune”   > “设备合规性”   > “合作伙伴设备管理”  以验证现在状态是否“已终止”  。 
+
+4. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+5. 选择“租户管理”   > “连接器和令牌”   > “合作伙伴设备管理”  ，以验证状态现在是否为“已终止”  。
 
    > [!NOTE]
-   > 组织的 Mac 设备将在控制台中显示的日期（3 个月）删除。 
+   > 组织的 Mac 设备将在控制台中显示的日期（3 个月）删除。
 
 ## <a name="next-steps"></a>后续步骤
 

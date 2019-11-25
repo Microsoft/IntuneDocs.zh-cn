@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709331"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059706"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
@@ -197,7 +197,7 @@ ms.locfileid: "73709331"
     - 不会保留用户凭据
     - 用户必须先重新输入凭据，然后才可由设备设置阶段继续转到帐户设置阶段
 - ESP 长时间停滞，或始终未完成“正在识别”阶段。 在识别阶段期间，Intune 将计算 ESP 策略。 若当前用户未分配 Intune 许可证，设备可能始终无法完成计算 ESP 策略。  
-- 配置 Windows Defender 应用程序控制会导致在 Autopilot 期间提示重启。 配置 Windows Defender 应用程序 (AppLocker CSP) 需要重启。 配置此策略后，可能会导致设备在 Autopilot 期间重启。 目前无法取消或推迟此重启。
+- 配置 Microsoft Defender 应用程序控制会导致在 Autopilot 期间提示重启。 配置 Microsoft Defender 应用程序 (AppLocker CSP) 需要重启。 配置此策略后，可能会导致设备在 Autopilot 期间重启。 目前无法取消或推迟此重启。
 - 启用 DeviceLock 策略 (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) 做为 ESP 配置文件一部分时，OOBE 或用户桌面自动登录可能会出于两个原因而意外失败。
   - 若设备在退出 ESP 设备设置阶段前未重启，可能会提示用户输入 Azure AD 凭据。 此提示将出现，而不会出现自动登录成功提示（成功时用户将看到 Windows 首次登录动画）。
   - 若设备在用户输入 Azure AD 凭据后和退出 ESP 设备设置阶段前重启，自动登录将失败。 因为 ESP 设备设置阶段始终未完成，因此会出现此故障。 解决方法为重置设置。
