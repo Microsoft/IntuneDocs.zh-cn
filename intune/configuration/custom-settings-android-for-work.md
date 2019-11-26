@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d85793dcf0ee6fa0186147606c9fd695a268e529
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506976"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319834"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用适用于 Android Enterprise 设备的自定义设置
 
@@ -30,11 +30,11 @@ ms.locfileid: "72506976"
 
 Android Enterprise 自定义配置文件使用开放移动联盟统一资源标识符 (OMA-URI) 设置控制 Android Enterprise 设备上的功能。 移动设备制造商通常使用这些设置来控制这些功能。
 
-Intune 支持有限数量的 Android 企业自定义配置文件，包括：
+Intune 支持以下有限数量的 Android 企业自定义配置文件：
 
 - 。/Vendor/MSFT/WiFi/Profile/SSID/Settings：[创建具有预共享密钥的 wi-fi 配置文件](wi-fi-profile-shared-key.md)有一些示例。
 - 。/Vendor/MSFT/VPN/Profile/Name/PackageList：[创建每应用 VPN 配置文件](android-pulse-secure-per-app-vpn.md)有一些示例。
-- 。/Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste：请参阅[示例](#example)（在本文中）。
+- 。/Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste：请参阅本文中的[示例](#example)。 此设置也可在用户界面中使用。 有关详细信息，请参阅[便于允许或限制功能的 Android Enterprise 设备设置](device-restrictions-android-for-work.md)。
 
 如果需要其他设置，请参阅[OEMConfig For Android Enterprise](android-oem-configuration-overview.md)。
 

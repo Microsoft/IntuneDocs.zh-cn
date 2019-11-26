@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585367"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390813"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android Enterprise 和 Android 展台的设备添加 Wi-Fi 设置
+# <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 Android Enterprise 专用和完全托管设备添加 Wi-fi 设置
 
-可以使用特定的 WiFi 设置创建配置文件，然后将此配置文件部署到 Android Enterprise 和 Android 专用设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，使用预共享密钥等。
+可以使用特定的 Wi-Fi 设置创建配置文件，然后将此配置文件部署到 Android Enterprise 完全托管和专用的设备。 Microsoft Intune 提供多种功能，包括对网络进行身份验证，使用预共享密钥等。
 
 本文将说明这些设置。 [在设备上使用 Wi-Fi](wi-fi-settings-configure.md) 详细介绍了 Microsoft Intune 中的 Wi-Fi 功能。
 
@@ -35,7 +35,7 @@ ms.locfileid: "72585367"
 
 ## <a name="device-owner-only"></a>仅设备所有者
 
-如果将 Android Enterprise 专用设备用作展台，则选择此选项。
+如果要部署到 Android 企业专用或完全托管设备，请选择此选项。  Android 企业专用和完全托管设备目前支持 SCEP 证书部署，但不支持 PKCS。
 
 ### <a name="basic"></a>基本
 
@@ -60,7 +60,7 @@ ms.locfileid: "72585367"
 
     - 服务器信任   - 用于服务器验证的根证书  ：选择现有的受信任根证书配置文件。 当客户端连接到网络时，此证书向服务器显示，并对连接进行身份验证。
 
-    - 客户端身份验证   - 用于客户端身份验证的客户端证书（标识证书）  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
+    - **客户端身份验证** - **用于客户端身份验证的客户端证书（标识证书）** ：选择同时被部署到设备的 SCEP 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
 
     - 标识隐私（外部标识）  ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
@@ -77,7 +77,7 @@ ms.locfileid: "72585367"
           - **Microsoft CHAP (MS-CHAP)**
           - **Microsoft CHAP 版本 2 (MS-CHAP v2)**
 
-      - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
+      - **证书**：选择同时被部署到设备的 SCEP 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
 
       - 标识隐私（外部标识）  ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
@@ -93,7 +93,7 @@ ms.locfileid: "72585367"
           - **无**
           - **Microsoft CHAP 版本 2 (MS-CHAP v2)**
 
-      - 证书  ：选择同时被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
+      - **证书**：选择同时被部署到设备的 SCEP 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
 
       - 标识隐私（外部标识）  ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 

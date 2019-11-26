@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
-ms.translationtype: HT
+ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059482"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188156"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -213,9 +213,11 @@ ms.locfileid: "74059482"
 
   该设置在下次擦除或重置设备时生效。 与任何其他 Intune 配置一样，该设备必须由 Intune 注册和管理才能接收配置设置。 但注册后，接收策略并在下一次 Windows 设置期间重置设备会强制执行该设置。
 
+  [TenantLockdown CSP](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
+
 - **直接内存访问**：“阻止”将防止所有热插拔 PCI 下游端口进行直接内存访问 (DMA)，直到用户登录 Windows  。 “启用”  （默认设置）允许访问 DMA，即使用户未登录。
 
-  CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+  [DataProtection/AllowDirectMemoryAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **从任务管理器结束进程**：此设置确定非管理员是否可以使用任务管理器来结束任务。 选择“阻止”，则会阻止标准用户（非管理员）使用任务管理器结束设备上的进程或任务  。 选择“未配置”（默认选项），则会允许标准用户使用任务管理器结束进程或任务  。
 

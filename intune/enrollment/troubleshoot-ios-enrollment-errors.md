@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 11/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126149"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199270"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备注册问题疑难解答
 
@@ -63,9 +63,53 @@ ms.locfileid: "74126149"
 1. 登录到 Azure 门户。
 2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”   。
 3. 选择“设备注册” > “注册限制”   。
-4. 在 "**设备类型限制**" 下，选择要设置 >**属性**的限制  > **选择 "平台**" > 选择 "对**IOS** **允许**"，然后单击 **"确定"** 。
+4. 在 "**设备类型限制**" 下，选择要设置 >**属性**的限制 > **选择 "平台**" > 选择 "对**IOS** **允许**"，然后单击 **"确定"** 。
 5. 选择 "**配置平台**"，选择 "**允许**个人拥有的 iOS 设备"，然后单击 **"确定"** 。
 6. 重新注册设备。
+
+**原因：** DNS 中不存在必需的 CNAME 记录。
+
+#### <a name="resolution"></a>解决方法
+为公司的域创建 CNAME DNS 资源记录。 例如，贵公司的域为 contoso.com，则在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 EnterpriseEnrollment-s.manage.microsoft.com 的 CNAME。
+
+尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
+
+如果存在多个经过验证的域，则为每个域创建一个 CNAME 记录。 CNAME 资源记录必须包含以下信息：
+
+|类型：|主机名|指向|TTL|
+|------|------|------|------|
+|CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 小时|
+|CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 小时|
+
+如果你的公司对用户凭据使用多个域，则为每个域创建 CNAME 记录。
+
+> [!NOTE]
+> 对 DNS 记录所做的更改可能最多需要 72 小时才能进行传播。 无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
+
+**原因：** 注册先前使用其他用户帐户注册的设备，并且未从 Intune 中正确删除以前的用户。
+
+#### <a name="resolution"></a>解决方法
+1. 取消当前的所有配置文件安装。
+2. 在 Safari 中打开[https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) 。
+3. 重新注册设备。
+
+> [!NOTE]
+> 如果注册仍失败，请在 Safari 中删除 cookie （不要阻止 cookie），然后重新注册设备。
+
+**原因：** 设备已向另一个 MDM 提供程序注册。
+
+#### <a name="resolution"></a>解决方法
+1. 打开 iOS 设备上的 "**设置**"，请参阅 "**常规" > 设备管理**"。
+2. 删除任何现有的管理配置文件。
+3. 重新注册设备。
+
+**原因：** 尝试注册该设备的用户没有 Microsoft Intune 许可证。
+
+#### <a name="resolution"></a>解决方法
+1. 请切换到[Office 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户" > "活动用户**"。
+2. 选择想要为其分配 Intune 用户许可证的用户帐户，然后选择“产品许可证”>“编辑”  。
+3. 切换到要分配给此用户的许可证的 **"开**" 位置，然后选择 "**保存**"。
+4. 重新注册设备。
 
 ### <a name="this-service-is-not-supported-no-enrollment-policy"></a>不支持此服务。 无注册策略。
 
@@ -113,8 +157,8 @@ ms.locfileid: "74126149"
 **原因：** 尝试注册该设备的用户没有有效的 Intune 许可证。
 
 #### <a name="resolution"></a>解决方法
-1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**"  > **活动用户**"。
-2. 选择受影响的用户帐户 >**产品许可证** >  "**编辑**"。
+1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**" > **活动用户**"。
+2. 选择受影响的用户帐户 >**产品许可证** > "**编辑**"。
 3. 验证是否为此用户分配了有效的 Intune 许可证。
 4. 重新注册设备。
 
@@ -122,7 +166,7 @@ ms.locfileid: "74126149"
 
 **原因：** 尝试注册该设备的用户没有有效的 Intune 许可证。
 
-1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**"  > **活动用户**"。
+1. 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home#/homepage)，然后选择 "**用户**" > **活动用户**"。
 2. 选择受影响的用户帐户，然后选择 "**产品许可证** > **编辑**"。
 3. 验证是否为此用户分配了有效的 Intune 许可证。
 4. 重新注册设备。
@@ -186,7 +230,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解决方法
 
 1. 编辑注册配置文件。 您可以对配置文件进行任何更改。 目的是更新配置文件的修改时间。
-2. 同步 DEP 管理的设备：打开 Intune 门户 >**管理员** > **移动设备管理** > **iOS**  > **设备注册计划** **立即同步**。 会向 Apple 发送同步请求。
+2. 同步 DEP 管理的设备：打开 Intune 门户 >**管理员** > **移动设备管理** > **iOS** > **设备注册计划** **立即同步**。 会向 Apple 发送同步请求。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>在用户登录时，DEP 注册停滞
 当你打开分配了注册配置文件的 DEP 管理的设备时，在输入凭据后，初始设置将会关闭。

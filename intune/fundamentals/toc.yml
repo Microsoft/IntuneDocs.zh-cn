@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: 获取支持
           href: get-support.md
+    - name: Reports
+      items:
+        - name: Intune 报表
+          href: reports.md
 - name: 参考
   items:
     - name: 错误代码和描述
