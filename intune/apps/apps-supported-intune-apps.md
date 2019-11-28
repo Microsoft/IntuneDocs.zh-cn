@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
-ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
+ms.openlocfilehash: 752b4ae8440df0ebefbabbf7e5ccb48fed684827
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73931013"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540817"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保护的应用  
 
@@ -72,7 +72,6 @@ ms.locfileid: "73931013"
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | 可以在 iPhone 上随时随地免费查看 Visio 图表，并与之交互。 可以在任何运行 iOS 9.0 或更高版本的 iPhone 上，使用 Microsoft 帐户登录或从电子邮件打开 Visio 附件，并查看令人惊叹的 Visio 图表。 还可以与能在 iPhone 上或 Web 浏览器中查看 Visio 图表的任何人共享图表，即使他们尚未在 Windows 桌面上安装 Visio，也不例外。| [iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | 让 Word 文档在平板电脑和电话上的显示效果比以往更好。 可以让用户确信，所编辑或创建的文档在计算机、Mac、平板电脑和电话上的显示效果完全符合自己的需求。 因为有熟悉的 Office 外观，以及直观的触控体验，所以很快就能上手使用。<p><p>此应用可用作 Android 和 iOS 的多身份应用。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.microsoft.office.word)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft 工作文件夹**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | 可便于各个员工使用工作文件夹这项Windows Server 功能，在企业环境内外安全地访问自己的文件。 | [iOS 应用商店链接](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
-| **Microsoft 白板**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | Microsoft 白板应用提供了一个自由形式的智能画布，团队可以通过云直观地进行构思、创建和协作。  它通过允许所有团队成员在画布上实时编辑和评论（无论他们在哪里）来增强团队合作。 你所有的工作都可以安全地存放在云端，随时可以从任何设备上取回。 | [iOS 应用商店链接](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | 使用 Yammer，可以打破组织层级障碍，并促进团队协作。 不仅可以与组织中的合适人员保持联系、跨团队共享和搜索信息，还能整理项目和想法，从而完成更多工作。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.yammer.v1)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>合作伙伴应用 
