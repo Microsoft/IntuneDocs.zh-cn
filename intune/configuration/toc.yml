@@ -14,7 +14,11 @@
     - name: 创建配置文件
       href: device-profile-create.md
     - name: Windows 上的管理模板
-      href: administrative-templates-windows.md
+      items:
+        - name: Windows 上的管理模板
+          href: administrative-templates-windows.md
+        - name: 使用管理模板更新 Office
+          href: administrative-templates-update-office.md
     - name: iOS 和 MacOS 上的设备功能
       href: device-features-configure.md
     - name: 限制设备设置和功能
@@ -47,6 +51,8 @@
       items:
         - name: 具有预共享密钥的 Wi-Fi
           href: wi-fi-profile-shared-key.md
+        - name: Wi-Fi 疑难解答
+          href: troubleshoot-wi-fi-profiles.md
     - name: macOS 上的扩展
       href: kernel-extensions-overview-macos.md
     - name: 教育参加测验应用
