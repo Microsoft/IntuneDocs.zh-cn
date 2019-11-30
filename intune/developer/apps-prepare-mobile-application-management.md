@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635338"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547688"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -52,8 +52,7 @@ App Wrapping Tool 主要用于内部  业务线 (LOB) 应用。 此工具是一�
 |**应用包装工具** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |是|是|
-|**Android
-**|不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
+|**Android**|不支持 - 使用 [Intune App SDK Xamarin 绑定](app-sdk-xamarin.md)。|是|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 
@@ -75,8 +74,7 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
-|**Android
-**| 支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
+|**Android**| 支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
 
 ### <a name="not-using-an-app-development-platform-listed-above"></a>不使用上面列出的应用开发平台？
 
@@ -85,9 +83,6 @@ Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-
 ## <a name="feature-comparison"></a>功能比较
 
 此表列出了可用于 App SDK 和应用包装工具的设置。
-
-> [!NOTE]
-> 应用包装工具可以与独立 Intune 或带 Configuration Manager 的 Intune 结合使用。
 
 |功能|App SDK|应用包装工具|
 |-----------|---------------------|-----------|

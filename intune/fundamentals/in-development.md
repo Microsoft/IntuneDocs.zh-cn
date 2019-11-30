@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199346"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540740"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>开发过程中的 Microsoft Intune 功能 - 2019 年 12 月
 
@@ -181,34 +181,12 @@ Intune 正在为 iOS、iPadOS 和 macOS 设备添加更多单一登录设置。 
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>设备管理
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>编辑 Autopilot 设备的设备名称值<!-- 2640074  -->
-你将能够编辑 Azure AD 联接的 Autopilot 设备的设备名称值。 为此，请转到**Intune** > **设备注册** > **windows 注册** > **windows Autopilot** > **设备**> 选择设备 > 在右窗格中更改 "**设备名称**" 值>**保存**。
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>编辑 Autopilot 设备的组标记值<!-- 4816775 -->
-你将能够编辑 Autopilot 设备的**组标记**值：
-
-1. 选择**Intune** > **设备注册** > **windows 注册** > **windows Autopilot** > **设备**。
-1. 选择设备。
-1. 在右侧窗格中，更改 "**组标记**" 值。
-1. 选择“保存”  。
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>需要 Jamf 管理的目标 macOS 用户组<!-- 4061739 -->
-你将能够面向特定的用户组，以要求 Jamf 管理其 macOS 设备。 通过此目标，你可以将 Jamf 符合性集成应用到 macOS 设备的子集，而其他设备仍由 Intune 管理。 通过目标，还可以将用户设备从一个移动设备管理（MDM）系统逐步迁移到另一台移动设备管理（MDM）系统。
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Intune 应用
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>公司门户中改进了 macOS 注册体验<!-- 5074349  -->
-MacOS 注册体验的公司门户将有一个更简单的注册过程，该过程将更密切地与 iOS 注册体验公司门户相匹配。 设备用户将看到：  
-
-* 轻巧的用户界面。  
-* 改进的注册清单。  
-* 更清楚地说明如何注册其设备。  
-* 改进了疑难解答选项。  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>监视和故障排除
@@ -217,10 +195,8 @@ MacOS 注册体验的公司门户将有一个更简单的注册过程，该过�
 新的集中审核日志体验会将所有类别的审核日志收集到一个页面中。 You'l 可以筛选日志以获取所需数据。 若要查看审核日志，请参阅**租户管理** > **审核日志**。 有关详细信息，请参阅[Intune 中的审核日志即将发生的更改](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858)。
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>基于角色的访问控制
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>复制自定义或内置角色<!-- 1081938 -->
-你将能够复制内置和自定义角色。 为此，请参阅**Intune** > **角色** > **所有角色**> 在列表中选择一个角色 > "**重复**"。 请确保输入唯一的名称。
 
 <!-- ***********************************************-->
 

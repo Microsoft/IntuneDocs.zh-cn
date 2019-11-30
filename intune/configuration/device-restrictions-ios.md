@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390860"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465654"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
 
@@ -244,6 +244,10 @@ ms.locfileid: "74390860"
 ### <a name="settings-apply-to-all-enrollment-types"></a>设置适用于：所有注册类型
 
 - **在非托管应用中查看企业文档**：“阻止”  可阻止在非托管应用中查看企业文档。 “未配置”  （默认）则允许在任何应用中查看企业文档。 例如，你想要阻止用户将文件从 OneDrive 应用保存到 Dropbox。 将此设置配置为“阻止”  。 设备收到策略后（例如在重新启动后），将不再允许保存。
+
+
+  > [!NOTE]
+  > 如果阻止此设置，则还会阻止从应用商店安装的第三方键盘。
 
   - **允许非托管的应用读取托管的联系人帐户**：设置为 "**允许**" 时，非托管应用（例如内置 iOS 联系人应用）可以读取和访问托管应用中的联系人信息，包括 Outlook 移动应用。 “未配置”（默认）则会阻止对设备内置的“联系人”应用进行读取（包括删除副本）  。  
   
