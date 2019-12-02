@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497039"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563487"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -32,8 +32,8 @@ ms.locfileid: "72497039"
 
 Intune 根据特定用户设备上安装的应用，提供应用疑难解答详细信息。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“疑难解答”   。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 选择 "**故障排除**" 和 "支持"。
 4. 单击“选择用户”  ，选择要对其排查问题的用户。 此时，“选择用户”  窗格显示。
 5. 通过键入名称或电子邮件地址选择用户。 单击窗格底部的“选择”  。 此用户的疑难解答信息显示在“疑难解答”  窗格中。 
 6. 在“设备”  列表中，选择要对其排查问题的设备。
@@ -57,12 +57,12 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 - 如果公司门户中未显示应用程序，请确保使用**可用**意向部署应用，并且用户正在使用应用支持的设备类型访问公司门户。
 - 对于 Windows BYOD 设备，用户需要将工作帐户添加到设备。
 - 检查用户是否超出 AAD 设备限制：
-  1. 导航到[Azure Active Directory 设备设置](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)"。
+  1. 导航到[Azure Active Directory 设备设置](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId)"。
   2. 记下为**每个用户的最大设备**设置的值。
-  3. 导航到[Azure Active Directory 用户](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)"。
+  3. 导航到[Azure Active Directory 用户](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)"。
   4. 选择受影响的用户，然后单击 "**设备**"。
   5. 如果用户超过设置限制，则删除不再需要的任何过时记录。
-- 对于 iOS DEP 设备，请确保用户在 Intune 设备概述边栏选项卡中列出为 "**用户已注册**"。 如果显示 NA，则部署 Intune 公司门户的配置策略。 有关详细信息，请参阅[配置公司门户应用](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)。
+- 对于 iOS DEP 设备，请确保用户在 Intune 设备概述窗格中被列为已**注册**用户。 如果显示 NA，则部署 Intune 公司门户的配置策略。 有关详细信息，请参阅[配置公司门户应用](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 应用安装疑难解答
 
@@ -75,7 +75,7 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
 
 若要收集 Win32 应用安装日志，请先按照[应用疑难解答详细信息](troubleshoot-app-install.md#app-troubleshooting-details)部分中提供的步骤进行操作。 然后，继续执行以下步骤：
 
-1. 单击“安装详细信息”边栏选项卡上的“收集日志”选项   。
+1. 单击“安装详细信息”窗格上的“收集日志”选项   。
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 

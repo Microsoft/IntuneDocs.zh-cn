@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490751"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465703"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -54,9 +54,10 @@ ms.locfileid: "72490751"
     > [!NOTE]
     > Intune App Wrapping Tool 不支持用于应用签名的 Google 的 v2 和即将推出 v3 签名方案。 使用 Intune App Wrapping Tool 包装 .apk 文件后，建议使用 [Google 提供的 Apksigner 工具]( https://developer.android.com/studio/command-line/apksigner)。 这将确保一旦应用安装到最终用户设备上，它就可以通过 Android 标准正确启动。 
 
-- （可选）有时，由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 Intune 应用包装工具会在换行过程中自动处理 DEX 文件溢出，其中最小 API 级别为21或更高（从 [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)。 对于最小 API 级别为 < 21 的应用，最佳做法是使用包装的 `-UseMinAPILevelForNativeMultiDex` 标志增加最小 API 级别。 对于不能增加应用程序的最低 API 级别的客户，可以使用以下 DEX 溢出解决方法。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作：
-* 使用 ProGuard 从应用的主 DEX 文件中删除未使用的类引用。
-* 对于使用 v 3.1.0 或更高版本的 Android Gradle 插件的客户，请禁用[D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)。  
+- （可选）有时，由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 使用最小 API 级别为21或更高的应用（在 [v 之前](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)），Intune 应用包装工具会自动处理 DEX 文件溢出。64。51。202。144 对于最小 API 级别为 < 21 的应用，最佳做法是使用包装的 `-UseMinAPILevelForNativeMultiDex` 标志增加最小 API 级别。 对于不能增加应用程序的最低 API 级别的客户，可以使用以下 DEX 溢出解决方法。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作：
+
+  - 使用 ProGuard 从应用的主 DEX 文件中删除未使用的类引用。
+  - 对于使用 v 3.1.0 或更高版本的 Android Gradle 插件的客户，请禁用[D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)。  
 
 ## <a name="install-the-app-wrapping-tool"></a>安装应用包装工具
 
