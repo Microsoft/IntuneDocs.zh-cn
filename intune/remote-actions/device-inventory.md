@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713194"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564383"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -84,7 +84,7 @@ ms.locfileid: "73713194"
 |ICCID|集成电路卡标识符，即 SIM 卡的唯一标识号。|Windows、iOS、Android|
 |注册日期|设备在 Intune 中注册的日期和时间。|Windows、iOS、Android|
 |上次联系时间|设备上次连接到 Intune 的日期和时间。|Windows、iOS、Android|
-|激活锁旁路代码|可用于绕开激活锁的代码。|Windows、iOS、Android|
+|激活锁旁路代码|可用于绕开激活锁的代码。|iOS|
 |已注册 Azure AD|如果为“是”  ，则设备已向 Azure Directory 注册。|Windows、iOS、Android|
 |已注册 Intune|如果为“是”  ，则设备已向 Intune 注册。|Windows、iOS、Android|
 |合规性|设备的符合性状态。|Windows、iOS、Android|
