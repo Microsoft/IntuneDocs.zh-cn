@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b3c82faab08248640e19573582ccbd232e0587d
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923350"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239218"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用设备注册管理员帐户在 Intune 中注册设备
 
@@ -36,7 +36,8 @@ ms.locfileid: "72923350"
 - 必须为 DEM 帐户用户分配 Intune 许可证。
 - 无法通过公司门户进行擦除。 可以从 Azure 门户中的 Intune 擦除通过 DEM 用户帐户注册的设备。
 - 公司门户应用或网站中仅显示本地设备。
-- 由于应用管理的每用户 Apple ID 要求，DEM 用户帐户无法将 Apple 批量购买计划 (VPP) 应用与 Apple VPP 用户许可证一起使用。
+- 由于应用管理的每用户 Apple ID 要求，DEM 用户帐户无法将 Apple Volume Purchase Program (VPP) 应用与 Apple VPP 用户许可证一起使用。
+- 通过 Apple 设备注册计划（DEP）注册设备时，不能使用 DEM 帐户。
 - 如果设备具有 Apple VPP 许可证，则可以安装 VPP 应用。
 - 设备出于条件访问而被阻止，Windows 10 1803+ 除外
 - 向 DEM 帐户注册的每台设备都需要获得适当许可才能由 Intune 托管。 许可证可以是 Intune 用户许可证，也可以是 Intune 设备许可证。

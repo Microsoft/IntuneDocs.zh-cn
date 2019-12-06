@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059706"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548021"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>设置注册状态页
  
@@ -64,14 +64,14 @@ ms.locfileid: "74059706"
 
 若要启用注册状态页，请执行以下步骤。
  
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “Windows”   > “Windows 注册”   > “注册状态页”  。
 2. 在“注册状态页”边栏选项卡中，选择“默认” > “设置”    。
 3. 有关“显示应用和配置文件安装进度”，请选择“是”   。
 4. 选择要打开的其他设置，然后选择“保存”  。
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>创建注册状态页配置文件并将其分配到组
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”   > “创建配置文件”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “Windows”   > “Windows 注册”   > “注册状态页”   > “创建配置文件”  。
 2. 提供名称和说明   。
 3. 选择“创建”  。
 4. 在“注册状态页”列表中选择新配置文件  。
@@ -82,7 +82,7 @@ ms.locfileid: "74059706"
 
 一个用户可以属于许多个组，并可以拥有许多注册状态页配置文件。 要处理此类冲突，可以为每个配置文件设置优先级。 注册时，如果用户具有多个注册状态页配置文件，则仅向正在注册的设备应用具有最高优先级的配置文件。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “Windows”   > “Windows 注册”   > “注册状态页”  。
 2. 将鼠标悬停在列表中的配置文件上。
 3. 使用三个垂直点，将该配置文件拖到列表中的所需位置。
 
@@ -90,7 +90,7 @@ ms.locfileid: "74059706"
 
 可以指定在用户可以访问桌面之前需要安装哪些应用。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “Windows 注册”   > “注册状态页”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “Windows”   > “Windows 注册”   > “注册状态页”  。
 2. 选择配置文件 >“设置”  。
 3. 有关“显示应用和配置文件安装进度”，请选择“是”   。
 4. 有关“在安装所有应用和配置文件之前阻止设备使用”，请选择“是”   。

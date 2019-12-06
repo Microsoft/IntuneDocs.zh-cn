@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059561"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390870"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 使用设备配置文件，可以添加和配置设置，然后将这些设置推送到组织中的设备。 [对使用设备配置文件的设备应用功能和设置](device-profiles.md)介绍了更多详细信息，包括可以执行的操作。
 
@@ -78,6 +76,7 @@ ms.locfileid: "74059561"
        - [展台](kiosk-settings.md)
        - [PKCS 证书](../protect/certficates-pfx-configure.md)
        - [PKCS 导入的证书](../protect/certificates-imported-pfx-configure.md)
+       - [首选项文件](preference-file-settings-macos.md)
        - [SCEP 证书](../protect/certificates-scep-configure.md)
        - [受信任的证书](../protect/certificates-configure.md)
        - [更新策略](../software-updates-ios.md)
@@ -160,6 +159,32 @@ ms.locfileid: "74059561"
 Intune 使用不同的刷新周期来检查配置文件的更新。 如果设备是最近注册的，则会增加运行签入的频率。 [策略和配置文件刷新周期](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)列出了估计的刷新时间。
 
 用户可以随时打开公司门户应用，并同步设备以立即检查配置文件更新。
+
+## <a name="recommendations"></a>建议
+
+创建配置文件时，请考虑下列建议：
+
+- 命名策略，以便了解其定义和用途。 所有[符合性策略](../protect/create-compliance-policy.md)和[配置文件](../configuration/device-profile-create.md)都有一个可选的“说明”  属性。 在“说明”  中，具体明确并包含信息，使其他人知道策略的用途。
+
+  某些配置文件示例包括：
+
+  **配置文件名称**：管理模板 - 适用于所有 Windows 10 用户的 OneDrive 配置文件  
+  **配置文件说明**：OneDrive 管理模板配置文件，其中包括适用于所有 Windows 10 用户的最小和基本设置。 由 user@contoso.com 创建，可防止用户将组织数据共享到个人 OneDrive 帐户。
+
+  **配置文件名称**：适用于所有 iOS 用户的 VPN 配置文件  
+  **配置文件说明**：VPN 配置文件，其中包括适用于要连接到 Contoso VPN 的所有 iOS 用户的最小和基本设置。 由 user@contoso.com 创建，以便用户自动向 VPN 进行身份验证，而不是提示用户输入其用户名和密码。
+
+- 按照任务创建配置文件，例如配置 Microsoft Edge 设置、启用 Microsoft Defender 防病毒设置、阻止 iOS 越狱设备等。
+
+- 创建适用于特定组（如市场营销、销售、IT 管理员）的配置文件，或按位置或学校系统创建配置文件。
+
+- 将用户策略与设备策略分开。
+
+  例如，[Intune 中的管理模板](administrative-templates-windows.md)具有数百个 ADMX 设置。 这些模板将显示是否将设置应用于用户或设备。 创建管理模板时，将用户设置分配给用户组，并将设备设置分配给设备组。
+
+  下图显示了可应用于用户和/或应用于设备的设置示例：
+
+  ![适用于用户和设备的 Intune 管理模板](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>后续步骤
 

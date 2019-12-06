@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c6e519f4f5f31a11bd2e762b9e33357825d783d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984156"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390376"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -46,6 +46,7 @@ ms.locfileid: "73984156"
 | **限制在其他应用间进行剪切、复制和粘贴** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。</ul> | **任何应用**   |
 | <ul><ui>**剪切和复制任何应用的字符限制** | 指定可从组织数据和帐户中剪切或复制的字符数。  这允许将指定数量的字符共享到任何应用程序，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制  。<p>默认值 = 0<p>**注意**：*要求应用具有 Intune SDK 版本 9.0.14 或更高版本*。  | **0**   |
 | **组织数据通知** | 指定针对组织帐户通过 OS 通知共享的组织数据量。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：例如，不在通知中共享组织数据。</li><UL><li>“你有新邮件”，“你有个会议”</li><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。</ul> <p>**注意**：*此设置需要应用支持。目前，适用于 iOS 4.16.0 版本或更高版本的 Outlook 将支持此设置，此设置预计在 2019 年 12 月 16 日当周发布。* | **允许**   |
+| **第三方键盘** | 选择“阻止”  来阻止在托管应用程序中使用第三方键盘。<p>启用此设置后，用户将收到一次性消息，说明禁止使用第三方键盘。 用户首次需要使用键盘与组织数据进行交互时，将会出现此消息。 使用托管应用程序时，只能使用标准的 iOS 键盘，所有其他键盘选项都将禁用。 此设置将影响多身份应用程序的组织和个人帐户。 此设置不影响在非托管应用程序中使用第三方键盘。<p>**注意:** 此功能要求应用使用 Intune SDK 版本12.0.16 或更高版本。 如果应用的 SDK 版本范围从 8.0.14 到（包括）12.0.15，则不会为多身份应用正确应用此功能。 有关更多详细信息，请参阅[已知问题：个人帐户的 iOS 中不阻止第三方键盘](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Updated-Known-issue-Third-party-keyboards-are-not-blocked-in-iOS/ba-p/339486)。 | **允许**  |
 
 ### <a name="encryption"></a>加密
 | 设置 | 如何使用 | 默认值 |

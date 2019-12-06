@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199314"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390746"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何获取对 Microsoft Intune 的支持
 
@@ -39,7 +39,7 @@ Intune 管理员可以使用“帮助和支持”选项，通过 Azure 门户为
 
 ## <a name="help-and-support-experience"></a>帮助和支持体验
 
-可从 [Microsoft 365 设备管理门户](https://devicemanagement.microsoft.com)以及 Azure 门户中 Intune 下的所有边栏选项卡（或页面）获得 Intune 的帮助和支持体验。
+可从 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)以及 Azure 门户中 Intune 下的所有边栏选项卡（或页面）获得 Intune 的帮助和支持体验。
 
 “帮助和支持”体验与 [Microsoft 365 管理中心](https://admin.microsoft.com/)中显示的体验类似，并取代了之前的“帮助 + 支持”，对于 Azure 的其他服务它保持不变。  
 
@@ -48,16 +48,27 @@ Intune 管理员可以使用“帮助和支持”选项，通过 Azure 门户为
 
 ### <a name="options-to-access-help-and-support"></a>用于访问帮助和支持的选项
 
-- **在 Azure 门户中执行以下操作：**
+将新创建的租户用于 Intune 时，“帮助和支持”  可能无法打开并返回以下消息：
+
+- 遇到未知问题。  请刷新页面，但如果问题仍然存在，请通过 [M365 管理中心](https://admin.microsoft.com)创建案例并引用提供的会话 ID。
+
+错误详细信息包括“会话 ID”  、“扩展”  详细信息等。 
+ 
+如果尚未通过 M365 管理中心  (https://admin.microsoft.com ) 或 Office 365 门户  (https://portal.office.com ) 对新租户帐户进行身份验证，则会出现此问题。 若要解决此问题，请在消息中选择 M365 管理中心  对应的链接，或访问 https://portal.office.com 并登录。 在任一站点上进行身份验证后，将可以访问 Intune 的”帮助和支持“  。
+
+
+**访问帮助和支持**：
+
+- **在 Azure 门户中**
 
   - 从任何 Intune 边栏选项卡或页面选择“帮助和支持”  。
 
   > [!NOTE]  
   > 若 Intune 的实例托管在政府的私有云（又称为主权云，如 Azure 政府）上，请参阅本文后续部分中的[政府私有云的 Intune 支持](#intune-support-for-private-cloud-for-government)。 直至明年才可在政府私有云上使用 Intune 帮助和支持体验  。
 
-- **从“设备管理”仪表板：**
+- **从 Microsoft 终结点管理器管理中心**
   - 选择 Intune 的功能区后，选择“帮助和支持”选项。 
-  - 从“设备管理”门户的任意节点，选择门户右上角的“?”  图标，然后使用下拉列表选择想要获得与其相关的帮助的服务。 “设备管理”门户中的“?”  图标支持多个服务，必须选择想要获得与其相关的帮助的特定服务。  
+  - 从“Microsoft 终结点管理器管理中心”的任何节点，选择“?”  图标，然后使用下拉列表选择想要获得与其相关的帮助的服务。 “设备管理”门户中的“?”  “Microsoft 终结点管理器管理中心”中的图标支持多个服务，必须选择想要获得与其相关的帮助的特定服务。  
 
     ![选择服务](./media/get-support/select-a-service.png)
 

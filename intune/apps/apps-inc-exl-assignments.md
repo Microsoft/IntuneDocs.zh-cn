@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47ecc2363244634cb355fdeaeb51074417322e4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507297"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547966"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>在 Microsoft Intune 中包括和排除应用分配
 
@@ -31,9 +31,20 @@ ms.locfileid: "72507297"
 
 要设置应用的可用性，可以通过结合使用包括组分配和排除组分配，针对一组用户或设备包括和排除应用分配。 在包括一个较大的组来提供应用，然后排除一个较小的组来缩小选定用户时，此功能非常有用。 较小的组可能是测试组或管理组。 
 
-从应用分配中排除组时，必须排除仅用户组或仅设备组。 不能排除用户和设备的混合组。 
+最佳做法是为你的用户组创建和分配应用，并分别为你的设备组创建和分配应用。 有关组的详细信息，请参阅[添加用于组织用户和设备的组](~/fundamentals/groups-add.md)。  
 
-Intune 排除组时不会考虑用户与设备的关联。 在排除设备组的同时含入用户组，是不大可能产生所需结果的。 包含将优先于排除。 例如，如果让某 iOS 应用面向“所有用户”，并排除“所有 iPad”，最终结果将是使用 iPad 的任何用户仍可获得该应用   。 但是，如果让该 iOS 应用面向“所有设备”，并排除“所有 iPad”，则部署会成功   。  
+包括或排除应用分配时，存在以下重要场景：
+
+- 在以下相同的组类型方案中，排除优先于包含：
+    - 分配应用时包括用户组和排除用户组
+    - 分配应用时包括设备组和排除设备组
+
+    例如，如果将设备组分配给“所有企业用户”  用户组，但排除“高级管理人员”  用户组中的成员，则“高级管理人员”  除外的“所有公司用户”  都将获取分配，因为这两个组是用户组。
+- Intune 不会评估用户到设备组的关系。 如果将应用分配到混合组，则结果可能不是你所预期的。
+
+    例如，如果将设备组分配到“所有用户”  用户组，但排除“所有个人设备”  设备组。 在此混合组应用分配中，“所有用户”  获取应用。 排除不适用。
+
+因此，建议不要将应用分配到混合组。
 
 > [!NOTE]
 > 为应用设置组分配时，已弃用“不适用”类型，代之以排除组功能  。 
@@ -41,7 +52,6 @@ Intune 排除组时不会考虑用户与设备的关联。 在排除设备组的
 > Intune 在控制台中提供了预先创建的“所有用户”和“所有设备”组   。 为了方便起见，这些组已内置优化。 强烈建议针对所有用户和所有设备使用这些组，而不要使用可能是你自己创建的任何“所有用户”或“所有设备”组。  
 >
 > Android 企业支持包括和排除组。 可利用内置的“所有用户”和“所有设备”组进行 Android 企业应用分配   。 
-
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>分配应用时包括和排除组 
 若要使用包括和排除分配将应用分配给组，请执行以下操作：

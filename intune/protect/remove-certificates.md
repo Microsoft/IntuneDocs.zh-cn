@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: e00600abb8327623eff4efe8509670779710ab7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509034"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410175"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中删除 SCEP 和 PKCS 证书
 
@@ -55,14 +55,17 @@ ms.locfileid: "72509034"
 - 证书配置文件从组分配中删除。
 
 出现以下情况时，将吊销 SCEP 证书：
+
 - 管理员更改或更新 SCEP 配置文件。
 
 出现以下情况时，将删除根证书：
+
 - 用户取消注册。
 - 管理员运行[擦除](../remote-actions/devices-wipe.md#wipe)操作。
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）： 
+
 - 用户丢失 Intune 许可证。
 - 管理员撤销 Intune 许可证。
 - 管理员从 Azure AD 中删除用户或组。
@@ -76,11 +79,13 @@ ms.locfileid: "72509034"
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，将删除根证书：
+
 - 用户取消注册。
 - 管理员运行[擦除](../remote-actions/devices-wipe.md#wipe)操作。
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）  ：
+
 - 用户丢失 Intune 许可证。
 - 管理员撤销 Intune 许可证。
 - 管理员从 Azure AD 中删除用户或组。
@@ -101,14 +106,17 @@ ms.locfileid: "72509034"
 - 证书配置文件从组分配中删除。
 
 出现以下情况时，将吊销 SCEP 证书：
+
 - 管理员更改或更新 SCEP 配置文件。
 
 出现以下情况时，将删除根证书：
+
 - 用户取消注册。
 - 管理员运行[擦除](../remote-actions/devices-wipe.md#wipe)操作。
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）： 
+
 - 用户丢失 Intune 许可证。
 - 管理员撤销 Intune 许可证。
 - 管理员从 Azure AD 中删除用户或组。
@@ -122,14 +130,17 @@ ms.locfileid: "72509034"
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，将删除 PKCS 证书：
+
 - 证书配置文件从组分配中删除。
 
 出现以下情况时，将删除根证书：
+
 - 用户取消注册。
 - 管理员运行[擦除](../remote-actions/devices-wipe.md#wipe)操作。
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）  ：
+
 - 用户丢失 Intune 许可证。
 - 管理员撤销 Intune 许可证。
 - 管理员从 Azure AD 中删除用户或组。
@@ -140,10 +151,12 @@ ms.locfileid: "72509034"
 ### <a name="scep-certificates"></a>SCEP 证书
 
 出现以下情况时，将吊销并删除 SCEP 证书  ：
+
 - 用户取消注册。
 - 管理员运行[擦除](../remote-actions/devices-wipe.md#wipe)操作。
 
 出现以下情况时，将吊销 SCEP 证书：
+
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 - 设备从 Azure AD 组中删除。
 - 证书配置文件从组分配中删除。
@@ -151,11 +164,13 @@ ms.locfileid: "72509034"
 - 管理员更改或更新 SCEP 配置文件。
 
 出现以下情况时，将删除根证书：
+
 - 用户取消注册。
 - 管理员运行[擦除](../remote-actions/devices-wipe.md#wipe)操作。
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）： 
+
 - 用户丢失 Intune 许可证。
 - 管理员撤销 Intune 许可证。
 - 管理员从 Azure AD 中删除用户或组。
@@ -169,12 +184,14 @@ ms.locfileid: "72509034"
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，将删除根证书：
+
 - 用户取消注册。
 - 管理员运行[擦除](../remote-actions/devices-wipe.md#wipe)操作。
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 
 出现以下情况时，PKCS 证书将保留在设备上（证书不会被吊销，也不会被删除）  ：
 - 用户丢失 Intune 许可证。
+
 - 管理员撤销 Intune 许可证。
 - 管理员从 Azure AD 中删除用户或组。
 - 管理员更改或更新 PKCS 配置文件。
@@ -190,15 +207,18 @@ ms.locfileid: "72509034"
 ### <a name="scep-certificates"></a>SCEP 证书
 
 出现以下情况时，将吊销并删除 SCEP 证书  ：
+
 - 用户取消注册。
 - 管理员运行[停用](../remote-actions/devices-wipe.md#retire)操作。
 - 设备从 Azure AD 组中删除。
 - 证书配置文件从组分配中删除。
 
 出现以下情况时，将吊销 SCEP 证书：
+
 - 管理员更改或更新 SCEP 配置文件。
 
 出现以下情况时，SCEP 证书将保留在设备上（证书不会被撤销，也不会被删除）： 
+
 - 用户丢失 Intune 许可证。
 - 管理员撤销 Intune 许可证。
 - 管理员从 Azure AD 中删除用户或组。
@@ -210,3 +230,6 @@ ms.locfileid: "72509034"
 
 macOS 上不支持 PKCS 证书。
 
+## <a name="next-steps"></a>后续步骤
+
+[使用证书进行身份验证](certificates-configure.md)

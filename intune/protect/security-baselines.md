@@ -5,23 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413842"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409965"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 
@@ -81,7 +81,7 @@ ms.locfileid: "73413842"
   > [!NOTE]
   > Microsoft Defender ATP 安全基线已针对物理设备进行了优化，目前不建议在虚拟机 (VM) 或 VDI 终结点上使用。 某些基线设置可能会影响虚拟化环境中的远程交互式会话。  有关详细信息，请参阅 Windows 文档中的[提高 Microsoft Defender ATP 安全基线的符合性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)。
 
-- **Microsoft Edge 基线** 
+- **Microsoft Edge 基线**
   - [预览版：Microsoft Edge 基线](security-baseline-settings-edge.md)
 
 可以继续使用和编辑之前基于预览版模板创建的配置文件，无需考虑该预览模板是否可用于创建新配置文件。
@@ -103,13 +103,15 @@ ms.locfileid: "73413842"
 
 ### <a name="create-the-profile"></a>创建配置文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后选择“设备安全性”   >   “安全基线”以查看可用基线列表。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 选择“终结点安全性”   > “安全基线”  以查看可用基线列表。
 
    ![选择要配置的安全基线](./media/security-baselines/available-baselines.png)
 
-2. 依次选择要使用的基线和“创建配置文件”  。
+3. 依次选择要使用的基线和“创建配置文件”  。
 
-3. 在“基本信息”  选项卡上，指定以下属性：
+4. 在“基本信息”  选项卡上，指定以下属性：
 
    - **名称**：输入安全基线配置文件的名称。 例如，输入“Defender ATP 的标准配置文件”  。
 
@@ -117,7 +119,7 @@ ms.locfileid: "73413842"
 
    选择“下一步”  转到下一个选项卡。转到新选项卡后，选择选项卡名称可以返回到以前查看过的选项卡。
 
-4. 在“配置”设置选项卡上，查看所选基线中可用的“设置”  组。 可以展开组以查看该组的设置，以及这些设置在基线中的默认值。 若要查找特定设置：
+5. 在“配置”设置选项卡上，查看所选基线中可用的“设置”  组。 可以展开组以查看该组的设置，以及这些设置在基线中的默认值。 若要查找特定设置：
    - 选择一个组以展开并查看可用的设置。
    - 使用“搜索”  栏并指定用于筛选视图以仅显示包含搜索条件的组的关键字。
 
@@ -125,13 +127,13 @@ ms.locfileid: "73413842"
 
    ![展开某个组以查看该组的设置](./media/security-baselines/sample-list-of-settings.png)
 
-5. 在“作用域标记”  选项卡上，选择“选择作用域标记”  以打开“选择标记”  窗格，将作用域标记分配给配置文件。
+6. 在“作用域标记”  选项卡上，选择“选择作用域标记”  以打开“选择标记”  窗格，将作用域标记分配给配置文件。
 
-6. 在“分配”  选项卡上，选择“选择要包括的组”  ，然后将基线分配给一个或多个组。 使用“选择要排除的组”  对分配进行相应调整。
+7. 在“分配”  选项卡上，选择“选择要包括的组”  ，然后将基线分配给一个或多个组。 使用“选择要排除的组”  对分配进行相应调整。
 
    ![分配配置文件](./media/security-baselines/assignments.png)
 
-7. 准备好部署基线后，请转到“查看 + 创建”  选项卡以查看基线的详细信息。 选择“创建”  以保存并部署配置文件。
+8. 准备好部署基线后，请转到“查看 + 创建”  选项卡以查看基线的详细信息。 选择“创建”  以保存并部署配置文件。
 
    配置文件一经创建，便会推送到已分配的组，并可能会立即得以应用。
 
@@ -140,7 +142,7 @@ ms.locfileid: "73413842"
 
    ![查看基线](./media/security-baselines/review.png)
 
-8. 创建配置文件后，通过转到“设备安全性”   >   “安全基线”对其进行编辑，选择已配置的基线类型，然后选择“配置文件”  。 从可用的配置文件列表中选择配置文件，然后选择“属性”  。 可以编辑所有可用的配置选项卡中的设置，并选择“查看 + 保存”  以提交所做的更改。
+9. 创建配置文件后，通过转到“设备安全性”   >   “安全基线”对其进行编辑，选择已配置的基线类型，然后选择“配置文件”  。 从可用的配置文件列表中选择配置文件，然后选择“属性”  。 可以编辑所有可用的配置选项卡中的设置，并选择“查看 + 保存”  以提交所做的更改。
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>更改配置文件的基线版本
 
@@ -160,25 +162,27 @@ ms.locfileid: "73413842"
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>更改配置文件的基线版本的具体步骤
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，选择“设备安全性”   >   “安全基线”，然后选择具有要更改的配置文件的基线类型的磁贴。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
 
-2. 接下来，选择“配置文件”  ，然后选中要编辑的配置文件对应的复选框，选择“更改版本”  。
+2. 选择“终结点安全性”   > “安全基线”  ，然后选择具有要更改的配置文件的基线类型的磁贴。
+
+3. 接下来，选择“配置文件”  ，然后选中要编辑的配置文件对应的复选框，选择“更改版本”  。
 
    ![选择基线](./media/security-baselines/select-baseline.png)
 
-3. 在“更改版本”  窗格中，使用“选择要更新到的安全基线”  下拉列表，然后选择要使用的版本实例。
+4. 在“更改版本”  窗格中，使用“选择要更新到的安全基线”  下拉列表，然后选择要使用的版本实例。
 
    ![选择版本](./media/security-baselines/select-instance.png)
 
-4. 选择“查看更新”  ，下载显示配置文件当前实例版本与所选新版本之间的差异的 CSV 文件。 审阅此文件，以了解哪些设置是新的或已删除的，以及这些设置在更新后的配置文件中的默认值是什么。
+5. 选择“查看更新”  ，下载显示配置文件当前实例版本与所选新版本之间的差异的 CSV 文件。 审阅此文件，以了解哪些设置是新的或已删除的，以及这些设置在更新后的配置文件中的默认值是什么。
 
    准备就绪后，继续执行下一步骤。
 
-5. 为“选择更新配置文件的方法”  选择两个选项之一：
+6. 为“选择更新配置文件的方法”  选择两个选项之一：
    - **接受基线更改但保留我现有的设置自定义项** - 此选项保留对基线配置文件所设置的自定义项，并将其应用于你选择使用的新版本。
    - **接受基线更改并放弃现有设置自定义项** - 此选项将完全覆盖原始配置文件。 更新的配置文件将对所有设置使用默认值。
 
-6. 选择“提交”  。 配置文件更新到所选的基线版本，转换完成后，基线将立即重新部署到已分配的组。
+7. 选择“提交”  。 配置文件更新到所选的基线版本，转换完成后，基线将立即重新部署到已分配的组。
 
 ### <a name="remove-a-security-baseline-assignment"></a>删除安全基线分配
 

@@ -7,14 +7,29 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309793"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74549361"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
+
+### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>针对“Adobe Acrobat Reader for Intune”移动应用的更新支持声明<!--5746776-->
+我们在 8 月底的 MC188653 上得知，Adobe Acrobat Reader for Intune 移动应用将于 2019 年 12 月 1 日到期，且 Adobe 计划在其主要的 Acrobat Reader 应用中支持 Intune 应用保护策略。 自那以后，我们收到客户反馈，我们需要提供更多的时间来继续允许 IT 管理员瞄准目标，并让最终用户开始使用 Adobe Acrobat Reader for Intune。 鉴于 Adobe Acrobat Reader for Intune 在最终用户设备上的高使用率及其在企业场景中的重要性，我们希望确保任何体验都能满足组织的应用保护需求。 
+
+虽然由于 Acrobat Reader 移动应用支持应用保护策略并且已经集成了 Intune SDK，我们仍然建议在策略中面向一般的 Acrobat Reader 移动应用，但 Adobe Acrobat Reader for Intune 应用将继续得到支持至 2020 年 3 月 31 日。 
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+你收到此消息是因为我们的报告表明，贵组织中的一个或多个策略针对的是 Adobe Acrobat Reader for Intune 应用程序，并且/或者你可能已经收到了我们以前的 EOL 通信。 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+让最终用户和技术支持人员得知晓此更改。 可以使用[公司门户的支持信息功能](../apps/company-portal-app.md#support-information)来建立与 Intune 相关的问题通道。
+
+#### <a name="additional-information"></a>其他信息
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
 
 ### <a name="end-support-for-windows-phone-81--3544909--"></a>结束对 Windows Phone 8.1 的支持<!--3544909-->
 Microsoft 对 Windows Phone 8.1 的主流支持于 2017 年 7 月结束，延期支持于 2019 年 6 月结束。 自 2017 年 10 月以来，针对 Windows Phone 8.1 的公司门户应用一直处于支持模式。 Microsoft Intune 将于 2020 年 2 月 20 日结束对 Windows Phone 8.1 的支持。

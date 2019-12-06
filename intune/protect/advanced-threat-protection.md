@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199173"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410210"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性
 
@@ -193,6 +193,12 @@ Microsoft Defender ATP 可以帮助解决类似这种情况的安全事件。
 2. 选择“设备”   > “监视器”   > “策略符合性”  。
 
 3. 在列表中找到 Microsoft Defender ATP 策略，并查看符合策略和不符合策略的设备。
+
+还可以对同一位置的不符合设备使用“操作”  报表：
+
+1. 选择“设备”   > “监视”   > “不符合设备”  。
+
+有关报表的详细信息，请参阅 [Intune 报表](../fundamentals/reports.md)。
 
 ## <a name="view-onboarding-status"></a>查看载入状态
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,14 +17,14 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ce5db670f0084626f1c053b64679623ccf28eb21
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164634"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390350"
 ---
-# <a name="use-device-encryption-with-intune"></a>使用 Intune 设备加密  
+# <a name="use-device-encryption-with-intune"></a>使用 Intune 设备加密
 
 使用 Intune 管理设备内置磁盘或驱动器加密以保护设备上的数据。
 
@@ -68,7 +68,7 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
 
    请考虑添加一条消息，以帮助指导最终用户检索其设备的恢复密钥。 使用个人恢复密钥轮换设置时，此信息对最终用户非常有用。通过该设置，可以定期自动为设备生成新的恢复密钥。
 
-   例如：若要检索丢失或最近轮换的恢复密钥，请从任意设备登录 Intune 公司门户网站。 在门户中，转到“设备”并选择已启用 FileVault 的设备，然后选择“获取恢复密钥”   。 系统会显示当前恢复密钥。  
+   例如：若要检索丢失或最近轮换的恢复密钥，请从任意设备登录 Intune 公司门户网站。 在门户中，转到“设备”并选择已启用 FileVault 的设备，然后选择“获取恢复密钥”   。 系统会显示当前恢复密钥。
 
 7. 配置其余 [FileVault 设置](endpoint-protection-macos.md#filevault)以满足业务需求，然后选择“确定”  。
 
@@ -114,13 +114,37 @@ BitLocker 适用于运行 Windows 10 或更高版本的设备  。
 
 6. 完成其他设置配置，然后保存配置文件。
 
-### <a name="manage-bitlocker"></a>管理 BitLocker  
+### <a name="manage-bitlocker"></a>管理 BitLocker
 
 在 Intune 使用 BitLocker 加密 Windows 10 设备之后，你便可在查看 Intune [加密报表](encryption-monitor.md)时查看和检索 BitLocker 恢复密钥。
 
+### <a name="rotate-bitlocker-recovery-keys"></a>BitLocker 恢复密码轮转
+
+可以使用 Intune 设备操作远程轮转运行 Windows 10 版本 1909 或更高版本的设备的 BitLocker 恢复密码。
+
+#### <a name="prerequisites"></a>必备条件
+
+设备必须满足以下先决条件才支持 BitLocker 恢复密码轮转：
+
+- 设备必须运行 Windows 10 版本 1909 或更高版本
+
+- Azure AD 加入和混合加入的设备必须启用密码轮转支持：
+
+  - 客户端驱动的恢复密码轮转 
+
+  此设置位于“Windows 加密”  下，是 Windows 10 终结点保护设备配置策略的一部分。
+  
+#### <a name="to-rotate-the-bitlocker-recovery-key"></a>BitLocker 恢复密码轮转
+
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 选择“设备” > “所有设备”   。
+
+3. 在所管理的设备列表中，选择一个设备，选择“更多”  ，然后选择“BitLocker 密码轮转”  设备远程操作。
+
 ## <a name="next-steps"></a>后续步骤
 
-创建[设备符合性](compliance-policy-create-windows.md)策略
+创建[设备符合性](compliance-policy-create-windows.md)策略。
 
 使用加密报表管理以下内容：
 

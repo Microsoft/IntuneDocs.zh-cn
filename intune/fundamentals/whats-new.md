@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199291"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540789"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -53,18 +53,93 @@ ms.locfileid: "74199291"
 ### Role-based access control
 -->  
 
-## <a name="week-of-november-18-2019"></a>2019 年 11 月 18 日当周
+<!-- ########################## -->
+## <a name="week-of-november-18-2019-1911-service-release"></a>2019 年 11 月 18 日当周（1911 服务版本）
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>对 Microsoft Outlook for iOS 提供 S/MIME 支持<!-- 2669398 idready -->
+Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Outlook for iOS。 有关详细信息，请参阅管理[为 Outlook for iOS 配置 S/MIME](~/apps/app-configuration-policies-outlook-smime.md)。
+
+#### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>针对何时选择性擦除应用数据更新了 UI<!-- 4102028 -->
+更新了 Intune 中用于选择性擦除应用数据的 UI。 UI 更改包括：
+- 简化了体验，可使用压缩在一个窗格中的向导式格式。
+- 对创建流进行了更新，使其包含分配。
+- 在创建新策略前查看属性时，或在编辑属性时，将显示包含已设置的所有内容的摘要页。 此外，编辑属性时，摘要将仅显示正在编辑的属性类别的项目列表。
+
+有关详细信息，请参阅[如何仅擦除 Intune 托管应用中的企业数据](~/apps/apps-selective-wipe.md)。
+
+#### <a name="ios-and-ipados-third-party-keyboard-support---4922950---"></a>iOS 和 iPadOS 第三方键盘支持<!-- 4922950 -->
+2019 年 3 月，我们宣布不再支持 iOS 应用保护策略设置“第三方键盘”。 此功能将返回到支持 iOS 和 iPadOS 的 Intune。 若要启用此设置，请访问新的或现有的 iOS/iPadOS 应用保护策略的“数据保护”  选项卡，并在“数据传输”  下查找“第三方键盘”  设置。
+
+此策略设置的行为与以前的实现略有不同。 在使用 SDK 版本 12.0.16 及更高版本的多标识应用中，如果应用保护策略的目标是将此设置配置为“阻止”  ，则最终用户将无法在其组织和个人帐户中选择第三方键盘。 使用 SDK 版本 12.0.12 及更早版本的应用将继续显示以下博客文章标题中所述的行为：[已知问题：个人帐户的 iOS 中不阻止第三方键盘](https://aka.ms/3rdparty_iOS_Intune)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-configuration"></a>设备配置
 
-#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 功能更新（公开预览版）<!-- 2384877 -->
+#### <a name="target-macos-user-groups-to-require-jamf-management---4061739----"></a>需要 Jamf 管理的目标 macOS 用户组<!-- 4061739  --> 
+可以面向特定的用户组，这些用户将获得[由 Jamf 管理的 macOS 设备](../protect/conditional-access-integrate-jamf.md)。 这使你可以将 Jamf 符合性集成应用于 macOS 设备的子集，而其他设备由 Intune 管理。 如果已在使用 Jamf 集成，则默认情况下，所有用户都将作为集成目标。
 
+#### <a name="new-exchange-activesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824-----"></a>在 iOS 设备上创建电子邮件设备配置文件时的新 Exchange ActiveSync 设置<!-- 4892824   --> 
+在 iOS/iPadOS 设备上，可以在设备配置文件中创建电子邮件连接（“设备配置”   > “配置文件”   > “创建配置文件”   > “iOS/iPadOS”  (针对平台) >“电子邮件”  (针对配置文件类型)）。 
+
+提供了新的 Exchange ActiveSync 设置，包括：
+- **要同步的 Exchange 数据**：为日历、联系人、提醒、备注和电子邮件选择要同步（或阻止同步）的 Exchange 服务。
+- **允许用户更改同步设置**：允许（或阻止）用户在其设备上更改这些服务的同步设置。  
+
+有关这些设置的详细信息，请参阅 [Intune 中适用于 iOS 设备的 电子邮件配置文件设置](../configuration/email-settings-ios.md)。 
+
+适用于：
+- iOS 13.0 及更高版本
+- iPadOS 13.0 及更高版本
+
+#### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-fully-managed-and-dedicated-devices---5353228-----"></a>阻止用户将个人 Google 帐户添加到 Android Enterprise 完全托管的专用设备<!-- 5353228   -->
+在 Android Enterprise 完全托管的专用设备上，提供了一个新设置以阻止用户创建个人 Google 帐户（“设备配置”   > “配置文件”   > “创建配置文件”   > “Android Enterprise”  (针对平台) >“仅设备所有者”>“设备限制”  (针对配置文件类型) >“用户和帐户设置”   > “个人 Google 帐户”  ）。
+
+要查看可以配置的设置，请转到[便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
+
+适用于：
+- Android Enterprise 完全托管设备
+- Android Enterprise 专用设备
+
+#### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-iosipados-device-restrictions-profile----5468501-----"></a>iOS/iPadOS 设备限制配置文件中删除了“Siri 命令的服务器端日志记录”设置 <!-- 5468501   -->
+在 iOS 和 iPadOS 设备上，从 Microsoft 终结点管理器管理控制台中删除了“Siri 命令的服务器端日志记录”  设置（“设备配置”   > “配置文件”   > “创建配置文件”   > “iOS/iPadOS”  (针对平台) >“设备限制”  (针对配置文件类型) >“内置应用”  ）。 
+
+此设置对设备不起作用。 若要从现有配置文件中删除此设置，请打开该配置文件，进行更改，然后保存该配置文件。 配置文件已更新，并从设备中删除了该设置。
+
+若要查看可以配置的设置，请参阅[使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置](../configuration/device-restrictions-ios.md)。
+
+适用于：
+- iOS/iPadOS
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 功能更新（公开预览版）<!-- 2384877 -->
 你现在可以将 [Windows 10 功能更新](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)部署到 Windows 10 设备。 Windows 10 功能更新是一个新的软件更新策略，该策略用于设置你想要在设备中安装和保留的 Windows 10 版本。 可以将此新策略类型和现有的 Windows 10 更新通道一起使用。
 
 接收 Windows 10 功能更新策略的设备将安装指定版本的 Windows，然后一直保留该版本，直到策略被编辑或删除。 运行更高版本 Windows 的设备仍保持其当前版本。 保持在特定 Windows 版本的设备仍可以在 Windows 10 更新通道中安装该版本的质量和安全更新。
 
 此新类型的策略在本周开始向租户推出。 如果你的租户尚未能使用此策略，敬请期待，很快就可以使用。
 
+#### <a name="add-and-change-key-information-in-plist-files-for-macos-applications---4736278---"></a>为 macOS 应用程序添加和更改 plist 文件中的关键信息<!-- 4736278 -->
+在 macOS 设备上，你现在可以创建设备配置文件，该配置文件将上传与应用或设备关联的属性列表文件 (.plist)（“设备”   > “配置文件”   > “创建配置文件”   > “macOS”  (针对平台) >“首选项文件”  (针对配置文件类型)）。
+
+只有某些应用支持托管首选项，并且这些应用可能不允许管理所有设置。 请确保上传的属性列表文件可配置设备通道设置，而不是用户通道设置。
+
+有关此功能的详细信息，请参阅[使用 Microsoft Intune 向 macOS 设备添加属性列表文件](../configuration/preference-file-settings-macos.md)。
+
+适用于：
+- 运行 10.7 及更高版本的 macOS 设备
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+
+#### <a name="edit-device-name-value-for-autopilot-devices---2640074---"></a>编辑 Autopilot 设备的设备名称值<!-- 2640074 -->
+可以编辑 Azure AD 联接的 Autopilot 设备的设备名称值。  有关详细信息，请参阅[编辑 Autopilot 设备属性](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes)。
+
+#### <a name="edit-group-tag-value-for-autopilot-devices---4816775-----"></a>编辑 Autopilot 设备的组标记值<!-- 4816775   -->
+可以编辑 Autopilot 设备的组标记值。 有关详细信息，请参阅[编辑 Autopilot 设备属性](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="monitor-and-troubleshoot"></a>监视和故障排除
 
 #### <a name="updated-support-experience---5012398---"></a>更新的支持体验<!-- 5012398 -->
@@ -73,8 +148,41 @@ ms.locfileid: "74199291"
 
 我们改进了针对常见问题的控制台内搜索和反馈，以及用于联系支持人员的工作流。 打开支持问题时，你将看到需要回拨或电子邮件答复的实时估计，并且顶级和统一支持客户可以轻松地为其问题指定严重性，以帮助更快地获得支持。
 
+#### <a name="improved-intune-reporting-experience-public-preview----3791418---"></a>改进了 Intune 报表体验（公共预览版） <!-- 3791418 -->
+Intune 现在提供了改进的报表体验，包括新的报表类型、更好的报表组织、更集中的视图、改进的报表功能以及更一致和更及时的数据。 新的报表类型侧重于以下内容：
+- **操作** - 提供具有负面运行状况的全新记录。 
+- **组织** - 提供总体状态的更广泛汇总。
+- **历史** - 提供一段时间内的模式和趋势。
+- **专业** - 允许使用原始数据创建自己的自定义报表。
+
+第一组新报表侧重于设备符合性。 有关详细信息，请参阅[博客 - Microsoft Intune 报表框架](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)和 [Intune 报表](~/fundamentals/reports.md)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="duplicate-custom-or-built-in-roles----1081938-----"></a>复制自定义或内置角色 <!-- 1081938   -->
+现在可以复制内置和自定义角色。 有关详细信息，请参阅[复制角色](../fundamentals/create-custom-role.md#copy-a-role)。
+
+#### <a name="new-permissions-for-school-administrator-role----5621805----"></a>学校管理员角色的新权限 <!-- 5621805  -->  
+已将两个新权限（“分配配置文件”  和“同步设备”  ）添加到了学校管理员角色 >“权限”   > “注册计划”  。 同步配置文件权限允许组管理员同步 Windows Autopilot 设备。 分配配置文件权限允许他们删除用户启动的 Apple 注册配置文件。 它还提供了相关权限以允许他们管理 Autopilot 设备分配和 Autopilot 部署配置文件分配。 有关所有学校管理员/组管理员权限的列表，请参阅[分配组管理员](https://docs.microsoft.com/intune-education/group-admin-delegate)。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="security"></a>安全
+
+#### <a name="bitlocker-key-rotation---2564951----"></a>BitLocker 密钥轮换<!-- 2564951  -->
+对于运行 Windows 1909 或更高版本的托管设备，你可以使用 Intune 设备操作远程[轮换 BitLocker 恢复密钥](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys)。 若要获取相关资格以轮换恢复密钥，设备必须配置为支持恢复密钥轮换。  
+
+#### <a name="updates-to-dedicated-device-enrollment-to-support-scep-device-certificate-deployment----5198878----"></a>更新了专用设备注册以支持 SCEP 设备证书部署 <!-- 5198878  -->
+Intune 现在支持 SCEP 设备证书部署到 Android Enterprise 专用设备，以实现对 Wi-Fi 配置文件的基于证书的访问。 若要使部署正常工作，设备上必须存在 Microsoft Intune 应用。 因此，我们更新了 Android Enterprise 专用设备的注册体验。 新注册仍将以相同的方式（QR、NFC、零接触或设备标识符）启动，但现在需要用户安装 Intune 应用。 现有设备将开始以滚动的方式自动安装应用。
+
+#### <a name="intune-audit-logs-for-business-to-business-collaboration--5670211---"></a>面向企业到企业协作的 Intune 审核日志<!--5670211 -->
+企业到企业 (B2B) 协作可以安全地将公司的应用程序和服务与来自任何其他组织的来宾用户共享，同时保持对自己公司数据的控制。 Intune 现在支持 B2B 来宾用户的审核日志。 例如，当来宾用户进行更改时，Intune 将能够通过审核日志捕获此数据。 有关详细信息，请参阅[什么是 Azure Active Directory B2B 中的来宾用户访问权限？](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日当周  
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>应用管理  
 
 #### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>在公司门户中改进了 macOS 注册体验 <!-- 5074349 WNready -->  
@@ -92,17 +200,20 @@ ms.locfileid: "74199291"
 #### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>适用于 Windows 10 的公司门户中的”新建分配类型”列 <!-- 5459950 WNready -->
 “公司门户”>“安装的应用” > “分配类型”列已重命名为“你的组织需要”    。  在该列下，用户将看到“是”或“否”值，以指示应用是其组织必需的还是可选的   。 之所以做出这些更改是因为设备用户对可用应用的概念感到困惑。 用户可以参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)以获取从公司门户安装应用的详细信息。 有关为用户配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](~/apps/company-portal-app.md)。  
 
-
+<!-- ########################## -->
 ## <a name="week-of-november-4-2019"></a>2019 年 11 月 4 日当周
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>设备安全性
 
 #### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Microsoft Azure 政府支持安全基线<!-- 4062552 -->
 
 Microsoft Azure 政府  上托管的 Intune 实例现在可以使用[安全基线](../protect/security-baselines.md)来帮助保护用户和设备的安全。
 
+<!-- ########################## -->
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日当周
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>应用管理
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>在适用于 Android 的公司门户应用中改进了清单设计<!-- 5550857 -->  
@@ -143,12 +254,14 @@ Microsoft Azure 政府  上托管的 Intune 实例现在可以使用[安全基�
 
 有关这些改进的详细信息，请参阅 Microsoft 技术社区网站上的 [Intune 客户成功博客文章](https://aka.ms/Endpoint_security_node)。
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>设备管理
 
 #### <a name="intune-supports-ios-11-and-later---4665324----"></a>Intune 支持 iOS 11 及更高版本<!-- 4665324  -->
 
 Intune 注册和公司门户现在支持 iOS 版本 11 及更高版本。 不支持早期版本。
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>设备安全性
 
 #### <a name="microsoft-edge-baseline-preview----3787164----"></a>Microsoft Edge 基线（预览版）<!--  3787164  -->
@@ -156,7 +269,7 @@ Intune 注册和公司门户现在支持 iOS 版本 11 及更高版本。 不支
 已添加用于 [Microsoft Edge 设置](../protect/security-baseline-settings-edge.md)的安全基线（预览版）。 
 
 <!-- ########################## -->
-## <a name="week-of-october-21-2019"></a>2019 年 10 月 21 日当周
+## <a name="week-of-october-21-2019-1910-service-release"></a>2019 年 10 月 21 日当周（1910 服务版本）
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="microsoft-365-device-management"></a>Microsoft 365 设备管理
@@ -299,9 +412,6 @@ Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任�
 #### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment---4350697-----"></a>指定使用工作配置文件或设备管理员注册注册哪些 Android 设备操作系统版本<!-- 4350697   -->
 使用 Intune 设备类型限制，你可以使用设备的 OS 版本来指定哪些用户设备将使用 Android Enterprise 工作配置文件注册或 Android 设备管理员注册。  有关详细信息，请参阅[创建注册限制](../enrollment/enrollment-restrictions-set.md)。
 
-#### <a name="windows-autopilot-deployment-reports---3856172---"></a>Windows Autopilot 部署报表<!-- 3856172 -->
-新报告说明了通过 Windows Autopilot 部署的每个设备的详细信息。 有关详细信息，请参阅 [Autopilot 部署报告](../enrollment/enrollment-autopilot.md#autopilot-deployments-report)。 我们正在将此功能推出到所有客户，预计在下周末前完成。
-
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>设备管理
 
@@ -367,7 +477,7 @@ Intune 现在支持管理 iPadOS 和 iOS 13.1 设备。 有关详细信息，请
 
 <!-- ########################## -->
 
-## <a name="week-of-september-16-2019"></a>2019 年 9 月 16 日当周
+## <a name="week-of-september-16-2019-1909-service-release"></a>2019 年 9 月 16 日当周（1909 服务版本）
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>应用管理 
@@ -603,7 +713,7 @@ Intune 现在支持管理 iOS 13 和 macOS Catalina 设备。
 
 - Windows 10 和更高版本 (Windows RS4+)
 
-## <a name="week-of-august-12-2019"></a>2019 年 8 月 12 日当周
+## <a name="week-of-august-12-2019-1908-service-release"></a>2019 年 8 月 12 日当周（1908 服务版本）
 
 ### <a name="app-management"></a>应用管理
 
@@ -775,7 +885,7 @@ Android 设备管理员注册选项已添加到“Android 注册”页（依次�
 
 <!-- ########################## -->
 
-## <a name="week-of-july-22-2019"></a>2019 年 7 月 22 日当周 
+## <a name="week-of-july-22-2019-1907-service-release"></a>2019 年 7 月 22 日当周（1907 服务版本）
 
 ### <a name="app-management"></a>应用管理
 
@@ -916,7 +1026,7 @@ iOS 应用管理提示中的公司名称将替换当前的“i.manage.microsoft.
 
 除了更新了 AAD 之外，现在还支持在完全托管 Android Enterprise 设备上运行 Intune 应用保护策略 (APP)。 此功能将在我们推出后可用。有关详细信息，请参阅[使用 Intune 将托管 Google Play 应用添加到 Android Enterprise 设备](../apps/apps-add-android-for-work.md)。
 
-## <a name="week-of-june-24-2019"></a>2019 年 6 月 24 日当周
+## <a name="week-of-june-24-2019-1906-service-release"></a>2019 年 6 月 24 日当周（1906 服务版本）
 
 ### <a name="app-management"></a>应用管理
 
@@ -1079,7 +1189,7 @@ Windows 公司门户应用将具有一个标记为“设备”的新页面  。 
 
 为更直观地显示，Autopilot 设备上的 OrderID 属性名称已更改“组标记”   。 在使用 CSV 上传 Autopilot 设备信息时，必须使用“组标记”而不是 OrderID 作为列标题。  
 
-## <a name="week-of-may-13-2019"></a>2019 年 5 月 13 日当周
+## <a name="week-of-may-13-2019-1905-service-release"></a>2019 年 5 月 13 日当周（1905 服务版本）
 
 ### <a name="app-management"></a>应用管理
 

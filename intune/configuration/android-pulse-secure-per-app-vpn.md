@@ -6,30 +6,31 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
-ms.reviewer: chrisbal
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3683d2aeada791c6ec827e915e02365a336e6045
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059674"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319843"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
-[!INCLUDE[azure_portal](../includes/azure_portal.md)]
-
 可为由 Intune 管理的 Android 5.0 及更高版本设备创建每应用 VPN 配置文件。 首先，创建使用 Pulse Secure 或 Citrix 连接类型的 VPN 配置文件。 然后，创建将 VPN 配置文件与特定应用关联的自定义配置策略。
+
+> [!NOTE]
+> 若要在 Android 企业设备上使用基于应用的 VPN，也可以使用这些步骤。 但建议为 VPN 客户端应用使用[应用配置策略](../apps/app-configuration-policies-use-android.md)。
 
 将策略分配给 Android 设备或用户组后，用户应启动 Pulse Secure 或 Citrix VPN 客户端。 然后，VPN 客户端将仅允许来自指定应用的通信使用打开的 VPN 连接。
 
@@ -48,7 +49,7 @@ ms.locfileid: "74059674"
     - **平台**：选择“Android”  。
     - **配置文件类型**：选择“VPN”  。
 
-4. 选择“设置”   > “配置”  ，然后按照[如何配置 VPN 设置](vpn-settings-configure.md)和[适用于 Android 设备的 Intune VPN 设置](vpn-settings-android.md)中的设置配置 VPN 配置文件。
+4. 选择“设置”   > “配置”  。 然后，配置 VPN 配置文件。 有关详细信息，请参阅[如何配置 VPN 设置](vpn-settings-configure.md)和[适用于 Android 设备的 Intune VPN 设置](vpn-settings-android.md)。
 
 记录创建 VPN 配置文件时指定的“连接名称”  值。 在下一步中将会用到此名称。 例如**MyAppVpnProfile**。
 
@@ -75,7 +76,7 @@ ms.locfileid: "74059674"
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>将应用列表设置为方块列表或允许列表（可选）
 
-通过使用“BLACKLIST”  值，可输入将不能  使用 VPN 连接的应用列表。 所有其他应用将通过 VPN 连接。 或者，你可使用“WHITELIST”  值来输入可以  使用 VPN 连接的应用列表。 不在列表中的应用不会通过 VPN 连接。
+使用“BLACKLIST”  值，可输入将无法  使用 VPN 连接的应用列表。 所有其他应用将通过 VPN 连接。 或者，使用“WHITELIST”  值来输入可以  使用 VPN 连接的应用列表。 不在列表中的应用不会通过 VPN 连接。
 
 1. 在“自定义 OMA-URI 设置”  窗格上，选择“添加”  。
 2. 输入设置名称。

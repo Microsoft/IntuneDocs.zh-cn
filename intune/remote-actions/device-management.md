@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c31bbd8eb9efb2b748163223ce1b8fa555f0dc6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a9937fc25ffa3dc32c1addbf0acc2516000b055b
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713526"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390886"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 
@@ -70,6 +70,7 @@ ms.locfileid: "73713526"
   - [适用于 Android 的远程控制](teamviewer-support.md)
   - [同步设备](device-sync.md)
   - [发送自定义通知](custom-notifications.md#send-a-custom-notification-to-a-single-device)（Android、iOS）
+  - [BitLocker 密钥轮转](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys)（仅限 Windows）
 
 ## <a name="next-steps"></a>后续步骤
 

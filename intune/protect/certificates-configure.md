@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea2d51b82f0f47ee4bfabc94c2e971e4cb666d4
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801745"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410183"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>在 Microsoft Intune 中使用证书进行身份验证
 
@@ -36,18 +36,44 @@ ms.locfileid: "73801745"
 | PKCS#12（或 PFX）    | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |  |
 | 简单证书注册协议 (SCEP)  | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | |
 
-若要部署这些证书，需要创建证书配置文件并将其分配给设备。  
+若要部署这些证书，需要创建证书配置文件并将其分配给设备。
 
 创建的每个证书配置文件都支持单一平台。 例如，如果使用 PKCS 证书，则需要为 Android 创建 PKCS 证书配置文件，并为 iOS 创建单独的 PKCS 证书配置文件。 如果还对这两个平台使用 SCEP 证书，则需要为 Android 创建一个 SCEP 证书配置文件，并为 iOS 也创建一个。
 
-**一般注意事项**：
-- 如果没有企业证书颁发机构 (CA)，则必须创建一个，或从[其中一个受支持的合作伙伴](certificate-authority-add-scep-overview.md#third-party-certification-authority-partners)中选择一个。
-- 如果通过 Microsoft Active Directory 证书服务使用 SCEP 证书配置文件，则需要配置网络设备注册服务 (NDES) 服务器。
-- 如果将 SCEP 与证书颁发机构合作伙伴之一一起使用，则需要[将其与 Intune](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration) 集成。
-- 要使用 SCEP 和 PKCS 证书配置文件，必须下载、安装和配置 Microsoft Intune 证书连接器。
-- PKCS 导入证书需要下载、安装和配置适用于 Microsoft Intune 的 PFX 证书连接。
-- PKCS 导入的证书要求从证书颁发机构导出证书并将其导入 Microsoft Intune。 请参阅 [PFXImport PowerShell 项目](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)。
-- 若要设备使用 SCEP、PKCS 或 PKCS 导入证书配置文件，该设备必须信任根证书颁发机构。 使用受信任的证书配置文件将受信任的根 CA 证书部署到设备  。
+### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>使用 Microsoft 证书颁发机构时的一般注意事项
+
+使用 Microsoft 证书颁发机构 (CA) 时：
+
+- 若要使用 SCEP 证书配置文件，你必须[设置网络设备注册服务 (NDES) 服务器](certificates-scep-configure.md#set-up-ndes)以便与 Intune 配合使用。
+- 若要使用下列证书配置文件类型，必须[安装 Microsoft Intune 证书连接器](certificates-scep-configure.md#install-the-intune-certificate-connector)：
+  - SCEP 证书配置文件
+  - PKCS 证书配置文件
+
+- 使用 PKCS 导入的证书：
+  - [安装 Microsoft Intune 的 PFX 证书连接器](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune)。
+  - 从证书颁发机构导出证书，然后将其导入 Microsoft Intune。 请参阅 [PFXImport PowerShell 项目](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)。
+
+- 使用下列机制部署证书：
+  - [受信任的证书配置文件](certificates-configure.md#create-trusted-certificate-profiles)可将受信任的根 CA 证书从根或中间（颁发）CA 部署到设备
+  - SCEP 证书配置文件
+  - PKCS 证书配置文件
+  - PKCS 导入的证书配置文件
+
+### <a name="general-considerations-when-you-use-a-third-party-certification-authority"></a>使用第三方证书颁发机构时的一般注意事项
+
+使用第三方（非 Microsoft）证书颁发机构 (CA) 时：
+
+- 使用 SCEP 证书配置文件：
+  - 设置与来自[受支持合作伙伴之一](certificate-authority-add-scep-overview.md#third-party-certification-authority-partners)的第三方 CA 的集成。 设置包括按照第三方 CA 的说明完成其 CA 与 Intune 的集成。
+  - [在 Azure AD 中创建应用程序](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration)，该应用程序将权限委派给 Intune 进行 SCEP 证书质询验证。
+
+- PKCS 导入的证书需要[安装适用于 Microsoft Intune 的 PFX 证书连接器](certificates-imported-pfx-configure.md#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune)。
+
+- 使用下列机制部署证书：
+  - [受信任的证书配置文件](certificates-configure.md#create-trusted-certificate-profiles)可将受信任的根 CA 证书从根或中间（颁发）CA 部署到设备
+  - SCEP 证书配置文件
+  - PKCS 证书配置文件（仅受  [Digicert PKI 平台](certificates-digicert-configure.md)支持）
+  - PKCS 导入的证书配置文件
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>支持的平台和证书配置文件
 
@@ -55,7 +81,7 @@ ms.locfileid: "73801745"
 |--|--|--|--|---|
 | Android 设备管理员 | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png)|  ![支持](./media/certificates-configure/green-check.png) |
 | Android Enterprise <br> - 完全托管（设备所有者）   | ![支持](./media/certificates-configure/green-check.png) |   | ![支持](./media/certificates-configure/green-check.png) |   |
-| Android Enterprise <br> - 专用（设备所有者）   |  |   |  |   |
+| Android Enterprise <br> - 专用（设备所有者）   | ![支持](./media/certificates-configure/green-check.png)  |   | ![支持](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> - 工作配置文件    | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |
 | iOS                   | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |
 | macOS                 | ![支持](./media/certificates-configure/green-check.png) |  ![支持](./media/certificates-configure/green-check.png) |![支持](./media/certificates-configure/green-check.png)|![支持](./media/certificates-configure/green-check.png)|
@@ -65,7 +91,7 @@ ms.locfileid: "73801745"
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>导出受信任的根 CA 证书
 
-若要使用 PKCS、SCEP 和 PKCS 导入的证书，设备必须信任根证书颁发机构。 若要建立信任，请将受信任的根证书颁发机构 (CA) 证书以及任何中间证书颁发机构证书或证书发证机构证书导出为公共证书 (.cer)。 可从颁发 CA 或信任颁发 CA 的任何设备获取这些证书。
+若要使用 PKCS、SCEP 和 PKCS 导入的证书，设备必须信任根证书颁发机构。 若要建立信任，请将受信任的根 CA 证书以及任何中间证书或证书发证机构证书导出为公共证书 (.cer)。 可从颁发 CA 或信任颁发 CA 的任何设备获取这些证书。
 
 若要导出证书，请参阅关于证书颁发机构的文档。 需要将公共证书导出为“.cer”文件。  请勿导出私钥（.pfx 文件）。
 
@@ -73,12 +99,11 @@ ms.locfileid: "73801745"
 
 ## <a name="create-trusted-certificate-profiles"></a>创建受信任的证书配置文件
 
-必须先创建受信任的证书配置文件，才可创建 SCEP、PKCS 或 PKCS 导入的证书配置文件。 部署受信任的证书配置文件可确保每个设备认同 CA 的合法性。 SCEP 证书配置文件直接引用受信任的证书配置文件。 PKCS 证书配置文件不直接引用受信任的证书配置文件，而是直接引用托管 CA 的服务器。 PKCS 导入的证书配置文件不直接引用受信任的证书配置文件，但可以在设备上使用它。 将受信任的证书配置文件部署到设备可确保建立此信任。 如果设备不信任根 CA，SCEP 或 PKCS 证书配置文件策略将失败。  
+必须先创建受信任的证书配置文件，才可创建 SCEP、PKCS 或 PKCS 导入的证书配置文件。 部署受信任的证书配置文件可确保每个设备认同 CA 的合法性。 SCEP 证书配置文件直接引用受信任的证书配置文件。 PKCS 证书配置文件不直接引用受信任的证书配置文件，而是直接引用托管 CA 的服务器。 PKCS 导入的证书配置文件不直接引用受信任的证书配置文件，但可以在设备上使用它。 将受信任的证书配置文件部署到设备可确保建立此信任。 如果设备不信任根 CA，SCEP 或 PKCS 证书配置文件策略将失败。
 
-为要支持的每个设备平台创建单独的受信任证书配置文件，就像对 SCEP、PKCS 和 PKCS 导入的证书配置文件执行的操作一样。  
+为要支持的每个设备平台创建单独的受信任证书配置文件，就像对 SCEP、PKCS 和 PKCS 导入的证书配置文件执行的操作一样。
 
-
-### <a name="to-create-a-trusted-certificate-profile"></a>要创建“可信证书”配置文件  
+### <a name="to-create-a-trusted-certificate-profile"></a>要创建“可信证书”配置文件
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -95,17 +120,18 @@ ms.locfileid: "73801745"
 
 4. 选择“设置”  ，然后浏览到受信任的根 CA 证书 .cer 文件（为与此证书配置文件一起使用而导出的文件），然后选择“确定”  。
 
-5. 从以下位置选择受信任证书的**目标存储区**（仅适用于 Windows 8.1 和 Windows 10 设备）：  
+5. 从以下位置选择受信任证书的**目标存储区**（仅适用于 Windows 8.1 和 Windows 10 设备）：
+
    - **计算机证书存储区 - 根**
    - **计算机证书存储区 - 中间**
    - **用户证书存储区 - 中间**
 
 6. 完成后，选择“确定”，返回“创建配置文件”窗格，然后选择“创建”    。
 
-该配置文件将出现在“设备 - 配置文件”  窗口中的配置文件列表中，其中配置文件类型为“受信任的证书”  。  请确保将此配置文件分配到将使用 SCEP 或 PKCS 证书的设备。 要向组分配此配置文件，请参阅[分配设备配置文件](../configuration/device-profile-assign.md)。
+该配置文件将出现在“设备 - 配置文件”  窗口中的配置文件列表中，其中配置文件类型为“受信任的证书”  。 请确保将此配置文件分配到将使用 SCEP 或 PKCS 证书的设备。 要向组分配此配置文件，请参阅[分配设备配置文件](../configuration/device-profile-assign.md)。
 
-> [!NOTE]  
-> Android 设备可能会显示第三方已安装受信任的证书的消息。  
+> [!NOTE]
+> Android 设备可能会显示第三方已安装受信任的证书的消息。
 
 ## <a name="additional-resources"></a>其他资源
 
@@ -115,7 +141,8 @@ ms.locfileid: "73801745"
 
 ## <a name="next-steps"></a>后续步骤
 
-为要使用的每个平台创建 SCEP、PKCS 或 PKCS 导入的证书配置文件。 请参阅以下文章进一步了解：  
+为要使用的每个平台创建 SCEP、PKCS 或 PKCS 导入的证书配置文件。 请参阅以下文章进一步了解：
+
 - [配置基础结构以支持在 Intune 中使用 SCEP 证书](certificates-scep-configure.md)  
 - [使用 Intune 配置和管理 PKCS 证书](certficates-pfx-configure.md)  
-- [创建 PKCS 导入的证书配置文件](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [创建 PKCS 导入的证书配置文件](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)

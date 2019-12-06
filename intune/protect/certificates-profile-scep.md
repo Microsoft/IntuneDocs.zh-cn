@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199134"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390287"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中创建和分配 SCEP 证书配置文件
 
@@ -53,6 +53,9 @@ ms.locfileid: "74199134"
 
    2. 不能使用 Intune 撤销由 SCEP 证书配置文件为设备所有者预配的证书。 可以通过外部进程或直接通过证书颁发机构来实现撤销。 
 
+   4. 对于 Android 企业专用设备，SCEP 证书配置文件仅支持 Wi-Fi 网络配置和身份验证。  Android 企业专用设备上的 SCEP 证书配置文件不支持 VPN 或应用身份验证。   
+
+   
 7. 选择“设置”，然后完成以下配置  ：
 
    - **证书类型**：
