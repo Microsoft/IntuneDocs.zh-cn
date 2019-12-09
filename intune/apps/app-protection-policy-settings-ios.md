@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390376"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781237"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-本文介绍适用于 iOS 设备的应用保护策略设置。 在设置新策略时，可在 Azure 门户的“设置”  边栏选项卡中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
+本文介绍适用于 iOS 设备的应用保护策略设置。 在设置新策略时，可在 Azure 门户的“设置”  窗格中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
 
 策略设置分为三类：“数据重定位”、“访问要求”和“条件启动”    。 在本文中，术语策略托管应用指使用应用保护策略配置的应用。
 
@@ -88,7 +88,7 @@ ms.locfileid: "74390376"
 | <ul><ui> **选择最小 PIN 长度** | 指定 PIN 序列必须包含的最小位数。  | **4**  |
 | <ul><ui> **使用 Touch ID，而不是 PIN 进行访问 (iOS 8 +)** | 选择“允许”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问  。    | **允许**  |
 |<ul><ui><ul><ui>**超时后使用 PIN 覆盖 Touch ID**|  要使用此设置，请选择“需要”，然后配置非活动超时  。  |**需要**  |
-| <ul><ui><ul><ui><ul><ui> **超时(非活动状态的分钟数)** |  指定密码或数值 PIN（如配置所示）将覆盖指纹的使用的时间（以分钟为单位）。 此超时值应大于“在(非活动状态的分钟数)后重新检查访问要求”下的指定值。  |**30**  |
+| <ul><ui><ul><ui><ul><ui> **超时(非活动状态的分钟数)** |  指定在密码或数值 PIN（如配置所示）将覆盖指纹或人脸访问方法前要等待的时间（以分钟为单位）。 此超时值应大于“在(非活动状态的分钟数)后重新检查访问要求”下的指定值。  |**30**  |
 | <ul><ui><ul><ui>**使用 Face ID，而不是 PIN 进行访问 (iOS 11+)** | 选择“允许”，允许用户使用面部识别技术对 iOS 设备上的用户进行身份验证  。 如果允许，必须使用 Face ID 来访问 Face ID 功能设备上的应用。    | **允许**  |
 | <ul><ui>**PIN 重置间隔的天数** | 选择“是”，要求用户在一段时间（以天为单位）后更改其应用 PIN  。  <br><br>如果设置为“是”，然后配置 PIN 重置所需的间隔天数  。 |**否**  |  
 | <ul><ui><ul><ui> **天数** | 配置 PIN 重置所需的间隔天数。  |**90**  |

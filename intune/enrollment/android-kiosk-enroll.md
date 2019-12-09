@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390722"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563878"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>设置 Android Enterprise 专用设备的 Intune 注册
 
@@ -59,7 +59,7 @@ Intune可帮助将应用和设置部署到 Android Enterprise 专用设备。 �
 
 必须创建注册配置文件，以便注册专用设备。 创建配置文件时，它会提供注册令牌（随机字符串）和 QR 码。 可使用令牌或 QR 码[注册专用设备](#enroll-the-dedicated-devices)，具体取决于 Android OS 和设备版本。
 
-1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备注册”   > “Android 注册”   > “公司拥有的专用设备”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”   > “Android ”   > “Android 注册”   > “公司拥有的专用设备”  。
 2. 选择“创建”并填写必填字段  。
     - **名称**：键入在将配置文件分配给动态设备组时使用的名称。
     - **令牌到期日期**：令牌到期日期。 Google 规定最长为 90 天。
@@ -92,7 +92,7 @@ Intune可帮助将应用和设置部署到 Android Enterprise 专用设备。 �
 
 替换或撤销令牌/QR 码不会对已注册的设备产生任何影响。
 
-1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备注册”   > “Android 注册”   > “公司拥有的专用设备”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”   > “Android ”   > “Android 注册”   > “公司拥有的专用设备”  。
 2. 选择要使用的配置文件。
 3. 选择“令牌”  。
 4. 若要替换令牌，请选择“替换令牌”  。

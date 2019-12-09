@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547966"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563978"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>在 Microsoft Intune 中包括和排除应用分配
 
@@ -55,34 +55,34 @@ ms.locfileid: "74547966"
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>分配应用时包括和排除组 
 若要使用包括和排除分配将应用分配给组，请执行以下操作：
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”窗格中，选择“应用”   。 随即显示已添加应用的列表。
-5. 选择要分配的应用。 仪表板显示有关应用的信息。 
-6. 在菜单的“管理”部分中选择“分配”   。 
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”  。 随即显示已添加应用的列表。
+3. 选择要分配的应用。 仪表板显示有关应用的信息。 
+4. 在菜单的“管理”部分中选择“分配”   。 
 
     ![分配应用时包括应用分配](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. 选择“添加组”，添加分配有该应用的那些用户组  。 
-8. 在“添加组”窗格中，从可用的分配类型中选择某个“分配类型”   。
-9. 对于分配类型，请选择“不论是否注册均可使用”  。
+
+5. 选择“添加组”，添加分配有该应用的那些用户组  。 
+6. 在“添加组”窗格中，从可用的分配类型中选择某个“分配类型”   。
+7. 对于分配类型，请选择“不论是否注册均可使用”  。
 
     ![Intune 应用分配 - 添加组](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. 选择“包含的组”，然后选择你想要其使用此应用的用户组  。
+8. 选择“包含的组”，然后选择你想要其使用此应用的用户组  。
 
     > [!NOTE]
     > 添加组时，如果给定的分配类型中已包括任何其他组，则在其他包括分配类型中，会预先选定该组且无法修改。 已被使用的组无法用作包括组。
 
-11. 选择“是”，使此应用可供所有用户使用  。
+9. 选择“是”，使此应用可供所有用户使用  。
 
     ![Intune 应用分配 - 包括组](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. 选择“确定”，设置要包括的组  。
-13. 选择“排除的组”，然后选择你想要其无法使用此应用的用户组  。 
-14. 选择要排除的组。 这使该应用对这些组不可用。
+10. 选择“确定”，设置要包括的组  。
+11. 选择“排除的组”，然后选择你想要其无法使用此应用的用户组  。 
+12. 选择要排除的组。 这使该应用对这些组不可用。
 
     ![Intune 应用分配 - 排除组](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. 选择“选择”，完成组选择操作  。
-16. 在“添加组”  窗格中，选择“确定”  。 应用“分配”列表随即显示  。
-17. 单击“保存”，使应用的组分配处于活动状态  。
+13. 选择“选择”，完成组选择操作  。
+14. 在“添加组”  窗格中，选择“确定”  。 应用“分配”列表随即显示  。
+15. 单击“保存”，使应用的组分配处于活动状态  。
 
 在进行组分配时，已分配的组不可修改。 若想选择当前不可用的组，先从应用的已分配列表中删除应用。 
 

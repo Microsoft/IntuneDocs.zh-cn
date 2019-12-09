@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74411354"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564192"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>为 Outlook for iOS 配置 S/MIME
 
@@ -62,14 +62,14 @@ Outlook for iOS 支持通过两种方式将证书传递到设备，以便可以�
 若要在终结点管理器中配置 Outlook for iOS S/MIME（包括自动传递 Outlook for iOS 可以使用的 S/MIME 证书），请执行以下步骤：
 
 ### <a name="add-the-microsoft-outlook-app"></a>添加 Microsoft Outlook 应用
-1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 将 Microsoft Outlook for iOS 应用从应用商店添加到终结点管理器，或从 Apple Volume Purchase Program 同步 Outlook for iOS。 有关详细信息，请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](~/apps/store-apps-ios.md)或[如何使用 Microsoft Intune 管理通过 Apple Volume Purchase Program 购买的 iOS 和 macOS 应用](~/apps/vpp-apps-ios.md)。
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>创建 Outlook for iOS S/MIME 配置策略
 
 以下步骤允许你在终结点管理器中创建和配置 Outlook for iOS S/MIME 策略。 这些设置提供了签名和加密证书的自动传递。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“应用”   > “应用配置策略”   > “添加”  。<br>
+1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 并依次选择“应用”   > “应用配置策略”   > “添加”  。<br>
 将显示“添加配置策略”  窗格。
 2. 输入配置策略的“名称”  和“说明”  。
 3. 对于“设备注册类型”  ，选择“托管设备”  。

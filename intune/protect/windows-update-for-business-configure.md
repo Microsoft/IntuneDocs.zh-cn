@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291090"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691775"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 软件更新
 
@@ -214,9 +214,7 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
   - “功能更新延迟期(天)”  必须设置为“0”  。
   - 更新通道的功能更新必须为运行状态  。 这些更新不能暂停。
 
-- Autopilot 不支持“Windows 10 功能更新”  策略。 Intune 不会将策略部署到以下设备：
-  - Autopilot 预配的设备。
-  - Autopilot 先前预配的设备。
+- 在开箱即用体验 (OOBE) 期间，不能应用 Windows 10 功能更新策略，这些策略仅在设备完成预配（通常为一天）后第一次进行 Windows 更新扫描时应用。 此外，通过 AutoPilot 预配的设备不会收到策略。
 
   检查此限制以查看将来是否受支持。
 

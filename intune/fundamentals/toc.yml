@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: 教程
   items:
+    - name: Microsoft 终结点管理器中的 Intune 演练
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: Azure 门户中的 Intune 演练
       href: tutorial-walkthrough-intune-portal.md
 - name: 概念

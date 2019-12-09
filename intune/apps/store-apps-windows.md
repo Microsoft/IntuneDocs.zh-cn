@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19d14b2f2cfa838d79af1c6fbb3c3500004e56e
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 3c13d7960c0bb5c73908a0a574ab7d6c169d6460
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548029"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563440"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>将 Microsoft Store 应用添加到 Microsoft Intune
 
@@ -34,12 +34,10 @@ ms.locfileid: "74548029"
 ## <a name="add-an-app-to-intune"></a>将应用添加到 Intune
 通过执行以下操作可将 Microsoft Store 应用添加到 Intune：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”    。
-5. 在“应用”窗格中，选择“添加”   。
-6. 在“添加应用”窗格中，选择“Windows ”的“应用类型”，然后选择“应用信息”     。
-7. 在“应用信息”窗格中，添加应用信息  。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“添加应用”窗格中，选择“Windows ”的“应用类型”，然后选择“应用信息”     。
+4. 在“应用信息”窗格中，添加应用信息  。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
     - **名称**：输入要在公司门户中显示的应用名称。 请确保使用唯一的应用名称。 如果应用名称重复，则在公司门户中仅向用户显示一个名称。
     - **说明**：输入应用的描述。 在公司门户中向用户显示该描述。
     - **发布者**：输入应用发布者的名称。
@@ -52,8 +50,8 @@ ms.locfileid: "74548029"
     - **所有者**：（可选）输入此应用的所有者的名称（例如，HR 部门  ）。
     - **备注**：（可选）输入要与此应用关联的任何备注。
     - **徽标**：（可选）：上传将与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
-8. 选择“确定”  。
-9. 选择“添加”  。
+5. 选择“确定”  。
+6. 选择“添加”  。
 
 此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 Microsoft Store 应用仅分配到分配类型为“适用于已注册设备”的组（用户从公司门户应用或网站安装应用）  。
 
