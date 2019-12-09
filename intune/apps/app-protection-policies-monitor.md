@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 26972bb034ea4cb65f1bf64c61c20395cf94dc36
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889593"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564183"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -42,9 +42,8 @@ ms.locfileid: "72889593"
 
 ## <a name="summary-view"></a>摘要视图
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 若要查看摘要视图，请在“客户端应用”工作负荷中的“监视”下选择“应用保护状态”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 选择“应用”   > “监视”   > “应用保护状态”  。
 
    ![Intune 移动应用管理窗格的“摘要”磁贴的屏幕截图](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
@@ -78,7 +77,7 @@ ms.locfileid: "72889593"
 >[!NOTE]
 > “上次同步时间”列在控制台内“用户状态”报表和“应用保护策略”[可导出的 .csv 报表](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)中表示相同的值  。 差别在于两个报表中的值之间的同步存在较小延迟。 
 >
-> “上次同步时间”中引用的时间是 Intune 最后一次看到应用实例的时间。 当用户启动应用时，该应用可能会在启动期间通知 Intune 应用保护服务，具体取决于上次签入的时间。 请参阅[应用保护策略签入的重试间隔时间](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)。 如果用户在上次签入时间间隔（活动使用时间通常为 30 分钟）内未使用该特定应用，并且他们启动了应用，那么：
+> “上次同步时间”中引用的时间是 Intune 最后一次看到应用实例的时间。 当用户启动应用时，该应用可能会在启动期间通知 Intune 应用保护服务，具体取决于上次签入的时间。 请参阅[应用保护策略签入的重试间隔时间](~/apps/app-protection-policy-delivery.md)。 如果用户在上次签入时间间隔（活动使用时间通常为 30 分钟）内未使用该特定应用，并且他们启动了应用，那么：
 >
 > - 应用保护策略可导出的 .csv 报表会在 1 分钟（最小值）到 30 分钟（最大值）之间获得最新时间。
 > - 用户状态报表会立即获得最新时间。
@@ -104,7 +103,7 @@ ms.locfileid: "72889593"
 > 如果搜索的用户没有部署 MAM 策略，你将看到一条消息，告知你用户不是任何 MAM 策略的目标对象。
 
 ### <a name="flagged-users"></a>已标记用户
-详细视图显示错误消息、错误发生时访问的应用、受影响的设备操作系统平台和时间戳。 此错误通常适用于已越狱 (iOS) 或获得 root 权限 (Android) 的设备。 此外，在此处报告具有由“SafetyNet 设备证明”条件启动检查标记的设备的用户，原因是“由 Google 报告”。 对于要从报表中删除的用户，设备本身的状态需要进行更改，这会在需要报告正面结果的下一次 root 权限检测检查（或越狱检查/SafetyNet 检查）后发生。 如果设备已真正修正，则会在重新加载边栏选项卡时刷新“已标记用户”报表。
+详细视图显示错误消息、错误发生时访问的应用、受影响的设备操作系统平台和时间戳。 此错误通常适用于已越狱 (iOS) 或获得 root 权限 (Android) 的设备。 此外，在此处报告具有由“SafetyNet 设备证明”条件启动检查标记的设备的用户，原因是“由 Google 报告”。 对于要从报表中删除的用户，设备本身的状态需要进行更改，这会在需要报告正面结果的下一次 root 权限检测检查（或越狱检查/SafetyNet 检查）后发生。 如果设备已真正修正，则会在重新加载窗格时刷新“已标记用户”报表。
 
 ### <a name="users-with-potentially-harmful-apps"></a>使用潜在有害应用的用户
 详细视图显示：
@@ -121,14 +120,14 @@ ms.locfileid: "72889593"
 
 ## <a name="reporting-view"></a>报表视图
 
-可以在“应用保护状态”边栏选项卡顶部找到相同报表  。
+可以在“应用保护状态”窗格顶部找到相同报表  。
 
 > [!NOTE]
-> Intune 提供其他设备报告字段，包括 Android 注册 ID、Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，通过选择“客户端应用” > “应用保护状态” > “应用保护报告: iOS、Android”来访问这些字段    。 此外，这些参数将帮助你配置设备制造商“允许”  列表 (Android)、设备型号的“允许”  列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。 
+> Intune 提供其他设备报告字段，包括 Android 注册 ID、Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，通过选择“应用” > “应用保护状态” > “应用保护报告: iOS、Android”来访问这些字段    。 此外，这些参数将帮助你配置设备制造商“允许”  列表 (Android)、设备型号的“允许”  列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。 
 
-其他报表也可以帮助了解 MAM 策略符合性状态。 若要查看这些报表，请选择“客户端应用” > “应用保护状态” > “报表”    。 
+其他报表也可以帮助了解 MAM 策略符合性状态。 若要查看这些报表，请选择“应用” > “应用保护状态” > “报表”    。 
 
-“报表”边栏选项卡根据用户和应用提供多个报表，包括以下内容  ：
+“报表”窗格根据用户和应用提供多个报表，包括以下内容  ：
 
 - **用户报表**：此报表概述了可在以上[详细视图](app-protection-policies-monitor.md#detailed-view)部分下的“用户状态”报表中找到的相同信息  。
 
@@ -139,7 +138,7 @@ ms.locfileid: "72889593"
     - 用户正在使用这些应用，或者这些应用是 MAM 策略目前未针对的应用。
     - 已签入所有应用，但应用还未获取任何 MAM 策略。
 
-    ![用户“应用报告”边栏选项卡的屏幕截图，其中包含三个应用的详细信息](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![用户“应用报告”窗格的屏幕截图，其中包含三个应用的详细信息](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **用户配置报表**：根据所选用户，此报表提供了有关用户已收到的任何应用配置的详细信息。
 - **应用配置报表**：根据所选平台和应用，此报表提供了有关哪些用户已收到所选应用的配置的详细信息。

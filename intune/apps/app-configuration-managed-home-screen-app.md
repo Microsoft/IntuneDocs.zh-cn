@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813477"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564206"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>配置适用于 Android Enterprise 的 Microsoft 托管主屏幕应用
 
@@ -31,12 +31,12 @@ ms.locfileid: "72813477"
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>何时配置 Microsoft 托管主屏幕应用
 
-通常，如果通过设备配置提供了设置，请在此处配置这些设置。 这样可以节省时间，在最大程度上减少错误，并且将获得更佳的 Intune 支持体验。 但是，一些托管主屏幕设置目前仅通过 Intune 控制台中的“应用配置策略”边栏选项卡提供  。 使用本文档来了解如何使用配置设计器或 JSON 脚本对不同的设置进行配置。 
+通常，如果通过设备配置提供了设置，请在此处配置这些设置。 这样可以节省时间，在最大程度上减少错误，并且将获得更佳的 Intune 支持体验。 但是，一些托管主屏幕设置目前仅通过 Intune 控制台中的“应用配置策略”窗格提供  。 使用本文档来了解如何使用配置设计器或 JSON 脚本对不同的设置进行配置。 
 
 > [!NOTE]
-> 目前，通过“客户端应用”和“设备配置”来设置已列入允许列表的应用程序和固定的 Web 链接是可行的，也是可取的   。 有关“设备配置”中提供的可影响托管主屏幕的设置的完整列表，请参阅[专用设备设置](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)  。  
+> 目前，通过“应用”和“设备配置”来设置已列入允许列表的应用程序和固定的 Web 链接是可行的，也是可取的   。 有关“设备配置”中提供的可影响托管主屏幕的设置的完整列表，请参阅[专用设备设置](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)  。  
 
-首先，在 Azure 门户中导航到 Intune 控制台，然后转到“客户端应用” > “应用配置策略”   。 为运行“Android”的“托管设备”添加配置策略，并选择“托管主屏幕”作为关联应用   。 单击“配置设置”以配置不同的可用托管主屏幕设置  。 
+首先，导航到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然后选择“应用”   > “应用配置策略”  。 为运行“Android”的“托管设备”添加配置策略，并选择“托管主屏幕”作为关联应用   。 单击“配置设置”以配置不同的可用托管主屏幕设置  。 
 
 ## <a name="choosing-a-configuration-settings-format"></a>选择配置设置格式
 

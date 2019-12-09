@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984019"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564125"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用应用保护策略条件启动操作选择性地擦除数据
 
@@ -33,16 +33,16 @@ ms.locfileid: "73984019"
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>使用条件启动操作创建应用保护策略
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用” > “应用保护策略”    。
-4. 单击“添加策略”（也可编辑现有策略）  。 
-5. 单击“配置所需设置”，查看可为策略配置的设置列表  。 
-6. 在“设置”窗格中向下滚动，将会看到标题为“条件启动”  的部分，内含可编辑的表。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用” > “应用保护策略”   。
+3. 单击“创建策略”  并为策略选择设备平台。 
+4. 单击“配置所需设置”，查看可为策略配置的设置列表  。 
+5. 在“设置”窗格中向下滚动，将会看到标题为“条件启动”  的部分，内含可编辑的表。
 
     ![Intune 应用保护访问操作的屏幕截图](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. 选择“设置”，然后输入用户登录公司应用时必须满足的值   。 
-8. 如果用户不符合要求，请选择要采取的操作  。 在某些情况下，可为单个设置配置多项操作。 有关详细信息，请参阅[如何创建和分配应用保护策略](app-protection-policies.md)。
+6. 选择“设置”，然后输入用户登录公司应用时必须满足的值   。 
+7. 如果用户不符合要求，请选择要采取的操作  。 在某些情况下，可为单个设置配置多项操作。 有关详细信息，请参阅[如何创建和分配应用保护策略](app-protection-policies.md)。
 
 ## <a name="policy-settings"></a>策略设置 
 

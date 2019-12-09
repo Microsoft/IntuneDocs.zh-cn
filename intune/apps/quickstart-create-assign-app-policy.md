@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507123"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563796"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入门：创建和分配应用保护策略
 
@@ -43,7 +43,7 @@ ms.locfileid: "72507123"
 
 可使用以下步骤创建应用保护策略：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用保护策略” > “创建策略”    。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“应用” > “应用保护策略” > “创建策略”    。 
 2. 输入以下详细信息： 
 
     - **名称**：Windows 10 内容保护 
@@ -67,7 +67,7 @@ ms.locfileid: "72507123"
 
 可使用以下步骤分配应用保护策略：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“Intune” > “客户端应用” > “应用保护策略”    。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“Intune” > “应用” > “应用保护策略”    。 
 2. 选择先前创建的应用保护策略。 在本快速入门中，策略是“Windows 10 内容保护”  。
 3. 选择“分配”  。
 4. 单击“包括”选项卡上的“选择要包括的组”   。

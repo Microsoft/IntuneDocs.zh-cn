@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585421"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563697"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>使用 Microsoft Intune 监视应用信息和分配
 
@@ -31,10 +31,9 @@ ms.locfileid: "72585421"
 
 Intune 提供了多种方式来监视你管理的应用的属性以及管理应用分配状态。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在菜单的“管理”部分中选择“应用”   。
-5. 在应用列表中，选择要监视的应用。 随后将看到“应用”窗格，其中概述了设备状态和用户状态。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”  。
+3. 在应用列表中，选择要监视的应用。 随后将看到“应用”窗格，其中概述了设备状态和用户状态。
 
 > [!NOTE]
 > 部署为“可用的”的 Android 应用商店应用不会报告其安装状态  。

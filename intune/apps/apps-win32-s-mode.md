@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059756"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563626"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>在 S 模式设备上启用 Win32 应用
 
@@ -58,7 +58,7 @@ ms.locfileid: "74059756"
 若要创建 Windows 10 S 模式补充策略，请执行以下步骤：
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在“Intune”窗格中，选择“客户端应用” > “S 模式补充策略” > “创建策略”     。
+2. 选择“应用” > “S 模式补充策略” > “创建策略”    。
 3. 在添加“策略文件”  之前，必须创建该文件并对其进行签名。 有关详情，请参阅：
     - [使用 PowerShell 工具创建 WDAC 策略并将其转换为二进制格式](https://go.microsoft.com/fwlink/?linkid=2095387)
     - [使用设备保护签名服务进行签名](https://go.microsoft.com/fwlink/?linkid=2095629)（推荐） 

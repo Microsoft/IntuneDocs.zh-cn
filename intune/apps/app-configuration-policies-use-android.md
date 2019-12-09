@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584995"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564270"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>为托管的 Android Enterprise 设备添加应用配置策略
 
@@ -34,7 +34,7 @@ Microsoft Intune 中的应用配置策略向托管 Android Enterprise 设备上�
 > [!NOTE]  
 > 并非所有应用都支持应用配置。 请咨询应用开发人员，确定他们的应用是否支持应用配置策略。
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“客户端应用”   > “应用配置策略”   >  “添加”  。
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“应用”   > “应用配置策略”   >  “添加”  。
 2. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好是“适用于整个公司的 Android Enterprise Nine Work 应用策略”  。
@@ -110,7 +110,7 @@ Microsoft Intune 中的应用配置策略向托管 Android Enterprise 设备上�
 
 例如，应用使用设备的麦克风。 系统会提示用户授予应用权限以使用麦克风。
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“客户端应用”   > “应用配置策略”   >  “添加”  。
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，选择“应用”   > “应用配置策略”   >  “添加”  。
 2. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好是“适用于整个公司的 Android Enterprise 提示权限应用策略”  。

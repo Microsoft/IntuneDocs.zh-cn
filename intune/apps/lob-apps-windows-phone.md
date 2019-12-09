@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1540abcc9ff7a5958da55154258e1fc1d9555dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dd8025c18ef10580eb16883727bf08a316989d2e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507158"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563531"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>将 Windows Phone 业务线应用添加到 Microsoft Intune
 
@@ -33,11 +33,9 @@ ms.locfileid: "72507158"
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步骤 1：指定软件安装程序文件
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”工作负载中，选择“管理” > “应用”    。
-5. 在应用列表上方，选择“添加”  。
-6. 在“添加应用”  窗格中，选择“业务线应用”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“添加应用”  窗格中，选择“业务线应用”  作为“应用类型”  。
 
 ## <a name="step-2-configure-the-app-package-file"></a>步骤 2：配置应用包文件
 

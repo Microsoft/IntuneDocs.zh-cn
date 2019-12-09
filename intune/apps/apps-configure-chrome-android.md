@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801665"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564039"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>使用 Intune 配置适用于 Android 设备的 Google Chrome 
 
@@ -36,8 +36,8 @@ ms.locfileid: "73801665"
 
 ## <a name="add-the-google-chrome-app-to-intune"></a>将 Google Chrome 应用添加到 Intune
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在“Intune”窗格中，选择“客户端应用” > “应用” > “添加”，然后添加“托管的 Google Play”应用。     
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  ，然后添加“托管的 Google Play”  应用。
 3. 转到“托管的 Google Play”，搜索并批准 Google Chrome。 
 
     ![搜索并批准 Google Chrome](~/apps/media/apps-configure-chrome-android/search.png)

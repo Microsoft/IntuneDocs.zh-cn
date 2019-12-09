@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199198"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563640"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -38,7 +38,7 @@ ms.locfileid: "74199198"
 > [!Tip]
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。 请注意，必须为用户分配 Intune 许可证才能访问公司门户网站。
 
-自定义公司门户有助于为最终用户提供熟悉且有用的体验。 为此，在 Intune 门户中，选择“客户端应用” > “品牌和自定义”，然后配置所需的设置   。
+自定义公司门户有助于为最终用户提供熟悉且有用的体验。 为此，在 Intune 门户中，选择“应用” > “品牌和自定义”，然后配置所需的设置   。
 
 用户从公司门户安装 iOS 应用程序时，用户将收到提示。 iOS 应用链接到应用商店、批量采购计划 (VPP) 或业务线 (LOB) 应用时，将发生此操作。 用户可通过此提示接受操作，或允许管理应用。 此提示将显示公司名称，公司名称不可用时，将显示公司门户。  
 
@@ -93,7 +93,7 @@ ms.locfileid: "74199198"
 
 ### <a name="brand-image-for-company-portal"></a>公司门户的品牌图像
 
-显示彰显公司品牌的品牌图像。 保存更改后，可以在边栏选项卡顶部的 Intune Web 门户中选择“预览设置”，以查看配置的外观  。 请注意，只能在 iOS 设备上预览品牌图像，而不能在 Intune Web 门户上预览。 
+显示彰显公司品牌的品牌图像。 保存更改后，可以在窗格顶部的 Intune Web 门户中选择“预览设置”，以查看配置的外观  。 请注意，只能在 iOS 设备上预览品牌图像，而不能在 Intune Web 门户上预览。 
 
 |字段名称|更多信息|
 |---|---|

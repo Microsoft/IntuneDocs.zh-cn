@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44e757be5f109b81772daa6ff59505ccc0f033f8
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709430"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562383"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>设置 Android Enterprise 完全托管设备的 Intune 注册 
 
@@ -56,7 +56,7 @@ Intune 可帮助将应用和设置部署到 Android Enterprise 完全托管设�
 
 ### <a name="enable-corporate-owned-user-devices"></a>启用公司所拥有的用户设备
 
-1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备注册”   > “Android 注册”   > “公司拥有的完全托管用户设备”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”   > “Android”   > “Android 注册”    > “公司拥有的完全托管用户设备”  。
 2. 在“允许用户注册公司所有的用户设备”下，选择“是”   。
 
 > [!NOTE]

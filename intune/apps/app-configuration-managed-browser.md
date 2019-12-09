@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592090"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564327"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Web 访问
 
@@ -91,29 +91,28 @@ Managed Browser 现为条件访问的核准客户端应用。 这意味着可以
 > [!TIP]  
 > 条件访问是一项 Azure Active Directory (Azure AD) 技术。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同   。  
 
-
-1. 在 Intune 门户中，选择“条件访问”   > “新建策略”  。 
-2. 接下来，从选项卡的“访问控制”部分选择“授予”   。 
-3. 单击“需要核准的客户端应用”  。 
-4. 在“授予”边栏选项卡上单击“选择”   。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
-
-    ![Azure AD - Managed Browser 条件访问策略](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. 在“分配”部分，选择“条件” > “客户端应用”    。 随即显示“客户端应用”边栏选项卡  。
-6. 单击“配置”下的“是”，将策略应用到特定客户端应用   。
-7. 确认“浏览器”已被选为客户端应用  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备” > “条件访问” > “新建策略”    。
+3. 添加策略名称  。 
+4. 在“分配”部分，选择“条件” > “客户端应用”    。 随即显示“客户端应用”窗格。 
+5. 单击“配置”下的“是”，将策略应用到特定客户端应用   。
+6. 确认“浏览器”已被选为客户端应用  。
 
     ![Azure AD - Managed Browser - 选择客户端应用](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > 若要限制可访问这些云应用程序的本机应用（非浏览器应用），还可以选择“移动应用和桌面客户端”  。
 
-8. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组   。 
+7. 单击“完成”   > “完成”  。
+8. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组   。 单击“完成”  以关闭窗格。
+9. 在“分配”部分，选择“云应用或操作”，选择要使用此策略保护的应用   。 单击“完成”  以关闭窗格。
+10. 从窗格的“访问控制”部分选择“授予”   。 
+11. 单击“授予访问权限”  ，然后单击“需要已批准的客户端应用”  。 
+12. 在“授予”窗格上单击“选择”   。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
 
-    > [!NOTE]
-    > 还必须使用 Intune 应用保护策略选择目标用户，以便接收应用配置策略。 有关创建 Intune 应用保护策略的详细信息，请参阅[什么是应用保护策略？](app-protection-policy.md)
+    ![Azure AD - Managed Browser 条件访问策略](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用   。
+
 
 配置以上策略后，会强制要求用户使用 Intune Managed Browser 访问已通过此策略保护的 Azure AD 连接的 Web 应用。 如果用户尝试在此方案中使用非管理的浏览器，用户会看到一则通知，指示必须改用 Intune Managed Browser。
 
@@ -133,27 +132,28 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 >[!IMPORTANT]
 >对于要应用的应用配置，用户的受保护浏览器或设备上的其他应用必须已由 [Intune 应用保护策略]( ../app-protection-policy.md)托管。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在管理列表中的“客户端应用”边栏选项卡上，选择“应用配置策略”   。
-4. 在“应用配置策略”  边栏选项卡上，选择“添加”  。
-5. 在“添加配置策略”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”    。
-6. 对于“设备注册”类型，选择“托管应用”   。
-7. 选择“选择所需应用”  ，然后在“目标应用”  边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”  和/或“Microsoft Edge”  。
-8. 选择“确定”，返回“添加配置策略”边栏选项卡   。
-9. 选择“配置设置”  。 在“配置”  边栏选项卡上，定义键值对来为 Managed Browser 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
-10. 完成后，选择“确定”  。
-11. 在“添加配置策略”边栏选项卡上，选择“添加”   。
-12. 创建新配置后，其显示在“应用配置”  边栏选项卡上。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “应用配置策略”   > “添加”   > “托管应用”  。
+3. 在“创建应用配置策略”窗格的“基本信息”页上，输入应用配置设置的“名称”和可选“描述”     。
+4. 选择“选择公共应用”  ，然后选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”  和/或“Edge”  。
+5. 单击“选择”  以返回到“创建应用配置策略”  窗格。
+6. 单击“下一步”以显示“设置”页面   。
+7. 在“设置”  页面上，定义键值对以为应用提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
+8. 单击“下一步”  以显示“分配”  页，然后单击“选择要包括的组”  和/或“选择要排除的组”  。
+9. 单击“下一步”  以显示“查看 + 创建”页  。
+10. 查看应用配置策略后，单击“创建”  。
+
+创建新配置后，其显示在“应用配置策略”  窗格上。
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>分配已创建的配置设置
 
 将这些设置分配到 Azure AD 用户组。 如果用户安装了受保护的目标浏览器应用，则应用将按指定的设置进行管理。
 
-1. 在 Intune 移动应用程序管理仪表板的“客户端应用”边栏选项卡上，选择“应用配置策略”   。
+1. 在 Intune 移动应用程序管理仪表板的“应用”窗格上，选择“应用配置策略”   。
 2. 在应用配置列表中，选择一个想要分配的配置。
-3. 在下一个边栏选项卡上，选择“分配”  。
-4. 在“分配”边栏选项卡上，选择想要将应用配置分配到的 Azure AD 组，然后选择“确定”   。
+3. 在下一个窗格上，选择“分配”  。
+4. 在“分配”窗格上，选择想要将应用配置分配到的 Azure AD 组，然后选择“确定”   。
 
 ## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>如何将 Microsoft Edge 设置为组织的受保护的浏览器
 
@@ -170,7 +170,7 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 - 如果用户已下载 Managed Browser 或 Microsoft Edge，则会启动相应的浏览器应用。   
 - 若用户未下载这两种浏览器应用，将提示用户下载 Managed Browser。
 
-使用上面的过程创建 Microsoft Edge 应用配置。 从“配置”边栏选项卡上选择“配置设置”时，提供以下键值对（步骤 9）：  
+使用上面的过程创建 Microsoft Edge 应用配置。 从“配置”窗格上选择“配置设置”时，提供以下键值对（步骤 9）：  
 
 | Key                              |  值   |
 |----------------------------------|----------|

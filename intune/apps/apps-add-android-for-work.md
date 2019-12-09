@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584962"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564142"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 将托管 Google Play 应用添加到 Android Enterprise 设备
 
@@ -62,17 +62,16 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>直接在 Intune 控制台中添加托管的 Google Play 商店应用
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”  窗格中，依次选择“客户端应用”   > “应用”  。
-5. 在“应用”窗格中，选择“添加”   。
-6. 在“应用类型”  下拉列表框中，选择“托管 Google Play”  。
-7. 选择“托管 Google Play - 打开”  可打开托管的 Google Play 目录。
-7. 在 Google Play 目录中选择“搜索 Play Store”  。
-8. 使用搜索框搜索想要管理的应用。
-9. 单击“批准”  以批准托管 Google Play 中的应用，再单击“批准”  以接受应用权限。
-10. 选择“批准设置”窗口中的“应用请求新的权限时始终批准”  ，然后单击“保存”  。 如果不选择此选项，将需要在应用开发人员发布更新时手动批准所有新权限。 这将导致应用安装和更新暂停，直到批准该权限。 为此，建议选择此选项以自动批准新权限。 
-11. 单击“确定”  以添加已批准的应用。
-12. 单击“同步应用”  窗格上的“同步”  ，以与托管 Google Play 服务同步。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“应用类型”  下拉列表框中，选择“托管 Google Play”  。
+4. 选择“托管 Google Play - 打开”  可打开托管的 Google Play 目录。
+5. 在 Google Play 目录中选择“搜索 Play Store”  。
+6. 使用搜索框搜索想要管理的应用。
+7. 单击“批准”  以批准托管 Google Play 中的应用，再单击“批准”  以接受应用权限。
+8. 选择“批准设置”窗口中的“应用请求新的权限时始终批准”  ，然后单击“保存”  。 如果不选择此选项，将需要在应用开发人员发布更新时手动批准所有新权限。 这将导致应用安装和更新暂停，直到批准该权限。 为此，建议选择此选项以自动批准新权限。 
+9. 单击“确定”  以添加已批准的应用。
+10. 单击“同步应用”  窗格上的“同步”  ，以与托管 Google Play 服务同步。
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>在托管的 Google Play 控制台中添加托管的 Google Play 商店应用（替代方法）
 若要使用 Intune 同步托管 Google Play 应用，而不是直接使用 Intune 添加它，请按照下列步骤操作。
@@ -108,17 +107,16 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 
 ### <a name="managed-google-play-private-lob-app-publishing-directly-in-the-intune-console"></a>托管 Google Play 专用 (LOB) 应用直接在 Intune 控制台中发布
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”  窗格中，依次选择“客户端应用”   > “应用”  。
-5. 在“应用”窗格中，选择“添加”   。
-6. 在“应用类型”  下拉列表框中，选择“托管 Google Play”  。
-7. 选择“托管 Google Play - 打开”  可打开托管的 Google Play 目录。
-7. 在 Google Play 目录中选择“专用应用”  。
-7. 单击“+”  按钮添加新应用
-8. 提交应用的应用标题和 APK 包
-9. 单击“创建” 
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“应用类型”  下拉列表框中，选择“托管 Google Play”  。
+4. 选择“托管 Google Play - 打开”  可打开托管的 Google Play 目录。
+5. 在 Google Play 目录中选择“专用应用”  。
+6. 单击“+”  按钮添加新应用
+7. 提交应用的应用标题和 APK 包
+8. 单击“创建” 
 9. 如果已完成添加应用，则关闭“托管 Google Play”窗格
-12. 单击“同步应用”  窗格上的“同步”  ，以与托管 Google Play 服务同步。 请注意，专用应用可能需要几分钟才能同步。如果不是第一次执行同步，请等待几分钟，然后启动新同步。
+10. 单击“同步应用”  窗格上的“同步”  ，以与托管 Google Play 服务同步。 请注意，专用应用可能需要几分钟才能同步。如果不是第一次执行同步，请等待几分钟，然后启动新同步。
 
 有关托管 Google Play 专用应用的详细信息（包括常见问题解答），请参阅 Google 的支持文章： https://support.google.com/googleplay/work/answer/9146439
 
@@ -151,32 +149,30 @@ Web 链接将使用 Microsoft Edge 或你选择部署的任何其他浏览器应
 > [!IMPORTANT]
 > 在发布本文档时，存在一个已知的 Google bug，该 bug 会阻止在无 Chrome 浏览器的设备上打开 Web 链接。 Google 已承诺修复此 bug。  当 Microsoft 确认 Google 已发布其修补程序时，将删除此通知。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”  窗格中，依次选择“客户端应用”   > “应用”  。
-5. 在“应用”窗格中，选择“添加”   。
-6. 在“应用类型”  下拉列表框中，选择“托管 Google Play”  。
-7. 选择“托管 Google Play - 打开”  可打开托管的 Google Play 目录。
-7. 在 Google Play 目录中选择“Web 应用”  。
-7. 单击“+”  按钮添加新应用
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“应用类型”  下拉列表框中，选择“托管 Google Play”  。
+4. 选择“托管 Google Play - 打开”  可打开托管的 Google Play 目录。
+5. 在 Google Play 目录中选择“Web 应用”  。
+6. 单击“+”  按钮添加新应用
 7. 输入所需信息，然后单击“创建”  。
-7. 如果已完成添加应用，则关闭“托管 Google Play”窗格
-12. 单击“同步应用”  窗格上的“同步”  ，以与托管 Google Play 服务同步。 请注意，专用应用可能需要几分钟才能同步。如果不是第一次执行同步，请等待几分钟，然后启动新同步。
+8. 如果已完成添加应用，则关闭“托管 Google Play”窗格
+9. 单击“同步应用”  窗格上的“同步”  ，以与托管 Google Play 服务同步。 请注意，专用应用可能需要几分钟才能同步。如果不是第一次执行同步，请等待几分钟，然后启动新同步。
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>将托管的 Google Play 应用与 Intune 同步
 
-如果已从商店批准了应用，但未在“客户端应用”工作负荷中看到该应用，则按照如下所示的步骤强制立即同步  ：
+如果已从商店批准了应用，但未在“应用”工作负荷中看到该应用，则按照如下所示的步骤强制立即同步  ：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”工作负荷窗格的“设置”下，选择“托管的 Google Play”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 选择“应用”   > “租户管理”   > “连接器和令牌”   > “托管的 Google Play”  。
 5. 在“托管的 Google Play”窗格中，选择“刷新”   。  
     该页会更新上次同步的时间和状态。
-6. 在“客户端应用”工作负荷窗格中，选择“应用”   。  
+6. 在 Microsoft 终结点管理器管理中心中，选择“应用”   > “所有应用”  。  
     系统会显示最新可用的托管的 Google Play 应用。
 
 ## <a name="assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices"></a>将托管 Google Play 应用分配到 Android Enterprise 工作配置文件设备
 
-如果应用显示在“客户端应用”  工作负荷窗格的“应用许可证”  节点中，可以将应用分配到用户组，从而[分配应用，就像分配其他任何应用一样](/intune-azure/manage-apps/deploy-apps)。
+如果应用显示在“应用”  工作负荷窗格的“应用许可证”  节点中，可以将应用分配到用户组，从而[分配应用，就像分配其他任何应用一样](/intune-azure/manage-apps/deploy-apps)。
 
 分配应用之后，它会安装（或可安装）在用户的目标设备上。 不会要求设备的用户批准此安装。 有关 Android Enterprise 工作配置文件设备的详细信息，请参阅[设置 Android Enterprise 工作配置文件设备的注册](../enrollment/android-work-profile-enroll.md)。 
 
@@ -213,7 +209,7 @@ Android Enterprise 需要用户先在托管的 Google Play Web 控制台中批�
 对于部署到 Android Enterprise 工作配置文件设备的托管 Google Play 应用，可以使用 Intune 查看设备上安装的应用的状态和版本号。 
 
 ## <a name="delete-managed-google-play-apps"></a>删除托管 Google Play 应用
-必要时，可以从 Microsoft Intune 中删除托管 Google Play 应用。 若要删除托管 Google Play 应用，请在 Azure 门户中打开“Microsoft Intune”，并依次选择“客户端应用”   > “应用”  。 在应用列表中，选择托管 Google Play 应用右侧的省略号 (...)，再从随即显示的列表中选择“删除”  。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。
+必要时，可以从 Microsoft Intune 中删除托管 Google Play 应用。 若要删除托管 Google Play 应用，请在 Azure 门户中打开“Microsoft Intune”，并依次选择“应用”   > “所有应用”  。 在应用列表中，选择托管 Google Play 应用右侧的省略号 (...)，再从随即显示的列表中选择“删除”  。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。
 
 ## <a name="android-enterprise-system-apps"></a>Android 企业系统应用
 

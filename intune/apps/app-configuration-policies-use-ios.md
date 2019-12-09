@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566179"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564162"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -51,8 +51,7 @@ ms.locfileid: "73566179"
 ## <a name="create-an-app-configuration-policy"></a>创建应用配置策略
 
 1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 选择“客户端应用”工作负载  。
-4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”    。
+3. 选择“应用”   > “应用配置策略”   > “添加”  。
 5. 设置以下详细信息：
     - **名称** - 在 Azure 门户中显示的配置文件名。
     - **说明** - 在 Azure 门户中显示的配置文件说明。
@@ -74,7 +73,7 @@ ms.locfileid: "73566179"
 13. 选择“排除”选项卡  。 
 14. 单击“选择要排除的组”以显示相关窗格  。
 
-    ![策略分配“选择要排除的组”边栏选项卡的屏幕截图](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![策略分配“选择要排除的组”窗格的屏幕截图](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. 选择想要排除的组，然后单击“选择”  。
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Intune 在属性列表中支持以下数据类型：
 
 DEP（Apple 的设备注册计划）注册与 App Store 版公司门户应用不兼容。 但是，可以使用以下步骤配置公司门户应用以支持 iOS DEP 设备。
 
-1. 在 Azure 门户上的 Intune 中：
-    - 通过转到“Intune”   > “客户端应用”   > “应用”   > “添加”  来添加 Intune 公司门户（如有必要）。
-    - 转到“客户端应用”   > “应用配置策略”  ，为公司门户应用创建应用配置策略。
-2. 使用以下 XML 创建应用配置策略。 可以在[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)或（对于混合 MDM）[在 System Center Configuration Manager 中将设置应用于使用应用配置策略的 iOS 应用](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)中找到有关如何创建应用配置策略和输入 XML 数据的详细信息。
+1. 在 Intune 中，通过转到“Intune”   > “应用”   > “所有应用”   > “添加”  来添加 Intune 公司门户应用（如有必要）。
+2. 转到“应用”   > “应用配置策略”  ，为公司门户应用创建应用配置策略。
+3. 使用以下 XML 创建应用配置策略。 可以在[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)或（对于混合 MDM）[在 System Center Configuration Manager 中将设置应用于使用应用配置策略的 iOS 应用](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)中找到有关如何创建应用配置策略和输入 XML 数据的详细信息。
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ DEP（Apple 的设备注册计划）注册与 App Store 版公司门户应用不
 4. 告诉最终用户在自动安装公司门户应用后登录到该应用。
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>监控每个设备的 iOS 应用配置状态 
-分配配置策略后，可监视每个托管设备的 iOS 应用配置状态。    从 Azure 门户的“Microsoft Intune”中，选择“设备” > “所有设备”。 从受管理设备列表中选择特定设备，以显示该设备的边栏选项卡。 在该设备的边栏选项卡上，选择“应用配置”  。  
+分配配置策略后，可监视每个托管设备的 iOS 应用配置状态。    从 Azure 门户的“Microsoft Intune”中，选择“设备” > “所有设备”。 从受管理设备列表中选择特定设备，以显示该设备的窗格。 在该设备的窗格上，选择“应用配置”  。  
 
 ## <a name="additional-information"></a>其他信息
 

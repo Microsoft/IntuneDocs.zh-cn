@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754418"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563893"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
@@ -58,15 +58,15 @@ Microsoft Edge 的 Microsoft Intune 保护策略有助于保护组织的数据�
 可使用 Azure AD 条件访问重定向用户，使其只能通过 Microsoft Edge 访问公司内容。 这将移动浏览器对 Azure AD 连接的 Web 应用的访问限制为受策略保护的 Microsoft Edge。 这会阻止从任何其他未受保护的浏览器（例如 Safari 或 Chrome）进行访问。 可以将条件访问应用于 Azure 资源（如 Exchange Online 和 SharePoint Online）、Microsoft 365 管理中心，甚至本地站点（这些站点已通过 [Azure AD 应用程序代理](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)向外部用户公开）。
 
 若要将 Azure AD 连接的 Web 应用限制为在 iOS 和 Android 上使用 Microsoft Edge，请执行以下操作：
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 在 Intune 节点下，选择“条件访问”   > “新建策略”  。
-3. 从边栏选项卡的“访问控制”部分选择“授予”   。
+3. 从窗格的“访问控制”部分选择“授予”   。
 4. 选择“需要已批准的客户端应用”  。
-5. 在“授予”边栏选项卡上选择“选择”   。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
+5. 在“授予”窗格上选择“选择”   。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
 
     ![条件访问策略的屏幕截图 - 授予](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. 在“分配”部分，选择“条件” > “客户端应用”   。 随即显示“客户端应用”边栏选项卡  。
+6. 在“分配”部分，选择“条件” > “应用”   。 此时将显示“应用”  窗格。
 7. 在“配置”下选择“是”，将策略应用到特定客户端应用   。
 8. 确认“浏览器”已被选为客户端应用  。
 
@@ -97,29 +97,29 @@ SSO 要求设备通过 Microsoft Authenticator 应用（iOS 设备）或 Intune 
 
 若要创建适用于 Microsoft Edge 的应用配置，请执行以下操作：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“客户端应用”   > “应用配置策略”   > “添加”  。
-3. 在“添加配置策略”边栏选项卡上，输入应用配置设置的“名称”和可选“描述”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “应用配置策略”   > “添加”  。
+3. 在“添加配置策略”窗格上，输入应用配置设置的“名称”和可选“描述”    。
 4. 对于“设备注册”类型，选择“托管应用”   。
-5. 选择“选择所需应用”  。 然后在“目标应用”边栏选项卡上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”或“Microsoft Edge”    。
-6. 选择“确定”，返回到“添加配置策略”边栏选项卡   。
-7. 选择“配置设置”  。 在“配置”  边栏选项卡上，定义键值对来为 Microsoft Edge 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
+5. 选择“选择所需应用”  。 然后在“目标应用”窗格上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”或“Microsoft Edge”    。
+6. 选择“确定”，返回到“添加配置策略”窗格   。
+7. 选择“配置设置”  。 在“配置”  窗格上，定义键值对来为 Microsoft Edge 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
 
     > [!NOTE]
     > Microsoft Edge 使用与 Managed Browser 相同的键值对。 在 Android 上，Microsoft Edge 必须以应用保护策略为目标才能使应用配置策略生效。
 
 8. 完成后，选择“确定”  。
-9. 在“添加配置策略”边栏选项卡上，选择“添加”   。<br>
-    创建新配置后，其显示在“应用配置”  边栏选项卡上。
+9. 在“添加配置策略”窗格上，选择“添加”   。<br>
+    创建新配置后，其显示在“应用配置”  窗格上。
 
 ## <a name="assign-the-configuration-settings-you-created"></a>分配已创建的配置设置 
 
 将这些设置分配给 Azure AD 用户组。 如果用户安装了受保护的目标浏览器应用，则应用将按指定的设置进行管理。
 
-1. 在 Intune 移动应用程序管理仪表板的“客户端应用”边栏选项卡上，选择“应用配置策略”   。
+1. 在 Intune 移动应用程序管理仪表板的“应用”窗格上，选择“应用配置策略”   。
 2. 在应用配置列表中，选择一个想要分配的配置。
-3. 在下一个边栏选项卡上，选择“分配”  。
-4. 在“分配”边栏选项卡上，选择想要向其分配应用配置的 Azure AD 组，然后选择“确定”   。
+3. 在下一个窗格上，选择“分配”  。
+4. 在“分配”窗格上，选择想要向其分配应用配置的 Azure AD 组，然后选择“确定”   。
 
 ## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>将用户定向到 Microsoft Edge，而不是 Intune Managed Browser 
 
@@ -297,7 +297,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 - 可以在与 Microsoft Edge 关联的应用保护策略中配置“访问需要简单 PIN”或“访问需要公司凭据”选项   。 如果用户选择身份验证页上的帮助链接，则可以浏览任何 Internet 站点，而不考虑它们是否已添加到策略中的阻止列表。
 - Microsoft Edge 仅能在用户直接访问站点时阻止访问。 用户使用中间服务（例如翻译服务）访问站点时，该策略则不会阻止访问。
 - 若要允许身份验证和访问 Intune 文档，请从允许或阻止列表设置中移除 *.microsoft.com  。 始终允许。
-- 用户可以关闭数据收集。 Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**使用情况数据**设置关闭数据收集。 不具有对此数据的收集的控制。 在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
+- 用户可以关闭数据收集。 Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**用法数据**设置关闭数据收集。 不具有对此数据的收集的控制。 在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
 
 ## <a name="next-steps"></a>后续步骤
 

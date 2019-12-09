@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497561"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563449"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>将 iOS 应用商店应用添加到 Microsoft Intune
 
@@ -41,18 +41,16 @@ ms.locfileid: "72497561"
 >[!NOTE]
 >在使用 Microsoft Intune 时，我们建议使用 Microsoft Edge 或 Google Chrome 浏览器。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”    。
-5. 在“应用”窗格中，选择“添加”   。
-6. 在“应用类型”  列表中，选择“应用商店应用”  类型下的“iOS”  。
-7. 选择“搜索 App Store”  。
-8. 在“搜索 App Store”  窗格中，选择 App Store 国家/地区的区域设置。
-9. 在“搜索”  框中，键入应用的名称（或名称的一部分）。  
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“应用类型”  列表中，选择“应用商店应用”  类型下的“iOS”  。
+4. 选择“搜索 App Store”  。
+5. 在“搜索 App Store”  窗格中，选择 App Store 国家/地区的区域设置。
+6. 在“搜索”  框中，键入应用的名称（或名称的一部分）。  
     Intune 将搜索应用商店并返回相关结果的列表。
-10. 在结果列表中，选择想要使用的应用，然后选择“选择”  。
-11. 在“添加应用”  窗格中，选择“应用信息”  以配置应用。
-12. 在“应用信息”窗格中，添加应用信息  。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
+7. 在结果列表中，选择想要使用的应用，然后选择“选择”  。
+8. 在“添加应用”  窗格中，选择“应用信息”  以配置应用。
+9. 在“应用信息”窗格中，添加应用信息  。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
     - **名称**：输入要在公司门户中显示的应用名称。 请确保使用唯一的应用名称。 如果应用名称重复，则在公司门户中仅向用户显示一个名称。
     - **说明**：输入应用的描述。 在公司门户中向用户显示该描述。
     - **发布者**：输入应用发布者的名称。
@@ -67,8 +65,8 @@ ms.locfileid: "72497561"
     - **所有者**：（可选）输入此应用的所有者的名称（例如，HR 部门  ）。 此字段仅对管理员可见，对用户不可见。
     - **备注**：（可选）输入要与此应用关联的任何备注。 此字段仅对管理员可见，对最终用户不可见。
     - **徽标**：（可选）：上传将与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
-13. 选择“确定”  。
-14. 选择“添加”  。
+10. 选择“确定”  。
+11. 选择“添加”  。
 
 此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。
 

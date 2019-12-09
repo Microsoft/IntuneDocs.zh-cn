@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a2575c0d4e6cdcfdffe09e37880f56647bc835
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496429"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563772"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略
 
@@ -71,53 +71,51 @@ ms.locfileid: "72496429"
 > 有关为 Intune 创建 WIP 策略的相关信息，包括可用设置及其配置方式，请参阅 Windows 安全文档库中的[使用 Microsoft Intune 的 Azure 门户创建具有 MAM 的 Windows 信息保护 (WIP) 策略](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)。 
 
 
-1. 登录到 [Azure 门户](https://portal.azure.com)。
-2. 选择“所有服务” > “Intune”   。
-3. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”   。
-4. 在“客户端应用”边栏选项卡上，选择“应用保护策略”   。
-5. 选择“添加策略”以显示“添加一个策略”边栏选项卡   。
-6. 添加下列值：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用” > “应用保护策略” > “创建策略”    。
+3. 添加下列值：
     - **名称：** 键入新策略的名称（必填）。
     - **描述：** （可选）键入说明。
     - **平台：** 选择“Windows 10”作为应用保护策略的支持平台  。
     - **注册状态：** 选择“无需注册”作为策略的注册状态  。
-7. 选择“创建”  。 创建策略并在“应用保护策略”边栏选项卡的表中显示该策略  。
+4. 选择“创建”  。 创建策略并在“应用保护策略”窗格的表中显示该策略  。
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>将推荐的应用添加到受保护的应用列表中
 
-1. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”   。
-2. 在“客户端应用”边栏选项卡上，选择“应用保护策略”   。
-3. 在“应用保护策略”边栏选项卡上，选择想要修改的策略  。 可看到“Intune 应用保护”边栏选项卡  。
-4. 从“Intune 应用保护”边栏选项卡中选择“受保护的应用”   。 随即打开“受保护的应用”边栏选项卡，并显示此应用保护策略列表中已包含的全部应用  。
-5. 选择“添加应用”  。 “添加应用”信息显示筛选后的应用列表  。 可使用边栏选项卡顶部的列表更改列表筛选器。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用” > “应用保护策略”   。
+3. 在“应用保护策略”窗格中，选择要修改的策略  。 可看到“Intune 应用保护”窗格  。
+4. 从“Intune 应用保护”窗格中选择“受保护的应用”   。 随即打开“受保护的应用”窗格，并显示此应用保护策略列表中已包含的全部应用  。
+5. 选择“添加应用”  。 “添加应用”信息显示筛选后的应用列表  。 可使用窗格顶部的列表更改列表筛选器。
 6. 选择要允许其访问公司数据的各个应用。
-7. 单击" **确定**"。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用  。
+7. 单击" **确定**"。 “受保护的应用”窗格会进行更新，并显示已选中的所有应用  。
 8. 单击 **“保存”** 。
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>将 Microsoft Store 应用添加到受保护的应用列表中
 
 **添加“应用商店”应用**
-1. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”   。
-2. 在“客户端应用”边栏选项卡上，选择“应用保护策略”   。
-3. 在“应用保护策略”边栏选项卡上，选择想要修改的策略  。 可看到“Intune 应用保护”边栏选项卡  。
-4. 从“Intune 应用保护”边栏选项卡中选择“受保护的应用”   。 随即打开“受保护的应用”边栏选项卡，并显示此应用保护策略列表中已包含的全部应用  。
-5. 选择“添加应用”  。 “添加应用”信息显示筛选后的应用列表  。 可使用边栏选项卡顶部的列表更改列表筛选器。
+
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用” > “应用保护策略”   。
+3. 在“应用保护策略”窗格中，选择要修改的策略  。 可看到“Intune 应用保护”窗格  。
+4. 从“Intune 应用保护”窗格中选择“受保护的应用”   。 随即打开“受保护的应用”窗格，并显示此应用保护策略列表中已包含的全部应用  。
+5. 选择“添加应用”  。 “添加应用”信息显示筛选后的应用列表  。 可使用窗格顶部的列表更改列表筛选器。
 6. 从列表中，选择“应用商店应用”  。
 7. 输入“名称”、“发行商”、“产品名称”和“操作”的值     。 请确保将“操作”值设为“允许”，使应用可访问公司数据   。
-9. 单击" **确定**"。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用  。
+9. 单击" **确定**"。 “受保护的应用”窗格会进行更新，并显示已选中的所有应用  。
 10. 单击 **“保存”** 。
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>将桌面应用添加到受保护的应用列表中
 
 **添加桌面应用**
-1. 在“Microsoft Intune”边栏选项卡上，选择“客户端应用”   。
-2. 在“客户端应用”边栏选项卡上，选择“应用保护策略”   。
-3. 在“应用保护策略”边栏选项卡上，选择想要修改的策略  。 可看到“Intune 应用保护”边栏选项卡  。
-4. 从“Intune 应用保护”边栏选项卡中选择“受保护的应用”   。 随即打开“受保护的应用”边栏选项卡，并显示此应用保护策略列表中已包含的全部应用  。
-5. 选择“添加应用”  。 “添加应用”信息显示筛选后的应用列表  。 可使用边栏选项卡顶部的列表更改列表筛选器。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用” > “应用保护策略”   。
+3. 在“应用保护策略”窗格中，选择要修改的策略  。 可看到“Intune 应用保护”窗格  。
+4. 从“Intune 应用保护”窗格中选择“受保护的应用”   。 随即打开“受保护的应用”窗格，并显示此应用保护策略列表中已包含的全部应用  。
+5. 选择“添加应用”  。 “添加应用”信息显示筛选后的应用列表  。 可使用窗格顶部的列表更改列表筛选器。
 6. 从列表中，选择“桌面应用”  。
 7. 输入“名称”、“发行商”、“产品名称”、“文件”、“最低版本”、“最高版本”和“操作”的值        。 请确保将“操作”值设为“允许”，使应用可访问公司数据   。
-9. 单击" **确定**"。 “受保护的应用”边栏选项卡会进行更新，并显示已选中的所有应用  。
+9. 单击" **确定**"。 “受保护的应用”窗格会进行更新，并显示已选中的所有应用  。
 10. 单击 **“保存”** 。
 
 ## <a name="wip-learning"></a>WIP Learning
@@ -150,7 +148,7 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
 ### <a name="add-a-protection-mode"></a>添加保护模式
 
-1. 在“应用策略”边栏选项卡中，选择策略的名称，然后选择“所需设置”   。
+1. 在“应用策略”窗格中，选择策略的名称，然后选择“所需设置”   。
 
     ![学习模式窗格的屏幕截图](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
@@ -160,7 +158,7 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
 1. 打开 [Azure 门户](https://portal.azure.com)。 选择“所有服务”  。 在文本框筛选器中键入“Intune”  。
 
-3. 选择“Intune” > “客户端应用”   。
+3. 选择“Intune”   > “应用”  。
 
 4. 选择“应用保护状态” > “报告” > “Windows 信息保护学习”    。  
 
@@ -188,9 +186,9 @@ WIP 以无提示的方式运行，并记录不正确的数据共享操作，但�
 
 创建 WIP 应用保护策略后，必须使用 MAM 将其部署到组织。
 
-1. 在“应用策略”边栏选项卡上，选择新创建的应用保护策略，然后选择“用户组” > “添加用户组”    。
+1. 在“应用策略”窗格上，选择新创建的应用保护策略，然后选择“用户组” > “添加用户组”    。
 
-    由 Azure Active Directory 中的所有安全组组成的用户组列表在“添加用户组”  边栏选项卡中打开。
+    由 Azure Active Directory 中的所有安全组组成的用户组列表在“添加用户组”  窗格中打开。
 
 2. 选择要向其应用策略的组，然后单击“选择”  部署此策略。
 

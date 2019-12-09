@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afd51fe27feb0c058ba703ed11e4a15a5ea2f0d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813423"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563410"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加并分配客户端应用
 
@@ -44,7 +44,7 @@ ms.locfileid: "72813423"
 可以包含应用，以便 Intune 可以管理应用的各个方面。 
 
 可使用以下步骤将应用添加到 Intune：
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用” > “添加”    。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“应用”   > “所有应用”   > “添加”  。 
 2. 在“应用类型”下拉框的“Office 365 套件”部分中选择“Windows 10”    。
 3. 选择“配置应用套件”以选择要分配给 Intune 用户的 Office 应用  。
 4. 单击“确定”，接受默认选定的应用  。
@@ -68,9 +68,9 @@ ms.locfileid: "72813423"
 > 本快速入门以本系列前面的快速入门为基础。 有关详细信息，请参阅本快速入门中的[先决条件](quickstart-add-assign-app.md#prerequisites)。
 
 可使用以下步骤将应用分配给组：
-1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“客户端应用” > “应用”   。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“应用”   > “所有应用”  。 
 2. 选择要分配给组的应用。
-3. 单击“分配” > “添加组”，显示“添加组”边栏选项卡    。
+3. 单击“分配” > “添加组”，显示“添加组”窗格    。
 4. 在“分配类型”下拉框中，选择“适用于已注册设备”   。 
 5. 单击“包括的组” >  选择要包括的组  > “Contoso 测试人员”    。
 6. 单击“选择” > “确定” > “确定” > “保存”即可分配组     。

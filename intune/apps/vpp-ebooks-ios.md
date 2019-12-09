@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 08275e2573fe8aae8c59ea25c85cdd8f7a3246ee
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984081"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563747"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过批量购买计划购买的 iOS 电子书
 
@@ -57,15 +57,14 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>获取并上传 Apple VPP 令牌
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-1. 在“客户端应用”工作负荷中，选择“设置” > “iOS VPP 令牌”    。
-2. 在 VPP 令牌列表窗格上单击“创建”  。
-3. 在“新 VPP 令牌”窗格中，指定下列信息  ：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“租户管理”   > “连接器和令牌”   > “Apple VPP 令牌”  。
+3. 在 VPP 令牌列表窗格上单击“创建”  。
+5. 在“新 VPP 令牌”窗格中，指定下列信息  ：
     - **VPP 令牌文件** - 确保你已注册 Volume Purchase Program 企业版或 Volume Purchase Program 教育版。 然后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
     - **Apple ID** - 输入与批量购买计划关联的帐户的 Apple ID。
     - **VPP 帐户类型** - 从“企业版”  或“教育版”  中进行选择。
-4. 完成后，单击“创建”  。
+5. 完成后，单击“创建”  。
 
 该令牌显示在“令牌列表”窗格中。
 
@@ -74,8 +73,7 @@ Microsoft Intune 可帮助你同步、管理和分配通过此计划购买的书
 
 ## <a name="to-assign-a-volume-purchased-app"></a>如何分配批量购买应用
 
-3. 在“Intune”窗格上，选择“电子书”   。
-1. 在“电子书”  工作负荷中选择“管理”   > “所有电子书”  。
+1. 选择“应用”   > “电子书”   > “所有电子书”  。
 2. 在书籍列表窗格中，选择要分配的书籍，然后依次选择“...”和“分配组”   。
 3. 在“<书籍名称> - 已分配的组”窗格中，选择“管理” > “已分配的组”     。
 4. 选择“分配组”，然后在“选择组”窗格中，选择要将书籍分配到的 Azure AD 用户组   。 目前不支持设备组。

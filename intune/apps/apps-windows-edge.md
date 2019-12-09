@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709907"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563564"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>将 Microsoft Edge for Windows 10 添加到 Microsoft Intune
 
@@ -34,7 +34,7 @@ ms.locfileid: "73709907"
 > [!NOTE]
 > Microsoft Edge 版本 77 和更高版本也同样适用于 macOS  。
 > 
-> 不能将 Microsoft Edge 的内置应用程序部署用于工作区加入计算机。 内置应用程序部署需要 Intune 管理扩展，只有已加入 AAD 的设备才有此扩展。 仍可使用上传到“客户端应用”的 .msi 部署 Microsoft Edge 77 及更高版本，请参阅[将 Windows 业务线应用添加到 Microsoft Intune](~/apps/lob-apps-windows.md)    。
+> 不能将 Microsoft Edge 的内置应用程序部署用于工作区加入计算机。 内置应用程序部署需要 Intune 管理扩展，只有已加入 AAD 的设备才有此扩展。 仍可使用上传到“应用”的 .msi 部署 Microsoft Edge 77 及更高版本，请参阅[将 Windows 业务线应用添加到 Microsoft Intune](~/apps/lob-apps-windows.md)    。
 
 ## <a name="prerequisites"></a>必备条件
 - 需要 Windows 10 RS2 及更高版本。
@@ -43,15 +43,15 @@ ms.locfileid: "73709907"
 ## <a name="configure-the-app-in-intune"></a>在 Intune 中配置应用
 可以使用以下步骤将 Microsoft Edge 版本 77 和更高版本添加到 Intune：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在“Intune”窗格中，选择“客户端应用” > “应用” > “添加”     。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
 3. 在 Microsoft Edge 版本 77 和更高版本下的“应用类型”列表中，选择“Windows 10”    。
 
 ## <a name="configure-app-information"></a>配置应用信息
 在此步骤中，提供有关此应用部署的信息。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
 
-1. 单击“应用信息”以显示“应用信息”边栏选项卡   。
-2. 在“应用信息”边栏选项卡中，提供有关此应用部署的信息  。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
+1. 单击“应用信息”以显示“应用信息”窗格   。
+2. 在“应用信息”窗格中，提供有关此应用部署的信息  。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
     - **名称**：输入应用的名称，该名称将显示在公司门户中。 请确保所有名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - **说明**：输入应用的描述。 例如，可以在描述中列出目标用户。
     - **发布者**：Microsoft 显示为发布者。
@@ -67,8 +67,8 @@ ms.locfileid: "73709907"
 ## <a name="configure-app-settings"></a>配置应用设置
 在此步骤中，配置应用的安装选项。
 
-1. 在“添加应用”边栏选项卡中，选择“应用设置”   。
-2. 在“应用设置”边栏选项卡中，从“通道”列表中选择“Beta”或“开发”，以确定要从哪个 Edge 通道部署应用     。
+1. 在“添加应用”  窗格中，选择“应用设置”  。
+2. 在“应用设置”窗格中，从“通道”列表中选择“Beta”或“开发”，以确定要从哪个 Edge 通道部署应用     。
     - “Beta”通道是最稳定的 Microsoft Edge 预览体验，也是在组织内全面试用的最佳选择  。 每六周发布一次重大更新，每个版本中都会加入开发人员通道的经验和改进。
     - “开发”通道适用于在 Windows、Windows Server 和 macOS 上提供反馈的企业  。 它每周更新，包含最新的改进和修复。
 
@@ -85,7 +85,7 @@ ms.locfileid: "73709907"
 4.  单击“选择” > “确认”   。
 
 ## <a name="add-the-app"></a>添加应用
-完成应用配置后，从“添加应用”边栏选项卡中选择“添加”   。 
+完成应用配置后，从“应用”窗格中选择“添加”   。 
 
 此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 
 

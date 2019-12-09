@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712922"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563606"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>将内置应用添加到 Microsoft Intune
 
@@ -37,24 +37,20 @@ ms.locfileid: "73712922"
 ## <a name="add-a-built-in-app"></a>添加内置应用
 
 若要将内置应用添加到 Microsoft Intune 中的可用应用中，请执行以下步骤：
-1. 登录到 Azure 门户。
-2. 若要显示 Microsoft Intune 窗格，请选择“更多服务”   > “监视 + 管理”   > “Intune”  。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”  窗格的“管理”  下，选择“应用”  。
-5. 选择“添加”  。
-6. 在“应用类型”  列表中的“添加”  应用窗格中，选择“内置应用”  。
-7. 选择“选择应用”  。
-8. 在“内置应用”  窗格中，选择想要添加的应用。
-9. 在“添加应用”  窗格中，选择“添加”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“应用类型”  列表中的“添加”  应用窗格中，选择“内置应用”  。
+4. 选择“选择应用”  。
+5. 在“内置应用”  窗格中，选择想要添加的应用。
+6. 在“添加应用”  窗格中，选择“添加”  。
 
 
 ## <a name="configure-app-information"></a>配置应用信息
 
 可以修改有关内置应用的信息。 此信息有助于在 Intune 中识别应用，也有助于用户在公司门户中找到该应用。
-1. 在“客户端应用 - 应用”窗格中，选择想要修改的内置应用  。  
-    随即显示该内置应用的窗格。
-2. 选择“管理”  下的“属性”  选项。
-3. 若要修改该内置应用的信息，请选择“配置”  选项。
+1. 选择“应用” > “所有应用”，然后选择想要修改的内置应用   。  
+   随即显示该内置应用的窗格。
+2. 选择“属性”   > “配置”  。
 4. 在“应用信息”  窗格中可以修改以下信息：
     - **名称**：输入内置应用的名称，该名称将在公司门户中显示。 请确保使用的所有名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - **说明**：输入应用的描述。 

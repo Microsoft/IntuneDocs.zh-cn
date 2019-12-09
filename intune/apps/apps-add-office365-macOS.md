@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498810"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564082"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 分配给 macOS 设备
 
@@ -41,14 +41,12 @@ ms.locfileid: "72498810"
 ## <a name="create-and-configure-the-app-suite"></a>创建和配置应用套件
 
 从“应用”  窗格添加 Office 365。
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”    。 
-5. 选择“添加”  。
-6. 在“应用类型”  列表中，选择“Office 365 套件”  组中的“macOS”  。
-7. 要获取有关应用套件的信息，请选择“应用套件信息”  。  
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“应用类型”  列表中，选择“Office 365 套件”  组中的“macOS”  。
+4. 要获取有关应用套件的信息，请选择“应用套件信息”  。  
     此信息有助于在 Intune 中识别应用套件，也有助于用户在公司门户中找到应用套件。
-8. 输入以下信息：
+5. 输入以下信息：
     - **套件名称**：输入应用套件的名称，该名称将显示在公司门户中。 请确保使用的所有套件名称都是唯一的。 如果同一应用套件名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - **套件描述**：输入应用套件的描述。
     - **发布者**：Microsoft 显示为发布者。
@@ -60,8 +58,8 @@ ms.locfileid: "72498810"
     - **所有者**：Microsoft 显示为所有者。
     - **备注**：（可选）输入要与此应用关联的任何备注。
     - **徽标**：用户浏览公司门户时，Office 365 徽标与应用一同显示。
-9. 选择“确定”  。
-10. 在“添加应用”  窗格上，选择“添加”  。  
+6. 选择“确定”  。
+7. 在“添加应用”  窗格上，选择“添加”  。  
     应用套件在应用列表中显示为各个条目。
 
 ## <a name="configure-app-assignments"></a>配置应用分配

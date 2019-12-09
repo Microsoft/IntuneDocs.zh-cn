@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ce24081eae1808d3db0c5078026b306fd209d5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507243"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563942"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>使用 Microsoft Intune 部署 Windows 10 应用 
 
@@ -51,9 +51,10 @@ Microsoft Intune 支持 Windows 10 设备上的各种应用类型和部署方案
 ### <a name="categorize-microsoft-store-for-business-apps"></a>为适用于企业的 Microsoft Store 应用分类 
 为适用于企业的 Microsoft Store 应用分类： 
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“客户端应用”   > “应用”  。 选择适用于企业的 Microsoft Store 应用。 然后选择“应用信息”   > “类别”。  
-3. 选择类别。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”  。 
+3. 选择适用于企业的 Microsoft Store 应用。 然后选择“属性”   > “应用信息”   > “类别”  。 
+4. 选择类别。
 
 ## <a name="install-apps-on-windows-10-devices"></a>在 Windows 10 设备上安装应用
 根据应用类型，可以通过以下两种方式之一在 Windows 10 设备上安装应用：

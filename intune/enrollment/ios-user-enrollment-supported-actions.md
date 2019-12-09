@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445298"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562410"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 用户注册支持的 Intune 操作和选项
 
@@ -57,13 +57,18 @@ ms.locfileid: "73445298"
 - 远程锁定
 - 检查状态
 
+## <a name="app-deployment-options"></a>添加部署选项
+可在用户注册设备上部署以下应用类型：
+- 用户许可的批量采购计划 (VPP) 应用，包括自定义应用
+- 业务线 (LOB) 应用
+- Web 应用
+
 ## <a name="other-supported-options"></a>其他支持的选项
 
 对于使用 Apple 用户注册注册的设备，Intune 支持以下选项：
 - 每个应用 VPN。 此支持不包括 Safari 域，因为用户注册不支持配置 Safari 设置。
 - WiFi 
 - 取消注册后删除企业应用
-- 通过用户许可的批量采购计划 (VPP) 进行应用部署
 - 越狱检测
 
 支持以下限制：
@@ -97,6 +102,7 @@ ms.locfileid: "73445298"
 - 使用序列号的使用者名称格式的 SCEP 用户配置文件。
 - 设备级别的 VPN。
 - 设备许可的 VPP 应用部署。
+- 将 App Store 应用作为托管应用安装。
 - 托管 APFS 卷之外的应用程序的 MDM 控制。
 - 应用程序保护策略仍将应用于这些应用。 但是，除非用户从其设备中删除这些应用，否则你无法接管管理或部署这些应用的托管版本。
 - 需要监督的操作、配置、设置和命令。 

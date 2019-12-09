@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059860"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781152"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中为 iOS 设备设置每应用虚拟专用网络 (VPN)
 
@@ -37,6 +37,9 @@ ms.locfileid: "74059860"
 本文介绍如何创建每应用 VPN 配置文件，并将此配置文件分配给应用。 使用这些步骤为最终用户创建无缝的每应用 VPN 体验。 对于支持每应用 VPN 的大多数 VPN，用户打开应用时，它会自动连接到 VPN。
 
 某些 VPN 允许使用每应用 VPN 进行用户名和密码身份验证。 这意味着，用户需要输入用户名和密码才能连接到 VPN。
+
+> [!IMPORTANT]
+> 适用于 iOS 的 IKEv2 VPN 配置文件不支持每应用 VPN。
 
 ## <a name="per-app-vpn-with-zscaler"></a>使用 Zscaler 的每应用 VPN
 

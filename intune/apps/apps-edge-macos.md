@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754834"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563588"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>使用 Microsoft Intune 将 Microsoft Edge 添加到 macOS 设备
 
@@ -40,15 +40,15 @@ ms.locfileid: "73754834"
 ## <a name="add-microsoft-edge-to-intune"></a>将 Microsoft Edge 添加到 Intune
 可以使用以下步骤将 Microsoft Edge 版本 77 和更高版本添加到 Intune：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在“Intune”窗格中，选择“客户端应用” > “应用” > “添加”     。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
 3. 在 Microsoft Edge 版本 77 和更高版本下的“应用类型”中，选择“macOS”    。
 
 ## <a name="configure-app-information"></a>配置应用信息
 在此步骤中，提供有关此应用部署的信息。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
 
-1. 单击“应用信息”以显示“应用信息”边栏选项卡   。
-2. 在“应用信息”边栏选项卡中，提供有关此应用部署的信息  。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
+1. 单击“应用信息”以显示“应用信息”窗格   。
+2. 在“应用信息”窗格中，提供有关此应用部署的信息  。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
     - **名称**：输入应用的名称，该名称将显示在公司门户中。 请确保所有名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
     - **说明**：输入应用的描述。 例如，可以在描述中列出目标用户。
     - **发布者**：Microsoft 显示为发布者。
@@ -64,8 +64,8 @@ ms.locfileid: "73754834"
 ## <a name="configure-microsoft-edge-settings"></a>配置 Microsoft Edge 设置
 在此步骤中，配置应用的安装选项。
 
-1. 在“添加应用”边栏选项卡中，选择“应用设置”   。
-2. 在“应用设置”边栏选项卡中，自动选择了“Beta”通道，且无法更改   。
+1. 在“添加应用”  窗格中，选择“应用设置”  。
+2. 在“应用设置”窗格中，自动选择了“Beta”通道，且无法更改   。
     - “Beta”通道是最稳定的 Microsoft Edge 预览体验，也是组织内全面试用的最佳选择  。 每六周发布一次重大更新。
 
     > [!NOTE]
@@ -80,7 +80,7 @@ ms.locfileid: "73754834"
 4.  单击“选择” > “确认”   。
 
 ## <a name="add-the-app"></a>添加应用
-完成配置后，从“应用”边栏选项卡中选择“添加”   。 
+完成配置后，从“应用”窗格中选择“添加”   。 
 
 此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 
 

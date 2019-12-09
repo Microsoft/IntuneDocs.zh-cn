@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059896"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694941"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能和设置
 
@@ -49,7 +49,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 此功能支持：
 
-- 支持固件上的 Windows 10 1809 及更高版本。
+- Windows 10 及更高版本
 
 ## <a name="certificates"></a>证书
 
@@ -102,7 +102,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 此功能支持：
 
-- Windows 10 及更高版本
+- 支持固件上的 Windows 10 1809 及更高版本
 
 ## <a name="device-restrictions"></a>设备限制
 

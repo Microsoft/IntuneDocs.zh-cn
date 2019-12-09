@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635407"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563667"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用添加到 Windows 10 设备
 
@@ -49,11 +49,9 @@ ms.locfileid: "73635407"
 
 ## <a name="get-started"></a>入门
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”    。
-5. 选择“添加”  。
-6. 在“添加应用”窗格中，请在“应用类型”列表中的“Office 365 套件”下选择“Windows 10”     。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“添加应用”窗格中，请在“应用类型”列表中的“Office 365 套件”下选择“Windows 10”     。
 
 ## <a name="select-settings-format"></a>选择设置格式
 
@@ -61,13 +59,13 @@ ms.locfileid: "73635407"
 - 配置设计器
 - 输入 XML 数据
 
-选择“配置设计器”后，“添加应用”边栏选项卡会发生变化，会新增两个设置选项   ：
+选择“配置设计器”后，“添加应用”窗格会发生变化，会新增两个设置选项   ：
 - 配置应用套件
 - 应用套件设置
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-选择“输入 XML 数据”后，“添加应用”边栏选项卡会显示“输入 XML 数据”选项    。 选择此选项以显示“配置文件”边栏选项卡  。 
+选择“输入 XML 数据”后，“添加应用”窗格会显示“输入 XML 数据”选项    。 选择此选项以显示“配置文件”窗格  。 
 
 ![添加 Office 365 配置设计器](./media/apps-add-office365/apps-add-office365-01.png)
     
@@ -94,7 +92,7 @@ ms.locfileid: "73635407"
 
 ## <a name="configure-app-suite"></a>配置应用套件
 
-如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“配置应用套件”选项     。 选择想要分配到设备的 Office 应用。
+如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”窗格中的“配置应用套件”选项     。 选择想要分配到设备的 Office 应用。
 
 1. 在“添加应用”  窗格中，选择“配置应用套件”  。
 2. 在“配置应用套件”  窗格中，选择想要分配到设备的标准 Office 应用。  
@@ -103,7 +101,7 @@ ms.locfileid: "73635407"
 
 ## <a name="configure-app-suite-settings"></a>配置应用套件设置
 
-如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”边栏选项卡中的“应用套件设置”选项     。 在此步骤中，配置应用套件的安装选项。 这些设置适用于添加到该套件的所有应用。
+如果选择“设置格式”下拉框下方的“配置设计器”选项，将看到“添加应用”窗格中的“应用套件设置”选项     。 在此步骤中，配置应用套件的安装选项。 这些设置适用于添加到该套件的所有应用。
 
 1. 在“添加应用”  窗格中，选择“应用套件设置”  。
 2. 在  “应用套件设置”窗格中，请执行以下操作：
@@ -126,7 +124,7 @@ ms.locfileid: "73635407"
     - **自动接受应用最终用户许可协议**：如果不需要最终用户接受许可协议，请选择此选项。 Intune 随后会自动接受该协议。
     - **使用共享的计算机激活**：当多个用户共享一台计算机时选择该选项。 有关详细信息，请参阅 [Office 365 的共享计算机激活概述](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)。
     - **语言**：Office 会自动以随 Windows 安装在最终用户设备上的任何受支持的语言进行安装。 如果想要使用应用套件安装其他语言，请选择此选项。 <p></p>
-    可以为通过 Intune 管理的 Office 365 专业增强版应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）  。 在 Azure 门户中，选择“Microsoft Intune” > “客户端应用” > “应用” > “添加”     。 在“添加应用”边栏选项卡的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”     。 在“应用套件设置”边栏选项卡中选择“语言”   。 有关其他信息，请参阅 [Office 365 专业增强版中的语言部署概述](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
+    可以为通过 Intune 管理的 Office 365 专业增强版应用部署其他语言。 可用语言列表包括语言包的“类型”（核心、部分和校对）  。 在 Azure 门户中，选择“Microsoft Intune” > “应用” > “所有应用” > “添加”     。 在“添加应用”窗格的“应用类型”列表中，选择“Office 365 套件”下的“Windows 10”     。 在“应用套件设置”窗格中选择“语言”   。 有关其他信息，请参阅 [Office 365 专业增强版中的语言部署概述](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)。
 
 ## <a name="select-scope-tags-optional"></a>选择作用域标记（可选）。
 可以使用作用域标记来确定谁可以在 Intune 中查看客户端应用信息。 若要详细了解作用域标记，请参阅[将基于角色的访问控制和作用域标记用于分布式 IT](../fundamentals/scope-tags.md)。
@@ -138,7 +136,7 @@ ms.locfileid: "73635407"
 
 ## <a name="enter-xml-format"></a>输入 XML 格式
 
-如果选择“设置格式”下拉框下方的“输入 XML 数据”选项，将看到“添加应用”边栏选项卡中的“输入 XML 格式”选项     。 有关详细信息，请参阅 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
+如果选择“设置格式”下拉框下方的“输入 XML 数据”选项，将看到“添加应用”窗格中的“输入 XML 格式”选项     。 有关详细信息，请参阅 [Office 部署工具的配置选项](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
 
 ## <a name="finish-up"></a>完成
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497958"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563956"
 ---
 # <a name="configure-microsoft-launcher"></a>配置 Microsoft Launcher
 
@@ -33,7 +33,7 @@ Microsoft Launcher 是一款 Android 应用程序，它允许用户对手机进�
 
 ## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>如何配置 Microsoft 托管主屏幕应用 
 
-在 Azure 门户中导航到 Intune 控制台，然后转到“客户端应用” > “应用配置策略”   。 为运行“Android”的“托管设备”添加配置策略，并选择“Microsoft Launcher”作为关联应用   。 单击“配置设置”以配置不同的可用托管主屏幕设置  。 
+导航到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然后选择“应用”   > “应用配置策略”  。 为运行“Android”的“托管设备”添加配置策略，并选择“Microsoft Launcher”作为关联应用   。 单击“配置设置”以配置不同的可用托管主屏幕设置  。 
 
 ## <a name="choosing-a-configuration-settings-format"></a>选择配置设置格式 
 

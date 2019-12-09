@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540754"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563998"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 将应用分配到组
 
@@ -55,13 +55,12 @@ ms.locfileid: "74540754"
 
 ## <a name="assign-an-app"></a>分配应用
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在菜单的“管理”部分中选择“应用”   。
-5. 在  “应用”窗格中，选择你想要分配的应用。
-6. 在菜单的“管理”部分中选择“分配”   。
-7. 选择  “添加组”以打开与该应用相关的  “添加组”窗格。
-8. 对于特定应用，请选择  “分配类型”：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”  。
+3. 在  “应用”窗格中，选择你想要分配的应用。
+4. 在菜单的“管理”部分中选择“分配”   。
+5. 选择  “添加组”以打开与该应用相关的  “添加组”窗格。
+6. 对于特定应用，请选择  “分配类型”：
    - **适用于已注册的设备**：将应用分配给可从公司门户应用或网站安装应用的用户组。
    - **注册与否都可用：** 可将此应用分配到未将其设备注册到 Intune 的用户组。 必须为用户分配 Intune 许可证，请参阅 [Intune 许可证](../fundamentals/licenses.md)。
    - **必需**：应用安装在所选组中的设备上。 在应用安装开始之前，某些平台可能会显示需最终用户确认的其他提示。
@@ -76,13 +75,13 @@ ms.locfileid: "74540754"
      >
      > 对于“可用于已注册的设备”  ：只有当登录到公司门户的用户是注册了设备的主要用户且应用适用于设备时，应用才显示为可用。
 
-9. 要选择受此应用分配影响的用户组，请选择“包括的组”  。
-10. 选择要包括的一个或多个组后，请选择“选择”  。
-11. 在“分配”窗格中选择“确定”，完成包括的组选择   。
-12. 如果想排除受此应用分配影响的任何用户组，请选择“排除组”  。
-13. 如果已选择排除任何组，请在“选择组”中选择“选择”   。
-14. 在“添加组”  窗格中，选择“确定”  。
-15. 在应用的  “分配”窗格中，选择“保存”  。
+7. 要选择受此应用分配影响的用户组，请选择“包括的组”  。
+8. 选择要包括的一个或多个组后，请选择“选择”  。
+9. 在“分配”窗格中选择“确定”，完成包括的组选择   。
+10. 如果想排除受此应用分配影响的任何用户组，请选择“排除组”  。
+11. 如果已选择排除任何组，请在“选择组”中选择“选择”   。
+12. 在“添加组”  窗格中，选择“确定”  。
+13. 在应用的  “分配”窗格中，选择“保存”  。
 
 应用现已分配给所选组。 若要深入了解如何包括和排除应用分配，请参阅[包括和排除应用分配](apps-inc-exl-assignments.md)。
 

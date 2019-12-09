@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3153a470649e86bbafc9e8295a1c68532fc27c63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec800064d109cca42878c79ade6777de9b782015
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497698"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563506"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>将 Android 应用商店应用添加到 Microsoft Intune
 
@@ -35,12 +35,10 @@ ms.locfileid: "72497698"
 
 通过执行以下步骤，从 Azure 门户将 Android 应用商店应用添加到 Intune：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在“Intune”窗格中，选择“客户端应用”   。
-4. 在“客户端应用”工作负载窗格的“管理”下，选择“应用”    。
-5. 选择“添加”  。
-6. 在“添加应用”窗格中的“应用商店应用”类型下，选择“Android”    。
-7. 若要配置应用信息，请选择“配置”，然后提供以下信息  。 对于 Android 应用，导航到 [Google Play 应用商店](https://play.google.com/store) 并搜索要部署的应用。 选择应用，并记下应用的详细信息。 某些值可能已自动填充（具体取决于所选应用）。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”   > “添加”  。
+3. 在“添加应用”窗格中的“应用商店应用”类型下，选择“Android”    。
+4. 若要配置应用信息，请选择“配置”，然后提供以下信息  。 对于 Android 应用，导航到 [Google Play 应用商店](https://play.google.com/store) 并搜索要部署的应用。 选择应用，并记下应用的详细信息。 某些值可能已自动填充（具体取决于所选应用）。
     - **名称**：输入要在公司门户中显示的应用名称。 请确保使用唯一的应用名称。 如果应用名称重复，则在公司门户中仅向用户显示一个名称。
     - **说明**：输入应用的描述。 在公司门户中向用户显示该描述。
     - **发布者**：输入应用发布者的名称。
@@ -54,8 +52,8 @@ ms.locfileid: "72497698"
     - **所有者**：（可选）输入此应用的所有者的名称（例如，HR 部门  ）。
     - **备注**：（可选）输入要与此应用关联的任何备注。
     - **徽标**：（可选）：上传将与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
-8. 选择“确定”  。
-9. 选择“添加”  。
+5. 选择“确定”  。
+6. 选择“添加”  。
 
 此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 
 

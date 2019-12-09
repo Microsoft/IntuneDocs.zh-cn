@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059724"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563467"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本
 
@@ -62,7 +62,7 @@ Intune 管理扩展具有以下先决条件。 满足先决条件后，在向用
     
     - 用户使用其 Azure AD 帐户登录设备，然后在 Intune 中进行注册。
 
-  - 使用 Configuration Manager 和 Intune 的共同托管设备。 确保将  “客户端应用”工作负载设置为“试点 Intune”  或“Intune”  。 若要获取指南，请参阅下列文章： 
+  - 使用 Configuration Manager 和 Intune 的共同托管设备。 确保将  “应用”工作负载设置为“试点 Intune”  或“Intune”  。 若要获取指南，请参阅下列文章： 
   
     - [什么是共同管理](https://docs.microsoft.com/sccm/comanage/overview) 
     - [“客户端应用”工作负载](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ Intune 管理扩展具有以下先决条件。 满足先决条件后，在向用
 
 ## <a name="create-a-script-policy-and-assign-it"></a>创建脚本策略并分配该策略
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备配置” > “PowerShell 脚本” > “添加”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “PowerShell 脚本”   > “添加”  。
 
     ![在 Microsoft Intune 中添加和使用 PowerShell 脚本](./media/intune-management-extension/mgmt-extension-add-script.png)
 

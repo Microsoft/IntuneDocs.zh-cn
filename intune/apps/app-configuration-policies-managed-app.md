@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ddb9ec795b9cc8842cbc6c9d33897b5e0f45e88
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547994"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564279"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>为受管理应用添加应用配置策略（无需设备注册）
 
@@ -31,18 +31,15 @@ ms.locfileid: "74547994"
 
 可将应用配置策略用于托管应用，这些应用甚至在未注册设备上也支持 Intune App SDK。 
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 选择“客户端应用”工作负载  。
-4. 在“管理”组中，选择“应用配置策略”，然后选择“添加”    。
-5. 设置以下详细信息：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “应用配置策略”   > “添加”   > “托管应用”  。
+3. 设置以下详细信息：
     - **名称**  
       在 Azure 门户中显示的配置文件名称。
     - **描述**  
       在 Azure 门户中显示的配置文件说明。
-    - **设备注册类型**  
-      选择“管理应用”  。
-6. 选择“关联的应用”以选择要配置的应用  。 从已同意并与 Intune 同步的应用列表中选择应用。
-7. 对于该应用支持的每个配置设置，请键入“名称”和“值”，然后选择省略号 (…)    。  
+4. 选择“选择公共应用”  或“选择自定义应用”  以选择要配置的应用。 从已同意并与 Intune 同步的应用列表中选择应用。
+5. 对于该应用支持的每个配置设置，请键入“名称”和“值”   。  
     若要删除配置，请选择省略号 (…)，然后选择“删除”   。  
     
 启用了 Intune App SDK 的应用支持键值对形式的配置。 若要详细了解支持哪些键值配置，请参阅每个应用的相关文档。 请注意，可使用将由应用程序生成的数据动态填充的令牌。 有关 Outlook for iOS 应用配置策略设置的相关信息，请参阅[使用 Microsoft Intune 管理 Outlook for iOS 应用配置](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx)。

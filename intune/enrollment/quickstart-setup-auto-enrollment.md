@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709509"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562312"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入门：设置适用于 Windows 10 设备的自动注册
 
@@ -41,7 +41,7 @@ ms.locfileid: "73709509"
 
 本示例将使用 MDM 注册，以便可以自动注册公司设备和自带设备。 你将注册免费的 Azure Active Directory Premium 订阅。
 
-1. 在 Azure 中，选择“Azure Active Directory” > “移动性(MDM 和 MAM)”   。
+1. 在 [Azure 门户](https://portal.azure.com)中，选择“Azure Active Directory” > “移动性(MDM 和 MAM)”   。
 2. 选择“获取免费的 Premium 试用版以使用此功能”  。 选择此选项将允许使用 Azure Active Directory Premium 免费试用版进行自动注册。 
 
     ![选择 Azure Active Directory Premium 免费试用版](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

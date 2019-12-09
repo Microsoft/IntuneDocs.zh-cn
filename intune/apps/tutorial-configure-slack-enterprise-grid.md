@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496721"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563400"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教程：配置 Slack 以将 Intune 用于 EMM 和应用配置
 
@@ -55,7 +55,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 
 ### <a name="add-slack-for-emm-to-intune"></a>将用于 EMM 的 Slack 添加到 Intune
 将用于 EMM 的 Slack 添加为 Intune 中的托管 iOS 应用，并分配 Slack 用户。 由于应用都是平台特定的应用，因此需要为 Android 设备的 Slack 用户添加单独的 Intune 应用。
-1. 在 Intune 中，选择“客户端应用” > “应用” > “添加”    。
+1. 在 Intune 中，选择“应用”   > “所有应用”   > “添加”  。
 2. 在“应用类型”下，选择“应用商店应用 - iOS”。 
 3. 选择“搜索 App Store”  。 输入搜索词“用于 EMM 的 Slack”，选择此应用。
 4. 选择“应用信息”，并在必要时配置任意更改。 
@@ -71,7 +71,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>为用于 EMM 的 Slack 添加应用配置策略
 为 iOS 版用于 EMM 的 Slack 添加应用配置策略。 托管设备的应用配置策略都是特定于平台的，因此需要为 Android 设备的 Slack 用户添加单独的策略。
-1. 在 Intune 中，选择“客户端应用”   > “应用配置策略”   > “添加”  。
+1. 在 Intune 中，选择“应用”   > “应用配置策略”   > “添加”  。
 2. 在“名称”中输入“Slack 应用配置策略测试”。
 3. 在“设备注册类型”下，选择“托管设备”。 
 4. 在“平台”下，选择“iOS”。 
@@ -107,7 +107,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 
 ### <a name="add-slack-to-intune"></a>将 Slack 添加到 Intune
 将 Slack 添加为 Intune 中的托管 Google Play 应用，并分配 Slack 用户。 由于应用都是平台特定的应用，因此需要为 iOS 设备的 Slack 用户添加单独的 Intune 应用。
-1. 在 Intune 中，选择“客户端应用” > “应用” > “添加”    。
+1. 在 Intune 中，选择“应用”   > “所有应用”   > “添加”  。
 2. 在“应用类型”下，选择“应用商店应用 - 托管 Google Play”。 
 3. 选择“托管 Google Play - 批准”  。 输入搜索词“用于 EMM 的 Slack”，选择此应用。
 4. 选择“批准”。 
@@ -122,7 +122,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>为 Slack 添加应用配置策略
 为 Slack 添加应用配置策略。 托管设备的应用配置策略都是特定于平台的，因此需要为 iOS 设备的 Slack 用户添加单独的策略。
-1. 在 Intune 中，选择“客户端应用”   > “应用配置策略”   > “添加”  。
+1. 在 Intune 中，选择“应用”   > “应用配置策略”   > “添加”  。
 2. 在“名称”中输入“Slack 应用配置策略测试”。
 3. 在“设备注册类型”下，选择“托管设备”。 
 4. 在“平台”下，选择“Android”。 
