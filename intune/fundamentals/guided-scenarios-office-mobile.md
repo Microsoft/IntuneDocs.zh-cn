@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585704"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>引导式方案 - 保护 Microsoft Office 移动应用 
@@ -105,7 +105,7 @@ Office 移动应用以及 Microsoft Edge for Mobile 都支持双重标识。 使
 
 在此步骤中，必须配置在这些应用中访问和共享公司文件和电子邮件的相关要求。 默认情况下，用户可以将数据保存到组织的 OneDrive 和 SharePoint 帐户。
 
-| Setting | 描述 | 默认值 |
+| 设置 | 描述 | 默认值 |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | PIN 类型 | 数值 PIN 由所有数字组成。 密码由字母数字字符和特殊字符组成。  在 iOS/iPadOS 上，若要配置“密码”类型，应用必须安装 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 | 数字 |
 | 选择最小 PIN 长度 | 指定 PIN 序列必须包含的最小位数。 | 6 |

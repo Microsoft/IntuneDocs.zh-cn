@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73415113"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 网络配置要求和带宽
@@ -64,7 +64,7 @@ ms.locfileid: "73415113"
 下面是针对缓存 Intune 客户端内容的代理服务器所使用的典型设置。
 
 
-|          Setting           |           建议的值           |                                                                                                  详细信息                                                                                                  |
+|          设置           |           建议的值           |                                                                                                  详细信息                                                                                                  |
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         缓存大小         |             5 GB 到 30 GB             | 该值因网络中客户端计算机的数量和你使用的配置而异。 为了防止文件被过早删除，请针对你的环境调整缓存的大小。 |
 | 单个缓存文件大小 |                950 MB                 |                                                                     此设置可能不会在所有缓存代理服务器中可用。                                                                     |

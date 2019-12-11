@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71912747"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>启用 Windows 10 自动注册
@@ -52,4 +52,4 @@ ms.locfileid: "71912747"
 
 6. 选择“保存”  。
 
-默认情况下，不会为该服务启用双因素身份验证。 但是，在注册设备时，建议启用双重身份验证。 要启用双因素身份验证，请在 Azure AD 中配置一个双因素身份验证提供程序，并为用户帐户配置多重身份验证。 请参阅[Azure 多重身份验证服务器入门](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
+默认情况下，不会为该服务启用双因素身份验证。 但是，在注册设备时，建议启用双因素身份验证。 要启用双因素身份验证，请在 Azure AD 中配置一个双因素身份验证提供程序，并为用户帐户配置多重身份验证。 请参阅[Azure 多重身份验证服务器入门](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。

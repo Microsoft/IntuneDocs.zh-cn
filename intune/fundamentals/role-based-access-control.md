@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509808"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的基于角色的访问控制 (RBAC)
@@ -64,7 +64,7 @@ ms.locfileid: "72509808"
 | 条件访问管理 | 无 | 无 |
 | 安全管理员 | 只读 | 只读 |
 | 安全操作员 | 只读 | 只读 |
-| 安全性读者 | 只读 | 只读 |
+| 安全读取者 | 只读 | 只读 |
 | 合规性管理员 | 无 | 只读 |
 | 符合性数据管理员 | 无 | 只读 |
 | 全局读取者 | 只读 | 只读 |

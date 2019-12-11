@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712910"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>为 Intune 中不符合要求的设备自动发送电子邮件和添加操作
@@ -50,8 +50,7 @@ ms.locfileid: "73712910"
 
 - 至少需具备一个设备符合性策略，才能设置针对非符合性的操作。 要创建设备符合性策略，请参阅以下平台：
 
-  - [Android
-](compliance-policy-create-android.md)
+  - [Android](compliance-policy-create-android.md)
   - [Android 工作配置文件](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)

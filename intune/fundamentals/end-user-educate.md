@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502889"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何使最终用户了解 Microsoft Intune
@@ -63,7 +63,7 @@ __Intune 会给用户带来哪些不便？__  认识并尊重用户安装应用�
 
 * __深入了解。__ Intune 的用户体验也会影响工作效率。 了解用户体验可以让你更轻松地解决设备和用户问题。 例如，可以学习和了解用户获取应用的方式。 提前了解此信息可以更加快速容易地诊断和解决问题。
 
-* **Outlook Web Access (OWA)**
+* **Android**
   * [通过 Intune 使用 Android 设备](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
   * [Android 用户如何获取其应用](end-user-apps-android.md)
 
