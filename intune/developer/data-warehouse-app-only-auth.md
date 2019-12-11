@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dacf8b6498175e9e7658689bee3a527e684cc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bce5d4377a1f5a591c71ff704937afeaccabf429
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490713"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899364"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune 数据仓库仅应用程序身份验证
 
 你可以使用 Azure Active Directory (Azure AD) 设置应用程序并通过 Intune 数据仓库进行身份验证。 此过程适用于应用程序不应在其中具有用户凭据访问权限的网站、应用和后台进程。 通过以下步骤，可以使用 OAuth 2.0 借助 Azure AD 向应用程序授权。
 
-## <a name="authorization"></a>授权
+## <a name="authorization"></a>Authorization
 
 Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure  AD  租户中授予对  Web  应用程序和  Web  API  的访问权限。 本指南介绍了如何使用 C# 对应用程序进行身份验证。 OAuth 2.0 规范的第 4.1 节介绍了 OAuth 2.0 授权代码流。 有关详细信息，请参阅[授权使用 OAuth 2.0 和 Azure Active Directory 访问 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)。
 
@@ -77,7 +77,7 @@ Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure 
 在本部分中，将授予应用程序权限。
 
 1. 在“设置”  边栏选项卡上，选择“必需权限”  。
-2. 单击“添加”  。
+2. 单击 **“添加”** 。
 3. 选择“添加 API”，以显示“选择 API”边栏选项卡   。
 4. 从“选择 API”边栏选项卡选择“Microsoft Intune API (MicrosoftIntuneAPI)”，然后单击“选择”。    已选择“选择权限”步骤，并已显示“启用访问权限”边栏选项卡。  
 5. 从“应用程序权限”部分选择“从 Microsoft Intune 获取数据仓库信息”选项   。

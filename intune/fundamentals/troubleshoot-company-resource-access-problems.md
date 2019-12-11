@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509787"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Microsoft Intune 中的常见错误代码和说明
@@ -47,7 +47,7 @@ ms.locfileid: "72509787"
 |110 (APP_CI_ENFORCEMENT_ERROR)|内容哈希不匹配||
 |120 (APP_CI_ENFORCEMENT_ERROR)|未启用 SLK/边载||
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP 许可证安装失败||
-|无状态 (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|状态当前未知。|
+|无状态 (APP_CI_ENFORCEMENT_UNKNOWN)|不适用|状态当前未知。|
 
 ## <a name="company-resource-access-common-errors"></a>公司资源访问（常见错误）
 

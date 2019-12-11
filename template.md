@@ -15,10 +15,10 @@ ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
 ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68354408"
 ---
 # <a name="metadata-and-markdown-template"></a>元数据和标记模板
@@ -70,7 +70,7 @@ ms.locfileid: "68354408"
 
 
 
-## <a name="links"></a>Links
+## <a name="links"></a>链接
 
 若要链接到同一个存储库中的标记文件，请使用[相对链接](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)。 
 
@@ -185,7 +185,7 @@ ms.locfileid: "68354408"
 
 ## <a name="alerts"></a>警报
 
-### <a name="note"></a>备注
+### <a name="note"></a>注意
 
 > [!NOTE]
 > 这是说明
@@ -200,7 +200,7 @@ ms.locfileid: "68354408"
 > [!TIP]
 > 这是提示
 
-### <a name="important"></a>重要
+### <a name="important"></a>要点
 
 > [!IMPORTANT]
 > 这是重要事项

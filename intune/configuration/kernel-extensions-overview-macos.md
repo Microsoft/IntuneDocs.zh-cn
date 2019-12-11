@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059353"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>在 Intune 中添加 macOS 内核扩展
@@ -41,7 +41,7 @@ ms.locfileid: "74059353"
 
 - 使用 Apple 设备注册计划（DEP）在 Intune 中注册。 [自动注册 macOS 设备](../enrollment/device-enrollment-program-enroll-macos.md)包含详细信息。
 
-  要么
+  或者
 
 - 已在 Intune 中注册 "用户已批准的注册" （Apple 术语）。 为 macOS High （打开 Apple 的网站）[中的内核扩展准备更改](https://support.apple.com/en-us/HT208019)提供了详细信息。
 

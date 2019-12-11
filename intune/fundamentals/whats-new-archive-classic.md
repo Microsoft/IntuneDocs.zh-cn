@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72999519"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 经典门户中的新增功能 - 前几个月
@@ -202,7 +202,7 @@ Microsoft 已宣布发布 Microsoft Teams 的通用版本。 适用于 iOS 和 A
 ### <a name="new-capabilities"></a>新功能
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>公司门户网站现代化 <!--753980-->
-公司门户网站将支持面向不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![（汉堡菜单的小图，该图片现已添加到公司门户网站左上角，](./media/whats-new-archive-classic/CP_hamburger_menu.png)。
+公司门户网站将支持面向不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![（汉堡菜单的小图，该图片现已添加到公司门户网站左上角，](./media/whats-new-archive-classic/CP_hamburger_menu.png).
 
 ### <a name="notices"></a>通知
 
@@ -275,7 +275,7 @@ Intune 现在完全支持并可管理 Android 7.1.1。
 iOS 版公司门户应用内的链接（包括文档和应用链接）将通过 Safari 的应用内视图直接在公司门户应用中打开。 此更新将与 1 月的服务更新分开提供。
 
 #### <a name="modernizing-the-company-portal-website---753980--"></a>公司门户网站现代化 <!--753980-->
-从 2 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![公司门户网站汉堡菜单](./media/whats-new-archive-classic/CP_hamburger_menu.png)。
+从 2 月开始，公司门户网站将支持针对不具有托管设备的用户的应用。 此网站将使用新的撞色配色方案、动态图和“汉堡菜单” ![公司门户网站汉堡菜单](./media/whats-new-archive-classic/CP_hamburger_menu.png).
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>新的应用保护策略文档 <!--583398-->
 针对想要使用 Intune 应用包装工具或 Intune App SDK 在 iOS 和 Android 应用中启用应用保护策略（称为 MAM 策略）的管理员和应用开发人员，我们更新了相关文档。

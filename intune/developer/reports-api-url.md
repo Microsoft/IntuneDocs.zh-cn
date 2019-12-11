@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490458"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 数据仓库 API 终结点
@@ -31,7 +31,7 @@ ms.locfileid: "72490458"
 
 [!INCLUDE [reports-credential-reqs](../includes/reports-credential-reqs.md)]
 
-## <a name="authorization"></a>授权
+## <a name="authorization"></a>Authorization
 
 Azure Active Directory (Azure AD) 使用 OAuth 2.0 使你能够在你的  Azure  AD  租户中授予对  Web  应用程序和  Web  API  的访问权限。 本指南介绍如何在不使用任何开源库的情况下发送和接收 HTTP 消息（无语言限制）。 OAuth 2.0 规范的[第 4.1 节](https://tools.ietf.org/html/rfc6749#section-4.1)介绍了 OAuth 2.0 授权代码流。
 
@@ -78,7 +78,7 @@ Intune 的 URL 使用以下格式：
 > [!NOTE]
 > 筛选器示例假定现在是 2019/2/21。
 
-|                             Filter                             |           性能优化           |                                          描述                                          |
+|                             筛选                             |           性能优化           |                                          描述                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完整                                      |    返回 `DateKey` 介于 20180214 至 20180221 的数据。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    返回 `DateKey` 等于 20180214 的数据。                                                    |

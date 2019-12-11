@@ -17,10 +17,10 @@ ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 92d81e383a9964aaecbdd151397879236ffcb726
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72493555"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune 中用于配置电子邮件、身份验证和同步的 Android Enterprise 设备设置
@@ -33,7 +33,7 @@ Intune 管理员可以为工作配置文件中的 Android Enterprise 设备创�
 
 若要详细了解 Intune 中的电子邮件配置文件，请参阅[配置电子邮件设置](email-settings-configure.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 创建[设备配置文件](email-settings-configure.md#create-a-device-profile)（选择工作配置文件）或创建[应用配置策略](../apps/app-configuration-policies-use-android.md)。
 

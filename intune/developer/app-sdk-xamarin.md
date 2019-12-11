@@ -5,7 +5,7 @@ keywords: sdk、Xamarin、intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec234a3d93127a26af4203a4776545602334858b
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: aa8d4fd8dabd862899cab116c61d4ae4584d398c
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709552"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899379"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -54,7 +54,7 @@ ms.locfileid: "73709552"
 
 ## <a name="prerequisites"></a>必备条件
 
-查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
+查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款副本用于记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
 
 Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) 实现它的[身份验证](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)和条件启动方案，这需要使用 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) 配置应用。 
 
@@ -126,7 +126,7 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `OnCreate()` 并调用 `base.OnCreate()`）时，`Activity` 必须替代 `OnMAMCreate()` 并调用 `base.OnMAMCreate()`。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 应用程序](app-sdk-android.md#mamapplication)
-应用必须定义 `Android.App.Application` 类。 如果手动集成 MAM，则它必须从 `MAMApplication` 继承。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
+应用必须定义 `Android.App.Application` 类。 如果手动集成 MAM，则它必须从 `MAMApplication`继承。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
 
 ```csharp
     [Application]
@@ -223,5 +223,5 @@ Intune SDK Xamarin 绑定依赖于设备上是否存在[公司门户](https://pl
 ### <a name="sample-applications"></a>示例应用程序
 用于突出显示 Xamarin 和 Xamarin 中的 MAM 功能的示例应用程序。 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)上提供了 Forms 应用。
 
-## <a name="support"></a>Support
+## <a name="support"></a>支持
 如果你的组织已经是 Intune 客户，请与 Microsoft 支持代表合作，以开立支持票证，并在 [GitHub 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建问题。 我们很快就会帮助我们。 

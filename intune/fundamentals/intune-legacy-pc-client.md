@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510188"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 控制台上的 Intune 和旧版 Intune PC 客户端
@@ -63,7 +63,7 @@ Intune PC 客户端管理工作流使用[基于 Silverlight 的 Intune 管理控
 若要从使用 Intune PC 客户端管理 Windows 10 设备切换到使用 MDM 进行管理，请执行以下步骤：
 
 1. 在 Silverlight 控制台中，执行选择性擦除  以从 PC 客户端中取消注册设备。
-  ![Warning popup，并选中 "选择性擦除设备" 单选按钮 ](./media/intune-legacy-pc-client/image02.png)
+  ![警告 popup，并选中 "选择性擦除设备" 单选按钮](./media/intune-legacy-pc-client/image02.png)
 2. 通过使用 [MDM（和/或 Azure AD 加入）](../enrollment/windows-enroll.md)重新注册设备。
 
 ## <a name="next-steps"></a>后续步骤

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
-ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74319834"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>在 Microsoft Intune 中使用适用于 Android Enterprise 设备的自定义设置
@@ -63,7 +63,7 @@ Intune 支持以下有限数量的 Android 企业自定义配置文件：
       - 日期和时间
       - 整数
       - 浮点
-      - 布尔值
+      - 布尔
       - Base64（文件）
 
     - **值**：输入要与已输入的 OMA-URI 关联的数据值。 值取决于所选的数据类型。 例如，如果选择了“日期和时间”，则从日期选取器中选择值  。

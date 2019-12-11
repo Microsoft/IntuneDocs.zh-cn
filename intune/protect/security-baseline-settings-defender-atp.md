@@ -5,7 +5,7 @@ description: Intune 支持用于管理 Microsoft Defender 高级威胁防护的�
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060053"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882325"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 高级威胁防护基线设置
 
@@ -593,8 +593,18 @@ ms.locfileid: "74060053"
 - **配置 Windows Hello 企业版** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello 企业版是一种取代密码、智能卡和虚拟智能卡登录 Windows 的替代方法。  
 
-  - 如果设置为 *"是"* ，则会启用此策略，并且设备将设置 Windows Hello 企业版。  
-  - 当设置为 "*未配置*" 时，基线不会影响设备的策略设置。 这意味着，如果在设备上禁用 Windows Hello 企业版，则该设备将保持禁用状态。 如果启用，它将保持启用状态。 
+
+  > [!IMPORTANT]
+  > 此设置的选项从其隐含含义中恢复。 相反，如果值为 *"是"* ，则不启用 Windows Hello，而是被视为*未配置*。 如果此设置设置为 "*未配置*"，则在接收此基线的设备上启用 Windows Hello。
+  >
+  > 已对以下说明进行修订以反映此行为。 在此安全基线的将来更新中，将修复设置的设置。
+
+  - 如果设置为 "*未配置*"，则会启用 windows hello，并且设备将设置 Windows Hello 企业版。
+  - 当设置为 *"是"* 时，基线不影响设备的策略设置。 这意味着，如果在设备上禁用 Windows Hello 企业版，则该设备将保持禁用状态。 如果已启用，则保持启用状态。
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   不能通过此基线禁用 Windows Hello 企业版。 你可以在配置[windows 注册](windows-hello.md)时禁用 Windows Hello 企业版，或作为[标识保护](identity-protection-configure.md)的设备配置文件的一部分。  
 

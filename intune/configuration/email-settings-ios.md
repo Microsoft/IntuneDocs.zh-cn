@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 73de0ac94ff02e43fe73ca6357f6008ba71e3b93
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390821"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加邮件设置
@@ -28,7 +28,7 @@ ms.locfileid: "74390821"
 
 本文列出并说明适用于运行 iOS 的设备的所有电子邮件设置。 可以创建设备配置文件，将这些电子邮件设置推送或部署到 iOS 设备。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](../email-settings-configure.md)。
 

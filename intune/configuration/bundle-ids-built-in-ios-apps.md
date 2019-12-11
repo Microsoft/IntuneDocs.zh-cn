@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74465628"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>可以在 Intune 中使用的内置 iOS 应用的程序包 ID
@@ -56,19 +56,19 @@ ms.locfileid: "74465628"
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | 映射         | Apple     |
 | .com. 度量值           | 测量      | Apple     |
-| com.apple.MobileSMS         | 消息     | Apple     |
+| com.apple.MobileSMS         | Messages     | Apple     |
 | com.apple.Music             | 音乐        | Apple     |
 | com.apple.news              | 新闻         | Apple     |
-| com.apple.mobilenotes       | 注意        | Apple     |
+| com.apple.mobilenotes       | 注释        | Apple     |
 | com.apple.Numbers           | 数字      | Apple     |
 | com.apple.Pages             | 页面        | Apple     |
-| com.apple.mobilephone       | 电话        | Apple     |
+| com.apple.mobilephone       | 电话号码        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | 照片       | Apple     |
 | com.apple.podcasts          | 播客     | Apple     |
 | com.apple.reminders         | 提醒    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | 设置     | Apple     |
+| com.apple.Preferences       | Settings     | Apple     |
 | .com。快捷方式         | 快捷方式    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 股票       | Apple     |

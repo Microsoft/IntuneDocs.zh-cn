@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491926"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946625"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Android 企业设备设置，用于在 Intune 中配置 VPN
 
@@ -32,7 +32,10 @@ Intune 管理员可以创建 VPN 设置，并将它们分配到 Android Enterpri
 
 若要详细了解 Intune 中的 VPN 配置文件，请参阅[vpn 配置文件](vpn-settings-configure.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+> [!NOTE]
+> 若要配置 always on VPN，需要创建 VPN 配置文件，并在配置了 Alwayson VPN 设置的情况下创建[设备限制](device-restrictions-android-for-work.md#connectivity)配置文件。
+
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](vpn-settings-configure.md#create-a-device-profile)，并选择“Android Enterprise”  。
 

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503454"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
@@ -232,7 +232,7 @@ MSAL-开发人员需要在 AAD 中创建应用注册，其中的自定义重定�
 ### <a name="special-considerations-when-using-msal"></a>使用 MSAL 时的特殊注意事项 
 
 1. **检查 Web 视图**-建议应用程序不要将 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 用作应用程序启动的任何 MSAL 交互身份验证操作的 web 视图。 如果出于某种原因，应用必须将这些 webview 之一用于任何交互式 MSAL auth 操作，它还必须将 `SafariViewControllerBlockedOverride` 设置为在应用程序的 info.plist 中的 `IntuneMAMSettings` 字典下 `true`。 警告：这将关闭 Intune 的 SafariViewController 挂钩以启用身份验证会话。 当应用程序使用 SafariViewController 查看公司数据时，这会在应用程序中的其他地方冒数据泄漏，因此应用程序不应在任何这些 web 视图类型中显示公司数据。
-2. 如果在这种情况下，必须**同时链接 adal 和 MSAL** -开发人员希望 Intune 更喜欢 MSAL over adal，则必须选择加入。 默认情况下，如果两个版本都在运行时链接，则 Intune 将更倾向于受支持的 MSAL 版本。 Intune 将仅在 Intune 第一次身份验证操作时首选受支持的 MSAL 版本，在 `NSUserDefaults` 中 `true` `IntuneMAMUseMSALOnNextLaunch`。 如果 `IntuneMAMUseMSALOnNextLaunch` `false` 或未设置，Intune 将回退为默认行为。 顾名思义，对 `IntuneMAMUseMSALOnNextLaunch` 所做的更改将在下一次启动时生效。
+2. 如果在这种情况下，必须**同时链接 adal 和 MSAL** -开发人员希望 Intune 更喜欢 MSAL over adal，则必须选择加入。 默认情况下，如果两个版本都在运行时链接，则 Intune 将更倾向于受支持的 MSAL 版本。 Intune 将仅在 Intune 第一次身份验证操作时首选受支持的 MSAL 版本，在 `NSUserDefaults`中 `true` `IntuneMAMUseMSALOnNextLaunch`。 如果 `IntuneMAMUseMSALOnNextLaunch` `false` 或未设置，Intune 将回退为默认行为。 顾名思义，对 `IntuneMAMUseMSALOnNextLaunch` 所做的更改将在下一次启动时生效。
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 设置
@@ -243,32 +243,32 @@ MSAL-开发人员需要在 AAD 中创建应用注册，其中的自定义重定�
 
 其中的一些设置可能已在前面各节中提及，一些设置则不适用于所有应用。
 
-Setting  | 类型  | 定义 | 是否必需？
+设置  | 类型  | 定义 | 是否必需？
 --       |  --   |   --       |  --
 ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 对于使用 MSAL 的所有应用和访问非 Intune AAD 资源的任何 ADAL 应用都是必需的。 |
 ADALAuthority | 字符串 | 应用使用的 Azure AD 颁发机构。 应使用已配置 AAD 帐户的你自己的环境。 | 如果应用使用 ADAL 或 MSAL 访问非 Intune AAD 资源，则是必需的。 如果此值不存在，则使用 Intune 默认值。|
 ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 对于所有使用 MSAL 的应用程序和访问非 Intune AAD 资源的任何 ADAL 应用，都需要 ADALRedirectUri 或 ADALRedirectScheme。  |
 ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 对于所有使用 MSAL 的应用程序和访问非 Intune AAD 资源的任何 ADAL 应用，都需要 ADALRedirectUri 或 ADALRedirectScheme。 |
-ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否会将所有 ADAL/MSAL 日志（包括应用的 ADAL 调用（若有））路由到它自己的日志文件。 默认值为 NO。 如果应用将设置自己的 ADAL/MSAL 日志回叫，则设置为“YES”。 | 可选。 |
+ADALLogOverrideDisabled | 布尔  | 指定 SDK 是否会将所有 ADAL/MSAL 日志（包括应用的 ADAL 调用（若有））路由到它自己的日志文件。 默认为“否”。 如果应用将设置自己的 ADAL/MSAL 日志回叫，则设置为“YES”。 | 可选。 |
 ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL/MSAL 缓存（而不是“com.microsoft.adalcache”）的密钥链组。 注意，这并不包含应用 ID 前缀。 这将作为运行时所提供字符串的前缀。 | 可选。 |
 AppGroupIdentifiers | 字符串数组  | 应用的授权 com.apple.security.application 组部分的应用组数组。 | 如果应用使用应用组，则需要此设置。 |
 ContainingAppBundleId | 字符串 | 指定扩展的包含应用程序的程序包 ID。 | iOS 扩展需要此设置。 |
-DebugSettingsEnabled| 布尔值 | 如果设置为“是”，则可以应用设置包中的测试策略。 应用程序*不*会因启用此设置而提供。 | 可选。 默认值为“否”。 |
-AutoEnrollOnLaunch| 布尔值| 指定在检测到现有托管标识且应用尚未注册时，应用是否应尝试在启动时自动注册。 默认值为 NO。 <br><br> 注意：如果找不到任何托管标识，或 ADAL/MSAL 缓存中无任何有效标识令牌可用，那么注册尝试会静默失败，而不会提示输入凭据，除非应用也将 MAMPolicyRequired 设置为“YES”。 | 可选。 默认值为“否”。 |
-MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为 YES 时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 | 可选。 默认值为“否”。 |
-MAMPolicyWarnAbsent | 布尔值| 如果应用没有 Intune 应用保护策略，指定应用是否在启动期间警告用户。 <br><br> 注意：解除警报后，仍将允许用户在没有策略的情况下使用应用。 | 可选。 默认值为“否”。 |
-MultiIdentity | 布尔值| 指定应用是否识别多身份标识。 | 可选。 默认值为“否”。 |
-SafariViewControllerBlockedOverride | 布尔值| 禁用 Intune 的 SafariViewController 挂钩，通过 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 启用 MSAL authentication。 | 可选。 默认值为“否”。 警告：如果使用不当，可能会导致数据泄漏。 仅在绝对必要时启用。 有关详细信息，请参阅[使用 MSAL 时的特殊注意事项](#special-considerations-when-using-msal)。  |
+DebugSettingsEnabled| 布尔 | 如果设置为“是”，则可以应用设置包中的测试策略。 应用程序*不*会因启用此设置而提供。 | 可选。 默认值为“否”。 |
+AutoEnrollOnLaunch| 布尔| 指定在检测到现有托管标识且应用尚未注册时，应用是否应尝试在启动时自动注册。 默认为“否”。 <br><br> 注意：如果找不到任何托管标识，或 ADAL/MSAL 缓存中无任何有效标识令牌可用，那么注册尝试会静默失败，而不会提示输入凭据，除非应用也将 MAMPolicyRequired 设置为“YES”。 | 可选。 默认值为“否”。 |
+MAMPolicyRequired| 布尔| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为 YES 时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 | 可选。 默认值为“否”。 |
+MAMPolicyWarnAbsent | 布尔| 如果应用没有 Intune 应用保护策略，指定应用是否在启动期间警告用户。 <br><br> 注意：解除警报后，仍将允许用户在没有策略的情况下使用应用。 | 可选。 默认值为“否”。 |
+MultiIdentity | 布尔| 指定应用是否识别多身份标识。 | 可选。 默认值为“否”。 |
+SafariViewControllerBlockedOverride | 布尔| 禁用 Intune 的 SafariViewController 挂钩，通过 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 启用 MSAL authentication。 | 可选。 默认值为“否”。 警告：如果使用不当，可能会导致数据泄漏。 仅在绝对必要时启用。 有关详细信息，请参阅[使用 MSAL 时的特殊注意事项](#special-considerations-when-using-msal)。  |
 SplashIconFile~ipad <br>IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。 |
 SplashDuration | 数字 | 应用程序启动时显示 Intune 启动屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。 |
 BackgroundColor| 字符串| 指定 Intune SDK 的 UI 组件的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认情况下，系统背景色可能因不同版本的 iOS 和 iOS 深色模式设置而异。 |
 ForegroundColor| 字符串| 指定 Intune SDK 的 UI 组件的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为系统标签颜色，在不同版本的 iOS 中以及根据 iOS 深色模式设置，这些颜色可能有所不同。 |
 AccentColor | 字符串| 指定 Intune SDK 的 UI 组件的强调颜色，例如按钮文本颜色和固定框突出显示颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。| 可选。 默认为系统蓝色。 |
-SupportsDarkMode| 布尔值 | 指定在没有为 BackgroundColor/ForegroundColor/AccentColor 设置显式值的情况下，Intune SDK 的 UI 配色方案是否应观察系统暗色模式设置 | 可选。 默认为“是”。 |
+SupportsDarkMode| 布尔 | 指定在没有为 BackgroundColor/ForegroundColor/AccentColor 设置显式值的情况下，Intune SDK 的 UI 配色方案是否应观察系统暗色模式设置 | 可选。 默认为“是”。 |
 MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送到其后端。| 可选。 默认值为“否”。 |
-MAMTelemetryUsePPE | 布尔值 | 指定 MAM SDK 是否将数据发送到 PPE 遥测后端。 使用 Intune 策略测试应用时使用该布尔值，以便测试遥测数据不会与客户数据相混淆。 | 可选。 默认值为“否”。 |
+MAMTelemetryUsePPE | 布尔 | 指定 MAM SDK 是否将数据发送到 PPE 遥测后端。 使用 Intune 策略测试应用时使用该布尔值，以便测试遥测数据不会与客户数据相混淆。 | 可选。 默认值为“否”。 |
 MaxFileProtectionLevel | 字符串 | 可选。 允许应用指定其可以支持的 `NSFileProtectionType` 最大值。 如果该级别高于应用程序可以支持的级别，则此值将替代服务发送的策略。 可能的值：`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone`。|
-OpenInActionExtension | 布尔值 | 对于 Open in Action 扩展，设置为“是”。 有关详细信息，请参阅通过 UIActivityViewController 共享数据部分。 |
+OpenInActionExtension | 布尔 | 对于 Open in Action 扩展，设置为“是”。 有关详细信息，请参阅通过 UIActivityViewController 共享数据部分。 |
 WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 URL 方案。 | 应用使用的 WebView 通过链接和/或 javascript 处理 URL 时需要。 |
 
 ## <a name="receive-app-protection-policy"></a>接收应用保护策略
@@ -332,10 +332,10 @@ WebViewHandledURLSchemes | 字符串数组 | 指定应用的 WebView 处理的 U
 
 若要让 Intune SDK 在应用完成启动前使用 ADAL/MSAL 处理所有身份验证和注册，并且应用始终需要 APP 策略，则不必使用 `loginAndEnrollAccount` API。 只需在应用的 Info.plist 的 IntuneMAMSettings 字典中将以下两个设置设置为“是”即可。
 
-Setting  | 类型  | 定义 |
+设置  | 类型  | 定义 |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| 布尔值| 指定在检测到现有托管标识且应用尚未注册时，应用是否应尝试在启动时自动注册。 默认值为 NO。 <br><br> 注意：如果找不到任何托管标识，或 ADAL/MSAL 缓存中无任何有效标识令牌可用，那么注册尝试会静默失败，而不会提示输入凭据，除非应用也将 MAMPolicyRequired 设置为“YES”。 |
-MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为“是”时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 |
+AutoEnrollOnLaunch| 布尔| 指定在检测到现有托管标识且应用尚未注册时，应用是否应尝试在启动时自动注册。 默认为“否”。 <br><br> 注意：如果找不到任何托管标识，或 ADAL/MSAL 缓存中无任何有效标识令牌可用，那么注册尝试会静默失败，而不会提示输入凭据，除非应用也将 MAMPolicyRequired 设置为“YES”。 |
+MAMPolicyRequired| 布尔| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认为“否”。 <br><br> 注意：MAMPolicyRequired 设置为“是”时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 |
 
 如果为应用选择此选项，则无需在注册后重启应用。
 
@@ -458,7 +458,7 @@ MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指
 
 可调用 Intune App SDK 的几个 API 来获取有关部署到应用的 Intune APP 策略信息。 可以使用此数据自定义应用行为。 下表介绍了将使用的一些基本 Intune 类。
 
-实例 | 描述
+类 | 描述
 ----- | -----------
 IntuneMAMPolicyManager.h | IntuneMAMPolicyManager 类公开部署到应用程序的 Intune APP 策略。 值得注意的是，它公开对[启用多身份标识](app-sdk-ios.md#enable-multi-identity-optional)有用的 API。 |
 IntuneMAMPolicy.h | IntuneMAMPolicy 类公开一些适用于该应用的 MAM 策略设置。 公开这些策略以便应用自定义其 UI。 大多数策略设置由 SDK 而不是应用实现。 “另存为”控件是应由应用实现的唯一设置。 此类公开了实现“另存为”所需的一些 API。 |
@@ -595,7 +595,7 @@ Intune 管理员可以通过 Intune Azure 门户和 Intune 图形 API 定位并�
 
 关于如何在 iOS 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 iOS 的 Microsoft Intune 应用配置策略](../apps/app-configuration-policies-use-ios.md)。
 
-## <a name="telemetry"></a>遥测技术
+## <a name="telemetry"></a>遥测
 
 默认情况下，用于 iOS 的 Intune App SDK 会收集以下事件类型的遥测：
 

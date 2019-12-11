@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465654"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992914"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 本文列出并介绍了可以在 iOS 和 iPadOS 设备上控制的各种设置。 在移动设备管理 (MDM) 解决方案中，请通过这些设置允许使用或禁用功能、设置密码规则、允许使用或限制使用特定应用等。
 
@@ -34,7 +32,7 @@ ms.locfileid: "74465654"
 > [!TIP]
 > 这些设置使用 Apple 的 MDM 设置。 有关这些设置的详细信息，请参阅[apple 的移动设备管理设置](https://support.apple.com/guide/mdm/welcome/web)（打开 Apple 的网站）。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备限制配置文件](../device-restrictions-configure.md)。
 
@@ -52,7 +50,7 @@ ms.locfileid: "74465654"
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>设置适用于：设备注册，自动设备注册（监督）
 
 - **不受信任的 TLS 证书**：选择“阻止”  可阻止设备使用不受信任的传输层安全性 (TLS) 证书。 “未配置”（默认）会允许 TLS 证书  。
-- **允许无线 PKI 更新**：“允许”  可允许你的用户接收软件更新，而不用将其设备连接到计算机。
+- **阻止无线 PKI 更新**：**阻止**用户接收软件更新，而无需将其设备连接到计算机。 **未配置**（默认）不更新设备上的此设置。
 - **限制广告跟踪**：选择“限制”  可禁用设备广告标识符。 “未配置”（默认）使其保持启用状态  。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>设置适用于：自动化设备注册（监督）
@@ -95,7 +93,7 @@ ms.locfileid: "74465654"
 - **配置文件更改**：“阻止”  可阻止设备上的配置文件更改。 “未配置”（默认）允许用户安装配置文件  。
 - **激活锁**：选择“允许”可在受监管的 iOS 设备上启用“激活锁”  。 激活锁让重新激活丢失或被盗设备变得很难。
 - **阻止删除应用**：选择“阻止”以防止用户删除应用  。 “未配置”（默认）允许用户从设备中删除应用  。
-- **阻止 USB 受限模式**：选择“阻止”  可禁用受监督设备上的 USB 受限模式。 USB 受限模式可阻止 USB 附件与已锁定一个多小时的设备交换数据。 “未配置”（默认）允许“USB 受限”模式  。
+- **设备锁定时允许使用 usb 附件**：**允许**usb 附件将数据与在一小时内被锁定的设备交换。 **未配置**（默认）不更新设备上的 USB 受限模式。
 - **强制自动日期和时间**：“要求”  可强制受监督设备自动设置日期和时间。 当设备连接移动电话网络或启用了位置服务的 Wi-fi 时，将更新设备的时区。
 - **要求学生请求准许离开 Classroom 课程**：“必需”  可强制使用 Classroom 应用注册非托管课程的学生在退出该课程前先请求教师准许。 “未配置”（默认）不强制学生请求许可  。
 
@@ -314,7 +312,7 @@ ms.locfileid: "74465654"
 - **Spotlight 搜索从 Internet 返回结果**：“阻止”  可阻止 Spotlight 从 Internet 搜索返回任何结果。 “未配置”（默认）允许 Spotlight 搜索连接到 Internet 以提供搜索结果  。
 
 - **Safari Cookie**：选择在设备上处理 Cookie 的方式。 选项包括：
-  - Allow
+  - 允许
   - 阻止所有 cookie
   - 允许访问的网站的 cookie
   - 允许当前网站的 cookie
@@ -612,7 +610,7 @@ ms.locfileid: "74465654"
 > 必须使用 Apple Configurator 工具或 Apple 设备注册程序将设备置于监督模式后才能为 iOS 设备配置展台模式。 有关如何使用 Apple 配置器工具，请参阅 Apple 的指南。
 > 如果在分配配置文件之后安装输入的 iOS 应用，则设备将在重新启动后才会进入展台模式。
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>域
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>设置适用于：设备注册，自动设备注册（监督）
 

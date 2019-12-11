@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506366"
 ---
 # <a name="encrypting-your-android-device"></a>加密 Android 设备
@@ -45,7 +45,7 @@ ms.locfileid: "72506366"
     c. 按照屏幕上的说明配置屏幕锁。  
 
 2. 返回到 "**锁定屏幕和安全**"，然后选择 "**安全启动**"。
-3. 选择 "**设备打开时要求 PIN** **"  >  "确定"** 。
+3. 选择 "**设备打开时要求 PIN** **" > "确定"** 。
 4. 输入你的 PIN 以确认并加密你的设备。
 5. 打开公司门户或 Microsoft Intune 应用。
     * 公司门户用户：选择设备，并点击“检查设备设置”  。 
@@ -53,7 +53,7 @@ ms.locfileid: "72506366"
 
 运行 Android 4.4 及更早版本的设备可能没有**安全启动**选项。 在这种情况下，请完成以下步骤来加密你的设备。
 
-1. 请参阅 "**设置**"  > **安全** > **加密设备**"。 不同 Android 设备的屏幕标签有所不同。 如果看不到 "**加密设备**" 选项，请签入：
+1. 请参阅 "**设置**" > **安全** > **加密设备**"。 不同 Android 设备的屏幕标签有所不同。 如果看不到 "**加密设备**" 选项，请签入：
     * **存储** > **存储加密**
     * **存储** > **锁定屏幕和安全** > **其他安全设置** 
 
@@ -62,7 +62,7 @@ ms.locfileid: "72506366"
     * 公司门户用户：选择设备，并点击“检查设备设置”  。  
     * Microsoft Intune 用户：需要等待页面更新，但在此情况下，加密状态应更改为 "符合"。
 
-## <a name="troubleshoot"></a>故障排除  
+## <a name="troubleshoot"></a>疑难解答  
 **问题**：已加密设备，
 
 - 已禁用加密按钮。

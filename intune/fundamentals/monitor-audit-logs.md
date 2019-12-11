@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585249"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991993"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>使用审核日志跟踪和监视 Microsoft Intune 中的事件
 
@@ -40,9 +40,14 @@ ms.locfileid: "72585249"
 
 可以查看每个 Intune 工作负载的监视组中的审核日志：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择要查看其审核日志的工作负载。 例如，选择“设备”  。
-3. 在“监视”下，选择“审核日志”   。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择 "**租户管理** > **审核日志**"。
+3. 若要筛选结果，请选择 "**筛选**" 并使用以下选项优化结果。
+    - **类别**：例如**符合性**、**设备**和**角色**。
+    - **活动**：此处列出的选项受 "**类别**" 下选择的选项限制。
+    - **日期范围**：可以选择上个月、周或日的日志。
+4. 选择“应用”  。
+4. 在列表中选择一项以查看活动详细信息。
 
 ## <a name="route-logs-to-azure-monitor"></a>将日志路由到 Azure Monitor
 
@@ -53,32 +58,10 @@ ms.locfileid: "72585249"
 > [!NOTE]
 > 有关此功能的详细信息以及若要查看使用该功能的先决条件，请参阅[将日志数据发送到存储、事件中心或 log analytics](review-logs-using-azure-monitor.md)。
 
-## <a name="review-audit-events"></a>查看审核事件
-
-![在 Intune 中选择审核日志以查看事件日期及采取的操作](./media/monitor-audit-logs/monitor-audit-logs.png "审核日志")
-
-审核日志的默认列表视图显示以下各项：
-
-- 发生日期和时间
-- 发起人(参与者)
-- 应用程序名称
-- 活动
-- 目标
-- Category
-- 状态
-
-要查看更具体的事件信息，请在列表中选择某项：
-
-![更具体地了解谁在 Intune 中的审计日志中执行了哪些操作](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > 发起人（参与者）显示了谁在何处运行了此任务  。 例如，如果在 Azure 门户的 Intune 中运行活动，“应用”  会始终列出“Microsoft Intune 门户扩展”  ，“应用 ID”  会始终使用相同的 GUID。
 >
 > “目标”  部分将列出已更改的多个目标和属性。  
-
-## <a name="filter-audit-events"></a>筛选审核事件
-
-每个工作负荷都有一个菜单项，可预筛选与窗格关联的审核事件类别。 通过单独的筛选器选项，可以更改为其他类别以及此类别的事件操作详细信息。 可按 UPN（例如执行操作的用户）进行搜索。 日期范围筛选器支持 24 小时、7 天或 30 天选项。 默认情况下，显示过去 30 天的审核事件。
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>使用 Graph API 检索审核事件
 

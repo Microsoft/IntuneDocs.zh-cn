@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72776886"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 macOS 设备设置
@@ -31,7 +31,7 @@ ms.locfileid: "72776886"
 
 我们将这些设置添加到 Intune 中的设备配置配置文件中，然后分配或部署到 macOS 设备。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备限制配置文件](../device-restrictions-configure.md)。
 
@@ -168,7 +168,7 @@ ms.locfileid: "72776886"
   此功能适用于：  
   - macOS 10.15 及更高版本
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>域
 
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
 

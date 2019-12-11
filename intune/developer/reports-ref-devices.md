@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503412"
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
@@ -52,7 +52,7 @@ deviceTypes 实体表示由其他数据仓库实体引用的设备类型  。 �
 
 | deviceTypeID  | 名称 | 描述 |
 |---------|------------|--------|
-| 0 |“桌面” |Windows 桌面设备 |
+| 0 |台式机 |Windows 桌面设备 |
 | 1 |WindowsRT |WindowsRT 设备 |
 | 2 |WinMO6 |Windows Mobile 6.0 设备 |
 | 3 |Nokia |Nokia 设备 |
@@ -99,7 +99,7 @@ enrollmentEventStatus 实体表示设备注册结果  。
 
 | enrollmentEventStatusName  | 描述                            |
 |----------------------------|----------------------------------------|
-| 成功                    | 成功的设备注册         |
+| Success                    | 成功的设备注册         |
 | Failed                     | 失败的设备注册             |
 | 不可用              | 注册状态不可用。  |
 
@@ -119,7 +119,7 @@ EnrollmentFailureCategory 实体指示设备注册失败的原因  。
 | 不可用                   | 注册失败类别不可用。                                                             |
 | Unknown                         | 未知错误。                                                                                                |
 | 身份验证                  | 身份验证失败。                                                                                        |
-| 授权                   | 调用已通过身份验证，但未得到注册授权。                                                         |
+| Authorization                   | 调用已通过身份验证，但未得到注册授权。                                                         |
 | AccountValidation               | 未能验证注册帐户。 （已阻止帐户，未启用注册）                      |
 | UserValidation                  | 无法验证用户。 （用户不存在，缺少许可证）                                           |
 | DeviceNotSupported              | 移动设备管理不支持设备。                                                         |
@@ -248,7 +248,7 @@ ManagementAgentType  实体表示用于管理设备的代理。
 | userId                     | 与设备关联的用户的唯一标识符。                                                                                                                           |
 | rowLastModifiedDateTimeUTC | 上次在数据仓库中修改此设备时的 UTC 日期和时间。                                                                                                       |
 | 制造商               | 设备制造商                                                                                                                                                             |
-| model                      | 设备型号                                                                                                                                                                    |
+| 模型                      | 设备型号                                                                                                                                                                    |
 | operatingSystem            | 设备的操作系统。 Windows、iOS 等。                                                                                                                                   |
 | isDeleted                  | 显示设备是否被删除的二进制文件。                                                                                                                                 |
 | androidSecurityPatchLevel  | Android 安全修补程序级别                                                                                                                                                           |

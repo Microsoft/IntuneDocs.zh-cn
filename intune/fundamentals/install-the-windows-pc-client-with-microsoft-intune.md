@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1484aa2cf9ab665796b6c02e060d2d7c4cb4fcd1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502790"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>在 Windows 电脑上安装 Intune 软件客户端
@@ -252,7 +252,7 @@ Intune 客户端软件包含向 Intune 管理注册电脑所必需的最低软�
 
 - AgentInstaller
 - 日志
-- Updates
+- 更新
 - 公用
 
 ### <a name="remove-the-onlinemanagement-folder"></a>删除 OnlineManagement 文件夹

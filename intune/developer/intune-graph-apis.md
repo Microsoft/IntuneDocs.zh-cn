@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490503"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何使用 Azure AD 访问 Microsoft Graph Intune API
@@ -120,7 +120,7 @@ ms.locfileid: "72490503"
 
 - 使应用可供租户之外的用户使用。  （这通常仅适用于支持多个租户/组织的合作伙伴。）  
 
-    为此，请执行以下操作：
+    执行此操作的步骤：
 
   1. 从应用程序边栏选项卡中选择“清单”  ，将打开“编辑清单”  边栏选项卡。
 

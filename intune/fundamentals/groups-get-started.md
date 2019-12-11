@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0cf8e136b3ef5c3d4329e075af4c180423d74a15
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502844"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Azure 门户中的 Microsoft Intune 经典组
@@ -41,7 +41,7 @@ Azure AD 安全组支持将所有类型的 Intune 部署到用户和设备。 �
 - “未分组用户”  和“未分组设备”  Intune 组将不再可用。
 - Azure 门户中不存在从某个组中“排除特定成员”  的选项。 但是，可使用具有高级规则的 Azure AD 安全组复制此行为。 例如，若要在安全组中创建包含销售部门所有成员的高级规则，但排除职位中含有“助手”一词的组，可使用此高级规则：
 
-  `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
+  `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`”。
 - Intune 经典控制台中的“所有 Exchange ActiveSync 管理的设备”  组未迁移到 Azure AD。 但仍可从 Azure 门户访问 EAS 托管设备的相关信息。
 
 ## <a name="how-to-get-started"></a>如何开始？

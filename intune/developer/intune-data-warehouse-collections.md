@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4aad4e2295cb7b85abcb73a9c8e94ed7501348be
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490497"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899244"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune 数据仓库收集
 
@@ -85,7 +85,7 @@ appType  实体列出了应用的安装源。
 | DateKey       | 为符合性策略创建了摘要时的日期键。                                                                                                                   | 20161204 |
 | Unknown       | 由于其他原因脱机或无法与 Intune 或 Azure AD 通信的设备数量。                                                                           | 5        |
 | 不适用 | 对于管理员指定的设备符合性策略不适用的设备数。                                                                                     | 201      |
-| 是否满足条件     | 已成功应用管理员指定的一个或多个设备符合性策略的设备数。                                                                        | 4083     |
+| 相容     | 已成功应用管理员指定的一个或多个设备符合性策略的设备数。                                                                        | 4083     |
 | InGracePeriod | 不符合要求但处于管理员定义的宽限期内的设备数。                                                                                  | 57       |
 | 不符合  | 为后列情况的设备数：未能应用由管理员指定的一个或多个设备符合性策略，或其用户未遵守管理员指定的策略。 | 43       |
 |    错误      |    无法与 Intune 或 Azure AD 通信，以及返回了错误信息的设备数量。                                                                          |    3     |
@@ -100,7 +100,7 @@ appType  实体列出了应用的安装源。
 | PolicyPlatformKey | 创建了相应摘要的符合性策略的键。                                                                                            | 5        |
 | Unknown           | 由于其他原因脱机或无法与 Intune 或 Azure AD 通信的设备数量。                                                                           | 13       |
 | 不适用     | 对于管理员指定的设备符合性策略不适用的设备数。                                                                                     | 3        |
-| 是否满足条件         | 已成功应用管理员指定的一个或多个设备符合性策略的设备数。                                                                        | 45       |
+| 相容         | 已成功应用管理员指定的一个或多个设备符合性策略的设备数。                                                                        | 45       |
 | InGracePeriod     | 不符合要求但处于管理员定义的宽限期内的设备数。                                                                                  | 3        |
 | 不符合      | 为后列情况的设备数：未能应用由管理员指定的一个或多个设备符合性策略，或其用户未遵守管理员指定的策略。 | 7        |
 | 错误             | 无法与 Intune 或 Azure AD 通信，以及返回了错误信息的设备数量。                                                                             | 3        |
@@ -117,7 +117,7 @@ appType  实体列出了应用的安装源。
 |  complianceStatus  |                       描述                      |
 |:------------------:|:------------------------------------------------------:|
 |    Unknown         |    未知。                                                                        |
-|    是否满足条件       |    是否满足条件。                                                                      |
+|    相容       |    是否满足条件。                                                                      |
 |    不相容    |       设备不相容，被公司资源阻止。             |
 |    冲突        |    与其他规则冲突。                                                      |
 |    错误           |       错误。                                                                       |
@@ -266,7 +266,7 @@ deviceType  实体表示由其他数据仓库实体引用的设备类型。 设�
 | deviceTypeID |        名称       |                      描述                      |
 |:------------:|:-----------------:|:-----------------------------------------------------:|
 | -1           | 不可用   | 设备类型不可用。                     |
-| 0            | “桌面”           | Windows 桌面设备                              |
+| 0            | 台式机           | Windows 桌面设备                              |
 | 1            | Windows           | Windows 设备                                      |
 | 2            | WinMO6            | Windows Mobile 6.0 设备                           |
 | 3            | Nokia             | Nokia 设备                                        |
@@ -340,7 +340,7 @@ EnrollmentEventStatus 实体表示设备注册结果  。
 
 | enrollmentEventStatusName  | 描述                            |
 |----------------------------|----------------------------------------|
-| 成功                    | 成功的设备注册         |
+| Success                    | 成功的设备注册         |
 | Failed                     | 失败的设备注册             |
 | 不可用              | 注册状态不可用。  |
 
@@ -360,7 +360,7 @@ EnrollmentFailureCategory 实体指示设备注册失败的原因  。
 | 不可用                   | 注册失败类别不可用。                                                             |
 | Unknown                         | 未知错误。                                                                                                |
 | 身份验证                  | 身份验证失败。                                                                                        |
-| 授权                   | 调用已通过身份验证，但未得到注册授权。                                                         |
+| Authorization                   | 调用已通过身份验证，但未得到注册授权。                                                         |
 | AccountValidation               | 未能验证注册帐户。 （已阻止帐户，未启用注册）                      |
 | UserValidation                  | 无法验证用户。 （用户不存在，缺少许可证）                                           |
 | DeviceNotSupported              | 移动设备管理不支持设备。                                                         |

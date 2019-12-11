@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 239dd8630eb361da8609e3a34eb2c9346a64dab0
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508506"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907179"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune 中的设备操作故障排除
 
@@ -54,7 +54,7 @@ Microsoft Intune 提供了许多可帮助管理设备的操作。 本文提供�
 ## <a name="remove-devices-action"></a>删除设备操作
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>如何实现告诉谁开始停用/擦除？
-请参阅**Intune**  > **设备**" > **设备操作**" > 选中 "**启动者**" 列。
+在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，请参阅**租户管理** > **审核日志**> 检查 "**启动者**" 列。
 如果看不到某个条目，则很可能是该设备的用户启动了该操作。 它们可能使用公司门户应用程序或 portal.manage.microsoft.com。
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>为什么应用程序在停用后无法卸载？
@@ -69,7 +69,7 @@ Microsoft Intune 提供了许多可帮助管理设备的操作。 本文提供�
 由于停用设备不会吊销访问令牌。 可以使用条件性访问策略来缓解这种情况。
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>如何在颁发后监视停用/擦除操作？
- > **设备操作**中转到**Intune**  > **设备**"。
+在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，请参阅**租户管理** > **审核日志**。
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>为什么擦除有时会无限期地显示为挂起？
 在重置开始之前，设备不会始终将其状态报告回 Intune 服务。 因此，操作显示为 "挂起"。 如果已确认操作成功，请从服务中删除该设备。

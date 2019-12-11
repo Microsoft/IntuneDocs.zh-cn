@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503579"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>排查 Jamf Pro 与 Microsoft Intune 的集成问题
@@ -53,7 +53,7 @@ ms.locfileid: "72503579"
 
 以下信息可帮助你确定和解决在设置 Intune 和 Jamf Pro 集成后设备的常见问题。  
 
-| 问题   | 更多信息                  |
+| 问题   | 详细信息                  |
 |-----------------|--------------------------|
 | **设备在 Jamf Pro 中被标记为无响应**  | [设备无法与 Jamf Pro 或 with Azure AD 一起签入](#devices-are-marked-as-unresponsive-in-jamf-pro) |
 | **打开应用时，Mac 设备提示进行密钥链登录无法注册**  | [系统会提示用户输入密码，以允许应用注册到 Azure AD](#mac-devices-prompt-for-keychain-sign-in-when-you-open-an-app)。 |
@@ -61,7 +61,7 @@ ms.locfileid: "72503579"
 |  **Mac 设备在 Intune 中显示符合，但在 Azure 中不相容** | [设备注册问题](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **使用 Jamf 注册的 Mac 设备的 Intune 控制台中显示重复项** | [用于同一设备的多个注册](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **合规性策略无法评估设备** | [策略目标设备组](#compliance-policy-fails-to-evaluate-the-device) |
-| **无法检索 Microsoft Graph API 的访问令牌** | 可能的原因如下： <br> [Azure 中 Jamf Pro 应用](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure)的 - 权限 <br> [Jamf 或 Intune -  过期的许可证](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [端口未打开](#the-required-ports-arent-open-on-your-network)|
+| **无法检索 Microsoft Graph API 的访问令牌** | 可能的原因如下： <br> [Azure 中 Jamf Pro 应用](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure)的 -权限 <br> [Jamf 或 Intune - 过期的许可证](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [端口未打开](#the-required-ports-arent-open-on-your-network)|
  
 
 ### <a name="devices-are-marked-as-unresponsive-in-jamf-pro"></a>设备在 Jamf Pro 中被标记为无响应  
@@ -294,7 +294,7 @@ Jamf Pro 将设备标记为*无响应*后，设备的已注册用户必须登录
 
 在 Azure 中注册 Jamf Pro 应用时，出现以下情况之一：  
 - 应用收到了多个权限。
-- 未选择 "**向 *\<your 公司*授予管理员 >** " 选项。  
+- 不选择 "**授予管理员 *\<公司 >***  " 选项。  
 
 **解决方法**  
 请参阅本文前面的 "导致[设备无法注册](#devices-fail-to-register)的原因 1" 的解决方法。

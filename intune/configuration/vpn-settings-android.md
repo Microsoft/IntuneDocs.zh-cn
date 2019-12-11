@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8d9fefc2413e2dafbf5d0ad67ea15f5f8406cc1c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506540"
 ---
 # <a name="android-device-settings-to-configure-vpn-in-intune"></a>Android 设备设置，用于在 Intune 中配置 VPN
@@ -32,7 +32,7 @@ ms.locfileid: "72506540"
 
 若要详细了解 Intune 中的 VPN 配置文件，请参阅[vpn 配置文件](vpn-settings-configure.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](vpn-settings-configure.md#create-a-device-profile)，并选择“Android”  。
 

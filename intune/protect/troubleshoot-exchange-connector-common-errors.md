@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508858"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>解决 Intune Exchange Connector 的常见错误
@@ -77,7 +77,7 @@ ms.locfileid: "72508858"
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-如果使用代理服务器连接到 Internet，并阻止到 Intune 服务的流量，则会出现此错误。 若要确定是否正在使用代理，请在 **"控制面板**"  >  **"Internet 选项**" 中，选择 "**连接**" 选项卡，然后单击 " **LAN 设置**"。
+如果使用代理服务器连接到 Internet，并阻止到 Intune 服务的流量，则会出现此错误。 若要确定是否正在使用代理，请在 **"控制面板**" >  **"Internet 选项**" 中，选择 "**连接**" 选项卡，然后单击 " **LAN 设置**"。
 
 **解决方法**：  
 
@@ -126,17 +126,17 @@ IOS 设备无法在 Intune 中注册，并生成以下错误消息之一：
 如果**WIEC_User**帐户没有本地策略中的 "**以服务方式登录**" 用户权限，则会出现此问题。
 
 **解决方法**：  
-在运行 Intune Exchange Connector 的计算机上，将 "**作为服务登录**" 用户权限分配给**WIEC_User**服务帐户。 如果计算机是群集中的节点，请确保将 "*作为服务登录*" 用户权限分配到群集中所有节点上的群集服务帐户。  
+在运行 Intune Exchange Connector 的计算机上，将 "**作为服务登录**" 用户权限分配到**WIEC_User**服务帐户。 如果计算机是群集中的节点，请确保将 "*作为服务登录*" 用户权限分配到群集中所有节点上的群集服务帐户。  
 
 若要将 "**作为服务登录**" 用户权限分配到计算机上的**WIEC_User**服务帐户，请执行以下步骤：
 
 1. 以管理员或 Administrators 组成员的身份登录到计算机。
 2. 运行**secpol.msc**以打开 "本地安全策略"。
-3. 请参阅 "**安全设置**"  > **本地策略**"，然后选择"**用户权限分配**"。
+3. 请参阅 "**安全设置**" > **本地策略**"，然后选择"**用户权限分配**"。
 4. 在右侧窗格中，双击“作为服务登录”  。
-5. 选择 "**添加用户或组**"，将 " **WIEC_USER** " 添加到策略，然后选择 **"确定"** 两次。
+5. 选择 "**添加用户或组**"，将**WIEC_USER**添加到策略，然后选择 **"确定"** 两次。
 
-如果已将 "**以服务方式登录**" 用户权限分配给**WIEC_User** ，但后来又将其删除，请与域管理员联系，以确定是否正在覆盖组策略设置。  
+如果将 "**作为服务登录**" 用户权限分配到**WIEC_User**但后来被删除，请与域管理员联系，以确定组策略设置是否覆盖它。  
 
 ## <a name="next-steps"></a>后续步骤  
 

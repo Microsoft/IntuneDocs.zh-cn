@@ -19,17 +19,17 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c73ed7973fa15d796aee1e33efc37191777c222a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058065"
 ---
 # <a name="software-update-agent-error-codes-and-descriptions-in-microsoft-intune"></a>Microsoft Intune 中的软件更新代理错误代码和说明
 
 下表列出了 Intune **更新代理**错误代码。 如果无法在此表中找到特定错误代码，请参阅 [Windows 更新错误代码列表](https://support.microsoft.com/help/938205/windows-update-error-code-list)。
 
-|错误代码|符号名称|更多信息|
+|错误代码|符号名称|详细信息|
 |--------------|-----------------|--------------------|
 |**0x00cf0001**|OM_S_SERVICE_STOP|已成功停止代理。|
 |**0x00cf0003**|OM_S_UPDATE_ERROR|操作已成功完成，但是更新应用程序期间发生错误。|
@@ -40,14 +40,14 @@ ms.locfileid: "74058065"
 |**0x00cf2015**|OM_S_UH_INSTALLSTILLPENDING|正在进行更新安装。|
 |**0x80cf0001**|OM_E_NO_SERVICE|代理无法提供服务。|
 |**0x80cf0002**|OM_E_MAX_CAPACITY_REACHED|超出了服务的最大容量。|
-|**0x80cf0003**|OM_E_UNKNOWN_ID|找不到 ID。|
+|**0x80cf0003**|OM_E_UNKNOWN_ID|找不到ID。|
 |**0x80cf0004**|OM_E_NOT_INITIALIZED|无法初始化对象。|
 |**0x80cf0007**|OM_E_INVALIDINDEX|集合的索引无效。|
 |**0x80cf0008**|OM_E_ITEMNOTFOUND|找不到查询的项目的键。|
 |**0x80cf0009**|OM_E_OPERATIONINPROGRESS|正在进行冲突的操作。 某些操作，如多个安装无法同时执行。|
 |**0x80cf000B**|OM_E_CALL_CANCELLED|已经取消了操作。|
 |**0x80cf000C**|OM_E_NOOP|无需进行操作。|
-|**0x80cf000D**|OM_E_XML_MISSINGDATA|代理找不到更新的 XML 数据中的必需信息。|
+|**0x80cf000D**|OM_E_XML_MISSINGDATA|代理找不到更新的XML 数据中的必需信息。|
 |**0x80cf000E**|OM_E_XML_INVALID|代理发现了更新的 XML 数据中的无效信息。|
 |**0x80cf000F**|OM_E_CYCLE_DETECTED|在元数据中检测到循环的更新关系。|
 |**0x80cf0010**|OM_E_TOO_DEEP_RELATION|更新关系嵌套得太深而无法评估。|
@@ -67,7 +67,7 @@ ms.locfileid: "74058065"
 |**0x80cf0021**|OM_E_TIME_OUT|无法完成操作，因为操作超时。|
 |**0x80cf0022**|OM_E_ALL_UPDATES_FAILED|操作针对所有更新已失败。|
 |**0x80cf0024**|OM_E_NO_UPDATE|不存在更新。|
-|**0x80cf0025**|OM_E_USER_ACCESS_DISABLED|组策略设置阻止访问 Windows Update。|
+|**0x80cf0025**|OM_E_USER_ACCESS_DISABLED|组策略设置阻止访问Windows Update。|
 |**0x80cf0026**|OM_E_INVALID_UPDATE_TYPE|更新的类型无效。|
 |**0x80cf0028**|OM_E_UNINSTALL_NOT_ALLOWED|无法卸载更新，因为请求并非来源于 WSUS 服务器。|
 |**0x80cf0029**|OM_E_INVALID_PRODUCT_LICENSE|搜索可能已经遗漏了某些更新，或者在系统上可能存在未许可的应用程序。|
@@ -84,7 +84,7 @@ ms.locfileid: "74058065"
 |**0x80cf0037**|OM_E_NOT_SUPPORTED|不支持该操作。|
 |**0x80cf0038**|OM_E_WINHTTP_INVALID_FILE|下载的文件具有意外的内容类型。|
 |**0x80cf0039**|OM_E_TOO_MANY_RESYNC|服务器请求代理重新同步次数太多。|
-|**0x80cf0043**|OM_E_NO_UI_SUPPORT|不支持 WUA UI。|
+|**0x80cf0043**|OM_E_NO_UI_SUPPORT|不支持WUA UI。|
 |**0x80cf0044**|OM_E_PER_MACHINE_UPDATE_ACCESS_DENIED|只有管理员才能对每台计算机的更新执行此操作。|
 |**0x80cf0045**|OM_E_UNSUPPORTED_SEARCHSCOPE|利用不支持的范围尝试了搜索。|
 |**0x80cf0046**|OM_E_BAD_FILE_URL|URL 未指向文件。|
@@ -100,17 +100,17 @@ ms.locfileid: "74058065"
 |**0x80cf0438**|OM_E_PT_ENDPOINT_UNREACHABLE|没有到终结点的路由或网络连接。|
 |**0x80cf0439**|OM_E_PT_INVALID_FORMAT|接收的数据未达到数据协定期望。|
 |**0x80cf043A**|OM_E_PT_INVALID_URL|URL 无效。|
-|**0x80cf043B**|OM_E_PT_NWS_NOT_LOADED|无法加载 NWS 运行时。|
+|**0x80cf043B**|OM_E_PT_NWS_NOT_LOADED|无法加载NWS 运行时。|
 |**0x80cf043C**|OM_E_PT_PROXY_AUTH_SCHEME_NOT_SUPPORTED|不支持代理身份验证方案。|
 |**0x80cf043D**|OM_E_SERVICEPROP_NOTAVAIL|请求的服务属性不可用。|
 |**0x80cf043E**|OM_E_PT_ENDPOINT_REFRESH_REQUIRED|终结点提供程序插件需要联机刷新。|
-|**0x80cf043F**|OM_E_PT_ENDPOINTURL_NOTAVAIL|请求的服务终结点的 URL 不可用。|
+|**0x80cf043F**|OM_E_PT_ENDPOINTURL_NOTAVAIL|请求的服务终结点的URL 不可用。|
 |**0x80cf0440**|OM_E_PT_ENDPOINT_DISCONNECTED|到服务终结点的连接已终止。|
 |**0x80cf0441**|OM_E_PT_INVALID_OPERATION|操作无效，因为协议发话者处于不合适的状态。|
 |**0x80cf0FFF**|OM_E_UNEXPECTED|由于另一个错误代码未解释的原因，操作失败。|
-|**0x80cf1001**|OM_E_MSI_WRONG_VERSION|搜索可能错过了某些更新，因为 Windows Installer 早于版本 3.1。|
+|**0x80cf1001**|OM_E_MSI_WRONG_VERSION|搜索可能错过了某些更新，因为Windows Installer 早于版本3.1。|
 |**0x80cf1002**|OM_E_MSI_NOT_CONFIGURED|搜索可能错过了某些更新，因为未配置 Windows Installer。|
-|**0x80cf1003**|OM_E_MSP_DISABLED|搜索可能错过了某些更新，因为策略禁用了 Windows Installer 修补。|
+|**0x80cf1003**|OM_E_MSP_DISABLED|搜索可能错过了某些更新，因为策略禁用了Windows Installer 修补。|
 |**0x80cf1004**|OM_E_MSI_WRONG_APP_CONTEXT|无法应用更新，因为应用程序是按用户安装的。|
 |**0x80cf2000**|OM_E_UH_REMOTEUNAVAILABLE|向远程更新处理程序提出的请求无法完成，因为远程进程不可用。|
 |**0x80cf2001**|OM_E_UH_LOCALONLY|向远程更新处理程序提出的请求无法完成，因为该处理程序只是本地处理程序。|
@@ -139,7 +139,7 @@ ms.locfileid: "74058065"
 |**0x80cf4007**|OM_E_PT_SOAPCLIENT_SOAPFAULT|与 **SOAPCLIENT_SOAPFAULT** 相同。 SOAP 客户端失败，因为发生了 **OM_E_PT_SOAP_*** 错误代码类型的 SOAP 故障。|
 |**0x80cf4008**|OM_E_PT_SOAPCLIENT_PARSEFAULT|与 **SOAPCLIENT_PARSEFAULT_ERROR** 相同。  SOAP 客户端无法分析 SOAP 故障错误。|
 |**0x80cf400A**|OM_E_PT_SOAPCLIENT_PARSE|与 **SOAPCLIENT_PARSE_ERROR** 相同。  SOAP 客户端无法分析服务器的响应。|
-|**0x80cf400B**|OM_E_PT_SOAP_VERSION|与 **SOAP_E_VERSION_MISMATCH** 相同。 SOAP 客户端发现 SOAP 信封的命名空间无法识别。|
+|**0x80cf400B**|OM_E_PT_SOAP_VERSION|与 **SOAP_E_VERSION_MISMATCH** 相同。 SOAP 客户端发现SOAP 信封的命名空间无法识别。|
 |**0x80cf400C**|OM_E_PT_SOAP_MUST_UNDERSTAND|与 **SOAP_E_MUST_UNDERSTAND** 相同。 SOAP 客户端无法解释标头。|
 |**0x80cf400D**|OM_E_PT_SOAP_CLIENT|与 **SOAP_E_CLIENT** 相同。 SOAP 客户端发现消息格式不正确。 请在重新发送之前先进行更正。|
 |**0x80cf400E**|OM_E_PT_SOAP_SERVER|与 **SOAP_E_SERVER** 相同。 由于服务器错误的缘故而无法处理 SOAP 消息。 请稍后重新发送。|
@@ -161,10 +161,10 @@ ms.locfileid: "74058065"
 |**0x80cf4021**|OM_E_PT_HTTP_STATUS_BAD_GATEWAY|与 **HTTP 状态 502** 相同。 服务器在当作网关或代理时收到无效的响应，此响应由服务器在尝试满足请求过程中访问的上游服务器发出。|
 |**0x80cf4022**|OM_E_PT_HTTP_STATUS_SERVICE_UNAVAIL|与 **HTTP 状态 503** 相同。 服务临时过载。|
 |**0x80cf4023**|OM_E_PT_HTTP_STATUS_GATEWAY_TIMEOUT|与 **HTTP 状态 503** 相同。 请求等待网关超时。|
-|**0x80cf4024**|OM_E_PT_HTTP_STATUS_VERSION_NOT_SUP|与 **HTTP 状态 505** 相同。 服务器不支持用于请求的 HTTP 协议版本。|
+|**0x80cf4024**|OM_E_PT_HTTP_STATUS_VERSION_NOT_SUP|与 **HTTP 状态 505** 相同。 服务器不支持用于请求的HTTP 协议版本。|
 |**0x80cf4025**|OM_E_PT_FILE_LOCATIONS_CHANGED|由于更改了文件位置，因此操作失败。 请刷新内部状态并重新发送。|
 |**0x80cf4027**|OM_E_PT_NO_AUTH_PLUGINS_REQUESTED|服务器返回了空的身份验证信息列表。|
-|**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|代理无法创建任何有效的身份验证 Cookie。|
+|**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|代理无法创建任何有效的身份验证Cookie。|
 |**0x80cf4029**|OM_E_PT_INVALID_CONFIG_PROP|配置属性值错误。|
 |**0x80cf402A**|OM_E_PT_CONFIG_PROP_MISSING|缺少配置属性值。|
 |**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|无法完成 HTTP 请求，原因与任何 **OM_E_PT_HTTP_*** 错误代码都不对应。|
@@ -172,17 +172,17 @@ ms.locfileid: "74058065"
 |**0x80cf402F**|OM_E_PT_ECP_SUCCEEDED_WITH_ERRORS|外部 .cab 文件处理已完成，但出现了一些错误。|
 |**0x80cf4030**|OM_E_PT_ECP_INIT_FAILED|未完成外部 .cab 处理器初始化。|
 |**0x80cf4031**|OM_E_PT_ECP_INVALID_FILE_FORMAT|元数据文件的格式无效。|
-|**0x80cf4032**|OM_E_PT_ECP_INVALID_METADATA|外部 Cab 处理器发现元数据无效。|
+|**0x80cf4032**|OM_E_PT_ECP_INVALID_METADATA|外部Cab 处理器发现元数据无效。|
 |**0x80cf4033**|OM_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST|无法从外部 .cab 文件中提取文件摘要。|
 |**0x80cf4034**|OM_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE|无法解压缩外部 .cab 文件。|
 |**0x80cf4035**|OM_E_PT_ECP_FILE_LOCATION_ERROR|外部 cab 处理器无法获得文件位置。|
 |**0x80cf4FFF**|OM_E_PT_UNEXPECTED|发生了另一个 **OM_E_PT_*** 错误代码未涵盖的通信错误。|
-|**0x80cf6001**|OM_E_DM_URLNOTAVAILABLE|无法完成下载管理器操作，因为请求的文件没有 URL。|
+|**0x80cf6001**|OM_E_DM_URLNOTAVAILABLE|无法完成下载管理器操作，因为请求的文件没有URL。|
 |**0x80cf6002**|OM_E_DM_INCORRECTFILEHASH|无法完成下载管理器操作，因为未识别文件摘要。|
 |**0x80cf6003**|OM_E_DM_UNKNOWNALGORITHM|无法完成下载管理器操作，因为文件元数据请求了无法识别的哈希算法。|
 |**0x80cf6005**|OM_E_DM_NONETWORK|无法完成下载管理器操作，因为网络连接不可用。|
 |**0x80cf6007**|OM_E_DM_NOTDOWNLOADED|尚未下载更新。|
-|**0x80cf6008**|OM_E_DM_FAILTOCONNECTTOBITS|下载管理器操作失败，因为下载管理器无法连接到后台智能传输服务 (BITS)。|
+|**0x80cf6008**|OM_E_DM_FAILTOCONNECTTOBITS|下载管理器操作失败，因为下载管理器无法连接到后台智能传输服务(BITS)。|
 |**0x80cf6009**|OM_E_DM_BITSTRANSFERERROR|下载管理器操作失败，因为存在未指定的后台智能传输服务 (BITS) 传输错误。|
 |**0x80cf600a**|OM_E_DM_DOWNLOADLOCATIONCHANGED|必须重启下载，因为下载的源的位置发生了更改。|
 |**0x80cf600B**|OM_E_DM_CONTENTCHANGED|必须重启下载，因为更新内容在新版本中发生了更改。|
@@ -198,16 +198,16 @@ ms.locfileid: "74058065"
 |**0x80cf8005**|OM_E_DS_INVALIDTABLENAME|无法打开表，因为该表不在数据存储中。|
 |**0x80cf8006**|OM_E_DS_BADVERSION|当前版本的数据存储和预期版本的数据存储不匹配。|
 |**0x80cf8007**|OM_E_DS_NODATA|请求的信息不在数据存储中。|
-|**0x80cf8008**|OM_E_DS_MISSINGDATA|数据存储缺少所需信息，或者在需要非 NULL 值的表列中具有 NULL。|
+|**0x80cf8008**|OM_E_DS_MISSINGDATA|数据存储缺少所需信息，或者在需要非NULL 值的表列中具有NULL。|
 |**0x80cf8009**|OM_E_DS_MISSINGREF|数据存储缺少所需信息，或者引用了缺少的许可条款、文件、本地化属性或链接行。|
 |**0x80cf800A**|OM_E_DS_UNKNOWNHANDLER|未处理更新，因为无法识别其更新处理程序。|
 |**0x80cf800B**|OM_E_DS_CANTDELETE|未删除更新，因为一个或多个服务仍然引用该更新。|
 |**0x80cf800C**|OM_E_DS_LOCKTIMEOUTEXPIRED|在分配的时间内无法锁定数据存储部分。|
 |**0x80cf800E**|OM_E_DS_ROWEXISTS|未添加行，因为现有行具有相同的主键。|
 |**0x80cf800F**|OM_E_DS_STOREFILELOCKED|无法初始化数据存储，因为它已被另一个进程锁定。|
-|**0x80cf8010**|OM_E_DS_CANNOTREGISTER|不允许在当前进程中向 COM 注册数据存储。|
+|**0x80cf8010**|OM_E_DS_CANNOTREGISTER|不允许在当前进程中向COM 注册数据存储。|
 |**0x80cf8011**|OM_E_DS_UNABLETOSTART|操作无法在另一个进程中创建数据存储对象。|
-|**0x80cf8013**|OM_E_DS_DUPLICATEUPDATEID|服务器将相同的更新发送给具有两个不同版本 ID 的客户端。|
+|**0x80cf8013**|OM_E_DS_DUPLICATEUPDATEID|服务器将相同的更新发送给具有两个不同版本ID 的客户端。|
 |**0x80cf8014**|OM_E_DS_UNKNOWNSERVICE|无法完成操作，因为服务不在数据存储中。|
 |**0x80cf8015**|OM_E_DS_SERVICEEXPIRED|无法完成操作，因为服务注册已过期。|
 |**0x80cf8016**|OM_E_DS_DECLINENOTALLOWED|隐藏更新的请求被拒绝，因为此更新是强制性更新或者与截止时间一起部署。|
@@ -215,7 +215,7 @@ ms.locfileid: "74058065"
 |**0x80cf8018**|OM_E_DS_SESSIONLOCKMISMATCH|未关闭表，因为表与会话不关联。|
 |**0x80cf8019**|OM_E_DS_NEEDWINDOWSSERVICE|删除或注销此服务的请求被拒绝，因为此服务是内置服务，或者自动更新无法回滚到另一服务。|
 |**0x80cf801A**|OM_E_DS_INVALIDOPERATION|已拒绝请求，因为不允许此操作。|
-|**0x80cf801B**|OM_E_DS_SCHEMAMISMATCH|当前数据存储的架构和备份 XML 文档中的表架构不匹配。|
+|**0x80cf801B**|OM_E_DS_SCHEMAMISMATCH|当前数据存储的架构和备份XML 文档中的表架构不匹配。|
 |**0x80cf801C**|OM_E_DS_RESETREQUIRED|数据存储要求重置会话。 请释放该会话并用新会话重新尝试。|
 |**0x80cf801D**|OM_E_DS_IMPERSONATED|无法完成数据存储操作，因为此操作是通过模拟的标识请求的。|
 |**0x80cf8FFF**|OM_E_DS_UNEXPECTED|发生了另一个 **OM_E_DS_*** 代码未涵盖的数据存储错误。|
@@ -235,7 +235,7 @@ ms.locfileid: "74058065"
 |**0x80cfEFFF**|OM_E_EE_UNEXPECTED|发生了另一个 **OM_E_EE_*** 错误代码未涵盖的的表达式计算器错误。|
 |**0x80cfF001**|OM_E_REPORTER_EVENTCACHECORRUPT|事件缓存文件有缺陷。|
 |**0x80cfF002**|OM_E_REPORTER_EVENTNAMESPACEPARSEFAILED|无法分析事件命名空间描述符中的 XML。|
-|**0x80cfF003**|OM_E_INVALID_EVENT|事件命名空间描述符中的 XML 无效。|
+|**0x80cfF003**|OM_E_INVALID_EVENT|事件命名空间描述符中的XML 无效。|
 |**0x80cfF004**|OM_E_SERVER_BUSY|服务器拒绝了事件，因为服务器太忙。|
 |**0x80cfFFFF**|OM_E_REPORTER_UNEXPECTED|发生了另一个错误代码未涵盖的报告错误。|
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|安装失败，因为存在待定的强制重新启动。|

@@ -19,17 +19,17 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ea4f4cd53af06bf6ec47ed14976526116d963690
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502383"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>使用 Microsoft Intune 防止对公司数据进行未经授权的访问
 
 可对 Office 365 文档和电子邮件进行分类、应用标签和保护，仅允许经授权的用户访问数据。 当IT 管理员或用户设置规则或条件后，自动管理此设置。 也可由 IT 团队提供推荐的设置，让用户遵照。 管理员和用户也可在没有其他有权限的角色协助的情况下，撤消已与他人共享的数据的访问权限。 这样做的结果是，即使数据离开公司网络，也可控制能够打开或更新受保护数据的用户。 
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 满足以下要求，可使用以下操作计划：
 * 你的公司已准备好安全转换到云。

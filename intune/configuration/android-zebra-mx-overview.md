@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059620"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>通过 Microsoft Intune 中的 Zebra Mobility Extensions 来使用和管理 Zebra 设备
@@ -47,7 +47,7 @@ Intune 提供丰富的功能，包括管理应用和配置设备设置。 这些
 >
 > 有关详细信息，请参阅在斑马的网站上[锁定设备](https://developer.zebra.com/community/home/blog/2017/04/11/locking-down-your-device)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 - 请确保拥有 Zebra Technologies 公司最新版的 StageNow 桌面应用。
 - 请务必检查 [Zebra 的完整 MX 功能矩阵](http://techdocs.zebra.com/mx/compatibility)（打开 Zebra 网站），确认创建的配置文件与设备的 MX 版本、OS 版本和型号兼容。

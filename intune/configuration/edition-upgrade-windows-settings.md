@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 75878e2110e9d855c2a0f78c0e7a1112f883872e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72489660"
 ---
 # <a name="windows-10-and-newer-device-settings-to-upgrade-editions-or-enable-s-mode-in-intune"></a>Intune 中用于升级版本或启用 S 模式的 Windows 10（及更高版本）设备设置
@@ -32,7 +32,7 @@ Microsoft Intune 包含许多有助于管理和保护设备的设置。 本文�
 
 若要详细了解此功能，请参阅[升级 Windows 10 版本或启用 S 模式](edition-upgrade-configure-windows-10.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建配置文件](edition-upgrade-configure-windows-10.md#create-the-profile)。
 

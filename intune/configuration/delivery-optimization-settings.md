@@ -17,10 +17,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81d0ff389acd2c7014b830bb7c24e336088c4f96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506885"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune 的传递优化设置
@@ -41,7 +41,7 @@ Intune 控制台中的大多数选项都直接映射到传递优化设置，Wind
 
 ## <a name="delivery-optimization"></a>传递优化  
 
-|Setting  |Windows 版本  |详细信息  |
+|设置  |Windows 版本  |详细信息  |
 |---------|-----------------|---------|
 | [下载模式](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)     | 1511         | 指定传递优化用于下载内容的下载方法。<br><ul><li>**未配置**：最终用户使用自己的方法更新其设备，可能使用的是 Windows 更新或操作系统提供的传递优化设置  。 </li> <li> **仅 HTTP，无对等互连 (0)** ：仅从 Internet 获取更新。 请勿从网络上的其他计算机（对等互联）获取更新。 </li> <li> **HTTP 与同一 NAT 背后的对等互连混合 (1)** ：从 Internet 和网络上的其他计算机获取更新。 </li> <li> **HTTP 与专用组间的对等互连混合 (2)** ：对等互连在同一 Active Directory 站点（如果存在）或同一域中的设备上发生。 在选中此选项后，在整个网络地址转换 (NAT) IP 地址中进行对等互连。 </li> <li> **与 Internet 对等互连混合的 HTTP (3)** ：从 Internet 和网络上的其他计算机获取更新。 </li> <li> **无对等互连的简单下载模式 (99)** ：直接从更新所有者（如 Microsoft）通过 Internet 获取更新。 它不会联系传递优化云服务。 </li> <li> **Bypass 模式 (100)** ：使用后台智能传送服务 (BITS) 获取更新。 请勿使用传递优化。 </li></ul> **默认值**：未配置  <br><br> 策略 CSP：[DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)  <br><br>  |
 | [限制对等选择](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#select-a-method-to-restrict-peer-selection)          | 1803        | 必须将“下载模式”设置为“HTTP 与同一 NAT 背后的对等互连混合 (1)”或“HTTP 与专用组间的对等互连混合 (2)”    。<br/><br/>将对等选择限制为特定的设备组。<br/><br/>**默认值**：未配置 <br/><br/>策略 CSP：[DORestrictPeerSelectionBy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dorestrictpeerselectionby)<br><br>      |
@@ -49,7 +49,7 @@ Intune 控制台中的大多数选项都直接映射到传递优化设置，Wind
 
 ## <a name="bandwidth"></a>带宽  
 
-|Setting  |Windows 版本  |详细信息  |
+|设置  |Windows 版本  |详细信息  |
 |---------|---------|---------|
 |带宽优化类型     | 查看详情         | 选择 Intune 如何确定传递优化可在所有并发下载活动中使用的最大带宽。<br><br>选项包括：<br><ul><li>未配置 </li><br><li>**绝对值** - 指定设备可以在其所有并发传递优化下载活动中使用的[最大下载带宽（以 KB/秒为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-download-bandwidth)和[最大上传带宽（以 KB/秒为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-upload-bandwidth)。<br><br>要求使用 Windows 1607<br><br>策略 CSP：[DOMaxDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxdownloadbandwidth) 和 [DOMaxUploadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxuploadbandwidth)</li><br><li>**百分比** - 指定设备可以在其所有并发传递优化下载活动中使用的[最大前台下载带宽（以百分比为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-foreground-download-bandwidth)和[最大后台下载带宽（以百分比为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#maximum-foreground-download-bandwidth)。<br><br>要求使用 Windows 1803<br><br>策略 CSP：[DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth) 和 [DOPercentageMaxBackgroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)    <br><br><li>**营业时间百分比** - 要获得最大[前台](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#set-business-hours-to-limit-foreground-download-bandwidth)下载带宽和最大[后台](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#set-business-hours-to-limit-background-download-bandwidth)下载带宽，请配置营业时间的开始和结束时间，然后配置在营业时间内外使用的带宽百分比。 <br><br>要求使用 Windows 1803 <br><br>策略 CSP：[DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth) 和 [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)<br><br>   |
 |[延迟后台 HTTP 下载（以秒为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-from-http-in-secs) | 1803        | 此设置用于配置通过 HTTP 延迟后台下载内容的最长时间。 这仅适用于支持对等互联下载源的下载。 在此延迟期间，设备将搜索附带可用内容的对等。 最终用户在等待对等源时，下载似乎会停滞。   <br><br>**默认值**：没有配置任何值   <br><br>**建议值**：60 秒   <br><br>策略 CSP：[DODelayBackgroundDownloadFromHttp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaybackgrounddownloadfromhttp) <br><br>    |
@@ -58,7 +58,7 @@ Intune 控制台中的大多数选项都直接映射到传递优化设置，Wind
 
 ## <a name="caching"></a>正在缓存  
 
-|Setting  |Windows 版本  |详细信息  |
+|设置  |Windows 版本  |详细信息  |
 |---------|---------|---------|
 |[对等缓存所需的最小 RAM（以 GB 为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-ram-inclusive-allowed-to-use-peer-caching)      | 1703        | 指定设备使用对等缓存必须具有的最小 RAM 大小（以 GB 为单位）。 <br><br>**默认值**：没有配置任何值   <br><br>**建议**：4 GB <br><br>策略 CSP：[DOMinRAMAllowedToPeer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominramallowedtopeer) <br><br>        |
 |[对等缓存所需的最小磁盘大小（以 GB 为单位）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-disk-size-allowed-to-use-peer-caching)      | 1703        | 指定设备使用对等缓存必须具有的最小磁盘大小（以 GB 为单位）。 <br><br>**默认值**：没有配置任何值   <br><br>**建议**：32 GB   <br><br>策略 CSP：[DOMinDiskSizeAllowedToPeer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domindisksizeallowedtopeer) <br><br>    |
@@ -71,7 +71,7 @@ Intune 控制台中的大多数选项都直接映射到传递优化设置，Wind
 
 ## <a name="local-server-caching"></a>本地服务器缓存  
 
-|Setting  |Windows 版本  |详细信息  |
+|设置  |Windows 版本  |详细信息  |
 |---------|-----------------|---------|
 |缓存服务器主机名 | 1809  |指定设备将用于传递优化的网络缓存服务器的 IP 地址或 FQDN，然后选择 "**添加**" 将该项添加到列表中。  <br><br>**默认值**：未配置  <br><br>策略 CSP： [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
 |[延迟前台下载缓存服务器回退（秒）](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |指定一个时间0-2592000 （以秒为单位），以将缓存服务器的回退延迟到用于前台内容下载的 HTTP 源。 当策略延迟从 http 进行前台下载时，它将首先应用（以允许从对等机下载）。 (0-2592000)    <br><br>**默认值**：0  <br><br>策略 CSP [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |

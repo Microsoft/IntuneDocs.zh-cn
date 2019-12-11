@@ -19,10 +19,10 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 29a79e109f40a06930f988156e7621a4b55c05f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502029"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>解决 Windows 设备的常见问题

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6342ed23f67c37c2f5084e58594294d826a28e40
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506713"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>将运行 Windows Holographic 的设备升级到 Windows Holographic for Business
@@ -31,7 +31,7 @@ Microsoft Intune 包含许多有助于管理和保护设备的设置。 本文�
 
 若要详细了解此功能，请参阅[升级 Windows 10 版本或启用 S 模式](../edition-upgrade-configure-windows-10.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](edition-upgrade-configure-windows-10.md#create-the-profile)。
 

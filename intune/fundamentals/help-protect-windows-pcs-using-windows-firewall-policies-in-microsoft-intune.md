@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502827"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 防火墙策略帮助保护 Windows PC
@@ -101,7 +101,7 @@ Microsoft Intune 可通过多种方式帮助你保护使用 Intune 客户端管�
 
 你可以配置例外以允许特定类型的网络流量通过防火墙，而无需考虑先前配置的值。 默认情况下，不会配置其中任何设置。
 
-|设置名|详细信息|
+|设置名称|详细信息|
 |------------------|--------------------|
 |**BranchCache - 内容检索**<br>（Windows 7 或更高版本）|允许 BranchCache 客户端使用 HTTP 从分布模式中的另一个 BranchCache 客户端以及从托管缓存模式中的托管缓存中检索内容。 此设置使用 HTTP。|
 |**BranchCache - 托管缓存客户端**<br>（Windows 7 或更高版本）|允许 BranchCache 客户端使用托管缓存。 此设置使用 HTTPS。|

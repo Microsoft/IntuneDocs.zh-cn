@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713475"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
@@ -101,7 +101,7 @@ ms.locfileid: "73713475"
 
    ![Apple 开发人员门户 - 证书、ID 和配置文件](./media/app-wrapper-prepare-ios/iOS-signing-cert-1.png)
 
-5. 安装完成后，单击 ![“Apple 开发者门户”](./media/app-wrapper-prepare-ios/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
+5. 单击 ![“Apple 开发者门户”](./media/app-wrapper-prepare-ios/iOS-signing-cert-2.png) 并在右上角登录以添加 iOS 证书。
 
 6. 在“生产”  下选择创建“内部和临时”  证书。
 
@@ -193,7 +193,7 @@ ms.locfileid: "73713475"
 
 |属性|如何使用它|
 |---------------|--------------------------------|
-|**-i**|`<Path of the input native iOS application file>`。 文件名必须以 .app 或 .ipa 结尾。 |
+|**-i**|`<Path of the input native iOS application file>`”。 文件名必须以 .app 或 .ipa 结尾。 |
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
@@ -215,21 +215,21 @@ ms.locfileid: "73713475"
 
 在 IntuneMAMPackager/Contents/MacOS 文件夹中，使用文本编辑器或 Xcode 打开 `Parameters.plist`（一个空白 plist 模板）。 为以下项输入参数：
 
-| Plist 项 | 类型 |  默认值 | 注意 |
+| Plist 项 | 类型 |  默认值 | 注释 |
 |------------------|-----|--------------|-----|
-| 输入应用程序包路径 |字符串|empty| 与 -i 相同|
-| 输出应用程序包路径 |字符串|empty| 与 -o 相同|
-| 预配配置文件路径 |字符串|empty| 与 -p 相同|
-| SHA-1 证书哈希 |字符串|empty| 与 -c 相同|
-| ADAL 颁发机构 |字符串|empty| 与 -aa 相同|
-| ADAL 客户端 ID |字符串|empty| 与 -ac 相同|
-| ADAL 回复 URI |字符串|empty| 与 -ar 相同|
-| 已启用详情 |布尔值|false| 与 -v 相同|
-| 删除缺失的权利 |布尔值|false| 与 -c 相同|
+| 输入应用程序包路径 |字符串|空| 与 -i 相同|
+| 输出应用程序包路径 |字符串|空| 与 -o 相同|
+| 预配配置文件路径 |字符串|空| 与 -p 相同|
+| SHA-1 证书哈希 |字符串|空| 与 -c 相同|
+| ADAL 颁发机构 |字符串|空| 与 -aa 相同|
+| ADAL 客户端 ID |字符串|空| 与 -ac 相同|
+| ADAL 回复 URI |字符串|空| 与 -ar 相同|
+| 已启用详情 |布尔|false| 与 -v 相同|
+| 删除缺失的权利 |布尔|false| 与 -c 相同|
 | 防止默认生成更新 |Boolen|false| 相当于使用不带参数的 -b|
-| 生成字符串替代 |字符串|empty| 已包装输出应用的自定义 CFBundleVersion|
-| 包括 Citrix XenMobile App SDK （仅限网络的变体）|布尔值|false| 与-citrix 相同|
-| 扩展预配配置文件路径 |字符串数组|empty| 应用的一系列扩展预配配置文件。
+| 生成字符串替代 |字符串|空| 已包装输出应用的自定义 CFBundleVersion|
+| 包括 Citrix XenMobile App SDK （仅限网络的变体）|布尔|false| 与-citrix 相同|
+| 扩展预配配置文件路径 |字符串数组|空| 应用的一系列扩展预配配置文件。
 
 将 IntuneMAMPackager 与 plist 一起作为唯一参数运行：
 
@@ -269,7 +269,7 @@ ms.locfileid: "73713475"
 
 如果应用包装工具失败，将在控制台显示以下错误消息之一：
 
-|错误消息|更多信息|
+|错误消息|详细信息|
 |-----------------|--------------------|
 |你必须指定有效的 iOS 配置文件。|配置文件可能无效。 检查以确保具有正确的设备权限，以及针对开发或分发的正确配置文件。 配置文件可能已过期。|
 |指定有效的输入应用程序名称。|确保你指定的输入应用程序名称正确。|

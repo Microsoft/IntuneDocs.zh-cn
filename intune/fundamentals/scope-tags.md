@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504955"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>对分布式 IT 使用基于角色的访问控制 (RBAC) 和范围标记
@@ -50,7 +50,7 @@ ms.locfileid: "72504955"
 3. 如果要将所有设备置于特定组中，请选择 "**向所选组中的所有设备分配作用域标记**"。
     1. 在 "**选择要包括的组**" 页中，选择包含要将此作用域标记分配到的设备的组。
     2. 选择“选择”  。
-4. 选择“创建”  。
+4. 选择 **“创建”** 。
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>向角色分配作用域标记
 

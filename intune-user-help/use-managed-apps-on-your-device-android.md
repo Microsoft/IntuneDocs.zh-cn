@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501897"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781203"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 设备上使用托管应用
 配置托管应用，以满足组织的安全要求，并保护工作和学校数据。 这些应用面向设备提供，以供自动安装和使用。 
@@ -39,9 +39,7 @@ ms.locfileid: "72501897"
 组织可要求使用托管应用执行某些操作，例如打开工作文件，或访问 Web 链接。 如果没有应用，可能无法继续任务。 部分托管应用可供安装，但不是必需的。
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>如何知道我使用的是托管应用？
-首次访问托管应用中的工作或学校数据时，将收到一条消息，类似于下面的示例屏幕截图。 消息将提示你重启应用以继续。
-
-![用户打开设备上的托管应用时显示的消息屏幕截图。 消息显示，“组织未在此应用中保护其数据。 需重启应用才能继续。”，后接“确定”按钮。](./media/managed-apps-message.png)
+尝试在托管应用中访问工作或学校数据时，会收到一条屏幕消息，指示该应用受组织保护。 
 
 ## <a name="commonly-managed-apps"></a>常用托管应用  
 学校或工作场所中通常必需或可用的托管应用示例包括：

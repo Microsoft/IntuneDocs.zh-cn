@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059689"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>使用适用于 Microsoft Intune 的 Endpoint Protection 帮助保障 Windows PC 的安全
@@ -39,7 +39,7 @@ ms.locfileid: "74059689"
 IT 管理员的主要工作之一是保持所管理的计算机中没有恶意软件和病毒。 在将 Intune 部署到组织中的 Windows PC 之前，你应通过选择下列选项之一并配置其关联的策略设置来决定如何保护计算机：
 
 
-|                                                                                                                                                                       你希望：                                                                                                                                                                        |                                                                                                       Endpoint Protection 策略设置                                                                                                        |                                                                                                                                                  更多信息                                                                                                                                                  |
+|                                                                                                                                                                       你希望：                                                                                                                                                                        |                                                                                                       Endpoint Protection 策略设置                                                                                                        |                                                                                                                                                  详细信息                                                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                             仅当未安装第三方 Endpoint Protection 应用程序时，才使用 Microsoft Intune Endpoint Protection。<br /><br />在未安装第三方 Endpoint Protection 应用程序的所有计算机上，可以使用 Microsoft Intune Endpoint Protection。                                              | 安装 Endpoint Protection =“是”<br /><br />启用 Endpoint Protection =“是”<br /><br />安装 Endpoint Protection，即使安装了第三方 Endpoint Protection 应用程序也不例外 =“否”  |                                                                      如果检测到第三方 Endpoint Protection 应用程序，则表明未安装 Microsoft Intune Endpoint Protection，或者此前安装过，但已被卸载。                                                                       |
 | 即使安装了第三方 Endpoint Protection 应用程序，仍使用 Microsoft Intune Endpoint Protection。<br /><br />采用此将同时运行 Microsoft Intune Endpoint Protection 和第三方 Endpoint Protection 应用程序。 由于存在潜在的性能问题，不建议采用此配置。 | 安装 Endpoint Protection =“是”<br /><br />启用 Endpoint Protection =“是”<br /><br />安装 Endpoint Protection，即使安装了第三方 Endpoint Protection 应用程序也不例外 =“是” |                        何时使用：<br /><br />- 要切换为使用 Microsoft Intune Endpoint Protection。<br />-   将部署使用 Microsoft Intune Endpoint Protection 的新客户端。<br />- 升级任何将使用 Microsoft Intune Endpoint Protection 的客户端。                         |
@@ -104,12 +104,12 @@ IT 管理员的主要工作之一是保持所管理的计算机中没有恶意�
 
 ### <a name="specify-scan-schedule-settings"></a>指定扫描计划设置
 
-|策略设置|更多信息|
+|策略设置|详细信息|
 |------------------|--------------------|
 |**计划每日一次快速扫描**|计划对计算机上的常用文件和重要系统文件每天进行一次快速扫描。 此快速扫描对性能的影响最小。<br /><br />建议的值：**是**|
 |**如果错过两次连续的扫描，则运行快速扫描**|配置 Endpoint Protection 以在计算机错过两次连续快速扫描的情况下自动运行快速扫描。<br /><br />建议的值：**是**|
 |**计划完全扫描**|配置对本地计算机硬盘上的所有文件和资源进行完全扫描。 此扫描可能需要一些时间，并可能会影响计算机性能（具体时间取决于扫描的文件和资源的数目）。<br /><br />建议的值：**否**|
-|**如果错过两次连续的完全扫描，则运行完全扫描**|配置 Endpoint Protection 以在计算机错过两次连续扫描的情况下自动运行完全扫描。<br /><br />建议的值：未配置|
+|**如果错过两次连续的完全扫描，则运行完全扫描**|配置 Endpoint Protection 以在计算机错过两次连续扫描的情况下自动运行完全扫描。<br /><br />建议值：未配置|
 
 ### <a name="specify-scan-options-settings"></a>指定扫描选项设置
 

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503491"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
@@ -180,7 +180,7 @@ intunemam {
 | 包括如 React Native（包含从 `Activity`、`Application` 以及 `Fragment` 派生的类）的一个库，但仅使用静态帮助程序或实用程序类 | 否 |
 | 包括一个库（此库包含从 `TextView` 派生的视图类），并且在应用中使用或进一步派生这些类 | 是 |
 
-#### <a name="reporting"></a>报表
+#### <a name="reporting"></a>报告
 生成插件可生成其所作更改的 HTML 报表。 要请求生成此报表，请在 `intunemam` 配置块中指定 `report = true`。 如果已生成，则报表将写入生成目录中的 `outputs/logs`。
 
 ```groovy
@@ -614,7 +614,7 @@ NotificationRestriction notificationRestriction =
     MAMPolicyManager.getPolicyForIdentity(notificationIdentity).getNotificationRestriction();
 ```
 
-如果 `BLOCKED` 限制，应用不能为与此策略关联的用户显示任何通知。 如果 `BLOCK_ORG_DATA`，则应用必须显示不包含组织数据的已修改通知。 如果 `UNRESTRICTED`，则允许所有通知。
+如果 `BLOCKED`限制，应用不能为与此策略关联的用户显示任何通知。 如果 `BLOCK_ORG_DATA`，则应用必须显示不包含组织数据的已修改通知。 如果 `UNRESTRICTED`，则允许所有通知。
 
 如果未调用 `getNotificationRestriction`，MAM SDK 将尽力为单标识应用自动限制通知。 如果启用了自动拦截，并设置了 `BLOCK_ORG_DATA`，则不会显示通知。 若要进行更精细的控制，请检查 `getNotificationRestriction` 的值并相应地修改应用通知。
 
@@ -673,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 以下通知会发送到应用，其中一些可能需要应用参与：
 
-* **WIPE_USER_DATA**：此通知在 `MAMUserNotification` 类中进行发送。 收到此通知后，应用*必须*删除与托管标识相关的所有数据（从 `MAMUserNotification.getUserIdentity()`）。 出现这种情况的原因可能有多种，包括应用调用 `unregisterAccountForMAM` 时、IT 管理员启动擦除时或未满足管理员要求的条件性访问策略。 如果你的应用程序未注册此通知，则将执行默认的擦除行为。 默认行为将删除单个标识应用的所有文件，或删除使用多标识应用的托管标识标记的所有文件的所有文件。 此通知永远不会发送到 UI 线程。
+* **WIPE_USER_DATA**：此通知在 `MAMUserNotification` 类中进行发送。 收到此通知后，应用*必须*删除与托管标识相关的所有数据（从 `MAMUserNotification.getUserIdentity()`）。 出现这种情况的原因可能有多种，包括应用调用 `unregisterAccountForMAM`时、IT 管理员启动擦除时或未满足管理员要求的条件性访问策略。 如果你的应用程序未注册此通知，则将执行默认的擦除行为。 默认行为将删除单个标识应用的所有文件，或删除使用多标识应用的托管标识标记的所有文件的所有文件。 此通知永远不会发送到 UI 线程。
 
 * **WIPE_USER_AUXILIARY_DATA**：如果应用希望 Intune App SDK 执行默认选择性擦除行为，但是在擦除进行时仍想删除一些辅助数据，则应用可以注册此通知。 此通知不适用于单标识应用，它将仅发送到多标识应用。 此通知永远不会发送到 UI 线程。
 
@@ -1878,7 +1878,7 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult` 而不检查 requestCode 会导致奇怪的行为。
 
-## <a name="telemetry"></a>遥测技术
+## <a name="telemetry"></a>遥测
 
 Intune App SDK for Android 不会控制应用中的数据集合。 公司门户应用程序会默认记录系统生成的数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人数据。
 

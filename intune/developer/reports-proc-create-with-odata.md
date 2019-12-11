@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490473"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784266"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 从 OData 源创建 Intune 报表
 
@@ -111,7 +111,7 @@ ms.locfileid: "72490473"
 3. 展开 `ownerTypes` 表，然后选择 `ownerTypeName` 数据字段。
 4. 将 `ownerTypes` 表中的 `onwerTypeName` 数据字段拖放到 "**筛选器**" 窗格中，并将其放在 "在**此处添加数据字段**" 部分的 "**筛选器**" 下。  
 
-   在 `OwnerTypes` 表中，有一个名为 `OwnerTypeKey`that 的数据字段包含一个数据，即设备是公司拥有的还是个人的。 由于要在此筛选器中显示易记名称，因此查找 `ownerTypes` 表，并将“ownerTypeName”  拖到切片器中。 此示例说明数据模型如何支持表之间的关系。
+   在 `OwnerTypes` 表中，有一个名为 `OwnerTypeKey`的数据字段，其中包含一个设备是否为公司拥有或个人数据。 由于要在此筛选器中显示易记名称，因此查找 `ownerTypes` 表，并将“ownerTypeName”  拖到切片器中。 此示例说明数据模型如何支持表之间的关系。
 
 ![包含“支持表之间的关系”筛选器的树状图](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

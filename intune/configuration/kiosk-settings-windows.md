@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059348"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691729"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>使用 Intune 将 Windows 10 及更高版本设备作为展台运行的设置
 
@@ -32,7 +32,7 @@ ms.locfileid: "74059348"
 
 若要详细了解 Intune 中的 Windows 展台功能，请参阅[配置展台设置](../kiosk-settings.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 - [创建配置文件](kiosk-settings.md#create-the-profile)。
 
@@ -83,16 +83,17 @@ ms.locfileid: "74059348"
 
     - 空闲时间后刷新浏览器  ：输入展台浏览器以刷新状态重新启动之前的空闲时长（1-1440 分钟）。 空闲时间是自用户上次交互以来的分钟数。 默认情况下，该值为空，这意味着没有任何空闲超时。
 
-    - 允许的网站  ：使用此设置允许特定网站打开。 换言之，使用此功能可在设备上限制或阻止网站。 例如，可以允许 `http://contoso.com*` 中的所有网站打开。 默认情况下，允许所有网站。
+    - 允许的网站  ：使用此设置允许特定网站打开。 换言之，使用此功能可在设备上限制或阻止网站。 例如，可以允许 `http://contoso.com` 中的所有网站打开。 默认情况下，允许所有网站。
 
-      要允许特定网站，请以单独的行上传包含允许的网站列表的文件。 如果未添加文件，则允许所有网站。 Intune 支持 `*`（星号）作为通配符。
+      要允许特定网站，请以单独的行上传包含允许的网站列表的文件。 如果未添加文件，则允许所有网站。 默认情况下，Intune 支持通配符。 因此，当你输入域（如 `sharepoint.com`）时，将自动允许使用子域，如 `contoso.sharepoint.com`、`my.sharepoint.com`等。
 
       示例文件应类似于以下列表：
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > 使用 Microsoft 展台浏览器启用了自动登录功能的 Windows 10 网亭必须使用来自 Microsoft Store for Business 的脱机许可证。 此要求是因为自动登录使用的本地用户帐户没有 Azure Active Directory （AD）凭据。 因此，无法评估联机许可证。 有关详细信息，请参阅[分发脱机应用](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)。

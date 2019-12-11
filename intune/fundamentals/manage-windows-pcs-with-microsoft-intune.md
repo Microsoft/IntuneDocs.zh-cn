@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414398"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>通过 Intune 软件客户端将 Windows 电脑作为计算机进行管理
@@ -49,16 +49,16 @@ Intune 最多可支持使用该软件客户端将 7,000 台 Windows 电脑作为
 **硬件**：  
 安装 Intune 客户端软件的最低硬件要求如下：
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |Network (网络)|客户端要求 PC 具有 Internet 连接。|
 |处理器和内存|请参阅 PC 操作系统的处理器和 RAM 要求。|
-|硬盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
+|磁盘空间|安装客户端软件之前必须有 200 MB 可用磁盘空间。|
 
 **软件**：  
 安装该客户端的软件要求如下：
 
-|要求|更多信息|
+|要求|详细信息|
 |---------------|--------------------|
 |操作系统 | 运行 Windows 7 SP1 和 Windows 8.1 或更高版本的 Windows 设备。 </br></br>**不支持家庭版各版本。**|
 |管理权限|安装客户端软件的帐户必须具有该设备的本地管理员权限。|

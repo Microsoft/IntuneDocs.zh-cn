@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a2a1c279e4b5f915fcf8702ee1f7e5f6af9e79ac
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72505998"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>如果安装公司门户应用并在 Intune 中注册 iOS 设备后会怎样？
@@ -55,7 +55,7 @@ ms.locfileid: "72505998"
 
 - 禁用设备上的照相机，以避免用户拍摄敏感公司数据。
 
-- 在设备上启用或禁用 Web 浏览。
+- 在设备上启用或禁用Web 浏览。
 
 - 启用或禁用备份到 iCloud。
 

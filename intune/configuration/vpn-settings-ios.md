@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059814"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781135"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 VPN 设置
 
 Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使用这些设置创建和配置组织网络的 VPN 连接。 本文将说明这些设置。 某些设置仅适用于某些 VPN 客户端，例如 Citrix、Zscaler 等。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](vpn-settings-configure.md)。
 
@@ -136,8 +136,8 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - **中**（默认）：每10分钟发送一次 keepalive 消息。
   - **High**：每60秒发送一条 keepalive 消息。
 
-- **TLS 版本最小值**：输入要使用的最低 tls 版本。 输入 `1.0`、`1.1` 或 `1.2`。 如果留空，则使用 `1.0` 的默认值。
-- **Tls 版本范围最大值**：输入要使用的最大 tls 版本。 输入 `1.0`、`1.1` 或 `1.2`。 如果留空，则使用 `1.2` 的默认值。
+- **TLS 版本最小值**：输入要使用的最低 tls 版本。 输入 `1.0`、`1.1`或 `1.2`。 如果留空，则使用 `1.0` 的默认值。
+- **Tls 版本范围最大值**：输入要使用的最大 tls 版本。 输入 `1.0`、`1.1`或 `1.2`。 如果留空，则使用 `1.2` 的默认值。
 - **完全向前保密**：选择 "**启用**" 以启用 "完全向前保密（PFS）"。 PFS 是一项 IP 安全功能，可降低会话密钥泄露时的影响。 **Disable** （默认值）不使用 PFS。
 - **证书吊销检查**：选择 "**启用**" 以确保在允许 VPN 连接成功之前证书未被吊销。 这项检查最为重要。 如果 VPN 服务器在确定证书是否已吊销之前超时，则授予访问权限。 **禁用**（默认）不检查吊销的证书。
 
@@ -179,7 +179,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 
 ## <a name="automatic-vpn-settings"></a>自动 VPN 设置
 
-- **每应用 VPN**：启用每应用 VPN。 允许 VPN 连接在打开某些应用时自动触发。 还可以将应用与此 VPN 配置文件相关联。 有关详细信息，请参阅[为 iOS 设置每应用 VPN 的说明](vpn-setting-configure-per-app.md)。
+- **每应用 VPN**：启用每应用 VPN。 允许 VPN 连接在打开某些应用时自动触发。 还可以将应用与此 VPN 配置文件相关联。 IKEv2 上不支持按应用的 VPN。 有关详细信息，请参阅[为 iOS 设置每应用 VPN 的说明](vpn-setting-configure-per-app.md)。 
   - **提供程序类型**：仅适用于 Pulse Secure 和自定义 VPN。
   - 在结合使用 iOS 每应用 VPN 配置文件和 Pulse Secure 或自定义 VPN 时，选择使用应用层隧道（应用-代理）或数据包级别隧道（数据包-隧道）  。 针对应用层隧道，将 ProviderType 值设置为 app-proxy，针对数据包层隧道，将其设置为 packet-tunnel    。 如果不确定使用哪个值，请查阅 VPN 提供商的文档。
   - **将触发此 VPN 的 Safari URL**：添加一个或多个网站 URL。 使用设备上的 Safari 浏览器访问这些 URL 时，将自动建立 VPN 连接。
@@ -190,7 +190,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - **URL 字符串探测**：可选。 输入规则用作测试的 URL。 如果设备在不重定向的情况下访问此 URL，则会启动 VPN 连接。 并且，设备会连接到目标 URL。 用户看不到该 URL 字符串探测站点。
 
     例如，URL 字符串探测是一个审核 Web 服务器 URL，用于在连接 VPN 前检查设备的符合性。 或者，该 URL 通过 VPN 在将设备连接到目标 URL 前，测试 VPN 连接到站点的能力。
-。
+.
   - **域操作**：选择以下项之一：
     - 需要时连接
     - 从不连接

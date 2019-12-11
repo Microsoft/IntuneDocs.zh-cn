@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059508"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows Holographic for Business 设备设置
@@ -28,7 +28,7 @@ ms.locfileid: "74059508"
 
 本文列出并介绍了可以在 Windows Holographic for Business 设备（如 Microsoft Hololens）上控制的各种设置。 在移动设备管理 (MDM) 解决方案中，使用这些设置可允许或禁用功能、控制安全等。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置配置文件](device-restrictions-configure.md#create-the-profile)。
 

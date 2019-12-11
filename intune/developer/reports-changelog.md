@@ -6,7 +6,7 @@ keywords: Intune 数据仓库
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9740eed3ab727d76a9af4e46642d8279b310fd9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a37699542c5a9fe5268541aadc91b4c5d3ab5e9a
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490529"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899310"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune 数据仓库 API 的更改日志
 
@@ -38,7 +38,7 @@ ms.locfileid: "72490529"
 
 下表列出了 Intune 数据仓库中最近删除的集合和替换集合。
 
-|    收集                          |    “更改”     |    其他信息                                                                                                                                                                                                                                                                                                                                                                 |
+|    集合                          |    “更改”     |    附加信息                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    mobileAppDeviceUserInstallStatus    |    已删除    |    请改用 [mobileAppInstallStatusCounts](intune-data-warehouse-collections.md#mobileappinstallstatuscounts)。                                                                                                                                                                                                                                                                     |
 |    enrollmentTypes                     |    已删除    |    请改用 [deviceEnrollmentTypes](intune-data-warehouse-collections.md#deviceenrollmenttypes)。                                                                                                                                                                                                                                                                                      |
@@ -102,7 +102,7 @@ ms.locfileid: "72490529"
 |    managementAgentKey            |    managementStateKey                                               |
 |    制造商                  |    devices 集合中的 manufacturer                               |
 |    mdmStatusKey                  |    complianceStateKey，可引用 complianceStates 集合    |
-|    model                         |    devices 集合中的模型                                      |
+|    模型                         |    devices 集合中的模型                                      |
 |    osFamily                      |    devices 集合中的 operatingSystem                            |
 |    osRevisionNumber              |    devices 集合中的 osVersion                                  |
 |    processorArchitecture         |    已删除                                                          |
