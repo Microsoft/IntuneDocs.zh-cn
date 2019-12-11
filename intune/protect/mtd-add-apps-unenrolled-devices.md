@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f8dd7127594a0e23c85b9f8141ce6d398d9a447a
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72794454"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>将移动威胁防御应用添加到未注册的设备
@@ -55,7 +55,7 @@ ms.locfileid: "72794454"
 - [使用 Intune 分配应用](../apps/apps-deploy.md)。
 
 ### <a name="making-lookout-for-work-available-to-end-users"></a>为最终用户提供 Lookout for Work
-- **Outlook Web Access (OWA)**  
+- **Android**  
   - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](../apps/store-apps-android.md)，查看相关操作说明。 完成“配置应用信息”部分时，请使用此 [Lookout for Work - Play Store URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise)  。
 
 - **iOS**
@@ -89,7 +89,7 @@ ms.locfileid: "72794454"
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Pradeo - App Store URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) when completing the **Configure app information** section. -->
 
 ### <a name="making-better-mobile-available-to-end-users"></a>为最终用户提供 Better Mobile 
-- **Outlook Web Access (OWA)**
+- **Android**
   - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](../apps/store-apps-android.md)，查看相关操作说明。 完成“配置应用信息”部分时，请使用此 [Active Shield - Play Store URL](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise)  。
 <!-- - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [ActiveShield - App Store URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) when completing the **Configure app information** section. -->
