@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8efb9dcf9129375252b5d9a7d1e6255dce39625c
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801412"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Android 设置
@@ -34,7 +34,7 @@ ms.locfileid: "73801412"
 
 作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建合规性策略](create-compliance-policy.md#create-the-policy)。 对于 "**平台**"，请选择 " **Android 设备管理员**"。
 
@@ -149,7 +149,7 @@ ms.locfileid: "73801412"
 - **阻止来自未知源的应用**：
 
   - **未配置**（默认）- 不会评估此设置的符合性和不符合性。 
-  - **块**区设备，具有**安全 > 未知源**启用源（在 android 4.0 通过 android 7、windows 支持*支持。在 Android 8.0 及更高版本中不受支持）。
+  - **块**区设备，具有**安全 > 未知源**启用源（在 android 4.0 通过 android 7、windows 支持*支持。在 Android 8.0 及更高版本中不受支持*）。
 
   若要旁加载应用，必须允许未知源。 如果没有旁加载 Android 应用，请将此功能设置为“阻止”以启用此符合性策略  。
 

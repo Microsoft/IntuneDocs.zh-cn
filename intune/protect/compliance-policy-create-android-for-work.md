@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810259"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Android Enterprise 设置
@@ -35,9 +35,9 @@ ms.locfileid: "72810259"
 作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
 > [!IMPORTANT]
-> 合规性策略还会应用 Android 企业专用设备。 如果将合规性策略分配给专用设备，则设备可能显示为 "**不符合**"。 条件性访问和强制符合性在专用设备上不可用。 请务必完成使专用设备符合分配的策略的任何任务或操作。
+> 合规性策略还会应用 Android 企业专用设备。 如果将合规性策略分配给专用设备，则设备可能显示为 "**不符合**"。 条件性访问和强制符合性在专用设备上不可用。 请务必完成任何任务或操作，以确保专用设备符合分配的策略。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建合规性策略](create-compliance-policy.md#create-the-policy)。 对于“平台”，选择“Android Enterprise”   。
 

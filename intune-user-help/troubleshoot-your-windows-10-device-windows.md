@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bbc251479652079cb33b1ca4dd08103103b91aa9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508194"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 设备注册疑难解答
@@ -43,7 +43,7 @@ ms.locfileid: "72508194"
 
 1. 如果执行了上述步骤，但仍无法访问你的工作或学校电子邮件和文件，请返回至“**访问工作单位或学校**”。
 
-2. 执行以下操作之一：
+2. 执行下列操作之一：
 
    - 如果你看到类似下图的连接，点击该连接，并确认你看到“管理”、“信息”和“断开连接”选项。 如果你看到以上选项，表示你现在已注册且已连接。
 
