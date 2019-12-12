@@ -20,10 +20,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73635464"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
@@ -327,7 +327,7 @@ Intune macOS 公司门户现在支持 macOS 的深色模式。 在 macOS 10.14+ 
 #### <a name="intune-will-leverage-google-play-protect-apis-on-android-devices---2577355-----"></a>Intune 将在 Android 设备上使用 Google Play Protect API<!-- 2577355   -->
 某些 IT 管理员面临着 BYOD 情况，最终用户可能会使他们的手机获取 root 权限或越狱。 此行为虽然有时并非恶意，但会导致绕过许多 Intune 策略，这些策略是为了保护组织在最终用户设备上的数据而设置的。 因此，Intune 为已注册和未注册的设备提供 root 权限和越狱检测。 在此版本中，Intune 现在将利用 Google Play Protect API 添加到我们对未注册设备的现有 root 权限检测检查。 虽然 Google 不会共享发生的所有 root 权限检测检查，但我们预期这些 API 能够检测出因设备自定义而导致设备获取 root 权限的用户，以及能够在旧设备上获得较新 OS 更新的用户。 然后，可以阻止这些用户访问公司数据，或者可以从其启用策略的应用中删除其公司帐户。 为了获得额外价值，IT 管理员现在将在 Intune 应用保护边栏选项卡中进行多次报告更新 -“已标记的用户”报告将显示通过 Google Play Protect 的 SafetyNet API 扫描检测到的用户，“潜在有害应用”报告将显示通过 Google 的 Verify Apps API 扫描检测到的应用。 此功能在 Android 中可用。
 
-#### <a name="win32-app-information-available-in-troubleshooting-blade---2617342-----"></a>“故障排除”边栏选项卡显示的 Win32 应用信息<!-- 2617342   -->
+#### <a name="win32-app-information-available-in-troubleshooting-blade---2617342-----"></a>“故障排除”边栏选项卡显示 Win32 应用信息<!-- 2617342   -->
 现在可以从 Intune 应用“排除故障”边栏选项卡收集 Win32 应用安装的失败日志文件  。 有关应用安装排除故障的详细信息，请参阅[排查应用安装问题](./../apps/troubleshoot-app-install.md)和[排查 Win32 应用问题](./../apps/troubleshoot-app-install.md#win32-app-installation-troubleshooting)。
 
 #### <a name="app-status-details-for-ios-apps---3761235-----"></a>iOS 应用的应用状态详细信息<!-- 3761235   -->
@@ -372,7 +372,7 @@ macOS
 - macOS
 
 #### <a name="intune-conditional-access-ui-update---2432313-----"></a>Intune 条件访问 UI 更新<!-- 2432313   -->
-我们已对 Intune 控制台中条件访问的 UI 进行了改进。 这些地方包括：
+我们已对 Intune 控制台中条件访问的 UI 进行了改进。 其中包括：
 - 使用 Azure Active Directory 中的边栏选项卡替换了 Intune“条件访问”边栏选项卡  。 这将确保可在 Intune 控制台中访问[条件访问](../protect/conditional-access.md)的所有设置和配置，这仍是 Azure AD 技术。 
 - 我们已将“本地访问”边栏选项卡重命名为“Exchange 访问”，并将 Exchange 服务连接器设置重定位到此重命名的边栏选项卡    。  此更改合并了[配置和监视与 Exchange Online 和 Exchange 本地相关的详细信息](../protect/exchange-connector-install.md)的位置。  
 
@@ -1066,7 +1066,7 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 
 对于参与部署的客户，此新体验取代了一组静态预选选项的当前“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。  
 
- 我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
+*我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
 
 有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[“帮助和支持”体验](get-support.md#help-and-support-experience)。  
 
@@ -1827,7 +1827,7 @@ Intune 管理员可以配置这些设置，启用共享。 将设备与显示免
 
 在“设备配置”中，可以查看更详细的错误代码和错误消息。 这一改进的报告显示了相关设置、这些设置的状态以及详细的故障排查信息。
 
-##### <a name="more-information"></a>更多信息
+##### <a name="more-information"></a>详细信息
 
 - 阻止所有传入连接
 
@@ -1861,7 +1861,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 
 #### <a name="attack-surface-reduction"></a>攻击面减少
 
-|设置名  |设置选项  |描述  |
+|设置名称  |设置选项  |描述  |
 |---------|---------|---------|
 |高级勒索软件防护|启用、审核、未配置|使用激进的勒索软件防护。|
 |标记从 Windows 本地安全机构子系统窃取的凭据|启用、审核、未配置|标记从 Windows 本地安全机构子系统 (lsass.exe) 窃取的凭据。|
@@ -1871,7 +1871,7 @@ Create profile\Endpoint protection\Windows Defender Exploit Guard 中找到。
 
 #### <a name="controlled-folder-access"></a>受控文件夹访问权限
 
-|              设置名               |                                                              设置选项                                                              | 描述 |
+|              设置名称               |                                                              设置选项                                                              | 描述 |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | 文件夹保护（已实现） | 未配置、启用、仅审核（已实现）<br><br> <strong>新建</strong><br>阻止磁盘修改、审核磁盘修改 |             |
 
@@ -1981,7 +1981,7 @@ Intune 现支持最多通过 100 个不同的 Apple 设备注册计划 (DEP) 或
 
 了解 Windows Defender 的运行状况和状态是管理 Windows 电脑的关键。  通过此更新，Intune 向 Windows Defender 代理的状态和健康状况添加新的报告和操作。 通过使用[设备符合性工作负载](../protect/compliance-policy-monitor.md)中的状态汇总报告，可以看到需要以下任一项的设备：
 - 签名更新
-- 重启
+- “重新启动”
 - 手动干预
 - 完全扫描
 - 需要干预的其他代理状态
@@ -2034,7 +2034,7 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 
 ##### <a name="attack-surface-reduction"></a>攻击面减少
 
-|设置名  |设置选项  |描述  |
+|设置名称  |设置选项  |描述  |
 |---------|---------|---------|
 |从电子邮件中执行受密码保护的可执行内容|阻止、审核、未配置|防止运行通过电子邮件下载的受密码保护的可执行文件。|
 |高级勒索软件防护|启用、审核、未配置|使用激进的勒索软件防护。|
@@ -2045,7 +2045,7 @@ Windows 信息保护 (WIP) 策略中的设置现在允许按照 WIP 策略中的
 
 ##### <a name="controlled-folder-access"></a>受控文件夹访问权限
 
-|              设置名               |                                                              设置选项                                                              | 描述 |
+|              设置名称               |                                                              设置选项                                                              | 描述 |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | 文件夹保护（已实现） | 未配置、启用、仅审核（已实现）<br><br> <strong>新建</strong><br>阻止磁盘修改、审核磁盘修改 |             |
 
@@ -2292,10 +2292,10 @@ Intune 支持独立于 Android 平台管理 Android for Work 设备的注册。 
 
 如果之前已载入，那么情况取决于所选设置：
 
-| 设置 | 默认设备类型限制中的 Android for Work 状态 | 注意 |
+| 设置 | 默认设备类型限制中的 Android for Work 状态 | 注释 |
 | --- | --- | --- |
 | **将所有设备作为 Android 管理** | 已阻止 | 所有 Android 设备均不注册 Android for Work。 |
-| 将受支持设备作为 Android for Work 管理  | 然后用户才能访问 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
+| 将受支持设备作为 Android for Work 管理  | 允许 | 所有支持 Android for Work 的 Android 设备均须注册 Android for Work。 |
 | **仅为这些组中的用户将受支持设备作为 Android for Work 管理** | 已阻止 | 创建单独的设备类型限制策略替代默认值。 此策略将之前选择的组定义为允许 Android for Work 注册。 允许所选组中的用户继续注册 Android for Work 设备。 所有其他用户则不能注册 Android for Work。 |
 
 所有情况下都将保留预期规则。 对你来说，无需任何操作即可维护环境中的 Android for Work 全局或按组允许。
