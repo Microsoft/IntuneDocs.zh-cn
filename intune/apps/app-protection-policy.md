@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31bb0e2ff4379c55829afc65fb99b768c9099a47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498949"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899431"
 ---
 # <a name="app-protection-policies-overview"></a>应用保护策略概述
 
@@ -31,7 +31,8 @@ ms.locfileid: "72498949"
 
 应用保护策略 (APP) 是可确保组织数据在托管应用中保持安全或受到控制的规则。 策略可以是在用户尝试访问或移动“公司”数据时强制执行的规则，或在用户位于应用内时受到禁止或监视的一组操作。 受管理应用是一种自身执行应用保护策略的应用，可由 Intune 管理。
 
-借助移动应用管理 (MAM) 应用保护策略，可以管理和保护应用程序内的组织数据。 通过无需注册的 MAM (MAM-WE)，可以在几乎任何[设备](app-management.md#app-management-capabilities-by-platform)上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。   许多生产型应用，例如 Microsoft Office 应用，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Microsoft Intune 保护的应用](apps-supported-intune-apps.md)的官方列表。
+借助移动应用管理 (MAM) 应用保护策略，可以管理和保护应用程序内的组织数据。 通过无需注册的 MAM (MAM-WE)，可以在几乎任何[设备](app-management.md#app-management-capabilities-by-platform)上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。   许多高效工作型应用，例如 Microsoft Office 应用
+，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Microsoft Intune 保护的应用](apps-supported-intune-apps.md)的官方列表。
 
 ## <a name="how-you-can-protect-app-data"></a>如何保护应用数据
 你的员工使用移动设备进行个人任务和工作任务。 你既要确保员工高效工作，又希望防止有意和无意的数据丢失。 你还需要保护他人设备（不由你管理的设备）访问的公司数据。
@@ -135,7 +136,7 @@ MDM 解决方案通过提供以下功能增值：
 
 任何已与 [Intune App SDK](../developer/app-sdk.md) 集成或通过 [Intune 应用包装工具](../developer/apps-prepare-mobile-application-management.md)包装的应用都可使用 Intune 应用保护策略进行管理。 请参阅使用以下工具构建并可供公众使用的 [Microsoft Intune 保护的应用](apps-supported-intune-apps.md)的官方列表。
 
-Intune SDK 开发团队主动测试和维护对使用本机 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。
+Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。
 
 [Intune App SDK](../developer/app-sdk.md) 将 [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) 中的一些高级新式身份验证功能用于此 SDK 的第一方和第三方版本。 因此，[Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) 不适用于我们的许多核心方案，例如向 Intune 应用保护服务进行身份验证和条件启动。 鉴于来自 Microsoft 标识团队的全面指导是切换到适用于所有 Microsoft Office 应用的 MSAL，因此 [Intune App SDK](../developer/app-sdk.md) 最终需要支持它，但目前没有计划。
 
@@ -177,7 +178,7 @@ Intune SDK 开发团队主动测试和维护对使用本机 Android、iOS（Obj-
   > Office 移动应用当前仅支持 SharePoint Online，不支持本地 SharePoint。
 
 ### <a name="managed-location-needed-for-office"></a>Office 所需的托管位置
-Office 所需的托管位置（即 OneDrive）。 Intune 会将应用中的所有数据标记为“公司”或“个人”。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。
+Office 需要一个托管位置（即 OneDrive）。 Intune 会将应用中的所有数据标记为“公司”或“个人”。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。
 
 ### <a name="skype-for-business"></a>Skype for Business
 对于使用 Skype for Business 有其他要求。 请参阅 [Skype for Business](https://products.office.com/skype-for-business/it-pros) 许可证要求。 对于 Skype for Business (SfB) 混合配置和本地配置，请分别参阅[正式发布适用于 SfB 和 Exchange 的混合新式身份验证](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756)和[使用 AAD 实现适用于 SfB OnPrem 的新式身份验证](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910)。
@@ -215,12 +216,12 @@ Outlook 提供“个人”和“公司”电子邮件的电子邮件组合视图
 **PIN 提示**<br>
 当用户要访问“公司”数据时，Intune 才会提示输入用户的应用 PIN。 在诸如 Word、Excel、PowerPoint 等多身份应用中，当用户尝试打开“公司”文档或文件时，会向他们提示输入 PIN。 在单身份应用中，例如使用 [Intune 应用包装工具](../developer/apps-prepare-mobile-application-management.md)托管的业务线应用，会在启动时提示输入 PIN，因为 [Intune App SDK](../developer/app-sdk.md) 知道用户在应用中的体验始终是针对“公司”的。
 
-**PIN 提示频率**<br>
-IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设置“以下时间过后重新检查访问要求(分钟)”。  此设置指定在设备上检测访问要求，并再次显示应用程序 PIN 屏幕之前的时长。 但是，请注意以下关于 PIN 的重要详细信息，它们会影响用户收到提示的频率：
+**PIN 提示或公司凭据提示、频率**<br>
+IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设置“以下时间过后重新检查访问要求(分钟)”。  此设置指定在设备上检测访问要求，并再次显示应用程序 PIN 屏幕或公司凭据提示之前的时长。 但是，请注意以下关于 PIN 的重要详细信息，它们会影响用户收到提示的频率：
 
-- **在同一发布者的应用之间共享 PIN 以提高可用性：**<br> 在 iOS 上，同一应用发布者  的所有应用之间共享一个应用 PIN 码。 在 Android 上，所有应用共享一个应用 PIN。
-  - **在设备重启后“以下时间过后重新检查访问要求(分钟)”的行为： **<br> “PIN 计时器”跟踪确定何时显示下一个 Intune 应用 PIN 的不活动分钟数。 在 iOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响  。  
-  - **与 PIN 关联的计时器的滚动特性：**<br> 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。
+- **在同一发布者的应用之间共享 PIN 以提高可用性：**<br> 在 iOS 上，同一应用发布者  的所有应用之间共享一个应用 PIN 码。 例如，所有 Microsoft 应用都共享同一 PIN。 在 Android 上，所有应用共享一个应用 PIN。
+- **在设备重启后“以下时间过后重新检查访问要求(分钟)”的行为： **<br> 计时器跟踪确定何时显示下一个 Intune 应用 PIN 或公司凭据提示的不活动分钟数。 在 iOS 上，计时器不受设备重启影响。 因此，设备重启对用户在以 Intune PIN（或公司凭据）策略为目标的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，计时器在设备重启后重置。 因此，使用 Intune PIN（或公司凭据）策略的 Android 应用可能会提示你输入应用 PIN（或公司凭据），而设备重启后的“以下时间过后重新检查访问要求（分钟）”设置值不受此影响  。  
+- **与 PIN 关联的计时器的滚动特性：**<br> 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。
 
 对于 iOS 设备，即使在不同发行商的应用之间共享 PIN，当不是主要输入焦点的应用再次满足“在一定时间后重新检查访问要求(分钟)”  值时，也会再次显示提示。 因此，例如，某一用户具有来自发行商 X  的应用 A  和来自发行商 Y  的应用 B  ，并且这两个应用共享相同 PIN。 该用户将焦点置于应用 A  （前景），并最小化应用 B  。 当满足“在一定时间后重新检查访问要求(分钟)”  值并且用户切换到应用 B  时，将需要此 PIN。
 
@@ -262,7 +263,6 @@ IT 管理员可以部署要求对应用数据进行加密的应用保护策略�
 对于由 [Intune 应用包装工具](../developer/apps-prepare-mobile-application-management.md)托管的业务线应用，所有应用数据都会被视为“公司”数据。
 
 **远程擦除数据**<br>
-
 Intune 可以通过以下三种不同方式擦除应用数据： 
 - 完全设备擦除
 - MDM 选择性擦除 

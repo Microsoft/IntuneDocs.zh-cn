@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50dbbb19cca9b5c46f0ba8b9d4e16c499534b536
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503106"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955382"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>对 Intune 设备注册要求多重身份验证
 
@@ -50,18 +50,17 @@ iOS、Android、Windows 8.1 或更高版本、Windows Phone 8.1、Windows 10 移
 >[!Important]
 >请勿为 Microsoft Intune 注册配置基于设备的访问规则  。
 
-1. 使用凭据登录到 [Microsoft Azure 门户](https://portal.azure.com)。
-2. 在门户中，转到“Intune”  ，然后选择“条件访问”  。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同   。
-4. 选择“新策略”  。
-5. 在“新建”策略中，为策略键入描述性名称  。
-6. 在“分配”部分中，选择“用户和组”   。 
-7. 在“用户和组”中，选择“选择用户或组”，然后选择“用户和组”    。 然后选择将接收此策略的用户和/或组，再选择“完成”  。
-8. 在“分配”部分中，选择“云应用”   。
-9. 在“云应用”的“包括”选项卡上，选择“选择应用”，然后选择“选择” > “Microsoft Intune 注册”，然后选择“完成”       。 通过选择“Microsoft Intune 注册”  ，条件访问 MFA 仅应用于设备注册（一次性 MFA 提示）。
-10. 在“分配”部分中，对于“条件”，无需为 MFA 配置任何设置   。
-11. 在“访问控制”部分中，选择“授予”   。
-12. 在“授予”中，选择“授予访问权限”，然后选择“要求多重身份验证”    。 不要选择“要求设备标记为合规”，因为设备要注册之后才能进行评估以确定其是否合规  。 然后选取“选择”  。
-13. 在“新建策略”中，选择“启用策略” > “开”，然后选择“创建”     。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “条件访问”   。 从 Intune 访问的条件访问节点与从 Azure AD 访问的节点相同   。
+2. 选择“新策略”  。
+3. 在“新建”策略中，为策略键入描述性名称  。
+4. 在“分配”部分中，选择“用户和组”   。 
+5. 在“用户和组”中，选择“选择用户或组”，然后选择“用户和组”    。 然后选择将接收此策略的用户和/或组，再选择“完成”  。
+6. 在“分配”部分中，选择“云应用”   。
+7. 在“云应用”的“包括”选项卡上，选择“选择应用”，然后选择“选择” > “Microsoft Intune 注册”，然后选择“完成”       。 通过选择“Microsoft Intune 注册”  ，条件访问 MFA 仅应用于设备注册（一次性 MFA 提示）。
+8. 在“分配”部分中，对于“条件”，无需为 MFA 配置任何设置   。
+9. 在“访问控制”部分中，选择“授予”   。
+10. 在“授予”中，选择“授予访问权限”，然后选择“要求多重身份验证”    。 不要选择“要求设备标记为合规”，因为设备要注册之后才能进行评估以确定其是否合规  。 然后选取“选择”  。
+11. 在“新建策略”中，选择“启用策略” > “开”，然后选择“创建”     。
 
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390870"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860377"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -93,7 +93,7 @@ ms.locfileid: "74390870"
 
 ## <a name="scope-tags"></a>作用域标记
 
-添加设置后，还可以向配置文件添加作用域标记。 作用域标记筛选策略并将其分配给特定组（例如，“HR”或“所有 US-NC 员工”）。
+添加设置后，还可以向配置文件添加作用域标记。 “作用域标记”将配置文件筛选到特定 IT 组（例如 `US-NC IT Team` 或 `JohnGlenn_ITDepartment`）。
 
 若要详细了解作用域标记以及可以执行的操作，请参阅[将 RBAC 和作用域标记用于分布式 IT](../fundamentals/scope-tags.md)。
 
@@ -185,6 +185,8 @@ Intune 使用不同的刷新周期来检查配置文件的更新。 如果设备
   下图显示了可应用于用户和/或应用于设备的设置示例：
 
   ![适用于用户和设备的 Intune 管理模板](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- 每次创建限制性策略时，请将此更改传达给用户。 例如，如果要将密码要求从 4 个字符更改为 6 个字符，请在分配策略之前告知用户。
 
 ## <a name="next-steps"></a>后续步骤
 

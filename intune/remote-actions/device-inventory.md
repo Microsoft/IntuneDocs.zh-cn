@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564383"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819775"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -77,7 +77,7 @@ ms.locfileid: "74564383"
 |MEID|设备的移动设备标识符。|Windows、iOS、Android|
 |制造商|设备制造商。|Windows、iOS、Android|
 |型号|设备型号。|Windows、iOS、Android|
-|电话号码|分配给设备的电话号码。|Windows、iOS、Android|
+|电话号码|分配给设备的电话号码。|Windows、iOS、Android*|
 |订阅运营商|设备的无线运营商。|Windows、iOS、Android|
 |蜂窝技术|设备使用的无线系统。|Windows、iOS、Android|
 |Wi-Fi MAC|设备的媒体访问控制地址。|Windows、iOS、Android|
@@ -93,7 +93,7 @@ ms.locfileid: "74564383"
 |受到监督|如果为“是”  ，管理员对设备的控制增强。|Windows、iOS、Android|
 |已加密|如果为“是”  ，则设备上存储的数据已加密。|Windows、iOS、Android|
 
-
+\* 在包含 Google 策略管理器的 Android 中不可用，如完全托管设备和专用设备
 
 ## <a name="next-steps"></a>后续步骤
 了解使用 Intune [管理设备](device-management.md)还可以执行哪些操作。

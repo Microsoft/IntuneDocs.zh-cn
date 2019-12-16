@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564248"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899412"
 ---
 # <a name="intune-discovered-apps"></a>Intune 发现的应用
 
@@ -60,12 +60,13 @@ Intune 还提供租户中单个设备的已发现应用的列表。
 | Windows Phone 8 | 仅托管应用 | 仅托管应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Windows RT | 仅托管应用 | 仅托管应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | iOS | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
-| macOS | 设备上安装的所有应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
+| macOS | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Android | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Android Enterprise | 仅托管应用 | 仅工作配置文件中安装的应用 | 自设备注册时间起每隔 7 天刷新一次 |
 
 > [!NOTE]
-> 如 Configuration Manager 中的应用管理工作负载所示，Windows 10 混合 Azure AD 联接设备当前不会按上述计划通过 Intune 管理扩展 (IME) 收集应用清单。 若要缓解此问题，请将 Configuration Manager 中的应用管理工作负载切换到 Intune，以便在设备上安装 IME（Win32 清单和 PowerShell 部署需要 IME）。 请注意，此行为的任何更改或更新均在[开发中的功能](../fundamentals/in-development.md)和/或[新增功能](../fundamentals/whats-new.md)中公布。
+> - 如 Configuration Manager 中的应用管理工作负载所示，Windows 10 混合 Azure AD 联接设备当前不会按上述计划通过 Intune 管理扩展 (IME) 收集应用清单。 若要缓解此问题，请将 Configuration Manager 中的应用管理工作负载切换到 Intune，以便在设备上安装 IME（Win32 清单和 PowerShell 部署需要 IME）。 请注意，此行为的任何更改或更新均在[开发中的功能](../fundamentals/in-development.md)和/或[新增功能](../fundamentals/whats-new.md)中公布。
+> - 在 2019 年 11 月之前注册的个人拥有的 macOS 设备会继续显示设备上安装的所有应用，直到设备再次注册。
 
 发现的应用数可能与应用安装状态计数不一致。 导致不一致的可能原因包括：
 

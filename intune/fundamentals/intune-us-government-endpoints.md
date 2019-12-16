@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502687"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000391"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune 的美国政府终结点
 
@@ -57,3 +57,25 @@ ms.locfileid: "72502687"
 - AAD Graph：https:\//directory.microsoftazure.us and https:\//graph.microsoftazure.us
 - MS Graph：https:\//graph.microsoft.us
 - ADRS：https:\//enterpriseregistration.microsoftonline.us
+
+## <a name="windows-push-notification-services"></a>Windows 推送通知服务
+在使用移动设备管理 (MDM) 管理的 Intune 托管设备上，设备操作和其他即时活动需要使用 Windows 推送通知服务 (WNS)。 有关详细信息，请参阅[支持 WNS 流量的企业防火墙和代理配置](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+
+## <a name="apple-device-network-information"></a>Apple 设备网络信息
+
+|**用途**|**主机名（IP 地址/子网）**|**协议**|**端口**|
+|------------|-----------|------------|-----------|
+|检索并显示 Apple 服务器的内容|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|与 APNS 服务器通信|#-courier.push.apple.com<br>“#”是 0 到 50 范围内的一个随机数字。|TCP|5223 和 443|
+|各种功能，包括访问 Internet、iTunes 商店、macOS 应用商店、iCloud、消息等。|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 或 443|
+
+有关详情，请参阅：
+
+- [Apple 软件产品使用的 TCP 和 UDP 端口](https://support.apple.com/HT202944)
+- [关于 macOS、iOS 和 iTunes 服务器主机连接和 iTunes 后台进程](https://support.apple.com/HT201999)
+- [如果您的 macOS 和 iOS 客户端没有收到 Apple 推送通知](https://support.apple.com/HT203609)
+
+## <a name="next-steps"></a>后续步骤
+[Microsoft Intune 的网络终结点](intune-endpoints.md)
+
+[Windows 10 自动注册和设备注册](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

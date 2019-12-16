@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390462"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946676"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -90,13 +90,21 @@ ms.locfileid: "74390462"
    > [!IMPORTANT]
    > 在离开此页面之前，复制客户端密码的值并记录该值以供将来使用。 后续过程中将需要此值。 此值不再可用，无需重新创建应用注册。
 
-6. 选择“管理”下的“API 权限”   。 选择现有权限，然后选择“删除权限”  以删除这些权限。 添加新权限时有必要删除所有现有权限，且应用程序仅在具有单个所需权限时正常运行。
+6. 选择“管理”下的“API 权限”   。 
 
-7. 若要分配新权限，请选择“添加权限”  。 在“请求获取 API 权限”  页上，选择“Intune”  ，然后选择“应用程序权限”  。 仅选中 update_device_attributes  对应的复选框。
+7. 在“API 权限”页上，选择“添加权限”，以添加新的权限  。 在“请求获取 API 权限”  页上，选择“Intune”  ，然后选择“应用程序权限”  。 仅选中 update_device_attributes  对应的复选框。
 
-   选择“添加权限”  以保存此配置。
+8. 等待几分钟，使新的权限生效。 然后，选择“为 _\<your tenant>_ 授予管理员同意”  。 在新窗口中对你的帐户进行身份验证，并按照提示授予应用程序访问权限。  
 
-8. 在“API 权限”页上，选择“为 _\<你的租户>_ 授予管理员许可”，然后选择“是”    。  成功注册应用后，API 权限应显示如下：
+9. 可能需要等待几分钟时间，管理员同意才能生效。
+
+10. 通过单击页面顶部的“刷新”按钮来刷新页面  。 确认是否针对 update_device_attributes 权限授予了管理员同意  。 
+
+11. 通过选择“…”菜单并选择“撤销管理员同意”，从 User.Read 权限中删除管理员同意    。
+
+12. 还需要删除 User.Read 权限  。 选择 User.Read 旁边的“…”菜单，然后选择“删除权限”    。 
+
+8. 成功注册应用后，API 权限应只包含一个名为 update_device_attributes 的权限，并且应如下所示  ：
 
    ![成功的权限](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

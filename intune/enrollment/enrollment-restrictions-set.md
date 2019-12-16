@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
-ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
+ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587956"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955501"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -59,15 +59,12 @@ ms.locfileid: "72587956"
 
 ## <a name="create-a-device-type-restriction"></a>创建设备类型限制
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”    。
-3. 选择“设备注册” > “注册限制” > “创建限制” > “设备类型限制”。    
-    ![创建设备类型限制的屏幕截图](./media/enrollment-restrictions-set/create-device-type-restriction.png)
-4. 在“基本信息”页上，为限制提供名称和可选说明    。
-5. 选择“下一步”，转到“平台设置”页。  
-6. 在“平台”中，对想要此限制允许的平台选择“允许”。  
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) > “设备” > “注册限制” > “创建限制” > “设备类型限制”     。
+2. 在“基本信息”页上，为限制提供名称和可选说明    。
+3. 选择“下一步”，转到“平台设置”页。  
+4. 在“平台”中，对想要此限制允许的平台选择“允许”。  
     ![选择平台设置的屏幕截图](./media/enrollment-restrictions-set/choose-platform-settings.png)
-7. 在“版本”中，选择想要允许的平台支持的最低版本和最高版本。  版本限制仅适用于向公司门户注册的设备。
+5. 在“版本”中，选择想要允许的平台支持的最低版本和最高版本。  版本限制仅适用于向公司门户注册的设备。
      支持的版本格式包括：
     - Android 设备管理员和 Android Enterprise 工作配置文件支持 major.minor.rev.build。
     - iOS 支持 major.minor.rev。操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
@@ -84,31 +81,28 @@ ms.locfileid: "72587956"
    > [!Note]
    > Windows 10 注册过程中不提供修订号，因此对于实例，如果输入 10.0.17134.100 而设备是 10.0.17134.174，则在注册过程中将阻止该实例。
 
-8. 在“个人拥有”中，对想要允许作为个人拥有的设备的平台选择“允许”。  
-9. 选择“下一步”，转到“分配”页。  
-10. 选择“选择要包含的组”，然后使用搜索框找到想要此限制包含的组。  限制仅适用于它分配到的组。 如果连一个组都没有分配限制，则不会产生任何影响。 然后选取“选择”  。 
+6. 在“个人拥有”中，对想要允许作为个人拥有的设备的平台选择“允许”。  
+7. 选择“下一步”，转到“分配”页。  
+8. 选择“选择要包含的组”，然后使用搜索框找到想要此限制包含的组。  限制仅适用于它分配到的组。 如果连一个组都没有分配限制，则不会产生任何影响。 然后选取“选择”  。 
     ![选择平台设置的屏幕截图](./media/enrollment-restrictions-set/select-groups.png)
-11. 选择“下一步”  ，以转到“查看 + 创建”页  。
-12. 选择“创建”以创建限制  。
-13. 使用高于默认值的优先级创建新限制。 可[更改优先级](#change-enrollment-restriction-priority)。
+9. 选择“下一步”  ，以转到“查看 + 创建”页  。
+10. 选择“创建”以创建限制  。
+11. 使用高于默认值的优先级创建新限制。 可[更改优先级](#change-enrollment-restriction-priority)。
 
 
 ## <a name="create-a-device-limit-restriction"></a>创建设备限制
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”    。
-3. 选择“设备注册” > “注册限制” > “创建限制” > “设备限制”。    
-    ![创建设备限制的屏幕截图](./media/enrollment-restrictions-set/create-device-limit-restriction.png)
-4. 在“基本信息”页上，为限制提供名称和可选说明    。
-5. 选择“下一步”，转到“设备限制”页。  
-6. 对于“设备限制”，选择用户可以注册的最大设备数量  。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) > “设备” > “注册限制” > “创建限制” > “设备限制”     。
+2. 在“基本信息”页上，为限制提供名称和可选说明    。
+3. 选择“下一步”，转到“设备限制”页。  
+4. 对于“设备限制”，选择用户可以注册的最大设备数量  。
     ![选择设备限制的屏幕截图](./media/enrollment-restrictions-set/choose-device-limit.png)
-7. 选择“下一步”，转到“分配”页。  
-8. 选择“选择要包含的组”，然后使用搜索框找到想要此限制包含的组。  限制仅适用于它分配到的组。 如果连一个组都没有分配限制，则不会产生任何影响。 然后选取“选择”  。 
+5. 选择“下一步”，转到“分配”页。  
+6. 选择“选择要包含的组”，然后使用搜索框找到想要此限制包含的组。  限制仅适用于它分配到的组。 如果连一个组都没有分配限制，则不会产生任何影响。 然后选取“选择”  。 
     ![选择组的屏幕截图](./media/enrollment-restrictions-set/select-groups-device-limit.png)
-11. 选择“下一步”  ，以转到“查看 + 创建”页  。
-12. 选择“创建”以创建限制  。
-13. 使用高于默认值的优先级创建新限制。 可[更改优先级](#change-enrollment-restriction-priority)。
+7. 选择“下一步”  ，以转到“查看 + 创建”页  。
+8. 选择“创建”以创建限制  。
+9. 使用高于默认值的优先级创建新限制。 可[更改优先级](#change-enrollment-restriction-priority)。
 
 在 BYOD 注册期间，用户会看到一条通知，告知他们何时达到了已注册的设备限制。 例如，在 iOS 上：
 
@@ -131,11 +125,9 @@ ms.locfileid: "72587956"
 
 通过执行以下步骤可更改注册限制的设置。 这些限制不会影响已注册的设备。 无法使用此功能阻止注册了 [Intune PC 代理](../fundamentals/manage-windows-pcs-with-microsoft-intune.md)的设备。
 
-1. 登录到 Azure 门户。
-2. 选择“更多服务”，搜索“Intune”，然后选择“Intune”    。
-3. 选择“设备注册” > “注册限制”，选择要更改的限制，然后选择“属性”。   
-4. 选择要更改的设置旁边的“编辑”。 
-5. 在“编辑”页上，根据需要进行更改，继续转到“查看 + 保存”页，然后选择“保存”。   
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) > “设备” > “注册限制” > 选择要更改的限制 >“属性”    。
+2. 选择要更改的设置旁边的“编辑”。 
+3. 在“编辑”页上，根据需要进行更改，继续转到“查看 + 保存”页，然后选择“保存”。   
 
 
 ## <a name="blocking-personal-android-devices"></a>阻止个人 Android 设备

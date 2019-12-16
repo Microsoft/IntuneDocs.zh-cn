@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712152"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907196"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 远程管理 Intune 设备
 
@@ -48,7 +48,7 @@ ms.locfileid: "73712152"
 要向设备提供远程协助，请按照以下步骤配置 Intune TeamViewer 连接器：
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 选择“设备”   > “TeamViewer 连接器”  。
+2. 选择“租户管理” > “连接器和令牌” > “TeamViewer 连接器”    。
 3. 选择“连接”  ，然后接受许可协议。
 4. 选择“登录到 TeamViewer 并授权”  。
 5. 随即一个 Web 页面将打开 TeamViewer 网站。 输入 TeamViewer 许可证凭据，然后单击“登录”  。
@@ -59,7 +59,7 @@ ms.locfileid: "73712152"
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中。
 2. 依次选择“设备”和“所有设备”   。
-3. 从列表中，选择想要远程管理的设备。 在设备属性中，选择“新远程协助会话”  。
+3. 从列表中，选择想要远程管理的设备>“…” > “新远程协助会话”   。
 4. 将 Intune 连接到 TeamViewer 服务后，将看到设备的一些相关信息。 选择“连接”  可开始远程会话。
 
 ![使用 TeamViewer 远程管理 Android 设备 - 示例](./media/teamviewer-support/android-teamviewer.png)

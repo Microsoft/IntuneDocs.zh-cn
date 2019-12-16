@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中的设备符合性策略 - Azure | Microsoft Docs
-description: 在 Microsoft Intune 中：开始使用设备符合性策略，状态和严重性级别概述，使用 InGracePeriod 状态，使用条件访问，处理不具有分配策略的设备，以及 Azure 门户和经典门户中的符合性的差别
+description: 开始使用设备合规性策略、状态和严重性级别概述，使用 InGracePeriod 状态，使用条件访问，以及处理不具有分配策略的设备。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749173"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860289"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在设备上设置规则以允许使用 Intune 访问组织中的资源
 
@@ -130,21 +130,6 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
 
 - 如果对用户应用了条件访问策略，设备将被阻止。
 - 公司门户应用会就任何符合性问题通知用户。
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 经典门户与 Azure 门户
-
-在 Azure 门户中使用设备符合性策略的主要区别：
-
-- 在 Azure 门户中，符合性策略针对每个受支持的平台单独创建
-- 在 Azure 经典门户中，一个设备符合性策略普遍适用于所有受支持的平台
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-在[经典门户](https://manage.microsoft.com)中创建的设备符合性策略不会出现在 [Azure 门户](https://portal.azure.com)中。 但它们仍面向用户并且可以通过经典门户进行管理。
-
-要在 Azure 门户中使用设备符合性的相关功能，则必须在 Azure 门户中创建新的设备符合性策略。 如果在 Azure 门户中向某个用户分配设备符合性策略，但该用户同时还分配有经典门户的设备符合性策略，则 Azure 门户中的设备符合性策略优先于在经典门户中创建的策略。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713496"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832730"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -64,7 +64,7 @@ ms.locfileid: "73713496"
 
 通过下述步骤，检查确保向用户分配的设备数未超过上限：
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备注册”   > “注册限制”   > “设备限制性限制”  。 记下“设备限制”列中的值  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “注册限制” > “设备限制”    。 记下“设备限制”列中的值  。
 
 2. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“用户”   > “所有用户”  > 选择用户 >“设备”  。 记下设备的数量。
 
@@ -376,7 +376,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 4. 告知用户重启注册过程。
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>确定 VPP 令牌是否存在问题
-1. 转到“Intune” > “设备注册” > “Apple 注册” > “注册计划令牌”>“令牌名称”>“配置文件”>“配置文件名称”>“管理” > “属性”        。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “iOS” > “iOS 注册” > “注册计划令牌”>“令牌名称”>“配置文件”>“配置文件名称”>“管理” > “属性”        。
 2. 查看属性，了解是否出现与以下情况类似的错误：
     - 此令牌已过期。
     - 此令牌超出公司门户许可范围。
@@ -386,13 +386,13 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 3. 修复此令牌的问题。
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>确定 VPP 令牌阻止了哪些设备
-1. 转到“Intune” > “设备注册” > “Apple 注册” > “注册计划令牌”>“令牌名称”>“设备”      。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “iOS”>“iOS 注册” > “注册计划令牌”>“令牌名称”>“设备”      。
 2. 按照“已阻止”筛选“配置文件状态”列   。
 3. 记下“已阻止”的所有设备的序列号  。
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>远程擦除已阻止设备
 修复 VPP 令牌的问题后，必须擦除已阻止设备。
-1. 转到“Intune” > “设备” > “所有设备” > “列” > “序列号” > “应用”       。 
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “所有设备” > “列” > “序列号” > “应用”      。 
 2. 对于每个已阻止设备，请在“所有设备”列表中选择该设备，然后依次选择“擦除” > “确认”    。
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>告知用户重启注册过程
@@ -416,8 +416,8 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 - 如果组织启用了阻止个人 macOS 设备的注册限制，则必须手动[添加个人设备的序列号](corporate-identifiers-add.md#manually-enter-corporate-identifiers)到 Intune。  
 - 如果设备仍分配给 Intune 中的其他用户，则其前所有者未使用公司门户应用来删除或重置它。 从 Intune 清除陈旧的设备记录：  
 
-    1. 转到 [Azure 门户中的 Intune](https://portal.manage.microsoft.com)，然后使用管理凭据登录。
-    2. 转到 Intune >“设备” > “所有设备”   。  
+    1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，使用管理凭据登录。
+    2. 选择“设备” > “所有设备”   。  
     3. 查找存在注册问题的设备。 按设备名称或 MAC/HW 地址搜索以缩小结果范围。
     4. 选择“设备”>“删除”  。 删除与设备关联的所有其他条目。  
 

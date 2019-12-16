@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505497"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955365"
 ---
 # <a name="categorize-devices-into-groups"></a>将设备分类到组中
 
@@ -45,11 +45,10 @@ ms.locfileid: "72505497"
 ## <a name="how-to-configure-device-categories"></a>如何配置设备类别
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>步骤 1：在 Azure 门户的“Intune”边栏选项卡中创建设备类别
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备注册”  。
-2. 在“设备注册”边栏选项卡中，选择“设备类别”   。
-3. 在“设备类别”页上，选择“创建”以添加新类别   。
-4. 在“创建设备类别”边栏选项卡中，输入新类别的“名称”和可选“说明”    。
-5. 完成后，选择“创建”  。 可以在类别列表中看到新类别。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “设备类别”   。
+2. 在“设备类别”页上，选择“创建”以添加新类别   。
+3. 在“创建设备类别”边栏选项卡中，输入新类别的“名称”和可选“说明”    。
+4. 完成后，选择“创建”  。 可以在类别列表中看到新类别。
 
 在步骤 2 中创建 Azure Active Directory (Azure AD) 安全组时将使用设备类别名称。
 
@@ -64,20 +63,16 @@ ms.locfileid: "72505497"
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>查看所管理设备的类别
 
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备”  。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “所有设备”   。
 
-2. 在“管理”下，选择“所有设备”   。
+2. 在设备列表中，查看“设备类别”列  。
 
-3. 在设备列表中，查看“设备类别”列  。
-
-如果没有显示“设备类别”列，请选择“列”   。 从列表中选择“设备类别”，然后选择“应用”   。
+如果没有显示“设备类别”列，请选择“列” > “类别” > “应用”     。
 
 ### <a name="change-the-category-of-a-device"></a>更改设备的类别
 
-1. 在 [Azure 门户中的 Intune](https://aka.ms/intuneportal) 中，选择“设备”  。
-2. 在“管理”部分下的“设备”边栏选项卡上，选择“所有设备”    。
-3. 在设备列表中，选择所需设备。 然后在“管理”部分下的设备属性边栏选项卡上，选择“属性”   。
-4. 在下一个边栏选项卡上，可以将所选设备的“设备类别”  更改为之前配置的任一类别名称。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “所有设备”> 选择所需设备 >“属性”    。
+2. 在下一个边栏选项卡上，可以将所选设备的“设备类别”  更改为之前配置的任一类别名称。
 
 ## <a name="after-you-configure-device-groups"></a>配置设备组之后
 

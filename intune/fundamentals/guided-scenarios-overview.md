@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635369"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899147"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune 引导式方案概述 
 
@@ -33,7 +33,7 @@ ms.locfileid: "73635369"
 
 ## <a name="types-of-guided-scenarios"></a>引导式方案类型 
 
-为了简单起见，所有引导式方案都省略了复杂的作用域功能，例如作用域标记 <link>、排除组和虚拟组分配 <link>。 引导式方案创建的所有资源都将继承完成方案的管理员的每个作用域标记。 某些方案为公共设置提供了一定程度的定制，以覆盖密切相关的场景。 在这些方案中，支持仅包含组的组分配。 对于其他引导式方案，整个方案通过无自定义来保证一致的体验，并自动生成一个新组来接收所有分配。 一旦引导式方案完成，你就可以自由地通过现有的策略、应用和配置文件工作负荷直接使用更复杂的任务。  
+为了简单起见，所有引导式方案都省略了复杂的作用域功能，例如作用域标记、排除组和虚拟组分配。 引导式方案创建的所有资源都将继承完成方案的管理员的每个作用域标记。 某些方案为公共设置提供了一定程度的定制，以覆盖密切相关的场景。 在这些方案中，支持仅包含组的组分配。 对于其他引导式方案，整个方案通过无自定义来保证一致的体验，并自动生成一个新组来接收所有分配。 一旦引导式方案完成，你就可以自由地通过现有的策略、应用和配置文件工作负荷直接使用更复杂的任务。  
 
 以下方案提供引导： 
 - 部署 Microsoft Edge for Mobile 

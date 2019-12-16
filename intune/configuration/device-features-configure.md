@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02188e6dd6cea6048731d119f8f307224810dd9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059949"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992937"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中添加 iOS 或 macOS 设备功能设置
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune 包含许多有助于管理员控制 iOS 和 macOS 设备的功能和设置。 例如，管理员可以：
 
@@ -113,7 +111,7 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 ## <a name="login-items"></a>登录项
 
-使用此功能选择用户登录到设备时打开的应用、自定义应用、文件和文件夹。 
+使用此功能选择用户登录到设备时打开的应用、自定义应用、文件和文件夹。
 
 有关可以在 Intune 中配置的设置列表的信息，请参阅 [macOS 上的登录项](macos-device-features-settings.md#login-items)。
 
@@ -153,22 +151,29 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 这些设置将配置可为 iOS、iPadOS 和 macOS 设备启用单一登录 (SSO) 的应用扩展。 大多数业务线 (LOB) 应用和组织网站需要某种级别的安全的用户身份验证。 在许多情况下，此类身份验证要求用户重复输入相同凭据。 借助 SSO，用户输入一次凭据后，即可访问应用和网站。 登录后，用户自动可以访问应用和网站，或者可以使用 Face ID、Touch ID 或 Apple 密码获取访问权限。
 
-在 Intune 中，使用这些设置配置 Apple 的内置 Kerberos 扩展，或配置组织创建的 SSO 应用扩展。 SSO 应用扩展将处理对用户的身份验证。 这些设置配置凭据类型 SSO 应用扩展，这些扩展专门针对挑战-响应身份验证流。 可以选择 Apple 提供的特定于 Kerberos 的凭据扩展，或通用凭据扩展。
+在 Intune 中，使用这些设置配置由组织、标识提供者或 Apple 创建的 SSO ap 扩展。 SSO 应用扩展将处理对用户的身份验证。 这些设置可配置重定向类型和凭据类型 SSO 应用扩展。
+
+- 重定向类型适用于 OAuth 和 SAML2 等新式身份验证协议。
+- 凭据类型适用于质询与响应身份验证流。 可以选择 Apple 提供的特定于 Kerberos 的凭据扩展，或通用凭据扩展。
 
 有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS SSO 应用扩展](ios-device-features-settings.md#single-sign-on-app-extension)和 [macOS SSO 应用扩展](macos-device-features-settings.md#single-sign-on-app-extension)。
 
-有关开发 SSO 应用扩展的详细信息，请观看 Apple 网站上的[可扩展的企业 SSO](https://developer.apple.com/videos/play/tech-talks/301)。
+有关开发 SSO 应用扩展的详细信息，请观看 Apple 网站上的[可扩展的企业 SSO](https://developer.apple.com/videos/play/tech-talks/301)。 若要阅读 Apple 的功能说明，请访问[“单点登录扩展”有效负载设置](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web)。 
 
 > [!NOTE]
 > 单一登录应用扩展功能不同于单一登录功能：  
 >
-> - 单一登录应用扩展设置适用于 iPadOS 13.0（以及更高版本）和 iOS 13.0（以及更高版本）。  单一登录设置适用于 iPadOS 13.0（以及更高版本）和 iOS 7.0 以及更高版本。 
-> - 单一登录应用扩展通过操作系统处理身份验证。  在单一登录中，由特定应用处理身份验证。 
-> - 使用单一登录应用扩展时，用户以无提示方式或通过 Face ID、Touch ID 或 Apple Pin 码/密码登录到应用和网站。  使用单一登录时，用户使用其他应用登录到应用和网站。 
+> - “单一登录应用扩展”设置适用于 iPadOS 13.0、iOS 13.0 和 macOS 10.15（以及它们的更高版本）  。 单一登录设置适用于 iPadOS 13.0（以及更高版本）和 iOS 7.0 以及更高版本。 
 >
->    单一登录应用扩展使用 Apple 操作系统进行身份验证。  因此它可以提供更好的最终用户体验。
+> - “单一登录应用扩展”设置定义了供标识提供者或组织使用的扩展，以提供无缝的企业登录体验  。 “单一登录”设置定义了有关用户访问服务器或应用时的 Kerberos 帐户信息  。
 >
-> - 从开发角度而言，单一登录应用扩展可以使用任意类型的凭据 SSO 身份验证。  使用单一登录时，只可以使用 Kerberos SSO 身份验证。   
+> - 单一登录应用扩展使用 Apple 操作系统进行身份验证。  因此，它可能会提供比单一登录更棒的最终用户体验  。
+>
+> - 从开发角度而言，使用单一登录应用扩展，你可以使用任意类型的重定向 SSO 或凭据 SSO 身份验证  。 使用单一登录时，只可以使用 Kerberos SSO 身份验证。 
+>
+> - Kerberos 单一登录应用扩展由 Apple 开发，内置于 iOS 13.0 + 和 macOS 10.15 + 平台中  。 内置的 Kerberos 扩展可用于将用户登录到支持 Kerberos 身份验证的本机应用和网站。 单一登录不是 Kerberos 的 Apple 实现  。
+>
+> - 内置的 Kerberos 单一登录应用扩展可以像单一登录一样处理网页和应用的 Kerberos 质询   。 不过，内置的 Kerberos 扩展支持密码更改，并且在企业网络中效果更佳。 在 Kerberos 单一登录应用扩展和单一登录之间进行选择时，由于扩展可以提高性能和功能，因此我们建议使用前者   。
 
 适用于：
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 59ba9ab5fb0ddeb527ed852de042568920cf38e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509178"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819711"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>适用于 Windows 设备的 Intune 注册方法
 
@@ -42,7 +42,7 @@ ms.locfileid: "72509178"
 如果管理员已配置自动注册（Azure AD 高级订阅可用），则用户只需输入一次凭据。 否则，他们必须通过仅限 MDM 注册单独注册并重新输入其凭据。  
 - “仅限 MDM 注册”允许用户将加入电脑的现有工作组、Active Directory 或 Azure Active 目录注册到 Intune  。 用户从现有 Windows 电脑上的“设置”中注册。 不建议使用此方法，因为它不会将设备注册到 Azure Active Directory 中。 它还会禁止使用条件访问等功能。
 - [Azure Active Directory (Azure AD) 联接](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - 使用 Azure Active Directory 加入设备，并允许用户使用其 Azure AD 凭据登录 Windows。 如果启用了自动注册，则设备将自动注册到 Intune 中。 自动注册的好处在于，用户可以单步执行过程。 否则，他们必须通过仅限 MDM 注册单独注册并重新输入其凭据。 用户在初始 Windows OOBE 或“设置”期间以这种方式注册。 该设备在 Intune 中标记为公司拥有的设备。
-- [Autopilot](enrollment-autopilot.md) -自动执行 Azure AD 联接，并将新公司拥有的设备注册到 Intune。 此方法简化了开箱即用体验，无需将自定义操作系统映像应用到设备上。 管理员使用 Intune 管理 Autopilot 设备时，他们可以在注册设备后管理策略、配置文件和应用等。  有四种类型的 Autopilot 部署：[自部署模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)（适用于展台、数字签名或共享设备），[用户驱动模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)（适用于传统用户），[白手套](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) 模式（让合作伙伴和 IT 人员预配 Windows 10 电脑，使其配置完善，可用于业务）和 [现有设备 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) 模式（采用此模式可将最新版本的 Windows 10 轻松部署到现有设备）。
+- [Autopilot](enrollment-autopilot.md) -自动执行 Azure AD 联接，并将新公司拥有的设备注册到 Intune。 此方法简化了开箱即用体验，无需将自定义操作系统映像应用到设备上。 管理员使用 Intune 管理 Autopilot 设备时，他们可以在注册设备后管理策略、配置文件和应用等。  有四种类型的 Autopilot 部署：[自部署模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)（适用于网亭、数字签名或共享设备）、[用户驱动模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)（适用于传统用户）、[白手套](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)（使合作伙伴和 IT 人员可以预配 Windows 10 电脑，使其配置完善且可用于业务）和[适用于现有设备的 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices)（使用户可将最新版本的 Windows 10 轻松部署到现有设备）。
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Intune 中基于管理员的注册
 

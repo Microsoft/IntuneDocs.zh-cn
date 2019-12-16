@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 752b4ae8440df0ebefbabbf7e5ccb48fed684827
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: f56808b6841d120e10541a978a835282041fd3c3
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540817"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946695"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保护的应用  
 
@@ -93,6 +93,7 @@ ms.locfileid: "74540817"
 | **SAP Fiori**<p><img alt="Partner app - SAP Fiori icon" src="./media/apps-supported-intune-apps/icon-p-sap-fiori.png" width="100"> | 使用适用于 iPhone 和 iPad 的 SAP Fiori 客户端移动应用，可以随时随地处理最常见的业务任务，从而提高日常工作效率。 使用高于 750 SAP Fiori 应用的 Web 版本的此增强型移动运行时，它提供下一水平的移动体验，包括增强的附件处理和全屏操作体验。 此外，还可以访问客户使用 SAP Fiori 移动服务生成的自定义 SAP Fiori 移动应用，这些应用支持 Intune 移动应用管理。 | [iOS 应用商店链接](https://itunes.apple.com/us/app/sap-fiori-client/id824997258?mt=8) |  
 | **Speaking Email**<p><img alt="Partner app - Speaking Email icon" src="./media/apps-supported-intune-apps/icon-p-speaking-email-icon.png" width="100">   | 可便于用户在移动时阅读电子邮件，从而每天节省更多时间。 借助能在开车时安全使用的语音命令和简单手势，可以在移动时存档、标记或回复电子邮件。<p>智能内容检测功能跳过免责声明、回复标题和电子邮件签名，仅朗读不复杂的内容。<p>员工可以通过 Intune 登录，从而访问 Office 365 Exchange 电子邮件。 | [iOS 应用商店链接](https://itunes.apple.com/app/apple-store/id991406423?ct=intune) | 
 | **Synergi Life**<p><img alt="Partner app - Synergi Life icon" src="./media/apps-supported-intune-apps/icon-p-synergi-life.png" width="100"> | Synergi Life 移动应用是 Synergi Life 的扩展，可便于用户随时随地使用手机创建快照和录制语音，从而轻松生成观察和事件报告。<p>Synergi Life（旧称为 Synergi）是完整的风险和 QHSE 管理业务解决方案，可管理所有不符合性、事件、风险、风险分析、审核、评估和改进建议。<p>必须是 Synergi Life 风险和 QHSE 管理系统的许可用户，并且有必要的后端许可软件和服务，才能使用 Synergi Life 移动应用。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.dnv.mobilesolutions.synergimobile.uibase)、[iOS 应用商店链接](https://itunes.apple.com/us/app/synergi-life/id641181737)  |  
+| **适用于 Intune 的 Tact**<p><img alt="Partner app - Tact for Intune icon" src="./media/apps-supported-intune-apps/icon-p-tact-icon.png" width="100"> | 适用于 Intune 的 Tact 是第一个 CRM 和销售助理，它整合了来自 Salesforce.com、电子邮件、日历、地图和其他日常工具的数据，以提供会话式的人性化体验。 Tact 由 AI 提供支持，它可以自动完成销售人员的管理工作，整合 CRM 与其他数据源以提供单一管理平台，并向每个卖方推送情报以提高其绩效。 企业现可通过适用于 Intune 的 Tact 提高卖方生产力、丰富客户数据并提高 CRM 采用率，同时确保应用程序层的企业级安全性。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.tactile.tact)、[iOS 应用商店链接](https://apps.apple.com/us/app/tact-for-intune/id1477117416?mt=8)  |  
 | **适用于 Intune 的 Vera**<p><img alt="Partner app - Vera for Intune icon" src="./media/apps-supported-intune-apps/icon-p-vera.png" width="100"> | 使用适用于 Intune 的 Vera，可以直接在移动设备中加密、跟踪和撤消对文件和电子邮件附件的访问权限。 可以保护最有价值的信息，无论使用何种应用：Microsoft、Box、Google、Dropbox 等。 | [iOS 应用商店链接](https://itunes.apple.com/us/app/vera-for-intune/id1235182010?mt=8) |  
 | **Workspace ONE Send**<p><img alt="Partner app - Intune partner app - Workspace ONE Send icon" src="./media/apps-supported-intune-apps/icon-p-workspace-one-send-icon.png" width="100"> | Workspace ONE Send 使用 Microsoft Intune 为客户提供顺畅的编辑和发送功能，以使用 VMware 效率应用管理 Office 365 应用。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=com.airwatch.vmsend)、<br>[iOS 应用商店链接](https://itunes.apple.com/us/app/vmware-workspace-one-send/id1336333505?mt=8) |
 | **Zoom for Intune**<p><img alt="Partner app - Zoom for Intune icon" src="./media/apps-supported-intune-apps/icon-p-zoom.png" width="100"> | Zoom 是用于召开会议、网络研讨会、聊天和云手机的通信中心。 通过桌面、移动或会议室提供的完美视频、高清晰音频和即时屏幕共享，开始或加入会议。 | [Android 应用商店链接](https://play.google.com/store/apps/details?id=us.zoom.videomeetings4intune)、<br>[iOS 应用商店链接](https://apps.apple.com/us/app/zoom-for-intune/id1462818858?mt=8) |  

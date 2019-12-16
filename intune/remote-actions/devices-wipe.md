@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712197"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991765"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
@@ -47,6 +47,8 @@ ms.locfileid: "73712197"
 
 “保留注册状态和用户帐户”  选项仅适用于 Windows 10 版本 1709 或更高版本。
 
+“执行受保护的擦除”选项可确保关闭设备不会规避擦除操作  。 受保护的擦除将继续尝试重置设备，直到成功为止。 在一些配置中，此操作可能会使设备无法重启。
+
 将在设备下次连接到 Intune 时重新应用 MDM 策略。
 
 擦除可用于在将设备提供给新用户前或在设备丢失或被盗时，对设备进行重置。 请谨慎选择“擦除”  。 无法恢复设备上的数据。
@@ -57,7 +59,7 @@ ms.locfileid: "73712197"
 3. 选择“设备” > “所有设备”   。
 4. 选择要擦除的设备的名称。
 5. 在显示设备名称的窗格中，选择“擦除”  。
-6. 对于 Windows 10 版本 1709 或更高版本，还具有“保留注册状态和用户帐户”选项  。 
+6. 对于 Windows 10 版本 1709 或更高版本，还具有“擦除设备，但保留注册状态和关联的用户帐户”选项  。 
     
     |在擦除过程中保留 |不保留|
     | -------------|------------|

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549361"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829079"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
 
@@ -119,8 +119,8 @@ Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2
 
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 由于 Google 的这些变化，Intune 用户将受到以下几个方面的影响：  
-- Intune 将只能在 2020 年夏季之前为运行 Android 10 和更高版本（也称为 Android Q）的设备管理员管理的 Android 设备提供支持。 此日期是预计发布 Android 下一个主要版本的时间。   
-- 在 2020 年夏季以后运行 Android 10 或更高版本的设备管理员管理的设备将无法再进行完全管理。       
+- Intune 将只能在 2020 年第二季度之前为运行 Android 10 及更高版本的设备管理员管理的 Android 设备提供完全支持。 在此之后运行 Android 10 或更高版本的设备管理员管理的设备将无法再进行完全管理。 特别是，受影响的设备将不会收到新的密码要求。
+    - Samsung Knox 设备在此期间不受影响，因为通过 Intune 与 Knox 平台的集成提供了扩展支持。 这使你有更多时间来规划过渡弃用设备管理员管理。    
 - 设备管理员管理的仍在低于 Android 10 的 Android 版本上运行的 Android 设备将不会受到影响，可以继续完全由设备管理员进行管理。    
 - 对于运行 Android 10 及更高版本的所有设备，Google 限制了设备管理员管理代理（如公司门户）访问设备标识符信息的能力。 在设备更新到 Android 10 或更高版本后，此限制将影响以下 Intune 功能：  
     - VPN 的网络访问控制将不再有效。   
@@ -130,7 +130,7 @@ Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2
         > 这只会影响 Android 10 及更高版本上设备管理员管理的设备，并且不会影响作为 Android Enterprise 管理的设备。 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-为避免在即将到来的 2020 年夏季出现功能缩减的情况，建议采取如下操作：
+为避免在即将到来的 2020 年第三季度出现功能降低的情况，建议采取如下操作：
 - 不要将新设备加入设备管理员管理中。
 - 如果希望设备接收到 Android 10 的更新，请将其从设备管理员管理迁移到 Android Enterprise 管理和/或应用保护策略。
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503300"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955467"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -85,9 +85,7 @@ ms.locfileid: "72503300"
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>上传企业标识符 .csv 列表
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，选择“设备注册” > “公司设备标识符” > “添加” > “上传 CSV 文件”     。
-
-   ![突出显示了“添加”按钮的企业设备标识符工作区](./media/corporate-identifiers-add/add-corp-id.png)
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “注册设备” > “企业设备标识符” > “添加” > “上传 CSV 文件”      。
 
 2. 在“添加标识符”  边栏选项卡中，指定标识符类型：“IMEI”  或“序列号”  。
 
@@ -97,7 +95,7 @@ ms.locfileid: "72503300"
 
 ## <a name="manually-enter-corporate-identifiers"></a>手动输入企业标识符
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，选择“设备注册” > “公司设备标识符” > “添加” > “手动输入”     。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “注册设备” > “企业设备标识符” > “添加” > “手动输入”      。
 
 2. 在“添加标识符”  边栏选项卡中，指定标识符类型：“IMEI”  或“序列号”  。
 
@@ -111,7 +109,7 @@ ms.locfileid: "72503300"
 
 ## <a name="delete-corporate-identifiers"></a>删除企业标识符
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，选择“设备注册” > “公司设备标识符”   。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “注册设备” > “企业设备标识符”    。
 2. 选择要删除的设备标识符，然后选择“删除”  。
 3. 确认删除。
 
@@ -125,7 +123,7 @@ ms.locfileid: "72503300"
 设备属性显示 Intune 中每个设备记录的“所有权”  。 作为管理员，你可将设备所有权指定为“个人”  或“公司”  。 当设备的所有权类型从“个人”更改为“公司”时，Intune 会在 7 天内删除以前从该设备收集的所有应用信息。 如果适用，Intune 还将删除记录的电话号码。 
 
 **更改设备所有权：**
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，转到“设备”  并选择设备。
+1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “所有设备”> 选择该设备   。
 2. 选择“属性”  。
 3. 将“设备所有权”  指定为“个人”  或“公司”  。
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/22/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540789"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000374"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -54,12 +54,42 @@ ms.locfileid: "74540789"
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-december-9-2019"></a>2019 年 12 月 9 日当周
+
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>迁移到适用于托管浏览方案的 Microsoft Edge<!-- 5173762 -->
+
+由于即将停用 Intune Managed Browser，我们对应用保护策略进行了更改，以简化将用户转移到 Edge 所需的步骤。 我们将应用保护策略设置的选项“限制使用其他应用传输 Web 内容”更新为以下之一  ：
+
+- 任何应用
+- Intune 托管浏览器
+- Microsoft Edge
+- 非托管浏览器 
+
+选择“Microsoft Edge”时，最终用户将看到条件访问消息，该消息通知他们托管浏览方案需要 Microsoft Edge  。 如果尚未下载，系统将提示他们下载 Microsoft Edge 并使用其 AAD 帐户登录 Microsoft Edge。  这等同于将目标设置为应用配置设置 `com.microsoft.intune.useEdge` 设为 True 的启用了 MAM 的应用  。 使用“策略托管浏览器”设置的现有应用保护策略现已选中“Intune Managed Browser”，你将看不到任何行为更改   。 这意味着，如果你将 useEdge 应用配置设置设为 True，则用户将看到一条要求使用 Microsoft Edge 的消息   。 我们鼓励所有使用托管浏览方案的客户通过“限制使用其他应用传输 Web 内容”来更新其应用保护策略，以确保用户无论从哪个应用启动链接，都可以看到过渡到 Microsoft Edge 的合适指南  。 
+
+<!-- ########################## -->
+## <a name="week-of-december-2-2019"></a>2019 年 12 月 2 日当周
+
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>新的 Microsoft Endpoint Configuration Manager 共同管理许可<!--5027281-->
+现已推出新的许可证，可让拥有软件保障的 Configuration Manager 客户在不购买额外的 Intune 共同管理许可证的情况下获得适用于 Windows 10 电脑的 Intune 共同管理。 客户不再需要为其最终用户分配单独的 Intune/EMS 许可证以共同管理 Windows 10。
+- 由 Configuration Manager 管理并注册加入共同管理的设备拥有与 Intune 独立 MDM 托管的电脑几乎相同的权限。 但在重置后，不能使用 Autopilot 重新预配它们。
+- 通过使用其他方式注册到 Intune 的 Windows 10 设备需要完整的 Intune 许可证。
+- 其他平台上的设备仍需要完整的 Intune 许可证。
+
+有关详细信息，请参阅[许可条款](https://www.microsoft.com/en-us/Licensing/product-licensing/products)。
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-18-2019-1911-service-release"></a>2019 年 11 月 18 日当周（1911 服务版本）
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>应用管理
 
 #### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>对 Microsoft Outlook for iOS 提供 S/MIME 支持<!-- 2669398 idready -->
+
+   > [!NOTE]
+   > 此功能推迟到稍后发布。
+
 Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Outlook for iOS。 有关详细信息，请参阅管理[为 Outlook for iOS 配置 S/MIME](~/apps/app-configuration-policies-outlook-smime.md)。
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>针对何时选择性擦除应用数据更新了 UI<!-- 4102028 -->

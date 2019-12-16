@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261692"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860309"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -61,7 +61,7 @@ ms.locfileid: "74261692"
 
 创建或更新配置文件时，还可以向配置文件添加作用域标记和适用性规则。
 
-作用域标记  非常适合用于筛选配置文件并将其分配给特定组（如“人力资源”或“所有 US-NC 员工”）。 [将 RBAC 和作用域标记用于分布式 IT](../fundamentals/scope-tags.md) 提供了详细信息。
+“作用域标记”非常适合用于将配置文件筛选到特定组（例如 `US-NC IT Team` 或 `JohnGlenn_ITDepartment`）  。 [将 RBAC 和作用域标记用于分布式 IT](../fundamentals/scope-tags.md) 提供了详细信息。
 
 在 Windows 10 设备上，可以添加适用性规则  ，以便配置文件仅适用于特定 OS 版本或特定 Windows 版本。 [适用性规则](device-profile-create.md#applicability-rules)包含详细信息。
 

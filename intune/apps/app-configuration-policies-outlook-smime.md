@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564192"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000408"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>为 Outlook for iOS 配置 S/MIME
 
 安全/多用途 Internet 邮件扩展 (S/MIME) 可为 Exchange ActiveSync (EAS) 帐户中往来发送的电子邮件提供额外的安全层。 [Microsoft Outlook](https://aka.ms/omsmime) 可以利用 S/MIME 来允许用户对待发邮件和附件进行加密，从而确保只有预期的收件人可以在使用 Office 365 帐户时读取和访问邮件内容。 用户还可以对邮件进行数字签名，从而允许收件人验证发件人的身份，并确认该邮件未被篡改。 利用证书可以实现此功能。 有关详细信息，请参阅[了解 S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN)。
+
+> [!NOTE]
+> 此功能推迟到稍后发布。
 
 > [!NOTE]
 > 本主题介绍了如何通过 [Microsoft 终结点管理器](https://go.microsoft.com/fwlink/?linkid=2109431)来部署受信任的根证书。 Microsoft 终结点管理器是用于管理所有终结点的单个集成式终结点管理平台。 此 Microsoft 终结点管理器管理中心集成了 ConfigMgr 和 Microsoft Intune。
@@ -78,9 +81,6 @@ Outlook for iOS 支持通过两种方式将证书传递到设备，以便可以�
 6. 单击“配置设置”  以添加配置设置。 
     - 选择“配置设置格式”  旁边的“使用配置设计器”  并接受默认设置。 有关详细信息，请参阅 [Microsoft Outlook 配置设置](~/apps/app-configuration-policies-outlook.md)。
 7. 单击“S/MIME”  以显示“Outlook S/MIME 设置”  。
-
-    ![Outlook for iOS S/MIME 设置的屏幕截图](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. 将“启用 S/MIME”  设置为“是”  。
 9. 将“从 Intune 部署 S/MIME 证书”  设置为“是”  。
 10. 在“证书配置文件类型”  旁边的“签名证书”  下，选择以下选项之一：
