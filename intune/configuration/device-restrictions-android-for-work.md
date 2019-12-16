@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,22 +15,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390925"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946643"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置
 
 本文列出并介绍了可以在 Android Enterprise 设备上控制的各种设置。 在移动设备管理 (MDM) 解决方案中，使用这些设置可允许或禁用功能、在专用设备上运行应用、控制安全等。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建设备配置文件](device-restrictions-configure.md)。
 
 ## <a name="device-owner-only"></a>仅设备所有者
+
+这些设置适用于 Android 企业注册类型，Intune 在该类型中控制整个设备，如 Android 企业完全托管设备或专用设备。
 
 ### <a name="general-settings"></a>常规设置
 
@@ -242,6 +244,7 @@ ms.locfileid: "74390925"
   > [!IMPORTANT]
   > - 所选的 VPN 客户端必须安装在设备上，并且必须支持工作配置文件中的按应用 VPN。 否则将会出错。 
   > - 需要批准“托管 Google Play 商店”中的 VPN 客户端应用，将应用同步到 Intune，然后将应用部署到设备  。 执行此操作后，应用将安装在用户的工作配置文件中。
+  > - 你仍需要使用[vpn 配置文件](vpn-settings-android-enterprise.md)或通过[应用配置文件](../apps/app-configuration-policies-use-android.md)配置 vpn 客户端。
   > - 将每应用 VPN 与适用于 Android 3.0.4 的 F5 Access 结合使用时，可能存在已知问题。 有关详细信息，请参阅[适用于 Android 3.0.4 的 F5 Access 的 F5 发行说明](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)。
 
 - **锁定模式**：选择“启用”以强制所有流量使用 VPN 隧道  。 如果未建立与 VPN 的连接，则设备将无法访问网络。
@@ -264,6 +267,8 @@ ms.locfileid: "74390925"
     有关 PAC 文件的详细信息，请参阅[代理自动配置（PAC）文件](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)（打开非 Microsoft 网站）。
 
 ## <a name="work-profile-only"></a>仅工作配置文件
+
+这些设置适用于 Android 企业注册类型，在这种情况下，Intune 仅控制工作配置文件，例如个人或自带设备上的 Android 企业工作配置文件注册（BYOD）。
 
 ### <a name="work-profile-settings"></a>工作配置文件设置
 

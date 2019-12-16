@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dd9a97fdafff784bab2eae1d466855082fd397a
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117834"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784215"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何配置 iOS Classroom 应用的 Intune 设置
 
 > [!NOTE]
-> Intune 目前不支持配置教室应用。 文本仅适用于 Intune 中使用现有 iOS 教育版配置文件的用户。  
+> Intune 目前不支持配置教室应用。 本文仅适用于 Intune 中使用现有 iOS 教育版配置文件的用户。  
 
 ## <a name="introduction"></a>简介
 [Classroom](https://itunes.apple.com/app/id1085319084) 是一款可帮助教师在教室中指导学习及控制学生设备的应用。 例如，应用允许教师：

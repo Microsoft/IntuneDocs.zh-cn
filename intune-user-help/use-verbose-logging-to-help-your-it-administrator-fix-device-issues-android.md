@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508005"
 ---
 # <a name="configure-logging-settings"></a>配置日志记录设置
@@ -37,7 +37,7 @@ ms.locfileid: "72508005"
 详细日志记录记录在公司门户应用中执行的每个操作。 默认情况下，在设备上启用它。 若要在公司门户中启用详细日志记录：  
 
 1. 登录到公司门户应用。
-2. 点击 "**设置**"。
+2. 点击“设置”。 
 3. 在**详细日志记录**旁边，将开关翻转到**Off**。
 
 ## <a name="configure-microsoft-intune-app-logging"></a>配置 Microsoft Intune 应用日志记录

@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502225"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>在 Intune 中启用 Windows Hello 企业版的 Windows 10 设备设置
@@ -32,7 +32,7 @@ ms.locfileid: "72502225"
 
 若要详细了解 Intune 中的 Windows Hello 企业版配置文件，请参阅[配置标识保护](identity-protection-configure.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建配置文件](identity-protection-configure.md#create-the-device-profile)。
 

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540740"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>开发过程中的 Microsoft Intune 功能 - 2019 年 12 月
@@ -138,15 +138,15 @@ Intune 正在为 iOS、iPadOS 和 macOS 设备添加更多单一登录设置。 
 可以指定要在托管 Android 应用中使用的已批准键盘的列表。 在托管应用程序中，系统将提示用户切换到设备上已安装的已批准键盘之一，或者，如果需要，系统会将其定向到 Google Play 商店下载并设置一个已批准的键盘。 如果用户的活动键盘是已批准的键盘之一，则该用户将只能编辑托管应用中的文本字段。
 
 ### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>在 Windows 10 和更高版本的设备上将 PKCS 证书与 Wi-fi 配置文件配合使用<!-- 3246388  -->
-目前，可以通过 SCEP 证书（**设备配置** > **配置文件** > **创建配置**文件 > **windows 10 和更高版本**的平台 > **wi-fi**配置文件类型 > **Enterprise** > **EAP 类型**）。 你将能够将 PKCS 证书用于 Windows Wi-fi 配置文件。 此功能允许用户使用租户中的新的或现有的 PKCS 证书配置文件对 Wi-fi 配置文件进行身份验证。 
+目前，你可以通过 SCEP 证书（**设备配置** > **配置**文件 > **创建配置**文件 > **windows 10 和更高版本的 windows 10 和更高版本**的平台 > **Wi-fi** > **Enterprise** > **EAP 类型**）对 windows wi-fi 配置文件进行身份验证。 你将能够将 PKCS 证书用于 Windows Wi-fi 配置文件。 此功能允许用户使用租户中的新的或现有的 PKCS 证书配置文件对 Wi-fi 配置文件进行身份验证。 
 
 有关 Wi-fi 配置文件的详细信息，请参阅[在 Intune 中添加适用于 Windows 10 及更高版本设备的 wi-fi 设置](../configuration/wi-fi-settings-windows.md)。
 
 适用于：
 - Windows 10 及更高版本
 
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>在 iOS 设备上创建电子邮件设备配置文件时，新的 ExchangeActiveSync 设置<!-- 4892824  --> 
-在 iOS/iPadOS 设备上，你可以在设备配置文件中配置电子邮件连接（**设备配置** > **配置**文件 > **创建配置**文件 > 适用于平台的**ios/iPadOS** >**电子邮件**对于配置文件类型）。 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>在 iOS 设备上创建电子邮件设备配置文件时的新 Exchange ActiveSync 设置<!-- 4892824  --> 
+在 iOS/iPadOS 设备上，可以在设备配置文件中创建电子邮件连接（“设备配置”   > “配置文件”   > “创建配置文件”   > “iOS/iPadOS”  (针对平台) >“电子邮件”  (针对配置文件类型)）。 
 
 将提供新的 ExchangeActiveSync 设置，其中包括：
 - 选择要同步的服务（或阻止同步），如电子邮件、日历和联系人。
@@ -158,8 +158,8 @@ Intune 正在为 iOS、iPadOS 和 macOS 设备添加更多单一登录设置。 
 - iOS 13.0 及更高版本
 - iPadOS 13.0 及更高版本
 
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>阻止用户将个人 Google 帐户添加到 Android 企业设备所有者和专用设备<!-- 5353228  -->
-你将能够阻止用户在 Android 企业设备所有者和专用设备上创建个人 Google 帐户（**设备配置** > **配置文件** > **创建配置文件** > **Android 企业版**对于平台 >**设备所有者仅 >** 配置文件类型 >**用户和帐户设置**）的设备限制。
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>阻止用户将个人 Google 帐户添加到 Android Enterprise 设备所有者和专用设备<!-- 5353228  -->
+你将能够阻止用户在 Android Enterprise 设备所有者和专用设备上创建个人 Google 帐户（“设备配置” > “配置文件” > “创建配置文件” > “Android Enterprise”(针对平台) >“仅设备所有者”>“设备限制”(针对配置文件类型) >“用户和帐户”设置）。      
 
 要查看可以配置的当前设置，请转到[使用 Intune 允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
 
@@ -167,8 +167,8 @@ Intune 正在为 iOS、iPadOS 和 macOS 设备添加更多单一登录设置。 
 - Android Enterprise 设备所有者
 - Android Enterprise 专用设备
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>IOS 设备限制配置文件中删除了 Siri 命令的服务器端日志记录设置<!-- 5468501  -->
-在 iOS 设备上，你可以创建一个设备限制配置文件，用于为 Siri 命令配置服务器端日志记录（**设备配置** > **配置文件** > **创建配置文件** > **iOS/iPadOS**用于平台>**内置应用程序**的配置文件类型 >**设备限制**。 将删除**Siri 命令的服务器端日志记录**设置。
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>iOS 设备限制配置文件中删除了“Siri 命令的服务器端日志记录”设置<!-- 5468501  -->
+在 iOS 设备上，你可以创建一个设备限制配置文件，用于为 Siri 命令配置服务器端日志记录（**设备配置** > **配置文件** > 为配置文件类型 >**内置应用**的平台 >**设备限制** **创建配置文件** > **iOS/iPadOS** ）。 将删除**Siri 命令的服务器端日志记录**设置。
 
 此设置将从 Intune 管理控制台中删除。 即使配置了此设置的现有策略将继续显示此设置，此设置在设备上也不起作用。 如果要从现有策略中删除此设置，请执行策略，进行次要编辑，保存，并更新策略。
 

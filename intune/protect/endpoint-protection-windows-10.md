@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058429"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Windows 10（及更高版本）设置，用于保护使用 Intune 的设备
@@ -30,7 +30,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 若要配置 Microsoft Defender 防病毒软件，请参阅 [Windows 10 设备限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
 
-## <a name="before-you-begin"></a>在开始之前  
+## <a name="before-you-begin"></a>开始之前  
 
 [创建 Endpoint Protection 设备配置配置文件](endpoint-protection-configure.md)。  
 
@@ -44,7 +44,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
 
 - **应用程序防护**  
   **默认值**：未配置  
-   应用程序防护 CSP：[设置/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
+   应用程序防护 CSP：[Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
   - **针对 Edge 启用** - 打开此功能，在 Hyper-V 虚拟化浏览容器中打开不受信任的站点。  
   - **未配置**-可在设备上打开任何站点（可信和不受信任）。  
@@ -636,7 +636,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
     - “备份恢复密码和密钥包”   
     - “仅备份恢复密码”   
 
-  - **客户端驱动的恢复密码轮换**  
+  - 客户端驱动的恢复密码轮转   
     **默认值**：已为 Azure AD 联接的设备启用密钥轮换  
     BitLocker CSP： [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -733,7 +733,7 @@ Microsoft Intune 包括许多设置，可帮助保护设备。 本文介绍可�
     - “备份恢复密码和密钥包”   
     - “仅备份恢复密码”   
 
-  - **客户端驱动的恢复密码轮换**  
+  - 客户端驱动的恢复密码轮转   
     **默认值**：已为 Azure AD 联接的设备启用密钥轮换  
     BitLocker CSP： [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -1308,7 +1308,7 @@ Microsoft Defender 安全中心作为独立应用或每个单项功能中的进�
   - **强制注销** - 取下智能卡时自动注销用户。  
   - **如果是远程桌面服务会话，则断开连接** - 取下智能卡会断开会话，但不会注销用户。 使用此选项，用户可以稍后插入智能卡并恢复会话，或者在另一台配备智能卡读卡器的计算机上恢复会话，而无需再次登录。 如果是本地会话，则此策略与“锁定工作站”的功能相同。  
 
-#### <a name="display"></a>显示  
+#### <a name="display"></a>显示器  
 
 - **锁定屏幕上的用户信息**  
   **默认值**：未配置  

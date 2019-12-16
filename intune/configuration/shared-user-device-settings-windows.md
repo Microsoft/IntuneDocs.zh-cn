@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/01/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e59a4ba7a929df448eddaf36038c2d6deaa0a7a
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 96a89301bda738f57920b8d4e233663678e3fc91
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547939"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860272"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Windows 10 及更高版本设置，用于保护使用 Intune 的设备
 
@@ -40,6 +40,8 @@ Windows 10 及更高版本的设备（如 Microsoft Surface），可用于多个
 
 ## <a name="shared-multi-user-device-settings"></a>共享的多用户设备设置
 
+这些设置使用[SHAREDPC CSP](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp)。
+
 - **共享电脑模式**：选择“启用”，打开“共享电脑模式”  。 在此模式下，一次只能有一位用户登录设备。 第一位用户注销前，其他用户无法登录。“未配置”（默认）使 Intune 未托管此设置，并且不会推送任何策略来控制设备上的此设置  。
 - **来宾帐户**：选择此模式，在登录屏幕上创建来宾选项。 来宾帐户不需要任何用户凭证或身份验证。 此设置在每次使用时会创建新的本地帐户。 选项包括：
   - **来宾**：在设备本地创建来宾帐户。
@@ -54,12 +56,16 @@ Windows 10 及更高版本的设备（如 Microsoft Surface），可用于多个
 
 - **本地存储**：选择“已启用”，以阻止用户保存和查看设备硬盘上的文件  。 选择“已禁用”，以允许用户使用文件资源管理器查看和保存本地文件  。 “未配置”（默认）使 Intune 未托管此设置，并且不会推送任何策略来控制设备上的此设置  。
 - **电源策略**：设置为“已启用”时，用户不能关闭“休眠”、不能替代所有睡眠操作（比如合上设备盖），也不能更改电源设置  。 设置为“已禁用”时，用户可以让设备进入休眠状态、可以合上设备盖让设备进入睡眠模式，也可以更改电源设置  。 “未配置”（默认）使 Intune 未托管此设置，并且不会推送任何策略来控制设备上的此设置  。
-- **睡眠超时(秒)** ：输入设备进入睡眠模式前的非活动状态秒数 (0-100)。 如果未设定秒数，设备会在 60 分钟后进入睡眠状态。
+- **睡眠超时(秒)** ：输入设备进入睡眠模式前的非活动状态秒数 (0-18000)。 `0` 表示设备从不休眠。 如果未设定秒数，设备会在 3600 秒（60 分钟）后进入睡眠状态。
 - **电脑唤醒时登录**：设置为“已启用”，要求用户在设备退出睡眠模式时使用密码登录  。 选择“已禁用”，因此用户无需输入其用户名和密码  。 “未配置”（默认）使 Intune 未托管此设置，并且不会推送任何策略来控制设备上的此设置  。
 - **维护开始时间(从午夜开始的分钟数)** ：输入自动维护任务（如 Windows 更新）运行时的分钟数 (0-1440)。 默认开始时间为午夜，或零 (`0`) 分钟。 通过输入从午夜开始计算的开始时间（分钟数），更改开始时间。 例如，如果希望从凌晨 2 点开始维护，请输入 `120`。 如果希望从晚上 8 点开始维护，请输入 `1200`。
 - **教育策略**：选择“已启用”，将更严格的推荐设置用于学校中使用的设备  。 选择“已禁用”，因此不使用默认和推荐教育策略  。 “未配置”（默认）使 Intune 未托管此设置，并且不会推送任何策略来控制设备上的此设置  。
 
   有关教育策略作用的详细信息，请参阅[面向教育行业客户的 Windows 10 配置建议](https://docs.microsoft.com/education/windows/configure-windows-for-education)。
+
+- **快速第一次登录**：选择 "**已启用**"，以便用户可以快速登录。 **启用**后，设备会自动将新的非管理员 Azure AD 帐户连接到预配置的候选本地帐户。 选择 "**禁用**"，以防止快速登录体验。 “未配置”（默认）使 Intune 未托管此设置，并且不会推送任何策略来控制设备上的此设置  。
+
+  [Authentication/EnableFastFirstSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablefastfirstsignin)
 
 > [!TIP]
 > [设置共享或来宾电脑](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc)（打开另一个文档网站）是此 Windows 10 功能的出色资源，包括可在共享模式下设置的概念和组策略。

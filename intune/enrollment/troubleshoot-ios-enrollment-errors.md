@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199270"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832572"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备注册问题疑难解答
 
@@ -76,7 +76,7 @@ ms.locfileid: "74199270"
 
 如果存在多个经过验证的域，则为每个域创建一个 CNAME 记录。 CNAME 资源记录必须包含以下信息：
 
-|类型：|主机名|指向|TTL|
+|TYPE|主机名|指向|TTL|
 |------|------|------|------|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 小时|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 小时|
@@ -136,10 +136,10 @@ ms.locfileid: "74199270"
 **原因：** 用户尝试注册的设备数超过设备注册限制。
 
 #### <a name="resolution"></a>解决方法
-1. 打开[Intune 管理门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **设备** > **所有设备**，并检查用户已注册的设备数。
+1. 在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择 "**设备**" > "**所有设备**"，并检查用户已注册的设备数。
     > [!NOTE]
     > 你还应将受影响的用户登录到[Intune 用户门户](https://portal.manage.microsoft.com/)并检查已注册的设备。 [Intune 用户门户](https://portal.manage.microsoft.com/)中可能出现设备，但在[intune 管理门户](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)中却没有出现，此类设备也会计入设备注册限制。
-2. 请参阅**管理员** > **移动设备管理** > **注册规则**> 检查设备注册限制。 默认情况下，将此限制设置为 15 个。 
+2. 在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择 "**设备** > **注册限制**" > 检查设备注册限制。 默认情况下，将此限制设置为 15 个。 
 3. 如果注册的设备数已达到限制，则删除不必要的设备，或者增加设备注册限制。 由于每个注册的设备都使用 Intune 许可证，因此建议你首先删除不必要的设备。
 4. 重新注册设备。
 
@@ -230,7 +230,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解决方法
 
 1. 编辑注册配置文件。 您可以对配置文件进行任何更改。 目的是更新配置文件的修改时间。
-2. 同步 DEP 管理的设备：打开 Intune 门户 >**管理员** > **移动设备管理** > **iOS** > **设备注册计划** **立即同步**。 会向 Apple 发送同步请求。
+2. 同步 DEP 托管设备：在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “iOS” > “iOS 注册” > “注册计划令牌”> 选择令牌 >“立即同步”。      会向 Apple 发送同步请求。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>在用户登录时，DEP 注册停滞
 当你打开分配了注册配置文件的 DEP 管理的设备时，在输入凭据后，初始设置将会关闭。

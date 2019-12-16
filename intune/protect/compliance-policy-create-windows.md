@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889545"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946645"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Windows 10 及更高版本设置
 
@@ -35,7 +35,7 @@ ms.locfileid: "72889545"
 
 作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 [创建合规性策略](create-compliance-policy.md#create-the-policy)。 在“平台”中，选择“Windows 10 及更高版本”   。
 
@@ -161,6 +161,7 @@ ms.locfileid: "72889545"
 ### <a name="encryption"></a>加密
 
 - **加密设备上的数据存储**：  
+  此设置适用于设备上的所有驱动器。
   - **未配置**（默认） 
   - **必需** - 使用“必需”加密设备上的数据存储。 
 
@@ -198,7 +199,7 @@ ms.locfileid: "72889545"
 
 - **Microsoft Defender 反恶意软件**：  
   - **未配置**（*默认*）-Intune 不控制服务，也不更改现有设置。
-  - **需要**-打开 Microsoft Defender 反恶意软件服务，并阻止用户将其关闭。 
+  - **需要**-打开 Microsoft Defender 反恶意软件服务，并阻止用户将其关闭。
 
 - **Microsoft Defender 反恶意软件最低版本**：  
   输入 Microsoft Defender 反恶意软件服务的最小允许版本。 例如，输入 `4.11.0.0`。 留空时，可以使用任何版本的 Microsoft Defender 反恶意软件服务。  
@@ -206,10 +207,12 @@ ms.locfileid: "72889545"
   *默认情况下，不配置任何版本*。
 
 - **Microsoft Defender 反恶意软件安全智能最**新：  
-  控制设备上的 Windows 安全病毒和威胁防护更新。  
+  控制设备上的 Windows 安全病毒和威胁防护更新。
   - **未配置**（*默认*）-Intune 不会强制实施任何要求。
-  - **要求**-强制 Microsoft Defender 安全智能处于最新状态。 
+  - **要求**-强制 Microsoft Defender 安全智能处于最新状态。
 
+  [Defender/Health/SignatureOutOfDate CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   有关详细信息，请参阅[Microsoft Defender 防病毒和其他 microsoft 反恶意软件的安全智能更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
 
 - **实时保护**：  
