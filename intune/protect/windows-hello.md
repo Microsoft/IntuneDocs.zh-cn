@@ -53,7 +53,7 @@ Intune 与 Hello for Business 集成的两种方式：
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>创建 Windows Hello for Business 策略
 
-1. 登录到 [Microsoft 终结点管理器管理中心（ https://go.microsoft.com/fwlink/?linkid=2109431.
+1. 登录到 [Microsoft 终结点管理器管理中心]（ https://go.microsoft.com/fwlink/?linkid=2109431.
 
 2. 转到“设备”  >“注册”**>“注册设备”   > “Windows 注册”   > “Windows Hello 企业版”  。 将打开“Windows Hello 企业版”窗格。
 
