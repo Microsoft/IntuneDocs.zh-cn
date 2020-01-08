@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 704da2ee4f0f2e6dce222c89704c83a35368c02c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059540"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206561"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中配置设备限制设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 包含帮助管理员控制 Android、iOS、macOS 和 Windows 设备的设备限制策略。 这些限制允许控制各种设置和功能，以保护组织的资源。 例如，管理员可以：
 
@@ -45,7 +45,7 @@ Intune 包含帮助管理员控制 Android、iOS、macOS 和 Windows 设备的�
 3. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好是“iOS：阻止设备上的照相机”  。
-    - **说明**：输入策略的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入策略的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：  
 
         - **Android**

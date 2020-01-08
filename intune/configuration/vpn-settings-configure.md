@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059311"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206272"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中创建 VPN 配置文件以连接到 VPN 服务器
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 虚拟专用网络 (VPN) 可让你的用户安全远程访问你的组织网络。 设备使用 VPN 连接配置文件来启动与 VPN 服务器的连接。 Microsoft Intune 中的“VPN 配置文件”  将 VPN 设置分配到你组织中的用户和设备，从而可以方便且安全地连接到组织网络。
 
@@ -73,7 +73,7 @@ ms.locfileid: "74059311"
 3. 输入以下属性：
 
     - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 VPN 配置文件”  。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：
 
       - **Android**

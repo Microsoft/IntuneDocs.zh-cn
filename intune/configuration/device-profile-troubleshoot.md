@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832605"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206629"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune 中设备策略和配置文件的常见疑问、问题和解决方案
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 了解在 Intune 中使用设备配置文件和策略时的常见问题解答。 此外，本文还列出了签入时间间隔，详细说明了冲突等。
 

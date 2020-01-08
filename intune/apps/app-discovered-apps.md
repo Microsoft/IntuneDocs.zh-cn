@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899412"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205524"
 ---
 # <a name="intune-discovered-apps"></a>Intune 发现的应用
 
@@ -54,7 +54,7 @@ Intune 还提供租户中单个设备的已发现应用的列表。
 
 | 平台 | 个人拥有的设备 | 公司拥有的设备 | 刷新周期 |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10（Win32 应用）注意事项：[必须在设备上安装 Intune 管理扩展](intune-management-extension.md) | 不适用 | “添加删除程序”列表中的所有 Win32 应用 | 自设备注册时间起每隔 24 小时刷新一次 |
+| Windows 10（Win32 应用）注意事项：[必须在设备上安装 Intune 管理扩展](intune-management-extension.md) | 不适用 | 仅托管应用 | 自设备注册时间起每隔 24 小时刷新一次 |
 | Windows 10（现代应用） | 仅限托管现代应用 | 设备上安装的所有现代应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Windows 8.1 | 仅托管应用 | 仅托管应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Windows Phone 8 | 仅托管应用 | 仅托管应用 | 自设备注册时间起每隔 7 天刷新一次 |

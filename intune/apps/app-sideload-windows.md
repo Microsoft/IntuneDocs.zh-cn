@@ -3,10 +3,10 @@ title: 旁加载 Windows 和 Windows Phone 应用
 titleSuffix: Microsoft Intune
 description: 了解如何对业务线应用进行签名，以便可以使用 Intune 部署它们。
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/24/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,12 +16,12 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414696"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691829"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
 
@@ -125,7 +125,7 @@ Windows 8.1 桌面版/Windows 10 桌面版和移动版
 2. 如上所述，从适用于企业的 Microsoft 应用商店下载 Windows 10 公司门户应用。  
 3. 运行在脚本标头中详细说明了其输入参数的脚本，对 Windows 10 公司门户应用进行签名（以下进行了提取）。 不需要将依赖项传入该脚本。 只有在应用上载到 Intune 管理控制台时才需要依赖项。
 
-|       参数       |                                                                    描述                                                                    |
+|       参数       |                                                                    说明                                                                    |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | InputWin10AppxBundle  |                                             定位到源 appxbundle 文件所在位置的路径。                                              |
 | OutputWin10AppxBundle |                                                  已签名的 appxbundle 文件 Win81Appx 的输出路径。                                                  |

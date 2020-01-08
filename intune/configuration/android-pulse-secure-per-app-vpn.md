@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
-ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
+ms.openlocfilehash: 83b2ffc7e942492be4560a56af0f3514cb1638a4
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74319843"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206850"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自定义配置文件为 Android 设备创建每应用 VPN 配置文件
 
@@ -45,7 +45,7 @@ ms.locfileid: "74319843"
 3. 输入以下属性：
 
     - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 Android 每应用 VPN 配置文件”  。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择“Android”  。
     - **配置文件类型**：选择“VPN”  。
 
@@ -53,21 +53,21 @@ ms.locfileid: "74319843"
 
 记录创建 VPN 配置文件时指定的“连接名称”  值。 在下一步中将会用到此名称。 例如**MyAppVpnProfile**。
 
-## <a name="step-2-create-a-custom-configuration-policy"></a>步骤 2：创建自定义配置策略
+## <a name="step-2-create-a-custom-configuration-policy"></a>步骤 2:创建自定义配置策略
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下属性：
 
     - **名称**：输入自定义配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的自定义 OMA-URI Android VPN 配置文件”  。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择“Android”  。
     - **配置文件类型**：选择“自定义”  。
 
 4. 选择“设置”   > “配置”  。
 5. 在“自定义 OMA-URI 设置”  窗格上，选择“添加”  。
     - **名称**：输入设置的名称。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **OMA-URI**：输入 `./Vendor/MSFT/VPN/Profile/*Name*/PackageList`，其中“Name”  是在步骤 1 中记下的连接名称。 在此示例中，字符串是 `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`。
     - **数据类型**：输入“String”  。
     - **值**：输入与配置文件相关联的包列表，其中此列表以分号进行分隔。 例如，如果你希望 Excel 和 Google Chrome 浏览器使用 VPN 连接，输入 `com.microsoft.office.excel;com.android.chrome`。

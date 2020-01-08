@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059822"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206221"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>使用自定义设备配置文件，在 Intune 中创建具有预共享密钥的 Wi-Fi 配置文件
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 预共享密钥 (PSK) 通常用于对 WiFi 网络或无线 LAN 的用户进行身份验证。 通过 Intune，可以创建使用预共享密钥的 WiFi 配置文件。 若要创建配置文件，请使用 Intune 中的“自定义设备配置文件”功能  。 本文还包含一些有关如何创建基于 EAP 的 Wi-Fi 配置文件的示例。
 
@@ -54,14 +54,14 @@ ms.locfileid: "74059822"
 3. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，良好的策略名称是“适用于 Android 设备的自定义 OMA-URI Wi-fi 配置文件设置”  。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择平台。
     - **配置文件类型**：选择“自定义”  。
 
 4. 在“设置”  中选择“添加”  。 输入具有以下属性的新 OMA URI 设置：
 
     1. **名称**：输入 OMA-URI 设置的名称。
-    2. **说明**：输入 OMA-URI 设置的描述。 此设置是可选的，但建议进行。
+    2. **描述**：输入 OMA-URI 设置的描述。 此设置是可选的，但建议进行。
     3. **OMA-URI**：使用以下选项之一：
 
         - **对于 Android**： `./Vendor/MSFT/WiFi/Profile/SSID/Settings`

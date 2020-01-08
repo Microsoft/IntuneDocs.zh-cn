@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563667"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205966"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 将 Office 365 应用添加到 Windows 10 设备
 
@@ -197,13 +197,13 @@ Intune 使用 [Office 部署工具](https://docs.microsoft.com/DeployOffice/over
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>在安装应用套件期间出错
 
-有关如何查看详细安装日志的信息，请参阅[如何启用 Office 365 专业增强版 ULS 日志记录](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging)。
+有关如何查看详细安装日志的信息，请参阅[如何启用 Office 365 专业增强版 ULS 日志记录](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging)。
 
 下表列出了用户可能会遇到的常见错误代码及其含义。
 
 ### <a name="status-for-office-csp"></a>Office CSP 的状态
 
-| 状态 | 阶段 | 描述 |
+| 状态 | 阶段 | 说明 |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1460 (ERROR_TIMEOUT) | 下载 | 下载 Office 部署工具失败 |
 | 13 (ERROR_INVALID_DATA) | - | 无法验证下载的 Office 部署工具的签名 |

@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503738"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564911"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>通过 Intune 启用 Sophos Mobile Threat Defense 连接器
 可以根据 Sophos Mobile（与 Microsoft Intune 集成的 Mobile Threat Defense (MTD) 解决方案）进行的风险评估，使用条件访问控制移动设备对公司资源的访问。 风险是基于从运行 Sophos Mobile 应用的设备收集到的遥测进行评估的。
@@ -72,7 +72,7 @@ Intune 设备符合性策略包括基于 Sophos Mobile 风险评估的 Sophos Mo
 - Microsoft Intune 订阅 
 - Sophos Mobile Threat Defense 订阅
 
-有关详细信息，请参阅 [Sophos 网站](https://www.sophos.com/products/mobile-control)。  
+有关详细信息，请参阅 [Sophos 网站](https://www.sophos.com/en-us/products/mobile-control.aspx)。
 
 ## <a name="next-steps"></a>后续步骤  
 - [将 Sophos 与 Intune 相集成](sophos-mtd-connector-integration.md)

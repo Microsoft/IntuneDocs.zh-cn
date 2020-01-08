@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 060c3c00a228794d3f237a6362b048bf23e1a933
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819711"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547722"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>适用于 Windows 设备的 Intune 注册方法
 
@@ -49,7 +49,7 @@ ms.locfileid: "74819711"
 管理员可以设置以下不需要用户交互的注册方法：
 
 - [混合 Azure AD 联接](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)允许管理员配置 Active Directory 组策略，以自动注册已联接混合 Azure AD 的设备。 
-- [Configuration Manager 共同管理](https://docs.microsoft.com/sccm/comanage/overview)允许管理员将其现有的 Configuration Manager 受管理设备注册到 Intune 中，以获得 Intune 和 Configuration Manager 的双重优势。 
+- [Configuration Manager 共同管理](https://docs.microsoft.com/configmgr/comanage/overview)允许管理员将其现有的 Configuration Manager 受管理设备注册到 Intune 中，以获得 Intune 和 Configuration Manager 的双重优势。 
 - [设备注册管理员](device-enrollment-manager-enroll.md) (DEM) 是一个特殊的服务帐户。 DEM 帐户具有以下权限，即允许授权用户注册和管理多个公司拥有的设备。 这些类型的设备非常适用于销售点或实用工具应用，但是不适用于需要访问电子邮件或公司资源的用户。 这种方法还禁止使用条件访问等功能。 
 - [批量注册](../windows-bulk-enroll.md)允许授权用户将大量新的公司拥有的设备加入 Azure Active Directory 和 Intune。 可以使用 Windows 配置设计器 (WCD) 应用来创建预配包。 然后，在初始 Windows OOBE 体验期间或从现有 Windows 电脑使用 USB 介质时，可以安装预配包以自动将设备注册到 Intune 中。 这种方法还禁止使用条件访问。 
 - [注册 Windows IoT Core 设备](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment)通过使用 Windows IoT Core 仪表板准备设备，然后使用 Windows 配置设计器来创建预配包完成。 然后，在初始启动过程中使用 SD 卡媒体，将会安装预配包以将设备自动注册到 Intune。

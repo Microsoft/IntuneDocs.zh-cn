@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d24d1c7dbae12fb33ec277419b1bbfd47b46b07
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504765"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548058"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune 是适用于设备的 MDM 和 MAM 提供程序
 
@@ -34,7 +34,7 @@ Microsoft Intune 是一项基于云的服务，关注移动设备管理 (MDM) �
 
 通过 Intune，还可以：
 
-- 选择使用 Intune 的 100% 云，或与 Configuration Manager 和 Intune [共同托管](https://docs.microsoft.com/sccm/comanage/overview)。
+- 选择使用 Intune 的 100% 云，或与 Configuration Manager 和 Intune [共同托管](https://docs.microsoft.com/configmgr/comanage/overview)。
 - 设置规则并在个人拥有的设备和组织拥有的设备上配置设置以访问数据和网络。
 - 在设备（本地和移动）上部署应用并对其进行身份验证。
 - 通过控制用户访问和共享信息的方式来保护公司信息。

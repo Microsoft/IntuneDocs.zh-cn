@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860377"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206663"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -49,7 +49,7 @@ ms.locfileid: "74860377"
 3. 选择“创建配置文件”  。 输入以下属性：
 
    - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 WP 电子邮件配置文件”  。
-   - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+   - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
    - **平台**：选择设备平台。 选项包括：  
 
        - **Android**

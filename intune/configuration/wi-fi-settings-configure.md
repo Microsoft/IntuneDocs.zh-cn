@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fe0bed94c66a1b82ed26bdbd43f68073223101e
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 47eae4d2e662be85de2831666f944e57ba674417
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540680"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206102"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中添加和使用设备上的 Wi-Fi 设置
 
@@ -35,7 +35,7 @@ Wi-Fi 是许多移动设备用来实现网络访问的无线网络。 Microsoft 
 
 本文列出了创建 Wi-Fi 配置文件的步骤。 它还收录了介绍每个平台的不同设置的链接。
 
-## <a name="supported-device-platforms"></a>支持的设备平台
+## <a name="supported-device-platforms"></a>受支持的设备平台
 
 Wi-Fi 配置文件支持以下设备平台：
 
@@ -55,7 +55,7 @@ Wi-Fi 配置文件支持以下设备平台：
 3. 输入以下属性：
 
     - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，配置文件名称最好是“整个公司的 WiFi 配置文件”  。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：
 
       - **Android**

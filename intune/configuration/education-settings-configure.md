@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6cc64c3a65af72fd74bc58ed7c06a214797510
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b3485a87120cbf565a275cefb38cfe3549ee31d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059467"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206442"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>在 Microsoft Intune 中的 Windows 10 设备上使用“参加测验”应用
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 中的教育配置文件专为学生在设备上参加测验或考试而设计。 此功能包含“参加测验”  应用，以及用于添加测验 URL、选择最终用户的测验登录方式等的设置。 此功能支持以下平台：
 
@@ -43,7 +43,7 @@ Intune 中的教育配置文件专为学生在设备上参加测验或考试而�
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择“Windows 10 及更高版本”  。
     - **配置文件**：选择“教育配置文件”  。
 

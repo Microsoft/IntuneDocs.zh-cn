@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059513"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206935"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>使用 Microsoft Intune 在设备上升级 Windows 10 版本或切出 S 模式
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 作为移动设备管理 (MDM) 解决方案的一部分，不妨升级 Windows 10 设备。 例如，不妨将 Windows 10 专业版设备升级为 Windows 10 企业版。 或者，你希望设备切出 S 模式。
 
@@ -101,7 +101,7 @@ ms.locfileid: "74059513"
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。 例如，输入 `Windows 10 edition upgrade profile` 或 `Windows 10 switch off S mode` 等名称。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择“Windows 10 及更高版本”  。
     - **配置文件类型**：选择“版本升级”  。
     - **设置**：输入要配置的设置。 有关所有设置及其用途的列表，请参阅：

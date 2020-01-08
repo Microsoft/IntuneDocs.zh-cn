@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059931"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207105"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 借助 Intune，可以在组织拥有的移动设备上管理数据使用情况产生的电信费用。 Intune 与 Saaswedo 的 [Datalert 电信费用管理](http://datalert.biz/get-started)集成。 Datalert 是管理电信数据使用情况的实时电信费用管理解决方案。 它可帮助避免 Intune 托管设备产生成本高昂的意外数据和漫游费。
 
@@ -105,7 +105,7 @@ Intune 与下列电信费用管理提供商集成：
 
    ![显示连接成功的 Datalert 页面](./media/telecom-expenses-monitor/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>步骤 2：在 Intune 中确认电信费用管理可用
+### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>步骤 2:在 Intune 中确认电信费用管理可用
 
 完成步骤 1 后，会自动启用连接。 在 Intune 中，连接状态显示“可用”。  请使用以下步骤确认状态为可用：
 

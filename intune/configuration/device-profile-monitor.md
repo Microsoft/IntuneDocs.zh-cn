@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85ba34cfec8ebe78d2574034967bd7ed76f3304e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 25983117864f44b8131fdc49e60b7d24048da9fe
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059548"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206646"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视设备配置文件
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 包含一些功能，可帮助监视和管理设备配置文件。 例如，可以检查配置文件的状态，查看分配的设备并更新配置文件的属性。
 

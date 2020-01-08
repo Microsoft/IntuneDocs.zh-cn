@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 63ebbc22c5452c99439d34813509b5652daef1f0
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549104"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548083"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>使用“更新频道”和“目标版本”设置，通过 Microsoft Intune 管理模板更新 Office 365
 
@@ -75,7 +75,7 @@ ms.locfileid: "74549104"
     ![管理模板 L_Updatebranch 注册表项示例](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > [使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) 列出了值及其含义。 注册表值基于所选的分发频道：
+    > [使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) 列出了值及其含义。 注册表值基于所选的分发频道：
     >
     >- 每月频道                - value="Current"
     >- 每月频道(定向)     - value="Current"
@@ -95,7 +95,7 @@ ms.locfileid: "74549104"
     - `UpdateChannel`：动态项，根据配置的设置进行更改。
     - `CDNBaseUrl`：设置 Office 365 安装在设备上的时间。
 
-3. 查看 `UpdateChannel` 值。 此值告诉你 Office 的更新频率。 [使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) 列出了值及其设置的内容。
+3. 查看 `UpdateChannel` 值。 此值告诉你 Office 的更新频率。 [使用 Configuration Manager 管理 Office 365 专业增强版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) 列出了值及其设置的内容。
 
     在下面的示例中，你将看到 `UpdateChannel` 设置为 `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`，即“每月”  ：
 
@@ -150,7 +150,7 @@ ms.locfileid: "74549104"
 > - 如果更改现有策略，则所做的更改将影响所有已分配的用户。
 > - 如果要测试此功能，建议创建测试策略，并将策略分配给用户的测试组。
 
-### <a name="step-2-check-the-office-version"></a>步骤 2：检查 Office 版本
+### <a name="step-2-check-the-office-version"></a>步骤 2:检查 Office 版本
 
 在将策略部署到所有用户之前，请考虑使用这些步骤来测试策略。
 
@@ -173,7 +173,7 @@ ms.locfileid: "74549104"
 
 ## <a name="next-steps"></a>后续步骤
 
-[更新 Office 365 客户端的频道值](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)
+[更新 Office 365 客户端的频道值](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [适用于 Office 365 专业增强版的 Office 云策略服务概述](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 

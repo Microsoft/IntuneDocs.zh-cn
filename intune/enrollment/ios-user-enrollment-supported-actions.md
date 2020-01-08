@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562410"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324859"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 用户注册支持的 Intune 操作和选项
 
@@ -38,7 +38,7 @@ ms.locfileid: "74562410"
 
 例如，配置“密码过期”  设置，并将此策略推送到用户注册的设备。 在设备上，会出现以下情况：
 - 将忽略“密码过期”  设置。
-- 不允许使用简单密码，如 `1111` 或 `1234`。
+- 不允许使用简单密码，如 `111111` 或 `123456`。
 - 强制使用 6 位 pin。
 
 ## <a name="administrator-remote-device-actions-and-options"></a>管理员远程设备操作和选项

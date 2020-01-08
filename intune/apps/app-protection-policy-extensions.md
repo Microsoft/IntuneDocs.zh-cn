@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a94f3d175fe5c036c5e90635a66467263b23122
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72499112"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692106"
 ---
 # <a name="protecting-application-extensions"></a>保护应用扩展
 
@@ -64,12 +64,12 @@ Intune SDK 和 Intune 应用保护策略不包括对管理领英帐户连接的�
 如果用户同意在帐户之间共享数据，与 Office 加载项一样，LinkedIn 集成使用现有的 Microsoft Graph API。 LinkedIn 集成仅使用 Office 加载项可用的 API 子集，并支持各种排除项。
 
 
-|Microsoft Graph 权限  |描述  |
+|Microsoft Graph 权限  |说明  |
 |---------|---------|
 |[人员](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)的读取权限     |允许该应用读取与已登录用户相关的评分列表。 该列表可包括本地联系人、社交网络或组织目录中的联系人以及最近通信（如电子邮件和 Skype）中的联系人。         |
 |[日历](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)的读取权限     |允许该应用读取用户日历中的事件。 包括已登录用户日历中的会议、其时间、地点和与会者。         |
 |[用户配置文件](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)的读取权限     |允许用户登录到应用，并允许应用读取已登录用户的个人资料。 它还允许应用读取已登录用户的基本公司信息。         |
-|Subscriptions     |此作用域不可用且尚未使用。 它包括用户组织向 Microsoft 应用和服务（如 Office 365）提供的订阅。         |
+|订阅     |此作用域不可用且尚未使用。 它包括用户组织向 Microsoft 应用和服务（如 Office 365）提供的订阅。         |
 |见解     |此作用域不可用且尚未使用。 它包括基于 Microsoft 服务的使用与已登录用户帐户相关的权益。         |
 
 ### <a name="learn-more"></a>了解详细信息
