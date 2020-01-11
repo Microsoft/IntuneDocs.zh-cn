@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ee2a83945e4b9e6c5509abff7c32605f64ca545
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 485267b543b1be2df1e6c782d7d3aa0418739260
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508358"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858037"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>通过适用于 Windows 的公司门户使用电子邮件将有关问题发送给公司支持人员
 

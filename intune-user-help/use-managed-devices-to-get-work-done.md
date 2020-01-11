@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2a49db70d6b29167184e50f3499985a46a48fda1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501854"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857616"
 ---
 # <a name="what-is-device-enrollment"></a>什么是设备注册？
 若要从设备访问工作或学校资源，需要使用 Intune 公司门户应用或 Microsoft Intune 应用注册设备。 

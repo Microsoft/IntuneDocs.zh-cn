@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058238"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206969"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 将 SCEP 的第三方 CA 添加到 Intune
 
@@ -115,7 +115,7 @@ IntuneScepServiceClient(
     Properties configProperties)
 ```
 
-说明：
+描述:
 
 实例化和配置 `IntuneScepServiceClient` 对象。
 
@@ -157,7 +157,7 @@ void ValidateRequest(
     String certificateRequest)
 ```
 
-说明：
+描述:
 
 验证 SCEP 证书请求。
 
@@ -194,7 +194,7 @@ void SendSuccessNotification(
     String certIssuingAuthority)
 ```
 
-说明：
+描述:
 
 通知 Intune 在处理 SCEP 请求时创建了一个证书。
 
@@ -202,7 +202,7 @@ void SendSuccessNotification(
 
     - transactionId         SCEP 事务 ID
     - certificateRequest      采用 DER 编码的 PKCS #10 证书请求，该请求通过 Base64 编码成为字符串
-    - certThumprint           预配证书的指纹
+    - 预配证书的指纹的 certThumprint SHA1 哈希
     - certSerialNumber        预配证书的序列号
     - certExpirationDate      预配证书的到期日期。 日期时间字符串应采取的格式为 Web UTC 时间 (YYYY-MM-DDThh:mm:ss.sssTZD) ISO 8601。
     - certIssuingAuthority    颁发证书的机构名称
@@ -233,7 +233,7 @@ void SendFailureNotification(
     String errorDescription)
 ```
 
-说明：
+描述:
 
 通知 Intune 在处理 SCEP 请求时出现错误。 不应对此类的方法引发的异常调用此方法。
 
@@ -267,7 +267,7 @@ void SetSslSocketFactory(
     SSLSocketFactory factory)
 ```
 
-说明：
+描述:
 
 使用此方法通知客户端，在与 Intune 通信时必须使用指定的（而非默认的）SSL 套接字工厂。
 

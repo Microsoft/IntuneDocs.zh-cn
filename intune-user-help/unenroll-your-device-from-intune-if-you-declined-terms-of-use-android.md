@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 169007541bccfc3e26184ac71197265931afbfdd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f54f0d9453e93ad54a1d2a96ff25051f3d8bd3a1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508119"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857667"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>拒绝“使用条款”后删除对设备的管理
 
@@ -38,7 +38,7 @@ ms.locfileid: "72508119"
 
 若要从 Intune 删除设备并卸载公司门户应用，请执行以下操作：
 
-1. 转到**设置**&gt;**安全&amp;屏幕锁定**&gt;**设备管理员**。
+1. 请参阅 "**设置**" &gt;**安全 &amp; 屏幕锁定**&gt;**设备管理员**"。
 
     完成此步骤将立即取消注册你的设备。
 

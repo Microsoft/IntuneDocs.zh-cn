@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 11037da11e6400f157aea6aa86c0c293c9818d31
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74126194"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855004"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>在设备上安装和共享应用
 
@@ -38,8 +38,8 @@ ms.locfileid: "74126194"
 2. 查找并从公司门户应用的以下任意部分安装应用：  
 
     * **主页**：从列表中选择组织特别推荐的应用。  
-    * **显示所有**：在“主页” > “应用”部分，单击“显示所有”以查看所有可用的应用    。  
-    * **所有应用**：在导航窗格中选择此页，查看所有可用的应用，包括已安装和特别推荐的应用。 查看、排序和筛选应用。 搜索结果按相关性自动排序。  
+    * **显示全部**：在“主页” > “应用”部分，单击“显示全部”以查看所有可用的应用    。  
+    * **所有应用**：在导航窗格中选择此页，查看所有可用的应用，包括已安装的和特别推荐的应用。 查看、排序和筛选应用。 搜索结果按相关性自动排序。  
     * **应用类别**：选择导航窗格中的此页可以选择基于类型或函数的应用。 应用在类别（如**特色**、**教育**和**生产力**）下进行排序。  
     * **搜索应用**：静态搜索栏位于应用的导航窗格中。 若要查找可用的应用，请按应用名称或发布服务器搜索。  
 

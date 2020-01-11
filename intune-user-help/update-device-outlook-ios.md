@@ -19,13 +19,13 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ff648357c4a787367dc30951fdcdd0dc9203e35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 09ae1911069f55ee2afbf1620ebdd886db8c138a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508068"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858958"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>需要更新 iOS 设备以安装 Outlook 应用
 

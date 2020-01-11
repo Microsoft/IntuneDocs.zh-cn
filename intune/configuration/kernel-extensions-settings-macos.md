@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 89f54111258b5e628d9f83c381fde146bf996216
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506694"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206323"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>在 Intune 中配置和使用内核扩展的 macOS 设备设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 本文列出并介绍了可以在 macOS 设备上控制的各种内核扩展设置。 作为移动设备管理（MDM）解决方案的一部分，请使用这些设置来添加和管理设备上的内核扩展。
 
@@ -33,7 +33,7 @@ ms.locfileid: "72506694"
 
 我们将这些设置添加到 Intune 中的设备配置配置文件中，然后分配或部署到 macOS 设备。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建设备内核扩展配置文件](../kernel-extensions-overview-macos.md)。
 

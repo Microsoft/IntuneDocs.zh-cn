@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50b5db465b79e3309375a34078c645a52f0427f0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: acdf5dfd817dcd9a76e6192749009f1a0c254d25
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508277"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857959"
 ---
 # <a name="set-or-change-your-passcode"></a>设置或更改密码
 
@@ -35,13 +35,13 @@ ms.locfileid: "72508277"
 
 ## <a name="set-your-passcode"></a>设置密码
 
-1. 点击**设置**  >  **Touch ID 和密码**。
+1. 点击**设置** > **Touch ID 和密码**。
 2. 在“Touch ID 和密码”  菜单上，点击“启用密码”  。
 3. 输入符合公司支持人员要求的新密码，然后再次输入以确认密码。
 
 ## <a name="change-your-passcode"></a>更改密码
 
-1. 点击**设置**  >  **Touch ID 和密码**。
+1. 点击**设置** > **Touch ID 和密码**。
 2. 输入密码： 此时将打开“Touch ID 和密码”  菜单。
 2. 点击“更改密码”  ，然后输入旧密码。
 3. 输入符合公司支持人员要求的新密码，然后再次输入以确认密码。

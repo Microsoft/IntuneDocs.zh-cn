@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20e25b2a2d1b20e577e99cf0b391945c16c67c64
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0a007683487b406c562fb50a416cb08a8ac60113
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489881"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206510"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Microsoft Intune Windows 10 协同版设备限制设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 本文介绍可为运行 Windows 10 协同版的设备配置的 Microsoft Intune 设备限制设置。
 
@@ -33,7 +33,7 @@ ms.locfileid: "72489881"
 ## <a name="apps-and-experience"></a>应用和体验
 
 - **有人在房间内时唤醒屏幕** - 允许设备在其传感器检测到房间内有人时自动唤醒。
-- 显示在欢迎屏幕上的会议信息 - 启用此选项以选择显示在“欢迎”屏幕上的“会议”磁贴下的信息  。 您可以：
+- 显示在欢迎屏幕上的会议信息 - 启用此选项以选择显示在“欢迎”屏幕上的“会议”磁贴下的信息  。 你可以：
   - **仅显示组织者和时间**
   - “显示组织者、时间和主题(私人会议隐藏主题)” 
 - **欢迎屏幕背景图像 URL** - 启用此设置以在 Windows 10 协同版设备上的“欢迎”  屏幕上显示来自指定 URL 的自定义背景。<br>图片必须为 PNG 格式，并且 URL 必须以 **https://** 开头。

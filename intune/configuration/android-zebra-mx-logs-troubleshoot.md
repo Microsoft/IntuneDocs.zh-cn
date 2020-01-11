@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2319fb0d1198289398912793e52482bf66d87173
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506995"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206833"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>排查和查看 Microsoft Intune 中的 Android 斑马设备上出现的潜在问题
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 在 Microsoft Intune 中，可以使用[斑马移动扩展（MX）来管理 Android 斑马设备](android-zebra-mx-overview.md)。 使用斑马设备时，可在 StageNow 中创建配置文件来管理设置，并将其上传到 Intune。 Intune 使用 StageNow 应用来应用设备上的设置。 StageNow 应用还会在设备上创建用于排除故障的详细日志文件。
 
