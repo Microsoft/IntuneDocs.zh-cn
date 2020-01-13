@@ -9,7 +9,11 @@
   items:
     - name: 创建电子邮件设备配置文件
       href: quickstart-email-profile.md
-- name: 操作方式指南
+- name: 教程
+  items:
+    - name: 创建管理模板
+      href: tutorial-walkthrough-administrative-templates.md
+- name: 操作指南
   items:
     - name: 创建配置文件
       href: device-profile-create.md
@@ -27,7 +31,7 @@
     - name: Windows 上的 BIOS 设置
       href: device-firmware-configuration-interface-windows.md
       displayName: 'DFCI, firmware'
-    - name: Updates
+    - name: 更新
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
     - name: 升级版本和 S 模式
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: 有线网络
-              href: wired-network-settings-macos.md
             - name: 自定义
               href: custom-settings-macos.md
         - name: Windows 10 及更高版本
