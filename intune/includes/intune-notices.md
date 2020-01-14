@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
-ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
+ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
+ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75323091"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760954"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
 
@@ -55,19 +55,6 @@ Microsoft 对 Windows Phone 8.1 的主流支持于 2017 年 7 月结束，延期
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 你可以查看 Intune 报告，了解可能受影响的设备或用户。 转到“设备”>“所有设备”并按 OS 进行筛选。 你可以添加附加列，帮助确定你的组织中哪些人员的设备正在运行 Windows Phone 8.1。 要求你的最终用户将设备升级到受支持操作系统版本。
-
-
-### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 更改计划：Windows 10 版本 1703 公司门户即将停止支持<!--5026679-->
-Windows 10 版本 1703（也称为 Windows 10 RS2）已于 2019 年 10 月 8 日停止提供针对企业版和教育版的服务。 自 2019 年 12 月 26 日开始，Intune 将终止对 RS2/RS1 的相应公司门户应用的支持。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-接下来，尽管我们会在 2019 年 12 月 26 日之前继续支持此版本的公司门户应用，但你将不会在特定版本的公司门户应用中看到新功能，包括根据需要向公司门户应用提供任何安全更新。 但是，由于 Windows 10 版本 1703 在停止提供服务后将不会收到任何安全更新，因此，我们强烈建议将 Windows 设备更新为最新的 Windows 版本，并确保使用的是最新的公司门户应用，以便继续获取新功能和其他功能。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
-所要采取的步骤将取决于你配置环境的方式。 但一般情况下，应确定具有较旧操作系统版本的设备和/或设备上的公司门户，然后进行更新。 若要设置 Windows 10 更新通道，请登录到 Intune -> 软件更新 – Windows 10 更新通道。 公司门户的最新版本是版本 10.3.5601.0。 请指导用户从 Microsoft Store 获取该版本，以与最新版本保持同步。 此外，你还可以通过[适用于企业的 Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business) 使用 Intune 在 Windows 设备上安装最新版本。
-
-#### <a name="additional-information"></a>其他信息
-[使用 Microsoft Intune 手动添加 Windows 10 公司门户应用](https://docs.microsoft.com/intune/store-apps-company-portal-app)
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>执行操作：使用 Microsoft Edge 获取受保护的 Intune 浏览器体验<!--5728447-->
