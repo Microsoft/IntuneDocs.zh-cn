@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563467"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548026"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 中的 Windows 10 设备上使用 PowerShell 脚本
 
@@ -64,9 +64,9 @@ Intune 管理扩展具有以下先决条件。 满足先决条件后，在向用
 
   - 使用 Configuration Manager 和 Intune 的共同托管设备。 确保将  “应用”工作负载设置为“试点 Intune”  或“Intune”  。 若要获取指南，请参阅下列文章： 
   
-    - [什么是共同管理](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [“客户端应用”工作负载](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [将 Configuration Manager 工作负荷切换到 Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [什么是共同管理](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [“客户端应用”工作负载](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [如何将 Configuration Manager 工作负载切换到 Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > 确保设备已[加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) Azure AD。 仅在 Azure AD 中[注册](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)的设备不会收到你的脚本。
@@ -80,7 +80,7 @@ Intune 管理扩展具有以下先决条件。 满足先决条件后，在向用
 
 3. 在“基本信息”中，输入以下属性并选择“下一步”   ：
     - **名称**：输入 PowerShell 脚本的名称。 
-    - **说明**：输入 PowerShell 脚本的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入 PowerShell 脚本的说明。 此设置是可选的，但建议进行。
 4. 在“脚本设置”中，输入以下属性并选择“下一步”   ：
     - **脚本位置**：浏览 PowerShell 脚本。 脚本必须小于 200 KB (ASCII)。
     - **使用登录凭据运行此脚本**：选择“是”，可以使用设备上的用户凭据运行脚本  。 选择“否”（默认值），在系统上下文中运行该脚本  。 许多管理员选择“是”  。 如果脚本必须在系统上下文中运行，请选择“否”  。
@@ -134,7 +134,7 @@ Intune 管理扩展具有以下先决条件。 满足先决条件后，在向用
 
 ## <a name="intune-management-extension-logs"></a>Intune 管理扩展日志
 
-客户端计算机上的代理日志通常位于 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可以使用 [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) 查看这些日志文件。 
+客户端计算机上的代理日志通常位于 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可以使用 [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) 查看这些日志文件。
 
 ![Microsoft Intune 中的屏幕截图或 cmtrace 代理日志示例](./media/apps-win32-app-management/apps-win32-app-10.png)  
 

@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410144"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556396"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视安全基线和配置文件
 
@@ -42,10 +42,14 @@ Intune 提供了用于监视安全基线的多个选项。 可以监视应用到
 - **设备视图** - 基线的每个状态类别中的设备数量摘要。
 - **按类别** - 一个视图，显示基线中的每个类别，并包含每个基线类别的每个状态组的设备百分比。
 
-每个设备由以下状态之一表示，这些状态同时在“设备”视图和“按类别”视图中使用   ：
+每个设备由以下状态之一表示（在“设备”视图和“按类别”视图中使用   ）：
 
 - **匹配基线** - 基线中的所有设置与建议的设置匹配。
 - **不匹配基线** - 基线中至少有一个设置与建议的设置不匹配。
+
+  > [!NOTE]
+  > 创建或编辑基线配置文件时，对默认值或配置设置的任何更改会导致“不匹配基线”状态出现。 请联系 Microsoft 支持部门，以帮助你确定已更改的设置。 
+
 - **错误配置** - 至少一个设置未正确配置。 此状态表示设置处于冲突、错误或挂起状态。
 - **不适用** - 至少一个设置不适用且未应用。
 

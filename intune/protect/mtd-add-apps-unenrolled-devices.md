@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8dd7127594a0e23c85b9f8141ce6d398d9a447a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72794454"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545917"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>将移动威胁防御应用添加到未注册的设备
 
@@ -34,7 +34,7 @@ ms.locfileid: "72794454"
 也可以使用 Intune 添加和部署 Microsoft Authenticator 以及移动威胁防御 (MTD) 应用。
 
 > [!NOTE] 
-> 本文适用于支持应用保护策略的所有移动威胁防御合作伙伴：Better Mobile (Android)、Zimperium (iOS)、Lookout for Work (Android/iOS)。
+> 本文适用于支持应用保护策略的所有移动威胁防御合作伙伴：Better Mobile (Android)、Zimperium (Android、iOS)、Lookout for Work (Android/iOS)。
 > 
 > 对于未注册的设备，不需要 iOS 应用配置策略来设置通过 Intune 使用的适用于 iOS 的移动威胁防御应用。  。 这是与 Intune 已注册设备的关键差别。 
 
@@ -76,8 +76,8 @@ ms.locfileid: "72794454"
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>为最终用户提供 Zimperium
-<!-- - **Android**
-  - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) when completing the **Configure app information** section. -->
+- **Android**
+  - 请参阅[将 Android 应用商店应用添加到 Microsoft Intune](../apps/store-apps-android.md)，查看相关操作说明。 完成“配置应用信息”  部分时，请使用此 [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en)。
 - **iOS**
   - 请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](../apps/store-apps-ios.md)，查看相关说明。 完成“配置应用信息”部分时，请使用此 [Zimperium - App Store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)  。
  

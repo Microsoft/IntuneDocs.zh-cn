@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564039"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205898"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>使用 Intune 配置适用于 Android 设备的 Google Chrome 
 
@@ -48,12 +48,16 @@ ms.locfileid: "74564039"
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>添加托管 AE 设备的应用配置
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 窗格中，选择“应用配置策略” > “添加”。  
-2. 添加策略名称，从“设备注册类型”下选择“托管设备”，并从“平台”下选择“Android”。  
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“应用”   > “应用配置策略”   > “添加”   > “托管设备”  。
+2. 设置以下详细信息：
+    - **名称** - 在 Azure 门户中显示的配置文件名。
+    - **说明** - 在 Azure 门户中显示的配置文件说明。
+    - **设备注册类型** - 此设置设为“托管设备”。 
+    - **平台** - 选择 Android  。
 
     ![添加 Google Chrome 配置策略](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. 单击“关联应用”，然后选择“Google Chrome”。  
+3. 单击“关联应用”，以显示“关联应用”窗格。   找到并选择“Google Chrome”。  此列表包含[已批准并与 Intune 同步的托管 Google Play 应用](~/apps/apps-add-android-for-work.md)。
 
     ![从“关联应用”下选择“Google Chrome”](~/apps/media/apps-configure-chrome-android/associated-app.png)
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b25b761b3857fdf91bbbe827d288d09e350a1a7a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415029"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206085"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>添加用户并授予对 Intune 的管理权限
 
@@ -57,22 +57,20 @@ ms.locfileid: "73415029"
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>在 Azure 门户中添加 Intune 用户
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“用户” > “所有用户”   。
-3. 在管理中心，选择“新用户”  。
-   ![添加“新用户”的屏幕截图](./media/users-add/intune-add-user.png)
-4. 指定下列用户详细信息：
-   - **名称**
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“用户”   > “所有用户”  。
+2. 在管理中心，选择“新用户”  。
+3. 指定下列用户详细信息：
+   - **Name**
    - **用户名** - Azure Active Directory 门户中的新名称![添加名称和用户名的屏幕截图](./media/users-add/intune-add-user-info.png)选择“确定”以继续  。
-5. 或者，也可以指定下列用户属性：
+4. 或者，也可以指定下列用户属性：
    - 个人资料 - 包括“职务”和“部门”在内的工作信息   
    - 组 - 选择要为用户添加的组 
    - 目录角色 - 向用户授予管理权限，包括 Intune 服务管理员角色  。
 
    选择“创建”，将新用户添加到 Intune  。
-6. 选择“个人资料”，然后为新用户选择“使用位置”   。 只有指定使用位置后，才能为新用户分配 Intune 许可证。 选择“保存”以继续  。
+5. 选择“个人资料”，然后为新用户选择“使用位置”   。 只有指定使用位置后，才能为新用户分配 Intune 许可证。 选择“保存”以继续  。
     ![使用位置的屏幕截图](./media/users-add/intune-add-user-loc.png)
-7. 依次选择“许可证”和“分配”，为此用户分配 Intune 许可证   。 只有获得 Intune 许可证后，才能注册设备或访问公司资源。 依次选择“产品”、“许可证类型”、“选择”和“分配”。   
+6. 依次选择“许可证”和“分配”，为此用户分配 Intune 许可证   。 只有获得 Intune 许可证后，才能注册设备或访问公司资源。 依次选择“产品”、“许可证类型”、“选择”和“分配”。   
 
 ## <a name="grant-admin-permissions"></a>授予管理员权限
 

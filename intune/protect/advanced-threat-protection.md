@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410210"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547087"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性
 
@@ -108,9 +108,7 @@ Microsoft Defender ATP 可以帮助解决类似这种情况的安全事件。
 
 在 Intune 和 Microsoft Defender ATP 之间建立服务到服务连接之后，将 Intune 管理的设备载入到 ATP，以便收集和使用有关其风险级别的数据。 要载入设备，请使用适用于 Microsoft Defender ATP 的设备配置文件。
 
-建立到 Microsoft Defender ATP 的连接后，Intune 会接收到来自 Microsoft Defender ATP 的 Microsoft Defender ATP 载入配置包。 此包部署到具有设备配置文件的设备上。 配置包配置设备，以与 [Microsoft Defender ATP 服务](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)进行通信以扫描文件、检测威胁，并向 Microsoft Defender ATP 报告风险。
-
-使用配置包载入设备后，不需要再次执行本操作。 还可以使用[组策略或 System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 载入设备。
+建立到 Microsoft Defender ATP 的连接后，Intune 会接收到来自 Microsoft Defender ATP 的 Microsoft Defender ATP 载入配置包。 此包部署到具有设备配置文件的设备上。 配置包配置设备，以与 [Microsoft Defender ATP 服务](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)进行通信以扫描文件、检测威胁，并向 Microsoft Defender ATP 报告风险。 使用配置包载入设备后，不需要再次执行本操作。 还可以使用[组策略或 Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) 载入设备。
 
 ### <a name="create-the-device-configuration-profile"></a>创建设备配置文件
 
@@ -129,7 +127,7 @@ Microsoft Defender ATP 可以帮助解决类似这种情况的安全事件。
    - **所有文件的示例共享**：选择“启用”  可收集示例，并与 Microsoft Defender ATP 共享示例。 例如，如果看到可疑文件，可以将其提交至 Microsoft Defender ATP 进行深入分析。 选择“未配置”  不会向 Microsoft Defender ATP 共享任何示例。
    - **加快遥测报告频率**：对于处于高风险的设备，选择“启用”  此设置，可以更频繁地向 Microsoft Defender ATP 服务报告遥测。
 
-     有关这些 Microsoft Defender ATP 设置的详细信息，请参阅[使用 System Center Configuration Manager 载入 Windows 10 计算机](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)。
+     有关这些 Microsoft Defender ATP 设置的详细信息，请参阅[使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm)。
 
 7. 选择“确定”  和“创建”  保存更改，此操作将创建配置文件。
 8. [将设备配置文件分配给](../configuration/device-profile-assign.md)希望使用 Microsoft Defender ATP 进行评估的设备。

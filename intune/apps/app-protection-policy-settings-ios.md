@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 01/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dc2a0e54a9051cd5b9d9991a490a5f53dfbbbbb
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f8bcced82eb367bb8028f62de5cefcee0a5f85dd
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955314"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691900"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 应用保护策略设置
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "74955314"
 | <ul><ui>**允许用户将副本保存到所选的服务** | 用户可以保存到所选的服务（OneDrive for Business、SharePoint 和本地存储）中。 将阻止所有其他服务。| **未选择任何项**  |
 | **限制在其他应用间进行剪切、复制和粘贴** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。</ul> | **任何应用**   |
 | <ul><ui>**剪切和复制任何应用的字符限制** | 指定可从组织数据和帐户中剪切或复制的字符数。  这允许将指定数量的字符共享到任何应用程序，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制  。<p>默认值 = 0<p>**注意**：*要求应用具有 Intune SDK 版本 9.0.14 或更高版本*。  | **0**   |
-| **组织数据通知** | 指定针对组织帐户通过 OS 通知共享的组织数据量。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：例如，不在通知中共享组织数据。</li><UL><li>“你有新邮件”，“你有个会议”</li><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。</ul> <p>**注意**：*此设置需要应用支持。目前，适用于 iOS 4.16.0 版本或更高版本的 Outlook 将支持此设置，此设置预计在 2019 年 12 月 16 日当周发布。* | **允许**   |
+| **组织数据通知** | 指定如何针对组织帐户通过 OS 通知共享组织数据。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：例如，不在通知中共享组织数据。</li><UL><li>“你有新邮件”；“你有个会议”。</li><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据。</li></ul> <p>**注意**：*此设置需要应用支持。此时，Outlook for iOS 版本 4.15.0 或更高版本将支持此设置。* | **允许**   |
 | **第三方键盘** | 选择“阻止”  来阻止在托管应用程序中使用第三方键盘。<p>启用此设置后，用户将收到一次性消息，说明禁止使用第三方键盘。 用户首次需要使用键盘与组织数据进行交互时，将会出现此消息。 使用托管应用程序时，只能使用标准的 iOS 键盘，所有其他键盘选项都将禁用。 此设置将影响多身份应用程序的组织和个人帐户。 此设置不影响在非托管应用程序中使用第三方键盘。<p>**注意:** 此功能要求应用使用 Intune SDK 版本12.0.16 或更高版本。 如果应用的 SDK 版本范围从 8.0.14 到（包括）12.0.15，则不会为多身份应用正确应用此功能。 有关更多详细信息，请参阅[已知问题：个人帐户的 iOS 中不阻止第三方键盘](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Updated-Known-issue-Third-party-keyboards-are-not-blocked-in-iOS/ba-p/339486)。 | **允许**  |
 
 ### <a name="encryption"></a>加密
@@ -60,7 +60,7 @@ ms.locfileid: "74955314"
 | **使用本机联系人应用同步应用** |  选择“阻止”，阻止应用将数据保存到设备上的本机“联系人”应用  。 如果选择“允许”，应用可以将数据保存到设备上的本机“联系人”应用  。 <br><br>执行选择性擦除以从应用删除工作或学校数据时，将删除从应用直接同步到本机“联系人”应用的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 目前仅适用于 Microsoft Outlook 应用。   | **允许**  |
 | **打印组织数据** | 选择“阻止”，阻止应用打印工作或学校数据  。 如果将此设置保留为“允许”（默认值），用户将能够导出和打印所有组织数据  。  | **允许**  |
 | **限制使用其他应用传输 Web 内容** | 指定如何从策略管理的应用中打开 Web 内容（http/https 链接）。 选择： <ul><li>**任何应用**：允许在任何应用中使用 Web 链接。</li><li>**Intune Managed Browser**：仅允许在 Intune Managed Browser 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**Microsoft Edge**：仅允许在 Microsoft Edge 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**非托管浏览器**：允许 Web 内容仅在“非托管浏览器协议”  设置定义的非托管浏览器中打开。 Web 内容在目标浏览器中处于非托管状态。<br>**注意**：要求应用具有 Intune SDK 版本 11.0.9 或更高版本。</li></ul> 如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的 Managed Browser 策略管理 Internet 访问](app-configuration-managed-browser.md)。<br><br>如果需要策略托管的浏览器，但未安装，系统将提示最终用户安装 Microsoft Edge。<p>如果需要使用策略托管的浏览器，则将由“允许应用向其他应用传送数据”策略设置管理 iOS 通用链接  。 <p>**Intune 设备注册**<br>如果使用 Intune 管理设备，请参阅“使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问”。 <p>**策略托管的 Microsoft Edge**<br>移动设备（iOS 和 Android）的 Microsoft Edge 浏览器支持 Intune 应用保护策略。 在 Microsoft Edge 浏览器应用程序中使用其企业 Azure AD 帐户登录的用户将受 Intune 保护。 Microsoft Edge 浏览器集成了 Intune SDK 并支持其除阻止以外的所有数据保护策略：<br><ul><li>**另存为**：Microsoft Edge 浏览器不允许用户向云存储提供商（如 OneDrive）添加直接的应用内连接。</li><li>**联系人同步**：Microsoft Edge 浏览器不会保存到本地联系人列表。</li></ul><br>**注意**：*Intune SDK 无法确定目标应用是否为浏览器。在 iOS 设备上，不允许使用其他托管浏览器应用。*    | 未配置   |
-|<ul><ui>**非托管浏览器协议** | 输入单个非托管浏览器的协议。 策略托管应用程序的 Web 内容（http/https 链接）将在支持此协议的任何浏览器中打开。 Web 内容在目标浏览器中处于非托管状态。 <br><br>**注意**：*只包含协议前缀。如果浏览器需要 `mybrowser://www.microsoft.com` 格式的链接，请输入 `mybrowser`。*<br>链接将转换为：<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **空**  |
+|<ul><ui>**非托管浏览器协议** | 输入单个  非托管浏览器的协议。 策略托管应用程序的 Web 内容（http/https 链接）将在支持此协议的任何浏览器中打开。 Web 内容在目标浏览器中处于非托管状态。 <br><br>只有当你想要与特定浏览器共享受保护的内容，但又不允许使用 Intune 应用保护策略，才能使用此功能。 必须与浏览器供应商联系，确定所需的浏览器支持协议。<br><br>**注意**：*只包含协议前缀。如果浏览器需要 `mybrowser://www.microsoft.com` 格式的链接，请输入 `mybrowser`。*<br>链接将转换为：<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **空**  |
 
 > [!NOTE]  
 > 无数据保护设置可以控制 iOS 设备上由 Apple 托管的打开方式功能。 要使用管理 Apple 打开方式，请参阅[使用 Microsoft Intune 管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)。
@@ -69,7 +69,7 @@ ms.locfileid: "74955314"
 
 有一些豁免应用和平台服务，Intune 应用保护策略可能会允许在某些情况下向其或从其传输数据。 此列表可能会更改以反映有利于安全工作效率的服务和应用。
 
-| 应用/服务名称 | 描述 |
+| 应用/服务名称 | 说明 |
 | ---- | --- |
 |<code>tel; telprompt</code> | 本机电话应用 |
 | <code>skype</code> | Skype |
@@ -83,7 +83,7 @@ ms.locfileid: "74955314"
 | 设置 | 如何使用 | 默认值 |
 |------|----------|-------|
 | **需要 PIN 才能进行访问** | 选择“需要”，要求使用 PIN 才能使用此应用  。 用户首次在工作或学校环境中运行应用时，将提示其设置此 PIN。 无论在联机或脱机情况下工作，PIN 始终有效。    <br><br> 可以使用“需要 PIN 才能进行访问”部分下提供的设置配置 PIN 强度  。   | **需要** |
-| <ul><ui> **PIN 类型** | 在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码则可采用至少 1 个字母或至少 1 个特殊字符进行定义  。  <br><br> **注意:** *要配置密码类型，应用需具有 Intune SDK 版本 7.1.12 或更高版本。数值类型没有任何 Intune SDK 版本限制。允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号*。  | **数字**  |
+| <ul><ui> PIN 类型  | 在访问应用了应用保护策略的应用之前，为数值或密码类型 PIN 设置要求。 数值要求只涉及数字，而密码则可采用至少 1 个字母或至少 1 个特殊字符进行定义  。  <br><br> **注意:** *要配置密码类型，应用需具有 Intune SDK 版本 7.1.12 或更高版本。数值类型没有任何 Intune SDK 版本限制。允许的特殊字符包括 iOS 英语键盘上的特殊字符和符号*。  | **数字**  |
 | <ul><ui> **简单 PIN** | 选择“允许”，允许用户使用 1234、1111、abcd 或 aaaa 等简单的 PIN 序列  。 选择“阻止”，阻止用户使用简单的序列  。 在 3 个字符滑动窗口中检查简单的序列。 如果配置了“阻止”  ，则不会接受 1235 或 1112 作为由最终用户设置的 PIN，但允许采用 1122。 <br><br>**注意**：如果配置了密码类型 PIN，并且“允许使用简单 PIN”已设置为“是”，用户在其 PIN 中则需要至少 1 个字母或至少 1 个特殊字符 * 。如果配置了密码类型 PIN，并且“允许简单 PIN”已设置为“否”，用户在其 PIN 中则需要至少 1 个数字和 1 个字母以及至少 1 个特殊字符  * 。   |**允许**  |
 | <ul><ui> **选择最小 PIN 长度** | 指定 PIN 序列必须包含的最小位数。  | **4**  |
 | <ul><ui> **使用 Touch ID，而不是 PIN 进行访问 (iOS 8 +)** | 选择“允许”，允许用户使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 进行应用访问  。    | **允许**  |

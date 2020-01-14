@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832730"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547794"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -113,7 +113,7 @@ ms.locfileid: "74832730"
 
     4. 再次打开目录同步，并检查该用户现在是否已正确同步。
 
-3. 如果使用的是 System Center Configuration Manager with Intune，请确保该用户具有有效的云用户 ID：
+3. 如果在 Intune 中使用 Configuration Manager，请确保该用户具有有效的云用户 ID：
 
     1. 打开 SQL Management Studio。
 
@@ -333,7 +333,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 5. 确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>通过 Intune 使用 System Center Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>通过 Intune 使用 Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
 **问题：** 用户注册了 iOS 设备，但它未显示在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
 
 - Configuration Manager 站点中的 Microsoft Intune 连接器当前未与 Intune 服务进行通信。
@@ -420,7 +420,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
     3. 查找存在注册问题的设备。 按设备名称或 MAC/HW 地址搜索以缩小结果范围。
     4. 选择“设备”>“删除”  。 删除与设备关联的所有其他条目。  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager with Intune 时的问题
+## <a name="issues-when-using-configuration-manager-with-intune"></a>通过 Intune 使用 Configuration Manager 时的问题
 
 ### <a name="mobile-devices-disappear"></a>移动设备消失
 

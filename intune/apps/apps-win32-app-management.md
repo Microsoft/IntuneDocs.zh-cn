@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564024"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622524"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune 独立版 - Win32 应用管理
 
@@ -82,8 +82,8 @@ ms.locfileid: "74564024"
 
 生成 .intunewin 文件时，将需要引用的任何文件置于安装程序文件夹的子文件夹中  。 然后，使用相对路径引用所需的特定文件。 例如：
 
- 安装程序源文件夹：  c:\testapp\v1.0<br>
- 许可证文件：  c:\testapp\v1.0\licenses\license.txt
+**安装程序源文件夹：**  c:\testapp\v1.0<br>
+**许可文件：** c:\testapp\v1.0\licenses\license.txt 
 
 通过使用相对路径  licenses\license.txt 引用  license.txt 文件。
 
@@ -107,7 +107,7 @@ ms.locfileid: "74564024"
 
     ![添加应用窗格 - 添加类型下拉列表框的屏幕截图](./media/apps-win32-app-management/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>步骤 2：上传应用包文件
+### <a name="step-2-upload-the-app-package-file"></a>步骤 2:上传应用包文件
 
 1. 在“添加应用”窗格中，选择“应用包文件”以选择一个文件   。 随即显示“应用包文件”窗格。
 
@@ -125,7 +125,7 @@ ms.locfileid: "74564024"
 1. 在“添加应用”  窗格中，选择“应用信息”  以配置应用。
 2. 在“应用信息”窗格中，配置以下信息  。 此窗格中的某些值可能已自动填充。
     - **名称**：输入显示在公司门户中的应用的名称。 如果同一应用名称存在两次，则每个应用都将显示在公司门户中。
-    - **说明**：输入应用的描述。 描述显示在公司门户中。
+    - **描述**：输入应用的描述。 描述显示在公司门户中。
     - **发布者**：输入应用发布者的名称。
     - **类别**：选择一个或多个内置应用类别，或选择你创建的类别。 “类别”可让用户在浏览公司门户时更轻松地查找应用。
     - **在公司门户中将此应用显示为特色应用**：当用户浏览应用时，在公司门户的主页上突出显示应用。
@@ -328,6 +328,9 @@ ms.locfileid: "74564024"
 
 Windows 10 1709 及更高版本的客户端将在 Windows 10 客户端上使用传递优化组件下载 Intune Win32 应用内容。 传递优化提供了在默认情况下处于打开状态的对等功能。 传递优化可通过组策略和 Intune 设备配置进行配置。 有关详细信息，请参阅[适用于 Windows 10 的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。 
 
+> [!NOTE]
+> 此外，也可以在 Configuration Manager 分发点上安装 Microsoft Connected Cache 服务器，用于缓存 Intune Win32 应用内容。 有关详细信息，请参阅 [Configuration Manager 中的 Microsoft Connected Cache - 对 Intune Win32 应用的支持](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)。
+
 ## <a name="install-required-and-available-apps-on-devices"></a>在设备上安装必需和可用应用
 
 最终用户将看到必需和可用应用安装的 Windows Toast 通知。 下图显示了在设备重启之前应用安装还未完成的 toast 通知示例。 
@@ -375,7 +378,7 @@ Windows 10 1709 及更高版本的客户端将在 Windows 10 客户端上使用�
 > 在未注册设备上不会卸载已安装 Intune 管理扩展的 Win32 应用。 管理员可利用分配排除避免向 BYOD 设备提供 Win32 应用。
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 应用问题的疑难解答
-客户端计算机上的代理日志通常位于 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可利用 `CMTrace.exe` 查看这些日志文件。 从 [Configuration Manager 客户端工具](https://docs.microsoft.com/sccm/core/support/tools)可以下载 CMTrace.exe  。 
+客户端计算机上的代理日志通常位于 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 可利用 `CMTrace.exe` 查看这些日志文件。 有关详细信息，请参阅 [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace)。
 
 ![客户端计算机上代理日志的屏幕截图](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

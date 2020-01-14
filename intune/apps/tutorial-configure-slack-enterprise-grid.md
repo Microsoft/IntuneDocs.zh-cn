@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563400"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206901"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教程：配置 Slack 以将 Intune 用于 EMM 和应用配置
 
@@ -48,32 +48,31 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 按照 [Slack 指南](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm)为 Slack Enterprise Grid 计划启用 EMM，并[连接 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) 来作为 Grid 计划的标识提供者 (IDP)。
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
-以全局管理员或 Intune 服务管理员身份登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
+以全局管理员或 Intune 服务管理员身份登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>在 iOS 设备上安装用于 EMM 的 Slack
 将用于 EMM 的 Slack 的 iOS 应用添加到 Intune 租户，并创建应用配置策略，从而通过将 Intune 作为 EMM 提供程序来允许组织的 iOS 用户访问 Slack。
 
 ### <a name="add-slack-for-emm-to-intune"></a>将用于 EMM 的 Slack 添加到 Intune
 将用于 EMM 的 Slack 添加为 Intune 中的托管 iOS 应用，并分配 Slack 用户。 由于应用都是平台特定的应用，因此需要为 Android 设备的 Slack 用户添加单独的 Intune 应用。
-1. 在 Intune 中，选择“应用”   > “所有应用”   > “添加”  。
-2. 在“应用类型”下，选择“应用商店应用 - iOS”。 
-3. 选择“搜索 App Store”  。 输入搜索词“用于 EMM 的 Slack”，选择此应用。
-4. 选择“应用信息”，并在必要时配置任意更改。 
-5. 选择“添加”  。
-6. 在搜索栏中输入“用于 EMM 的 Slack”，并选择刚刚添加的应用。
-7. 在“管理”中选择“分配”  。
-8. 选择“添加组”  。 可能需要从“分配类型”下选择以下项，具体取决于为 Slack 启用 EMM 时所选的要影响的人员： 
+1. 在管理中心，选择“应用”   > “所有应用”   > “添加”  。
+2. 在“应用类型”下，选择“iOS”商店应用。  
+3. 选择“搜索 App Store”  。 输入搜索词“用于 EMM 的 Slack”，选择此应用。 在“搜索 App Store”窗格中单击“选择”。  
+4. 选择“应用信息”，并在必要时配置任意更改。  选择“确定”以设置应用信息。 
+5. 单击“添加”  。
+6. 选择“分配”  。
+7. 单击“添加组”  。 可能需要从“分配类型”下选择以下项，具体取决于为 Slack 启用 EMM 时所选的要影响的人员： 
     - **可用于已注册设备**：选择了“所有成员(包括来宾)”时，或
     - **不论是否注册均可使用**：选择了“所有成员(来宾除外)”或“可选”时。
-9. 选择“包含的组”，并在“使此应用对所有用户可用”下选择“是”。  
-10. 单击“确定”，然后再次单击“确定”。  
-11. 单击 **“保存”** 。
+8. 选择“包含的组”，并在“使此应用对所有用户可用”下选择“是”。   
+9. 单击“确定”，然后再次单击“确定”以添加组。  
+10. 单击 **“保存”** 。
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>为用于 EMM 的 Slack 添加应用配置策略
 为 iOS 版用于 EMM 的 Slack 添加应用配置策略。 托管设备的应用配置策略都是特定于平台的，因此需要为 Android 设备的 Slack 用户添加单独的策略。
-1. 在 Intune 中，选择“应用”   > “应用配置策略”   > “添加”  。
+1. 在管理中心中，选择“应用” >    “应用配置策略” >   “添加” >   “托管设备”。
 2. 在“名称”中输入“Slack 应用配置策略测试”。
-3. 在“设备注册类型”下，选择“托管设备”。 
+3. 在“设备注册类型”下，确认设置了“托管设备”。 
 4. 在“平台”下，选择“iOS”。 
 5. 选择“关联应用”  。
 6. 在搜索栏中输入“用于 EMM 的 Slack”，并选择此应用。
@@ -86,7 +85,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>（可选）创建 iOS 设备符合性策略
 设置 Intune 设备符合性策略以设置设备必须满足才能被视为符合的条件。 在本教程中，我们将为 iOS 设备创建设备符合性策略。 符合性策略都是特定于平台的，因此需要为 Android 设备的 Slack 用户创建单独的策略。
-1. 在 Intune 中，选择“设备符合性”   > “策略”   > “创建策略”  。
+1. 在管理中心中，选择“设备符合性”   > “策略”   > “创建策略”  。
 2. 在“名称”中，输入“iOS 符合性策略测试”。
 3. 在“描述”中，输入“iOS 符合性策略测试”。
 4. 在“平台”下，选择“iOS”。 
@@ -100,7 +99,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
     - 对于“密码过期(天数)”，请输入“41”。
     - 对于“阻止重用的曾用密码数”，请输入“5”。
 7. 单击“确定”  ，然后再次选择“确定”  。
-8. 单击“创建”  。
+8. 单击 **“创建”** 。
 
 ## <a name="set-up-slack-on-android-work-profile-devices"></a>在 Android 工作配置文件设备上安装 Slack
 将 Slack 托管的 Google Play 应用添加到 Intune 租户，并创建应用配置策略，从而通过将 Intune 作为 EMM 提供程序来允许组织的 Android 用户访问 Slack。
@@ -152,7 +151,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
     - 对于“密码过期(天数)”，请输入“41”。
     - 对于“阻止重用的曾用密码数”，请输入“5”。
 8. 单击“确定”，然后再次单击“确定”。  
-9. 单击“创建”  。
+9. 单击 **“创建”** 。
 
 ## <a name="launch-slack"></a>启动 Slack
 

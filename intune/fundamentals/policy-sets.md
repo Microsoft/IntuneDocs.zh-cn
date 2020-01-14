@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585652"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206119"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>使用策略集对管理对象集合进行分组
 
@@ -56,8 +56,8 @@ ms.locfileid: "72585652"
 
 ## <a name="how-to-create-a-policy-set"></a>如何创建策略集
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在“Intune”边栏选项卡上，选择“策略集” > “策略集” > “创建”     。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “策略集”   > “策略集”   > “创建”。 
 3. 在“基本信息”页上，添加以下值  ：
     - **策略集名称** - 提供此策略集的名称。
     - **说明** -（可选）提供策略集的说明。
@@ -66,11 +66,11 @@ ms.locfileid: "72585652"
 
 4. 单击“下一步:  应用程序管理”。<br>
    在“应用程序管理”页面，可以选择[添加应用](~/apps/apps-add.md)、[应用配置策略](~/apps/app-configuration-policies-overview.md)和[应用保护策略](~/apps/app-protection-policy.md)到策略集  。 有关应用管理的信息，请参阅[什么是 Microsoft Intune 应用管理？](~/apps/app-management.md)。 
-5. 单击“下一步:  设备管理”。<br>
+5. 单击“**下一步:** 设备管理”。<br>
    通过“设备管理”页面，可以将设备管理对象添加到策略集，例如[设备配置文件](~/configuration/device-profiles.md)和[设备符合性策略](~/protect/device-compliance-get-started.md)  。 请确保包含所有关联的对象，例如其他策略、证书和安全基线配置文件。
-6. 单击“下一步:  设备注册”。<br>
+6. 单击“**下一步:** 设备注册”。<br>
    通过“设备注册”页面，可以将设备注册对象添加到策略集，例如[设备类型限制](~/enrollment/enrollment-restrictions-set.md)、[Windows Autopilot 部署配置文件](~/enrollment/enrollment-autopilot.md)和[注册状态页配置文件](~/enrollment/windows-enrollment-status.md)  。
-7. 单击“下一步:  分配”。<br>
+7. 单击“**下一步:** 分配”。<br>
    通过“分配”页面，可以将策略集分配到用户和设备  。 值得注意的是，无论设备是否由 Intune 管理，都可以将策略集分配到设备。
 8. 单击“**下一步:查看 + 创建**”以查看你为配置文件输入的值。
 9. 完成后，单击“创建”以在 Intune 中创建策略集  。 

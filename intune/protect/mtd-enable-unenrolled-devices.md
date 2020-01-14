@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478919"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545918"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>在 Intune 中为未注册的设备启用移动威胁防御连接器
 
 在移动威胁防御 (MTD) 安装过程中，已配置了用于在移动威胁防御合作伙伴控制台中对威胁进行分类的策略，并且已在 Intune 中创建了应用保护策略。 如果已在 MTD 合作伙伴控制台中配置了 Intune 连接器，则现在可为 MTD 合作伙伴应用程序启用 MTD 连接。
 
 > [!NOTE]
-> 本文适用于支持应用保护策略的所有移动威胁防御合作伙伴：Better Mobile (Android)、Zimperium (iOS)、Lookout for Work (Android/iOS)。
+> 本文适用于支持应用保护策略的所有移动威胁防御合作伙伴：Better Mobile (Android)、Zimperium (Android/iOS)、Lookout for Work (Android/iOS)。
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>MTD 应用的经典条件访问策略
 
@@ -56,7 +56,7 @@ MTD 应用的经典条件访问策略：
 
 2. 选择“租户管理”   > “连接器和令牌”   > “移动威胁防御”  。
 
-3. 在“移动威胁防御”窗格上，选择“添加”   。
+3. 在“移动威胁防御”窗格上选择“添加”   。
 
 4. 从下拉列表中选择 MTD 解决方案作为“要设置的移动威胁防御连接器”  。
 
@@ -66,7 +66,7 @@ MTD 应用的经典条件访问策略：
 
 ## <a name="mobile-threat-defense-toggle-options"></a>移动威胁防御切换选项
 
-根据组织要求，可以决定需要启用哪些 MTD 切换选项。 下面是更多详细信息：
+可以根据组织要求决定需要启用哪些 MTD 切换选项。 下面是更多详细信息：
 
 **应用保护策略设置**
 

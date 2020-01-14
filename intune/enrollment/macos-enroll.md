@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098200"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207173"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中设置 macOS 设备注册
 
@@ -78,11 +78,9 @@ Intune 可以管理 macOS 设备以允许用户访问公司电子邮件和应用
 对于 VMware Fusion，需要[编辑 .vmx 文件](https://kb.vmware.com/s/article/1014782)，设置虚拟机的硬件模型和序列号。 建议运行虚拟机的设备的硬件类型与要创建的虚拟机的硬件类型相匹配。 可通过“Apple 菜单” > “关于此 Mac” > “系统报告” > “模型标识符”找到此硬件类型     。 
 
 ## <a name="user-approved-enrollment"></a>用户已批准注册
-用户批准的 MDM 注册是一种可用于管理某些安全敏感设置的 macOS 注册类型。 有关详细信息，请参阅 [Apple 的支持文档](https://support.apple.com/HT208019)。
-
-从 2019 年 11 月开始，所有新用户拥有的 macOS 注册都将是“用户已批准”，因为用户必须手动安装管理配置文件才能成功注册。 在[注册过程](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)中，用户将在“系统首选项”   > “配置文件”  中安装 Apple 管理配置文件。  MacOS 公司门户应用中提供了有关安装管理配置文件的说明。
-
-如果用户未手动批准管理配置文件，则在 2019 年 11 月之前注册的设备可能不会是“用户已批准”状态。 但是，用户可以返回并批准管理配置文件，方法是转到“系统首选项”   > “配置文件”  > 选择“管理配置文件”   > “批准”  。
+用户批准的 MDM 注册是一种可用于管理某些安全敏感设置的 macOS 注册类型。 有关详细信息，请参阅 [Apple 的支持文档](https://support.apple.com/HT208019)。  
+ 
+在 BYOD 注册过程中，将要求用户手动批准 Apple 管理配置文件。 适用于 macOS 的公司门户应用提供了说明。 尽管无需批准此管理配置文件即可完成注册，但 Intune 建议经过用户批准完成注册。 若在注册过程中用户未批准此配置文件，用户可以转到“系统首选项”   > “配置文件”，  选择管理配置文件，然后选择“批准”。     
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>查明设备是否处于“用户已批准”状态
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。

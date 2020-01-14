@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390350"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654254"
 ---
 # <a name="use-device-encryption-with-intune"></a>使用 Intune 设备加密
 
@@ -75,7 +75,7 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
    > [!IMPORTANT]
    > 如果将“禁止在注销时提示”  设置设为“启用”  ，则存在一个已知问题。 设置为“启用”  时，必须将“允许绕过的次数”  设置设为具体值，不得设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
    >
-   > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置* **允许绕过的次数**, 也不能具有值。
+   > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置***允许绕过的次数**, 也不能具有值。
    >
    > 此问题将在今后发布的更新中予以解决。
 
@@ -86,6 +86,10 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
 在 Intune 使用 FileVault 加密 macOS 设备之后，你便可在查看 Intune [加密报表](encryption-monitor.md)时查看和管理 FileVault 恢复密钥。
 
 在 Intune 使用 FileVault 加密 macOS 设备后，你可以在任何设备上的 Web 公司门户中查看相应设备的个人恢复密钥。 在 Web 公司门户中，先选择已加密的 macOS 设备，再选择“获取恢复密钥”作为远程设备操作。
+
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>从 MEM 加密的 macOS 设备检索个人恢复密钥
+
+借助 iOS 公司门户应用，最终用户将能够检索其个人恢复密钥（FileVault 密钥）。 拥有个人恢复密钥的设备必须已注册 Intune，并且通过 Intune 使用 FileVault 加密。 借助 iOS 公司门户应用，最终用户可以打开包含 FileVault 个人恢复密钥的网页。 此外，还可以通过选择“设备” > “已加密和已注册的 macOS 设备” > “获取恢复密钥”，来从 Intune 检索恢复密钥。    
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>适用于 Windows 10 的 BitLocker 加密
 

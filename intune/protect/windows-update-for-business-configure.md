@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691775"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207445"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 软件更新
 
@@ -68,9 +68,6 @@ Intune 提供以下策略类型来管理更新：
   可以为 Windows 10 设备手动配置“诊断和使用情况数据”，也可以使用适用于 Windows 10 及更高版本的 Intune 设备限制配置文件。  若使用设备限制配置文件，请至少将“共享使用情况数据”的[设备限制设置](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)设置为“基本”。   为 Windows 10 或更高版本配置设备限制策略时，可在“报告和遥测”类别中找到此设置。 
 
   有关设备配置文件的详细信息，请参阅[配置设备限制设置](../configuration/device-restrictions-configure.md)。
-
-- 如果使用 Azure 经典门户，则[将设置迁移到 Azure 门户](#migrate-update-settings-to-the-azure-portal)。
-
 
 ## <a name="windows-10-update-rings"></a>Windows 10 更新通道
 
@@ -124,7 +121,7 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 
 #### <a name="pause"></a>暂停
 
-选择“暂停”  可防止已分配的设备在暂停通道后长达 35 天的时间内接收功能更新或质量更新。 超出最长天数后，暂停功能自动过期，设备将扫描 Windows 更新以检查可用更新。 执行此扫描后，你可以再次暂停更新。
+选择“暂停”  可防止已分配的设备在暂停通道后长达 35 天的时间内接收功能更新或质量更新。 超出最长天数后，暂停功能自动过期，设备将扫描 Windows 更新以检查可用更新。 在此扫描之后，你可以再次暂停更新。
 如果恢复已暂停的更新通道，然后再次暂停该通道，则暂停期将重置为 35 天。
 
 ##### <a name="to-pause-a-ring"></a>暂停通道
@@ -138,7 +135,7 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 > [!IMPORTANT]
 > 发出暂停命令后，设备会在下次签入服务时收到此命令。 可能的情况是，在设备签入前，它们可能安装了计划更新。 此外，如果在发出暂停命令时关闭目标设备，则当打开它时，可能会在它使用 Intune 签入前下载并安装计划的更新。
 
-#### <a name="resume"></a>继续
+#### <a name="resume"></a>恢复
 
 暂停更新通道时，可以选择“恢复”  ，将该通道的“功能”和“质量”更新还原为活动操作。 恢复更新通道后，可以再次暂停该通道。
 
@@ -227,7 +224,7 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
 
 3. 在“基本信息”下，指定名称、说明（可选），对于“要部署的功能更新”，选择具有所需功能集的 Windows 版本，然后选择“下一步”    。
 
-4. 在“分配”下，选择“+ 选择要包括的组”，然后将更新通道分配到一个或多个组   。 选择“下一步”继续操作  。
+4. 在“分配”  下，选择“+ 选择要包括的组”  ，然后将功能更新部署分配到一个或多个组。 选择“下一步”继续操作  。
 
 5. 在“查看 + 创建”下，查看设置，然后在准备好保存 Windows 10 功能更新处理时选择“创建”   。  
 
@@ -240,17 +237,6 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
 - 选择“删除”从 Intune 中删除策略，并将其从设备中删除  。
 - 选择“属性”  以修改部署。  在“属性”  窗格中，选择“编辑”  以打开“部署设置或分配”  ，然后你可以在其中修改部署。
 - 选择“最终用户更新状态”  以查看有关策略的信息。
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>将更新设置迁移到 Azure 门户
-
-Azure 经典门户在设备配置文件中也有一定数量的其他 Windows 10 更新设置。 如果在迁移到 Azure 门户时配置了其中的任何设置，强烈建议执行以下操作：
-
-1. 使用所需的设置在 Azure 门户中创建 Windows 10 更新通道。 Azure 门户不支持“允许预发布的功能”设置，因为它不再适用于最新的 Windows 10 版本  。 创建更新通道时，可以配置其他三项设置，以及其他 Windows 10 更新设置。
-
-   > [!NOTE]
-   > 迁移后，在经典门户中创建的 Windows 10 更新设置不会显示在 Azure 门户中。 但会应用这些设置。 如果迁移上述任意设置，并在 Azure 门户中编辑已迁移的策略，则这些设置将从策略中删除。
-
-2. 删除经典门户中的更新设置。 迁移到 Azure 门户并将相同设置添加到更新通道后，必须删除经典门户中的设置，以避免任何潜在的策略冲突。 例如，为同一设置配置不同值时，将会出现冲突。 了解此情况并不容易，因为在经典门户中配置的设置不会显示在 Azure 门户中。
 
 ## <a name="next-steps"></a>后续步骤
 

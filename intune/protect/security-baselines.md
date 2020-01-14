@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409965"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548146"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>使用安全基线在 Intune 中配置 Windows 10 设备
 
@@ -115,7 +115,7 @@ ms.locfileid: "74409965"
 
    - **名称**：输入安全基线配置文件的名称。 例如，输入“Defender ATP 的标准配置文件”  。
 
-   - **说明**：输入一些文本来描述此基线的用途。 可以在“说明”中视需要输入任意文本。 此属性不是必填项，但建议填写。
+   - **描述**：输入一些文本来描述此基线的用途。 可以在“说明”中视需要输入任意文本。 此属性不是必填项，但建议填写。
 
    选择“下一步”  转到下一个选项卡。转到新选项卡后，选择选项卡名称可以返回到以前查看过的选项卡。
 
@@ -192,9 +192,9 @@ ms.locfileid: "74409965"
 
 ## <a name="co-managed-devices"></a>共同管理的设备
 
-Intune 托管设备上的安全基线类似于使用 Configuration Manager 的共同管理设备。 共同管理设备同时使用 System Center Configuration Manager 和 Microsoft Intune 来管理 Windows 10 设备。 这样一来，可以通过云附加现有 Configuration Manager 投资，以充分发挥 Intune 的优势。 如果使用的是 Configuration Manager，且希望获取云优势，最好参考[共同管理概述](https://docs.microsoft.com/sccm/comanage/overview)资源。
+Intune 托管设备上的安全基线类似于使用 Configuration Manager 的共同管理设备。 共同管理设备同时使用 Configuration Manager 和 Microsoft Intune 来管理 Windows 10 设备。 这样一来，可以通过云附加现有 Configuration Manager 投资，以充分发挥 Intune 的优势。 如果使用的是 Configuration Manager，且希望获取云优势，最好参考[共同管理概述](https://docs.microsoft.com/configmgr/comanage/overview)资源。
 
-使用共同管理设备时，必须将“设备配置”  工作负载（其设置）切换为“Intune”。 有关详细信息，请参阅[设备配置工作负载](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)。
+使用共同管理设备时，必须将“设备配置”  工作负载（其设置）切换为“Intune”。 有关详细信息，请参阅[设备配置工作负载](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration)。
 
 ## <a name="q--a"></a>问与答
 

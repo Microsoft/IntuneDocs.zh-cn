@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce0e96ecdd4cf254273e26564b8cb132a6d2080
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563858"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324876"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -49,11 +49,11 @@ Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定�
 
 可以通过导入具有 Windows Autopilot 设备信息的 CSV 文件来添加这些设备。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “Windows”   > “设备”  （在“Windows Autopilot 部署计划”   > “导入”  下）。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”   > “Windows”   > “Windows 注册”   > “设备”  （在“Windows Autopilot 部署计划”   > “导入”  下）。
 
     ![Windows Autopilot 设备的屏幕截图](./media/enrollment-autopilot/autopilot-import-device.png)
 
-2. 在“添加 Windows Autopilot 设备”  下，浏览添加 CSV 文件，其中列出了要添加的设备。 CSV 文件应列出序列号、Windows 产品 ID、硬件哈希、组标记（可选）和分配的用户（可选）。 列表中最多可包含 500 行。 请使用以下标题和行格式：
+2. 在“添加 Windows Autopilot 设备”  下，浏览添加 CSV 文件，其中列出了要添加的设备。 CSV 文件应列出序列号、Windows 产品 ID、硬件哈希、组标记（可选）和分配的用户（可选）。 列表中最多可包含 500 行。 有关如何获取设备信息的信息，请参阅[将设备添加到 Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#device-identification)。 请使用以下标题和行格式：
 
     `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
@@ -208,7 +208,7 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。 每个租户最多�
 - 同步在其他门户中完成的配置文件分配
 - 显示在其他门户中对设备列表所做的更改
 
-## <a name="windows-autopilot-for-existing-devices"></a>现有设备的 Windows Autopilot
+## <a name="windows-autopilot-for-existing-devices"></a>面向现有设备的 Windows Autopilot
 
 通过 Configuration Manager [使用 Autopilot 为现有设备注册](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)时，可以按交换码 ID 对 Windows 设备进行分组。 交换码 ID 是 Autopilot 配置文件的参数。 [Azure AD 设备属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) 将自动设置为“OfflineAutopilotprofile - \< correlator ID\>”。 如此，即可使用 enrollmentprofileName 属性基于交换码 ID 创建任意 Azure AD 动态组。
 

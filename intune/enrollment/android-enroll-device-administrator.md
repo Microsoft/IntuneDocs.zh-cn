@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 678eb92bb6f5f23756092cd5d9cc1a645e1e8db3
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562356"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547853"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android 设备管理员注册
 
@@ -39,7 +39,7 @@ Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2
 
 
 > [!Note]  
-> 混合移动设备管理（混合 MDM、使用 System Center Configuration Manager 控制台管理的 Intune）将不支持 Android 10 及更高版本，因为混合 MDM 将于 2019 年 9 月 1 日停止服务。 如果仍使用混合 MDM，则应尽快迁移到 Intune 独立版。 如果需要迁移方面的帮助，请联系支持人员。 有关详细信息，请参阅[从混合移动设备管理移动到 Azure 上的 Intune](https://aka.ms/hybrid_notification)。
+> 混合移动设备管理（混合 MDM、使用 Configuration Manager 控制台管理的 Intune）将不支持 Android 10 及更高版本，因为混合 MDM 将于 2019 年 9 月 1 日停止服务。 如果仍使用混合 MDM，则应尽快迁移到 Intune 独立版。 如果需要迁移方面的帮助，请联系支持人员。 有关详细信息，请参阅[从混合移动设备管理移动到 Azure 上的 Intune](https://aka.ms/hybrid_notification)。
 
 有关 Google 的 Android Enterprise 功能的详细信息，请参阅以下文章：
 - [从设备管理员迁移到 Android Enterprise 的 Google 指南](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)

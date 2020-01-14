@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414094"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207344"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>向用户分配许可证，以便他们能够在 Intune 中注册设备
 
 不管是手动添加用户还是从本地 Active Directory 同步，都必须首先为每个用户分配一个 Intune 许可证，然后用户才能在 Intune 中注册其设备。 如需查看许可证的列表，请参阅[包括 Intune 的许可证](../licenses.md)。
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心分配 Intune 许可证
+> [!NOTE]
+> 如果已向用户分配 Intune 应用保护策略但他们未将其设备注册到 Microsoft Intune，他们也需要获得 Intune 许可证以接收策略。 
 
-可以使用 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure AD 的帐户。
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>在 Microsoft 终结点管理器管理中心中分配 Intune 许可证
 
-1. 使用你的租户管理员凭据登录到 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“用户”   > “活动用户”  。
+可以使用 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)手动添加基于云的用户并将许可证分配给基于云的用户帐户和从本地 Active Directory 同步到 Azure AD 的帐户。
 
-2. 选择你想要为其分配 Intune 用户许可证的用户帐户，然后选择“产品许可证”   > “编辑”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“用户”   > “所有用户”> 选择用户 >“许可证”    > “分配”。 
 
-3. 将 **Intune** 或**企业移动性 + 安全性**切换为“打开”  ，然后选择”保存”  。
+2. 依次选择“Intune”框   > “保存”。 
 
-   ![Microsoft 365 管理中心产品许可证部分的屏幕截图。](./media/licenses-assign/office-assign-license.png)
+   ![Microsoft 365 管理中心产品许可证部分的屏幕截图。](./media/licenses-assign/mem-assign-license.png)
 
-4. 现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
+3. 现在，该用户帐户拥有所需的权限，可以使用该服务并在管理组件中注册设备。
 
 > [!NOTE]
 > 只有在使用 Intune PC 客户端注册了设备后，用户才会出现在经典 Intune 门户中。 此外，你还可以选择要立即编辑的一组用户，为所选的用户选择添加或替换许可证。

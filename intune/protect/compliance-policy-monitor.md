@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992990"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206068"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -36,9 +36,9 @@ ms.locfileid: "74992990"
 
 打开“Intune 设备符合性仪表板”  ：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 选择“设备符合性” > 概述   。 “设备符合性仪表板”随即打开  。
+2. 选择“设备”   > “概述”   > “符合性状态”选项卡。 
 
 > [!IMPORTANT]
 > 设备必须注册到 Intune 才能接收设备符合性策略。
@@ -151,7 +151,7 @@ Intune 将提供有关应用于该设备的设备符合性策略设置的详细�
 
 ## <a name="view-compliance-reports"></a>查看相容性报告
 
-除了使用“相容性状态”  上的图表，还可以从管理中心的“监视器”  页查看相容性报告。
+除了使用“符合性状态”上的图表之外，还可以转到“报表”  **“设备符合性”。**  >  
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -191,3 +191,7 @@ Intune 将提供有关应用于该设备的设备符合性策略设置的详细�
 - 如果冲突的设置来自 Intune 配置策略和合规性策略，那么合规性策略中的设置优先于配置策略中的设置。 即使配置策略中的设置更安全，也会发生这种情况。
 
 - 如果部署了多个符合性策略，Intune 将使用其中最安全的策略。
+
+## <a name="next-steps"></a>后续步骤
+
+[符合性策略概述](device-compliance-get-started.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505582"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692161"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -65,7 +65,7 @@ ms.locfileid: "72505582"
 |-------------------|-----------|-------| 
 |MDM Server URI     | 否        |将其留空。 
 |配置文件名称       | 是       |输入选择的配置文件名称。 
-|描述        | 否        |输入说明配置文件的文本。 
+|说明        | 否        |输入说明配置文件的文本。 
 |MDM 代理 APK      | 是       |https://aka.ms/intune_kme_deviceowner 
 |将此应用设置为 Google 设备所有者 | 是 | 选择此选项以注册到 Android Enterprise。 
 |支持的 MDM      | 是       |Microsoft Intune 
@@ -75,7 +75,7 @@ ms.locfileid: "72505582"
 
 ### <a name="for-android"></a>适用于 Android
 
-有关分步指南，请参阅 [Samsung Knox 配置文件安装向导](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm)说明。
+有关分步指南，请参阅 [Samsung 的“创建配置文件”](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm)说明。
 
 | MDM 配置文件字段| 是否必需？ | 值 |
 |-------------------|-----------|-------|
@@ -114,13 +114,13 @@ ms.locfileid: "72505582"
 >对于 Android Enterprise 完全托管设备，即使定义了用户关联，也不会将其传递到该设备或将设备与用户关联。
 >
 
-## <a name="distribute-devices"></a>分配设备
+## <a name="distribute-devices"></a>分发设备
 
 创建和分配 MDM 配置文件后，关联用户名称并在 Intune 中将设备标识为“公司自有”，可以向用户分配设备。
 
 仍需帮助？ 请查看完整的 [KME 用户指南](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 - **设备所有者支持：**  - **设备所有者支持：** Intune 支持使用 KME 门户注册专用设备和完全托管设备。 其他 Android Enterprise 设备所有者模式将在 Intune 中可用时受支持。
 

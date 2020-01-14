@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 中的设备功能和设置 - Azure | Microsoft Docs
-description: 不同 Microsoft Intune 设备配置文件的概述。 在 Azure 门户中获取有关功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Microsoft Defender、Windows 信息保护、管理模板，以及自定义设备配置设置的信息。 使用这些配置文件管理和保护公司内的数据和设备。
+description: 不同 Microsoft Intune 设备配置文件的概述。 在 Microsoft 终结点管理器管理中心获取有关功能、限制、电子邮件、WiFi、VPN、教育、证书、升级 Windows 10、BitLocker 和 Microsoft Defender、Windows 信息保护、管理模板，以及自定义设备配置设置的信息。 使用这些配置文件管理和保护公司内的数据和设备。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74694941"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206612"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能和设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加到“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，使用 Intune 应用配置文件或将其“分配”给设备。
 

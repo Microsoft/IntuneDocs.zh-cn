@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390287"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547076"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中创建和分配 SCEP 证书配置文件
 
@@ -77,7 +77,7 @@ ms.locfileid: "74390287"
      > 当生成的证书签名请求 (CSR) 中的使用者名称包含以下字符之一作为转义字符（后跟反斜杠 \\）时，使用 SCEP 获取证书存在[已知问题](#avoid-certificate-signing-requests-with-escaped-special-characters)：
      > - \+
      > - ;
-     > - 、
+     > - ,
      > - =
 
      - **“用户”证书类型**
@@ -121,7 +121,7 @@ ms.locfileid: "74390287"
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
-        - **{{FullyQualifiedDomainName}}** （仅适用于 Windows 和加入域的设备） 
+        - {{FullyQualifiedDomainName}}  （仅适用于 Windows 和加入域的设备） 
         - **{{MEID}}**
 
         可在文本框中指定这些变量，后跟变量的文本。 例如，可以将名为 Device1 的设备的公用名添加为 CN={{DeviceName}}Device1   。
@@ -131,7 +131,7 @@ ms.locfileid: "74390287"
         > - 在设备证书的使用者或 SAN 中使用的设备属性（例如 IMEI、SerialNumber 和 FullyQualifiedDomainName）可能被有权访问设备的人员仿造      。
         > - 设备必须支持在证书配置文件中为该配置文件指定的所有变量，才能在该设备上安装。  例如，如果在 SCEP 配置文件的使用者名称中使用 {{IMEI}} 并将其分配给没有 IMEI 号码的设备，则配置文件安装将失败  。
 
-   - **使用者备用名称**：选择 Intune 在证书请求中自动创建使用者可选名称 (SAN) 的方式。 SAN 的选项取决于所选的证书类型，即“用户”或“设备”   。
+   - **使用者可选名称**：选择 Intune 在证书请求中自动创建使用者可选名称 (SAN) 的方式。 SAN 的选项取决于所选的证书类型，即“用户”或“设备”   。
 
       - **“用户”证书类型**
 
@@ -197,7 +197,7 @@ ms.locfileid: "74390287"
      - **数字签名**：仅当数字签名有助于保护密钥时才允许密钥交换。
      - **密钥加密**：仅在密钥已加密时才允许密钥交换。
 
-   - **密钥大小（位）** ：
+   - **密钥大小(位)** ：
 
      选择密钥中包含的位数。
 
@@ -215,7 +215,7 @@ ms.locfileid: "74390287"
 
      为证书的预期目的添加值。 大多数情况下，证书需要“客户端身份验证”以便用户或设备能够向服务器进行验证  。 可根据需要添加其他密钥用法。
 
-   - **续订阈值 (%)** ：
+   - **续订阈值(%)** ：
 
      输入设备请求证书续订之前剩余的证书有效期限的百分比。 例如，如果输入“20”，将在证书的有效期限已使用 80% 时尝试续订证书。 将持续尝试续订，直到续订成功。 续订会生成新的证书，从而生成新的公钥/私钥对。
 
@@ -231,7 +231,7 @@ ms.locfileid: "74390287"
 
 特殊字符为：
 - \+
-- 、
+- ,
 - ;
 - =
 
@@ -275,7 +275,7 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 
 - 若要在注册设备后向设备快速发布证书，请将证书配置文件分配给用户组（而不是设备组）。 如果分配到设备组，则需要在设备接收策略前进行完整的设备注册。
 
-- 如果使用 Intune 和 Configuration Manager 的共同管理，请在 Configuration Manager 中将资源访问策略的[工作负载滑块](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)设置为“Intune”或“试点 Intune”   。 此设置允许 Windows 10 客户端启动请求证书的过程。
+- 如果使用 Intune 和 Configuration Manager 的共同管理，请在 Configuration Manager 中将资源访问策略的[工作负载滑块](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)设置为“Intune”  或“试点 Intune”  。 此设置允许 Windows 10 客户端启动请求证书的过程。
 
 - 尽管可单独创建和分配受信任的证书配置文件和 SCEP 证书配置文件，但必须分配这两种配置文件。 如果未在同一台设备上安装这两者，SCEP 证书策略将失败。 请确保所有受信任的根证书配置文件也都部署到 SCEP 配置文件所在的组。
 

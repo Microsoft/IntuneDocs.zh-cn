@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681310"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207462"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>将 Wandera 移动威胁防御与 Intune 集成  
 
@@ -56,29 +56,28 @@ Wandera 移动威胁防御应用授权流程：
 为 Wandera 设置 EMM Connect  需要在 Intune 和 Wandera 控制台中同时完成一次性配置流程。 此配置过程需要大约 15 分钟的时间。 无需与 Wandera 技术客户经理或支持代表协调即可完成配置。  
 
 ### <a name="enable-support-for-wandera-in-intune"></a>在 Intune 中启用对 Wandera 的支持
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，转到“设备符合性” > “移动威胁防御”，然后选择“添加”    。
 
-2. 在“添加连接器”页上，使用下拉列表以选择“Wandera”   。 然后选择“创建”  。  
-
-3. 在“移动威胁防御”窗格中，从连接器列表中选择“Wandera”  MTD 连接器，以打开“编辑连接器”  窗格。 选择“打开 Wandera 管理控制台”  以打开 Wandera 管理控制台 [RADAR](https://radar.wandera.com/login) 并登录。 
-
-4. 在 Wandera 控制台中，转到“设置” > “EMM 集成”   ，然后选择“EMM Connect”  选项卡。使用“EMM 供应商”  下拉列表，并选择“Microsoft Intune”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“租户管理”   > “连接器和令牌”   > “移动威胁防御”   > “添加”  。
+3. 在“添加连接器”页上，使用下拉列表以选择“Wandera”   。 然后选择“创建”  。  
+4. 在“移动威胁防御”窗格中，从连接器列表中选择“Wandera”  MTD 连接器，以打开“编辑连接器”  窗格。 选择“打开 Wandera 管理控制台”  以打开 Wandera 管理控制台 [RADAR](https://radar.wandera.com/login) 并登录。 
+5. 在 Wandera 控制台中，转到“设置” > “EMM 集成”   ，然后选择“EMM Connect”  选项卡。使用“EMM 供应商”  下拉列表，并选择“Microsoft Intune”  。
 
    ![选择“Intune”](./media/wandera-mtd-connector-integration/set-up-intune-in-radar.png)
 
-5. 选择“授予权限”  ，以打开与 Intune 门户的连接。 使用 Intune 管理员凭据登录，选中相应的复选框，然后选择“接受”  权限请求。  
+6. 选择“授予权限”  ，以打开与 Intune 门户的连接。 使用 Intune 管理员凭据登录，选中相应的复选框，然后选择“接受”  权限请求。  
 
    ![接受权限](./media/wandera-mtd-connector-integration/permissions.png) 
 
-6. Wandera 完成连接，并返回到 RADAR 管理控制台。 根据需要重复此过程以“授予”  对其他配置的访问权限。  
+7. Wandera 完成连接，并返回到 RADAR 管理控制台。 根据需要重复此过程以“授予”  对其他配置的访问权限。  
 
    ![集成和权限](./media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
-7. 在 RADAR 控制台中，复制显示在“EMM 标签”下的“SyncOnly”组的名称   。 此名称将用于在 Intune 中配置组与 Wandera 的同步。
+8. 在 RADAR 控制台中，复制显示在“EMM 标签”下的“SyncOnly”组的名称   。 此名称将用于在 Intune 中配置组与 Wandera 的同步。
 
    ![同步组](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
-8. 返回到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 控制台，并编辑 Wandera MTD Connector。 将可用的开关设置为“开”  ，然后“保存”  配置。  
+9. 返回到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 控制台，并编辑 Wandera MTD Connector。 将可用的开关设置为“开”  ，然后“保存”  配置。  
 
    ![启用 Wandera](./media/wandera-mtd-connector-integration/enable-wandera.png) 
 
@@ -94,14 +93,13 @@ Intune 和 Wandera 现已连接。
 ### <a name="add-the-wandera-apps"></a>添加 Wandera 应用  
 在 Intune 中创建客户端应用以将 Wandera 应用部署到 Android 和 iOS 设备。 有关特定于 Wandera 应用的过程和自定义详细信息，请参阅[添加 MTD 应用](mtd-apps-ios-app-configuration-policy-add-assign.md)。  
 
-创建应用后，返回此处以创建同步组并分配应用。  
-
+创建应用后，返回此处以创建同步组并分配应用。
 
 ### <a name="create-the-synchronization-group-and-assign-the-apps"></a>创建同步组并分配应用
 
 1. 在 Wandera RADAR 控制台中，获取显示在“EMM 标签”下的“SyncOnly”组的名称   。 在步骤 7 中执行[在 Intune 中启用对 Wandera 的支持](#enable-support-for-wandera-in-intune)操作时，可能已经保存了此名称。 在 Intune 中使用此名称作为组名以用于 Wandera 同步。  
 
-2. 在 Intune 控制台中，转到“组”，然后选择“新建组”   。 指定下列各项以配置供 Wandera 使用的同步组：
+2. 在终结点管理器管理中心中，转到“组”，然后选择“新建组”。   指定下列各项以配置供 Wandera 使用的同步组：
    - **组类型**：**安全**
    - **组名称**：指定从 Wandera RADAR 管理控制台中检索到的 SyncOnly 名称  。
 
@@ -116,15 +114,11 @@ Intune 和 Wandera 现已连接。
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>将 Wandera 应用分配到同步组  
 对于为 iOS 和 Android 创建的 Wandera 应用，重复以下过程。
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 并转到“客户端应用” > “应用”，选择 Wandera 应用   。  
-
-2. 选择“分配”，然后选择“添加组”   。  
-
-3. 在“添加组”窗格中，对于“分配类型”，选择“必需”    。
-
-4. 依次选择“包括的组”和“选择要包括的组”   。 指定为 Wandera 同步所创建的组，然后单击“选择” > “确定” > “确定”    。 选择“保存”以完成组分配  。  
- 
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “所有应用”，然后选择 Wandera 应用。 
+3. 选择“分配”，然后选择“添加组”   。  
+4. 在“添加组”窗格中，对于“分配类型”，选择“必需”    。
+5. 依次选择“包括的组”和“选择要包括的组”   。 指定为 Wandera 同步所创建的组，然后单击“选择” > “确定” > “确定”    。 选择“保存”以完成组分配  。 
 
 ## <a name="next-steps"></a>后续步骤  
-现已配置集成，可以开始配置策略、设置高级条件访问以及在 Wandera 管理控制台中查看报表。 若要详细了解如何管理和配置 Wandera，请参阅 Wandera 文档中的[支持中心入门指南](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started)。  
- 
+现已配置集成，可以开始配置策略、设置高级条件访问以及在 Wandera 管理控制台中查看报表。 若要详细了解如何管理和配置 Wandera，请参阅 Wandera 文档中的[支持中心入门指南](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started)。 

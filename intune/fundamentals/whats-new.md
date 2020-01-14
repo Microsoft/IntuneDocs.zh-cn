@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000374"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692261"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
-了解 Microsoft Intune 每周新增功能。 还可以找到[重要通知](#notices)、[过去版本](whats-new-archive.md)，以及有关[如何发布 Intune 服务更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)的信息。
+了解 Microsoft Intune 每周新增功能。 还可以找到[重要通知](#notices)、[过去版本](whats-new-archive.md)，以及有关[如何发布 Intune 服务更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)的信息。 
 
 > [!Note]
 > 每个[每月更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)可能需要长达三天才能推出，顺序如下：
@@ -54,10 +54,60 @@ ms.locfileid: "75000374"
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-december-9-2019"></a>2019 年 12 月 9 日当周
+## <a name="week-of-january-6-2020"></a>2020 年 1 月 6 日当周
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>对 Microsoft Outlook for iOS 提供 S/MIME 支持<!-- 2669398 -->
+Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Outlook for iOS。 有关详细信息，请参阅[适用于 iOS 和 Android 的敏感度标签和保护](https://aka.ms/omsmime)。
+
+<!-- ########################## -->
+## <a name="week-of-december-30-2019"></a>2019 年 12 月 30 日当周
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>从 MEM 加密的 macOS 设备检索个人恢复密钥<!-- 4851745 -->
+借助 iOS 公司门户应用，最终用户可以检索其个人恢复密钥（FileVault 密钥）。 拥有个人恢复密钥的设备必须已注册 Intune，并且通过 Intune 使用 FileVault 加密。 借助 iOS 公司门户应用，最终用户单击“获取恢复密钥”，即可以在加密的 macOS 设备中检索个人恢复密钥。  此外，还可以通过选择“设备” > “已加密和已注册的 macOS 设备” > “获取恢复密钥”，来从 Intune 检索恢复密钥。    有关 FileVault 的详细信息，请参阅[用于 macOS 的 FileVault 加密](~/protect/encrypt-devices.md#filevault-encryption-for-macos)。
+
+#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>iOS 用户许可的 VPP 应用<!-- 5619268 -->
+对于用户注册的 iOS 设备，将不再向最终用户显示部署为可用的设备许可的 VPP 应用程序。 不过，最终用户会继续看到公司门户中的所有用户许可的 VPP 应用。 有关 VPP 应用的详细信息，请参阅[如何使用 Microsoft Intune 管理通过 Apple Volume Purchase Program 购买的 iOS and macOS 应用](~/apps/vpp-apps-ios.md)。
+
+<!-- ########################## -->
+## <a name="week-of-december-23-2019"></a>2019 年 12 月 23 日当周
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="notice---windows-10-1703-rs2-will-be-moving-out-of-support----5026679---"></a>通知 - 不再支持 Windows 10 1703 (RS2) <!-- 5026679 -->
+自 2018 年 10 月 9 日起，家庭版、专业版和专业工作站版的 Microsoft 平台支持不再包含 Windows 10 1703 (RS2)。 在 2019 年 10 月 8 日，Windows 10 企业版和教育版平台支持不再包含 Windows 10 1703 (RS2)。 自 2019 年 12 月 26 日起，我们会将 Windows 公司门户应用程序最低版本更新到 Windows 10 1709 (RS3)。 运行 1709 之前版本的计算机将不再从 Microsoft Store 收到此应用程序的更新版。 之前我们已通过消息中心将此变更告知使用 Windows 10 早期版本的客户。 有关详细信息，请参阅 [Windows 生命周期简报](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
+
+<!-- ########################## -->
+
+## <a name="week-of-december-16-2019"></a>2019 年 12 月 16 日当周
+
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="updates-to-administrative-templates-for-windows-10-devices----5941568---"></a>Windows 10 设备管理模板更新 <!-- 5941568 -->
+
+可以使用 Microsoft Intune 中的 ADMX 模板控制和管理用于 Microsoft Edge、Office 和 Windows 的设置。 Intune 中的管理模板做出以下策略设置更新：
+
+- 添加了对 Microsoft Edge 版本 78 和 79 的支持。
+- 包括[管理模板文件 (ADMX/ADML) 和适用于 Office 365 专业增强版、Office 2019 和 Office 2016 的 Office 自定义工具](https://www.microsoft.com/download/details.aspx?id=49030)中的 ADMX（2019 年 11 月 11 日）文件。
+
+有关 Intune 中的 ADMX 模板的详细信息，请参阅[使用 Windows 10 模板在 Microsoft Intune 中配置组策略设置](../configuration/administrative-templates-windows.md)。
+
+适用于：
+
+- Windows 10 及更高版本
+
+## <a name="week-of-december-9-2019-1912-service-release"></a>2019 年 12 月 9 日当周（1912 服务版本）
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
 
 #### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>迁移到适用于托管浏览方案的 Microsoft Edge<!-- 5173762 -->
-
 由于即将停用 Intune Managed Browser，我们对应用保护策略进行了更改，以简化将用户转移到 Edge 所需的步骤。 我们将应用保护策略设置的选项“限制使用其他应用传输 Web 内容”更新为以下之一  ：
 
 - 任何应用
@@ -66,6 +116,85 @@ ms.locfileid: "75000374"
 - 非托管浏览器 
 
 选择“Microsoft Edge”时，最终用户将看到条件访问消息，该消息通知他们托管浏览方案需要 Microsoft Edge  。 如果尚未下载，系统将提示他们下载 Microsoft Edge 并使用其 AAD 帐户登录 Microsoft Edge。  这等同于将目标设置为应用配置设置 `com.microsoft.intune.useEdge` 设为 True 的启用了 MAM 的应用  。 使用“策略托管浏览器”设置的现有应用保护策略现已选中“Intune Managed Browser”，你将看不到任何行为更改   。 这意味着，如果你将 useEdge 应用配置设置设为 True，则用户将看到一条要求使用 Microsoft Edge 的消息   。 我们鼓励所有使用托管浏览方案的客户通过“限制使用其他应用传输 Web 内容”来更新其应用保护策略，以确保用户无论从哪个应用启动链接，都可以看到过渡到 Microsoft Edge 的合适指南  。 
+
+#### <a name="configure-app-notification-content-for-organization-accounts---2576686----"></a>配置组织帐户的应用通知内容<!-- 2576686  -->
+借助 Android 和 iOS 设备上的 Intune 应用保护策略 (APP)，可以控制组织帐户的应用通知内容。 可以选择一个选项（“允许”、“组织组织数据”、或“阻止”），以指定如何为选定的应用显示组织帐户的通知。此功能需要应用程序的支持，可能并非在所有启用 APP 的应用程序中可用。 Outlook for iOS 版本 4.15.0（或更高版本）和 Outlook for Android 4.83.0（或更高版本）将支持此设置。 可从控制台获取此设置，但此功能将从 2019 年 12 月 16 日之后开始生效。 有关 APP 的详细信息，请参阅[什么是应用保护策略？](../apps/app-protection-policy.md)。
+
+#### <a name="microsoft-app-icons-update--4677605----"></a>Microsoft 应用图标更新<!--4677605  -->
+应用保护策略和应用配置策略的应用目标窗格中用于 Microsoft 应用的图标已更新。
+
+#### <a name="require-use-of-approved-keyboards-on-android--4761794----"></a>要求在 Android 上使用经过批准的键盘<!--4761794  -->
+在应用保护策略中，可以指定设置[“批准的键盘”  ](../apps/app-protection-policy-settings-android.md#data-protection)，以管理可以将哪些 Android 键盘用于托管的 Android 应用。 当用户打开此托管应用并且尚未将批准的键盘用于该应用时，将提示他们切换到设备上已安装的一个经过批准的键盘。 必要时，会为用户提供从 Google Play Store 下载批准的键盘的链接，以便他们可以进行安装和设置。 如果用户的活动键盘不是经过批准的键盘，则用户只能够编辑托管应用中的文本字段。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578----"></a>更新了 iOS、iPadOS 和 macOS 设备上的应用和网站的单一登录体验<!-- 4999578  -->
+Intune 添加了更多适用于 iOS、iPadOS 和 macOS 设备的单一登录 (SSO) 设置。 现在可以配置组织或标志提供者编写的重定向 SSO 应用扩展。 使用这些设置来为使用新式身份验证方法（如 OAuth 和 SAML2）的应用和网站配置无缝单一登录体验。 
+
+这些新设置扩展了 SSO 应用扩展和 Apple 内置 Kerberos 扩展的旧设置（“设备”   > “设备配置”   > “配置文件”   > “创建配置文件”   >  为平台类型选择“iOS/iPadOS”或“macOS”> 为配置文件类型选择“设备功能”）。    
+
+转到 [iOS 上的 SSO](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) 和 [macOS 上的 SSO](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)，可查看可配置的 SSO 应用扩展设置的完整范围。
+
+适用于：
+
+- iOS/iPadOS
+- macOS
+
+#### <a name="we-have-updated-two-device-restriction-settings-for-ios-and-ipados-devices-to-correct-their-behavior---5701352-wnready-----"></a>我们更新了针对 iOS 和 iPadOS 设备的两个设备限制设置，以更正这些设备的行为<!-- 5701352 WNReady   -->
+对于 iOS 设备，你可以创建设备限制配置文件来“允许无线 PKI 更新”和“阻止 USB 受限模式”   （“设备”   > “设备配置”   > “配置文件”   > “创建配置文件”   >  为平台选择“iOS/iPadOS”> 为配置文件类型选择“设备限制”）。   在此版本之前，以下设置的 UI 设置和说明均不正确，现已更正。 自此版本开始，这些设置的行为如下所示：
+
+**阻止无线 PKI 更新**：**阻止**：若设备未连接计算机，将阻止用户收到软件更新。 **未配置**（默认设置）：设备无需连接计算机，即可收到软件更新。
+- 之前，你可以将此设置配置如下：**允许**：你的用户无需将设备连接到计算机，即可收到软件更新。
+**在设备锁定时允许使用 USB 附件**：**允许**：允许 USB 附件与锁定超过一个小时的设备交换数据。 **未配置**（默认设置）：未更新设备的 USB 受限模式，若设备锁定时间超过一个小时，将阻止 USB 附件从设备传输数据。
+- 之前，你可以将此设置配置如下：**阻止**：可禁用受监管设备上的 USB 受限模式。
+
+有关可以配置的设置的详细信息，请参阅[使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置](../configuration/device-restrictions-ios.md)。
+
+此功能适用于：
+
+- iOS/iPadOS
+
+#### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>macOS 设备的有线网络设备配置文件<!-- 3508686  -->
+   > [!NOTE]
+   > 此功能推迟到稍后发布。
+
+#### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998---"></a>阻止用户在 Android Enterprise 设备所有者设备的托管密钥存储中配置证书凭据<!-- 3311998 -->
+在 Android Enterprise 设备所有者上，你可以配置一个新设置，来阻止用户在托管密钥存储中配置证书凭据（“设备配置”   > “配置文件”   > “创建配置文件”   > “Android Enterprise”（针对平台）>“仅设备所有者”>“设备限制”（针对配置文件类型）>“用户和帐户”）。   
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+
+#### <a name="protected-wipe-action-now-available--51150000---"></a>受保护的擦除操作现已可用<!--51150000 -->
+现在可以选择使用擦除设备操作对设备执行受保护的擦除。 除了受保护的擦除无法通过关闭设备规避，它与标准擦除相同。 受保护的擦除将继续尝试重置设备，直到成功为止。 在一些配置中，此操作可能会使设备无法重启。 有关详细信息，请参阅[停用或擦除设备](../remote-actions/devices-wipe.md)。
+
+#### <a name="device-ethernet-mac-address-added-to-devices-overview-page--5562275---"></a>将设备以太网 MAC 地址添加到了设备的“概述”页<!--5562275 -->
+现在可以从设备详细信息页看到设备的以太网 MAC 地址（“设备”   > “所有设备”  > 选择一个设备 > “概述”。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>设备安全性
+
+#### <a name="improved-experience-on-a-shared-device-when-device-based-conditional-access-policies-are-enabled---1734096----"></a>改进了启用基于设备的条件访问策略时共享设备中的体验<!-- 1734096  -->
+通过在执行策略时选中针对用户的最新符合性评估具有多个用户（针对基于设备的条件访问策略）的共享设备中的体验。 有关详细信息，请参阅下列概述文章：
+- [Azure 条件访问概述](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [Intune 设备符合性概述](../protect/device-compliance-get-started.md)
+
+#### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>使用 PKCS 证书配置文件为设备预配证书<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
+现在，当运行 Android for Work、iOS 和 Windows 的设备与 PKCS 证书配置文件关联时，可以使用配置文件向其颁发证书，例如用于 Wi-Fi 和 VPN 的配置文件  。 之前，这三个平台仅支持基于用户的证书，基于设备的支持仅限于 macOS。
+
+若要使用基于设备的证书，在为支持的平台[创建 PKCS 证书配置文件](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)时选择“设置”。  现在将显示“证书类型”设置，它支持“设备”或“用户”选项。 
+
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="monitor-and-troubleshoot"></a>监视和故障排除
+
+#### <a name="centralized-audit-logs--5603185-5697164---"></a>集中式化审核日志<!--5603185, 5697164 -->
+现在全新的集中式审核日志体验可将各种类别的审核日志收集到一个页面。 可以通过筛选日志来获得你所寻找的数据。 若要查看审核日志，可转到“租户管理”   > “审核日志”。  
+
+#### <a name="scope-tag-information-included-in-audit-log-activity-details--5763534---"></a>将范围标记信息包含在审核日志活动详细信息中<!--5763534 -->
+现在审核日志活动详细信息包含范围标记信息（针对支持范围标记的 Intune 对象）。 有关审核日志的详细信息，请参阅[使用审核日志跟踪和监视事件](monitor-audit-logs.md)。
+
 
 <!-- ########################## -->
 ## <a name="week-of-december-2-2019"></a>2019 年 12 月 2 日当周
@@ -84,13 +213,6 @@ ms.locfileid: "75000374"
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>应用管理
-
-#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>对 Microsoft Outlook for iOS 提供 S/MIME 支持<!-- 2669398 idready -->
-
-   > [!NOTE]
-   > 此功能推迟到稍后发布。
-
-Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Outlook for iOS。 有关详细信息，请参阅管理[为 Outlook for iOS 配置 S/MIME](~/apps/app-configuration-policies-outlook-smime.md)。
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>针对何时选择性擦除应用数据更新了 UI<!-- 4102028 -->
 更新了 Intune 中用于选择性擦除应用数据的 UI。 UI 更改包括：
@@ -121,6 +243,7 @@ Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Ou
 有关这些设置的详细信息，请参阅 [Intune 中适用于 iOS 设备的 电子邮件配置文件设置](../configuration/email-settings-ios.md)。 
 
 适用于：
+
 - iOS 13.0 及更高版本
 - iPadOS 13.0 及更高版本
 
@@ -130,6 +253,7 @@ Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Ou
 要查看可以配置的设置，请转到[便于使用 Intune 允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
 
 适用于：
+
 - Android Enterprise 完全托管设备
 - Android Enterprise 专用设备
 
@@ -141,6 +265,7 @@ Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Ou
 若要查看可以配置的设置，请参阅[使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置](../configuration/device-restrictions-ios.md)。
 
 适用于：
+
 - iOS/iPadOS
 
 #### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 功能更新（公开预览版）<!-- 2384877 -->
@@ -158,6 +283,7 @@ Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Ou
 有关此功能的详细信息，请参阅[使用 Microsoft Intune 向 macOS 设备添加属性列表文件](../configuration/preference-file-settings-macos.md)。
 
 适用于：
+
 - 运行 10.7 及更高版本的 macOS 设备
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -215,7 +341,7 @@ Intune 现在支持 SCEP 设备证书部署到 Android Enterprise 专用设备�
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>应用管理  
 
-#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>在公司门户中改进了 macOS 注册体验 <!-- 5074349 WNready -->  
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349----"></a>在公司门户中改进了 macOS 注册体验 <!-- 5074349  -->  
 用于 macOS 注册的公司门户提供的注册过程更简单，与用于 iOS 注册的公司门户高度一致。 设备用户现在可以看到：  
 
 * 流畅的用户界面。  
@@ -227,7 +353,7 @@ Intune 现在支持 SCEP 设备证书部署到 Android Enterprise 专用设备�
 最终用户现在可以直接从 Windows 公司门户应用启动 Web 应用。 最终用户可以选择 Web 应用，然后选择选项“在浏览器中打开”  。 已发布的 Web URL 直接在 Web 浏览器中打开。 此功能将在下周推出。 有关 Web 应用的详细信息，请参阅[向 Microsoft Intune 添加 Web 应用](~/apps/web-app.md)。  
 
 
-#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>适用于 Windows 10 的公司门户中的”新建分配类型”列 <!-- 5459950 WNready -->
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950----"></a>适用于 Windows 10 的公司门户中的”新建分配类型”列 <!-- 5459950  -->
 “公司门户”>“安装的应用” > “分配类型”列已重命名为“你的组织需要”    。  在该列下，用户将看到“是”或“否”值，以指示应用是其组织必需的还是可选的   。 之所以做出这些更改是因为设备用户对可用应用的概念感到困惑。 用户可以参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)以获取从公司门户安装应用的详细信息。 有关为用户配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](~/apps/company-portal-app.md)。  
 
 <!-- ########################## -->
@@ -329,6 +455,7 @@ Intune 注册和公司门户现在支持 iOS 版本 11 及更高版本。 不支
 有关此功能的详细信息，请参阅[在 Microsoft Intune 中使用 Windows 设备上的 DFCI 配置文件](../configuration/device-firmware-configuration-interface-windows.md)。
 
 适用于：
+
 - 支持固件上的 Windows 10 RS5 (1809) 及更高版本
 
 ### <a name="device-enrollment"></a>设备注册
@@ -391,7 +518,7 @@ Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任�
 - 修改后的工作流包括“分配”，分配在完成策略的初始配置之前进行。
 - 在保存和部署新策略之前，可以使用摘要页面来查看已进行的所有配置。 编辑策略时，摘要仅显示在你编辑的属性类别内设置的项目列表。
 
-#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404---wnready-----"></a>预定重启设置已从 Windows 更新通道中删除<!--  4464404   WNReady   -->
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings----4464404--------"></a>预定重启设置已从 Windows 更新通道中删除<!--  4464404      -->
 如前所述，Intune 的 Windows 10 更新通道现在[支持设置截止时间](../protect/windows-update-settings.md)，而不再支持预定重启  。 在 Intune 中配置或管理更新通道时，预定重启的设置将不再可用  。  
 
 此更改与最新的 [Windows 服务更改](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)一致。在运行 Windows 10 1903 或更高版本的设备上，截止时间将取代“预定重启”的配置   。
@@ -402,6 +529,7 @@ Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任�
 要查看可以配置的设置，请转到[允许或限制使用 Intune 的功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
 
 适用于：
+
 - Android Enterprise 工作配置文件
 
 #### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices---4816339-----"></a>在 Android Enterprise 设备所有者设备上创建一个全局 HTTP 代理<!-- 4816339   -->
@@ -410,6 +538,7 @@ Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任�
 要配置此功能并查看所配置的所有设置，请转到[允许或限制使用 Intune 的功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
 
 适用于：
+
 - Android Enterprise 设备所有者
 
 #### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise---5021055-----"></a>在 Android 设备管理员和 Android Enterprise 的 Wi-Fi 配置文件中删除了“自动连接”设置<!-- 5021055   -->
@@ -420,6 +549,7 @@ Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任�
 若要查看当前设置，请转到 [Android Wi-Fi 设置](../configuration/wi-fi-settings-android.md)或 [Android Enterprise Wi-Fi 设置](../configuration/wi-fi-settings-android-enterprise.md)。
 
 适用于：
+
 - Android 设备管理员 
 - Android Enterprise
 
@@ -433,6 +563,7 @@ Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任�
 若要查看这些设置，请转到[允许或限制使用 Intune 的功能的 iOS 设备设置](../configuration/device-restrictions-ios.md)。
 
 适用于：
+
 - iOS 13.0 及更高版本
 - iPadOS 13.0 及更高版本
 
@@ -464,7 +595,7 @@ Intune 现在提供引导式方案，可帮助你完成 Intune 中的特定任�
 ### <a name="device-security"></a>设备安全性
 
 #### <a name="pkcs-certificates-for-macos---1333650---------"></a>适用于 macOS 的 PKCS 证书<!-- 1333650       -->
-现在可以[在 macOS 上使用 PKCS 证书](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)。 可以选择 PKCS 证书作为 macOS 的配置文件类型，并部署具有[自定义主题和主题可选名称字段](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)的用户和设备证书。  
+现在可以[在 macOS 上使用 PKCS 证书](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)。 可以选择 PKCS 证书作为 macOS 的配置文件类型，并部署具有[自定义主题和主题可选名称字段](../protect/certficates-pfx-configure.md#subject-name-format)的用户和设备证书。  
 
 MacOS 的 PKCS 证书还支持新设置“允许所有应用访问”  。 使用此设置，可以启用对证书私钥的所有关联应用访问。  有关此设置的更多信息，请参阅 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf 处的 Apple 文档。
 
@@ -498,9 +629,10 @@ Apple 的 iOS 13.1 版本包括用户注册，它是一种新的 iOS 设备轻�
 - 让最终用户在注册其设备时，可以在较轻的用户注册或更强的设备注册之间进行选择。
 
 从 2019 年 9 月 24 日开始，随着 iOS 13.1 的发布，我们正在将这些更新推出给所有客户，希望在下周结束前完成。
+
 适用于：
 
-iOS 13.1 及更高版本
+- iOS 13.1 及更高版本
 
 #### <a name="intune-support-for-ipados-and-ios-131-devices--5439574--"></a>Intune 支持 iPadOS 和 iOS 13.1 设备<!--5439574-->
 Intune 现在支持管理 iPadOS 和 iOS 13.1 设备。 有关详细信息，请参阅[此博客文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-1-and-iPadOS/ba-p/873094)。
@@ -555,6 +687,7 @@ Intune 现在支持通过托管的 Google Play iframe 直接在 Intune 控制台
 要查看当前可配置的 VPN 设置，请转到[在 iOS 设备上配置 VPN 设置](../configuration/vpn-settings-ios.md)。
 
 适用于：
+
 - iOS
 
 #### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type---4886161-----"></a>适用于 iOS 和 macOS 设置的设备功能、设备限制和扩展配置文件按注册类型显示<!-- 4886161   -->
@@ -576,6 +709,7 @@ Intune 现在支持通过托管的 Google Play iframe 直接在 Intune 控制台
   - 所有注册类型
 
 适用于：
+
 - iOS
 
 #### <a name="new-voice-control-settings-for-supervised-ios-devices-running-in-kiosk-mode---4892835-----"></a>在展台模式下运行的受监督 iOS 设备的新语音控制设置<!-- 4892835   -->
@@ -588,6 +722,7 @@ Intune 现在支持通过托管的 Google Play iframe 直接在 Intune 控制台
 若要查看当前设置，请转到 [iOS 展台设置](../configuration/device-restrictions-ios.md#kiosk)。
 
 适用于：
+
 - iOS 13.0 及更高版本
 
 #### <a name="use-single-sign-on-for-apps-and-websites-on-your-ios-and-macos-devices---4893175-----"></a>在 iOS 和 macOS 设备上对应用和网站使用单一登录<!-- 4893175   -->
@@ -598,6 +733,7 @@ Intune 现在支持通过托管的 Google Play iframe 直接在 Intune 控制台
 若要查看可配置的当前设备功能，请转到 [iOS 设备功能](../configuration/ios-device-features-settings.md)和 [macOS 设备功能](../configuration/macos-device-features-settings.md)。
 
 适用于：
+
 - iOS 13.0 及更高版本
 - macOS 10.15 及更高版本
 
@@ -607,6 +743,7 @@ Intune 现在支持通过托管的 Google Play iframe 直接在 Intune 控制台
 若要查看可配置的当前功能，请转到 [Intune 中的 macOS 设备功能设置](../configuration/macos-device-features-settings.md)。
 
 适用于：
+
 - macOS 10.15 及更高版本
 
 #### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices---4928474-----"></a>显示或隐藏 iOS 受监督设备上的应用时，请使用 iTunes 应用商店 URL 中的“iTunes”和“应用”<!-- 4928474   --> 
@@ -869,7 +1006,7 @@ Intune 现在支持安装和使用多个 [Microsoft Intune 证书连接器来执
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="default-scope-tags---3702875----"></a>默认作用域标记<!-- 3702875  -->
-新增了内置默认作用域标记。 所有支持作用域标记的未标记 Intune 对象都会自动分配到默认作用域标记。 默认  作用域标记被添加到所有现有角色分配中，以与目前的管理员体验保持一致。 如果不想让管理员看到有默认作用域标记的 Intune 对象，请从角色分配中删除默认作用域标记。 此功能类似于 System Center Configuration Manager 中的安全作用域功能。 有关详细信息，请参阅[将 RBAC 和作用域标记用于分布式 IT](scope-tags.md)。
+新增了内置默认作用域标记。 所有支持作用域标记的未标记 Intune 对象都会自动分配到默认作用域标记。 默认  作用域标记被添加到所有现有角色分配中，以与目前的管理员体验保持一致。 如果不想让管理员看到有默认作用域标记的 Intune 对象，请从角色分配中删除默认作用域标记。 此功能类似于 Configuration Manager 中的安全作用域功能。 有关详细信息，请参阅[将 RBAC 和作用域标记用于分布式 IT](scope-tags.md)。
 
 #### <a name="android-enrollment-device-administrator-support---4869749-----"></a>Android 注册设备管理员支持<!-- 4869749   -->
 Android 设备管理员注册选项已添加到“Android 注册”页（依次转到“Intune”   > “设备注册”   > “Android 注册”  ）。 默认情况下，所有租户仍将启用 Android 设备管理员。  有关详细信息，请参阅 [Android 设备管理员注册](../enrollment/android-enroll-device-administrator.md)。
@@ -930,7 +1067,7 @@ Android 设备管理员注册选项已添加到“Android 注册”页（依次�
 
 ### <a name="device-configuration"></a>设备配置
 
-#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready---idstaged---"></a>在创建 Windows 10 设备配置配置文件时使用“适用性规则” <!-- 2549910 eeready   idstaged -->
+#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910-eeready------"></a>在创建 Windows 10 设备配置配置文件时使用“适用性规则” <!-- 2549910 eeready    -->
 
 可以创建 Windows 10 设备配置文件，具体方法为依次单击“设备配置”   > “配置文件”   > “创建配置文件”   > “Windows 10”  （作为平台）>“适用性规则”  。 在此次更新中，可以创建适用性规则  ，让配置文件仅应用于特定版本。 例如，创建一个启用某些 BitLocker 设置的配置文件。 添加配置文件后，请使用适用性规则，使配置文件仅适用于运行 Windows 10 企业版的设备。
 
@@ -1265,7 +1402,7 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 #### <a name="intune-security-tasks-for-defender-atp-in-public-preview---3208597---"></a>适用于 Defender ATP 的 Intune 安全任务（公共预览版）<!-- 3208597 -->
 在公共预览版中，可以使用 Intune 管理 [Microsoft Defender 高级威胁防护 (ATP) 的安全任务](../protect/atp-manage-vulnerabilities.md)。 这与 ATP 集成，并增加了基于风险的方法来发现终结点漏洞和配置错误，并对其设置优先级和进行修正，同时缩短了从发现到缓解的时间。
 
-#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---idstaged--"></a>了解 Windows 10 设备合规性策略中的 TPM 芯片组<!-- 3617671   idstaged-->
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671-----"></a>了解 Windows 10 设备合规性策略中的 TPM 芯片组<!-- 3617671   -->
 许多 Windows 10 及更高版本设备都具有受信任的平台模块 (TPM) 芯片组。 此更新包含一个新符合性设置，它将检查设备上的 TPM 芯片版本。
 
 [Windows 10 及更高版本的符合性策略设置](../protect/compliance-policy-create-windows.md#device-security)介绍了此设置。

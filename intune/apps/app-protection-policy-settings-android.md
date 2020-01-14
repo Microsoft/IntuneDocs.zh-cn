@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8718896f7067b8c07017459e29e1e43cc9ef84f3
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: d1624117cc87c5cf3971f9cfb541106c700d4ffd
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992996"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204929"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”  窗格中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -47,14 +47,14 @@ ms.locfileid: "74992996"
 | **限制在其他应用间进行剪切、复制和粘贴** | 指定剪切、复制和粘贴操作何时可用于此应用。 选择： <ul><li>**阻止**：不允许在此应用和任何其他应用间进行剪切、复制和粘贴操作。</li><li>**策略托管应用**：允许在此应用和其他策略托管应用间进行剪切、复制和粘贴操作。</li><li>**带粘贴的策略托管应用**：允许在此应用和其他策略托管应用间进行剪切或复制。 允许将任何应用中的数据粘贴到此应用。</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。 | **任何应用** |
 | <ul><ui>**剪切和复制任何应用的字符限制** | 指定可从组织数据和帐户中剪切或复制的字符数。  这允许将指定数量的字符共享到任何应用程序，而不受“限制使用其他应用剪切、复制和粘贴”设置的限制。<p>默认值 = 0<p>**注意**：需要 Intune 公司门户版本 5.0.4364.0 或更高版本。  | **0** |
 | **屏幕捕获和 Google 助手** | 选择“阻止”，则使用此应用时，会阻止设备的屏幕捕获和“Google 助手”功能   。 选择“允许”  还会在通过工作或学校帐户使用此应用时，导致应用切换器预览图像模糊。| **阻止** |
-| **批准的键盘**  | 选择“需要”，然后指定此策略的批准的键盘列表  。 <p>未使用批准键盘的用户会收到一条提示，要求下载并安装批准的键盘，然后才能使用受保护的应用。  | **不需要** |
+| **批准的键盘**  | 选择“需要”，然后指定此策略的批准的键盘列表  。 <p>未使用批准键盘的用户会收到一条提示，要求下载并安装批准的键盘，然后才能使用受保护的应用。 此设置要求应用拥有适用于 Android 的 Intune SDK 版本 6.2.0 或更高版本。 | **不需要** |
 | <ul><ui>**选择待批准的键盘** | 为上一选项选择“需要”时，此选项才可用  。 选择“选择”以管理可用于受此策略保护的应用的键盘和输入法列表  。 可以向列表中添加更多键盘，以及删除任何默认选项。 必须至少有一个批准的键盘才能保存设置。 要添加键盘，请指定： <ul><li>**名称**：标识键盘且对用户可见的易记名称。 </li><li>**包 ID**：Google Play 商店中的应用的包 ID。 例如，如果 Play 商店中应用的 URL 为 `https://play.google.com/store/details?id=com.contoskeyboard.android.prod`，则包 ID 为`com.contosokeyboard.android.prod`。 此包 ID 以简单链接的形式提供给用户，以便用户可以从 Google Play 下载键盘。 <p><div class="NOTE"><p>备注</p><p>被分配了多个应用保护策略的用户只能使用所有策略通用的批准键盘。</p> | |
-
+| **组织数据通知** | 指定如何针对组织帐户通过 OS 通知共享组织数据。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：不要在通知中共享组织数据。 例如“你有新邮件”，“你有个会议”。</li><UL><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li><p>**注意**：*此设置需要应用支持。此时，Outlook for Android 4.83.0 或更高版本将支持此设置。* | **允许**   |
   
 ### <a name="encryption"></a>加密
 | 设置 | 如何使用 | 默认值 |
 |------|------|------|
-| **对组织数据进行加密** | 选择“需要”，在此应用中启用工作或学校数据加密  。 Intune 使用 OpenSSL 256 位 AES 加密方案和 Android Keystore 系统安全加密应用数据。 数据在文件 I/O 任务期间同步加密。 始终加密设备存储中的内容。 新文件将使用 256 位密钥进行加密。 现有的 128 位加密文件将尝试迁移到 256 位密钥，但无法保证该过程。 使用 128 位密钥加密的文件将仍然可读。 <br><br> 加密方法已经过 FIPS 140-2 验证；有关详细信息，请参阅 [OpenSSL FIPS 库和 Android 指南](https://wiki.openssl.org/images/7/76/OpenSSL_FIPS_Library_and_Android_Guide.pdf)。     |  **需要**|  
+| **对组织数据进行加密** | 选择“需要”，在此应用中启用工作或学校数据加密  。 Intune 使用 OpenSSL 256 位 AES 加密方案和 Android Keystore 系统安全加密应用数据。 数据在文件 I/O 任务期间同步加密。 设备存储中的内容始终处于加密状态。 新文件将使用 256 位密钥进行加密。 现有的 128 位加密文件将尝试迁移到 256 位密钥，但无法保证该过程。 使用 128 位密钥加密的文件将仍然可读。 <br><br> 加密方法已经过 FIPS 140-2 验证；有关详细信息，请参阅 [OpenSSL FIPS 库和 Android 指南](https://wiki.openssl.org/images/7/76/OpenSSL_FIPS_Library_and_Android_Guide.pdf)。     |  **需要**|  
 | <ul><ui>**对已注册设备上的组织数据进行加密** | 选择“需要”，以使用 Intune 应用层加密对所有设备上的组织数据强制执行加密  。 选择“不需要”，不使用 Intune 应用层加密对已注册设备上的组织数据强制执行加密  。| **需要** |
 
 
@@ -76,7 +76,7 @@ ms.locfileid: "74992996"
 
   完全允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
-  |应用/服务名称 | 描述 |
+  |应用/服务名称 | 说明 |
   | ------ | ---- |
   | com.android.phone | 本机电话应用
   | com.android.vending | Google Play Store |
@@ -92,7 +92,7 @@ ms.locfileid: "74992996"
 ### <a name="conditional-exemptions"></a>有条件的豁免
   只有在某些条件下，才允许这些应用和服务向 Intune 托管应用传输数据或从其接收数据。
 
-  |应用/服务名称 | 描述 | 豁免条件|
+  |应用/服务名称 | 说明 | 豁免条件|
   | ------ | ---- | --- |
   | com.android.chrome | Google Chrome 浏览器 | Chrome 用于 Android 7.0 及更高版本上的某些 WebView 组件，并且永远不会从视图中隐藏。 但是，该应用发出和收到的数据流始终受限。  |
   | com.skype.raider | Skype | Skype 应用仅允许执行引发电话呼叫的某些操作。 |

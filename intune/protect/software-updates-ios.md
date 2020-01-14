@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984194"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207479"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>在 Intune 中添加 iOS 软件更新策略
 
@@ -32,8 +32,8 @@ ms.locfileid: "73984194"
 
 ## <a name="configure-the-policy"></a>配置策略
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“软件更新”   > “适用于 iOS 的更新策略”   > “创建”  。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “适用于 iOS 的更新策略”   > “创建”  。
 3. 在“基本信息”选项卡上，为该策略指定名称并指定描述（可选），然后选择“下一步”   。
 
    ![“基本信息”选项卡](./media/software-updates-ios/basics-tab.png) 
@@ -77,7 +77,7 @@ ms.locfileid: "73984194"
 ## <a name="edit-a-policy"></a>编辑策略
 可以编辑现有策略，包括更改限制时间：
 
-1. 在“软件更新”中，选择“适用于 iOS 的更新策略”，然后选择要编辑的策略   。
+1. 选择“设备”   > “适用于 iOS 的更新策略”  。 选择要编辑的策略。
 
 2. 在查看策略“属性”时，为要修改的策略页面选择“编辑”   。  
    ![编辑策略](./media/software-updates-ios/edit-policy.png)   

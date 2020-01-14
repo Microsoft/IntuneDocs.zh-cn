@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000425"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207428"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>设置 Windows 设备的注册
 
@@ -37,7 +37,7 @@ Intune 管理员可通过以下方式简化注册：
 - [CNAME 注册](#simplify-windows-enrollment-without-azure-ad-premium)
 - [启用批量注册](../windows-bulk-enroll.md)（需要 Azure AD Premium 和 Windows 配置设计器）
 
-两个因素决定你简化 Windows 设备注册的方式：
+两个因素决定了简化 Windows 设备注册的方式：
 
 - **是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 随附企业移动性 + 安全性和其他许可计划。
 - **用户将注册什么版本的 Windows 客户端？** <br>可通过添加工作或学校帐户自动注册 Windows 10 设备。 早期版本必须使用公司门户应用进行注册。
@@ -70,7 +70,7 @@ Intune 支持满足以下两项的设备上的多个用户：
 **第 1 步：创建 CNAME**（可选）<br>
 为公司的域创建 CNAME DNS 资源记录。 例如，如果你的公司网站为 contoso.com，则你将在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 enterpriseenrollment-s.manage.microsoft.com 的 CNAME。
 
-尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
+虽然可选择性创建 CNAME DNS 条目，但 CNAME 记录可简化用户的注册。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
 
 |类型|主机名|指向|TTL|
 |----------|---------------|---------------|---|
@@ -116,7 +116,7 @@ EnterpriseEnrollment-s.manage.microsoft.com 是用于注册的首选 FQDN，但�
 >[!IMPORTANT]
 > 如果尚未启用自动 MDM 注册，但是具有已加入到 Azure AD 的 Windows 10 设备，则注册后可在 Intune 控制台中看到两条记录。 确保具有已加入 Azure AD 的设备的用户使用相同的帐户转到“帐户” > “访问工作或学校”和“连接”后，即可停止此操作    。 
 
-有关最终用户任务的详细信息，请参阅[有关 Microsoft Intune 最终用户体验的资源](../fundamentals/end-user-educate.md)。
+若要详细了解最终用户任务，请参阅 [Microsoft Intune 最终用户体验的相关资源](../fundamentals/end-user-educate.md)。
 
 ## <a name="registration-and-enrollment-cnames"></a>注册 CNAME
 Azure Active Directory 具有不同的 CNAME，适用于 iOS、Android 和 Windows 设备的设备注册。 Intune 条件访问需要注册设备，也称为“工作区加入”。 如果计划使用条件性访问，还应为每个公司名称配置 EnterpriseRegistration CNAME。
@@ -128,7 +128,10 @@ Azure Active Directory 具有不同的 CNAME，适用于 iOS、Android 和 Windo
 有关设备注册的详细信息，请参阅[使用 Azure 门户管理设备标识](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Windows 10 自动注册和设备注册
-尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.us。
+
+此部分适用于美国政府云客户。
+
+虽然可选择性创建 CNAME DNS 条目，但 CNAME 记录可简化用户的注册。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.us。
 
 | 类型 | 主机名 | 指向 | TTL |
 | --- | --- | --- | --- |

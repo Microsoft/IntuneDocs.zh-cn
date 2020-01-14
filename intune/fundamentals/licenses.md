@@ -16,15 +16,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d7b8d96ae1582b5cb434c80d44ef55a31c4781b
-ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
+ms.openlocfilehash: 23708968ac229c2721635d9fc31527558e9bd3d2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882300"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547479"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 许可
-Microsoft Intune 可满足不同的客户需求，并适用于不同的组织规模，包括为学校和小型企业提供的简单易用管理体验，以及企业客户所需的更高级功能。 只要订阅处于活动状态，包含 Microsoft Intune 的大多数许可证还会授予使用 System Center Configuration Manager 的权限。 
+Microsoft Intune 可满足不同的客户需求，并适用于不同的组织规模，包括为学校和小型企业提供的简单易用管理体验，以及企业客户所需的更高级功能。 只要订阅处于活动状态，包含 Microsoft Intune 的大多数许可证还会授予使用 Microsoft 终结点管理器的权限。 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 以下许可证包含 Intune：

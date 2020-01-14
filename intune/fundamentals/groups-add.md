@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261568"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303075"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>添加用于组织用户和设备的组
 
@@ -47,7 +47,7 @@ Intune 使用 Azure Active Directory (Azure AD) 组来管理设备和用户。 �
 
 3. 在“组类型”  中，选择下列选项之一：
 
-    - **安全性**：安全组定义谁可以访问资源，并建议用于 Intune 中的组。 例如，可以为用户创建组，如“所有 Charlotte 员工”  或“Contoso 中的所有女士”  。 或者，为设备创建组，如“所有 iOS 设备”  或“所有 Windows 10 学生设备”  。
+    - **安全性**：安全组定义谁可以访问资源，并建议用于 Intune 中的组。 例如，可以为用户创建组，如“所有 Charlotte 员工”  或“远程辅助角色”  。 或者，为设备创建组，如“所有 iOS 设备”  或“所有 Windows 10 学生设备”  。
 
         > [!TIP]
         > 还可以在 [Microsoft 365 管理中心](https://admin.microsoft.com)、Azure Active Directory 管理中心和 [Azure 门户中的 Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中查看创建的用户和组。 在组织租户中，可以创建和管理所有这些区域中的组。

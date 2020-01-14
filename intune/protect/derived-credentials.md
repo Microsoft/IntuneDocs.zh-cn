@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445319"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207191"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>在 Microsoft Intune 中使用派生凭据
 
@@ -160,28 +160,30 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 
 创建要求使用派生凭据的策略之前，请在 Intune 控制台中设置凭据颁发者。 派生凭据颁发者是租户范围的设置。 租户在同一时间仅支持一个颁发者。
 
-1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备配置” > “派生凭据”   。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“租户管理”   > “连接器和令牌”   > “派生凭据”  。
 
-   ![在控制台中配置派生凭据](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![在控制台中配置派生凭据](./media/derived-credentials/configure-provider.png)
 
-2. 为派生凭据颁发者策略指定易记的显示名称  。  此名称不会向设备用户显示。
+3. 为派生凭据颁发者策略指定易记的显示名称  。  此名称不会向设备用户显示。
 
-3. 对于“派生凭据颁发者”，选择已为租户选择的派生凭据颁发者  ：
+4. 对于“派生凭据颁发者”，选择已为租户选择的派生凭据颁发者  ：
    - DISA Purebred
    - Entrust Datacard
    - Intercede  
 
-4. 指定指向自定义说明所在位置的派生凭据帮助 URL，这些说明用于帮助用户获取组织的派生凭据  。 这些说明应特定于组织以及获取所选颁发者的凭据所必需的工作流。 该链接在公司门户应用中显示，且应能够通过设备进行访问。
+5. 指定指向自定义说明所在位置的派生凭据帮助 URL，这些说明用于帮助用户获取组织的派生凭据  。 这些说明应特定于组织以及获取所选颁发者的凭据所必需的工作流。 该链接在公司门户应用中显示，且应能够通过设备进行访问。
 
    如果你不指定自己的 URL，Intune 将提供链接，指向无法涵盖所有场景的通用详细信息。 此通用指南对你的环境而言可能并不准确。
 
-5. 选择一个或多个“通知类型”  。 通知类型是用于通知用户以下情况的方法：
+6. 选择一个或多个“通知类型”  。 通知类型是用于通知用户以下情况的方法：
 
    - 为设备注册颁发者以获取新的派生凭据。
    - 当前凭据将到期时，获取新的派生凭据。
    - 将派生凭据用于 Wi-Fi、VPN、电子邮件或应用身份验证以及 S/MIME 签名和加密的策略。
 
-6. 准备就绪后，选择“保存”以完成派生凭据颁发者配置  。
+7. 准备就绪后，选择“保存”以完成派生凭据颁发者配置  。
 
 保存配置之后，可以更改除“派生凭据颁发者”以外的所有字段  。  若要更改颁发者，请参阅[更改派生凭据颁发者](#change-the-derived-credential-issuer)。
 
@@ -216,19 +218,20 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 
 ### <a name="use-derived-credentials-for-app-authentication"></a>使用派生凭据进行应用身份验证
 
-使用派生凭据在网站和应用程序中进行基于凭据的身份验证。 若要提供派生凭据以进行应用身份验证，请在 Intune 控制台中执行以下步骤：  
+使用派生凭据在网站和应用程序中进行基于凭据的身份验证。 提供派生凭据进行应用身份验证：
 
-1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，转到“设备配置” > “配置文件”，然后选择“创建配置文件”    。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
+3. 输入以下设置：
 
-2. 为“名称”下的配置文件输入易记名称  。
+    - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，好的配置文件名为适用于 iOS 设备配置文件的派生凭据  。
+    - **描述**：输入包含设置概述以及其他所有重要详细信息的说明。
+    - **平台**：选择“iOS/iPadOS”  。
+    - **配置文件类型**：选择“派生凭据”  。
 
-3. 对于“平台”  ，请选择“iOS”  。
-
-4. 对于“配置文件类型”，选择“派生凭据”   。
-
-5. 选择“确定”，然后单击“创建”   。
-
-6. 选择“分配”以选择应收到策略的组  。
+4. 选择“确定”，保存所做更改  。
+5. 完成后，选择“确定”   > “创建”  ，以创建 Intune 配置文件。 完成后，配置文件将显示在“设备 - 配置文件”  列表中。
+6. 依次选择新配置文件和“分配”  。 选择应接收策略的组。
  
 根据你在设置派生凭据颁发者时指定的设置，用户将收到应用或电子邮件通知。 该通知告知用户启动公司门户，以便能够处理派生凭据策略。
 
@@ -252,11 +255,10 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 > [!IMPORTANT]  
 > 如果在删除颁发者后立即重新配置同一颁发者，仍必须更新配置文件和设备以使用该颁发者的派生凭据。 删除颁发者之前获取的派生凭据将失效。
 
-1. 登录 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然后转到“设备配置” > “派生凭据”   。
-
-2. 选择“删除”以删除当前的派生凭据颁发者  。
-
-3. 配置新的颁发者。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“租户管理”   > “连接器和令牌”   > “派生凭据”  。
+3. 选择“删除”以删除当前的派生凭据颁发者  。
+4. 配置新的颁发者。
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>更新使用派生凭据的配置文件
 
@@ -268,4 +270,4 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 
 ## <a name="next-steps"></a>后续步骤
 
-[创建设备配置文件](../configuration/device-profile-create.md)
+[创建设备配置文件](../configuration/device-profile-create.md)。

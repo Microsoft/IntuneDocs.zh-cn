@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000391"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207377"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune 的美国政府终结点
 
@@ -37,6 +37,8 @@ ms.locfileid: "75000391"
 可以修改单个客户端计算机上的代理服务器设置。 还可以使用“组策略”设置来更改位于指定代理服务器后面的所有客户端计算机的设置。
 
 托管的设备需要允许“所有用户”  通过防火墙访问服务的配置。
+
+有关适用于美国政府客户的 Windows 10 自动注册和设备注册的详细信息，请参阅[设置 Windows 设备注册](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration)。
 
 下表列出了 Intune 客户端访问的端口和服务：
 
@@ -78,4 +80,3 @@ ms.locfileid: "75000391"
 ## <a name="next-steps"></a>后续步骤
 [Microsoft Intune 的网络终结点](intune-endpoints.md)
 
-[Windows 10 自动注册和设备注册](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

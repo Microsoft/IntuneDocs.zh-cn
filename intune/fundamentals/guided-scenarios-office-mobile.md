@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585704"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691824"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>引导式方案 - 保护 Microsoft Office 移动应用 
 
@@ -46,7 +46,7 @@ Office 移动应用以及 Microsoft Edge for Mobile 都支持双重标识。 使
 [Intune 应用保护策略](~/apps/app-protection-policy.md)可帮助保护在 Intune 中注册的设备上的工作文件。 另外，应用保护策略还可用在没有注册 Intune 进行管理的员工自有设备上。 在这种情况下，即使你的公司不管理该设备，仍需要确保工作文件和资源受到保护。
 
 你可以使用应用保护策略来防止用户将工作文件保存在不受保护的位置。 还可限制将数据移动到不受应用保护策略保护的其他应用。 应用保护策略设置包括：
-- 数据重定位策略，例如“防止另存为”和“限制剪切、复制和粘贴”。
+- 数据重定位策略，例如“保存原始数据副本”  和“限制剪切、复制和粘贴”  。
 - 访问策略设置，要求使用简单的 PIN 进行访问，阻止在已越狱或取得 root 权限的设备上运行受管理的应用。
 
 通过确保仅支持 Intune 应用保护策略的客户端应用可以访问 Exchange Online 和其他 Office 365 服务，基于应用的条件访问和客户端应用管理增加了一个安全层。
@@ -105,7 +105,7 @@ Office 移动应用以及 Microsoft Edge for Mobile 都支持双重标识。 使
 
 在此步骤中，必须配置在这些应用中访问和共享公司文件和电子邮件的相关要求。 默认情况下，用户可以将数据保存到组织的 OneDrive 和 SharePoint 帐户。
 
-| 设置 | 描述 | 默认值 |
+| 设置 | 说明 | 默认值 |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
 | PIN 类型 | 数值 PIN 由所有数字组成。 密码由字母数字字符和特殊字符组成。  在 iOS/iPadOS 上，若要配置“密码”类型，应用必须安装 Intune SDK 版本 7.1.12 或更高版本。 数值类型没有任何 Intune SDK 版本限制。 | 数字 |
 | 选择最小 PIN 长度 | 指定 PIN 序列必须包含的最小位数。 | 6 |

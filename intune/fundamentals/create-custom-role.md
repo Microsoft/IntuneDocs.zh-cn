@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390707"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207411"
 ---
 # <a name="create-a-custom-role-in-intune"></a>在 Intune 中创建自定义角色
 
@@ -34,36 +34,30 @@ ms.locfileid: "74390707"
 
 ## <a name="to-create-a-custom-role"></a>若要创建自定义角色
 
-1. 使用 Intune 凭据登录 [Azure 门户](https://portal.azure.com)。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“角色” > “所有角色” > “添加”    。
 
-2. 从左侧菜单中选择“所有服务”，然后在文本框筛选器中键入 Intune   。
+2. 在“添加自定义角色”  边栏选项卡上，输入新角色的名称和说明，然后单击“权限”  。
 
-3. 选择“Intune”   > “角色”   > “所有角色”   > “添加”  。
+3. 在“权限”  边栏选项卡上，选择要用于此角色的权限。
 
-4. 在“添加自定义角色”  边栏选项卡上，输入新角色的名称和说明，然后单击“权限”  。
+4. 在“范围(标记)”边栏选项卡上，选择此角色的标记  。 此角色可访问同样具有这些标记的资源。
 
-5. 在“权限”  边栏选项卡上，选择要用于此角色的权限。
+5. 完成后，选择“确定”  。
 
-6. 在“范围(标记)”边栏选项卡上，选择此角色的标记  。 此角色可访问同样具有这些标记的资源。
-
-7. 完成后，选择“确定”  。
-
-8. 在“添加自定义角色”  边栏选项卡上，单击“创建”  。 新角色会显示在“Intune 角色 - 所有角色”  边栏选项卡上的列表中。
+6. 在“添加自定义角色”  边栏选项卡上，单击“创建”  。 新角色会显示在“Intune 角色 - 所有角色”  边栏选项卡上的列表中。
 
 
 ## <a name="copy-a-role"></a>复制角色
 
 还可以复制现有角色。
 
-1. 使用 Intune 凭据登录 [Azure 门户](https://portal.azure.com)并选择“Intune”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“角色”   > “所有角色”> 选择列表中的一个角色 >“复制”。  
 
-2. 选择“角色”   > “所有角色”  >“选择列表中的一个角色”>“重复”  。
+2. 在“重复角色”  下，输入名称。 确保使用唯一的名称。
 
-3. 在“重复角色”  下，输入名称。 确保使用唯一的名称。
+3. 原始角色的所有权限和范围标记均已选中。 随后，可以更改重复角色的“名称”  、“说明”  、“权限”  和“范围(标记)”  。
 
-4. 原始角色的所有权限和范围标记均已选中。 随后，可以更改重复角色的“名称”  、“说明”  、“权限”  和“范围(标记)”  。
-
-5. 选择“创建”  。 
+4. 选择“创建”。  
 
 ## <a name="next-steps"></a>后续步骤
 - [向用户分配角色](assign-role.md)

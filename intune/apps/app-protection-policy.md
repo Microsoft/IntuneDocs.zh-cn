@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899431"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692120"
 ---
 # <a name="app-protection-policies-overview"></a>应用保护策略概述
 
@@ -96,7 +96,7 @@ Intune 应用保护策略平台支持与适用于 Android 和 iOS 设备的 Offi
 ### <a name="data-protection-with-app-protection-policies-app"></a>采用应用保护策略 (APP) 的数据保护
 
 可使用应用保护策略以防将公司数据保存到设备的本地存储中（请参阅下图）。 还可限制将数据移动到不受应用保护策略保护的其他应用。 应用保护策略设置包括：
-- 数据重定位策略，例如“防止另存为”和“限制剪切、复制和粘贴”   。
+- 数据重定位策略，例如“保存原始数据副本”  和“限制剪切、复制和粘贴”  。
 - 访问策略设置，例如“需要简单的 PIN 才能访问”、“阻止在已越狱或取得 root 权限的设备上运行受管理的应用”   。
 
 ![显示公司数据受策略保护的概念图](./media/app-protection-policy/apps-with-protection-policies.png)
@@ -170,7 +170,7 @@ Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-
 
 - 最终用户必须具有链接到其 Azure Active Directory 帐户的 [Office 365 商业版或企业版](https://products.office.com/business/compare-more-office-365-for-business-plans)许可证。 订阅必须包括移动设备上的 Office 应用，可以包括 [OneDrive for Business](https://onedrive.live.com/about/business/) 云存储帐户。 遵循这些[说明](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)可在 [Microsoft 365 管理中心](https://admin.microsoft.com)分配 Office 365 许可证。
 
-- 最终用户必须具有使用粒度另存为功能进行配置的托管位置（该功能位于“阻止另存为”应用程序保护策略设置下）。 例如，如果托管位置为 OneDrive，则应在最终用户的 Word、Excel 或 PowerPoint 应用中对 [OneDrive](https://onedrive.live.com/about/) 应用进行配置。
+- 最终用户必须具有使用粒度另存为功能进行配置的托管位置（该功能位于“保存组织数据的副本”应用程序保护策略设置下）。 例如，如果托管位置为 OneDrive，则应在最终用户的 Word、Excel 或 PowerPoint 应用中对 [OneDrive](https://onedrive.live.com/about/) 应用进行配置。
 
 - 如果托管的位置为 OneDrive，则部署到最终用户的应用保护策略必须针对该应用。
 

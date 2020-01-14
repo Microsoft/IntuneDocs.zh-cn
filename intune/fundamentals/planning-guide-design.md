@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505198"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547547"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -84,7 +84,7 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](../plannin
 
   - 如何管理电脑和服务器环境？
 
-  - 是否正在使用 System Center Configuration Manager？ 是否正在使用第三方系统管理平台？
+  - 是否正在使用 Microsoft 终结点管理器？ 是否正在使用第三方系统管理平台？
 
 - **VPN 解决方案**
 
@@ -101,7 +101,7 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](../plannin
 | **SharePoint** | 本地 SharePoint | 没有移动到 SharePoint Online 的计划 |  
 | **当前 MDM** | Exchange ActiveSync |  |
 | **证书解决方案** | Microsoft Server 2012 R2、AD 证书服务 | 仅对 Web 站点服务器使用 PKI |
-| **系统管理** | System Center Configuration Manager CB 1606 | 想要了解 Intune 混合解决方案 |
+| **系统管理** | Configuration Manager CB 1606 | 想要了解 Intune 混合解决方案 |
 | **VPN 解决方案** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](../plannin
 
 ## <a name="choose-an-intune-deployment-option"></a>选择 Intune 部署选项
 
-Intune 提供两个部署选项：独立和混合。 “独立”是指在云中运行的 Intune 服务，“混合”是指 Intune 与 System Center Configuration Manager 的集成。 本指南主要用于使用独立选项。 [决定哪个选项适合你的业务需求](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+Intune 提供两个部署选项：独立和混合。 “独立”是指在云中运行的 Intune 服务，“混合”是指 Intune 与 Configuration Manager 的集成。 本指南主要用于使用独立选项。 [决定哪个选项适合你的业务需求](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
 
 > [!Important]
 >已弃用载入新的混合 MDM 客户这一功能。 有关详细信息，请参阅博客文章[从混合移动设备管理移动到 Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)。
@@ -184,7 +184,7 @@ Intune 提供两个部署选项：独立和混合。 “独立”是指在云中
 
 深入研究设备的以下方面，了解如何正确管理设备。
 
-- 支持的设备平台
+- 受支持的设备平台
 
 - 设备
 
@@ -353,7 +353,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 - [适用于企业的 iOS 批量采购计划 (VPP)](../apps/vpp-apps-ios.md)
 
-- [适用于企业的 Microsoft 应用商店应用](../apps/windows-store-for-business.md)
+- [适用于企业的 Microsoft Store 应用](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>应用类型要求
 

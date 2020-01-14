@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188251"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683793"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>结合使用 Windows 10 设备上的 Windows Hello 企业版与 Microsoft Intune
 
@@ -49,7 +49,7 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 3. 输入以下属性：
 
    - **名称**：输入新配置文件的描述性名称。
-   - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+   - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
    - **平台**：选择“Windows 10 及更高版本”  。 仅运行 Windows 10 及更高版本的设备支持 Windows Hello 企业版。
    - **配置文件类型**：选择“标识保护”  。
 
@@ -59,7 +59,7 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 
      - **未配置**（默认）：在设备上[预配 Windows Hello 企业版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)。 在仅向用户分配标识保护配置文件时，设备上下文将默认为“未配置”  。
 
-     - **禁用**：如果不想使用 Windows Hello 企业版，请选择此选项。 此选项对所有用户禁用 Windows Hello 企业版。
+     - **已禁用**：如果不想使用 Windows Hello 企业版，请选择此选项。 此选项对所有用户禁用 Windows Hello 企业版。
 
      - **启用**：选择此选项可以在 Intune 中[预配](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)并配置 Windows Hello 企业版设置。 输入要配置的设置。 有关所有设置及其用途的列表，请参阅[启用 Windows Hello 企业版的 Windows 10 设备设置](identity-protection-windows-settings.md)。
 
@@ -71,6 +71,9 @@ Intune 使用“配置文件”创建和自定义这些设置，从而满足组�
 5. 完成后，选择“确定”   > “创建”  以保存所做的更改。
 
 此时，配置文件创建完成，并出现在配置文件列表中。 接下来，将此配置文件[分配](../configuration/device-profile-assign.md)给用户和设备组，以满足需求。
+
+> [!IMPORTANT]
+> 要允许将多个用户预配到设备，请指定将 Windows Hello for Business 策略应用到设备。 如果策略仅应用于用户，则只能将一个用户预配到一个设备。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

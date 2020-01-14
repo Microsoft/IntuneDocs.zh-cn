@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563626"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204895"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>在 S 模式设备上启用 Win32 应用
 
@@ -57,7 +57,7 @@ ms.locfileid: "74563626"
 
 若要创建 Windows 10 S 模式补充策略，请执行以下步骤：
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“应用” > “S 模式补充策略” > “创建策略”    。
 3. 在添加“策略文件”  之前，必须创建该文件并对其进行签名。 有关详情，请参阅：
     - [使用 PowerShell 工具创建 WDAC 策略并将其转换为二进制格式](https://go.microsoft.com/fwlink/?linkid=2095387)
@@ -65,16 +65,16 @@ ms.locfileid: "74563626"
 
 4. 在“基本信息”页上，添加以下值  ：
 
-    | 值 | 描述 |
+    | 值 | 说明 |
     |--------------|------------------------------------------------|
     | 策略文件 | 包含 WDAC 策略的文件。 |
     | 名称 | 此策略的名称。 |
-    | 描述 | [可选] 此策略的说明。 |
+    | 说明 | [可选] 此策略的说明。 |
 
 5. 单击“**下一步:** 作用域标记”。<br>
    在“作用域标记”页上，你可以选择配置作用域标记，以确定谁可以在 Intune 中查看应用策略  。 若要详细了解作用域标记，请参阅[将基于角色的访问控制和作用域标记用于分布式 IT](~/fundamentals/scope-tags.md)。
 
-6. 单击“下一步:  分配”。<br>
+6. 单击“**下一步:** 分配”。<br>
    通过“分配”页面，可以将策略分配到用户和设备  。 值得注意的是，无论设备是否由 Intune 管理，都可以将策略分配到设备。
 7. 单击“**下一步:查看 + 创建**”以查看你为配置文件输入的值。
 8. 完成后，单击“创建”以在 Intune 中创建 S 模式补充策略  。 

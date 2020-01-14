@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77f5787509438ec3280f29be8449d78979806042
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74542658"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547977"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune 中的 Wi-Fi 设备配置文件疑难解答
 
@@ -236,7 +236,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   - 确认完整证书链中的所有必需证书都位于 Android 设备上。 否则，将无法在设备上安装 Wi-Fi 配置文件。 有关详细信息，请参阅[缺少中间证书颁发机构](https://developer.android.com/training/articles/security-ssl#MissingCa)（打开 Android 的网站）。
   - 使用关键字筛选 Omadmlog 以查找信息，如 Wi-Fi 配置文件中使用的证书，以及是否已成功应用配置文件。
 
-    例如，使用 [CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace) 读取日志。 使用搜索字符串筛选“wifimgr”：
+    例如，使用 [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) 读取日志。 使用搜索字符串筛选“wifimgr”：
 
     > [!div class="mx-imgBorder"]
     > ![筛选 CMTrace 以查找 Android 设备上的 WiFiMgr 配置文件](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)

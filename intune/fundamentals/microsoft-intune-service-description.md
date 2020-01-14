@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5d65882c3811b05f7f8f137f76dc919e18f0da5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 881a97e1cf4e4690a72916a1a2325fba5f9b63dd
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505319"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547524"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服务说明
 
@@ -31,7 +31,7 @@ Intune 是一种基于云的企业移动管理 (EMM) 服务，可帮助员工提
 * 通过帮助控制员工访问和共享公司信息的方式来保护公司信息。
 * 确保设备和应用符合公司安全要求。
 
-Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访问控制，并与 Azure 信息保护集成以实现数据保护。 还可以将其与 System Center Configuration Manager 集成，以扩展管理能力。
+Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访问控制，并与 Azure 信息保护集成以实现数据保护。 还可以将其与 Configuration Manager 集成，以扩展管理能力。
 
 若要了解有关如何使用 Intune 管理设备、应用和保护公司数据的详细信息，请参阅 [Intune 文档](../index.yml)。
 
@@ -45,9 +45,9 @@ Intune 与 Azure Active Directory (Azure AD) 紧密集成以实现标识和访�
 
 - [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
-- [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
+- [Hybrid mobile device management (MDM) with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
-For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
+For more about Configuration Manager, see [Documentation for Microsoft Endpoint Configuration Manager](/sccm/index).--->
 ## <a name="intune-onboarding-benefit"></a>Intune 载入权益
 Microsoft 为合格的计划中的合格服务提供了 Intune 载入权益。 载入权益允许你与 Microsoft 专家远程合作，以便使你的 Intune 环境可供使用。 有关载入权益的详细信息，请参阅 [Microsoft Intune 载入权益说明](http://go.microsoft.com/fwlink/?LinkId=619281)。
 
@@ -99,7 +99,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 
 - **Intune stand-alone configuration.** Use the web-based admin console in Intune to manage devices in your organization. Intune can be used without any on-premises IT infrastructure. If you use Intune with Active Directory Domain Services, you can use domain user accounts that you manage with Domain Services with Intune.
 
-- **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
+- **Intune with Microsoft Endpoint Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>语言支持
 Intune 在 Azure 门户中运行，后者支持下列语言：简体中文、中文(繁体)、捷克语、荷兰语、英语、德语、匈牙利语、意大利语、日语、葡萄牙语(巴西)、葡萄牙语(葡萄牙)、俄语、西班牙语、英语、法语、韩语、波兰语、瑞典语和土耳其语。

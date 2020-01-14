@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563893"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548010"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
@@ -164,12 +164,12 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 ![应用保护策略的屏幕截图 - 使用策略托管浏览器共享 Web 内容](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
-#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>步骤 2：设置应用配置设置以启用应用代理
+#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>步骤 2:设置应用配置设置以启用应用代理
 使用以下键/值对将 Microsoft Edge 作为目标，为 Microsoft Edge 启用应用程序代理：
 
 |    Key    |    值    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
+|    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    是    |
 
 若要深入了解 Microsoft Edge 和 Azure AD 应用程序代理如何相继配合使用，以实现本地 Web 应用的无缝（和受保护）访问，请参阅[更好地协作：配合使用 Intune 和 Azure Active Directory，改善用户访问](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)。 此博客文章参考了 Intune Managed Browser，但该内容也适用于 Microsoft Edge。
 
@@ -198,6 +198,14 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 |--------------------------------------------------------------------|------------|
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
+
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>在新选项卡页上显示相关行业新闻
+
+可以在 Microsoft Edge 移动中配置新选项卡页体验，以便显示与组织相关的行业新闻。 启用此功能时，Microosft Edge 移动将使用组织域名聚合来自 Web 的有关组织、组织行业和竞争者的新闻，因此用户可以从 Microsoft Edge 集中的选项卡页查找相关外部新闻。 默认情况下，行业新闻处于关闭状态，可以使用它为组织选择加入它。 
+
+|    Key    |    值    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    “com.microsoft.intune.SohwIndustryNews”    |    True  将在 Microsoft Edge 移动新选项卡页上显示行业新闻。<p>False  （默认值）将从新选项卡页隐藏行业新闻。    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>为 Microsoft Edge 配置托管书签
 
@@ -268,7 +276,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>定义用户尝试访问阻止站点时的行为
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>尝试访问被阻止的网站时，将用户转换到其个人上下文
 
 借助内置于 Microsoft Edge 的双重标识模型，可为最终用户提供比 Intune Managed Browser 中可实现的体验更加灵活的体验。 当用户在 Microsoft Edge 中点击阻止站点时，可以提示他们在其个人上下文（而不是其工作上下文）中打开链接。 这样能够使他们受到保护，同时保护公司资源安全。 例如，如果通过 Outlook 向用户发送指向新闻文章的链接，则可以在其个人上下文或 InPrivate 选项卡中打开该链接。其工作上下文不允许访问新闻网站。 默认情况下，这些转换是允许的。
 
@@ -276,7 +284,16 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 |    Key    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    “com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock”    |    True  会导致在 InPrivate 浏览中直接打开受限链接。<p>False  （默认值）将为用户提供一种选择，即使用 InPrivate 浏览或使用其个人（MSA）帐户打开受限链接。    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>直接在 InPrivate 选项卡页中打开受限链接
+
+可以配置是否应该在 InPrivate 浏览中直接打开受限链接，这为用户提供了更无缝的浏览体验。 为此，用户可以跳过必须转换到其个人上下文来查看网站的步骤。 InPrivate 浏览被视为不受托管，因此用户在使用 InPrivate 浏览模式时将无法访问。 
+
+|    Key    |    值    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True**：允许 Microsoft Edge 将用户转换到其个人上下文以打开阻止的站点。<p>**阻止**：阻止 Microsoft Edge 转换用户。 只会向用户显示一条消息，指示已阻止他们尝试访问的网站。    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>在 iOS 上使用 Microsoft Edge 访问托管的应用日志 
 

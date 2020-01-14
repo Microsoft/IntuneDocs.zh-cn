@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
+ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414557"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "75606615"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
 
- 本主题介绍使用已应用了应用保护策略的应用时的用户体验。 仅在工作环境中使用应用时，应用保护策略才适用；例如，用户使用工作帐户访问应用，或访问公司 OneDrive 企业版位置存储的文件时。
+Intune 应用保护策略适用于用于工作或学校的应用。 这意味着，当员工和学生在个人上下文中使用应用时，他们可能不会注意到任何不同的体验。 但是，在工作或学校上下文中，他们可能会收到提示，用于提醒他们做出帐户决策、更新设置或与你联系以获得帮助。 请使用本文了解用户尝试访问和使用受 Intune 保护的应用时的体验。  
 
 ## <a name="access-apps"></a>访问应用
 
@@ -40,30 +40,29 @@ ms.locfileid: "73414557"
 
 ## <a name="use-apps-with-multi-identity-support"></a>使用具有多身份支持的应用
 
-支持多身份的应用允许用户使用不同的帐户（工作和个人）访问相同的应用，但仅当在工作环境中使用这些应用时，才会应用应用保护策略。  
+支持多标识的应用允许使用不同的工作和个人帐户访问同一个应用。 当用户在工作或学校上下文中访问这些应用时，应用保护策略将激活，这类似于输入设备 PIN。   
 
-例如，用户访问工作数据时会遇到 PIN 提示。 对于 **Outlook 应用**，在用户启动应用时提示他们输入 PIN。 对于 **OneDrive 应用**，在用户键入工作帐户时提示他们输入 PIN。  对于 Microsoft **Word**、**PowerPoint** 和 **Excel**，在用户访问存储在公司 OneDrive for Business 位置的文档时提示他们输入 PIN。
+在各个应用中，用户可能会体验不同的 PIN 提示，具体取决于配置此策略的方式。  例如，可以通过配置策略实现以下目的：       
+* 在用户启动应用时 Microsoft Outlook 提示他们输入 PIN。 
+* 在用户登录工作帐户时 OneDrive 提示他们输入 PIN。  
+* 在用户访问存储在公司 OneDrive for Business 位置的文档时，Microsoft Word、PowerPoint 和 Excel 提示他们输入 PIN。  
 
-- 详细了解支持 Intune 的[应用保护和多身份](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的应用。
+- 详细了解支持 Intune 的[应用保护和多身份](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)的应用。  
 
-应用保护策略仅用于工作环境。 因此，应用的行为可能有所不同，具体取决于是工作环境还是个人环境。
+## <a name="manage-user-accounts-on-the-device"></a>在设备上管理用户帐户  
 
-## <a name="manage-user-accounts-on-the-device"></a>在设备上管理用户帐户
+Intune 应用保护策略限制用户的每个应用中只能有一个托管工作或学校帐户。 应用保护策略不限制用户可以添加的非托管帐户数。   
 
-多标识应用程序允许用户添加多个帐户。  Intune 应用仅支持一个托管帐户。  Intune 应用不限制非托管帐户的数量。
+- 如果用户尝试添加第二个托管帐户，则需要选择要使用的托管帐户。 若用户添加第二个帐户，将删除第一个帐户。
+- 若将保护策略添加到用户的另一个帐户，将要求用户选择要使用哪一个托管帐户。 另一个帐户则被删除。 
 
-当应用程序中存在托管帐户时：
+一些用户不会获得切换或选择托管帐户的选项。 在以下设备中，此选项不可用：
+* 由 Intune 托管  
+* 由第三方企业移动性管理解决方案托管并且配置有 IntuneMAMUPN 设置 
 
-- 如果用户尝试添加第二个托管帐户，则需要选择要使用的托管帐户。  另一个帐户则被删除。
-- 如果 IT 管理员将一个策略添加到第二个现有帐户，用户需要选择要使用的托管帐户。  另一个帐户则被删除。
+以下示例场景说明了如何处理多个用户帐户：  
 
-阅读以下示例场景以更深入地了解如何处理多个用户帐户。
-
-用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司** **之前**部署应用保护策略。与 X 公司  关联的帐户先获取应用保护策略。 如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户，并添加与 Y 公司关联的帐户。
-
-### <a name="add-a-second-account"></a>添加第二个帐户
-
-如果使用 iOS 设备，则在同一设备上尝试添加第二个工作帐户时，可能会看到拦截消息。 随即显示帐户，可从中选择要删除的帐户。
+用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 X 公司在 Y 公司之前部署应用保护策略。    与 X 公司  关联的帐户先获取应用保护策略。 如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户，并添加与 Y 公司关联的帐户。  
 
 ## <a name="next-steps"></a>后续步骤
 

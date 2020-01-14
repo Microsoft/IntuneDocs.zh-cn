@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1d07066bcd599dc0cdbaf8fcf90ac1ee76be45fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059605"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206680"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>在 Microsoft Intune 中使用 Windows 设备上的设备固件配置接口配置文件（公共预览版）
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 使用 Intune 管理 Autopilot 设备时，可以在登录设备之后使用设备固件配置接口 (DFCI) 管理 UEFI (BIOS) 设置。 有关优势、方案和先决条件的概述，请参阅 [ DFCI 概述](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/)。
 
@@ -82,7 +82,7 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
 3. 输入以下属性：
 
     - **名称**：输入配置文件的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，“Windows：  在 Windows 设备上配置 DFCI 设置”是个不错的配置文件名称。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择“Windows 10 及更高版本”  。
     - **配置文件类型**：选择“设备固件配置接口”  。
 
@@ -99,15 +99,15 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
     - **相机**：选项包括：
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
         - **启用**：启用由 UEFI (BIOS) 直接管理的所有内置相机。 USB 相机等外围设备不受影响。
-        - **禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置相机。 USB 相机等外围设备不受影响。
+        - **已禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置相机。 USB 相机等外围设备不受影响。
     - **麦克风和扬声器**：选项包括：
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
         - **启用**：启用由 UEFI (BIOS) 直接管理的所有内置麦克风和扬声器。 USB 设备等外围设备不受影响。
-        - **禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置麦克风和扬声器。 USB 设备等外围设备不受影响。
+        - **已禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置麦克风和扬声器。 USB 设备等外围设备不受影响。
     - **无线收发器（蓝牙、Wi-fi、NFC 等）** ：选项包括：
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
         - **启用**：启用由 UEFI (BIOS) 直接管理的所有内置无线收发器。 USB 设备等外围设备不受影响。
-        - **禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置无线收发器。 USB 设备等外围设备不受影响。
+        - **已禁用**：禁用由 UEFI (BIOS) 直接管理的所有内置无线收发器。 USB 设备等外围设备不受影响。
 
         > [!WARNING]
         > 如果禁用“无线收发器”设置，则设备需要有线网络连接  。 否则，可能无法管理设备。
@@ -115,11 +115,11 @@ DFCI [支持 Windows](https://docs.microsoft.com/windows/client-management/mdm/u
     - **通过外部媒体 (USB、SD) 启动**：选项包括：
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
         - **启用**：UEFI (BIOS) 支持通过非硬盘存储启动。
-        - **禁用**：UEFI (BIOS) 不支持通过非硬盘存储启动。
+        - **已禁用**：UEFI (BIOS) 不支持通过非硬盘存储启动。
     - **通过网络适配器启动**：选项包括：
         - **未配置**：Intune 不涉及此功能，并原样保留任何设置。
         - **启用**：UEFI (BIOS) 支持通过内置网络接口启动。
-        - **禁用**：UEFI (BIOS) 不支持启动内置网络接口。
+        - **已禁用**：UEFI (BIOS) 不支持启动内置网络接口。
 
 5. 完成后，选择“确定”   > “创建”  以保存所做的更改。 此时，配置文件创建完成，并出现在列表中。
 

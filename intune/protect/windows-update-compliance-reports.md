@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465722"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731273"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Intune 的更新符合性报告
 
@@ -51,7 +51,7 @@ ms.locfileid: "74465722"
 
 使用此解决方案时，可将商业 ID 部署到要报告其更新符合性且由 Intune 托管的任意 Windows 10 设备上。  
 
-在 Intune 中，使用自定义策略的 OMA-URI 设置来配置商业 ID。 请参阅 [Microsoft Intune 中适用于 Windows 10 设备的 Intune 策略设置](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)。  
+在 Intune 中，使用自定义策略的 OMA-URI 设置来配置商业 ID。 请参阅[在 Intune 中使用适用于 Windows 10 设备的自定义设置](../configuration/custom-settings-windows-10.md)。
 
 用于配置商业 ID 的 OMA-URI（区分大小写）路径为：./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID   
 

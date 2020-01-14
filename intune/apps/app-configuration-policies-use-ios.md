@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564162"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547984"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -50,35 +50,35 @@ ms.locfileid: "74564162"
 
 ## <a name="create-an-app-configuration-policy"></a>创建应用配置策略
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 选择“应用”   > “应用配置策略”   > “添加”  。
-5. 设置以下详细信息：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “应用配置策略”   > “添加”   > “托管设备”  。
+3. 设置以下详细信息：
     - **名称** - 在 Azure 门户中显示的配置文件名。
     - **说明** - 在 Azure 门户中显示的配置文件说明。
-    - **设备注册类型** - 对于已在 Intune 中注册的设备，选择“托管设备”  。
-6. 对“平台”选择“iOS”   。
-7. 选择“关联应用”  。 然后在“关联应用”窗格中，选择要对其应用配置的托管应用，并选择“确定”   。
-8. 在“添加配置策略”窗格中，选择“配置设置”   。
-9. 选择“配置设置格式”  。 选择下列方法之一来添加配置信息：
+    - **设备注册类型** - 此设置设为“托管设备”。 
+4. 对“平台”选择“iOS”   。
+5. 选择“关联应用”  。 然后在“关联应用”窗格中，选择要对其应用配置的托管应用，并选择“确定”   。
+6. 选择“配置设置”  以显示“配置设置”窗格  。
+7. 选择“配置设置格式”  。 选择下列方法之一来添加配置信息：
     - **使用配置设计器**
     - **输入 XML 数据**<br><br>
     有关使用配置设计器的详细信息，请参阅[使用配置设计器](#use-configuration-designer)。 有关输入 XML 数据的详细信息，请参阅[输入 XML 数据](#enter-xml-data)。 
-10. 添加完配置信息后，选择“确定”，然后选择“添加”以添加配置策略   。 随即显示配置策略的概述窗格。
-11. 选择“分配”，显示包括和排除选项  。 
+8. 添加完配置信息后，选择“确定”，然后选择“添加”以添加配置策略   。 随即显示配置策略的概述窗格。
+9. 选择“分配”，显示包括和排除选项  。 
 
     ![策略分配“包括”选项卡的屏幕截屏](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. 在“包括”边栏选项卡上选择“所有用户”   。
+10. 在“包括”边栏选项卡上选择“所有用户”   。
 
     ![策略分配“所有用户”下拉列表选项的屏幕截图](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. 选择“排除”选项卡  。 
-14. 单击“选择要排除的组”以显示相关窗格  。
+11. 选择“排除”选项卡  。 
+12. 单击“选择要排除的组”以显示相关窗格  。
 
     ![策略分配“选择要排除的组”窗格的屏幕截图](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. 选择想要排除的组，然后单击“选择”  。
+13. 选择想要排除的组，然后单击“选择”  。
 
     >[!NOTE]
     >添加组时，如果给定的分配类型中已包括任何其他组，则在其他包括分配类型中，会预先选定该组且无法更改。 因此，已被使用的组无法用作排除组。
-16. 单击 **“保存”** 。
+14. 单击 **“保存”** 。
 
 ## <a name="use-configuration-designer"></a>使用配置设计器
 
@@ -153,7 +153,7 @@ Intune 会验证 XML 格式。 但是，Intune 不会检查 XML 属性列表 (PL
 
 ### <a name="supported-xml-plist-data-types"></a>支持的 XML 属性列表数据类型
 
-Intune 在属性列表中支持以下数据类型：
+Intune 支持属性列表中的以下数据类型：
 
 - &lt;整数&gt;
 - &lt;实数&gt;
@@ -164,7 +164,7 @@ Intune 在属性列表中支持以下数据类型：
 
 ### <a name="tokens-used-in-the-property-list"></a>属性列表中使用的令牌
 
-此外，Intune 还支持属性列表中的以下令牌类型：
+此外，Intune 支持属性列表中的以下令牌类型：
 - \{\{userprincipalname\}\}—例如，John\@contoso.com 
 - \{\{mail\}\}—例如，John\@contoso.com 
 - \{\{partialupn\}\} - 例如 John 
@@ -182,7 +182,7 @@ DEP（Apple 的设备注册计划）注册与 App Store 版公司门户应用不
 
 1. 在 Intune 中，通过转到“Intune”   > “应用”   > “所有应用”   > “添加”  来添加 Intune 公司门户应用（如有必要）。
 2. 转到“应用”   > “应用配置策略”  ，为公司门户应用创建应用配置策略。
-3. 使用以下 XML 创建应用配置策略。 可以在[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)或（对于混合 MDM）[在 System Center Configuration Manager 中将设置应用于使用应用配置策略的 iOS 应用](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)中找到有关如何创建应用配置策略和输入 XML 数据的详细信息。
+3. 使用以下 XML 创建应用配置策略。 可以在[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)或（对于混合 MDM）[在 Configuration Manager 中将设置应用于使用应用配置策略的 iOS 应用](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)中找到有关如何创建应用配置策略和输入 XML 数据的详细信息。
 
     ``` xml
     <dict>

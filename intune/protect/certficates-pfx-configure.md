@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中使用私钥证书和公钥证书 - Azure | Microsoft Docs
-description: 使用 Microsoft Intune 的公钥加密标准 (PKCS) 证书。 其中包括使用根证书和证书模板、安装 Intune 证书连接器 (NDES) 和 PKCS 证书的设备配置文件。
+description: 在 Microsoft Intune 中使用公钥加密标准 (PKCS) 证书、使用根证书和证书模板、安装 Intune 证书连接器 (NDES) 和使用 PKCS 证书的设备配置文件。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801711"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207241"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
@@ -161,9 +161,7 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
 7. 应用   > 关闭 
 8. 返回到 Intune 门户（“Intune” > “设备配置” > “认证连接器”）    。 片刻之后，将显示绿色复选标记，且“连接状态”显示“可用”   。 连接器服务器现可与 Intune 通信。
 9. 如果网络环境中有 Web 代理，则可能需要其他配置才能使连接器正常运行。 有关详细信息，请参阅 Azure Active Directory 文档中的[使用现有本地代理服务器](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)。
-
-> [!NOTE]  
-> Microsoft Intune 证书连接器支持 TLS 1.2。 如果在托管连接器的服务器上安装了 TLS 1.2，则连接器使用 TLS 1.2。 否则，使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。
+<ul><li>Android Enterprise（工作配置文件  ）</li><li>iOS</li><li>macOS</li><li>Microsoft 10 和更高版本 > Microsoft Intune 证书连接器支持 TLS 1.2。 如果在托管连接器的服务器上安装了 TLS 1.2，则连接器使用 TLS 1.2。 否则，使用 TLS 1.1。 目前，TLS 1.1 用于设备和服务器之间的身份验证。
 
 ## <a name="create-a-trusted-certificate-profile"></a>创建受信任的证书配置文件
 
@@ -208,17 +206,17 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
    
    |设置     | 平台     | 详细信息   |
    |------------|------------|------------|
-   |续订阈值 (%)         |全部         |建议设为 20%  | 
-   |证书有效期   |全部         |如果没有更改证书模板，则此选项可能设置为一年。 |
-   |密钥存储提供程序 (KSP)    |Windows 10  | 对于 Windows，请选择在设备上存储密钥的位置。 |
-   |证书颁发机构       |全部         |显示企业 CA 的内部完全限定的域名 (FQDN)。  |
-   |证书颁发机构名称  |全部         |列出企业 CA 的名称，例如“Contoso 证书颁发机构”。 |
-   |证书类型              |macOS       |选择一个类型： <br> **-** **用户**证书可在证书使用者和 SAN 中同时包含用户和设备属性。 <br><br>**-** **设备**证书只能在证书使用者和 SAN 中包含设备属性。 设备适用于无用户设备（例如网亭或其他共享设备）的情况。  <br><br> 此选择影响使用者名称格式。 |
-   |**使用者名称格式**          |全部         |对于大多数平台，除非另有要求，否则请将此选项设置为“公用名”  。<br><br>对于 macOS，使用者名称格式由证书类型决定。 请参阅本文后面的 [macOS 的使用者名称格式](#subject-name-format-for-macos)。 |
-   |**使用者可选名称**     |全部         |除非另有要求，否则将此选项设置为“用户主体名称 (UPN)”  。 |
-   |**扩展密钥用法**           |**-** Android 设备管理员 <br>**-** Android Enterprise（*设备所有者* *工作配置文件*） <br> **-** Windows 10 |证书通常需要“客户端身份验证”，以便用户或设备能够对服务器进行身份验证  。 |
-   |**允许所有应用访问私钥** |macOS  |请将其设置为“启用”，以使为关联的 Mac 设备配置的应用可以访问 PKCS 证书私钥  。 <br><br> 有关此设置的详细信息，请参阅 Apple 开发人员文档中[配置文件参考](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)中的 AllowAllAppsAccess 证书有效负载部分  。 |
-   |**根证书**             |**-** Android 设备管理员 <br> **-** Android Enterprise（*设备所有者* *工作配置文件*） |选择以前分配的根 CA 证书配置文件。 |
+   |续订阈值 (%)         |<ul><li>All         |建议设为 20%  | 
+   |证书有效期   |<ul><li>All         |如果没有更改证书模板，则此选项可能设置为一年。 |
+   |密钥存储提供程序 (KSP)    |<ul><li>Windows 10  | 对于 Windows，请选择在设备上存储密钥的位置。 |
+   |证书颁发机构       |<ul><li>All         |显示企业 CA 的内部完全限定的域名 (FQDN)。  |
+   |证书颁发机构名称  |<ul><li>All         |列出企业 CA 的名称，例如“Contoso 证书颁发机构”。 |
+   |证书类型              |<ul><li>Android Enterprise（工作配置文件  ）</li><li>iOS</li><li>macOS</li><li>Windows 10 及更高版本|选择一个类型： <ul><li> “用户”证书类型可包含证书使用者和 SAN 中的用户和设备属性  。 </il><li>“设备”证书只能在证书主题和 SAN 中包含设备属性  。 设备适用于无用户设备（例如网亭或其他共享设备）的情况。  <br><br> 此选择影响使用者名称格式。 |
+   |**使用者名称格式**          |<ul><li>All         |对于大多数平台，除非另有要求，否则请将此选项设置为“公用名”  。<br><br>对于以下平台，使用者名称格式由证书类型决定： <ul><li>Android Enterprise（工作配置文件  ）</li><li>iOS</li><li>macOS</li><li>Windows 10 及更高版本</li></ul>  <p> 请参阅本文后面的[使用者名称格式](#subject-name-format)。 |
+   |**使用者可选名称**     |<ul><li>All         |除非另有要求，否则将此选项设置为“用户主体名称 (UPN)”  。 |
+   |**扩展密钥用法**           |<ul><li> Android 设备管理员 </li><li>Android Enterprise（设备所有者  、工作配置文件  ） </li><li>Windows 10 |证书通常需要“客户端身份验证”，以便用户或设备能够对服务器进行身份验证  。 |
+   |**允许所有应用访问私钥** |<ul><li>macOS  |请将其设置为“启用”，以使为关联的 Mac 设备配置的应用可以访问 PKCS 证书私钥  。 <br><br> 有关此设置的详细信息，请参阅 Apple 开发人员文档中[配置文件参考](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)中的 AllowAllAppsAccess 证书有效负载部分  。 |
+   |**根证书**             |<ul><li>Android 设备管理员 </li><li>Android Enterprise（设备所有者  、工作配置文件  ） |选择以前分配的根 CA 证书配置文件。 |
 
 5. 选择“确定”   > “创建”  以保存配置文件。
 
@@ -227,15 +225,22 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
    > [!NOTE]
    > 在应用了 Android Enterprise 配置文件的设备上，使用 PKCS 证书配置文件安装的证书在设备上不可见。 若要确认证书部署是否成功，请检查 Intune 控制台中配置文件的状态。
 
-### <a name="subject-name-format-for-macos"></a>macOS 的使用者名称格式
+### <a name="subject-name-format"></a>使用者名称格式
 
-创建 macOS PKCS 证书配置文件时，使用者名称格式的选项取决于所选的证书类型，即“用户”或“设备”   。  
+为以下平台创建 PKCS 证书配置文件时，使用者名称格式的选项取决于所选的证书类型，即“用户”  或“设备”  。  
 
-> [!NOTE]  
+平台：
+
+- Android Enterprise（工作配置文件  ）
+- iOS
+- macOS
+- Windows 10 及更高版本
+
+> [!NOTE]
 > 当生成的证书签名请求 (CSR) 中的使用者名称包含以下字符之一作为转义字符（后跟反斜杠 \\）时，使用 PKCS 获取证书存在[与 SCEP 相同的](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters)已知问题：
 > - \+
 > - ;
-> - 、
+> - ,
 > - =
 
 - **“用户”证书类型**  
@@ -269,7 +274,7 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
   - **{{WiFiMacAddress}}**
   - **{{IMEI}}**
   - **{{DeviceName}}**
-  - **{{FullyQualifiedDomainName}}** （仅适用于 Windows 和加入域的设备） 
+  - {{FullyQualifiedDomainName}}  （仅适用于 Windows 和加入域的设备） 
   - **{{MEID}}**
 
   可在文本框中指定这些变量，后跟变量的文本。 例如，可以将名为 Device1 的设备的公用名添加为 CN={{DeviceName}}Device1   。
@@ -285,7 +290,7 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
 
 我们将定期发布这两个证书连接器的更新。 更新连接器时，你可以在此处阅读有关更改的信息。
 
-Microsoft Intune 的 PFX 证书连接器[支持自动更新](#requirements)，而 Intune 证书连接器则需要手动更新   。
+Microsoft Intune 的 PFX 证书连接器  [支持自动更新](#requirements)，而 Intune 证书连接器  则需要手动更新。
 
 ### <a name="may-17-2019"></a>2019 年 5 月 17 日
 

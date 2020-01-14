@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a45160fc0e728b4c53590455a2bd0b5d904ddb1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2a300070e06725e165316172bf10ca079861f56f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504899"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547566"
 ---
 # <a name="set-up-intune"></a>设置 Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72504899"
 
 某些步骤（例如设置 Intune 订阅和设置 MDM 机构）是在多数情况下都需要执行的。 其他步骤（例如配置自定义域或添加应用）是可选步骤，具体取决于公司需要。
 
-如果当前正在使用 Microsoft System Center Configuration Manager 管理计算机和服务器，则可以[使用共同管理云连接 Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview)。
+如果当前正在使用 Microsoft Endpoint Configuration Manager 管理计算机和服务器，则可以[使用共同管理云连接 Configuration Manager](https://docs.microsoft.com/configmgr/comanage/overview)。
 
 >[!TIP]
 >在符合条件的计划中，如果购买的 Intune 许可证达到 150 个，就可以使用 *FastTrack 中心权益*。 通过此服务，Microsoft 专家将协助用户针对 Intune 做好环境准备。 请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)。

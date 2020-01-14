@@ -7,14 +7,30 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829079"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323091"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>更新的功能：Intune 即将引来新的 RBAC 角色<!--4253397-->
+在 1 月 Intune 服务更新中，我们计划在 Intune 中发布新的安全角色。 你会看到此角色作为“终结点安全管理器”在 Intune 中列出，此角色是 Azure AD 中“安全管理员”角色的扩展。
+ 
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+目前，Azure AD 中有三个角色可用于安全专业人员：
+- Azure AD 中的安全读取者角色，提供对 Intune 的只读访问权限。
+- Azure AD 中的安全操作员角色，提供对 Intune 的只读访问权限。
+- Azure AD 中的安全管理员。 当 Intune 随附 1 月份更新以及对 Intune 的只读权限时，终结点安全管理器角色提供的新权限如下所示：
+    - 读取、创建、更新、删除和分配设备符合性策略
+    - 读取、删除和更新托管设备
+    - 读取、创建、更新、删除和分配安全基线
+    - 读取和更新安全任务
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
+立即查看 Intune RBAC 角色。 如果目前只有全局管理员角色，则无需进行任何更改。 如果你使用角色，并且想要终结点安全管理器提供的粒度，则在该角色可用时分配该角色。 查看 Intune [新增功能](../fundamentals/whats-new.md)页面，获取最新 Intune 版本信息。 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>针对“Adobe Acrobat Reader for Intune”移动应用的更新支持声明<!--5746776-->
 我们在 8 月底的 MC188653 上得知，Adobe Acrobat Reader for Intune 移动应用将于 2019 年 12 月 1 日到期，且 Adobe 计划在其主要的 Acrobat Reader 应用中支持 Intune 应用保护策略。 自那以后，我们收到客户反馈，我们需要提供更多的时间来继续允许 IT 管理员瞄准目标，并让最终用户开始使用 Adobe Acrobat Reader for Intune。 鉴于 Adobe Acrobat Reader for Intune 在最终用户设备上的高使用率及其在企业场景中的重要性，我们希望确保任何体验都能满足组织的应用保护需求。 
@@ -24,7 +40,7 @@ ms.locfileid: "74829079"
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 你收到此消息是因为我们的报告表明，贵组织中的一个或多个策略针对的是 Adobe Acrobat Reader for Intune 应用程序，并且/或者你可能已经收到了我们以前的 EOL 通信。 
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 让最终用户和技术支持人员得知晓此更改。 可以使用[公司门户的支持信息功能](../apps/company-portal-app.md#support-information)来建立与 Intune 相关的问题通道。
 
 #### <a name="additional-information"></a>其他信息
@@ -37,27 +53,8 @@ Microsoft 对 Windows Phone 8.1 的主流支持于 2017 年 7 月结束，延期
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 2020 年 2 月 20 日之后，这些设备将不再收到任何安全更新，并且你将无法注册任何新设备。 现有的 Windows Phone 8.1 设备将保持注册状态（策略、应用和报告），但请注意，在此日期之后，将不再支持对现有注册设备的任何故障排除，因为许多组件（如第三方证书）已结束对该平台的支持。 Intune 将停止与 Intune 和 Windows Phone 8.1 的兼容性测试。
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 你可以查看 Intune 报告，了解可能受影响的设备或用户。 转到“设备”>“所有设备”并按 OS 进行筛选。 你可以添加附加列，帮助确定你的组织中哪些人员的设备正在运行 Windows Phone 8.1。 要求你的最终用户将设备升级到受支持操作系统版本。
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>更新 Intune Outlook 应用保护策略 (APP)<!--2576686-->
-如果在消息中心收到 MC195618，则可能需要采取措施。 正如 Microsoft 365 路线图功能 ID 56325 和 56326 中所分享的，Intune 和适用于 iOS 和 Android 的 Outlook 正在推出支持在邮件通知和日历提醒中限制敏感数据的功能。 由于这些改进，适用于 iOS 和 Android 的 Outlook 将删除对你当前用于管理通知的多个数据保护应用配置键的支持。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-尽管新功能尚未发布，但在发布时，以下应用配置键在适用于 iOS 和 Android 的 Outlook 中将不再工作：
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
-建议将 Intune 应用保护策略数据保护设置“组织数据通知”设置为“阻止组织数据”，以便为此新功能做好准备。 从 2019 年 12 月 16 日开始，适用于 iOS 和 Android 的 Outlook 将服从“组织数据通知”数据保护设置，不再支持上述键。 配置此新设置将确保在不再支持上述配置键时敏感数据不会泄露。 此外，当数据保护设置“组织数据通知”设置为“阻止组织数据”且具有附加应用配置设置“日历通知”时，则 Outlook 会提供更多的粒度。 应用保护策略设置和此应用配置设置相组合可限制邮件通知中的敏感信息，同时在日历通知中公开敏感信息，使用户可以通过快速扫视通知或通知中心访问其会议。
-
-#### <a name="additional-information"></a>其他信息
-有关应用设置和 Outlook 设置的详细信息，请参阅：
-- [Android 应用保护策略设置](../apps/app-protection-policy-settings-android.md)
-- [iOS 应用保护策略设置](../apps/app-protection-policy-settings-ios.md)
-- [部署 Outlook for iOS 和 Outlook for Android 应用配置设置](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 更改计划：Windows 10 版本 1703 公司门户即将停止支持<!--5026679-->
@@ -66,7 +63,7 @@ Windows 10 版本 1703（也称为 Windows 10 RS2）已于 2019 年 10 月 8 日
 #### <a name="how-does-this-affect-me"></a>这对我有何影响？
 接下来，尽管我们会在 2019 年 12 月 26 日之前继续支持此版本的公司门户应用，但你将不会在特定版本的公司门户应用中看到新功能，包括根据需要向公司门户应用提供任何安全更新。 但是，由于 Windows 10 版本 1703 在停止提供服务后将不会收到任何安全更新，因此，我们强烈建议将 Windows 设备更新为最新的 Windows 版本，并确保使用的是最新的公司门户应用，以便继续获取新功能和其他功能。
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 所要采取的步骤将取决于你配置环境的方式。 但一般情况下，应确定具有较旧操作系统版本的设备和/或设备上的公司门户，然后进行更新。 若要设置 Windows 10 更新通道，请登录到 Intune -> 软件更新 – Windows 10 更新通道。 公司门户的最新版本是版本 10.3.5601.0。 请指导用户从 Microsoft Store 获取该版本，以与最新版本保持同步。 此外，你还可以通过[适用于企业的 Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business) 使用 Intune 在 Windows 设备上安装最新版本。
 
 #### <a name="additional-information"></a>其他信息
@@ -81,7 +78,7 @@ Windows 10 版本 1703（也称为 Windows 10 RS2）已于 2019 年 10 月 8 日
 
 2020 年 3 月 31 日，Intune Managed Browser 将从 Azure 控制台中删除。 这意味着你将无法再为 Intune Managed Browser 创建新策略。 现有的 Intune Managed Browser 策略不会受到影响。 Intune Managed Browser 将在控制台中显示为无图标的 LOB 应用程序，但现有策略将仍显示为应用的定向策略。 届时，我们还会在“应用程序保护策略”的“数据保护”部分中删除将 Web 内容重定向到 Intune Managed Browser 的选项。  
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？ 
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？ 
 若要确保从 Intune Managed Browser 平稳过渡到 Microsoft Edge，我们建议你主动执行以下步骤： 
 
 1. 使用应用保护策略（也称为 MAM）和应用配置设置，将 Microsoft Edge 定向到 iOS 和 Android。 将这些现有策略定向到 Microsoft Edge，即可对 Microsoft Edge 重复使用 Intune Managed Browser 策略。  
@@ -102,7 +99,7 @@ Windows 10 版本 1703（也称为 Windows 10 RS2）已于 2019 年 10 月 8 日
 - 对于新的 Android Enterprise 专用设备注册：最终用户会在注册过程中在设备上看到一组不同的步骤。 注册仍将以当前的方式开始（使用 QR、NFC、零接触或设备标识符），但在 11 月服务发布后，必须执行应用安装步骤。
 - 对于注册为专用设备的现有 Android 设备：Intune 将开始于 11 月初在设备上自动安装 Microsoft Intune 应用。 用户无需采取任何操作。 应用将在设备上自动下载并安装。 
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我能够针对此更改做什么准备？
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>针对此更改，我可以做什么准备？
 你应该计划更新最终用户指南，并使支持人员知道此更改。 单击“其他信息”以了解更多详细信息和屏幕截图。 开始推出此更改时，我们将更新新增功能页面。
 
 #### <a name="additional-information"></a>其他信息
@@ -129,7 +126,7 @@ Android 设备管理员（有时称为“旧版”Android 管理，随 Android 2
         > [!NOTE]
         > 这只会影响 Android 10 及更高版本上设备管理员管理的设备，并且不会影响作为 Android Enterprise 管理的设备。 
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 为避免在即将到来的 2020 年第三季度出现功能降低的情况，建议采取如下操作：
 - 不要将新设备加入设备管理员管理中。
 - 如果希望设备接收到 Android 10 的更新，请将其从设备管理员管理迁移到 Android Enterprise 管理和/或应用保护策略。
@@ -155,7 +152,7 @@ Intune 将在即将发布的版本中支持 Android 5.x (Lollipop) 及更高版�
 - Samsung GT-I9305
 - Samsung SM-T231
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 使用最新的 Intune App SDK 包装应用。 还可以设置“要求最低操作系统版本(仅警告)”条件启动设置来通知个人设备上的最终用户进行升级。
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune 更改计划：即将停止支持 Windows 7<!-- 3042987 -->
@@ -166,7 +163,7 @@ Intune 将在即将发布的版本中支持 Android 5.x (Lollipop) 及更高版�
 
 PC 管理功能直接内置于 Windows 10 操作系统中，你不再需要安装客户端代理，例如适用于 Windows 7 的 Intune 软件客户端。 从 Windows 8.1 开始，Microsoft 使用移动设备管理 (MDM) 体系结构来预配、配置、更新和管理 Windows PC。 设置 Intune 后，可以通过 MDM 通道[将 Windows 10 PC 注册到 Intune](..\windows-enroll.md)，从而简化 Windows 注册。 建议使用此“无代理”MDM 管理解决方案来管理 Windows 10 PC。
 
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要针对此更改做什么准备？
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 我们鼓励你的组织立即考虑此操作计划：
 
 - 在 2020 年 1 月 14 日之前计划并将 Windows 7 队伍升级到 Windows 10。
