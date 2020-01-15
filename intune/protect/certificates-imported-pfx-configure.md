@@ -2,27 +2,27 @@
 title: 在 Microsoft Intune 中使用导入的 PFX 证书 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中使用导入的公钥加密标准 (PKCS) 证书，包括导入证书、配置证书模板、安装 Intune 导入的 PFX 证书连接器，以及创建导入的 PKCS 证书配置文件。
 keywords: ''
-author: ralms
+author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: lacranda
+ms.reviewer: lacranda; rimarram
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801544"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886022"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用导入的 PKCS 证书
 
@@ -46,14 +46,17 @@ S/MIME 加密很有挑战性，因为电子邮件是使用特定证书进行加�
 
   有关连接器访问的所有网络终结点的详细信息，请参阅 [Intune 网络配置要求和带宽](../fundamentals/network-bandwidth-use.md)。
 
-- **Windows Server**：  
+- **Windows Server**：
+
   你可以使用 Windows Server 托管 Microsoft Intune 的 PFX 证书连接器。  该连接器用于处理导入到 Intune 的证书的请求。
 
   Intune 支持在 Microsoft Intune 的 PFX 证书连接器所在的服务器上安装 Microsoft Intune 证书连接器   。
 
   要支持该连接器，服务器必须运行 .NET 4.6 Framework 或更高版本。 如果开始安装连接器时尚未安装 .NET 4.6 Framework，连接器安装过程会自动安装它。
 
-- **Visual Studio 2015 或更高版本**（可选）：可以使用 Visual Studio 生成带有 cmdlet 的帮助程序 PowerShell 模块，以便将 PFX 证书导入 Microsoft Intune。 要获取帮助程序 PowerShell cmdlet，请参阅 [GitHub 中的 PFXImport PowerShell Project](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)。
+- **Visual Studio 2015 或更高版本**（可选）：
+
+  可以使用 Visual Studio 生成带有 cmdlet 的帮助程序 PowerShell 模块，以便将 PFX 证书导入 Microsoft Intune。 要获取帮助程序 PowerShell cmdlet，请参阅 [GitHub 中的 PFXImport PowerShell Project](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)。
 
 ## <a name="how-it-works"></a>工作原理
 
@@ -143,15 +146,14 @@ PowerShell 模块提供了使用 Windows 加密创建密钥的方法。 你也�
 
 以下过程使用 PowerShell cmdlet 作为示例来说明如何导入 PFX 证书。 你可以根据自己的需求选择不同的选项。
 
-选项包括：  
-- 预期目的（根据标记将证书分组在一起）：  
+选项包括：
+
+- 预期目的（根据标记将证书分组在一起）：
   - 未分配
   - smimeEncryption
   - smimeSigning
 
-- 填充方案：  
-  - pkcs1
-  - oaepSha1
+- 填充方案：
   - oaepSha256
   - oaepSha384
   - oaepSha512

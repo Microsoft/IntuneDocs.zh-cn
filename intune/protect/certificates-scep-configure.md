@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801554"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886012"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>配置基础结构以支持在 Intune 中使用 SCEP
 
@@ -373,8 +373,7 @@ Microsoft Intune 证书连接器安装在运行 NDES 服务的服务器上。 �
 
    2. 运行安装程序 (NDESConnectorSetup.exe)  。 安装程序还会安装 NDES 和 IIS 证书注册点 (CRP) Web 服务的策略模块。 CRP Web 服务 CertificateRegistrationSvc 作为 IIS 中的应用程序运行  。
 
-      - 如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。
-      - 如果将 Intune 与 Configuration Manager 配合使用，请以 Configuration Manager 站点系统角色安装证书注册点。
+      如果为独立 Intune 安装 NDES，则 CRP 服务会自动随证书连接器一起安装。
 
 5. 提示输入证书连接器的客户端证书时，选取“选择”  ，然后选择在前文[在托管 NDES 的服务器上安装和绑定证书](#install-and-bind-certificates-on-the-server-that-hosts-ndes)过程的步骤 3 中，在 NDES 服务器上安装的“客户端身份验证”  证书。
 

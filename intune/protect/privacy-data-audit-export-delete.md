@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cfb0f69d74cc6146b2497cd53be3e123f79cc70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdcf88449a4f6ec0b3b352afb87ebcb5bd0b8389
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504356"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885731"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>在 Intune 中审核、导出或删除个人数据
 
@@ -74,16 +74,6 @@ Intune 管理员可使用审核日志跟踪与个人数据有关的活动。 管
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>从 Microsoft Intune 中删除租户
 
 如果 Intune 租户客户取消其 Intune 帐户，所有租户数据都将在客户关闭 Intune 帐户后 180 天内删除。 如果 AAD 租户与其他 Microsoft 企业订阅（Azure、Office 365）关联，则仅删除 Intune 客户数据。 将保留 AAD 租户资源，供其他订阅使用。 如果 Intune 帐户是与 AAD 租户关联的唯一订阅，则将删除该租户及所有资源和客户数据。
-
-### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>删除混合移动设备管理 (MDM) 环境中的用户
-如果具有混合 MDM 环境（与 Configuration Manager 集成的 Intune），则必须完成以下操作才能完全删除用户并将其从本地 Active Directory、Configuration Manager 和 Intune 中完全移除。
-
-1. 从本地 Active Directory (AD) 中删除用户。 这将阻止用户同步到 Azure AD，还可避免用户被 Configuration Manager 发现所发现。 
-2. 从 Configuration Manager 控制台中删除用户，以从 Configuration Manager 中删除用户和关联数据。 在控制台中，转到“资产和符合性” > “用户”，右键单击要删除的用户，然后单击“删除”    。
-3. [从 AAD 中删除用户](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)，这可同时从 Azure Active Directory 和 Intune 中删除用户和关联数据。 从 AAD 中删除（硬删除）用户时，Intune 将收到 AAD 的删除信号，然后自动开始从 Intune 服务中清除该用户的所有个人数据。 Intune 服务中的用户信息将在删除操作后的 30 天内删除。
-
-> [!Important]
->已弃用载入新的混合 MDM 客户这一功能。 有关详细信息，请参阅博客文章[从混合移动设备管理移动到 Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)。
 
 ## <a name="next-steps"></a>后续步骤
 

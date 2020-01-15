@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a23409b03047cac8edb0a50ad5188e006d35049a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 23b7264f2b7c9be0805ae30afca5c8cb15b83482
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505161"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956248"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>规划 Intune 部署的其他资源
 
@@ -46,11 +46,11 @@ ms.locfileid: "72505161"
 | | 合规性策略 | |
 | | 条件访问策略|-|
 
-## <a name="further-reading"></a>深入阅读
+## <a name="further-reading"></a>延伸阅读
 
 查看以下其他信息的资源，这些信息可能在 Intune 部署规划、设计和实现过程中有所帮助。
 
-- [Microsoft Intune 文档](http://docs.microsoft.com/intune/) - 整套 Intune 文档。
+- [Microsoft Intune 文档](https://docs.microsoft.com/intune/) - 整套 Intune 文档。
 
 - [Microsoft 信任中心](https://www.microsoft.com/TrustCenter) - 了解 Microsoft 关于所有 Microsoft 云产品和服务的安全性、隐私、符合性以及透明度方法。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547055"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885985"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>通过 Intune 使用条件访问的常见方式有哪些？
 
@@ -86,14 +86,6 @@ Intune 与移动威胁防护供应商合作提供安全性解决方案，以检�
 - **本地 AD 域加入：** 此选项通常适用于已经非常习惯通过 AD 组策略或 Configuration Manager 管理 PC 的组织。
 
 - **Azure AD 域加入和 Intune 管理：** 此方案适用于希望云优先（即主要使用云服务，以减少使用本地基础结构）或仅使用云（无本地基础结构）的组织。 Azure AD 联接非常适用于混合环境，可以借助它访问云和本地应用及资源。 设备要加入 Azure AD 并在 Intune 中注册，可以将此用作访问公司资源的条件访问条件。
-
-- **AD 域加入和 Configuration Manager：** 自当前分支起，Configuration Manager 还提供可以评估特定符合性标准的条件访问功能（作为加入域的电脑是已有功能）：
-
-  - 电脑是否已加密？
-
-  - 是否安装了反恶意软件？ 是否为最新版本？
-
-  - 设备是否越狱或取得 root 权限？
 
 #### <a name="bring-your-own-device-byod"></a>自带设备办公 (BYOD)
 

@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810221"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956353"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>设置 Lookout 移动终结点安全与 Intune 的集成
 在满足[先决条件](lookout-mobile-threat-defense-connector.md#prerequisites)的环境中，可以将 Lookout 移动终结点安全与 Intune 相集成。 本文中的信息将指导你设置集成，并指导你在 Lookout 中配置关键设置以与 Intune 结合使用。  
 
 > [!IMPORTANT]
-> 未与 Azure AD 租户关联的现有 Lookout Mobile Endpoint Security 租户不能用于 Azure AD 与 Intune 的集成。 请联系 Lookout 支持部门以创建新的 Lookout Mobile Endpoint Security 租户。 请使用新的租户载入 Azure AD 用户。
+> 没有与 Azure AD 租户相关联的现有 Lookout 移动端点安全租户不能用于与 Azure AD 和 Intune 集成。 请联系 Lookout 支持人员以创建新的 Lookout 移动端点安全租户。 请使用新的租户载入 Azure AD 用户。
 
 ## <a name="collect-azure-ad-information"></a>收集 Azure AD 信息  
 将 Lookout 移动终结点安全租户与 Azure Active Directory (AD) 订阅关联，以将 Lookout 和 Intune 集成。
@@ -45,7 +45,7 @@ ms.locfileid: "72810221"
   在 Azure AD 中创建此可选用户组，来包含不应有权访问 Lookout 控制台的多个与配置和注册相关的模块的用户。 相反，这些用户具有对 Lookout 控制台的“安全策略”模块的只读访问权限。  用户必须是此可选组或完全访问权限必选组的成员，才能够登录到 Lookout 控制台。 
 
  > [!TIP] 
- > 有关各种权限的详细信息，请参阅 Lookout 网站上的[这篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
+ > 有关权限的详细信息，请参阅 Lookout 网站上的[此文](https://personal.support.lookout.com/hc/articles/114094105653)。
 
 ### <a name="collect-information-from-azure-ad"></a>从 Azure AD 收集信息 
 
@@ -77,7 +77,7 @@ Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系
 ### <a name="initial-sign-in"></a>首次登录  
 首次登录到 Lookout MES 控制台时，将显示同意页面 (https://aad.lookout.com/les?action=consent) 。 Azure AD 全局管理员只需登录并“接受”。  后续登录不要求用户具有此级别的 Azure AD 权限。 
 
- 此时会显示同意页。 选择“接受”  完成注册。 
+ 此时显示同意页。 选择“接受”  完成注册。 
    ![第一次登录到 Lookout 控制台时的登录页面屏幕截图](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
 接受并同意后，系统将重定向到 Lookout 控制台。
@@ -108,12 +108,12 @@ Lookout 支持人员创建 Lookout 企业帐户后，将向公司的主要联系
 
 5. 选择“错误管理”，指定应收到错误的电子邮件地址，然后选择“保存更改”。  
  
-   ![Intune 连接器错误管理页面屏幕截图](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
+   ![Intune 连接器错误管理页面的屏幕截图](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
 6. 选择“创建连接器”，完成连接器配置。  如果稍后结果合意，可以将注册扩展到其他用户组。
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>将 Intune 配置为使用 Lookout 作为 Mobile Threat Defense 提供程序
-配置 Lookout MES 后，必须[在 Intune 中建立 Lookout 连接](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)。  
+配置 Lookout MES 后，必须[在 Intune 中建立 Lookout 连接](~/protect/mtd-connector-enable.md)。  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Lookout MES 控制台中的其他设置
 下面是可在 Lookout MES 控制台中配置的其他设置。  

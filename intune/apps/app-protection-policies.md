@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563729"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885743"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -49,10 +49,10 @@ ms.locfileid: "74563729"
 3. 选择“创建策略”，然后选择“iOS/iPadOS”或“Android”    。 将显示“创建策略”窗格  。
 4. 在“基本信息”页上，添加以下值  ：
 
-    | 值 | 描述 |
+    | 值 | 说明 |
     |--------------|------------------------------------------------|
     | 名称 | 此应用保护策略的名称。 |
-    | 描述 | [可选]此应用保护策略的说明。 |
+    | 说明 | [可选]此应用保护策略的说明。 |
 
 
     根据前置选择设置“平台”值  。
@@ -62,7 +62,7 @@ ms.locfileid: "74563729"
 5. 单击“下一步”以显示“应用”页面   。<br>
     通过“应用”页面，可以选择如何将此策略应用于不同设备上的应用  。 必须添加至少一个应用。<p>
     
-    | 值/选项 | 描述 |
+    | 值/选项 | 说明 |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | 面向所有类型的设备上的应用 | 使用此选项使策略面向处于任何管理状态的设备上的应用。 选择“否”以面向特定类型的设备上的应用  。 有关信息，请参阅[根据设备管理状态设置应用保护策略的适用对象](#target-app-protection-policies-based-on-device-management-state) |
     |     设备类型 | 使用此选项指定此策略适用于 MDM 受管理设备还是非托管的设备。 对于 iOS 应用策略，请从“非托管”和“受管理”设备中选择   。 对于 Android 应用策略，请从“非托管”、“Android 设备管理员”和“Android Enterprise”中选择    。  |
@@ -93,9 +93,6 @@ ms.locfileid: "74563729"
 
 9. 单击“下一步”以显示“分配”页面   。<br>
    通过“分配”页面，可以将应用保护策略分配到用户组  。
-   
-    >[!IMPORTANT]
-    > 如果配合使用 Intune 和 Configuration Manager 来管理设备，则该策略仅应用于直接位于所选组中的用户。 所选组中嵌套子组的成员不受影响。
 
 10. 单击“**下一步:** 查看 + 创建”，查看为此应用保护策略输入的值和设置。
 
@@ -123,7 +120,7 @@ ms.locfileid: "74563729"
 
 4. 通过“应用”页面，可以选择如何将此策略应用于不同设备上的应用  。 必须添加至少一个应用。<p>
     
-    | 值/选项 | 描述 |
+    | 值/选项 | 说明 |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | 面向所有类型的设备上的应用 | 使用此选项使策略面向处于任何管理状态的设备上的应用。 选择“否”以面向特定类型的设备上的应用  。 有关信息，请参阅[根据设备管理状态设置应用保护策略的适用对象](#target-app-protection-policies-based-on-device-management-state) |
     |     设备类型 | 使用此选项指定此策略适用于 MDM 受管理设备还是非托管的设备。 对于 iOS 应用策略，请从“非托管”和“受管理”设备中选择   。 对于 Android 应用策略，请从“非托管”、“Android 设备管理员”和“Android Enterprise”中选择    。  |
@@ -186,7 +183,7 @@ Intune 应用保护策略是一种针对用户身份的策略，因此用户的�
 对于 iOS，需要额外的应用配置设置才能将应用保护策略 (APP) 设置定位到 Intune 注册设备上的应用：
 
 - 必须为所有 MDM 托管应用程序配置“IntuneMAMUPN”  。 有关详细信息，请参阅[如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
-- 必须为所有第三方和业务线 MDM 托管应用程序配置“IntuneMAMDeviceID”  。 应将“IntuneMAMDeviceID”配置为设备 ID 令牌  。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}` 。 有关详细信息，请参阅[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
+- 必须为所有第三方和业务线 MDM 托管应用程序配置“IntuneMAMDeviceID”  。 应将“IntuneMAMDeviceID”配置为设备 ID 令牌  。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}`。 有关详细信息，请参阅[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
 - 若仅配置了“IntuneMAMDeviceID”，则 Intune 应用会将设备视为非托管设备  。
 
 > [!NOTE]
