@@ -84,7 +84,7 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](../plannin
 
   - 如何管理电脑和服务器环境？
 
-  - 是否正在使用 Microsoft 终结点管理器？ 是否正在使用第三方系统管理平台？
+  - 是否正在使用 Microsoft Endpoint Configuration Manager？ 是否正在使用第三方系统管理平台？
 
 - **VPN 解决方案**
 

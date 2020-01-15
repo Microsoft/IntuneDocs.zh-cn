@@ -24,7 +24,7 @@ ms.lasthandoff: 12/31/2019
 ms.locfileid: "75547479"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 许可
-Microsoft Intune 可满足不同的客户需求，并适用于不同的组织规模，包括为学校和小型企业提供的简单易用管理体验，以及企业客户所需的更高级功能。 只要订阅处于活动状态，包含 Microsoft Intune 的大多数许可证还会授予使用 Microsoft 终结点管理器的权限。 
+Microsoft Intune 可满足不同的客户需求，并适用于不同的组织规模，包括为学校和小型企业提供的简单易用管理体验，以及企业客户所需的更高级功能。 只要订阅处于活动状态，包含 Microsoft Intune 的大多数许可证还会授予使用 Microsoft Endpoint Configuration Manager 的权限。 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 以下许可证包含 Intune：
