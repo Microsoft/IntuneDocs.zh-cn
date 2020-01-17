@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2e4c96cefef9f535d68ed8da20dfcaeb0deffbe1
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503491"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653914"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -40,11 +40,11 @@ Intune App SDK 包括下列文件：
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**：在使用 Android v4 支持库的应用中启用 MAM 所需的类。
 * **Microsoft.Intune.MAM.SDK.Support.v7.jar**：在使用 Android v7 支持库的应用中启用 MAM 所需的类。
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**：在使用 Android v17 支持库的应用中启用 MAM 所需的类。 
-* **Microsoft.Intune.MAM.SDK.Support.Text.jar**：在使用包 `android.support.text` 中 Android 支持库类的应用中启用 MAM 所需的类。
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**：在使用 `android.support.text` 包中 Android 支持库类的应用中启用 MAM 所需的类。
 * **Microsoft.Intune.MAM.SDK.DownlevelStubs.aar**：此 AAR 包含 Android 系统类的存根，它们仅存在于较新的设备上，由 `MAMActivity` 中的方法引用。 较新的设备将忽略这些存根类。 仅当应用对从 `MAMActivity` 派生的类执行反射时，此 AAR 才是必需的，而大多数应用无需包含它。 AAR 包含用于排除其所有类的 ProGuard 规则。
-* **com.microsoft.intune.mam.build.jar**：[帮助集成 SDK](#build-tooling) 的一个 Gradle 插件。
+* **com.microsoft.intune.mam.build.jar**：Gradle 插件，[可帮助集成 SDK](#build-tooling)。
 * **CHANGELOG.txt**：提供每个 SDK 版本中所做的更改记录。
-* **THIRDPARTYNOTICES.TXT**：一个归属声明，用于确认将在应用中编译的第三方和/或 OSS 代码。
+* **THIRDPARTYNOTICES.TXT**：一个归属声明，用于确认将编译到应用中的第三方和/或 OSS 代码。
 
 ## <a name="requirements"></a>要求
 
@@ -180,7 +180,7 @@ intunemam {
 | 包括如 React Native（包含从 `Activity`、`Application` 以及 `Fragment` 派生的类）的一个库，但仅使用静态帮助程序或实用程序类 | 否 |
 | 包括一个库（此库包含从 `TextView` 派生的视图类），并且在应用中使用或进一步派生这些类 | 是 |
 
-#### <a name="reporting"></a>报告
+#### <a name="reporting"></a>报表
 生成插件可生成其所作更改的 HTML 报表。 要请求生成此报表，请在 `intunemam` 配置块中指定 `report = true`。 如果已生成，则报表将写入生成目录中的 `outputs/logs`。
 
 ```groovy
@@ -225,7 +225,7 @@ SDK 放置的 `BuildTool` 文件夹中提供了命令行生成工具。 它执�
 
 此工具需要以下参数。
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 | -- | -- |
 | `--input` | 要修改的一个用分号分隔的 jar 文件列表和类文件目录。 这应包括打算重写的所有 jar/目录。 |
 | `--output` | 用于存储修改后的类的一个用分号分隔的 jar 文件列表和目录。 每个输入条目应有一个输出条目，并且它们应按顺序列出。 |
@@ -539,7 +539,7 @@ String toString();
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` 会始终返回非 null 应用策略（即使设备或应用不在 Intune 管理策略下，也是如此）。
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>示例：确定应用是否需要 PIN
+### <a name="example-determine-if-pin-is-required-for-the-app"></a>例如：确定应用是否需要 PIN
 
 如果应用有其自己的 PIN 用户体验，则当 IT 管理员将 SDK 配置为提示输入应用 PIN 时，你可能要将其禁用。 若要确定 IT 管理员是否已为当前最终用户对此应用部署应用 PIN 策略，请调用以下方法：
 
@@ -548,7 +548,7 @@ String toString();
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-the-primary-intune-user"></a>示例：确定主要 Intune 用户
+### <a name="example-determine-the-primary-intune-user"></a>例如：确定主要 Intune 用户
 
 除了 AppPolicy 中公开的 API，`MAMUserInfo` 接口内定义的 `getPrimaryUser()` API 还公开了用户主体名称 (**UPN**)。 若要获取 UPN，请调用以下项：
 
@@ -573,7 +573,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>示例：确定是否允许保存到设备或云存储
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>例如：确定是否允许保存到设备或云存储
 
 许多应用都可实现允许最终用户在本地保存文件或保存到云存储服务的功能。 使用 Intune App SDK，IT 管理员可通过应用他们认为适合于组织的策略限制来防止数据泄漏。  例如，IT 可以控制最终用户是否可以保存到“个人”非托管数据存储。 这包括保存到本地位置、SD 卡或第三方备份服务。
 
@@ -1146,7 +1146,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
 
 4. 然后， _**必须**_ 将所有置于 `android:fullBackupContent` 的内容复制到清单中名为 `com.microsoft.intune.mam.FullBackupContent` 的元数据标记。
 
-    **示例 1**：如果你希望应用在无需排除的情况下进行完整备份，请同时将 `android:fullBackupContent` 属性和 `com.microsoft.intune.mam.FullBackupContent` 元数据标记设置为 **true**：
+    **示例 1**：如果你希望应用在无需排除的情况下进行完整备份，请同时将 `android:fullBackupContent` 属性和 `com.microsoft.intune.mam.FullBackupContent` 元数据标记设置为 true  ：
 
     ```xml
     android:fullBackupContent="true"
@@ -1154,7 +1154,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **示例 2**：如果你希望应用使用其自定义 BackupAgent 并选择退出符合 Intune 策略的完整自动备份，则必须将属性和元数据标记同时设置为 **false**：
+    **示例 2**：如果希望应用使用其自定义 BackupAgent 并选择退出符合 Intune 策略的完整自动备份，则必须将属性和元数据标记同时设置为 false  ：
 
     ```xml
     android:fullBackupContent="false"
@@ -1162,7 +1162,7 @@ Intune 可让用户使用 Android 中所有可用的[自动备份功能](https:/
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    示例 3  ：如果希望应用根据 XML 文件中定义的自定义规则具有完整备份，将属性和元数据标记设置为相同的 XML 资源：
+    **示例 3**：如果希望应用根据 XML 文件中定义的自定义规则具有完整备份，将属性和元数据标记设置为相同的 XML 资源：
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -1878,7 +1878,7 @@ Intune SDK 会维护 Android API 提供的协定，但可能会由于策略实�
 
 * 避免以不明确的方式使用任何 API。 例如，使用 `Activity.startActivityForResult` 而不检查 requestCode 会导致奇怪的行为。
 
-## <a name="telemetry"></a>遥测
+## <a name="telemetry"></a>遥测技术
 
 Intune App SDK for Android 不会控制应用中的数据集合。 公司门户应用程序会默认记录系统生成的数据。 会将此数据发送到 Microsoft Intune。 根据 Microsoft 策略，我们不会收集任何个人数据。
 

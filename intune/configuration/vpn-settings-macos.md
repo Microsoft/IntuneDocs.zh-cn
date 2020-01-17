@@ -15,22 +15,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 044b35b34a9a5b01537e82dcfddca74a284ebdcc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e0bb2cb757e944369642807f117683dad3a9805a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72491014"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206255"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 macOS 设备添加 VPN 设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 本文介绍可用于在运行 macOS 的设备上配置 VPN 连接的 Intune 设置。
 
 下表中并非所有值都可配置，具体取决于所选择的设置。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建设备配置文件](vpn-settings-configure.md)。
 
@@ -39,10 +39,10 @@ ms.locfileid: "72491014"
 
 ## <a name="base-vpn-settings"></a>基础 VPN 设置
 
-**连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接列表时将看到此名称。
-- **IP 地址或 FQDN**：提供设备连接到的 VPN 服务器的 IP 地址或完全限定的域名。 示例：**192.168.1.1**、**vpn.contoso.com**。
+**连接名称**：为此连接输入名称。 最终用户在浏览其设备的可用 VPN 连接列表时将看到此名称。
+- **IP 地址或 FQDN**：提供设备连接到的 VPN 服务器的 IP 地址或完全限定的域名。 例如：“192.168.1.1”、“vpn.contoso.com”   。
 - **身份验证方法**：从以下选项中选择设备向 VPN 服务器进行身份验证的方法：
-  - **证书**在“身份验证证书”  下，选择之前创建的 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 有关证书配置文件的详细信息，请参阅[如何配置证书](../protect/certificates-configure.md)。
+  - **证书**：在“身份验证证书”下，选择之前创建的 SCEP 或 PKCS 证书配置文件以对连接进行身份验证  。 有关证书配置文件的详细信息，请参阅[如何配置证书](../protect/certificates-configure.md)。
   - **用户名和密码**：最终用户必须提供用户名和密码才能登录 VPN 服务器。
 - **连接类型**：从以下供应商列表中选择 VPN 连接类型：
   - **Check Point Capsule VPN**

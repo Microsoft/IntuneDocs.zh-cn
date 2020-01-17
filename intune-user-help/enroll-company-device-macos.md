@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961c081b17d380bd00965708b6acd57b8059b2e0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fbe2c7933d0d012a7c85df4e9c5b6e8e94fc9805
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506303"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856796"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>在管理中注册组织提供的 macOS 设备
 
@@ -52,11 +52,11 @@ ms.locfileid: "72506303"
 4. 选择 Wi-Fi 网络。 必须具有 Internet 连接才能继续设置。 如果未看到网络或需要通过有线网络进行连接，请单击“其他网络选项”  。 完成后，单击“继续”  。  
 
    ![macOS 设备设置助理“选择 Wi-Fi 网络”屏幕的屏幕截图，显示可供选择的可用网络列表。 还显示有“其他网络选项”按钮、“后退”按钮和“继续”按钮。](./media/macos-dep-wifi-1808.png)  
-5. 连接 Wi-Fi 后，将显示“远程管理”屏幕  。 使用远程管理，组织的管理员可以使用公司所需的帐户、设置、应用和网络对设备进行配置。 阅读远程管理说明，以帮助了解设备的管理方式。 然后单击 **“继续”** 。  
+5. 连接 Wi-Fi 后，将显示“远程管理”屏幕  。 使用远程管理，组织的管理员可以使用公司所需的帐户、设置、应用和网络对设备进行配置。 阅读远程管理说明，以帮助了解设备的管理方式。 然后单击“继续”  。  
 
    ![macOS 设备设置助理“远程管理”屏幕的屏幕截图，其中包含说明远程管理的文本以及指向文档的链接，可供了解详细信息。 还显示有“后退”按钮和“继续”按钮。](./media/macos-dep-remote-management-1-1808.png)  
 6. 出现提示时，请使用工作或学校帐户登录。 进行身份验证后，设备将安装管理配置文件。 该配置文件配置并启用对组织资源的访问权限。  
-7. 阅读有关 Apple 数据和隐私图标的信息，以便之后可以明确收集个人信息的情况。 然后单击 **“继续”** 。  
+7. 阅读有关 Apple 数据和隐私图标的信息，以便之后可以明确收集个人信息的情况。 然后单击“继续”  。  
 
    ![macOS 设备设置助理“数据和隐私”屏幕的屏幕截图，显示了两个人握手的图示，并介绍了 Apple 对个人信息的使用情况。 还显示有“后退”和“继续”按钮。](./media/macos-dep-apple-data-privacy-1808.png)  
 8. 注册设备后，可能还需要完成其他步骤。 所见步骤取决于组织如何自定义设置体验。 它可能要求完成以下操作：

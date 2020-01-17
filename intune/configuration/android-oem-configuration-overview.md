@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e514c10ea61bb12ef3c4626b077aa105b66866f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390835"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206867"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企业设备 OEMConfig
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 在 Microsoft Intune 中，可以使用 OEMConfig 添加、创建和自定义适用于 Android 企业设备的 OEM 特定设置。 OEMConfig 通常用于配置未内置到 Intune 的设置。 不同的原始设备制造商（OEM）包含不同的设置。 可用的设置取决于 OEM 在其 OEMConfig 应用中包含的内容。
 
@@ -51,7 +51,7 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 > [!TIP]
 > 只能将 OEMConfig 用于支持此功能的设备，并且必须具有相应的 OEMConfig 应用。 请咨询 OEM 了解具体的详细信息。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 使用 OEMConfig 时，请注意以下信息：
 
@@ -85,7 +85,7 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择“Android Enterprise”  。
     - **配置文件类型**：选择**OEMConfig**。
 

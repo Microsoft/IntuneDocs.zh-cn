@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f056b44301c1d0f94dde2dbb6202ed7c78e90fbf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507826"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857353"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解决 Lookout for Work 发现的威胁  
 
@@ -52,7 +52,7 @@ Lookout for Work 应用是一项移动威胁防御服务，可识别 Android 设
 
 如果安装 Lookout for Work 识别为威胁的应用，将收到一条消息，如以下屏幕截图所示。  
 
-![通过 Lookout for Work 应用界面显示 Lookout Virus Alert 消息的示例屏幕截图。 显示三个按钮：“关闭”、“更多信息”和“卸载”。](./media/lookout-virus-alert-android.png)  
+![通过 Lookout for Work 应用界面显示 Lookout Virus Alert 消息的示例屏幕截图。 显示了三个按钮：“关闭”、“详细信息”和“卸载”。](./media/lookout-virus-alert-android.png)  
 
 若要重新获取失去的针对公司电子邮件和数据的访问权限，请卸载存在问题的应用。 只要设备上存在该应用，就无法访问公司资源。    
 

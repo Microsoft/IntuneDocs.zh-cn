@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8aa54c5ed2a5121246f917a5b5306fab5d89edc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: eeb47c072a4f34098bdebfd8766ab51b941d0bd3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508417"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858092"
 ---
 # <a name="resolve-access-point-restrictions"></a>解决访问点限制
 
@@ -38,19 +38,19 @@ ms.locfileid: "72508417"
  下表列出了每条消息及其含义，以及如何再次访问工作资源。
 
 ## <a name="access-point-restrictions-not-set-up"></a>未设置访问点限制  
-| 公司门户消息 | 此消息的含义 | 需要执行的操作                                                               
+| 公司门户消息 | 此消息的含义 | 应尝试执行的操作                                                               
 |------------------------|--------------------------|--------------------------|
 | **未设置访问点限制 - 访问点限制处于活动状态，必须进行设置。** | 公司在你的设备上应用了访问点限制。 此设置要求通过公司门户应用验证你的设备上的一些网络设置。 | 点击“解析”  。 公司门户应用将检查以确保你已连接到公司已批准的网络。 |
 
 ## <a name="not-connected-to-an-approved-network"></a>未连接到已批准的网络  
 
-| 公司门户消息 | 此消息的含义 | 需要执行的操作                                                                   
+| 公司门户消息 | 此消息的含义 | 应尝试执行的操作                                                                   
 |------------------------|-----------------------------------|--------------------------|
 | **设备未连接到已批准的网络 - 连接到已批准的无线网络。** | 已连接到未获批准进行工作访问的网络。 只要连接到此网络，就无法访问工作电子邮件、应用和其他受保护的公司资源。 | 连接到公司已批准的网络。  然后，点击“解析”以重试。 |
 
 ## <a name="restrictions-couldnt-be-enforced"></a>无法强制执行限制  
 
-| 公司门户消息 | 此消息的含义 | 需要执行的操作                                                                      
+| 公司门户消息 | 此消息的含义 | 应尝试执行的操作                                                                      
 |------------------------|-----------------------------------|--------------------------|
 | **无法强制执行访问点限制 - 公司门户网站遇到一个错误。** | Intune 无法确定是否连接到已批准的网络。 此错误可能是由于网络连接不良、电池电量不足、节电模式或公司门户错误造成的。 | 请确保有强大的网络信号。 关闭节电模式并确保电池续航时间至少剩余 30%。  然后，点击“解析”以重试。 
 

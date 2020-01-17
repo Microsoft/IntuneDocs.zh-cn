@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 20228277e496ca6f594859d40836e50609d05a8a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506162"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855435"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>在 Intune 中注册 Windows Phone 8.1 设备  
 
@@ -44,7 +44,7 @@ ms.locfileid: "72506162"
 
     ![公司门户搜索结果](./media/WP81-1-CP-search-store-v2.png)  
 
-4. 点击**公司门户** &gt; **安装**。  
+4. 点击“公司门户”&gt;“安装”   。  
 
 
     ![安装公司门户](./media/WP81-2-CP-install-v2.png)  
@@ -73,7 +73,7 @@ ms.locfileid: "72506162"
 
     ![工作区设置屏幕](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7. 按照请求输入更多信息，然后点击“登录”  完成注册。 现在你应该可以在**设置** &gt; **工作区**页面上看到你的工作区帐户。  
+7. 按照请求输入更多信息，然后点击“登录”  完成注册。 现在你应该可在“设置”&gt;“工作区”页上看到你的工作区帐户   。  
 
 
     ![“已添加帐户”屏幕](./media/WP81-enroll-4-account-added.png)  
@@ -81,7 +81,7 @@ ms.locfileid: "72506162"
 ## <a name="enroll-through-settings-app"></a>通过设置应用注册  
 如果无法从 Windows Phone 设备访问 Microsoft Store 或者没有 Microsoft 帐户，请执行以下步骤。
 
-1. 点击**设置** &gt; **工作区**。  
+1. 点击“设置”&gt;“工作区”   。  
 
 2. 点击“添加帐户”  ，然后使用工作单位帐户登录。  
 

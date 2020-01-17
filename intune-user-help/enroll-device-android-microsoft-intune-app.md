@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 02aab98bf74664cbdb8c7d7dccbfadba701b59f6
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506295"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856779"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>使用 Microsoft Intune 应用注册公司设备
 
@@ -119,7 +119,7 @@ ms.locfileid: "72506295"
 
 4. 选择“输入条形码”  。  
 
-5. 在“扫描或输入条形码”屏幕上，键入组织提供的条形码  。  然后单击“下一步”  。  
+5. 在“扫描或输入条形码”屏幕上，键入组织提供的条形码  。  然后单击 **“下一步”** 。  
 
    ![“扫描或输入条形码”屏幕的示例图像，其中突出显示“下一步”按钮。](./media/token-intune-app-04.png)  
 

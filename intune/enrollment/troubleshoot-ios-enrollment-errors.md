@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832572"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885920"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 iOS 设备注册问题疑难解答
 
@@ -40,7 +40,7 @@ ms.locfileid: "74832572"
 - 什么平台（Android、iOS、Windows）存在问题？
 - 有多少用户受到影响？ 所有用户是否受影响或只影响一些？
 - 受影响的设备有多少？ 所有设备是否受影响或只影响一些？
-- 什么是 MDM 机构？ 如果 System Center Configuration Manager，您正在使用 Configuration Manager 的哪个版本？
+- 什么是 MDM 机构？
 - 如何执行注册？ 它是 "携带你自己的设备" （BYOD）还是 Apple 设备注册计划（DEP）和注册配置文件？
 
 ## <a name="error-messages"></a>错误消息
@@ -72,16 +72,16 @@ ms.locfileid: "74832572"
 #### <a name="resolution"></a>解决方法
 为公司的域创建 CNAME DNS 资源记录。 例如，贵公司的域为 contoso.com，则在 DNS 中创建将 EnterpriseEnrollment.contoso.com 重定向到 EnterpriseEnrollment-s.manage.microsoft.com 的 CNAME。
 
-尽管创建 CNAME DNS 条目是可选的，但 CNAME 记录能够使用户注册更加简便。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
+虽然可选择性创建 CNAME DNS 条目，但 CNAME 记录可简化用户的注册。 如果找不到注册 CNAME 记录，系统会提示用户手动输入 MDM 服务器名称 enrollment.manage.microsoft.com。
 
 如果存在多个经过验证的域，则为每个域创建一个 CNAME 记录。 CNAME 资源记录必须包含以下信息：
 
-|TYPE|主机名|指向|TTL|
+|类型：|主机名|指向|TTL|
 |------|------|------|------|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com|1 小时|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 小时|
 
-如果你的公司对用户凭据使用多个域，则为每个域创建 CNAME 记录。
+如果公司对用户凭据使用多个域，请为每个域创建 CNAME 记录。
 
 > [!NOTE]
 > 对 DNS 记录所做的更改可能最多需要 72 小时才能进行传播。 无法在 Intune 中验证 DNS 更改，直到 DNS 记录开始进行传播。
@@ -186,7 +186,7 @@ ms.locfileid: "74832572"
 **原因：** Apple Push Notification 服务（APNs）证书丢失、无效或过期。
 
 #### <a name="resolution"></a>解决方法
-验证是否已将有效 APNs 证书添加到 Intune。 有关详细信息，请参阅[设置 iOS 和 Mac 设备管理](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)。 
+验证是否已将有效 APNs 证书添加到 Intune。 有关详细信息，请参阅[设置 iOS 注册](ios-enroll.md)。
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ ms.locfileid: "74832572"
 > 请确保续订 APNs 证书。 请勿替换 APNs 证书。 如果替换证书，则必须在 Intune 中重新注册所有 iOS 设备。 
 
 - 若要在 Intune 独立版中续订 APNs 证书，请参阅[续订 APPLE MDM push certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate)。
-- 若要用 Configuration Manager 续订 Intune 中的 APNs 证书，请参阅[设置 iOS 混合设备管理与 System Center Configuration Manager 和 Microsoft Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)。
 - 若要在 Office 365 中续订 APNs 证书，请参阅为[iOS 设备创建 Apns 证书](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7)。
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR 连接无效
@@ -230,7 +229,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解决方法
 
 1. 编辑注册配置文件。 您可以对配置文件进行任何更改。 目的是更新配置文件的修改时间。
-2. 同步 DEP 托管设备：在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “iOS” > “iOS 注册” > “注册计划令牌”> 选择令牌 >“立即同步”。      会向 Apple 发送同步请求。
+2. 同步 DEP 管理的设备：在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “iOS” > “iOS 注册” > “注册计划令牌”>“选择令牌”>“立即同步”      。 会向 Apple 发送同步请求。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>在用户登录时，DEP 注册停滞
 当你打开分配了注册配置文件的 DEP 管理的设备时，在输入凭据后，初始设置将会关闭。

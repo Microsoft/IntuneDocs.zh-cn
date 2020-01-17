@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899338"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547902"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>使用 Microsoft Intune 数据仓库
 
@@ -43,7 +43,7 @@ ms.locfileid: "74899338"
 - 一个使用 OData 标准的数据模型
 
 > [!Note]
-> 如果将共同管理的移动设备管理 (MDM) 与 System Center Configuration Manager 和 Microsoft Intune 配合使用，则需要从 Configuration Manager 检索数据。 Intune 数据仓库仅包含 Intune 数据。 可将 Configuration Manager Power BI 仪表板用于自定义报表。 有关详细信息，请参阅 [Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)（宣布推出适用于 System Center Configuration Manager 的 Power BI 解决方案模板）和[适用于 Dynamics 365 的 Power BI 内容](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)。
+> 如果将共同管理的移动设备管理 (MDM) 与 Microsoft Endpoint Configuration Manager 和 Microsoft Intune 配合使用，则需要从 Configuration Manager 检索数据。 Intune 数据仓库仅包含 Intune 数据。 可将 Configuration Manager Power BI 仪表板用于自定义报表。 有关详细信息，请参阅“[Announcing the Power BI solution template for Configuration Manager](https://powerbi.microsoft.com/blog/sccm-solution-template)”（宣布推出适用于 Configuration Manager 的 Power BI 解决方案模板）和“[适用于 Dynamics 365 的 Power BI 内容](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)”。
 
 > [!Important]  
 > 现在可以通过设置查询参数  `api-version=v1.0` 来使用 v1.0 版的 Intune 数据仓库。 数据仓库中集合的更新本质上是附加更新，不会破坏现有方案。<br><br>

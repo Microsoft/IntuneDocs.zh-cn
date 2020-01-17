@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86aeb2b54d45f111864d71e65b8c90fce7205868
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 86c158f73d820fa2e719fe92b884c77f315fcb94
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508020"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858805"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Intune 公司门户中的 Windows 设备注册  
 

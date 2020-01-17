@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d3d9473b68f0420670130203409abf477355d93f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508840"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885533"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector 疑难解答
 
@@ -40,7 +40,7 @@ ms.locfileid: "72508840"
   - 首次设置连接器？ 
   - 连接器是否正常工作，并失败？
   - 如果正在运行，Intune 环境、Exchange 环境或运行连接器软件的计算机上发生了哪些更改？
-- 什么是 MDM 机构？ 如果 System Center Configuration Manager，你将使用 Configuration Manager 的哪个版本？
+- 什么是 MDM 机构？
 - 使用哪种版本的 Exchange？
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>使用 PowerShell 获取有关 Exchange Connector 问题的更多数据

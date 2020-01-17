@@ -1,12 +1,12 @@
 ---
-title: 运行 Windows 8.1 的设备的 Microsoft Intune 设备限制设置
+title: Microsoft Intune 中的 Windows 8.1 设备限制设置 - Azure | Microsoft Docs
 titleSuffix: ''
 description: 了解可用于控制运行 Windows 8.1 的设备中设备设置和功能的 Intune 设置。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489830"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302963"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 及更高版本设备限制设置
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Microsoft Intune Windows 8.1 设备限制设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-本文介绍可为运行 Windows 8.1 及更高版本的设备配置的 Microsoft Intune 设备限制设置。
-
+本文介绍可为运行 Windows 8.1 的设备配置的 Microsoft Intune 设备限制设置。
 
 ## <a name="general"></a>常规
 
@@ -36,7 +33,7 @@ ms.locfileid: "72489830"
 - **防火墙** - 需要 Windows 防火墙处于打开状态。
 - **用户帐户控制** - 需要在设备上使用用户帐户控制 (UAC)。
 
-## <a name="password"></a>密码
+## <a name="password"></a>Password
 - **所需密码类型** - 需要最终用户输入密码才能访问设备。
 - **最短密码长度** - 配置密码所需的最小长度（以字符计算）。
 - **擦除设备前的登录失败次数** - 如果登录尝试失败达到此次数，则擦除设备。
@@ -48,8 +45,6 @@ ms.locfileid: "72489830"
 如果对 Windows 8.1 设备启用此设置，则该设备的所有用户必须都具有 Microsoft 帐户。
 为了使加密有效，该设备必须满足 Microsoft [InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) 硬件认证要求。
 在设备上强制加密时，恢复密钥仅可从用户的 Microsoft 帐户（从用户的 OneDrive 帐户访问）进行访问。 无法代表用户恢复此密钥。 
-
-
 
 ## <a name="browser"></a>浏览器
 - **自动填充** - 允许用户更改浏览器中的自动完成设置。
@@ -75,3 +70,7 @@ ms.locfileid: "72489830"
 ## <a name="cloud-and-storage"></a>云和存储
 - **工作文件夹 URL** - 设置工作文件夹的 URL，以允许跨设备同步文档。
 - **不使用 Microsoft 帐户而访问 Windows Mail 应用** 允许在没有 Microsoft 帐户的情况下访问 Windows Mail 应用程序。
+
+## <a name="next-steps"></a>后续步骤
+
+在[Windows 10 和更高版本](device-restrictions-windows-10.md)上创建设备限制配置文件。

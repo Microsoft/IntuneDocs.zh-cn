@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504955"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548120"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>对分布式 IT 使用基于角色的访问控制 (RBAC) 和范围标记
 
@@ -39,25 +39,23 @@ ms.locfileid: "72504955"
 ## <a name="default-scope-tag"></a>默认作用域标记
 默认范围标记会自动添加到支持作用域标记的所有未标记的对象。
 
-默认作用域标记功能类似于 System Center Configuration Manager 中的安全作用域功能。 
+默认作用域标记功能类似于 Microsoft Endpoint Configuration Manager 中的安全作用域功能。 
 
 ## <a name="to-create-a-scope-tag"></a>创建作用域标记
 
-1. 在 Intune 中，选择“角色” > “范围(标记)” > “创建”    。
+1. 在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择 **"租户管理**" > **角色** > **范围（标记）** " > "**创建**"。
 
     ![显示创建范围标记的屏幕截图。](./media/scope-tags/create-scope-tag.png)
 
+2. 提供名称和可选描述   。
 3. 如果要将所有设备置于特定组中，请选择 "**向所选组中的所有设备分配作用域标记**"。
     1. 在 "**选择要包括的组**" 页中，选择包含要将此作用域标记分配到的设备的组。
     2. 选择“选择”  。
-4. 选择 **“创建”** 。
+4. 选择“创建”  。
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>向角色分配作用域标记
 
-1. 在 Intune 中，选择“角色” > “所有角色”，选择一个角色，然后选择“分配” > “分配”     。
-
-    ![显示向角色分配范围的屏幕截图。](./media/scope-tags/assign-scope-to-role.png)
-
+1. 在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择 "**租户管理**" > **角色** > **所有角色**> 选择 >**分配**的角色 > **分配**"。
 2. 提供分配名称和说明   。
 3. 选择“成员(组)” > “添加”，再选择要纳入此分配的组，然后选中“选择” > 确定”     。 此组中的用户将有权管理作用域（组）中的用户/设备。
 
@@ -81,9 +79,7 @@ ms.locfileid: "72504955"
 
 对于支持作用域标记的对象，范围标记通常出现在 "**属性**" 下。 例如，若要将作用域标记分配到配置文件，请执行以下步骤：
 
-1. 在 Intune 中，选择“设备配置” > “配置文件”，再选择一个配置文件   。
-
-    ![显示选择配置文件的屏幕截图。](./media/scope-tags/choose-profile.png)
+1. 在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择 "**设备**" > **配置文件**"> 选择配置文件。
 
 2. 选择“属性” > “范围(标记)” > “添加”    。
 

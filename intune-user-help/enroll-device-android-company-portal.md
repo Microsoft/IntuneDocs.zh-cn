@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e0a2297509d6077d6508adaab96ae6eb3cf9b28f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414883"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856728"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>通过公司门户注册设备  
 注册个人或公司拥有的 Android 设备，以安全访问公司电子邮件、应用和数据。 公司门户支持 Android 设备，包括运行 Android 4.4 及更高版本的 Samsung Knox。  
@@ -91,7 +91,7 @@ ms.locfileid: "73414883"
 
 ## <a name="next-steps"></a>后续步骤  
 
-尝试安装学校或工作应用之前，请转到 "**设置**" > **安全**"，然后打开"**未知源**"。 如果在尝试安装应用时未打开此选项，则会看到以下消息：“安装已阻止”。 出于安全性考虑，你的设置已被设置为阻止安装未知来源的应用。” 你可以点击消息上的 "**设置**" 以直接进入**未知源**。  
+尝试安装学校或工作应用之前，请转到 "**设置**" > **安全**"，然后打开"**未知源**"。 如果在尝试安装应用时未打开此选项，则会看到以下消息：“安装已阻止。 出于安全性考虑，你的设置已被设置为阻止安装未知来源的应用。” 你可以点击消息上的 "**设置**" 以直接进入**未知源**。  
 
 > [!Note]
 > 如果组织使用的是电信费用管理软件，则还需要完成其他几个步骤才能完全注册设备。 请单击[此处](enroll-your-device-with-telecom-expense-management-android.md)，查看详细信息。

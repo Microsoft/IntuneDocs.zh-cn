@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991802"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885895"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune 中的 Windows 设备注册问题疑难解答
 
@@ -40,7 +40,7 @@ ms.locfileid: "74991802"
 - 什么平台（Android、iOS、Windows）存在问题？
 - 有多少用户受到影响？ 所有用户是否受影响或只影响一些？
 - 受影响的设备有多少？ 所有设备是否受影响或只影响一些？
-- 什么是 MDM 机构？ 如果 System Center Configuration Manager，您正在使用 Configuration Manager 的哪个版本？
+- 什么是 MDM 机构？
 - 如何执行注册？ 它是 "携带你自己的设备" （BYOD）还是 Apple 设备注册计划（DEP）和注册配置文件？
 
 ## <a name="error-messages"></a>错误消息
@@ -48,9 +48,9 @@ ms.locfileid: "74991802"
 ### <a name="this-user-is-not-authorized-to-enroll"></a>此用户未经授权，无法注册。
 
 错误0x801c003： "此用户未经授权，无法注册。 可以再次尝试此操作，或与系统管理员联系并提供错误代码（0x801c0003）。
-错误 80180003：“出现问题。 此用户未经授权，无法注册。 可以再次尝试此操作，或与系统管理员联系并提供错误代码80180003。 "
+错误 80180003：“出现错误。 此用户未经授权，无法注册。 可以再次尝试此操作，或与系统管理员联系并提供错误代码80180003。 "
 
-**原因：** 以下任何条件： 
+ 原因：以下任何条件： 
 
 - 用户已注册 Intune 中允许的最大设备数。    
 - 设备被设备类型限制阻止。    
@@ -105,9 +105,8 @@ ms.locfileid: "74991802"
 
 错误8018000a： "出现错误。 设备已注册。  你可以与你的系统管理员联系并提供错误代码8018000a。 "
 
-**原因：** 符合下列条件之一：
+ 原因：符合下列条件之一：
 - 其他用户已在 Intune 中注册了设备，或已将设备加入 Azure AD。 若要确定是否是这种情况，请参阅 "**设置**" > **帐户** > **工作访问**"。 查找类似于以下内容的消息： "系统上的另一个用户已连接到工作或学校。 请删除此工作或学校连接，然后重试。 "    
-- 计算机上安装了 Configuration Manager 客户端。    
 
 #### <a name="resolution"></a>解决方法
 
@@ -118,9 +117,6 @@ ms.locfileid: "74991802"
 2. 请访问 "**设置**" > **帐户**" > **工作**"，然后删除工作或学校帐户。
 3. 注销 Windows，并使用你的帐户登录。    
 4. 在 Intune 中注册设备，或将设备加入到 Azure AD。 
-
-##### <a name="remove-the-configuration-manager-client"></a>删除 Configuration Manager 客户端
-删除 Configuration Manager 的客户端，然后再次注册设备。
 
 
 
@@ -136,13 +132,13 @@ ms.locfileid: "74991802"
 
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>似乎未正确配置 MDM 使用条款终结点。
 
-**原因：** 符合下列条件之一： 
+ 原因：符合下列条件之一： 
  - 在租户上使用 Office 365 和 Intune 的移动设备管理（MDM），尝试注册该设备的用户没有有效的 Intune 许可证或 Office 365 许可证。     
 - Azure AD 中的 MDM 条款和条件为空或不包含正确的 URL。    
 
 #### <a name="resolution"></a>解决方法
 
-若要解决此问题，请使用以下方法之一： 
+若要解决此问题，请使用下列方法之一： 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>向用户分配有效的许可证
 中转到[Microsoft 365 管理中心](https://portal.office.com/adminportal/home)，然后将 Intune 或 Office 365 许可证分配给用户。
@@ -156,11 +152,11 @@ ms.locfileid: "74991802"
 
 ### <a name="something-went-wrong"></a>出现错误。
 
-错误 80180026：“出现问题。 确认你使用的是正确的登录信息，并且你的组织使用此功能。 可以再次尝试此操作，或与系统管理员联系并提供错误代码80180026。 "
+错误 80180026：“出现错误。 确认你使用的是正确的登录信息，并且你的组织使用此功能。 可以再次尝试此操作，或与系统管理员联系并提供错误代码80180026。 "
 
 **原因：** 当你尝试将 Windows 10 计算机加入到 Azure AD 并且满足以下两个条件时，会发生此错误： 
 - MDM 自动注册已在 Azure 中启用。    
-- 在 Windows 10 计算机上安装 Intune PC 客户端（Intune PC 代理）或 Configuration Manager 客户端代理。
+- Intune PC 客户端（Intune PC 代理）安装在 Windows 10 计算机上。
 
 #### <a name="resolution"></a>解决方法
 使用以下某种方法解决该问题：
@@ -170,8 +166,8 @@ ms.locfileid: "74991802"
 2. 请参阅**Azure Active Directory** > **移动性（MDM 和 MAM）**  > **Microsoft Intune**。    
 3. 将 " **MDM 用户范围**" 设置为 "**无**"，然后单击 "**保存**"。    
      
-##### <a name="uninstall"></a>卸载
-从计算机上卸载 Intune PC 客户端或 Configuration Manager 客户端代理。    
+##### <a name="uninstall"></a>“卸载”
+从计算机上卸载 Intune PC 客户端代理。    
 
 ### <a name="the-software-cannot-be-installed"></a>无法安装该软件。
 
@@ -208,13 +204,6 @@ ms.locfileid: "74991802"
 1. 在[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择 "**设备**" > **注册限制**> 选择设备类型限制。    
 2. 选择 "**属性**" > **编辑**（在**平台设置**旁） >**允许** **Windows （MDM）** "。    
 3. 单击 "查看" "**保存**"。    
- 
-若要在具有 Intune 和 Configuration Manager 的混合 MDM 中解决此问题，请执行以下步骤： 
-1. 打开 Configuration Manager 控制台。    
-2. 选择 "**管理**"，然后选择 "**云服务**"。    
-3. 右键单击**Microsoft Intune 订阅**"，然后选择"**配置平台 "> Windows**。    
-4. 选中 "**启用 Windows 注册** > **应用** >  **" 确定 "** 。  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>大容量注册期间发生了设置失败。
 
@@ -244,7 +233,7 @@ ms.locfileid: "74991802"
     Level: Error
     Description: Auto MDM Enroll: Failed (Unknown Win32 Error code: 0x80180002b)
     ```
-**原因：** 符合下列条件之一： 
+ 原因：符合下列条件之一： 
 - UPN 包含未经验证或不可路由的域，如 local （如 joe@contoso.local）。    
 - **MDM 用户作用域**设置为 "**无**"。 
 
@@ -389,4 +378,4 @@ Description:
 - [查看 Microsoft Intune 支持团队博客](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [查看 Microsoft 企业移动性和安全性博客](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [获取对 Microsoft Intune 的支持](../fundamentals/get-support.md)
-- [查找共同管理注册错误](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [查找共同管理注册错误](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)

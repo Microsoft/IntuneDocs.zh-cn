@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059620"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206816"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>通过 Microsoft Intune 中的 Zebra Mobility Extensions 来使用和管理 Zebra 设备
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 提供丰富的功能，包括管理应用和配置设备设置。 这些内置功能和设置管理 Zebra Technologies 公司制造的 Android 设备，这些设备也称为“Zebra 设备”。
 
@@ -47,7 +47,7 @@ Intune 提供丰富的功能，包括管理应用和配置设备设置。 这些
 >
 > 有关详细信息，请参阅在斑马的网站上[锁定设备](https://developer.zebra.com/community/home/blog/2017/04/11/locking-down-your-device)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 - 请确保拥有 Zebra Technologies 公司最新版的 StageNow 桌面应用。
 - 请务必检查 [Zebra 的完整 MX 功能矩阵](http://techdocs.zebra.com/mx/compatibility)（打开 Zebra 网站），确认创建的配置文件与设备的 MX 版本、OS 版本和型号兼容。
@@ -79,7 +79,7 @@ Intune 提供丰富的功能，包括管理应用和配置设备设置。 这些
 > [!TIP]
 > 有关 StageNow 及其功能的更多信息，请参阅 [StageNow Android 设备暂存](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html)（打开 Zebra 的网站）。
 
-## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>步骤 2：确认公司门户应用具有设备管理员角色
+## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>步骤 2:确认公司门户应用具有设备管理员角色
 
 公司门户应用需要使用设备管理员来管理 Android 设备。 为激活设备管理员角色，一些 Zebra 设备上会包含用户界面 (UI)。 如果设备包含 UI，则公司门户应用会在[注册](#step-3-enroll-the-device-in-to-intune)期间提示最终用户授予设备管理员权限（本文有介绍）。
 
@@ -138,8 +138,8 @@ Intune 提供丰富的功能，包括管理应用和配置设备设置。 这些
 3. 输入以下属性：
 
     - **名称**：输入新配置文件的描述性名称。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
-    - **平台**：选择 Android  。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **平台**：选择“Android”  。
     - **配置文件类型**：选择“MX 配置文件”（仅限 Zebra）  。
 
 4. 在“格式为 .xml 的 MX 配置文件”中  ，添加[从 StageNow 导出](#step-4-create-a-device-management-profile-in-stagenow)的 XML 配置文件（本文有介绍）。

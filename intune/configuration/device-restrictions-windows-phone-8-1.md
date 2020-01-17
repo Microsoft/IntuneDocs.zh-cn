@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 37fa650fb8c742b1f1b0cfbf154fe8cf63d35c89
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489804"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206459"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 设备限制设置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 本文介绍可为运行 Windows Phone 8.1 的设备配置的 Microsoft Intune 设备限制设置。
 
@@ -41,7 +41,7 @@ ms.locfileid: "72489804"
 - **诊断数据提交** - 允许设备将诊断信息提交到 Microsoft。
 - **自定义电子邮件帐户同步** - 允许设备连接到非 Microsoft 电子邮件帐户。
 
-## <a name="password"></a>密码
+## <a name="password"></a>Password
 
 - **密码** - 需要最终用户输入密码才能访问设备。
   - **所需的密码类型** - 指定需要的密码类型，例如仅限字母数字或数字。
@@ -74,7 +74,7 @@ ms.locfileid: "72489804"
 
 打开应用页面，并将该 URL 复制到剪贴板。 你现在可以在允许的或阻止的应用列表中将它用作 URL。
 
-例如：在应用商店中搜索 Skype 应用。 要使用的 URL 为 `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`。
+例如：在 Microsoft Store 中搜索 Skype 应用。 要使用的 URL 为 `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`。
 
 
 

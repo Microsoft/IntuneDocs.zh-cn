@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946645"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547045"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 Windows 10 及更高版本设置
 
@@ -35,7 +35,7 @@ ms.locfileid: "74946645"
 
 作为 Intune 管理员，请使用这些符合性设置来帮助保护组织资源。 若要详细了解符合性策略及其作用，请参阅[设备符合性入门](device-compliance-get-started.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建合规性策略](create-compliance-policy.md#create-the-policy)。 在“平台”中，选择“Windows 10 及更高版本”   。
 
@@ -44,7 +44,7 @@ ms.locfileid: "74946645"
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Windows 运行状况证明服务评估规则
 
 - **需要 BitLocker**：  
-   Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用受信任的平台模块（TPM）来帮助保护 Windows 操作系统和用户数据。 此外，它还有助于确认计算机不被篡改，即使它处于无人参与、丢失或被盗状态，也不例外。 如果计算机装有兼容的 TPM，BitLocker 将使用 TPM 来锁定保护数据的加密密钥。 因此，仅当 TPM 验证计算机状态后，才能访问密钥。  
+   Windows BitLocker 驱动器加密可以加密所有存储在 Windows 操作系统卷上的数据。 BitLocker 使用受信任的平台模块（TPM）来帮助保护 Windows 操作系统和用户数据。 此外，它还有助于确认计算机不被篡改，即使它处于无人参与、丢失或被盗状态，也不例外。 如果计算机装有兼容的 TPM，BitLocker 将使用该 TPM 锁定用于保护数据的加密密钥。 因此，仅当 TPM 验证计算机状态后，才能访问密钥。  
 
    - **未配置**（默认）- 不会评估此设置的符合性和不符合性  。
    - **必需** - 当系统关闭或休眠时，设备能够保护存储在驱动器上的数据免受未经授权的访问。  
@@ -102,15 +102,15 @@ ms.locfileid: "74946645"
 
 仅适用于运行 Windows 10 及更高版本的共同管理设备。 仅 Intune 设备返回不可用状态。
 
-- **要求 System Center Configuration Manager 设备符合性**：  
+- **要求设备符合性来自 Configuration Manager**：  
   - **未配置**（默认）- Intune 不会检查是否符合任何 Configuration Manager 设置要求。 
-  - **必需** - 要求符合 System Center Configuration Manager 中的所有设置（配置项目）。  
+  - **必需** - 要求符合 Configuration Manager 中的所有设置（配置项目）。  
 
     例如，要求所有软件更新都安装在设备上。 在 Configuration Manager 中，此要求具有“已安装”状态。 如果设备上的任意计划处于未知状态，此设备在 Intune 中不符合要求。
 
 ## <a name="system-security"></a>系统安全
 
-### <a name="password"></a>密码
+### <a name="password"></a>Password
 
 - **需要密码才可解锁移动设备**：  
   - **未配置**（默认）- 不会评估此设置的符合性和不符合性  。
@@ -168,7 +168,7 @@ ms.locfileid: "74946645"
   > [!NOTE]
   > 设备上的数据存储加密设置通常会检查设备上是否存在加密  。 为获取更可靠的加密设置，请考虑使用“需要 BitLocker”，它利用 Windows 设备运行状况证明来验证 TPM 级别的 Bitlocker 状态  。
 
-### <a name="device-security"></a>设备安全  
+### <a name="device-security"></a>设备安全性  
 
 - **防火墙**：  
   - **未配置**（*默认*）-Intune 不控制 Microsoft Defender 防火墙，也不更改现有设置。
@@ -229,7 +229,7 @@ ms.locfileid: "74946645"
   使用此设置，可以将防御威胁服务中的风险评估视为符合性条件。 选择允许的最大威胁级别：
   - **未配置**（默认）   
   - **清除** - 此选项是最安全的，因为设备不能具有任何威胁。 如果设备被检测到具有任一等级的威胁，就会被评估为不符合要求。
-  - **低** - 若设备上仅存在低级威胁，则将其评为合规。 低级以上的任意威胁都将使设备不合规。
+  - **低** - 若设备上仅存在低级威胁，则将其评为合规。 高于此级别的威胁均会使设备处于不合规状态。
   - **中** - 如果设备上存在的威胁为低级或中级，设备也将被评估为符合策略。 如果检测到设备存在高级威胁，则确定其不符合要求。
   - **高** - 此选项是最不安全的，允许所有威胁级别。 如果将此解决方案仅用作报告目的，则可能有用。
   

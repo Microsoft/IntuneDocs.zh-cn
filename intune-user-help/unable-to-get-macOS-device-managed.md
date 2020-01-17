@@ -18,21 +18,21 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 499eb015f38134a8b1ff1c41dd22d26cdd4f7324
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 0ceee371ea4324c31a173344dfe252a6e7f52610
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508147"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857849"
 ---
 # <a name="unable-to-get-macos-device-managed"></a>无法托管 macOS 设备
 
 如果在尝试托管 macOS 设备时收到以下任一消息，请联系公司支持人员。
 
-**消息 1**：无法托管设备 *。如果使用虚拟机、具有受限制的序列号或者此设备已分配给其他人，则可能会导致此问题。了解如何解决这些问题，或联系公司支持人员。*
+**消息 1**：*无法托管你的设备。如果使用虚拟机、具有受限制的序列号或者此设备已分配给其他人，则可能会导致此问题。了解如何解决这些问题，或联系公司支持人员。*
 
-**消息 2**：你似乎在使用虚拟机 *。请确保已完全配置了虚拟机，包括序列号和硬件型号。如果这不是虚拟机，请联系支持人员。*  
+**消息 2**：*你似乎使用的是虚拟机。请确保已完全配置了虚拟机，包括序列号和硬件型号。如果这不是虚拟机，请联系支持人员。*  
 
 设备可能由于以下原因之一而无法托管： 
 

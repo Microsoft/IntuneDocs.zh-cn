@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9eb7ee99d69fd56707bd9dfe5453ffe0bb107bad
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781135"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885658"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 iOS 设备添加 VPN 设置
 
 Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使用这些设置创建和配置组织网络的 VPN 连接。 本文将说明这些设置。 某些设置仅适用于某些 VPN 客户端，例如 Citrix、Zscaler 等。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建设备配置文件](vpn-settings-configure.md)。
 
@@ -43,7 +43,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 - **SonicWall Mobile Connect**
 - **F5 Access 旧版**：适用于 F5 Access 应用版本 2.1 及较早版本。
 - **F5 Access**：适用于 F5 Access 应用版本 3.0 及更高版本。
-- **Palo Alto 网络全局保护(旧版)** ：适用于 Palo Alto 网络全局保护应用版本 4.1 及较早版本。
+- **Palo Alto 网络全局保护（旧版）** ：适用于 Palo Alto 网络全局保护应用版本 4.1 及较早版本。
 - **Palo Alto 网络全局保护**：适用于 Palo Alto 网络全局保护应用版本 5.0 及更高版本。
 - **Pulse Secure**
 - **Cisco (IPSec)**
@@ -63,9 +63,9 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 - **连接名称**：最终用户在浏览其设备的可用 VPN 连接列表时将看到此名称。
 - **自定义域名**（仅限 Zscaler）：使用用户所属的域预填充 Zscaler 应用的登录字段。 例如，如果用户名为 `Joe@contoso.net`，则应用打开时，`contoso.net` 域将静态显示在字段中。 如果未键入域名，则使用 Azure Active Directory (AD) 中的 UPN 的域部分。
 - **IP 地址或 FQDN**：设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 `192.168.1.1` 或 `vpn.contoso.com`。
-- **组织的云名称（仅限 Zscaler）** ：键入在其中预配组织的云的名称。 用于登录 Zscaler 的 URL 包含此名称。  
+- **组织的云名称**（仅限 Zscaler）：键入在其中预配组织的云的名称。 用于登录 Zscaler 的 URL 包含此名称。  
 - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 
-  - “证书”  ：在“身份验证证书”  下，选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 [配置证书](../protect/certificates-configure.md)提供了有关证书配置文件的一些指导。
+  - **证书**：在“身份验证证书”下，选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证  。 [配置证书](../protect/certificates-configure.md)提供了有关证书配置文件的一些指导。
   - **用户名和密码**：最终用户必须输入用户名和密码才能登录 VPN 服务器。  
 
     > [!NOTE]
@@ -75,17 +75,17 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 
 - **排除的 URL**（仅限 Zscaler）：连接到 Zscaler VPN 时，可从 Zscaler 云外部访问列出的 URL。 
 
-- **拆分隧道**：启用或禁用此设置，让设备根据流量确定使用哪个连接   。 例如，旅馆中的用户使用 VPN 连接访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
+- **拆分隧道**：“启用”或“禁用”此设置，让设备根据流量确定使用哪个连接   。 例如，旅馆中的用户使用 VPN 连接访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
 
-- **VPN 标识符**（自定义 VPN、Zscaler 和 Citrix）：所用 VPN 应用的标识符，由 VPN 提供商提供。
-  - **输入组织的自定义 VPN 属性的键/值对**：添加或导入用于自定义 VPN 连接的“键”和“值”   。 请记住，这些值通常由 VPN 提供商提供。
+- **VPN 标识符**：所用 VPN 应用的标识符，由 VPN 提供商提供。
+  - **输入组织自定义 VPN 属性的键/值对**：添加或导入用于自定义 VPN 连接的“键”和“值”   。 请记住，这些值通常由 VPN 提供商提供。
 
-- **启用网络访问控制 (NAC)** （Citrix SSO、F5 Access）：选择“我同意”后，设备 ID 将包含在 VPN 配置文件中  。 此 ID 可用于对 VPN 进行身份验证以允许或阻止网络访问。
+- **启用网络访问控制(NAC)** （Citrix SSO、F5 访问）：选择“我同意”后，此设备 ID 将包含在 VPN 配置文件中  。 此 ID 可用于对 VPN 进行身份验证以允许或阻止网络访问。
 
   使用 F5 Access 时，请务必  ：
 
   - 确认所使用的是 F5 BIG-IP 13.1.1.5。 BIG-IP 14 不受支持。
-  - 将 BIG-IP 与 Intune for NAC 集成。 请参阅[概述：使用终结点管理系统配置 APM 以进行设备状态检查](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 指南。
+  - 将 BIG-IP 与 Intune 相集成以配置 NAC。 请参阅[概述：使用终结点管理系统配置 APM 以进行设备状态检查](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 指南。
   - 在 VPN 配置文件中启用 NAC。
 
   将 Citrix SSO 与 Gateway 配合使用时  ，请务必：
@@ -138,6 +138,10 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
 
 - **TLS 版本最小值**：输入要使用的最低 tls 版本。 输入 `1.0`、`1.1`或 `1.2`。 如果留空，则使用 `1.0` 的默认值。
 - **Tls 版本范围最大值**：输入要使用的最大 tls 版本。 输入 `1.0`、`1.1`或 `1.2`。 如果留空，则使用 `1.2` 的默认值。
+
+> [!NOTE]
+> 使用 "用户身份验证" 和 "证书" 时，必须设置 TLS 版本范围下限和最大值。
+
 - **完全向前保密**：选择 "**启用**" 以启用 "完全向前保密（PFS）"。 PFS 是一项 IP 安全功能，可降低会话密钥泄露时的影响。 **Disable** （默认值）不使用 PFS。
 - **证书吊销检查**：选择 "**启用**" 以确保在允许 VPN 连接成功之前证书未被吊销。 这项检查最为重要。 如果 VPN 服务器在确定证书是否已吊销之前超时，则授予访问权限。 **禁用**（默认）不检查吊销的证书。
 
@@ -145,7 +149,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - **加密算法**：选择所需算法：
     - DES
     - 3DES
-    - AES 128
+    - AES-128
     - AES-256 （默认值）
     - AES-128-GCM
     - AES-256-GCM
@@ -164,7 +168,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - **加密算法**：选择所需算法：
     - DES
     - 3DES
-    - AES 128
+    - AES-128
     - AES-256 （默认值）
     - AES-128-GCM
     - AES-256-GCM
@@ -190,7 +194,7 @@ Microsoft Intune 包含许多可以部署到 iOS 设备的 VPN 设置。 可使�
   - **URL 字符串探测**：可选。 输入规则用作测试的 URL。 如果设备在不重定向的情况下访问此 URL，则会启动 VPN 连接。 并且，设备会连接到目标 URL。 用户看不到该 URL 字符串探测站点。
 
     例如，URL 字符串探测是一个审核 Web 服务器 URL，用于在连接 VPN 前检查设备的符合性。 或者，该 URL 通过 VPN 在将设备连接到目标 URL 前，测试 VPN 连接到站点的能力。
-.
+。
   - **域操作**：选择以下项之一：
     - 需要时连接
     - 从不连接

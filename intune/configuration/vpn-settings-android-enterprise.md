@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946625"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206306"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Android 企业设备设置，用于在 Intune 中配置 VPN
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 本文列出并介绍了可以在 Android Enterprise 设备上控制的各种 VPN 连接设置。 作为移动设备管理（MDM）解决方案的一部分，请使用以下设置创建 VPN 连接、选择 VPN 的身份验证方式、选择 VPN 服务器类型等。
 
@@ -35,19 +35,19 @@ Intune 管理员可以创建 VPN 设置，并将它们分配到 Android Enterpri
 > [!NOTE]
 > 若要配置 always on VPN，需要创建 VPN 配置文件，并在配置了 Alwayson VPN 设置的情况下创建[设备限制](device-restrictions-android-for-work.md#connectivity)配置文件。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建设备配置文件](vpn-settings-configure.md#create-a-device-profile)，并选择“Android Enterprise”  。
 
 ## <a name="device-owner-only"></a>仅设备所有者
 
-- **连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。 例如，输入 `Contoso VPN`。
+- **连接名称**：为此连接输入名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。 例如，输入 `Contoso VPN`。
 - **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com   。
 
   - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 选项包括：
   
-    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 [配置证书](../protect/certificates-configure.md)列出了创建证书配置文件的步骤。
-    - **用户名和密码**：登录 VPN 服务器时，系统会提示最终用户输入其用户名和密码。
+    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件，以对连接进行身份验证。 [配置证书](../protect/certificates-configure.md)列出了创建证书配置文件的步骤。
+    - **用户名和密码**：登录 VPN 服务器时，最终用户会看到输入用户名和密码的提示。
 
 - **连接类型**：选择 VPN 连接类型。 选项包括：
 
@@ -57,13 +57,13 @@ Intune 管理员可以创建 VPN 设置，并将它们分配到 Android Enterpri
 
 ## <a name="work-profile-only"></a>仅工作配置文件
 
-- **连接名称**：输入此连接的名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。 例如，输入 `Contoso VPN`。
+- **连接名称**：为此连接输入名称。 最终用户在浏览其设备的可用 VPN 连接时将看到此名称。 例如，输入 `Contoso VPN`。
 - **IP 地址或 FQDN**：输入设备连接到的 VPN 服务器的 IP 地址或完全限定的域名 (FQDN)。 例如，输入 192.168.1.1 或 contoso.com   。
 
   - **身份验证方法**：选择设备向 VPN 服务器进行身份验证的方法。 选项包括：
   
-    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件以对连接进行身份验证。 [配置证书](../protect/certificates-configure.md)列出了创建证书配置文件的步骤。
-    - **用户名和密码**：登录 VPN 服务器时，系统会提示最终用户输入其用户名和密码。
+    - **证书**：选择现有 SCEP 或 PKCS 证书配置文件，以对连接进行身份验证。 [配置证书](../protect/certificates-configure.md)列出了创建证书配置文件的步骤。
+    - **用户名和密码**：登录 VPN 服务器时，最终用户会看到输入用户名和密码的提示。
 
 - **连接类型**：选择 VPN 连接类型。 选项包括：
 

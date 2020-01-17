@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d226a5b8ee448b7b168a03fe6b8a1c63bc1be432
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691698"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827779"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>使用 Microsoft Intune 向 macOS 设备添加属性列表文件
 
@@ -37,7 +37,7 @@ ms.locfileid: "74691698"
 
 我们将这些设置添加到 Intune 中的设备配置配置文件中，然后分配或部署到 macOS 设备。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建配置文件](device-profile-create.md)。
 
@@ -53,6 +53,16 @@ ms.locfileid: "74691698"
 - **首选项域名**：属性列表文件通常用于 web 浏览器（microsoft Edge）、 [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)和自定义应用。 创建首选项域时，还会创建一个捆绑 ID。 输入 "捆绑 ID"，例如 "`com.company.application`"。 例如，输入 `com.Contoso.applicationName`、`com.Microsoft.Edge` 或 `com.microsoft.wdav`。
 - **属性列表文件**：选择与应用关联的属性列表文件。 请确保它是 `.plist` 或 `.xml` 文件。 例如，上传 `YourApp-Manifest.plist` 或 `YourApp-Manifest.xml` 文件。
 - **文件内容**：显示属性列表文件中的关键信息。 如果需要更改密钥信息，请在另一个编辑器中打开列表文件，然后在 Intune 中重新上传文件。
+
+请确保文件的格式正确。 该文件只应具有键值对，不应在 `<dict>`、`<plist>`或 `<xml>` 标记中进行包装。 例如，属性列表文件应类似于以下文件：
+
+```xml
+<key>SomeKey</key>
+<string>someString</string>
+<key>AnotherKey</key>
+<false/>
+...
+```
 
 选择“确定”   > “创建”  以保存所做的更改。 此时，配置文件创建完成，并出现在配置文件列表中。
 

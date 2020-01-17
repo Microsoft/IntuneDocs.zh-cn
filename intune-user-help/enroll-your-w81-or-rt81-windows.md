@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085ec1f329eb9b423797a110ada53eb7693edf6f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6fb6c1295947b9f51ef861b1fcc6582c6690137f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506139"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855418"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>如何在 Intune 中注册 Windows 8.1 或 Windows RT 8.1 设备  
 
@@ -33,7 +33,7 @@ ms.locfileid: "72506139"
 
 注册 Windows 8.1 或 Windows RT 8.1 设备：  
 
-1. 在设备上，点击**设置** &gt; **电脑设置** &gt; **网络** &gt; **工作区**。  
+1. 在设备上，点击“设置”&gt;“电脑设置”&gt;“网络”&gt;“工作区”     。  
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
@@ -61,7 +61,7 @@ ms.locfileid: "72506139"
 
 我们还建议你安装公司门户应用，通过该应用，你可以轻松地识别和获取与你和你的角色相关的公司应用。 根据公司设置 Intune 的方式，公司门户应用可能已在注册过程中安装。 若要检查你是否具有该应用，请在应用列表中查找“公司门户”  。 如果未在应用列表中看到“公司门户”，请按照这些步骤安装它。
 
-1. 点击**开始** &gt; **应用商店**。  
+1. 点击“开始”&gt;“Microsoft Store”   。  
 
 2. 点击“**搜索**”，然后键入“**公司门户**”。  
 

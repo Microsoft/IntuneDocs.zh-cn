@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 256fe3e193e5ab3959c6f9712df8b62246377c6d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465703"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653948"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 Android 应用以便使用应用保护策略
 
@@ -54,7 +54,7 @@ ms.locfileid: "74465703"
     > [!NOTE]
     > Intune App Wrapping Tool 不支持用于应用签名的 Google 的 v2 和即将推出 v3 签名方案。 使用 Intune App Wrapping Tool 包装 .apk 文件后，建议使用 [Google 提供的 Apksigner 工具]( https://developer.android.com/studio/command-line/apksigner)。 这将确保一旦应用安装到最终用户设备上，它就可以通过 Android 标准正确启动。 
 
-- （可选）有时，由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 使用最小 API 级别为21或更高的应用（[1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)）时，Intune 应用包装工具会自动处理 DEX 文件溢出。 对于最小 API 级别为 < 21 的应用，最佳做法是使用包装的 `-UseMinAPILevelForNativeMultiDex` 标志增加最小 API 级别。 对于不能增加应用程序的最低 API 级别的客户，可以使用以下 DEX 溢出解决方法。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作：
+- （可选）有时，由于在包装过程中添加的 Intune MAM SDK 类，应用可能会达到 Dalvik 可执行文件 (DEX) 大小限制。 DEX 文件是 Android 应用的编译部分。 使用最小 API 级别为21或更高的应用（在 [v 之前](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)），Intune 应用包装工具会自动处理 DEX 文件溢出。10.0.24.6 对于最小 API 级别为 < 21 的应用，最佳做法是使用包装的 `-UseMinAPILevelForNativeMultiDex` 标志增加最小 API 级别。 对于不能增加应用程序的最低 API 级别的客户，可以使用以下 DEX 溢出解决方法。 在某些组织中，这需要与编译应用的相关人员（即应用生成团队）合作：
 
   - 使用 ProGuard 从应用的主 DEX 文件中删除未使用的类引用。
   - 对于使用 v 3.1.0 或更高版本的 Android Gradle 插件的客户，请禁用[D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)。  
@@ -94,7 +94,7 @@ ms.locfileid: "74465703"
 |**-KeyStorePassword**&lt;SecureString&gt;|用于解密密钥库的密码。 Android 要求对所有的应用程序包 (.apk) 签名。 使用 Java keytool 生成 KeyStorePassword。 在此处了解更多有关 Java [密钥存储](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html)的信息。| |
 |**-KeyAlias**&lt;String&gt;|要用于进行签名的密钥的名称。| |
 |**-KeyPassword**&lt;SecureString&gt;|用于解密私钥的密码，该私钥将用于签名。| |
-|**-SigAlg**&lt;SecureString&gt;| （可选）用于签名的签名算法的名称。 该算法必须与私钥兼容。|示例：SHA256withRSA、SHA1withRSA|
+|**-SigAlg**&lt;SecureString&gt;| （可选）用于签名的签名算法的名称。 该算法必须与私钥兼容。|例如：SHA256withRSA、SHA1withRSA|
 |**-UseMinAPILevelForNativeMultiDex**| 可有可无使用此标志将源 Android 应用的最小 API 级别增加到21。 此标志将提示进行确认，因为它将限制可以安装此应用的用户。 用户可以跳过确认对话框，方法是将参数 "-Confirm： $false" 追加到其 PowerShell 命令中。 标志仅应由最小 API < 21 的应用上的客户使用，因为 DEX 溢出错误而无法成功包装。 | |
 | **&lt;CommonParameters&gt;** | （可选）该命令支持常见的 PowerShell 参数，如 verbose 和 debug。 |
 

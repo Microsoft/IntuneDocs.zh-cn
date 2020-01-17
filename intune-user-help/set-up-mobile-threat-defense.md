@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980353"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857868"
 ---
 # <a name="install-mobile-threat-defense"></a>安装 Mobile Threat Defense   
 
@@ -37,9 +37,9 @@ ms.locfileid: "72980353"
 
 你的组织在个人应用中看不到任何数据，如文本、电子邮件和图片。 MTD 应用会将有关你的应用的信息（如名称和版本）报告给你的组织。 报告的实际信息取决于公司使用的 MTD 供应商。 你的组织可能会看到：   
 
-* 应用程序名称  
+* 应用名称  
 * 应用 ID：在 Google Play 中标识应用的唯一名称。  
-* 应用版本和短版本号：应用的特定版本号。  
+* 应用版本和短版本号：应用的特定发行版号。  
 * 应用程序包和动态大小：应用在设备中使用的空间大小。 
 
 

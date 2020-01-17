@@ -5,7 +5,7 @@ keywords: Mac OS X、macOS、OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098131"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855470"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>使用公司门户应用注册 macOS 设备  
 
@@ -67,18 +67,17 @@ ms.locfileid: "74098131"
 
 1. 用你的工作单位或学校帐户登录到公司门户。  
 2. 当应用程序打开时，请选择 "**开始**"。  
-3. 查看[你的组织可以](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)在你的已注册设备上看不到的内容。 然后，选择“继续”  。  
-4. 在 "**安装管理配置文件**" 屏幕上，选择 "**下载配置文件**"。   
+3. 查看你的组织可以在你的已注册设备上看不到的内容。 然后，选择“继续”  。
+4.  如果系统提示，请在 "**安装管理配置文件**" 屏幕上输入设备密码。
 
-    ![公司门户，安装管理配置文件屏幕的示例屏幕截图，突出显示 "下载配置文件" 按钮。](./media/install-mgmt-profile-mac-1911.PNG)   
-5. 设备的系统首选项将打开。 选择 "**安装**"，并再次选择 "**安装**"。 如果系统提示，请输入设备密码。  
+    ![公司门户，安装管理配置文件屏幕，突出显示密码提示的示例屏幕截图。](./media/install-management-profile-macos-1912.PNG)   
+5. 在 "**确认设备管理**" 屏幕上，选择 "**打开系统首选项**"。  
 
-    ![MacOS 系统首选项的示例屏幕截图，安装提示，突出显示 "安装" 按钮。](./media/system-preference-install-1911.PNG)  
-6. 安装配置文件后，它将显示在 "**管理配置文件**" 下的 "配置文件" 列表中。  
-
-   ![MacOS 系统首选项，配置文件屏幕的示例屏幕截图，突出显示已安装的管理配置文件。](./media/system-preference-verify-1911.PNG)   
-7. 返回公司门户。   
-8. 你的组织可能要求你更新设备设置。 完成更新设置后，选择 "**检查设置**"。  
+    ![确认设备管理屏幕的示例屏幕截图，突出显示 "打开系统首选项" 按钮。](./media/confirm-device-management-macos-1912.PNG)  
+6. 设备的系统首选项将打开。 从 "设备配置文件" 列表中选择 "**管理配置文件**"，然后选择 "**批准** > **批准**"。  
+    ![系统首选项、管理配置文件屏幕的示例屏幕截图，突出显示 "批准" 按钮。](./media/management-profile-approve-macos-1912.PNG)   
+1. 返回公司门户，然后选择 "**继续**"。    
+2. 你的组织可能要求你更新设备设置。 完成更新设置后，选择 "**检查设置**"。  
 
     ![公司门户，更新设备设置屏幕的示例屏幕截图，突出显示 "检查设置" 按钮。](./media/update-settings-mac-1911.PNG)  
 9. 安装完成后，选择 "**完成**"。  
