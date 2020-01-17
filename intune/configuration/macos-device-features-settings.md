@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992897"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206340"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 设备功能设置
 
@@ -31,7 +31,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 
 本文列出了这些设置，并介绍了每个设置的用途。 它还列出了使用“终端”应用（仿真器）获取 AirPrint 打印机的 IP 地址、路径和端口的步骤。 有关设备功能的详细信息，请参阅[添加 iOS 或 macOS 设备功能设置](device-features-configure.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 [创建 macOS 设备配置文件](device-features-configure.md)。
 
@@ -89,8 +89,8 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 
 - **在菜单栏中显示其他信息**：选中菜单栏上的时间区域时，选择“允许”可显示主机名和 macOS 版本  。 如果选择“未配置”（默认），则菜单栏上不会显示此信息  。
 - **横幅**：输入一条在设备登录屏幕上显示的消息。 例如，输入组织信息、欢迎消息、失物招领信息等。
-- **选择登录格式**：选择用户登录设备的方式。 选项包括：
-  - **提示输入用户名和密码**（默认）：要求用户输入用户名和密码。
+- **选择登录格式**：选择用户登录设备的方式。测验的方式。 选项包括：
+  - **提示输入用户名和密码**（默认值）：要求用户输入用户名和密码。
   - **列出所有用户，提示输入密码**：要求用户从用户列表中选择其用户名，然后输入其密码。 还需配置：
 
     - **本地用户**：选择“隐藏”则不会在用户列表中显示本地用户帐户，其中可能包含标准帐户和管理员帐户  。 仅显示网络和系统用户帐户。 如果选择“未配置”（默认），会显示用户列表中的本地用户帐户  。
@@ -135,7 +135,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
   - **Kerberos**：使用 Apple 的内置 Kerberos 扩展，其中包含在 macOS Catalina 10.15 和更高版本中。 此选项为**凭据**应用扩展的 Kerberos 特定版本。
 
   > [!TIP]
-  > 使用 "**重定向**" 和 "**凭据**类型"，你可以添加自己的配置值以通过扩展。 如果使用**凭据**，请考虑使用 Apple 在**Kerberos**类型中提供的内置配置设置。
+  > 使用 "**重定向**" 和 "**凭据**类型"，你可以添加自己的配置值以通过扩展。 如果使用的是**凭据**，请考虑使用 Apple 在**Kerberos**类型中提供的内置配置设置。
 
 - **扩展 ID** （重定向和凭据）：输入标识 SSO 应用扩展的绑定标识符，如 `com.apple.ssoexample`。
 - **团队 ID** （重定向和凭据）：输入 SSO 应用扩展的团队标识符。 团队标识符是由 Apple 生成的10个字符的字母数字（数字和字母）字符串，如 `ABCDE12345`。 
@@ -183,7 +183,7 @@ Intune 包含一些内置设置，用于自定义 macOS 设备上的功能。 �
 - **密码重复使用限制**（仅 Kerberos）：输入必须使用的新密码数（1-24），才能在域上重复使用以前的密码。 **未配置**（默认）不强制使用密码重用限制。
 - **最短密码期限**（仅限 Kerberos）：输入在用户可以更改密码之前，必须在域中使用该密码的天数。 "**未配置**" （默认值）在更改密码之前不会强制使用密码的最短期限。
 - **密码过期通知**（仅 Kerberos）：输入在密码过期之前用户收到其密码将过期的通知的天数。 **未配置**（默认）使用 `15` 天。
-- **密码过期**（仅 Kerberos）：输入必须更改设备密码前的天数。 "**未配置**" （默认值）表示用户密码永不过期。
+- **密码过期**（仅 Kerberos）：输入在用户必须更改设备密码前设备密码保持有效的天数。 "**未配置**" （默认值）表示用户密码永不过期。
 - **密码更改 url** （仅 Kerberos）：输入用户启动 Kerberos 密码更改时启动的 url。
 - **主体名称**（仅 Kerberos）：输入 Kerberos 主体的用户名。 不需要包含领域名称。 例如，在 `user@contoso.com`中，`user` 是主体名称，`contoso.com` 是领域名称。
 
