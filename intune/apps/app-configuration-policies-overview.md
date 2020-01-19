@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692193"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885799"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的应用配置策略
 
@@ -93,7 +93,7 @@ ms.locfileid: "75692193"
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>非托管设备上的 iOS 配置
 
-可以在托管应用配置的非托管设备上使用 Intune 诊断日志  验证 iOS 配置。
+可以在托管应用配置的非托管设备上使用 Intune 诊断日志  验证 iOS 配置。 除以下步骤外，还可以使用 Microsoft Edge 访问托管的应用日志。 有关详细信息，请参阅[在 iOS 上使用 Microsoft Edge 访问托管的应用日志](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)。
 
 1. 如果尚未安装在设备上，请从应用商店下载并安装 Intune Managed Browser  。 有关详细信息，请参阅[受 Microsoft Intune 保护的应用](apps-supported-intune-apps.md)。
 2. 启动 Intune Managed Browser  ，并从导航栏中选择“关于”   > “Intune 帮助”  。
@@ -162,7 +162,7 @@ ms.locfileid: "75692193"
     
 ## <a name="graph-api-support-for-app-configuration"></a>应用配置的图形 API 支持
 
-可使用图形 API 完成应用配置任务。 有关详细信息，请参阅[针对 Graph API 参考 MAM 的配置](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)。
+可使用图形 API 完成应用配置任务。 有关详细信息，请参阅[针对 Graph API 参考 MAM 的配置](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta)。有关 Intune 和 Graph 的详细信息，请参阅[在 Microsoft Graph 中使用 Intune](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta)。
 
 ## <a name="troubleshooting"></a>疑难解答
 

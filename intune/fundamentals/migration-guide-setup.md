@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510015"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885851"
 ---
 # <a name="basic-setup"></a>基本设置
 
@@ -74,9 +74,9 @@ Intune 要求 Azure Active Directory (AAD) 作为标识和用户分组提供者�
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>任务 3：将 MDM 机构设置为 Intune
 
-可以通过 Azure 门户或 Configuration Manager 当前分支控制台管理 Intune。 除非需要将 Intune 与 Configuration Manager Current Branch 部署相集成，否则建议从 [Azure 门户](https://portal.azure.com)管理 Intune。
+建议使用 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)来管理 Intune。
 
-将 MDM 机构设置为 Intune，启用 Intune Azure 门户  。 使用不同的 MDM 机构以使 Intune 将 MDM 管理传输到备用 Microsoft 管理控制台。 这种情况并不常见。
+将 MDM 机构设置为 Intune  。 使用不同的 MDM 机构以使 Intune 将 MDM 管理传输到备用 Microsoft 管理控制台。 这种情况并不常见。
 
 > [!IMPORTANT]
 > 如果你是第一次将移动设备管理传输到 Intune，则应将 MDM 机构设置为 Intune。

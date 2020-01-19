@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784232"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956211"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune 
 
@@ -37,7 +37,7 @@ ms.locfileid: "74784232"
 
 Intune 支持多种不同的应用类型。 为每种应用类型提供的可用选项有所不同。 Intune 支持添加并分配以下类型的应用：
 
-| 应用类型 | 安装 | Updates |
+| 应用类型 | 安装 | 更新 |
 |---|---|---|
 | 应用商店中的应用（应用商店应用） | Intune 在设备上安装应用。  | 应用是自动更新的。 |
 | 内部编写的应用（业务线） | Intune 在设备上安装应用（需要提供安装文件）。 | 必须更新应用。 |
@@ -168,7 +168,7 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
     - 若要添加一个类别，在“创建类别”  窗格中选择“添加”  ，然后输入类别的名称。  
     只能使用一种语言输入名称，并且 Intune 不会进行翻译。
     - 若要编辑类别，请选择类别旁边的省略号 (...)  ，然后选择  “固定到仪表板”或“删除”  。
-6. 选择“创建”  。
+6. 选择“创建”。 
 
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune 自动添加的应用
 
@@ -189,7 +189,7 @@ Intune 会根据以下条件自动重新安装、更新或删除所需应用：
 
 ## <a name="app-installation-errors"></a>应用安装错误
 
-有关 Intune 应用安装错误的详细信息，请参阅[应用安装错误](troubleshoot-app-install.md#app-installation-errors)。
+有关 Intune 应用安装错误的详细信息，请参阅[应用安装错误](troubleshoot-app-install.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -211,4 +211,4 @@ Intune 会根据以下条件自动重新安装、更新或删除所需应用：
 - [Microsoft Edge for macOS](apps-edge-macos.md)
 - [内置应用](apps-add-built-in.md)
 - [Android Enterprise 系统应用](apps-ae-system.md)
-- [Win32 应用](app-management.md)
+- [Win32 应用](~/apps/apps-win32-app-management.md)

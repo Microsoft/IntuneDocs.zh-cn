@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547547"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885783"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -101,19 +101,11 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](../plannin
 | **SharePoint** | 本地 SharePoint | 没有移动到 SharePoint Online 的计划 |  
 | **当前 MDM** | Exchange ActiveSync |  |
 | **证书解决方案** | Microsoft Server 2012 R2、AD 证书服务 | 仅对 Web 站点服务器使用 PKI |
-| **系统管理** | Configuration Manager CB 1606 | 想要了解 Intune 混合解决方案 |
+| **系统管理** | Configuration Manager Current Branch | 想要了解共同管理解决方案 |
 | **VPN 解决方案** | Cisco AnyConnect |  |
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来制定 Intune 设计计划。
-
-## <a name="choose-an-intune-deployment-option"></a>选择 Intune 部署选项
-
-Intune 提供两个部署选项：独立和混合。 “独立”是指在云中运行的 Intune 服务，“混合”是指 Intune 与 Configuration Manager 的集成。 本指南主要用于使用独立选项。 [决定哪个选项适合你的业务需求](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
-
-> [!Important]
->已弃用载入新的混合 MDM 客户这一功能。 有关详细信息，请参阅博客文章[从混合移动设备管理移动到 Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)。
-
 
 ## <a name="intune-tenant-location"></a>Intune 租户位置
 

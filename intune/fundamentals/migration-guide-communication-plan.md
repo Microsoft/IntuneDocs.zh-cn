@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4637a4f9f137e9db665d72118fd7a97d7a9f75a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510134"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956226"
 ---
 # <a name="plan-communications"></a>计划通信
 
@@ -62,4 +62,4 @@ Intune 还有其他资源，可用于推动用户注册设备：
 
 - [如何使最终用户了解 Microsoft Intune](end-user-educate.md) 说明了通过移动 OS 平台完成注册的步骤。
 - [面向 IT 管理员的 Intune 设备注册](../enrollment/device-enrollment.md)解释了如何在 Intune 中注册 Android、iOS 和 Mac 设备。
-- 与 Android、iOS 和 Windows 用户共享[公司门户应用 URL](http://go.microsoft.com/fwlink/?LinkID=396941)。 此 URL 会重定向到 Android、iOS 和 Windows 设备上相应的公司门户应用列表。
+- 与 Android、iOS 和 Windows 用户共享公司门户应用。

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207445"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956289"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 软件更新
 
@@ -63,7 +63,7 @@ Intune 提供以下策略类型来管理更新：
   > - Windows 10 移动版  
   > - Windows 10 企业版 LTSC。 适用于企业的 Windows 更新 (WUfB) 当前不支持“长期服务频道”版本。  计划使用备用修补方法，如 WSUS 或 Configuration Manager。
 
-- 在 Windows 设备上，“反馈和诊断”   > “诊断和使用情况数据”  必须设置为“基本”  、“增强”  或“完整”  。  
+- 在 Windows 设备上，“反馈和诊断”   > “诊断和使用情况数据”  必须设置为“基本”  、“增强”  或“完整”  。
 
   可以为 Windows 10 设备手动配置“诊断和使用情况数据”，也可以使用适用于 Windows 10 及更高版本的 Intune 设备限制配置文件。  若使用设备限制配置文件，请至少将“共享使用情况数据”的[设备限制设置](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)设置为“基本”。   为 Windows 10 或更高版本配置设备限制策略时，可在“报告和遥测”类别中找到此设置。 
 
@@ -215,6 +215,10 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
 
   检查此限制以查看将来是否受支持。
 
+> [!IMPORTANT]
+> 若要将功能更新策略与 Intune 配合使用，设备必须打开遥测，同时最小设置为[基本  ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)。 作为[设备限制策略](../configuration/device-restrictions-configure.md)的一部分，在“报告遥测”  下配置遥测。
+>
+> 如果设备接收功能更新策略，并将遥测设置为“未配置”  （这意味着它处于关闭状态），则可能会安装比功能更新策略中定义的版本更新的 Windows。 需要遥测的先决条件正在审查中，因为此功能将正式发布。
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>创建和分配 Windows 10 功能更新
 
@@ -245,4 +249,3 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
 [Intune 的更新符合性报告](../windows-update-compliance-reports.md)
 
 [Windows 10 更新通道疑难解答](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

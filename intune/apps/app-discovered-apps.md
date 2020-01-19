@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205524"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857037"
 ---
 # <a name="intune-discovered-apps"></a>Intune 发现的应用
 
@@ -67,6 +67,7 @@ Intune 还提供租户中单个设备的已发现应用的列表。
 > [!NOTE]
 > - 如 Configuration Manager 中的应用管理工作负载所示，Windows 10 混合 Azure AD 联接设备当前不会按上述计划通过 Intune 管理扩展 (IME) 收集应用清单。 若要缓解此问题，请将 Configuration Manager 中的应用管理工作负载切换到 Intune，以便在设备上安装 IME（Win32 清单和 PowerShell 部署需要 IME）。 请注意，此行为的任何更改或更新均在[开发中的功能](../fundamentals/in-development.md)和/或[新增功能](../fundamentals/whats-new.md)中公布。
 > - 在 2019 年 11 月之前注册的个人拥有的 macOS 设备会继续显示设备上安装的所有应用，直到设备再次注册。
+> - Android Enterprise 完全托管和专用设备不显示发现的应用。
 
 发现的应用数可能与应用安装状态计数不一致。 导致不一致的可能原因包括：
 

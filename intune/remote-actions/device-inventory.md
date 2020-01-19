@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819775"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756014"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -57,7 +57,7 @@ ms.locfileid: "74819775"
 > [!Note]  
 > 硬件和软件清单每 7 天在 Intune 服务中刷新一次。
 
-|详情|描述|平台| 
+|详情|说明|平台| 
 |--------------|----------------------|----|  
 |名称|设备的名称。|Windows、iOS|
 |管理名称|仅在控制台中使用的设备名。 更改此名称不会更改设备上的名称。|Windows、iOS|
@@ -83,7 +83,7 @@ ms.locfileid: "74819775"
 |Wi-Fi MAC|设备的媒体访问控制地址。|Windows、iOS、Android|
 |ICCID|集成电路卡标识符，即 SIM 卡的唯一标识号。|Windows、iOS、Android|
 |注册日期|设备在 Intune 中注册的日期和时间。|Windows、iOS、Android|
-|上次联系时间|设备上次连接到 Intune 的日期和时间。|Windows、iOS、Android|
+|上次联系|设备上次连接到 Intune 的日期和时间。|Windows、iOS、Android|
 |激活锁旁路代码|可用于绕开激活锁的代码。|iOS|
 |已注册 Azure AD|如果为“是”  ，则设备已向 Azure Directory 注册。|Windows、iOS、Android|
 |已注册 Intune|如果为“是”  ，则设备已向 Intune 注册。|Windows、iOS、Android|
@@ -94,6 +94,9 @@ ms.locfileid: "74819775"
 |已加密|如果为“是”  ，则设备上存储的数据已加密。|Windows、iOS、Android|
 
 \* 在包含 Google 策略管理器的 Android 中不可用，如完全托管设备和专用设备
+
+> [!Note]  
+> Android Enterprise 专用设备或完全托管设备上未列出电话号码清单。
 
 ## <a name="next-steps"></a>后续步骤
 了解使用 Intune [管理设备](device-management.md)还可以执行哪些操作。

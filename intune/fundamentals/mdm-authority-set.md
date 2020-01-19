@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a01b6643de2dd75c41aec0806b97df6154d99a7a
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 43c5d0731736df193bf615391ad486a60dff6cdd
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547770"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885896"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>设置移动设备管理机构
 
@@ -36,16 +36,13 @@ ms.locfileid: "75547770"
 
 - **Intune 共同管理** - 集成了 Intune 云解决方案和适用于 Windows 10 设备的 Configuration Manager。 可使用 Configuration Manager 控制台配置 Intune。 [配置设备自动注册到 Intune](https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune)。 
 
-    > [!Important]
-    >已弃用载入新的混合 MDM 客户这一功能。 有关详细信息，请参阅博客文章[从混合移动设备管理移动到 Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)。
-
 - **Office 365 的移动设备管理** - 集成了 Office 365 和 Intune 云解决方案。 可在 Microsoft 365 管理中心中配置 Intune。 包括 Intune 独立版中提供的部分功能。 在 Microsoft 365 管理中心中设置 MDM 机构。
 
 - **Office 365 MDM 共存** 可以在租户上并发激活和使用 MDM for Office 365 以及 Intune，然后将管理机构设置为 Intune 或 MDM for Office 365，以便各个用户决定使用哪项服务管理移动设备。 基于分配给用户的许可证定义用户的管理机构。 有关详细信息，请参阅 [Microsoft Intune 与 MDM for Office 365 共存](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365)
 
 ## <a name="set-mdm-authority-to-intune"></a>将 MDM 机构设置为 Intune
 
-如果尚未设置 MDM 权限，请执行以下步骤。 若要从 SCCM 迁移，请参阅[将混合 MDM 用户及其设备迁移至 Intune 独立版](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa)。
+如果尚未设置 MDM 权限，请执行以下步骤。
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择橙色横幅，打开“移动设备管理机构”  设置。 如果尚未设置 MDM 机构，则仅显示橙色横幅。
 2. 在“移动设备管理机构”下，从以下选项中选择你的 MDM 机构  ：
@@ -69,10 +66,9 @@ ms.locfileid: "75547770"
 - [Intune 向 Apple 发送的数据](https://aka.ms/data-intune-sends-to-apple)
 
 ## <a name="key-considerations"></a>重要注意事项
-切换到新的 MDM 机构后，在设备签入并与服务同步之前，可能会有一定的过渡时间（最长八小时）。 需要在新的 MDM 机构（混合）中配置设置，以确保注册的设备在更改后将继续受到管理和保护。 
+切换到新的 MDM 机构后，在设备签入并与服务同步之前，可能会有一定的过渡时间（最长八小时）。 需要在新的 MDM 机构中配置设置，以确保注册的设备在更改后将继续受到管理和保护。 
 - 设备必须在更改后与服务连接，以便来自新 MDM 机构（Intune 独立版）的设置可替换设备上的现有设置。
-- 更改 MDM 机构后，来自先前 MDM 机构 (Intune Standalone) 的一些基本设置（如配置文件）将在设备上最长保留 7 天，或直到设备首次连接到该服务为止。 建议尽快配置新 MDM 机构（混合）中的应用和设置（策略、配置文件、应用等），并将设置部署到包含具有现有已注册设备的用户的用户组。 更改 MDM 机构后，一旦设备连接到服务，它将从新 MDM 机构接收新设置，并防止在管理和保护方面出现空白。
-- 当 Intune 和 Configuration Manager 中存在相同的设备类别时，如果切换到新 MDM 机构，设备的任何设备类别分配都不会随之迁移。 当 MDM 机构更改并且设备显示在 Configuration Manager 控制台中时，若要继续使用设备类别，必须将迁移设备手动添加到适当集合。
+- 更改 MDM 机构后，来自先前 MDM 机构的一些基本设置（如配置文件）将在设备上最长保留 7 天，或直到设备首次连接到该服务为止。 建议尽快配置新 MDM 机构中的应用和设置（策略、配置文件、应用等），并将设置部署到包含具有现有已注册设备的用户的用户组。 更改 MDM 机构后，一旦设备连接到服务，它将从新 MDM 机构接收新设置，并防止在管理和保护方面出现空白。
 - 不会将没有关联用户的设备（通常在具有 iOS 设备注册计划或批处理注册方案时）迁移到新的 MDM 机构。 对于这些设备，需要调用支持以获取将它们移动到新 MDM 机构的帮助。
 
 ## <a name="change-mdm-authority-to-office-365"></a>将 MDM 机构更改为 Office 365
@@ -93,14 +89,14 @@ ms.locfileid: "75547770"
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>更改 MDM 机构的预期结果
 
-- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（此通知并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune standalone 更改为混合环境后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由混合环境托管。 对这些设备的管理和保护不会中断。
+- 当 Intune 服务检测到租户的 MDM 机构已更改时，它将向所有已注册的设备发送通知消息，以便签入并与服务同步（此通知并非计划的定期签入）。 因此，租户的 MDM 机构从 Intune 独立版更改后，开机且联机的所有设备将与服务连接，接收新的 MDM 机构，并且由新的 MDM 机构托管。 对这些设备的管理和保护不会中断。
 - 更改 MDM 机构过程中（或在不久之后），即使设备开机且联机，但设备在新的 MDM 机构中注册到该服务之前，将会有最长八小时的延迟（取决于计划的下次定期签入的执行时间）。    
 
   > [!IMPORTANT]    
   > 在更改 MDM 机构以及将续订的 APN 证书上传到新机构时，iOS 设备的新设备注册和设备签入将失败。 因此，更改 MDM 机构后，请务必尽快查看并将 APN 证书上传到新机构。
 
 - 用户可以通过手动启动从设备到服务的签入来快速更改为新的 MDM 机构。 用户可以通过使用公司门户应用轻松进行此更改，并启动设备符合性检查。
-- 更改 MDM 机构后，要验证设备签入并与服务同步后一切工作正常运行，可在 Configuration Manager 控制台中查找设备。 之前由 Intune 托管的设备现在将显示为 Configuration Manager 平台中的托管设备。    
+- 更改 MDM 机构后，要验证设备签入并与服务同步后一切工作是否正常运行，可在新 MDM 机构中查找设备。
 - 在更改 MDM 机构期间设备处于脱机状态时，以及设备签入服务，会存在一个过渡期。 为帮助确保设备在此过渡期间仍然受到保护并可正常运行，以下配置文件将在设备上保留长达七天（或直到设备与新的 MDM 机构连接并接收将覆盖现有设置的新设置为止）：
   - 电子邮件配置文件
   - VPN 配置文件
@@ -115,7 +111,7 @@ ms.locfileid: "75547770"
 
 - 更改 MDM 机构后，请执行以下步骤来验证新设备是否成功注册到新的机构：   
   - 注册新设备
-  - 确保新注册的设备显示在 Configuration Manager 控制台中。
+  - 确保新注册的设备显示在新 MDM 机构中。
   - 执行一个从管理控制台到设备的操作，如远程锁定。 如果成功，则表示该设备将由新的 MDM 机构管理。
 - 如果你对特定设备有疑问，则可以取消注册然后重新注册设备，以使其连接到新的机构并尽快接受管理。
 

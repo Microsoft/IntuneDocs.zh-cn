@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50478ecb615cf39bba0a205cb06f83e47728e366
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712910"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827830"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>为 Intune 中不符合要求的设备自动发送电子邮件和添加操作
 
@@ -66,7 +66,7 @@ ms.locfileid: "73712910"
 2. 选择“设备”   > “符合性策略”   > “通知”   > “创建通知”  。
 3. 在“基本”  下，指定以下信息：
 
-   - **名称**
+   - **Name**
    - **主题**
    - **Message**
 
@@ -91,7 +91,7 @@ ms.locfileid: "73712910"
 
 创建设备符合性策略时，Intune 会自动为非符合性创建操作。 如果设备不满足符合性策略的要求，此操作会将设备标记为不符合。 可自定义将设备标记为不符合的时长。 此操作不可撤消。
 
-还可以在创建符合性策略或更新现有策略时添加其他操作。
+除了将设备标记为不符合的默认操作外，还可以在创建符合性策略时添加可选操作，或更新现有策略。
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 

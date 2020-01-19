@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303075"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956261"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>添加用于组织用户和设备的组
 
@@ -54,7 +54,7 @@ Intune 使用 Azure Active Directory (Azure AD) 组来管理设备和用户。 �
         >
         > 如果你的主要角色是设备管理，我们建议使用 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-    - **Office 365**：这些组旨在对访问和共享 Office 365 资源进行控制。 例如，可以创建一个 Office 365 组来共享 Outlook 收件箱或日历。 有关详细信息，请参阅[了解 Office 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+    - **Office 365**：通过授予成员访问共享邮箱、日历、文件、SharePoint 站点等的权限来提供协作机会。 使用此选项还可以向组织外部的用户授予对组的访问权限。 有关详细信息，请参阅[了解 Office 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 4. 对于新组，输入“组名称”  和“组说明”  。 具体明确并包含信息，使其他人知道组的用途。
 

@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654254"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756002"
 ---
 # <a name="use-device-encryption-with-intune"></a>使用 Intune 设备加密
 
@@ -38,6 +38,8 @@ Intune 还提供内置的[加密报表](encryption-monitor.md)，其中提供了
 ## <a name="filevault-encryption-for-macos"></a>macOS 的 FileVault 加密
 
 使用 Intune 在运行 macOS 的设备上配置 FileVault 磁盘加密。 然后，使用 Intune 加密报表查看这些设备的加密详细信息和管理 FileVault 加密设备的恢复密钥。
+
+请注意，若要使 FileVault 在设备上工作，需要用户批准的设备注册。 用户必须手动批准系统首选项中的管理配置文件，才能将注册视为用户批准。 
 
 FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行 macOS 10.13 或更高版本的设备上配置 FileVault  。
 
@@ -72,14 +74,7 @@ FileVault 是 macOS 附带的整盘加密程序。 可以使用 Intune 在运行
 
 7. 配置其余 [FileVault 设置](endpoint-protection-macos.md#filevault)以满足业务需求，然后选择“确定”  。
 
-   > [!IMPORTANT]
-   > 如果将“禁止在注销时提示”  设置设为“启用”  ，则存在一个已知问题。 设置为“启用”  时，必须将“允许绕过的次数”  设置设为具体值，不得设置为“未配置”  。 如果设置为“未配置”  ，配置文件会无法在设备上运行。 在这种情况下，设备将“配置文件状态摘要”  报告为“错误”  ，且不提供更多详细信息。
-   >
-   > 如果 "**注销时禁用提示**" 设置为 "*未配置*", 则 *不能配置***允许绕过的次数**, 也不能具有值。
-   >
-   > 此问题将在今后发布的更新中予以解决。
-
-8. 完成其他设置配置，然后保存配置文件。  
+  8. 完成其他设置配置，然后保存配置文件。  
 
 ### <a name="manage-filevault"></a>管理 FileVault
 

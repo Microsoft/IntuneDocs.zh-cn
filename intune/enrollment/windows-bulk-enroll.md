@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cbdd99dfb7b42677048b4f214e7de537db0edda
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585278"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925822"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 设备的批量注册
 
@@ -65,7 +65,7 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 
 9. （可选）可以“添加应用程序”  和“添加证书”  。 将在此设备上配置应用和证书。
 
-10. （可选）还可以使用密码保护你的配置包。  单击“创建”  。
+10. （可选）还可以使用密码保护你的配置包。  单击 **“创建”** 。
     ![Windows 配置设计器应用中的包保护屏幕截图](./media/windows-bulk-enroll/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>配置设备
@@ -95,7 +95,7 @@ Azure AD 用户是这些设备上的标准用户并接收分配的 Intune 策略
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>批量注册到 Wi-Fi 
 
-批量注册的设备无法使用面向用户的证书和 Wi-Fi 部署。 必须使用[设备级证书](../protect/certificates-configure.md)管理这些连接。 
+如果未使用开放网络，则必须使用[设备级证书](../protect/certificates-configure.md)来启动连接。 批量注册的设备无法使用面向用户的证书来访问网络。 
 
 ### <a name="conditional-access"></a>条件性访问
 条件访问不适用于使用批量注册登记的 Windows 设备。

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547794"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885951"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -56,7 +56,7 @@ ms.locfileid: "75547794"
 所有设备平台上都可能发生这些问题。
 
 ### <a name="device-cap-reached"></a>已达到设备上限
-**问题：** 用户在注册期间看到错误消息（如“公司门户暂不可用”  ），并且 Configuration Manager 上的 DMPdownloader.log 包含错误“DeviceCapReached”  。
+**问题：** 用户在注册期间收到错误（如“公司门户暂时不可用”  ）。
 
 **解决方法：**
 
@@ -113,23 +113,6 @@ ms.locfileid: "75547794"
 
     4. 再次打开目录同步，并检查该用户现在是否已正确同步。
 
-3. 如果在 Intune 中使用 Configuration Manager，请确保该用户具有有效的云用户 ID：
-
-    1. 打开 SQL Management Studio。
-
-    2. 连接到相应的数据库。
-
-    3. 打开数据库文件夹，找到并打开 **CM_DBName** 文件夹，其中 DBName 是客户数据库的名称。
-
-    4. 在顶部选择**新建查询**并执行以下查询：
-
-        - 查看所有用户：`select * from [CM_ DBName].[dbo].[User_DISC]`
-
-        - 若要查看特定用户，请使用下面的查询，其中 %testuser1% 为要查找的用户的 username@domain.com 的占位符：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
-
-        编写查询后，选择“!执行”  。
-        返回结果后，即可查找云用户 ID。  如果找不到任何 ID，则表示未授权该用户使用 Intune。
-
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名称包含特殊字符，则无法创建策略或注册设备
 **问题：** 无法创建策略或注册设备。
 
@@ -144,7 +127,7 @@ ms.locfileid: "75547794"
 - 在其组织内为用户的 UPN 后缀提供多个顶级域名（例如，@contoso.com 或 @fabrikam.com）。
 
 
-[AD FS 2.0 汇总](http://support.microsoft.com/kb/2607496)与 SupportMultipleDomain 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+[AD FS 2.0 汇总](https://support.microsoft.com/kb/2607496)与 SupportMultipleDomain 切换结合使用可启用 AD FS 服务器，以在无需其他 AD FS 2.0 服务器的情况下支持此方案。 有关详细信息，请参阅[此博客](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的问题
@@ -333,23 +316,6 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 5. 确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>通过 Intune 使用 Configuration Manager 时，注册的 iOS 设备不会在控制台中显示
-**问题：** 用户注册了 iOS 设备，但它未显示在 Configuration Manager 管理控制台中。 该设备未指示已注册。 可能的原因：
-
-- Configuration Manager 站点中的 Microsoft Intune 连接器当前未与 Intune 服务进行通信。
-- 数据发现管理器 (ddm) 组件或状态管理器 (statmgr) 组件当前未处理来自 Intune 服务的消息。
-- 你可能已从某个帐户下载了 MDM 证书，而在其他帐户上使用了它。
-
-
-**解决方法：** 请查看下列日志文件，以确定潜在错误：
-
-- dmpdownloader.log
-- ddm.log
-- statmgr.log
-
-即将增添有关在这些日志文件中查找哪些内容的示例。
-
-
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>用户的 iOS 设备在注册屏幕上受阻时间超过 10 分钟
 
 **问题**：注册设备可能会卡滞在以下两个屏幕中：
@@ -419,36 +385,6 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
     2. 选择“设备” > “所有设备”   。  
     3. 查找存在注册问题的设备。 按设备名称或 MAC/HW 地址搜索以缩小结果范围。
     4. 选择“设备”>“删除”  。 删除与设备关联的所有其他条目。  
-
-## <a name="issues-when-using-configuration-manager-with-intune"></a>通过 Intune 使用 Configuration Manager 时的问题
-
-### <a name="mobile-devices-disappear"></a>移动设备消失
-
-**问题：** 移动设备成功注册到 Configuration Manager 后就从移动设备集合中消失。 但是，该设备仍具有管理配置文件，并列示在 CSS 网关中。
-
-**解决方法：** 导致此问题发生的原因如下：
-
-- 具有自定义进程，该进程会删除未加入域的设备，或
-- 用户已在订阅中停用设备。
-若要验证并检查从 Configuration Manager 控制台中删除了该设备的是哪个进程或用户帐户，请执行以下步骤。
-
-#### <a name="check-how-device-was-removed"></a>检查设备的删除途径
-
-1. 在 Configuration Manager 管理控制台中，选择“监视”  &gt;“系统状态”  &gt;“状态消息查询”  。
-
-2. 右键单击“已手动删除的集合成员资源”  ，并选择“显示消息”  。
-
-3. 选取适当的时间/日期或过去 12 小时。
-
-4. 找到有问题的设备，并查看该设备的删除途径。 下面的示例显示帐户 SCCMInstall 是通过某个未知应用程序删除设备的。
-
-    ![设备删除诊断的屏幕快照](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
-
-5. 确保 Configuration Manager 没有计划可能自动清除非域设备、移动设备或相关设备的任务、脚本或其他进程。
-
-### <a name="other-ios-enrollment-errors"></a>其他 iOS 注册错误
-
-文档 [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)（Microsoft Intune 中的 iOS 设备注册问题疑难解答）中提供了 iOS 注册错误列表。
 
 ## <a name="pc-issues"></a>电脑问题
 

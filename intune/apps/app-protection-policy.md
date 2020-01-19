@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692120"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956339"
 ---
 # <a name="app-protection-policies-overview"></a>应用保护策略概述
 
@@ -134,11 +134,11 @@ MDM 解决方案通过提供以下功能增值：
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>可使用应用保护策略进行管理的应用
 
-任何已与 [Intune App SDK](../developer/app-sdk.md) 集成或通过 [Intune 应用包装工具](../developer/apps-prepare-mobile-application-management.md)包装的应用都可使用 Intune 应用保护策略进行管理。 请参阅使用以下工具构建并可供公众使用的 [Microsoft Intune 保护的应用](apps-supported-intune-apps.md)的官方列表。
+任何已与 [Intune SDK](../developer/app-sdk.md) 集成或通过 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) 包装的应用都可使用 Intune 应用保护策略进行管理。 请参阅使用以下工具构建并可供公众使用的 [Microsoft Intune 保护的应用](apps-supported-intune-apps.md)的官方列表。
 
 Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。
 
-[Intune App SDK](../developer/app-sdk.md) 将 [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) 中的一些高级新式身份验证功能用于此 SDK 的第一方和第三方版本。 因此，[Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) 不适用于我们的许多核心方案，例如向 Intune 应用保护服务进行身份验证和条件启动。 鉴于来自 Microsoft 标识团队的全面指导是切换到适用于所有 Microsoft Office 应用的 MSAL，因此 [Intune App SDK](../developer/app-sdk.md) 最终需要支持它，但目前没有计划。
+[Intune SDK](../developer/app-sdk.md) 将 [Azure Active Directory 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) 中的一些高级新式身份验证功能用于此 SDK 的第一方和第三方版本。 因此，[Microsoft 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL) 不适用于我们的许多核心方案，例如向 Intune 应用保护服务进行身份验证和条件启动。 鉴于来自 Microsoft 标识团队的全面指导是切换到适用于所有 Microsoft Office 应用的 MSAL，因此 [Intune SDK](../developer/app-sdk.md) 最终需要支持它，但目前没有计划。
 
 ## <a name="end-user-requirements-to-use-app-protection-policies"></a>对于使用应用保护策略的最终用户要求
 
@@ -199,7 +199,7 @@ Office 需要一个托管位置（即 OneDrive）。 Intune 会将应用中的�
 
 ### <a name="multi-identity"></a>多身份
 
-借助多身份支持，应用可以支持多个受众。 这些受众既是“公司”用户，也是“个人”用户。 “公司”受众使用工作和学校帐户，而个人帐户用于使用者受众，如 Microsoft Office 用户。 支持多身份的应用可以公开发布，只有在工作和学校（“公司”）环境中使用应用时应用保护策略才适用。 多身份支持使用 [Intune App SDK](../developer/app-sdk.md) 来仅将应用保护策略应用于已登录到应用的工作或学校帐户。 如果个人帐户登录到应用，数据将保持不变。
+借助多身份支持，应用可以支持多个受众。 这些受众既是“公司”用户，也是“个人”用户。 “公司”受众使用工作和学校帐户，而个人帐户用于使用者受众，如 Microsoft Office 用户。 支持多身份的应用可以公开发布，只有在工作和学校（“公司”）环境中使用应用时应用保护策略才适用。 多身份支持使用 [Intune SDK](../developer/app-sdk.md) 来仅将应用保护策略应用于已登录到应用的工作或学校帐户。 如果个人帐户登录到应用，数据将保持不变。
 
 例如个人环境的情况：用户在 Word 中开始一个新文档，这被视为“个人”环境，因此不会应用 Intune 应用保护策略。 使用“公司”OneDrive 帐户保存文档后，该文档将被视为“公司”环境，因此会应用 Intune 应用保护策略。
 
@@ -214,7 +214,7 @@ Outlook 提供“个人”和“公司”电子邮件的电子邮件组合视图
 个人标识号 (PIN) 是一种密码，用于验证是否是正确的用户在应用程序中访问组织的数据。
 
 **PIN 提示**<br>
-当用户要访问“公司”数据时，Intune 才会提示输入用户的应用 PIN。 在诸如 Word、Excel、PowerPoint 等多身份应用中，当用户尝试打开“公司”文档或文件时，会向他们提示输入 PIN。 在单身份应用中，例如使用 [Intune 应用包装工具](../developer/apps-prepare-mobile-application-management.md)托管的业务线应用，会在启动时提示输入 PIN，因为 [Intune App SDK](../developer/app-sdk.md) 知道用户在应用中的体验始终是针对“公司”的。
+当用户要访问“公司”数据时，Intune 才会提示输入用户的应用 PIN。 在诸如 Word、Excel、PowerPoint 等多身份应用中，当用户尝试打开“公司”文档或文件时，会向他们提示输入 PIN。 在单身份应用中，例如使用 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) 托管的业务线应用，会在启动时提示输入 PIN，因为 [Intune SDK](../developer/app-sdk.md) 知道用户在应用中的体验始终是针对“公司”的。
 
 **PIN 提示或公司凭据提示、频率**<br>
 IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设置“以下时间过后重新检查访问要求(分钟)”。  此设置指定在设备上检测访问要求，并再次显示应用程序 PIN 屏幕或公司凭据提示之前的时长。 但是，请注意以下关于 PIN 的重要详细信息，它们会影响用户收到提示的频率：
@@ -232,13 +232,22 @@ IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设�
 Intune PIN 基于非活动状态计时器（“以下时间过后重新检查访问要求(分钟)”的值）执行操作。  因此，Intune PIN 提示与 Outlook 和 OneDrive 的内置应用 PIN 提示（默认情况下与应用启动直接关联）相互独立显示。 如果用户同时收到两个 PIN 提示，预期行为应以 Intune PIN 为准。
 
 **Intune PIN 安全性**<br>
-PIN 仅允许正确的用户在应用中访问其组织数据。 因此，最终用户必须使用其工作或学校帐户登录，然后才能设置或重置其 Intune 应用 PIN。 这种身份验证通过安全的令牌交换由 Azure Active Directory 执行，且不对 [Intune App SDK](../developer/app-sdk.md) 公开。 从安全性的角度来看，保护工作或学校数据的最佳方法便是对其进行加密。 加密与应用 PIN 无关，它本身是一项应用保护策略。
+PIN 仅允许正确的用户在应用中访问其组织数据。 因此，最终用户必须使用其工作或学校帐户登录，然后才能设置或重置其 Intune 应用 PIN。 这种身份验证通过安全的令牌交换由 Azure Active Directory 执行，且不对 [Intune SDK](../developer/app-sdk.md) 公开。 从安全性的角度来看，保护工作或学校数据的最佳方法便是对其进行加密。 加密与应用 PIN 无关，它本身是一项应用保护策略。
 
-**Intune PIN - 防止暴力攻击**<br>
-作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，[Intune App SDK](../developer/app-sdk.md) 可以擦除应用中的“公司”数据。
-  
+**防止暴力攻击和 Intune PIN**<br>
+作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，[Intune SDK](../developer/app-sdk.md) 可以擦除应用中的“公司”数据。
+
+**Intune PIN 和选择性擦除**<br>
+在 iOS 上，应用程序级 PIN 信息存储在具有同一发布者的应用之间共享的密钥链中，例如所有第一方 Microsoft 应用。 此 PIN 信息还与最终用户帐户关联。 一项应用的选择性擦除不应影响到其他应用。 
+
+例如，为登录用户的 Outlook 设置的 PIN 存储在共享密钥链中。 当用户登录到 OneDrive（也由 Microsoft 发布）时，他们将看到与 Outlook 相同的 PIN，因为它使用相同的共享密钥链。 当你在 Outlook 中注销 Outlook 或擦除用户数据时，Intune SDK 不会清除密钥链，因为 OneDrive 可能仍在使用该 PIN。 因此，选择性擦除不会清除共享密钥链（包括 PIN）。 即使设备上只存在一个发布者应用程序，此行为仍保持不变。 
+
+由于 PIN 是在具有同一发布者的应用间共享的，因此，如果在单个应用擦除，Intune SDK 不知道设备上是否有该相同发布者的其他应用程序。 因此，Intune SDK 不会清除 PIN，因为它可能仍用于其他应用。 预期是：当来自该发布者的最后一个应用最终将作为某些 OS 清理的一部分被删除时，应删除应用 PIN。
+ 
+如果观察到某些设备上的 PIN 被擦除，可能会发生以下情况：由于 PIN 绑定到标识，因此，如果用户在擦除后使用其他帐户登录，系统将提示他们输入新 PIN。 但是，如果用户使用以前存在的帐户登录，则可以使用存储在密钥链中的 PIN 登录。
+
 **要在来自同一个发布者的应用上设置 PIN 两次？**<br>
-目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN，该功能需要一些应用程序（即 WXP、Outlook、Managed Browser、Yammer）的参与，以便集成 [Intune APP SDK for iOS](../developer/app-sdk-ios.md)。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。
+目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN，该功能需要一些应用程序（即 WXP、Outlook、Managed Browser、Yammer）的参与，以便集成 [Intune SDK for iOS](../developer/app-sdk-ios.md)。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。
 
 为了支持此功能，并确保与旧版 Intune SDK for iOS 的向后兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS，就需要设置两个 PIN。 这两个 PIN（对于每个应用）不以任何方式相关（即必须遵守应用到应用的应用保护策略）。 这样，只有  当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 
 
@@ -262,6 +271,8 @@ IT 管理员可以部署要求对应用数据进行加密的应用保护策略�
 
 对于由 [Intune 应用包装工具](../developer/apps-prepare-mobile-application-management.md)托管的业务线应用，所有应用数据都会被视为“公司”数据。
 
+### <a name="selective-wipe"></a>选择性擦除
+
 **远程擦除数据**<br>
 Intune 可以通过以下三种不同方式擦除应用数据： 
 - 完全设备擦除
@@ -270,10 +281,10 @@ Intune 可以通过以下三种不同方式擦除应用数据：
 
 有关 MDM 远程擦除的详细信息，请参阅[使用“擦除”或“停用”操作删除设备](../remote-actions/devices-wipe.md)。 有关使用 MAM 进行选择性擦除的详细信息，请参阅[“停用”操作](../remote-actions/devices-wipe.md#retire)和[如何仅擦除应用中的公司数据](apps-selective-wipe.md)。
 
-[擦除](../remote-actions/devices-wipe.md)会通过将设备还原到其出厂默认设置，从设备  中删除所有用户数据和设置。 设备从 Intune 删除。
+[完全设备擦除](../remote-actions/devices-wipe.md)会通过将设备还原到其出厂默认设置，从“设备”  中删除所有用户数据和设置。 设备从 Intune 删除。
 
   >[!NOTE]
-  > 擦除只有在注册了 Intune 移动设备管理 (MDM) 的设备上才能实现。
+  > 完全擦除设备和选择性擦除 MDM 只有在注册了 Intune 移动设备管理 (MDM) 的设备上才能实现。
 
 **MDM 选择性擦除**<br>
 请参阅[删除设备 - 停用](../remote-actions/devices-wipe.md#retire)，了解删除公司数据的相关信息。
@@ -281,24 +292,20 @@ Intune 可以通过以下三种不同方式擦除应用数据：
 **MAM 选择性擦除**<br>
 MAM 选择性擦除仅删除应用中的公司应用数据。 使用 Intune Azure 门户启动该请求。 若要了解如何启动擦除请求，请参阅[如何仅擦除应用中的公司数据](apps-selective-wipe.md)。
 
-如果用户在启用了选择性擦除的情况下使用应用，那么 [Intune App SDK](../developer/app-sdk.md) 会每 30 分钟检查一次来自 Intune MAM 服务的选择性擦除请求。 它还会在用户第一次启动应用并使用其工作或学校帐户登录时检查选择性擦除。
+如果用户在启用了选择性擦除的情况下使用应用，那么 [Intune SDK](../developer/app-sdk.md) 会每 30 分钟检查一次来自 Intune MAM 服务的选择性擦除请求。 它还会在用户第一次启动应用并使用其工作或学校帐户登录时检查选择性擦除。
 
 **本地服务不适用于 Intune 保护的应用时**<br>
-Intune 应用保护要求用户的身份在应用程序与 [Intune App SDK](../developer/app-sdk.md) 之间保持一致。 保证此种一致的唯一方法是通过新式身份验证。 在某些情况下应用可能适用于本地配置，但它们既不一致也无法得到保证。
+Intune 应用保护要求用户的身份在应用程序与 [Intune SDK](../developer/app-sdk.md) 之间保持一致。 保证此种一致的唯一方法是通过新式身份验证。 在某些情况下应用可能适用于本地配置，但它们既不一致也无法得到保证。
 
 **从托管应用中打开 Web 链接的安全方法**<br>
 IT 管理员可以为 [Intune Managed Browser 应用](app-configuration-managed-browser.md)（一种由 Microsoft Intune 开发的可使用 Intune 轻松管理的 Web 浏览器）部署和设置应用保护策略。 IT 管理员可以要求 Intune 托管应用中的所有 Web 链接均使用 Managed Browser 应用打开。
-
-## <a name="examples-of-app-protection-policies"></a>应用保护策略示例
-
-请参阅 [Android 应用保护策略设置](app-protection-policy-settings-android.md)和 [iOS 应用保护策略设置](app-protection-policy-settings-ios.md)，以详细了解应用保护策略示例以及各个应用保护策略设置。
 
 ## <a name="app-protection-experience-for-ios-devices"></a>适用于 iOS 设备的应用保护体验
 
 ### <a name="device-fingerprint-or-face-ids"></a>设备指纹或 Face ID 
 Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许可用户访问。 控制对应用的访问权限的方法之一是支持的设备上需要具有 Apple 的 Touch ID 或 Face ID。 Intune 执行某个行为后，如果对设备的生物识别数据库有任何更改，则在满足下一个非活动超时值时，Intune 会提示用户输入 PIN。 对生物识别数据的更改包括添加或删除指纹或人脸。 如果 Intune 用户未设置 PIN，则会引导他们设置 Intune PIN。
  
-此过程旨在继续确保应用中的组织数据安全并在应用级别受保护。 此功能仅适用于 iOS，并且需要集成了 Intune APP SDK for iOS 版本 9.0.1 或更高版本的应用程序参与。 必须集成 SDK，以便可以在目标应用程序上强制执行行为。 此集成陆续进行，取决于特定应用程序团队。 参与的一些应用包括 WXP、Outlook、Managed Browser 和 Yammer。
+此过程旨在继续确保应用中的组织数据安全并在应用级别受保护。 此功能仅适用于 iOS，并且需要集成了 Intune SDK for iOS 版本 9.0.1 或更高版本的应用程序参与。 必须集成 SDK，以便可以在目标应用程序上强制执行行为。 此集成陆续进行，取决于特定应用程序团队。 参与的一些应用包括 WXP、Outlook、Managed Browser 和 Yammer。
   
 ### <a name="ios-share-extension"></a>iOS 共享扩展
 即使将数据传输策略设置为“仅托管应用”  或“无应用”  ，也可使用 iOS 共享扩展在非托管应用中打开工作或学校数据。 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS 共享扩展。 因此，Intune _**会在对“公司”数据进行应用外共享之前对其进行加密**_ 。 可以通过在托管应用外部打开“公司”文件来验证此加密行为。 该文件应进行加密，且无法在托管应用外打开。
@@ -306,7 +313,7 @@ Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许�
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>适用于同一组应用和用户的多个 Intune 应用保护访问设置
 当用户尝试从公司帐户访问目标应用时，系统将在最终用户设备上按特定顺序应用 Intune 应用访问保护策略。 通常先访问擦除，然后是块，再是可取消的警告。 例如，如果适用于特定用户/应用，则先应用阻止用户访问的最低 iOS 操作系统设置，再应用警告用户更新其 iOS 版本的最低 iOS 操作系统设置。 因此，如果 IT 管理员将最低 iOS 操作系统配置为 11.0.0.0 并将最低 iOS 操作系统（仅限警告）配置为 11.1.0.0，则当尝试访问该应用的设备具有 iOS 10 时，系统将基于更严格的最低 iOS 操作系统版本设置阻止最终用户的访问。
 
-处理不同类型的设置时，先处理 Intune App SDK 版本要求，其次是应用版本要求，再是 iOS 操作系统版本要求。 然后，按相同顺序检查各类型设置的所有警告。 建议仅根据 Intune 产品团队针对关键阻止方案提供的指导配置 Intune App SDK 版本要求。
+处理不同类型的设置时，先处理 Intune SDK 版本要求，其次是应用版本要求，再是 iOS 操作系统版本要求。 然后，按相同顺序检查各类型设置的所有警告。 建议仅根据 Intune 产品团队针对关键阻止方案提供的指导配置 Intune SDK 版本要求。
 
 ## <a name="app-protection-experience-for-android-devices"></a>适用于 Android 设备的应用保护体验
 
@@ -345,6 +352,10 @@ Google Play 保护的 SafetyNet API 检查要求最终用户保持在线状态�
 ## <a name="next-steps"></a>后续步骤
 
 [如何使用 Microsoft Intune 创建和部署应用保护策略](app-protection-policies.md)
+
+[Microsoft Intune 中提供的 Android 应用保护策略设置](app-protection-policy-settings-android.md)
+
+[Microsoft Intune 中提供的 iOS 应用保护策略设置](app-protection-policy-settings-ios.md)
 
 ## <a name="see-also"></a>另请参阅
 第三方应用（例如 Salesforce 移动应用）与 Intune 一起以特定的方式来保护公司数据。 若要详细了解 Salesforce 应用专门与 Intune 合作的方式（包括 MDM 应用配置设置），请参阅 [Salesforce 应用和 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf)。

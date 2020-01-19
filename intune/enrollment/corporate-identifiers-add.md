@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955467"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956297"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -120,7 +120,7 @@ ms.locfileid: "74955467"
 
 ## <a name="change-device-ownership"></a>更改设备所有权
 
-设备属性显示 Intune 中每个设备记录的“所有权”  。 作为管理员，你可将设备所有权指定为“个人”  或“公司”  。 当设备的所有权类型从“个人”更改为“公司”时，Intune 会在 7 天内删除以前从该设备收集的所有应用信息。 如果适用，Intune 还将删除记录的电话号码。 
+设备属性显示 Intune 中每个设备记录的“所有权”  。 作为管理员，你可将设备所有权指定为“个人”  或“公司”  。 当设备的所有权类型从“公司”更改为“个人”时，Intune 会在 7 天内删除以前从该设备收集的所有应用信息。 如果适用，Intune 还将删除记录的电话号码。 
 
 **更改设备所有权：**
 1. 登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备” > “所有设备”> 选择该设备   。

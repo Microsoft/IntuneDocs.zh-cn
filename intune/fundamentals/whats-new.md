@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692261"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920093"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -62,6 +62,15 @@ ms.locfileid: "75692261"
 #### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>对 Microsoft Outlook for iOS 提供 S/MIME 支持<!-- 2669398 -->
 Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Outlook for iOS。 有关详细信息，请参阅[适用于 iOS 和 Android 的敏感度标签和保护](https://aka.ms/omsmime)。
 
+#### <a name="cache-win32-app-content-using-microsoft-connected-cache-server---6030314---"></a>使用 Microsoft Connected Cache 服务器缓存 Win32 应用内容<!-- 6030314 -->
+可以在 Configuration Manager 分发点上安装 Microsoft Connected Cache 服务器，用于缓存 Intune Win32 应用内容。 有关详细信息，请参阅 [Configuration Manager 中的 Microsoft Connected Cache - 对 Intune Win32 应用的支持](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="windows-10-administrative-templates-admx-profiles-now-support-scope-tags---5137390-wnready--"></a>Windows 10 管理模板 (ADMX) 配置文件现支持范围标记 <!--5137390 wnready-->
+现在可以将范围标记分配给管理模板配置文件 (ADMX)。 为此，请前往“Intune”   > “设备”   > “配置文件”  >“在列表中选择管理模板配置文件”>“属性”   > “范围标记”  。 有关范围标记的详细信息，请参阅[向其他对象分配范围标记](../fundamentals/scope-tags.md#assign-scope-tags-to-other-objects)。
+
 <!-- ########################## -->
 ## <a name="week-of-december-30-2019"></a>2019 年 12 月 30 日当周
 
@@ -71,8 +80,8 @@ Intune 支持提供 S/MIME 签名和加密证书，适用于 iOS 设备上的 Ou
 #### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>从 MEM 加密的 macOS 设备检索个人恢复密钥<!-- 4851745 -->
 借助 iOS 公司门户应用，最终用户可以检索其个人恢复密钥（FileVault 密钥）。 拥有个人恢复密钥的设备必须已注册 Intune，并且通过 Intune 使用 FileVault 加密。 借助 iOS 公司门户应用，最终用户单击“获取恢复密钥”，即可以在加密的 macOS 设备中检索个人恢复密钥。  此外，还可以通过选择“设备” > “已加密和已注册的 macOS 设备” > “获取恢复密钥”，来从 Intune 检索恢复密钥。    有关 FileVault 的详细信息，请参阅[用于 macOS 的 FileVault 加密](~/protect/encrypt-devices.md#filevault-encryption-for-macos)。
 
-#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>iOS 用户许可的 VPP 应用<!-- 5619268 -->
-对于用户注册的 iOS 设备，将不再向最终用户显示部署为可用的设备许可的 VPP 应用程序。 不过，最终用户会继续看到公司门户中的所有用户许可的 VPP 应用。 有关 VPP 应用的详细信息，请参阅[如何使用 Microsoft Intune 管理通过 Apple Volume Purchase Program 购买的 iOS and macOS 应用](~/apps/vpp-apps-ios.md)。
+#### <a name="ios-and-ipados-user-licensed-vpp-apps---5619268---"></a>iOS 和 iPadOS 用户许可的 VPP 应用<!-- 5619268 -->
+对于用户注册的 iOS 和 iPadOS 设备，将不再向最终用户显示部署为可用的新创建的设备许可的 VPP 应用程序。 不过，最终用户会继续看到公司门户中的所有用户许可的 VPP 应用。 有关 VPP 应用的详细信息，请参阅[如何使用 Microsoft Intune 管理通过 Apple Volume Purchase Program 购买的 iOS and macOS 应用](~/apps/vpp-apps-ios.md)。
 
 <!-- ########################## -->
 ## <a name="week-of-december-23-2019"></a>2019 年 12 月 23 日当周
@@ -181,6 +190,9 @@ Intune 添加了更多适用于 iOS、iPadOS 和 macOS 设备的单一登录 (SS
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>使用 PKCS 证书配置文件为设备预配证书<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
 现在，当运行 Android for Work、iOS 和 Windows 的设备与 PKCS 证书配置文件关联时，可以使用配置文件向其颁发证书，例如用于 Wi-Fi 和 VPN 的配置文件  。 之前，这三个平台仅支持基于用户的证书，基于设备的支持仅限于 macOS。
+
+> [!NOTE]
+> Wi-Fi 配置文件不支持 PKCS 证书配置文件。 而是在使用 [EAP 类型](../configuration/wi-fi-settings-windows.md#enterprise-profile)时使用 SCEP 证书配置文件。
 
 若要使用基于设备的证书，在为支持的平台[创建 PKCS 证书配置文件](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)时选择“设置”。  现在将显示“证书类型”设置，它支持“设备”或“用户”选项。 
 

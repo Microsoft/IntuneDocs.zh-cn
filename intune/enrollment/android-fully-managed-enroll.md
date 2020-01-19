@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562383"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885935"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>设置 Android Enterprise 完全托管设备的 Intune 注册 
 
@@ -36,7 +36,7 @@ Intune 可帮助将应用和设置部署到 Android Enterprise 完全托管设�
 
 ## <a name="technical-requirements"></a>技术要求
 
-必须拥有 Intune 独立租户，才能管理 Android Enterprise 完全托管设备。 完全托管设备管理在混合（已连接 Configuration Manager）模式或旧版 Silverlight 管理控制台中均不可用。
+必须拥有 Intune 独立租户，才能管理 Android Enterprise 完全托管设备。 完全托管的设备管理在旧版 Silverlight 管理控制台中不可用。
 
 设备必须满足以下要求才能作为 Android Enterprise 完全托管设备进行管理：
 

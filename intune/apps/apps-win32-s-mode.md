@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: a3074b30921a4daba7469e670a17ad29ee1edc00
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204895"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827796"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>在 S 模式设备上启用 Win32 应用
 
@@ -45,7 +45,7 @@ ms.locfileid: "75204895"
    - 通过创建 Windows 10 S 模式补充策略，将已签名的补充策略上传到 Intune（见下文）。
 3. 通过 Intune 允许 Win32 应用目录：
    - 创建目录文件（每个应用包含 1 个文件），并使用 DGSS 或其他证书基础结构对其进行签名。
-   - 使用 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)将已签名的目录打包到 .intunewin  文件中。 有关详细信息，请参阅 [Win32 应用管理 - 准备 Win32 应用内容以进行上传](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload)。
+   - 使用 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)将已签名的目录打包到 .intunewin  文件中。 使用 [Microsoft Win32 内容准备工具](https://go.microsoft.com/fwlink/?linkid=2065730)创建目录文件时，不存在命名限制。 从指定的源文件夹和安装程序文件生成 .intunewin  文件时，可以使用 -a cmdline 选项提供仅包含目录文件的单独文件夹。 有关详细信息，请参阅 [Win32 应用管理 - 准备 Win32 应用内容以进行上传](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload)。
    - Intune 应用已签名的应用目录，以使用 [Intune 管理扩展](~/apps/intune-management-extension.md)在 S 模式设备上安装 Win32 应用。
 
 > [!NOTE]

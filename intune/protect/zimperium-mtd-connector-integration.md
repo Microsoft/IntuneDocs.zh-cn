@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a6f57783b0878cd25e6c7eacdf4b32e462790916
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810316"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925813"
 ---
 # <a name="integrate-zimperium-with-intune"></a>将 Zimperium 与 Intune 集成
 
@@ -31,7 +31,7 @@ ms.locfileid: "72810316"
 
 ## <a name="before-you-begin"></a>在开始之前
 
-以下步骤是在 [Zimperium MTD 控制台](https://www.zimperium.com/platform)中完成的，并且将为在 Intune 中注册的设备（使用设备符合性）和在 Intune 中未注册的设备（使用应用保护策略）启用与 Lookout 服务的连接。
+以下步骤是在 [Zimperium MTD 控制台](https://www.zimperium.com/platform)中完成的，并且将为在 Intune 中注册的设备（使用设备符合性）和未在 Intune 中注册的设备（使用应用保护策略）启用与 Zimperium 服务的连接。
 
 开始将 Zimperium 与 Intune 集成之前，请确保具有以下订阅和凭据：
 

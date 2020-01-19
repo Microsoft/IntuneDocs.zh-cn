@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547984"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885769"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>为受管理 iOS 设备添加应用配置策略
 
@@ -182,7 +182,7 @@ DEP（Apple 的设备注册计划）注册与 App Store 版公司门户应用不
 
 1. 在 Intune 中，通过转到“Intune”   > “应用”   > “所有应用”   > “添加”  来添加 Intune 公司门户应用（如有必要）。
 2. 转到“应用”   > “应用配置策略”  ，为公司门户应用创建应用配置策略。
-3. 使用以下 XML 创建应用配置策略。 可以在[为受管理 iOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)或（对于混合 MDM）[在 Configuration Manager 中将设置应用于使用应用配置策略的 iOS 应用](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies)中找到有关如何创建应用配置策略和输入 XML 数据的详细信息。
+3. 使用以下 XML 创建应用配置策略。 有关如何创建应用配置策略和输入 XML 数据的详细信息，请参阅[添加适用于托管 iOS 设备的应用配置策略](app-configuration-policies-use-ios.md)。
 
     ``` xml
     <dict>

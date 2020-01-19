@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/09/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502882"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839256"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入门：免费试用 Microsoft Intune
 
@@ -100,7 +100,7 @@ Intune 通过 Microsoft Azure 门户管理的基于云的安全服务提供移�
 如上所述，若想使用组织自己的自定义域名，但不使用“.onmicrosoft.com”，则可以在 Microsoft 365 管理中心进行更改  。 通过以下步骤可以添加、验证和配置你的自定义域名。  
 
 > [!IMPORTANT]
-> 你无法重命名或删除域名的初始部分“onmicrosoft.com”   。 但可以添加、验证或删除用于 Intune 的自定义域名，以保证业务标识清晰  。 有关详细信息，请参阅[配置自定义域名](custom-domain-name-configure.md)。
+> 无法重命名或删除域名的初始  部分“onmicrosoft.com”  。 但可以添加、验证或删除用于 Intune 的自定义域名，以保证业务标识清晰  。 有关详细信息，请参阅[配置自定义域名](custom-domain-name-configure.md)。
 
 1. 转到 [Microsoft 365 管理中心](https://admin.microsoft.com)并使用管理员帐户登录。
 
