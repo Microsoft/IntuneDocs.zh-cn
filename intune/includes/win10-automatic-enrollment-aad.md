@@ -1,27 +1,27 @@
 ---
-ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 748141dc494e28f25a09039a7a500411af76ace7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71912747"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76037548"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>启用 Windows 10 自动注册
 
-自动注册允许用户在 Intune 中注册其 Windows 10 设备。 为了进行注册，用户将其工作帐户添加到其个人拥有的设备或将公司拥有的设备加入 Azure Active Directory。 在后台，设备进行注册并加入 Azure Active Directory。 注册后，使用 Intune 管理设备。
+自动注册允许用户在 Intune 中注册其 Windows 10 设备。 为了进行注册，用户将其工作帐户添加到其个人拥有的设备或将公司拥有的设备加入 Azure Active Directory。 在后台，设备进行注册并加入 Azure Active Directory。 注册后，通过 Intune 管理设备。
 
 **必备条件**
 
-- Azure Active Directory Premium 订阅（[试用订阅](http://go.microsoft.com/fwlink/?LinkID=816845)）
+- Azure Active Directory Premium 订阅（[试用订阅](https://go.microsoft.com/fwlink/?LinkID=816845)）
 - Microsoft Intune 订阅
 
-### <a name="configure-automatic-mdm-enrollment"></a>配置自动 MDM 注册
+### <a name="configure-automatic-mdm-enrollment"></a>配置自动进行 MDM 注册
 
 1. 登录 [Azure 门户](https://portal.azure.com)，然后选择“Azure Active Directory”  。
 
    ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
-2. 选择“移动性(MDM 和 MAM)”  。
+2. 选择“移动性 (MDM 和 MAM)”  。
 
    ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
@@ -29,7 +29,7 @@ ms.locfileid: "71912747"
 
    ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
-4. 配置“MDM 用户作用域”  。 指定应由 Microsoft Intune 管理的用户的设备。 这些 Windows 10 设备可自动注册，以使用 Microsoft Intune 进行管理。
+4. 配置“MDM 用户范围”  。 指定应由 Microsoft Intune 管理的用户设备。 这些 Windows 10 设备可自动注册，以使用 Microsoft Intune 进行管理。
 
    - **无** - MDM 自动注册已禁用
    - **部分** - 选择可以自动注册 Windows 10 设备的组 
@@ -45,11 +45,11 @@ ms.locfileid: "71912747"
 
    ![Azure 门户的屏幕截图](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
-5. 对以下 URL 使用默认值：
+5. 对下列 URL 使用默认值：
     - **MDM 使用条款 URL**
     - **MDM 发现 URL**
     - **MDM 符合性 URL**
 
 6. 选择“保存”  。
 
-默认情况下，不会为该服务启用双因素身份验证。 但是，在注册设备时，建议启用双因素身份验证。 要启用双因素身份验证，请在 Azure AD 中配置一个双因素身份验证提供程序，并为用户帐户配置多重身份验证。 请参阅[Azure 多重身份验证服务器入门](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
+默认情况下，不会为该服务启用双重身份验证。 但是，在注册设备时，建议启用双因素身份验证。 要启用双因素身份验证，请在 Azure AD 中配置一个双因素身份验证提供程序，并为用户帐户配置多重身份验证。 请参阅[Azure 多重身份验证服务器入门](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。

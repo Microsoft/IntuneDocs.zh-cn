@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 1bad86e561c8695d58296c8f473815a203ef210a
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886022"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258481"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用导入的 PKCS 证书
 
@@ -134,7 +134,7 @@ PowerShell 模块提供了使用 Windows 加密创建密钥的方法。 你也�
    > [!TIP]
    > 当导入 PFX 证书时，必须再次选择你使用的提供程序。 你可以使用 **Microsoft 软件密钥存储提供程序**支持使用其他提供程序。 密钥名称也作为示例提供，你可以使用你选择的其他密钥名称。
 
-   如果打算从你的工作站导入证书，可以使用以下命令将此密钥导出到文件：`Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
+   如果打算从你的工作站导入证书，可以使用以下命令将此密钥导出到文件：`Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path\Filename.PFX>"`
 
    必须在承载 Microsoft Intune 的 PFX 证书连接器的服务器上导入私钥，以便可以成功处理导入的 PFX 证书。
 

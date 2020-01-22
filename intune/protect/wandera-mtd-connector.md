@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc63be3c7c536cba67ef92288c12cc4032ae200
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508801"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036626"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>使用 Intune 的 Wandera 移动威胁防御连接器  
 
@@ -48,7 +48,7 @@ Intune 中的符合性策略包括基于 Wandera 风险评估的 MTD 规则。 �
 - Android 5.0 及更高版本  
 - iOS 10.2 及更高版本  
 
-有关平台和设备的详细信息，请参阅 [Wandera 网站](https://www.wandera.com/why-wandera/features/device-support/)。
+有关平台和设备的详细信息，请参阅 [Wandera 网站](https://www.wandera.com/classic-help-center/)。
 
 ## <a name="prerequisites"></a>必备条件  
 
@@ -88,11 +88,11 @@ Intune 中的符合性策略包括基于 Wandera 风险评估的 MTD 规则。 �
 
 **威胁解除后授予访问权限**：  
 
-![威胁解除后授予访问权限](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
+![修正后授予访问权限](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
 
 ## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根据网络威胁控制对 SharePoint Online 的访问
 
-基于设备风险检测对网络的威胁，如中间人攻击和阻止同步企业文件。
+检测到中间人攻击等网络威胁时，根据设备风险阻止对公司文件进行同步。
 
 **检测到网络威胁时阻止 SharePoint Online**：  
 
