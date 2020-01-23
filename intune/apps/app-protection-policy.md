@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956339"
+ms.locfileid: "76036648"
 ---
 # <a name="app-protection-policies-overview"></a>应用保护策略概述
 
@@ -185,7 +185,7 @@ Office 需要一个托管位置（即 OneDrive）。 Intune 会将应用中的�
 
 ## <a name="app-protection-global-policy"></a>应用保护全局策略
 
-若 OneDrive 管理员浏览到 admin.office.com 并选择“设备”访问权限，则他们可为 OneDrive 和 SharePoint 客户端应用设置移动应用程序管理控件    。 
+如果 OneDrive 管理员浏览到 admin.onedrive.com 并选择“设备”访问权限，则他们可为 OneDrive 和 SharePoint 客户端应用设置移动应用程序管理控件    。 
 
 这些设置可供 OneDrive 管理控制台使用，可配置名为全局策略的特殊 Intune 应用保护策略  。 此全局策略适用于租户中的所有用户，且无法控制策略目标设定。 
 

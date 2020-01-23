@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/17/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
+ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563564"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "76294789"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>将 Microsoft Edge for Windows 10 添加到 Microsoft Intune
 
 必须首先将应用添加到 Intune 中，才可以部署、配置、监视或保护它们。 可用的[应用类型](~/apps/apps-add.md#app-types-in-microsoft-intune)之一是 Microsoft Edge 版本 77 和更高版本  。 通过在 Intune 中选择此应用类型，可以将 Microsoft Edge 版本 77 和更高版本分配并安装到由你管理的运行 Windows 10 的设备  。
 
 > [!IMPORTANT]
-> 此应用类型处于“公共预览”阶段，提供适用于 Windows 10 的开发人员和 beta 版本通道  。 部署仅使用英语 (EN)，但最终用户可以在“设置” > “语言”下更改浏览器中的显示语言   。 Microsoft Edge 是一款安装在系统上下文和类似体系结构中的 Win32 应用（在 x86 OS 上安装为 x86 应用，在 x64 OS 上安装为 x64 应用）。 Intune 将检测任何预先存在的 Microsoft Edge 安装。 如果其安装在用户上下文中，系统安装会将其覆盖。 如果其安装在系统上下文中，则报告安装成功。 另外，默认“启用”  Microsoft Edge 的自动更新，且无法卸载 Microsoft Edge。
+> 此应用类型处于“公共预览”阶段，提供适用于 Windows 10 的“稳定”、“Beta”和“开发”通道  。 部署仅使用英语 (EN)，但最终用户可以在“设置” > “语言”下更改浏览器中的显示语言   。 Microsoft Edge 是一款安装在系统上下文和类似体系结构中的 Win32 应用（在 x86 OS 上安装为 x86 应用，在 x64 OS 上安装为 x64 应用）。 Intune 将检测任何预先存在的 Microsoft Edge 安装。 如果其安装在用户上下文中，系统安装会将其覆盖。 如果其安装在系统上下文中，则报告安装成功。 另外，默认“启用”  Microsoft Edge 的自动更新，且无法卸载 Microsoft Edge。
 
 > [!NOTE]
 > Microsoft Edge 版本 77 和更高版本也同样适用于 macOS  。
@@ -38,7 +38,7 @@ ms.locfileid: "74563564"
 
 ## <a name="prerequisites"></a>必备条件
 - 需要 Windows 10 RS2 及更高版本。
-- 用户上下文中预安装的任何“开发人员”和“beta 版本”通道 Microsoft Edge 版本 77 及更高版本都将被系统上下文中安装的 Edge 覆盖    。
+- 用户上下文中适用于所有通道的任何预安装的 Microsoft Edge 版本 77 及更高版本都将被系统上下文中安装的 Edge 覆盖  。
 
 ## <a name="configure-the-app-in-intune"></a>在 Intune 中配置应用
 可以使用以下步骤将 Microsoft Edge 版本 77 和更高版本添加到 Intune：
@@ -53,7 +53,7 @@ ms.locfileid: "74563564"
 1. 单击“应用信息”以显示“应用信息”窗格   。
 2. 在“应用信息”窗格中，提供有关此应用部署的信息  。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
     - **名称**：输入应用的名称，该名称将显示在公司门户中。 请确保所有名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
-    - **说明**：输入应用的描述。 例如，可以在描述中列出目标用户。
+    - **描述**：输入应用的描述。 例如，可以在描述中列出目标用户。
     - **发布者**：Microsoft 显示为发布者。
     - **类别**：（可选）选择一个或多个内置应用类别或所创建的类别。 此设置可让用户在浏览公司门户时更轻松地找到该应用。
     - **在公司门户中将此应用显示为特色应用**：选择此选项，用户在公司门户中浏览应用时，将在主页上突出显示该应用。
@@ -68,8 +68,9 @@ ms.locfileid: "74563564"
 在此步骤中，配置应用的安装选项。
 
 1. 在“添加应用”  窗格中，选择“应用设置”  。
-2. 在“应用设置”窗格中，从“通道”列表中选择“Beta”或“开发”，以确定要从哪个 Edge 通道部署应用     。
-    - “Beta”通道是最稳定的 Microsoft Edge 预览体验，也是在组织内全面试用的最佳选择  。 每六周发布一次重大更新，每个版本中都会加入开发人员通道的经验和改进。
+2. 在“应用设置”窗格中，从“通道”列表中选择“稳定”、“Beta”或“开发”，以确定要从哪个 Edge 通道部署应用      。
+    - “稳定”  通道是用于在企业环境中广泛部署的建议通道。 它每六周更新一次，每个版本中都会加入“Beta”通道的改进。
+    - “Beta”通道拥有最稳定的 Microsoft Edge 预览体验，也是在组织内全面试用的最佳选择  。 每六周发布一次重大更新，每个版本中都会加入“开发”通道的经验和改进。
     - “开发”通道适用于在 Windows、Windows Server 和 macOS 上提供反馈的企业  。 它每周更新，包含最新的改进和修复。
 
     > [!NOTE]

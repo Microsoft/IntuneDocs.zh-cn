@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d697b2b0bc3fa5ffea4f8e8ff15cd7c62af3ad30
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
-ms.translationtype: MTE75
+ms.openlocfilehash: ae7dd4a1873cd7117870c4c1408e512831ecaa4f
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547953"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258469"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -42,11 +42,11 @@ ms.locfileid: "75547953"
 - **App Store（仅适用于手机）** ：选择“未配置”（默认）可允许最终用户访问移动设备上的 App Store  。 选择“阻止”可阻止使用应用商店  。
 - **自动更新来自应用商店的应用**：选择“未配置”（默认）可允许自动更新从 Microsoft Store 安装的应用  。 选择“阻止”可阻止自动安装更新  。
 - **受信任的应用安装**：选择是否可以安装非 Microsoft Store 应用，也称为旁加载。 安装旁加载，然后运行或测试未经 Microsoft Store 认证的应用。 例如，仅适用于公司内部的应用。 选项包括：
-  - **未配置**（默认）： Intune 不更改或更新此设置。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
   - **阻止**：阻止旁加载。 无法安装非 Microsoft Store 应用程序。
   - **允许**：允许旁加载。 可以安装非 Microsoft Store 应用程序。
 - **开发人员解锁**：允许 Windows 开发人员设置，如允许最终用户修改已旁加载的应用。 选项包括：
-  - **未配置**（默认）： Intune 不更改或更新此设置。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
   - **阻止**：阻止开发人员模式和旁加载应用。
   - **允许**：允许开发人员模式和旁加载应用。
 
@@ -58,13 +58,13 @@ ms.locfileid: "75547953"
 - **在系统卷上安装应用数据**：选择“阻止”可阻止应用在设备的系统卷上存储数据  。 选择“未配置”（默认）则允许应用在系统磁盘卷上存储数据  。
 - **在系统驱动器上安装应用**：选择“阻止”可阻止将应用安装到设备上的系统驱动器上  。 选择“未配置”（默认）则允许在系统驱动器上安装应用  。
 - **游戏 DVR**（仅限桌面版）：选择“阻止”可禁用 Windows 游戏录制和播放  。 选择“未配置”（默认）则允许录制和播放游戏  。
-- **仅限来自应用商店的应用**：此设置确定用户从 Microsoft Store 以外的位置安装应用时的用户体验。 选项包括：
+- **仅应用商店中的应用**：此设置决定用户从 Microsoft Store 以外的位置安装应用时的用户体验。 选项包括：
 
   - **未配置**（默认）：允许最终用户从 Microsoft Store 以外的位置安装应用，包括其他策略设置中定义的应用。  
-  - **任何地方**：关闭应用建议，并允许用户从任何位置安装应用。  
-  - **仅限应用商店**：强制最终用户仅从 Microsoft Store 安装应用。
-  - **建议**：从 Microsoft Store 中提供的 web 安装应用时，用户将看到一条消息，建议用户从应用商店下载该应用。  
-  - **首选存储**：当用户安装来自 Microsoft Store 以外的位置时警告用户。
+  - **任何位置**：关闭应用建议，并允许用户从任何位置安装应用。  
+  - **仅 Store**：强制最终用户仅从 Microsoft Store 安装应用。
+  - **建议**：从 Microsoft Store 中可用的 Web 安装应用时，用户将看到一条消息，建议他们从该商店下载该应用。  
+  - **首选 Store**：当用户从 Microsoft Store 以外的位置安装应用时警告用户。
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
@@ -87,7 +87,7 @@ ms.locfileid: "75547953"
 - [Wi-Fi 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
 - **手机网络数据通道**：选择最终用户在连接到手机网络时是否可以使用数据，例如浏览 Web。 选项包括：
-  - **未配置**（默认）： Intune 不更改或更新此设置。 最终用户可以将其关闭。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。 最终用户可以将其关闭。
   - **阻止**：不允许手机网络数据信道。 最终用户无法将其打开。
   - **允许（不可编辑）** ：允许手机网络数据信道。 最终用户不能将其关闭。
 
@@ -139,24 +139,24 @@ ms.locfileid: "75547953"
 ## <a name="control-panel-and-settings"></a>控制面板和设置
 
 - **设置应用**：选择“阻止”可阻止最终用户访问 Windows 设置应用  。 选择“未配置”（默认）则允许用户打开设备上的设置应用  。
-  - **系统**：选择“阻止”可阻止访问设置应用的系统区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+  - **系统**：选择“阻止”可阻止访问设置应用的系统区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
     - **电源和睡眠设置修改**（仅限桌面版）：选择“阻止”可阻止最终用户更改设备上的电源和睡眠设置  。 选择“未配置”（默认）则允许用户更改电源和睡眠设置  。
-  - **设备**：选择“阻止”可阻止访问设备上设置应用的设备区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **网络 Internet**：选择“阻止”可阻止访问设备上设置应用的网络和 Internet 区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **个性化设置**：选择“阻止”可阻止访问设备上设置应用的个性化设置区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **应用**：选择“阻止”可阻止访问设备上设置应用的应用区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **帐户**：选择“阻止”可阻止访问设备上设置应用的帐户区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **时间和语言**：选择“阻止”可阻止访问设备上设置应用的时间和语言区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-    - **系统时间修改**：选择“阻止”可阻止最终用户更改设备上的日期和时间设置  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 用户可以更改这些设置。
-    - **区域设置修改**（仅限桌面版）：选择“阻止”可阻止最终用户更改设备上的区域设置  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 用户可以更改这些设置。
-    - **语言设置修改（仅限桌面版）** ：选择“阻止”可阻止最终用户更改设备上的语言设置  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 用户可以更改这些设置。
+  - **设备**：选择“阻止”可阻止访问设备上设置应用的设备区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **网络 Internet**：选择“阻止”可阻止访问设备上设置应用的网络和 Internet 区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **个性化设置**：选择“阻止”可阻止访问设备上设置应用的个性化设置区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **应用**：选择“阻止”可阻止访问设备上设置应用的应用区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **帐户**：选择“阻止”可阻止访问设备上设置应用的帐户区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **时间和语言**：选择“阻止”可阻止访问设备上设置应用的时间和语言区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+    - **系统时间修改**：选择“阻止”可阻止最终用户更改设备上的日期和时间设置  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 用户可以更改这些设置。
+    - **区域设置修改**（仅限桌面版）：选择“阻止”可阻止最终用户更改设备上的区域设置  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 用户可以更改这些设置。
+    - **语言设置修改（仅限桌面版）** ：选择“阻止”可阻止最终用户更改设备上的语言设置  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 用户可以更改这些设置。
 
       [设置策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
-  - **游戏**：选择“阻止”可阻止访问设备上设置应用的游戏区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **轻松访问**：选择“阻止”可阻止访问设备上设置应用的轻松访问区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **隐私**：选择“阻止”可阻止访问设备上设置应用的隐私区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-  - **更新和安全**：选择“阻止”可阻止访问设备上设置应用的更新和安全区域  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+  - **游戏**：选择“阻止”可阻止访问设备上设置应用的游戏区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **轻松访问**：选择“阻止”可阻止访问设备上设置应用的轻松访问区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **隐私**：选择“阻止”可阻止访问设备上设置应用的隐私区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+  - **更新和安全**：选择“阻止”可阻止访问设备上设置应用的更新和安全区域  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 
 ## <a name="display"></a>显示
 
@@ -178,31 +178,31 @@ ms.locfileid: "75547953"
 
 这些设置使用[体验策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience)，该策略还列出了受支持的 Windows 版本。 
 
-- **屏幕捕获**（仅限移动版）：选择“阻止”可阻止最终用户获取设备上的屏幕截图  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **复制并粘贴（仅限移动版）** ：选择“阻止”可阻止最终用户在设备上的应用之间使用复制粘贴  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **手动取消注册**：选择“阻止”可阻止最终用户使用设备上的工作区控制面板删除工作区帐户  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **屏幕捕获**（仅限移动版）：选择“阻止”可阻止最终用户获取设备上的屏幕截图  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **复制并粘贴（仅限移动版）** ：选择“阻止”可阻止最终用户在设备上的应用之间使用复制粘贴  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **手动取消注册**：选择“阻止”可阻止最终用户使用设备上的工作区控制面板删除工作区帐户  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 
   如果计算机已加入 Azure AD 并启用自动注册，此策略设置不适用。
 
-- **手动安装根证书**（仅限移动版）：选择“阻止”可阻止最终用户手动安装根证书和中间 CAP 证书  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **照相机**：选择“阻止”可阻止最终用户使用设备上的相机  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **手动安装根证书**（仅限移动版）：选择“阻止”可阻止最终用户手动安装根证书和中间 CAP 证书  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **照相机**：选择“阻止”可阻止最终用户使用设备上的相机  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 
   [照相机 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
 
-- **OneDrive 文件同步**：选择“阻止”可阻止最终用户将文件从设备同步到 OneDrive  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **可移动存储**：选择“阻止”可阻止最终用户使用外部存储设备，如设备的 SD 卡  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **地理位置**：选择“阻止”可阻止最终用户打开设备上的位置服务  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **Internet 共享**：选择“阻止”可阻止在设备上使用 Internet 连接共享  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **手机重置**：选择“阻止”可阻止最终用户在设备上进行删除或恢复出厂设置  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **USB 连接**：选择“阻止”可阻止在设备上通过 USB 连接访问外部存储设备  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 USB 充电不受此设置影响。
-- **防盗模式**（仅限移动版）：选择“阻止”可阻止最终用户选择设备上的防盗模式首选项  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **OneDrive 文件同步**：选择“阻止”可阻止最终用户将文件从设备同步到 OneDrive  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **可移动存储**：选择“阻止”可阻止最终用户使用外部存储设备，如设备的 SD 卡  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **地理位置**：选择“阻止”可阻止最终用户打开设备上的位置服务  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **Internet 共享**：选择“阻止”可阻止在设备上使用 Internet 连接共享  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **手机重置**：选择“阻止”可阻止最终用户在设备上进行删除或恢复出厂设置  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **USB 连接**：选择“阻止”可阻止在设备上通过 USB 连接访问外部存储设备  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 USB 充电不受此设置影响。
+- **防盗模式**（仅限移动版）：选择“阻止”可阻止最终用户选择设备上的防盗模式首选项  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 - **Cortana**：选择“阻止”可禁用设备上的 Cortana 语音助手  。 Cortana 关闭时，用户仍然可以搜索设备上的条目。 选择“未配置”（默认）则允许 Cortana  。
 - **语音录制**（仅限移动版）：选择“阻止”可阻止最终用户在设备上使用设备语音录制器  。 选择“未配置”（默认）则允许应用进行语音录制  。
-- **设备名称修改**（仅限移动版）：选择“阻止”可阻止最终用户更改设备名称  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **添加预配包**：选择“阻止”可阻止在设备上安装预配包的运行时配置代理  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **删除预配包**：选择“阻止”可阻止从设备中删除预配包的运行时配置代理。  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **设备发现**：选择“阻止”可阻止设备被其他设备发现  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **任务切换器**（仅限移动版）：选择“阻止”可阻止设备上的任务切换  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **设备名称修改**（仅限移动版）：选择“阻止”可阻止最终用户更改设备名称  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **添加预配包**：选择“阻止”可阻止在设备上安装预配包的运行时配置代理  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **删除预配包**：选择“阻止”可阻止从设备中删除预配包的运行时配置代理。  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **设备发现**：选择“阻止”可阻止设备被其他设备发现  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **任务切换器**（仅限移动版）：选择“阻止”可阻止设备上的任务切换  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 - **SIM 卡错误对话框**（仅限移动版）：选择“阻止”可阻止在未检测到 SIM 卡时在设备上显示错误消息  。 选择“未配置”（默认）则会显示错误消息  。
 - **墨迹工作区**：选择用户是否以及如何访问 Ink 工作区。 选项包括：
   - **未配置**（默认）：可启用 Ink 工作区，并且允许用户在锁屏界面上使用它。
@@ -231,6 +231,9 @@ ms.locfileid: "75547953"
   [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **图片 URL（仅限桌面版）** ：输入将用作 Windows 锁屏界面墙纸的图片（格式为 JPG、JPEG 或 PNG）的 URL。 例如，输入 `https://contoso.com/image.png`。 此设置将锁定该图像，并且无法在以后更改。
+
+  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+
 - **用户可配置的屏幕超时（仅限移动版）** ：选择“允许”，用户可配置屏幕超时  。 选择“未配置”（默认）则不向用户提供该选项  。
 
   [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
@@ -379,7 +382,7 @@ ms.locfileid: "75547953"
 - **允许 JavaScript**：选择“是”（默认）可允许脚本（如 Javascript）在 Microsoft Edge 浏览器中运行  。 选择“否”可阻止在设备上运行浏览器中的 Java 脚本  。
 - **用户可安装扩展**：选择“是”（默认）可允许最终用户在设备上安装 Microsoft Edge 扩展  。 选择“否”可阻止安装  。
 - **允许旁加载开发人员扩展**：选择“是”（默认）可使用 OS 默认值，其可能会允许旁加载  。 旁加载安装并运行未经验证的扩展。 选择“否”可阻止 Microsoft Edge 使用“加载扩展”功能进行旁加载   。 它不会阻止使用其他方式加载扩展，例如 PowerShell。
-- **必需扩展**：选择最终用户在 Microsoft Edge 中不能关闭的扩展。 输入包系列名称，然后选择“添加”  。 [查找每个应用的包系列名称（PFN） VPN](https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)提供了一些指导。
+- **必需扩展**：选择最终用户在 Microsoft Edge 中不能关闭的扩展。 输入包系列名称，然后选择“添加”  。 [查找每个应用 VPN 的包系列名称 (PFN)](https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn) 提供一些指导。
 
   还可以  导入包含包系列名称的 CSV 文件。 或者，“导出”输入的包系列名称  。
 
@@ -400,7 +403,7 @@ ms.locfileid: "75547953"
 
 这些设置使用 [DeviceLock 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)，该策略还列出了受支持的 Windows 版本。
 
-- **密码**：需要最终用户输入密码才能访问设备  。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。 仅适用于本地帐户。 域帐户密码保留 Active Directory （AD）和 Azure AD 配置。
+- **密码**：需要最终用户输入密码才能访问设备  。 选择“未配置”（默认）可允许在没有密码的情况下访问设备  。 仅适用于本地帐户。 域帐户密码仍由 Active Directory (AD) 和 Azure AD 配置。
 
   - **所需的密码类型**：选择密码类型。 选项包括：
     - **未配置**：密码可以包含数字和字母。
@@ -411,7 +414,7 @@ ms.locfileid: "75547953"
     > [!IMPORTANT]
     > 当 Windows 桌面的密码要求更改时，用户下次登录时会受到影响，因为此时设备从空闲状态变为活动状态。 密码满足要求的用户仍然会被提示更改密码。
     
-  - **擦除设备前的登录失败次数**：输入身份验证失败多少次后设备可能被擦除，最多为 11 次。 输入的有效数字取决于版本。 [DeviceLock/MAXDEVICEPASSWORDFAILEDATTEMPTS CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)列出了支持的值。 如果为 `0`（零），可能会禁用设备擦除功能。
+  - **擦除设备前的登录失败次数**：输入身份验证失败多少次后设备可能被擦除，最多为 11 次。 输入的有效数字取决于版本。 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) 列出了支持的值。 如果为 `0`（零），可能会禁用设备擦除功能。
 
     此设置的影响也因版本而异。 有关此设置的具体详细信息，请参阅 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)。
 
@@ -420,21 +423,21 @@ ms.locfileid: "75547953"
   - **防止重用以前的密码**：输入以前用过的不能重用的密码数，从 1 到 24。 例如，输入 `5` 意味着用户不能将其新密码设置为当前密码或以前四个密码中的任何一个。
   - **必须提供密码才能让设备从空闲状态恢复**（移动版和全息版）：选择“需要”，这样用户必须输入密码才能在空闲后解锁设备  。 选择“未配置”（默认）可在设备从空闲状态恢复时不需要 PIN 或密码  。
   - **简单密码**：设置为“阻止”  ，以使用户不能创建简单密码，如 `1234` 或 `1111`。 设置为“未配置”（默认），可允许用户创建 `1234` 或 `1111` 等密码  。 此设置还允许或阻止使用 Windows 图片密码。
-- **AADJ 期间的自动加密**：设备加入 Azure AD 后，准备首次使用时，选择“阻止”可阻止自动 BitLocker 设备加密  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 有关详细信息，请参阅 [BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
+- **AADJ 期间的自动加密**：设备加入 Azure AD 后，准备首次使用时，选择“阻止”可阻止自动 BitLocker 设备加密  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 有关详细信息，请参阅 [BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **美国联邦信息处理标准 (FIPS) 政策**：选择“允许”可使用美国联邦信息处理标准 (FIPS) 政策，该政策是美国政府针对加密、哈希和签名的标准  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 操作系统默认值不能使用 FIPS。
+- **美国联邦信息处理标准 (FIPS) 政策**：选择“允许”可使用美国联邦信息处理标准 (FIPS) 政策，该政策是美国政府针对加密、哈希和签名的标准  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认操作系统可能不会使用 FIPS。
 
   [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello 设备身份验证**：使用“允许”可让用户使用 Windows Hello 配套设备（如手机、健身手环或 IoT 设备）登录到 Windows 10 计算机  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 操作系统默认设置可能会阻止 Windows Hello 设备在 Windows 上进行身份验证。
+- **Windows Hello 设备身份验证**：使用“允许”可让用户使用 Windows Hello 配套设备（如手机、健身手环或 IoT 设备）登录到 Windows 10 计算机  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认操作系统可能会阻止 Windows Hello 配套设备进行 Windows 身份验证。
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
 - **Web 登录**：为非 ADFS（Active Directory 联合身份验证服务）联合提供程序（如安全断言标记语言 (SAML)）启用 Windows 登录支持。 SAML 使用安全令牌，该令牌为 Web 浏览器提供单一登录 (SSO) 体验。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
   - **启用**：已为登录启用了 Web 凭据提供程序。
   - **已禁用**：已为登录禁用了 Web 凭据提供程序。
 
@@ -491,7 +494,7 @@ ms.locfileid: "75547953"
 - **输入个性化设置**：“阻止”可阻止使用语音进行听写，以及与 Cortana 和其他使用基于 Microsoft 云的语音识别的应用进行对话  。 已将其禁用，用户无法使用设置启用在线语音识别。 选择“未配置”（默认）则允许用户选择  。 如果允许这些服务，Microsoft 可能会收集语音数据以改进服务。
 - **自动接受配对和隐私用户许可提示**：选择“允许”以便 Windows 在运行应用时可以自动接受配对和隐私许可消息  。 选择“未配置”（默认）会阻止打开应用时自动接受配对和隐私用户同意窗口  。
 - **发布用户活动**：选择“阻止”  可阻止活动源中最近使用资源的共享体验和发现。 选择“未配置”（默认）可启用此功能，以便应用可以发布最终用户活动  。
-- **仅限本地活动**：选择“阻止”，则仅根据本地活动阻止任务切换程序中最近使用资源的共享体验和发现  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **仅限本地活动**：选择“阻止”，则仅根据本地活动阻止任务切换程序中最近使用资源的共享体验和发现  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 
 可以配置设备上的所有应用可以访问的信息。 此外，使用“每应用隐私异常”  对每个应用定义异常。
 
@@ -536,7 +539,7 @@ ms.locfileid: "75547953"
   [System/AllowTelemetry CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
 - **将 Microsoft Edge 浏览数据发送到 Microsoft 365 Analytics**：若要使用此功能，请将“共享使用情况数据”设置为“已增强”或“完整”    。 此功能可控制 Microsoft Edge 向适用于具有已配置商业 ID 的企业设备的 Microsoft 365 Analytics 发送的数据。 选项包括：
-  - **未配置**： Intune 不更改或更新此设置。 操作系统默认值不能发送任何浏览历史记录数据。
+  - **未配置**：Intune 不会更改或更新此设置。 默认操作系统可能不会发送任何浏览历史数据。
   - **仅发送 Intranet 数据**：允许管理员发送 Intranet 数据历史记录
   - **仅发送 Internet 数据**：允许管理员发送 Internet 数据历史记录
   - **发送 Intranet 和 Internet 数据**：允许管理员发送 Intranet 和 Internet 数据历史记录
@@ -591,11 +594,11 @@ ms.locfileid: "75547953"
 - **用户磁贴**：选择“阻止”可隐藏用户磁贴，使其不在“开始”菜单中显示  。 选择“未配置”（默认）可显示用户磁贴，并设置以下设置  ：
   - **锁**：选择“阻止”可隐藏“锁定”选项，使其不在“开始”菜单的用户磁贴中显示   。 选择“未配置”（默认）可显示“锁定”选项   。
   - **注销**：选择“阻止”可隐藏“注销”选项，使其不在“开始”菜单的用户磁贴中显示   。 选择“未配置”（默认）则显示注销按钮   。
-- **关闭**：选择“阻止”可隐藏“更新并关机”和“关机”选项，使其不在“开始”菜单的电源按钮中显示    。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **睡眠**：选择“阻止”可隐藏“睡眠”选项，使其不在“开始”菜单的电源按钮中显示   。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **休眠**：选择“阻止”可隐藏“休眠”选项，使其不在“开始”菜单的电源按钮中显示   。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **切换帐户**：选择“阻止”可隐藏“切换帐户”，使其不在“开始”菜单的用户磁贴中显示   。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
-- **重启选项**：选择“阻止”可隐藏“更新并重启”和“重启”选项，使其不在“开始”菜单的电源按钮中显示    。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **关闭**：选择“阻止”可隐藏“更新并关机”和“关机”选项，使其不在“开始”菜单的电源按钮中显示    。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **睡眠**：选择“阻止”可隐藏“睡眠”选项，使其不在“开始”菜单的电源按钮中显示   。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **休眠**：选择“阻止”可隐藏“休眠”选项，使其不在“开始”菜单的电源按钮中显示   。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **切换帐户**：选择“阻止”可隐藏“切换帐户”，使其不在“开始”菜单的用户磁贴中显示   。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
+- **重启选项**：选择“阻止”可隐藏“更新并重启”和“重启”选项，使其不在“开始”菜单的电源按钮中显示    。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 - **“开始”上的文档**：隐藏或显示 Windows 开始菜单中的文档文件夹。 选项包括：
   - **未配置**（默认）：不强制任何设置。 用户选择显示或隐藏快捷方式。
   - **隐藏**：隐藏快捷方式并在设置应用中禁用设置。
@@ -637,7 +640,7 @@ ms.locfileid: "75547953"
   - **隐藏**：隐藏快捷方式并在设置应用中禁用设置。
   - **显示**：显示快捷方式并在设置应用中禁用设置。
 
-## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智能屏幕
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart Screen
 
 - **Microsoft Edge SmartScreen**：选择“需要”可关闭 Microsoft Defender SmartScreen，并阻止用户将其打开  。 选择“未配置”（默认）可启动 SmartScreen  。 帮助保护用户免受潜在威胁，防止用户将其关闭。
 
@@ -659,9 +662,9 @@ ms.locfileid: "75547953"
 
 - **Windows 聚焦**：选择“阻止”可关闭锁屏界面上的 Windows 聚焦、Windows 提示、Microsoft 使用者功能和其他相关的功能  。 如果目标为最大限度地减少设备的网络流量，请将其设置为“阻止”  。 选择“未配置”（默认）可允许 Windows 聚焦功能，并可能由最终用户控制  。 启用时，还可以允许或阻止以下设置：
 
-  - **锁屏界面上的 Windows 聚焦**：选择“阻止”可阻止 Windows 聚焦在设备锁屏界面上显示信息  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+  - **锁屏界面上的 Windows 聚焦**：选择“阻止”可阻止 Windows 聚焦在设备锁屏界面上显示信息  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
   - **Windows 聚焦中的第三方建议**：选择“阻止”可阻止 Windows 聚焦建议不由 Microsoft 发布的内容  。 选择“未配置”（默认）可允许合作伙伴软件发布者在 Windows 屏幕聚焦功能（例如，锁屏界面聚焦、“开始”菜单中的建议应用和 Windows 提示）中提供应用和内容建议  。
-  - **使用者功能**：选择“阻止”可禁用通常只面向使用者的体验，例如入门建议、成员资格通知、即装即用体验后应用安装和重定向磁贴  。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+  - **使用者功能**：选择“阻止”可禁用通常只面向使用者的体验，例如入门建议、成员资格通知、即装即用体验后应用安装和重定向磁贴  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
   - **Windows 提示**：选择“阻止”可禁用弹出窗口提示  。 选择“未配置”（默认）可允许显示窗口提示  。
   - **操作中心中的 Windows 聚焦**：选择“阻止”可阻止 Windows 聚焦通知在操作中心中显示  。 选择“未配置”（默认）可能会在操作中心显示提示应用或功能的通知，以帮助用户在 Windows 上提高工作效率  。
   - **Windows 聚焦个性化设置**：选择“阻止”可阻止 Windows 使用诊断数据为用户提供自定义体验  。 选择“未配置”（默认）可允许 Microsoft 使用诊断数据提供个性化的建议、提示和套餐，以根据用户的需求定制 Windows  。
@@ -673,67 +676,67 @@ ms.locfileid: "75547953"
 
 - **实时监视**：选择“启用”可启用对恶意软件、间谍软件和其他不需要的软件的实时扫描  。 用户不能将其关闭。 
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此功能，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会启用此功能，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
 - **行为监视**：选择“启用”可启用行为监控，并检查设备上是否存在某些已知模式的可疑活动  。 用户无法关闭行为监视。 
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用行为监视，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会启用此行为监视，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **网络检查系统 (NIS)** ：NIS 可帮助保护设备免遭基于网络的攻击。 它使用 Microsoft Endpoint Protection 中心中的已知漏洞签名来帮助检测和阻止恶意流量。
 
-  **启用启用**网络保护和网络阻止。 用户不能将其关闭。 启用后，阻止用户连接到已知的漏洞。
+  选择“启用”会打开网络保护和网络阻止  。 用户不能将其关闭。 启用后，会阻止用户连接到已知的漏洞。
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用 NIS，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会启用 NIS，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **扫描所有下载**：**启用启用**此设置，而 Defender 扫描从 Internet 下载的所有文件。 用户无法关闭此设置。 
+- **扫描所有下载**：选择“启用”会打开此设置，并且 Defender 会扫描从 Internet 下载的所有文件  。 用户无法关闭此设置。 
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此设置，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会启用此设置，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
 - **扫描 Microsoft Web 浏览器中加载的脚本**：选择“启用”  可允许 Defender 扫描 Internet Explorer 中使用的脚本。 用户无法关闭此设置。 
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此设置，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会启用此设置，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
 - **最终用户对 Defender 的访问权限**：选择“阻止”可对最终用户隐藏 Microsoft Defender 用户界面  。 所有 Microsoft Defender 通知也被禁止。
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果阻止设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统允许用户访问 Microsoft Defender UI，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果阻止该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 允许用户访问 Microsoft Defender UI，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   此设置更改后，在最终用户的电脑下次重启时生效。
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
-- **安全智能更新间隔（小时）** ：输入从0-24 开始检查新安全智能的时间间隔（以小时为单位）。 选项包括：
+- **安全智能更新间隔(小时)** ：输入 Defender 检查新安全智能的时间间隔，范围为 0 到 24 小时。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。 操作系统默认可能每8小时检查一次更新。
-  - 不**检查**： Defender 不检查是否有新的安全智能更新。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。 默认操作系统可能每 8 小时检查一次更新。
+  - **不检查**：Defender 不检查是否存在新的安全智能更新。
   - **1 到 24**：`1` 表示每小时检查一次，`2` 表示每两小时检查一次，`24` 表示每天检查一次，依此类推。
   
   [Defender/SignatureUpdateInterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
   
 - **监视文件和程序活动**：允许 Defender 监视设备上的文件和程序活动。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。 操作系统默认可能监视所有文件。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。 默认操作系统可能会监视所有文件。
   - **已禁用监视**
   - **监视所有文件**
   - **仅监视传入的文件**
@@ -746,61 +749,61 @@ ms.locfileid: "75547953"
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **扫描期间 CPU 使用率限制**：限制允许扫描使用的 CPU 量（从 `0` 到 `100`）。
-- **扫描存档文件**：**启用启用**Defender，使其扫描存档文件（如 Zip 或 Cab 文件）。 用户无法关闭此设置。
+- **扫描存档文件**：选择“启用”可打开 Defender，以便扫描存档的文件（如 Zip 或 Cab 文件）  。 用户无法关闭此设置。
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此扫描，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会启用此扫描，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **扫描传入的电子邮件**：选择“启用”可允许 Defender 在电子邮件到达设备时扫描它们  。 启用后，引擎会分析邮箱和邮件文件，以分析邮件正文和附件。 可以扫描 .pst （Outlook）、.dbx、. mbx、MIME （Outlook Express）和 BinHex （Mac）格式。
+- **扫描传入的电子邮件**：选择“启用”可允许 Defender 在电子邮件到达设备时扫描它们  。 启用后，引擎会分析邮箱和邮件文件，以分析邮件正文和附件。 可以扫描 .pst (Outlook)、.dbx、.mbx、MIME (Outlook Express) 和 BinHex (Mac) 格式。
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会关闭此扫描，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会关闭此扫描，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **完全扫描期间扫描可移动驱动器**：在完全扫描期间**启用**Defender 可移动驱动器扫描。 用户无法关闭此设置。
+- **完全扫描期间扫描可移动驱动器**：选择“启用”可在完全扫描期间启用 Defender 可移动驱动器  。 用户无法关闭此设置。
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统允许 Defender 扫描可移动驱动器（如 USB 棒），并允许用户更改此设置。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 允许 Defender 扫描可移动驱动器（如 USB 棒），并允许用户更改此设置。
 
-  在快速扫描过程中，可能仍会扫描可移动驱动器。
+  在快速扫描期间，可能仍会扫描可移动驱动器。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
 - **在完全扫描期间扫描映射的网络驱动器**：选择“启用”以使 Defender 扫描映射网络驱动器上的文件  。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。 用户无法关闭此设置。
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会启用此功能，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会启用此功能，并允许用户对其进行更改。
 
-  在快速扫描过程中，可能仍会扫描映射的网络驱动器。
+  在快速扫描期间，可能仍会扫描映射网络驱动器。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **扫描从网络文件夹打开的文件**： **Enable 允许**Defender 扫描从网络文件夹或共享的网络驱动器打开的文件，例如从 UNC 路径访问的文件。 用户无法关闭此设置。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
+- **扫描从网络文件夹打开的文件**：选择“启用”可允许 Defender 扫描从网络文件夹或共享网络驱动器打开的文件（例如，从 UNC 路径访问的文件）  。 用户无法关闭此设置。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统会扫描从网络文件夹打开的文件，并允许用户对其进行更改。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会扫描从网络文件夹打开的文件，并允许用户对其进行更改。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
 - **云保护**：选择“启用”可启用 Microsoft Active Protection Service 以接收来自你管理的设备的恶意软件活动的相关信息  。 用户无法更改此设置。 
 
-  如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。 如果启用该设置，然后将其更改回 "**未配置**"，则 Intune 会将设置保留为以前配置的状态。 默认情况下，操作系统允许 Microsoft Active Protection Service 接收信息，并允许用户更改此设置。
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 允许 Microsoft Active Protection Service 接收信息，并允许用户更改此设置。
 
-  Intune 不会关闭此功能。 若要禁用它，请使用自定义 URI。
+  Intune 不会关闭此功能。 若要禁用此功能，请使用自定义 URI。
 
   [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 
 - **在示例提交前提示用户**：控制是否自动向 Microsoft 发送可能需要进一步分析的潜在恶意文件。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。 操作系统默认可能会自动发送安全示例。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。 操作系统默认可能会自动发送安全示例。
   - **始终提示**
   - **发送个人数据之前进行提示**
   - **从不发送数据**
@@ -825,11 +828,11 @@ ms.locfileid: "75547953"
   > [!TIP]
   > 此设置可能与“要执行每日快速扫描的时间”设置相冲突  。 一些建议：  
   >
-  > - 如果要计划每日一次的快速扫描和每周完全扫描，请执行以下操作：
-  >   1. 配置**执行每日快速扫描**设置的时间。
-  >   2. 配置执行完全扫描**要执行的系统扫描类型**。
+  > - 如果要计划每日一次快速扫描和每周完全扫描，请执行以下操作：
+  >   1. 配置“要执行每日快速扫描的时间”设置  。
+  >   2. 配置“要执行的系统扫描类型”以执行完全扫描  。
   > 
-  > - 如果你只想每天进行一次快速扫描（无完全扫描），请使用以下设置： **Time 执行每日快速扫描**或**执行的系统扫描类型**。 例如，若要在每周二上午 6 点运行快速扫描，请配置“要执行的系统扫描类型”设置  。
+  > - 如果只希望每天进行一次快速扫描（不完全扫描），请使用以下任一设置：“要执行每日快速扫描的时间”或“要执行的系统扫描类型”   。 例如，若要在每周二上午 6 点运行快速扫描，请配置“要执行的系统扫描类型”设置  。
   > 
   > - 请勿在“要执行的系统扫描类型”设置为“快速扫描”的同时配置“要执行每日快速扫描的时间”设置    。 这些设置可能会发生冲突，扫描可能无法运行。
 
@@ -846,9 +849,9 @@ ms.locfileid: "75547953"
 
   [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
-- **提交示例许可**：目前，此设置不会产生任何影响。 请勿使用此设置。 在将来的版本中可能会将其删除。
+- **提交样本同意**：目前，此设置不会产生任何影响。 请勿使用此设置。 未来版本中可能会将其删除。
 
-- **针对检测到的恶意软件威胁的操作**：选择要如何处理恶意软件线程。 **未配置**（默认值）允许 Microsoft Defender 选择最佳选项。 设置为“启用”  后，可选择 Defender 针对其探测到的每个威胁级别（低、中、高和严重）要执行的操作。 选项包括：
+- **针对检测到的恶意软件威胁采取的操作**：选择处理恶意软件威胁的方式。 **未配置**（默认）：允许 Microsoft Defender 选择最佳选项。 设置为“启用”  后，可选择 Defender 针对其探测到的每个威胁级别（低、中、高和严重）要执行的操作。 选项包括：
   
   - **清理**
   - **隔离**
@@ -857,7 +860,7 @@ ms.locfileid: "75547953"
   - **用户定义**
   - **阻止**
 
-  如果你的操作不可行，Microsoft Defender 会选择最佳的选项来确保修正威胁。 
+  如果操作不可行，则 Microsoft Defender 会选择最佳选项以确保解决威胁。 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
@@ -871,81 +874,81 @@ ms.locfileid: "75547953"
 
 ### <a name="battery"></a>电池
 
-- **启用节能程序的电池电量**：当设备使用电池电源时，请输入电池电量级别，以打开0-100 中的节能保护程序。 输入指示电池电量级别的百分比值。 默认值为 70%。 如果设置为70%，则当电池电量为70% 或更低时，节能程序将打开。
+- **启用节能模式的电池剩余电量**：设备使用电池电源时，请输入电池剩余电量，以启用节能模式，范围为 0 到 100。 输入表示电池电量的百分比值。 默认值为 70%。 如果设置为 70%，则当电池电量为 70% 或更低时，将启用节能模式。
 
   [Power/EnergySaverBatteryThresholdOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
 
-- **合上盖子（仅限移动设备）** ：设备使用电池电源时，请选择在盖子关闭后发生的情况。 选项包括：
+- **合上盖子(仅限移动设备)** ：设备使用电池电量时，请选择合上盖子后会出现的情况。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。
-  - **无操作**：设备仍保持打开，并继续使用电池电量。
-  - **睡眠**：设备进入睡眠模式并使用少量电池电量。 计算机仍然打开，打开的应用和文件存储在随机存取内存（RAM）中。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
+  - **无操作**：设备保持打开状态，并继续使用电池电量。
+  - **睡眠**：设备进入睡眠模式并使用少量电池电量。 计算机仍保持打开状态，打开的应用和文件存储在随机存取内存 (RAM) 中。
   - **休眠**：设备进入休眠模式。 打开的应用和文件存储在硬盘上，并且设备将关闭。
-  - **关闭**：设备关闭。 打开的应用和文件会关闭而不保存。
+  - **关闭**：设备关闭。 关闭但不保存打开的应用和文件。
 
   [Power/SelectLidCloseActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
 
-- **电源按钮**：设备使用电池电源时，请选择 "电源" 按钮后会发生的情况。 选项包括：
+- **电源按钮**：设备使用电池电量时，请选择在选择“电源”按钮后会出现的情况。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。
-  - **无操作**：设备仍保持打开，并继续使用电池电量。
-  - **睡眠**：设备进入睡眠模式并使用少量电池电量。 计算机仍然打开，打开的应用和文件存储在随机存取内存（RAM）中。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
+  - **无操作**：设备保持打开状态，并继续使用电池电量。
+  - **睡眠**：设备进入睡眠模式并使用少量电池电量。 计算机仍保持打开状态，打开的应用和文件存储在随机存取内存 (RAM) 中。
   - **休眠**：设备进入休眠模式。 打开的应用和文件存储在硬盘上，并且设备将关闭。
-  - **关闭**：设备关闭。 打开的应用和文件会关闭而不保存。
+  - **关闭**：设备关闭。 关闭但不保存打开的应用和文件。
 
   [Power/SelectPowerButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
 
-- **睡眠按钮**：当设备使用电池电源时，选择 "睡眠" 按钮时将发生的情况。 选项包括：
+- **睡眠按钮**：设备使用电池电量时，请选择在选择“睡眠”按钮后会出现的情况。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。
-  - **无操作**：设备仍保持打开，并继续使用电池电量。
-  - **睡眠**：设备进入睡眠模式并使用少量电池电量。 计算机仍然打开，打开的应用和文件存储在随机存取内存（RAM）中。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
+  - **无操作**：设备保持打开状态，并继续使用电池电量。
+  - **睡眠**：设备进入睡眠模式并使用少量电池电量。 计算机仍保持打开状态，打开的应用和文件存储在随机存取内存 (RAM) 中。
   - **休眠**：设备进入休眠模式。 打开的应用和文件存储在硬盘上，并且设备将关闭。
-  - **关闭**：设备关闭。 打开的应用和文件会关闭而不保存。
+  - **关闭**：设备关闭。 关闭但不保存打开的应用和文件。
 
   [Power/SelectSleepButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
 
-- **混合睡眠**：当设备使用电池电量时，**禁用**会阻止设备进入混合休眠模式。 处于混合睡眠模式时，打开的应用和文件存储在随机存取内存（RAM）和硬盘上。 它使用少量电池电量。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **混合睡眠**：设备使用电池电量时，选择“禁用”会阻止设备进入混合睡眠模式  。 处于混合睡眠模式时，打开的应用和文件存储在随机存取内存 (RAM) 中和硬盘上。 它使用少量电池电量。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 
   [Power/TurnOffHybridSleepOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
 
 ### <a name="pluggedin"></a>PluggedIn
 
-- **启用节能程序的电池电量**：接通设备后，请输入电池电量级别，以打开0-100 中的节能保护程序。 输入指示电池电量级别的百分比值。 默认值为 70%。 如果设置为70%，则当电池电量为70% 或更低时，节能程序将打开。
+- **启用节能模式的电池剩余电量**：设备接通电源时，请输入电池剩余电量，以启用节能模式，从 0-100。 输入表示电池电量的百分比值。 默认值为 70%。 如果设置为 70%，则当电池电量为 70% 或更低时，将启用节能模式。
 
   [Power/EnergySaverBatteryThresholdPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
 
-- **合上盖子（仅限移动设备）** ：设备接通电源时，请选择在盖子关闭后发生的情况。 选项包括：
+- **合上盖子(仅限移动设备)** ：设备接通电源时，请选择合上盖子后会出现的情况。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。
-  - **无操作**：设备仍保持打开。
-  - **睡眠**：设备进入睡眠模式。 计算机仍然打开，打开的应用和文件存储在随机存取内存（RAM）中。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
+  - **无操作**：设备保持打开状态。
+  - **睡眠**：设备进入睡眠模式。 计算机仍保持打开状态，打开的应用和文件存储在随机存取内存 (RAM) 中。
   - **休眠**：设备进入休眠模式。 打开的应用和文件存储在硬盘上，并且设备将关闭。
-  - **关闭**：设备关闭。 打开的应用和文件会关闭而不保存。
+  - **关闭**：设备关闭。 关闭但不保存打开的应用和文件。
   
     [Power/SelectLidCloseActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
   
-- **电源按钮**：设备接通电源后，选择 "电源" 按钮后会发生的情况。 选项包括：
+- **电源按钮**：设备接通电源时，请选择在选择“电源”按钮后会出现的情况。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。
-  - **无操作**：设备仍保持打开。
-  - **睡眠**：设备进入睡眠模式。 计算机仍然打开，打开的应用和文件存储在随机存取内存（RAM）中。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
+  - **无操作**：设备保持打开状态。
+  - **睡眠**：设备进入睡眠模式。 计算机仍保持打开状态，打开的应用和文件存储在随机存取内存 (RAM) 中。
   - **休眠**：设备进入休眠模式。 打开的应用和文件存储在硬盘上，并且设备将关闭。
-  - **关闭**：设备关闭。 打开的应用和文件会关闭而不保存。
+  - **关闭**：设备关闭。 关闭但不保存打开的应用和文件。
 
   [Power/SelectPowerButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
 
-- **睡眠按钮**：接通设备后，选择 "睡眠" 按钮时将发生的情况。 选项包括：
+- **睡眠按钮**：设备接通电源时，请选择在选择“睡眠”按钮后会出现的情况。 选项包括：
 
-  - **未配置**（默认）： Intune 不更改或更新此设置。
-  - **无操作**：设备仍保持打开。
-  - **睡眠**：设备进入睡眠模式。 计算机仍然打开，打开的应用和文件存储在随机存取内存（RAM）中。
+  - **未配置**（默认）：Intune 不会更改或更新此设置。
+  - **无操作**：设备保持打开状态。
+  - **睡眠**：设备进入睡眠模式。 计算机仍保持打开状态，打开的应用和文件存储在随机存取内存 (RAM) 中。
   - **休眠**：设备进入休眠模式。 打开的应用和文件存储在硬盘上，并且设备将关闭。
-  - **关闭**：设备关闭。 打开的应用和文件会关闭而不保存。
+  - **关闭**：设备关闭。 关闭但不保存打开的应用和文件。
 
   [Power/SelectSleepButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
 
-- **混合睡眠**：设备接通电源后，**禁用**会阻止设备进入混合休眠模式。 处于混合睡眠模式时，打开的应用和文件存储在随机存取内存（RAM）和硬盘上。 如果设置为 "**未配置**" （默认值），则 Intune 不会更改或更新此设置。
+- **混合睡眠**：设备接通电源时，选择“禁用”会阻止设备进入混合睡眠模式  。 处于混合睡眠模式时，打开的应用和文件存储在随机存取内存 (RAM) 中和硬盘上。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。
 
   [Power/TurnOffHybridSleepPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
 

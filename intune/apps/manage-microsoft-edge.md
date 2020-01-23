@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548010"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258507"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
@@ -205,7 +205,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 |    Key    |    值    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    “com.microsoft.intune.SohwIndustryNews”    |    True  将在 Microsoft Edge 移动新选项卡页上显示行业新闻。<p>False  （默认值）将从新选项卡页隐藏行业新闻。    |
+|    com.microsoft.intune.ShowIndustryNews    |    如果为 True，  将在 Microsoft Edge 移动版“新选项卡”页上显示行业新闻。<p>False  （默认值）将从新选项卡页隐藏行业新闻。    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>为 Microsoft Edge 配置托管书签
 
@@ -217,6 +217,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 - 用户无法删除或修改这些书签。
 - 这些书签显示在列表顶部。 用户创建的任何书签显示在这些书签下方。
 - 如果已启用应用程序代理重定向，可以使用应用程序代理 Web 应用的内部或外部 URL 添加这些 Web 应用。
+- 在将 URL 输入列表时，确保对所有 URL 添加“http://”  或“https://”  作为前缀。
 
 使用以下键/值对来配置托管书签：
 
@@ -243,7 +244,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>允许的和阻止的站点列表的 URL 格式 
 可使用多种 URL 格式来构建允许/阻止的站点列表。 下表详细介绍了这些允许的模式。 开始之前，请注意以下几点： 
-- 在将 URL 输入列表时，确保对所有 URL 添加 **“http”** 或 **“https”** 作为前缀。
+- 在将 URL 输入列表时，确保对所有 URL 添加“http://”  或“https://”  作为前缀。
 - 可以根据以下允许模式列表中的规则使用通配符 (\*)。
 - 通配符只能匹配主机名中的整体部分（由句点分隔）或路径的整体部分（由正斜杠分隔）。 例如，不支持 `http://*contoso.com`  。
 - 可以在地址中指定端口号。 如果未指定端口号，则使用以下值：

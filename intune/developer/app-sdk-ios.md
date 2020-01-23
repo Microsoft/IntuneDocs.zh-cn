@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f9c9721942b4c9754d4e99e4e91d751ceedcf3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: HT
+ms.openlocfilehash: f6edf3fd8d6c6aeefeb1e34c5b390360e7215f21
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653778"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125287"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>用于 iOS 的 Microsoft Intune App SDK 开发人员指南
 
@@ -41,28 +41,28 @@ ms.locfileid: "75653778"
 
 * 在 [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) 上下载用于 iOS 的 Intune App SDK 的文件。
 
-## <a name="whats-in-the-sdk-repository"></a>SDK 存储库中的内容
+## <a name="whats-in-the-sdk-repository"></a>SDK 存储库包含的内容
 
-以下文件与不包含 Swift 代码或使用10.2 之前的 Xcode 版本编译的应用/扩展相关：
+以下文件与不包含 Swift 代码或使用 10.2 之前的 Xcode 版本编译的应用/扩展相关：
 
-* **IntuneMAM.framework**：Intune App SDK 框架。 建议将此框架链接到应用/扩展，以启用 Intune 客户端应用程序管理。 但是，某些开发人员可能更倾向于静态库的性能优势。 参阅以下内容。
+* **IntuneMAM.framework**：Intune App SDK 框架。 建议将此框架链接到应用/扩展，启用 Intune 客户端应用程序管理。 但是，某些开发人员可能更倾向于静态库的性能优势。 参阅以下内容。
 
-* **libIntuneMAM.a**：Intune App SDK 静态库。 开发人员可以选择链接静态库而不是框架。 由于在生成时静态库直接嵌入到应用/扩展二进制文件中，因此使用静态库有一些启动时性能优势。 但将其集成到你的应用程序是一个更复杂的过程。 如果你的应用程序包含任何扩展，则将静态库链接到应用程序和扩展会导致应用程序捆绑包大小较大，因为静态库将嵌入到每个应用/扩展二进制文件中。 使用 framework 时，应用和扩展可以共享同一 Intune SDK 二进制文件，从而使应用大小更小。
+* **libIntuneMAM.a**：Intune App SDK 静态库。 开发人员可能会选择链接静态库而不是框架。 由于在生成时直接将静态库嵌入到应用/扩展二进制文件中，因此使用静态库会有一些启动时间方面的性能优势。 但将静态库集成到应用中是一个更复杂的过程。 如果应用程序包含任何扩展，则将静态库链接到应用和扩展会导致应用捆绑包变大，因为静态库将嵌入到每个应用/扩展二进制文件中。 使用该框架时，应用和扩展可以共享同一 Intune SDK 二进制文件，从而减小应用大小。
 
-* **IntuneMAMResources.bundle**：一个资源捆绑包，包含 SDK 所依赖的资源。 资源捆绑仅适用于集成静态库（Libintunemam.a）的应用。
+* **IntuneMAMResources.bundle**：一个资源捆绑包，包含 SDK 所依赖的资源。 该资源捆绑包仅适用于集成静态库 (libIntuneMAM.a) 的应用。
 
-以下文件与包含 Swift 代码的应用/扩展相关，并通过 Xcode 10.2 + 编译：
+以下文件与包含 Swift 代码的应用/扩展相关，并通过 Xcode 10.2+ 进行编译：
 
-* **IntuneMAMSwift**： INTUNE App SDK Swift 框架。 此框架包含应用将调用的 Api 的所有标头。 将此框架链接到应用/扩展，以启用 Intune 客户端应用程序管理。
+* **IntuneMAMSwift.framework**：Intune App SDK Swift 框架。 此框架包含应用将调用的 API 的所有标头。 将此框架链接到应用/扩展可启用 Intune 客户端应用程序管理。
 
-* **IntuneMAMSwiftStub**： INTUNE App SDK Swift 存根 framework。 这是必须链接的应用/扩展所需的 IntuneMAMSwift 的依赖项。
+* **IntuneMAMSwiftStub.framework**：Intune App SDK Swift 存根框架。 这是应用/扩展必须链接的 IntuneMAMSwift.framework 的必需依赖项。
 
 
-以下文件与所有 apps/docs.ms 相关：
+以下文件与所有应用/扩展相关：
 
-* **IntuneMAMConfigurator**：一种工具，用于配置应用程序或扩展的信息。 Info.plist 具有 Intune 管理的最低要求更改。 根据你的应用或扩展的功能，你可能需要对 info.plist 进行其他手动更改。
+* **IntuneMAMConfigurator**：一种工具，用于配置应用或扩展的 Info.plist（要求 Intune 管理对其进行必需的更改）。 根据应用或扩展的功能，你可能需要对 Info.plist 进行其他手动更改。
 
-* **标头**：用于公开公共 Intune App SDK API。 这些标头包含在 IntuneMAM/IntuneMAMSwift 框架中，因此使用任一框架的开发人员无需手动将标头添加到项目。 选择链接到静态库（Libintunemam.a）的开发人员需要在其项目中手动包含这些标头。
+* **标头**：用于公开公共 Intune App SDK API。 这些标头包含在 IntuneMAM/IntuneMAMSwift 框架中，因此使用任一框架的开发人员无需手动将标头添加到项目。 选择链接到静态库 (libIntuneMAM.a) 的开发人员需要手动将这些标头包含在项目中。
 
 以下头文件包含 Intune App SDK 面向开发人员发布的 API、数据类型和协议：
 
@@ -95,14 +95,14 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 若要启用 Intune App SDK，请执行以下步骤：
 
-1. **选项 1-框架（推荐）** ：如果你使用的是 Xcode 10.2 +，而你的应用程序/扩展包含 Swift 代码，则将 `IntuneMAMSwift.framework` 和 `IntuneMAMSwiftStub.framework` 链接到你的目标：将 `IntuneMAMSwift.framework` 和 `IntuneMAMSwiftStub.framework` 拖到项目目标的 "**嵌入的二进制文件**" 列表。
+1. **选项 1 - 框架（推荐）** ：如果使用的是 Xcode 10.2 及更高版本，并且应用/扩展包含 Swift 代码，则将 `IntuneMAMSwift.framework` 和 `IntuneMAMSwiftStub.framework` 链接到目标：将 `IntuneMAMSwift.framework` 和 `IntuneMAMSwiftStub.framework` 拖到项目目标的“嵌入的二进制文件”列表  。
 
-    否则，将 `IntuneMAM.framework` 链接到目标：将 `IntuneMAM.framework` 拖到项目目标的 "**嵌入的二进制文件**" 列表。
+    否则，将 `IntuneMAM.framework` 链接到目标：将 `IntuneMAM.framework` 拖到项目目标的“嵌入的二进制文件”列表  。
 
    > [!NOTE]
    > 如果使用框架，必须在将应用提交到 App Store 之前，从通用框架中手动删除模拟器体系结构。 有关详细信息，请参阅[向 App Store 提交应用](#submit-your-app-to-the-app-store)。
 
-   **选项 2-静态库**：此选项仅适用于不包含 Swift 代码或使用 Xcode < 10.2 生成的应用/扩展。 链接到 `libIntuneMAM.a` 库。 将 `libIntuneMAM.a` 库拖动到项目目标的“链接的框架和库”  列表中。
+   **选项 2 - 静态库**：此选项仅适用于不包含 Swift 代码或使用版本低于 10.2 的 Xcode 生成的应用/扩展。 链接到 `libIntuneMAM.a` 库。 将 `libIntuneMAM.a` 库拖动到项目目标的“链接的框架和库”  列表中。
 
     ![Intune App SDK iOS：链接的框架和库](./media/app-sdk-ios/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -176,19 +176,19 @@ Intune App SDK for iOS 的目标是在最大程度上减少代码更改的情况
 
 ## <a name="configure-adalmsal"></a>配置 ADAL/MSAL
 
-Intune App SDK 可以使用[Azure Active Directory 身份验证库](https://github.com/AzureAD/azure-activedirectory-library-for-objc)或[Microsoft 身份验证库](https://github.com/AzureAD/microsoft-authentication-library-for-objc)来实现其身份验证和条件启动方案。 它还依赖于 ADAL/MSAL 向 MAM 服务注册用户标识，用于不含设备注册方案的管理。
+Intune App SDK 可以使用 [Azure Active Directory 身份验证库](https://github.com/AzureAD/azure-activedirectory-library-for-objc)或 [Microsoft 身份验证库](https://github.com/AzureAD/microsoft-authentication-library-for-objc)进行身份验证和条件启动。 它还依赖于 ADAL/MSAL 向 MAM 服务注册用户标识，用于不含设备注册方案的管理。
 
 ADAL/MSAL 通常要求应用注册 Azure Active Directory (AAD)，并创建唯一的客户端 ID 和重定向 URI，以确保向应用授予的令牌的安全性。 如果应用已使用 ADAL 或 MSAL 对用户进行身份验证，应用必须使用它的现有注册值，并替代 Intune App SDK 默认值。 这可确保不会提示两次让用户进行身份验证（一次由 Intune App SDK，一次由应用）。
 
-如果你的应用程序尚未使用 ADAL 或 MSAL，而你不需要访问任何 AAD 资源，则无需在 AAD 中设置客户端应用注册（如果选择集成 ADAL）。 如果决定集成 MSAL，则需要配置应用注册，并覆盖默认 Intune 客户端 ID 和重定向 URI。  
+如果应用尚未使用 ADAL 或 MSAL，并且你不需要访问任何 AAD 资源，则无需在选择集成 ADAL 时在 AAD 中设置客户端应用注册。 如果决定集成 MSAL，则需要配置应用注册，并替代默认 Intune 客户端 ID 和重定向 URI。  
 
-建议应用链接到[ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases)或[MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-objc/releases)的最新版本。
+建议应用链接到最新版本的 [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) 或 [MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-objc/releases)。
 
 ### <a name="link-to-adal-or-msal-binaries"></a>链接到 ADAL 或 MSAL 二进制文件
 
 **选项 1-** 按照[以下步骤](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download)将应用链接到 ADAL 二进制文件。
 
-**选项 2-** 或者，您可以按照[这些说明](https://github.com/AzureAD/microsoft-authentication-library-for-objc#installation)将您的应用程序链接到 MSAL 二进制文件。
+**选项 2-** 或者，可以按照[这些说明](https://github.com/AzureAD/microsoft-authentication-library-for-objc#installation)将应用链接到 MSAL 二进制文件。
 
 1. 如果应用未定义任何密钥链访问组，请将此应用的程序包 ID 添加为第一个组。
 
@@ -223,16 +223,16 @@ ADAL/MSAL 通常要求应用注册 Azure Active Directory (AAD)，并创建唯�
 
 ### <a name="if-your-app-does-not-use-adal-or-msal"></a>如果应用不使用 ADAL 或 MSAL
 
-如前文所述，Intune App SDK 可以使用[Azure Active Directory 身份验证库](https://github.com/AzureAD/azure-activedirectory-library-for-objc)或[Microsoft 身份验证库](https://github.com/AzureAD/microsoft-authentication-library-for-objc)来实现其身份验证和条件启动方案。 它还依赖于 ADAL/MSAL 向 MAM 服务注册用户标识，用于不含设备注册方案的管理。 如果**你的应用程序未将 ADAL 或 MSAL 用于其自己的身份验证机制**，则你可能需要配置自定义 AAD 设置，具体取决于你选择的集成身份验证库：   
+如前所述，Intune App SDK 可以使用 [Azure Active Directory 身份验证库](https://github.com/AzureAD/azure-activedirectory-library-for-objc)或 [Microsoft 身份验证库](https://github.com/AzureAD/microsoft-authentication-library-for-objc)进行身份验证和条件启动。 它还依赖于 ADAL/MSAL 向 MAM 服务注册用户标识，用于不含设备注册方案的管理。 如果应用未将 ADAL 或 MSAL 用于其自己的身份验证机制，则你可能需要配置自定义 AAD 设置，具体取决于选择集成的身份验证库  ：   
 
-ADAL - Intune App SDK 会为 ADAL 参数提供默认值，并处理针对 Azure AD 的身份验证。 开发人员无需为之前提到的 ADAL 设置指定任何值。 
+ADAL - Intune App SDK 会为 ADAL 参数提供默认值，并处理针对 Azure AD 的身份验证。 开发人员无需为前面提到的 ADAL 设置指定任何值。 
 
-MSAL-开发人员需要在 AAD 中创建应用注册，其中的自定义重定向 URI 采用[此处](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki/Migrating-from-ADAL-Objective-C-to-MSAL-Objective-C#app-registration-migration)指定的格式。 开发人员应设置前面提到的 `ADALClientID` 和 `ADALRedirectUri` 设置，或 `IntuneMAMPolicyManager` 实例上的等效 `aadClientIdOverride` 和 `aadRedirectUriOverride` 属性。 开发人员还应确保他们按照上一部分中的步骤4，为其应用注册访问 Intune 应用保护服务。
+MSAL - 开发人员需要在 AAD 中创建应用注册，并且自定义重定向 URI 应采用[此处](https://github.com/AzureAD/microsoft-authentication-library-for-objc/wiki/Migrating-from-ADAL-Objective-C-to-MSAL-Objective-C#app-registration-migration)指定的格式。 开发人员应设置前面提到的 `ADALClientID` 和 `ADALRedirectUri` 设置，或 `IntuneMAMPolicyManager` 实例上的等效 `aadClientIdOverride` 和 `aadRedirectUriOverride` 属性。 开发人员还应确保他们按照上一部分中的步骤 4，为其应用注册提供访问 Intune 应用保护服务的权限。
 
 ### <a name="special-considerations-when-using-msal"></a>使用 MSAL 时的特殊注意事项 
 
-1. **检查 Web 视图**-建议应用程序不要将 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 用作应用程序启动的任何 MSAL 交互身份验证操作的 web 视图。 如果出于某种原因，应用必须将这些 webview 之一用于任何交互式 MSAL auth 操作，它还必须将 `SafariViewControllerBlockedOverride` 设置为在应用程序的 info.plist 中的 `IntuneMAMSettings` 字典下 `true`。 警告：这将关闭 Intune 的 SafariViewController 挂钩以启用身份验证会话。 当应用程序使用 SafariViewController 查看公司数据时，这会在应用程序中的其他地方冒数据泄漏，因此应用程序不应在任何这些 web 视图类型中显示公司数据。
-2. 如果在这种情况下，必须**同时链接 adal 和 MSAL** -开发人员希望 Intune 更喜欢 MSAL over adal，则必须选择加入。 默认情况下，如果两个版本都在运行时链接，则 Intune 将更倾向于受支持的 MSAL 版本。 Intune 将仅在 Intune 第一次身份验证操作时首选受支持的 MSAL 版本，在 `NSUserDefaults`中 `true` `IntuneMAMUseMSALOnNextLaunch`。 如果 `IntuneMAMUseMSALOnNextLaunch` `false` 或未设置，Intune 将回退为默认行为。 顾名思义，对 `IntuneMAMUseMSALOnNextLaunch` 所做的更改将在下一次启动时生效。
+1. **检查 Web 视图** - 建议应用程序不要将 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 用作应用启动的任何 MSAL 交互式身份验证操作的 Web 视图。 如果出于某种原因，应用必须将其中一种 Web 视图用于任何交互式 MSAL 身份验证操作，那么它还必须在应用程序的 Info.plist 的 `IntuneMAMSettings` 字典下将 `SafariViewControllerBlockedOverride` 设置为 `true`。 警告：这将关闭 Intune 的 SafariViewController 挂钩以启用身份验证会话。 如果应用程序使用 SafariViewController 查看公司数据，这确实存在应用中其他地方出现数据泄漏的风险，因此应用程序不应在任何这些 Web 视图类型中显示公司数据。
+2. **同时链接 ADAL 和 MSAL** - 在此情况下，如果开发人员希望 Intune 使用 MSAL 胜过 ADAL，则必须选择加入。 默认情况下，如果这两者都在运行时进行链接，则相对于受支持 MSAL 版本，Intune 将更倾向于使用受支持的 ADAL 版本。 当 Intune 的首次身份验证操作 `IntuneMAMUseMSALOnNextLaunch` 在 `NSUserDefaults` 中为 `true` 时，Intune 将仅倾向于使用受支持的 MSAL 版本。 如果 `IntuneMAMUseMSALOnNextLaunch` 为 `false` 或未设置，Intune 将恢复为默认行为。 顾名思义，对 `IntuneMAMUseMSALOnNextLaunch` 所做的更改将在下一次启动时生效。
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>配置 Intune App SDK 设置
@@ -245,10 +245,10 @@ MSAL-开发人员需要在 AAD 中创建应用注册，其中的自定义重定�
 
 设置  | 类型  | 定义 | 是否必需？
 --       |  --   |   --       |  --
-ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 对于使用 MSAL 的所有应用和访问非 Intune AAD 资源的任何 ADAL 应用都是必需的。 |
+ADALClientId  | 字符串  | 应用的 Azure AD 客户端标识符。 | 对于使用 MSAL 的所有应用和访问非 Intune AAD 资源的所有 ADAL 应用，这是必需的。 |
 ADALAuthority | 字符串 | 应用使用的 Azure AD 颁发机构。 应使用已配置 AAD 帐户的你自己的环境。 | 如果应用使用 ADAL 或 MSAL 访问非 Intune AAD 资源，则是必需的。 如果此值不存在，则使用 Intune 默认值。|
-ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 对于所有使用 MSAL 的应用程序和访问非 Intune AAD 资源的任何 ADAL 应用，都需要 ADALRedirectUri 或 ADALRedirectScheme。  |
-ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用程序的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 对于所有使用 MSAL 的应用程序和访问非 Intune AAD 资源的任何 ADAL 应用，都需要 ADALRedirectUri 或 ADALRedirectScheme。 |
+ADALRedirectUri  | 字符串  | 应用的 Azure AD 重定向 URI。 | 对于使用 MSAL 的所有应用和访问非 Intune AAD 资源的所有 ADAL 应用，ADALRedirectUri 或 ADALRedirectScheme 是必需的。  |
+ADALRedirectScheme  | 字符串  | 应用的 Azure AD 重定向方案。 如果应用程序的重定向 URI 为 `scheme://bundle_id` 格式，则它可用于代替 ADALRedirectUri。 | 对于使用 MSAL 的所有应用和访问非 Intune AAD 资源的所有 ADAL 应用，ADALRedirectUri 或 ADALRedirectScheme 是必需的。 |
 ADALLogOverrideDisabled | 布尔值  | 指定 SDK 是否会将所有 ADAL/MSAL 日志（包括应用的 ADAL 调用（若有））路由到它自己的日志文件。 默认值为 NO。 如果应用将设置自己的 ADAL/MSAL 日志回叫，则设置为“YES”。 | 可选。 |
 ADALCacheKeychainGroupOverride | 字符串  | 指定要用于 ADAL/MSAL 缓存（而不是“com.microsoft.adalcache”）的密钥链组。 注意，这并不包含应用 ID 前缀。 这将作为运行时所提供字符串的前缀。 | 可选。 |
 AppGroupIdentifiers | 字符串数组  | 应用的授权 com.apple.security.application 组部分的应用组数组。 | 如果应用使用应用组，则需要此设置。 |
@@ -258,13 +258,13 @@ AutoEnrollOnLaunch| 布尔值| 指定在检测到现有托管标识且应用尚�
 MAMPolicyRequired| 布尔值| 如果应用没有 Intune 应用保护策略，指定是否要阻止应用启动。 默认值为 NO。 <br><br> 注意：MAMPolicyRequired 设置为“是”时，无法将应用提交到应用商店。 MAMPolicyRequired 设置为 YES 时，AutoEnrollOnLaunch 也应设置为 YES。 | 可选。 默认值为“否”。 |
 MAMPolicyWarnAbsent | 布尔值| 如果应用没有 Intune 应用保护策略，指定应用是否在启动期间警告用户。 <br><br> 注意：解除警报后，仍将允许用户在没有策略的情况下使用应用。 | 可选。 默认值为“否”。 |
 MultiIdentity | 布尔值| 指定应用是否识别多身份标识。 | 可选。 默认值为“否”。 |
-SafariViewControllerBlockedOverride | 布尔值| 禁用 Intune 的 SafariViewController 挂钩，通过 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 启用 MSAL authentication。 | 可选。 默认值为“否”。 警告：如果使用不当，可能会导致数据泄漏。 仅在绝对必要时启用。 有关详细信息，请参阅[使用 MSAL 时的特殊注意事项](#special-considerations-when-using-msal)。  |
+SafariViewControllerBlockedOverride | 布尔值| 禁用 Intune 的 SafariViewController 挂钩，以通过 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 启用 MSAL 身份验证。 | 可选。 默认值为“否”。 警告：如果使用不当，可能会导致数据泄漏。 仅在绝对必要时启用。 有关详细信息，请参阅[使用 MSAL 时的特殊注意事项](#special-considerations-when-using-msal)。  |
 SplashIconFile <br>IntuneMAMSettings | 字符串  | 指定 Intune 初始屏幕（启动）图标文件。 | 可选。 |
 SplashDuration | 数字 | 应用程序启动时显示 Intune 启动屏幕的最小时间（以秒为单位）。 默认值为 1.5。 | 可选。 |
-BackgroundColor| 字符串| 指定 Intune SDK 的 UI 组件的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认情况下，系统背景色可能因不同版本的 iOS 和 iOS 深色模式设置而异。 |
-ForegroundColor| 字符串| 指定 Intune SDK 的 UI 组件的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为系统标签颜色，在不同版本的 iOS 中以及根据 iOS 深色模式设置，这些颜色可能有所不同。 |
-AccentColor | 字符串| 指定 Intune SDK 的 UI 组件的强调颜色，例如按钮文本颜色和固定框突出显示颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。| 可选。 默认为系统蓝色。 |
-SupportsDarkMode| 布尔值 | 指定在没有为 BackgroundColor/ForegroundColor/AccentColor 设置显式值的情况下，Intune SDK 的 UI 配色方案是否应观察系统暗色模式设置 | 可选。 默认为“是”。 |
+BackgroundColor| 字符串| 指定 Intune SDK 的 UI 组件的背景色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。   | 可选。 默认为系统背景色，可能因不同版本的 iOS 和 iOS 深色模式设置而异。 |
+ForegroundColor| 字符串| 指定 Intune SDK 的 UI 组件的前景色，如文本颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。  | 可选。 默认为系统标签颜色，可能因不同版本的 iOS 和 iOS 深色模式设置而异。 |
+AccentColor | 字符串| 指定 Intune SDK 的 UI 组件的主题色，如按钮文本颜色和 PIN 框高亮颜色。 接受 #XXXXXX 格式的十六进制 RGB 字符串，其中 X 的范围可以为 0-9 或 A-F。 可忽略井号。| 可选。 默认为系统蓝色。 |
+SupportsDarkMode| 布尔值 | 指定在没有为 BackgroundColor/ForegroundColor/AccentColor 设置显式值的情况下，Intune SDK 的 UI 配色方案是否应遵守系统深色模式设置 | 可选。 默认为“是”。 |
 MAMTelemetryDisabled| 布尔值| 指定 SDK 是否会将任何遥测数据发送到其后端。| 可选。 默认值为“否”。 |
 MAMTelemetryUsePPE | 布尔值 | 指定 MAM SDK 是否将数据发送到 PPE 遥测后端。 使用 Intune 策略测试应用时使用该布尔值，以便测试遥测数据不会与客户数据相混淆。 | 可选。 默认值为“否”。 |
 MaxFileProtectionLevel | 字符串 | 可选。 允许应用指定其可以支持的 `NSFileProtectionType` 最大值。 如果该级别高于应用程序可以支持的级别，则此值将替代服务发送的策略。 可能的值：`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone`。|
@@ -465,13 +465,14 @@ IntuneMAMPolicy.h | IntuneMAMPolicy 类公开一些适用于该应用的 MAM 策
 IntuneMAMFileProtectionManager.h | IntuneMAMFileProtectionManager 类公开 API，应用可使用这些 API 根据提供的标识显式保护文件和目录。 标识可由 Intune 托管或非托管，SDK 将应用相应的 MAM 策略。 可选择是否使用此类。 |
 IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API，应用可以使用这些 API 来保护给定提供标识的数据缓冲区。 标识可由 Intune 托管或非托管，SDK 将相应地应用加密。 |
 
-## <a name="implement-save-as-controls"></a>实现“另存为”控件
+## <a name="implement-save-as-and-open-from-controls"></a>实现“另存为”和“打开位置”控件
 
-通过 Intune，IT 管理员可选择托管应用保存数据的存储位置。 应用可使用 `IntuneMAMPolicy.h` 中定义的 `isSaveToAllowedForLocation` API 在 Intune App SDK 中查询允许的存储位置。
+通过 Intune，IT 管理员可选择托管应用保存数据或从中打开数据的存储位置。 应用可使用 `IntuneMAMPolicy.h` 中定义的 `isSaveToAllowedForLocation` API 在 Intune MAM SDK 中查询允许“另存为”存储位置。 应用还可使用 `IntuneMAMPolicy.h` 中定义的 `isOpenFromAllowedForLocation` API 在 Intune MAM SDK 中查询允许“打开位置”存储位置。
 
 应用将托管数据保存到云存储或本地位置前，必须使用 `isSaveToAllowedForLocation` API 进行检查，了解 IT 管理员是否允许将数据保存在此处。
+从云存储或本地位置向应用打开数据之前，应用必须使用 `isOpenFromAllowedForLocation` API 进行检查，了解 IT 管理员是否允许从此处打开数据。
 
-使用 `isSaveToAllowedForLocation` API 时，应用必须传入用于存储位置的 UPN（如可用）。
+使用 `isSaveToAllowedForLocation` 或 `isOpenFromAllowedForLocation` API 时，应用必须传入用于存储位置的 UPN（如可用）。
 
 ### <a name="supported-save-locations"></a>支持的存储位置
 
@@ -481,12 +482,46 @@ IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager 类公开 API�
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
 * IntuneMAMSaveLocationLocalDrive
+* IntuneMAMSaveLocationAccountDocument
 
 应用应使用 `isSaveToAllowedForLocation` 中的常量来检查是否可将数据保存到“托管”位置（如 OneDrive for Business）或“个人”。 此外，应用无法确定是“托管”还是“个人”位置时，应使用 API。
 
-`IntuneMAMSaveLocationOther` 常数代表已知为“个人”的位置。
-
 如果应用将数据保存到本地设备上的任何位置，应使用 `IntuneMAMSaveLocationLocalDrive` 常数。
+
+如果不知道帐户的目标位置，应传递 `nil`。 `IntuneMAMSaveLocationLocalDrive` 位置应始终与 `nil` 帐户配对。
+
+### <a name="supported-open-locations"></a>支持的打开位置
+
+`isOpenFromAllowedForLocation` API 提供常量来检查 IT 管理员是否允许打开 `IntuneMAMPolicy.h` 中定义的以下位置的数据。
+
+* IntuneMAMOpenLocationOther
+* IntuneMAMOpenLocationOneDriveForBusiness
+* IntuneMAMOpenLocationSharePoint
+* IntuneMAMOpenLocationCamera
+* IntuneMAMOpenLocationLocalStorage
+* IntuneMAMOpenLocationAccountDocument
+
+应用应使用 `isOpenFromAllowedForLocation` 中的常量来检查是否可从“托管”（如 OneDrive for Business）或“个人”位置中打开数据。 此外，应用无法确定是“托管”还是“个人”位置时，应使用 API。
+
+如果应用要打开“照相机”或“相册”的数据，应使用 `IntuneMAMOpenLocationCamera` 常量。
+
+如果应用要打开本地设备上任何位置的数据，应使用 `IntuneMAMOpenLocationLocalStorage` 常数。
+
+如果应用要打开具有托管帐户标识的文档，应使用 `IntuneMAMOpenLocationAccountDocument` 常量（请参阅下面的“共享数据”部分）
+
+如果不知道帐户的源位置，应传递 `nil`。 `IntuneMAMOpenLocationLocalStorage` 和 `IntuneMAMOpenLocationCamera` 位置应始终与 `nil` 帐户配对。
+
+### <a name="unknown-or-unlisted-locations"></a>未知或未列出的位置
+
+当所需的位置未在 `IntuneMAMSaveLocation` 或 `IntuneMAMOpenLocation` 枚举中列出或未知时，应使用两个位置之一。
+* 如果使用托管帐户访问保存位置，则应使用 `IntuneMAMSaveLocationAccountDocument` 位置（`IntuneMAMOpenLocationAccountDocument` 是开放位置）。
+* 否则，请使用 `IntuneMAMSaveLocationOther` 位置（`IntuneMAMOpenLocationOther` 是开放位置）。
+
+请务必区分开托管帐户和共享托管帐户 UPN 的帐户。 例如，登录到 OneDrive 的 UPN 为“user@contoso.com”的托管帐户与登录到 Dropbox 的 UPN 为“user@contoso.com”的帐户不同。 如果通过登录到托管帐户（如登录到 OneDrive 的“user@contoso.com”）来访问未知或未列出的服务，则应由 `AccountDocument` 位置表示。 如果通过其他帐户登录（例如，登录到 Dropbox 的“user@contoso.com”）未知或未列出的服务，则不会使用托管帐户访问该位置，并且应由 `Other` 位置表示。
+
+### <a name="sharing-blocked-alert"></a>共享已阻止的警报
+
+如果调用了 `isSaveToAllowedForLocation` 或 `isOpenFromAllowedForLocation` API，并发现它阻止保存/打开操作，则可以使用 UI 帮助程序函数。 如果应用想要通知用户已阻止操作，则它可以调用 `IntuneMAMUIHelper.h` 中定义的 `showSharingBlockedMessage` API，显示包含一般消息的警报视图。
 
 ## <a name="share-data-via-uiactivityviewcontroller"></a>通过 UIActivityViewController 共享数据
 
@@ -739,7 +774,7 @@ SDK 将在后台定期执行以下操作：
 
 ### <a name="how-can-i-troubleshoot-my-app"></a>如何对应用进行故障排除？
 
-Intune SDK for iOS 9.0.3 + 支持在移动应用内添加诊断控制台，用于测试策略和记录错误。 `IntuneMAMDiagnosticConsole.h` 定义 `IntuneMAMDiagnosticConsole` 类接口，开发人员可以使用该接口显示 Intune 诊断控制台。 这样，最终用户或开发人员就可以在测试过程中收集和共享 Intune 日志，以帮助诊断他们可能遇到的任何问题。 此 API 对于集成程序是可选的。
+适用于 iOS 9.0.3 及更高版本的 Intune SDK 支持在移动应用内添加诊断控制台以测试策略并记录错误。 `IntuneMAMDiagnosticConsole.h` 定义 `IntuneMAMDiagnosticConsole` 类接口，开发人员可以使用该接口显示 Intune 诊断控制台。 这样，最终用户或开发人员就可以在测试期间收集和共享 Intune 日志，以帮助诊断他们可能遇到的任何问题。 集成者可选择此 API。
 
 ## <a name="submit-your-app-to-the-app-store"></a>将应用提交到应用商店
 

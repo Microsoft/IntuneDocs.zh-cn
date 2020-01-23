@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 831a22dfb6eebfe74b9886a1c83560f68a11c04e
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502652"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036592"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows PC 软件的许可协议
 
@@ -51,7 +51,7 @@ ms.locfileid: "72502652"
 > 在使用 Intune Windows PC 客户端管理至少一台 Windows PC 后，“许可证”  工作区才会显示在管理员控制台中。
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>添加 Microsoft 批量许可协议
-Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软件的许可证信息。 可通过提供匹配的协议编号对将 Microsoft 批量许可协议添加到 Intune 中。 协议或授权编号必须与正确的许可证或注册编号匹配。 协议编号对是在购买许可协议时通过 [批量许可服务中心 (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)获得的。
+Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软件的许可证信息。 可通过提供匹配的协议编号对将 Microsoft 批量许可协议添加到 Intune 中。 协议或授权编号必须与正确的许可证或注册编号匹配。 协议编号对是在购买许可协议时通过 [批量许可服务中心 (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842)获得的。
 
 1. 在 [Microsoft Intune 管理员控制台](https://admin.manage.microsoft.com/)中，选择“许可证”  。
 
@@ -77,11 +77,11 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 
         可通过采用以下格式之一将协议编号对添加至纯文本文档来创建此文件，具体情况视你向 VLSC 注册的组织类型而定。 为每行指定一个协议编号对。
 
-        - **开放式价值客户：** *协议编号*、*重复协议编号*、*协议名称*
+        - **开放式价值客户：** 协议编号、重复协议编号、协议名称   
 
-        - **开放式客户：** *授权编号*、*相关许可证编号*、*协议名称*
+        - **开放式客户：** 授权编号、相关许可证编号、协议名称   
 
-        - **精选客户和企业客户：** *协议编号*、*相关注册编号*、*协议名称*
+        - **优质客户和企业客户：** 协议编号、相关注册编号、协议名称   
 
         在添加新协议时，“添加协议”  表单将提示你浏览此文件。
 
@@ -116,7 +116,7 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 
 将显示“所有协议”  视图，并且 Intune 将连接到 Microsoft VLSC 以验证你提供的协议编号对。
 
-若要在 Intune 中添加许可协议之后更新批量许可证信息，请在“许可证概述”  页中选择“立即刷新”  。 此操作会从 [Microsoft 批量许可服务中心 (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)中检索当前许可证信息。
+若要在 Intune 中添加许可协议之后更新批量许可证信息，请在“许可证概述”  页中选择“立即刷新”  。 此操作会从 [Microsoft 批量许可服务中心 (VLSC)](https://go.microsoft.com/fwlink/?LinkId=223842)中检索当前许可证信息。
 
 > [!IMPORTANT]
 > 在刷新批量许可信息之前，你可能会在协议列表中看到不同的信息，并且可能会在“协议概述”  页上看到授权信息。
@@ -182,7 +182,7 @@ Intune 批量许可协议提供通过 Microsoft 批量许可协议购买的软�
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            任务            |                                                                                                                                                                                 详细信息                                                                                                                                                                                  |
-|   创建许可证组   |                                                            在“许可证”工作区的“概述”页上，选择“任务”菜单中的“创建许可证组”。 <strong>注意：</strong>最多总共可以创建 500 个许可证组。                                                             |
+|   创建许可证组   |                                                            在“许可证”工作区的“概述”页上，选择“任务”菜单中的“创建许可证组”。 <strong>注意:</strong>最多总共可以创建 500 个许可证组。                                                             |
 |   重命名许可证组   |                                                                                                      在“许可证”工作区中，选择一个许可证组，然后从“任务”菜单中选择“编辑许可证组”。                                                                                                       |
 |   删除许可证组   |                                 在“许可证”工作区中，选择一个许可证组，然后从“任务”菜单中选择“删除许可证组”。 <strong>提示：</strong>删除的组中包含的所有许可证都会移动到“未分配的协议”许可证组中。                                 |
 | 删除许可协议 | 在“许可证”工作区中，选择一个协议，然后选择“删除”。 <strong>提示：</strong>若要在删除批量许可协议后更新许可证信息，请在“许可证概述”页上或在特定许可证组的“常规”选项卡上选择“立即刷新”。 |

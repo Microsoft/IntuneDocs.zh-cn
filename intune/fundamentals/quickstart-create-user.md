@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdd97e69c97df5a266e147381d94b3d4419bab34
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509877"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036583"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>快速入门：在 Intune 中创建用户并向用户分配许可证
 
@@ -50,11 +50,11 @@ ms.locfileid: "72509877"
 
 ## <a name="assign-a-license-to-the-user"></a>向用户分配许可证
 
-创建用户后，必须使用 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)向其分配 Intune 许可证。 如果不向用户分配许可证，他们将无法在 Intune 中注册其设备。 
+创建用户后，必须使用 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)向其分配 Intune 许可证。 如果不向用户分配许可证，他们将无法在 Intune 中注册其设备。 
 
 若要向用户分配 Intune 许可证，请执行以下操作：
 
-1. 使用登录 Intune 所用的凭据登录 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
+1. 使用登录 Intune 所用的凭据登录 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)。
 2. 选择“用户” > “活动用户”，然后选择刚刚创建的用户   。
 3. 选择“产品许可证”旁边的“编辑”   。
 4. 在“位置”下，为用户选择位置  。
@@ -68,7 +68,7 @@ ms.locfileid: "72509877"
 
 ## <a name="clean-up-resources"></a>清理资源
 
-如果不再需要此用户，则可以删除该用户，方法是导航到 [Microsoft 365 管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“用户” > “活跃用户” >  选择列表中的用户  > “删除用户” > “删除用户” > “确认更改” > “关闭”        。
+如果不再需要此用户，则可以删除该用户，方法是导航到 [Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)，然后选择“用户” > “活跃用户” >  选择列表中的用户  > “删除用户” > “删除用户” > “确认更改” > “关闭”        。
 
 ## <a name="next-steps"></a>后续步骤
 

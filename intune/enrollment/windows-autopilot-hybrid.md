@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558186"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125304"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署加入混合 Azure AD 的设备
 可以使用 Intune 和 Windows Autopilot 设置加入混合 Azure Active Directory (Azure AD) 的设备。 为此，请执行本文中的步骤。
@@ -46,7 +46,7 @@ ms.locfileid: "74558186"
 
    ![Azure 门户](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
-1. 选择“移动性(MDM 和 MAM)”  。
+1. 选择“移动性 (MDM 和 MAM)”  。
 
    ![“Azure Active Directory”窗格](./media/windows-autopilot-hybrid/auto-enroll-mdm.png)
 
@@ -145,7 +145,7 @@ ms.locfileid: "74558186"
     
 1. 选择“保存”  。
 
-1. 选择“创建”  。  
+1. 选择“创建”。   
 
 ## <a name="register-your-autopilot-devices"></a>注册 Autopilot 设备
 
@@ -209,17 +209,30 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。
 ## <a name="create-and-assign-a-domain-join-profile"></a>创建并分配域加入配置文件
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “配置文件” > “创建配置文件”    。
-1. 输入以下属性：
+2. 输入以下属性：
    - **名称**：输入新配置文件的描述性名称。
-   - **说明**：输入配置文件的说明。
+   - **描述**：输入配置文件的说明。
    - **平台**：选择“Windows 10 及更高版本”  。
    - **配置文件类型**：选择“域加入(预览版)”  。
-1. 选择“设置”，然后提供 [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的“计算机名前缀”、“域名”和（可选）“组织单位”     。 
+3. 选择“设置”  ，然后提供“计算机名前缀”  、“域名”  。
+4. （可选）提供 [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的“组织单位”(OU)  。 您的选择包括：
+   - 提供一个 OU，在其中已将控制权委派给运行 Intune Connector 的 Windows 2016 设备。
+   - 提供一个 OU，在其中已将控制权委派给本地 Active Directory 中的根计算机。
+   - 如果将此项保留为空白，将在 Active Directory 默认容器中创建计算机对象（如果从未[更改](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)，则 CN=Computers）。
+   
+   下面是一些有效示例：
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   下面是一些无效示例：
+   - CN=Computers,DC=contoso,DC=com（不能指定容器，而是将值保留为空白以使用域的默认值）
+   - OU=Mine（必须通过 DC= attributes 指定域）
+     
    > [!NOTE]
    > 请勿在组织单位  中的值两边使用引号。
-1. 选择“确定” > “创建”   。  
+5. 选择“确定” > “创建”   。  
     此时，配置文件创建完成，并显示在列表中。
-1. 若要分配配置文件，请遵循[分配设备配置文件](../configuration/device-profile-assign.md#assign-a-device-profile)下的步骤进行操作，并将配置文件分配给[创建设备组](windows-autopilot-hybrid.md#create-a-device-group)步骤中所使用的同一组
+6. 若要分配配置文件，请遵循[分配设备配置文件](../configuration/device-profile-assign.md#assign-a-device-profile)下的步骤进行操作，并将配置文件分配给[创建设备组](windows-autopilot-hybrid.md#create-a-device-group)步骤中所使用的同一组
    - 部署多个域加入配置文件
    
      a. 创建一个包含带有特定 Autopilot 部署配置文件的所有 Autopilot 设备的动态组，输入 (device.enrollmentProfileName -eq "Autopilot 配置文件名称")。 

@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855504"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951459"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>在管理中注册组织提供的 iOS 设备
 
@@ -44,11 +44,7 @@ ms.locfileid: "75855504"
 
 1. 打开 iOS 设备。
 2. 选择“语言”后，请将设备连接 Wi-Fi  。
-3. 在“设置 iOS 设备”屏幕上，选择是否希望  ：
-   - 设置为新设备 
-   - 从 iCloud 备份中还原 
-   - 从 iTunes 备份中还原 
-
+3. 在“设置 iOS 设备”屏幕上，选择“设置为新设备”   。  
 4. 连接 Wi-Fi 后，随即显示“配置”屏幕  。 它会显示“[你的公司] 将自动配置你的设备”  。
 
    **配置允许 [你的公司] 无线管理此设备。管理员可以帮助你设置电子邮件和网络帐户、安装和配置应用以及远程管理设置。管理员可能禁用功能、安装和删除应用、监视和限制 Internet 流量以及远程擦除此设备。**
