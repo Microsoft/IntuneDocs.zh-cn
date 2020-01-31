@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7dd4a1873cd7117870c4c1408e512831ecaa4f
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258469"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517552"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -726,7 +726,7 @@ ms.locfileid: "76258469"
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
-- **安全智能更新间隔(小时)** ：输入 Defender 检查新安全智能的时间间隔，范围为 0 到 24 小时。 选项包括：
+- **安全智能更新间隔（小时）** ：输入 Defender 检查新安全智能的时间间隔，范围为 0 到 24 小时。 选项包括：
 
   - **未配置**（默认）：Intune 不会更改或更新此设置。 默认操作系统可能每 8 小时检查一次更新。
   - **不检查**：Defender 不检查是否存在新的安全智能更新。
@@ -785,7 +785,7 @@ ms.locfileid: "76258469"
 
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **扫描从网络文件夹打开的文件**：选择“启用”可允许 Defender 扫描从网络文件夹或共享网络驱动器打开的文件（例如，从 UNC 路径访问的文件）  。 用户无法关闭此设置。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
+- **扫描从网络文件夹中打开的文件**：选择“启用”可允许 Defender 扫描从网络文件夹或共享网络驱动器打开的文件（例如，从 UNC 路径访问的文件）  。 用户无法关闭此设置。 如果驱动器上的文件是只读的，则 Defender 无法删除在其中找到的任何恶意软件。
 
   设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果启用该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的配置状态  。 默认情况下，OS 会扫描从网络文件夹打开的文件，并允许用户对其进行更改。
 
@@ -832,7 +832,7 @@ ms.locfileid: "76258469"
   >   1. 配置“要执行每日快速扫描的时间”设置  。
   >   2. 配置“要执行的系统扫描类型”以执行完全扫描  。
   > 
-  > - 如果只希望每天进行一次快速扫描（不完全扫描），请使用以下任一设置：“要执行每日快速扫描的时间”或“要执行的系统扫描类型”   。 例如，若要在每周二上午 6 点运行快速扫描，请配置“要执行的系统扫描类型”设置  。
+  > - 如果只想每天进行一次快速扫描（而不进行完全扫描），请使用以下任一设置：“执行每日快速扫描的时间”或“执行日常快速扫描时间”。   例如，若要在每周二上午 6 点运行快速扫描，请配置“要执行的系统扫描类型”设置  。
   > 
   > - 请勿在“要执行的系统扫描类型”设置为“快速扫描”的同时配置“要执行每日快速扫描的时间”设置    。 这些设置可能会发生冲突，扫描可能无法运行。
 
@@ -851,7 +851,15 @@ ms.locfileid: "76258469"
 
 - **提交样本同意**：目前，此设置不会产生任何影响。 请勿使用此设置。 未来版本中可能会将其删除。
 
-- **针对检测到的恶意软件威胁采取的操作**：选择处理恶意软件威胁的方式。 **未配置**（默认）：允许 Microsoft Defender 选择最佳选项。 设置为“启用”  后，可选择 Defender 针对其探测到的每个威胁级别（低、中、高和严重）要执行的操作。 选项包括：
+- **访问保护时**：阻止  阻止扫描已访问或下载的文件。 用户无法将其打开。
+
+  设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果阻止该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的 OS 配置状态  。 默认情况下，OS 会启用此功能，并允许用户对其进行更改。
+
+  Intune 不会打开此功能。 若要启用此功能，请使用自定义 URI。
+
+  [Defender/AllowOnAccessProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection)
+
+- **针对检测到的恶意软件威胁采取的操作**：选择要如何处理恶意软件线程。 **未配置**（默认）：允许 Microsoft Defender 选择最佳选项。 设置为“启用”  后，可选择 Defender 针对其探测到的每个威胁级别（低、中、高和严重）要执行的操作。 选项包括：
   
   - **清理**
   - **隔离**
@@ -878,7 +886,7 @@ ms.locfileid: "76258469"
 
   [Power/EnergySaverBatteryThresholdOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
 
-- **合上盖子(仅限移动设备)** ：设备使用电池电量时，请选择合上盖子后会出现的情况。 选项包括：
+- **合上盖子（仅限移动设备）** ：设备使用电池电量时，请选择合上盖子后会出现的情况。 选项包括：
 
   - **未配置**（默认）：Intune 不会更改或更新此设置。
   - **无操作**：设备保持打开状态，并继续使用电池电量。
@@ -914,11 +922,11 @@ ms.locfileid: "76258469"
 
 ### <a name="pluggedin"></a>PluggedIn
 
-- **启用节能模式的电池剩余电量**：设备接通电源时，请输入电池剩余电量，以启用节能模式，从 0-100。 输入表示电池电量的百分比值。 默认值为 70%。 如果设置为 70%，则当电池电量为 70% 或更低时，将启用节能模式。
+- **启用节能模式的电池剩余电量**：设备接通电源时，请输入电池剩余电量，以启用节能模式，范围为 0 到 100。 输入表示电池电量的百分比值。 默认值为 70%。 如果设置为 70%，则当电池电量为 70% 或更低时，将启用节能模式。
 
   [Power/EnergySaverBatteryThresholdPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
 
-- **合上盖子(仅限移动设备)** ：设备接通电源时，请选择合上盖子后会出现的情况。 选项包括：
+- **合上盖子（仅限移动设备）** ：设备接通电源时，请选择合上盖子后会出现的情况。 选项包括：
 
   - **未配置**（默认）：Intune 不会更改或更新此设置。
   - **无操作**：设备保持打开状态。
