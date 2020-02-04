@@ -46,7 +46,7 @@
           href: privacy-data-audit-export-delete.md
         - name: Windows 信息保护
           href: windows-information-protection-configure.md
-- name: 操作方式指南
+- name: 操作指南
   items:
     - name: 在设备上设置规则，以允许访问资源
       items:
@@ -56,7 +56,7 @@
           href: create-compliance-policy.md
         - name: 基于位置的符合性
           href: use-network-locations.md
-        - name: 对不符合设备的操作
+        - name: 针对非符合性的操作
           href: actions-for-noncompliance.md
         - name: 监视设备符合性
           href: compliance-policy-monitor.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: 证书连接器疑难解答
           href: troubleshoot-certificate-connector-events.md
+        - name: SCEP 证书配置文件疑难解答
+          items:
+            - name: SCEP 证书配置文件疑难解答
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: 将配置文件部署到设备
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: 设备到 NDES 的通信
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: NDES 操作
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: 将证书传送到设备
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: 证书部署报告
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Exchange Connector 疑难解答
           items:
             - name: Exchange Connector 疑难解答

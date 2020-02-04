@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760954"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912620"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
 
@@ -77,20 +77,6 @@ Microsoft 对 Windows Phone 8.1 的主流支持于 2017 年 7 月结束，延期
 #### <a name="additional-information"></a>其他信息
 如需了解更多信息，请访问有关[将 Microsoft Edge 与应用保护策略结合使用](../apps/manage-microsoft-edge.md)的文档，或查看我们的[支持博客文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)。
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>更改计划：在 Intune 中注册 Android Enterprise 专用设备时更新了体验<!--5198878-->
-对于 Intune 11 月版或 1911 版，我们将添加对 SCEP 设备证书部署到 Android Enterprise 专用设备的支持，以便启用对 Wi-Fi 配置文件的基于证书的访问。 此更改还涉及在注册 Android Enterprise 专用设备时对流的一些次要更改。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-如果在你的环境中管理 Android Enterprise 专用设备，你会开始看到一些更改将于 11 月推出。
-
-- 对于新的 Android Enterprise 专用设备注册：最终用户会在注册过程中在设备上看到一组不同的步骤。 注册仍将以当前的方式开始（使用 QR、NFC、零接触或设备标识符），但在 11 月服务发布后，必须执行应用安装步骤。
-- 对于注册为专用设备的现有 Android 设备：Intune 将开始于 11 月初在设备上自动安装 Microsoft Intune 应用。 用户无需采取任何操作。 应用将在设备上自动下载并安装。 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>针对此更改，我可以做什么准备？
-你应该计划更新最终用户指南，并使支持人员知道此更改。 单击“其他信息”以了解更多详细信息和屏幕截图。 开始推出此更改时，我们将更新新增功能页面。
-
-#### <a name="additional-information"></a>其他信息
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>停止支持旧版 PC 管理
 
