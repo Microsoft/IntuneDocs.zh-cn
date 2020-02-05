@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6ebcb81cd0f186a3fd23e0701d12ea871eab129a
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563588"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912562"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>使用 Microsoft Intune 将 Microsoft Edge 添加到 macOS 设备
 
@@ -50,7 +50,7 @@ ms.locfileid: "74563588"
 1. 单击“应用信息”以显示“应用信息”窗格   。
 2. 在“应用信息”窗格中，提供有关此应用部署的信息  。 此信息可帮助你在 Intune 中标识应用，还可帮助用户在公司门户中找到该应用。
     - **名称**：输入应用的名称，该名称将显示在公司门户中。 请确保所有名称都是唯一的。 如果同一应用名称存在两次，则在公司门户中将仅向用户显示其中一个应用。
-    - **说明**：输入应用的描述。 例如，可以在描述中列出目标用户。
+    - **描述**：输入应用的描述。 例如，可以在描述中列出目标用户。
     - **发布者**：Microsoft 显示为发布者。
     - **类别**：（可选）选择一个或多个内置应用类别或所创建的类别。 此设置可让用户在浏览公司门户时更轻松地找到该应用。
     - **在公司门户中将此应用显示为特色应用**：选择此选项，用户在公司门户中浏览应用时，将在主页上突出显示该应用。
@@ -65,11 +65,15 @@ ms.locfileid: "74563588"
 在此步骤中，配置应用的安装选项。
 
 1. 在“添加应用”  窗格中，选择“应用设置”  。
-2. 在“应用设置”窗格中，自动选择了“Beta”通道，且无法更改   。
-    - “Beta”通道是最稳定的 Microsoft Edge 预览体验，也是组织内全面试用的最佳选择  。 每六周发布一次重大更新。
+2. 在“应用设置”窗格中，从“通道”列表中选择“稳定”、“Beta”或“开发”，以确定要从哪个 Edge 通道部署应用      。
+
+    - “稳定”  通道是用于在企业环境中广泛部署的建议通道。 它每六周更新一次，每个版本中都会加入“Beta”通道的改进。
+    - “Beta”通道拥有最稳定的 Microsoft Edge 预览体验，也是在组织内全面试用的最佳选择  。 每六周发布一次重大更新，每个版本中都会加入“开发”通道的经验和改进。
+    - “开发”通道适用于在 Windows、Windows Server 和 macOS 上提供反馈的企业  。 它每周更新，包含最新的改进和修复。
 
     > [!NOTE]
     > 用户浏览公司门户时，Microsoft Edge 浏览器徽标与应用一同显示。
+
 3.  选择“确定”  。
 
 ## <a name="select-scope-tags-optional"></a>选择作用域标记（可选）。

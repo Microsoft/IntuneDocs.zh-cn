@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036626"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517450"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>使用 Intune 的 Wandera 移动威胁防御连接器  
 
@@ -48,7 +48,7 @@ Intune 中的符合性策略包括基于 Wandera 风险评估的 MTD 规则。 �
 - Android 5.0 及更高版本  
 - iOS 10.2 及更高版本  
 
-有关平台和设备的详细信息，请参阅 [Wandera 网站](https://www.wandera.com/classic-help-center/)。
+有关平台和设备的详细信息，请参阅 [Wandera 网站](https://www.wandera.com/mobile-threat-defense/)。
 
 ## <a name="prerequisites"></a>必备条件  
 

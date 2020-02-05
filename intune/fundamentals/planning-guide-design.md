@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885783"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886731"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -308,7 +308,10 @@ Intune 支持公司拥有的设备和个人设备。 如果设备由设备注册
 
 下面是一个 Wi-Fi 配置文件设计的示例：
 
-| 类型 | 配置文件名称 | 设备平台 | 用例 | | Wi-Fi | 亚洲 Wi-Fi 配置文件 | Android | 公司、BYOD 亚洲地区| | Wi-Fi | 北美 Wi-Fi 配置文件 | Android、iOS、Windows 10 移动版 | 公司、BYOD 北美地区 |    
+| **类型** | **配置文件名称** | **设备平台** | **用例** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | 亚洲 Wi-Fi 配置文件 | Android | 公司、BYOD（亚洲地区）|
+| Wi-Fi | 北美 Wi-Fi 配置文件 | Android、iOS、Windows 10 移动版 | 公司、BYOD（北美地区） |
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定 Wi-Fi 配置文件需求。
 
