@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912620"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966346"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>更新的功能：Intune 即将引来新的 RBAC 角色<!--4253397-->
-在 1 月 Intune 服务更新中，我们计划在 Intune 中发布新的安全角色。 你会看到此角色作为“终结点安全管理器”在 Intune 中列出，此角色是 Azure AD 中“安全管理员”角色的扩展。
- 
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-目前，Azure AD 中有三个角色可用于安全专业人员：
-- Azure AD 中的安全读取者角色，提供对 Intune 的只读访问权限。
-- Azure AD 中的安全操作员角色，提供对 Intune 的只读访问权限。
-- Azure AD 中的安全管理员。 当 Intune 随附 1 月份更新以及对 Intune 的只读权限时，终结点安全管理器角色提供的新权限如下所示：
-    - 读取、创建、更新、删除和分配设备符合性策略
-    - 读取、删除和更新托管设备
-    - 读取、创建、更新、删除和分配安全基线
-    - 读取和更新安全任务
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
-立即查看 Intune RBAC 角色。 如果目前只有全局管理员角色，则无需进行任何更改。 如果你使用角色，并且想要终结点安全管理器提供的粒度，则在该角色可用时分配该角色。 查看 Intune [新增功能](../fundamentals/whats-new.md)页面，获取最新 Intune 版本信息。 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>针对“Adobe Acrobat Reader for Intune”移动应用的更新支持声明<!--5746776-->
 我们在 8 月底的 MC188653 上得知，Adobe Acrobat Reader for Intune 移动应用将于 2019 年 12 月 1 日到期，且 Adobe 计划在其主要的 Acrobat Reader 应用中支持 Intune 应用保护策略。 自那以后，我们收到客户反馈，我们需要提供更多的时间来继续允许 IT 管理员瞄准目标，并让最终用户开始使用 Adobe Acrobat Reader for Intune。 鉴于 Adobe Acrobat Reader for Intune 在最终用户设备上的高使用率及其在企业场景中的重要性，我们希望确保任何体验都能满足组织的应用保护需求。 
