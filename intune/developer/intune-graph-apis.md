@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490503"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754790"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何使用 Azure AD 访问 Microsoft Graph Intune API
 
@@ -62,13 +62,13 @@ ms.locfileid: "72490503"
 
 注册应用以使用 Microsoft Graph API：
 
-1. 使用管理凭据登录到[Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 。
+1. 使用管理凭据登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 
     根据需要可以使用：
     - 租户管理员帐户。
     - 启用了**用户可以注册应用程序**设置的租户用户帐户。
 
-2. 从菜单中依次选择“Azure Active Directory”  &gt;“应用注册”  。
+2. 从菜单中依次选择“Azure Active Directory”&gt;“应用注册”   。
 
     <img src="../media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
@@ -90,15 +90,15 @@ ms.locfileid: "72490503"
 
     1. 注意“应用程序 ID”  值。
 
-    2. 选择“设置”  &gt;“API 访问”  &gt;“所需权限”  。
+    2. 依次选择“设置”&gt;“API 访问权限”&gt;“所需权限”    。
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6. 从“所需权限”  边栏选项卡中，选择“添加”  &gt;“添加 API 访问权限”  &gt;“选择 API”  。
+6. 从“所需权限”边栏选项卡中，依次选择“添加”&gt;“添加 API 访问权限”&gt;“选择 API”     。
 
     <img src="../media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7. 从“选择 API”  边栏选项卡中，依次选择“Microsoft Graph”  &gt;“选择”  。  打开“启用访问权限”  边栏选项卡，并列出你的应用程序可用的权限范围。
+7. 从“选择 API”边栏选项卡中，依次选择“Microsoft Graph”&gt;“选择”    。  打开“启用访问权限”  边栏选项卡，并列出你的应用程序可用的权限范围。
 
     <img src="../media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -120,7 +120,7 @@ ms.locfileid: "72490503"
 
 - 使应用可供租户之外的用户使用。  （这通常仅适用于支持多个租户/组织的合作伙伴。）  
 
-    执行此操作的步骤：
+    为此，请执行以下操作：
 
   1. 从应用程序边栏选项卡中选择“清单”  ，将打开“编辑清单”  边栏选项卡。
 
@@ -128,7 +128,7 @@ ms.locfileid: "72490503"
 
   2. 将 `availableToOtherTenants` 设置的值更改为 `true`。
 
-  3. 保存你的更改。
+  3. 保存所做更改。
 
 ## <a name="intune-permission-scopes"></a>Intune 权限范围
 
@@ -205,7 +205,7 @@ __读取 Microsoft Intune 配置__ | DeviceManagementServiceConfig.Read.All
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- **启用访问权限**设置：__对 Microsoft Intune 设备执行影响用户的远程操作__
+- **启用访问权限**设置：__在 Microsoft Intune 设备上执行影响用户的远程操作__
 
 - 允许对受管理设备执行下列远程操作：
   - 停用
@@ -240,7 +240,7 @@ __读取 Microsoft Intune 配置__ | DeviceManagementServiceConfig.Read.All
 
 - 此外，还将允许以下远程操作：
   - 定位设备
-  - 绕过激活锁定
+  - 禁用激活锁
   - 请求远程协助
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All

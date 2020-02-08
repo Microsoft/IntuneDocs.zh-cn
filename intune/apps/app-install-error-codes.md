@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: HT
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541856"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812444"
 ---
 # <a name="intune-app-installation-error-reference"></a>Intune 应用安装错误参考
 
@@ -90,9 +90,7 @@ ms.locfileid: "76541856"
 | 0x87D13B72 | -2016330894 | Internet 连接已断开。  | 由于网络连接导致的应用清单验证失败（连接丢失） |
 | 0x87D13B73 | -2016330893 | Internet 连接已断开。  | 由于网络连接导致的应用清单验证失败（未连接到 Internet） |
 | 0x87D13B77 | -2016330889 | 安全连接失败。  | 由于网络连接导致的应用清单验证失败（安全连接失败） |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError | 由于未能连接到 ITunes Store，应用安装失败 |
-| 0x87D13B6E | -2016330898 |   | 由于网络连接导致的应用清单验证失败（未知） |
 | 0x87D13B9F  | -2016330849 | VPP 应用有可用更新 | 当安装了 VPP 应用，但有较新版本可用时，会返回此代码。 |
 
 ## <a name="other-installation-errors"></a>其他安装错误

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517552"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812317"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 Windows 10（及更高版本）设备设置
 
@@ -39,8 +39,11 @@ ms.locfileid: "76517552"
 
 这些设置使用 [ApplicationManagement 策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement)，该策略还列出了受支持的 Windows 版本。
 
-- **App Store（仅适用于手机）** ：选择“未配置”（默认）可允许最终用户访问移动设备上的 App Store  。 选择“阻止”可阻止使用应用商店  。
-- **自动更新来自应用商店的应用**：选择“未配置”（默认）可允许自动更新从 Microsoft Store 安装的应用  。 选择“阻止”可阻止自动安装更新  。
+- **App Store**（仅限移动版）：选择“阻止”可阻止最终用户在移动设备上访问 App Store  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能允许最终用户访问 App Store。
+- **自动更新来自应用商店的应用**：选择“阻止”可阻止自动安装来自 Microsoft Store 的更新  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能允许自动更新从 Microsoft Store 安装的应用。
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **受信任的应用安装**：选择是否可以安装非 Microsoft Store 应用，也称为旁加载。 安装旁加载，然后运行或测试未经 Microsoft Store 认证的应用。 例如，仅适用于公司内部的应用。 选项包括：
   - **未配置**（默认）：Intune 不会更改或更新此设置。
   - **阻止**：阻止旁加载。 无法安装非 Microsoft Store 应用程序。
@@ -51,16 +54,36 @@ ms.locfileid: "76517552"
   - **允许**：允许开发人员模式和旁加载应用。
 
   有关此功能的详细信息，请参阅[启用设备进行开发](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)。
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **共享的用户应用数据**：选择“允许”可在同一设备上的不同用户之间以及该应用的其他实例之间共享应用程序数据  。 选择“未配置”（默认）可阻止与其他用户和同一应用的其他实例共享数据  。
-- **仅使用专用应用商店**：“允许”仅允许从专用应用商店下载应用，而不允许从公共应用商店下载应用，包括零售目录  。 选择“未配置”（默认）则允许从专用应用商店和公用应用商店下载应用  。
-- **启动来自应用商店的应用**：选择“阻止”可禁用设备上预安装或从 Microsoft Store 下载的所有应用  。 选择“未配置”（默认）则允许打开这些应用  。
-- **在系统卷上安装应用数据**：选择“阻止”可阻止应用在设备的系统卷上存储数据  。 选择“未配置”（默认）则允许应用在系统磁盘卷上存储数据  。
-- **在系统驱动器上安装应用**：选择“阻止”可阻止将应用安装到设备上的系统驱动器上  。 选择“未配置”（默认）则允许在系统驱动器上安装应用  。
-- **游戏 DVR**（仅限桌面版）：选择“阻止”可禁用 Windows 游戏录制和播放  。 选择“未配置”（默认）则允许录制和播放游戏  。
+- **共享的用户应用数据**：选择“允许”可在同一设备上的不同用户之间以及该应用的其他实例之间共享应用程序数据  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能会阻止与其他用户以及同一应用的其他实例共享数据。
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **仅使用专用应用商店**：“允许”仅允许从专用应用商店下载应用，而不允许从公共应用商店下载应用，包括零售目录  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能允许从专用和共用应用商店下载应用。
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **启动来自应用商店的应用**：选择“阻止”可禁用设备上预安装或从 Microsoft Store 下载的所有应用  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能会允许打开这些应用。
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **在系统卷上安装应用数据**：选择“阻止”可阻止应用在设备的系统卷上存储数据  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能允许应用在系统磁盘卷上存储数据。
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **在系统驱动器上安装应用**：选择“阻止”可阻止将应用安装到设备上的系统驱动器上  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能会允许在系统驱动器上安装应用。
+
+  [ApplicationManagement/RestrictAppToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **游戏 DVR**（仅限桌面版）：选择“阻止”可禁用 Windows 游戏录制和播放  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，OS 可能允许录制和广播游戏。
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **仅应用商店中的应用**：此设置决定用户从 Microsoft Store 以外的位置安装应用时的用户体验。 选项包括：
 
-  - **未配置**（默认）：允许最终用户从 Microsoft Store 以外的位置安装应用，包括其他策略设置中定义的应用。  
+  - **未配置**（默认）：Intune 不会更改或更新此设置。 默认情况下，OS 可能允许最终用户从 Microsoft Store 以外的位置安装应用，包括其他策略设置中定义的应用。  
   - **任何位置**：关闭应用建议，并允许用户从任何位置安装应用。  
   - **仅 Store**：强制最终用户仅从 Microsoft Store 安装应用。
   - **建议**：从 Microsoft Store 中可用的 Web 安装应用时，用户将看到一条消息，建议他们从该商店下载该应用。  
@@ -68,11 +91,11 @@ ms.locfileid: "76517552"
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **用户对安装进行控制**：设置为“未配置”（默认）后，Windows Installer 将阻止用户更改通常为系统管理员保留的安装选项，如输入安装文件的目录  。 “块”  允许用户更改这些安装选项，并绕过某些 Windows Installer 的安全功能。
+- **用户对安装进行控制**：选择“阻止”可阻止用户更改通常为系统管理员保留的安装选项，如输入安装文件的目录  。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，Windows Installer 可能会阻止用户更改这些安装选项，并且会绕过 Windows Installer 的某些安全功能。
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **使用提升的权限安装应用**：设置为“未配置”（默认）后，在系统安装系统管理员没有部署或提供的程序时，它将应用当前用户的权限  。 当 Windows Installer 在系统上安装任何程序时，“块”  将指示它使用提升的权限。 这些权限扩展到所有程序。
+- **使用提升的权限安装应用**：选择“阻止”可指引 Windows Installer 在系统上安装任何程序时使用提升的权限  。 这些权限扩展到所有程序。 设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 默认情况下，系统在安装系统管理员未部署或提供的程序时，可能会应用当前用户的权限。 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ ms.locfileid: "76517552"
 
 - **图片 URL（仅限桌面版）** ：输入将用作 Windows 锁屏界面墙纸的图片（格式为 JPG、JPEG 或 PNG）的 URL。 例如，输入 `https://contoso.com/image.png`。 此设置将锁定该图像，并且无法在以后更改。
 
-  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **用户可配置的屏幕超时（仅限移动版）** ：选择“允许”，用户可配置屏幕超时  。 选择“未配置”（默认）则不向用户提供该选项  。
 
@@ -851,7 +874,7 @@ ms.locfileid: "76517552"
 
 - **提交样本同意**：目前，此设置不会产生任何影响。 请勿使用此设置。 未来版本中可能会将其删除。
 
-- **访问保护时**：阻止  阻止扫描已访问或下载的文件。 用户无法将其打开。
+- **访问时保护**：选择“阻止”可阻止扫描已访问或下载的文件  。 用户无法将其打开。
 
   设置为“未配置”（默认）时，Intune 不会更改或更新此设置  。 如果阻止该设置，然后将其更改为“未配置”，则 Intune 会将该设置保留为之前的 OS 配置状态  。 默认情况下，OS 会启用此功能，并允许用户对其进行更改。
 

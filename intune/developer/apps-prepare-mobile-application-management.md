@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653931"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912669"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>准备业务线应用以使用应用保护策略
 
@@ -41,7 +41,6 @@ App Wrapping Tool 主要用于内部  业务线 (LOB) 应用。 此工具是一�
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用应用包装工具的原因
 
 * 应用未内置数据保护功能
-* 应用非常简单
 * 应用是在内部部署的
 * 无权访问应用的源代码。
 * 未开发应用
@@ -63,7 +62,6 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的原因
 
 * 应用未内置数据保护功能
-* 应用复杂且包含许多体验
 * 应用部署在 Google Play 商店或 Apple App Store 等公共应用商店中
 * 自己是应用开发者，拥有使用 SDK 的技术背景
 * 应用具有其他 SDK 集成
@@ -76,13 +74,13 @@ App SDK 主要面向在 Apple App Store 或 Google Play 商店中安装了应用
 |**iOS**|支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
 |**Android**| 支持 - 使用 [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md)。|否|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>不使用上面列出的应用开发平台？
+## <a name="not-using-an-app-development-platform-listed-above"></a>不使用上面列出的应用开发平台？
 
 Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。 
 
 ## <a name="feature-comparison"></a>功能比较
 
-此表列出了可用于 App SDK 和应用包装工具的设置。
+此表列出了应用使用 App SDK 或 App Wrapping Tool 时启用的设置。 某些功能要求应用开发人员应用与 Intune SDK 进行基本集成以外的一些逻辑，因此，如果应用使用 App Wrapping Tool，则不会启用这些功能。 
 
 |功能|App SDK|应用包装工具|
 |-----------|---------------------|-----------|
@@ -97,7 +95,7 @@ Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-
 |允许使用指纹而不是 PIN|X|X|
 |允许面部识别而非 PIN（仅限 iOS）|X|X|
 |访问需要公司凭据|X|X|
-|设置 PIN 过期|X|X|
+|设置 PIN 到期时间|X|X|
 |阻止在已越狱或取得 root 权限的设备上运行托管应用|X|X|
 |加密应用数据|X|X|
 |在指定分钟数后重新检查访问要求|X|X|
@@ -105,9 +103,9 @@ Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-
 |阻止屏幕捕捉（仅限于 Android 设备）|X|X|
 |支持未进行设备注册的 MAM|X|X|
 |完全擦除应用数据|X|X|
-|多标识方案中的工作和学校数据的选择性擦除 <br><br>**注意:** 对于 iOS，应用会随管理配置文件一起删除。|X||
+|多身份方案中的工作和学校数据选择性擦除 <br><br>**注意:** 对于 iOS，应用会随管理配置文件一起删除。|X||
 |防止“另存为”|X||
-|目标应用程序配置（或通过 "MAM 通道" 的应用配置）|X||
+|目标应用程序配置（或通过“MAM 通道”的应用配置）|X|X|
 |支持多身份标识|X||
 |可自定义样式 |X|||
 |按需应用与 Citrix mVPN 的 VPN 连接|X|X| 
@@ -119,6 +117,11 @@ Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-
 |要求最低 Intune SDK for iOS（仅限 iOS）|X|X|
 |SafetyNet 设备证明（仅限 Android）|X|X|
 |对应用进行威胁扫描（仅限 Android）|X|X|
+|要求使用移动威胁防御供应商设备的最高风险级别|X||
+|配置组织帐户的应用通知内容|X|X|
+|要求使用经批准的键盘（仅限 Android）|X|X|
+|要求使用应用保护策略（条件访问）|X||
+|要求使用经批准的客户端应用（条件访问）|X||
 
 ## <a name="next-steps"></a>后续步骤
 

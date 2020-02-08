@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa8d4fd8dabd862899cab116c61d4ae4584d398c
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 10f3d4c54d9a8fcb797ae3359b1a833ac9080548
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899379"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912693"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -54,18 +54,29 @@ ms.locfileid: "74899379"
 
 ## <a name="prerequisites"></a>必备条件
 
-查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款副本用于记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
+查看[许可条款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 打印并保留一份许可条款，以留作记录。 下载和使用 Intune App SDK Xamarin Bindings 即表示你同意这些许可条款。 如果不接受这些条款，请不要使用此软件。
 
 Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) 实现它的[身份验证](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)和条件启动方案，这需要使用 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) 配置应用。 
 
 如果应用程序已配置为使用 ADAL 或 MSAL，并且拥有其自己的自定义客户端 ID 用于使用 Azure Active Directory 进行身份验证，请务必按以下步骤操作，将 Xamarin 应用权限授予 Intune 移动应用程序管理 (MAM) 服务。 请使用 [Intune SDK 入门指南](app-sdk-get-started.md)的[向 Intune 应用保护服务提供应用访问权限](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)一节中的说明。
 
+## <a name="security-considerations"></a>安全注意事项
+
+防止潜在的欺骗、信息泄露和特权提升攻击：
+
+* 确保在安全的工作站上进行 Xamarin 应用开发。
+* 确保绑定来自有效的 Microsoft 源：
+  * [MS Intune App SDK NuGet 配置文件](https://www.nuget.org/profiles/msintuneappsdk)
+  * [Intune App SDK Xamarin GitHub 存储库](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* 为项目配置 NuGet 配置以信任已签名且未修改的 NuGet 包。
+有关详细信息，请参阅[安装已签名的包](https://docs.microsoft.com/nuget/consume-packages/installing-signed-packages)。
+* 保护包含 Xamarin 应用的输出目录。 考虑为输出使用用户级目录。
 
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>在 iOS 移动应用中启用 Intune 应用保护策略
 1. 向 Xamarin.iOS 项目添加 [Microsoft.Intune.MAM.Xamarin.iOS NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS)。
 2. 按照将 Intune App SDK 集成到 iOS 移动应用的常规必需步骤操作。 可以从 [Intune App SDK for iOS 开发人员指南](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)中集成说明的第 3 步开始操作。 可跳过运行 IntuneMAMConfigurator 一节中的最后一步，因为此工具包含在 Microsoft.Intune.MAM.Xamarin.iOS 包中，并将在生成时自动运行。
-    **重要说明**：在 Visual Studio 中为应用启用密钥链共享与在 Xcode 中略有不同。 打开应用的“权利”plist 文件，并确保已启用“启用密钥链”选项，且已在相应部分中添加了相应的密钥链共享组。 然后，对于所有相应的配置/平台组合，请确保已在项目的“iOS 捆绑包签名”选项的“自定义权利”字段中指定了“权利”plist 文件。
+    **重要提示**：在 Visual Studio 中为应用启用密钥链共享与在 Xcode 中略有不同。 打开应用的“权利”plist 文件，并确保已启用“启用密钥链”选项，且已在相应部分中添加了相应的密钥链共享组。 然后，对于所有相应的配置/平台组合，请确保已在项目的“iOS 捆绑包签名”选项的“自定义权利”字段中指定了“权利”plist 文件。
 3. 添加绑定且正确配置应用后，应用即可开始使用 Intune SDK 的 API。 为此，必须添加以下命名空间：
 
       ```csharp
@@ -94,7 +105,7 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
 ### <a name="sample-applications"></a>示例应用程序
-用于突出显示 Xamarin 中的 MAM 功能的示例应用程序在[GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)上提供。
+[GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) 上提供了强调 Xamarin.iOS 应用中 MAM 功能的示例应用程序。
 
 > [!NOTE] 
 > 没有适用于 iOS 的重映射器。 集成到 Xamarin.Forms 应用应与集成到常规 Xamarin.iOS 项目的操作相同。 
@@ -108,10 +119,10 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 
 有关集成 Intune App SDK 的完整概述，请参阅[面向 Android 开发人员的 Microsoft Intune App SDK for Android 指南](app-sdk-android.md)。 阅读本指南并将 Intune App SDK 与 Xamarin 应用集成时，下面几部分着重介绍用 Java 开发的本机 Android 应用和用 C# 开发的 Xamarin 应用的实现之间的差异。 这些部分应视为补充部分，不能因此不阅读完整指南。
 
-#### <a name="remapper"></a>Remapper
-从1.4428.1 版本开始，可以将 `Microsoft.Intune.MAM.Remapper` 包作为[生成工具](app-sdk-android.md#build-tooling)添加到 Xamarin Android 应用程序，以执行 MAM 类、方法和系统服务替换。 如果包括 Remapper，则在生成应用程序时，将自动执行已重命名方法和 MAM 应用程序部分的 MAM 等效替换部分。
+#### <a name="remapper"></a>重映射器
+从 1.4428.1 版本开始，可将 `Microsoft.Intune.MAM.Remapper` 包作为[生成工具](app-sdk-android.md#build-tooling)添加到 Xamarin Android 应用程序，以执行 MAM 类、方法和系统服务替换。 如果包括重映射器，则在生成应用程序时，将自动执行重命名方法和 MAM 应用程序部分的 MAM 等效替换部分。
 
-若要从 i 中排除类，可以将以下属性添加到项目 `.csproj` 文件中。
+若要通过重映射器从 MAM 通知中排除类，可以在项目 `.csproj` 文件中添加以下属性。
 
 ```xml
   <PropertyGroup>
@@ -120,13 +131,13 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 ```
 
 > [!NOTE]
-> 此时，Remapper 的问题会阻止 Xamarin Android 应用中的调试。 建议在解决此问题之前对应用程序进行手动集成。
+> 重映射器当前禁止在 Xamarin Android 应用中进行调试。 建议使用手动集成来调试应用程序。
 
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重命名的方法](app-sdk-android.md#renamed-methods)
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `OnCreate()` 并调用 `base.OnCreate()`）时，`Activity` 必须替代 `OnMAMCreate()` 并调用 `base.OnMAMCreate()`。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 应用程序](app-sdk-android.md#mamapplication)
-应用必须定义 `Android.App.Application` 类。 如果手动集成 MAM，则它必须从 `MAMApplication`继承。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
+应用必须定义 `Android.App.Application` 类。 如果手动集成 MAM，则它必须继承自 `MAMApplication`。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
 
 ```csharp
     [Application]
@@ -140,20 +151,20 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 > 在“调试”模式下部署时，MAM Xamarin 绑定的问题可能导致应用程序故障。 变通方法是必须将 `Debuggable=false` 属性添加到 `Application` 类，并且如果手动设置，则必须从清单中删除 `android:debuggable="true"` 标记。
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[启用需要应用参与的功能](app-sdk-android.md#enable-features-that-require-app-participation)
-示例：确定应用是否需要 PIN
+例如：确定应用是否需要 PIN
 
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
 ```
 
-示例：确定主要 Intune 用户
+例如：确定主要 Intune 用户
 
 ```csharp
 IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
 return info?.PrimaryUser;
 ```
 
-示例：确定是否允许保存到设备或云存储
+例如：确定是否允许保存到设备或云存储
 
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
@@ -185,7 +196,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 对于 `Xamarin.Forms` 应用程序，`Microsoft.Intune.MAM.Remapper` 包将 `MAM` 类注入常用 `Xamarin.Forms` 类的类层次结构中，从而自动执行 MAM 类替换。 
 
 > [!NOTE]
-> 除了上面详述的 Xamarin.Android 集成之外，还要完成 Xamarin.Forms 集成。 Remapper 的行为与 Xamarin 应用程序的行为方式不同，因此仍需要执行手动 MAM 替换。
+> 除上面详述的 Xamarin.Android 集成外，还必须完成 Xamarin.Forms 集成。 重映射器的行为与 Xamarin.Forms 应用的行为有所不同，因此仍必须执行手动 MAM 替换。
 
 将重映射器添加到项目后，需要执行 MAM 等效替换。 如果将对 `OnCreate` 和 `OnResume` 的替代分别替换为 MAM 等效的 `OnMAMCreate` 和 `OnMAMResume`，则 `FormsAppCompatActivity` 和 `FormsApplicationActivity` 可以继续在应用程序中使用。
 
@@ -209,11 +220,11 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 > 重映射器重写了 Visual Studio 用于 IntelliSense 自动完成的依赖项。 因此，在为 IntelliSense 添加重映射器时，可能需要重载并重新生成项目，以正确识别更改。
 
 #### <a name="troubleshooting"></a>疑难解答
-* 如果你在启动时在应用程序中遇到空白的白屏，你可能需要强制在主线程上执行导航调用。
-* 由于 MvvmCross 和 Intune MAM 类之间的冲突，Intune SDK Xamarin 绑定不支持使用跨平台框架（例如 MvvmCross）的应用。 尽管有些客户在将应用移动到无格式的应用程序后可能会成功集成，但我们不会为使用 MvvmCross 的应用开发人员提供显式指导或插件。
+* 如果启动时在应用程序中遇到白屏，则可能需要强制在主线程上执行导航调用。
+* 由于 MvvmCross 和 Intune MAM 类之间的冲突，Intune SDK Xamarin 绑定不支持使用跨平台框架（例如 MvvmCross）的应用。 尽管有些客户在将其应用改为无格式 Xamarin.Forms 后可能成功集成，但我们不为使用 MvvmCross 的应用开发人员提供明确的指导或插件。
 
 ### <a name="company-portal-app"></a>公司门户应用
-Intune SDK Xamarin 绑定依赖于设备上是否存在[公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)Android 应用来启用应用保护策略。 公司门户从 Intune 服务中检索应用保护策略。 应用初始化时，它会加载策略和代码以强制从公司门户实施该策略。 用户无需登录。
+Intune SDK Xamarin 绑定依赖于设备上存在[公司门户](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android 应用以启用应用保护策略。 公司门户从 Intune 服务中检索应用保护策略。 应用初始化时，它会加载策略和代码以强制从公司门户实施该策略。 用户无需登录。
 
 > [!NOTE]
 > 如果 Android  设备上未安装公司门户应用，Intune 托管应用的行为与不支持 Intune 应用保护策略的普通应用相同。
@@ -221,7 +232,7 @@ Intune SDK Xamarin 绑定依赖于设备上是否存在[公司门户](https://pl
 对于无需设备注册的应用保护， _**不会**_ 要求用户使用公司门户应用注册设备。
 
 ### <a name="sample-applications"></a>示例应用程序
-用于突出显示 Xamarin 和 Xamarin 中的 MAM 功能的示例应用程序。 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)上提供了 Forms 应用。
+[GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) 上提供了强调 Xamarin.Android 和 Xamarin.Forms 应用中 MAM 功能的示例应用程序。
 
 ## <a name="support"></a>支持
-如果你的组织已经是 Intune 客户，请与 Microsoft 支持代表合作，以开立支持票证，并在 [GitHub 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建问题。 我们很快就会帮助我们。 
+如果你的组织已经是 Intune 客户，请与 Microsoft 支持代表合作，以开立支持票证，并在 [GitHub 问题页](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上创建问题。 我们将尽快提供帮助。 
