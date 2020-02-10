@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885799"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812484"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的应用配置策略
 
@@ -95,8 +95,8 @@ ms.locfileid: "75885799"
 
 可以在托管应用配置的非托管设备上使用 Intune 诊断日志  验证 iOS 配置。 除以下步骤外，还可以使用 Microsoft Edge 访问托管的应用日志。 有关详细信息，请参阅[在 iOS 上使用 Microsoft Edge 访问托管的应用日志](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)。
 
-1. 如果尚未安装在设备上，请从应用商店下载并安装 Intune Managed Browser  。 有关详细信息，请参阅[受 Microsoft Intune 保护的应用](apps-supported-intune-apps.md)。
-2. 启动 Intune Managed Browser  ，并从导航栏中选择“关于”   > “Intune 帮助”  。
+1. 如果尚未安装在设备上，请从应用商店下载并安装 Microsoft Edge  。 有关详细信息，请参阅[受 Microsoft Intune 保护的应用](apps-supported-intune-apps.md)。
+2. 启动 Microsoft Edge  ，并从导航栏中选择“关于”   > “Intune 帮助”  。
 3. 单击“开始使用”  。
 4. 单击“共享日志”  。
 5. 使用你选择的邮件应用将日志发送给你自己，以便可以在你的电脑上查看它们。 
@@ -139,8 +139,8 @@ ms.locfileid: "75885799"
 
 可以在托管应用配置的托管设备上使用 Intune 诊断日志  验证 iOS 配置。
 
-1. 如果尚未安装在设备上，请从应用商店下载并安装 Intune Managed Browser  。 有关详细信息，请参阅[受 Microsoft Intune 保护的应用](apps-supported-intune-apps.md)。
-2. 启动 Intune Managed Browser  ，并从导航栏中选择“关于”   > “Intune 帮助”  。
+1. 如果尚未安装在设备上，请从应用商店下载并安装 Microsoft Edge  。 有关详细信息，请参阅[受 Microsoft Intune 保护的应用](apps-supported-intune-apps.md)。
+2. 启动 Microsoft Edge  ，并从导航栏中选择“关于”   > “Intune 帮助”  。
 3. 单击“开始使用”  。
 4. 单击“共享日志”  。
 5. 使用你选择的邮件应用将日志发送给你自己，以便可以在你的电脑上查看它们。 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509808"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754297"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的基于角色的访问控制 (RBAC)
 
@@ -52,6 +52,7 @@ ms.locfileid: "72509808"
 - **应用管理员**：管理移动应用和托管应用，并可以读取设备信息和查看设备配置文件。
 - **Intune 角色管理员**：管理自定义 Intune 角色，并添加内置 Intune 角色分配。 这是唯一可向管理员分配权限的 Intune 角色。
 - **学校管理员**：管理 [Intune for Education](../introduction-intune-education.md) 中的 Windows 10 设备。
+- **终结点安全管理器**：管理安全和合规性功能，例如安全基线、设备合规性、条件访问和 Microsoft Defender ATP。
 
 ### <a name="custom-roles"></a>自定义角色
 使用自定义权限，可以创建自己的角色。 有关自定义角色的详细信息，请参阅[创建自定义角色](create-custom-role.md)。
@@ -62,7 +63,7 @@ ms.locfileid: "72509808"
 | 全局管理员 | 读/写 | 读/写 |
 | Intune 服务管理员 | 读/写 | 读/写 |
 | 条件访问管理 | 无 | 无 |
-| 安全管理员 | 只读 | 只读 |
+| 安全管理员 | 只读（终结点安全性节点的完全管理权限） | 只读 |
 | 安全操作员 | 只读 | 只读 |
 | 安全读取者 | 只读 | 只读 |
 | 合规性管理员 | 无 | 只读 |

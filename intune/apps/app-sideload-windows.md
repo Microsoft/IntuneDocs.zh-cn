@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691829"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755402"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>对业务线应用进行签名，以便可以将其部署到具有 Intune 的 Windows 设备
 
-作为 Intune 管理员，可以将业务线 (LOB) 通用应用部署到 Windows 8.1 桌面版或 Windows 10 桌面版和移动版设备，包括公司门户应用。 若要将 .appx 应用部署到 Windows 8.1 桌面版或 Windows 10 桌面版和移动版设备，你可以使用 Windows 设备已信任的公共证书颁发机构颁发的代码签名证书，也可以使用自己的证书颁发机构。
+作为 Intune 管理员，可以将业务线 (LOB) 通用应用部署到 Windows 8.1 桌面版或 Windows 10 桌面版和移动版设备，包括公司门户应用。 若要将 .appx  应用部署到 Windows 8.1 桌面版或 Windows 10 桌面版和移动版设备，你可以使用 Windows 设备已信任的公共证书颁发机构颁发的代码签名证书，也可以使用自己的证书颁发机构。
 
  > [!NOTE]
  > Windows 8.1 桌面版需要使用企业策略来启用旁加载或使用旁加载密钥（对于加入域的设备，自动启用）。 有关详细信息，请参阅 [Windows 8 旁加载](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/)。
@@ -52,10 +52,11 @@ ms.locfileid: "75691829"
 
 如果 Windows 10 设备尚未信任证书颁发机构，则在你签署了 appx 包并将其上传到 Intune 服务后，需要将代码签名证书上传到 Intune 门户：
 
-1. 单击“客户端应用”
-2. 单击“Windows 企业证书”
-3. 选择代码签名证书下的“选择文件”
-4. 选择 .cer 文件，然后单击“上传”
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 单击“租户管理”   > “连接器和令牌”   > “Windows 企业证书”  。
+3. 选择“代码签名证书文件”下的文件  。
+4. 选择 .cer  文件，然后单击“打开”  。
+5. 单击“上传”  ，将证书文件添加到 Intune。
 
 现在，任何使用 Intune 服务进行 appx 部署的 Windows 10 桌面版和移动版设备将自动下载相应的企业证书，允许在安装后启动应用程序。
 
@@ -94,7 +95,7 @@ Windows 8.1 桌面版/Windows 10 桌面版和移动版
       ![随 APPXBUN 文件一起保存的 Dependencies 文件夹的图像](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. 将九个依赖项包置于 Dependencies 文件夹中。  
       如果依赖项未按此格式放置，Intune 将无法在包上载期间将其识别并上载，从而导致上载失败并出现以下错误。  
-      ![错误消息 - 必须提供 Windows 应用依赖项。](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. 返回到 Intune，然后将公司门户作为新的应用上载。 将其作为所需的应用部署到所需的目标用户集。  
 
 有关 Intune 如何处理通用应用的依赖项的详细信息，请参阅[通过 Microsoft Intune MDM 部署具有依赖项的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  

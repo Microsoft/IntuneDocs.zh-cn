@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547812"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971858"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -82,12 +82,13 @@ ms.locfileid: "75547812"
    > Windows 10 注册过程中不提供修订号，因此对于实例，如果输入 10.0.17134.100 而设备是 10.0.17134.174，则在注册过程中将阻止该实例。
 
 6. 在“个人拥有”中，对想要允许作为个人拥有的设备的平台选择“允许”。  
-7. 选择“下一步”，转到“分配”页。  
-8. 选择“选择要包含的组”，然后使用搜索框找到想要此限制包含的组。  限制仅适用于它分配到的组。 如果连一个组都没有分配限制，则不会产生任何影响。 然后选取“选择”  。 
+7. 在“设备制造商”  下，输入要阻止的以逗号分隔的制造商列表。
+8. 选择“下一步”，转到“分配”页。  
+9. 选择“选择要包含的组”，然后使用搜索框找到想要此限制包含的组。  限制仅适用于它分配到的组。 如果连一个组都没有分配限制，则不会产生任何影响。 然后选取“选择”  。 
     ![选择平台设置的屏幕截图](./media/enrollment-restrictions-set/select-groups.png)
-9. 选择“下一步”  ，以转到“查看 + 创建”页  。
-10. 选择“创建”以创建限制  。
-11. 使用高于默认值的优先级创建新限制。 可[更改优先级](#change-enrollment-restriction-priority)。
+10. 选择“下一步”  ，以转到“查看 + 创建”页  。
+11. 选择“创建”以创建限制  。
+12. 使用高于默认值的优先级创建新限制。 可[更改优先级](#change-enrollment-restriction-priority)。
 
 
 ## <a name="create-a-device-limit-restriction"></a>创建设备限制

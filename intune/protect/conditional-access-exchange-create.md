@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188471"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755627"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>创建本地 Exchange 和旧版 Exchange Online Dedicated 的条件访问策略
 
@@ -37,7 +37,7 @@ ms.locfileid: "74188471"
 
 - Exchange 版本为 Exchange 2010 SP1 或更高版本  。 支持 Exchange Server 客户端访问服务器 (CAS) 阵列。
 
-- 你已安装并使用 [Exchange Active Sync 本地 Exchange 连接器](exchange-connector-install.md)，它将 Intune 连接到本地 Exchange。
+- 已安装并使用 [Exchange ActiveSync 本地 Exchange 连接器](exchange-connector-install.md)（用于将 Intune 连接到 Exchange）。
 
     >[!IMPORTANT]  
     >Intune 支持每个订阅有多个本地 Exchange 连接器。  但是，每个本地 Exchange 连接器特定于单一 Intune 租户，且不能用于其他任何租户。  如果你拥有多个本地Exchange组织，则可以为每个 Exchange 组织设置一个单独的连接器。
@@ -84,40 +84,57 @@ Windows 8.1 和更高版本上的本机邮件  应用程序（使用 Intune 向 
 
 3. 在“Exchange 本地访问”  窗格上，选择“是”  以“启用 Exchange 本地访问控制”  。
 
+   > [!div class="mx-imgBorder"]
+   > ![Exchange 本地访问屏幕的示例屏幕截图](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. 在“分配”  下，选择“选择要包含的组”  ，然后选择一个或多个要配置访问权限的组。
 
    所选组的成员具有适用于本地 Exchange 访问的条件访问策略。 接收此策略的用户必须在 Intune 中注册其设备，并符合合规性配置文件，然后才能访问本地 Exchange。
 
-5. 若要排除组，请选择“选择要排除的组”  ，然后选择一个或多个不满足在访问本地 Exchange 之前注册设备并符合合规性配置文件的要求的组。 
+   > [!div class="mx-imgBorder"]
+   > ![选择要包含的组](./media/conditional-access-exchange-create/select-groups.png)
 
-6. 接下来，配置 Intune 本地 Exchange 连接器的设置。  在“Exchange 本地访问”窗口上的“设置”下，选择“Exchange ActiveSync 本地连接器”，然后选择要配置的 Exchange 组织的连接器    。
+5. 若要排除组，请选择“选择要排除的组”  ，然后选择一个或多个不满足在访问本地 Exchange 之前注册设备并符合合规性配置文件的要求的组。
 
-7. 在“设置”  下，选择“用户通知”  以修改发送给用户的默认电子邮件（如果其设备不合规并且他们希望访问本地 Exchange）。 消息模板使用的是标记语言。  键入时还可看到消息的预览显示情况。
+   选择“保存”  以保存配置，并返回到“Exchange 访问”  窗格。
+
+6. 接下来，配置 Intune 本地 Exchange 连接器的设置。 在控制台中，选择“租户管理” > “Exchange 访问”> “Exchange ActiveSync 本地连接器”，然后选择要配置的 Exchange 组织的连接器    。
+
+7. 对于“用户通知”  ，选择“编辑”  以打开“编辑组织”  工作流，可以在其中修改“用户通知”  消息。
+
+   > [!div class="mx-imgBorder"]
+   > ![“编辑组织”工作流的“通知”示例屏幕截图](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   如果用户的设备不符合要求并且他们希望访问本地 Exchange，则修改发送给用户的默认电子邮件。 消息模板使用的是标记语言。 键入时还可看到消息的预览显示情况
+
+   选择“查看并保存”，然后选择“保存”   ，保存编辑内容以完成 Exchange 本地访问的配置。
+
    > [!TIP]
    > 若要了解有关标记语言的详细信息，请参阅这篇维基百科[文章](https://en.wikipedia.org/wiki/Markup_language)。
- 
-   选择“确定”  ，保存编辑内容以完成 Exchange 本地访问的配置。
 
-8. 接下来，选择“高级 Exchange Active Sync 访问设置”   打开“高级 Exchange ActiveSync 访问设置”窗格，你可以在其中配置设备访问规则：  
+8. 接下来，选择“高级 Exchange ActiveSync 访问设置”   以打开“高级 Exchange ActiveSync 访问设置”工作流，可以在其中配置设备访问规则。
+
+   > [!div class="mx-imgBorder"]
+   > ![“编辑组织”工作流的“高级设置”示例屏幕截图](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - 对于“非托管设备访问”，请设置不受条件访问或其他规则影响的设备访问的全局默认规则  ：
 
      - **允许访问** - 所有设备均可立即访问本地 Exchange。 如果属于前面过程中配置为包含的组中用户的设备，后来被评估为不符合合规性策略或未在 Intune 中注册，将阻止此设备。
 
-     - **阻止访问**和**隔离** – 一开始会立即阻止所有设备访问本地 Exchange。 属于前面过程中配置为包含的组中的用户的设备在 Intune 中注册后获取访问权限，并被评估为符合策略。 
+     - **阻止访问**和**隔离** – 一开始会立即阻止所有设备访问本地 Exchange。 属于前面过程中配置为包含的组中的用户的设备在 Intune 中注册后获取访问权限，并被评估为符合策略。
 
        未运行 Samsung Knox Standard 的 Android 设备不支持此设置，始终会被阻止  。
 
-   -  对于“设备平台例外”  ，选择“添加”  ，然后根据环境需要指定平台详细信息。 
-   
+   - 对于“设备平台例外”  ，选择“添加”  ，然后根据环境需要指定详细信息。
+
       如果将“非托管设备访问”  设置为“已阻止”  ，则即使平台专门阻止，已注册且符合要求的设备仍可访问。  
-   
-   选择“确定”，保存你的编辑内容  。
 
-9. 选择“保存”  以保存 Exchange 条件访问策略。
+9. 选择“确定”，保存你的编辑内容  。
 
-接下来，创建合规性策略并将其分配给 Intune 的用户以评估其移动设备，请参阅[设备合规性入门](device-compliance-get-started.md)。
+10. 选择“查看并保存”，然后选择“保存”   以保存 Exchange 条件访问策略。
 
 ## <a name="next-steps"></a>后续步骤
+
+接下来，创建合规性策略并将其分配给 Intune 的用户以评估其移动设备，请参阅[设备合规性入门](device-compliance-get-started.md)。
 
 [Microsoft Intune 中 Intune 本地 Exchange 连接器疑难解答](https://support.microsoft.com/help/4471887)

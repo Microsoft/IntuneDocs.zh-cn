@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206629"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812363"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune 中设备策略和配置文件的常见疑问、问题和解决方案
-
-
 
 了解在 Intune 中使用设备配置文件和策略时的常见问题解答。 此外，本文还列出了签入时间间隔，详细说明了冲突等。
 
@@ -84,6 +82,8 @@ Intune 通知设备使用 Intune 服务签入。 通知时间各不相同，包�
 设备收到告知其签入的通知时或者在计划签入期间，设备会签入到 Intune。 当针对某个设备或用户执行某个操作时，例如锁定、密码重置、应用、配置文件或策略分配，Intune 会立即开始通知设备签入以接收这些更新。
 
 其他变更（如在公司门户应用中修订合同信息）不会导致立即向设备发送通知。
+
+策略或配置文件中的设置将在每次签入时应用。 [Windows 10 MDM 策略刷新博客文章](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/)可能是不错的资源。
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>如果多个策略被分配到同一用户或设备，如何知道会应用哪些设置？
 

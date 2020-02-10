@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886012"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966379"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>配置基础结构以支持在 Intune 中使用 SCEP
 
@@ -378,6 +378,32 @@ Microsoft Intune 证书连接器安装在运行 NDES 服务的服务器上。 �
 5. 提示输入证书连接器的客户端证书时，选取“选择”  ，然后选择在前文[在托管 NDES 的服务器上安装和绑定证书](#install-and-bind-certificates-on-the-server-that-hosts-ndes)过程的步骤 3 中，在 NDES 服务器上安装的“客户端身份验证”  证书。
 
    选择客户端身份验证证书后，会返回到“Microsoft Intune 证书连接器的客户端证书”  处。 尽管不会显示所选证书，但可以选择“下一步”查看该证书的属性  。 然后依次选择“下一步”和“安装”   。
+
+> [!NOTE]
+> 在启动 Intune 证书连接器之前，必须对 GCC High 租户进行以下更改。
+> 
+> 编辑下面列出的两个配置文件，这将更新 GCC High 环境的服务终结点。 请注意，这些更新会将 URI 的后缀 .com  更改为 .us  后缀。 总共有 3 个 URI 更新，NDESConnectorUI.exe.config 配置文件中有 2 个更新，NDESConnector.exe.config 文件中有 1 个更新。
+> 
+> - 文件名：<install_Path>\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   示例：(%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - 文件名：<install_Path>\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   示例：(%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> 如果未完成这些编辑，则 GCC High 租户将收到以下错误消息：“访问被拒绝” “你无权查看此页”
 
 6. 在向导完成后，先单击“启动证书连接器 UI，然后再关闭向导”  。
 

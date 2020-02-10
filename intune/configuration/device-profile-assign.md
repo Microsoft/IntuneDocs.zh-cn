@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206697"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812370"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -31,7 +31,11 @@ ms.locfileid: "75206697"
 本文演示如何分配配置文件，并介绍有关对配置文件使用作用域标记的一些信息。
 
 > [!NOTE]  
-> 当配置文件被删除或不再分配到设备时，此设置可能会保留现有值。 此设置不会还原到默认值。 若要将设置更改为其他值，请创建新配置文件并进行分配。
+> 当配置文件被删除或不再分配给设备时，根据配置文件中设置的不同，可能会执行不同的操作。 这些设置基于 CSP，并且每个 CSP 可以不同地处理配置文件删除。 例如，设置可能会保留现有值，而不会恢复为默认值。 该行为由操作系统中的每个 CSP 控制。 有关 Windows CSP 的列表，请参阅[配置服务提供程序 (CSP) 参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)。
+>
+> 要将设置更改为其他值，请创建新的配置文件，将设置配置为“未配置”  ，然后分配配置文件。 应用于设备后，用户应该可控制将设置更改为其首选值。
+>
+> 在配置这些设置时，我们建议部署到试验组。 有关 Intune 推出建议的更多信息，请参阅[创建推出计划](../fundamentals/planning-guide-rollout-plan.md)。
 
 ## <a name="before-you-begin"></a>在开始之前
 

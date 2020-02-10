@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860289"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812170"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在设备上设置规则以允许使用 Intune 访问组织中的资源
 
@@ -92,6 +92,10 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
   - **不符合**：安全功能开启
 
   如果设备未分配到符合性策略，则此设备在默认情况下被视为符合。 如果结合使用条件访问和符合性策略，建议将默认设置更改为“不符合”  。 如果最终用户因未分配有策略而不符合要求，[公司门户](../apps/company-portal-app.md)会显示“`No compliance policies have been assigned`”。
+
+
+> [!NOTE]
+> Intune 中暂时禁用了针对 iOS 设备的增强型越狱检测功能。
 
 - **增强型越狱检测**：启用后，此设置会导致 iOS 设备更频繁地使用 Intune 签入。 启用此属性将使用设备的位置服务，而且会影响电池的使用。 Intune 不会存储用户位置数据。
 

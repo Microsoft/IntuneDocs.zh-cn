@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956289"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886805"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 软件更新
 
@@ -92,7 +92,7 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 
 6. 在“分配”下，选择“+ 选择要包括的组”，然后将更新通道分配到一个或多个组   。 使用“+ 选择要排除的组”对分配进行相应调整  。 选择“下一步”继续操作  。
 
-7. 在“查看 + 创建”下，查看设置，然后在准备好保存 Windows 10 更新通道时选择“创建”   。 新的更新通道显会示在更新通道列表中。
+7. 在“查看 + 创建”  下，查看设置，然后在准备好保存 Windows 10 更新通道时选择“创建”  。 新的更新通道显会示在更新通道列表中。
 
 ### <a name="manage-your-windows-10-update-rings"></a>管理 Windows 10 更新通道
 
@@ -205,20 +205,22 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
 
 - 与对更新通道使用“暂停”  （在 35 天后过期）不同，Windows 10 功能更新策略一直有效。 在修改或删除 Windows 10 功能更新策略之前，设备不会安装新的 Windows 版本。 如果你编辑该策略以指定较新的版本，则设备可以从该 Windows 版本安装相应功能。
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Windows 10 功能更新先决条件
+
+要在 Intune 中使用 Windows 10 功能更新，必须满足以下先决条件。
+
+- 设备必须在 Intune MDM 中注册，并加入 Azure AD 或注册 Azure AD。
+- 若要将功能更新策略与 Intune 配合使用，设备必须打开遥测，同时最小设置为[基本  ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)。 作为[设备限制策略](../configuration/device-restrictions-configure.md)的一部分，在“报告遥测”  下配置遥测。
+  
+  如果设备接收功能更新策略，并将遥测设置为“未配置”  （这意味着它处于关闭状态），则可能会安装比功能更新策略中定义的版本更新的 Windows。 需要遥测的先决条件正在审查中，因为此功能将正式发布。
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 功能更新限制
 
 - 当将“Windows 10 功能更新”  策略部署到同样接收“Windows 10 更新通道”  策略的设备时，请查看更新通道中的以下配置：
   - “功能更新延迟期(天)”  必须设置为“0”  。
   - 更新通道的功能更新必须为运行状态  。 这些更新不能暂停。
 
-- 在开箱即用体验 (OOBE) 期间，不能应用 Windows 10 功能更新策略，这些策略仅在设备完成预配（通常为一天）后第一次进行 Windows 更新扫描时应用。 此外，通过 AutoPilot 预配的设备不会收到策略。
-
-  检查此限制以查看将来是否受支持。
-
-> [!IMPORTANT]
-> 若要将功能更新策略与 Intune 配合使用，设备必须打开遥测，同时最小设置为[基本  ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)。 作为[设备限制策略](../configuration/device-restrictions-configure.md)的一部分，在“报告遥测”  下配置遥测。
->
-> 如果设备接收功能更新策略，并将遥测设置为“未配置”  （这意味着它处于关闭状态），则可能会安装比功能更新策略中定义的版本更新的 Windows。 需要遥测的先决条件正在审查中，因为此功能将正式发布。
+- 在 Autopilot 开箱即用体验 (OOBE) 期间，不能应用 Windows 10 功能更新策略，这些策略仅在设备完成预配（通常为一天）后第一次进行 Windows 更新扫描时应用。
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>创建和分配 Windows 10 功能更新
 
@@ -242,10 +244,12 @@ Intune 管理员可以使用“卸载”  来卸载（回滚）活动更新通�
 - 选择“属性”  以修改部署。  在“属性”  窗格中，选择“编辑”  以打开“部署设置或分配”  ，然后你可以在其中修改部署。
 - 选择“最终用户更新状态”  以查看有关策略的信息。
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Windows 10 更新的验证和报告
+
+对于 Windows 10 更新环和 Windows 10 功能更新，请使用 [Intune 符合性报告更新](../windows-update-compliance-reports.md)以监视设备的更新状态。 此解决方案在 Azure 订阅中使用[更新符合性](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor)。
+
 ## <a name="next-steps"></a>后续步骤
 
 [Intune 支持的 Windows 更新设置](../windows-update-settings.md)
-
-[Intune 的更新符合性报告](../windows-update-compliance-reports.md)
 
 [Windows 10 更新通道疑难解答](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

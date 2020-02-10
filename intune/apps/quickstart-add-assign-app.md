@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563410"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755062"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入门：添加并分配客户端应用
 
@@ -45,20 +45,18 @@ ms.locfileid: "74563410"
 
 可使用以下步骤将应用添加到 Intune：
 1. 在 [Intune](https://aka.ms/intuneportal) 中，选择“应用”   > “所有应用”   > “添加”  。 
-2. 在“应用类型”下拉框的“Office 365 套件”部分中选择“Windows 10”    。
-3. 选择“配置应用套件”以选择要分配给 Intune 用户的 Office 应用  。
-4. 单击“确定”，接受默认选定的应用  。
-5. 选择“应用套件信息”  。
-6. 输入“Microsoft Office 365 应用套件”作为“套件名称”   。
-7. 输入“Microsoft Office 365 应用套件”作为“套件说明”   。
-8. 单击“在公司门户中将此应用显示为特色应用”旁的“是”   。
-9. 单击" **确定**"。
-
-    ![添加应用信息的屏幕截图](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. 选择“应用套件设置”  。
-11. 在“更新通道”下拉框中，选择“每月”   。
-12. 单击“确定” > 添加”   。
+2. 在“选择应用类型”  窗格的“Office 365 套件”  部分中选择“Windows 10”  。
+3. 单击“选择”  。 将显示“添加应用”  步骤。
+4. 确认“应用套件信息”  页中的默认详细信息。
+5. 单击“下一步”  以显示“配置应用套件”  页。
+6. 在“更新通道”  旁从下拉框中选择“每月”  。
+7. 确认“配置应用套件”  页中的剩余默认详细信息。
+8. 单击“下一步”  以显示“作用域标记”  页面。
+9. 单击“选择作用域标记”  可以选择为应用添加作用域标记。 有关详细信息，请参阅[对分布式 IT 使用基于角色的访问控制 (RBAC) 和作用域标记](~/fundamentals/scope-tags.md)。
+10. 单击“下一步”以显示“分配”页面   。
+11. 为应用选择组分配。 有关详细信息，请参阅[添加用于组织用户和设备的组](~/fundamentals/groups-add.md)。 
+12. 单击“下一步”  以显示“查看 + 创建”页  。 查看为应用输入的值和设置。
+13. 完成后，单击“创建”  将应用添加到 Intune。
 
 ## <a name="assign-the-app-to-a-group"></a>将应用分配给组
 
@@ -93,7 +91,7 @@ ms.locfileid: "74563410"
     > [!NOTE]
     > 如果未成功将任何应用分配给 Intune 用户，你将看到以下消息：IT 管理员未向你提供任何应用。 
 
-5. 单击“**安装**”。
+5. 单击“安装”  。
 
 如果业务需求需要将公司门户应用分配给员工，则可直接从 Intune 手动分配 Windows 10 公司门户应用。 有关详细信息，请参阅[使用 Microsoft Intune 手动添加 Windows 10 公司门户应用](../company-portal-app.md)。
 

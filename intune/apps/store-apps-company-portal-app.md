@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712961"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755028"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手动添加 Windows 10 公司门户应用
 
@@ -56,7 +56,7 @@ ms.locfileid: "73712961"
     必须为 x86、x64 和 ARM 体系结构完成此操作：<br> 
     *选择 1507 作为最低操作系统版本时，有 9 个必需的框架包，选择 1511 时有 12 个包，选择 1607 时有 15 个包。*
 
-8. 在 Azure 门户的 Microsoft Intune 中，将公司门户应用作为新应用上传。 可以通过在“添加应用”窗格中选择“业务线应用”作为“应用类型”来添加应用程序   。 然后，选择应用包文件（扩展名为 .AppxBundle）。
+8. 在 Azure 门户的 Microsoft Intune 中，将公司门户应用作为新应用上传。 可以通过在“选择应用类型”窗格中选择“业务线应用”作为“应用类型”来添加应用程序   。 然后，选择应用包文件（扩展名为 .AppxBundle）。
 
 9. 在“选择依赖项应用文件”  下，按住 Shift 并单击以选择在步骤 7 中下载的所有依赖项，并验证“已添加”  列是否针对所需的体系结构显示“是”  。
 
@@ -69,7 +69,7 @@ ms.locfileid: "73712961"
 
 有关 Intune 如何处理通用应用的依赖项的详细信息，请参阅 [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)（通过 Microsoft Intune MDM 部署具有依赖项的 appxbundle）。  
 
-## <a name="frequently-asked-questions"></a>常见问题 
+## <a name="frequently-asked-questions"></a>常见问题解答 
 ### <a name="how-do-i-update-the-company-portal-app-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>如果用户已从 Microsoft Store 安装旧版公司门户应用，那么如何更新其设备上的应用？
 如果你的用户已从 Microsoft Store 安装 Windows 8.1 或 Windows Phone 8.1 公司门户应用，则他们的应用会自动更新到最新版本，你或你的用户无需执行任何操作。 如果未更新，则要求用户确认他们是否在设备上启用了 Microsoft Store 应用的自动更新。   
 
@@ -95,7 +95,7 @@ ms.locfileid: "73712961"
 3. 若要签名 Windows 10 公司门户应用，请使用脚本标头中详细说明的输入参数运行脚本，如下表所示。  
     不需要将依赖项传入该脚本。 只有将应用上传到 Intune 管理控制台时才需要依赖项。
 
-| 参数 |  描述  |
+| 参数 |  说明  |
 |---|---|
 | InputWin10AppxBundle  |  源 appxbundle 文件的路径。 |
 | OutputWin10AppxBundle | 已签名的 appxbundle 文件 Win81Appx 的输出路径。 

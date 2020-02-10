@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991765"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812464"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
@@ -36,7 +36,7 @@ ms.locfileid: "74991765"
 
 “擦除”操作将设备还原为出厂默认设置  。 如果选择“保留注册状态和用户帐户”  复选框，则保留用户数据。 否则，将删除所有数据、应用和设置。
 
-|擦除操作|保留注册状态和用户帐户 |从 Intune 管理中删除|描述|
+|擦除操作|保留注册状态和用户帐户 |从 Intune 管理中删除|说明|
 |:-------------:|:------------:|:------------:|------------|
 |**擦除**| 未选中 | 是 | 擦除所有用户帐户、数据、MDM 策略和设置。 将操作系统重置为其默认状态和设置。|
 |**擦除**| 已选中 | 否 | 擦除所有 MDM 策略。 保留用户帐户和数据。 将用户设置重置回默认设置。 将操作系统重置为其默认状态和设置。|
@@ -88,7 +88,7 @@ ms.locfileid: "74991765"
 
 |数据类型|iOS|
 |-------------|-------|
-|Intune 安装的公司应用和关联数据|**使用公司门户安装的应用：** 对于固定到管理配置文件的应用，将删除所有应用数据和应用。 这些应用包括最初从应用商店安装且后来作为公司应用管理的应用。 <br /><br /> **使用移动应用管理并从应用商店安装的 Microsoft 应用：** 对于非公司门户托管的应用，将删除受应用本地存储中的移动应用程序管理 (MAM) 加密保护的公司应用数据。 受应用外部的 MAM 加密保护的数据仍然是加密且不可用的，但不会删除。 不会删除个人应用数据和应用。|
+|Intune 安装的公司应用和关联数据|**使用公司门户安装的应用：** 对于固定到管理配置文件的应用，将删除所有应用数据和应用。 这些应用包括最初从应用商店安装而后面作为公司应用进行管理的应用，除非已将应用配置为在删除设备时不将其卸载。 <br /><br /> **使用移动应用管理并从应用商店安装的 Microsoft 应用：** 对于非公司门户托管的应用，将删除受应用本地存储中的移动应用程序管理 (MAM) 加密保护的公司应用数据。 受应用外部的 MAM 加密保护的数据仍然是加密且不可用的，但不会删除。 不会删除个人应用数据和应用。|
 |设置|不再强制实施通过 Intune 策略设置的配置。 用户可以更改设置。|
 |Wi-Fi 和 VPN 配置文件设置|删除。|
 |证书配置文件设置|已删除并吊销证书。|

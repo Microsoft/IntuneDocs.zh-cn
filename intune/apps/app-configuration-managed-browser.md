@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564327"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812511"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Web 访问
 
@@ -36,6 +36,9 @@ ms.locfileid: "74564327"
 - 单一登录
 - 应用程序配置设置
 - Azure 应用程序代理集成
+
+> [!IMPORTANT]
+> Intune Managed Browser 将停用。 使用 Microsoft Edge 获取受保护的 Intune 浏览器体验。 
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge 支持
 
@@ -174,7 +177,7 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 
 | Key                              |  值   |
 |----------------------------------|----------|
-| **com.microsoft.intune.useEdge** | **true** |
+| **com.microsoft.intune.useEdge** | true  |
 
 > [!NOTE]
 > 在管理 Microsoft Edge 和应用配置指定的关联应用的应用保护策略中，确保设置了以下数据保护策略设置：
@@ -203,7 +206,7 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>步骤 1：从 Outlook 启用指向受保护的浏览器的自动重定向
 Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中显示**这一设置的应用保护策略。
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>步骤 2：为受保护的浏览器分配一个应用配置策略
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>步骤 2:为受保护的浏览器分配一个应用配置策略
 此过程将 Managed Browser 或 Microsof Edge 应用配置为使用应用代理重定向。 
 
 在策略的配置设置中打开“Edge”选项卡，为应用程序代理重定向值选择“启用”。   启用此设置时，用户即可以访问通过 Azure 应用程序代理发布的公司链接和本地 Web 应用。
@@ -221,7 +224,7 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 |                                Key                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例： `https://www.bing.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：`https://www.bing.com` |
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>如何配置受保护的浏览器的书签
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713132"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812496"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -34,7 +34,7 @@ ms.locfileid: "73713132"
 | 平台 | 是否支持？ |
 | ---- | ---- |
 | 版本在 6.x 及以下的 Android 设备 | 是 |
-| 展台模式下的 Android 企业设备 | 是 |
+| 以设备所有者身份注册的 Android 企业设备 | 是 |
 | iOS 设备 | 是 |
 | 通过用户注册进行注册的 iOS 设备 | 否 |
 | 使用工作配置文件注册的 Android 设备 | 否 |

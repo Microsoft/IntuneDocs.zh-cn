@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563998"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912652"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 将应用分配到组
 
@@ -132,7 +132,7 @@ ms.locfileid: "74563998"
 在 Intune 控制台中发出应用选择性擦除时，工作帐户将从 Play Store 应用中自动删除，且最终用户从那时起将无法再在 Play Store 应用目录中看到工作应用。 从设备中删除工作帐户后，从 Play Store 安装的应用将仍然安装在设备上，不会卸载。 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>适用于 iOS 托管应用的应用卸载设置
-对于 iOS 设备，你可以选择当从 Intune 取消注册设备或使用“删除设备时卸载”  设置删除管理配置文件时托管应用所发生的情况。 只有在注册设备并且应用作为托管安装后，此设置才适用于应用。 无法为 Web 应用或 Web 链接配置该设置。 
+对于 iOS 设备，你可以选择当从 Intune 取消注册设备或使用“删除设备时卸载”  设置删除管理配置文件时托管应用所发生的情况。 只有在注册设备并且应用作为托管安装后，此设置才适用于应用。 无法为 Web 应用或 Web 链接配置该设置。 只有受移动应用管理 (MAM) 保护的数据在停用后才会被应用选择性擦除删除。
 
 已经为新分配预填充该设置的默认值，如下所示：
 

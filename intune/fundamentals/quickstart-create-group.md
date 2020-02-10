@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d9b06043dd10f92b6176d4b2e9f90f1b7c87aac9
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813404"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540940"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入门：创建组以管理用户
 
@@ -36,22 +36,23 @@ ms.locfileid: "72813404"
 
 ## <a name="prerequisites"></a>必备条件
 
+- Microsoft Intune 订阅 - [注册免费试用帐户](../fundamentals/free-trial-sign-up.md)。
 - 要完成本快速入门，必须先[创建用户](quickstart-create-user.md)。
 
-## <a name="sign-in-to-intune"></a>登录到 Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>在 Microsoft 终结点管理器中登录到 Intune
 
-以[全局管理员或 Intune 服务管理员身份](users-add.md#types-of-administrators)登录 [Intune 门户](https://aka.ms/intuneportal)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
+以[全局管理员或 Intune 服务管理员](users-add.md#types-of-administrators)身份登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
 ## <a name="create-a-group"></a>创建组
 
 你需要创建一个组以便稍后在本快速入门系列中使用。 若要创建组，请执行以下操作：
 
-1. 打开“Microsoft Intune”窗格后，选择“组” > “新建组”    。
+1. 打开“Microsoft 终结点管理器”  后，选择“组”   > “新组”  。
 2. 在“组类型”下拉列表中，选择“安全”   。
 3. 在“组名称”  字段中，输入新组的名称（例如，Contoso 测试人员  ）。
-4. 添加对该组的描述  。
+4. 添加对该组的“组描述”  。
 5. 将“成员身份类型”设置为“已分配”   。 
-6. 单击“成员”，然后从列表中为该组选择一个或多个成员  。
+6. 在“成员”  下，选择链接并从列表中为该组添加一个或多个成员。
 
     ![在 Microsoft Intune 中创建组的屏幕截图](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

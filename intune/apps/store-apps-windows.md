@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c13d7960c0bb5c73908a0a574ab7d6c169d6460
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 8743af2a05f6daebca5e1394ba5b7b8f13fcf7e3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563440"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754892"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>将 Microsoft Store 应用添加到 Microsoft Intune
 
@@ -36,12 +36,14 @@ ms.locfileid: "74563440"
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“应用”   > “所有应用”   > “添加”  。
-3. 在“添加应用”窗格中，选择“Windows ”的“应用类型”，然后选择“应用信息”     。
-4. 在“应用信息”窗格中，添加应用信息  。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
+3. 在“选择应用类型”  窗格中的可用“应用商店应用”  类型下，选择“Windows 应用商店应用”  。
+4. 单击“选择”  。 将显示“添加应用”  步骤。
+5. 若要为 Windows 应用商店应用配置“应用信息”  ，请导航到 [Microsoft Store](https://www.microsoft.com/store/apps) 并搜索要部署的应用。 显示应用页并记下应用详细信息。 
+6. 在“应用信息”  页中，添加应用详细信息：
     - **名称**：输入要在公司门户中显示的应用名称。 请确保使用唯一的应用名称。 如果应用名称重复，则在公司门户中仅向用户显示一个名称。
-    - **说明**：输入应用的描述。 在公司门户中向用户显示该描述。
+    - **描述**：输入应用的描述。 在公司门户中向用户显示该描述。
     - **发布者**：输入应用发布者的名称。
-    - **应用商店 URL**：键入要创建的应用的应用商店 URL。 可以通过在所需应用的 [Microsoft Store](https://store.microsoft.com) 中搜索来找到该 URL。 使用浏览器地址栏中的 URL。
+    - **应用商店 URL**：键入要创建的应用的应用商店 URL。 可以通过在所需应用的 [Microsoft Store](https://www.microsoft.com/store/apps) 中搜索来找到该 URL。 使用浏览器地址栏中的 URL。
     - **类别**：（可选）选择一个或多个内置应用类别或所创建的类别。 此操作可让用户在浏览公司门户时更轻松地查找应用。
     - **在公司门户中将此应用显示为特色应用**：当用户浏览应用时，选择此选项以在公司门户的主页上突出显示应用套件。
     - **信息 URL**：（可选）输入包含此应用相关信息的网站的 URL。 在公司门户中向用户显示该 URL。
@@ -50,10 +52,19 @@ ms.locfileid: "74563440"
     - **所有者**：（可选）输入此应用的所有者的名称（例如，HR 部门  ）。
     - **备注**：（可选）输入要与此应用关联的任何备注。
     - **徽标**：（可选）：上传将与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
-5. 选择“确定”  。
-6. 选择“添加”  。
+7. 单击“下一步”  以显示“作用域标记”  页面。
+8. 单击“选择作用域标记”  可以选择为应用添加作用域标记。 有关详细信息，请参阅[对分布式 IT 使用基于角色的访问控制 (RBAC) 和作用域标记](~/fundamentals/scope-tags.md)。
+9. 单击“下一步”以显示“分配”页面   。
+10. 为应用选择组分配。 有关详细信息，请参阅[添加用于组织用户和设备的组](~/fundamentals/groups-add.md)。 
+11. 单击“下一步”  以显示“查看 + 创建”页  。 查看为应用输入的值和设置。
+12. 完成后，单击“创建”  将应用添加到 Intune。
 
-此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。 Microsoft Store 应用仅分配到分配类型为“适用于已注册设备”的组（用户从公司门户应用或网站安装应用）  。
+随即显示创建的应用的“概述”  边栏选项卡。
+
+此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。
+
+> [!IMPORTANT]
+> Microsoft Store 应用仅分配到分配类型为“适用于已注册设备”的组（用户从公司门户应用或网站安装应用）  。
 
 ## <a name="next-steps"></a>后续步骤
 - [将应用分配给组](apps-deploy.md)

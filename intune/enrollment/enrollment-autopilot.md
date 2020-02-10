@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb98ee2974cefeebb90689207388d5fe9229dad2
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036665"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977795"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中注册 Windows 设备  
 Windows Autopilot 简化了 Intune 中的设备注册。 生成和维护自定义操作系统映像的过程非常耗时。 可能还要先花时间将自定义操作系统映像应用到新设备，让其可供使用，然后再提供给最终用户。 使用 Microsoft Intune 和 Autopilot 就可向最终用户提供全新设备，而无需生成、维护自定义操作系统映像以及将其应用到设备。 使用 Intune 管理 Autopilot 设备时，可以在注册设备后管理策略、配置文件和应用等。 有关优势、方案和先决条件的概述，请参阅 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -158,6 +158,13 @@ Autopilot 部署配置文件用于配置 Autopilot 设备。 每个租户最多�
 警报将显示没有 Autopilot 部署配置文件的 Autopilot 程序设备数。 使用警报中的信息可创建配置文件，并将其分配到未分配的设备。 单击警报时，可看到 Windows Autopilot 设备的完整列表，以及与之相关的详细信息。
 
 若要查看未分配设备的警报，请在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)内，依次选择“设备”   > “概述”   > “注册警报”   > “未分配的设备”  。  
+
+## <a name="autopilot-deployments-report"></a>Autopilot 部署报告
+可以查看通过 Windows Autopilot 部署的每个设备的详细信息。
+若要查看报表，请转到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”   > “监视”   > “Autopilot 部署”  。
+数据在部署后的 30 天内可用。
+
+此报表处于预览状态。 设备部署记录当前仅由新的 Intune 注册事件触发。 这意味着此报表不会选择任何不触发新的 Intune 注册的部署。 这包括维持注册的任何类型的重置以及 Autopilot White Glove 的用户部分。
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>将用户分配到特定 Autopilot 设备
 

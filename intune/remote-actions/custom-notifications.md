@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036610"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517470"
 ---
 # <a name="send-custom-notifications-in-intune"></a>使用 Intune 发送自定义通知  
 
 使用 Microsoft Intune 向使用托管 iOS 设备和 Android 设备的用户发送自定义通知。 这些消息在用户设备上显示为来自公司门户应用和 Microsoft Intune 应用的标准推送通知，就像设备上显示的来自其他应用程序的通知一样。 Windows 和 macOS 设备不支持 Intune 自定义通知。   
 
 自定义通知消息包括短标题和不超过 500 个字符的消息正文。 可以出于任何常规通信目的自定义这些消息。
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>iOS 设备上通知的外观
+
+如果在 iOS 设备上打开公司门户应用，则通知将类似于以下屏幕截图：
+
+> [!div class="mx-imgBorder"]
+> ![公司门户 iOS 测试通知](./media/custom-notifications/105046-1.png)
+
+如果设备被锁定，通知将类似于以下屏幕截图：
+
+> [!div class="mx-imgBorder"]
+> ![锁定设备 iOS 测试通知](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>Android 设备上通知的外观
+
+如果在 Android 设备上打开公司门户应用，则通知将类似于以下屏幕截图：
+
+> [!div class="mx-imgBorder"]
+> ![Android 测试通知](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>发送自定义通知的常见方案  
 

@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563449"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754994"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>将 iOS 应用商店应用添加到 Microsoft Intune
 
@@ -43,16 +43,20 @@ ms.locfileid: "74563449"
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“应用”   > “所有应用”   > “添加”  。
-3. 在“应用类型”  列表中，选择“应用商店应用”  类型下的“iOS”  。
-4. 选择“搜索 App Store”  。
-5. 在“搜索 App Store”  窗格中，选择 App Store 国家/地区的区域设置。
-6. 在“搜索”  框中，键入应用的名称（或名称的一部分）。  
+3. 在“选择应用类型”  窗格中的可用“应用商店应用”  类型下，选择“iOS 应用商店应用”  。
+4. 单击“选择”  。<br>
+   将显示“添加应用”  步骤。
+5. 选择“搜索 App Store”  。
+6. 在“搜索 App Store”  窗格中，选择 App Store 国家/地区的区域设置。
+7. 在“搜索”  框中，键入应用的名称（或名称的一部分）。  
     Intune 将搜索应用商店并返回相关结果的列表。
-7. 在结果列表中，选择想要使用的应用，然后选择“选择”  。
-8. 在“添加应用”  窗格中，选择“应用信息”  以配置应用。
-9. 在“应用信息”窗格中，添加应用信息  。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
+8. 在结果列表中，选择想要使用的应用，然后选择“选择”  。<br>
+
+   “应用信息”  页面将显示在“添加应用”  窗格中。 如果可能，将基于你从应用商店中选择的应用添加应用信息。
+
+9. 在“应用信息”  页中，添加应用的详细信息。 此窗格中的某些值可能已自动填充（具体取决于所选应用）：
     - **名称**：输入要在公司门户中显示的应用名称。 请确保使用唯一的应用名称。 如果应用名称重复，则在公司门户中仅向用户显示一个名称。
-    - **说明**：输入应用的描述。 在公司门户中向用户显示该描述。
+    - **描述**：输入应用的描述。 在公司门户中向用户显示该描述。
     - **发布者**：输入应用发布者的名称。
     - **应用商店 URL**：键入要创建的应用的应用商店 URL。
     - **最低操作系统**：在列表中选择可安装应用的最低操作系统版本。 如果将应用分配到具有较低操作系统的设备，则不会安装该应用。
@@ -65,10 +69,14 @@ ms.locfileid: "74563449"
     - **所有者**：（可选）输入此应用的所有者的名称（例如，HR 部门  ）。 此字段仅对管理员可见，对用户不可见。
     - **备注**：（可选）输入要与此应用关联的任何备注。 此字段仅对管理员可见，对最终用户不可见。
     - **徽标**：（可选）：上传将与应用关联的图标。 用户浏览公司门户时，此图标将与应用一同显示。
-10. 选择“确定”  。
-11. 选择“添加”  。
+10. 单击“下一步”  以显示“作用域标记”  页面。
+11. 单击“选择作用域标记”  可以选择为应用添加作用域标记。 有关详细信息，请参阅[对分布式 IT 使用基于角色的访问控制 (RBAC) 和作用域标记](~/fundamentals/scope-tags.md)。
+12. 单击“下一步”以显示“分配”页面   。
+13. 为应用选择组分配。 有关详细信息，请参阅[添加用于组织用户和设备的组](~/fundamentals/groups-add.md)。 
+14. 单击“下一步”  以显示“查看 + 创建”页  。 查看为应用输入的值和设置。
+15. 完成后，单击“创建”  将应用添加到 Intune。
 
-此时，已创建的应用显示在应用列表中，可在此列表中将其分配到选择的组。
+随即显示创建的应用的“概述”  边栏选项卡。
 
 ## <a name="next-steps"></a>后续步骤
 

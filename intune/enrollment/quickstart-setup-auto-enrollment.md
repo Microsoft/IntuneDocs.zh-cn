@@ -8,19 +8,19 @@ ms.service: microsoft-intune
 ms.subservice: enrollment
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 03/26/2019
+ms.date: 01/17/2020
 ms.author: erikje
 ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e5cc7cf3661caa2b2640d9370d26402b7702d36b
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562312"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540996"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>快速入门：设置适用于 Windows 10 设备的自动注册
 
@@ -33,7 +33,7 @@ ms.locfileid: "74562312"
 - Microsoft Intune 订阅 - [注册免费试用帐户](../fundamentals/free-trial-sign-up.md)。
 - 要完成本快速入门，必须先[创建用户](../fundamentals/quickstart-create-user.md)并[创建组](../fundamentals/quickstart-create-group.md)。
 
-## <a name="sign-in-to-intune"></a>登录到 Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>在 Microsoft 终结点管理器中登录到 Intune
 
 以全局管理员或 Intune 服务管理员身份登录 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 如果已创建 Intune 试用版订阅，则用于创建订阅的帐户就是全局管理员。
 
@@ -41,16 +41,20 @@ ms.locfileid: "74562312"
 
 本示例将使用 MDM 注册，以便可以自动注册公司设备和自带设备。 你将注册免费的 Azure Active Directory Premium 订阅。
 
-1. 在 [Azure 门户](https://portal.azure.com)中，选择“Azure Active Directory” > “移动性(MDM 和 MAM)”   。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“所有服务”   > “M365 Azure Active Directory”   > “Azure Active Directory”   > “移动性(MDM 和 MAM)  。
 2. 选择“获取免费的 Premium 试用版以使用此功能”  。 选择此选项将允许使用 Azure Active Directory Premium 免费试用版进行自动注册。 
 
     ![选择 Azure Active Directory Premium 免费试用版](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    选择“企业移动性 + 安全性 E5”免费试用版选项  。 此外，必须选择“激活”免费试用版  。
+3. 选择“企业移动性 + 安全性 E5”免费试用版选项  。 
+4. 单击“免费试用版”   > “激活”  免费试用版。
 
     ![选择“企业移动性 + 安全性 E5”免费试用版](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
-3. 选择“Microsoft Intune”  。 
+    > [!NOTE]
+    > 可能需要一分钟的时间才能激活。 
+
+3. 选择“Microsoft Intune”  配置 Intune。 
 
     ![从列表中选择“Microsoft Intune”](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
 
@@ -58,11 +62,14 @@ ms.locfileid: "74562312"
 
     ![从“配置”列表中选择“某些”](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组    。
+5. 单击“选择组”   > “Contoso 测试人员”   > “选择”  作为已分配的组。
 
     ![选择要注册的组](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
 6. 从“MAM 用户范围”中选择“某些”以管理员工设备上的数据   。
+
+    ![选择要注册的组](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-06.png)
+
 7. 选择“选择组” > “Contoso 测试人员” > “选择”作为已分配的组    。 
 8. 对于剩余的配置，可以使用默认值。
 9. 选择 **“保存”** 。

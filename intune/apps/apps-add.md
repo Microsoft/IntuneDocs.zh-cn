@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956211"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755266"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune 
 
@@ -74,10 +74,10 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 
 <sup>1</sup> 有关 Android Enterprise 和 Android 工作配置文件的详细信息，请参阅下面的[了解许可的应用](apps-add.md#understanding-licensed-apps)。
 
-可以在 Microsoft Intune 中添加应用，方法是通过选择“应用” > “所有应用” > “添加”    。 将显示“添加应用”窗格，可选择“应用类型”   。 
+可以在 Microsoft Intune 中添加应用，方法是通过选择“应用” > “所有应用” > “添加”    。 将显示“选择应用类型”窗格，可选择“应用类型”   。 
 
 >[!TIP]
-> LOB 应用是从应用安装文件添加的应用。 例如，若要安装 iOS LOB 应用，可以通过在“添加应用”窗格选择“业务线应用”作为“应用类型”来添加应用程序    。 然后，选择应用包文件（扩展名为 .ipa）。 这些应用类型通常为内部编写。
+> LOB 应用是从应用安装文件添加的应用。 例如，若要安装 iOS LOB 应用，可以通过在“选择应用类型”窗格中选择“业务线应用”作为“应用类型”来添加应用程序    。 然后，选择应用包文件（扩展名为 .ipa）。 这些应用类型通常为内部编写。
 
 ## <a name="assess-app-requirements"></a>评估应用要求
 作为 IT 管理员，不仅可以确定你的组必须要使用的应用，而且可以确定每个组和子组所需的功能。 对于每个应用，应确定所需平台、需要应用的用户组、要为这些组应用的配置策略和要应用的保护策略。  

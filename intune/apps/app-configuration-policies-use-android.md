@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204998"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755429"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>为托管的 Android Enterprise 设备添加应用配置策略
 
@@ -34,21 +34,43 @@ Microsoft Intune 中的应用配置策略向托管 Android Enterprise 设备上�
 > [!NOTE]  
 > 并非所有应用都支持应用配置。 请咨询应用开发人员，确定他们的应用是否支持应用配置策略。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“应用”   > “应用配置策略”   >  “添加”   > “托管设备”  。
-2. 添加以下属性：
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“应用”   > “应用配置策略”   > “添加”   > “托管设备”  。 请注意，可以在“受管理设备”  和“托管应用”  之间进行选择。 有关详细信息，请参阅[支持应用配置的应用](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration)。
+3. 在“基本信息”  页上，设置以下详细信息：
+    - **名称** - 在 Azure 门户中显示的配置文件名。
+    - **说明** - 在 Azure 门户中显示的配置文件说明。
+    - **设备注册类型** - 此设置设为“托管设备”。 
+4. 选择“Android Enterprise”  作为“平台”  。
+5. 单击“目标应用”  旁边的“选择应用”  。 随即将显示“关联应用”窗格  。 
+6. 在“关联应用”  窗格上，选择要与配置策略关联的托管应用，然后单击“确定”  。
+7. 单击“下一步”以显示“设置”页面   。
+8. 单击“添加”  以显示“添加权限”  窗格。
+9. 选择要覆盖的权限。 授予的权限将覆盖所选应用的“默认应用权限”策略。
+10. 为每个权限设置“权限状态”  。 可以选择“提示”  、“自动授予”  或“自动拒绝”  。 有关权限的详细信息，请参阅[使用 Intune 将设备标记为符合或不符合的 Android Enterprise 设置](~/protect/compliance-policy-create-android-for-work.md)。
+11. 在下拉框中，选择“配置设置格式”  。 选择下列方法之一来添加配置信息：
+    - **使用配置设计器**
+    - **输入 JSON 数据**<br><br>
+    有关使用配置设计器的详细信息，请参阅[使用配置设计器](#use-the-configuration-designer)。 有关输入 XML 数据的详细信息，请参阅[输入 JSON 数据](#enter-json-data)。 
+12. 单击“下一步”以显示“分配”页面   。
+13. 在“分配给”  旁边的下拉框中，选择“选定组”  、“所有用户”  、“所有设备”  或“所有用户和所有设备”  以分配应用配置策略。
 
-    - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好是“适用于整个公司的 Android Enterprise Nine Work 应用策略”  。
-    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
-    - **设备注册类型**：此设置设为“托管设备”。 
-    - **平台**：选择“Android”  。
+    ![策略分配“包括”选项卡的屏幕截屏](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. 选择“关联应用”  。 选择此应用配置策略将关联的 Android 应用。 从[已批准并与 Intune 同步的托管 Google Play 应用](~/apps/apps-add-android-for-work.md)列表中选择。
-4. 选择“权限”  。 可使用以下工具设置配置：
+14. 在下拉框中选择“所有用户”  。
 
-    - [配置设计器](#use-the-configuration-designer)
-    - [JSON 编辑器](#enter-the-json-editor)
+    ![策略分配“所有用户”下拉列表选项的屏幕截图](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. 选择“确定”   > “添加”  。
+15. 单击“选择要排除的组”以显示相关窗格  。
+
+    ![策略分配“选择要排除的组”窗格的屏幕截图](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. 选择想要排除的组，然后单击“选择”  。
+
+    >[!NOTE]
+    >添加组时，如果给定的分配类型中已包括任何其他组，则在其他包括分配类型中，会预先选定该组且无法更改。 因此，已被使用的组无法用作排除组。
+
+17. 单击“下一步”  以显示“查看 + 创建”页  。
+18. 单击“创建”  ，将应用配置策略添加到 Intune。
 
 ## <a name="use-the-configuration-designer"></a>使用配置设计器
 
@@ -92,7 +114,7 @@ Microsoft Intune 中的应用配置策略向托管 Android Enterprise 设备上�
    > 当仅允许多身份配置的组织帐户时，必须使用 Outlook for Android 2.2.222 及更高版本、Word、Excel、PowerPoint for Android 16.0.9327.1000 及更高版本或 OneDrive for Android 5.28 及更高版本。<p></p>
    > 作为 Microsoft Intune 管理员，可控制将哪些用户帐户添加到托管设备上的 Microsoft Office 应用程序。 可以将访问权限限制为仅允许的组织用户帐户，并阻止已注册设备上的个人帐户。 支持性应用程序将处理应用配置并删除和阻止未经批准的帐户。<p></p>
 
-## <a name="enter-the-json-editor"></a>输入 JSON 编辑器
+## <a name="enter-json-data"></a>输入 JSON 数据
 
 无法使用配置设计器在应用上（例如捆绑型的应用）配置某些配置设置。 使用 JSON 编辑器配置这些值。 在安装应用时，自动向应用提供设置。
 
