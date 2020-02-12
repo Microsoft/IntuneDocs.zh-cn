@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7ffe5a8c20aa7edd67853ff86ef9e28cf2d175
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
+ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915819"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034237"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>在 Microsoft Intune 中对 SCEP 证书配置文件进行故障排除概述
 
@@ -115,11 +115,11 @@ ms.locfileid: "76915819"
 
 ### <a name="logs-for-android-devices"></a>适用于 Android 设备的日志
 
-对于运行 Android 的设备，请使用“Android 公司门户”  应用日志文件“OMADM.log”  。 收集和查看日志之前，请确保已启用[详细日志记录](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)，然后重现该问题。
+对于运行 Android 的设备，请使用“Android 公司门户”  应用日志文件“OMADM.log”  。 收集和查看日志之前，请确保已启用[详细日志记录](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)，然后重现该问题。
 
-若要从设备收集 OMADM.log，请参阅[使用 USB 电缆上传日志和通过电子邮件发送日志](/intune-user-help/send-logs-to-your-it-admin-using-cable-android.md)。
+若要从设备收集 OMADM.log，请参阅[使用 USB 电缆上传日志和通过电子邮件发送日志](/intune-user-help/send-logs-to-your-it-admin-using-cable-android)。
 
-还可以参阅[上传日志和通过电子邮件发送日志](/intune-user-help/send-logs-to-your-it-admin-by-email-android.md#upload-and-email-logs-from-microsoft-intune-app)来获取支持。
+还可以参阅[上传日志和通过电子邮件发送日志](/intune-user-help/send-logs-to-your-it-admin-by-email-android#upload-and-email-logs-from-microsoft-intune-app)来获取支持。
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>适用于 iOS 和 iPadOS 设备的日志
 

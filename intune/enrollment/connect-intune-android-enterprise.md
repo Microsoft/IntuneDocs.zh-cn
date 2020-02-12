@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 581d88e49391bc874625e9c84318c039706b0c1b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563845"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124820"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>将 Intune 帐户连接到托管的 Google Play 帐户
 
@@ -48,16 +48,16 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 
 3. 选择“我同意”以向 Microsoft 授予[将用户和设备信息发送给 Google](../protect/data-intune-sends-to-google.md) 的权限  。 
    
-4. 选择“启动 Google 立即连接”以打开托管的 Google Play 网站  。 网站将在浏览器的新选项卡中打开。
+4. 选择“启动 Google 立即连接”以打开托管的 Google Play 网站  。 该网站随即在浏览器中的新选项卡上打开。
   
 5. 在 Google 的登录页上，输入将与此租户的所有 Android Enterprise 管理任务相关联的 Google 帐户。 这是在公司的 IT 管理员之间共享的 Google 帐户，用于在 Google Play 控制台中管理和发布应用。 可以使用现有 Google 帐户或创建新帐户。 所选帐户不能与 G-Suite 域相关联。
     
     > [!Note]
     > 如果使用 Microsoft Edge 浏览器，单击右上角的“登录”可登录到 Google 帐户  。
 
-6. 对于“组织名称”，提供你公司的名称  。 对于企业移动性管理 (EMM) 提供程序  ，应显示 Microsoft Intune  。
+6. 在“组织名称”中输入公司名称  。 对于企业移动性管理 (EMM) 提供程序  ，应显示 Microsoft Intune  。
 
-7. 同意 Android 协议，然后选择“确认”  。 你的请求会进行处理。
+7. 同意 Android 协议，然后选择“确认”  。 系统将处理你的请求。
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>断开 Android Enterprise 管理帐户的连接
 
@@ -69,4 +69,4 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 
 ## <a name="next-steps"></a>后续步骤
 
-连接到托管的 Google Play 帐户后，可[设置 Android Enterprise 工作配置文件设备](android-work-profile-enroll.md)，[设置 Android Enterprise 专用设备](android-kiosk-enroll.md)以及[设置 Android Enterprise 完全托管设备](android-kiosk-enroll.md)
+连接到托管的 Google Play 帐户后，可[设置 Android Enterprise 工作配置文件设备](android-work-profile-enroll.md)，[设置 Android Enterprise 专用设备](android-kiosk-enroll.md)以及[设置 Android Enterprise 完全托管设备](android-fully-managed-enroll.md)
