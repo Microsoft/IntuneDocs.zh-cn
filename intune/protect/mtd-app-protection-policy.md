@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545950"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075699"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>使用 Intune 创建移动威胁防御应用保护策略
 
@@ -47,19 +47,19 @@ ms.locfileid: "75545950"
 
 ## <a name="to-create-an-mtd-app-protection-policy"></a>创建 MTD 应用保护策略
 
-使用此过程 [创建适用于 iOS/iPadOS 或 Android 的应用程序保护策略](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)，并使用“应用”、“条件启动”和“分配”页上的以下信息    ：
+使用此过程 [创建适用于 iOS/iPadOS 或 Android 的应用程序保护策略](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)，并使用“应用”、“条件启动”和“分配”页上的以下信息：
 
-- **应用**：选择要使用的移动威胁防御合作伙伴应用。
-- **条件启动**：在“设备条件”  下，使用下拉框选择“允许的最大设备威胁级别”  。
+- **应用**：选择你希望应用保护策略针对的应用。 对于此功能集，将根据你选择的移动威胁防御供应商的设备风险评估，阻止使用或选择性擦除这些应用。 
+- **条件启动**：在“设备条件”下，使用下拉框选择“允许的最大设备威胁级别”。
 
-  威胁级别“值”选项  ：
+  威胁级别“值”选项：
 
   - **安全**：此级别是最安全的。 设备不能存在任何威胁，且仍可访问公司资源。 如果发现了任何威胁，设备都会被评估为不符合。
   - **低**：如果设备上仅存在低级威胁，则该设备符合要求。 低级以上的任意威胁都将使设备不合规。
   - **中**：如果有低级别或中等级别威胁，则设备符合要求。 如果检测到高级别威胁，则设备会被确定为不合规。
   - **高**：此级别是最不安全的威胁级别。 此选项将允许所有威胁级别，且仅将移动威胁防御用作报告目的。 设备必须使用此设置激活 MTD 应用。
 
-  “操作”选项  ：
+  “操作”选项：
 
   - **阻止访问**
   - **擦除数据**

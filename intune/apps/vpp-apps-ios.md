@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bc511669ec8a88523581b3afbcca161d5208934
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956206"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051620"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理通过 Apple Volume Purchase Program 购买的 iOS 和 macOS 应用
 
@@ -50,7 +50,7 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 |-----|------------------|----------------|
 | **App Store 登录** | 不需要。 | 系统提示登录到 App Store 时，每个最终用户都必须使用唯一的 Apple ID。 |
 | **阻止访问 App Store 的设备配置** | 可以使用公司门户安装和更新应用。 | 加入 Apple VPP 的邀请需要访问 App Store。 如果已设置禁用 App Store 的策略，用户许可的 VPP 应用将无法工作。 |
-| **自动进行应用更新** | 在 Apple VPP 令牌设置中由 Intune 管理员配置，其中应用的“分配类型”  为“必需”  。 <br> <br> 如果“分配类型”  为“可用于已注册的设备”  ，则可以从公司门户安装可用的应用更新。 | 在个人 App Store 设置中由最终用户配置。 这不能由 Intune 管理员管理。 |
+| **自动进行应用更新** | 在 Apple VPP 令牌设置中由 Intune 管理员配置，其中应用的“分配类型”为“必需”。 <br> <br> 如果“分配类型”为“可用于已注册的设备”，则可以从公司门户安装可用的应用更新。 | 在个人 App Store 设置中由最终用户配置。 这不能由 Intune 管理员管理。 |
 | **用户注册** | 不支持。 | 支持使用托管的 Apple ID。 |
 | **书籍** | 不支持。 | 支持。 |
 | **已使用的许可证** | 每台设备 1 个许可证。 许可证与设备关联。 | 1 个许可证，最多 5 台设备使用同一个人 Apple ID。 许可证与用户关联。 <br> <br> 与 Intune 中的个人 Apple ID 和托管 Apple ID 关联的最终用户会使用 2 个应用许可证。|
@@ -87,49 +87,54 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 1. 邀请 VPP 购买者加入你的组织，并指导每个用户选择一个唯一位置。 
 2. 在继续前，请确保组织内的所有 VPP 购买者都已完成步骤 1。
 3. 验证所有购买的应用和许可证是否均已迁移到 Apple Business Manager 或 Apple School Manager 中的应用和书籍。
-4. 转到“Apple Business（或 School）Manager”   > “设置”   > “应用和书籍”   > “我的服务器令牌”  下载新位置令牌。
-5. 若要在 Microsoft 终结点管理器管理中心更新位置令牌，请转到“租户管理”   > “连接器和令牌”   > “Apple VPP 令牌”  并同步令牌。
+4. 转到“Apple Business（或 School）Manager” > “设置” > “应用和书籍” > “我的服务器令牌”下载新位置令牌。
+5. 若要在 Microsoft 终结点管理器管理中心更新位置令牌，请转到“租户管理” > “连接器和令牌” > “Apple VPP 令牌”并同步令牌。
 
 ## <a name="upload-an-apple-vpp-or-location-token"></a>上传 Apple VPP 或位置令牌
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-3. 选择“租户管理”   > “连接器和令牌”   > “Apple VPP 令牌”  。
-4. 在 VPP 令牌列表窗格中，选择“创建”  。
-5. 在“创建 VPP 令牌”窗格中，指定下列信息  ：
+3. 选择“租户管理” > “连接器和令牌” > “Apple VPP 令牌”。
+4. 在 VPP 令牌列表窗格中，选择“创建”。
+5. 在“创建 VPP 令牌”窗格中，指定下列信息：
     - **VPP 令牌文件** - 如果尚未注册，请注册 Apple Business Manager 或 Apple School Manager。 注册后，为你的帐户下载 Apple VPP 令牌，并在此处选择它。
     - **Apple ID** - 输入与上传的令牌关联的帐户的托管 Apple ID。
-    - **控制另一个 MDM 的令牌** - 将此选项设置为“是”  以允许将令牌从另一个 MDM 解决方案重新分配给 Intune。
+    - **控制另一个 MDM 的令牌** - 将此选项设置为“是”以允许将令牌从另一个 MDM 解决方案重新分配给 Intune。
     - **令牌名称** - 用于设置令牌名称的管理字段。    
     - **国家/地区** - 选择 VPP 国家/地区应用商店。  Intune 将同步指定 VPP 国家/地区应用商店中所有区域设置对应的 VPP 应用。
         > [!WARNING]  
         > 对于使用此令牌创建的应用，更改国家/地区将更新应用元数据，并在下次与 Apple 服务同步时存储 App Store URL。 如果应用未在新的国家/地区应用商店中提供，则不会更新该应用。
 
-    - **VPP 帐户类型** - 从“企业版”  或“教育版”  中进行选择。
-    - **自动应用更新** - 从“关”切换为“开”以启用或停用自动更新   。 启用后，Intune 将在应用商店内检测 VPP 应用更新，并在设备进行签入时自动将这些更新推送到设备中。 
+    - **VPP 帐户类型** - 从“企业版”或“教育版”中进行选择。
+    - **自动应用更新** - 从“关”切换为“开”以启用或停用自动更新。 启用后，Intune 将在应用商店内检测 VPP 应用更新，并在设备进行签入时自动将这些更新推送到设备中。 
         
         > [!NOTE] 
-        > Apple VPP 应用的自动应用更新将仅自动更新通过“必需”的安装意向所部署的应用  。 对于通过“可用”安装意向部署的应用，自动更新会为 IT 管理员生成状态信息，提示该应用有可用的新版本  。 选择应用，选择“设备安装状态”，然后选中“状态详细信息”，即可查看此状态消息。  
+        > Apple VPP 应用的自动应用更新将仅自动更新通过“必需”的安装意向所部署的应用。 对于通过“可用”安装意向部署的应用，自动更新会为 IT 管理员生成状态信息，提示该应用有可用的新版本。 选择应用，选择“设备安装状态”，然后选中“状态详细信息”，即可查看此状态消息。  
 
-    - **我授权 Microsoft 向 Apple 发送用户和设备信息。** - 必须选择“我同意”  才能继续。 若要查看 Microsoft 向 Apple 发送的数据，请参阅 [Intune 向 Apple 发送的数据](~/protect/data-intune-sends-to-apple.md)。
+    - **我授权 Microsoft 向 Apple 发送用户和设备信息。** - 必须选择“我同意”才能继续。 若要查看 Microsoft 向 Apple 发送的数据，请参阅 [Intune 向 Apple 发送的数据](~/protect/data-intune-sends-to-apple.md)。
 
-6. 完成后，选择“创建”  。 该令牌显示在“令牌列表”窗格中。
+6. 完成后，选择“创建”。 该令牌显示在“令牌列表”窗格中。
 
 ## <a name="synchronize-a-vpp-token"></a>同步 VPP 令牌
-可以通过为所选令牌选择“同步”  ，在 Intune 中为已购买的应用同步应用名称、元数据和许可证信息。
+可以通过为所选令牌选择“同步”，在 Intune 中为已购买的应用同步应用名称、元数据和许可证信息。
 
 ## <a name="assign-a-volume-purchased-app"></a>分配批量购买的应用
 
-1. 选择“应用”   > “所有应用”  。
-2. 在应用列表窗格中，选择要分配的应用，然后选择“分配”  。
-3. 在“应用名称 - 分配”窗格中，选择“添加组”，然后在“添加组”窗格中，选择“分配类型”以及要将应用分配到的 Azure AD 用户或设备组      。
+1. 选择“应用” > “所有应用”。
+2. 在应用列表窗格中，选择要分配的应用，然后选择“分配”。
+3. 在“应用名称 - 分配”窗格中，选择“添加组”，然后在“添加组”窗格中，选择“分配类型”以及要将应用分配到的 Azure AD 用户或设备组。
 5. 请为选择的每个组选择以下设置：
-    - **类型** - 选择应用将为“可用”（最终用户可以从公司门户安装应用）还是“必需”（最终用户设备将自动安装应用）   。
-    - 许可证类型 - 选择“用户许可”或“设备许可”    。
-6. 完成后，选择“保存”  。
+    - **类型** - 选择应用将为“可用”（最终用户可以从公司门户安装应用）还是“必需”（最终用户设备将自动安装应用）。
+    - 许可证类型 - 选择“用户许可”或“设备许可”。
+6. 完成后，选择“保存”。
 
 
 >[!NOTE]
 >设备组不支持可用部署意图，仅用户组支持。 所显示的应用列表中的每个应用与一个令牌相关联。 如果具有一个与多个 VPP 令牌相关联的应用，会看到同一应用显示多次，一次对应一个令牌。
+
+> [!NOTE]  
+> Intune（或其他任何相关 MDM）不会安装 VPP 应用。 Intune 会连接到 VPP 帐户，并告诉 Apple 将哪些应用许可证分配到哪些设备。 从这里开始，所有实际安装都由 Apple 和设备进行协调。
+> 
+> [Apple MDM 协议参考，第 135 页](https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf)
 
 ## <a name="end-user-prompts-for-vpp"></a>VPP 的最终用户提示
 
@@ -156,11 +161,11 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 |   | iOS | macOS |
 |-----|------------------|----------------|
 | **删除应用分配** | 删除已分配给用户的应用时，Intune 将回收用户或设备许可证，并从设备中卸载该应用。 | 删除已分配给用户的应用时，Intune 将回收用户或设备许可证。 应用不会从设备上卸载。 |
-| **吊销应用许可证** | 吊销应用许可证将从用户或设备中回收应用许可证。 必须将分配更改为“卸载”  才能从设备中删除应用。 | 吊销应用许可证将从用户或设备中回收应用许可证。 设备上使用已撤销的许可证的 macOS 应用仍然可用，但只有向用户或设备重新分配许可证后它才可以更新。 根据 Apple 的规定，超过 30 天的宽限期后，将删除此类应用。 但 Apple 未向 Intune 提供使用“卸载”分配操作删除应用的方式。
+| **吊销应用许可证** | 吊销应用许可证将从用户或设备中回收应用许可证。 必须将分配更改为“卸载”才能从设备中删除应用。 | 吊销应用许可证将从用户或设备中回收应用许可证。 设备上使用已撤销的许可证的 macOS 应用仍然可用，但只有向用户或设备重新分配许可证后它才可以更新。 根据 Apple 的规定，超过 30 天的宽限期后，将删除此类应用。 但 Apple 未向 Intune 提供使用“卸载”分配操作删除应用的方式。
 
 >[!NOTE]
 > - 当员工离开公司，并且不再属于 AAD 组时，Intune 将回收应用许可证。
-> - 当使用“卸载”  意向分配购买的应用时，Intune 将回收许可证并卸载应用。
+> - 当使用“卸载”意向分配购买的应用时，Intune 将回收许可证并卸载应用。
 > - 从 Intune 管理中删除设备时，不会回收应用许可证。 
 
 ## <a name="deleting-vpp-tokens"></a>删除 VPP 令牌
@@ -185,14 +190,14 @@ Microsoft Intune 可帮助管理通过此类计划购买的应用，方法为：
 
 可以利用分配给 Intune 自定义管理员角色的权限独立控制 Apple VPP 令牌和 VPP 应用访问。
 
-* 若要允许 Intune 自定义角色管理 Apple VPP 令牌，请在“应用” > “Apple VPP 令牌”中分配对“托管应用”的权限。   
-* 若要允许 Intune 自定义角色管理使用 iOS VPP 令牌购买的应用，请在“应用” > “所有应用”中分配对“移动应用”的权限。    
+* 若要允许 Intune 自定义角色管理 Apple VPP 令牌，请在“应用” > “Apple VPP 令牌”中分配对“托管应用”的权限。
+* 若要允许 Intune 自定义角色管理使用 iOS VPP 令牌购买的应用，请在“应用” > “所有应用”中分配对“移动应用”的权限。 
 
 ## <a name="additional-information"></a>其他信息
 
 Apple 提供针对创建和续订 VPP 令牌的直接协助。 有关详细信息，请参阅 Apple 文档一部分的[使用批量采购计划 (VPP) 将内容分发给用户](https://go.microsoft.com/fwlink/?linkid=2014661)。 
 
-如果在 Intune 门户中指示了“分配给外部 MDM”，你（管理员）必须从第三方 MDM 中删除 VPP 令牌，然后才能使用 Intune 中的 VPP 令牌  。
+如果在 Intune 门户中指示了“分配给外部 MDM”，你（管理员）必须从第三方 MDM 中删除 VPP 令牌，然后才能使用 Intune 中的 VPP 令牌。
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

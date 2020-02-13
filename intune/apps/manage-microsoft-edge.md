@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258507"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125007"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>结合使用 Microsoft Edge 和 Microsoft Intune 来管理 Web 访问
 
@@ -59,25 +59,25 @@ Microsoft Edge 的 Microsoft Intune 保护策略有助于保护组织的数据�
 
 若要将 Azure AD 连接的 Web 应用限制为在 iOS 和 Android 上使用 Microsoft Edge，请执行以下操作：
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 在 Intune 节点下，选择“条件访问”   > “新建策略”  。
-3. 从窗格的“访问控制”部分选择“授予”   。
-4. 选择“需要已批准的客户端应用”  。
-5. 在“授予”窗格上选择“选择”   。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
+2. 在 Intune 节点下，选择“条件访问” > “新建策略”。
+3. 从窗格的“访问控制”部分选择“授予”。
+4. 选择“需要已批准的客户端应用”。
+5. 在“授予”窗格上选择“选择”。 必须将此策略分配给希望只由 Intune Managed Browser 应用访问的云应用。
 
     ![条件访问策略的屏幕截图 - 授予](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. 在“分配”部分，选择“条件” > “应用”   。 此时将显示“应用”  窗格。
-7. 在“配置”下选择“是”，将策略应用到特定客户端应用   。
-8. 确认“浏览器”已被选为客户端应用  。
+6. 在“分配”部分，选择“条件” > “应用”。 此时将显示“应用”窗格。
+7. 在“配置”下选择“是”，将策略应用到特定客户端应用。
+8. 确认“浏览器”已被选为客户端应用。
 
     ![条件访问策略的屏幕截图 - 选择客户端应用](./media/manage-microsoft-edge/manage-microsoft-edge-02.png)
 
     > [!NOTE]
-    > 若要限制可访问这些云应用程序的本机应用（非浏览器应用），还可以选择“移动应用和桌面客户端”  。
+    > 若要限制可访问这些云应用程序的本机应用（非浏览器应用），还可以选择“移动应用和桌面客户端”。
 
-9. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组   。
+9. 在“分配”部分，选择“用户和组”，然后选择要向其分配此策略的用户或组。
 
-10. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用   。
+10. 在“分配”部分，选择“云应用”，选择要使用此策略保护的应用。
 
 配置以上策略后，会强制要求用户使用 Microsoft Edge 访问已通过此策略保护的 Azure AD 连接的 Web 应用。 如果用户尝试在此情况下使用非托管浏览器，他们会收到一条消息，指示他们必须使用 Microsoft Edge。
 
@@ -98,28 +98,28 @@ SSO 要求设备通过 Microsoft Authenticator 应用（iOS 设备）或 Intune 
 若要创建适用于 Microsoft Edge 的应用配置，请执行以下操作：
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 选择“应用”   > “应用配置策略”   > “添加”  。
-3. 在“添加配置策略”窗格上，输入应用配置设置的“名称”和可选“描述”    。
-4. 对于“设备注册”类型，选择“托管应用”   。
-5. 选择“选择所需应用”  。 然后在“目标应用”窗格上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”或“Microsoft Edge”    。
-6. 选择“确定”，返回到“添加配置策略”窗格   。
-7. 选择“配置设置”  。 在“配置”  窗格上，定义键值对来为 Microsoft Edge 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
+2. 选择“应用” > “应用配置策略” > “添加”。
+3. 在“添加配置策略”窗格上，输入应用配置设置的“名称”和可选“描述”。
+4. 对于“设备注册”类型，选择“托管应用”。
+5. 选择“选择所需应用”。 然后在“目标应用”窗格上，选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”或“Microsoft Edge”。
+6. 选择“确定”，返回到“添加配置策略”窗格。
+7. 选择“配置设置”。 在“配置”窗格上，定义键值对来为 Microsoft Edge 提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
 
     > [!NOTE]
     > Microsoft Edge 使用与 Managed Browser 相同的键值对。 在 Android 上，Microsoft Edge 必须以应用保护策略为目标才能使应用配置策略生效。
 
-8. 完成后，选择“确定”  。
-9. 在“添加配置策略”窗格上，选择“添加”   。<br>
-    创建新配置后，其显示在“应用配置”  窗格上。
+8. 完成后，选择“确定”。
+9. 在“添加配置策略”窗格上，选择“添加”。<br>
+    创建新配置后，其显示在“应用配置”窗格上。
 
 ## <a name="assign-the-configuration-settings-you-created"></a>分配已创建的配置设置 
 
 将这些设置分配给 Azure AD 用户组。 如果用户安装了受保护的目标浏览器应用，则应用将按指定的设置进行管理。
 
-1. 在 Intune 移动应用程序管理仪表板的“应用”窗格上，选择“应用配置策略”   。
+1. 在 Intune 移动应用程序管理仪表板的“应用”窗格上，选择“应用配置策略”。
 2. 在应用配置列表中，选择一个想要分配的配置。
-3. 在下一个窗格上，选择“分配”  。
-4. 在“分配”窗格上，选择想要向其分配应用配置的 Azure AD 组，然后选择“确定”   。
+3. 在下一个窗格上，选择“分配”。
+4. 在“分配”窗格上，选择想要向其分配应用配置的 Azure AD 组，然后选择“确定”。
 
 ## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>将用户定向到 Microsoft Edge，而不是 Intune Managed Browser 
 
@@ -129,7 +129,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    值 `true` 将引导用户下载和使用 Microsoft Edge。<br>值 `false` 将引导用户使用 Intune Managed Browser。    |
 
-如果未设置此应用配置值，以下逻辑将定义打开企业链接所使用的浏览器。 
+如果未设置此应用配置值，以下逻辑将定义打开企业链接所使用的浏览器。
 
 在 Android 上：
 - 如果用户已在设备上同时下载 Intune Managed Browser 和 Microsoft Edge，则会启动 Intune Managed Browser。 
@@ -160,7 +160,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 > 更新的应用程序代理重定向数据最长可能需要 24 小时才能在 Managed Browser 和 Microsoft Edge 中生效。
 
 #### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>步骤 1：从 Outlook 启用指向 Microsoft Edge 的自动重定向
-为 Outlook 配置应用保护策略，该策略启用“使用策略托管浏览器共享 Web 内容”  设置。
+为 Outlook 配置应用保护策略，该策略启用“使用策略托管浏览器共享 Web 内容”设置。
 
 ![应用保护策略的屏幕截图 - 使用策略托管浏览器共享 Web 内容](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
@@ -181,7 +181,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 |    Key    |    值    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.homepage   |    指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例：   <`https://www.bing.com`>
+|    com.microsoft.intune.mam.managedbrowser.homepage   |    指定有效 URL。 将阻止错误的 URL，这是一项安全措施。<br>示例： <`https://www.bing.com`>
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>为 Microsoft Edge 中的新标签页配置组织徽标和品牌颜色
 
@@ -205,7 +205,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 |    Key    |    值    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.ShowIndustryNews    |    如果为 True，  将在 Microsoft Edge 移动版“新选项卡”页上显示行业新闻。<p>False  （默认值）将从新选项卡页隐藏行业新闻。    |
+|    com.microsoft.intune.ShowIndustryNews    |    如果为 True，将在 Microsoft Edge 移动版“新选项卡”页上显示行业新闻。<p>False（默认值）将从新选项卡页隐藏行业新闻。    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>为 Microsoft Edge 配置托管书签
 
@@ -217,7 +217,7 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 - 用户无法删除或修改这些书签。
 - 这些书签显示在列表顶部。 用户创建的任何书签显示在这些书签下方。
 - 如果已启用应用程序代理重定向，可以使用应用程序代理 Web 应用的内部或外部 URL 添加这些 Web 应用。
-- 在将 URL 输入列表时，确保对所有 URL 添加“http://”  或“https://”  作为前缀。
+- 在将 URL 输入列表时，确保对所有 URL 添加“http://”或“https://”作为前缀。
 
 使用以下键/值对来配置托管书签：
 
@@ -244,13 +244,13 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>允许的和阻止的站点列表的 URL 格式 
 可使用多种 URL 格式来构建允许/阻止的站点列表。 下表详细介绍了这些允许的模式。 开始之前，请注意以下几点： 
-- 在将 URL 输入列表时，确保对所有 URL 添加“http://”  或“https://”  作为前缀。
+- 在将 URL 输入列表时，确保对所有 URL 添加“http://”或“https://”作为前缀。
 - 可以根据以下允许模式列表中的规则使用通配符 (\*)。
-- 通配符只能匹配主机名中的整体部分（由句点分隔）或路径的整体部分（由正斜杠分隔）。 例如，不支持 `http://*contoso.com`  。
+- 通配符只能匹配主机名中的整体部分（由句点分隔）或路径的整体部分（由正斜杠分隔）。 例如，不支持 `http://*contoso.com`。
 - 可以在地址中指定端口号。 如果未指定端口号，则使用以下值：
   - 对于 http，使用端口 80
   - 对于 https，使用端口 443
-- 不支持对端口号使用通配符  。 例如，不支持 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。 
+- 不支持对端口号使用通配符。 例如，不支持 `http://www.contoso.com:*` 和 `http://www.contoso.com:*/`。 
 
     |    URL    |    详细信息    |    匹配    |    不匹配    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -285,16 +285,27 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 
 |    Key    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    “com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock”    |    True  会导致在 InPrivate 浏览中直接打开受限链接。<p>False  （默认值）将为用户提供一种选择，即使用 InPrivate 浏览或使用其个人（MSA）帐户打开受限链接。    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True**（默认值）：允许 Microsoft Edge 将用户转换到其个人上下文以打开阻止的站点。<p>**False**：阻止 Microsoft Edge 转换用户。 只会向用户显示一条消息，指示已阻止他们尝试访问的网站。    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>直接在 InPrivate 选项卡页中打开受限链接
 
-可以配置是否应该在 InPrivate 浏览中直接打开受限链接，这为用户提供了更无缝的浏览体验。 为此，用户可以跳过必须转换到其个人上下文来查看网站的步骤。 InPrivate 浏览被视为不受托管，因此用户在使用 InPrivate 浏览模式时将无法访问。 
+可以配置是否应该在 InPrivate 浏览中直接打开受限链接，这为用户提供了更无缝的浏览体验。 为此，用户可以跳过必须转换到其个人上下文来查看网站的步骤。 InPrivate 浏览被视为不受托管，因此用户在使用 InPrivate 浏览模式时将无法访问。
 
 |    Key    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True**：允许 Microsoft Edge 将用户转换到其个人上下文以打开阻止的站点。<p>**阻止**：阻止 Microsoft Edge 转换用户。 只会向用户显示一条消息，指示已阻止他们尝试访问的网站。    |
 
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>禁用 Microsoft Edge 关于保存密码的提示
+
+|    Key    |    值    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    True 会导致在 InPrivate 浏览中直接打开受限链接。<p>False（默认值）将为用户提供一种选择，即使用 InPrivate 浏览或使用其个人（MSA）帐户打开受限链接。    |
+
+默认情况下，iOS 上的 Microsoft Edge 会询问是否将用户密码保存到密钥链。 如果想为组织禁用此提示，请配置以下设置：
+
+|    Key    |    值    |
+|-----------|-------------|
+|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    “密码”将禁用“保存密码”提示。    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>在 iOS 上使用 Microsoft Edge 访问托管的应用日志 
 
@@ -312,9 +323,9 @@ Intune Managed Browser 和 Microsoft Edge 都可用作受策略保护的浏览�
 下面是 Microsoft Edge 的其他安全和隐私注意事项：
 
 - Microsoft Edge 不使用用户在其设备上为本机浏览器设置的设置，因为 Microsoft Edge 无法访问这些设置。
-- 可以在与 Microsoft Edge 关联的应用保护策略中配置“访问需要简单 PIN”或“访问需要公司凭据”选项   。 如果用户选择身份验证页上的帮助链接，则可以浏览任何 Internet 站点，而不考虑它们是否已添加到策略中的阻止列表。
+- 可以在与 Microsoft Edge 关联的应用保护策略中配置“访问需要简单 PIN”或“访问需要公司凭据”选项。 如果用户选择身份验证页上的帮助链接，则可以浏览任何 Internet 站点，而不考虑它们是否已添加到策略中的阻止列表。
 - Microsoft Edge 仅能在用户直接访问站点时阻止访问。 用户使用中间服务（例如翻译服务）访问站点时，该策略则不会阻止访问。
-- 若要允许身份验证和访问 Intune 文档，请从允许或阻止列表设置中移除 *.microsoft.com  。 始终允许。
+- 若要允许身份验证和访问 Intune 文档，请从允许或阻止列表设置中移除 *.microsoft.com。 始终允许。
 - 用户可以关闭数据收集。 Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**用法数据**设置关闭数据收集。 不具有对此数据的收集的控制。 在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
 
 ## <a name="next-steps"></a>后续步骤

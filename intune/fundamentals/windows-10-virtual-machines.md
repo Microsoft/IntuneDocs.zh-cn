@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9afaf2c8a63bfaed1fdb593baf42c8fa258d7893
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 486ca7eae1b1e8b016f44c735ec04a23145421a8
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74263112"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124973"
 ---
 # <a name="using-windows-10-virtual-machines-with-intune"></a>将 Windows 10 虚拟机与 Intune 配合使用
 
@@ -33,7 +33,7 @@ Intune 支持管理运行 Windows 10 企业版的虚拟机，但存在某些限�
 
 ## <a name="enrollment"></a>注册
 - 建议不要使用 Intune 管理按需会话主机虚拟机。 在创建每个 VM 后都必须进行注册。 此外，定期删除 VM 会使孤立的设备记录保留在 Intune 中，直到它们[被清理](../remote-actions/devices-wipe.md#automatically-delete-devices-with-cleanup-rules)。 
-- 不支持 Windows Autopilot 自部署模式，因为它需要受信任的平台模块 (TPM)。 
+- Windows Autopilot 自部署和白色手套部署类型不受支持，因为它们需要受信任的平台模块 (TPM) 实体。 
 - 只能使用 RDP 访问的 VM（如托管在 Azure 上的 VM）不支持全新体验 (OOBE) 注册。 此限制意味着：
     - 不支持 Windows Autopilot 和商用 OOBE。
     - 不支持设备上下文策略的“注册状态页”选项。
@@ -44,7 +44,7 @@ Intune 不支持任何利用受信任的平台模块或硬件管理的配置，�
 - [设备固件配置接口设置](../configuration/device-profiles.md#device-firmware-configuration-interface)
 
 ## <a name="reporting"></a>报表
-Intune 会自动检测虚拟机，并将其报告为“设备”   > “所有设备”  >“选择设备”>“概述”   > >“模型”  字段中的“虚拟机”。 
+Intune 会自动检测虚拟机，并将其报告为“设备” > “所有设备”>“选择设备”>“概述” > >“模型”字段中的“虚拟机”。 
 
 已解除分配的虚拟机可能会导致不合规的设备报告，因为它们无法[使用 Intune 服务签入](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
