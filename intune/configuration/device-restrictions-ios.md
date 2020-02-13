@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: HT
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.translationtype: MTE75
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754569"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051603"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 iOS 和 iPadOS 设备设置
 
@@ -420,8 +420,6 @@ ms.locfileid: "76754569"
   若要查找应用的 URL，请打开 iTunes App Store，并搜索该应用。 例如，搜索 `Microsoft Remote Desktop` 或 `Microsoft Word`。 选择应用并复制 URL。
 
   还可使用 iTunes 查找应用，然后使用“复制链接”任务获取应用 URL  。
-  
-  有关查找捆绑包 ID 的详细信息，请参阅[如何查找 iOS 应用程序的捆绑包 ID](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)。
 
 - **应用捆绑 ID**：输入所需的应用的应用[捆绑 ID](bundle-ids-built-in-ios-apps.md)。 可以显示或隐藏内置应用和业务线应用。 可在 Apple 网站上查看[内置的 Apple 应用](https://support.apple.com/HT208094)列表。
 - **应用名称**：输入所需应用的应用名称。 可以显示或隐藏内置应用和业务线应用。 可在 Apple 网站上查看[内置的 Apple 应用](https://support.apple.com/HT208094)列表。
@@ -559,7 +557,9 @@ ms.locfileid: "76754569"
 
 ## <a name="autonomous-single-app-mode"></a>自治单应用模式
 
-使用这些设置配置 iOS 设备，以自主单一应用模式运行特定应用。 配置此模式并运行应用时，将锁定设备。 因此该设备只能运行该应用。 例如，添加允许用户在设备上进行测试的应用。 应用的操作完成或删除此策略时，设备将恢复正常状态。
+使用这些设置配置 iOS/iPadOS 设备，以自主单一应用模式运行特定应用。 如果配置了此模式且用户启动了一个已配置的应用，则设备将锁定到该应用。 在用户退出允许的应用前，禁用应用/任务切换。
+
+例如，在学校或大学环境中，添加一个允许用户在设备上进行测试的应用。 或者，在最终用户进行身份验证前，将设备锁定在公司门户应用中。 在用户完成应用操作或你删除此策略时，设备将恢复正常状态。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>设置适用范围：自动设备注册（监督）
 
