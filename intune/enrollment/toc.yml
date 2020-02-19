@@ -20,7 +20,7 @@
   items:
     - name: 使用 Autopilot 注册 Windows 设备
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: 使用 DEP 注册 iOS 设备
+    - name: 使用 DEP 注册 iOS/iPadOS 设备
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: 概念
   items:
@@ -40,7 +40,7 @@
       href: device-enrollment-manager-enroll.md
     - name: 将设备映射到组
       href: device-group-mapping.md
-- name: 操作方式指南
+- name: 操作指南
   items:
     - name: 设置 Windows 注册
       items:
@@ -84,12 +84,12 @@
         - name: Samsung Knox 移动注册
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: 设置 iOS 注册
+    - name: 设置 iOS/iPadOS 注册
       href: ios-enroll.md
       items:
         - name: 设备注册程序
           href: device-enrollment-program-enroll-ios.md
-        - name: 设置 iOS 和 iPadOS 用户注册
+        - name: 设置 iOS/iPadOS 和 iPadOS 用户注册
           href: ios-user-enrollment.md
         - name: 用户注册支持的操作和选项
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: 设备注册疑难解答
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: iOS 设备注册疑难解答
+        - name: iOS/iPadOS 设备注册疑难解答
           href: troubleshoot-ios-enrollment-errors.md
         - name: Windows 设备注册疑难解答
           href: troubleshoot-windows-enrollment-errors.md
