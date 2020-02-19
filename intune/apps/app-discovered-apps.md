@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: a727cf03f53ee003c27708a04ad475f0b370c487
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75857037"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415003"
 ---
 # <a name="intune-discovered-apps"></a>Intune 发现的应用
 
@@ -59,7 +59,7 @@ Intune 还提供租户中单个设备的已发现应用的列表。
 | Windows 8.1 | 仅托管应用 | 仅托管应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Windows Phone 8 | 仅托管应用 | 仅托管应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Windows RT | 仅托管应用 | 仅托管应用 | 自设备注册时间起每隔 7 天刷新一次 |
-| iOS | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
+| iOS/iPadOS | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | macOS | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Android | 仅托管应用 | 设备上安装的所有应用 | 自设备注册时间起每隔 7 天刷新一次 |
 | Android Enterprise | 仅托管应用 | 仅工作配置文件中安装的应用 | 自设备注册时间起每隔 7 天刷新一次 |

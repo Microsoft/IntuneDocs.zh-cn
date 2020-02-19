@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77156304"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415066"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
 
@@ -126,23 +126,5 @@ Intune 将在即将发布的版本中支持 Android 5.x (Lollipop) 及更高版�
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
 使用最新的 Intune App SDK 包装应用。 还可以设置“要求最低操作系统版本(仅警告)”条件启动设置来通知个人设备上的最终用户进行升级。
-
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune 更改计划：即将停止支持 Windows 7<!-- 3042987 -->
-如我们在 2018 年 9 月发布的 MC148476 和在 2019 年 3 月再次发布的 MC176794 所述，将于 2020 年 1 月 14 日结束对 Windows 7 的延长支持。 到那时，Intune 将停止对运行 Windows 7 的设备的支持，因此我们可以将投资集中在支持较新的技术和提供出色的最终用户体验上。 在该日期后，有助于保护你的 Windows 7 PC 的技术协助和自动更新将不能再通过 Intune 获得。 Microsoft 强烈建议你在 2020 年 1 月之前迁移到 Windows 10，以避免所需服务或支持不再可用的情况。 有关 Windows 支持生命周期的详细信息，请参阅[此处](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-你收到此消息是因为你当前正在使用旧版 Intune PC 软件代理来管理 Windows 7 PC。 由于 Windows 7 延长支持结束之前的剩余时间已不到一年，我们强烈建议你的组织尽快开始升级到 Windows 10。  
-
-PC 管理功能直接内置于 Windows 10 操作系统中，你不再需要安装客户端代理，例如适用于 Windows 7 的 Intune 软件客户端。 从 Windows 8.1 开始，Microsoft 使用移动设备管理 (MDM) 体系结构来预配、配置、更新和管理 Windows PC。 设置 Intune 后，可以通过 MDM 通道[将 Windows 10 PC 注册到 Intune](..\windows-enroll.md)，从而简化 Windows 注册。 建议使用此“无代理”MDM 管理解决方案来管理 Windows 10 PC。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
-我们鼓励你的组织立即考虑此操作计划：
-
-- 在 2020 年 1 月 14 日之前计划并将 Windows 7 队伍升级到 Windows 10。
-- 浏览 [Windows 10 部署支持](https://docs.microsoft.com/windows/deployment/)，详细了解如何将现有的一系列 Windows 7 PC 升级到 Windows 10。
-- 查看帮助实现 Microsoft 应用程序兼容性保证的 FastTrack 所提供的[桌面应用保证](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1)。
-- 将现有的旧版 Intune 软件客户端托管设备转换为 Microsoft 推荐的解决方案，以便使用 MDM 管理来管理 Windows 10。 在 Azure 门户中使用 Intune 的 MDM 管理注册所有新的 Windows 10 PC。
-
-有关详细信息，请参阅[此处的博客文章](https://aka.ms/Windows7_Intune)。
 
 
