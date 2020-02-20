@@ -25,11 +25,11 @@
           href: device-restart.md
     - name: Apple 设备操作
       items:
-        - name: 找到丢失的 iOS 设备
+        - name: 找到丢失的 iOS/iPadOS 设备
           href: device-locate.md
-        - name: 启用 iOS 丢失模式
+        - name: 启用 iOS/iPadOSOS 丢失模式
           href: device-lost-mode.md
-        - name: 开启 iOS 监督模式
+        - name: 开启 iOS/iPadOS 监督模式
           href: device-supervised-mode.md
         - name: 清除 macOS 设备
           href: device-erase.md

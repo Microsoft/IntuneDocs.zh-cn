@@ -12,12 +12,12 @@ metadata:
   author: ErikjeMS
   ms.author: erikje
   ms.date: 09/13/2019
-  ms.openlocfilehash: 726efeb7ea552db423332617fff074dbc14f478d
-  ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+  ms.openlocfilehash: d4c2a3b09a4c63b87109322a139bdbddefbe5458
+  ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/26/2020
-  ms.locfileid: "76753991"
+  ms.lasthandoff: 02/18/2020
+  ms.locfileid: "77438032"
 landingContent:
 - title: 远程运行设备操作
   linkLists:
@@ -71,11 +71,11 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 定位 iOS 设备
+    - text: 找到 iOS/iPadOS 设备
       url: device-locate.md
-    - text: 开启 iOS 监督模式
+    - text: 开启 iOS/iPadOS 监督模式
       url: device-supervised-mode.md
-    - text: 打开 iOS 丢失模式
+    - text: 开启 iOS/iPadOS 丢失模式
       url: device-lost-mode.md
     - text: 从 macOS 设备清除数据
       url: device-erase.md
