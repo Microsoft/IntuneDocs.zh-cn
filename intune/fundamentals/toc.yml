@@ -63,7 +63,7 @@
       href: manage-os-versions.md
     - name: 管理 Windows Holographic
       href: windows-holographic-for-business.md
-- name: 操作方式指南
+- name: 操作指南
   items:
     - name: 规划部署
       items:
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: 如何获取 Android 应用
               href: end-user-apps-android.md
-            - name: 如何获取 iOS 应用
+            - name: 如何获取 iOS/iPadOS 应用
               href: end-user-apps-ios.md
             - name: 如何获取 Windows 应用
               href: end-user-apps-windows.md
@@ -201,18 +201,18 @@
           href: tenant-status.md
         - name: 帮助用户排查问题
           href: help-desk-operators.md
-        - name: Intune 活动的审核日志
-          href: monitor-audit-logs.md
-        - name: 使用 Azure Monitor 查看日志
-          href: review-logs-using-azure-monitor.md
         - name: 使用 Intune 文档
           href: use-docs.md
         - name: 获取支持
           href: get-support.md
-    - name: Reports
+    - name: 报表
       items:
         - name: Intune 报表
           href: reports.md
+        - name: Intune 活动的审核日志
+          href: monitor-audit-logs.md
+        - name: 使用 Azure Monitor 查看日志
+          href: review-logs-using-azure-monitor.md
 - name: 参考
   items:
     - name: 错误代码和描述
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Intune 经典组
           href: groups-get-started.md
-        - name: iOS 教育设置
+        - name: iOS/iPadOS 教育设置
           items:
             - name: iPad
               href: education-settings-configure-ios.md

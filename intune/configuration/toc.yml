@@ -23,7 +23,7 @@
           href: administrative-templates-windows.md
         - name: 使用管理模板更新 Office
           href: administrative-templates-update-office.md
-    - name: iOS 和 MacOS 上的设备功能
+    - name: iOS/iPadOS 和 macOS 上的设备功能
       href: device-features-configure.md
     - name: 限制设备设置和功能
       href: device-restrictions-configure.md
@@ -47,7 +47,7 @@
       items:
         - name: 面向 Android 的每应用 VPN
           href: android-pulse-secure-per-app-vpn.md
-        - name: 面向 iOS 的每应用 VPN
+        - name: 面向 iOS/iPadOS 的每应用 VPN
           href: vpn-setting-configure-per-app.md
     - name: Wi-Fi 网络
       href: wi-fi-settings-configure.md
@@ -117,7 +117,7 @@
               href: wi-fi-settings-android-enterprise.md
             - name: 自定义
               href: custom-settings-android-for-work.md
-        - name: iOS
+        - name: iOS/iPadOS
           items:
             - name: 设备功能
               href: ios-device-features-settings.md
