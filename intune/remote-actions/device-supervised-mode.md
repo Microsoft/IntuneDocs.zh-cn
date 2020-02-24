@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft Intune 开启 iOS 监督模式
+title: 使用 Microsoft Intune 开启 iOS/iPadOS 监督模式
 titleSuffix: ''
-description: 了解如何使用 Intune 开启 iOS 监督模式。
+description: 了解如何使用 Intune 开启 iOS/iPadOS 监督模式。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713408"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413663"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>开启 iOS 监督模式
+# <a name="turn-on-iosipados-supervised-mode"></a>开启 iOS/iPadOS 监督模式
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple iOS 监督模式为管理员提供更多用于管理 Apple 设备的选择，很适合用于大规模部署的公司设备。 例如，可限制 AirDrop 或阻止用户更改设备的名称。 有关需要监督模式的设置的列表，请参阅 [Intune 中的 iOS 设备限制设置](../configuration/device-restrictions-ios.md)。
+Apple iOS/iPadOS 监督模式为管理员提供更多用于管理 Apple 设备的选择，很适合用于大规模部署的公司设备。 例如，可限制 AirDrop 或阻止用户更改设备的名称。 有关需要监督模式的设置的列表，请参阅 [Intune 中的 iOS 设备限制设置](../configuration/device-restrictions-ios.md)。
 
 在 Apple [设备注册计划 (DEP)](../enrollment/device-enrollment-program-enroll-ios.md) 中，Intune 支持监督模式。
 
@@ -41,7 +41,7 @@ Apple iOS 监督模式为管理员提供更多用于管理 Apple 设备的选择
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>在注册后启用监督模式
 
-注册后，启用监督模式的唯一[方法是将 iOS 设备连接到 Mac](../enrollment/apple-configurator-enroll-ios.md) 并使用 Apple Configurator（该操作会重置设备）。 注册后无法在 Intune 中为设备配置监督模式。
+注册后，启用监督模式的唯一方法是将 iOS/iPadOS 设备连接到 Mac 并[使用 Apple Configurator](../enrollment/apple-configurator-enroll-ios.md)（该操作会重置设备）。 注册后无法在 Intune 中为设备配置监督模式。
 
 ## <a name="identify-a-supervised-device"></a>标识监督的设备
 

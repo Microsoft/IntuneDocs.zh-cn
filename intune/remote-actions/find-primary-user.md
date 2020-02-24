@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712253"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413680"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>查找 Intune 设备的主要用户
 
@@ -67,8 +67,8 @@ Intune 会在注册过程中或不久后自动将主要用户添加到设备。 
 | Windows | Azure AD 联接（Autopilot 自部署模式） | 无 | “不适用” | 
 | 跨平台 | 使用公司门户应用进行用户驱动的注册 | 注册用户 | 在注册过程中 |
 | 跨平台 | 设备注册管理员 (DEM) | 注册 DEM 用户 | 在注册过程中 |
-| iOS、macOS | Apple 自动设备注册（具有用户关联的 DEP） | 注册用户 | 在注册过程中 |
-| iOS、macOS | Apple 自动设备注册（没有用户关联的 DEP） | 无 | “不适用” |
+| iOS/iPadOS、macOS | Apple 自动设备注册（具有用户关联的 DEP） | 注册用户 | 在注册过程中 |
+| iOS/iPadOS、macOS | Apple 自动设备注册（没有用户关联的 DEP） | 无 | “不适用” |
 | Android | Android 公司拥有的专用设备 | 无 | “不适用” |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>主要用户和 Azure AD 设备所有者

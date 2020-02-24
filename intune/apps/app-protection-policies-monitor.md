@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205252"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437964"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何监视应用保护策略
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ ms.locfileid: "75205252"
 - **已标记用户**：遇到设备问题的用户数。 将已越狱 (iOS) 和取得 root 权限的设备报告在“已标记用户”下  。 此外，在此处报告具有由 Google SafetyNet 设备证明检查（如果 IT 管理员已启用）标记的设备的用户。 
 - **使用潜在有害应用的用户**：Android 设备上可能存在 Google Play Protect 检测到的有害应用的用户数。 
 - “iOS 用户状态”和“Android 用户状态”   ：已在相关平台的工作环境中使用某应用且已分配到策略的用户数。 此信息显示策略托管的用户数量，以及正在工作环境中使用任何策略均不以其为目标的应用的用户数。 可以考虑将这些用户添加到策略。
-- **受保护的热门 iOS 应用**和**受保护的热门 Android 应用**：根据最常用的 iOS 和 Android 应用，此信息显示平台保护和未保护的应用数。
-- **未注册的热门已配置 iOS 应用**和**未注册的热门已配置 Android 应用**：根据未注册设备的最常用的 iOS 和 Android 应用，此信息显示平台已配置的应用数（例如使用应用配置策略）。
+- **受保护的热门 iOS/iPadOS 应用**和**受保护的热门 Android 应用**：根据最常用的 iOS/iPadOS 和 Android 应用，此信息显示平台保护和未保护的应用数。
+- **未注册的热门已配置 iOS/iPadOS 应用**和**未注册的热门已配置 Android 应用**：根据未注册设备的最常用的 iOS/iPadOS 和 Android 应用，此信息显示平台已配置的应用数（例如使用应用配置策略）。
 
     > [!NOTE]
     > 如果每个平台有多个策略且已至少为某个用户分配了一个策略，则该用户被视为由策略管理。
@@ -170,9 +170,9 @@ ms.locfileid: "75205252"
     ![“保存报表”确认框的屏幕截图](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune 提供其他设备报告字段，包括 Android 注册 ID、Android 制造商、模型和安全修补程序版本以及 iOS 型号。 在 Intune 中，通过选择“应用” > “应用保护状态” > “应用保护报告: iOS、Android”来访问这些字段    。 此外，这些参数将帮助你配置设备制造商“允许”  列表 (Android)、设备型号的“允许”  列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。    
+> Intune 提供其他设备报告字段，包括应用注册 ID、Android 制造商、模型和安全修补程序版本以及 iOS/iPadOS 型号。 在 Intune 中，通过选择“应用” > “应用保护状态” > “应用保护报告: iOS/iPadOS、Android”来访问这些字段    。 此外，这些参数将帮助你配置设备制造商“允许”  列表 (Android)、设备型号的“允许”  列表（Android 和 iOS）和最低 Android 安全修补程序版本设置。    
  
 ## <a name="see-also"></a>另请参阅
-- [管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)
+- [管理 iOS/iPadOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)
 - [Android 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-android.md)
-- [iOS 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-ios.md)
+- [iOS/iPadOS 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-ios.md)

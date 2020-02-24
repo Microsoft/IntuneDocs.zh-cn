@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c980b3f9ababaf94aa7b279e533679ed74b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6941b3b79dd690c9861c8efead7f525e56e2b350
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503375"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415420"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作配置文件设备
 
@@ -55,7 +55,7 @@ Android 企业提供基础结构，用于将应用配置值部署到支持它们
 
 ## <a name="email-configuration"></a>电子邮件配置
 
-Android 企业不提供默认电子邮件应用或如 iOS 提供的本机电子邮件配置文件对象。 而可以通过将应用配置设置应用到支持它们的电子邮件应用中，来设置电子邮件配置。 Gmail 和 Nine Work 是 Play Store 中的两种 Exchange ActiveSync (EAS) 客户端应用，它们支持使用 Android 企业应用配置进行配置。
+Android 企业不提供默认电子邮件应用或如 iOS/iPadOS 提供的本机电子邮件配置文件对象。 而可以通过将应用配置设置应用到支持它们的电子邮件应用中，来设置电子邮件配置。 Gmail 和 Nine Work 是 Play Store 中的两种 Exchange ActiveSync (EAS) 客户端应用，它们支持使用 Android 企业应用配置进行配置。
 
 在 Gmail 和 Nine Work 应用作为工作应用管理时，Intune 为其提供配置模板。 其他支持应用配置的配置文件的电子邮件应用可使用移动应用配置策略进行配置。
 

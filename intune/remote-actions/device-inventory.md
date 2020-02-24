@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754195"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413749"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -73,25 +73,25 @@ ms.locfileid: "76754195"
 |安全修补程序级别|设备的安全修补程序级别。|Android|
 |总存储空间|设备上的总存储空间（以千兆字节为单位）。|Windows、iOS|
 |可用存储空间|设备上未使用的存储空间（以千兆字节为单位）。|Windows、iOS|
-|IMEI|设备的国际移动设备识别。|Windows、iOS、Android|
-|MEID|设备的移动设备标识符。|Windows、iOS、Android|
-|制造商|设备制造商。|Windows、iOS、Android|
-|型号|设备型号。|Windows、iOS、Android|
-|电话号码|分配给设备的电话号码。|Windows、iOS、Android*|
-|订阅运营商|设备的无线运营商。|Windows、iOS、Android|
-|蜂窝技术|设备使用的无线系统。|Windows、iOS、Android|
-|Wi-Fi MAC|设备的媒体访问控制地址。|Windows、iOS、Android|
-|ICCID|集成电路卡标识符，即 SIM 卡的唯一标识号。|Windows、iOS、Android|
-|注册日期|设备在 Intune 中注册的日期和时间。|Windows、iOS、Android|
-|上次联系|设备上次连接到 Intune 的日期和时间。|Windows、iOS、Android|
+|IMEI|设备的国际移动设备识别。|Windows、iOS/iPadOS、Android|
+|MEID|设备的移动设备标识符。|Windows、iOS/iPadOS、Android|
+|制造商|设备制造商。|Windows、iOS/iPadOS、Android|
+|型号|设备型号。|Windows、iOS/iPadOS、Android|
+|电话号码|分配给设备的电话号码。|Windows、iOS/iPadOS、Android*|
+|订阅运营商|设备的无线运营商。|Windows、iOS/iPadOS、Android|
+|蜂窝技术|设备使用的无线系统。|Windows、iOS/iPadOS、Android|
+|Wi-Fi MAC|设备的媒体访问控制地址。|Windows、iOS/iPadOS、Android|
+|ICCID|集成电路卡标识符，即 SIM 卡的唯一标识号。|Windows、iOS/iPadOS、Android|
+|注册日期|设备在 Intune 中注册的日期和时间。|Windows、iOS/iPadOS、Android|
+|上次联系|设备上次连接到 Intune 的日期和时间。|Windows、iOS/iPadOS、Android|
 |激活锁旁路代码|可用于禁用激活锁的代码。|iOS|
-|已注册 Azure AD|如果为“是”  ，则设备已向 Azure Directory 注册。|Windows、iOS、Android|
-|已注册 Intune|如果为“是”  ，则设备已向 Intune 注册。|Windows、iOS、Android|
-|合规性|设备的符合性状态。|Windows、iOS、Android|
-|已激活 EAS|如果为“是”  ，则设备已于 Exchange 邮箱同步。|Windows、iOS、Android|
-|EAS 激活 ID|设备的 Exchange ActiveSync 标识符。|Windows、iOS、Android|
-|受到监督|如果为“是”  ，管理员对设备的控制增强。|Windows、iOS、Android|
-|已加密|如果为“是”  ，则设备上存储的数据已加密。|Windows、iOS、Android|
+|已注册 Azure AD|如果为“是”  ，则设备已向 Azure Directory 注册。|Windows、iOS/iPadOS、Android|
+|已注册 Intune|如果为“是”  ，则设备已向 Intune 注册。|Windows、iOS/iPadOS、Android|
+|合规性|设备的符合性状态。|Windows、iOS/iPadOS、Android|
+|已激活 EAS|如果为“是”  ，则设备已于 Exchange 邮箱同步。|Windows、iOS/iPadOS、Android|
+|EAS 激活 ID|设备的 Exchange ActiveSync 标识符。|Windows、iOS/iPadOS、Android|
+|受到监督|如果为“是”  ，管理员对设备的控制增强。|Windows、iOS/iPadOS、Android|
+|已加密|如果为“是”  ，则设备上存储的数据已加密。|Windows、iOS/iPadOS、Android|
 
 > [!Note]  
 > Android Enterprise 专用设备或完全托管设备上未列出电话号码清单。

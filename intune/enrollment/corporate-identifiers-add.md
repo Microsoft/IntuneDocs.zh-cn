@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 51538f8994557bba718f0e8344b1da8d3c7193fa
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956297"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414405"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>将设备标识为“公司自有”
 
@@ -54,7 +54,7 @@ ms.locfileid: "75956297"
 | 设备管理员托管的 Android OS v10 | 不支持 | 不支持 |
 | 其他 Android | 不支持 | 支持 |
 
-<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS/iPadOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [了解如何查找 Apple 设备序列号](https://support.apple.com/HT204308)。<br>
 [了解如何查找 Android 设备序列号](https://support.google.com/store/answer/3333000)。
@@ -77,8 +77,8 @@ ms.locfileid: "75956297"
 ```
 
 > [!IMPORTANT]
-> 某些 Android 和 iOS 设备具有多个 IMEI 号码。 对于每个已注册的设备，Intune 仅读取一个 IMEI 号码。 如果导入一个 IMEI 号码，但它与 Intune 列出的 IMEI 不符，在这种情况下，就会将设备归类为个人设备，而非公司拥有的设备。 如果为设备导入多个 IMEI 号码，则未列出号码的注册状态将显示为“未知”  。<br>
->另请注意：建议以序列号的形式标识 iOS 设备。
+> 某些 Android 和 iOS/iPadOS 设备具有多个 IMEI 号码。 对于每个已注册的设备，Intune 仅读取一个 IMEI 号码。 如果导入一个 IMEI 号码，但它与 Intune 列出的 IMEI 不符，在这种情况下，就会将设备归类为个人设备，而非公司拥有的设备。 如果为设备导入多个 IMEI 号码，则未列出号码的注册状态将显示为“未知”  。<br>
+>另请注意：建议以序列号的形式标识 iOS/iPadOS 设备。
 >不保证 Android 序列号存在或是唯一的。 请与你的设备提供商核实，以明确序列号是否是可信的设备 ID。
 >设备向 Intune 报告的序列号可能与设备的“Android 设置/关于”菜单中显示的 ID 不一致。 请验证设备制造商报告的序列号的类型。
 >尝试上传其序列号中包含点 (.) 的文件将导致上传失败。 不支持包含点的序列号。

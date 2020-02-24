@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c4218dc02f11b9ada07126ce24d6dc4080b23ec
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0b16ab43a2b2c3b2a38aeee14614f2c8361c3d83
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692136"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415424"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>使用 Microsoft Intune 管理批量购买的应用和书籍
 
@@ -39,6 +39,6 @@ Microsoft Intune 可帮助你管理通过此类计划购买的应用和书籍。
 
 使用 Intune。可以管理从 iOS 应用商店批量购买的应用和书籍，以及从适用于企业的 Microsoft 应用商店购买的应用。 若要了解如何管理从每个商店购买的具有许可证的应用，请选择下面的主题之一：
 
-- [管理批量购买的 iOS 应用](vpp-apps-ios.md)
+- [管理批量购买的 iOS/iPadOS 应用](vpp-apps-ios.md)
 - [管理从适用于企业的 Microsoft 应用商店批量购买的应用](windows-store-for-business.md)
-- [如何管理 iOS 电子书](vpp-ebooks-ios.md)
+- [如何管理 iOS/iPadOS 电子书](vpp-ebooks-ios.md)

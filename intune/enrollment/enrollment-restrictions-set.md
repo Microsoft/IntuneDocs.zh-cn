@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971858"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415309"
 ---
 # <a name="set-enrollment-restrictions"></a>设置注册限制
 
@@ -44,11 +44,11 @@ ms.locfileid: "76971858"
 - 可注册的设备平台：
   - Android 设备管理员
   - Android Enterprise 工作配置文件
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- 适用于 iOS、Android 设备管理员、Android Enterprise 工作配置文件、Windows 和 Windows Mobile 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
+- 适用于 iOS/iPadOS、Android 设备管理员、Android Enterprise 工作配置文件、Windows 和 Windows Mobile 的平台操作系统版本。 （仅可使用 Windows 10 版本。 如果允许 Windows 8.1，请将此处留空。）
   - 最低版本。
   - 最高版本。
 - 限制[个人拥有的设备](device-enrollment.md#bring-your-own-device)（仅限 iOS、Android 设备管理员、Android Enterprise 工作配置文件、macOS、Windows 和 Windows Mobile）。
@@ -67,7 +67,7 @@ ms.locfileid: "76971858"
 5. 在“版本”中，选择想要允许的平台支持的最低版本和最高版本。  版本限制仅适用于向公司门户注册的设备。
      支持的版本格式包括：
     - Android 设备管理员和 Android Enterprise 工作配置文件支持 major.minor.rev.build。
-    - iOS 支持 major.minor.rev。操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
+    - iOS/iPadOS 支持 major.minor.rev。操作系统版本不会应用于使用设备注册计划、Apple School Manager 或 Apple Configurator 应用注册的 Apple 设备。
     - Windows 仅对 Windows 10 支持 major.minor.build.rev。
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ ms.locfileid: "76971858"
 \* 如果通过 Autopilot 注册，则不会受到阻止。
 
 
-## <a name="blocking-personal-ios-devices"></a>阻止个人 iOS 设备
-默认情况下，Intune 将 iOS 设备分类为个人拥有的设备。 若要分类为公司拥有的设备，iOS 设备必须满足以下条件之一：
+## <a name="blocking-personal-iosipados-devices"></a>阻止个人 iOS/iPadOS 设备
+默认情况下，Intune 将 iOS/iPadOS 设备分类为个人拥有的设备。 若要分类为公司拥有的设备，iOS/iPadOS 设备必须满足以下条件之一：
 - 已使用序列号或 IMEI 注册。
 - 已使用自动设备注册（以前称为设备注册计划）注册
 

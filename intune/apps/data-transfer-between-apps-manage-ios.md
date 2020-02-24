@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839304"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414883"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输
 
@@ -45,7 +45,7 @@ ms.locfileid: "75839304"
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>为 Microsoft Intune 或第三方 EMM 配置用户 UPN 设置
 需要配置用户 UPN 设置，才能使 Intune 或第三方 EMM 解决方案管理的设备识别已注册用户帐户  。 UPN 配置可与从 Intune 中部署的应用保护策略一同使用。 下述过程是配置 UPN 设置的一般流程以及该过程所产生的用户体验：
 
-1. 在 [Azure 门户](https://portal.azure.com)中，为 iOS [创建并分配应用保护策略](app-protection-policies.md)。 根据公司要求配置策略设置，并选择应使用此策略的 iOS 应用。
+1. 在 [Azure 门户](https://portal.azure.com)中，为 iOS/iPadOS [创建并分配应用保护策略](app-protection-policies.md)。 根据公司要求配置策略设置，并选择应使用此策略的 iOS 应用。
 
 2. 使用下面的常规步骤，通过 Intune 或第三方 MDM 解决方案，部署想要托管的应用和电子邮件配置文件。 示例 1 中也涵盖了这一体验  。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f0976ff8e6ec45f1f861fd4a4e0474255d701ae4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955365"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414257"
 ---
 # <a name="categorize-devices-into-groups"></a>将设备分类到组中
 
@@ -32,7 +32,7 @@ ms.locfileid: "74955365"
 
 设备类别使用以下工作流：
 1. 创建可供用户在注册设备时选择的类别。
-2. 当 iOS 和 Android 设备的用户注册设备时，他们必须从你配置的类别列表中选择一个类别。 若要向 Windows 分配一个类别，用户必须使用公司门户网站。
+2. 当 iOS/iPadOS 和 Android 设备的用户注册设备时，他们必须从你配置的类别列表中选择一个类别。 若要向 Windows 分配一个类别，用户必须使用公司门户网站。
 3. 你随后可以将策略和应用部署到这些组。
 
 可以创建任何所需的设备类别。 例如：
@@ -52,7 +52,7 @@ ms.locfileid: "74955365"
 
 在步骤 2 中创建 Azure Active Directory (Azure AD) 安全组时将使用设备类别名称。
 
-### <a name="step-2-create-azure-active-directory-security-groups"></a>步骤 2：创建 Azure Active Directory 安全组
+### <a name="step-2-create-azure-active-directory-security-groups"></a>步骤 2:创建 Azure Active Directory 安全组
 在此步骤中，你将在 Azure 门户中基于设备类别和设备类别名称创建动态组。
 
 若要继续，请参阅 Azure AD 文档中的[使用属性创建高级规则](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)。
@@ -76,13 +76,13 @@ ms.locfileid: "74955365"
 
 ## <a name="after-you-configure-device-groups"></a>配置设备组之后
 
-当 iOS 和 Android 设备的用户注册其设备时，他们必须从你配置的类别列表中选择一个类别。 选择某个类别并完成注册后，他们的设备将添加到与他们选择的类别相对应的 Intune 设备组或 Active Directory 安全组。
+当 iOS/iPadOS 和 Android 设备的用户注册设备时，他们必须从你配置的类别列表中选择一个类别。 选择某个类别并完成注册后，他们的设备将添加到与他们选择的类别相对应的 Intune 设备组或 Active Directory 安全组。
 
 Windows 用户应使用公司门户网站选择类别。
 
 无论采用何种平台，用户在注册设备后始终可以转到 portal.manage.microsoft.com。 让用户访问公司门户网站，并转到“我的设备”  。 用户可以选择页面上列出的一个已注册设备，然后选择一个类别。
 
-选择类别后，该设备将自动添加到你创建的对应组。 如果在你配置类别之前设备已注册，则用户会在公司门户网站上看到一条有关该设备的通知。 这样可以让用户知道他们应在下次使用 iOS 或 Android 设备访问公司门户应用时选择类别。
+选择类别后，该设备将自动添加到你创建的对应组。 如果在你配置类别之前设备已注册，则用户会在公司门户网站上看到一条有关该设备的通知。 这样可以让用户知道他们应在下次使用 iOS/iPadOS 或 Android 设备访问公司门户应用时选择类别。
 
 ## <a name="further-information"></a>更多信息
 - 虽然可以在 Azure 门户中编辑设备类别，但必须手动更新引用此类别的任何 Azure AD 安全组。

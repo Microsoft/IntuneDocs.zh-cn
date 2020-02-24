@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206901"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415485"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教程：配置 Slack 以将 Intune 用于 EMM 和应用配置
 
@@ -69,7 +69,7 @@ Slack 是一款可与 Microsoft Intune 结合使用的协作应用。
 10. 单击 **“保存”** 。
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>为用于 EMM 的 Slack 添加应用配置策略
-为 iOS 版用于 EMM 的 Slack 添加应用配置策略。 托管设备的应用配置策略都是特定于平台的，因此需要为 Android 设备的 Slack 用户添加单独的策略。
+为 iOS/iPadOS 版用于 EMM 的 Slack 添加应用配置策略。 托管设备的应用配置策略都是特定于平台的，因此需要为 Android 设备的 Slack 用户添加单独的策略。
 1. 在管理中心中，选择“应用” >    “应用配置策略” >   “添加” >   “托管设备”。
 2. 在“名称”中输入“Slack 应用配置策略测试”。
 3. 在“设备注册类型”下，确认设置了“托管设备”。 

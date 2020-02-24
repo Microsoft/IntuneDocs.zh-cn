@@ -1,7 +1,7 @@
 ---
-title: iOS 设备注册 - Apple Configurator 设置助理
+title: iOS/iPadOS 设备注册 - Apple Configurator 设置助理
 titleSuffix: Microsoft Intune
-description: 了解如何通过 Apple Configurator 使用设置助理来注册公司拥有的 iOS 设备。
+description: 了解如何通过 Apple Configurator 使用设置助理来注册公司拥有的 iOS/iPadOS 设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,26 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 8ccd41b6ebc9bdf62c1603e508cb881a1be62ee7
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691802"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415400"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>通过 Apple Configurator 设置 iOS 设备注册
+# <a name="set-up-iosipados-device-enrollment-with-apple-configurator"></a>通过 Apple Configurator 设置 iOS/iPadOS 设备注册
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune 支持注册 iOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)。 使用 Apple Configurator 进行注册时，需要通过 USB 将每个 iOS 设备连接到 Mac 计算机来设置公司注册过程。 你可采用两种方式使用 Apple Configurator 将设备注册到 Intune：
+Intune 支持注册 iOS/iPadOS 设备，方法是使用在 Mac 计算机上运行的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)。 使用 Apple Configurator 进行注册时，需要通过 USB 将每个 iOS/iPadOS 设备连接到 Mac 计算机来设置公司注册过程。 你可采用两种方式使用 Apple Configurator 将设备注册到 Intune：
 - **设置助理注册** – 擦除设备，使其准备好在设置助理期间进行注册。
-- **直接注册** - 不擦除设备，并通过 iOS 设置注册设备。 此方法适仅支持“无用户关联”  的设备。
+- **直接注册** - 不擦除设备，并通过 iOS/iPadOS 设置注册设备。 此方法适仅支持“无用户关联”  的设备。
 
 Apple Configurator 注册方法不能与[设备注册管理器](device-enrollment-manager-enroll.md)同时使用。
 
 ## <a name="prerequisites"></a>必备条件
 
-- 具有 iOS 设备的物理访问权限
+- 具有 iOS/iPadOS 设备的物理访问权限
 - [设置 MDM 机构](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - 设备序列号（仅设置助理注册）
@@ -46,7 +46,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>为设备创建 Apple Configurator 配置文件
 
-设备注册配置文件定义在注册期间应用的设置。 这些设置只应用一次。 按照以下步骤创建注册配置文件，使用 Apple Configurator 注册 iOS 设备。
+设备注册配置文件定义在注册期间应用的设置。 这些设置只应用一次。 按照以下步骤创建注册配置文件，使用 Apple Configurator 注册 iOS/iPadOS 设备。
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “iOS”   > “iOS 注册”   > “Apple 配置器”   > “配置文件”   > “创建”  。
 
@@ -87,7 +87,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
     F7TLWCLBX196,设备详细信息</br>
     DLXQPCWVGHMJ，设备详细信息
 
-   [了解如何查找 iOS 设备序列号](https://support.apple.com/HT204073)。
+   了解[如何查找 iOS/iPadOS 设备序列号](https://support.apple.com/HT204073)。
 2. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “iOS”   > “iOS 注册”   > “Apple 配置器”   > “设备”   > “添加”  。
 
 5. 选择一个注册配置文件  ，将其应用于导入的序列号。 如果想要让新的序列号详细信息覆盖现有的所有详细信息，请选择“覆盖现有标识符的详细信息”  。
@@ -95,7 +95,7 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 
 ### <a name="reassign-a-profile-to-device-serial-numbers"></a>将配置文件重新分配给设备序列号
 
-为 Apple Configurator 注册导入 iOS 序列号时，可分配注册配置文件。 此外，还可从 Azure 门户中的以下两个位置分配配置文件：
+为 Apple Configurator 注册导入 iOS/iPadOS 序列号时，可分配注册配置文件。 此外，还可从 Azure 门户中的以下两个位置分配配置文件：
 - Apple Configurator 设备 
 - AC 配置文件 
 
@@ -113,9 +113,9 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “iOS”   > “iOS 注册”   > “Apple 配置器”   > “配置文件”  > 选择要导出的配置文件。
 2. 在配置文件上，选择“导出配置文件”  。
-3. 复制“配置文件 URL”  。 然后可在 Apple Configurator 中添加它，以定义 iOS 设备使用的 Intune 配置文件。
+3. 复制“配置文件 URL”  。 然后可在 Apple Configurator 中添加它，以定义 iOS/iPadOS 设备使用的 Intune 配置文件。
 
-   接下列按照以下过程将此配置文件导入 Apple Configurator，定义 iOS 设备使用的 Intune 配置文件。
+   接下来按照以下过程将此配置文件导入 Apple Configurator，定义 iOS/iPadOS 设备使用的 Intune 配置文件。
 
 ### <a name="enroll-devices-with-setup-assistant"></a>使用设置助理注册设备
 
@@ -125,50 +125,50 @@ Apple Configurator 注册方法不能与[设备注册管理器](device-enrollmen
     > 如果设备已注册 Apple ID 帐户，则必须先从 Apple iCloud 中删除该设备，然后才能开始注册过程。 提示错误显示为“无法激活 [设备名称]”。
 
 2. 在“首选项”  窗格中，选择“服务器”  ，然后选择加号 (+) 启动 MDM 服务器向导。 选择“下一步”  。
-3. 在使用 Microsoft Intune 对 iOS 设备注册设置助理的情况下，为 MDM 服务器输入主机名称或 URL以及注册 URL   。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择“下一步”  。  
+3. 在使用 Microsoft Intune 对 iOS/iPadOS 设备注册设置助理的情况下，为 MDM 服务器输入主机名称或 URL 以及注册 URL   。 对于注册 URL，请输入从 Intune 中导出的注册配置文件 URL。 选择“下一步”  。  
     可安全忽略警告“未验证服务器 URL”。 若要继续，请选择“下一步”  ，直到完成该向导。
-4. 用 USB 适配器将 iOS 移动设备连接到 Mac 计算机。
-5. 选择要管理的 iOS 设备，然后选择“准备”  。 在“准备 iOS 设备”窗格上，选择“手动”，然后选择“下一步”。   
+4. 用 USB 适配器将 iOS/iPadOS 移动设备连接到 Mac 计算机。
+5. 选择要管理的 iOS/iPadOS 设备，然后选择“准备”  。 在“准备 iOS/iPadOS 设备”窗格上，选择“手动”，然后选择“下一步”。   
 6. 在“在 MDM 服务器中注册”  窗格上，选择你创建的服务器名称，然后选择“下一步”  。
 7. 在“监督设备”窗格上，选择监督级别，然后选择“下一步”。  
 8. 在“创建组织”  窗格上，选择“组织”  或创建新的组织，然后选择“下一步”  。
-9. 在“配置 iOS 设置助理”  上，选择要提供给用户的步骤，然后选择“准备”  。 如果出现系统提示，请进行身份验证以更新信任设置。  
-10. iOS 设备完成准备后，断开 USB 电缆的连接。  
+9. 在“配置 iOS/iPadOS 设置助理”  窗格上，选择要提供给用户的步骤，然后选择“准备”  。 如果出现系统提示，请进行身份验证以更新信任设置。  
+10. iOS/iPadOS 设备完成准备后，断开 USB 电缆的连接。  
 
-### <a name="distribute-devices"></a>分配设备
-设备现已准备好进行企业注册。 关闭设备，并将它们分发给用户。 用户打开其设备时，设置助理启动。
+### <a name="distribute-devices"></a>分发设备
+设备现已准备好企业注册。 关闭设备，并将它们分发给用户。 用户打开其设备时，设置助理启动。
 
 用户收到设备后，必须完成设置助理。 配置了用户关联的设备可以安装和运行公司门户应用，以下载应用和管理设备。
 
 ## <a name="direct-enrollment"></a>直接注册
-直接使用 Apple Configurator 注册 iOS 设备时，无需获取设备序列号即可注册设备。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 此方法不擦除设备。
+直接使用 Apple Configurator 注册 iOS/iPadOS 设备时，无需获取设备序列号即可注册设备。 在注册过程中，你还可以在 Intune 捕获设备名称前对设备命名以进行标识。 直接注册的设备不支持公司门户应用。 此方法不擦除设备。
 
 无法安装需要用户隶属关系的应用（包括用于安装业务线应用的公司门户应用）。
 
-### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>将配置文件作为 .mobileconfig 导出到 iOS 设备
+### <a name="export-the-profile-as-mobileconfig-to-iosipados-devices"></a>将配置文件作为 .mobileconfig 导出到 iOS/iPadOS 设备
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “iOS”   > “iOS 注册”   > “Apple 配置器”   > “配置文件”  > 选择要导出的配置文件>“导出配置文件”  。
 2. 在“直接许可登记表”下，选择“下载配置文件”并保存此文件。   注册配置文件的有效期仅为两周，必须在此时间重新创建。
-3. 将文件传输到运行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 计算机，作为管理配置文件直接推送到 iOS 设备。
+3. 将文件传输到运行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 计算机，作为管理配置文件直接推送到 iOS/iPadOS 设备。
 4. 通过以下步骤使用 Apple Configurator 准备设备：
     1. 在 Mac 计算机上，打开 Apple Configurator 2.0。
-    2. 使用 USB 线将 iOS 设备连接到 Mac 计算机。 关闭“照片”、iTunes 和其他在检测设备时为设备打开的应用。
-    3. 在 Apple Configurator 中，选择已连接的 iOS 设备，然后选择“添加”  按钮。 可以添加到设备的选项将显示在下拉列表中。 选择“配置文件”  。
+    2. 使用 USB 线将 iOS/iPadOS 设备连接到 Mac 计算机。 关闭“照片”、iTunes 和其他在检测设备时为设备打开的应用。
+    3. 在 Apple Configurator 中，选择已连接的 iOS/iPadOS 设备，然后选择“添加”  按钮。 可以添加到设备的选项将显示在下拉列表中。 选择“配置文件”  。
 
         ![采集设置助理注册的导出配置文件的屏幕快照，在其中突出显示配置文件 URL](./media/apple-configurator-enroll-ios/ios-apple-configurator-add-profile.png)
 
     4. 使用文件选取器选择从 Intune 导出的 .mobileconfig 文件，然后选择“添加”  。 配置文件将添加到设备。 如果设备是“非监督”状态，安装将需要在设备上验收。
-5. 使用以下步骤在 iOS 设备上安装配置文件。 设备必须已经完成设置助理且准备好使用。 如果注册需要应用部署，设备应设置一个 Apple ID，因为应用部署需要有一个 Apple ID 登录到应用商店。
-    1. 解锁 iOS 设备。
+5. 使用以下步骤在 iOS/iPadOS 设备上安装配置文件。 设备必须已经完成设置助理且准备好使用。 如果注册需要应用部署，设备应设置一个 Apple ID，因为应用部署需要有一个 Apple ID 登录到应用商店。
+    1. 解锁 iOS/iPadOS 设备。
     2. 在“管理配置文件”  的“安装配置文件”  对话框中，选择“安装”  。
     3. 如有必要，提供“设备密码”或“Apple ID”。
     4. 接受“警告”  ，并选择“安装”  。
     5. 接受“远程警告”  ，并选择“信任”  。
     6. “已安装配置文件”  框确认配置文件“已安装”后，选择“完成”  。
 
-6. 在 iOS 设备上，打开“设置”  并转到“常规”   > “设备管理”   > “管理配置文件”  。 确认配置文件安装已列出，并检查 iOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
+6. 在 iOS/iPadOS 设备上，打开“设置”并转到“常规” > “设备管理” > “管理配置文件”     。 确认配置文件安装已列出，并检查 iOS/iPadOS 策略限制和已安装的应用。 策略限制和应用可能需要 10 分钟才会出现在设备上。
 
-7. 分配设备。 iOS 设备现已在 Intune 中注册并已托管。
+7. 分配设备。 iOS/iPadOS 设备现已在 Intune 中注册并已托管。
 
 
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a92863dc504d295d77029082b57090e55d7f743
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: c40d9ef61493f084048ca277a6f54bdf5238f31a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971854"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414386"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -136,13 +136,13 @@ Intune 会将应用中的所有数据标记为“公司”或“个人”。 数
   > 为了更频繁地验证用户的访问要求（即 PIN 提示），尤其是针对常用应用的访问，建议减小“以下时间过后重新检查访问要求(分钟)”设置的值。 
       
 - **Intune PIN 如何与 Outlook 和 OneDrive 的内置应用 PIN 配合使用？**<br></br>
-Intune PIN 基于非活动状态计时器（又称“以下时间过后重新检查访问要求(分钟)”的值）执行操作。 因此，Intune PIN 提示与 Outlook 和 OneDrive 的内置应用 PIN 提示（默认情况下与应用启动直接关联）相互独立显示。 如果用户同时收到两个 PIN 提示，预期行为应以 Intune PIN 为准。 
+Intune PIN 基于非活动状态计时器（“以下时间过后重新检查访问要求(分钟)”的值）执行操作。 因此，Intune PIN 提示与 Outlook 和 OneDrive 的内置应用 PIN 提示（默认情况下与应用启动直接关联）相互独立显示。 如果用户同时收到两个 PIN 提示，预期行为应以 Intune PIN 为准。 
 
 - **PIN 安全吗？**<br></br> PIN 仅允许正确的用户在应用中访问其组织数据。 因此，最终用户必须使用其工作或学校帐户登录，然后才能设置或重置其 Intune 应用 PIN。 这种身份验证通过安全的令牌交换由 Azure Active Directory 执行，且不对 Intune App SDK 公开。 从安全性的角度来看，保护工作或学校数据的最佳方法便是对其进行加密。 加密与应用 PIN 无关，它本身是一项应用保护策略。
 
 - **Intune 如何保护 PIN 免遭暴力破解攻击？**<br></br> 作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，Intune App SDK 可以擦除应用中的“公司”数据。
   
-- **为什么必须在同一发布者的应用上设置 PIN 两次？**<br></br> 目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN，该功能需要一些应用程序（即 WXP、Outlook、Managed Browser、Yammer）的参与，以便集成 Intune APP SDK for iOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。 <br><br> 为了支持此功能，并确保与旧版 Intune SDK for iOS 的向后兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS，就需要设置两个 PIN。 <br><br> 也就是说，这两个 PIN（对于每个应用）不以任何方式相关，即必须遵守应用到应用的应用保护策略。 这样，只有  当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 <br><br> 此行为只针对于使用 Intune 移动应用管理 (MAM) 启用的 iOS 应用程序上的 PIN。 日后，随着应用采用更高版本的 Intune SDK for iOS，必须在同一发布者的应用上设置 PIN 两次就不再是个问题了。 有关示例，请参阅下面的注意事项。
+- **为什么必须在同一发布者的应用上设置 PIN 两次？**<br></br> 目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN，该功能需要一些应用程序（即 WXP、Outlook、Managed Browser、Yammer）的参与，以便集成 Intune APP SDK for iOS/iPadOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。 <br><br> 为了支持此功能，并确保与旧版 Intune SDK for iOS 的向后兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS，就需要设置两个 PIN。 <br><br> 也就是说，这两个 PIN（对于每个应用）不以任何方式相关，即必须遵守应用到应用的应用保护策略。 这样，只有  当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 <br><br> 此行为只针对于使用 Intune 移动应用管理 (MAM) 启用的 iOS 应用程序上的 PIN。 日后，随着应用采用更高版本的 Intune SDK for iOS，必须在同一发布者的应用上设置 PIN 两次就不再是个问题了。 有关示例，请参阅下面的注意事项。
 
   >[!NOTE]
   > 例如，如果应用 A 使用版本低于 7.1.12 的 SDK 生成，同一发布者的应用 B 使用版本不低于 7.1.12 的 SDK 生成，且这两个应用都安装在 iOS 设备上，那么最终用户需要为应用 A 和 B 单独设置 PIN。 <br><br> 如果在此设备上安装了包含 SDK 版本 7.1.9 的应用 C，那么它与应用 A 共用同一 PIN。 <br><br> 使用 SDK 版本 7.1.14 生成的应用 D 与应用 B 共用同一 PIN。 <br><br> 如果仅在设备上安装了应用 A 和 C，需要设置一个 PIN。 如果仅在设备上安装了应用 B 和 D，情况也是如此，即需要设置一个 PIN。

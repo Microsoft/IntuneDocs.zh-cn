@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 停用或擦除设备 - Azure | Microsoft Docs
-description: 使用 Microsoft Intune 在 Android、Android 工作配置文件、iOS、macOS 或 Windows 设备上停用或擦除设备。 并从 Azure Active Directory 中删除设备。
+description: 使用 Microsoft Intune 在 Android、Android 工作配置文件、iOS/iPadOS、macOS 或 Windows 设备上停用或擦除设备。 并从 Azure Active Directory 中删除设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812464"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415517"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
@@ -43,7 +43,7 @@ ms.locfileid: "76812464"
 
 
 > [!NOTE]
-> 擦除操作不适用于通过用户注册进行注册的 iOS 设备。
+> 擦除操作不适用于通过用户注册进行注册的 iOS/iPadOS 设备。
 
 “保留注册状态和用户帐户”  选项仅适用于 Windows 10 版本 1709 或更高版本。
 

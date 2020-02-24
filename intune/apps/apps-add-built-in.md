@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755368"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414447"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>将内置应用添加到 Microsoft Intune
 
-通过使用内置的应用类型，可以轻松地将特选的托管应用（例如 Office 365 应用）分配给 iOS 和 Android 设备  。 可以为此应用类型分配特定的应用，例如 Excel、OneDrive、Outlook、Skype 等。 添加应用后，应用类型将显示为“内置 iOS 应用”  或“内置 Android 应用”  。 通过使用内置应用类型，可以选择将其中哪些应用发布给设备用户。
+通过使用内置的  应用类型，可以轻松地将特选的托管应用（例如 Office 365 应用）分配给 iOS/iPadOS 和 Android 设备。 可以为此应用类型分配特定的应用，例如 Excel、OneDrive、Outlook、Skype 等。 添加应用后，应用类型将显示为“内置 iOS 应用”  或“内置 Android 应用”  。 通过使用内置应用类型，可以选择将其中哪些应用发布给设备用户。
 
 在早期版本的 Intune 控制台中，Intune 提供了几个默认的托管 Office 365 应用，如 Outlook 和 OneDrive。 这些托管应用的应用类型被标记为“托管 iOS 应用商店应用”  或“托管 Android 应用”  。 我们建议使用内置应用类型，而不是使用这些应用类型。 通过使用内置应用类型，用户在编辑和删除 Office 365 应用方面将具有更多灵活性。
 

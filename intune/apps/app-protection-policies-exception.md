@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839393"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437845"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>如何为 Intune 应用保护策略（应用）数据传输策略创建例外情况
 
@@ -38,7 +38,7 @@ ms.locfileid: "75839393"
 > 修改或添加数据传输策略例外不会影响其他应用保护策略，例如剪切、复制和粘贴限制。 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 数据传输例外情况
-对于针对 iOS 的策略，可以通过 URL 协议配置数据传输例外情况。 若要添加例外情况，请查看应用开发人员提供的文档，以查找有关支持的 URL 协议的信息。 有关 iOS 数据传输例外情况的详细信息，请参阅 [iOS 应用保护策略设置 - 数据传输豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
+对于针对 iOS/iPadOS 的策略，可以通过 URL 协议配置数据传输例外情况。 若要添加例外情况，请查看应用开发人员提供的文档，以查找有关支持的 URL 协议的信息。 有关 iOS/iPadOS 数据传输例外情况的详细信息，请参阅 [iOS 应用保护策略设置 - 数据传输豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
 
 > [!NOTE]
 > Microsoft 不提供手动查找 URL 协议来创建第三方应用程序例外情况的方法。 
@@ -53,9 +53,9 @@ ms.locfileid: "75839393"
 ### <a name="example"></a>示例
 通过在 MAM 数据传输策略中添加 Webex 包作为例外情况，可允许直接在 Webex 应用程序中打开托管 Outlook 电子邮件内的 Webex 链接  。 其他非托管应用中将继续限制数据传输。
 
-- iOS Webex 示例  ： 若要豁免 Webex 应用，使其允许被 Intune 托管应用调用，必须为以下字符串添加数据传输例外情况：<code>wbx</code> 
+- iOS/iPadOS Webex 示例  ： 若要豁免 Webex 应用，使其允许被 Intune 托管应用调用，必须为以下字符串添加数据传输例外情况：<code>wbx</code> 
     
-- iOS 地图示例  ： 若要豁免本机地图应用，使其允许被 Intune 托管应用调用，必须为以下字符串添加数据传输例外情况：<code>maps</code> 
+- iOS/iPadOS 地图示例  ： 若要豁免本机地图应用，使其允许被 Intune 托管应用调用，必须为以下字符串添加数据传输例外情况：<code>maps</code> 
 
 - Android Webex 示例  ： 若要豁免 Webex 应用，使其允许被 Intune 托管应用调用，必须为以下字符串添加数据传输例外情况：<code>com.cisco.webex.meetings</code> 
     
@@ -66,7 +66,7 @@ ms.locfileid: "75839393"
     
     <code>com.samsung.android.messaging</code>
 
-- Android 证书安装程序  示例：若要将本机证书安装程序  应用设为例外，以便适用于 Android 的 Outlook 可以将 S/MIME 证书（以电子邮件附件形式传递）安装到 Android 密钥存储，必须为以下字符串添加数据传输例外： <code>com.android.certinstaller</code>。 有关详细信息，请参阅[适用于 iOS 和 Android 的敏感度标签和保护](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)。
+- Android 证书安装程序  示例：若要将本机证书安装程序  应用设为例外，以便适用于 Android 的 Outlook 可以将 S/MIME 证书（以电子邮件附件形式传递）安装到 Android 密钥存储，必须为以下字符串添加数据传输例外： <code>com.android.certinstaller</code>。 有关详细信息，请参阅[适用于 iOS/iPadOS 和 Android 的敏感度标签和保护](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)。
 
 ## <a name="next-steps"></a>后续步骤
 

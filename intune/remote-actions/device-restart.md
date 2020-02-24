@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 重启设备 - Azure | Microsoft Docs
-description: 通过“重启”远程操作，在 Azure 门户中使用 Microsoft Intune 重启 Windows 和 iOS 设备。
+description: 通过“重启”远程操作，在 Azure 门户中使用 Microsoft Intune 重启 Windows 和 iOS/iPadOS 设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517535"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415618"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 远程重启设备
 
@@ -35,10 +35,10 @@ ms.locfileid: "76517535"
 - Windows - Windows 8.1 及更高版本支持
 - Windows Phone - Windows Phone 8.1 及更高版本支持
 - Android 展台设备 - Android 7.0 及更高版本支持
-- iOS - 支持
+- iOS/iPadOS - 支持
 
     > [!Note]  
-    > 此命令需要受监督的设备和“设备锁定”访问权限  。 设备会立即重启。 密码锁定的 iOS 设备重启后不会重新加入 Wi-Fi 网络。 重启后，设备可能无法与服务器进行通信。
+    > 此命令需要受监督的设备和“设备锁定”访问权限  。 设备会立即重启。 密码锁定的 iOS/iPadOS 设备重启后不会重新加入 Wi-Fi 网络。 重启后，设备可能无法与服务器进行通信。
 - macOS - 不支持
 - Android 和 Android 工作配置文件设备 - 不支持
 

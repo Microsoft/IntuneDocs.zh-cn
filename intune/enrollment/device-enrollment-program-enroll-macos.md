@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832671"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414491"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用“设备注册计划”或 Apple School Manager 自动注册 macOS 设备
 
@@ -76,11 +76,11 @@ DEP 注册和 Apple School Manager 均不适用于[设备注册管理器](device
 1. 选择“创建 Apple 设备注册计划令牌”  或“通过 Apple School Manager 创建令牌”  ，以打开相应的 Apple 门户，并使用公司 Apple ID 登录。 可使用此 Apple ID 续订令牌。
 2. 对于 DEP，请在 Apple 门户中，选择“设备注册计划”   > “管理服务器”   > “添加 MDM 服务器”  ，然后选择“开始使用”  。
 3. 对于 Apple School Manager，请在 Apple 门户中，依次选择“MDM 服务器”   > “添加 MDM 服务器”  。
-4. 输入“MDM 服务器名称”  ，然后选择“下一步”  。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 它不是 Microsoft Intune 服务器的名称或 URL。
+4. 输入“MDM 服务器名称”  ，然后选择“下一步”  。 服务器名称供参考，用于识别移动设备管理 (MDM) 服务器。 并不是 Microsoft Intune 服务器的名称或 URL。
 
 5. “添加&lt;服务器名称&gt;”  对话框随即打开，提示“上传公钥”  。 选择“选择文件…”  以上传 .pem 文件，然后选择“下一步”  。
 
-6. 转到“部署计划”  &gt;“设备注册计划”  &gt;“管理设备”  。
+6. 转到“部署计划”>“设备注册计划”>“管理设备”。  &gt;  &gt; 
 7. 在“选择设备方式”  下，指定如何标识设备：
     - **序列号**
     - **订单号**
@@ -127,7 +127,7 @@ DEP 注册和 Apple School Manager 均不适用于[设备注册管理器](device
 
 8. 选择“设置助理设置”，配置以下配置文件设置  ：![设置助理的自定义项](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)。
 
-    | 部门设置 | 描述 |
+    | 部门设置 | 说明 |
     |---|---|
     | <strong>部门名称</strong> | 用户在激活过程中轻点“关于配置”时显示。 |
     | <strong>部门电话</strong> | 用户在激活过程中单击“需要帮助”按钮时显示。 |
@@ -165,7 +165,7 @@ DEP 注册和 Apple School Manager 均不适用于[设备注册管理器](device
 
 Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步，以在 Azure 门户的 Intune 中查看托管设备。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”>“macOS”>“macOS 注册”>“注册计划令牌”> 在列表中选择一个令牌 >“设备”>“同步”       。![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/device-enrollment-program-enroll-macos/image06.png)
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”  >“macOS”  >“macOS 注册”  >“注册程序令牌”  > 在列表中选择令牌 >“设备”  >“同步”  。![选中“注册计划设备”节点和选中“同步”链接的屏幕截图。](./media/device-enrollment-program-enroll-macos/image06.png)
 
    为了遵从 Apple 的有关可接受的注册计划流量的条款，Intune 规定了以下限制：
    - 每七天只能运行一次完全同步。 完全同步时，Intune 会提取分配给连接到 Intune 的 Apple MDM 服务器的完整更新序列号列表。 如果已从 Intune 门户删除注册计划设备但未从 DEP 门户的 Apple MDM 服务器取消分配，则该设备不会重新导入到 Intune，除非运行完全同步。   
@@ -181,12 +181,12 @@ Intune 已拥有管理设备的权限，现在可以将 Intune 与 Apple 同步�
 
 ### <a name="assign-a-default-profile"></a>分配默认配置文件
 
-可以选择一个默认 macOS 和 iOS 配置文件，以将其应用于所有使用特定令牌注册的设备。 
+可以选择一个默认 macOS 和 iOS/iPadOS 配置文件，以将其应用于所有使用特定令牌注册的设备。 
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “macOS” > “macOS 注册” > “注册计划令牌”> 在列表中选择一个令牌     。
 2. 选择“设置默认配置文件”，在下拉列表中选择配置文件，然后选择“保存”。   此配置文件将应用于所有使用此令牌注册的设备。
 
-## <a name="distribute-devices"></a>分配设备
+## <a name="distribute-devices"></a>分发设备
 
 已启用 Apple 和 Intune 之间的管理和同步，并分配了配置文件以允许设备注册。 现在可以将设备分配给用户。 具有用户关联的设备需要每个用户都分配有 Intune 许可证。 没有用户关联的设备需要设备许可证。 已激活设备只有擦除后才能应用注册配置文件。
 

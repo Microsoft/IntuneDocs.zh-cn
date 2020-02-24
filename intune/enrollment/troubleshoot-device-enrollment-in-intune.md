@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885951"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415279"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune 设备注册疑难解答
 
@@ -36,7 +36,7 @@ ms.locfileid: "75885951"
 开始故障排除之前，请检查确保你已正确配置 Intune 以启用注册。 可以在此处了解这些配置要求：
 
 - [为在 Microsoft Intune 中注册设备做好准备](../fundamentals/setup-steps.md)
-- [设置 iOS 和 Mac 设备管理](../ios-enroll.md)
+- [设置 iOS/iPadOS 和 Mac 设备管理](../ios-enroll.md)
 - [设置 Windows 设备管理](windows-enroll.md)
 - [设置 Android 设备管理](android-enroll.md) - 无需其他步骤
 
@@ -49,7 +49,7 @@ ms.locfileid: "75885951"
 托管的设备用户可收集注册和诊断日志以供你查看。 以下提供了有关收集日志的用户说明：
 
 - [将 Android 注册错误发送给 IT 管理员](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [将 iOS 错误发送给 IT 管理员](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [将 iOS/iPadOS 错误发送给 IT 管理员](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
 
 
 ## <a name="general-enrollment-issues"></a>常规注册问题
@@ -93,7 +93,7 @@ ms.locfileid: "75885951"
 
 4. 如果仍然失败，请确保用户的凭据已与 Azure Active Directory 正确同步。
 
-5. 如果用户成功登录，iOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，需要手动安装 Intune 公司门户应用，之后才能重试注册。
+5. 如果用户成功登录，iOS/iPadOS 设备将提示你安装 Intune 公司门户应用并注册。 在 Android 设备上，需要手动安装 Intune 公司门户应用，之后才能重试注册。
 
 ### <a name="mdm-authority-not-defined"></a>未定义 MDM 机构
 **问题：** 用户看到错误消息“未定义 MDM 机构”  。
@@ -245,23 +245,23 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 如果已正确安装服务器证书，则会在结果中看见所有复选标记。 如果存在上述问题，则会在报告的“证书名称匹配”和“已正确安装 SSL 证书”部分看见红色的 X。
 
 
-## <a name="ios-issues"></a>iOS 的问题
+## <a name="iosipados-issues"></a>iOS/iPadOS 问题
 
-### <a name="ios-enrollment-errors"></a>iOS 注册错误
-下表列出了在 Intune 中注册 iOS 设备时最终用户可能遇到的错误。
+### <a name="iosipados-enrollment-errors"></a>iOS/iPadOS 注册错误
+下表列出了在 Intune 中注册 iOS/iPadOS 设备时最终用户可能遇到的错误。
 
 |错误消息|问题|解决方法|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|找不到注册策略|检查是否已设置所有注册必备组件（如 Apple Push Notification 服务 (APNs) 证书），并确保已启用“iOS 平台”。 有关说明，请参阅[设置 iOS 和 Mac 设备管理](../ios-enroll.md)。|
-|DeviceCapReached|已注册太多的移动设备。|用户必须从公司门户中删除当前已注册的某个移动设备，然后才可注册其他设备。 请参阅所使用设备类型的相关说明：[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
-|APNSCertificateNotValid|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供与注册的 iOS 设备联系的通道。 如果出现以下情况，注册将失败，并将显示此消息：<ul><li>获取 APN 证书的步骤尚未完成，或</li><li>APN 证书已过期。</li></ul>查看[同步 Active Directory 并将用户添加到 Intune](../fundamentals/users-add.md) 和[组织用户和设备](../fundamentals/groups-add.md)中有关如何设置用户的信息。|
-|AccountNotOnboarded|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供与注册的 iOS 设备联系的通道。 如果出现以下情况，注册将失败，并将显示此消息：<ul><li>获取 APN 证书的步骤尚未完成，或</li><li>APN 证书已过期。</li></ul>有关详细信息，请查看[使用 Microsoft Intune 设置 iOS 和 Mac 管理](../ios-enroll.md)。|
-|DeviceTypeNotSupported|用户可能已尝试使用非 iOS 设备进行注册。 不支持你正在尝试注册的移动设备类型。<br /><br />确认设备正在运行 iOS 版本 8.0 或更高版本。<br /><br />|请确保用户的设备正在运行 iOS 版本 8.0 或更高版本。|
-|UserLicenseTypeInvalid|无法注册设备，因为用户帐户还不是所需用户组的成员。<br /><br />|用户必须是相应用户组的成员才能注册其设备。 此消息表明用户持有的移动设备管理机构许可证类型不正确。 例如，如果以下两项均为“true”，则用户将看到此错误：<ol><li>已将 Intune 设置为移动设备管理机构</li><li>他们使用的是 System Center 2012 R2 Configuration Manager 许可。</li></ol>有关详细信息，请查看下列文章：<br /><br />查看[使用 Microsoft Intune 设置 iOS 和 Mac 管理](../ios-enroll.md)，以及[同步 Active Directory 并将用户添加到 Intune](../fundamentals/users-add.md)、[组织用户和设备](../fundamentals/groups-add.md)中的有关如何设置用户的信息。|
+|NoEnrollmentPolicy|找不到注册策略|检查是否已设置所有注册必备组件（如 Apple Push Notification 服务 (APNs) 证书），并确保已启用“iOS/iPadOS 平台”。 有关说明，请参阅[设置 iOS/iPadOS 和 Mac 设备管理](../ios-enroll.md)。|
+|DeviceCapReached|已注册太多的移动设备。|用户必须从公司门户中删除当前已注册的某个移动设备，然后才可注册其他设备。 请参阅所使用设备类型的相关说明：[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS/iPadOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
+|APNSCertificateNotValid|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供与注册的 iOS/iPadOS 设备联系的通道。 如果出现以下情况，注册将失败，并将显示此消息：<ul><li>获取 APN 证书的步骤尚未完成，或</li><li>APN 证书已过期。</li></ul>查看[同步 Active Directory 并将用户添加到 Intune](../fundamentals/users-add.md) 和[组织用户和设备](../fundamentals/groups-add.md)中有关如何设置用户的信息。|
+|AccountNotOnboarded|移动设备用于与公司网络通信的证书存在问题。<br /><br />|Apple Push Notification 服务 (APNs) 提供与注册的 iOS/iPadOS 设备联系的通道。 如果出现以下情况，注册将失败，并将显示此消息：<ul><li>获取 APN 证书的步骤尚未完成，或</li><li>APN 证书已过期。</li></ul>有关详细信息，请查看[使用 Microsoft Intune 设置 iOS/iPadOS 和 Mac 管理](../ios-enroll.md)。|
+|DeviceTypeNotSupported|用户可能已尝试使用非 iOS 设备进行注册。 不支持你正在尝试注册的移动设备类型。<br /><br />确认设备正在运行 iOS/iPadOS 版本 8.0 或更高版本。<br /><br />|请确保用户的设备正在运行 iOS/iPadOS 版本 8.0 或更高版本。|
+|UserLicenseTypeInvalid|无法注册设备，因为用户帐户还不是所需用户组的成员。<br /><br />|用户必须是相应用户组的成员才能注册其设备。 此消息表明用户持有的移动设备管理机构许可证类型不正确。 例如，如果以下两项均为“true”，则用户将看到此错误：<ol><li>已将 Intune 设置为移动设备管理机构</li><li>他们使用的是 System Center 2012 R2 Configuration Manager 许可。</li></ol>有关详细信息，请查看下列文章：<br /><br />查看[使用 Microsoft Intune 设置 iOS/iPadOS 和 Mac 管理](../ios-enroll.md)，以及[同步 Active Directory 并将用户添加到 Intune](../fundamentals/users-add.md)、[组织用户和设备](../fundamentals/groups-add.md)中的有关如何设置用户的信息。|
 |MdmAuthorityNotDefined|尚未定义移动设备管理机构。<br /><br />|尚未在 Intune 中设置移动设备管理机构。<br /><br />请查看[开始使用 Microsoft Intune 的 30 天试用版](../fundamentals/free-trial-sign-up.md)中“第 6 步：注册移动设备并安装应用”部分内的第 1 项。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>设备处于非活动状态，或管理控制台不能与其通信
-**问题：** iOS 设备未使用 Intune 服务签入。 设备必须定期使用该服务签入，以保持对受保护的公司资源的访问权限。 如果设备不签入：
+**问题：** iOS/iPadOS 设备未使用 Intune 服务签入。 设备必须定期使用该服务签入，以保持对受保护的公司资源的访问权限。 如果设备不签入：
 
 - 它们将无法从 Intune 服务接收策略、应用和远程命令。
 - 它们在管理控制台中显示的管理状态为“不正常”  。
@@ -269,15 +269,15 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 **解决方法：** 与最终用户共享以下解决办法，帮助他们重新获得对公司资源的访问权限。
 
-如果用户启动了 iOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...”  消息）。
+如果用户启动了 iOS/iPadOS 公司门户应用，则可确定他们的设备是否与 Intune 失去联系。 如果没有检测到任何联系，则会自动尝试与 Intune 同步以重新连接，用户将看到“正在尝试同步...”  消息）。
 
   ![尝试同步通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-如果同步成功，将在 iOS 公司门户应用中看到“同步成功”  内联通知，指示你的设备处于正常状态。
+如果同步成功，将在 iOS/iPadOS 公司门户应用中看到“同步成功”  内联通知，指示你的设备处于正常状态。
 
   ![同步成功通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-如果同步失败，用户将在 iOS 公司门户应用中看到“无法同步”  内联通知。
+如果同步失败，用户将在 iOS/iPadOS 公司门户应用中看到“无法同步”  内联通知。
 
   ![无法同步通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -288,7 +288,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 注册后，设备将恢复到正常状态，并重新获得对公司资源的访问权限。
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>确认已启用 WS-Trust 1.3
-**问题**无法注册设备注册计划 (DEP) iOS 设备
+**问题** 无法注册设备注册计划 (DEP) iOS/iPadOS 设备
 
 注册具有用户关联的 DEP 设备要求启用 WS-Trust 1.3 用户名/混合终结点以请求用户令牌。 默认情况下，Active Directory 启用此终结点。 若要获取已启用的终结点列表，请使用 Get-AdfsEndpoint PowerShell cmdlet 查找 trust/13/UsernameMixed 终结点。 例如：
 
@@ -302,7 +302,7 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 
 ### <a name="profile-installation-failed"></a>配置文件安装失败
-**问题：** 用户在 iOS 设备上看到错误消息“配置文件安装失败”  。
+**问题：** 用户在 iOS/iPadOS 设备上看到错误消息“配置文件安装失败”  。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>失败配置文件安装的故障排除步骤
 
@@ -314,9 +314,9 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 4. 导航到 [https://portal.manage.microsoft.com https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，当出现提示时，并尝试安装配置文件。
 
-5. 确认默认浏览器为适用于 iOS 的 Safari，并且已启用 Cookie。
+5. 确认默认浏览器为适用于 iOS/iPadOS 的 Safari，并且已启用 Cookie。
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>用户的 iOS 设备在注册屏幕上受阻时间超过 10 分钟
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>用户的 iOS/iPadOS 设备在注册屏幕上受阻时间超过 10 分钟
 
 **问题**：注册设备可能会卡滞在以下两个屏幕中：
 - 等待来自“Microsoft”的最终配置
@@ -324,11 +324,11 @@ Samsung Smart Manager 软件（预装在某些 Samsung 设备上）会停用 Int
 
 如果发生以下情况，则可能出现此问题：
 - Apple 服务暂时中断，或者
-- iOS 注册设置为使用表中所示的 VPP 令牌，但 VPP 令牌存在问题。
+- iOS/iPadOS 注册设置为使用表中所示的 VPP 令牌，但 VPP 令牌存在问题。
 
 | 注册设置 | 值 |
 | ---- | ---- |
-| 平台 | iOS |
+| 平台 | iOS/iPadOS |
 | 用户关联 | 注册用户关联 |
 |使用公司门户而不是 Apple 设置助理进行身份验证 | 是 |
 | 使用 VPP 安装公司门户 | 使用令牌：令牌地址 |

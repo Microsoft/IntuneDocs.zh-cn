@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812496"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415549"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重置或删除设备密码
 
@@ -35,8 +35,8 @@ ms.locfileid: "76812496"
 | ---- | ---- |
 | 版本在 6.x 及以下的 Android 设备 | 是 |
 | 以设备所有者身份注册的 Android 企业设备 | 是 |
-| iOS 设备 | 是 |
-| 通过用户注册进行注册的 iOS 设备 | 否 |
+| iOS/iPadOS 设备 | 是 |
+| 通过用户注册进行注册的 iOS/iPadOS 设备 | 否 |
 | 使用工作配置文件注册的 Android 设备 | 否 |
 | 版本在 7.0 及以上的 Android 设备 | 否 |
 | macOS | 否 |
@@ -68,9 +68,9 @@ ms.locfileid: "76812496"
 对于运行版本 8.x 或更高版本且已使用工作配置文件注册的 Android 企业设备，最终用户会在注册完成后立即收到激活其重置密码的通知。 需提供和设置工作配置文件密码时会显示该通知。 输入其密码后，该通知将消除。
 
 
-## <a name="remove-ios-passcodes"></a>删除 iOS 密码
+## <a name="remove-iosipados-passcodes"></a>删除 iOS/iPadOS 密码
 
-系统会从 iOS 设备中删除密码，而不是重置密码。 如果设置了密码符合性策略，则设备会提示用户在“设置”中设置新密码。
+系统会从 iOS/iPadOS 设备中删除密码，而不是重置密码。 如果设置了密码符合性策略，则设备会提示用户在“设置”中设置新密码。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -16,17 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713449"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415529"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>将设备与 Intune 同步以获取最新的策略和操作
 
 
-“同步”  设备操作会强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。 此功能可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
+ “同步”设备操作会强制所选设备立即通过 Intune 签入。 当设备签入时，该设备会立即收到已分配给自己的任何挂起的操作或策略。 此功能可帮助立即验证和对已分配的策略进行故障排除，而无需等待下一个安排的签入。
 
 ## <a name="supported-platforms"></a>受支持的平台
 
@@ -49,7 +49,7 @@ ms.locfileid: "73713449"
 
 ## <a name="retryable-error-codes"></a>可重试错误代码
 
-当管理员运行“同步”设备操作时，已失败但引发了可重试错误代码的 iOS 和 Android 应用仍对设备可用  。 但是，引发不可重试错误代码的应用必须等待七日，才可用于设备。
+当管理员运行“同步”  设备操作时，已失败但引发了可重试错误代码的 iOS/iPadOS 和 Android 应用仍对设备可用。 但是，引发不可重试错误代码的应用必须等待七日，才可用于设备。
 
 
 | 错误代码  | 建议的说明 | 可重试 |

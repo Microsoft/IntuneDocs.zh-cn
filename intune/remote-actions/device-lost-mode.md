@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft Intune 激活 iOS 丢失模式 - Azure | Microsoft Docs
-description: 使用 Microsoft Intune，启用或启动“丢失模式”，以自定义丢失或被盗 iOS 设备的锁屏界面上显示的消息。 并获取有关使用丢失模式时的安全与隐私信息。
+title: 使用 Microsoft Intune 激活 iOS/iPadOS 丢失模式 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune，启用或启动“丢失模式”，以自定义丢失或被盗 iOS/iPadOS 设备的锁屏界面上显示的消息。 并获取有关使用丢失模式时的安全与隐私信息。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712232"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415601"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 启用 iOS 设备上的丢失模式
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>使用 Intune 启用 iOS/iPadOS 设备上的丢失模式
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
- “丢失模式”设备操作可帮助你在丢失或被盗的 iOS 设备上启用丢失模式。 通过此模式，可输入在设备锁屏界面上显示的消息和电话号码。 若要使用丢失模式，设备必须是处于监督模式下的公司拥有的 iOS 设备。
+“丢失模式”  设备操作可帮助你在丢失或被盗的 iOS/iPadOS 设备上启用丢失模式。 通过此模式，可输入在设备锁屏界面上显示的消息和电话号码。 若要使用丢失模式，设备必须是处于监督模式下的公司拥有的 iOS/iPadOS 设备。
 
 ## <a name="supported-platforms"></a>受支持的平台
 
-- iOS 9.3 及更高版本
+- iOS/iPadOS 9.3 及更高版本
 
 以下系统不支持此功能： 
 - Windows
@@ -43,7 +43,7 @@ ms.locfileid: "73712232"
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 依次选择“设备”和“所有设备”   。
-4. 从管理设备列表中，选择一台 iOS 设备，然后选择“丢失模式”（仅限被监督的设备）  。
+4. 从管理设备列表中，选择一台 iOS/iPadOS 设备，然后选择“丢失模式”（仅限受监督的设备）  。
 5. 在“丢失模式”下，选择“启用”   。
 6. 在“要在锁屏界面上显示的消息”  中，键入要在设备的锁屏界面上显示的消息。
 7. （可选）在“要显示的电话号码”框中输入电话号码  。

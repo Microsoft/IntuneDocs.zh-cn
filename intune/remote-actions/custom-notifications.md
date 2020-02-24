@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Intune 向用户发送自定义通知
 titleSuffix: Microsoft Intune
-description: 使用 Intune 创建自定义推送通知并将其发送给使用 iOS 和 Android 设备的用户
+description: 使用 Intune 创建自定义推送通知并将其发送给使用 iOS/iPadOS 和 Android 设备的用户
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517470"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413887"
 ---
 # <a name="send-custom-notifications-in-intune"></a>使用 Intune 发送自定义通知  
 
-使用 Microsoft Intune 向使用托管 iOS 设备和 Android 设备的用户发送自定义通知。 这些消息在用户设备上显示为来自公司门户应用和 Microsoft Intune 应用的标准推送通知，就像设备上显示的来自其他应用程序的通知一样。 Windows 和 macOS 设备不支持 Intune 自定义通知。   
+使用 Microsoft Intune 向使用托管 iOS/iPadOS 和 Android 设备的用户发送自定义通知。 这些消息在用户设备上显示为来自公司门户应用和 Microsoft Intune 应用的标准推送通知，就像设备上显示的来自其他应用程序的通知一样。 Windows 和 macOS 设备不支持 Intune 自定义通知。   
 
 自定义通知消息包括短标题和不超过 500 个字符的消息正文。 可以出于任何常规通信目的自定义这些消息。
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>iOS 设备上通知的外观
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>iOS/iPadOS 设备上通知的外观
 
-如果在 iOS 设备上打开公司门户应用，则通知将类似于以下屏幕截图：
+如果在 iOS/iPadOS 设备上打开公司门户应用，则通知将类似于以下屏幕截图：
 
 > [!div class="mx-imgBorder"]
-> ![公司门户 iOS 测试通知](./media/custom-notifications/105046-1.png)
+> ![公司门户 iOS/iPadOS 测试通知](./media/custom-notifications/105046-1.png)
 
 如果设备被锁定，通知将类似于以下屏幕截图：
 
 > [!div class="mx-imgBorder"]
-> ![锁定设备 iOS 测试通知](./media/custom-notifications/105046-2.png)
+> ![锁定设备 iOS/iPadOS 测试通知](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>Android 设备上通知的外观
 
@@ -75,14 +75,14 @@ ms.locfileid: "76517470"
 - 向单个设备发送消息时，每小时最多只可以向同一台设备发送 10 条消息。 
 - 通过将通知分配给组，即可以向多个用户或设备发送通知。 利用组时，每个通知都可以直接面向最多 25 个组。 嵌套组不计入此总数。  
 
-  组可以包含用户或设备，但仅向用户发送消息且发送到用户已注册的每个 iOS 或 Android 设备。  
+  组可以包含用户或设备，但仅向用户发送消息且发送到用户已注册的每个 iOS/iPadOS 或 Android 设备。  
 - 可以向单个设备发送通知。 选择一个设备，然后使用远程[设备操作](device-management.md#available-device-actions)发送自定义通知，而非使用组。  
 
 **发送**：  
 - Intune 将消息发送到用户的公司门户应用或 Microsoft Intune 应用，然后创建推送通知。 用户无需登录应用，即可在设备上推送通知。  
 - Intune 和公司门户应用及 Microsoft Intune 应用无法保证发送自定义通知。 自定义通知可能会在几个小时的延迟后显示（如果有的话），因此它们不应用于紧急消息。  
-- 来自 Intune 的自定义通知消息在设备上显示为标准推送通知。 如果公司门户应用在收到通知后在 iOS 设备上处于打开状态，则通知将在应用中显示，而不在推送通知中显示。  
-- 因设备设置而异，自定义通知可以在 iOS 和 Android 设备的锁屏界面上显示。  
+- 来自 Intune 的自定义通知消息在设备上显示为标准推送通知。 如果公司门户应用在收到通知后在 iOS/iPadOS 设备上处于打开状态，则通知将在应用中显示，而不在推送通知中显示。  
+- 自定义通知可以在 iOS/iPadOS 和 Android 设备的锁屏界面上显示，具体取决于设备设置。  
 - 在 Android 设备上，其他应用可能可以访问自定义通知中的数据。 请勿将其用于敏感通信。  
 - 最近未注册设备的用户或从组中删除的用户可能仍会收到之后发送到该组的自定义通知。  同样，如果在向组发送自定义通知后将用户添加到组，则新添加的用户可能会收到之前发送的通知消息。  
 
@@ -127,7 +127,7 @@ Intune 会立即处理该消息。 消息已发送的唯一确认方式是将从
 
 用户可以在设备上看到作为标准推送通知由 Intune 从公司门户应用或 Microsoft Intune 应用发送的自定义通知消息。 这些通知类似于用户从设备上的其他应用接收的推送通知。  
 
-在 iOS 设备上，如果在收到通知时公司门户应用处于打开状态，则通知将在应用中显示，而不在推送通知中显示。  
+在 iOS/iPadOS 设备上，如果在收到通知时公司门户应用处于打开状态，则通知将在应用中显示，而不在推送通知中显示。  
 
 通知将一直保留，除非用户将其关闭。  
 

@@ -1,7 +1,7 @@
 ---
-title: 注册 iOS 设备 - 用户注册
+title: 注册 iOS/iPadOS 设备 - 用户注册
 titleSuffix: Microsoft Intune
-description: 了解如何设置 iOS 和 iPadOS 用户注册。
+description: 了解如何设置 iOS/iPadOS 和 iPadOS 用户注册。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754606"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415268"
 ---
-# <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>设置 iOS 和 iPadOS 用户注册（预览版）
+# <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>设置 iOS/iPadOS 和 iPadOS 用户注册（预览版）
 
-可以将 Intune 设置为使用 Apple 的用户注册过程注册 iOS 和 iPadOS 设备。 与其他注册方法相比，用户注册为管理员提供部分简化的管理选项。
+可以将 Intune 设置为使用 Apple 的用户注册过程注册 iOS/iPadOS 和 iPadOS 设备。 与其他注册方法相比，用户注册为管理员提供部分简化的管理选项。
 
 有关用户注册可用的选项的详细信息，请参阅[用户注册支持的操作、密码和其他选项](ios-user-enrollment-supported-actions.md)。
 
@@ -43,7 +43,7 @@ ms.locfileid: "76754606"
 
 注册配置文件定义注册时应用于设备组的设置。 
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “iOS”   > “iOS 注册”   > “注册类型(预览)”   > “创建配置文件”   > “iOS/iPadOS”  。 此配置文件将说明 iOS 和 iPadOS 最终用户在未通过公司 Apple 方法注册的设备上的注册体验。 如果你想要进行更改，可以在创建此配置文件后对其进行编辑。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “iOS”   > “iOS 注册”   > “注册类型(预览)”   > “创建配置文件”   > “iOS/iPadOS”  。 此配置文件将说明 iOS/iPadOS 和 iPadOS 最终用户在未通过公司 Apple 方法注册的设备上的注册体验。 如果你想要进行更改，可以在创建此配置文件后对其进行编辑。
 
     ![创建 Apple 注册配置文件](./media/ios-user-enrollment/create-profile.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "76754606"
 
     - **设备注册**：此配置文件中的所有用户都将使用设备注册。
     - **用户注册**：此配置文件中的所有用户都将使用用户注册。
-    - **基于用户选择进行确定**：将为此组中的所有用户提供要使用的注册类型。 当用户注册其设备时，他们可以在“我拥有此设备”  和“(公司)拥有此设备”  之间看到一个可选择的选项。 如果他们选择了前者，设备将使用设备注册进行注册。 如果用户选择“我拥有此设备”  ，则他们还可以选择保护整个设备或仅保护与工作相关的应用程序和数据。 最终用户选择是否拥有设备确定在其设备上实现哪些注册类型。 此用户选项反映在 Intune 中的“设备所有权”属性中。 若要了解有关用户体验的详细信息，请参阅[设置 iOS 设备对公司资源的访问](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)。
+    - **基于用户选择进行确定**：将为此组中的所有用户提供要使用的注册类型。 当用户注册其设备时，他们可以在“我拥有此设备”  和“(公司)拥有此设备”  之间看到一个可选择的选项。 如果他们选择了前者，设备将使用设备注册进行注册。 如果用户选择“我拥有此设备”  ，则他们还可以选择保护整个设备或仅保护与工作相关的应用程序和数据。 最终用户选择是否拥有设备确定在其设备上实现哪些注册类型。 此用户选项反映在 Intune 中的“设备所有权”属性中。 若要了解有关用户体验的详细信息，请参阅[设置 iOS/iPadOS 设备对公司资源的访问](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)。
     
 5. 选择“下一步”  。
 

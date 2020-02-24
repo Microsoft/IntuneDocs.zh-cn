@@ -1,7 +1,7 @@
 ---
 title: 获取用于 Intune 的 Apple MDM 推送证书
 titleSuffix: ''
-description: 获取用于通过 Intune 管理 iOS 设备的 Apple MDM 推送证书。
+description: 获取用于通过 Intune 管理 iOS/iPadOS 设备的 Apple MDM 推送证书。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,24 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 673f63194b46ca7e4dbf1206d363cbe70c6e6098
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955450"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414430"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>获取 Apple MDM Push Certificate
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-必须拥有 Apple MDM Push Certificate 才能使用 Intune 管理 iOS 和 macOS 设备。 在将证书添加到 Intune 后，用户可以通过以下方式注册其设备：
+必须拥有 Apple MDM Push Certificate 才能使用 Intune 管理 iOS/iPadOS 和 macOS 设备。 在将证书添加到 Intune 后，用户可以通过以下方式注册其设备：
 
 - 使用公司门户应用。
 
 - 使用 Apple 的批量注册方法，例如设备注册计划、Apple School Manager 或 Apple 配置器。
 
-有关注册选项的详细信息，请参阅[选择 iOS 设备的注册方式](ios-enroll.md)。
+有关注册选项的详细信息，请参阅[选择 iOS/iPadOS 设备的注册方式](ios-enroll.md)。
 
 推送证书到期时必须续订。 续订时，请务必使用你在首次创建推送证书时使用的同一个 Apple ID。
 
@@ -64,7 +64,7 @@ ms.locfileid: "74955450"
 转到证书 (.pem) 文件，选择“打开”  ，然后选择“上传”  。 通过推送证书，Intune 可以注册并管理 Apple 设备。
 
 ## <a name="renew-apple-mdm-push-certificate"></a>续订 Apple MDM Push Certificate
-Apple MDM Push Certificate 有效期为一年，且必须手动续订才能维持 iOS 和 macOS 设备管理。 如果证书到期，则无法联系到已注册的 Apple 设备。
+Apple MDM Push Certificate 有效期为一年，且必须手动续订才能维持 iOS/iPadOS 和 macOS 设备管理。 如果证书到期，则无法联系到已注册的 Apple 设备。
 
 证书与用于创建它的 Apple ID 相关联。 使用创建证书所用的相同 Apple ID 续订 MDM Push Certificate。
 
@@ -73,7 +73,7 @@ Apple MDM Push Certificate 有效期为一年，且必须手动续订才能维�
 3. 选择“创建 MDM Push Certificate”  ，转到 Apple Push Certificate 门户。 找到要续订的证书并选择“续订”  。
 4. 在“续订 Push Certificate”屏幕上，提供备注以便在将来识别证书，选择“选择文件”浏览到下载的新请求文件，然后选择“上传”    。
    > [!TIP]
-   > 可以按一个证书的 UID 识别它。 在证书详细信息中检查“使用者 ID”以找到 UID 的 GUID 部分  。 或者，在已注册的 iOS 设备上，转至“设置” > “常规” > “设备管理” > “管理配置文件” > “更多详细信息” > “管理配置文件”        。 第二行项“主题”中包含可以匹配 Apple Push Certificates 门户中的证书的唯一 GUID  。
+   > 可以按一个证书的 UID 识别它。 在证书详细信息中检查“使用者 ID”以找到 UID 的 GUID 部分  。 或者，在已注册的 iOS/iPadOS 设备上，转至“设置” > “常规” > “设备管理” > “管理配置文件” > “更多详细信息” > “管理配置文件”        。 第二行项“主题”中包含可以匹配 Apple Push Certificates 门户中的证书的唯一 GUID  。
  
 6. 在“确认”屏幕上，选择“下载”并本地保存 .pem 文件   。
 7. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)中，依次选择“Apple MDM Push Certificate”浏览图标、已从 Apple 下载的 .pem 文件和“上传”   。

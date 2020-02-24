@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503180"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414226"
 ---
 # <a name="incomplete-user-enrollments-report"></a>“用户注册不完整”报表
 
@@ -44,7 +44,7 @@ ms.locfileid: "72503180"
 
 ## <a name="what-does-the-report-show"></a>报表显示什么？
 
-报表中包含 iOS 和 Android 设备的数据。
+报表中包含 iOS/iPadOS 和 Android 设备的数据。
 
 报表显示过去两周的数据，但可以筛选报表以显示过去 30 天内的任何时段。
 
@@ -86,10 +86,10 @@ ms.locfileid: "72503180"
 
 | 操作名称 | 屏幕或流 | 平台 | 操作 |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | 提示显示配置文件 | iOS | **忽略** |
-| iOSProfileLaunch | 安装配置文件屏幕 | iOS | **取消** |
-| iOSProfileLaunch | 提示信任配置文件的来源以注册设备 | iOS | **取消** |
-| iOSProfileLaunch | 安装配置文件屏幕，直到安装配置文件完成 | iOS | 用时超过 30 分钟 |
+| iOSProfileLaunch | 提示显示配置文件 | iOS/iPadOS | **忽略** |
+| iOSProfileLaunch | 安装配置文件屏幕 | iOS/iPadOS | **取消** |
+| iOSProfileLaunch | 提示信任配置文件的来源以注册设备 | iOS/iPadOS | **取消** |
+| iOSProfileLaunch | 安装配置文件屏幕，直到安装配置文件完成 | iOS/iPadOS | 用时超过 30 分钟 |
 | AndroidPermissions | 设备管理员激活屏幕 | Android | **取消** |
 | AndroidPermissions | 从提示批准打电话和管理电话到设备管理员“激活”  | Android | 用时超过 30 分钟 |
 | KnoxActivation | KLMS 代理激活（仅限 Samsung） | Android| **取消** |

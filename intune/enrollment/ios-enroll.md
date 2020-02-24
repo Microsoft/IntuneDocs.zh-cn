@@ -1,7 +1,7 @@
 ---
-title: 在 Intune 中注册 iOS 设备
+title: 在 Intune 中注册 iOS/iPadOS 设备
 titleSuffix: Microsoft Intune
-description: 了解如何在 Microsoft Intune 中设置 iOS 设备注册。
+description: 在 Microsoft Intune 中设置 iOS/iPadOS 设备注册。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,53 +18,53 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fb5208cd7df6dc68bcd20455ae9e06a9dbd7ff5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8d5aeb17084ea0bb76429b1fa15c9de5855220ab
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503143"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415295"
 ---
-# <a name="enroll-ios-devices-in-intune"></a>在 Intune 中注册 iOS 设备
+# <a name="enroll-iosipados-devices-in-intune"></a>在 Intune 中注册 iOS/iPadOS 设备
 
 Intune 启用了 iPad 和 iPhone 的移动设备管理 (MDM)，以允许用户安全访问公司电子邮件、数据和应用。
 
-Intune 管理员可以为 iOS 和 iPadOS 设备设置注册，以访问公司资源。 可以允许用户注册个人拥有的设备，称为“自带设备”(BYOD) 注册。 还可以设置公司拥有设备的注册。
+Intune 管理员可以为 iOS/iPadOS 和 iPadOS 设备设置注册，以访问公司资源。 可以允许用户注册个人拥有的设备，称为“自带设备”(BYOD) 注册。 还可以设置公司拥有设备的注册。
 
-## <a name="prerequisites-for-ios-enrollment"></a>iOS 注册的先决条件
+## <a name="prerequisites-for-iosipados-enrollment"></a>iOS/iPadOS 注册的先决条件
 
-在启用 iOS 设备之前，请完成以下步骤：
+在启用 iOS/iPadOS 设备之前，请完成以下步骤：
 
 - [确保设备符合 Apple 设备注册的条件](https://support.apple.com/en-us/HT204142#eligibility)。
 - [设置 Intune](../fundamentals/setup-steps.md) - 这些步骤用于设置 Intune 基础结构。 具体而言，设备注册需要用户[设置 MDM 机构](../fundamentals/mdm-authority-set.md)。
-- [获取 Apple MDM 推送证书](apple-mdm-push-certificate-get.md) - Apple 需要证书才能启用 iOS 和 macOS 设备的管理。
+- [获取 Apple MDM 推送证书](apple-mdm-push-certificate-get.md) - Apple 需要证书才能启用 iOS/iPadOS 和 macOS 设备的管理。
 
-## <a name="user-owned-ios-and-ipados-devices-byod"></a>用户拥有的 iOS 和 iPadOS 设备 (BYOD)
+## <a name="user-owned-iosipados-and-ipados-devices-byod"></a>用户拥有的 iOS/iPadOS 和 iPadOS 设备 (BYOD)
 
 可以让用户注册其个人设备用于 Intune 管理，这称为“自带设备办公”或 BYOD。 有三个选项可用于注册用户：
 - 应用保护策略为你提供最轻松的 BYOD 体验，从而仅在应用级别提供管理。 但是，如果你还想使用带 6 位数的复杂 PIN 来保护设备，则可以将这些策略与用户注册一起使用。
 - 设备注册被视为典型的 BYOD 注册。 它为管理员提供各种管理选项。
 - 用户注册是一种更简单的注册过程，它为管理员提供部分设备管理选项。 此功能目前处于预览状态。 
 
-完成先决条件并分配用户许可证后，用户便可从 App Store 下载 Intune 公司门户应用，然后按照应用中的注册说明进行操作。 可以按照[隐私声明自定义](../apps/company-portal-app.md#privacy-statement-customization)中所述在 iOS 设备上自定义公司门户隐私声明。
+完成先决条件并分配用户许可证后，用户便可从 App Store 下载 Intune 公司门户应用，然后按照应用中的注册说明进行操作。 可以按照[隐私声明自定义](../apps/company-portal-app.md#privacy-statement-customization)中所述在 iOS/iPadOS 设备上自定义公司门户隐私声明。
 
-## <a name="company-owned-ios-devices"></a>公司拥有的 iOS 设备
+## <a name="company-owned-iosipados-devices"></a>公司拥有的 iOS/iPadOS 设备
 
-对于为用户购买设备的组织，Intune 还支持以下公司自有的 iOS 设备注册方法：
+对于为用户购买设备的组织，Intune 还支持以下公司拥有的 iOS/iPadOS 设备注册方法：
 
 - Apple 设备注册计划 (DEP)
 - Apple School Manager
 - Apple Configurator 设置助理注册
 - Apple Configurator 直接注册
 
-还可使用[设备注册管理器](device-enrollment-manager-enroll.md)帐户注册公司自有的 iOS 设备。
+还可使用[设备注册管理器](device-enrollment-manager-enroll.md)帐户注册公司拥有的 iOS/iPadOS 设备。
 
 ## <a name="device-enrollment-program"></a>设备注册程序
 
-组织可以通过 Apple 的设备注册计划 (DEP) 购买 iOS 设备。 DEP 允许用户通过“无线方式”部署注册配置文件以对设备进行管理。 有关详细信息，请参阅[设备注册计划](device-enrollment-program-enroll-ios.md)。
+组织可以通过 Apple 的设备注册计划 (DEP) 购买 iOS/iPadOS 设备。 DEP 允许用户通过“无线方式”部署注册配置文件以对设备进行管理。 有关详细信息，请参阅[设备注册计划](device-enrollment-program-enroll-ios.md)。
 
 ## <a name="user-enrollment"></a>用户注册
-与其他注册方法相比，用户注册为管理员提供部分管理选项。 有关详细信息，请参阅[用户注册支持的操作、密码和其他选项](ios-user-enrollment-supported-actions.md)和[设置 iOS 和 iPadOS 用户注册](ios-user-enrollment.md)。
+与其他注册方法相比，用户注册为管理员提供部分管理选项。 有关详细信息，请参阅[用户注册支持的操作、密码和其他选项](ios-user-enrollment-supported-actions.md)和[设置 iOS/iPadOS 和 iPadOS 用户注册](ios-user-enrollment.md)。
 
 ## <a name="apple-school-manager"></a>Apple School Manager
 
@@ -72,7 +72,7 @@ Apple School Manager 是适用于学校的设备购买和注册计划。 与 DEP
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
-可以通过在 Mac 计算机上运行的 Apple Configurator 来注册 iOS 设备。 若要使设备准备就绪，请使用 USB 连接它们并安装注册配置文件。 可采用两种方法用 Apple Configurator 注册设备：
+可以通过在 Mac 计算机上运行的 Apple Configurator 来注册 iOS/iPadOS 设备。 若要使设备准备就绪，请使用 USB 连接它们并安装注册配置文件。 可采用两种方法用 Apple Configurator 注册设备：
 
 - 设置助理注册 - 擦除设备，准备好运行设置助理，从而为设备的新用户安装公司策略。
 - 直接注册 - 不擦除设备，并使用预定义策略注册设备。 此方法适用于“无用户关联”的设备。
@@ -89,11 +89,11 @@ Apple School Manager 是适用于学校的设备购买和注册计划。 与 DEP
 - 对电子邮件和公司数据的条件访问
 - 公司门户应用
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>用户如何注册具有用户关联的公司所有的 iOS 设备
+### <a name="how-users-enroll-corporate-owned-iosipados-devices-with-user-affinity"></a>用户如何注册具有用户关联的公司拥有的 iOS/iPadOS 设备
 
 1. 用户打开设备时，系统会提示其完成设置助理。
 2. 安装完成后，系统会提示用户输入 Apple ID。 必须提供 Apple ID 才能允许设备安装公司门户。
-3. IOS 设备会自动从应用商店安装公司门户应用。
+3. iOS/iPadOS 设备会自动从 App Store 安装公司门户应用。
 4. 用户应启动公司门户应用，并使用与其在 Intune 中的订阅关联的凭据（如唯一的个人名称或 UPN）登录。
 5. 登录后，即完成注册。 现在用户可以使用此设备的完整功能集。
 
@@ -105,4 +105,4 @@ Apple School Manager 是适用于学校的设备购买和注册计划。 与 DEP
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft Intune 中的 iOS 设备注册问题疑难解答](https://support.microsoft.com/help/4039809)
+[Microsoft Intune 中的 iOS/iPadOS 设备注册问题疑难解答](https://support.microsoft.com/help/4039809)

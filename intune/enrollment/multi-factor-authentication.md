@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 14347d12888ff5ef61d4543409a08fbdeb371c89
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955382"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415202"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>对 Intune 设备注册要求多重身份验证
 
@@ -36,7 +36,7 @@ MFA 需要使用以下任意两种或多种验证方法：
 - 你拥有的东西（不容易复制的受信任设备，如手机）。
 - 你的生物特征（指纹等生物特征）。
 
-iOS、Android、Windows 8.1 或更高版本、Windows Phone 8.1、Windows 10 移动版或更高版本的设备均支持 MFA。
+iOS/iPadOS、Android、Windows 8.1 或更高版本、Windows Phone 8.1、Windows 10 移动版或更高版本的设备均支持 MFA。
 
 启用 MFA 后，最终用户必须提供两种形式的凭据才能注册设备。
 

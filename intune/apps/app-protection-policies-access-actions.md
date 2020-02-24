@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564125"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437879"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用应用保护策略条件启动操作选择性地擦除数据
 
@@ -49,7 +49,7 @@ ms.locfileid: "74564125"
 应用保护策略设置表包含“设置”、“值”和“操作”列    。
 
 ### <a name="ios-policy-settings"></a>iOS 策略设置
-对于 iOS，可使用“设置”下拉列表为以下设置配置操作  ：
+对于 iOS/iPadOS，可使用“设置”  下拉列表为以下设置配置操作：
 - 最大 PIN 尝试次数
 - 离线宽限期
 - 已越狱/获得 root 权限的设备
@@ -59,7 +59,7 @@ ms.locfileid: "74564125"
 - 设备型号
 - 允许的最高设备威胁级别
 
-若要使用“设备型号”  设置，请输入 iOS 型号标识符的分号分隔列表。 这些值不区分大小写。 除了在需要输入“设备型号”的 Intune 报告中，还可以在 [HockeyApp 的支持文档](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)或此[第三方 GitHub 存储库](https://gist.github.com/adamawolf/3048717)中的“设备类型”列下找到 iOS 型号标识符。<br>
+若要使用“设备型号”  设置，请输入 iOS/iPadOS 型号标识符的分号分隔列表。 这些值不区分大小写。 除了在需要输入“设备型号”的 Intune 报告中，还可以在 [HockeyApp 的支持文档](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)或此[第三方 GitHub 存储库](https://gist.github.com/adamawolf/3048717)中的“设备类型”列下找到 iOS/iPadOS 型号标识符。<br>
 示例输入：iPhone5,2;iPhone5,3 
 
 在最终用户设备上，Intune 客户端执行操作的依据为，Intune 中指定的设备型号字符串与应用程序保护策略的简单匹配情况。 匹配完全取决于设备报告的内容。 建议你（即 IT 管理员）务必要根据各种设备制造商和型号对小型用户组测试此设置，以确保行为按预期发生。 默认值为“未配置”  。<br>
@@ -67,8 +67,8 @@ ms.locfileid: "74564125"
 - 允许指定项（阻止非指定项）
 - 允许指定项（擦除非指定项）
 
-**如果 IT 管理员对定目标到同一 Intune 用户的相同应用的策略输入不同的 iOS 型号标识符列表，会发生什么？**<br>
-如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，定目标到相同应用/用户组合的“策略 A”  和“策略 B”  中列出的 iOS 型号标识符的交集。 例如，如果“策略 A”指定“iPhone5,2; iPhone5,3”，而“策略 B”指定“iPhone5,3”，则当“策略 A”和“策略 B”以 Intune 用户为目标时，组合的原则将是“iPhone5,3”     。 
+**如果 IT 管理员对面向同一 Intune 用户的相同应用的策略输入不同的 iOS/iPadOS 型号标识符列表，会发生什么情况？**<br>
+如果两个应用保护策略在已配置的值方面存在冲突，Intune 通常会采用限制性最强的方法。 因此，向下发送到目标 Intune 用户正打开的目标应用的策略是，面向相同应用/用户组合的“策略 A”  和“策略 B”  中列出的 iOS/iPadOS 型号标识符的交集。 例如，如果“策略 A”指定“iPhone5,2; iPhone5,3”，而“策略 B”指定“iPhone5,3”，则当“策略 A”和“策略 B”以 Intune 用户为目标时，组合的原则将是“iPhone5,3”     。 
 
 ### <a name="android-policy-settings"></a>Android 策略设置
 

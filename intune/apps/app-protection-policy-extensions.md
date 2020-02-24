@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692106"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414594"
 ---
 # <a name="protecting-application-extensions"></a>保护应用扩展
 
@@ -31,7 +31,7 @@ ms.locfileid: "75692106"
 
 ## <a name="add-ins-for-outlook-app"></a>Outlook 应用的加载项
 
-使用 Outlook 加载项，可以将热门应用与电子邮件客户端集成。 Outlook 加载项适用于 Web、Windows、Mac 以及 Android 和 iOS 版 Outlook。 Intune APP SDK 和 Intune 应用保护策略不支持管理 Outlook 加载项，但可使用其他方法来限制使用加载项。 由于加载项是通过 Microsoft Exchange 管理的，所以用户能够在 Outlook 和非托管加载项应用程序之间共享数据和邮件，除非用户的 Exchange 关闭了加载项。
+使用 Outlook 加载项，可以将热门应用与电子邮件客户端集成。 Outlook 加载项适用于 Web、Windows、Mac 以及 Android 和 iOS/iPadOS 版 Outlook。 Intune APP SDK 和 Intune 应用保护策略不支持管理 Outlook 加载项，但可使用其他方法来限制使用加载项。 由于加载项是通过 Microsoft Exchange 管理的，所以用户能够在 Outlook 和非托管加载项应用程序之间共享数据和邮件，除非用户的 Exchange 关闭了加载项。
 
 如果要阻止最终用户访问和安装 Outlook 加载项（这会影响所有 Outlook 客户端），请确保在 Exchange 管理中心中对角色进行以下更改：
 

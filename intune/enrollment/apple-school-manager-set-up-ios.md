@@ -1,7 +1,7 @@
 ---
-title: iOS 设备的 Apple School Manager 计划注册
+title: iOS/iPadOS 设备的 Apple School Manager 计划注册
 titleSuffix: Microsoft Intune
-description: 了解如何使用 Intune 为公司拥有的 iOS 设备设置 Apple School Manager 计划注册。
+description: 了解如何使用 Intune 为公司拥有的 iOS/iPadOS 设备设置 Apple School Manager 计划注册。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 3336ed09c414538e2879a7c50d1e3a0111f58b11
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691820"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415384"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 设置 iOS 设备注册
+# <a name="set-up-iosipados-device-enrollment-with-apple-school-manager"></a>通过 Apple School Manager 设置 iOS/iPadOS 设备注册
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-可以将 Intune 设置为，注册通过 [Apple School Manager](https://school.apple.com/) 计划购买的 iOS 设备。 通过结合使用 Intune 与 Apple School Manager，可在不触碰设备的情况下注册大量 iOS 设备。 学生或教师打开设备时，“设置助理”使用预先配置的设置运行，并且会注册设备以便进行管理。
+可以将 Intune 设置为，注册通过 [Apple School Manager](https://school.apple.com/) 计划购买的 iOS/iPadOS 设备。 通过结合使用 Intune 与 Apple School Manager，可在不触碰设备的情况下注册大量 iOS/iPadOS 设备。 学生或教师打开设备时，“设置助理”使用预先配置的设置运行，并且会注册设备以便进行管理。
 
 若要启用 Apple School Manager 注册，请使用 Intune 和 Apple School Manager 门户。 需要序列号列表或购买订单编号，这样才能将设备分配到 Intune 进行管理。 创建 DEP 注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
@@ -44,7 +44,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>获取 Apple 令牌并分配设备
 
-必须先从 Apple 获取令牌 (.p7m) 文件，然后才能使用 Apple School Manager 注册公司拥有的 iOS 设备。 使用此令牌，Intune 可以同步有关已加入 Apple School Manager 的设备的信息。 它也允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。 在 Apple 门户中时，还可分配设备序列号以进行管理。
+必须先从 Apple 获取令牌 (.p7m) 文件，然后才能使用 Apple School Manager 注册公司拥有的 iOS/iPadOS 设备。 使用此令牌，Intune 可以同步有关已加入 Apple School Manager 的设备的信息。 它也允许 Intune 将注册配置文件上传至 Apple，并向设备分配这些配置文件。 在 Apple 门户中时，还可分配设备序列号以进行管理。
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>步骤 1。 下载创建 Apple 令牌所需的 Intune 公钥证书
 
@@ -76,7 +76,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 ![指定用来创建注册计划令牌的 Apple ID 并浏览到注册计划令牌的屏幕截图。](./media/apple-school-manager-set-up-ios/image03.png)
 
 ### <a name="step-4-upload-your-token"></a>步骤 4. 上传令牌
-在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”，然后选择“创建”    。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS 设备。 Intune 会自动从 Apple 同步 Apple School Manager 设备。
+在“Apple 令牌”框中，浏览到证书 (.pem) 文件，选择“打开”，然后选择“创建”    。 使用 Push Certificate，Intune 可通过将策略推送到已注册的移动设备来注册和管理 iOS/iPadOS 设备。 Intune 会自动从 Apple 同步 Apple School Manager 设备。
 
 ## <a name="create-an-apple-enrollment-profile"></a>创建 Apple 注册配置文件
 至此，你已安装令牌，接下来可以为 Apple School 设备创建注册配置文件了。 设备注册配置文件定义注册时应用于设备组的设置。
@@ -106,7 +106,7 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
     > 使用 Apple 设置助理进行身份验证时，不支持执行这些操作。
 
 6. 选择“设备管理设置”，然后选择是否要监督使用此配置文件的设备  。
-     “受监督”的设备会提供更多的管理选项，并且会默认禁用“激活锁”。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS 设备的组织。
+     “受监督”的设备会提供更多的管理选项，并且会默认禁用“激活锁”。 Microsoft 建议使用 DEP 作为启用受监督模式的机制，尤其适用于计划部署大量 iOS/iPadOS 设备的组织。
 
     将通过两种方式通知用户他们的设备受到监督：
 
@@ -114,9 +114,9 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
    - “设置”   > “常规”   > “关于”  屏幕显示：“此 iPhone 受到监督”。 Contoso 可以监视你的 Internet 流量并找到此设备。”
 
      > [!NOTE]
-     > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
+     > 不受监督的注册设备只能使用 Apple Configurator 重置为受监督。 以此方式重置设备需要使用 USB 线将 iOS/iPadOS 设备连接到 Mac。 有关详细信息，请参阅 [Apple Configurator 文档](http://help.apple.com/configurator/mac/2.3)。
 
-7. 选择是否要对使用此配置文件的设备进行锁定注册。  “锁定注册”将禁用允许从“设置”菜单删除管理配置文件的 iOS 设置。  在设备注册之后，如果不擦除设备，就无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。   
+7. 选择是否要对使用此配置文件的设备进行锁定注册。 “锁定注册”  将禁用允许从“设置”  菜单删除管理配置文件的 iOS/iPadOS 设置。 在设备注册之后，如果不擦除设备，就无法更改此设置。 此类设备必须将“受监督”管理模式设置为“是”。   
 
 8. 可以允许多个用户使用托管 Apple ID 登录到已注册的 iPad。 为此，请在“共享的 iPad”  下选择“是”  （此选项需要“不使用用户关联注册”  并将“已监管”模式  设置为“是”  。）在 Apple School Manager 门户中创建托管的 Apple ID。 详细了解[共享 iPad](../fundamentals/education-settings-configure-ios-shared.md) 和 [Apple 的共享 iPad 要求](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)。
 
@@ -131,11 +131,11 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 13. 选择“设置助理设置”，配置以下配置文件设置  ：![设置助理自定义项。](./media/apple-school-manager-set-up-ios/setupassistantcustom.png)
 
 
-    |                 设置                  |                                                                                               描述                                                                                               |
+    |                 设置                  |                                                                                               说明                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>部门名称</strong>     |                                                             用户在激活过程中轻点“关于配置”时显示。                                                              |
     |    <strong>部门电话</strong>     |                                                          用户在激活过程中单击“需要帮助”按钮时显示。                                                          |
-    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 iOS 的“设置”菜单中设置。                                                      |
+    | <strong>设置助理选项</strong> |                                                     这些可选设置可以稍后在 iOS/iPadOS 的“设置”菜单中设置。                                                      |
     |        <strong>密码</strong>         | 在激活过程中提示输入密码。 对于不安全的设备，始终要求提供密码，除非以其他方式（如限制设备只能使用一个应用的展台模式）控制访问。 |
     |    <strong>位置服务</strong>    |                                                                 如果启用，在激活过程中设置助理会提示此服务。                                                                  |
     |         <strong>还原</strong>         |                                                                如果启用，在激活过程中设置助理会提示进行 iCloud 备份。                                                                 |
@@ -182,6 +182,6 @@ Apple School Manager 注册不能与 [Apple 的设备注册计划](device-enroll
 2. 选择“设备”> 在列表中选择设备 >“分配配置文件”。  
 3. 在“分配配置文件”  下，选择设备的配置文件，再选择“分配”  。
 
-## <a name="distribute-devices-to-users"></a>将设备分配给用户
+## <a name="distribute-devices-to-users"></a>将设备分发给用户
 
-已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 Apple School 设备所需的配置文件。 现在可以将设备分配给用户。 打开 iOS Apple School Manager 设备时，它将注册为由 Intune 管理。 在擦除设备之前，配置文件不能应用于当前正在使用的已激活设备。
+已经在 Apple 和 Intune 之间启用了管理和同步，并且分配了注册 Apple School 设备所需的配置文件。 现在可以将设备分配给用户。 打开 iOS/iPadOS Apple School Manager 设备时，它将注册为由 Intune 管理。 在擦除设备之前，配置文件不能应用于当前正在使用的已激活设备。

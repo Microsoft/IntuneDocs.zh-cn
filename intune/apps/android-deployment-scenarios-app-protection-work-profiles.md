@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059798"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415110"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 中 Android 企业设备上的应用程序保护策略和工作配置文件
 
@@ -106,7 +106,7 @@ Office 应用程序（如 Outlook 和 OneDrive）具有“多标识”行为。 
 
 在使用工作配置文件时，你可能想要禁用此多标识行为。 禁用该行为时，工作配置文件中应用的标记实例只能使用组织标识进行配置。 使用“允许的帐户”应用配置设置来支持 Office Android 应用。
 
-有关详细信息，请参阅[部署 Outlook for iOS 和 Outlook for Android 应用配置设置](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)。
+有关详细信息，请参阅[部署 Outlook for iOS/iPadOS 和 Outlook for Android 应用配置设置](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)。
 
 ## <a name="when-to-use-intune-app"></a>何时使用 Intune APP
 

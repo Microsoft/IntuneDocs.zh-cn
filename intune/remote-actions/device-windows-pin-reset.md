@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907213"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413628"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 在 Windows 设备上重置密码
 
@@ -60,7 +60,7 @@ ms.locfileid: "74907213"
 将此 CSP 的值设置为“True”  。
 
 > [!TIP]
-> 创建策略后，可将其分配（或部署）到一个组。 可将策略分配到用户组或设备组。 如果将其分配到用户组，则组可包含拥有 IOS 等其他设备的用户。 从技术上讲，不会应用该策略，但这些设备仍包含在状态详细信息中。
+> 创建策略后，可将其分配（或部署）到一个组。 可将策略分配到用户组或设备组。 如果将其分配到用户组，则组可包含拥有 iOS/iPadOS 等其他设备的用户。 从技术上讲，不会应用该策略，但这些设备仍包含在状态详细信息中。
 
 ## <a name="reset-the-passcode"></a>重置密码
 

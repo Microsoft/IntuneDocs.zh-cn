@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 812b2e40c32b1442e632739c3964eb57027e6d9e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907196"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413731"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>使用 TeamViewer 远程管理 Intune 设备
 
@@ -29,7 +29,7 @@ ms.locfileid: "74907196"
 
 ## <a name="prerequisites"></a>必备条件
 
-- 使用支持的设备。 Intune 托管 Android 设备管理、Android 工作配置文件、Windows、iOS 和 macOS 设备支持远程管理。 TeamViewer 可能不支持 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。有关可支持性的信息，请参阅 [TeamViewer](https://www.teamviewer.com)，了解所有更新。
+- 使用支持的设备。 Intune 托管 Android 设备管理、Android 工作配置文件、Windows、iOS/iPadOS 和 macOS 设备支持远程管理。 TeamViewer 可能不支持 Windows Holographic (HoloLens)、Windows Team (Surface Hub) 或 Windows 10 S。有关可支持性的信息，请参阅 [TeamViewer](https://www.teamviewer.com)，了解所有更新。
 
 > [!NOTE]
 > Android 专用设备和完全托管设备不受支持。

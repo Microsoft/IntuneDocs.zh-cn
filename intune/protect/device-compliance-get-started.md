@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812170"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413647"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在设备上设置规则以允许使用 Intune 访问组织中的资源
 
@@ -104,7 +104,9 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
   - 允许公司门户使用位置服务。
   - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。 打开公司门户应用或将设备移动 500 米或更远距离会触发评估。 如果设备在 72 小时内未移动 500 米，则用户需要打开公司门户应用，以增强越狱评估。
 
-- **符合性状态有效期(天)** ：输入设备报告所有已收到符合性策略的状态的时间段。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。
+- **符合性状态有效期(天)** ：输入设备报告所有已收到符合性策略的状态的时间段。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。 最小值为 1 天。
+
+  此设置显示为“处于活动状态”  的默认符合性策略（“设备”   > “监视”   > “设置符合性”  ）。 此策略的后台任务一天运行一次。
 
 可以使用这些内置策略来监视这些设置。 Intune 还会按不同时间间隔[刷新或检查更新](create-compliance-policy.md#refresh-cycle-times)，具体取决于设备平台。 [Microsoft Intune 中设备策略和配置文件的常见疑问、问题和解决方案](../configuration/device-profile-troubleshoot.md)是不错的资源。
 

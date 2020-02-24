@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 52c8d10f0b8d06d68d75450c3d708f910bc5ddd4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755429"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415047"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>为托管的 Android Enterprise 设备添加应用配置策略
 
@@ -152,7 +152,7 @@ Microsoft Intune 中的应用配置策略向托管 Android Enterprise 设备上�
 ## <a name="additional-information"></a>其他信息
 
 - [将托管 Google Play 应用分配到 Android Enterprise 设备](apps-add-android-for-work.md#assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices)
-- [部署 Outlook for iOS 和 Outlook for Android 应用配置设置](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [部署 Outlook for iOS/iPadOS 和 Outlook for Android 应用配置设置](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>后续步骤
 

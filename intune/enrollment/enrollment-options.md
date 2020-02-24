@@ -16,12 +16,12 @@ ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8c502bd42d3290bd03c0ce954d55de3073c3f2d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7c1ff18a7923d7502e12a9bdb33931089fada6e3
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503213"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414245"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>由 Intune 托管的设备的注册选项
 
@@ -42,7 +42,7 @@ ms.locfileid: "72503213"
 
 ## <a name="enable-apple-device-enrollment"></a>启用 Apple 设备注册
 
-必须拥有 MDM Push Certificate 才能注册 iOS 和 macOS 设备。 详细了解 [MDM Push Certificate](apple-mdm-push-certificate-get.md)。
+必须拥有 MDM Push Certificate 才能注册 iOS/iPadOS 和 macOS 设备。 详细了解 [MDM Push Certificate](apple-mdm-push-certificate-get.md)。
 
 ## <a name="corporate-identifiers"></a>企业标识符
 

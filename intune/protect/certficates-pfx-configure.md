@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207241"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258090"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
@@ -76,7 +76,7 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
   - 在服务器上安装 Microsoft Intune 的 PFX 证书连接器。  
   - 要自动接收重要更新，请确保防火墙已打开，以便连接器从端口 443 访问 autoupdate.msappproxy.net   。   
 
-  若要详细了解 Intune 和连接器可以访问的网络终结点，请参阅 [Microsoft Intune 网络终结点](../fundamentals/intune-endpoints.md)。
+  有关详细信息，请参阅 [Microsoft Intune 的网络终结点](../fundamentals/intune-endpoints.md)和 [Intune 网络配置要求和带宽](../fundamentals/network-bandwidth-use.md)。
 
 - **Windows Server**：  
   使用 Windows Server 托管以下内容：

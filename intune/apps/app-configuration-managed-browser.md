@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812511"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414908"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 受策略保护的浏览器管理 Web 访问
 
@@ -42,7 +42,7 @@ ms.locfileid: "76812511"
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge 支持
 
-可以使用 Microsoft Edge 支持 iOS 和 Android 设备上的企业方案。 Microsoft Edge 将增加对最终用户体验的改进，支持与 Intune Managed Browser 相同的所有管理方案。 Intune 策略启用的以下 Microsoft Edge 企业功能包括：
+可以使用 Microsoft Edge 支持 iOS/iPadOS 和 Android 设备上的企业方案。 Microsoft Edge 将增加对最终用户体验的改进，支持与 Intune Managed Browser 相同的所有管理方案。 Intune 策略启用的以下 Microsoft Edge 企业功能包括：
 
 - **双重标识** - 用户可以同时添加工作帐户以及个人帐户以进行浏览。 两个标识完全独立，这类似于 Office 365 和 Outlook 中的体系结构和体验。 Intune 管理员将能够为工作帐户中受保护的浏览体验设置所需的策略。 
 - **Intune 应用保护策略集成** - 管理员现在可以将应用保护策略定向到 Microsoft Edge，包括控制剪切、复制和粘贴，防止执行屏幕捕获，并确保仅在其他托管应用中打开用户选择的链接。
@@ -57,9 +57,9 @@ Microsoft Edge 和 Intune Managed Browser 是 Web 浏览器应用，你和你的
 
 浏览器策略的操作系统要求：
 - Android 4 及更高版本，或
-- iOS 8.0 及更高版本。
+- iOS/iPadOS 8.0 及更高版本。
 
-早期版本的 Android 和 iOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
+早期版本的 Android 和 iOS/iPadOS 将能够继续使用 Managed Browser，但不能安装新版本的应用，并且可能无法访问所有应用功能。 建议将这些设备更新为受支持的操作系统版本。
 
 >[!NOTE]
 >Managed Browser 不支持安全套接字层版本 3 (SSLv3) 加密协议。
@@ -123,9 +123,9 @@ Managed Browser 不支持经典条件访问策略。 有关详细信息，请参
 
 ## <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>在受策略保护的浏览器中单一登录到 Azure AD 连接的 Web 应用
 
-iOS 和 Android 上的 Microsoft Edge 和 Intune Managed Browser 可利用到 Azure AD 连接的所有 Web 应用（SaaS 和本地）的 SSO。 Microsoft Authenticator 应用存在于 iOS 上，或存在于 Android 上的 Intune 公司门户应用上时，受策略保护的浏览器的用户将能够访问 Azure AD 连接的 Web 应用，而不必重新输入其凭据。
+iOS/iPadOS 和 Android 上的 Microsoft Edge 和 Intune Managed Browser 可利用到 Azure AD 连接的所有 Web 应用（SaaS 和本地）的 SSO。 Microsoft Authenticator 应用存在于 iOS/iPadOS 上，或存在于 Android 上的 Intune 公司门户应用上时，受策略保护的浏览器的用户将能够访问 Azure AD 连接的 Web 应用，而不必重新输入其凭据。
 
-SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Intune 公司门户对设备进行注册。 如果 Authenticator 应用或 Intune 公司门户的用户的设备尚未由其他应用程序注册，用户在受策略保护的浏览器中导航到一个 Azure AD 连接的 Web 应用时，系统会提示他们注册其设备。 使用 Intune 管理的帐户注册设备后，该帐户将为 Azure AD 连接的 Web 应用启用 SSO。 
+SSO 要求使用 iOS/iPadOS 上的 Microsoft Authenticator 应用或 Android 上的 Intune 公司门户对设备进行注册。 如果 Authenticator 应用或 Intune 公司门户的用户的设备尚未由其他应用程序注册，用户在受策略保护的浏览器中导航到一个 Azure AD 连接的 Web 应用时，系统会提示他们注册其设备。 使用 Intune 管理的帐户注册设备后，该帐户将为 Azure AD 连接的 Web 应用启用 SSO。 
 
 > [!NOTE]
 > 设备注册是 Azure AD 服务的简单签入。 不需要完整的设备注册，并且不会向 IT 提供设备上的任何其他权限。
@@ -138,7 +138,7 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“应用”   > “应用配置策略”   > “添加”   > “托管应用”  。
 3. 在“创建应用配置策略”窗格的“基本信息”页上，输入应用配置设置的“名称”和可选“描述”     。
-4. 选择“选择公共应用”  ，然后选择适用于 iOS 或适用于 Android（或适用于两者）的“Managed Browser”  和/或“Edge”  。
+4. 选择“选择公共应用”  ，然后选择适用于 iOS/iPadOS 或适用于 Android（或适用于两者）的“Managed Browser”  和/或“Edge”  。
 5. 单击“选择”  以返回到“创建应用配置策略”  窗格。
 6. 单击“下一步”以显示“设置”页面   。
 7. 在“设置”  页面上，定义键值对以为应用提供配置。 请参阅本文的后续部分，了解可以定义的不同键值对。
@@ -186,7 +186,7 @@ SSO 要求使用 iOS 上的 Microsoft Authenticator 应用或 Android 上的 Int
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>如何为受保护的浏览器配置应用程序代理设置
 
-可将 Microsoft Edge、Intune Managed Browser 和 [Azure AD 应用程序代理]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)配合使用，以支持 iOS 和 Android 设备用户实现以下方案：
+可将 Microsoft Edge、Intune Managed Browser 和 [Azure AD 应用程序代理]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)配合使用，以支持 iOS/iPadOS 和 Android 设备用户实现以下方案：
 
 - 用户下载并登录到 Microsoft Outlook 应用。 将自动应用 Intune 应用保护策略。 它们对保存的数据进行加密，并阻止用户将公司文件传输到设备上的非托管应用或位置。 当用户接下来单击 Outlook 中 Intranet 站点的链接时，可以指定在受保护的浏览器应用程序中而不是在另一个浏览器中打开链接。 受保护的浏览器识别出这个 Intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 Intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问该网站且 Outlook 中的链接也按预期工作。
 - 远程用户打开受保护的浏览器应用程序，并使用内部 URL 导航到 Intranet 站点。 受保护的浏览器识别出这个 Intranet 站点已通过应用程序代理向用户公开。 将通过应用程序代理对用户进行自动路由，以便在进入 Intranet 站点前进行任何适用的多重身份验证和条件性访问。 之前在用户处于远程访问状态时，可能找不到该站点，现在用户可正常访问。
@@ -316,9 +316,9 @@ Outlook 必须配置可启用**将 Web 内容限制为仅在 Managed Browser 中
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用 Managed Browser 访问托管应用日志
 
-在 iOS 设备上安装了 Managed Browser 的最终用户可查看所有 Microsoft 已发布应用的管理状态。 他们还可针对托管 iOS 应用的疑难问题发送日志。
+在 iOS/iPadOS 设备上安装了 Managed Browser 的最终用户可查看所有 Microsoft 已发布应用的管理状态。 他们还可针对托管 iOS/iPadOS 应用的疑难问题发送日志。
 
-1. 打开 iOS“设置”  。
+1. 打开 iOS/iPadOS 设置  。
 2. 选择托管的“Browser”应用程序设置  。
 3. 切换“启用 Intune 诊断”，以便在疑难解答模式中设置浏览器  。
 4. 打开托管的“Browser”  。 单击“查看 Intune 应用状态”以查看各个应用程序策略设置  。
@@ -345,7 +345,7 @@ Browser 将启动疑难解答模式。
 ### <a name="turn-off-usage-data"></a>关闭用法数据
 Microsoft 会自动收集有关性能和 Managed Browser 使用情况的匿名数据，以改进 Microsoft 产品和服务。 用户可通过使用设备上的**用法数据**设置关闭数据收集。 不具有对此数据的收集的控制。
 
-- 在 iOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
+- 在 iOS/iPadOS 设备上，如果用户访问的网站的证书已过期或不受信任，则无法打开该网站。
 
 ## <a name="next-steps"></a>后续步骤
 
