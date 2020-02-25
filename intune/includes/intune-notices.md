@@ -7,14 +7,25 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415066"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529323"
 ---
 本文中的通知提供了重要信息，可以帮助你为未来的 Intune 更改和功能做好准备。
+
+### <a name="microsoft-intune-support-for-windows-10-mobile-ending--3544938--"></a>Microsoft Intune 对 Windows 10 移动版的支持即将结束<!--3544938-->
+Microsoft 对 Windows 10 移动版的主流支持已于 2019 年 12 月结束。 如本支持声明所述，Windows 10 移动版用户将不再有资格从 Microsoft 接收新的安全更新、非安全修补程序、免费的辅助支持选项或联机技术内容更新。 基于对移动 OS 的全面支持，Microsoft Intune 现在将于 2020 年 5 月 11 日结束对 Windows 10 移动版应用的公司门户和 Windows 10 移动版操作系统的支持。
+
+#### <a name="how-does-this-affect-me"></a>这对我有何影响？
+如果贵组织中已部署 Windows 10 移动版设备，那么从现在到 2020 年 5 月 11 日，你可以注册新设备、添加或删除策略和应用，或更新任何管理设置。 5 月 11 日之后，我们将停止新的注册，并最终从 Intune UI 中删除 Windows 10 移动版管理。 设备将不再签入 Intune 服务，我们将删除设备和策略数据。  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
+你可以查看 Intune 报告，了解可能受影响的设备或用户。 转到“设备”   > “所有设备”  ，并按“OS”进行筛选。 你可以添加附加列，帮助确定你的组织中哪些人员的设备正在运行 Windows 10 移动版。 要求最终用户升级其设备或停止使用这些设备进行公司访问。
+
+
 
 ### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>更改计划：在 Intune 中注册 Android Enterprise 专用设备体验的更改<!--6114580-->
 我们在 11 月版中介绍过，我们已添加对 SCEP 证书部署到 Android Enterprise 专用设备的支持，以便启用对 Wi-Fi 配置文件的基于证书的访问。 此更改涉及 Android Enterprise 专用设备的一些较小的注册流更改。 随着即将推出的 3 月服务更新或 2003 的发布，我们希望你了解一些其他更改。
@@ -44,16 +55,6 @@ ms.locfileid: "77415066"
 
 #### <a name="additional-information"></a>其他信息
 https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
-
-
-### <a name="end-support-for-windows-phone-81--3544909--"></a>结束对 Windows Phone 8.1 的支持<!--3544909-->
-Microsoft 对 Windows Phone 8.1 的主流支持于 2017 年 7 月结束，延期支持于 2019 年 6 月结束。 自 2017 年 10 月以来，针对 Windows Phone 8.1 的公司门户应用一直处于支持模式。 Microsoft Intune 将于 2020 年 2 月 20 日结束对 Windows Phone 8.1 的支持。
-
-#### <a name="how-does-this-affect-me"></a>这对我有何影响？
-2020 年 2 月 20 日之后，这些设备将不再收到任何安全更新，并且你将无法注册任何新设备。 现有的 Windows Phone 8.1 设备将保持注册状态（策略、应用和报告），但请注意，在此日期之后，将不再支持对现有注册设备的任何故障排除，因为许多组件（如第三方证书）已结束对该平台的支持。 Intune 将停止与 Intune 和 Windows Phone 8.1 的兼容性测试。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要如何准备应对此项变化？
-你可以查看 Intune 报告，了解可能受影响的设备或用户。 转到“设备”>“所有设备”并按 OS 进行筛选。 你可以添加附加列，帮助确定你的组织中哪些人员的设备正在运行 Windows Phone 8.1。 要求你的最终用户将设备升级到受支持操作系统版本。
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>执行操作：使用 Microsoft Edge 获取受保护的 Intune 浏览器体验<!--5728447-->
