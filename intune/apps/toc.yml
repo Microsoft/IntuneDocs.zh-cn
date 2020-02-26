@@ -82,12 +82,16 @@
               href: apps-win32-s-mode.md
         - name: 添加特定应用
           items:
-            - name: 公司门户应用
+            - name: 公司门户应用 - Autopilot
+              href: store-apps-company-portal-autopilot.md
+            - name: 公司门户应用 - 下载
               href: store-apps-company-portal-app.md
             - name: Microsoft Edge for Windows 10
               href: apps-windows-edge.md
             - name: Microsoft Edge for macOS
               href: apps-edge-macos.md
+            - name: 适用于 macOS 的 Microsoft Defender ATP
+              href: apps-advanced-threat-protection-macos.md
         - name: PowerShell 脚本
           href: intune-management-extension.md
     - name: 分配应用
