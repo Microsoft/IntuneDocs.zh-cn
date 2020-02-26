@@ -113,3 +113,5 @@
           href: troubleshoot-ios-enrollment-errors.md
         - name: Windows 设备注册疑难解答
           href: troubleshoot-windows-enrollment-errors.md
+        - name: Android 设备注册故障排除
+          href: troubleshoot-android-enrollment.md

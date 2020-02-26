@@ -39,6 +39,8 @@
   items:
     - name: 什么是 Intune for Education？
       href: introduction-intune-education.md
+    - name: 什么是 Intune for US Government？
+      href: introduction-intune-government.md
     - name: 体系结构概况
       href: high-level-architecture.md
     - name: 设备生命周期
