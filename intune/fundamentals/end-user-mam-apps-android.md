@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a7aa439fcf60173cac71f0fc71ebac481660c785
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414063"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514687"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Android 应用由应用保护策略托管时会出现的情况
 
@@ -53,7 +53,7 @@ Android 设备上与应用保护策略关联的所有应用都需要公司门户
 
 阅读以下示例场景以更深入地了解如何处理多个用户帐户。
 
-用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 **X 公司**在 **Y 公司** **之前**部署应用保护策略。与 X 公司  关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户，并添加与 Y 公司关联的帐户。
+用户 A 为两家公司（**X 公司**和 **Y 公司**）工作。用户 A 对于每家公司具有 1 个工作帐户，它们都使用 Intune 来部署应用保护策略。 X 公司在 Y 公司之前部署应用保护策略。    与 X 公司  关联的帐户会获得应用保护策略，而与 Y 公司关联的帐户不会。如果希望与 Y 公司关联的用户帐户由应用保护策略管理，必须删除与 X 公司关联的用户帐户，并添加与 Y 公司关联的帐户。
 
 ### <a name="add-a-second-account"></a>添加第二个帐户
 
@@ -81,4 +81,4 @@ Android 设备上与应用保护策略关联的所有应用都需要公司门户
 |Pfile 是一种用于受保护文件的通用“包装”格式，它可封装加密内容和 Azure 信息保护许可证。 它可以用于保护任何文件类型。|
 
 ## <a name="next-steps"></a>后续步骤
-[iOS 应用由应用保护策略托管时会出现的情况](end-user-mam-apps-ios.md)
+[iOS/iPadOS 应用由应用保护策略托管时会出现的情况](end-user-mam-apps-ios.md)
