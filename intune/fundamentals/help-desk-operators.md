@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510248"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514585"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑难解答门户帮助公司的用户
 
@@ -59,15 +59,15 @@ ms.locfileid: "72510248"
 
 可使用“疑难解答”窗格来查看用户信息  。
 
-![故障排除仪表板，其中包含下表描述的编号区域](./media/help-desk-operators/troubleshooting-dash.png)
+![疑难解答仪表板，其中包含下表所述的编号区域](./media/help-desk-operators/troubleshooting-dash.png)
 
-| 领域 | 名称 | 描述 |
+| 领域 | 名称 | 说明 |
 | ---  | ---  | ---         |
 | 1.   | 帐户状态  | 显示当前 Intune 租户状态为“活动”或“非活动”   。       |
 | 2.   | 用户选择  | 当前所选用户的名称。 单击“更改用户”可选择新用户  。       |
 | 3.   | 用户状态  | 显示用户的 Intune 许可证状态、设备数目、每个设备的符合性、应用数目以及应用的符合性。       |
 | 4.   | 用户信息  | 使用该列表在窗格中选择要查看的详细信息。 <br>可选内容如下： <ul><li>客户端应用<li>相容性策略<li> 配置策略<li>应用保护策略 <li>注册限制</ul>      |
-| 5.   | 组成员资格  | 显示所选用户所属的当前组。       |
+| 5.   | 组成员身份  | 显示所选用户所属的当前组。       |
 
 <!-- this section needs to be updated
 
@@ -248,7 +248,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 注册失败表列出了失败的注册尝试。 下表中列出的设备可能随后会在另一次尝试中成功注册。 部分失败的尝试可能没有列出。 并非所有失败的操作都有缓解信息。
 
-| 表列 | 描述 |
+| 表列 | 说明 |
 |-------------|----------|
 | 注册开始 | 用户首次注册的开始时间。 |
 | 操作系统 | 设备的操作系统。 |
@@ -259,7 +259,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 选择失败行时，可以获取更多详细信息。
 
-| 部分 | 描述 |
+| 部分 | 说明 |
 |-------------|----------|
 | 失败详细信息 | 对失败更详细的说明。 |
 | 可能有效的修正措施 | 解决该错误的推荐步骤。 部分失败可能没有对应的修正措施。 |
@@ -269,7 +269,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 | 错误 | 详细信息 |
 |-------------|----------|
-| iOS 超时或失败 | 用户在完成注册时用时过长导致设备与 Intune 之间出现超时。 |
+| iOS/iPadOS 超时或失败 | 用户在完成注册时用时过长导致设备与 Intune 之间出现超时。 |
 | 未找到用户或用户未得到授权 | 用户缺少许可证或已从该服务中删除。 |
 | 设备已注册 | 有人试图在仍由其他用户注册的设备上使用公司门户注册设备。 |
 | 未能载入至 Intune | 尝试注册时未配置 Intune 移动设备管理 (MDM) 机构。 |
@@ -286,14 +286,14 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | 意外的 Autopilot 注册方法 | 设备尝试使用不受允许的方法注册。 |
 | 已删除 Autopilot 设备 | 已从此帐户的 Autopilot 中删除尝试注册的设备。 |
 | 已达到设备上限 | 管理员配置的设备限制导致此注册被阻止。 |
-| Apple 载入 | 目前所有 iOS 设备注册都被阻止，因为 Intune 中缺少 Apple MDM 推送证书，或该证书已过期。 |
+| Apple 载入 | 目前所有 iOS/iPadOS 设备注册都被阻止，因为 Intune 中缺少 Apple MDM Push Certificate，或该证书已过期。 |
 | 设备未预先注册 | 设备未预先注册为公司，且所有个人注册都已被管理员阻止。 |
 | 功能不受支持 | 用户可能试图通过与 Intune 配置不兼容的方法进行注册。 |
 
 ## <a name="collect-available-data-from-mobile-device"></a>从移动设备收集可用数据
 
 对用户设备问题进行故障排除时，请使用以下资源帮助收集设备数据：
-- [将 iOS 注册错误发送给 IT 管理员](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [将 iOS/iPadOS 注册错误发送给 IT 管理员](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [利用详细日志记录帮助公司支持人员修复设备问题](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [使用 USB 电缆将 Android 日志发送给公司支持人员](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [使用电子邮件将 Android 诊断数据日志发送给 IT 管理员](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

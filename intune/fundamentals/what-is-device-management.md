@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058526"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510378"
 ---
 # <a name="device-management-overview"></a>设备管理概述
 
@@ -33,7 +33,7 @@ ms.locfileid: "74058526"
 
 答案是 [Microsoft Intune](what-is-intune.md)。 Intune 提供移动设备管理 (MDM) 和移动应用程序管理 (MAM)。 MDM 或 MAM 解决方案的一些关键任务是：
 
-- 支持多种移动环境，并能安全地管理 iOS、Android、Windows 和 macOS 设备。
+- 支持多种移动环境，并能安全地管理 iOS/iPadOS、Android、Windows 和 macOS 设备。
 - 确保设备和应用符合组织的安全要求。
 - 创建有助于确保组织所有和个人设备上组织数据的安全的策略。
 - 使用单个、统一的移动解决方案来实施这些策略，并帮助管理设备、应用、用户和组。
@@ -47,7 +47,7 @@ Intune 包含在 Microsoft Azure、Microsoft 365 中，并与 Azure Active Direc
 
 人们常常有多个使用不同平台的设备。 例如，员工可能会使用 Surface Pro 进行工作，并在个人生活中使用 Android 移动设备。 而且，人们常常从多个设备访问组织资源，例如 Microsoft Outlook 和 SharePoint。
 
-使用 Intune，你可以管理每个人的多个设备，以及在每个设备上运行的不同平台，包括 iOS、macOS、Android 和 Windows。 Intune 按设备平台分隔策略和设置。 因此，可以轻松管理和查看特定平台的设备。
+使用 Intune，可以管理每个人的多个设备，以及在每个设备上运行的不同平台，包括 iOS/iPadOS、macOS、Android 和 Windows。 Intune 按设备平台分隔策略和设置。 因此，可以轻松管理和查看特定平台的设备。
 
 [常见方案](common-scenarios.md)  是了解 Intune 在使用移动设备时如何回答常见问题的绝佳资源。 你将发现以下方案：  
 
@@ -55,7 +55,7 @@ Intune 包含在 Microsoft Azure、Microsoft 365 中，并与 Azure Active Direc
 - 安全可靠地访问 Office 365
 - 使用个人设备访问组织资源
 
-有关 Intune 的详细信息，请参阅[什么是 intune](what-is-intune.md)。
+有关 Intune 的详细信息，请参阅[什么是 Intune](what-is-intune.md)。
 
 ## <a name="integration-with-secure-and-protect-services"></a>与安全和保护服务集成
 
@@ -63,7 +63,7 @@ Intune 包含在 Microsoft Azure、Microsoft 365 中，并与 Azure Active Direc
 
 - Microsoft 365 是简化常见 IT 任务的关键组件  。 在 Microsoft 365 管理中心内，可创建用户，并管理组。 还可以访问其他服务，如 Intune、Azure AD 等。
 
-  例如，在 Microsoft 365 中创建 iOS 设备组。 然后，使用 Intune 将策略推送到着重于 iOS 功能的 iOS 设备组，例如访问应用商店、使用 AirDrop、备份到 iCloud、使用 Apple 的 Web 筛选器等。
+  例如，在 Microsoft 365 中创建 iOS/iPadOS 设备组。 然后，使用 Intune 将策略推送到侧重于 iOS/iPadOS 功能的 iOS/iPadOS 设备组，例如访问应用商店、使用 AirDrop、备份到 iCloud、使用 Apple 的 Web 筛选器等。
 
 - Windows Defender 包含许多安全功能，可帮助保护 Windows 10 设备  。 例如，结合使用 Intune 和 Windows Defender，可以：
 
@@ -86,7 +86,7 @@ Intune 包含在 Microsoft Azure、Microsoft 365 中，并与 Azure Active Direc
 
 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)是一站式服务，可管理和完成移动设备的任务。 此工作区包括用于设备管理（包括 Intune 和 Azure Active Directory）和客户端应用管理的服务。
 
-在 "设备管理" 管理中心，你可以：
+在设备管理管理中心可以执行以下操作：
 
 - [注册设备](../enrollment/device-enrollment.md)
 - [设置设备合规性](../protect/device-compliance-get-started.md)
@@ -97,11 +97,11 @@ Intune 包含在 Microsoft Azure、Microsoft 365 中，并与 Azure Active Direc
 - [管理角色](role-based-access-control.md)  
 - 管理软件更新
   - [管理 Windows 10 更新](../protect/windows-update-for-business-configure.md)  
-  - [管理 iOS 更新](../protect/software-updates-ios.md)  
+  - [管理 iOS/iPadOS 更新](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [管理用户](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [管理组和成员](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [疑难解答](help-desk-operators.md)
+- [故障排除](help-desk-operators.md)
 
 ## <a name="next-steps"></a>后续步骤
 

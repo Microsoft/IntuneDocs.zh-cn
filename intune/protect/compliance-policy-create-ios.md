@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中的 iOS 设备符合性设置 - Azure | Microsoft Docs
-description: 查看在 Microsoft Intune 中为 iOS 设备设置符合性时可以使用的所有设置的列表。 需要使用电子邮件，检查越狱或取得 root 权限的设备，设置允许的最小和最大操作系统，设置任何密码限制（包括密码长度和设备非活动性），限制应用等。
+title: Microsoft Intune 中的 iOS/iPadOS 设备符合性设置 - Azure | Microsoft Docs
+description: 查看在 Microsoft Intune 中为 iOS/iPadOS 设备设置符合性时可以使用的所有设置的列表。 需要使用电子邮件，检查越狱或取得 root 权限的设备，设置允许的最小和最大操作系统，设置任何密码限制（包括密码长度和设备非活动性），限制应用等。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074625"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514024"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 iOS 设置
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 将设备标记为符合或不符合的 iOS/iPadOS 设置
 
-本文列出并描述了在 Intune 中可针对 iOS 设备配置的不同符合性设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用这些设置来要求使用电子邮件，将获得 root 权限的（已越狱）设备标记为不符合要求，设置允许的威胁级别，将密码设置为过期等。
+本文列出并描述了在 Intune 中可针对 iOS/iPadOS 设备配置的不同符合性设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用这些设置来要求使用电子邮件，将获得 root 权限的（已越狱）设备标记为不符合要求，设置允许的威胁级别，将密码设置为过期等。
 
 此功能适用于：
 
@@ -86,11 +86,11 @@ ms.locfileid: "77074625"
 ### <a name="password"></a>Password
 
 > [!NOTE]
-> 符合性或配置策略应用到 iOS 设备后，系统会每 15 分钟提示用户一次，要求设置密码。 系统会持续提示用户，直到用户设置密码。 为 iOS 设备设置密码时，加密过程将自动启动。 在密码被禁用前，设备将一直保持为加密状态。
+> 符合性或配置策略应用到 iOS/iPadOS 设备后，系统会每 15 分钟提示用户一次，要求设置密码。 系统会持续提示用户，直到用户设置密码。 为 iOS/iPadOS 设备设置密码时，加密过程将自动启动。 在密码被禁用前，设备将一直保持为加密状态。
 
 - **需要密码才可解锁移动设备**：  
   - **未配置**（默认）- 不会评估此设置的符合性和不符合性  。  
-  - **必需** - 用户必须输入密码后才能访问其设备。 使用密码的 iOS 设备已加密。
+  - **必需** - 用户必须输入密码后才能访问其设备。 使用密码的 iOS/iPadOS 设备已加密。
 
 - **简单密码**：  
   - **未配置**（默认值）  - 用户可创建简单的密码，例如 1234  或 1111  。
@@ -125,7 +125,7 @@ ms.locfileid: "77074625"
   可以通过将应用的程序包 ID 添加到策略中来限制应用。 如果某一设备已安装该应用，此设备将标记为不符合要求的设备。
 
   - **应用名称** - 输入一个用户友好名称，帮助识别捆绑 ID。
-  - **应用程序包 ID** - 输入应用提供程序分配的唯一捆绑标识符。 若要查找捆绑 ID，请参阅 [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)（如何查找 iOS 应用的捆绑 ID）（打开另一个 Microsoft 网页）。  
+  - **应用程序包 ID** - 输入应用提供程序分配的唯一捆绑标识符。 若要查找捆绑 ID，请参阅[如何查找 iOS/iPadOS 应用的捆绑 ID](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)（打开另一个 Microsoft 网站）。  
 
 ## <a name="next-steps"></a>后续步骤
 

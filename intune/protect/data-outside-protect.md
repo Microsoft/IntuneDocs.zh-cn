@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea4f4cd53af06bf6ec47ed14976526116d963690
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 7520e5883a89d6cd040be670aedc8436cc40fadb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502383"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515180"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>使用 Microsoft Intune 防止对公司数据进行未经授权的访问
 
 可对 Office 365 文档和电子邮件进行分类、应用标签和保护，仅允许经授权的用户访问数据。 当IT 管理员或用户设置规则或条件后，自动管理此设置。 也可由 IT 团队提供推荐的设置，让用户遵照。 管理员和用户也可在没有其他有权限的角色协助的情况下，撤消已与他人共享的数据的访问权限。 这样做的结果是，即使数据离开公司网络，也可控制能够打开或更新受保护数据的用户。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 满足以下要求，可使用以下操作计划：
 * 你的公司已准备好安全转换到云。
@@ -50,5 +50,5 @@ ms.locfileid: "72502383"
 
 在后续步骤中，可详细了解增强公司数据保护的其他方式，包括： 
 
-* 了解如何使用 [iOS 和 Android 设备上的 Azure 信息保护](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)。
+* 了解如何使用 [iOS/iPadOS 和 Android 设备上的 Azure 信息保护](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)。
 * 对于 Windows Phone 和 Mac 计算机，请参阅 [Microsoft Rights Management 共享应用程序](https://technet.microsoft.com/dn451248)。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
-ms.translationtype: MTE75
+ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977744"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514552"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>Microsoft Intune 开发过程中的功能 - 2020 年 2 月
 
@@ -65,8 +65,8 @@ ms.locfileid: "76977744"
 “公司门户”应用会向最终用户显示其他应用安装状态消息。 以下条件适用于新的 Win32 依赖项功能：
 - 应用安装失败。 不符合管理员定义的依赖项。
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>在 iOS 设备上将 Web 剪辑重定向到 Microsoft Edge<!-- 5455276 -->
-Web 剪辑在 iOS 设备上充当已固定的 Web 应用，需要更新。 如果需要在受保护的浏览器中打开新部署的 Web 剪辑，将在 Microsoft Edge（而不是在 Intune Managed Browser 中）打开它们。 必须重定向现有 Web 剪辑，以确保它们在 Microsoft Edge 而不是 Managed Browser 中打开。
+### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>在 iOS/iPadOS 设备上将 Web 剪辑重定向到 Microsoft Edge<!-- 5455276 -->
+Web 剪辑在 iOS/iPadOS 设备上充当已固定的 Web 应用，需要更新。 如果需要在受保护的浏览器中打开新部署的 Web 剪辑，将在 Microsoft Edge（而不是在 Intune Managed Browser 中）打开它们。 必须重定向现有 Web 剪辑，以确保它们在 Microsoft Edge 而不是 Managed Browser 中打开。
 
 ### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS 公司门户用户体验改进<!-- 5568987 -->
 我们正在改进 macOS 设备注册体验和适用于 Mac 的公司门户应用。 预期会出现以下情况：
@@ -92,22 +92,22 @@ Intune 将提供一种简单的方法，将适用于 macOS 的 Microsoft Defende
 适用于：
 - macOS
 
-### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>具有 IKEv2 VPN 连接的 VPN 配置文件可将“始终可用”用于 iOS 设备 <!-- 1947932 idready -->
-在 iOS 设备上，可创建使用 IKEv2 连接的 VPN 配置文件（“设备配置” > “配置文件” > 创建配置文件 >  选择“iOS/iPadOS”作为平台 > 选择“VPN”作为配置文件类型      ）。 在未来的更新中，可为 IKEv2 配置“始终可用”。 配置后，IKEv2 VPN 配置文件会自动连接并保持连接（或快速重新连接）到 VPN。 即使切换网络或重启设备，它仍会保持连接。
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>具有 IKEv2 VPN 连接的 VPN 配置文件可将“始终可用”用于 iOS/iPadOS 设备 <!-- 1947932 idready -->
+在 iOS/iPadOS 设备上，可创建使用 IKEv2 连接的 VPN 配置文件（“设备配置” > “配置文件” > 创建配置文件 >  选择“iOS/iPadOS”作为平台 > 选择“VPN”作为配置文件类型      ）。 在未来的更新中，可为 IKEv2 配置“始终可用”。 配置后，IKEv2 VPN 配置文件会自动连接并保持连接（或快速重新连接）到 VPN。 即使切换网络或重启设备，它仍会保持连接。
 
-在 iOS 上，始终可用 VPN 仅限于 IKEv2 配置文件。
+在 iOS/iPadOS 上，始终可用 VPN 仅限于 IKEv2 配置文件。
 
-要查看当前可配置的 IKEv2 设置，请转到[在 iOS 设备上的 Microsoft Intune 中添加 VPN 设置](../configuration/vpn-settings-ios.md#ikev2-settings)。
+要查看当前可配置的 IKEv2 设置，请转到[在 iOS/iPadOS 设备上的 Microsoft Intune 中添加 VPN 设置](../configuration/vpn-settings-ios.md#ikev2-settings)。
 
 适用于：
 - iOS
 
-### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>改善了在 iOS 和 macOS 设备上创建配置文件时的用户界面体验<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
-为 iOS 或 macOS 设备创建配置文件时，将更新“终结点管理”管理中心中的体验。 此更改会影响以下设备配置文件（“设备” > “配置文件” > “创建配置文件” >  选择“iOS”或“macOS”作为平台      ）：
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>改善了在 iOS/iPadOS 和 macOS 设备上创建配置文件时的用户界面体验<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+为 iOS/iPadOS 或 macOS 设备创建配置文件时，将更新“终结点管理”管理中心中的体验。 此更改会影响以下设备配置文件（“设备” > “配置文件” > “创建配置文件” >  选择“iOS”或“macOS”作为平台      ）：
 
-- 自定义：iOS、macOS
-- 设备功能：iOS、macOS
-- 设备限制：iOS、macOS
+- 自定义：iOS/iPadOS、macOS
+- 设备功能：iOS/iPadOS、macOS
+- 设备限制：iOS/iPadOS、macOS
 - 终结点保护：macOS
 - 扩展：macOS
 - 首选项文件：macOS

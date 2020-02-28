@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中配置 macOS 设备的 VPN 设置 - Azure | Microsoft Docs
-description: 添加或创建一个虚拟专用网络（VPN）配置文件，包括连接详细信息、拆分隧道、具有标识符、键和值对的自定义 VPN 设置、带有配置脚本的代理设置、IP 或 FQDN 地址和中的 TCP 端口在运行 macOS 的设备上 Microsoft Intune。
+description: 添加或创建虚拟专用网络 (VPN) 配置文件，包括运行 macOS 的设备上的连接详细信息、拆分隧道、带标识符的自定义 VPN 设置、键和值对、带配置脚本的代理设置、IP 或 FQDN 地址以及 Microsoft Intune 中的 TCP 端口。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0bb2cb757e944369642807f117683dad3a9805a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: b20a7eca6f71d46380f9fcdb1674226cc54a104f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206255"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510773"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>在 Microsoft Intune 中为 macOS 设备添加 VPN 设置
 
@@ -35,7 +35,7 @@ ms.locfileid: "75206255"
 [创建设备配置文件](vpn-settings-configure.md)。
 
 > [!NOTE]
-> 这些设置适用于所有注册类型。 有关注册类型的详细信息，请参阅[macOS 注册](../enrollment/macos-enroll.md)。
+> 这些设置适用于所有注册类型。 有关注册类型的详细信息，请参阅 [macOS 注册](../enrollment/macos-enroll.md)。
 
 ## <a name="base-vpn-settings"></a>基础 VPN 设置
 
@@ -53,13 +53,13 @@ ms.locfileid: "75206255"
   - **自定义 VPN**
 - **拆分隧道**：“启用”或“禁用”此选项，让设备根据流量确定使用哪个连接   。 例如，旅馆中的用户使用 VPN 连接来访问工作文件，但使用旅馆的标准网络进行常规的 Web 浏览。
 
-<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
+<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS/iPadOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
 
 ## <a name="custom-vpn-settings"></a>自定义 VPN 设置
 
 如果选择“自定义 VPN”  ，请配置以下其他设置：
 
-- **Vpn 标识符**：为要使用的 vpn 应用输入标识符。 此标识符由 VPN 提供商提供。
+- **VPN 标识符**：为使用的 VPN 应用输入标识符。 此标识符由 VPN 提供商提供。
 - **输入自定义 VPN 属性的键值对**：添加或导入用于自定义 VPN 连接的“键”和“值”   。 这些值通常由 VPN 提供商提供。
 
 ## <a name="proxy-settings"></a>代理设置
@@ -72,4 +72,4 @@ ms.locfileid: "75206255"
 
 配置文件已创建，但它尚未起到任何作用。 下一步，[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
-在[android](vpn-settings-android.md)、 [android 企业版](vpn-settings-android-enterprise.md)、 [iOS](vpn-settings-ios.md)版和[Windows 10](vpn-settings-windows-10.md)设备上配置 VPN 设置。
+在 [Android](vpn-settings-android.md)、[Android Enterprise](vpn-settings-android-enterprise.md)、[iOS/iPadOS](vpn-settings-ios.md) 和 [Windows 10](vpn-settings-windows-10.md) 设备上配置 VPN 设置。

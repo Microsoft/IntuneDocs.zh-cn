@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be66f99006b06dce9f9bfe21eafa9f2be302e7b9
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: MTE75
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540973"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511645"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>排查应用安装问题
 
@@ -50,7 +50,7 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
     > 可以将同一应用分配到多个组，但应用的预期操作（意向）应不同。 例如，如果在应用分配期间对用户排除了应用，那么应用的解析意向显示为“已排除”  。 有关详细信息，请参阅[如何解决不同应用意向之间的冲突](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)。<br><br>
     > 如果所需应用安装失败，用户或用户的支持人员可以同步设备并重试应用安装。
 
-应用安装错误详细信息指出问题所在。 根据这些详细信息，可以确定解决问题的最佳措施。 有关排查应用安装问题的详细信息，请参阅 [Android 应用安装错误](app-install-error-codes.md#android-app-installation-errors)和 [iOS 应用安装错误](app-install-error-codes.md#ios-app-installation-errors)。
+应用安装错误详细信息指出问题所在。 根据这些详细信息，可以确定解决问题的最佳措施。 有关排查应用安装问题的详细信息，请参阅 [Android 应用安装错误](app-install-error-codes.md#android-app-installation-errors)和 [iOS 应用安装错误](app-install-error-codes.md#ios-and-ipados-app-installation-errors)。
 
 > [!Note]  
 > 还可通过浏览器前往 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) 来访问“疑难解答”窗格  。
@@ -65,7 +65,7 @@ Intune 根据特定用户设备上安装的应用，提供应用疑难解答详�
   3. 导航到 [Azure Active Directory 用户](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)。
   4. 选择受影响的用户，然后单击“设备”  。
   5. 如果用户超过所设置的限制，则删除不再需要的所有过时记录。
-- 对于 iOS DEP 设备，请确保用户在 Intune 设备概述窗格中列为“注册的用户”  。 如果显示为 NA，则为 Intune 公司门户部署配置策略。 有关详细信息，请参阅[配置公司门户应用](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)。
+- 对于 iOS/iPadOS DEP 设备，请确保用户在 Intune 设备概述窗格中列为“注册的用户”  。 如果显示为 NA，则为 Intune 公司门户部署配置策略。 有关详细信息，请参阅[配置公司门户应用](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 应用安装疑难解答
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 47be57dece7867109565622ec2a1380e9a9d57d7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207054"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512494"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>使用 Intune 添加 VPN 连接的 Windows 10 和 Windows Holographic 设备
 
@@ -143,7 +143,7 @@ ms.locfileid: "75207054"
 
   ![选择三个点，然后单击并拖动以移动 DNS 后缀](./media/vpn-settings-windows-10/vpn-settings-windows10-move-dns-suffix.png)
 
-- **名称解析策略表（nrpt）规则**：名称解析策略表（nrpt）规则定义在连接到 VPN 时 DNS 解析名称的方式。 创建 VPN 连接后，可以选择 VPN 连接将要使用的 DNS 服务器。
+- **名称解析策略表 (NRPT) 规则**：名称解析策略表 (NRPT) 规则定义 DNS 连接到 VPN 时解析名称的方式。 创建 VPN 连接后，可以选择 VPN 连接将要使用的 DNS 服务器。
 
   可向包括域、DNS 服务器、代理和其他详细信息的表添加规则，以解析输入的域。 当用户连接到你输入的域时，VPN 连接将使用这些规则。
 
@@ -185,4 +185,4 @@ ms.locfileid: "75207054"
 
 配置文件已创建，但它尚未起到任何作用。 下一步，[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
-在 [Android](vpn-settings-android.md)、[iOS](vpn-settings-ios.md) 和 [macOS](vpn-settings-macos.md) 设备上配置 VPN 设置。
+在 [Android](vpn-settings-android.md)、[iOS/iPadOS](vpn-settings-ios.md) 和 [macOS](vpn-settings-macos.md) 设备上配置 VPN 设置。

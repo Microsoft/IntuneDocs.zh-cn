@@ -17,16 +17,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49bf59805476ebbcce3148738e40bfd11e4744eb
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
-ms.translationtype: MTE75
+ms.openlocfilehash: f5d5d62e1e05c8e29de1b5dba91647f2bfc3b186
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839319"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513327"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>移动应用程序管理故障排除
 
-本主题提供使用 Intune 应用保护（也称为 MAM 或移动应用程序管理）时所发生的常见问题的解决方案。
+本主题介绍了在使用 Intune 应用保护（也称为 MAM 或移动应用管理）时遇到的常见问题的解决方案。
 
 如果此信息未解决你的问题，请参阅[如何获取对 Microsoft Intune 的支持](../fundamentals/get-support.md)，了解更多获得帮助的方法。
 
@@ -36,13 +36,13 @@ ms.locfileid: "75839319"
 
 | 问题 | 说明 | 解决方法 |
 | -- | -- | -- |
-| 策略不适用于 Skype for Business | Azure 门户中制定的无需设备注册的应用保护策略不适用于 iOS 和 Android 设备上的 Skype for Business 应用。 | 必须将 Skype for Business 设置为进行新式验证。  请按照[为租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)中的指示为 Skype 设置新式验证。 |
+| 策略不适用于 Skype for Business | Azure 门户中制定的无需设备注册的应用保护策略不适用于 iOS/iPadOS 和 Android 设备上的 Skype for Business 应用。 | 必须将 Skype for Business 设置为进行新式验证。  请按照[为租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)中的指示为 Skype 设置新式验证。 |
 | Office 应用策略不适用 | 应用保护策略不适用于任何用户的任何[支持的 Office 应用](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 确认用户已获得 Intune 许可，且 Office 应用是某个已部署的应用保护策略的目标对象。 可能需要最多 8 小时来使新部署的应用保护策略生效。 |
 | 管理员无法在 Azure 门户中配置应用保护策略 | IT 管理员用户无法在 Azure 门户中配置应用保护策略。 | 下列用户角色可访问 Azure 门户： <ul><li>全局管理员，可在 [Microsoft 365 管理中心](https://admin.microsoft.com/)中设置</li><li>所有者，可在 [Azure 门户](https://portal.azure.com/)中设置。</li><li>参与者，可在 [Azure 门户](https://portal.azure.com/)中设置。</li></ul> 若要获取设置这些角色方面的帮助，请参阅[结合使用基于角色的管理控制 (RBAC) 和 Microsoft Intune](../fundamentals/role-based-access-control.md)。|
 |应用保护策略报表中缺少用户帐户 | 管理控制台报表不显示最近部署了应用保护策略的用户帐户。 | 若用户是应用保护策略的新目标用户，则可能要 24 小时后，该用户才会在报表中显示为目标用户。 |
 | 策略更改无效 | 对应用保护策略的更改和更新可能需要 8 小时才能应用。 | 如果适用，最终用户可注销该应用，然后重新登录，强行与服务同步。 |
-| DEP 中无法使用应用保护策略 | 应用保护策略不适用于 Apple DEP 设备。 | 请确保通过 Apple 设备注册计划 (DEP) 使用用户关联。 对需要在 DEP 下进行用户身份验证的应用而言，用户关联是必须的。 <br><br>若要详细了解 iOS DEP 注册，请参阅[通过 Apple 设备注册计划自动注册 iOS 设备](../enrollment/device-enrollment-program-enroll-ios.md)。|
-| iOS 中无法使用数据传输策略 | **允许应用向其他应用传输数据**和**允许应用从其他应用接收数据**策略未成功管理 iOS 中的数据传输。 | 请参阅[如何在 Microsoft Intune 中管理 iOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)。 |
+| DEP 中无法使用应用保护策略 | 应用保护策略不适用于 Apple DEP 设备。 | 请确保通过 Apple 设备注册计划 (DEP) 使用用户关联。 对需要在 DEP 下进行用户身份验证的应用而言，用户关联是必须的。 <br><br>若要详细了解 iOS/iPadOS DEP 注册，请参阅[通过 Apple 设备注册计划自动注册 iOS/iPadOS 设备](../enrollment/device-enrollment-program-enroll-ios.md)。|
+| iOS/iPadOS 中无法使用数据传输策略 | “允许应用向其他应用传输数据”  和“允许应用从其他应用接收数据”  策略未成功管理 iOS/iPadOS 中的数据传输。 | 请参阅[如何在 Microsoft Intune 中管理 iOS/iPadOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md)。 |
 
 ## <a name="common-end-user-issues"></a>常见最终用户问题
 
@@ -58,15 +58,15 @@ ms.locfileid: "75839319"
 
 平台 | 方案 | 说明 |
 ---| --- | --- |
-iOS | 即使将数据传输策略设置为“仅托管应用”  或“无应用”  ，最终用户也可使用 iOS 共享扩展在非托管应用中打开工作或学校数据。 这样不会泄漏数据吗？ | 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS 共享扩展。 因此，**Intune 会在应用外共享“企业”数据前先加密数据**。 可通过尝试在托管应用外打开“企业”文件进行验证。 该文件应进行加密，且无法在托管应用外打开。
-iOS | 为什么最终用户会**收到安装 Microsoft Authenticator 应用程序的提示** | 应用基于应用的条件性访问时，需要使用此权限，请参阅[需要批准的客户端应用](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)。
+iOS | 即使将数据传输策略设置为“仅托管应用”  或“无应用”  ，最终用户也可使用 iOS/iPadOS 共享扩展在非托管应用中打开工作或学校数据。 这样不会泄漏数据吗？ | 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS/iPadOS 共享扩展。 因此，**Intune 会在应用外共享“企业”数据前先加密数据**。 可通过尝试在托管应用外打开“企业”文件进行验证。 该文件应进行加密，且无法在托管应用外打开。
+iOS | 为什么最终用户会收到安装 Microsoft Authenticator 应用的提示  | 在应用基于应用的条件访问时，需要按提示这样做，请参阅[需要批准的客户端应用](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)。
 Android | 为什么即使使用不需设备注册的 MAM 应用保护，最终用户也**需要安装公司门户应用**？  | 在 Android 上，应用保护的许多功能都内置于公司门户应用中。 **虽然始终需要公司门户应用，但无需设备注册**。 对于不需注册的应用保护，最终用户只需在设备上安装公司门户应用即可。
-iOS/Android | 应用保护策略不适用于 Outlook 应用中的草稿电子邮件 | 由于 Outlook 同时支持企业和个人上下文，因此它不会对草稿电子邮件强制执行 MAM。
-iOS/Android | 应用保护策略不适用于 WXP 中的新文档（Word、Excel、PowerPoint） | 由于 WXP 支持公司和个人上下文，因此在将其保存到已识别的公司位置（例如 OneDrive）之前，不会在新文档上强制使用 MAM。
-iOS/Android | 启用策略时，不允许将另存为本地存储的应用 | 应用程序开发人员控制此设置的应用行为。
-Android | 对于 "本机" 应用可以访问 MAM 保护的内容，Android 的限制比 iOS 更多 | Android 是一个开放平台，最终用户可以将 "本机" 应用程序关联更改为可能不安全的应用程序。 将[数据传输策略例外](app-protection-policies-exception.md)应用于免除特定应用。
-Android | 当阻止 "另存为" 时，Azure 信息保护（AIP）可以保存为 PDF | 使用 "另存为 PDF" 时，AIP 将使用 MAM 策略进行 "禁用打印"。
-iOS | 在 Outlook 应用中打开 PDF 附件失败，出现 "不允许操作" | 如果用户未通过使用 Intune 读取器的身份验证，或者使用了指纹向其组织进行身份验证，则可能会发生这种情况。 预先打开 Acrobat 读取器并使用 UPN 凭据进行身份验证。
+iOS/Android | 应用保护策略不适用于 Outlook 应用中的草稿电子邮件 | 由于 Outlook 同时支持公司和个人环境，因此不会对草稿电子邮件强制执行 MAM。
+iOS/Android | 应用保护策略不适用于 WXP 中的新文档（Word、Excel、PowerPoint） | 由于 WXP 同时支持公司和个人环境，因此它不会对新文档执行 MAM，除非这些文档被保存在诸如 OneDrive 之类的已标识公司位置中。
+iOS/Android | 启用策略后，应用不允许另存为本地存储 | 此设置的应用行为由应用开发人员控制。
+Android | 对于哪些“本机”应用可以访问受 MAM 保护的内容，Android 的限制比 iOS / iPadOS 更大 | Android 是一个开放平台，最终用户可以将“本机”应用关联更改为潜在的不安全应用程序。 应用[数据传输策略例外情况](app-protection-policies-exception.md)以豁免特定应用。
+Android | 禁止“另存为”时，Azure 信息保护 (AIP) 可以另存为 PDF | 当使用“另存为 PDF”时，AIP 遵守 MAM 的“禁用打印”策略。
+iOS | 在 Outlook 应用中打开 PDF 附件失败，显示“操作未允许” | 如果用户尚未通过 Intune 对 Acrobat Reader 进行身份验证，或已使用指纹对其组织进行身份验证，则会发生这种情况。 事先打开 Acrobat Reader，并使用 UPN 凭据进行身份验证。
 
 
 ### <a name="normal-usage-dialogs"></a>正常使用对话
@@ -91,7 +91,7 @@ Android | **需要公司门户**：必须安装 Intune 公司门户应用，才�
 **设备不合规**：无法使用此应用，因为使用的是越狱设备。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户正在使用越狱的设备。 | 将设备重置为默认出厂设置。 按照 Apple 支持站点中的[这些说明](https://support.apple.com/HT201274)操作。
 **需要 Internet 连接**：必须连接到 Internet，才能验证能否使用此应用。 | 设备未连接到 Internet。 | 将设备连接到 WiFi 或数据网络。
 **未知故障**：请尝试重启此应用。 如果问题仍然存在，请与 IT 管理员联系以寻求帮助。 | 发生未知故障。 | 请稍后重试。 如果错误一直存在，请向 Intune 创建[支持票证](../fundamentals/get-support.md#create-an-online-support-ticket)。
-**访问组织数据**：指定的工作或学校帐户无权访问此应用。 可能必须使用其他帐户登录。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户尝试使用另一个工作或学校帐户（不同于已注册 MAM 的设备帐户）登录。 对于每个设备，MAM 一次只能管理一个工作或学校帐户。 | 让用户使用具有通过登录屏幕预填充的用户名的相应帐户登录。 可能需要为[Intune 配置用户 UPN 设置](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。 <br> <br> 或让用户使用新的工作或学校帐户登录，并删除已注册 MAM 的现有帐户。
+**访问组织数据**：指定的工作或学校帐户无权访问此应用。 可能必须使用其他帐户登录。 请联系你的 IT 管理员获取帮助。 | Intune 检测到用户尝试使用另一个工作或学校帐户（不同于已注册 MAM 的设备帐户）登录。 对于每个设备，MAM 一次只能管理一个工作或学校帐户。 | 让用户使用具有通过登录屏幕预填充的用户名的相应帐户登录。 可能需要[为 Intune 配置用户 UPN 设置](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。 <br> <br> 或让用户使用新的工作或学校帐户登录，并删除已注册 MAM 的现有帐户。
 **连接问题**：出现意外的连接问题。 检查连接，然后重试。  |  意外故障。 | 请稍后重试。 如果错误一直存在，请向 Intune 创建[支持票证](../fundamentals/get-support.md#create-an-online-support-ticket)。
 **警报**：无法再使用此应用。 有关详细信息，请与 IT 管理员联系。 | 验证应用证书失败。 | 确保应用版本为最新。 <br><br> 重新安装应用。
 **错误**：此应用遇到了问题，必须关闭。 如果此错误仍然存在，请与 IT 管理员联系。 | 未能从 Apple iOS Keychain 读取 MAM 应用 PIN。 | 重启设备。 确保应用版本为最新。 <br><br> 重新安装应用。
@@ -112,7 +112,7 @@ Android | **需要公司门户**：必须安装 Intune 公司门户应用，才�
 ## <a name="next-steps"></a>后续步骤
 
 - [验证移动应用管理设置](app-protection-policies-validate.md)
-- 了解如何使用日志文件对 Intune 应用保护策略进行故障排除，请参阅[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
+- 若要了解如何使用日志文件对 Intune 应用保护策略进行故障排除，请参阅 [https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - 有关其他 Intune 疑难解答信息，请参阅[使用疑难解答门户为公司用户提供帮助](../fundamentals/help-desk-operators.md)。 
 - 了解 Microsoft Intune 中的任何已知问题。 有关详细信息，请参阅 [Microsoft Intune 中的已知问题](../known-issues.md)。
 - 需要更多帮助？ 请参阅[如何获取对 Microsoft Intune 的支持](../fundamentals/get-support.md)。

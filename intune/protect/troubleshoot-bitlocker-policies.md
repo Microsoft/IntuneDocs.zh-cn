@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886778"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556493"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Microsoft Intune 中 BitLocker 策略的故障排除
 
@@ -39,7 +39,9 @@ BitLocker 驱动器加密是 Microsoft Windows 操作系统提供的一项服务
 
 - **安全基线** - [安全基线](security-baselines.md)是已知的设置和默认值组，相关安全团队建议借助它们来帮助保护 Windows 设备。 不同的基线源（如“MDM 安全基线”或“Microsoft Defender ATP 基线”）可以管理相同的设置以及彼此之间不同的设置   。 它们还可以管理使用设备配置策略进行管理的相同设置。 
 
-除 Intune 外，还可以通过其他方式（如组策略）来管理 BitLocker 设置，或由设备用户进行手动设置。
+除 Intune 外，对于与新型待机和 HSTI 兼容的硬件，在使用上述任一功能时，只要用户将设备加入 Azure AD，BitLocker 设备加密就会自动启用。 Azure AD 提供了一个门户，还可以在其中备份恢复密钥，因此用户可以根据需要检索自己的恢复密钥以进行自助服务。
+
+还可以通过其他方式（如组策略）来管理 BitLocker 设置，或由设备用户进行手动设置。
 
 无论设置如何应用于设备，BitLocker 策略都利用 [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) 在设备上配置加密。 BitLocker CSP 内置于 Windows 中，当 Intune 将 BitLocker 策略部署到分配的设备时，设备上的 BitLocker CSP 将相应的值写入 Windows 注册表，以便策略中的设置生效。
 
@@ -103,7 +105,7 @@ Confirm-SecureBootUEFI
 
 ### <a name="review-the-devices-registry-key-configuration"></a>查看设备注册表项配置
 
-BitLocker 策略成功部署到设备后，在设备上查看以下注册表项，可以在其中查看 BitLocker 设置的配置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker  。 下面是一个示例：
+BitLocker 策略成功部署到设备后，在设备上查看以下注册表项，可以在其中查看 BitLocker 设置的配置：*HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*。 下面是一个示例：
 
 ![BitLocker 注册表项](./media/troubleshooting-bitlocker-policies/registry.png)
 
@@ -164,6 +166,15 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 
   2. **并非所有硬件都支持 BitLocker**。
      即使你使用适当版本的 Windows，基础设备硬件也有可能不符合 BitLocker 加密的要求。 可以在 Windows 文档中找到[BitLocker 的系统要求](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)，但要检查的主要问题是设备是否具有兼容的 TPM 芯片（1.2 或更高版本）和与受信任的计算组 (TCG) 兼容的 BIOS 或 UEFI 固件。
+     
+**不会以无提示方式执行 Bitlocker 加密** - 你已配置 Endpoint Protection 策略，并将设置“其他磁盘加密的警告”设置为“阻止”，并且加密向导仍然出现：
+
+- **确认 Windows 版本支持无提示加密** - 至少需要版本 1803。 如果用户不是设备的管理员，则至少需要版本 1809。 另外，1809 增加了对不支持新型待机的设备的支持
+
+**Bitlocker 加密设备显示为“不符合”Intune 合规性策略** - 在 Bitlocker 加密未完成时出现问题。 根据磁盘大小、文件数和 BitLocker 设置等因素，BitLocker 加密可能需要较长时间。 加密完成后，设备将显示为“合规”。 在最近安装 WIndows 更新后，设备也可能会暂时变得不合规。
+
+**当策略指定 256 位加密时，使用 128 位算法对设备进行加密** - 默认情况下，Windows 10 将使用 XTS-AES 128 位加密对驱动器进行加密。 请参阅本指南，[在 Autopilot 期间为 BitLocker 设置 256 位加密](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#)。
+
 
 **示例调查**
 

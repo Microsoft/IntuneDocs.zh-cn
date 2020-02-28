@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 3d26c4c6cd05a411555f7824ad21b72431eb569c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206544"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511166"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>便于使用 Intune 允许或限制功能的 macOS 设备设置
 
@@ -36,11 +36,11 @@ ms.locfileid: "75206544"
 [创建设备限制配置文件](../device-restrictions-configure.md)。
 
 > [!NOTE]
-> 这些设置适用于不同的注册类型。 有关不同注册类型的详细信息，请参阅[macOS 注册](../macos-enroll.md)。
+> 这些设置适用于不同的注册类型。 有关不同注册类型的详细信息，请参阅 [macOS 注册](../macos-enroll.md)。
 
 ## <a name="general"></a>常规
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用范围：设备注册和自动设备注册
 
 - **定义查找**：“阻止”可阻止用户突出显示某个字词，然后在设备上查找其定义  。 “未配置”（默认）允许访问定义查找功能  。
 - **听写**：“阻止”可阻止用户通过语音输入输入文本  。 “未配置”（默认）允许用户使用听写输入  。
@@ -62,29 +62,29 @@ ms.locfileid: "75206544"
     此功能适用于：  
     - macOS 10.13.4 及更高版本
 
-- **屏幕截图**：设备必须在 Apple 的自动设备注册（DEP）中注册。 如果设置为 "**阻止**"，则用户无法保存显示的屏幕截图。 它还会阻止课堂应用观察远程屏幕。 "**未配置**" （默认）允许用户捕获屏幕截图，并允许教室应用查看远程屏幕。
+- **屏幕截图**：必须将设备注册到 Apple 的自动设备注册 (DEP) 中。 如果设置为“阻止”  ，则用户无法保存显示的屏幕截图。 它还会阻止 Classroom 应用查看远程屏幕。 “未配置”  （默认设置）允许用户捕获屏幕截图，并允许 Classroom 应用查看远程屏幕。
 
-### <a name="settings-apply-to-automated-device-enrollment"></a>设置适用于：自动化设备注册
+### <a name="settings-apply-to-automated-device-enrollment"></a>设置适用范围：自动设备注册
 
-- **通过课堂应用进行的远程屏幕观察**：**禁用**可阻止教师使用教室应用查看学生的屏幕。 "**未配置**" （默认）允许教师查看学生的屏幕。
+- **通过 Classroom 应用查看远程屏幕**：选择“禁用”  可防止教师使用 Classroom 应用查看学生的屏幕。 “未配置”  （默认设置）允许教师查看学生的屏幕。
 
-  若要使用此设置，请将**屏幕快照**设置设置为 "**未配置**" （允许屏幕快照）。
+  若要使用此设置，请将设置“屏幕截图”  设置为“未配置”  （允许屏幕截图）。
 
-- **课堂应用观察到的进行无提示屏幕**：**允许**教师查看学生的屏幕，而不需要学员同意。 "**未配置**" （默认值）要求学生同意后教师才能看到屏幕。
+- **通过 Classroom 应用查看无提示屏幕**：如果选择“允许”，  则教师无需学生同意即可查看学生的屏幕。 如果选择“未配置”  （默认设置），则需要在学生同意后，教师才能看到屏幕。
 
-  若要使用此设置，请将**屏幕快照**设置设置为 "**未配置**" （允许屏幕快照）。
+  若要使用此设置，请将设置“屏幕截图”  设置为“未配置”  （允许屏幕截图）。
 
-- **学生必须请求权限才能离开教室类**：**要求**在非托管教室课程中注册学生，以获得教师批准。 "**未配置**" （默认值）允许学生在每次学生选择时离开课程。
+- **学生必须请求权限才能离开 Classroom 课程**：如果选择“需要”，  则会强制参加非托管 Classroom 课程的学生在获得教师的批准后才能退出课程。 “未配置”  （默认设置）允许学生在每次选择退出后即可退出课程。
 
-- **教师可以在教室应用中自动锁定设备或应用**：**允许**老师锁定学生的设备或应用而无需学生批准。 "**未配置**" （默认值）要求学生同意后，教师才能锁定设备或应用。
+- **教师可以在 Classroom 应用中自动锁定设备或应用**：如果选择“允许”，则允许  教师无需学生同意即可锁定学生的设备或应用。 如果选择“未配置”  （默认设置），则需要在学生同意后，教师才能锁定设备或应用。
 
-- **学生可以自动加入课堂类**：**允许**学生加入类，而无需提示教师。 "**未配置**" （默认值）要求教师批准加入某个类。
+- **学生可以自动加入 Classroom 课程**：如果选择“允许”，则在不向教师发出提示的情况下，允许  学生加入课程。 如果选择“未配置”  （默认设置），则需要教师批准后，学生才能加入课程。
 
 ## <a name="password"></a>Password
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用范围：设备注册和自动设备注册
 
-- **密码**：需要最终用户输入密码才能访问设备  。 **未配置**（默认）不需要密码。 它也不会强制任何限制，如阻止简单密码或设置最小长度。
+- **密码**：需要最终用户输入密码才能访问设备  。 如果选择“未配置”  （默认设置），则不需要提供密码。 也不强制执行任何限制，如阻止简单密码或设置最小长度。
   - **所需的密码类型**：指定密码是否可以仅由数值组成，还是必须为字母数字（包含字母和数字）。
 
     此功能适用于：  
@@ -114,7 +114,7 @@ ms.locfileid: "75206544"
 
 ## <a name="built-in-apps"></a>内置应用
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用范围：设备注册和自动设备注册
 
 - **阻止 Safari 自动填充**：“阻止”可禁用设备上 Safari 中的自动填充功能  。 “未配置”（默认）允许用户更改 Web 浏览器中的自动完成设置  。
 - **阻止相机**：选择“阻止”  可阻止访问设备上的照相机。 “未配置”（默认）允许访问设备的照相机  。
@@ -127,32 +127,32 @@ ms.locfileid: "75206544"
 
 ## <a name="restricted-apps"></a>受限制的应用
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用范围：设备注册和自动设备注册
 
-- **限制应用列表的类型**：创建不允许用户安装或使用的应用的列表。 选项包括：
+- **受限应用类型列表**：创建不允许用户安装或使用的应用的列表。 选项包括：
 
-  - **未配置**（默认）： Intune 没有任何限制。 用户有权访问你分配的应用程序，以及内置的应用程序。
-  - **禁止的应用**：不想在设备上安装的不由 Intune 管理的应用。 不阻止用户安装已禁止的应用。 但如果用户安装了此列表中的应用，则会在 Intune 中报告。
+  - **未配置**（默认）：Intune 没有任何限制。 用户有权访问你分配的应用，以及内置的应用。
+  - **禁止的应用**：不想在设备上安装的不由 Intune 管理的应用。 不阻止用户安装禁止的应用。 但如果用户安装了此列表中的应用，则会在 Intune 中报告。
   - **允许的应用：** 允许用户安装的应用。 用户不得安装未列出的应用。 自动允许由 Intune 托管的应用。 不会阻止用户安装不在已批准列表中的应用。 但如果有，则会在 Intune 中报告。
-- **应用捆绑 ID**：输入所需的应用的应用[捆绑 ID](bundle-ids-built-in-ios-apps.md)。 可以显示或隐藏内置应用程序和业务线应用。 Apple 网站具有[内置的 apple 应用](https://support.apple.com/HT208094)列表。
-- **应用名称**：输入所需应用的应用名称。 可以显示或隐藏内置应用程序和业务线应用。 Apple 网站具有[内置的 apple 应用](https://support.apple.com/HT208094)列表。
+- **应用捆绑 ID**：输入所需的应用的应用[捆绑 ID](bundle-ids-built-in-ios-apps.md)。 可以显示或隐藏内置应用和业务线应用。 可在 Apple 网站上查看[内置的 Apple 应用](https://support.apple.com/HT208094)列表。
+- **应用名称**：输入所需应用的应用名称。 可以显示或隐藏内置应用和业务线应用。 可在 Apple 网站上查看[内置的 Apple 应用](https://support.apple.com/HT208094)列表。
 - **发布者**：输入所需应用的发布者。
 
 若要将应用添加到这些列表，可以：
 
-- **添加**：选择此组可创建应用列表。
-- 导入包含应用详细信息的 CSV 文件，包括 URL  。 使用 `<app bundle ID>, <app name>, <app publisher>` 格式。 或者，**导出**以使用相同的格式创建添加的应用列表。
+- **添加**：选择以创建应用列表。
+- 导入包含应用详细信息的 CSV 文件，包括 URL  。 使用 `<app bundle ID>, <app name>, <app publisher>` 格式。 或者，选择“导出”，使用相同的格式创建所添加的应用列表  。
 
 ## <a name="connected-devices"></a>已连接的设备
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用范围：设备注册和自动设备注册
 
 - **阻止 AirDrop**：“阻止”可阻止在设备上使用 AirDrop  。 “未配置”（默认）允许使用 AirDrop 功能与附近的设备交换内容  。
 - **阻止 Apple Watch 自动解锁**：选择“阻止”可阻止用户使用其 Apple Watch 解锁 macOS 设备  。 “未配置”（默认）允许用户使用其 Apple Watch 解锁 macOS 设备  。
 
 ## <a name="cloud-and-storage"></a>云和存储
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用范围：设备注册和自动设备注册
 
 - **阻止 iCloud 密钥链同步**：选择“阻止”可禁止将密钥链中存储的凭据同步到 iCloud  。 “未配置”（默认）允许用户同步这些凭据  。
 - **阻止 iCloud 文档同步**：“阻止”  则阻止 iCloud 同步文档和数据。 “未配置”（默认）允许将文档和键值同步到 iCloud 存储空间  。
@@ -162,15 +162,15 @@ ms.locfileid: "75206544"
 - **阻止 iCloud 提醒事项备份**：选择“阻止”可阻止 iCloud 同步到 macOS 提醒事项应用  。 “未配置”（默认）允许“提醒事项”同步到 iCloud  。
 - **阻止 iCloud 书签备份**：选择“阻止”可阻止 iCloud 同步设备书签  。 “未配置”（默认）允许“书签”同步到 iCloud  。
 - **阻止 iCloud 备忘录备份**：选择“阻止”可阻止 iCloud 同步设备备忘录  。 “未配置”（默认）允许“备忘录”同步到 iCloud  。
-- **阻止 Icloud 照片库**：**阻止**禁用 icloud 照片库，并防止 iCloud 同步设备照片。 会从设备的本地存储中删除尚未从 iCloud 照片库完全下载的所有照片。 "**未配置**" （默认）允许在设备与 ICloud 照片库之间同步照片。
-- "**移交**：**未配置**" （默认值）允许用户在 macOS 设备上启动工作，然后继续在另一个 iOS 或 macOS 设备上开始工作。 **阻止**阻止设备上的切换功能。 
+- **阻止 iCloud 照片库**：选择“阻止”  将禁用 iCloud 照片库，并防止 iCloud 同步设备照片。 会从设备的本地存储中删除尚未从 iCloud 照片库完全下载的所有照片。 “未配置”（默认）  允许在设备与 iCloud 照片库之间同步照片。
+- **切换**：选择“未配置”（默认）可允许用户在 macOS 设备上启动工作，然后在其他 iOS/iPadOS 或 macOS 设备上继续已开始的工作  。 选择“阻止”  可阻止设备上的 Handoff 功能。 
 
   此功能适用于：  
   - macOS 10.15 及更高版本
 
 ## <a name="domains"></a>域
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用于：设备注册和自动化设备注册
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>设置适用范围：设备注册和自动设备注册
 
 - **电子邮件域 URL**：向列表添加一个或多个 URL  。 当用户从所配置的域以外的域接收电子邮件时，该电子邮件在 macOS 邮件应用中被标记为不受信任。
 
@@ -178,4 +178,4 @@ ms.locfileid: "75206544"
 
 [分配配置文件](../device-profile-assign.md)并[监视其状态](../device-profile-monitor.md)。
 
-还可以在 [iOS](../device-restrictions-ios.md) 设备上限制设备功能和设置。
+还可以在 [iOS/iPadOS](../device-restrictions-ios.md) 设备上限制设备功能和设置。

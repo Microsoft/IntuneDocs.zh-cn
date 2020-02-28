@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502392"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514432"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>使用 Microsoft Intune 防止非受管理设备上的数据泄露
 
@@ -35,7 +35,7 @@ ms.locfileid: "72502392"
 
 Intune 应用保护策略独立于设备管理。 通过应用保护策略，可管理在托管设备和由 Intune 或非 Microsoft MDM 解决方案管理的设备上的 Office 移动应用。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 满足以下要求，可使用以下操作计划：
 
@@ -47,7 +47,7 @@ Intune 应用保护策略独立于设备管理。 通过应用保护策略，可
 
 ## <a name="action-plan"></a>操作计划
 
-对于 iOS 和 Android 设备：
+对于 iOS/iPadOS 和 Android 设备：
 
 1. 了解[应用保护策略](../apps/app-protection-policy.md)的工作原理。
 2. 了解如何为 Office 移动应用[创建和部署应用保护策略](../apps/app-protection-policies.md)。
@@ -63,7 +63,7 @@ Intune 应用保护策略独立于设备管理。 通过应用保护策略，可
 
 根据需要，共享以下链接以提供额外信息：
 
-* [iOS 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-ios.md)
+* [iOS/iPadOS 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-ios.md)
 * [Android 应用由应用保护策略托管时会出现的情况](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>后续步骤

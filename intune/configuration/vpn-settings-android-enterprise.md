@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中使用适用于 Android Enterprise 的 VPN 设置 - Azure | Microsoft Docs
-description: 请参阅所有设置以在 Microsoft Intune 中的 Android 企业设备上创建 VPN 连接。 输入 VPN 服务器的连接名称、IP 地址或 FQDN，选择用户进行身份验证的方式，并选择 Citrix、SonicWall、检查点胶囊和脉冲安全连接类型。
+description: 请参阅所有设置以在 Microsoft Intune 中的 Android Enterprise 设备上创建 VPN 连接。 输入 VPN 服务器的连接名称、IP 地址或 FQDN，选择用户进行身份验证的方式，并选择 Citrix、SonicWall、Check Point Capsule 和 Pulse Secure 连接类型。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 81300651355e52f438ea2a314eeb1d0d48e3fcbc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206306"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510858"
 ---
-# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Android 企业设备设置，用于在 Intune 中配置 VPN
+# <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>用于在 Intune 中配置 VPN 的 Android Enterprise 设备设置
 
-
-
-本文列出并介绍了可以在 Android Enterprise 设备上控制的各种 VPN 连接设置。 作为移动设备管理（MDM）解决方案的一部分，请使用以下设置创建 VPN 连接、选择 VPN 的身份验证方式、选择 VPN 服务器类型等。
+本文列出并介绍了可以在 Android Enterprise 设备上控制的各种 VPN 连接设置。 作为移动设备管理 (MDM) 解决方案的一部分，请使用以下设置创建 VPN 连接、选择 VPN 的身份验证方式、选择 VPN 服务器类型等。
 
 Intune 管理员可以创建 VPN 设置，并将它们分配到 Android Enterprise 设备。 
 
-若要详细了解 Intune 中的 VPN 配置文件，请参阅[vpn 配置文件](vpn-settings-configure.md)。
+若要详细了解 Intune 中的 VPN 配置文件，请参阅 [VPN 配置文件](vpn-settings-configure.md)。
 
 > [!NOTE]
-> 若要配置 always on VPN，需要创建 VPN 配置文件，并在配置了 Alwayson VPN 设置的情况下创建[设备限制](device-restrictions-android-for-work.md#connectivity)配置文件。
+> 若要配置 always-on VPN，需要创建 VPN 配置文件，并在配置了 Always-on VPN 设置的情况下创建[设备限制](device-restrictions-android-for-work.md#connectivity)配置文件。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -77,4 +75,4 @@ Intune 管理员可以创建 VPN 设置，并将它们分配到 Android Enterpri
 
 [分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
-你还可以创建适用于[Android](vpn-settings-android.md)、 [iOS](vpn-settings-ios.md)、 [macOS](vpn-settings-macos.md)、 [Windows 10 和更高版本](vpn-settings-windows-10.md)、 [Windows 8.1](vpn-settings-windows-8-1.md)和[Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)设备的 VPN 配置文件。
+另外，还可以为 [Android](vpn-settings-android.md)、[iOS/iPadOS](vpn-settings-ios.md)、[macOS](vpn-settings-macos.md)、[Windows 10 和更高版本](vpn-settings-windows-10.md)、[Windows 8.1](vpn-settings-windows-8-1.md) 和 [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md) 设备创建 VPN 配置文件。

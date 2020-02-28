@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755589"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514738"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>在 Intune 中排除设备操作故障问题
 
@@ -34,7 +34,7 @@ Microsoft Intune 提供了许多可帮助管理设备的操作。 本文提供�
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>我单击了门户中的“禁用激活锁”操作，但设备上没有任何反应。
 这是正常情况。 开始禁用激活锁操作后，Intune 将从 Apple 请求更新的代码。 设备显示“激活锁”屏幕后，你需要在“密码”字段中手动输入该代码。 此代码仅在 15 天内有效，因此在你发出“擦除”之前，请确保单击此操作并复制代码。
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>为什么我在 iOS 设备的“硬件概述”边栏选项卡中看不到“禁用激活锁”代码？
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>为什么我在 iOS/iPadOS 设备的“硬件概述”边栏选项卡中看不到“禁用激活锁”代码？
 最可能的原因包括：
 - 代码已过期，并已从服务中清除。
 - 设备未受到设备限制策略的监管，无法允许激活锁。
@@ -43,7 +43,7 @@ Microsoft Intune 提供了许多可帮助管理设备的操作。 本文提供�
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>为什么“禁用激活锁”操作在我的 iOS 设备上灰显？
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>为什么“禁用激活锁”操作在我的 iOS/iPadOS 设备上灰显？
 最可能的原因包括： 
 - 代码已过期，并已从服务中清除。
 - 设备未受到设备限制策略的监管，无法允许激活锁。
@@ -90,8 +90,22 @@ Microsoft Intune 提供了许多可帮助管理设备的操作。 本文提供�
 3. 最终用户必须接受第二次提示以允许密码重置。
 完成这些步骤后，你应不会再收到此响应。
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>发出“删除密码”操作时，为什么会提示我在 iOS 设备上设置新密码？
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>发出“删除密码”操作时，为什么会提示我在 iOS/iPadOS 设备上设置新密码？
 因为你的符合性策略之一需要密码。
+
+
+## <a name="wipe-action"></a>擦除操作
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>使用擦除操作后，无法重新启动 Windows 10 设备
+如果在 Windows 10 设备上选择“擦除设备，即使设备断电也继续擦除。如果选择此选项，请注意它可能会阻止某些 Windows 10 设备重新启动。”，可能会发生这种情况  。
+
+当 Windows 的安装存在严重损坏，使操作系统无法重新安装时，可能会导致这种情况。 在这种情况下，该过程会失败，使系统处于 [Windows 恢复环境]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference)中。
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>使用擦除操作后，无法重新启动 BitLocker 加密设备
+如果在 BitLocker 加密设备上选择“擦除设备，即使设备断电也继续擦除。如果选择此选项，请注意它可能会阻止某些 Windows 10 设备重新启动。”选项，可能会发生这种情况  。
+
+若要解决此问题，请使用可启动媒体在设备上重新安装 Windows 10。
+
 
 ## <a name="next-steps"></a>后续步骤
 

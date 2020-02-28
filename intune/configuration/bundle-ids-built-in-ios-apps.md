@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune 中内置应用的 iOS 程序包 ID - Azure | Microsoft Docs
+title: Microsoft Intune 中内置应用的 iOS/iPadOS 程序包 ID - Azure | Microsoft Docs
 titleSuffix: ''
-description: 请参阅内置 iOS 应用的程序包 ID 列表。 使用这些程序包 ID，可以显示允许 Microsoft Intune 中的设备配置文件和策略中的应用。
+description: 请参阅内置 iOS 和 iPadOS 应用的程序包 ID 列表。 使用这些程序包 ID，可以显示允许 Microsoft Intune 中的设备配置文件和策略中的应用。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
-ms.translationtype: MTE75
+ms.openlocfilehash: 10c6ea8e3afd7bb1f5a583c0088c72fc155cb0f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691846"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513293"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>可以在 Intune 中使用的内置 iOS 应用的程序包 ID
+# <a name="bundle-ids-for-built-in-ios-and-ipados-apps-you-can-use-in-intune"></a>可以在 Intune 中使用的内置 iOS 和 iPadOS 应用的程序包 ID
 
-在 iOS 设备上配置功能时，还可以在 iOS 设备上添加内置应用。 本文列出了一些常见内置 iOS 应用的程序包 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。 请参阅 Apple [iOS 捆绑包 ID](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web)列表（打开 Apple 网站）。
+在 iOS/iPadOS 设备上配置功能时，还可以在 iOS/iPadOS 设备上添加内置应用。 本文列出了一些常见内置 iOS/iPadOS 应用的程序包 ID。 若要查找其他应用的捆绑 ID，请联系软件供应商。 请参阅 Apple [iOS/iPadOS 捆绑包 ID](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web)列表（打开 Apple 网站）。
 
 ## <a name="bundle-ids"></a>程序包 ID
 
@@ -36,7 +36,7 @@ ms.locfileid: "75691846"
 | com.apple.mobilecal         | 日历     | Apple     |
 | com.apple.camera            | 照相机       | Apple     |
 | com.apple.mobiletimer       | 时钟        | Apple     |
-| .com             | 剪辑        | Apple     |
+| com.apple.clips             | 剪辑        | Apple     |
 | com.apple.compass           | 指南针      | Apple     |
 | com.apple.MobileAddressBook | 联系人     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -55,7 +55,7 @@ ms.locfileid: "75691846"
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | 映射         | Apple     |
-| .com. 度量值           | 测量      | Apple     |
+| com.apple.measure           | 测量      | Apple     |
 | com.apple.MobileSMS         | 消息     | Apple     |
 | com.apple.Music             | 音乐        | Apple     |
 | com.apple.news              | 新闻         | Apple     |
@@ -69,7 +69,7 @@ ms.locfileid: "75691846"
 | com.apple.reminders         | 提醒    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | 设置     | Apple     |
-| .com。快捷方式         | 快捷方式    | Apple     |
+| com.apple.shortcuts         | 快捷方式    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 股票       | Apple     |
 | com.apple.tips              | 提示         | Apple     |
@@ -78,8 +78,8 @@ ms.locfileid: "75691846"
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | 电子钱包       | Apple     |
 | com.apple.Bridge            | 观看        | Apple     |
-| com.apple.weather           | 天气      | Apple     |      
+| com.apple.weather           | 天气      | Apple     |
 
 ## <a name="next-steps"></a>后续步骤
 
-这些程序包 ID 用于配置[设备功能](ios-device-features-settings.md)以及[允许或限制 iOS 设备上的某些设置](device-restrictions-ios.md)。
+这些程序包 ID 用于配置[设备功能](ios-device-features-settings.md)以及[允许或限制 iOS/iPadOS 设备上的某些设置](device-restrictions-ios.md)。

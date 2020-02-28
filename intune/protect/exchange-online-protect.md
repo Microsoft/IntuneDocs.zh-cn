@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: ac670fd5e17462688fdfcde1b047e1071a49353a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502268"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515197"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>无需设备管理即可保护 Office 365 Exchange Online
 
-可以向员工提供对其工作电子邮件的访问权限，而无需设置设备管理系统。 可通过 Intune 提供对 Office 365 Exchange Online 的访问权限。 为了完成必要步骤，请确认你拥有 Microsoft 365 或 Azure Active Directory Premium 和 Intune 的许可证。 员工需要拥有[受支持的 iOS 或 Android 设备](../fundamentals/supported-devices-browsers.md)。 
+可以向员工提供对其工作电子邮件的访问权限，而无需设置设备管理系统。 可通过 Intune 提供对 Office 365 Exchange Online 的访问权限。 为了完成必要步骤，请确认你拥有 Microsoft 365 或 Azure Active Directory Premium 和 Intune 的许可证。 员工需要拥有[受支持的 iOS/iPadOS 或 Android 设备](../fundamentals/supported-devices-browsers.md)。 
 
 如果决定设置设备管理系统，也可以进行设置。 这种类型的应用保护独立于设备管理。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "72502268"
 
 ## <a name="what-to-tell-employees-and-students"></a>应告知员工和学生的事项
 
-* 要求员工和学生从 Apple App Store 下载并安装适用于 iOS 的 Microsoft Outlook 或 Microsoft SharePoint，或者从 Google Play 商店下载适用于 Android 的 Microsoft Outlook 或 Microsoft SharePoint。 
+* 要求员工和学生从 Apple App Store 下载并安装适用于 iOS/iPadOS 的 Microsoft Outlook 或 Microsoft SharePoint，或者从 Google Play 商店下载适用于 Android 的 Microsoft Outlook 或 Microsoft SharePoint。 
 * 如果阻止访问未使用新式验证的应用，请告知员工和学生此限制。 
 
 ## <a name="next-steps"></a>后续步骤

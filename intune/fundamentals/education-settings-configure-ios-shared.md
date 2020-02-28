@@ -1,7 +1,7 @@
 ---
-title: iOS Classroom 应用的 Intune 共享设备设置
+title: iOS/iPadOS Classroom 应用的 Intune 共享设备设置
 titleSuffix: Microsoft Intune
-description: 了解可用于控制 iOS 设备上 Classroom 应用设置的 Intune 设置。
+description: 了解可用于控制 iOS/iPadOS 设备上 Classroom 应用设置的 Intune 设置。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 412dc9a12f5a13b5fbd738f3ac1b5b1033a2635b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784249"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514704"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>为共享 iPad 设备配置 Intune 教育设置
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Intune 目前不支持配置教室应用。 本文仅适用于 Intune 中使用现有 iOS 教育版配置文件的用户。
+> Intune 目前不支持配置 Classroom 应用。 本文仅适用于 Intune 中使用现有 iOS/iPadOS 教育版配置文件的用户。
 
-Intune 支持 iOS Classroom 应用，可帮助教师在课堂上指导学习以及控制学生设备。 此外，对于 Classroom 应用，Apple 支持对学生 iPad 设备进行配置的功能，以便多名学生可以共享单台设备。 本文档指导如何通过 Intune 实现此目标。
+Intune 支持 iOS/iPadOS Classroom 应用，可帮助教师在课堂上指导学习以及控制学生设备。 此外，对于 Classroom 应用，Apple 支持对学生 iPad 设备进行配置的功能，以便多名学生可以共享单台设备。 本文档指导如何通过 Intune 实现此目标。
 
-有关配置专用 (1:1) iPad 设备以使用 Classroom 应用的信息，请参阅[如何为 iOS Classroom 应用配置 Intune 设置](education-settings-configure-ios.md)。
+有关配置专用 (1:1) iPad 设备以使用 Classroom 应用的信息，请参阅[如何为 iOS/iPadOS Classroom 应用配置 Intune 设置](education-settings-configure-ios.md)。
 
 ## <a name="before-you-start"></a>开始之前
 
@@ -64,7 +64,7 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 - [详细了解 Azure Active Directory 中的授权](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>步骤 2 - 在 Intune 中创建和分配 iOS 教育配置文件
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>步骤 2 - 在 Intune 中创建和分配 iOS/iPadOS 教育配置文件
 
 ### <a name="configure-general-settings"></a>配置常规设置
 
@@ -72,7 +72,7 @@ SDS 将同步 SIS 中的信息并将其存储在 Azure AD 中。 Azure AD 是帮
 3. 在“Intune”窗格上，选择“设备配置”   。
 2. 在“管理”部分的“设备配置”窗格上，选择“配置文件”    。
 5. 在“配置文件”窗格上，选择“创建配置文件”  。
-6. 在“创建配置文件”窗格上，输入 iOS 教育配置文件的“名称”和“说明”    。
+6. 在“创建配置文件”窗格上，输入 iOS/iPadOS 教育配置文件的“名称”和“说明”    。
 7. 在“平台”  下拉列表中，选择“iOS”  。
 8. 在“配置文件类型”  下拉列表中，选择“教育”  。
 9. 选择“设置”   > “配置”  。
