@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207191"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510514"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>在 Microsoft Intune 中使用派生凭据
 
@@ -37,7 +37,7 @@ ms.locfileid: "75207191"
 
 - Intune 管理员将“派生凭据”指定为以下对象的身份验证方法   ：
 
-  - Wi-Fi、VPN 和电子邮件（其中包括 iOS 本机邮件应用）等常见配置文件类型
+  - Wi-Fi、VPN 和电子邮件（其中包括 iOS/iPadOS 本机邮件应用）等常见配置文件类型
 
   - 应用身份验证
 
@@ -76,7 +76,7 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 
 计划在将注册派生凭据的设备上部署 Intune 公司门户应用。 设备用户使用公司门户应用来开始凭据注册流程。
 
-对于 iOS 设备，请参阅[将 iOS 应用商店应用添加到 Microsoft Intune](../apps/store-apps-ios.md)。
+对于 iOS/iPadOS 设备，请参阅[将 iOS/iPadOS 应用商店应用添加到 Microsoft Intune](../apps/store-apps-ios.md)。
 
 ## <a name="plan-for-derived-credentials"></a>派生凭据计划
 
@@ -198,7 +198,7 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 **完成以下任务**：
   
 1. 下载 [DISA Purebred 应用程序](https://cyber.mil/pki-pke/purebred/)。
-2. 在 Intune 中部署 DISA Purebred 应用程序。  请参阅[将 iOS 业务线应用添加到 Microsoft Intune](../apps/lob-apps-ios.md)。
+2. 在 Intune 中部署 DISA Purebred 应用程序。  请参阅[将 iOS/iPadOS 业务线应用添加到 Microsoft Intune](../apps/lob-apps-ios.md)。
 3. 为 DISA Purebred 应用程序[创建按应用 VPN](../configuration/vpn-settings-configure.md)。
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>使用派生凭据进行身份验证以及 S/MIME 签名和加密
@@ -224,7 +224,7 @@ Intune 支持每个租户一个派生凭据颁发者。 可以将 Intune 配置�
 2. 选择“设备”   > “配置文件”   > “创建配置文件”  。
 3. 输入以下设置：
 
-    - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，好的配置文件名为适用于 iOS 设备配置文件的派生凭据  。
+    - **名称**：输入配置文件的描述性名称。 为配置文件命名，以便稍后可以轻松地识别它们。 例如，可以为配置文件命名为“适用于 iOS/iPadOS 设备配置文件的派生凭据”  。
     - **描述**：输入包含设置概述以及其他所有重要详细信息的说明。
     - **平台**：选择“iOS/iPadOS”  。
     - **配置文件类型**：选择“派生凭据”  。

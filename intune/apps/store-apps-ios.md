@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754994"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511729"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>将 iOS 应用商店应用添加到 Microsoft Intune
 
@@ -32,11 +32,11 @@ ms.locfileid: "76754994"
 本文中提供的信息可帮助向 Microsoft Intune 添加 iOS 应用商店应用。 iOS 应用商店应用是 Intune 在用户设备上安装的应用。 用户是公司员工的一部分。 iOS 应用商店应用会自动更新。
 
 >[!NOTE]
->尽管 iOS 设备用户可删除部分内置 iOS 应用（如“股市”和“地图”），但无法使用 Intune 重新部署这些应用。 如果用户删除这些应用，则必须前往 App Store，手动重新进行安装。
+>尽管 iOS/iPadOS 设备用户可删除部分内置 iOS/iPadOS 应用（如“股市”和“地图”），但无法使用 Intune 重新部署这些应用。 如果用户删除这些应用，则必须前往 App Store，手动重新进行安装。
 
 ## <a name="before-you-start"></a>开始之前
 
-只有当应用在应用商店中免费提供时，才使用此方法分配应用。 如果要使用 Intune 分配付费应用，请考虑使用 [iOS 批量购买计划](vpp-apps-ios.md)。
+只有当应用在应用商店中免费提供时，才使用此方法分配应用。 如果要使用 Intune 分配付费应用，请考虑使用 [iOS/iPadOS 批量购买计划](vpp-apps-ios.md)。
 
 >[!NOTE]
 >在使用 Microsoft Intune 时，我们建议使用 Microsoft Edge 或 Google Chrome 浏览器。

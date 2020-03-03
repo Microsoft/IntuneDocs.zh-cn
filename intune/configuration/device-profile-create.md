@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206663"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511415"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中创建设备配置文件
 
@@ -87,7 +87,7 @@ ms.locfileid: "75206663"
 
      例如，如果选择“iOS/iPadOS”作为平台，配置文件类型选项外观将类似如下配置文件所示  ：
 
-     ![在 Intune 中创建 iOS 配置文件](./media/device-profile-create/create-device-profile.png)
+     ![使用 Intune 创建 iOS/iPadOS 配置文件](./media/device-profile-create/create-device-profile.png)
 
 4. 完成后，选择“确定” > “创建”，保存所做更改   。 此时，配置文件创建完成，并出现在列表中。
 
@@ -171,10 +171,10 @@ Intune 使用不同的刷新周期来检查配置文件的更新。 如果设备
   **配置文件名称**：管理模板 - 适用于所有 Windows 10 用户的 OneDrive 配置文件  
   **配置文件说明**：OneDrive 管理模板配置文件，其中包括适用于所有 Windows 10 用户的最小和基本设置。 由 user@contoso.com 创建，可防止用户将组织数据共享到个人 OneDrive 帐户。
 
-  **配置文件名称**：适用于所有 iOS 用户的 VPN 配置文件  
-  **配置文件说明**：VPN 配置文件，其中包括适用于要连接到 Contoso VPN 的所有 iOS 用户的最小和基本设置。 由 user@contoso.com 创建，以便用户自动向 VPN 进行身份验证，而不是提示用户输入其用户名和密码。
+  **配置文件名称**：适用于所有 iOS/iPadOS 用户的 VPN 配置文件  
+  **配置文件说明**：VPN 配置文件，其中包括适用于要连接到 Contoso VPN 的所有 iOS/iPadOS 用户的最小和基本设置。 由 user@contoso.com 创建，以便用户自动向 VPN 进行身份验证，而不是提示用户输入其用户名和密码。
 
-- 按照任务创建配置文件，例如配置 Microsoft Edge 设置、启用 Microsoft Defender 防病毒设置、阻止 iOS 越狱设备等。
+- 按照任务创建配置文件，例如配置 Microsoft Edge 设置、启用 Microsoft Defender 防病毒设置、阻止 iOS/iPadOS 越狱设备等。
 
 - 创建适用于特定组（如市场营销、销售、IT 管理员）的配置文件，或按位置或学校系统创建配置文件。
 

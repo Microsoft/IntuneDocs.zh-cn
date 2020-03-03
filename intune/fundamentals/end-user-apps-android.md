@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40e8dd8409f70a70934684c56ed9e9729f4ebf0f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 231b30e93a3e56811e1569c32cc1286e02320f0d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414601"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514398"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android 用户如何获取其应用
 
@@ -65,6 +65,6 @@ Intune 使用 Zebra Mobility Extensions (MX) 工具包以无提示方式在设�
 
 [使用 Microsoft Intune 添加应用](../apps/apps-add.md)
 
-[iOS 用户如何获取其应用](end-user-apps-ios.md)
+[iOS/iPadOS 用户如何获取其应用](end-user-apps-ios.md)
 
 [Windows 用户如何获取其应用](end-user-apps-windows.md)

@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414076"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514721"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>帮助最终用户理解公司门户应用消息
 
@@ -43,7 +43,7 @@ ms.locfileid: "73414076"
 
 在用户注册设备时点击公司门户应用中的“注册”  后，将显示“是否允许公司门户发起和管理电话呼叫?”  消息。
 
-### <a name="what-it-means"></a>其含义
+### <a name="what-it-means"></a>含义
 
 若接受此提示，则表示用户允许将设备的电话号码和 IMEI 编号发送到 Intune 服务。 这些号码将在管理员控制台的“硬件”  页上显示。
 
@@ -70,7 +70,7 @@ ms.locfileid: "73414076"
 
 在用户注册设备时点击公司门户应用中的“注册”  后，将显示“是否允许公司门户访问你的联系人?”  消息。
 
-### <a name="what-it-means"></a>其含义
+### <a name="what-it-means"></a>含义
 
 若接受此提示，则表示用户允许 Intune 创建工作帐户并管理在设备上为用户注册的 Azure Active Directory 标识。
 
@@ -95,7 +95,7 @@ ms.locfileid: "73414076"
 
 在用户点击“发送数据”  将日志发送给其 IT 管理员后，将显示“是否允许公司门户访问设备上的照片、媒体和文件?”  消息。
 
-### <a name="what-it-means"></a>其含义
+### <a name="what-it-means"></a>含义
 
 若接受此提示，则表示用户允许其设备将数据日志写入设备的 SD 卡。 这还将允许使用 USB 电缆移动这些日志。   
 
@@ -117,16 +117,16 @@ ms.locfileid: "73414076"
 
 ### <a name="where-it-appears"></a>显示位置
 
-如果未将公司门户应用添加到“允许的应用”或“豁免应用”列表，用户尝试登录时，登录将失败   。 此时会显示以下消息：
+如果未将公司门户应用添加到“允许的应用”或“豁免应用”列表，用户尝试登录时，登录将失败   。 以下消息显示：
 
 > 公司支持人员需要授予你访问公司资源的权限   
 > 公司将使用 Windows 信息保护策略保护你的设备。 公司支持人员需要确保他们允许公司门户访问这些资源。
 
-### <a name="what-it-means"></a>其含义
+### <a name="what-it-means"></a>含义
 
 将公司门户添加到 Windows 信息保护 (WIP) 应用保护策略中的“允许的应用”或“豁免应用”列表   。 有关详细信息，请参阅[通过 Intune 创建和部署 Windows 信息保护 (WIP) 应用保护策略](../apps/windows-information-protection-policy-create.md)。
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>在 iOS 设备上批准 iOS 公司应用（业务线应用） 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>在 iOS/iPadOS 设备上批准 iOS/iPadOS 公司应用（业务线应用） 
 
 ### <a name="where-it-appears"></a>显示位置
 
@@ -134,9 +134,9 @@ ms.locfileid: "73414076"
 
 ![iOS 应用消息 - 不受信任的企业级开发版](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
-### <a name="what-it-means"></a>其含义
+### <a name="what-it-means"></a>含义
 
-此消息指示你需要修改 iOS 设备设置才能在 iOS 设备上批准和安装由你的公司开发的应用。
+此消息指示你需要修改 iOS/iPadOS 设备设置才能在 iOS/iPadOS 设备上批准和安装由你的公司开发的应用。
 
 使用公司门户安装此类应用并启动应用时，请按照以下步骤在下载应用后批准它：
 

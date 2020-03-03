@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 257b15879f6df5763c407904a2c2b46319d64fb7
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036533"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473738"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教程：使用 Autopilot 在 Intune 中注册 Windows 设备
 
@@ -60,17 +60,17 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 2. 保存 CSV 文件。
 
-3. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “Windows”   > “设备”  （在“Windows Autopilot 部署计划”   > “导入”  下）。
+3. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”**** > “Windows”**** > “设备”****（在“Windows Autopilot 部署计划”**** > “导入”**** 下）。
 
     ![Windows Autopilot 设备的屏幕截图](./media/enrollment-autopilot/autopilot-import-device.png)
 
-4. 在“添加 Windows Autopilot 设备”  下，浏览到所保存的 CSV 文件。
+4. 在“添加 Windows Autopilot 设备”**** 下，浏览到所保存的 CSV 文件。
 
     ![“添加 Windows Autopilot 设备”的屏幕截图](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device2.png)
 
-5. 选择  “导入”以开始导入设备信息。 导入可能需要几分钟才能完成。
+5. 选择****“导入”以开始导入设备信息。 导入可能需要几分钟才能完成。
 
-4. 导入完成后，选择“设备”   > “Windows”   > “Windows 注册”   > “设备”  （在“Windows Autopilot 部署计划”   > “同步”  下）。将显示一条指示同步正在进行中的消息。 此过程可能耗时数分钟才能完成，具体取决于正在同步的设备数目。
+4. 导入完成后，选择“设备”**** > “Windows”**** > “Windows 注册”**** > “设备”****（在“Windows Autopilot 部署计划”**** > “同步”**** 下）。将显示一条指示同步正在进行中的消息。 此过程可能耗时数分钟才能完成，具体取决于正在同步的设备数目。
 
 5. 刷新视图以查看新设备。
 
@@ -78,33 +78,33 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 接下来，创建一个设备组，将刚加载的 Autopilot 设备置于该组中。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“组”   > “新组”  。
-2. 在“组”边栏选项卡中  ：
-    1. 对于“组类型”  ，选择“安全”  。
-    2. 对于“组名称”  ，输入“Autopilot 组”  。 对于“组说明”  输入“Autopilot 设备的测试组”  。
-    3. 对于“成员资格类型”  ，选择“已分配”  。
-3. 在“组”  边栏选项卡中，选择“成员”  并将 Autopilot 设备添加到该组。 尚未注册的 Autopilot 设备使用设备序列号作为名称。
-4. 选择“创建”  。  
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“组”**** > “新组”****。
+2. 在“组”边栏选项卡中****：
+    1. 对于“组类型”****，选择“安全”****。
+    2. 对于“组名称”****，输入“Autopilot 组”**。 对于“组说明”**** 输入“Autopilot 设备的测试组”**。
+    3. 对于“成员资格类型”****，选择“已分配”****。
+3. 在“组”**** 边栏选项卡中，选择“成员”**** 并将 Autopilot 设备添加到该组。 尚未注册的 Autopilot 设备使用设备序列号作为名称。
+4. 选择“创建”****。  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>创建 Autopilot 部署配置文件
 
 在创建设备组后，必须创建一个部署配置文件，以便可以配置 Autopilot 设备。
 
-1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “Windows”   > “Windows 注册”   > “部署配置文件”   > “创建配置文件”  。
-2. 在“基本信息”  页上，对于“名称”  ，输入“Autopilot 配置文件”  。 对于“说明”  输入“Autopilot 设备的测试配置文件”  。
-3. 将“将所有目标设备转换为 Autopilot”  设置为“是”  。 此设置可确保列表中的所有设备均注册到 Autopilot 部署服务。 等待 48 小时来处理注册。
-4. 选择“下一步”  。
-5. 在“全新体验(OOBE)”  页上，对于“部署模式”  ，选择“用户驱动”  。 包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
-6. 在“加入 Azure AD 时的身份”  框中，选择“Azure AD 已加入”  。
+1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”**** > “Windows”**** > “Windows 注册”**** > “部署配置文件”**** > “创建配置文件”****。
+2. 在“基本信息”页上，对于“名称”，输入“Autopilot 配置文件”**********。 对于“说明”**** 输入“Autopilot 设备的测试配置文件”**。
+3. 将“将所有目标设备转换为 Autopilot”**** 设置为“是”****。 此设置可确保列表中的所有设备均注册到 Autopilot 部署服务。 等待 48 小时来处理注册。
+4. 选择“下一步”****。
+5. 在“全新体验(OOBE)”**** 页上，对于“部署模式”****，选择“用户驱动”****。 包含此配置文件的设备与设备注册用户相关联。 必须具备用户凭据，才能注册设备。
+6. 在“加入 Azure AD 时的身份”**** 框中，选择“Azure AD 已加入”****。
 7. 配置以下选项并将其他选项设置为默认值：
-    - **最终用户许可协议(EULA)** ：**隐藏**
+    - **最终用户许可协议(EULA)**：**隐藏**
     - **隐私设置**：**显示**
     - **用户帐户类型**：**标准**
-8. 选择“下一步”  。
-9. 在“分配”  页上，为“分配给”选择“所选组”   。
-10. 依次选择“选择要包括的组”  、“Autopilot 组”  。
-11. 选择“下一步”  。
-12. 在“查看 + 创建”  页上，选择“创建”  以创建配置文件。
+8. 选择“下一步”****。
+9. 在“分配”**** 页上，为“分配给”选择“所选组”********。
+10. 依次选择“选择要包括的组”****、“Autopilot 组”****。
+11. 选择“下一步”****。
+12. 在“查看 + 创建”**** 页上，选择“创建”**** 以创建配置文件。
 
 ## <a name="distribute-devices-to-users"></a>将设备分发给用户
 
@@ -116,11 +116,11 @@ Windows Autopilot 简化了设备注册。 使用 Microsoft Intune 和 Autopilot
 
 1. 如果已在 Intune 中注册设备，必须先[从 Azure Active Directory 门户中删除设备](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)。
 
-2. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”   > “Windows”   > “Windows 注册”   > “设备”  （在“Windows Autopilot 部署计划”  下）。
+2. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“设备”**** > “Windows”**** > “Windows 注册”**** > “设备”****（在“Windows Autopilot 部署计划”**** 下）。
 
-3. 选择要删除的设备，然后选择“删除”  。
+3. 选择要删除的设备，然后选择“删除”****。
 
-4. 通过选择  “是”确认删除。 删除可能需要几分钟。
+4. 通过选择****“是”确认删除。 删除可能需要几分钟。
 
 ## <a name="next-steps"></a>后续步骤
 

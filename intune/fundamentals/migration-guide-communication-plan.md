@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956226"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515010"
 ---
 # <a name="plan-communications"></a>计划通信
 
@@ -34,9 +34,9 @@ ms.locfileid: "75956226"
 
 建议遵循以下电子邮件通信计划。 你可以编辑文本，以与用户的操作系统和环境保持一致。 我们为你的通信计划提供了一些适合的模板：
 
-- 电子邮件 #1  ：阐释了规划的好处、期望和安排。 利用此机会来展示各种新服务，由 Intune 托管设备对这些服务授予访问权限。
+- 电子邮件 #1：阐释了规划的好处、期望和安排。 利用此机会来展示各种新服务，由 Intune 托管设备对这些服务授予访问权限。
 
-- 电子邮件 #2  ：宣布现已可通过 Intune 访问服务。 告知用户立即注册。 向用户提供在其访问受到之前的时间线。 提醒用户有关迁移的好处和战略原因。
+- 电子邮件 #2：宣布现已可通过 Intune 访问服务。 告知用户立即注册。 向用户提供在其访问受到之前的时间线。 提醒用户有关迁移的好处和战略原因。
 
 在一段时间后，可以开始通过条件访问策略强制实施符合性，并将其用作访问公司数据的条件，如[推动最终用户采用条件访问](migration-guide-drive-adoption.md)中所述。
 
@@ -52,7 +52,7 @@ ms.locfileid: "75956226"
 
 - [注册 Android 设备](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [注册 Android 工作配置文件设备](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [注册 iOS 设备](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [注册 iOS/iPadOS 设备](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [注册 macOS 设备](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [注册 Windows](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ ms.locfileid: "75956226"
 Intune 还有其他资源，可用于推动用户注册设备：
 
 - [如何使最终用户了解 Microsoft Intune](end-user-educate.md) 说明了通过移动 OS 平台完成注册的步骤。
-- [面向 IT 管理员的 Intune 设备注册](../enrollment/device-enrollment.md)解释了如何在 Intune 中注册 Android、iOS 和 Mac 设备。
-- 与 Android、iOS 和 Windows 用户共享公司门户应用。
+- [面向 IT 管理员的 Intune 设备注册](../enrollment/device-enrollment.md)解释了如何在 Intune 中注册 Android、iOS/iPadOS 和 Mac 设备。
+- 与 Android、iOS/iPadOS 和 Windows 用户共享公司门户应用。

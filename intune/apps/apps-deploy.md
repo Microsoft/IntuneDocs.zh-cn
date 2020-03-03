@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912652"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511848"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 将应用分配到组
 
@@ -49,7 +49,7 @@ ms.locfileid: "76912652"
 | 最终用户从基于 Web 的公司门户安装可用的应用 | 是 | 是 |
 
 > [!NOTE]
-> 目前，可将（业务线和应用商店购买的）iOS 和 Android 应用分配到未注册到 Intune 的设备。
+> 目前，可将（业务线和应用商店购买的）iOS/iPadOS 和 Android 应用分配到未向 Intune 注册的设备。
 >
 > 若要在未注册 Intune 的设备上接收应用更新，设备用户必须转至其公司门户并手动安装应用更新。
 
@@ -67,9 +67,9 @@ ms.locfileid: "76912652"
    - **卸载**：如果 Intune 之前已使用相同部署通过“可用于已注册设备”或“必需”分配将应用程序安装到设备上，则会从所选组中的设备卸载该应用。 部署后无法删除 Web 链接。
 
      > [!NOTE]
-     > **仅适用于 iOS 应用**：
-     > - 若要在设备不再受管理时配置托管应用所发生的情况，可以在“删除设备时卸载”  下选择所需的设置。 有关详细信息，请参阅[适用于 iOS 托管应用的应用卸载设置](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps)。
-     > - 如果已创建包含每个应用的 VPN 设置的 iOS VPN 配置文件，可在“VPN”下选择 VPN 配置文件  。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅 [iOS 设备的 VPN 设置](../vpn-settings-ios.md)。
+     > **仅适用于 iOS/iPadOS 应用**：
+     > - 若要在设备不再受管理时配置托管应用所发生的情况，可以在“删除设备时卸载”  下选择所需的设置。 有关详细信息，请参阅[适用于 iOS/iPadOS 托管应用的应用卸载设置](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps)。
+     > - 如果已创建包含每个应用的 VPN 设置的 iOS/iPadOS VPN 配置文件，可在“VPN”下选择 VPN 配置文件  。 应用运行时，VPN 连接将随之打开。 有关详细信息，请参阅[适用于 iOS/iPadOS 设备的 VPN 设置](../vpn-settings-ios.md)。
      >
      > **仅适用于 Android 应用**：如果将 Android 应用部署为“注册与否都可用”，则只能在已注册的设备上获取报告状态  。
      >
@@ -114,7 +114,7 @@ ms.locfileid: "76912652"
 
 > [!NOTE]
 > 仅针对托管 iOS 应用商店应用：将这些应用添加到 Microsoft Intune 并将其分配为“必需”时，将自动根据“必需”和“可用”意向进行创建    。<br><br>
-> 标记为所需意图的 iOS 应用商店应用（不是 iOS VPP 应用）将在设备签入时在设备上执行，并且还会显示在公司门户应用中。<br><br>
+> 标记为所需意图的 iOS/iPadOS 应用商店应用（不是 iOS VPP 应用）将在设备签入时在设备上执行，并且还会显示在公司门户应用中。<br><br>
 > 如果“删除设备时卸载”  设置中发生冲突，则该设备不再受管理时，不会从设备中删除该应用。
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>将托管的 Google Play 应用部署到非托管设备
@@ -132,7 +132,7 @@ ms.locfileid: "76912652"
 在 Intune 控制台中发出应用选择性擦除时，工作帐户将从 Play Store 应用中自动删除，且最终用户从那时起将无法再在 Play Store 应用目录中看到工作应用。 从设备中删除工作帐户后，从 Play Store 安装的应用将仍然安装在设备上，不会卸载。 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>适用于 iOS 托管应用的应用卸载设置
-对于 iOS 设备，你可以选择当从 Intune 取消注册设备或使用“删除设备时卸载”  设置删除管理配置文件时托管应用所发生的情况。 只有在注册设备并且应用作为托管安装后，此设置才适用于应用。 无法为 Web 应用或 Web 链接配置该设置。 只有受移动应用管理 (MAM) 保护的数据在停用后才会被应用选择性擦除删除。
+对于 iOS/iPadOS 设备，你可以选择当从 Intune 取消注册设备或使用“删除设备时卸载”  设置删除管理配置文件时托管应用所发生的情况。 只有在注册设备并且应用作为托管安装后，此设置才适用于应用。 无法为 Web 应用或 Web 链接配置该设置。 只有受移动应用管理 (MAM) 保护的数据在停用后才会被应用选择性擦除删除。
 
 已经为新分配预填充该设置的默认值，如下所示：
 

@@ -1,6 +1,6 @@
 ---
-title: 具有应用保护策略的 iOS 应用
-description: 本主题描述 iOS 应用由应用保护策略托管时会出现的情况。
+title: 具有应用保护策略的 iOS/iPadOS 应用
+description: 本主题描述 iOS/iPadOS 应用由应用保护策略管理时会出现的情况。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
-ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
+ms.openlocfilehash: c854811a9deb938613af872f3cf86244ab9121b3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606615"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514653"
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>iOS 应用由应用保护策略管理时会出现的情况
+# <a name="what-to-expect-when-your-iosipados-app-is-managed-by-app-protection-policies"></a>iOS/iPadOS 应用由应用保护策略托管时会出现的情况
 
 Intune 应用保护策略适用于用于工作或学校的应用。 这意味着，当员工和学生在个人上下文中使用应用时，他们可能不会注意到任何不同的体验。 但是，在工作或学校上下文中，他们可能会收到提示，用于提醒他们做出帐户决策、更新设置或与你联系以获得帮助。 请使用本文了解用户尝试访问和使用受 Intune 保护的应用时的体验。  
 
@@ -34,7 +34,7 @@ Intune 应用保护策略适用于用于工作或学校的应用。 这意味着
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-<!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
+<!---  ![Screenshot of the iOS/iPadOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
 对于**在 Intune 中注册并托管**的设备，用户看到一条消息，提示应用目前已托管。
 

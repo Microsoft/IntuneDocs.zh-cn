@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c0571eb2a369e440b3c7732b6d55ba05ace2c34
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 183a1dc7083aa9b427df225297fb7c393939220f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839356"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515044"
 ---
 # <a name="configure-app-protection-policies-optional"></a>配置应用保护策略（可选）
 
@@ -38,7 +38,7 @@ ms.locfileid: "75839356"
 
 ## <a name="app-protection-policies-with-lob-apps"></a>LOB 应用的应用保护策略
 
-此外，你还可以通过适用于 IOS 和 Android 平台的 [Microsoft Intune APP SDK](../developer/app-sdk-get-started.md) 或 Microsoft Intune App Wrapping Tool 将移动应用保护策略扩展到业务线 (LOB) 应用。 有关详细信息，请参阅 [App Wrapping Tool for iOS](../developer/app-wrapper-prepare-ios.md) 和 [App Wrapping Tool for Android](./../developer/app-wrapper-prepare-android.md)。 此外，请参阅[准备 LOB 应用以实现应用保护](../developer/apps-prepare-mobile-application-management.md)。
+此外，你还可以通过适用于 IOS/iPadOS 和 Android 平台的 [Microsoft Intune APP SDK](../developer/app-sdk-get-started.md) 或 Microsoft Intune App Wrapping Tool 将移动应用保护策略扩展到业务线 (LOB) 应用。 有关详细信息，请参阅 [App Wrapping Tool for iOS](../developer/app-wrapper-prepare-ios.md) 和 [App Wrapping Tool for Android](./../developer/app-wrapper-prepare-android.md)。 此外，请参阅[准备 LOB 应用以实现应用保护](../developer/apps-prepare-mobile-application-management.md)。
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>应用保护策略在迁移过程中起到什么作用？
 

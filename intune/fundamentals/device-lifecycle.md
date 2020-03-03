@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46a23ca18e385fa085afb59a654290702465a0ce
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 57a1e1c9c8a03fae67f2a4a25b6b4f16a20a8ec7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414031"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514449"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune 移动设备管理 (MDM) 生命周期概述
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414031"
 
 ## <a name="enroll"></a>注册
 
-当今的移动设备管理 (MDM) 策略适用于各种手机、平板电脑和电脑（iOS、Android、Windows 和 Mac OS X）。 如果你需要能够管理设备（这对公司拥有的设备来说很常见），第一步便是[设置设备注册](../enrollment/device-enrollment.md)。 你还可以通过向 Intune (MDM) 注册设备或[安装 Intune 客户端软件](../manage-windows-pcs-with-microsoft-intune.md)来管理 Windows 电脑。
+当今的移动设备管理 (MDM) 策略适用于各种手机、平板电脑和电脑（iOS/iPadOS、Android、Windows 和 Mac OS X）。 如果你需要能够管理设备（这对公司拥有的设备来说很常见），第一步便是[设置设备注册](../enrollment/device-enrollment.md)。 你还可以通过向 Intune (MDM) 注册设备或[安装 Intune 客户端软件](../manage-windows-pcs-with-microsoft-intune.md)来管理 Windows 电脑。
 
 ## <a name="configure"></a>用户密码重置策略
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 08041a57ab52f395283e57cda596d00ba168aba1
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885851"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556476"
 ---
 # <a name="basic-setup"></a>基本设置
 
@@ -53,18 +53,11 @@ Intune 要求 Azure Active Directory (AAD) 作为标识和用户分组提供者�
 
 - [如何配置 PFX 证书基础结构](/intune/certficates-pfx-configure)。
 
-
 ## <a name="task-list-for-an-intune-setup"></a>Intune 设置的任务列表
 
 ### <a name="task-1-intune-subscription"></a>任务 1：Intune 订阅
 
-迁移到 Intune 之前，首先需要 Intune 订阅。
-
-- 可以访问[本页](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0)，它提供了执行以下操作的相关说明：
-
-  - 创建链接到新的 AAD 租户的新的 Intune 订阅。
-
-  - 通过登录到现有的 AAD 租户来关联 Intune 订阅。
+迁移到 Intune 之前，首先需要 [Intune 订阅](account-sign-up.md)。
 
 ### <a name="task-2-assign-intune-user-licenses"></a>任务 2：分配 Intune 用户许可证
 

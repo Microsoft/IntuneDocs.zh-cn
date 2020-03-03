@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b9fe275be3f7eccee7f60dc27e5068e5b91ca93d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713291"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514143"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>基于应用的 Intune 条件访问
 
@@ -34,7 +34,7 @@ ms.locfileid: "73713291"
 > [!NOTE]
 > 受管理应用是一种自身执行应用保护策略的应用，可由 Intune 管理。
 
-仅允许 Microsoft Outlook 应用访问 Exchange Online 时，可阻止 iOS 和 Android 上的内置邮件应用。 此外，你还可以阻止未执行 Intune 应用保护策略的应用访问 SharePoint Online。
+仅允许 Microsoft Outlook 应用访问 Exchange Online 时，可阻止 iOS/iPadOS 和 Android 上的内置邮件应用。 此外，你还可以阻止未执行 Intune 应用保护策略的应用访问 SharePoint Online。
 
 ## <a name="prerequisites"></a>必备条件
 

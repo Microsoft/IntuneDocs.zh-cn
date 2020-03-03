@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 128f615a9551c31e6b0e0de4f1d269083874bf48
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206068"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515112"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>监视 Intune 设备符合性策略
 
@@ -77,7 +77,7 @@ ms.locfileid: "75206068"
   - 设备未分配有任何符合性策略，并且没有用于检查符合性的触发器
   - 自上次更新符合性策略后尚未签入的设备
   - 未关联到特定用户的设备，例如：
-    - 无用户关联的通过 Apple 设备注册计划 (DEP) 购买的 iOS 设备
+    - 无用户关联的通过 Apple 设备注册计划 (DEP) 购买的 iOS/iPadOS 设备
     - Android 展台或 Android Enterprise 专用设备
   - 使用设备注册管理器 (DEM) 帐户注册的设备
 

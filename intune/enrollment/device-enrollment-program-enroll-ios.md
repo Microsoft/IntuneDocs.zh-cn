@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415357"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473759"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS/iPadOS 设备
 
@@ -77,6 +77,9 @@ Apple 在 iOS/iPadOS 5 中引入了受监督模式。 可对处于监督模式�
     ![获取注册计划令牌。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. 选择“我同意”，为 Microsoft 授予向 Apple 发送用户和设备信息的权限  。
+
+> [!NOTE]
+> 完成步骤 2 以下载 Intune 公钥证书后，请不要关闭向导或离开此页面。 如果关闭了向导或离开了此页面，则会使已下载的证书失效，你需要再次重复此过程。 如果遇到这种情况，“查看 + 创建”选项卡上的“创建”按钮通常会显示为灰色，并且你无法完成该过程。
 
    ![Apple 证书工作区中用于下载公钥的“注册计划令牌”窗格的屏幕截图。](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 

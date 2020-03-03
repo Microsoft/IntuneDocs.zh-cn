@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508924"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515265"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 连接器
 
@@ -41,7 +41,7 @@ ms.locfileid: "72508924"
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune 和 SEP Mobile 如何帮助你保护公司资源？
 
-适用于 Android 或 iOS 的 SEP Mobile 应用可捕获文件系统、网络堆栈以及设备和应用程序遥测（如果有），然后将其发送到 Symantec 云服务，评估设备的移动威胁风险。
+适用于 Android 或 iOS/iPadOS 的 SEP Mobile 应用可捕获文件系统、网络堆栈以及设备和应用程序遥测（如果有），然后将其发送到 Symantec 云服务，评估设备的移动威胁风险。
 
 Intune 设备符合性策略包括基于 SEP Mobile 风险评估的 SEP Mobile 规则。 启用此规则后，Intune 将评估设备是否符合已启用的策略。
 
@@ -121,7 +121,7 @@ Intune 支持与 SEP Mobile 集成的两种模式：
 
 - [使用 Intune 设置 SEP Mobile 集成](skycure-mtd-connector-integration.md)
 
-- [添加并分配 SEP Mobile 应用、Microsoft Authenticator 和 iOS 应用配置策略](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [添加并分配 SEP Mobile 应用、Microsoft Authenticator 和 iOS/iPadOS 应用配置策略](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
 - [使用 Intune 创建 SEP Mobile 设备符合性策略](mtd-device-compliance-policy-create.md)
 

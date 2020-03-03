@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569906cea8467d568d302f4e44b26c3394213b62
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 670e5033ddf2a04cd5bd87040d85eef764dca519
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414963"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512290"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune 中的应用生命周期概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "77414963"
 
 作为应用生命周期的一部分，将定期发布新版本的应用。 Intune 提供一些工具，可轻松地[将你部署的应用更新](apps-add.md)到较新版本。 此外，你还可以为一些应用配置额外的功能，例如：
 
-- [iOS 应用配置策略](app-configuration-policies-use-ios.md)为应用运行时所使用的兼容 iOS/iPadOS 应用提供设置。 例如，某个应用可能需要特定的品牌设置或必须连接的服务器的名称。
+- [iOS/iPadOS 应用配置策略](app-configuration-policies-use-ios.md)为应用运行时所使用的兼容 iOS/iPadOS 应用提供设置。 例如，某个应用可能需要特定的品牌设置或必须连接的服务器的名称。
 - [Managed Browser 策略](app-configuration-managed-browser.md)帮助你为 [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps) 配置设置，该浏览器将取代默认设备浏览器并让你能够限制用户可以访问的网站。
 
 ## <a name="protect"></a>保护

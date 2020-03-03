@@ -15,24 +15,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15147a1d9ffd82e2f900d15c4a9d2b4d23ad23e3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801493"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515146"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>在 Intune 中对电子邮件进行签名和加密的 S/MIME 概述
 
 电子邮件证书，也称为 S/MIME 证书，通过使用加密和解密为电子邮件通信提供额外的安全性。 Microsoft Intune 可以使用 S/MIME 证书对运行以下平台的移动设备的电子邮件进行签名和加密：
 
 - Android
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows 10 及更高版本
 - Windows Phone
 
-在 iOS 设备上，可以创建 Intune 管理的电子邮件配置文件，该配置文件使用 S/MIME 和证书对传入和传出的电子邮件进行签名和加密。 对于其他平台，S/MIME 的受支持情况各不相同。 如果支持，请安装使用 S/MIME 签名和加密的证书。 然后，最终用户可以在其电子邮件应用程序中启用 S/MIME。
+在 iOS/iPadOS 设备上，可以创建 Intune 管理的电子邮件配置文件，该配置文件使用 S/MIME 和证书对传入和传出的电子邮件进行签名和加密。 对于其他平台，S/MIME 的受支持情况各不相同。 如果支持，请安装使用 S/MIME 签名和加密的证书。 然后，最终用户可以在其电子邮件应用程序中启用 S/MIME。
 
 有关借助 Exchange 对 S/MIME 电子邮件进行签名和加密的详细信息，请参阅 [S/MIME for message signing and encryption](https://docs.microsoft.com/Exchange/policy-and-compliance/smime)（用于邮件签名和加密的 S/MIME）。
 
@@ -77,7 +77,7 @@ Intune 中的签名证书使用 PKCS 证书。 [配置和使用 PKCS 证书](cer
 
 ## <a name="smime-email-profiles"></a>S/MIME 电子邮件配置文件
 
-创建 S/MIME 签名和加密证书配置文件后，即可[为 iOS 本机邮件启用 S/MIME](../configuration/email-settings-ios.md)。
+创建 S/MIME 签名和加密证书配置文件后，即可[为 iOS/iPadOS 本机邮件启用 S/MIME](../configuration/email-settings-ios.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

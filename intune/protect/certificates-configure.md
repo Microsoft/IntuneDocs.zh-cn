@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410183"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576525"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>在 Microsoft Intune 中使用证书进行身份验证
 
@@ -38,7 +38,7 @@ ms.locfileid: "74410183"
 
 若要部署这些证书，需要创建证书配置文件并将其分配给设备。
 
-创建的每个证书配置文件都支持单一平台。 例如，如果使用 PKCS 证书，则需要为 Android 创建 PKCS 证书配置文件，并为 iOS 创建单独的 PKCS 证书配置文件。 如果还对这两个平台使用 SCEP 证书，则需要为 Android 创建一个 SCEP 证书配置文件，并为 iOS 也创建一个。
+创建的每个证书配置文件都支持单一平台。 例如，如果使用 PKCS 证书，则需要为 Android 创建 PKCS 证书配置文件，并为 iOS/iPadOS 创建单独的 PKCS 证书配置文件。 如果还对这两个平台使用 SCEP 证书，则需要为 Android 创建一个 SCEP 证书配置文件，并为 iOS/iPadOS 也创建一个。
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>使用 Microsoft 证书颁发机构时的一般注意事项
 
@@ -83,7 +83,7 @@ ms.locfileid: "74410183"
 | Android Enterprise <br> - 完全托管（设备所有者）   | ![支持](./media/certificates-configure/green-check.png) |   | ![支持](./media/certificates-configure/green-check.png) |   |
 | Android Enterprise <br> - 专用（设备所有者）   | ![支持](./media/certificates-configure/green-check.png)  |   | ![支持](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> - 工作配置文件    | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |
-| iOS                   | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) | ![支持](./media/certificates-configure/green-check.png) |
 | macOS                 | ![支持](./media/certificates-configure/green-check.png) |  ![支持](./media/certificates-configure/green-check.png) |![支持](./media/certificates-configure/green-check.png)|![支持](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![支持](./media/certificates-configure/green-check.png)  |  | ![支持](./media/certificates-configure/green-check.png)| ![支持](./media/certificates-configure/green-check.png) |
 | Windows 8.1 及更高版本 |![支持](./media/certificates-configure/green-check.png)  |  |![支持](./media/certificates-configure/green-check.png) |   |

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/07/2020
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7018e2ab4290219c752f44b4b391822438461e8e
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: d2f984392983d81bc64edb7206469babdb806d63
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415088"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609275"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 新增功能
 
@@ -55,11 +55,120 @@ ms.locfileid: "77415088"
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-february-24-2020"></a>2020 年 2 月 24 日当周
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>macOS 公司门户用户体验改进<!-- 5568987 -->
+我们正在改进 macOS 设备注册体验和适用于 Mac 的公司门户应用。 你将看到以下内容：
+- 注册期间获得更好的 Microsoft AutoUpdate  体验，这可确保用户拥有最新版本的公司门户。
+- 注册期间增强的符合性检查步骤。
+- 支持复制的事件 ID，使用户可更快地将错误从其设备发送到公司支持团队。
+
+有关注册和适用于 Mac 的公司门户应用的详细信息，请参阅[使用公司门户应用注册 macOS 设备](/intune-user-help/enroll-your-device-in-intune-macos-cp)。 
+
+<!-- ########################## -->
+## <a name="week-of-february-17-2020-2002-service-release"></a>2020 年 2 月 17 日当周（2002 服务版本）
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="microsoft-defender-advanced-threat-protection-atp-app-for-macos---5424618---"></a>适用于 macOS 的 Microsoft Defender 高级威胁防护 (ATP) 应用<!-- 5424618 -->
+Intune 将提供一种简单的方法，将适用于 macOS 的 Microsoft Defender 高级威胁防护 (ATP) 应用部署到托管 Mac 设备。 有关详细信息，请参阅[使用 Microsoft Intune 向 macOS 设备添加 Microsoft Defender ](~/apps/apps-advanced-threat-protection-macos.md)和[适用于 Mac 的 Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)。  
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>设备配置
+
+#### <a name="enable-network-access-control-nac-with-cisco-anyconnect-vpn-on-ios-devices---4860111----"></a>在 iOS 设备上使用 Cisco AnyConnect VPN 启用网络访问控制 (NAC)<!-- 4860111  -->
+在 iOS 设备上，你可以创建一个 VPN 配置文件，并使用不同的连接类型，包括 Cisco AnyConnect（“设备配置” > “配置文件” > “创建配置文件” > 选择“iOS”作为平台，“VPN”作为配置文件类型，再选择“Cisco AnyConnect”作为连接类型）       。 
+
+你可以使用 Cisco AnyConnect 启用网络访问控制 (NAC)。 使用此功能需要：
+
+1. 根据[Cisco 标识服务引擎管理员指南](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)，使用“将 Microsoft Intune 配置为 MDM Server”中的步骤在 Azure 中配置 Cisco 标识服务引擎 (ISE)  。
+2. 在 Intune 设备配置配置文件中，选择“启用网络访问控制(NAC)”设置  。
+
+若要查看所有可用 VPN 设置，请转至[在 iOS 设备上配置 VPN](../configuration/vpn-settings-ios.md)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>设备注册
+
+#### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765----"></a>Apple MDM Push 证书页上的序列号<!--5947765  -->
+Apple MDM Push 证书页当前显示序列号。 如果对创建该证书的 Apple ID 的访问权限丢失，则需要该序列号以重新获得对 Apple MDM Push 证书的访问权限。 若要查看序列号，请转到“设备”   > “iOS”   > “iOS 注册”   > “Apple MDM Push 证书”  。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>设备管理
+
+#### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689----"></a>用于将 OS 更新推送到已注册 iOS/iPadOS 设备的新更新计划选项<!--5879689  -->
+在为 iOS/iPadOS 设备计划操作系统更新时，可从以下选项中进行选择。 这适用于使用 Apple Business Manager 或 Apple School Manager 注册类型的设备。
+- 下次签入时更新
+- 在计划时间内更新
+- 在计划时间外更新
+
+对于后两个选项，可创建多个时间窗口。
+
+若要查看新选项，请转到 MEM >“设备”   > “iOS”   > “更新 iOS/iPadOS 的策略”   > “创建配置文件”  。
+
+#### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689----"></a>选择要推送到已注册设备的 iOS/iPadOS 更新<!--5879689  -->
+可选择特定的 iOS/iPadOS 更新（最新的更新除外），将更新推送到已使用 Apple Business Manager 或 Apple School Manager 注册的设备。 此类设备必须设置设备配置策略，将软件更新可见性延迟数天。 若要查看此功能，请转到 MEM >“设备”   > “iOS”   > “更新 iOS/iPadOS 的策略”   > “创建配置文件”  。
+
+### <a name="all-devices-list-improved-search-sort-and-filter--6179023--"></a>“所有设备”列改进了搜索、排序和筛选<!--6179023-->
+已改进“所有设备”列以获得更好的性能、搜索、排序和筛选功能。
+
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>设备安全性
+
+#### <a name="improved-intune-reporting-experience---3791418-----"></a>改进了 Intune 报表体验<!-- 3791418   -->
+Intune 现在提供了改进的报表体验，包括新的报表类型、更好的报表组织、更集中的视图、改进的报表功能以及更一致和更及时的数据。 报告体验将从公共预览版迁移到 GA 版（正式版）。 此外，GA 版本还将提供本地化支持、bug 修复、设计改进，并在 [Microsoft终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)的磁贴上聚合设备符合性数据。 
+
+新的报表类型侧重于以下内容：
+- **操作** - 提供具有负面运行状况的全新记录。 
+- **组织** - 提供总体状态的更广泛汇总。
+- **历史** - 提供一段时间内的模式和趋势。
+- **专业** - 允许使用原始数据创建自己的自定义报表。
+
+第一组新报表侧重于设备符合性。 有关详细信息，请参阅[博客 - Microsoft Intune 报表框架](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)和 [Intune 报表](~/fundamentals/reports.md)。
+
+#### <a name="consolidated-the-location-of-security-baselines-in-the-ui---6177074-----"></a>合并了 UI 中安全基线的位置<!-- 6177074   -->
+我们合并了路径，以便在 Microsoft 终结点管理器管理中心查找[安全基线](../protect/security-baselines.md)，方法是从多个 UI 位置删除“安全基线”  。 若要查找安全基线，现在请使用以下路径：“终结点安全” > “安全基线”   。
+
+#### <a name="expanded-support-for-imported-pkcs-certificates---6044197-wnready---"></a>对导入的 PKCS 证书的扩展支持<!-- 6044197 WNReady -->
+我们已扩展了对使用[导入的 PKCS 证书](../protect/certificates-imported-pfx-configure.md#supported-platforms)的支持以支持“Android 企业完全托管的设备”  。 通常，导入 PFX 证书的操作适用于 S/MIME 加密方案，在这些方案中，用户的加密证书在其所有设备上都是必需的，以便能够进行电子邮件解密。
+
+以下平台支持导入 PFX 证书：
+- Android - 设备管理员
+- Android Enterprise - 完全托管
+- Android Enterprise - 工作配置文件
+- iOS
+- Mac
+- Windows 10
+
+#### <a name="view-the-endpoint-security-configuration-for-devices---6206460----"></a>查看设备的终结点安全配置<!-- 6206460  -->
+我们更新了 Microsoft 终结点管理器管理中心的选项名称，以便查看[适用于特定设备的终结点安全配置](../protect/security-baselines-monitor.md#view-endpoint-security-configurations-per-device)。 此选项将重命名为“终结点安全配置”，因为它显示了适用的安全基线以及在安全基线之外创建的其他策略  。 此选项以前称为“安全基线”  。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>基于角色的访问控制
+
+#### <a name="intune-roles-user-interface-changes-coming--5801612-----"></a>即将更改“Intune 角色”用户界面<!--5801612   -->
+[Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)的用户界面  > “租户管理” > “角色”已改进为更易用的直观设计   。 此体验提供的设置和详细信息与你现在使用的相同，但是新体验采用类似于向导的过程。
+
+<!-- ########################## -->
+## <a name="week-of-february-17-2020"></a>2020 年 2 月 17 日当周
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>应用管理
+
+#### <a name="microsofts-new-office-app---5859926---"></a>Microsoft 的新 Office 应用<!-- 5859926 -->
+Microsoft 的新 Office 应用现已正式发布，可供下载和使用。 Office 应用是一种合并体验，用户可在其中跨 Word、Excel 和 PowerPoint 在单个应用中工作。 可以通过应用保护策略以应用为目标，确保要访问的数据受到保护。
+
+有关详细信息，请参阅[如何使用 Office Mobile 预览版应用启用 Intune 应用保护策略](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-how-to-enable-intune-app-protection-policies-with/ba-p/1045493)。
+
+<!-- ########################## -->
 ## <a name="week-of-february-10-2020"></a>2020 年 2 月 10 日当周
 
-### <a name="windows-7-ends-extended-support---3042987--"></a>Windows 7 终止扩展支持 <!--3042987-->
+### <a name="windows-7-ends-extended-support--3042987---"></a>Windows 7 终止扩展支持<!--3042987 -->
 Windows 7 已于 2020 年 1 月 14 日终止扩展支持。 Intune 已弃用对同时运行 Windows 7 的设备的支持。 帮助保护 PC 的技术协助和自动更新将不再可用。 应升级到 Windows 10。 有关详细信息，请参阅[变更计划博客文章](https://aka.ms/Windows7_Intune)。
-
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>应用管理
@@ -137,7 +246,6 @@ Microsoft Intune 现在支持适用于 Windows 10 的 Microsoft Edge（版本 77
 - 存储容量（设备上的物理存储量） 
 - CPU 体系结构
 
-
 #### <a name="ios-bypass-activation-lock-remote-action-renamed-to-disable-activation-lock---5904591----"></a>iOS“绕过激活锁”远程操作已重命名为“禁用激活锁” <!--5904591  -->
 远程操作“绕过激活锁”  已重命名为“禁用激活锁”  。 有关详细信息，请参阅[通过 Intune 禁用 iOS 激活锁](../remote-actions/device-activation-lock-bypass.md)。
 
@@ -145,7 +253,6 @@ Microsoft Intune 现在支持适用于 Windows 10 的 Microsoft Edge（版本 77
 Intune 现在支持使用 [Windows 10 功能更新部署](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)来定位 Autopilot 注册的设备。
 
 在 Autopilot 开箱即用体验 (OOBE) 期间，不能应用 Windows 10 功能更新策略，这些策略仅在设备完成预配（通常为一天）后第一次进行 Windows 更新扫描时应用。
-
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="monitor-and-troubleshoot"></a>监视和故障排除
@@ -295,13 +402,12 @@ Intune 添加了更多适用于 iOS、iPadOS 和 macOS 设备的单一登录 (SS
 - [Intune 设备符合性概述](../protect/device-compliance-get-started.md)
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>使用 PKCS 证书配置文件为设备预配证书<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
-现在，当运行 Android for Work、iOS 和 Windows 的设备与 PKCS 证书配置文件关联时，可以使用配置文件向其颁发证书，例如用于 Wi-Fi 和 VPN 的配置文件  。 之前，这三个平台仅支持基于用户的证书，基于设备的支持仅限于 macOS。
+现在，当运行 Android for Work、iOS/iPadOS 和 Windows 的设备与 PKCS 证书配置文件关联时，可以使用配置文件向其颁发证书，例如用于 Wi-Fi 和 VPN 的配置文件  。 之前，这三个平台仅支持基于用户的证书，基于设备的支持仅限于 macOS。
 
 > [!NOTE]
 > Wi-Fi 配置文件不支持 PKCS 证书配置文件。 而是在使用 [EAP 类型](../configuration/wi-fi-settings-windows.md#enterprise-profile)时使用 SCEP 证书配置文件。
 
 若要使用基于设备的证书，在为支持的平台[创建 PKCS 证书配置文件](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)时选择“设置”。  现在将显示“证书类型”设置，它支持“设备”或“用户”选项。 
-
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -313,7 +419,6 @@ Intune 添加了更多适用于 iOS、iPadOS 和 macOS 设备的单一登录 (SS
 #### <a name="scope-tag-information-included-in-audit-log-activity-details--5763534---"></a>将范围标记信息包含在审核日志活动详细信息中<!--5763534 -->
 现在审核日志活动详细信息包含范围标记信息（针对支持范围标记的 Intune 对象）。 有关审核日志的详细信息，请参阅[使用审核日志跟踪和监视事件](monitor-audit-logs.md)。
 
-
 <!-- ########################## -->
 ## <a name="week-of-december-2-2019"></a>2019 年 12 月 2 日当周
 
@@ -324,7 +429,6 @@ Intune 添加了更多适用于 iOS、iPadOS 和 macOS 设备的单一登录 (SS
 - 其他平台上的设备仍需要完整的 Intune 许可证。
 
 有关详细信息，请参阅[许可条款](https://www.microsoft.com/en-us/Licensing/product-licensing/products)。
-
 
 <!-- ########################## -->
 ## <a name="week-of-november-18-2019-1911-service-release"></a>2019 年 11 月 18 日当周（1911 服务版本）
@@ -452,7 +556,6 @@ Intune 现在支持 SCEP 设备证书部署到 Android Enterprise 专用设备�
 #### <a name="intune-audit-logs-for-business-to-business-collaboration--5670211---"></a>面向企业到企业协作的 Intune 审核日志<!--5670211 -->
 企业到企业 (B2B) 协作可以安全地将公司的应用程序和服务与来自任何其他组织的来宾用户共享，同时保持对自己公司数据的控制。 Intune 现在支持 B2B 来宾用户的审核日志。 例如，当来宾用户进行更改时，Intune 将能够通过审核日志捕获此数据。 有关详细信息，请参阅[什么是 Azure Active Directory B2B 中的来宾用户访问权限？](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
-
 <!-- ########################## -->
 ## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日当周  
 
@@ -469,7 +572,6 @@ Intune 现在支持 SCEP 设备证书部署到 Android Enterprise 专用设备�
 
 #### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>从 Windows 公司门户应用启动的 Web 应用<!-- 5030972 -->
 最终用户现在可以直接从 Windows 公司门户应用启动 Web 应用。 最终用户可以选择 Web 应用，然后选择选项“在浏览器中打开”  。 已发布的 Web URL 直接在 Web 浏览器中打开。 此功能将在下周推出。 有关 Web 应用的详细信息，请参阅[向 Microsoft Intune 添加 Web 应用](~/apps/web-app.md)。  
-
 
 #### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950----"></a>适用于 Windows 10 的公司门户中的”新建分配类型”列 <!-- 5459950  -->
 “公司门户”>“安装的应用” > “分配类型”列已重命名为“你的组织需要”    。  在该列下，用户将看到“是”或“否”值，以指示应用是其组织必需的还是可选的   。 之所以做出这些更改是因为设备用户对可用应用的概念感到困惑。 用户可以参阅[在设备上安装和共享应用](/intune-user-help/install-apps-cpapp-windows)以获取从公司门户安装应用的详细信息。 有关为用户配置公司门户应用的详细信息，请参阅[如何配置 Microsoft Intune 公司门户应用](~/apps/company-portal-app.md)。  
@@ -490,3 +592,5 @@ Microsoft Azure 政府  上托管的 Intune 实例现在可以使用[安全基�
 ## <a name="notices"></a>通知
 
 [!INCLUDE [Intune notices](../includes/intune-notices.md)]
+
+

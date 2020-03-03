@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c550fba45e5e6b16e49e7103fde40de1e08ba55
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502441"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576475"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune 向 Apple 发送的数据
 
@@ -59,7 +59,7 @@ ms.locfileid: "72502441"
 | ASM/DEP | profile_status | 配置文件安装状态。 可能的值为：“空”、“已分配”、“已推送”或“已删除”     。 |
 | ASM/DEP | profile_uuid | 分配的配置文件的唯一 ID。 |
 | ASM/DEP | device_assigned_by | 分配设备的用户的电子邮件。 |
-| ASM/DEP | os | 设备的操作系统：iOS、OSX 或 tvOS。 此密钥在 X-Server-Protocol-Version 2 及更高版本中有效。 |
+| ASM/DEP | os | 设备的操作系统：iOS/iPadOS、OSX 或 tvOS。 此密钥在 X-Server-Protocol-Version 2 及更高版本中有效。 |
 | ASM/DEP | device_family | 设备的 Apple 产品系列：iPad、iPhone、iPod、Mac 或 AppleTV。 此密钥在 X-Server-Protocol-Version 2 及更高版本中有效。 |
 | ASM/DEP | profile_name | 字符串。 人工可读的配置文件名称。 |
 | ASM/DEP | support_phone_number | 可选。 字符串。 组织的支持电话号码。 |

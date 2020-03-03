@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c40d9ef61493f084048ca277a6f54bdf5238f31a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 494878c78189aed2612883017f4808be72b8f15d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414386"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511593"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>有关 MAM 和应用保护的常见问题
 
@@ -50,7 +50,7 @@ Intune MAM 支持两种配置：
 应用保护策略是可确保组织数据在管理的应用中保持安全或受到控制的规则。 策略可以是在用户尝试访问或移动“公司”数据时强制执行的规则，或在用户位于应用内时受到禁止或监视的一组操作。
 
 **应用保护策略的示例有哪些？**<br></br>
-请参阅 [Android 应用保护策略设置](app-protection-policy-settings-android.md)和 [iOS 应用保护策略设置](app-protection-policy-settings-ios.md)，获取有关每种应用保护策略设置的详细信息。
+请参阅 [Android 应用保护策略设置](app-protection-policy-settings-android.md)和 [iOS/iPadOS 应用保护策略设置](app-protection-policy-settings-ios.md)，获取有关每种应用保护策略设置的详细信息。
 
 **是否可以将 MDM 和 MAM 策略同时应用于不同设备的同一用户？例如，用户能够从启用了 MAM 的计算机访问其工作资源，并开始工作和使用 Intune MDM 托管设备。是否有针对此意见的注意事项？**<br></br>
 如果在不设置设备状态的情况下将 MAM 策略应用于用户，用户将同时在 BYOD 设备和 Intune 托管设备上获得 MAM 策略。 还可以根据托管状态应用 MAM 策略。 因此，在创建应用保护策略时，应在“面向所有应用类型”旁边选择“否”。 然后，执行以下任意操作：
@@ -76,7 +76,7 @@ Intune MAM 支持两种配置：
 
 **如果我想要启用具有 Intune 应用保护的应用，但未使用受支持的应用开发平台，该怎么办？**
 
-Intune SDK 开发团队主动测试和维护对使用原生 Android、iOS（Obj-C、Swift）、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。
+Intune SDK 开发团队主动测试和维护对使用本机 Android、iOS/iPadOS (Obj-C, Swift)、Xamarin、Xamarin.Forms 和 Cordova 平台生成的应用的支持。 虽然某些客户已成功将 Intune SDK 与 React Native 和 NativeScript 等其他平台集成，但我们不会使用受支持平台之外的任何方式为应用开发人员提供明确的指导或插件。
 
 **Intune APP SDK 是否支持 Microsoft 身份验证库 (MSAL) 或社交帐户？**<br></br>
 Intune APP SDK 使用一些适用于 SDK 的第一方和第三方版本的高级 ADAL 功能。 因此，MSAL 不适用于我们的许多核心方案，例如向 Intune 应用保护服务进行身份验证和条件启动。 鉴于来自 Microsoft 标识团队的全面指导是切换到适用于所有 Microsoft Office 应用的 MSAL，因此 Intune SDK 最终需要支持它，但目前没有计划。
@@ -125,12 +125,12 @@ Intune 会将应用中的所有数据标记为“公司”或“个人”。 数
 
 - **系统多久提示一次用户输入 Intune PIN？**<br></br> IT 管理员可在 Intune 管理控制台中定义 Intune 应用保护策略设置“以下时间过后重新检查访问要求(分钟)”。 此设置指定在设备上检测访问要求，并再次显示应用程序 PIN 屏幕之前的时长。 但是，请注意以下关于 PIN 的重要详细信息，它们会影响用户收到提示的频率： 
 
-  - **在同一发布者的应用之间共享 PIN 以提高可用性：** 在 iOS 上，同一应用发布者  的所有应用之间共享一个应用 PIN 码。 在 Android 上，所有应用共享一个应用 PIN。
+  - **在同一发布者的应用之间共享 PIN 以提高可用性：** 在 iOS/iPadOS 上，同一应用发布者的所有应用之间共享一个应用 PIN 码  。 在 Android 上，所有应用共享一个应用 PIN。
   - **在设备重启后“以下时间过后重新检查访问要求(分钟)
-”的行为：** “PIN 计时器”跟踪确定何时显示下一个 Intune 应用 PIN 的不活动分钟数。 在 iOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响  。  
+”的行为：** “PIN 计时器”跟踪确定何时显示下一个 Intune 应用 PIN 的不活动分钟数。 在 iOS/iPadOS 上，PIN 计时器不受设备重启影响。 因此，设备重启对用户在使用 Intune PIN 策略的 iOS/iPadOS 应用中处于非活动状态的分钟数没有影响。 在 Android 上，PIN 计时器在设备重启后重置。 因此，使用 Intune PIN 策略的 Android 应用可能提示输入应用 PIN，设备重启后的“以下时间过后重新检查访问要求(分钟)”设置值对此没有影响  。  
   - **与 PIN 关联的计时器的滚动特性：** 输入 PIN 以访问应用（应用 A）后，该应用会离开设备主屏幕（主输入焦点），并且该 PIN 的 PIN 计时器会进行重置。 共享此 PIN 的任何应用（应用 B）均不会提示用户输入 PIN，因为计时器已重置。 再次达到“以下时间过后重新检查访问要求(分钟)”值后，就会再次显示该提示。
 
-对于 iOS 设备，即使在不同发行商的应用之间共享 PIN，当不是主要输入焦点的应用再次满足“在一定时间后重新检查访问要求(分钟)”  值时，也会再次显示提示。 因此，例如，某一用户具有来自发行商 X  的应用 A  和来自发行商 Y  的应用 B  ，并且这两个应用共享相同 PIN。 该用户将焦点置于应用 A  （前景），并最小化应用 B  。 当满足“在一定时间后重新检查访问要求(分钟)”  值并且用户切换到应用 B  时，将需要此 PIN。
+对于 iOS/iPadOS 设备，当不是主要输入焦点的应用再次满足“在一定时间后重新检查访问要求(分钟)”值时，即使在不同发行商的应用之间共享 PIN，也会再次显示提示  。 因此，例如，某一用户具有来自发行商 X  的应用 A  和来自发行商 Y  的应用 B  ，并且这两个应用共享相同 PIN。 该用户将焦点置于应用 A  （前景），并最小化应用 B  。 当满足“在一定时间后重新检查访问要求(分钟)”  值并且用户切换到应用 B  时，将需要此 PIN。
 
   >[!NOTE] 
   > 为了更频繁地验证用户的访问要求（即 PIN 提示），尤其是针对常用应用的访问，建议减小“以下时间过后重新检查访问要求(分钟)”设置的值。 
@@ -142,15 +142,15 @@ Intune PIN 基于非活动状态计时器（“以下时间过后重新检查访
 
 - **Intune 如何保护 PIN 免遭暴力破解攻击？**<br></br> 作为应用 PIN 策略的一部分，IT 管理员可以设置在锁定应用之前用户可尝试验证其 PIN 的最大次数。 达到最大尝试次数后，Intune App SDK 可以擦除应用中的“公司”数据。
   
-- **为什么必须在同一发布者的应用上设置 PIN 两次？**<br></br> 目前，MAM（在 iOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN，该功能需要一些应用程序（即 WXP、Outlook、Managed Browser、Yammer）的参与，以便集成 Intune APP SDK for iOS/iPadOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS 版本 7.1.12 中发布的功能 。 <br><br> 为了支持此功能，并确保与旧版 Intune SDK for iOS 的向后兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS，就需要设置两个 PIN。 <br><br> 也就是说，这两个 PIN（对于每个应用）不以任何方式相关，即必须遵守应用到应用的应用保护策略。 这样，只有  当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 <br><br> 此行为只针对于使用 Intune 移动应用管理 (MAM) 启用的 iOS 应用程序上的 PIN。 日后，随着应用采用更高版本的 Intune SDK for iOS，必须在同一发布者的应用上设置 PIN 两次就不再是个问题了。 有关示例，请参阅下面的注意事项。
+- **为什么必须在同一发布者的应用上设置 PIN 两次？**<br></br> 目前，MAM（在 iOS/iPadOS 上）允许使用包含字母数字和特殊字符（称为“密码”）的应用程序级 PIN，该功能需要一些应用程序（即 WXP、Outlook、Managed Browser、Yammer）的参与，以便集成 Intune APP SDK for iOS/iPadOS。 如果没有应用程序的参与，将无法对目标应用程序正确执行密码设置。 这是在 Intune SDK for iOS/iPadOS 版本 7.1.12 中发布的功能 。 <br><br> 为了支持此功能，并确保与旧版 Intune SDK for iOS/iPadOS 的后向兼容性，版本 7.1.12 及更高版本中的所有 PIN（数字或密码）都与旧版 SDK 中的数字 PIN 分开处理。 因此，如果设备中同一发布者的应用使用了版本低于和高于 7.1.12 的 Intune SDK for iOS/iPadOS，就需要设置两个 PIN。 <br><br> 也就是说，这两个 PIN（对于每个应用）不以任何方式相关，即必须遵守应用到应用的应用保护策略。 这样，只有  当应用 A 和 B 都应用了相同的策略（对于 PIN），用户才需要设置相同的 PIN 两次。 <br><br> 此行为只针对使用 Intune 移动应用管理 (MAM) 启用的 iOS/iPadOS 应用程序上的 PIN。 日后，随着应用采用更高版本的 Intune SDK for iOS/iPadOS，需要针对同一发布者的应用设置 PIN 两次的问题就会减少。 有关示例，请参阅下面的注意事项。
 
   >[!NOTE]
-  > 例如，如果应用 A 使用版本低于 7.1.12 的 SDK 生成，同一发布者的应用 B 使用版本不低于 7.1.12 的 SDK 生成，且这两个应用都安装在 iOS 设备上，那么最终用户需要为应用 A 和 B 单独设置 PIN。 <br><br> 如果在此设备上安装了包含 SDK 版本 7.1.9 的应用 C，那么它与应用 A 共用同一 PIN。 <br><br> 使用 SDK 版本 7.1.14 生成的应用 D 与应用 B 共用同一 PIN。 <br><br> 如果仅在设备上安装了应用 A 和 C，需要设置一个 PIN。 如果仅在设备上安装了应用 B 和 D，情况也是如此，即需要设置一个 PIN。
+  > 例如，如果应用 A 使用版本低于 7.1.12 的 SDK 生成，同一发布者的应用 B 使用版本不低于 7.1.12 的 SDK 生成，且这两个应用都安装在 iOS/iPadOS 设备上，那么最终用户需要为应用 A 和 B 单独设置 PIN。 <br><br> 如果在此设备上安装了包含 SDK 版本 7.1.9 的应用 C，那么它与应用 A 共用同一 PIN。 <br><br> 使用 SDK 版本 7.1.14 生成的应用 D 与应用 B 共用同一 PIN。 <br><br> 如果仅在设备上安装了应用 A 和 C，需要设置一个 PIN。 如果仅在设备上安装了应用 B 和 D，情况也是如此，即需要设置一个 PIN。
 
 **加密呢？**<br></br>
 IT 管理员可以部署要求对应用数据进行加密的应用保护策略。 作为该策略的一部分，IT 管理员还可指定何时加密内容。
 
-- **Intune 如何加密数据？**<br></br> 请参阅 [Android 应用保护策略设置](app-protection-policy-settings-android.md)和 [iOS 应用保护策略设置](app-protection-policy-settings-ios.md)，获取有关加密应用保护策略设置的详细信息。
+- **Intune 如何加密数据？**<br></br> 请参阅 [Android 应用保护策略设置](app-protection-policy-settings-android.md)和 [iOS/iPadOS 应用保护策略设置](app-protection-policy-settings-ios.md)，获取有关加密应用保护策略设置的详细信息。
 
 - **对哪些内容进行加密？**<br></br> 根据 IT 管理员的应用保护策略，仅对标记为“公司”的数据进行加密。 数据源于业务位置时会被视为“公司”数据。 对于 Office 应用，Intune 将以下数据视为业务位置：电子邮件 (Exchange) 或云存储（包含 OneDrive for Business 帐户的 OneDrive 应用）。 对于由 Intune 应用包装工具托管的业务线应用，所有应用数据都会被视为“公司”数据。
 
@@ -209,22 +209,22 @@ Google Play 保护的 SafetyNet API 检查要求最终用户保持在线状态�
 **如果将指纹或人脸添加到我的设备或将其删除，会发生什么情况？**<br></br>
 Intune 应用保护策略允许将应用访问权限控制在仅限 Intune 许可用户访问。 控制对应用的访问权限的方法之一是支持的设备上需要具有 Apple 的 Touch ID 或 Face ID。 Intune 执行某个行为后，如果对设备的生物识别数据库有任何更改，则在满足下一个非活动超时值时，Intune 会提示用户输入 PIN。 对生物识别数据的更改包括添加或删除指纹或人脸。 如果 Intune 用户未设置 PIN，则会引导他们设置 Intune PIN。
 
-这样做的目的是继续确保应用中的组织数据安全并在应用级别受保护。 此功能仅适用于 iOS，并且需要集成了 Intune APP SDK for iOS 版本 9.0.1 或更高版本的应用程序参与。 必须集成 SDK，以便可以在目标应用程序上强制执行行为。 此集成陆续进行，取决于特定应用程序团队。 参与的一些应用包括 WXP、Outlook、Managed Browser 和 Yammer。
+这样做的目的是继续确保应用中的组织数据安全并在应用级别受保护。 此功能仅适用于 iOS/iPadOS，并且需要集成了 Intune APP SDK for iOS/iPadOS 版本 9.0.1 或更高版本的应用程序参与。 必须集成 SDK，以便可以在目标应用程序上强制执行行为。 此集成陆续进行，取决于特定应用程序团队。 参与的一些应用包括 WXP、Outlook、Managed Browser 和 Yammer。
   
 **即使将数据传输策略设置为“仅管理的应用”或“无应用”，我也可以使用 iOS 共享扩展在非管理应用中打开工作或学校数据。这样不会泄漏数据吗？**<br></br>
 在不管理设备的情况下，Intune 应用保护策略不能控制 iOS 共享扩展。 因此，Intune _**会在对“公司”数据进行应用外共享之前对其进行加密**_ 。 可通过尝试在管理的应用外打开“公司”文件对此进行验证。 该文件应进行加密，且无法在托管应用外打开。
 
 **配置给同一组应用和用户的多个 Intune 应用保护访问设置如何在 iOS 上运行？**<br></br>
-当用户尝试从公司帐户访问目标应用时，系统将在最终用户设备上按特定顺序应用 Intune 应用访问保护策略。 通常先访问擦除，然后是块，再是可取消的警告。 例如，如果适用于特定用户/应用，则先应用阻止用户访问的最低 iOS 操作系统设置，再应用警告用户更新其 iOS 版本的最低 iOS 操作系统设置。 因此，如果 IT 管理员将最低 iOS 操作系统配置为 11.0.0.0 并将最低 iOS 操作系统（仅限警告）配置为 11.1.0.0，则当尝试访问该应用的设备具有 iOS 10 时，系统将基于更严格的最低 iOS 操作系统版本设置阻止最终用户的访问。
+当用户尝试从公司帐户访问目标应用时，系统将在最终用户设备上按特定顺序应用 Intune 应用访问保护策略。 通常先访问擦除，然后是块，再是可取消的警告。 例如，如果适用于特定用户/应用，则先应用阻止用户访问的最低 iOS/iPadOS 操作系统设置，再应用警告用户更新其 iOS/iPadOS 版本的最低 iOS/iPadOS 操作系统设置。 因此，如果 IT 管理员将最低 iOS/iPadOS 操作系统配置为 11.0.0.0 并将最低 iOS/iPadOS 操作系统（仅限警告）配置为 11.1.0.0，则当尝试访问该应用的设备具有 iOS/iPadOS 10 时，系统将基于更严格的最低 iOS/iPadOS 操作系统版本设置阻止最终用户的访问。
 
-处理不同类型的设置时，先处理 Intune App SDK 版本要求，其次是应用版本要求，再是 iOS 操作系统版本要求。 然后，按相同顺序检查各类型设置的所有警告。 建议仅根据 Intune 产品团队针对关键阻止方案提供的指导配置 Intune App SDK 版本要求。
+处理不同类型的设置时，先处理 Intune App SDK 版本要求，其次处理应用版本要求，再处理 iOS/iPadOS 操作系统版本要求。 然后，按相同顺序检查各类型设置的所有警告。 建议仅根据 Intune 产品团队针对关键阻止方案提供的指导配置 Intune App SDK 版本要求。
 
 
 ## <a name="see-also"></a>另请参阅
 - [实现 Intune 计划](../fundamentals/planning-guide-onboarding.md)
 - [Intune 测试和验证](../fundamentals/planning-guide-test-validation.md)
 - [Microsoft Intune 中的 Android 移动应用管理策略设置](../apps/app-protection-policy-settings-android.md)
-- [iOS 移动应用管理策略设置](../apps/app-protection-policy-settings-ios.md)
+- [iOS/iPadOS 移动应用管理策略设置](../apps/app-protection-policy-settings-ios.md)
 - [应用保护策略策略刷新](../apps/app-protection-policy-delivery.md)
 - [验证应用保护策略](../apps/app-protection-policy-delivery.md)
 - [为托管应用添加应用配置策略（无需设备注册）](../apps/app-configuration-policies-managed-app.md)

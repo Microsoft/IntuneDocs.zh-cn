@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414703"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513939"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什么是 Microsoft Intune 应用管理？
 
@@ -41,7 +41,7 @@ IT 管理员可以使用 Microsoft Intune 来管理公司员工使用的客户�
 
 [Intune 移动应用程序管理](app-lifecycle.md)指的是 Intune 管理功能套件，通过它能够为用户发布、推送、配置、保护、监视和更新移动应用。
 
-MAM 允许你在应用程序中管理和保护组织的数据。 通过无需注册的 MAM (MAM-WE)，可以在几乎任何[设备](app-management.md#app-management-capabilities-by-platform)上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。 许多高效工作型应用，例如 Microsoft Office 应用
+MAM 允许你在应用程序中管理和保护组织的数据。 通过无需注册的 MAM (MAM-WE)，可以在几乎任何[设备](app-management.md#app-management-capabilities-by-platform)上管理包含敏感数据的工作或学校相关应用，包括自带设备办公 (BYOD) 场景下的个人设备。   许多高效工作型应用，例如 Microsoft Office 应用
 ，都可以通过 Intune MAM 进行管理。 请参阅可供公众使用的 [Microsoft Intune 保护的应用](apps-supported-intune-apps.md)的官方列表。
 
 Intune MAM 支持两种配置：
@@ -77,14 +77,14 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 
 ## <a name="get-started"></a>入门
 
-可以在“应用”工作负荷中找到大多数应用的相关信息，可通过执行以下操作进行访问：
+可以在“应用”  工作负荷中找到大多数应用的相关信息，可通过执行以下操作进行访问：
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-3. 选择“应用”。
+3. 选择“应用”  。
 
     ![“应用”工作负荷窗格](./media/app-management/apps-workload.png)
 
-接下来的四节描述了“应用”窗格中的可用选项。
+接下来的四节描述了“应用”  窗格中的可用选项。
 
 ### <a name="manage"></a>管理
 - **应用**：选择此选项可添加、查看、分配和监视员工使用的应用。 有关详情，请参阅：
@@ -93,14 +93,14 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
   - [监视应用](apps-monitor.md)。
 - **应用配置策略**：选择此选项可提供用户在运行应用时可能需要的设置。 有关详情，请参阅：
   - [Intune 的应用配置策略](app-configuration-policies-overview.md)。
-    - [iOS 应用配置策略](app-configuration-policies-use-ios.md)。
+    - [iOS/iPadOS 应用配置策略](app-configuration-policies-use-ios.md)。
     - [Android 应用配置策略](app-configuration-policies-use-android.md)。
 - **应用保护策略**：选择此选项可将设置与应用关联，并帮助保护其使用的公司数据。 例如，可以限制某应用与其他应用进行通信的功能，或者可能要求用户输入 PIN 才能访问公司应用。 有关详情，请参阅：
   - [应用保护策略](app-protection-policies.md)。
 - **应用选择性擦除**：选择此选项将从选定用户的设备中仅删除公司数据。 有关详情，请参阅：
   - [应用选择性擦除](apps-selective-wipe.md)。
 - **iOS 应用预配配置文件**：iOS/iPadOS 应用包含一个预配配置文件和一个证书签名的代码。 证书过期后，应用无法再运行。 Intune 提供了一些工具，用于将新的预配配置文件策略主动分配到安装了即将到期应用的设备。 有关详情，请参阅：
-  - [iOS 应用预配配置文件](app-provisioning-profile-ios.md)。
+  - [iOS/iPadOS 应用预置描述文件](app-provisioning-profile-ios.md)。
 
 有关本部分的详细信息，请参阅[管理应用](app-management.md)。
 
@@ -117,7 +117,7 @@ Intune 提供各种功能，用于在设备上获取所需的应用，以便在�
 
 ### <a name="set-up"></a>开始参与
 - **iOS VPP 令牌**：应用并查看 iOS/iPadOS 批量采购计划 (VPP) 许可证。 有关详情，请参阅：
-  - [iOS 批量采购的应用](vpp-apps-ios.md)
+  - [批量购买的 iOS/iPadOS 应用](vpp-apps-ios.md)
 - **Windows 企业证书**：应用或查看用于将业务线应用分发到托管 Windows 设备的代码签名证书的状态。
 - **Windows Symantec 证书**：应用或查看将 XAP 和 WP8.x appx 文件分配到 Windows 10 移动设备所需的 Symantec 代码签名证书的状态。
 - **适用于企业的 Microsoft 应用商店**：设置到适用于企业的 Microsoft 应用商店的集成。 然后，可将购买的应用程序同步到 Intune，对其进行分配，并跟踪许可证使用情况。 有关详情，请参阅：

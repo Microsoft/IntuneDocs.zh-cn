@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,52 +18,52 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755028"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576440"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手动添加 Windows 10 公司门户应用
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 添加 Windows 10 公司门户应用
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-若要管理设备和安装应用，你的用户可从 Microsoft Store 安装公司门户应用。 但是，如果业务需求需要将公司门户应用分配给他们，可直接从 Intune 手动分配 Windows 10 公司门户应用。 即使尚未将 Intune 与适用于企业的 Microsoft Store 集成，也可执行此操作。
+若要管理设备和安装应用，你的用户可从 Microsoft Store 安装公司门户应用。 但是，如果根据业务需求，需要将公司门户应用分配给他们，可直接从 Intune 分配 Windows 10 公司门户应用。 即使尚未将 Intune 与适用于企业的 Microsoft Store 集成，也可执行此操作。
 
- > [!NOTE]
- > 本文中介绍的选项需要你在每次发布应用更新时都手动分配更新。
+ > [!IMPORTANT]
+ > 如果你下载了公司门户应用，则根据本文中介绍的选项，你需在每次发布应用更新时都手动分配更新。 若要部署适用于 Windows 10 Autopilot 预配设备的公司门户应用，请参阅[添加 Windows 10 公司门户应用 Autopilot 设备](~/apps/store-apps-company-portal-autopilot.md)。
 
 ## <a name="configure-settings-to-show-offline-apps"></a>配置设置以显示脱机应用
 1. 使用管理员帐户登录到[适用于企业的 Microsoft Store](https://www.microsoft.com/business-store)。
-2. 选择窗口顶部附近的“管理”选项卡  。
-3. 在左窗格中，选择“设置”  。
-4. 在“购物体验”下，将“显示脱机应用”设置为“开”    。  
+2. 选择窗口顶部附近的“管理”选项卡。
+3. 在左窗格中，选择“设置”。
+4. 在“购物体验”下，将“显示脱机应用”设置为“开”。  
     将显示脱机许可的应用。
 
 ## <a name="download-the-offline-company-portal-app"></a>下载脱机公司门户应用
-1. 搜索并选择“公司门户”应用  。
-2. 将“许可证类型”设置为“脱机”   。
-3. 选择“获取应用”以获取脱机公司门户应用，并将其添加到清单中  。
-4. 在“公司门户”应用页上，选择“管理”   。
-5. 对于“平台”，选择“Windows 10 所有设备”，然后选择适合的“最低版本”、“体系结构”和“下载应用元数据”值      。 
-6. 选择“数据包详细信息”下的“下载”，将文件保存到本地计算机   。
+1. 搜索并选择“公司门户”应用。
+2. 将“许可证类型”设置为“脱机”。
+3. 选择“获取应用”以获取脱机公司门户应用，并将其添加到清单中。
+4. 在“公司门户”应用页上，选择“管理”。
+5. 对于“平台”，选择“Windows 10 所有设备”，然后选择适合的“最低版本”、“体系结构”和“下载应用元数据”值。 
+6. 选择“数据包详细信息”下的“下载”，将文件保存到本地计算机。
 
     ![会选择体系结构为 X86 的 Windows 10 设备](./media/app-sideload-windows/Win10CP-all-devices.png)
 
-7. 选择“下载”以下载“所需框架”下的所有包  。  
+7. 选择“下载”以下载“所需框架”下的所有包。  
 
     必须为 x86、x64 和 ARM 体系结构完成此操作：<br> 
     *选择 1507 作为最低操作系统版本时，有 9 个必需的框架包，选择 1511 时有 12 个包，选择 1607 时有 15 个包。*
 
-8. 在 Azure 门户的 Microsoft Intune 中，将公司门户应用作为新应用上传。 可以通过在“选择应用类型”窗格中选择“业务线应用”作为“应用类型”来添加应用程序   。 然后，选择应用包文件（扩展名为 .AppxBundle）。
+8. 在 Azure 门户的 Microsoft Intune 中，将公司门户应用作为新应用上传。 可以通过在“选择应用类型”窗格中选择“业务线应用”作为“应用类型”来添加应用程序。 然后，选择应用包文件（扩展名为 .AppxBundle）。
 
-9. 在“选择依赖项应用文件”  下，按住 Shift 并单击以选择在步骤 7 中下载的所有依赖项，并验证“已添加”  列是否针对所需的体系结构显示“是”  。
+9. 在“选择依赖项应用文件”下，按住 Shift 并单击以选择在步骤 7 中下载的所有依赖项，并验证“已添加”列是否针对所需的体系结构显示“是”。
 
      > [!NOTE]
      > 如果未添加依赖项，则应用可能不会安装在指定的设备类型上。
 
-10. 单击“确定”  ，输入任何所需的“应用信息”  ，然后单击“添加”  。
+10. 单击“确定”，输入任何所需的“应用信息”，然后单击“添加”。
 
 11. 将公司门户应用作为所需应用分配到你所选的一组用户或设备。  
 
@@ -74,14 +74,14 @@ ms.locfileid: "76755028"
 如果你的用户已从 Microsoft Store 安装 Windows 8.1 或 Windows Phone 8.1 公司门户应用，则他们的应用会自动更新到最新版本，你或你的用户无需执行任何操作。 如果未更新，则要求用户确认他们是否在设备上启用了 Microsoft Store 应用的自动更新。   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将我的旁加载 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
-我们推荐的迁移途径是通过将分配操作设置为“卸载”，以删除 Windows 8.1 公司门户应用的分配  。 选择此设置后，可使用任何前面讨论的选项来分配 Windows 10 公司门户应用。  
+我们推荐的迁移途径是通过将分配操作设置为“卸载”，以删除 Windows 8.1 公司门户应用的分配。 选择此设置后，可使用任何前面讨论的选项来分配 Windows 10 公司门户应用。  
 
 如果需要旁加载应用且在未通过 Symantec 证书进行签名的情况下分配了 Windows 8.1 公司门户，请通过完成本文前面各节中的步骤来完成升级。
 
 如果需要旁加载应用，并且使用 Symantec 代码签名证书签名并分配了 Windows 8.1 公司门户应用，请按照下一节内容中的步骤进行操作。
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何将已签名和旁加载的 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用升级到 Windows 10 公司门户应用？
-我们推荐的迁移路径是通过将分配操作设置为“卸载”，以删除 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用的现有分配  。 选择此设置后，可正常分配 Windows 10 公司门户应用。  
+我们推荐的迁移路径是通过将分配操作设置为“卸载”，以删除 Windows Phone 8.1 公司门户应用或 Windows 8.1 公司门户应用的现有分配。 选择此设置后，可正常分配 Windows 10 公司门户应用。  
 
 否则，Windows 10 公司门户应用必须进行相应更新和签名，以确保遵循升级路径。  
 

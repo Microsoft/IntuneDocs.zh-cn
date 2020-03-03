@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437896"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513718"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何创建和分配应用保护策略
 
@@ -74,21 +74,21 @@ ms.locfileid: "77437896"
     此页提供数据丢失预防 (DLP) 控件的设置，包括剪切、复制、粘贴和另存为限制。 这些设置决定了用户如何与应用此保护策略的应用中的数据进行交互。
 
     **数据保护设置**：<br>
-    - **iOS/iPadOS 数据保护** - 有关信息，请参阅 [iOS 应用保护策略设置 - 数据保护](~/apps/app-protection-policy-settings-ios.md#data-protection)。
+    - **iOS/iPadOS 数据保护** - 有关信息，请参阅 [iOS/iPadOS 应用保护策略设置 - 数据保护](~/apps/app-protection-policy-settings-ios.md#data-protection)。
     - **Android 数据保护** - 有关信息，请参阅 [Android 应用保护策略设置 - 数据保护](~/apps/app-protection-policy-settings-android.md#data-protection)。
 
 7. 单击“下一步”以显示“访问要求”页面   。<br>
     此页提供设置，允许你配置用户在工作上下文中访问应用程序所必须满足的 PIN 和凭据要求。 
  
     **访问要求设置** ：<br>
-    - **iOS/iPadOS 访问要求** - 有关信息，请参阅 [iOS 应用保护策略设置 - 访问要求](~/apps/app-protection-policy-settings-ios.md#access-requirements)。
+    - **iOS/iPadOS 访问要求** - 有关信息，请参阅 [iOS/iPadOS 应用保护策略设置 - 访问要求](~/apps/app-protection-policy-settings-ios.md#access-requirements)。
     - **Android 访问要求** - 有关信息，请参阅 [Android 应用保护策略设置 - 访问要求](~/apps/app-protection-policy-settings-android.md#access-requirements)。
 
 8. 单击“下一步”以显示“条件启动”页面   。<br>
     此页提供设置以设置应用保护策略的登录安全要求。 选择“设置”，然后输入用户登录公司应用时必须满足的值   。 请选择用户不符合要求时要采取的操作  。 在某些情况下，可为单个设置配置多项操作。
 
     **条件启动设置** ：<br>
-    - **iOS/iPadOS 条件启动** - 有关信息，请参阅 [iOS 应用保护策略设置 - 条件启动 ](~/apps/app-protection-policy-settings-ios.md#conditional-launch)。
+    - **iOS/iPadOS 条件启动** - 有关信息，请参阅 [iOS/iPadOS 应用保护策略设置 - 条件启动 ](~/apps/app-protection-policy-settings-ios.md#conditional-launch)。
     - **Android 条件启动** - 有关信息，请参阅 [Android 应用保护策略设置 - 条件启动 ](~/apps/app-protection-policy-settings-android.md#conditional-launch)。
 
 9. 单击“下一步”以显示“分配”页面   。<br>
@@ -180,7 +180,7 @@ Intune 应用保护策略是一种针对用户身份的策略，因此用户的�
 > [!NOTE]
 > 无论选择哪种设备类型，Android 设备都将提示安装 Intune 公司门户应用。 例如，如果选择“Android Enterprise”，则仍会提示使用非托管 Android 设备的用户。
 
-对于 iOS，需要额外的应用配置设置才能将应用保护策略 (APP) 设置定位到 Intune 注册设备上的应用：
+对于 iOS/iPadOS，需要额外的应用配置设置才能将应用保护策略 (APP) 设置定位到 Intune 注册设备上的应用：
 
 - 必须为所有 MDM 托管应用程序配置“IntuneMAMUPN”  。 有关详细信息，请参阅[如何在 Microsoft Intune 中管理 iOS/iPadOS 应用之间的数据传输](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
 - 必须为所有第三方和业务线 MDM 托管应用程序配置“IntuneMAMDeviceID”  。 应将“IntuneMAMDeviceID”配置为设备 ID 令牌  。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}`。 有关详细信息，请参阅[为受管理 iOS/iPadOS 设备添加应用配置策略](app-configuration-policies-use-ios.md)。
@@ -192,7 +192,7 @@ Intune 应用保护策略是一种针对用户身份的策略，因此用户的�
 ## <a name="policy-settings"></a>策略设置
 若要查看 iOS/iPadOS 和 Android 的策略设置的完整列表，请选择以下链接之一：
 
-- [iOS 策略](app-protection-policy-settings-ios.md)
+- [iOS/iPadOS 策略](app-protection-policy-settings-ios.md)
 - [Android 策略](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>后续步骤

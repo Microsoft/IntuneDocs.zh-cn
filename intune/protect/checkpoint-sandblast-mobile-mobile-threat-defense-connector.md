@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801610"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515129"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast 移动威胁防御连接器与 Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "73801610"
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune 和 Check Point SandBlast Mobile 如何帮助你保护公司资源？
 
-适用于 Android 或 iOS 的 Check Point Sandblast Mobile 应用可捕获文件系统、网络堆栈，以及设备和应用程序遥测（如果有），然后将遥测数据发送到 Check Point Sandblast 云服务，评估设备的移动威胁风险。
+适用于 Android 或 iOS/iPadOS 的 Check Point Sandblast Mobile 应用可捕获文件系统、网络堆栈，以及设备和应用程序遥测（如果有），然后将遥测数据发送到 Check Point Sandblast 云服务，评估设备的移动威胁风险。
 
 Intune 设备符合性策略包括基于 Check Point SandBlast 风险评估的 Check Point SandBlast Mobile 威胁防御规则。 启用此规则后，Intune 将评估设备是否符合已启用的策略。 如果发现设备不符合，将阻止用户访问 Exchange Online 和 SharePoint Online 等公司资源。 用户还可通过安装在设备上的 Check Point Sandblast Mobile 应用获取指导，以便解决问题并重新访问公司资源。
 

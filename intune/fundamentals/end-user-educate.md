@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94c52257072bc713cfd3b7a44f342d5d9a4ba2f8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502889"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514670"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>如何使最终用户了解 Microsoft Intune
 
@@ -68,8 +68,8 @@ __Intune 会给用户带来哪些不便？__  认识并尊重用户安装应用�
   * [Android 用户如何获取其应用](end-user-apps-android.md)
 
 * **iOS**
-  * [通过 Intune 使用 iOS 设备](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
-  * [iOS 用户如何获取其应用](end-user-apps-ios.md)
+  * [通过 Intune 使用 iOS/iPadOS 设备](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
+  * [iOS/iPadOS 用户如何获取其应用](end-user-apps-ios.md)
 
 * **Windows**
   * [通过 Intune 使用 Windows 设备](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)

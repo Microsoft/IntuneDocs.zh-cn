@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: bd1aaa545f11f7eaaa591f2057f4a6c8946fac4a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547087"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514160"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>使用 Intune 中的条件访问强制执行 Microsoft Defender ATP 的符合性
 
@@ -62,7 +62,7 @@ Microsoft Defender ATP 可以帮助解决类似这种情况的安全事件。
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和对 Microsoft Defender 安全中心（ATP 门户）的访问权限
 
 > [!NOTE]
-> iOS 和 Android Intune 应用保护策略不支持 Microsoft Defender ATP。
+> iOS/iPadOS 和 Android Intune 应用保护策略不支持 Microsoft Defender ATP。
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>在 Intune 中启用 Microsoft Defender ATP
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 99983b2d2776e72232c65fcfb12d8075061d804b
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258090"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609343"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用 PKCS 证书
 
@@ -66,7 +66,7 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
   Microsoft Intune 证书连接器还支持美国联邦信息处理标准 (FIPS) 模式。 FIPS 不是必需的，但启用 FIPS 时可颁发和吊销证书。
 
 - **Microsoft Intune 的 PFX 证书连接器**：  
-  如果计划使用 S/MIME 电子邮件加密，请使用 Intune 门户下载支持 PFX 证书导入的 PFX 证书连接器  。  转到“设备配置” > “证书连接器” > “添加”，然后按照“为导入的 PFX 证书安装连接器的步骤”操作     。 使用门户中的下载链接开始下载安装程序 PfxCertificateConnectorBootstrapper.exe  。 
+  如果计划使用 S/MIME 电子邮件加密，请使用 Intune 门户下载支持 PFX 证书导入的 PFX 证书连接器  。  转到“设备配置” > “证书连接器” > “添加”，然后按照“为导入的 PFX 证书安装连接器的步骤”操作     。 使用门户中的下载链接开始下载安装程序 PfxCertificateConnectorBootstrapper.exe  。
 
   每个 Intune 租户都支持此连接器的一个实例。 可以将此连接器的实例与 Microsoft Intune 证书连接器的实例安装在同一服务器上。
 
@@ -83,6 +83,8 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
 
   - Microsoft Intune 证书连接器 - 用于身份验证和 S/MIME 电子邮件签名方案
   - Microsoft Intune 的 PFX 证书连接器 - 用于 S/MIME 电子邮件加密方案。
+
+  连接器需要访问托管设备的端口，这些端口应与我们[设备终结点内容](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices)中所述的设备端口一致。
 
   Intune 支持在 Microsoft Intune 证书连接器所在的服务器上安装 PFX 证书连接器   。
   
@@ -124,7 +126,7 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
 9. 在“扩展”  处，确认在“应用程序策略”  下显示有加密文件系统、安全电子邮件和客户端身份验证。
 
     > [!IMPORTANT]
-    > 对于 iOS 证书模板，转到“扩展”  选项卡，更新“密钥用法”  ，并确保未选择“数字签名为原件的证明”  。
+    > 对于 iOS/iPadOS 证书模板，转到“扩展”选项卡，更新“密钥用法”，并确保未选择“数字签名为原件的证明”    。
 
 10. 在“安全”  选项中，为安装 Microsoft Intune 证书连接器的服务器添加计算机帐户。 允许该帐户具有读取  和注册  权限。
 11. 选择“应用”   > “确认”  以保存证书模板。 关闭“证书模板控制台”  。
@@ -208,12 +210,13 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
    |------------|------------|------------|
    |续订阈值 (%)         |<ul><li>All         |建议设为 20%  | 
    |证书有效期   |<ul><li>All         |如果没有更改证书模板，则此选项可能设置为一年。 |
-   |密钥存储提供程序 (KSP)    |<ul><li>Windows 10  | 对于 Windows，请选择在设备上存储密钥的位置。 |
+   |密钥存储提供程序 (KSP)    |<ul><li>Windows 10  |对于 Windows，请选择在设备上存储密钥的位置。 |
    |证书颁发机构       |<ul><li>All         |显示企业 CA 的内部完全限定的域名 (FQDN)。  |
    |证书颁发机构名称  |<ul><li>All         |列出企业 CA 的名称，例如“Contoso 证书颁发机构”。 |
+   |**证书模板名称**    |<ul><li>All         |列出证书模板的名称。 |
    |证书类型              |<ul><li>Android Enterprise（工作配置文件  ）</li><li>iOS</li><li>macOS</li><li>Windows 10 及更高版本|选择一个类型： <ul><li> “用户”证书类型可包含证书使用者和 SAN 中的用户和设备属性  。 </il><li>“设备”证书只能在证书主题和 SAN 中包含设备属性  。 设备适用于无用户设备（例如网亭或其他共享设备）的情况。  <br><br> 此选择影响使用者名称格式。 |
-   |**使用者名称格式**          |<ul><li>All         |对于大多数平台，除非另有要求，否则请将此选项设置为“公用名”  。<br><br>对于以下平台，使用者名称格式由证书类型决定： <ul><li>Android Enterprise（工作配置文件  ）</li><li>iOS</li><li>macOS</li><li>Windows 10 及更高版本</li></ul>  <p> 请参阅本文后面的[使用者名称格式](#subject-name-format)。 |
-   |**使用者可选名称**     |<ul><li>All         |除非另有要求，否则将此选项设置为“用户主体名称 (UPN)”  。 |
+   |**使用者名称格式**          |<ul><li>All         |有关如何配置使用者名称格式的详细信息，请参阅本文后面的[使用者名称格式](#subject-name-format)。  <br><br> 对于大多数平台，除非另有要求，否则请使用“公用名”选择  。 <br><br>对于以下平台，使用者名称格式由证书类型决定： <ul><li>Android Enterprise（工作配置文件  ）</li><li>iOS</li><li>macOS</li><li>Windows 10 及更高版本</li></ul>  <p>  |
+   |**使用者可选名称**     |<ul><li>All         |对于“属性”，除非需要，请选择“用户主体名称(UPN)”，否则请配置相应的“值”，然后单击“添加”     。 <br><br>有关详细信息，请参阅本文后面的[使用者名称格式](#subject-name-format)。|
    |**扩展密钥用法**           |<ul><li> Android 设备管理员 </li><li>Android Enterprise（设备所有者  、工作配置文件  ） </li><li>Windows 10 |证书通常需要“客户端身份验证”，以便用户或设备能够对服务器进行身份验证  。 |
    |**允许所有应用访问私钥** |<ul><li>macOS  |请将其设置为“启用”，以使为关联的 Mac 设备配置的应用可以访问 PKCS 证书私钥  。 <br><br> 有关此设置的详细信息，请参阅 Apple 开发人员文档中[配置文件参考](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)中的 AllowAllAppsAccess 证书有效负载部分  。 |
    |**根证书**             |<ul><li>Android 设备管理员 </li><li>Android Enterprise（设备所有者  、工作配置文件  ） |选择以前分配的根 CA 证书配置文件。 |
@@ -284,8 +287,6 @@ Microsoft Intune 包括内置的设置来使用 PKCS 证书对组织资源进行
   > - 在设备证书的使用者或 SAN 中使用的设备属性（例如 IMEI、SerialNumber 和 FullyQualifiedDomainName）可能被有权访问设备的人员仿造      。
   > - 设备必须支持在证书配置文件中为该配置文件指定的所有变量，才能在该设备上安装。  例如，如果在 SCEP 配置文件的使用者名称中使用 {{IMEI}} 并将其分配给没有 IMEI 号码的设备，则配置文件安装将失败  。  
  
-
-
 ## <a name="whats-new-for-connectors"></a>连接器的新增功能
 
 我们将定期发布这两个证书连接器的更新。 更新连接器时，你可以在此处阅读有关更改的信息。
@@ -303,7 +304,7 @@ Microsoft Intune 的 PFX 证书连接器  [支持自动更新](#requirements)，
 - **Microsoft Intune 的 PFX 证书连接器 - 版本 6.1905.0.402**  
   此版本中的更改：  
   - 连接器的轮询间隔从 5 分钟降到了 30 秒。
- 
+
 ### <a name="april-2-2019"></a>2019 年 4 月 2日
 
 - **Intune 证书连接器 - 版本 6.1904.1.0**  

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509089"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514228"
 ---
 # <a name="data-collection-in-intune"></a>Intune 中的数据收集
 
@@ -60,7 +60,7 @@ Intune 收集的标识数据可能包括但不限于以下内容：
   - ICCID
   - 电话号码
 - 审核日志信息，包括以下活动的相关数据
-  - 管理计算机上的
+  - 管理
   - 创建
   - 更新（编辑）
   - 删除
@@ -112,7 +112,7 @@ Intune 收集的使用假名的数据可能包括但不限于以下内容：
   - 帐户 ID
   - EAS 设备 ID
   - 特定于平台的 ID
-  - iOS 设备的 AppleID
+  - iOS/iPadOS 设备的 AppleID
   - Mac 设备的 Mac 地址
   - Windows 设备的 Windows ID
 - 托管应用程序信息
@@ -136,7 +136,7 @@ Intune 收集的聚合数据可能包括但不限于以下内容：
   - installedDeviceCount：已安装该应用程序的设备数。
   - notApplicableDeviceCount：无法使用该应用程序的设备数。
   - notInstalledDeviceCount：可使用该应用程序但是尚未安装的设备数。
-  - pendingInstallDeviceCount：可使用该应用程序但是还在等待安装的设备数。
+  - pendingInstallDeviceCount：可使用该应用程序但还在等待安装的设备数。
 
 ## <a name="next-steps"></a>后续步骤
 

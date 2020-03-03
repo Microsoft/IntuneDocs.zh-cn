@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755266"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511831"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>将应用添加到 Microsoft Intune 
 
@@ -52,7 +52,7 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 | --- | --- | --- |
 | Android 应用商店应用  | 应用商店应用  | 选择“Android”作为“应用类型”，然后输入应用的 Google Play 应用商店 URL   。 |
 | Android Enterprise 应用  | 应用商店应用  | 选择“Android”作为“应用类型”，然后输入应用的托管 Google Play 应用商店 URL   。 <sup>1</sup> |
-| iOS App Store 应用  | 应用商店应用  | 选择“iOS”作为“应用类型”，搜索应用，然后在 Intune 内选择该应用   。 |
+| iOS/iPadOS 应用商店应用  | 应用商店应用  | 选择“iOS”作为“应用类型”，搜索应用，然后在 Intune 内选择该应用   。 |
 | Windows Phone 8.1 应用商店应用  | 应用商店应用  | 选择“Windows Phone 8.1”作为“应用类型”，然后输入应用的 Microsoft 应用商店 URL   。 |
 | Microsoft 应用商店应用  | 应用商店应用  | 选择“Windows”作为“应用类型”，然后输入应用的 Microsoft 应用商店 URL   。 |
 | 托管的 Google Play 应用 | 应用商店应用  | 选择“托管 Google Play”  作为“应用类型”  ，搜索应用，再在 Intune 中选择应用。 |
@@ -61,10 +61,10 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 | 适用于 Windows 10 的 Microsoft Edge 77 及更高版本 | 应用商店应用 | 在 Microsoft Edge 版本 77 及更高版本下选择“Windows 10”作为“应用类型”    。 |
 | 适用于 macOS 的 Microsoft Edge 版本 77 及更高版本 | 应用商店应用 | 在 Microsoft Edge 版本 77 及更高版本下选择“macOS”作为“应用类型”    。 |
 | Android 业务线 (LOB) 应用 | LOB 应用 | 选择“业务线应用”  作为“应用类型”  ，选择“应用包文件”  ，然后输入扩展名为  .apk 的 Android 安装文件。  |
-| iOS LOB 应用 | LOB 应用 | 选择“业务线应用”  作为“应用类型”  ，选择“应用包文件”  ，然后输入扩展名为  .ipa 的 iOS 安装文件。  |
+| iOS/iPadOS LOB 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .ipa 的 iOS/iPadOS 安装文件     。  |
 | Windows Phone LOB 应用 | LOB 应用 | 选择“业务线应用”作为“应用类型”，选择“应用包文件”，然后输入扩展名为 .xap 的 Windows Phone 安装文件     。  |
 | Windows LOB 应用 | LOB 应用 | 选择“业务线”应用作为应用类型，选择“应用包文件”，然后输入扩展名为 .msi、.appx、.appxbundle、.msix 和 .msixbundle 的 Windows 安装文件        。 |
-| 内置的 iOS 应用  | 内置应用 | 选择“内置应用”作为“应用类型”，然后从提供的应用列表中选择内置应用   。  |
+| 内置 iOS/iPadOS 应用  | 内置应用 | 选择“内置应用”作为“应用类型”，然后从提供的应用列表中选择内置应用   。  |
 | 内置的 Android 应用  | 内置应用 | 选择“内置应用”作为“应用类型”，然后从提供的应用列表中选择内置应用   。  |
 | Web 应用  | Web 应用  | 选择“Web 链接”作为应用类型，然后输入指向该 Web 应用的有效 URL   。  |
 | Android 企业系统应用  | 应用商店应用  | 选择“Android Enterprise 系统应用”作为“应用类型”，然后输入应用名称、发布者和包文件   。  |
@@ -77,7 +77,7 @@ Intune 支持多种不同的应用类型。 为每种应用类型提供的可用
 可以在 Microsoft Intune 中添加应用，方法是通过选择“应用” > “所有应用” > “添加”    。 将显示“选择应用类型”窗格，可选择“应用类型”   。 
 
 >[!TIP]
-> LOB 应用是从应用安装文件添加的应用。 例如，若要安装 iOS LOB 应用，可以通过在“选择应用类型”窗格中选择“业务线应用”作为“应用类型”来添加应用程序    。 然后，选择应用包文件（扩展名为 .ipa）。 这些应用类型通常为内部编写。
+> LOB 应用是从应用安装文件添加的应用。 例如，若要安装 iOS/iPadOS LOB 应用，可以通过在“选择应用类型”窗格中选择“业务线应用”作为“应用类型”来添加应用程序    。 然后，选择应用包文件（扩展名为 .ipa）。 这些应用类型通常为内部编写。
 
 ## <a name="assess-app-requirements"></a>评估应用要求
 作为 IT 管理员，不仅可以确定你的组必须要使用的应用，而且可以确定每个组和子组所需的功能。 对于每个应用，应确定所需平台、需要应用的用户组、要为这些组应用的配置策略和要应用的保护策略。  
@@ -109,8 +109,8 @@ Intune 还支持对需要安全访问本地数据的客户端应用（例如业�
 ### <a name="determine-the-type-of-app-for-your-solution"></a>为解决方案确定应用的类型
 
 可从以下应用类型中进行选择：
-- **应用商店中的应用**：上传到 Microsoft 应用商店、iOS 应用商店或 Android 应用商店的应用是应用商店应用。 应用商店应用的提供者对应用进行维护并提供更新。 在应用商店列表选择应用，并使用 Intune 将其添加为用户的可用应用。
-- **内部编写的应用（业务线）** ：内部创建的应用是业务线 (LOB) 应用。 已经为支持 Intune 的平台（例如 Windows、iOS、macOS 或 Android）之一创建此应用类型的功能。 组织创建更新并将这些更新作为单独的文件提供给你。 可以通过使用 Intune 添加和部署更新为用户提供应用更新。
+- **应用商店中的应用**：上传到 Microsoft Store、iOS/iPadOS 应用商店或 Android 应用商店的应用是应用商店应用。 应用商店应用的提供者对应用进行维护并提供更新。 在应用商店列表选择应用，并使用 Intune 将其添加为用户的可用应用。
+- **内部编写的应用（业务线）** ：内部创建的应用是业务线 (LOB) 应用。 已经为支持 Intune 的平台（例如 Windows、iOS/iPadOS、macOS 或 Android）之一创建此应用类型的功能。 组织创建更新并将这些更新作为单独的文件提供给你。 可以通过使用 Intune 添加和部署更新为用户提供应用更新。
 - **Web 上的应用**：Web 应用是客户端-服务器应用程序。 服务器提供 Web 应用，其中包括 UI、内容和功能。 此外，新式 Web 托管平台通常会提供安全性、负载均衡和其他优势。 此应用类型是在 Web 上单独进行维护的。 可以使用 Intune 指向此应用类型。 还可以指定哪组用户可以访问此应用。 请注意，Android 不支持 Web 应用。
 
 确定组织需要的应用时，请考虑这些应用如何与云服务集成，应用访问什么数据，应用是否对 BYOD 用户可用以及应用是否需要 Internet 访问。
@@ -128,7 +128,7 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 
 ### <a name="understanding-licensed-apps"></a>了解获得许可的应用
 除了了解 Web 应用、应用商店应用和 LOB 应用，还应注意批量采购计划的应用和获得许可的应用的目标，例如： 
-- **适用于企业的 Apple 批量采购计划 (iOS)** ：iOS App Store 允许为想要在公司运行的应用购买多个许可证。 购买多个副本可帮助你有效地管理公司的应用。 有关详细信息，请参阅[管理批量购买的 iOS 应用](vpp-apps-ios.md)。
+- **适用于企业的 Apple 批量采购计划 (iOS)** ：iOS/iPadOS App Store 允许为想要在公司运行的应用购买多个许可证。 购买多个副本可帮助你有效地管理公司的应用。 有关详细信息，请参阅[管理批量购买的 iOS/iPadOS 应用](vpp-apps-ios.md)。
 - **Android 工作配置文件**：可采用与将应用分配到标准 Android 设备不同的方式，将应用分配到 Android 工作配置文件设备。 为 Android 工作配置文件安装的所有应用都来自托管 Google Play 商店。 使用 Intune 搜索并批准所需的应用。 然后，该应用会显示在 Azure 门户的“许可的应用”  节点中，可以像管理任何其他应用一样管理应用的分配。
 - **适用于企业的 Microsoft Store (Windows 10)** ：可在适用于企业的 Microsoft Store 中为组织查找和购买应用（单个或批量）。 通过将此应用商店与 Microsoft Intune 相连，可以在 Azure 门户中管理批量购买的应用。 有关详细信息，请参阅[管理来自适用于企业的 Microsoft Store 的应用](windows-store-for-business.md)。
 
@@ -139,7 +139,7 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 在开始添加和分配应用之前，请考虑以下几点：
 
 - 如果要从应用商店添加和分配应用，用户必须具有该应用商店的帐户才能安装应用。
-- 某些分配的应用或项目可能依赖于内置的 iOS 应用。 例如，如果要在 iOS 应用商店分配一本书，则 iBooks 应用必须在设备上存在。 如果已经删除了 iBooks 内置应用，则无法使用 Intune 将其恢复。
+- 某些分配的应用或项目可能依赖于内置的 iOS/iPadOS 应用。 例如，如果要在 iOS/iPadOS 应用商店分配一本书，则设备上必须存在 iBooks 应用。 如果已经删除了 iBooks 内置应用，则无法使用 Intune 将其恢复。
 
 > [!IMPORTANT]
 > 如果在部署并安装应用后通过 Intune Azure 门户更改应用的名称，则将无法再使用命令来定位应用。
@@ -153,7 +153,7 @@ Intune 托管应用还可以启用应用保护，而无需注册，使你能够�
 - 上传的任意文件的文件大小不得超过 8 GB。
 
   > [!NOTE]
-  > Windows 业务线 (LOB) 应用（包括 Win32、Windows Universal AppX、Windows Universal AppX 捆绑包、Windows Universal MSI X 和 Windows Universal MSI X 捆绑包）的每个应用的最大大小限制为 8 GB。 所有其他 LOB 应用（包括 iOS LOB 应用）的每个应用的最大大小限制为 2 GB。
+  > Windows 业务线 (LOB) 应用（包括 Win32、Windows Universal AppX、Windows Universal AppX 捆绑包、Windows Universal MSI X 和 Windows Universal MSI X 捆绑包）的每个应用的最大大小限制为 8 GB。 所有其他 LOB 应用（包括 iOS/iPadOS LOB 应用）的每个应用的最大大小限制为 2 GB。
 
 ## <a name="create-and-edit-categories-for-apps"></a>创建和编辑应用类别
 

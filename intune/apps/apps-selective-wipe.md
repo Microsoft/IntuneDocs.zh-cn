@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c0ca82b434b83937c7962b2676ce3c2a12c1424
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 1f6992aa93e1ca5a095b1e92a16a07bd0eb1c2f5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564003"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513626"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>如何仅擦除 Intune 托管应用中的企业数据
 
@@ -32,7 +32,7 @@ ms.locfileid: "74564003"
 当设备丢失或被盗，或如果员工离开公司，你想要确保从设备中删除了公司应用数据。 但是，你可能不想删除设备上的个人数据，尤其是如果该设备为员工所有。
 
 >[!NOTE]
-> iOS、Android 和 Windows 10 平台是当前支持从 Intune 托管应用中擦除公司数据的三个平台。 Intune 托管应用是包含 Intune 应用 SDK 的应用程序，并且拥有贵组织的许可用户帐户。 不需要部署应用程序保护策略来启用应用选择性擦除。
+> iOS/iPadOS、Android 和 Windows 10 平台是当前支持从 Intune 托管应用中擦除公司数据的三个平台。 Intune 托管应用是包含 Intune 应用 SDK 的应用程序，并且拥有贵组织的许可用户帐户。 不需要部署应用程序保护策略来启用应用选择性擦除。
 
 若要选择性地删除公司应用数据，请按照本主题中的步骤创建擦除请求。 请求完成之后，应用下次在设备上运行时，会从应用中删除公司数据。 除了创建擦除请求外，还可在不满足应用程序保护策略 (APP) 访问设置的条件时，将组织数据的选择性擦除配置为新操作。 此功能可帮助你根据预先配置的标准自动保护和删除应用程序中的敏感组织数据。
 

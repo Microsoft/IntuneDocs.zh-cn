@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437879"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513890"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用应用保护策略条件启动操作选择性地擦除数据
 
@@ -122,5 +122,5 @@ ms.locfileid: "77437879"
 
 了解有关 Intune 应用保护策略的详细信息，请参阅：
 - [如何创建和分配应用保护策略](app-protection-policies.md)
-- [iOS 应用保护策略设置](app-protection-policy-settings-ios.md)
+- [iOS/iPadOS 应用保护策略设置](app-protection-policy-settings-ios.md)
 - [Microsoft Intune 中的 Android 应用保护策略设置](app-protection-policy-settings-android.md) 

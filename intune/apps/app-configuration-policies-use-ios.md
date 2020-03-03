@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437998"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513956"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>为受管理的 iOS/iPadOS 设备添加应用配置策略
 
@@ -43,7 +43,7 @@ ms.locfileid: "77437998"
 > [!TIP]
 > 此策略类型目前仅适用于运行 iOS/iPadOS 8.0 及更高版本的设备。 它支持下列应用安装类型：
 >
-> - **来自应用商店的托管 iOS 应用程序**
+> - **应用商店的托管 iOS/iPadOS 应用**
 > - **iOS 应用包**
 >
 > 有关应用安装类型的详细信息，请参阅[如何将应用添加到 Microsoft Intune](apps-add.md)。 有关如何将应用配置合并到托管设备的 .ipa 应用包中的详细信息，请参阅 [iOS 开发人员文档](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html)中的托管应用配置。
@@ -108,9 +108,10 @@ Microsoft Intune 提供对应用而言唯一的配置设置。 可对已注册�
 
 对于 iOS/iPadOS 设备，请使用以下键/值对：
 
-| **Key** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **值** | <ul><li>**启用**：唯一允许的帐户是由 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 键定义的托管用户帐户。</li><li>**禁用**（或任何不是与“启用”  值大小写严格匹配的值）：允许任何帐户。</li></ul> |。
+| **Key** | **值** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**启用**：唯一允许的帐户是由 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 键定义的托管用户帐户。</li><li>**禁用**（或任何不是与“启用”  值大小写严格匹配的值）：允许任何帐户。</li></ul> |
+| IntuneMAMUPN | <ul><li>允许登录到应用中的帐户的 UPN。</li><li> 对于已注册 Intune 的设备，<code>{{userprincipalname}}</code> 令牌可用于表示已注册的用户帐户。</li></ul>  |
 
    > [!NOTE]
    > 当仅允许多身份配置的组织帐户时，必须使用 OneDrive for iOS 10.34 或更高版本、Outlook for iOS 2.99.0 或更高版本或者 Edge for iOS 44.8.7 或更高版本，且应用必须以 [Intune 应用保护策略](app-protection-policy.md)为目标。
@@ -181,7 +182,7 @@ Intune 支持属性列表中的以下数据类型：
 - \{\{serialnumberlast4digits\}\} - 例如 G5V2  （用于 iOS/iPadOS 设备）
 - \{\{aaddeviceid\}\} - 例如，ab0dc123-45d6-7e89-aabb-cde0a1234b56 
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>配置公司门户应用以支持 iOS DEP 设备
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>配置公司门户应用，使其支持 iOS 和 iPadOS DEP 设备
 
 DEP（Apple 的设备注册计划）注册与 App Store 版公司门户应用不兼容。 但是，可以使用以下步骤配置公司门户应用以支持 iOS/iPadOS DEP 设备。
 
@@ -204,7 +205,7 @@ DEP（Apple 的设备注册计划）注册与 App Store 版公司门户应用不
 3. 使用面向所需组的应用配置策略将公司门户部署到设备。 请确保将策略仅部署到已注册 DEP 的设备组。
 4. 告诉最终用户在自动安装公司门户应用后登录到该应用。
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>监控每个设备的 iOS 应用配置状态 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>监视每个设备的 iOS/iPadOS 应用配置状态 
 分配配置策略后，可监视每个受管理设备的 iOS/iPadOS 应用配置状态。    从 Azure 门户的“Microsoft Intune”中，选择“设备” > “所有设备”。 从受管理设备列表中选择特定设备，以显示该设备的窗格。 在该设备的窗格上，选择“应用配置”  。  
 
 ## <a name="additional-information"></a>其他信息

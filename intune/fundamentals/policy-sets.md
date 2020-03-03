@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206119"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514823"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>使用策略集对管理对象集合进行分组
 
@@ -52,7 +52,7 @@ ms.locfileid: "75206119"
 创建策略集时，将创建单个分配单元，并管理不同对象之间的关联。 策略集将是对其外部对象的引用。 所包含对象中的任何更改也将影响策略集。 创建策略集后，可以重复查看和编辑其对象和分配。 
 
 > [!NOTE]
-> 策略集支持 Windows、Android、macOS 和 iOS 设置，并且可跨平台进行分配。
+> 策略集支持 Windows、Android、macOS 和 iOS/iPadOS 设置，并且可跨平台进行分配。
 
 ## <a name="how-to-create-a-policy-set"></a>如何创建策略集
 
@@ -82,15 +82,15 @@ ms.locfileid: "75206119"
 - 创建策略集时，如果作用域管理员尝试在未选择任何作用域标记的情况下创建策略集，则在到达“查看 + 创建”页面时，验证将失败，并在状态栏上显示错误  。 管理员必须在过程中切换到其他页面，然后返回“查看 + 创建”页面  。 这将启用“创建”选项  。  
  
 - 策略集当前支持以下应用类型：
-    - iOS 应用商店应用
-    - iOS 业务线应用
-    - 托管 iOS 业务线应用
+    - iOS/iPadOS 应用商店应用
+    - iOS/iPadOS 业务线应用
+    - 托管 iOS/iPadOS 业务线应用
     - Android 应用商店应用
     - Android 业务线应用
     - 托管 Android 业务线应用
     - Office 365 专业增强版套件 (Windows 10)
     - Web 链接
-    - 内置的 iOS 应用
+    - 内置 iOS/iPadOS 应用
     - 内置的 Android 应用
 
 - 不支持将“所有用户”的策略集分配设置为“Autopilot 配置文件”   。
@@ -103,18 +103,18 @@ ms.locfileid: "75206119"
 
 - 支持策略集的 MAM 策略类型包括： 
     - MAM WIP (Windows) MDM 目标托管应用保护 
-    - MAM iOS 目标托管应用保护
+    - MAM iOS/iPadOS 目标托管应用保护
     - MAM Android 目标托管应用保护
-    - MAM iOS 目标托管应用配置
+    - MAM iOS/iPadOS 目标托管应用配置
     - MAM Android 目标托管应用配置
 
 - 不支持策略集的 MAM 策略类型包括： 
     - MAM WIP (Windows) 目标托管应用保护
 
 - MAM 将策略集分配作为以下策略类型的直接分配进行处理：
-    - MAM iOS 目标托管应用保护
+    - MAM iOS/iPadOS 目标托管应用保护
     - MAM Android 目标托管应用保护
-    - MAM iOS 目标托管应用配置
+    - MAM iOS/iPadOS 目标托管应用配置
     - MAM Android 目标托管应用配置
 
     如果将策略添加到部署到组的策略集中，则该组将显示为在工作负荷中直接分配，而不是“通过策略集分配”。 因此，MAM 不处理来自策略集的组分配删除。

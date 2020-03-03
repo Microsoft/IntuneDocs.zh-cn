@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691824"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514602"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>引导式方案 - 保护 Microsoft Office 移动应用 
 
-通过在设备管理门户中执行此引导式方案，你可以在 iOS 和 Android 相关设备上启用基本的 Intune 应用保护。
+通过在设备管理门户中执行此引导式方案，你可以在 iOS/iPadOS 和 Android 相关设备上启用基本的 Intune 应用保护。
 
 启用的应用保护将强制执行以下操作： 
 - 加密工作文件。
@@ -51,7 +51,7 @@ Office 移动应用以及 Microsoft Edge for Mobile 都支持双重标识。 使
 
 通过确保仅支持 Intune 应用保护策略的客户端应用可以访问 Exchange Online 和其他 Office 365 服务，基于应用的条件访问和客户端应用管理增加了一个安全层。
 
-仅允许 Microsoft Outlook 应用访问 Exchange Online 时，可阻止 iOS 和 Android 上的内置邮件应用。 此外，你还可以阻止未执行 Intune 应用保护策略的应用访问 SharePoint Online。
+仅允许 Microsoft Outlook 应用访问 Exchange Online 时，可阻止 iOS/iPadOS 和 Android 上的内置邮件应用。 此外，你还可以阻止未执行 Intune 应用保护策略的应用访问 SharePoint Online。
 
 在此示例中，管理员将应用保护策略应用到 Outlook 应用，然后应用条件访问规则，将 Outlook 应用添加到可在访问企业电子邮件时使用的已批准的应用列表。
 
@@ -69,7 +69,7 @@ Office 移动应用以及 Microsoft Edge for Mobile 都支持双重标识。 使
 
 按照“Intune 应用保护”引导式方案进行操作，可以防止数据在组织外部共享或泄漏  。 
 
-已分配的 iOS 和 Android 用户每次打开 Office 应用时都必须输入 PIN。 5 次输入 PIN 尝试失败后，用户必须重置其 PIN。 如果已要求使用设备 PIN，则用户不会受到影响。
+已分配的 iOS/iPadOS 和 Android 用户每次打开 Office 应用时都必须输入 PIN。 5 次输入 PIN 尝试失败后，用户必须重置其 PIN。 如果已要求使用设备 PIN，则用户不会受到影响。
 
 ### <a name="what-you-will-need-to-continue"></a>需要继续执行的操作
 
@@ -86,7 +86,7 @@ Office 移动应用以及 Microsoft Edge for Mobile 都支持双重标识。 使
 
 ## <a name="step-3---apps"></a>步骤 3 - 应用
 
-为了帮助你入门，此引导式方案预先选择以下要在 iOS 和 Android 设备上保护的移动应用：
+为了帮助你入门，此引导式方案预先选择以下要在 iOS/iPadOS 和 Android 设备上保护的移动应用：
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

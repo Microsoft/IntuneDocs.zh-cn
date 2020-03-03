@@ -1,7 +1,7 @@
 ---
-title: 注册 macOS 设备 - 设备注册计划或 Apple School Manager
+title: 注册 macOS 设备 - Apple Business Manager 或 Apple School Manager
 titleSuffix: ''
-description: 了解如何使用“设备注册计划”注册公司拥有的 macOS 设备。
+description: 了解如何注册企业拥有的 macOS 设备。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414491"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514330"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用“设备注册计划”或 Apple School Manager 自动注册 macOS 设备
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>使用 Apple Business Manager 或 Apple School Manager 自动注册 macOS 设备
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-可以为通过 Apple [设备注册计划 (DEP)](https://deploy.apple.com) 或 [Apple School Manager](https://school.apple.com/) 购买的 macOS 设备设置 Intune 注册。 可在不触碰设备的情况下为大量设备使用这些注册。 可以将 macOS 设备直接交付给用户。 用户打开设备时，“设置助理”将运行预先配置的设置，且设备将注册到 Intune 管理。
+可以为通过 Apple 的 [Apple Business Manager](https://business.apple.com/) 或 [Apple School Manager](https://school.apple.com/) 购买的 macOS 设备设置 Intune 注册。 可在不触碰设备的情况下为大量设备使用这些注册。 可以将 macOS 设备直接交付给用户。 用户打开设备时，“设置助理”将运行预先配置的设置，且设备将注册到 Intune 管理。
 
-若要设置注册，需同时使用 Intune 和 Apple DEP 门户。 创建注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
+若要设置注册，需同时使用 Intune 和 Apple 门户。 创建注册配置文件，这些配置文件包含注册过程中应用于设备的设置。
 
-DEP 注册和 Apple School Manager 均不适用于[设备注册管理器](device-enrollment-manager-enroll.md)。
+Apple Business Manager 注册和 Apple School Manager 均不适用于[设备注册管理器](device-enrollment-manager-enroll.md)。
 
 <!--
 **Steps to enable enrollment programs from Apple**

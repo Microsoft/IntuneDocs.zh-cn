@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中的 Wi-Fi 设备配置文件日志查看和疑难解答 - Azure | Microsoft Docs
-description: 在 Microsoft Intune 中，了解 Android、iOS 和 Windows 设备上的 Wi-Fi 设备配置文件问题并对其进行疑难解答。 查看日志，并了解一些常见问题和可能的解决方法。
+description: 在 Microsoft Intune 中，了解 Android、iOS/iPadOS 和 Windows 设备上的 Wi-Fi 设备配置文件问题并对其进行疑难解答。 查看日志，并了解一些常见问题和可能的解决方法。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547977"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512817"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune 中的 Wi-Fi 设备配置文件疑难解答
 
-在 Intune 中，你可以创建包含 WiFi 网络的连接设置的设备配置文件。 使用这些设置将用户的 Android、iOS 和 Windows 设备连接到组织网络。
+在 Intune 中，你可以创建包含 WiFi 网络的连接设置的设备配置文件。 使用这些设置将用户的 Android、iOS/iPadOS 和 Windows 设备连接到组织网络。
 
 本文介绍了怎样才算将 Wi-Fi 配置文件成功应用于设备。 它还包括日志信息、常见问题等。 本文介绍了如何帮助你对 Wi-Fi 配置文件进行疑难解答。
 
@@ -70,7 +70,7 @@ ms.locfileid: "75547977"
 
 ### <a name="review-company-portal-app-logs"></a>查看公司门户应用日志
 
-在 Android 上，Omadmlog.log  文件将在设备上安装 Wi-Fi 配置文件时详细说明该配置文件的活动。 最多可以有五个 Omadmlog 日志文件。 请确保获取上次同步的时间戳，因为它将帮助你找到相关的日志条目。
+在 Android 上，Omadmlog.log 文件将在设备上安装 Wi-Fi 配置文件时详细说明该配置文件的活动。 最多可以有五个 Omadmlog 日志文件。 请确保获取上次同步的时间戳，因为它将帮助你找到相关的日志条目。
 
 在下面的示例中，使用 [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) 读取日志，然后搜索“wifimgr”：
 
@@ -100,30 +100,30 @@ ms.locfileid: "75547977"
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
-在设备上安装 Wi-Fi 配置文件后，它将显示在“管理配置文件”  中：
-
-> [!div class="mx-imgBorder"]
-> ![iOS 设备上的管理配置文件](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+在设备上安装 Wi-Fi 配置文件后，它将显示在“管理配置文件”中：
 
 > [!div class="mx-imgBorder"]
-> ![iOS 设备上的 Wi-Fi 连接显示为 Wi-Fi 网络](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![Intune 中 iOS/iPadOS 设备上的管理配置文件](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>查看 iOS 控制台和设备日志
+> [!div class="mx-imgBorder"]
+> ![Intune 中 iOS/iPadOS 设备上的 Wi-Fi 连接显示为 Wi-Fi 网络](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-在 iOS 设备上，公司门户应用日志不包含有关 Wi-Fi 配置文件的信息。 若要查看 Wi-Fi 配置文件的安装详细信息，请使用控制台/设备日志：
+### <a name="review-the-iosipados-console-and-device-logs"></a>查看 iOS/iPadOS 控制台和设备日志
 
-1. 将 iOS 设备连接到 Mac。 转到“应用程序”   > “实用程序”  ，然后打开控制台应用。
-2. 在“操作”  下，选择“包含信息消息”  和“包含调试消息”  ：
+在 iOS/iPadOS 设备上，公司门户应用日志不包含有关 Wi-Fi 配置文件的信息。 若要查看 Wi-Fi 配置文件的安装详细信息，请使用控制台/设备日志：
+
+1. 将 iOS/iPadOS 设备连接到 Mac。 转到“应用程序” > “实用程序”，然后打开控制台应用。
+2. 在“操作”下，选择“包含信息消息”和“包含调试消息”：
 
     > [!div class="mx-imgBorder"]
-    > ![iOS 控制台应用中的“包含信息消息”和“包含调试消息”](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![iOS/iPadOS 控制台应用中的“包含信息消息”和“包含调试消息”](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. 重现此应用场景，并将日志保存到文本文件中：
 
-    1. 选择当前屏幕上的所有消息：“编辑”   > “全选”  。
-    2. 复制消息：“编辑”   > “复制”  。
+    1. 选择当前屏幕上的所有消息：“编辑” > “全选”。
+    2. 复制消息：“编辑” > “复制”。
     3. 将日志数据粘贴到文本编辑器中，然后保存该文件。
 
 4. 搜索已保存的日志文件以查看详细信息。 当配置文件成功安装时，你的输出类似于以下日志：
@@ -136,17 +136,17 @@ ms.locfileid: "75547977"
 
 ## <a name="windows"></a>Windows
 
-在设备上安装 Wi-Fi 配置文件后，依次转到“设置”   > “帐户”   > “访问工作或学校”  。 选择你的帐户 >“信息”  ：
+在设备上安装 Wi-Fi 配置文件后，依次转到“设置” > “帐户” > “访问工作或学校”。 选择你的帐户 >“信息”：
 
 > [!div class="mx-imgBorder"]
 > ![在 Windows 设备上选择“访问工作或学校”和“信息”](./media/troubleshoot-wi-fi-profiles/windows-access-work-school-info.png)
 
-在“由 Microsoft 管理的区域”  中，将显示“WiFi”  ：
+在“由 Microsoft 管理的区域”中，将显示“WiFi”：
 
 > [!div class="mx-imgBorder"]
 > ![在“由 Microsoft 管理的区域”中，查看在 Windows 上列出的 WiFi](./media/troubleshoot-wi-fi-profiles/windows-wifi-areas-managed-by-microsoft.png)
 
-若要查看 Wi-Fi 连接，请访问“设置”   > “网络和 Internet”    > “Wi-Fi”  ：
+若要查看 Wi-Fi 连接，请访问“设置” > “网络和 Internet”  > “Wi-Fi”：
 
 > [!div class="mx-imgBorder"]
 > ![在 Windows 上，在“设置”中将 Wi-Fi 连接视为已知网络](./media/troubleshoot-wi-fi-profiles/windows-wifi-connection-known-networks.png)
@@ -155,9 +155,9 @@ ms.locfileid: "75547977"
 
 在 Windows 设备上，有关 Wi-Fi 配置文件的详细信息记录在事件查看器中：
 
-1. 打开“事件查看器”  应用。
-2. 在“视图”  菜单上，选择“显示分析和调试日志”  。
-3. 展开“应用程序和服务日志”   > “Microsoft”   > “Windows”   > “DeviceManagement-Enterprise-Diagnostic-Provider”   > “管理员” 
+1. 打开“事件查看器”应用。
+2. 在“视图”菜单上，选择“显示分析和调试日志”。
+3. 展开“应用程序和服务日志” > “Microsoft” > “Windows” > “DeviceManagement-Enterprise-Diagnostic-Provider” > “管理员”
 
 输出类似于以下日志：
 
@@ -181,20 +181,20 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 - 确认将 Wi-Fi 配置文件分配给了正确的组：
 
-    1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备”   > “配置文件”  。
-    2. 依次选择配置文件和“分配”  。 确认所选组正确。
-    3. 在终结点管理器中，选择“疑难解答 + 支持”  。 查看“分配”  信息。
+    1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“设备” > “配置文件”。
+    2. 依次选择配置文件和“分配”。 确认所选组正确。
+    3. 在终结点管理器中，选择“疑难解答 + 支持”。 查看“分配”信息。
 
-- 在终结点管理器中，选择“疑难解答 + 支持”  。 通过检查“上次签入”  时间，确认设备是否可以与 Intune 同步。
+- 在终结点管理器中，选择“疑难解答 + 支持”。 通过检查“上次签入”时间，确认设备是否可以与 Intune 同步。
 
 - 如果 Wi-Fi 配置文件链接到受信任的根和 SCEP 配置文件，请确认两个配置文件均已部署到设备。 Wi-Fi 配置文件依赖于这些配置文件。
 
 - 在 Windows 10 及更高版本的设备上，查看 MDM 诊断信息日志：
 
-  1. 转至“设置”   > “帐户”   > “访问工作或学校”  。
-  2. 选择你的工作或学校帐户 >“信息”  。
-  3. 在“设置”  页的底部，选择“创建报表”  。
-  4. 此时会打开一个窗口，其中显示了日志文件的路径。 选择“导出”  。
+  1. 转至“设置” > “帐户” > “访问工作或学校”。
+  2. 选择你的工作或学校帐户 >“信息”。
+  3. 在“设置”页的底部，选择“创建报表”。
+  4. 此时会打开一个窗口，其中显示了日志文件的路径。 选择“导出”。
   5. 转到 `\Users\Public\Documents\MDMDiagnostics` 路径，然后查看报表：
 
       > [!div class="mx-imgBorder"]
@@ -209,13 +209,13 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   2019-08-01T19:18:13.5120000    INFO    com.microsoft.omadm.platforms.android.wifimgr.WifiProfileManager    15118    04105    Skipping Wifi profile <profile ID> because it is pending certificates.
   ```
 
-  - 当受信任的根和 SCEP 配置文件位于 Android 设备上且合规时，Wi-Fi 配置文件可能不在设备上。 当公司门户应用的 CertificateSelector  提供程序找不到与指定条件匹配的证书时，会发生此问题。 特定条件可能位于证书模板或 SCEP 配置文件中。
+  - 当受信任的根和 SCEP 配置文件位于 Android 设备上且合规时，Wi-Fi 配置文件可能不在设备上。 当公司门户应用的 CertificateSelector 提供程序找不到与指定条件匹配的证书时，会发生此问题。 特定条件可能位于证书模板或 SCEP 配置文件中。
 
     如果找不到匹配的证书，则不会安装设备上的证书。 未应用 Wi-Fi 配置文件，因为它没有正确的证书。 在此应用场景中，你将在公司门户应用 Omadmlog 文件中看到以下条目：
 
     ` Skipping Wifi profile <profile ID> because it is pending certificates.`
 
-    下面的示例日志显示由于指定了“任何用途”  扩展密钥用法 (EKU) 条件而排除的证书。 但是，分配给设备的证书没有该 EKU：
+    下面的示例日志显示由于指定了“任何用途”扩展密钥用法 (EKU) 条件而排除的证书。 但是，分配给设备的证书没有该 EKU：
 
     ```log
     2018-11-27T21:10:37.6390000    VERB     com.microsoft.omadm.utils.CertUtils      14210    00948    Excluding cert with alias User<ID1> and requestId <requestID1> as it does not have any purpose EKU.
@@ -225,7 +225,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
     2018-11-27T21:10:37.6400000    INFO       com.microsoft.omadm.platforms.android.wifimgr.WifiProfileManager       14210                00948     Skipping Wifi profile <profile ID> because it is pending certificates.
     ```
 
-    以下示例显示了 SCEP 配置文件输入“任何用途”  EKU。 但它不会输入到证书颁发机构 (CA) 的证书模板中。 若要解决此问题，请将“任何用途”  选项添加到证书模板。 或者，从 SCEP 配置文件中删除“任何用途”  选项。
+    以下示例显示了 SCEP 配置文件输入“任何用途”EKU。 但它不会输入到证书颁发机构 (CA) 的证书模板中。 若要解决此问题，请将“任何用途”选项添加到证书模板。 或者，从 SCEP 配置文件中删除“任何用途”选项。
 
     > [!div class="mx-imgBorder"]
     > ![在 Android 上，将“任何用途”添加到证书颁发机构的证书模板中](./media/troubleshoot-wi-fi-profiles/android-add-any-purpose-eku.png)
@@ -263,7 +263,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 - 有关 Microsoft Intune 中 Wi-Fi 配置文件的详细信息，请参阅以下文章：
 
-  - 为运行 [Android](wi-fi-settings-android.md)、[iOS](wi-fi-settings-ios.md) 和 [Windows 10 及更高版本](wi-fi-settings-windows.md)的设备添加 Wi-Fi 设置。
+  - 为运行 [Android](wi-fi-settings-android.md)、[iOS/iPadOS](wi-fi-settings-ios.md) 和 [Windows 10 及更高版本](wi-fi-settings-windows.md)的设备添加 Wi-Fi 设置。
   - [支持提示 - 如何在 Intune 中为 SCEP 证书部署配置 NDES](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
   - 对 [SCEP 证书配置文件部署](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune)和 [NDES 配置](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune)进行疑难解答。
 

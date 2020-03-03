@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504368"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514874"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Pradeo 移动威胁防御连接器与 Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72504368"
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Intune 和 Pradeo 如何帮助保护公司资源？
 
-适用于 Android 或 iOS 的 Pradeo 应用可捕获文件系统、网络堆栈、设备和应用程序遥测（如果有），然后将遥测数据发送到 Pradeo 云服务，评估设备的移动威胁风险。
+适用于 Android 或 iOS/iPadOS 的 Pradeo 应用可捕获文件系统、网络堆栈、设备和应用程序遥测（如果有），然后将遥测数据发送到 Pradeo 云服务，评估设备的移动威胁风险。
 
 Intune 设备符合性策略包括基于 Pradeo 风险评估的 Pradeo 移动威胁防御规则。 启用此规则后，Intune 将评估设备是否符合已启用的策略。 如果发现设备不符合，将阻止用户访问 Exchange Online 和 SharePoint Online 等公司资源。 用户还可通过安装在设备上的 Pradeo 应用获取指导，以便解决问题并重新访问公司资源。
 

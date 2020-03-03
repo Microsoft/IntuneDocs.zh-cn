@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755181"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609172"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>将 iOS 业务线应用添加到 Microsoft Intune
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755181"
 
 本文中提供的信息可帮助你将 iOS 业务线 (LOB) 应用添加到 Microsoft Intune。 业务线 (LOB) 应用是从 IPA 应用安装文件添加到 Intune 的应用。 此类应用通常在内部编写。 首先需要加入 iOS 开发人员企业计划。 有关如何执行此操作的详细信息，请参阅 [Apple 网站](https://developer.apple.com/programs/ios/enterprise/)。
 
->[!NOTE]
->iOS 设备用户可删除部分内置 iOS 应用（如“股市”和“地图”）。 无法使用 Intune 重新部署这些应用。 如果用户删除这些应用，则必须前往 App Store，并手动重新安装它们。
+> [!NOTE]
+> iOS 设备用户可删除部分内置 iOS 应用（如“股市”和“地图”）。 无法使用 Intune 重新部署这些应用。 如果用户删除这些应用，则必须前往 App Store，并手动重新安装它们。
 >
->每个 iOS LOB 应用的大小上限为 4 GB。
+> 每个 iOS LOB 应用的大小上限为 4 GB。
+
+> [!NOTE]
+> 捆绑包标识符（例如 com.contoso.app）应为应用的唯一标识符  。 例如，若要在生产版本旁边安装用于测试的 LOB 应用的 beta 版本，则 beta 版本必须具有不同的唯一标识符（例如 com.contoso.app-beta）  。 否则，beta 版本将与生产重叠，并被视为升级。 重命名 .ipa 文件不会对此行为产生任何影响。
 
 ## <a name="select-the-app-type"></a>选择应用类型
 

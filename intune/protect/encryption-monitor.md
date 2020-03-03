@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune 中加密设备的加密报表
 titleSuffix: Microsoft Intune
-description: 查看有关 iOS 或 Windows 设备加密状态的报表，并从 Microsoft Intune 门户中访问 FileVault 和 BitLocker 恢复密钥。
+description: 查看有关 iOS/iPadOS 或 Windows 设备加密状态的报表，并从 Microsoft Intune 门户中访问 FileVault 和 BitLocker 恢复密钥。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164685"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510497"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>使用 Intune 监视设备加密
 
@@ -48,7 +48,7 @@ Microsoft Intune 加密报告是一个集中位置，可便于查看设备加密
 - **设备名称** - 设备的名称。
 - **OS** - 设备平台（如 Windows 或 macOS）。
 - **OS 版本** - 设备上安装的 Windows 或 macOS 版本。
-- **TPM 版本**（仅适用于 Windows 10）- Windows 10 设备上安装的受信任的平台模块 (TPM) 芯片版本  。
+- **TPM 版本**（仅适用于 Windows 10）  - Windows 10 设备上安装的受信任的平台模块 (TPM) 芯片版本。
 - **加密就绪情况** - 评估设备是否准备好支持适用的加密技术（如 BitLocker 或 FileVault 加密）。 设备标识为：
   - **就绪**：可以使用 MDM 策略对设备进行加密，前提是设备满足以下要求：
 

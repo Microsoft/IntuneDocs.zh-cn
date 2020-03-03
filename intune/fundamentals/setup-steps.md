@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a300070e06725e165316172bf10ca079861f56f
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: b12781c55abc3ce7d9e964b0f139fc4c1d1fd69b
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547566"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529356"
 ---
 # <a name="set-up-intune"></a>设置 Intune
 
@@ -35,19 +35,16 @@ ms.locfileid: "75547566"
 >[!TIP]
 >在符合条件的计划中，如果购买的 Intune 许可证达到 150 个，就可以使用 *FastTrack 中心权益*。 通过此服务，Microsoft 专家将协助用户针对 Intune 做好环境准备。 请参阅 [FastTrack 企业移动性 + 安全性 (EMS) 中心权益](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)。
 
-
-
-| 步骤 |                                                                                                                       状态                                                                                                                       |
-|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   1   |                                        [支持的配置](supported-devices-browsers.md) - 在准备阶段需要了解的信息。 包括支持的配置和网络要求。                                         |
-|   2   |                                                                 [登录 Intune](account-sign-up.md) - 登录试用订阅或创建新的 Intune 订阅。                                                                  |
-|   3   |                [配置域名](custom-domain-name-configure.md) - 设置 DNS 注册，以将公司域名与 Intune 连接。 此操作可在连接 Intune 和使用资源时为用户提供熟悉的域。                |
-|   4   |                                   [添加用户](users-add.md) - 手动添加用户或连接 Active Directory 以将用户与 Intune 同步。 除非设备是“无用户”网亭设备，否则必须执行此操作。                                    |
-|   5   |                                            [分配许可证](../licenses-assign.md) - 向用户授予使用 Intune 的权限。 所有用户设备和无用户设备都需要 Intune 许可证才能访问服务。                                             |
-|   6   |                                               [添加组](../groups-add.md) - 使用用户和设备组以简化管理任务。 使用组来分配应用、设置和其他资源。                                                |
-|   7   |                                                                        [添加应用](../apps/apps-add.md) - 可以将应用分配给组，并可自动或选择性地安装应用。                                                                         |
+| 步骤 | 状态  |
+|---|---|
+|   1   | [支持的配置](supported-devices-browsers.md) - 在准备阶段需要了解的信息。 包括支持的配置和网络要求。|
+|   2   |  [登录 Intune](account-sign-up.md) - 登录试用订阅或创建新的 Intune 订阅。 |
+|   3   | [配置域名](custom-domain-name-configure.md) - 设置 DNS 注册，以将公司域名与 Intune 连接。 此操作可在连接 Intune 和使用资源时为用户提供熟悉的域。 |
+|   4   | [添加用户](users-add.md)和[组](../groups-add.md) - 添加用户和组，或连接 Active Directory 以与 Intune 同步。 除非设备是“无用户”网亭设备，否则必须执行此操作。 使用组来分配应用、设置和其他资源。|
+|   5   | [分配许可证](../licenses-assign.md) - 向用户授予使用 Intune 的权限。 所有用户设备和无用户设备都需要 Intune 许可证才能访问服务。 |
+|   6   | [设置 MDM 机构](../mdm-authority-set.md) - 使用用户和设备组以简化管理任务。 使用组来分配应用、设置和其他资源。 |
+|   7   | [添加应用](../apps/apps-add.md) - 可以将应用分配给组，并可自动或选择性地安装应用。 |
 |   8   | [配置设备](../configuration/device-profiles.md) - 设置用于管理设备设置的配置文件。 设备配置文件可预配置电子邮件、VPN、Wi-Fi 和设备功能的设置。 它们还可对设备进行限制，以帮助同时保护设备和数据。 |
-|   9   |       [自定义公司门户](../apps/company-portal-app.md) - 自定义用户在注册设备和安装应用时使用的 Intune 公司门户。 公司门户应用中和 Intune 公司门户网站上均显示这些设置。       |
-|  10   |                                [启用设备注册](mdm-authority-set.md) - 通过设置 MDM 机构并启用特定平台实现对 iOS、Windows、Android 和 Mac 设备的 Intune 管理。                                 |
-|  11   |                                                        [配置应用策略](../apps/app-protection-policy.md) - 基于 Microsoft Intune 中的应用保护策略提供特定设置。                                                         |
-
+|   9   |  [自定义公司门户](../apps/company-portal-app.md) - 自定义用户在注册设备和安装应用时使用的 Intune 公司门户。 公司门户应用中和 Intune 公司门户网站上均显示这些设置。       |
+|  10   | [启用设备注册](mdm-authority-set.md) - 通过设置 MDM 机构并启用特定平台实现对 iOS/iPadOS、Windows、Android 和 Mac 设备的 Intune 管理。 |
+|  11   |  [配置应用策略](../apps/app-protection-policy.md) - 基于 Microsoft Intune 中的应用保护策略提供特定设置。 |

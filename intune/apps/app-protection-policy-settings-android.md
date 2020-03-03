@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11f194d702d0de123ec010409874eb40ab38a9fa
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 81554f03063269ff6bdca30e23a1ad135a2a1b77
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971836"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512052"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”  窗格中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -63,7 +63,7 @@ ms.locfileid: "76971836"
 |------|------|------|
 | **使用本机联系人应用同步应用** | 选择“阻止”，阻止应用将数据保存到设备上的本机“联系人”应用  。 如果选择“允许”，应用可将数据保存到设备上的本机“联系人”应用  。 <br><br>执行选择性擦除以从应用删除工作或学校数据时，将删除从应用直接同步到本机“联系人”应用的联系人。 无法擦除从本机通讯簿同步到另一个外部源中的任何联系人。 目前仅适用于 Microsoft Outlook 应用。 | **允许** |
 | **打印组织数据** | 选择“阻止”，阻止应用打印工作或学校数据  。 如果将此设置保留为“允许”（默认值），用户将能够导出和打印所有组织数据  。 | **允许** |
-|**限制使用其他应用传输 Web 内容** | 指定如何从策略管理的应用中打开 Web 内容（http/https 链接）。 选择： <ul><li>**任何应用**：允许在任何应用中使用 Web 链接。</li><li>**Intune Managed Browser**：仅允许在 Intune Managed Browser 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**Microsoft Edge**：仅允许在 Microsoft Edge 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**非托管浏览器**：允许 Web 内容仅在“非托管浏览器协议”  设置定义的非托管浏览器中打开。 Web 内容在目标浏览器中处于非托管状态。<br>**注意**：需要 Intune 公司门户版本 5.0.4415.0 或更高版本。</li><br><br>**策略托管的浏览器**<br>在 Android 上，如果未安装 Intune Managed Browser 和 Microsoft Edge，最终用户可以从支持 http/https 链接的其他策略托管应用中进行选择。<p>如果需要策略托管的浏览器，但未安装，系统将提示最终用户安装 Microsoft Edge。<p>如果需要使用策略托管的浏览器，则将由“允许应用向其他应用传送数据”策略设置管理 Android 应用链接  。<p>**Intune 设备注册**<br>如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](app-configuration-managed-browser.md)。<p>**策略托管的 Microsoft Edge**<br>移动设备（iOS 和 Android）的 Microsoft Edge 浏览器支持 Intune 应用保护策略。 在 Microsoft Edge 浏览器应用程序中使用其企业 Azure AD 帐户登录的用户将受 Intune 保护。 Microsoft Edge 浏览器集成了 APP SDK 并支持其除阻止以外的所有数据保护策略：<br><ul><li>**另存为**：Microsoft Edge 浏览器不允许用户向云存储提供商（如 OneDrive）添加直接的应用内连接。</li><li>**联系人同步**：Microsoft Edge 浏览器不会保存到本地联系人列表。</li></ul>**注意:** APP SDK 无法确定目标应用是否为浏览器。  在 Android 设备上，允许使用支持 http/https 意向的其他托管浏览器应用。 | 未配置  |
+|**限制使用其他应用传输 Web 内容** | 指定如何从策略管理的应用中打开 Web 内容（http/https 链接）。 选择： <ul><li>**任何应用**：允许在任何应用中使用 Web 链接。</li><li>**Intune Managed Browser**：仅允许在 Intune Managed Browser 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**Microsoft Edge**：仅允许在 Microsoft Edge 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**非托管浏览器**：允许 Web 内容仅在“非托管浏览器协议”  设置定义的非托管浏览器中打开。 Web 内容在目标浏览器中处于非托管状态。<br>**注意**：需要 Intune 公司门户版本 5.0.4415.0 或更高版本。</li><br><br>**策略托管的浏览器**<br>在 Android 上，如果未安装 Intune Managed Browser 和 Microsoft Edge，最终用户可以从支持 http/https 链接的其他策略托管应用中进行选择。<p>如果需要策略托管的浏览器，但未安装，系统将提示最终用户安装 Microsoft Edge。<p>如果需要使用策略托管的浏览器，则将由“允许应用向其他应用传送数据”策略设置管理 Android 应用链接  。<p>**Intune 设备注册**<br>如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](app-configuration-managed-browser.md)。<p>**策略托管的 Microsoft Edge**<br>移动设备（iOS/iPadOS 和 Android）的 Microsoft Edge 浏览器支持 Intune 应用保护策略。 在 Microsoft Edge 浏览器应用程序中使用其企业 Azure AD 帐户登录的用户将受 Intune 保护。 Microsoft Edge 浏览器集成了 APP SDK 并支持其除阻止以外的所有数据保护策略：<br><ul><li>**另存为**：Microsoft Edge 浏览器不允许用户向云存储提供商（如 OneDrive）添加直接的应用内连接。</li><li>**联系人同步**：Microsoft Edge 浏览器不会保存到本地联系人列表。</li></ul>**注意:** APP SDK 无法确定目标应用是否为浏览器。  在 Android 设备上，允许使用支持 http/https 意向的其他托管浏览器应用。 | 未配置  |
 |<ul><ui>**非托管浏览器 ID** | 输入单个浏览器的应用程序 ID。 策略托管应用程序的 Web 内容（http/https 链接）将在指定的浏览器中打开。  Web 内容在目标浏览器中处于非托管状态。 | **空** |
 |<ul><ui>**非托管浏览器名称** | 输入与“非托管浏览器 ID”  关联的浏览器的应用程序名称。 如果未安装指定的浏览器，将向用户显示此名称。  | **空** |
 | **组织数据通知** | 指定针对组织帐户通过 OS 通知共享的组织数据量。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：不要在通知中共享组织数据。 例如“你有新邮件”，“你有个会议”。</li><UL><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。</ul> <p>**注意**：*此设置需要应用支持。目前，适用于 Android 4.95.0 版本或更高版本的 Outlook 将支持此设置，此设置预计在 2019 年 12 月 16 日当周发布。* | **允许**   |

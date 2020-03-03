@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c3ff190509de08be0c900dbd1540408ea3532e10
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502720"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609206"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune 网络终结点  
 
@@ -34,7 +34,7 @@ ms.locfileid: "72502720"
 
 若要管理防火墙和代理服务器后面的设备，必须启用 Intune 的通信。
 
-- 由于 Intune 客户端使用 **HTTP (80)** 和 **HTTPS (443)** ，因此代理服务器必须支持这两种协议。 Windows 信息保护使用端口 444。
+- 由于 Intune 客户端使用 **HTTP (80)** 和 **HTTPS (443)**，因此代理服务器必须支持这两种协议。 Windows 信息保护使用端口 444。
 - 对于某些任务（例如下载经典电脑代理的软件更新），Intune 需要对 manage.microsoft.com 的未经身份验证的代理服务器访问权限
 
 可以修改单个客户端计算机上的代理服务器设置。 还可以使用“组策略”设置来更改位于指定代理服务器后面的所有客户端计算机的设置。
@@ -43,11 +43,11 @@ ms.locfileid: "72502720"
 <!--
 > [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
-托管的设备需要允许“所有用户”  通过防火墙访问服务的配置。
+托管的设备需要允许“所有用户”通过防火墙访问服务的配置。
 
 下表列出了 Intune 客户端访问的端口和服务：
 
-|Domains    |IP 地址      |
+|域    |IP 地址      |
 |-----------|----------------|
 |login.microsoftonline.com <br> *.officeconfig.msocdn.com <br> config.office.com <br> graph.windows.net| 详细信息 [Office 365 URL 和 IP 地址范围](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 <br>13.72.226.202<br>52.189.220.232|
@@ -86,7 +86,7 @@ ms.locfileid: "72502720"
 |Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57<br>52.187.196.98<br>52.237.196.51|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180<br>52.187.196.173<br>52.156.162.48|
-|*。manage。microsoft。com|40.82.248.224/28<br>20.189.105.0/24<br>20.37.153.0/24<br>20.37.192.128/25<br>20.38.81.0/24<br>20.41.1.0/24<br>20.42.1.0/24<br>20.42.130.0/24<br>20.42.224.128/25<br>20.43.129.0/24<br>40.119.8.128/25<br>40.74.25.0/24<br>40.82.249.128/25<br>40.80.184.128/25<br>52.150.137.0/25|
+|*.manage.microsoft.com|40.82.248.224/28<br>20.189.105.0/24<br>20.37.153.0/24<br>20.37.192.128/25<br>20.38.81.0/24<br>20.41.1.0/24<br>20.42.1.0/24<br>20.42.130.0/24<br>20.42.224.128/25<br>20.43.129.0/24<br>40.119.8.128/25<br>40.74.25.0/24<br>40.82.249.128/25<br>40.80.184.128/25<br>52.150.137.0/25|
 
 
 ## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>PowerShell 脚本和 Win32 应用的网络要求  
@@ -95,27 +95,9 @@ ms.locfileid: "72502720"
 
 |ASU | 存储名称 | CDN |
 | --- | --- |--- |
-| AMSUA0601 | prodmsua06data | https:\//prodmsua06data.azureedge.net |
-| AMSUA0602 | prodamsua0602data | https:\//prodamsua0602data.azureedge.net |
-| AMSUA0101 | prodmsua01data | https:\//prodmsua01data.azureedge.net |
-| AMSUA0201 | prodmsua02data | https:\//prodmsua02data.azureedge.net |
-| AMSUA0202 | Prodmsua0202rcdata | https:\//prodamsua0202data.azureedge.net/ |
-| AMSUA0401 | prodmsua04data | https:\//prodmsua04data.azureedge.net |
-| AMSUA0402 | Prodmsua0402rcdata | https:\//prodamsua0402data.azureedge.net/ |
-| AMSUA0501 | prodmsua05data | https:\//prodmsua05data.azureedge.net |
-| AMSUA0502 | prodmsua0502data | https:\//prodmsua0502data.azureedge.net |
-| AMSUB0101 | prodmsub01data | https:\//prodmsub01data.azureedge.net |
-| AMSUB0102 | prodamsub0102data | https:\//prodamsub0102data.azureedge.net |
-| AMSUB0201 | prodmsub02data | https:\//prodmsub02data.azureedge.net |
-| AMSUB0202 | Prodmsub0202rcdata | https:\//prodamsub0202data.azureedge.net |
-| AMSUB0301 | Prodmsub03data2 | https:\//prodmsub03data2.azureedge.net |
-| AMSUB0302 | Prodmsub0302rcdata | https:\//prodamsub0302data.azureedge.net |
-| AMSUB0501 | prodmsub05data | https:\//prodmsub05data.azureedge.net |
-| AMSUC0101 | prodmsuc01data | https:\//prodmsuc01data.azureedge.net |
-| AMSUC0201 | prodmsuc02data | https:\//prodmsuc02data.azureedge.net |
-| AMSUC0301 | prodmsuc03data | https:\//prodmsuc03data.azureedge.net |
-| AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
-| AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
+|AMSUA0601<br>AMSUA0602<br>AMSUA0101<br>AMSUA0102<br>AMSUA0201<br>AMSUA0202<br>AMSUA0401<br>AMSUA0402<br>AMSUA0501<br>AMSUA0502<br>AMSUA0701<br>AMSUA0702 | naprodimedatapri<br>naprodimedatasec<br>naprodimedatahotfix | naprodimedatapri.azureedge.net<br>naprodimedatasec.azureedge.net<br>naprodimedatahotfix.azureedge.net |
+| AMSUB0101<br>AMSUB0102<br>AMSUB0201<br>AMSUB0202<br>AMSUB0301<br>AMSUB0302<br>AMSUB0501<br>AMSUB0502 | euprodimedatapri<br>euprodimedatasec<br>euprodimedatahotfix | euprodimedatapri.azureedge.net<br>euprodimedatasec.azureedge.net<br>euprodimedatahotfix.azureedge.net |
+| AMSUC0101<br>AMSUC0201<br>AMSUC0301<br>AMSUC0501<br>AMSUD0101| approdimedatapri<br>approdimedatasec<br>approdimedatahotifx | approdimedatapri.azureedge.net<br>approdimedatasec.azureedge.net<br>approdimedatahotfix.azureedge.net |
 
 ## <a name="windows-push-notification-services-wns"></a>Windows 推送通知服务 (WNS)  
 
@@ -149,4 +131,4 @@ ms.locfileid: "72502720"
 |与 APNS 服务器之间的通信|#-courier.push.apple.com<br>“#”是 0 到 50 范围内的一个随机数字。|    TCP     |  5223 和 443  |
 |各种功能，包括访问万维网、iTunes 商店、macOS 应用商店、iCloud、消息等。 |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 或 443   |
 
-有关详细信息，请参阅 Apple 的 [Apple 软件产品使用的 TCP 和 UDP 端口](https://support.apple.com/en-us/HT202944)、[关于 macOS、iOS 和 iTunes 服务器主机连接和 iTunes 后台进程](https://support.apple.com/en-us/HT201999)以及[如果你的 macOS 和 iOS 客户端不获取 Apple 推送通知](https://support.apple.com/en-us/HT203609)。  
+有关详细信息，请参阅 Apple 的 [Apple 软件产品使用的 TCP 和 UDP 端口](https://support.apple.com/HT202944)、[关于 macOS、iOS/iPadOS 和 iTunes 服务器主机连接和 iTunes 后台进程](https://support.apple.com/HT201999)，以及[如果你的 macOS 和 iOS/iPadOS 客户端不获取 Apple 推送通知](https://support.apple.com/HT203609)。  

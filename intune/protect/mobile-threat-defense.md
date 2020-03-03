@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057588"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514840"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>使用 Intune 的移动威胁防御集成
 
@@ -50,7 +50,7 @@ Intune 使用移动威胁防御连接器在 Intune 和所选的 MTD 供应商之
 此服务为选择性加入；默认情况下不会共享任何应用清单信息。 Intune 管理员必须在移动威胁防御连接器设置中启用”适用于 iOS 设备的应用同步”，然后才能共享应用清单信息  。
 
 **应用清单**  
-如果为 iOS 设备启用“应用同步”，来自公司和个人拥有的 iOS 设备的清单将发送给 MTD 服务提供程序。 应用清单中的数据包括：
+如果为 iOS/iPadOS 设备启用“应用同步”，来自公司和个人拥有的 iOS/iPadOS 设备的清单将发送给 MTD 服务提供程序。 应用清单中的数据包括：
 
 - 应用 ID
 - 应用版本

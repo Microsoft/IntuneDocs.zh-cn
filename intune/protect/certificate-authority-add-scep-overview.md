@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206051"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575981"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中添加合作伙伴证书颁发机构
 
-将第三方证书颁发机构 (CA) 与 Intune 配合使用。 第三方 CA 可以使用简单证书注册协议 (SCEP) 向移动设备预配新证书或续订证书，并且可以支持 Windows、iOS、Android 和 macOS 设备。
+将第三方证书颁发机构 (CA) 与 Intune 配合使用。 第三方 CA 可以使用简单证书注册协议 (SCEP) 向移动设备预配新证书或续订证书，并且可以支持 Windows、iOS/iPadOS、Android 和 macOS 设备。
 
 使用此功能分两个部分：开源代码 API 和 Intune 管理员任务。
 

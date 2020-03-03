@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 67d9b5df39311d58571f875b8d41c16088010fad
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414024"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514296"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune 的常见使用方式
 
@@ -35,7 +35,7 @@ ms.locfileid: "73414024"
 >是否想了解 Microsoft IT 如何使用 Intune 来允许 Microsoft 访问其移动设备上的公司资源，同时保护公司数据？ 若要详细了解 Microsoft IT 如何使用 Intune 和其他服务来管理标识、设备、应用及数据，请[阅读本技术案例研究](https://www.microsoft.com/itshowcase/Article/Content/588)。  
 
 >[!IMPORTANT]
->我们希望确保移动设备紧随 iOS 设备上最新的“Trident”恶意软件攻击保持最新状态。 因此我们发布了一篇博客文章，名为[使用 Microsoft Intune 确保移动设备保持最新](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)。 其中介绍了通过 Intune 让设备处于安全和最新状态的几种方式。
+>我们希望确保移动设备紧随 iOS/iPadOS 设备上最新的“Trident”恶意软件攻击保持最新状态。 因此我们发布了一篇博客文章，名为[使用 Microsoft Intune 确保移动设备保持最新](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)。 其中介绍了通过 Intune 让设备处于安全和最新状态的几种方式。
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>保护本地电子邮件和数据以供移动设备安全访问
 

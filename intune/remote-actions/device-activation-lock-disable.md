@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438049"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576025"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>使用 Intune 在受监管的 iOS/iPadOS 设备上禁用激活锁
 
@@ -63,7 +63,7 @@ Intune 可以请求运行 iOS/iPadOS 8.0 和更高版本的监管设备的激活
 必须先按照以下说明在设备上启用“激活锁”，然后才能禁用它：
 
 1. 使用[如何配置设备限制设置](/intune-azure/configure-devices/how-to-configure-device-restrictions)中的信息为 iOS/iPadOS 配置 Intune 设备限制配置文件。
-2. 在 [iOS 的设备限制设置](../configuration/device-restrictions-ios.md)中，在“常规”设置下启用“激活锁”选项   。
+2. 在 [iOS/iPadOS 的设备限制设置](../configuration/device-restrictions-ios.md)中，在“常规”设置下启用“激活锁”选项   。
 3. 保存配置文件，然后将其[分配](../configuration/device-profile-assign.md)到要管理“禁用激活锁”的设备。
 
 

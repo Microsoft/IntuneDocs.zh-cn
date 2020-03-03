@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509948"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514908"
 ---
 # <a name="develop-a-rollout-plan"></a>制定推出计划
 
@@ -58,7 +58,7 @@ ms.locfileid: "72509948"
 
 - **地理位置** <br/>通过这种方法，可以部署到特定地理位置中的所有用户，无论是在同一洲、同一国家/地区，还是在同一公司大楼。 这种分阶段部署让你能重点关注用户的特定位置。 这让你能够提供多个[白色手套](#user-assisted-enrollment)方法，因为同时部署 Intune 的位置数目会减少。 由于同一位置可能存在不同部门或用例，因此可同时部署不同的用例。
 
-- **平台** <br/>这种部署包括同时部署几个类似的平台。 例如，第一个月可能部署所有的 iOS 设备，然后依次部署 Android 和 Windows 设备。 这种分阶段部署有助于简化支持人员的支持，因为支持人员一次只需支持一个单个平台。
+- **平台** <br/>这种部署包括同时部署几个类似的平台。 例如，可以先在第一个月部署所有 iOS/iPadOS 设备，然后依次部署 Android 和 Windows 设备。 这种分阶段部署有助于简化支持人员的支持，因为支持人员一次只需支持一个单个平台。
 
 下面是包括目标组和时间线的 Intune 推出计划示例：
 

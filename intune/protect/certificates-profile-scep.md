@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966294"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576512"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中创建和分配 SCEP 证书配置文件
 
@@ -60,7 +60,7 @@ ms.locfileid: "76966294"
 
    - **证书类型**：
 
-     （适用对象：  Android、Android Enterprise、iOS、macOS、Windows 8.1 和更高版本以及 Windows 10 和更高版本。）
+     （适用对象：  Android、Android Enterprise、iOS/iPadOS、macOS、Windows 8.1 和更高版本以及 Windows 10 和更高版本。）
 
      根据证书配置文件的使用方式选择类型：
 
@@ -280,7 +280,7 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 - 尽管可单独创建和分配受信任的证书配置文件和 SCEP 证书配置文件，但必须分配这两种配置文件。 如果未在同一台设备上安装这两者，SCEP 证书策略将失败。 请确保所有受信任的根证书配置文件也都部署到 SCEP 配置文件所在的组。
 
 > [!NOTE]
-> 在 iOS 设备上，当 SCEP 证书配置文件与其他配置文件（如 Wi-Fi 或 VPN 配置文件）相关联，设备将收到其他每个配置文件的证书。 这会使 iOS 设备拥有 SCEP 证书请求提供的多个证书。  如果需要单个证书，则必须使用 PKCS 证书，而不是 SCEP 证书。  这是因为 SCEP 和 PKCS 证书传递到设备的方式不同。
+> 在 iOS/iPadOS 设备上，当 SCEP 证书配置文件与其他配置文件（如 Wi-Fi 或 VPN 配置文件）相关联，设备将收到其他每个配置文件的证书。 这会使 iOS/iPadOS 设备拥有 SCEP 证书请求提供的多个证书。  如果需要单个证书，则必须使用 PKCS 证书，而不是 SCEP 证书。  这是因为 SCEP 和 PKCS 证书传递到设备的方式不同。
 
 ## <a name="next-steps"></a>后续步骤
 

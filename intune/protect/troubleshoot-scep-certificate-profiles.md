@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034237"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515214"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>在 Microsoft Intune 中对 SCEP 证书配置文件进行故障排除概述
 
@@ -123,9 +123,9 @@ ms.locfileid: "77034237"
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>适用于 iOS 和 iPadOS 设备的日志
 
-对于运行 iOS 或 iPadOS 的设备，请使用在 Mac 计算机上运行的调试日志和 Xcode  ：
+对于运行 iOS/iPadOS 的设备，请使用调试日志和在 Mac 计算机上运行的 Xcode  ：
 
-1. 将 iOS 设备连接到 Mac，然后转到“应用程序”   > “实用程序”  以打开控制台应用程序。 
+1. 将 iOS/iPadOS 设备连接到 Mac，然后转到“应用程序” > “实用程序”以打开控制台应用程序   。 
 
 2. 在“操作”  下，选择“包含信息消息”  和“包含调试消息”  。
 

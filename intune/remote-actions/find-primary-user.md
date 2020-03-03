@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413680"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569449"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>查找 Intune 设备的主要用户
 
 主要用户（也称为用户设备相关性）是每个 Intune 设备的属性。 Intune 设备可以分配有零个或一个主要用户。 如果未分配主要用户，则设备称为“共享设备”。
 
-## <a name="how-to-find-a-devices-primary-user"></a>如何查找设备的主要用户
+## <a name="find-a-devices-primary-user"></a>查找设备的主要用户
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备”  > 选择一台设备。
@@ -38,7 +38,7 @@ ms.locfileid: "77413680"
 主要用户属性用于将许可的 Intune 用户映射到以下位置的设备：
 - 公司门户应用
 - 最终用户网站
-- IT 专业人员体验（例如 Azure 门户中的故障排除页面）。 这些页面通过使用主要用户将用户帐户映射到设备。    
+- IT 专业人员体验（例如 Azure 门户中的故障排除页面）。 这些页面通过使用主要用户将用户帐户映射到设备。 
 
 ### <a name="company-portal-app"></a>公司门户应用
 公司门户应用要求登录到公司门户的用户帐户是该设备的主要用户。 如果已将另一个用户分配为主要用户，则公司门户会显示一条警告：

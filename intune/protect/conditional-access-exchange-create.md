@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755627"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576074"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>创建本地 Exchange 和旧版 Exchange Online Dedicated 的条件访问策略
 
@@ -63,12 +63,12 @@ ms.locfileid: "76755627"
 ### <a name="support-for-mobile-devices"></a>对移动设备的支持
 
 - Windows Phone 8.1 及更高版本
-- iOS 上的本机电子邮件应用。
+- iOS/iPadOS 上的本机电子邮件应用。
 - EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）。
 - EAS 邮件客户端 Android 工作配置文件设备  ：Android 工作配置文件设备上仅支持工作配置文件中的 Gmail 和 Nine Work for Android Enterprise    。 为了使条件访问适用于 Android 工作配置文件，必须为 Gmail 或 Nine Work for Android Enterprise 应用部署电子邮件配置文件，还要将这些应用部署为必需的安装。
 
 > [!NOTE]
-> 适用于 Android 和 iOS 的 Microsoft Outlook 不支持通过 Exchange 本地连接器。 如果想要将 Azure Active Directory 条件性访问策略和 Intune 应用保护策略与本地邮箱的 Outlook for iOS 和 Outlook for Android 配合使用，请参阅[将混合新式身份验证与 Outlook for iOS 和 Outlook for Android 配合使用](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。
+> Microsoft Outlook for Android 和 Microsoft Outlook for iOS/iPadOS 不通过 Exchange 本地连接器支持。 如果想要将 Azure Active Directory 条件访问策略和 Intune 应用保护策略与本地邮箱的 Outlook for iOS/iPadOS 和 Outlook for Android 配合使用，请参阅[将混合新式身份验证与 Outlook for iOS/iPadOS 和 Outlook for Android 配合使用](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。
 
 ### <a name="support-for-pcs"></a>对 PC 的支持
 

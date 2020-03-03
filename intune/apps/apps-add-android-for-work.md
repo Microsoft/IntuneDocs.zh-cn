@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755385"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609188"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 将托管 Google Play 应用添加到 Android Enterprise 设备
 
@@ -80,20 +80,6 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 9. 单击“选择”以选中应用  。
 10. 单击边栏选项卡顶部上的“同步”  ，以将应用与托管的 Google Play 服务同步。
 11. 单击“刷新”  以更新应用列表并显示新添加的应用。
-
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>将其他应用设置添加到托管的 Google Play 应用商店应用
-1. 如果需要添加其他应用详细信息，请从应用列表中选择应用。
-2. 单击“应用信息”  旁边的“属性”   > “编辑”  。 系统将显示“应用信息”页  。
-3. 在“应用信息”  页中，添加应用详细信息：
-    - **类别**：（可选）选择一个或多个内置应用类别或所创建的类别。 此操作可让用户在浏览公司门户时更轻松地查找应用。
-    - **在公司门户中将此应用显示为特色应用**：当用户浏览应用时，选择此选项以在公司门户的主页上突出显示应用套件。
-    - **信息 URL**：（可选）输入包含此应用相关信息的网站的 URL。 在公司门户中向用户显示该 URL。
-    - **隐私 URL**：（可选）输入包含此应用相关隐私信息的网站的 URL。 在公司门户中向用户显示该 URL。
-    - **开发者**：（可选）输入应用开发者的名称。
-    - **所有者**：（可选）输入此应用的所有者的名称（例如，HR 部门  ）。
-    - **备注**：（可选）输入要与此应用关联的任何备注。
-4. 单击“查看并保存”  以查看“查看并保存”  页面。 
-5. 完成后，单击“保存”以更新 Intune 中的应用  。
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>在托管的 Google Play 控制台中添加托管的 Google Play 商店应用（替代方法）
 若要使用 Intune 同步托管 Google Play 应用，而不是直接使用 Intune 添加它，请按照下列步骤操作。
@@ -238,6 +224,9 @@ Android Enterprise 需要用户先在托管的 Google Play Web 控制台中批�
 
 ## <a name="delete-managed-google-play-apps"></a>删除托管 Google Play 应用
 必要时，可以从 Microsoft Intune 中删除托管 Google Play 应用。 若要删除托管 Google Play 应用，请在 Azure 门户中打开“Microsoft Intune”，并依次选择“应用”   > “所有应用”  。 在应用列表中，选择托管 Google Play 应用右侧的省略号 (...)，再从随即显示的列表中选择“删除”  。 从应用列表删除托管的 Google Play 应用时，托管的 Google Play 应用会自动变为未批准状态。
+
+> [!NOTE]
+> 如果某个应用未经批准或已从托管的 Google Play 商店中删除，则它不会从 Intune 客户端应用列表中删除。 这使你仍可将卸载策略定向到用户，即使该应用未经批准。
 
 ## <a name="android-enterprise-system-apps"></a>Android 企业系统应用
 

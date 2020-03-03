@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509899"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575858"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入门：创建和分配自定义角色
 
@@ -40,35 +40,35 @@ ms.locfileid: "72509899"
 
 创建自定义角色时，可以为各种操作设置权限。 对于安全操作角色，我们将设置一些读取权限，以便操作员可以查看设备的配置和策略。
 
-1. 在 Intune 中，选择“角色” > “所有角色” > “添加”    。
+1. 在 Intune 中，选择“角色” > “所有角色” > “添加”。
 ![浏览器](./media/quickstart-create-custom-role/add-custom-role.png)
-2. 在“添加自定义角色”下的“名称”框中，输入“安全操作”    。
-3. 在“说明”框中，输入“此角色允许安全操作员监控设备配置和符合性信息”   。
-4. 选择“配置” > “公司设备标识符” > “读取”旁边的“是” > “确定”      。
+2. 在“添加自定义角色”下的“名称”框中，输入“安全操作”。
+3. 在“说明”框中，输入“此角色允许安全操作员监控设备配置和符合性信息”。
+4. 选择“配置” > “公司设备标识符” > “读取”旁边的“是” > “确定”。
 ![浏览器](./media/quickstart-create-custom-role/corp-device-id-read.png)
-5. 选择“设备符合性策略” > “读取”旁边的“是” > “确定”     。
-6. 选择“设备配置” > “读取”旁边的“是” > “确定”     。
-7. 选择“组织” > “读取”旁边的“是” > “确定”     。
-8. 选择“确定” > “创建”   。
+5. 选择“设备符合性策略” > “读取”旁边的“是” > “确定”。
+6. 选择“设备配置” > “读取”旁边的“是” > “确定”。
+7. 选择“组织” > “读取”旁边的“是” > “确定”。
+8. 选择“确定” > “创建”。
 
 ## <a name="assign-the-role-to-a-group"></a>将角色分配给组
 
 必须先将角色分配给包含安全用户的组，安全操作员才可以使用新权限。
 
-1. 在 Intune 中，选择“角色” > “所有角色” > “安全操作”    。
-2. 在“Intune 角色”下，选择“工作” > “分配”    。
-3. 在“分配名称”框中，输入“Sec ops”   。
-4. 选择“成员 (组)” > “添加”   。
-5. 选择“Contoso 测试人员”组  。
-6. 选择“选择” > “确定”   。
-7. 选择“范围 (组)” > “选择要包含的组” > “Contoso 测试人员”    。
-8. 选择“选择” > “确定” > “确定”    。
+1. 在 Intune 中，选择“角色” > “所有角色” > “安全操作”。
+2. 在“Intune 角色”下，选择“工作” > “分配”。
+3. 在“分配名称”框中，输入“Sec ops”。
+4. 选择“成员 (组)” > “添加”。
+5. 选择“Contoso 测试人员”组。
+6. 选择“选择” > “确定”。
+7. 选择“范围 (组)” > “选择要包含的组” > “Contoso 测试人员”。
+8. 选择“选择” > “确定” > “确定”。
 
-现在，该组中的每个人都是“安全操作”角色的成员，可以查看有关设备的以下信息：公司设备标识符、设备符合性策略、设备配置和组织信息  。
+现在，该组中的每个人都是“安全操作”角色的成员，可以查看有关设备的以下信息：公司设备标识符、设备符合性策略、设备配置和组织信息。
 
 ## <a name="clean-up-resources"></a>清理资源
 
-如果不想再使用新的自定义角色，可以将其删除。 选择“角色” > “所有角色”> 选择角色旁的省略号 >“删除”    。
+如果不想再使用新的自定义角色，可以将其删除。 选择“角色” > “所有角色”> 选择角色旁的省略号 >“删除”。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -77,4 +77,4 @@ ms.locfileid: "72509899"
 要完成这一系列的 Intune 快速入门，请继续学习下一篇快速入门。
 
 > [!div class="nextstepaction"]
-> [快速入门：创建适用于 iOS 的电子邮件设备配置文件](../configuration/quickstart-email-profile.md)
+> [快速入门：创建适用于 iOS/iPadOS 的电子邮件设备配置文件](../configuration/quickstart-email-profile.md)

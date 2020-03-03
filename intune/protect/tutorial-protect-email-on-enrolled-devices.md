@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409815"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576270"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教程：保护托管设备上的 Exchange Online 电子邮件
 
@@ -45,7 +45,7 @@ ms.locfileid: "74409815"
 
 - Office 365 商业版订阅，包括 Exchange（[免费试用版](https://go.microsoft.com/fwlink/p/?LinkID=510938)）
 
-在开始之前，按照[快速入门：创建适用于 iOS 的电子邮件设备配置文件](../configuration/quickstart-email-profile.md)中的步骤创建适用于 iOS 设备的测试设备配置文件。
+在开始之前，按照[快速入门：创建适用于 iOS/iPadOS 的电子邮件设备配置文件](../configuration/quickstart-email-profile.md)。
 
 ## <a name="sign-in-to-intune"></a>登录到 Intune
 
@@ -96,7 +96,7 @@ ms.locfileid: "74409815"
 
 8. 选择“确定”  ，然后再次选择“确定”  。
 
-9. 选择“创建”  。
+9. 选择“创建”。 
 
 ## <a name="create-the-conditional-access-policy"></a>创建条件访问策略
 
@@ -158,11 +158,11 @@ ms.locfileid: "74409815"
 
    ![启用策略](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
-9. 选择“创建”  。
+9. 选择“创建”。 
 
 ## <a name="try-it-out"></a>试试看
 
-使用已创建的策略后，尝试登录到 Office 365 电子邮件的任何 iOS 设备都将需要在 Intune 中注册并使用适用于 iOS 的 Outlook 移动应用。 若要在 iOS 设备上测试此方案，请尝试使用测试租户中用户的凭据登录到 Exchange Online。 系统将提示你注册该设备并安装 Outlook 移动应用。
+使用已创建的策略后，尝试登录到 Office 365 电子邮件的任何 iOS 设备都将需要在 Intune 中注册并使用适用于 iOS/iPadOS 的 Outlook 移动应用。 若要在 iOS 设备上测试此方案，请尝试使用测试租户中用户的凭据登录到 Exchange Online。 系统将提示你注册该设备并安装 Outlook 移动应用。
 
 1. 若要在 iPhone 上测试，请转到“设置”   > “密码和帐户”   > “添加帐户”   > “Exchange”  。
 
@@ -181,7 +181,7 @@ ms.locfileid: "74409815"
 
 2. 选择“设备” > “符合性策略”   。
 
-3. 在“策略名称”  列表中，为测试策略选择上下文菜单 (...  )，然后选择“删除”  。 选择“确定”  进行确认。
+3. 在“策略名称”  列表中，为测试策略选择上下文菜单 (...  )，然后选择“删除”  。 选择“确定”  以确认。
 
 4. 选择“终结点安全”   > “条件访问”  。
 

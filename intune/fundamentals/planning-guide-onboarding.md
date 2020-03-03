@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505184"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514942"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>实现 Microsoft Intune 计划
 
@@ -39,7 +39,7 @@ ms.locfileid: "72505184"
 
 - Office 365 订阅（用于 Office 应用和应用保护策略托管应用）
 
-- Apple APNs 证书（用于启用 iOS 设备平台管理）
+- Apple APNs 证书（用于启用 iOS/iPadOS 设备平台管理）
 
 - Azure AD Connect（用于目录同步）
 
@@ -88,7 +88,7 @@ EMS/Intune 和 Office 365 推出的所有目标用户均需具备分配给他们
 
 ### <a name="task-6-enable-device-platforms"></a>任务 6：启用设备平台
 
-大多数设备平台均默认启用，Apple 设备（iOS 和 Mac）除外。 必须先启用设备平台，然后才可在 Intune 中注册和管理 iOS 设备。 为此，需创建 MDM Push Certificate，并将其添加到 Intune。
+大多数设备平台均默认启用，Apple 设备（iOS/iPadOS 和 Mac）除外。 必须先启用设备平台，然后才可在 Intune 中注册和管理 iOS/iPadOS 设备。 为此，需创建 MDM Push Certificate，并将其添加到 Intune。
 
 - 详细了解[如何启用 Apple 设备进行注册](../enrollment/apple-mdm-push-certificate-get.md)。
 
@@ -130,7 +130,7 @@ Intune 支持对 Exchange Online、Exchange 內部部署、SharePoint Online、S
 
 ### <a name="task-13-enroll-devices"></a>任务 13：注册设备
 
-Intune 支持 iOS、Mac OS、Android、Windows 桌面版和 Windows Mobile 设备平台。 根据 Intune 部署用例和要求，适当地注册移动设备平台。
+Intune 支持 iOS/iPadOS、Mac OS、Android、Windows 桌面版和 Windows Mobile 设备平台。 根据 Intune 部署用例和要求，适当地注册移动设备平台。
 
 - 了解有关[如何注册设备](../enrollment/device-enrollment.md)的详细信息。
 

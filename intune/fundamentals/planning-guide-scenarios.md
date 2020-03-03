@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505172"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514891"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>确定移动设备管理用例场景
 
@@ -79,15 +79,15 @@ ms.locfileid: "72505172"
 
 下一步是确定与每个用例场景关联的移动设备平台。 可能有多个。
 
-例如，公司的用例方案可能支持 iOS 和 Android Samsung Knox 设备平台。 BYOD 策略可能支持其他移动设备平台，如 Android（非 Samsung Knox）和 Windows 10 移动版。 基于前面的示例，我们已将移动设备平台与每个用例场景关联。
+例如，公司的用例方案可能支持 iOS/iPadOS 和 Android Samsung Knox 设备平台。 BYOD 策略可能支持其他移动设备平台，如 Android（非 Samsung Knox）和 Windows 10 移动版。 基于前面的示例，我们已将移动设备平台与每个用例场景关联。
 
 | **用例** | **子用例** | **组** | **设备平台** |   
 |:---:|:---:|:---:|:---:|
-| 企业 | 信息工作者 | 人力资源、财务 | iOS |                                                           
-| 企业 | 高级管理人员 | 人力资源、财务 | iOS |                                                           
+| 企业 | 信息工作者 | 人力资源、财务 | iOS/iPadOS |                                                           
+| 企业 | 高级管理人员 | 人力资源、财务 | iOS/iPadOS |                                                           
 | 企业 | Kiosk | 零售 | Android |
-| BYOD | 信息工作者 | 营销、销售 | iOS |                                                           
-| BYOD | 高级管理人员 | 营销、销售 | iOS |
+| BYOD | 信息工作者 | 营销、销售 | iOS/iPadOS |                                                           
+| BYOD | 高级管理人员 | 营销、销售 | iOS/iPadOS |
 
 ## <a name="next-steps"></a>后续步骤
 

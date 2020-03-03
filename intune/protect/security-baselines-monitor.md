@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556396"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569279"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中监视安全基线和配置文件
 
@@ -106,6 +106,18 @@ Intune 提供了用于监视安全基线的多个选项。 可以监视应用到
 
    ![查看安全基线配置文件的其他监视选项](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>查看每个设备的终结点安全配置
+
+查看有关适用于单个设备的安全配置详细信息，这有助于隔离配置错误的设置。
+
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 转到“设备” > 所有设备”，然后选择要查看的设备   。
+
+3. 在“监视器”类别中，选择“终结点安全配置”，查看适用于该设备的安全配置列表   。
+
+4. 可选择终结点安全配置，进一步探索并查看有关在设备上评估该安全配置的其他详细信息。
+
 ## <a name="troubleshoot-using-per-setting-status"></a>使用每个设置状态排除故障
 
 已部署安全基线，但部署状态显示错误。 下面逐步介绍了对错误进行故障排除。
@@ -135,6 +147,7 @@ Windows 10 设备上内置有 MDM 诊断信息报告。 此报告包含默认值
 [在 Windows 10 中诊断 MDM 故障](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)详细介绍了此内置报告。
 
 > [!TIP]
+>
 > - 一些设置还列出了 GUID。 可以在本地注册表 (regedit) 中搜索此 GUID 是否是任何设定值。
 > - 事件查看器日志可能还包括有问题设置的一些错误信息（依次转到“事件查看器”   > “应用和服务日志”   > “Microsoft”   > “Windows”   > “DeviceManagement-Enterprise-Diagnostics-Provider”   > “管理员”  ）。
 

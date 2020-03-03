@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77be59d126dc7e73bee468ca938938c6bb1b2e1a
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 40075ad3c90f9ce5131d88780d15eec5c258e276
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76915871"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515248"
 ---
 # <a name="troubleshoot-the-delivery-of-certificates-provisioned-by-scep-to-devices-in-microsoft-intune"></a>排查在 Microsoft Intune 中将 SCEP 预配的证书传送到设备的问题
 
@@ -73,9 +73,9 @@ CA 颁发证书后，会在 CA 上看到类似于以下示例的条目：
 2018-02-27T05:20:15.3520000    INFO    Event     com.microsoft.omadm.platforms.android.certmgr.state.NativeScepCertInstallStateMachine    18327       21    SCEP cert 'ModelName=AC_51…%2FLogicalName_39907…;Hash=1677525787' state changed from CERT_ACCESS_REQUESTED to CERT_ACCESS_GRANTED
 ```
 
-### <a name="ios-and-ipados"></a>iOS 和 iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
-在 iOS 或 iPadOS 设备上，你可以在“设备管理配置文件”下查看证书。 深入了解已安装证书的详细信息。
+在 iOS/iPadOS 或 iPadOS 设备上，你可以在“设备管理配置文件”下查看证书。 深入了解已安装证书的详细信息。
 
 ![iOS 证书](../protect/media/troubleshoot-scep-certificate-delivery/ios-certificate.png)
 
@@ -108,7 +108,7 @@ Default 18:30:57.320616 -0500 profiled Profile \'93www.windowsintune.com.SCEP.Mo
 
 若要解决此问题，请查看 OMA DM 日志中记录的错误。
 
-### <a name="ios-and-ipados"></a>iOS 和 iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
 若要解决此问题，请查看设备调试日志中记录的错误。
 

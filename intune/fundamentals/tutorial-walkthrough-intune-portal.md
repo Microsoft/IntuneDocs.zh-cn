@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 203d243df3e8ae496e7ff78f20222fd361417c3d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712997"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514041"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>教程：Azure 门户中的 Microsoft Intune 演练
 
@@ -67,7 +67,7 @@ ms.locfileid: "73712997"
     
     Intune 可让你管理员工的设备和应用，包括他们访问公司数据的方式。 要使用此移动设备管理 (MDM) 设备，必须先在 Intune 中注册设备。 设备注册后，系统会向其颁发 MDM 证书。 此证书可用于与 Intune 服务进行通信。 
 
-    在 Intune 中注册工作人员设备的方法有多种。 每种方法取决于设备的所有权（个人或公司）、设备类型（iOS、Windows、Android）和管理需求（重置、关联、锁定）。 但是，在可以启用设备注册之前，必须设置 Intune 基础结构。 具体而言，设备注册需要用户[设置 MDM 机构](mdm-authority-set.md)。 有关准备好 Intune 环境（租户）的更多信息，请参阅[设置 Intune](setup-steps.md)。 准备好 Intune 租户后，即可注册设备。 有关设备注册的详细信息，请参阅[什么是设备注册？](../enrollment/device-enrollment.md)
+    在 Intune 中注册工作人员设备的方法有多种。 每种方法取决于设备的所有权（个人或公司）、设备类型 (iOS/iPadOS、Windows、Android) 和管理需求（重置、关联、锁定）。 但是，在可以启用设备注册之前，必须设置 Intune 基础结构。 具体而言，设备注册需要用户[设置 MDM 机构](mdm-authority-set.md)。 有关准备好 Intune 环境（租户）的更多信息，请参阅[设置 Intune](setup-steps.md)。 准备好 Intune 租户后，即可注册设备。 有关设备注册的详细信息，请参阅[什么是设备注册？](../enrollment/device-enrollment.md)
 
 3. 从 [Intune](https://aka.ms/intuneportal) 中，选择“设备符合性”以显示有关由 Intune 管理的设备符合性的详细信息  。 你将看到类似于下图的详细信息。
 
@@ -85,7 +85,7 @@ ms.locfileid: "73712997"
 
     ![设备配置窗格的屏幕截图](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加到“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，可以使用 Intune 将配置文件应用于组织中的设备。   
+    Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加到“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS/iPadOS、Android 和 Windows。 然后，可以使用 Intune 将配置文件应用于组织中的设备。   
 
     有关设备配置的详细信息，请参阅[对 Microsoft Intune 中使用设备配置文件的设备应用功能设置](../configuration/device-profiles.md)。
 

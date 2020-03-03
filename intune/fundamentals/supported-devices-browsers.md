@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437913"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609252"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支持的操作系统和浏览器
 
@@ -32,6 +32,9 @@ ms.locfileid: "77437913"
 若要获取在设备上安装 Intune 方面的帮助，请参阅[使用托管设备完成工作](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions)和 [Intune 网络带宽使用情况](network-bandwidth-use.md)。
 
 有关配置服务提供商支持的详细信息，请访问[配置服务提供商参考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)。
+
+> [!NOTE]
+> Intune 现在需要 Android 5.x (Lollipop) 或更高版本的应用程序和设备，才能通过用于 Android 的公司门户应用和用于 Android 的 Intune App SDK 来访问公司资源。 此要求不适用于运行 4.4 且基于 Polycom Android 的 Teams 设备。 这些设备将继续受支持。 
 
 ## <a name="intune-supported-operating-systems"></a>支持 Intune 的操作系统
 

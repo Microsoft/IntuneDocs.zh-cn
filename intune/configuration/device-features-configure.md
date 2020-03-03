@@ -1,11 +1,11 @@
 ---
-title: 使用 Microsoft Intune 创建 iOS 或 macOS 设备配置文件 - Azure | Microsoft Docs
-description: 添加或创建 iOS 或 macOS 设备配置文件，再配置 Microsoft Intune 中用于为设备配置 AirPrint、主屏幕布局、应用通知、共享设备、单一登录和 Web 内容筛选器的设置。
+title: 使用 Microsoft Intune 创建 iOS/iPadOS 或 macOS 设备配置文件 - Azure | Microsoft Docs
+description: 使用 Microsoft Intune 添加或创建 iOS、iPadOS 或 macOS 设备配置文件，再配置 AirPrint 设置、主屏幕布局、应用通知、共享设备、单一登录和 Web 内容筛选器设置。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 52c31cc7d3949b42251d3e45075864762cda6930
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206714"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513140"
 ---
-# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中添加 iOS 或 macOS 设备功能设置
+# <a name="add-ios-ipados-or-macos-device-feature-settings-in-intune"></a>使用 Intune 添加 iOS、iPadOS 或 macOS 设备功能设置
 
-Intune 包含许多有助于管理员控制 iOS 和 macOS 设备的功能和设置。 例如，管理员可以：
+Intune 包含许多有助于管理员控制 iOS、iPadOS 和 macOS 设备的功能和设置。 例如，管理员可以：
 
 - 允许用户有权在网络中访问 AirPrint 打印机
 - 将应用和文件夹添加到主屏幕，包括添加新页面
@@ -34,15 +34,15 @@ Intune 包含许多有助于管理员控制 iOS 和 macOS 设备的功能和设�
 - 为用户提供安全的单一登录体验，以在应用间共用凭据
 - 筛选使用成人语言的网站，并允许或屏蔽特定网站
 
-Intune 使用“配置文件”创建和自定义这些设置，从而满足组织需求。 在配置文件中添加这些功能后，将此配置文件推送或部署到组织中的 iOS 和 macOS 设备。
+Intune 使用“配置文件”创建和自定义这些设置，从而满足组织需求。 在配置文件中添加这些功能后，需将此配置文件推送或部署到组织中的 iOS/iPadOS 和 macOS 设备。
 
-本文介绍可配置的不同功能，并演示如何创建设备配置文件。 还可以查看所有适用于 [iOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 设备的设置。
+本文介绍可配置的不同功能，并演示如何创建设备配置文件。 还可以查看所有适用于 [iOS/iPadOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 设备的设置。
 
 ## <a name="airprint"></a>Airprint
 
 Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可以在 Intune 中将 AirPrint 信息添加到设备。
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS 上的 AirPrint](ios-device-features-settings.md#airprint) 和 [macOS 上的 AirPrint](macos-device-features-settings.md#airprint)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS 上的 AirPrint](ios-device-features-settings.md#airprint) 和 [macOS 上的 AirPrint](macos-device-features-settings.md#airprint)。
 
 有关 AirPrint 的详细信息，请参阅 Apple 网站上的[关于 AirPrint](https://support.apple.com/HT201311)。
 
@@ -54,9 +54,9 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 ## <a name="app-notifications"></a>应用通知
 
-选择 iOS 和 iPad 设备上的应用接受通知的方式。 例如，从 Intune 发送应用通知，然后在通知中心、锁屏界面上显示它们，或发出提示音。
+选择 iOS 和 iPadOS 设备上的应用接收通知的方式。 例如，从 Intune 发送应用通知，然后在通知中心、锁屏界面上显示它们，或发出提示音。
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS 上的应用通知](ios-device-features-settings.md#app-notifications)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS 上的应用通知](ios-device-features-settings.md#app-notifications)。
 
 有关此功能的详细信息，请参阅 Apple 网站上的[通知](https://developer.apple.com/notifications/)。
 
@@ -89,7 +89,7 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 - 使用“停靠面板”设置将应用或文件夹添加到屏幕。  例如，在设备停靠面板上显示 Safari 和邮件应用。
 - 添加要在主屏幕上显示的页面，以及要在每个页面上显示的应用。  例如，添加 Contoso 页，并在此页面上添加设置应用。 
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS 上的主屏幕布局](ios-device-features-settings.md#home-screen-layout)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS 上的主屏幕布局](ios-device-features-settings.md#home-screen-layout)。
 
 适用于：
 
@@ -100,7 +100,7 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 使用这些设置在登录窗口和锁定屏幕中显示自定义消息或文本。 例如，可输入“如果丢失，请送还至…”消息，然后显示资产标记信息。
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS 上的锁屏界面消息设置](ios-device-features-settings.md#lock-screen-message)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS 上的锁屏界面消息设置](ios-device-features-settings.md#lock-screen-message)。
 
 有关锁屏界面消息的详细信息，请参阅 Apple 网站上的 [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage)。
 
@@ -136,11 +136,11 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 若要使用单一登录，请务必确保：
 
 - 已将应用编码为，在设备上的单一登录中查找用户凭据存储。
-- Intune 配置有 iOS 设备 SSO。
+- Intune 配置有 iOS/iPadOS 设备单一登录。
 
 ![“单一登录”页](./media/device-features-configure/sso-blade.png)
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS 上的单一登录](ios-device-features-settings.md#single-sign-on)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS 上的单一登录](ios-device-features-settings.md#single-sign-on)。
 
 适用于：
 
@@ -156,7 +156,7 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 - 重定向类型适用于 OAuth 和 SAML2 等新式身份验证协议。
 - 凭据类型适用于质询与响应身份验证流。 可以选择 Apple 提供的特定于 Kerberos 的凭据扩展，或通用凭据扩展。
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS SSO 应用扩展](ios-device-features-settings.md#single-sign-on-app-extension)和 [macOS SSO 应用扩展](macos-device-features-settings.md#single-sign-on-app-extension)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS SSO 应用扩展](ios-device-features-settings.md#single-sign-on-app-extension)和 [macOS SSO 应用扩展](macos-device-features-settings.md#single-sign-on-app-extension)。
 
 有关开发 SSO 应用扩展的详细信息，请观看 Apple 网站上的[可扩展的企业 SSO](https://developer.apple.com/videos/play/tech-talks/301)。 若要阅读 Apple 的功能说明，请访问[“单点登录扩展”有效负载设置](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web)。 
 
@@ -171,7 +171,7 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 >
 > - 从开发角度而言，使用单一登录应用扩展，你可以使用任意类型的重定向 SSO 或凭据 SSO 身份验证  。 使用单一登录时，只可以使用 Kerberos SSO 身份验证。 
 >
-> - Kerberos 单一登录应用扩展由 Apple 开发，内置于 iOS 13.0 + 和 macOS 10.15 + 平台中  。 内置的 Kerberos 扩展可用于将用户登录到支持 Kerberos 身份验证的本机应用和网站。 单一登录不是 Kerberos 的 Apple 实现  。
+> - Kerberos 单一登录应用扩展由 Apple 开发，内置于 iOS/iPadOS 13.0 + 和 macOS 10.15 + 平台中  。 内置的 Kerberos 扩展可用于将用户登录到支持 Kerberos 身份验证的本机应用和网站。 单一登录不是 Kerberos 的 Apple 实现  。
 >
 > - 内置的 Kerberos 单一登录应用扩展可以像单一登录一样处理网页和应用的 Kerberos 质询   。 不过，内置的 Kerberos 扩展支持密码更改，并且在企业网络中效果更佳。 在 Kerberos 单一登录应用扩展和单一登录之间进行选择时，由于扩展可以提高性能和功能，因此我们建议使用前者   。
 
@@ -183,9 +183,9 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 ## <a name="wallpaper"></a>壁纸
 
-将自定义 .png、.jpg 或 .jpeg 图像添加到受监督的 iOS 设备。 例如，使用 Intune 将公司徽标添加到设备的锁屏界面。
+将自定义 .png、.jpg 或 .jpeg 图像添加到受监督的 iOS/iPadOS 设备。 例如，使用 Intune 将公司徽标添加到设备的锁屏界面。
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS 上的壁纸](ios-device-features-settings.md#wallpaper)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS 上的壁纸](ios-device-features-settings.md#wallpaper)。
 
 适用于：
 
@@ -196,7 +196,7 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 这些设置可以使用 Apple 的内置自动筛选算法评估网页，并阻止成人内容和成人语言。 还可以创建允许的 Web 链接和限制的 Web 链接列表。 例如，可以仅允许 `contoso` 网站打开。
 
-有关可以在 Intune 中配置的设置列表的信息，请参阅 [iOS 上的 Web 内容筛选器](ios-device-features-settings.md#web-content-filter)。
+有关可以在 Intune 中配置的设置列表信息，请参阅 [iOS/iPadOS 上的 Web 内容筛选器](ios-device-features-settings.md#web-content-filter)。
 
 适用于：
 
@@ -229,4 +229,4 @@ Airprint 是允许设备通过无线网络打印到文件的 Apple 功能。 可
 
 创建配置文件后，即可进行分配。 下一步，[分配配置文件](device-profile-assign.md)并[监视其状态](device-profile-monitor.md)。
 
-查看所有适用于 [iOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 设备的设备功能设置。
+查看所有适用于 [iOS/iPadOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 设备的设备功能设置。

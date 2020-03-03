@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/10/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258124"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569517"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>在 Intune 中配置和使用导入的 PKCS 证书
 
@@ -31,6 +31,17 @@ Microsoft Intune 支持使用导入的公钥对 (PKCS) 证书，这些证书通�
 S/MIME 加密很有挑战性，因为电子邮件是使用特定证书进行加密的。 你必须拥有对你阅读电子邮件的设备上的电子邮件加密的证书私钥，才可以对电子邮件进行解密。 加密证书会定期续订，这意味着你可能需要在所有设备上拥有加密历史记录，才能确保能够阅读较早的电子邮件。  由于需要跨设备使用相同的证书，因此无法使用 [SCEP](certificates-scep-configure.md) 或 [PKCS](certficates-pfx-configure.md) 证书配置文件来实现此目的，因为这些证书传送机制针对每个设备提供独特的证书。
 
 有关将 S/MIME 与 Intune 配合使用的详细信息，请参阅[使用 S/MIME 对电子邮件进行加密](certificates-s-mime-encryption-sign.md)。
+
+## <a name="supported-platforms"></a>受支持的平台
+
+Intune 支持为以下平台导入 PFX 证书：
+
+- Android - 设备管理员
+- Android Enterprise - 完全托管
+- Android Enterprise - 工作配置文件
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>要求
 
@@ -49,6 +60,8 @@ S/MIME 加密很有挑战性，因为电子邮件是使用特定证书进行加�
 - **Windows Server**：
 
   你可以使用 Windows Server 托管 Microsoft Intune 的 PFX 证书连接器。  该连接器用于处理导入到 Intune 的证书的请求。
+  
+  连接器需要访问托管设备的端口，这些端口应与我们[设备终结点内容](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices)中所述的设备端口一致。
 
   Intune 支持在 Microsoft Intune 的 PFX 证书连接器所在的服务器上安装 Microsoft Intune 证书连接器   。
 

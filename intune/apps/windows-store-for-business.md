@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562497"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609165"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft Store 批量采购的应用
 
@@ -48,7 +48,7 @@ ms.locfileid: "74562497"
 - 从适用于企业的 Microsoft Store 中购买的联机和脱机授权应用都会同步到 Intune 门户。 然后，可以将这些应用部署到设备组或用户组。 
 - 在线应用安装由应用商店管理。
 - 免费的脱机应用也可同步到 Intune。 这些应用由 Intune 安装，而不是由应用商店安装。
-- 设备必须已加入 Active Directory 域服务或工作区才可使用此功能。
+- 设备必须已加入 Active Directory 域服务、Azure AD 联接或工作区才可使用此功能。
 - 已注册的设备必须使用 Windows 10 的 1511 版本或更高版本。
 
 此外，从适用于企业的 Microsoft Store 同步的相关集和脱机授权应用现在会合并到 UI 的单个应用条目中。 各个包中的所有部署详细信息都会迁移到单个条目。 要在 Azure 门户中查看相关集，请从“应用”窗格中选择“应用许可证”   。

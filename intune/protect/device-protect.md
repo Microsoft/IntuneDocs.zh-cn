@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755572"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510463"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>使用 Microsoft Intune 保护设备
 
@@ -43,7 +43,7 @@ Intune [配置策略](../configuration/device-profiles.md)，通过控制大量�
 
 ## <a name="require-devices-to-be-compliant"></a>要求设备合规
 Intune 功能[设备符合性策略](device-compliance-get-started.md)能够让你评估（甚至在某些情况下修正）不符合指定规则的设备。 例如，可获取关于以下内容的报表：
-- 已越狱的 iOS 设备
+- 已越狱的 iOS/iPadOS 设备
 - 加密或未加密设备
 - Windows 10 设备的运行状况（由运行状况证明服务确定）。
 
@@ -60,7 +60,7 @@ Intune 为你提供了一系列功能，帮助保护应用及其数据。 例如
 Intune 允许集成 [Windows Hello 企业版](windows-hello.md)，这是一种适用于 Windows 10 及更高版本的替代登录方法，它使用 Active Directory 或 Azure Active Directory 帐户来取代密码、智能卡或虚拟智能卡。
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>在 iOS 设备上禁用激活锁定
-激活锁是一种帮助保护用户设备的功能。 此功能要求用户输入其 Apple ID 和密码，才能擦除或重新激活该设备。 但是，如果用户离开了公司，但未删除该锁定，此功能可能会导致出现问题。 [禁用 iOS 激活锁定](../remote-actions/device-activation-lock-disable.md)通过从监管的 iOS 设备删除锁定并允许你重新分配或将其擦除可提供帮助。
+激活锁是一种帮助保护用户设备的功能。 此功能要求用户输入其 Apple ID 和密码，才能擦除或重新激活该设备。 但是，如果用户离开了公司，但未删除该锁定，此功能可能会导致出现问题。 [禁用 iOS/iPadOS 激活锁](../remote-actions/device-activation-lock-disable.md)可通过从监管的 iOS/iPadOS 设备删除锁定并允许你重新分配或擦除锁定来提供帮助。
 
 ## <a name="next-steps"></a>后续步骤
 

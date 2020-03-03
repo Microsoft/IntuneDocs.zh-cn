@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 936e4836938ddddc8e795d85de5a449ee77edaa4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510037"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514993"
 ---
 # <a name="special-migration-considerations"></a>特殊迁移注意事项
 
@@ -32,7 +32,7 @@ ms.locfileid: "72510037"
 
 Apple 设备注册计划 (DEP) 设置最终用户无法删除的设备配置。 若要保留 DEP 的高级管理功能，设备必须通过擦除返回到全新状态以注册 Intune。
 
-若要继续使用 DEP 管理 Intune 中的设备，请[使用设备注册计划设置 iOS 设备注册](../enrollment/device-enrollment-program-enroll-ios.md)。
+若要继续使用 DEP 管理 Intune 中的设备，请[使用设备注册计划设置 iOS/iPadOS 设备注册](../enrollment/device-enrollment-program-enroll-ios.md)。
 
 
 ## <a name="next-steps"></a>后续步骤

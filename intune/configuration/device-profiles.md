@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206612"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513057"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>对 Microsoft Intune 中使用设备配置文件的设备应用功能和设置
 
 
 
-Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加到“配置文件”。 你可以为不同的设备和不同的平台创建配置文件，包括 iOS、Android 和 Windows。 然后，使用 Intune 应用配置文件或将其“分配”给设备。
+Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置和功能。 这些设置和功能将添加到“配置文件”。
+ 你可以为不同的设备和不同的平台创建配置文件，包括 iOS/iPadOS、Android 和 Windows。 然后，使用 Intune 应用配置文件或将其“分配”给设备。
 
 作为移动设备管理 (MDM) 解决方案的一部分，使用这些配置文件来完成不同的任务。 一些配置文件示例如下：
 
 - 在 Windows 10 设备上，使用可阻止 Internet Explorer 中 ActiveX 控件的配置文件模板。
-- 在 iOS 和 macOS 设备上，允许用户使用组织中的 AirPrint 打印机。
+- 在 iOS/iPadOS 和 macOS 设备上，允许用户使用组织中的 AirPrint 打印机。
 - 允许或阻止访问设备上的蓝牙。
 - 创建 WiFi 或 VPN 配置文件，让不同设备访问公司网络。
 - 管理软件更新，包括何时安装它们。
@@ -67,7 +68,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="custom-profile"></a>自定义配置文件
 
-[自定义设置](custom-settings-configure.md)可让管理员分配未在 Intune 中内置的设备设置。 对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。
+[自定义设置](custom-settings-configure.md)可让管理员分配未在 Intune 中内置的设备设置。 对于 Android 设备，可以输入 OMA-URI 值。 对于 iOS/iPadOS 设备，则可以导入在 Apple Configurator 中创建的配置文件。
 
 此功能支持：
 
@@ -79,7 +80,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="delivery-optimization"></a>传递优化
 
-[传递优化](delivery-optimization-windows.md)提供了更好的传递软件更新体验。 这些设置将替换“软件更新”   >   “Windows 10 更新通道”设置。
+[传递优化](delivery-optimization-windows.md)提供了更好的传递软件更新体验。 这些设置将替换“软件更新” > “Windows 10 更新通道”设置。
 
 使用这些设置来控制如何将软件更新下载到组织中的设备。 例如，可以允许用户获取其自己的更新，或使用设备配置文件中的传递优化云服务获取更新。
 
@@ -89,7 +90,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="device-features"></a>设备功能
 
-[设备功能](device-features-configure.md)控制 iOS 和 macOS 设备上的功能，例如 AirPrint、通知和锁屏消息。
+[设备功能](device-features-configure.md)控制 iOS/iPadOS 和 macOS 设备上的功能，例如 AirPrint、通知和锁屏消息。
 
 此功能支持：
 
@@ -106,7 +107,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="device-restrictions"></a>设备限制
 
-[设备限制](device-restrictions-configure.md)控制设备上的安全性、硬件、数据共享，以及更多设置。 例如，创建一个可阻止 iOS 设备用户使用设备相机的设备限制配置文件。 
+[设备限制](device-restrictions-configure.md)控制设备上的安全性、硬件、数据共享，以及更多设置。 例如，创建一个可阻止 iOS/iPadOS 设备用户使用设备相机的设备限制配置文件。 
 
 此功能支持：
 
@@ -129,9 +130,10 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 [教育设置 - Windows 10](education-settings-configure.md) 配置针对 [Windows 参加测验应用](https://education.microsoft.com/gettrained/win10takeatest)的选项。 在配置这些选项时，直到测试完成才可以在设备上运行其他应用。
 
-[教育设置 - iOS](../fundamentals/education-settings-configure-ios-shared.md) 使用 iOS Classroom 应用来指导学习，并控制课堂中的学生设备。 可以将 iPad 设备配置为多名学生可以共享一台设备。
+[教育设置 - iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) 使用 iOS/iPadOS Classroom 应用来指导学习，并控制课堂中的学生设备。 可以将 iPad 设备配置为多名学生可以共享一台设备。
 
 ## <a name="email"></a>电子邮件
+
 
 [电子邮件设置](email-settings-configure.md)创建、分配和监视设备上的 Exchange ActiveSync 电子邮件设置。 邮件配置文件可帮助确保一致性、减少支持呼叫，并让最终用户能够在不进行任何所需设置的情况下在其个人设备上访问公司电子邮件。 
 
@@ -186,7 +188,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 - Windows 10 及更高版本
 
-展台设置也可用作适用于 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 和 [iOS](device-restrictions-ios.md#kiosk) 的设备限制。
+展台设置也可用作适用于 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 和 [iOS/iPadOS](device-restrictions-ios.md#kiosk) 的设备限制。
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +221,7 @@ Microsoft Intune 提供可在组织内的不同设备上启用或禁用的设置
 
 ## <a name="update-policies"></a>更新策略
 
-[ iOS 更新策略](../protect/software-updates-ios.md)展示了创建和分配 iOS 策略以在 iOS 设备上安装软件更新的方式。 你还可以查看安装状态。
+[iOS/iPadOS 更新策略](../protect/software-updates-ios.md)展示了创建和分配 iOS/iPadOS 策略以在 iOS/iPadOS 设备上安装软件更新的方式。 你还可以查看安装状态。
 
 有关 Windows 设备上的更新策略，请参阅[传递优化](delivery-optimization-windows.md)。 
 

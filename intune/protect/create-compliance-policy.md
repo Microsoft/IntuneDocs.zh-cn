@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860224"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514007"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中创建符合性策略
 
@@ -67,9 +67,9 @@ ms.locfileid: "74860224"
 
 3. 指定以下属性：
 
-   - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好为“将已越狱的 iOS 设备标记为不符合策略”  。
+   - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，策略名称最好为“将已越狱的 iOS/iPadOS 设备标记为不合规策略”  。
 
-   - **说明**：输入策略的说明。 此设置是可选的，但建议进行。
+   - **描述**：输入策略的说明。 此设置是可选的，但建议进行。
 
    - **平台**：选择设备平台。 选项包括：
      - **Android 设备管理员**
@@ -92,7 +92,7 @@ ms.locfileid: "74860224"
      - [Windows Phone 8.1、Windows 8.1 及更高版本](compliance-policy-create-windows-8-1.md)
      - [Windows 10 及更高版本](compliance-policy-create-windows.md)  
 
-   - **位置** *（Android 设备管理员）* ：在策略中，可根据设备位置强制执行符合性。 从现有位置进行选择。 尚无位置？ 在 Intune 中[使用的位置（网络围墙）](use-network-locations.md)提供一些指导。  
+   - 位置（Android 设备管理员）   ：在策略中，可根据设备位置强制执行符合性。 从现有位置进行选择。 尚无位置？ 在 Intune 中[使用的位置（网络围墙）](use-network-locations.md)提供一些指导。  
 
    - **对不合规设备的操作**：对于不满足符合性策略要求的设备，可添加要自动应用的一系列操作。 可以在设备被标记为不符合时（例如，一天后）更改计划。 此外，还可以配置第二个操作，即在设备不符合时向用户发送电子邮件。
 
@@ -173,7 +173,7 @@ Intune 使用不同的刷新周期来检查符合性策略的更新。 如果设
 |---------|---------|
 |Unknown     |1|
 |不适用     |2|
-|是否满足条件|3|
+|合规|3|
 |InGracePeriod|4|
 |不符合|5|
 |错误|6|

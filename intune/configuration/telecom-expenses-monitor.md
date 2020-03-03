@@ -1,12 +1,12 @@
 ---
 title: 在 Microsoft Intune 中设置电信费用管理服务 - Azure | Microsoft Docs
 titleSuffix: ''
-description: 将 Microsoft Intune 与 Saaswedo 电信费用管理服务集成，以在 Android 和 iOS 设备上监视数据使用情况，并设置阈值或限制。
+description: 将 Microsoft Intune 与 Saaswedo 电信费用管理服务集成，以在 Android、iOS 和 iPadOS 设备上监视数据使用情况，并设置阈值或限制。
 keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,16 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: e6c4d08d1010654a16e13981a0d3353b2418524a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207105"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512868"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>设置 Intune 中的电信支出管理服务
-
-
 
 借助 Intune，可以在组织拥有的移动设备上管理数据使用情况产生的电信费用。 Intune 与 Saaswedo 的 [Datalert 电信费用管理](http://datalert.biz/get-started)集成。 Datalert 是管理电信数据使用情况的实时电信费用管理解决方案。 它可帮助避免 Intune 托管设备产生成本高昂的意外数据和漫游费。
 
@@ -51,6 +49,7 @@ ms.locfileid: "75207105"
   [支持 Knox 的 Android 版本](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0)（打开 Samsung 网站）列出了 Knox 支持的版本。
 
 - iOS 8.0 及更高版本
+- iPadOS 13.0 及更高版本
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -136,11 +135,11 @@ Intune 与下列电信费用管理提供商集成：
 
 #### <a name="add-the-datalert-app-to-intune"></a>将 Datalert 应用添加到 Intune
 
-以下步骤将添加 Datalert 应用。 将以 iOS 为例。 有关这些步骤的详细信息，请参阅[添加应用](../apps/apps-add.md)和[使用作用域标记](../fundamentals/scope-tags.md)。
+以下步骤将添加 Datalert 应用。 将以 iOS/iPadOS 为例。 有关这些步骤的详细信息，请参阅[添加应用](../apps/apps-add.md)和[使用作用域标记](../fundamentals/scope-tags.md)。
 
 1. 在 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，选择“应用”   > “所有应用”   > “添加”  。
 
-2. 选择“应用类型”。  例如，对于 iOS，则选择“Store 应用 - iOS”。 
+2. 选择“应用类型”。  例如，对于 iOS/iPadOS，则选择“Store 应用 - iOS/iPadOS”。 
 
 3. 在“搜索 App Store”中，键入“Datalert”，以查找 Datalert 应用。  
 
@@ -178,7 +177,7 @@ Datalert 服务现已可用。 它开始监视数据流量，并在超过所配�
 
 下面的文章可帮助实现最终用户体验：
 
-- [在电信费用管理中注册 iOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+- [在电信费用管理中注册 iOS/iPadOS 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
 - [在电信费用管理中注册 Android 设备](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turn-off-the-datalert-service"></a>关闭 Datalert 服务

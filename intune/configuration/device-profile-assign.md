@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812370"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513089"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中分配用户和设备配置文件
 
@@ -89,7 +89,7 @@ ms.locfileid: "76812370"
 
 ### <a name="user-groups"></a>用户组
 
-应用于用户组的配置文件设置始终随附于用户，并在登录到多个设备时随附于用户。 通常用户有很多设备，如 Surface Pro 用于办公，iOS 设备用于私事。 而且，通常人们可以从这些设备访问电子邮件和其他组织资源。
+应用于用户组的配置文件设置始终随附于用户，并在登录到多个设备时随附于用户。 通常用户有很多设备，如 Surface Pro 用于办公，iOS/iPadOS 设备用于处理私事。 而且，通常人们可以从这些设备访问电子邮件和其他组织资源。
 
 例如：
 

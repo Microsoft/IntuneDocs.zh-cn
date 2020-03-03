@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563640"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576433"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何配置 Microsoft Intune 公司门户应用
 
@@ -38,9 +38,9 @@ ms.locfileid: "74563640"
 > [!Tip]
 > 当你自定义公司门户时，配置会同时应用于公司门户网站和公司门户应用。 请注意，必须为用户分配 Intune 许可证才能访问公司门户网站。
 
-自定义公司门户有助于为最终用户提供熟悉且有用的体验。 为此，在 Intune 门户中，选择“应用” > “品牌和自定义”，然后配置所需的设置   。
+自定义公司门户有助于为最终用户提供熟悉且有用的体验。 为此，请导航到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，选择“租户管理” > “品牌和自定义”，然后配置所需的设置   。
 
-用户从公司门户安装 iOS 应用程序时，用户将收到提示。 iOS 应用链接到应用商店、批量采购计划 (VPP) 或业务线 (LOB) 应用时，将发生此操作。 用户可通过此提示接受操作，或允许管理应用。 此提示将显示公司名称，公司名称不可用时，将显示公司门户。  
+用户从公司门户安装 iOS/iPadOS 应用程序时，将收到提示。 iOS/iPadOS 应用链接到应用商店、批量采购计划 (VPP) 或业务线 (LOB) 应用时，将发生此操作。 用户可通过此提示接受操作，或允许管理应用。 此提示将显示公司名称，公司名称不可用时，将显示公司门户。  
 
 > [!Note]
 > 如果使用的是 Azure 政府版，则会向最终用户提供应用日志，由其决定当启动获取问题帮助的进程时如何进行共享。 但是，如果使用的不是 Azure 政府，那么当用户启动获取问题帮助的进程时，Windows 10 公司门户将直接向 Microsoft 发送应用日志。 向 Microsoft 发送应用日志可更轻松地排除故障和解决问题。 
@@ -93,11 +93,11 @@ ms.locfileid: "74563640"
 
 ### <a name="brand-image-for-company-portal"></a>公司门户的品牌图像
 
-显示彰显公司品牌的品牌图像。 保存更改后，可以在窗格顶部的 Intune Web 门户中选择“预览设置”，以查看配置的外观  。 请注意，只能在 iOS 设备上预览品牌图像，而不能在 Intune Web 门户上预览。 
+显示彰显公司品牌的品牌图像。 保存更改后，可以在窗格顶部的 Intune Web 门户中选择“预览设置”，以查看配置的外观  。 请注意，只能在 iOS/iPadOS 设备上预览品牌图像，而不能在 Intune Web 门户上预览。 
 
 |字段名称|更多信息|
 |---|---|
-|**上传品牌图像**| 使用此选项可以显示品牌图像。 在 iOS 公司门户中，它显示为用户个人资料页上的背景图像。<p><ul><li>建议图像宽度：1125px 以上（要求至少为 650 px）</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
+|**上传品牌图像**| 使用此选项可以显示品牌图像。 在 iOS/iPadOS 公司门户中，它显示为用户配置文件页上的背景图像。<p><ul><li>建议图像宽度：1125px 以上（要求至少为 650 px）</li><li>最大图像大小：1.3 MB</li><li>文件类型：PNG、JPG 或 JPEG</li></ul>|
 
 合适的品牌图像可以表现出强大的公司品牌意识，增强用户对公司门户的信任。 建议考虑以下用于获取、选择和优化公司门户图像的一些提示。 
 
@@ -109,7 +109,7 @@ ms.locfileid: "74563640"
 
 - 删除不需要的元数据。 图像文件可以附带元数据，例如相机配置文件、地理位置、标题、字幕等。 使用图像优化工具去除此信息，以确保高质量并同时满足文件大小限制。 
 
-在 Intune 中添加或更改品牌图像后，除非公司门户在启动时已识别更改，然后重新启动以显示品牌图像，否则最终用户在 iOS 设备上可能不会看到更改。 
+在 Intune 中添加或更改品牌图像后，除非公司门户在启动时已识别更改，然后重启以显示品牌图像，否则最终用户在 iOS/iPadOS 设备上可能看不到更改。 
 
 ### <a name="brand-image-examples"></a>品牌图像示例
 
@@ -123,20 +123,20 @@ ms.locfileid: "74563640"
 
 ## <a name="privacy-statement-customization"></a>隐私声明自定义
 
-可以自定义在托管 iOS 设备上向组织显示的隐私声明。 此消息将列出组织无法在托管的 iOS 设备上看到或执行的项目。
+可以自定义在托管 iOS/iPadOS 设备上向组织显示的隐私声明。 此消息将列出组织无法在托管的 iOS/iPadOS 设备上看到或执行的项目。
 
 在“公司门户自定义” > “设备管理和隐私消息”中，可以执行以下操作：  
 
 - 接受默认设置以接受所示的列表，或者 
-- 选择“自定义”，以自定义组织无法在托管的 iOS 设备上看到或执行的项目列表。  可以使用 [Markdown](https://daringfireball.net/projects/markdown/) 添加项目符号、粗体、斜体和链接。
+- 选择“自定义”，以自定义组织无法在托管的 iOS/iPadOS 设备上看到或执行的项目列表  。 可以使用 [Markdown](https://daringfireball.net/projects/markdown/) 添加项目符号、粗体、斜体和链接。
 
 ## <a name="company-portal-derived-credentials-for-ios-devices"></a>公司门户的 iOS 设备派生凭据
-Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作，支持个人身份验证 (PIV) 和公共访问卡 (CAC) 派生凭据。 最终用户将在注册 iOS 设备后执行其他步骤，以在公司门户应用程序中验证其身份。 首先为租户设置凭据提供商，然后令使用派生凭据的配置文件面向用户或设备，从而为用户启用派生凭据。
+Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作，支持个人身份验证 (PIV) 和公共访问卡 (CAC) 派生凭据。 最终用户将在注册 iOS/iPadOS 设备后执行其他步骤，以在公司门户应用程序中验证其身份。 首先为租户设置凭据提供商，然后令使用派生凭据的配置文件面向用户或设备，从而为用户启用派生凭据。
 
 > [!NOTE]
 > 用户将根据你通过 Intune 指定的链接查看有关派生凭据的说明。
 
-有关 iOS 设备派生凭据的详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](~/protect/derived-credentials.md)。
+有关 iOS/iPadOS 设备派生凭据的详细信息，请参阅[在 Microsoft Intune 中使用派生凭据](~/protect/derived-credentials.md)。
 
 ## <a name="dark-mode-for-ios-company-portal"></a>适用于 iOS 公司门户的深色模式
 
@@ -148,7 +148,7 @@ Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作�
 
 可以在 Windows 公司门户应用中使用以下键盘快捷方式。
 
-| 领域 | 描述 | 键盘快捷方式 |
+| 领域 | 说明 | 键盘快捷方式 |
 |:------------------:|:--------------:|:-----------------:|
 | 导航菜单 | 导航 | Alt+M |
 |  | 主页 | Alt+H |
@@ -178,7 +178,7 @@ Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作�
 - **重命名** - 此操作将更改公司门户向用户显示的设备名称。 它不会更改本地设备名称，仅更改公司门户中的列表。
 - **同步** - 此操作会使用 Intune 服务启动设备签入。 在公司门户中，它显示为“检查状态”。 
 - **远程锁定** - 锁定设备，需要提供用于解锁的 PIN。
-- **重置密码** - 此操作用于重置设备密码。 在 iOS 设备上，将删除密码，最终用户需要在设置中输入新密码。 在支持的 Android 设备上，Intune 将生成新密码，此密码将暂时在公司门户中显示。
+- **重置密码** - 此操作用于重置设备密码。 在 iOS/iPadOS 设备上，将删除密码，最终用户需要在设置中输入新密码。 在支持的 Android 设备上，Intune 将生成新密码，此密码将暂时在公司门户中显示。
 - **密钥恢复** – 此操作用于从公司门户网站恢复加密 macOS 设备的个人恢复密钥。 
 
 ### <a name="self-service-actions"></a>自助操作
@@ -195,14 +195,14 @@ Intune 与凭据提供商 DISA Purebred、Entrust Datacard 和 Intercede 合作�
 | 重置密码 | 仅限 Windows Phone | 可用<sup>(8)</sup> | NA | 可用<sup>(6)</sup> |
 | 密钥恢复 | NA | NA | 可用<sup>(2)</sup> | NA |
 
-<sup>(1)</sup> 加入 Azure AD 的 Windows 设备始终禁用 **“停用”** 。<br>
-<sup>(2)</sup> 仅可通过 Web 门户使用用于 MacOS 的 **“密钥恢复”** 。<br>
+<sup>(1)</sup> 加入 Azure AD 的 Windows 设备始终禁用“停用”  。<br>
+<sup>(2)</sup> 仅可通过 Web 门户使用用于 MacOS 的“密钥恢复”  。<br>
 <sup>(3)</sup> 使用设备注册管理器时，将禁用所有的远程操作。<br>
-<sup>(4)</sup> **“重命名”** 仅更改在公司门户应用或 Web 门户中的设备名称，不会更改设备上的名称。<br>
-<sup>(5)</sup> **“擦除”** 在用户注册的 iOS 设备上不可用。<br>
-<sup>(6)</sup> 一些 Android 和 Android Enterprise 配置不支持 **“密码重置”** 。 有关详细信息，请参阅[在 Intune 中重置或删除设备密码](../remote-actions/device-passcode-reset.md)。<br>
-<sup>(7)</sup> **“停用”** 和 **“擦除”** 在 Android Enterprise 设备所有者场景（COPE、COBO、COSU）中不可用。<br> 
-<sup>(8)</sup> 用户注册的 iOS 设备不支持 **“重置密码”** 。
+<sup>(4)</sup>“重命名”仅更改公司门户应用或 Web 门户中的设备名称，不会更改设备上的名称  。<br>
+<sup>(5)</sup>“擦除”在用户注册的 iOS 设备上不可用  。<br>
+<sup>(6)</sup> 一些 Android 和 Android Enterprise 配置不支持“密码重置”  。 有关详细信息，请参阅[在 Intune 中重置或删除设备密码](../remote-actions/device-passcode-reset.md)。<br>
+<sup>(7)</sup>“停用”和“擦除”在 Android Enterprise 设备所有者场景（COPE、COBO、COSU）中不可用   。<br> 
+<sup>(8)</sup> 用户注册的 iOS 设备不支持“重置密码” **** 。
 
 ## <a name="next-steps"></a>后续步骤
 

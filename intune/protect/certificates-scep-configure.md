@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966379"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514092"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>配置基础结构以支持在 Intune 中使用 SCEP
 
@@ -148,7 +148,7 @@ Intune 支持使用简单证书注册协议 (SCEP) 来[验证体验与应用和�
        > [!IMPORTANT]
        > 只添加所需的应用程序策略即可。 与你的安全管理员确认你的选择。
 
-     - 对于 iOS 和 macOS 证书模板，编辑“密钥用法”并确保未选择“数字签名为原件的证明”   。
+     - 对于 iOS/iPadOS 和 macOS 证书模板，请编辑“密钥用法”并确保未选择“数字签名为原件的证明”   。
 
      ![模板，“扩展”选项卡](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Intune 证书连接器要求某个证书的“客户端身份验证”增强型�
 默认情况下，Intune 使用模板中配置的值。 但是，可以将 CA 配置为允许申请者输入其他值，并且可在 Intune 控制台中设置该值。
 
 > [!IMPORTANT]
-> 对于 iOS 和 macOS，请始终使用模板中设置的值。
+> 对于 iOS/iPadOS 和 macOS，请始终使用模板中设置的值。
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>配置可在 Intune 控制台中设置的值
 

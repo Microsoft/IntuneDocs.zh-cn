@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812363"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511321"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune 中设备策略和配置文件的常见疑问、问题和解决方案
 
@@ -37,11 +37,11 @@ ms.locfileid: "76812363"
 
 一些其他建议：  
 
-- 如果连接到的 Wi-Fi 网络使用密码或通行短语，请确保你能直接连接到 Wi-Fi 路由器。 可使用 iOS 设备进行测试。
+- 如果连接到的 Wi-Fi 网络使用密码或通行短语，请确保你能直接连接到 Wi-Fi 路由器。 可使用 iOS/iPadOS 设备进行测试。
 - 在成功连接到 Wi-Fi 终结点（Wi-Fi 路由器）后，请注意所使用的 SSID 和凭据（此值为密码或通行短语）。
 - 在“预共享密钥”字段中输入 SSID 和凭据（密码或通行短语）。 
 - 部署到具有有限用户数的测试组，最好仅限 IT 团队。 
-- 将 iOS 设备同步到 Intune。 如果尚未注册，请先注册。 
+- 将 iOS/iPadOS 设备同步到 Intune。 如果尚未注册，请先注册。 
 - 再次测试连接到相同的 Wi-Fi 终结点（如先前步骤所述）。
 - 推广至更大的组，并最终遍及组织中的所有预期用户。 
 
@@ -55,7 +55,7 @@ Intune 通知设备使用 Intune 服务签入。 通知时间各不相同，包�
 
 | 平台 | 刷新周期|
 | --- | --- |
-| iOS | 大约每 8 小时 |
+| iOS/iPadOS | 大约每 8 小时 |
 | macOS | 大约每 8 小时 |
 | Android | 大约每 8 小时 |
 | 注册为设备的 Windows 10 PC | 大约每 8 小时 |
@@ -66,7 +66,7 @@ Intune 通知设备使用 Intune 服务签入。 通知时间各不相同，包�
 
 | 平台 | 频率 |
 | --- | --- |
-| iOS | 1 小时内每 15 分钟一次，之后每 8 小时一次 |  
+| iOS/iPadOS | 1 小时内每 15 分钟一次，之后每 8 小时一次 |  
 | macOS | 1 小时内每 15 分钟一次，之后每 8 小时一次 | 
 | Android | 15 分钟内每 3 分钟一次，接下来的 2 小时内每 15 分钟一次，之后每 8 小时一次 | 
 | 注册为设备的 Windows 10 PC | 15 分钟内每 3 分钟一次，接下来的 2 小时内每 15 分钟一次，之后每 8 小时一次 | 
@@ -103,7 +103,7 @@ Intune 通知设备使用 Intune 服务签入。 通知时间各不相同，包�
 
 将一个策略部署到应用，并应用它。 部署第二个策略。 在此场景中，第一个策略优先，并始终应用。 第二个策略将显示冲突。 如果同时应用两个策略，即它们的优先级一样，则两个都会显示冲突。 任何冲突的设置都将设定为限制最严格的值。
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS 自定义策略冲突时会发生什么情况？
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>iOS/iPadOS 自定义策略冲突时会发生什么情况？
 
 Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源标识符 (OMA-URI) 策略的负载。 它只作为传送机制。
 
@@ -145,7 +145,7 @@ Intune 不会评估 Apple 配置文件或自定义开放移动联盟统一资源
     - 允许 NFC
     - 允许 Wi-Fi
 
-  - **iOS**：删除所有设置，但不包括：
+  - **iOS/iPadOS**：删除所有设置，但不包括：
   
     - 允许语音漫游
     - 允许数据漫游
@@ -157,7 +157,7 @@ Windows Phone 设备不允许使用 MDM 或 EAS 设置安全策略后降低其�
 
 如果要将配置文件更改为安全级别较低的值，则需要重置安全策略。 例如，在 Windows 8.1 桌面上，从右轻扫，选择“设置” > “控制面板”   。 选择“用户帐户”  小程序。 左侧导航菜单中有一个“重置安全策略”链接（接近底部）  。 选中它，然后选择“重置策略”  。
 
-对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本、iOS 和 Windows 10），可能需要将其停用并重新注册到 Intune，这样才能应用限制较少的配置文件。
+对于其他 MDM 设备（例如 Android、Windows Phone 8.1 及更高版本、iOS/iPadOS 和 Windows 10），可能需要将其停用并重新注册到 Intune，这样才能应用限制较少的配置文件。
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Windows 10 配置文件中的某些设置返回“不适用”
 

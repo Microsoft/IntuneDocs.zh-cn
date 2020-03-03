@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 9afb8f431ae301fe74f420c11205a7ed2637434b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839378"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514619"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>引导式方案 - 部署 Microsoft Edge for Mobile 
 
-按照此[引导式方案](~/fundamentals/guided-scenarios-overview.md)操作，可将 Microsoft Edge 应用分配到组织中使用 iOS 或 Android 设备的用户。 通过分配此应用可让你的用户使用其公司设备无缝浏览内容。 
+按照此[引导式方案](~/fundamentals/guided-scenarios-overview.md)操作，可将 Microsoft Edge 应用分配到组织中使用 iOS/iPadOS 或 Android 设备的用户。 通过分配此应用可让你的用户使用其公司设备无缝浏览内容。 
 
-Microsoft Edge 利用内置功能帮助用户合并、整理和管理工作内容，从而使用户摆脱 Web 混乱的局面。 如果 iOS 和 Android 设备用户在 Microsoft Edge 应用程序中使用其公司 Azure AD 帐户登录，他们将发现其浏览器已预加载工作区“收藏夹”和你定义的网站筛选器  。
+Microsoft Edge 利用内置功能帮助用户合并、整理和管理工作内容，从而使用户摆脱 Web 混乱的局面。 如果 iOS/iPadOS 和 Android 设备用户在 Microsoft Edge 应用程序中使用其公司 Azure AD 帐户登录，他们将发现其浏览器已预加载工作区“收藏夹”和你定义的网站筛选器  。
 
 > [!NOTE]
-> 如果阻止用户注册 iOS 或 Android 设备，则此方案将不会启用注册，用户需要自行安装 Edge。
+> 如果阻止用户注册 iOS/iPadOS 或 Android 设备，则此方案将不会启用注册，用户需要自行安装 Microsoft Edge。
 Intune 策略启用的以下 Microsoft Edge 企业功能包括： 
 
 - **双重标识** - 用户可以同时添加工作帐户以及个人帐户以进行浏览。 两个标识完全独立，这类似于 Office 365 和 Outlook 中的体系结构和体验。 Intune 管理员将能够为工作帐户中受保护的浏览体验设置所需的策略。 
@@ -49,9 +49,9 @@ Intune 策略启用的以下 Microsoft Edge 企业功能包括：
 
 ## <a name="step-1---introduction"></a>步骤 1 - 简介
 
-按照 Microsoft Edge for Mobile 引导式方案操作，你将为选定的 iOS 和 Android 用户组设置 Microsoft Edge 的基本部署  。 此部署将实现“双重标识”和“托管收藏夹和主页快捷键”   。 此外，所选用户注册的设备将通过 Intune 自动安装 Microsoft Edge 应用。 此自动安装将用于所有用户驱动的注册类型，包括： 
-- 通过公司门户应用进行 iOS 注册 
-- 通过 Apple Business Manager 进行 iOS 用户相关性注册 
+按照 Microsoft Edge for Mobile 引导式方案操作，你将为选定的 iOS/iPadOS 和 Android 用户组设置 Microsoft Edge 的基本部署  。 此部署将实现“双重标识”和“托管收藏夹和主页快捷键”   。 此外，所选用户注册的设备将通过 Intune 自动安装 Microsoft Edge 应用。 此自动安装将用于所有用户驱动的注册类型，包括： 
+- 通过公司门户应用进行 iOS/iPadOS 注册 
+- 通过 Apple Business Manager 进行 iOS/iPadOS 用户相关性注册 
 - 通过公司门户应用进行旧版 Android 注册 
 
 这一引导式方案将自动使 MyApps 出现在 Microsoft Edge 的收藏夹中，并为浏览器配置你为 Intune 公司门户应用设置的品牌  。 
@@ -60,13 +60,13 @@ Intune 策略启用的以下 Microsoft Edge 企业功能包括：
 我们将询问用户所需的工作区收藏夹以及 Web 浏览所需的筛选器。 请确保已完成以下任务，然后再继续操作：
 
 - 将用户添加到 Azure AD 组。 有关详细信息，请参阅[使用 Azure Active Directory 创建基本组以及添加成员](https://go.microsoft.com/fwlink/?linkid=2102458)。
-- 在 Intune 中注册 iOS 或 Android 相关设备。 有关详细信息，请参阅[设备注册](https://go.microsoft.com/fwlink/?linkid=2102547)。
+- 在 Intune 中注册 iOS/iPadOS 或 Android 相关设备。 有关详细信息，请参阅[设备注册](https://go.microsoft.com/fwlink/?linkid=2102547)。
 - 收集要在 Microsoft Edge 中添加的工作区收藏夹列表。
 - 收集要在 Microsoft Edge 中强制执行的网站筛选器列表。
 
 ## <a name="step-2---basics"></a>步骤 2 - 基础知识
 
-在此步骤中，必须为新的 Microsoft Edge 策略输入名称和说明。 如果需要更改分配和配置，可以稍后引用这些策略。 引导式方案会为 iOS 设备添加和分配 Microsoft Edge iOS 应用，并为 Android 设备添加和分配 Microsoft Edge Android 应用。 此步骤还将为这些应用创建配置策略。
+在此步骤中，必须为新的 Microsoft Edge 策略输入名称和说明。 如果需要更改分配和配置，可以稍后引用这些策略。 引导式方案会为 iOS/iPadOS 设备添加和分配 Microsoft Edge iOS/iPadOS 应用，并为 Android 设备添加和分配 Microsoft Edge Android 应用。 此步骤还将为这些应用创建配置策略。
 
 ## <a name="step-3---configuration"></a>步骤 3 - 配置
 
@@ -74,7 +74,7 @@ Intune 策略启用的以下 Microsoft Edge 企业功能包括：
 
 ## <a name="step-4---assignments"></a>步骤 4 - 分配
 
-在此步骤中，可以选择要包含的用户组，以便为工作配置 Microsoft Edge 移动设备。 Microsoft Edge 还将安装在这些用户注册的所有 iOS 和 Android 设备上。
+在此步骤中，可以选择要包含的用户组，以便为工作配置 Microsoft Edge 移动设备。 Microsoft Edge 还将安装在这些用户注册的所有 iOS/iPadOS 和 Android 设备上。
 
 ## <a name="step-5---review--create"></a>步骤 5 - 查看 + 创建
 

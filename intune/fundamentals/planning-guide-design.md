@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886731"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514959"
 ---
 # <a name="create-a-design"></a>创建设计
 
@@ -188,7 +188,7 @@ Intune 设计基于收集的信息以及完成[本指南其他部分](../plannin
 
 ### <a name="determine-supported-device-platforms"></a>确定支持的设备平台
 
-需要知道哪些设备将存在于环境中，以及创建设计时验证它们是否受 Intune 支持。 Intune 支持 iOS、Android 和 Windows 平台。
+需要知道哪些设备将存在于环境中，以及创建设计时验证它们是否受 Intune 支持。 Intune 支持 iOS/iPadOS、Android 和 Windows 平台。
 
 [支持 Intune 的设备的完整列表](supported-devices-browsers.md)。
 
@@ -296,8 +296,8 @@ Intune 支持公司拥有的设备和个人设备。 如果设备由设备注册
 
 | **类型** | **配置文件名称** | **设备平台** | **用例** |   
 |:---:|:---:|:---:|:---:|
-| 根 CA | 企业根 CA | Android、iOS、Windows Mobile | 公司、BYOD  |                                                           
-| SCEP | 用户证书 | Android、iOS、Windows Mobile | 公司、BYOD |                                                           
+| 根 CA | 企业根 CA | Android、iOS/iPadOS、Windows 移动版 | 公司、BYOD  |                                                           
+| SCEP | 用户证书 | Android、iOS/iPadOS、Windows 移动版 | 公司、BYOD |                                                           
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定证书配置文件需求。
@@ -311,7 +311,7 @@ Intune 支持公司拥有的设备和个人设备。 如果设备由设备注册
 | **类型** | **配置文件名称** | **设备平台** | **用例** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | 亚洲 Wi-Fi 配置文件 | Android | 公司、BYOD（亚洲地区）|
-| Wi-Fi | 北美 Wi-Fi 配置文件 | Android、iOS、Windows 10 移动版 | 公司、BYOD（北美地区） |
+| Wi-Fi | 北美 Wi-Fi 配置文件 | Android、iOS/iPadOS、Windows 10 移动版 | 公司、BYOD（北美地区） |
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定 Wi-Fi 配置文件需求。
 
@@ -323,7 +323,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 | **类型** | **配置文件名称** | **设备平台** | **用例** |
 |:---:|:---:|:---:|:---:|
-| VPN | VPN Cisco AnyConnect 配置文件 | Android、iOS、Windows 10 移动版 | 公司、BYOD（北美和德国）|
+| VPN | VPN Cisco AnyConnect 配置文件 | Android、iOS/iPadOS、Windows 10 移动版 | 公司、BYOD（北美和德国）|
 | VPN | 脉冲安全 | Android | 公司、BYOD（亚洲地区） |
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定 VPN 配置文件需求。
@@ -374,7 +374,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 | **应用程序** | **目的** | **平台** | **用例** | **应用保护策略** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | 可用 | iOS | 公司 - 高级管理人员 | 不能越狱，加密文件 |                                                         
-| Word | 可用 | iOS、Android - Samsung Knox、非 Knox、Windows 10 移动版 | 公司、BYOD | 不能越狱，加密文件 |                                                         
+| Word | 可用 | iOS/iPadOS、Android - Samsung Knox、非 Knox、Windows 10 移动版 | 公司、BYOD | 不能越狱，加密文件 |                                                         
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定应用配置策略需求。
@@ -388,7 +388,7 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 | **策略名称** | **设备平台** | **设置** | **目标组** |
 |:---:|:---:|:---:|:---:|
-| 合规性策略 | iOS、Android - Samsung Knox、非 Knox、Windows 10 移动版 | PIN - 必需，不能越狱 | 公司、BYOD |
+| 合规性策略 | iOS/iPadOS、Android - Samsung Knox、非 Knox、Windows 10 移动版 | PIN - 必需，不能越狱 | 公司、BYOD |
 
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定符合性策略需求。
@@ -404,8 +404,8 @@ VPN 配置文件让用户可以安全地从远程位置访问网络。 Intune �
 
 | **服务** | **新式验证平台** | **基本身份验证** | **用例** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS、Android | 在受 Intune 支持的平台上阻止不符合设备 | 公司、BYOD |
-| SharePoint Online | iOS、Android |  | 公司、BYOD |
+| Exchange Online | iOS/iPadOS、Android | 在受 Intune 支持的平台上阻止不符合设备 | 公司、BYOD |
+| SharePoint Online | iOS/iPadOS、Android |  | 公司、BYOD |
 
 可[下载以上表格的模板](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)来确定条件访问策略需求。
 

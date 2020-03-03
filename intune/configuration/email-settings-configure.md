@@ -1,12 +1,12 @@
 ---
 title: 在 Microsoft Intune 中配置电子邮件设置 - Azure | Microsoft Docs
 titleSuffix: ''
-description: 在 Microsoft Intune 中创建电子邮件配置文件，并将此配置文件部署到 Android Enterprise、iOS 和 Windows 设备。 使用电子邮件配置文件以配置常见的电子邮件设置，包括电子邮件服务器和身份验证方法，以便在管理的设备上连接到公司电子邮件。
+description: 在 Microsoft Intune 中创建电子邮件配置文件，并将此配置文件部署到 Android Enterprise、iOS、iPadOS 和 Windows 设备。 使用电子邮件配置文件以配置常见的电子邮件设置，包括电子邮件服务器和身份验证方法，以便在管理的设备上连接到公司电子邮件。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 110db564dce5ad68d3c2a26b85e60ecbe99e7335
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 908a20098917540e6f823d94c6643d15f13ecf68
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059429"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511079"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>使用 Intune 向设备添加电子邮件设置
 
@@ -33,6 +33,7 @@ Microsoft Intune 包括各种电子邮件设置，可将这些设置部署到组
 - Android Samsung Knox Standard 4.0 及更高版本
 - Android Enterprise
 - iOS 8.0 及更高版本
+- iPadOS 13.0 及更高版本
 - Windows Phone 8.1 及更高版本
 - Windows 10（桌面版）和 Windows 10 移动版
 
@@ -45,7 +46,7 @@ Microsoft Intune 包括各种电子邮件设置，可将这些设置部署到组
 3. 输入以下属性：
 
     - **名称**：输入策略的描述性名称。 为策略命名，以便稍后可以轻松地识别它们。 例如，“所有 Windows 设备的电子邮件设置”  就是较好的策略名称。
-    - **说明**：输入配置文件的说明。 此设置是可选的，但建议进行。
+    - **描述**：输入配置文件的说明。 此设置是可选的，但建议进行。
     - **平台**：选择设备平台。 选项包括：
 
         - **Android**（仅 Samsung Android Knox Standard）
@@ -90,7 +91,7 @@ Microsoft Intune 包括各种电子邮件设置，可将这些设置部署到组
 
 如果用户已配置电子邮件帐户，则电子邮件配置文件的分配方式因平台而异。
 
-- **iOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 重复的电子邮件配置文件会阻止分配 Intune 配置文件。 在这种情况下，公司门户应用通知用户它们不符合要求，并提示最终用户手动删除已配置的配置文件。 为了有助于防止这种情况发生，请告诉最终用户在安装电子邮件配置文件前先  注册，这样一来 Intune 就可以设置配置文件了。
+- **iOS/iPadOS**：基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 重复的电子邮件配置文件会阻止分配 Intune 配置文件。 在这种情况下，公司门户应用通知用户它们不符合要求，并提示最终用户手动删除已配置的配置文件。 为了有助于防止这种情况发生，请告诉最终用户在安装电子邮件配置文件前先  注册，这样一来 Intune 就可以设置配置文件了。
 
 - **Windows：** 基于主机名和电子邮件地址检测到现有的重复电子邮件配置文件。 Intune 覆盖最终用户创建的现有电子邮件配置文件。
 

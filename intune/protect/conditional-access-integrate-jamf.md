@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
-ms.reviewer: elocholi
+ms.reviewer: jinyoon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 9dab1025e283ed1591c22b03ed4e3a61d40a20c3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946676"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515078"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>将 Jamf Pro 与 Intune 集成以实现合规
 
@@ -92,19 +92,17 @@ ms.locfileid: "74946676"
 
 6. 选择“管理”下的“API 权限”   。 
 
-7. 在“API 权限”页上，选择“添加权限”，以添加新的权限  。 在“请求获取 API 权限”  页上，选择“Intune”  ，然后选择“应用程序权限”  。 仅选中 update_device_attributes  对应的复选框。
+7. 在“API 权限”页上，通过选择每个现有权限旁边的“...”图标来删除此应用的所有权限  。 请注意，这是必需的；如果此应用注册中有任何意外的额外权限，集成将不会成功。
 
-8. 等待几分钟，使新的权限生效。 然后，选择“为 _\<your tenant>_ 授予管理员同意”  。 在新窗口中对你的帐户进行身份验证，并按照提示授予应用程序访问权限。  
+8. 接下来，我们将添加更新设备属性的权限。 在“API 权限”页的左上角，选择“添加权限”以添加新的权限   。 
 
-9. 可能需要等待几分钟时间，管理员同意才能生效。
+9. 在“请求获取 API 权限”  页上，选择“Intune”  ，然后选择“应用程序权限”  。 仅选中 update_device_attributes 对应的复选框，然后保存新权限  。
 
-10. 通过单击页面顶部的“刷新”按钮来刷新页面  。 确认是否针对 update_device_attributes 权限授予了管理员同意  。 
+10. 接下来，选择“API 权限”页左上角的“向 \<的租户> 授予管理员同意权限”，向此应用授予管理员同意权限   。 你可能需要在新窗口中对你的帐户重新进行身份验证，并按照提示授予应用程序访问权限。  
 
-11. 通过选择“…”菜单并选择“撤销管理员同意”，从 User.Read 权限中删除管理员同意    。
+11. 通过单击页面顶部的“刷新”按钮来刷新页面  。 确认是否针对 update_device_attributes 权限授予了管理员同意  。 
 
-12. 还需要删除 User.Read 权限  。 选择 User.Read 旁边的“…”菜单，然后选择“删除权限”    。 
-
-8. 成功注册应用后，API 权限应只包含一个名为 update_device_attributes 的权限，并且应如下所示  ：
+12. 成功注册应用后，API 权限应只包含一个名为 update_device_attributes 的权限，并且应如下所示  ：
 
    ![成功的权限](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

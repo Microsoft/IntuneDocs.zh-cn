@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505345"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515027"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>在迁移到 Microsoft Intune 时，配置设备符合性和应用管理策略
 
@@ -60,11 +60,11 @@ ms.locfileid: "72505345"
 
 需要创建设备配置的配置文件以强制实施设备级设置，例如：禁用照相机、应用商店、配置单应用模式、主屏幕等等。 了解[设备配置文件](../configuration/device-profiles.md)。
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>直接导入 iOS 配置的配置文件（可选）
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>直接导入 iOS/iPadOS 配置文件（可选）
 
 - **Apple Configurator iOS 配置文件（iOS 7.1 及更高版本）：** 如果现有 MDM 解决方案使用 Apple Configurator 配置文件（.mobileconfig 文件），Intune 可以直接导入它们作为自定义配置策略。
 
-- **iOS 移动应用配置策略：** 如果现有 MDM 解决方案使用 iOS 移动应用配置策略，Intune 可以直接导入它们，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
+- **iOS 移动应用配置策略：** 如果现有 MDM 解决方案使用 iOS/iPadOS 移动应用配置策略，Intune 可以直接导入它们，前提是它们符合 Apple 针对属性列表指定的 XML 格式。
 
 - 了解如何添加适用于 [iOS](../configuration/custom-settings-ios.md) 的自定义策略。
 

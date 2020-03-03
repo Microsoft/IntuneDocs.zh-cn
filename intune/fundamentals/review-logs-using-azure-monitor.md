@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504963"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510739"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>使用 Intune 将日志数据发送到存储、事件中心或 Log Analytics（预览版）
 
 Microsoft Intune 包含可提供环境信息的内置日志：
 
-- 审核日志  显示 Intune 中发生的各种事件或任务的详细信息。
-- 运行日志（预览版）显示了注册成功/失败的用户和设备的详细信息，还显示了不符合条件的设备的详细信息  。
+- “审核日志”显示了在 Intune 中生成更改的活动记录，包括创建、更新（编辑）、删除、分配和远程操作。
+- 运行日志（预览版）显示了注册成功/失败的用户和设备的详细信息，还显示了不符合条件的设备的详细信息。
 - **设备合规性运行日志（预览版）** 显示了 Intune 中设备合规性的运行报告以及有关非合规性设备的详细信息。
 
 还可以将这些日志发送到 Azure Monitor 服务，包括存储帐户、事件中心和 Log Analytics。 具体而言，你可以：
@@ -39,9 +39,9 @@ Microsoft Intune 包含可提供环境信息的内置日志：
 * 通过将 Intune 日志流式传输到事件中心，将日志与你自己的自定义日志解决方案集成。
 * 将 Intune 日志发送到 Log Analytics，对已连接数据启用丰富的可视化效果、监视和警报。
 
-这些功能是 Intune中“诊断设置”  的一部分。
+这些功能是 Intune中“诊断设置”的一部分。
 
-本文介绍了如何使用“诊断设置”  将日志数据发送到不同服务，提供了示例和成本估算，并回答了一些常见问题。 启用此功能后，日志将路由到所选的 Azure Monitor 服务。
+本文介绍了如何使用“诊断设置”将日志数据发送到不同服务，提供了示例和成本估算，并回答了一些常见问题。 启用此功能后，日志将路由到所选的 Azure Monitor 服务。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -49,77 +49,72 @@ Microsoft Intune 包含可提供环境信息的内置日志：
 
 * Azure 订阅：如果没有 Azure 订阅，可以[注册免费试用版](https://azure.microsoft.com/free/)。
 * 在 Azure 中有 Microsoft Intune 环境（租户）
-* 用户担任 Intune 租户的全局管理员  或 Intune 服务管理员  角色。
+* 用户担任 Intune 租户的全局管理员或 Intune 服务管理员角色。
 
 需要以下服务之一（具体视要将审核日志数据路由到哪里而异）：
 
-* 拥有 ListKeys  权限的 [Azure 存储帐户](https://docs.microsoft.com/azure/storage/common/storage-account-overview)。 建议使用常规存储帐户，而不是 blob 存储帐户。 有关存储定价信息，请参阅 [Azure 存储定价计算器](https://azure.microsoft.com/pricing/calculator/?service=storage)。 
+* 拥有 ListKeys 权限的 [Azure 存储帐户](https://docs.microsoft.com/azure/storage/common/storage-account-overview)。 建议使用常规存储帐户，而不是 blob 存储帐户。 有关存储定价信息，请参阅 [Azure 存储定价计算器](https://azure.microsoft.com/pricing/calculator/?service=storage)。 
 * 与第三方解决方案集成的 [Azure 事件中心命名空间](https://docs.microsoft.com/azure/event-hubs/event-hubs-create#create-an-event-hubs-namespace)。
 * 用于将日志发送到 Log Analytics 的 [Azure Log Analytics 工作区](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)。
 
 ## <a name="send-logs-to-azure-monitor"></a>将日志发送到 Azure Monitor
 
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“监视”  下的“诊断设置”  。 第一次打开它时，需要启用它。 否则，请添加设置。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 选择“报表” > “诊断设置”。 第一次打开它时，需要启用它。 否则，请添加设置。
 
-    ![在 Intune 中启用“诊断设置”以将日志发送到 Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > ![在 Intune 中启用诊断设置以将日志发送到 Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. 输入以下属性：
 
     - **名称**：输入诊断设置的名称。 此设置包括你输入的所有属性。 例如，输入 `Route audit logs to storage account`。
     - **存档到存储帐户**：将日志数据保存到 Azure 存储帐户。 若要保存或存档数据，请使用此选项。
 
-        1. 选中此选项，再选择“配置”  。 
-        2. 选择列表中的现有存储帐户，再单击“确定”  。
+        1. 选中此选项，再选择“配置”。 
+        2. 选择列表中的现有存储帐户，再单击“确定”。
 
     - **流式传输到事件中心**：将日志流式传输到 Azure 事件中心。 若要使用 SIEM 工具（如 Splunk 和 QRadar）分析日志数据，请选中此选项。
 
-        1. 选中此选项，再选择“配置”  。 
-        2. 选择列表中的现有事件中心命名空间和策略，再单击“确定”  。
+        1. 选中此选项，再选择“配置”。 
+        2. 选择列表中的现有事件中心命名空间和策略，再单击“确定”。
 
     - **发送到 Log Analytics**：将数据发送到 Azure Log Analytics。 若要对日志使用可视化效果、监视和警报，请选中此选项。
 
-        1. 选中此选项，再选择“配置”  。 
-        2. 新建工作区，并输入工作区详细信息。 或者，选择列表中的现有工作区，再单击“确定”  。
+        1. 选中此选项，再选择“配置”。 
+        2. 新建工作区，并输入工作区详细信息。 或者，选择列表中的现有工作区，再单击“确定”。
 
             [Azure Log Analytics 工作区](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)详细介绍了这些设置。
 
-    - “日志”   > “审核日志”  ：选中此选项可以将 [Intune 审核日志](../monitor-audit-logs.md)发送到存储帐户、事件中心或 Log Analytics。 审核日志显示每个在 Intune 中带来更改的任务的历史记录，其中包括谁在何时执行了任务。
+    - “日志” > “审核日志”：选中此选项可以将 [Intune 审核日志](../monitor-audit-logs.md)发送到存储帐户、事件中心或 Log Analytics。 审核日志显示每个在 Intune 中带来更改的任务的历史记录，其中包括谁在何时执行了任务。
 
-      如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”  设置为“`0`”（零）。
+      如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”设置为“`0`”（零）。
 
-    - “日志”   > “运行日志”  ：运行日志（预览版）显示了用户和设备在 Intune 中的注册状态（成功/失败），还有不符合条件的设备的详细信息。 选中此选项可以将注册日志发送到存储帐户、事件中心或 Log Analytics。
+    - “日志” > “运行日志”：运行日志（预览版）显示了用户和设备在 Intune 中的注册状态（成功/失败），还有不符合条件的设备的详细信息。 选中此选项可以将注册日志发送到存储帐户、事件中心或 Log Analytics。
 
-      如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”  设置为“`0`”（零）。
+      如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”设置为“`0`”（零）。
 
       > [!NOTE]
       > 运行日志目前处于预览阶段。 若要提供反馈（包括运行日志中所含的信息），请转到 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)。
 
     - **LOG** > **DeviceComplianceOrg**：设备合规性运行日志（预览版）显示了 Intune 中设备合规性的运行报告以及有关非合规性设备的详细信息。 选中此选项可以将合规性日志发送到存储帐户、事件中心或 Log Analytics。
 
-      如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”  设置为“`0`”（零）。
+      如果选择使用存储帐户，还要输入所需的数据保留天数（保留期）。 若要永久保留数据，请将“保留期(天数)”设置为“`0`”（零）。
  
       > [!NOTE]
       > 设备合规性运行日志以预览版提供。 若要提供反馈（包括报告中所含的信息），请转到 [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback)。
 
     完成后，设置如下所示： 
 
-    ![将 Intune 审核日志发送到 Azure 存储帐户的示例图像](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![将 Intune 审核日志发送到 Azure 存储帐户的示例图像](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
-4. 单击“保存”以保存更改  。 此时，设置显示在列表中。 创建完成后，可以依次选择“编辑设置”   > “保存”  来更改设置。
+4. 单击“保存”以保存更改。 此时，设置显示在列表中。 创建完成后，可以依次选择“编辑设置” > “保存”来更改设置。
 
 ## <a name="use-audit-logs-throughout-intune"></a>在整个 Intune 中使用审核日志
 
 还可在 Intune 的注册、符合性、配置、设备和客户端应用等其他部分中导出审核日志。
 
-例如，在使用设备符合性时导出审核日志：
-
-1. 登录到 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 选择“设备符合性” > “监视” > “审核日志”    ：
-
-    ![选择审核日志，将 Intune 数据路由到 Azure Monitor 存储、事件中心或分析](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. 选择“导出数据设置”  。 如果未启用，可打开“诊断设置”  。 还可选择将日志发送到的位置，如[将日志发送到 Azure monitor](#send-logs-to-azure-monitor)（本文）中所述。
+有关详细信息，请参阅[使用审核日志跟踪和监视事件](monitor-audit-logs.md)。 可选择将审核日志发送到的位置，如[将日志发送到 Azure monitor](#send-logs-to-azure-monitor)（本文）中所述。
 
 ## <a name="cost-considerations"></a>成本注意事项
 
@@ -183,7 +178,7 @@ Microsoft Intune 包含可提供环境信息的内置日志：
 
 若要查看与管理 Log Analytics 工作区相关的成本，请参阅[通过控制 Log Analytics 中的数据量和保留期来管理成本](https://docs.microsoft.com/azure/log-analytics/log-analytics-manage-cost-storage)。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 查看常见问题解答，并了解 Azure Monitor 中 Intune 日志的所有已知问题。
 

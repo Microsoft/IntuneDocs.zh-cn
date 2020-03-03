@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415517"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609377"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用“擦除”或“停用”操作删除设备，或手动取消注册设备
 
@@ -47,7 +47,7 @@ ms.locfileid: "77415517"
 
 “保留注册状态和用户帐户”  选项仅适用于 Windows 10 版本 1709 或更高版本。
 
-“执行受保护的擦除”选项可确保关闭设备不会规避擦除操作  。 受保护的擦除将继续尝试重置设备，直到成功为止。 在一些配置中，此操作可能会使设备无法重启。
+“执行受保护的擦除”选项可确保关闭设备不会规避擦除操作  。 受保护的擦除将继续尝试重置设备，直到成功为止。 在一些配置中，此操作可能会使设备[无法重启](troubleshoot-device-actions.md#wipe-action)。
 
 将在设备下次连接到 Intune 时重新应用 MDM 策略。
 
@@ -196,6 +196,9 @@ ms.locfileid: "77415517"
 5. 选择“重新分配”  。
 
     ![显示 Apple 重新分配的屏幕截图](./media/devices-wipe/apple-reassign.png)
+
+## <a name="device-states"></a>设备状态
+有关设备状态的说明，请参阅 [managementStates 集合](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates)。
 
 ## <a name="fresh-start"></a>全新启动
 

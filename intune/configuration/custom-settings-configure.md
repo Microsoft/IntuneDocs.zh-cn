@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中使用自定义设备设置 - Azure | Microsoft Docs
-description: 添加或创建配置文件，以便通过 Microsoft Intune 使用适用于 Windows Phone、Windows 8.1、Windows 10 及更高版本、Android、Android Enterprise、macOS 和 iOS 设备的自定义设置
+description: 添加或创建配置文件，以便通过 Microsoft Intune 使用适用于 Windows Phone、Windows 8.1、Windows 10 及更高版本、Android、Android Enterprise、macOS 和 iOS/iPadOS 设备的自定义设置
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,22 +15,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c815a2c911dba6d17fc864b446122931fa88e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d2ca5a120e50819208743564279a5d16c6b4aa2f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73755377"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511508"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>使用 Intune 中的自定义设置创建配置文件
 
 ## <a name="what-are-custom-profiles"></a>什么是自定义配置文件
 
-Microsoft Intune 含有许多内置设置，用于控制设备上的不同功能。 你还可以创建自定义配置文件。 希望使用未内置于 Intune 中的设备设置和功能时，自定义配置文件非常有用。 这些配置文件包含用于控制组织中设备的功能和设置。 例如，你可以创建自定义配置文件，为每台 iOS 设备设置相同的功能。
+Microsoft Intune 含有许多内置设置，用于控制设备上的不同功能。 你还可以创建自定义配置文件。 希望使用未内置于 Intune 中的设备设置和功能时，自定义配置文件非常有用。 这些配置文件包含用于控制组织中设备的功能和设置。 例如，你可以创建自定义配置文件，为每台 iOS/iPadOS 设备设置相同的功能。
 
 有关配置文件的详细信息，请参阅[什么是 Microsoft Intune 设备配置文件？](device-profiles.md)。 
 
-本文包含指向创建适用于 Android、Android Enterprise、iOS、macOS 和 Windows 的自定义配置文件的链接。
+本文包含指向创建适用于 Android、Android Enterprise、iOS/iPadOS、macOS 和 Windows 的自定义配置文件的链接。
 
 ## <a name="available-platforms"></a>可用平台
 

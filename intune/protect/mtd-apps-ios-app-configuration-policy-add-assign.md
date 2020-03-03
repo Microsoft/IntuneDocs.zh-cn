@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188484"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576294"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>使用 Intune 添加和分配移动威胁防御 (MTD) 应用
 
@@ -78,9 +78,9 @@ ms.locfileid: "74188484"
 
     1. 转到 [Azure 门户](https://portal.azure.com)，使用自己的凭据登录，然后导航到应用程序页。
 
-    2. 添加 **Lookout for Work iOS 应用**作为**本机客户端应用程序**。
+    2. 添加**Lookout for Work iOS 应用**作为**本机客户端应用程序**。
 
-    3. 将 **com.lookout.enterprise.yourcompanyname** 替换为对 IPA 签名时选择的客户捆绑 ID。
+    3. 使用对 IPA 签名时选择的客户捆绑 ID 替换 **com.lookout.enterprise.yourcompanyname**。
 
     4. 添加其他重定向 URI： **&lt;companyportal://code/>** ，后跟原始重定向 URI 的 URL 编码形式版本。
 
@@ -203,7 +203,7 @@ ms.locfileid: "74188484"
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo 应用配置策略
 
-Pradeo 在 iOS 上不支持应用程序配置策略。  相反，若要获取已配置的应用，请与 Pradeo 合作以实现已预先配置了所需设置的自定义 IPA 或 APK 文件。
+Pradeo 在 iOS/iPadOS 上不支持应用程序配置策略。  相反，若要获取已配置的应用，请与 Pradeo 合作以实现已预先配置了所需设置的自定义 IPA 或 APK 文件。
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile 应用配置策略
 
