@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: f82a64cdb66528e3e1d3a81fd6119c4a99dff504
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517450"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782263"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>使用 Intune 的 Wandera 移动威胁防御连接器  
 
@@ -32,6 +32,8 @@ ms.locfileid: "76517450"
 
 可基于通过 Intune 设备符合性策略启用的 Wandera 风险评估配置条件访问  策略。 风险评估策略可以根据检测到的威胁，允许或阻止不符合要求的设备访问企业资源。  
 
+> [!NOTE]
+> 未注册的设备不支持此移动威胁防御供应商。
 
 ## <a name="how-do-intune-and-wandera-mobile-threat-defense-help-protect-your-company-resources"></a>Intune 和 Wandera 移动威胁防御如何帮助保护公司资源？  
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609188"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256452"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 将托管 Google Play 应用添加到 Android Enterprise 设备
 
@@ -155,9 +155,6 @@ Intune 将自动向 Intune 管理控制台添加四个常见的与 Android Enter
 与其他 Android 应用一样，托管的 Google Play Web 链接可进行安装和管理。 当安装在设备上时，它们将与其所安装的其他应用一起显示在用户的应用列表中。 点击后，它们将在设备的浏览器中启动。
 
 Web 链接将使用 Microsoft Edge 或你选择部署的任何其他浏览器应用打开。 请务必将至少一个浏览器应用部署到设备，以便 Web 链接能够正常打开。 但是，可用于 Web 链接的所有显示选项（全屏、独立和最小 UI）仅适用于 Chrome 浏览器  。 
-
-> [!IMPORTANT]
-> 在发布本文档时，存在一个已知的 Google bug，该 bug 会阻止在无 Chrome 浏览器的设备上打开 Web 链接。 Google 已承诺修复此 bug。  当 Microsoft 确认 Google 已发布其修补程序时，将删除此通知。
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“应用”   > “所有应用”   > “添加”  。

@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886805"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181715"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 软件更新
 
@@ -77,14 +77,14 @@ Windows 10 更新通道支持[作用域标记](../fundamentals/scope-tags.md)。
 
 ### <a name="create-and-assign-update-rings"></a>创建和分配更新通道
 
-1. 登录到 [Microsoft 终结点管理器管理中心]( https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 选择“设备” > “Windows” > “Windows 10 更新通道” > “创建”     。
 
 3. 在“基本信息”下，指定名称和描述（可选），然后选择“下一步”   。
-  ![创建更新通道]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. 在“更新通道设置”下，配置可满足业务需求的设置  。 若要了解可用的设置，请参阅“Windows 更新设置”。 配置“更新”和“用户体验”设置之后，选择“下一步”   。
+  ![创建更新通道](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. 在“更新通道设置”下，配置可满足业务需求的设置  。 若要了解可用的设置，请参阅 [Windows 更新设置](../protect/windows-update-settings.md)。 配置“更新”和“用户体验”设置之后，选择“下一步”   。
 
 5. 若要在更新通道中应用作用域标记，则在“作用域标记”下，选择“+ 选择作用域标记”以打开“选择标记”窗格    。 选择一个或多个标记，然后单击“选择”以将其添加到更新通道，然后返回“作用域标记”页   。
 

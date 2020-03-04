@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0145a17434d8b309806f468bf066d54ae117144
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: 55f76b0c5c71f7828fed17233c2b81d6b066cc3b
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155354"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216103"
 ---
 # <a name="configure-microsoft-launcher"></a>配置 Microsoft Launcher
 
@@ -33,7 +33,7 @@ Microsoft Launcher 是一款 Android 应用程序，它允许用户对手机进�
 
 ## <a name="how-to-configure-the-microsoft-launcher-app"></a>如何配置 Microsoft Launcher 应用 
 
-导航到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然后选择“应用” > “应用配置策略”。 为运行“Android”的“托管设备”添加配置策略，并选择“Microsoft Launcher”作为关联应用。 单击“配置设置”以配置可用的各种 Microsoft Launcher 设置。 
+导航到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然后选择“应用”   > “应用配置策略”  。 为运行“Android”的“托管设备”添加配置策略，并选择“Microsoft Launcher”作为关联应用   。 单击“配置设置”以配置可用的各种 Microsoft Launcher 设置  。 
 
 ## <a name="choosing-a-configuration-settings-format"></a>选择配置设置格式 
 
@@ -43,7 +43,7 @@ Microsoft Launcher 是一款 Android 应用程序，它允许用户对手机进�
 
 - **JSON 数据**：使你能够使用 JSON 脚本来定义所有可能的配置项。 
 
-如果使用配置设计器来添加属性，则可以通过从“配置设置格式”下拉列表中选择“输入 JSON 数据”来自动将这些属性转换为 JSON，如下所示。
+如果使用配置设计器来添加属性，则可以通过从“配置设置格式”下拉列表中选择“输入 JSON 数据”来自动将这些属性转换为 JSON   ，如下所示。 
 
    ![配置设置格式 - 使用配置设计器](./media/configure-microsoft-launcher/configure-microsoft-launcher-01.png)
 
@@ -57,17 +57,17 @@ Microsoft Launcher 是一款 Android 应用程序，它允许用户对手机进�
 
 |    Configuration 注册表项    |    值类型    |    默认值    |    说明     |
 |---------------------------------------------------|------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    注册类型    |    字符串     |    默认    |    允许设置此策略应应用到的注册类型。 当前值“默认”表示“CorporateOwnedBuisnessOnly”。 目前没有其他支持的注册类型。        JSON 键名称：management_mode_key        |
-|    允许“主屏幕应用顺序”用户更改    |    布尔值    |    True    |    允许指定最终用户是否可以更改“主屏幕应用顺序”设置。<ul><li>若设置为 True，将仅对初始部署执行策略定义的应用顺序。 随后，将不再执行此策略，以便采用用户可能作出的任何更改。</li><li>若设置为“False”，每次同步时都将执行此应用顺序。</li></ul><br>**注意:** 只能通过 JSON 编辑器配置主屏幕应用顺序。<br><br>JSON 键名称：<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
+|    注册类型    |    字符串     |    默认    |    允许设置此策略应应用到的注册类型。 当前值“默认”表示“CorporateOwnedBuisnessOnly”。   目前没有其他支持的注册类型。        JSON 键名称：management_mode_key        |
+|    允许“主屏幕应用顺序”用户更改    |    布尔值    |    True    |    允许指定最终用户是否可以更改“主屏幕应用顺序”设置。 <ul><li>若设置为 True，将仅对初始部署执行策略定义的应用顺序。  随后，将不再执行此策略，以便采用用户可能作出的任何更改。</li><li>若设置为“False”，每次同步时都将执行此应用顺序。 </li></ul><br>**注意:** 只能通过 JSON 编辑器配置主屏幕应用顺序。<br><br>JSON 键名称：<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
 |    设置网格大小    |    字符串    |    自动    |    使你能够设置要在主屏幕上定位的应用的网格大小。 可以设置应用行数和列数来按以下格式定义网格大小：`columns;rows`。 如果定义网格大小，主屏幕上的一行中将显示的最大应用数量就是设置的行数，主屏幕上的一列中将显示的最大应用数量就是设置的列数。<br><br>        JSON 键名称：<br>`com.microsoft.launcher.HomeScreen.GridSize`    |
 |    设置设备墙纸    |    字符串    |    Null    |    使你能够通过输入要设置为壁纸的图像的 URL 来设置所选的壁纸。<br><br>JSON 键名称：<br>`com.microsoft.launcher.Wallpaper.URL`    |
-|    允许“设置设备墙纸”用户更改    |    Bool    |    True    |    允许指定最终用户是否可以更改“设置设备墙纸”设置。<ul><li>若设置为 True，将仅对初始部署执行策略中的墙纸。 随后，将不再执行此策略，以便采用用户可能作出的任何更改。</li><li>若设置为“False”，每次同步时都将执行此墙纸。</li></ul><br>JSON 键名称：<br>`com.microsoft.launcher.Wallpaper.URL.UserChangeAllowed`        |
-|    源启用    |    布尔值    |    True    |    在用户轻扫到主屏幕右侧时，允许你在设备上启用启动器源。<ul><li>若设置为“True”，将启用源。</li><li>若设置为“False”，将禁用源。</li></ul><br>JSON 键名称：<br>`com.microsoft.launcher.Feed.Enabled`    |
-|    允许“源启用”用户更改    |    布尔值    |    True    |     允许指定最终用户是否可以更改“源启用”设置。<ul><li>若设置为 True，将仅对初始部署执行源。 随后，将不再执行此策略，以便采用用户可能作出的任何更改。</li><li>若设置为“False”，每次同步时都将执行源。</li></ul><br>JSON 键名称：`com.microsoft.launcher.Feed.Enabled.UserChangeAllowed`    |
+|    允许“设置设备墙纸”用户更改    |    Bool    |    True    |    允许指定最终用户是否可以更改“设置设备墙纸”设置。<ul><li>若设置为 True，将仅对初始部署执行策略中的墙纸。  随后，将不再执行此策略，以便采用用户可能作出的任何更改。</li><li>若设置为“False”，每次同步时都将执行此墙纸。 </li></ul><br>JSON 键名称：<br>`com.microsoft.launcher.Wallpaper.URL.UserChangeAllowed`        |
+|    源启用    |    布尔值    |    True    |    在用户轻扫到主屏幕右侧时，允许你在设备上启用启动器源。<ul><li>若设置为“True”，将启用源。 </li><li>若设置为“False”，将禁用源。 </li></ul><br>JSON 键名称：<br>`com.microsoft.launcher.Feed.Enabled`    |
+|    允许“源启用”用户更改    |    布尔值    |    True    |     允许指定最终用户是否可以更改“源启用”设置。 <ul><li>若设置为 True，将仅对初始部署执行源。  随后，将不再执行此策略，以便采用用户可能作出的任何更改。</li><li>若设置为“False”，每次同步时都将执行源。 </li></ul><br>JSON 键名称：`com.microsoft.launcher.Feed.Enabled.UserChangeAllowed`    |
 
 ## <a name="enter-json-data"></a>输入 JSON 数据
 
-输入 JSON 数据来配置托管主屏幕的所有可用设置以及“Microsoft Launcher”中禁用的设置，如下所示。
+输入 JSON 数据来配置托管主屏幕的所有可用设置以及“Microsoft Launcher”中禁用的设置  ，如下所示。
 
    ![配置设计器 - JSON 数据](./media/configure-microsoft-launcher/configure-microsoft-launcher-03.png)
 

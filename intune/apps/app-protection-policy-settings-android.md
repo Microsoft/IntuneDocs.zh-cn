@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/10/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81554f03063269ff6bdca30e23a1ad135a2a1b77
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: deb272aa938b53c34df863e734701e2f410b4740
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512052"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256418"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 中的 Android 应用保护策略设置
 本文介绍适用于 Android 设备的应用保护策略设置。 可在 Azure 门户的“设置”  窗格中为应用保护策略[配置](app-protection-policies.md)所述的策略设置。
@@ -49,8 +49,7 @@ ms.locfileid: "77512052"
 | **屏幕捕获和 Google 助手** | 选择“阻止”，则使用此应用时，会阻止设备的屏幕捕获和“Google 助手”功能   。 选择“允许”  还会在通过工作或学校帐户使用此应用时，导致应用切换器预览图像模糊。| **阻止** |
 | **批准的键盘**  | 选择“需要”，然后指定此策略的批准的键盘列表  。 <p>未使用批准键盘的用户会收到一条提示，要求下载并安装批准的键盘，然后才能使用受保护的应用。 此设置要求应用拥有适用于 Android 的 Intune SDK 版本 6.2.0 或更高版本。 | **不需要** |
 | <ul><ui>**选择待批准的键盘** | 为上一选项选择“需要”时，此选项才可用  。 选择“选择”以管理可用于受此策略保护的应用的键盘和输入法列表  。 可以向列表中添加更多键盘，以及删除任何默认选项。 必须至少有一个批准的键盘才能保存设置。 要添加键盘，请指定： <ul><li>**名称**：标识键盘且对用户可见的易记名称。 </li><li>**包 ID**：Google Play 商店中的应用的包 ID。 例如，如果 Play 商店中应用的 URL 为 `https://play.google.com/store/details?id=com.contoskeyboard.android.prod`，则包 ID 为`com.contosokeyboard.android.prod`。 此包 ID 以简单链接的形式提供给用户，以便用户可以从 Google Play 下载键盘。 <p><div class="NOTE"><p>备注</p><p>被分配了多个应用保护策略的用户只能使用所有策略通用的批准键盘。</p> | |
-| **组织数据通知** | 指定如何针对组织帐户通过 OS 通知共享组织数据。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：不要在通知中共享组织数据。 例如“你有新邮件”，“你有个会议”。</li><UL><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li><p>**注意**：*此设置需要应用支持。此时，Outlook for Android 4.83.0 或更高版本将支持此设置。* | **允许**   |
-  
+
 ### <a name="encryption"></a>加密
 | 设置 | 如何使用 | 默认值 |
 |------|------|------|
@@ -66,7 +65,7 @@ ms.locfileid: "77512052"
 |**限制使用其他应用传输 Web 内容** | 指定如何从策略管理的应用中打开 Web 内容（http/https 链接）。 选择： <ul><li>**任何应用**：允许在任何应用中使用 Web 链接。</li><li>**Intune Managed Browser**：仅允许在 Intune Managed Browser 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**Microsoft Edge**：仅允许在 Microsoft Edge 中打开 Web 内容。 此浏览器是策略托管的浏览器。</li><li>**非托管浏览器**：允许 Web 内容仅在“非托管浏览器协议”  设置定义的非托管浏览器中打开。 Web 内容在目标浏览器中处于非托管状态。<br>**注意**：需要 Intune 公司门户版本 5.0.4415.0 或更高版本。</li><br><br>**策略托管的浏览器**<br>在 Android 上，如果未安装 Intune Managed Browser 和 Microsoft Edge，最终用户可以从支持 http/https 链接的其他策略托管应用中进行选择。<p>如果需要策略托管的浏览器，但未安装，系统将提示最终用户安装 Microsoft Edge。<p>如果需要使用策略托管的浏览器，则将由“允许应用向其他应用传送数据”策略设置管理 Android 应用链接  。<p>**Intune 设备注册**<br>如果正使用 Intune 管理设备，请参阅[使用 Microsoft Intune 的托管浏览器策略管理 Internet 访问](app-configuration-managed-browser.md)。<p>**策略托管的 Microsoft Edge**<br>移动设备（iOS/iPadOS 和 Android）的 Microsoft Edge 浏览器支持 Intune 应用保护策略。 在 Microsoft Edge 浏览器应用程序中使用其企业 Azure AD 帐户登录的用户将受 Intune 保护。 Microsoft Edge 浏览器集成了 APP SDK 并支持其除阻止以外的所有数据保护策略：<br><ul><li>**另存为**：Microsoft Edge 浏览器不允许用户向云存储提供商（如 OneDrive）添加直接的应用内连接。</li><li>**联系人同步**：Microsoft Edge 浏览器不会保存到本地联系人列表。</li></ul>**注意:** APP SDK 无法确定目标应用是否为浏览器。  在 Android 设备上，允许使用支持 http/https 意向的其他托管浏览器应用。 | 未配置  |
 |<ul><ui>**非托管浏览器 ID** | 输入单个浏览器的应用程序 ID。 策略托管应用程序的 Web 内容（http/https 链接）将在指定的浏览器中打开。  Web 内容在目标浏览器中处于非托管状态。 | **空** |
 |<ul><ui>**非托管浏览器名称** | 输入与“非托管浏览器 ID”  关联的浏览器的应用程序名称。 如果未安装指定的浏览器，将向用户显示此名称。  | **空** |
-| **组织数据通知** | 指定针对组织帐户通过 OS 通知共享的组织数据量。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：不要在通知中共享组织数据。 例如“你有新邮件”，“你有个会议”。</li><UL><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li><li>**任何应用**：不限制从此应用和对此应用进行剪切、复制和粘贴。</ul> <p>**注意**：*此设置需要应用支持。目前，适用于 Android 4.95.0 版本或更高版本的 Outlook 将支持此设置，此设置预计在 2019 年 12 月 16 日当周发布。* | **允许**   |
+| **组织数据通知** | 指定针对组织帐户通过 OS 通知共享的组织数据量。 此策略设置将影响本地设备和任何连接的设备，如可穿戴设备和智能扬声器。 应用可能会提供其他控件来自定义通知行为，或者可以选择不接受所有值。 选择： <ul><li>**阻止**：不共享通知。</li><ul><li>如果应用程序不支持，则将允许通知。</li></ul><li>**阻止组织数据**：不要在通知中共享组织数据。 例如“你有新邮件”，“你有个会议”。</li><UL><li>如果应用程序不支持，通知将被阻止。</li></ul><li>**允许**：在通知中共享组织数据</li></ul> <p>**注意**：*此设置需要应用支持。目前，适用于 Android 4.95.0 版本或更高版本的 Outlook 将支持此设置，此设置预计在 2019 年 12 月 16 日当周发布。* | **允许**   |
 
 ## <a name="data-transfer-exemptions"></a>数据传输豁免
 

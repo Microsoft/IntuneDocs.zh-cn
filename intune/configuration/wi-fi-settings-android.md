@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754552"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652396"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>在 Microsoft Intune 中为运行 Android 的设备添加 Wi-Fi 设置
 
@@ -57,19 +57,6 @@ ms.locfileid: "76754552"
 
     - **标识隐私(外部标识)** ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
-    - **代理设置**：指定组织使用的代理配置。 选项包括：
-
-      - **无** - 不使用代理服务器。
-      - **自动** – 选择此选项以使代理服务器 URL 设置可用，该设置用于指定代理服务器或包含代理服务器列表的代理自动配置 (PAC) 文件  。
-
-    - **代理服务器 URL**：将“代理设置”设置为“自动”时，此设置可用   。 指定下列选项之一，以将设备定向到代理服务器：
-
-      - IP 地址。 例如 `10.0.0.11`
-      - URL。 例如，`http://proxyserver.contoso.com`。
-      - 代理自动配置 (PAC) 文件 URL。 例如： `http://proxy.contoso.com/proxy.pac`。
-
-      有关 PAC 文件的详细信息，请参阅[代理自动配置 (PAC) 文件](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)（将打开非 Microsoft 网站）。
-
   - **EAP-TTLS**：此外请输入：
 
     - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 客户端连接到网络时向服务器显示此证书。 它会对连接进行身份验证。
@@ -88,19 +75,6 @@ ms.locfileid: "76754552"
 
       - **标识隐私(外部标识)** ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
 
-    - **代理设置**：指定组织使用的代理配置。 选项包括：
-
-      - **无** - 不使用代理服务器。
-      - **自动** – 选择此选项以使代理服务器 URL 设置可用，该设置用于指定代理服务器或包含代理服务器列表的代理自动配置 (PAC) 文件  。
-
-    - **代理服务器 URL**：将“代理设置”设置为“自动”时，此设置可用   。 指定下列选项之一，以将设备定向到代理服务器：
-
-      - IP 地址。 例如 `10.0.0.11`
-      - URL。 例如，`http://proxyserver.contoso.com`。
-      - 代理自动配置 (PAC) 文件 URL。 例如： `http://proxy.contoso.com/proxy.pac`。
-
-      有关 PAC 文件的详细信息，请参阅[代理自动配置 (PAC) 文件](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)（将打开非 Microsoft 网站）。
-
   - **PEAP**：此外请输入：
 
     - **服务器信任** - **用于服务器验证的根证书**：选择现有受信任的根证书配置文件。 客户端连接到网络时向服务器显示此证书。 它会对连接进行身份验证。
@@ -116,19 +90,6 @@ ms.locfileid: "76754552"
       - **证书**：选择也被部署到设备的 SCEP 或 PKCS 客户端证书配置文件。 此证书是由设备呈现给服务器以用于对连接进行身份验证的标识。
 
       - **标识隐私(外部标识)** ：输入为响应 EAP 标识请求而发送的文本。 此文本可以是任何值，例如 `anonymous`。 在身份验证过程中，将首先发送此匿名标识，然后在安全隧道内发送真实标识。
-
-      - **代理设置**：指定组织使用的代理配置。 选项包括：
-
-        - **无** - 不使用代理服务器。
-        - **自动** – 选择此选项以使代理服务器 URL 设置可用，该设置用于指定代理服务器或包含代理服务器列表的代理自动配置 (PAC) 文件  。
-
-      - **代理服务器 URL**：将“代理设置”设置为“自动”时，此设置可用   。 指定下列选项之一，以将设备定向到代理服务器：
-
-        - IP 地址。 例如 `10.0.0.11`
-        - URL。 例如，`http://proxyserver.contoso.com`。
-        - 代理自动配置 (PAC) 文件 URL。 例如： `http://proxy.contoso.com/proxy.pac`。
-
-        有关 PAC 文件的详细信息，请参阅[代理自动配置 (PAC) 文件](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)（将打开非 Microsoft 网站）。
 
 ## <a name="next-steps"></a>后续步骤
 
