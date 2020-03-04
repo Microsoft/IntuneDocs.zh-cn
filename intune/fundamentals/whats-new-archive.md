@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886758"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181800"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 中前几个月的新增功能
 
@@ -187,7 +187,7 @@ Intune 注册和公司门户现在支持 iOS 版本 11 及更高版本。 不支
 重命名 Windows 设备时，必须遵循新规则：
 - 小于或等于 15 个字符（必须小于或等于 63 个字节，不包括尾随 NULL）
 - 非 Null 或空字符串
-- 允许的 ASCII：字母（a-z、A-Z）、数字 (0-9) 和连字符
+- 允许的 ASCII：字母（a-z、A-Z），数字 (0-9) 和连字符
 - 允许的 Unicode：0x80 及以后的字符，必须是有效的 UTF8，必须是可映射到 IDN（即 RtlIdnToNameprepUnicode 成功；请参阅 RFC 3492）
 - 名称不得只包含数字
 - 名称中不能包含空格
@@ -407,7 +407,7 @@ Intune 现在支持通过托管的 Google Play iframe 直接在 Intune 控制台
 ### <a name="device-enrollment"></a>设备注册
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>新租户将默认离开 Android 设备管理员管理<!-- 4869790   -->
-Android Enterprise 已取代 Android 的设备管理员功能。 因此，建议改为使用 Android Enterprise 进行新注册。 在将来的更新中，新租户需要在 Android 注册中完成以下先决条件步骤，才能使用设备管理员管理：转到“Intune” > “设备注册” > “Android 注册” > “个人和企业所有的具有设备管理权限的设备” > “使用设备管理员管理设备”      。
+Android Enterprise 已取代 Android 的设备管理员功能。 因此，建议改为使用 Android Enterprise 进行新注册。 在将来的更新中，新租户需要在 Android 注册中完成以下先决条件步骤，才能使用设备管理员管理：转到“Intune”   > “设备注册”   > “Android 注册”   > “个人和企业所有的具有设备管理权限的设备”   > “使用设备管理员管理设备”  。
 
 现有租户的环境不会有任何变化。
 
@@ -526,7 +526,7 @@ Intune 现在支持管理 iPadOS 和 iOS 13.1 设备。 有关详细信息，请
 在此更新中，新增了以下功能：
 
 - “专用设备”   > “多应用”  ：虚拟主页按钮  可以通过在设备上向上轻扫来显示，也可以悬浮在屏幕上，这样用户就可以移动它。
-- “专用设备” > “多应用”：选择“闪光灯访问权限”可允许用户使用闪光灯    。 
+- “专用设备”   > “多应用”  ：“闪光灯访问”  允许用户使用闪光灯。 
 - “专用设备”   > “多应用”  ：“媒体音量控制”  允许用户使用滑块控制设备的媒体音量。 
 - “专用设备”   > “多应用”  ：允许用户启用屏幕保护程序  ，上传自定义图像，并控制屏幕保护程序的显示时间。
 
@@ -580,11 +580,11 @@ Intune 现在支持安装和使用多个 [Microsoft Intune 证书连接器来执
 
 - 依次转到“iOS”   > “设备限制”  ，有下面的一些变更：
 
-  - “内置应用” > “查找我的 iPhone”（仅监管模式）：“查找我的”应用功能中阻止此功能的新设置   。 
-  - “内置应用” > “查找我的好友”（仅监管模式）：“查找我的”应用功能中阻止此功能的新设置   。 
-  - “无线” > “修改 Wi-Fi 状态”（仅监管模式）：阻止用户在设备上打开或关闭 Wi-Fi 的新设置   。
-  - “键盘和字典” > “QuickPath”（仅监管模式）：阻止 QuickPath 功能的新设置   。
-  - “云和存储”：“活动延续”重命名为“切换”    。
+  - “内置应用”   > “查找我的 iPhone (仅限受监督)”  ：“查找我的应用”功能中新增阻止此功能的设置。 
+  - “内置应用”   > “查找我的好友(仅限受监督)”  ：“查找我的应用”功能中新增阻止此功能的设置。 
+  - “无线”   > “修改 Wi-Fi 状态(仅限受监督)”  ：新增阻止用户在设备上打开或关闭 Wi-Fi 的设置。
+  - “键盘和字典”   > “QuickPath (仅限受监督)”  ：新增阻止 QuickPath 功能的设置。
+  - “云和存储”  ：“活动延续”  重命名为“移交”  。
 
   要查看最新设置，请转到[使用 Intune 允许或限制功能的 iOS 设备设置](../configuration/device-restrictions-ios.md)。
 
@@ -1450,7 +1450,7 @@ macOS
 - [将 Windows 10 及更高版本设备设置为以展台形式运行
 ](../configuration/kiosk-settings-windows.md)
 - [Microsoft Edge 浏览器的设备限制](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [收藏夹和搜索设备限制](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [收藏夹和搜索设备限制](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 适用于：Windows 10 及更高版本
 
@@ -1645,7 +1645,7 @@ Intune 中的管理模板（“设备配置”   >   “管理模板”）当前
 [用于在锁屏上显示消息的设置](../configuration/ios-device-features-settings.md#lock-screen-message)列出了设置。
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>添加到 iOS 设备的新 App Store、文档查看和游戏设备限制设置<!-- 2827760-->
-在“设备配置” > “配置文件” > “创建配置文件” > 平台选择“iOS”> 配置文件类型选择“设备限制”>“App Store、文档查看和游戏”中，添加了以下设置：允许托管应用将联系人写入非托管联系人帐户，允许非托管应用从托管联系人帐户中读取联系人。若要查看这些设置，请转到 [iOS 设备限制](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming)       。
+在“设备配置” > “配置文件” > “创建配置文件” > 平台选择“iOS”> 配置文件类型选择“设备限制”>“App Store、文档查看和游戏”中，添加了以下设置       ：允许托管应用将联系人写入非托管联系人帐户。允许非托管应用从托管联系人帐户中读取联系人。要查看这些设置，请转到 [iOS 设备限制](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming)。
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Android Enterprise 设备所有者设备的新通知、提示和锁屏设置<!-- 3201839 3201843 -->
 以设备所有者身份运行时，此更新包括 Android Enterprise 设备上的多项新功能。 若要使用这些功能，请转到“设备配置”   > “配置文件”   > “创建配置文件”  > 在“平台”  中，选择“Android Enterprise”  > 在“配置文件类型”  中，选择“仅设备所有者”   > “设备限制”  。
@@ -1709,7 +1709,7 @@ Android Enterprise 设备所有者管理不支持“通过蓝牙共享联系人�
 
 要查看设置的当前列表，请转到[用于允许或限制功能的 Android Enterprise 设备设置](../configuration/device-restrictions-android-for-work.md)。
 
-适用于：Android 企业版设备所有者
+适用于：Android Enterprise 设备所有者
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -1857,9 +1857,9 @@ Apple 每次发布安全更新时，会保留版本号，更新生成号。 通�
 - 密码:阻止密码共享（仅监管模式）
 
 **macOS 设置**： 
-- 密码：阻止密码自动填充
+- 密码:阻止密码自动填充
 - 密码:阻止密码临近感应请求
-- 密码：阻止密码共享
+- 密码:阻止密码共享
 
 要了解有关这些设置的详细信息，请参阅 [iOS](../configuration/device-restrictions-ios.md) 和 [macOS](../configuration/device-restrictions-macos.md) 设备限制设置。
 
@@ -2122,7 +2122,7 @@ Intune 在最终用户计算机上安装 Office 时，最终用户将自动获�
 
 对于参与部署的客户，此新体验取代了一组静态预选选项的当前“帮助和支持”体验，这些选项基于打开“帮助和支持”时所在控制台的区域。  
 
- 我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
+*我们正在向部分租户（不是所有租户）推出此新的“帮助和支持”体验，你可在“设备管理”门户中进行找到。此新体验的参与者是在可用的 Intune 租户中随机选择的。在我们扩大推出时，将添加新租户。  
 
 有关详细信息，请参阅“如何获取对 Microsoft Intune 的支持”中的[“帮助和支持”体验](get-support.md#help-and-support-experience)。  
 
