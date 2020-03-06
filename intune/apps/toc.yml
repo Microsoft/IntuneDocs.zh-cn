@@ -161,6 +161,8 @@
             - name: 应用保护策略概述
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: 使用应用的数据保护框架
+              href: app-protection-framework.md
             - name: 创建应用保护策略
               items:
                 - name: 常规设置
