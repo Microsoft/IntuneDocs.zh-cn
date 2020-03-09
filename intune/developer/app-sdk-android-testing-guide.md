@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d473d29536b4ffdcc221c8cf61c63725bae0fa2
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 699665f93d04801223f2fc6e6536d9b675e75242
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653897"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181936"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-testing-guide"></a>Microsoft Intune App SDK for Android 测试指南
 
-本指南可帮助开发人员测试其 Intune 托管的 Android 应用。  
+本指南可帮助开发人员测试由 Intune 托管的 Android 应用。  
 
 ## <a name="prerequisite-test-accounts"></a>必备项测试帐户
-可以创建具有或不含预生成数据的新帐户。 创建新帐户：
+可以创建带有或不带有预生成数据的新帐户。 创建新帐户：
 1. 转到 [Microsoft 演示](https://demos.microsoft.com/environments/create/tenant)站点。 
 2. [设置 Intune](../fundamentals/setup-steps.md) 以启用移动设备管理 (MDM)。
 3. [创建用户](../fundamentals/users-add.md)。
@@ -38,7 +38,7 @@ ms.locfileid: "75653897"
 
 
 ## <a name="azure-portal-policy-configuration"></a>Azure 门户策略配置
-在 [Azure 门户的 Intune 边栏选项卡](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)中，[创建和分配应用保护策略](../apps/app-protection-policies.md)。 你还可以在 "Intune" 边栏选项卡中创建和分配[应用配置策略](../apps/app-configuration-policies-overview.md)。
+在 [Azure 门户的 Intune 边栏选项卡](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)中，[创建和分配应用保护策略](../apps/app-protection-policies.md)。 也可以在 Intune 边栏选项卡中创建和分配[应用配置策略](../apps/app-configuration-policies-overview.md)。
 
 > [!NOTE]
 > 如果在 Azure 门户中未列出应用，则可以使用策略解决该问题，方法是选择“更多应用”选项并在文本框中提供包名称  。
@@ -54,11 +54,11 @@ ms.locfileid: "75653897"
 1. 请将“需要 PIN 才能进行访问”和“需要公司凭据才能进行访问”设置为“是”    。 有关详细信息，请参阅 [Microsoft Intune 中的 Android 应用保护策略设置](../apps/app-protection-policy-settings-android.md#access-requirements)。
 2. 确认以下情况：
     - 应用启动时应显示提示提供 PIN 输入或在注册公司门户期间使用的生产用户。
-    - 出现无效的登录提示时，可能是因为 Android 清单配置不正确，特别是 Azure Active Directory Authentication Library （ADAL）集成的值（SkipBroker、ClientID 和授权）。
+    - 系统未提供有效的登录提示可能是由于 Android 清单配置不正确，特别是 Azure Active Directory 身份验证库 (ADAL) 集成（SkipBroker、ClientID 和 Authority）的值配置不正确。
     - 系统未显示任何提示可能是由于错误地集成了 `MAMActivity` 值。 有关 `MAMActivity` 的详细信息，请参阅[用于 Android 的 Microsoft Intune App SDK 开发人员指南](app-sdk-android.md)。
 
 > [!NOTE] 
-> 如果前面的测试不起作用，则以下测试可能也会失败。 请查看 [SDK](app-sdk-android.md##sdk-integration) 和 [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) 集成。
+> 如果前面的测试不起作用，下面的测试可能也会失败。 请查看 [SDK](app-sdk-android.md#sdk-integration) 和 [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) 集成。
 
 ### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>限制与其他应用传输和接收数据
 可以控制公司托管应用程序之间的数据传输，如下所示：
@@ -89,7 +89,7 @@ ms.locfileid: "75653897"
 
 1. 请将“加密应用数据”设置为“是”   。
 2. 确认以下情况：
-    - 正常应用程序行为不受影响。
+    - 正常的应用程序行为不受影响。
 
 ### <a name="prevent-android-backups"></a>阻止 Android 备份
 可以控制应用备份，如下所示：
@@ -108,9 +108,9 @@ ms.locfileid: "75653897"
     - 托管的内容将从应用中删除。 有关详细信息，请参阅[用于 Android 的 Intune App SDK 开发人员指南 - 选择性擦除](app-sdk-android.md#selective-wipe)。
 
 ### <a name="multi-identity-support"></a>多身份支持
-集成[多标识支持](app-sdk-android.md#multi-identity-optional)是一项高风险的更改，需要进行全面测试。 最常见的问题是由于错误地设置标识（上下文与威胁级别）和跟踪文件（`MAMFileProtectionManager`）而导致的。
+集成[多标识支持](app-sdk-android.md#multi-identity-optional)是一项高风险的更改，需要进行全面测试。 发生最常见的问题是由于标识设置不当（上下文与威胁级别）以及跟踪文件 (`MAMFileProtectionManager`)。
 
-至少请确认：
+至少要确认：
 
 - **另存为**策略对托管标识运行正常。
 - 从托管到个人恰当地强制执行复制粘贴限制。
@@ -119,7 +119,7 @@ ms.locfileid: "75653897"
 - 从非托管帐户更改为托管帐户时，系统会提示用户进行条件性启动（仅限第一次）。
 
 ### <a name="app-configuration-optional"></a>应用配置（可选）
-可以配置托管应用的行为。 如果应用使用任何应用配置设置，应测试应用是否正确处理你（如管理员）可设置的所有值。 可以在 Intune 中创建和分配[应用配置策略](../apps/app-configuration-policies-overview.md)。
+可以配置托管应用的行为。 如果应用使用任何应用配置设置，应测试应用是否正确处理你（如管理员）可设置的所有值。 你可以在 Intune 中创建和分配[应用配置策略](../apps/app-configuration-policies-overview.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

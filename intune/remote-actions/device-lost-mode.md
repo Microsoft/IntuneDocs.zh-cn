@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 96e037b3d4bcec09765a0228e4f35041fe316cf6
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415601"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782176"
 ---
 # <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>使用 Intune 启用 iOS/iPadOS 设备上的丢失模式
 
@@ -31,7 +31,8 @@ ms.locfileid: "77415601"
 
 ## <a name="supported-platforms"></a>受支持的平台
 
-- iOS/iPadOS 9.3 及更高版本
+- iOS 9.3 及更高版本
+- iPadOS 13.0 或更高版本
 
 以下系统不支持此功能： 
 - Windows

@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2020
+ms.date: 02/19/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4c96cefef9f535d68ed8da20dfcaeb0deffbe1
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: d5ea77eb3f5ab93573c68325d34eca40a1158ef8
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653914"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569415"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>用于 Android 的 Microsoft Intune App SDK 开发人员指南
 
@@ -82,9 +82,9 @@ Azure Active Directory 身份验证库 (ADAL) 可能有其自己的 ProGuard 限
 Intune App SDK 是一个 Android 库，使应用能够支持和参与 Intune 策略的强制执行。 
 
 大多数策略都是半自动强制执行的，但某些策略需要[来自应用的显式参与才能强制执行](#enable-features-that-require-app-participation)。
-无论你是要执行源集成，还是使用生成工具进行集成，都需要为提供要求显式参与的策略的代码。
+无论你是要执行源集成，还是使用生成工具进行集成，都需要对要求显式参与的策略进行编码。
 
-对于自动强制执行的策略，需要应用将从多个 Android 基类的继承替换为从 MAM 等效项的继承，并同样地将对某些 Android 系统服务类的调用替换为对 MAM 等效项的调用。 [下面](#class-and-method-replacements)详细介绍了所需的具体替换内容，可以使用源集成手动执行，也可以通过生成工具自动执行。
+对于自动强制执行的策略，需要应用将从多个 Android 基类的继承替换为从 MAM 等效项的继承，并同样地将对某些 Android 系统服务类的调用替换为对 MAM 等效项的调用。 [下文](#class-and-method-replacements)详细介绍了所需的特定替换，你可以使用源集成手动执行，也可以通过生成工具自动执行。
 
 ### <a name="build-tooling"></a>生成工具
 此 SDK 提供了可以自动执行 MAM 等效项替换的生成工具（用于 Gradle 生成的一个插件和用于非 Gradle 生成的一个命令行工具）。 这些工具将转换由 Java 编译生成的类文件，并且不会修改原始源代码。
@@ -190,7 +190,7 @@ intunemam {
 ```
 
 #### <a name="verification"></a>验证
-生成插件可以运行其他验证来查找处理类中的可能错误。 若要请求此项，请在 `intunemam` 配置块中指定 `verify = true`。 请注意，这可能会增加插件任务所花费的时间。
+生成插件可以运行附加验证，以在处理类中查找可能存在的错误。 若要请求此项，请在 `intunemam` 配置块中指定 `verify = true`。 请注意，这可能会增加插件任务所花费的时间。
 
 ```groovy
 intunemam {
@@ -199,7 +199,7 @@ intunemam {
 ```
 
 #### <a name="incremental-builds"></a>增量生成
-若要启用对增量构建的支持，请在 `intunemam` 配置块中指定 `incremental = true`。  这是一个试验性功能，旨在通过仅处理已更改的输入文件，提高生成性能。  默认配置为 `false`。
+若要启用对增量生成的支持，请在 `intunemam` 配置块中指定 `incremental = true`。  这是一项试验性功能，旨在通过仅处理已更改的输入文件来提高生成性能。  默认配置为 `false`。
 
 ```groovy
 intunemam {
@@ -262,7 +262,7 @@ SDK 放置的 `BuildTool` 文件夹中提供了命令行生成工具。 它执�
 除了基类外，应用可能在不派生情况下使用的一些类（例如 `MediaPlayer`）也有所需的 MAM 等效项，并且[还必须替换某些方法调用](#wrapped-system-services)。 具体详细信息如下所示。
 
 > [!NOTE] 
-> 如果你的应用程序与 SDK[生成工具](#build-tooling)集成，将自动执行以下类和方法替换。
+> 如果应用与 SDK [生成工具](#build-tooling)集成，则会自动执行以下类和方法替换。
 
 | Android 基类 | Intune App SDK 替换项 |
 |--|--|
@@ -366,8 +366,8 @@ SDK 放置的 `BuildTool` 文件夹中提供了命令行生成工具。 它执�
 | android.support.v4.print.PrintHelper | MAMPrintHelperManagement |
 | android.view.View | MAMViewManagement |
 | android.view.DragEvent | MAMDragEventManagement |
-| NotificationManager | MAMNotificationManagement |
-| android. 支持 NotificationManagerCompat | MAMNotificationCompatManagement |
+| android.app.NotificationManager | MAMNotificationManagement |
+| android.support.v4.app.NotificationManagerCompat | MAMNotificationCompatManagement |
 
 某些类会包装其大部分方法（如 `ClipboardManager`、`ContentProviderClient`、`ContentResolver` 和 `PackageManager`），而其他类只包装一个或两个方法（如 `DownloadManager`、`PrintManager`、`PrintHelper`、`View``DragEvent`、`NotificationManager` 和 `NotificationManagerCompat`）。 如果不使用 BuildPlugin，请查阅 MAM 等效类公开的 API 来获取确切的方法。
 
@@ -380,8 +380,8 @@ SDK 放置的 `BuildTool` 文件夹中提供了命令行生成工具。 它执�
 
 与 android 支持库不同，我们不提供 AndroidX 库的 MAM 变体。 相反，应将 AndroidX 视为任何其他外部库，并应配置为由生成插件/工具重写。 对于 Gradle 生成，可以通过在插件配置的 `includeExternalLibraries` 字段中包括 `androidx.*` 来完成此操作。命令行工具的调用必须显式列出所有 jar 文件。
 
-### <a name="pre-androidx-architecture-components"></a>AndroidX 的体系结构组件
-许多 Android 体系结构组件（包括空间、ViewModel 和 WorkManager）都是针对 AndroidX 重新打包的。 如果你的应用程序使用这些库的预 AndroidX 变体，请确保通过在插件配置的 `includeExternalLibraries` 字段中包含 `android.arch.*` 来应用重写。或者，将库更新为其 AndroidX 等效项。
+### <a name="pre-androidx-architecture-components"></a>Pre-AndroidX 体系结构组件
+许多 Android 体系结构组件（包括 Room、ViewModel 和 WorkManager）都已重新打包为 AndroidX。 如果应用使用这些库的预生成 AndroidX 变体，请确保通过在插件配置的 `includeExternalLibraries` 字段中包含 `android.arch.*` 来应用重写。或者，将库更新为其 AndroidX 等效项。
 
 ## <a name="sdk-permissions"></a>SDK 权限
 
@@ -605,18 +605,18 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocat
 >[!NOTE]
 > 如果 **SaveLocations** 枚举中未列出要考虑的位置，则使用 `SaveLocation.OTHER`。
 
-### <a name="example-determine-if-notifications-with-organization-data-need-to-be-restricted"></a>示例：确定是否需要限制包含组织数据的通知
+### <a name="example-determine-if-notifications-with-organization-data-need-to-be-restricted"></a>例如：确定是否需要限制包含组织数据的通知
 
-如果你的应用程序显示通知，你必须在显示通知之前，检查与通知关联的用户的通知限制策略。 若要确定是否强制执行策略，可进行以下调用。
+如果应用显示通知，则在显示通知之前，必须检查与通知关联的用户的通知限制策略。 若要确定是否强制执行策略，可进行以下调用。
 
 ```java
 NotificationRestriction notificationRestriction =
     MAMPolicyManager.getPolicyForIdentity(notificationIdentity).getNotificationRestriction();
 ```
 
-如果 `BLOCKED`限制，应用不能为与此策略关联的用户显示任何通知。 如果 `BLOCK_ORG_DATA`，则应用必须显示不包含组织数据的已修改通知。 如果 `UNRESTRICTED`，则允许所有通知。
+如果限制为 `BLOCKED`，应用不能为与此策略关联的用户显示任何通知。 如果为 `BLOCK_ORG_DATA`，则应用必须显示不包含组织数据的修改后的通知。 如果为 `UNRESTRICTED`，则允许所有通知。
 
-如果未调用 `getNotificationRestriction`，MAM SDK 将尽力为单标识应用自动限制通知。 如果启用了自动拦截，并设置了 `BLOCK_ORG_DATA`，则不会显示通知。 若要进行更精细的控制，请检查 `getNotificationRestriction` 的值并相应地修改应用通知。
+如果未调用 `getNotificationRestriction`，则 MAM SDK 将尽最大努力为单个标识应用自动限制通知。 如果启用了自动阻止并设置了 `BLOCK_ORG_DATA`，则不显示通知。 若要进行更精细的控制，请检查 `getNotificationRestriction` 的值并适当修改应用通知。
 
 ## <a name="register-for-notifications-from-the-sdk"></a>注册来自 SDK 的通知
 
@@ -673,19 +673,19 @@ public interface MAMNotificationReceiver {
 
 以下通知会发送到应用，其中一些可能需要应用参与：
 
-* **WIPE_USER_DATA**：此通知在 `MAMUserNotification` 类中进行发送。 收到此通知后，应用*必须*删除与托管标识相关的所有数据（从 `MAMUserNotification.getUserIdentity()`）。 出现这种情况的原因可能有多种，包括应用调用 `unregisterAccountForMAM`时、IT 管理员启动擦除时或未满足管理员要求的条件性访问策略。 如果你的应用程序未注册此通知，则将执行默认的擦除行为。 默认行为将删除单个标识应用的所有文件，或删除使用多标识应用的托管标识标记的所有文件的所有文件。 此通知永远不会发送到 UI 线程。
+* **WIPE_USER_DATA**：此通知在 `MAMUserNotification` 类中进行发送。 收到此通知后，应用必须删除与托管标识关联的所有数据（来自 `MAMUserNotification.getUserIdentity()`）  。 发出通知的原因可能有多种，例如应用调用 `unregisterAccountForMAM`、IT 管理员启动擦除或不满足管理员要求的条件访问策略。 如果应用未注册此通知，则将执行默认的擦除行为。 默认行为将删除单个标识应用的所有文件，或删除多标识应用的所有带有托管标识标记的文件。 此通知将永远不会在 UI 线程上发送。
 
-* **WIPE_USER_AUXILIARY_DATA**：如果应用希望 Intune App SDK 执行默认选择性擦除行为，但是在擦除进行时仍想删除一些辅助数据，则应用可以注册此通知。 此通知不适用于单标识应用，它将仅发送到多标识应用。 此通知永远不会发送到 UI 线程。
+* **WIPE_USER_AUXILIARY_DATA**：如果应用希望 Intune App SDK 执行默认选择性擦除行为，但是在擦除进行时仍想删除一些辅助数据，则应用可以注册此通知。 此通知不适用于单标识应用，它将仅发送到多标识应用。 此通知将永远不会在 UI 线程上发送。
 
-* **REFRESH_POLICY**：此通知在 `MAMUserNotification` 中进行发送。 收到此通知后，应用缓存的所有 Intune 策略决策都必须失效且必须更新。 如果应用未存储任何策略假设，则无需注册此通知。 不保证会将此通知发送到哪个线程。
+* **REFRESH_POLICY**：此通知在 `MAMUserNotification` 中进行发送。 收到此通知后，应用缓存的所有 Intune 策略决策都必须失效且必须更新。 如果应用未存储任何策略假设，则无需注册此通知。 无法保证将在哪个线程上发送此通知。
 
-* **REFRESH_APP_CONFIG**：此通知在 `MAMUserNotification` 中进行发送。 收到此通知后，所有缓存的应用程序配置数据必须失效且必须更新。 不保证会将此通知发送到哪个线程。
+* **REFRESH_APP_CONFIG**：此通知在 `MAMUserNotification` 中进行发送。 收到此通知后，所有缓存的应用程序配置数据必须失效且必须更新。 无法保证将在哪个线程上发送此通知。
 
-* **MANAGEMENT_REMOVED**：此通知在 `MAMUserNotification` 中进行发送，并通知应用它将变为不受托管。 一旦不受托管，它将无法进行以下操作：读取加密文件、读取通过 MAMDataProtectionManager 加密的数据、与加密剪贴板进行交互，或以其他方式参与托管应用生态系统。 在下面查看更多详细信息。 此通知永远不会发送到 UI 线程。
+* **MANAGEMENT_REMOVED**：此通知在 `MAMUserNotification` 中进行发送，并通知应用它将变为不受托管。 一旦不受托管，它将无法进行以下操作：读取加密文件、读取通过 MAMDataProtectionManager 加密的数据、与加密剪贴板进行交互，或以其他方式参与托管应用生态系统。 在下面查看更多详细信息。 此通知将永远不会在 UI 线程上发送。
 
-* **MAM_ENROLLMENT_RESULT**：此通知在 `MAMEnrollmentNotification` 中进行发送，目的是通知应用 APP-WE 注册尝试已完成，并提供该尝试的状态。 不保证会将此通知发送到哪个线程。
+* **MAM_ENROLLMENT_RESULT**：此通知在 `MAMEnrollmentNotification` 中进行发送，目的是通知应用 APP-WE 注册尝试已完成，并提供该尝试的状态。 无法保证将在哪个线程上发送此通知。
 
-* **COMPLIANCE_STATUS**：此通知在 `MAMComplianceNotification` 中发送，目的是就符合性修正尝试的结果通知应用。 不保证会将此通知发送到哪个线程。
+* **COMPLIANCE_STATUS**：此通知在 `MAMComplianceNotification` 中发送，目的是就符合性修正尝试的结果通知应用。 无法保证将在哪个线程上发送此通知。
 
 > [!NOTE]
 > 应用不能同时注册 `WIPE_USER_DATA` 和 `WIPE_USER_AUXILIARY_DATA` 通知。
@@ -730,7 +730,7 @@ SDK 依赖于 [ADAL](https://azure.microsoft.com/documentation/articles/active-d
     > [!NOTE]
     > 如果应用程序具有主权云感知功能，请不要设置此字段。
 
-* ClientID 是要使用的 AAD ClientID（也称为应用程序 ID）  。 如果将其注册到 Azure AD，则应使用自己的应用的 ClientID，如果不集成 ADAL，则利用[默认注册](#default-enrollment-optional)。
+* ClientID 是要使用的 AAD ClientID（也称为应用程序 ID）  。 如果应用已使用 Azure AD 注册，则应使用自己的应用的 ClientID；如果应用未集成 ADAL，则应使用[默认注册](#default-enrollment-optional)。
 
 * **NonBrokerRedirectURI** 是在无代理情况下使用的 AAD 重定向 URI。 如果未指定，则使用默认值 `urn:ietf:wg:oauth:2.0:oob`。 此默认设置适用于大多数应用。
 
@@ -970,9 +970,9 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 | `NOT_LICENSED` | 用户未获得 Intune 许可，或尝试联系 Intune MAM 服务失败。  应用应继续处于不受托管的（普通）状态下，用户不会被阻止。  将定期重试注册，以防用户将来获得许可。 |
 | `ENROLLMENT_SUCCEEDED` | 注册尝试成功，或者用户已注册。  在成功注册的情况下，将在此通知之前发送策略刷新通知。  应允许对企业数据进行访问。 |
 | `ENROLLMENT_FAILED` | 注册尝试失败。  设备日志中提供了进一步的详细信息。  在此状态下，不应允许应用访问企业数据，因为先前已确定用户已获得 Intune 许可。|
-| `WRONG_USER` | 每个设备只能有一个用户能够在 MAM 服务中注册应用。 此结果表明，为其传递此结果的用户（第二个用户）针对 MAM 策略，但其他用户已注册。 由于无法为第二个用户强制使用 MAM 策略，你的应用不得允许访问此用户的数据（可能是从你的应用中删除该用户），除非此用户在以后注册成功。 由于提供此 `WRONG_USER` 结果，MAM 会提示选择删除现有帐户。 如果用户在赞成中进行了应答，则稍后可能会短时间注册第二个用户。 只要第二个用户保持注册，MAM 就会定期重试注册。 |
+| `WRONG_USER` | 每个设备只能有一个用户能够在 MAM 服务中注册应用。 此结果表明，已为其交付此结果的用户（第二个用户）以 MAM 策略作为目标，但是其他用户已注册。 由于无法为第二位用户强制执行 MAM 策略，应用不得允许访问此用户的数据（可以从应用中删除该用户），除非/直到稍后该用户的注册成功为止。 在提供此 `WRONG_USER` 结果的同时，MAM 将提示你选择删除现有帐户。 如果人类用户的回答是肯定的，那么确实有可能在不久之后注册第二个用户。 只要第二个用户保持注册状态，MAM 就会定期重试注册。 |
 | `UNENROLLMENT_SUCCEEDED` | 取消注册已成功。|
-| `UNENROLLMENT_FAILED` | 取消注册请求失败。  设备日志中提供了进一步的详细信息。 通常情况下，只要应用传递了有效（不能为 null 也不为空） UPN，就不会发生这种情况。 应用无法直接、可靠地进行修正。 如果在取消注册有效 UPN 时接收到此值，请将其作为 bug 报告给 Intune MAM 团队。|
+| `UNENROLLMENT_FAILED` | 取消注册请求失败。  设备日志中提供了进一步的详细信息。 通常情况下，只要应用传递了有效的（既不为 null 也不为空）UPN，就不会发生这种情况。 应用无法直接、可靠地进行修正。 如果在注销有效 UPN 时收到此值，请将其作为 bug 报告给 Intune MAM 团队。|
 | `PENDING` | 用户的初始注册尝试正在进行中。  在获知注册结果之前应用可以阻止对企业数据的访问，但并不要求这样做。 |
 | `COMPANY_PORTAL_REQUIRED` | 用户获得了 Intune 许可，但在设备上安装公司门户应用之前不能注册该应用。 Intune APP SDK 将尝试阻止给定用户对应用的访问，并指引他们安装公司门户应用（请参见以下详细信息）。 |
 
@@ -1079,7 +1079,7 @@ public interface MAMComplianceNotification extends MAMUserNotification {
 | PENDING | 符合性修正尝试失败，因为超过时间限制时尚未从服务收到状态响应。 应用应稍后再次尝试其令牌获取。 |
 | COMPANY_PORTAL_REQUIRED | 必须在设备上安装公司门户，才能成功修正符合性。  如果设备上已安装公司门户，则需要重启应用。  在这种情况下，系统将显示一个对话框，要求用户重启应用。 |
 
-如果符合性状态是 `MAMCAComplianceStatus.COMPLIANT`，则应用应重启其原始令牌获取操作（适用于自己的资源）。 如果符合性修正尝试失败，`getComplianceErrorTitle()` 和 `getComplianceErrorMessage()` 方法将返回应用可在最终用户选中时显示的本地化的字符串。  大多数错误情况都无法由应用修正，因此通常最好是使帐户创建或登录失败，并允许用户稍后再试。  如果故障仍然存在，则可借助 MAM 日志来确定原因。  最终用户可以使用[此处](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android "通过电子邮件将日志发送给公司支持人员")的说明提交日志。
+如果符合性状态是 `MAMCAComplianceStatus.COMPLIANT`，则应用应重启其原始令牌获取操作（适用于自己的资源）。 如果符合性修正尝试失败，`getComplianceErrorTitle()` 和 `getComplianceErrorMessage()` 方法将返回应用可在最终用户选中时显示的本地化的字符串。  大多数错误情况都无法由应用修正，因此通常最好是使帐户创建或登录失败，并允许用户稍后再试。  如果故障仍然存在，则可借助 MAM 日志来确定原因。  最终用户可以使用[此处](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android "通过电子邮件将日志发送给公司支持人员")提供的说明提交日志。
 
 由于 `MAMComplianceNotification` 扩展了 `MAMUserNotification`，因此还会提供尝试进行修正的用户的标识。
 
@@ -1111,8 +1111,8 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>实现说明
 > [!NOTE]
 > **重要更改！**  <br>
-> 应用的 `MAMServiceAuthenticationCallback.acquireToken()` 方法应将新的 `forceRefresh` 标志的*值*传递给 `acquireTokenSilentSync()`。
-> 以前，我们建议传递*true*以解决在从 broker 刷新令牌时遇到的问题，但发现在某些情况下，如果此标志为*true*，可能会阻止在某些情况下获取令牌。
+> 应用的 `MAMServiceAuthenticationCallback.acquireToken()` 方法应将新的 `forceRefresh` 标志的 false 传递到 `acquireTokenSilentSync()`  。
+> 以前，我们建议传递 true 来解决从中转站刷新令牌的问题，但发现在某些情况下，如果此标志为 true，ADAL 可能会阻止获取令牌   。
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);
 ```
@@ -1311,9 +1311,9 @@ public static void setUIPolicyIdentity(final Context context, final String ident
 | `CANCELLED`    | 用户取消了标识更改，通常是在出现 PIN 或身份验证提示时按了“后退”按钮。 |
 | `FAILED`       | 标识更改失败，原因不明。|
 
-在显示或使用公司数据之前，应用应确保标识切换成功。 目前，对于启用多标识的应用，进程和线程标识切换将始终成功，但是我们保留添加故障条件的权利。 如果 UI 标识与线程标识相冲突，或者如果用户取消条件启动要求（例如，按下 PIN 屏幕上的后退按钮），则 UI 标识切换会因参数无效而失败。 活动上失败的 UI 标识开关的默认行为是完成活动（请参阅下面 `onSwitchMAMIdentityComplete`）。
+在显示或使用公司数据之前，应用应确保标识切换成功。 目前，对于启用多标识的应用，进程和线程标识切换将始终成功，但是我们保留添加故障条件的权利。 如果 UI 标识与线程标识相冲突，或者如果用户取消条件启动要求（例如，按下 PIN 屏幕上的后退按钮），则 UI 标识切换会因参数无效而失败。 活动上失败的 UI 标识切换的默认行为是完成活动（请参见下面的 `onSwitchMAMIdentityComplete`）。
 
-如果通过 `setUIPolicyIdentity` 设置 `Context` 标识，会以异步方式报告结果。 如果 `Context` 是一个 `Activity`，则 SDK 不会知道标识更改是否成功，直到执行条件启动，而此操作可能需要用户输入 PIN 或公司凭据。 应用可以实现 `MAMSetUIIdentityCallback` 来接收此结果，也可以为回调对象传递 null。 请注意，如果调用 `setUIPolicyIdentity`，而以前对*同一上下文*中的 `setUIPolicyIdentity` 的结果尚未传递，则新的回调将取代旧的回调，并且原始回调将永远不会收到结果。
+如果通过 `setUIPolicyIdentity` 设置 `Context` 标识，会以异步方式报告结果。 如果 `Context` 是一个 `Activity`，则 SDK 不会知道标识更改是否成功，直到执行条件启动，而此操作可能需要用户输入 PIN 或公司凭据。 应用可以实现 `MAMSetUIIdentityCallback` 来接收此结果，也可以为回叫对象传递 null。 请注意，如果在相同上下文中调用 `setUIPolicyIdentity` 而先前对 `setUIPolicyIdentity` 的调用尚未传递结果，则新的回叫将取代旧的回叫，而原始的回叫将永远不会收到结果  。
 
 ```java
     public interface MAMSetUIIdentityCallback {
@@ -1667,24 +1667,24 @@ contentIdentity)`。
 这些键值对根本不会被 Intune 解释，而是被传递给应用。 想要接收这种配置的应用程序可以使用 `MAMAppConfigManager` 和 `MAMAppConfig` 类进行这些操作。 如果多个策略针对同一个应用，则可能会有多个冲突的值可用于同一个键。
 
 > [!NOTE] 
-> 通过 MAM 进行传递的配置设置-我们无法在 `offline` （未安装公司门户时） delievered。  在这种情况下，通过 `MAMUserNotification` 在空标识上传递的只有 Android Enterprise AppRestrictions。
+> 如果未安装公司门户，`offline` 中无法传递用于通过 MAM-WE 传递的配置设置。  在这种情况下，通过 `MAMUserNotification` 在空标识上传递的只有 Android Enterprise AppRestrictions。
 
-### <a name="get-the-app-config-for-a-user"></a>获取用户的应用程序配置
-可以按如下所示检索应用配置：
+### <a name="get-the-app-config-for-a-user"></a>获取用户的应用配置
+可以按以下方式检索应用配置：
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
 ```
 
-如果没有 MAM 注册的用户，但你的应用仍想要检索 Android 企业配置（不是特定用户），则可以传递 null 或空字符串。
+如果没有 MAM 注册的用户，但应用仍希望检索 Android Enterprise 配置（不面向特定用户），则可以传递 null 字符串或空字符串。
 
 ### <a name="conflicts"></a>冲突
-在 MAM 应用配置中设置的值将覆盖 Android Enterprise config 中具有相同密钥集的值。 
+在 MAM 应用配置中设置的值将覆盖与在 Android Enterprise 配置中设置的密钥相同的值。 
 
-如果管理员为同一密钥配置了冲突的值（例如，将具有相同密钥的不同应用配置集定位到包含同一用户的多个组），Intune 将无法自动解决此冲突，并将所有值适用于你的应用程序。 
+如果管理员为同一密钥配置了冲突的值（例如，通过将具有相同密钥的不同应用配置集面向包含同一用户的多个组），Intune 将无法自动解决此冲突，并会将所有值适用于应用。 
 
-应用可以从 `MAMAppConfig` 对象请求给定键的所有值：
+应用可以从 `MAMAppConfig` 对象请求给定密钥的所有值：
 ```java
 List<Boolean> getAllBooleansForKey(String key)
 List<Long> getAllIntegersForKey(final String key)
@@ -1746,7 +1746,7 @@ enum StringQueryType {
 }
 ```
 
-您的应用程序还可以请求原始数据作为键值对集的列表。
+应用还可以请求原始数据作为一组密钥-值对的列表。
 
 ```java
 List<Map<String, String>> getFullData()
@@ -1774,42 +1774,23 @@ Long barValue = appConfig.getIntegerForKey("bar", MAMAppConfig.NumberQueryType.M
 ### <a name="further-reading"></a>深入阅读
 关于如何在 Android 中创建面向 MAM 的应用配置策略的详细信息，请参阅[如何使用适用于 Android 的 Microsoft Intune 应用配置策略](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)。
 
-应用配置还可以使用图形 API 进行配置。 有关信息，请参阅针对[MAM 的配置的图形 API 文档](https://docs.microsoft.com/graph/api/resources/intune-mam-targetedmanagedappconfiguration)。
+也可以使用图形 API 配置应用配置。 有关信息，请参阅[针对 MAM 目标配置的图形 API 文档](https://docs.microsoft.com/graph/api/resources/intune-mam-targetedmanagedappconfiguration)。
 
-## <a name="style-customization-optional"></a>样式自定义（可选）
-可以直观地自定义由 MAM SDK 生成的视图，以更匹配在其中集成它的应用。 可以自定义主次视图、背景色以及应用徽标的大小。 此样式自定义项为可选，如果未配置任何自定义样式，将使用默认值。
+## <a name="custom-themes-optional"></a>自定义主题（可选）
+可以向 MAM SDK 提供自定义主题，该主题将应用于所有 MAM 屏幕和对话框。 如果未提供主题，将使用默认 MAM 主题。
 
-### <a name="how-to-customize"></a>如何自定义
-若要将样式更改应用到 Intune MAM 视图，必须首先创建一个样式来替代 XML 文件。 此文件应位于应用的“/ res/xml”目录，你可以按照自己的喜好对它进行命名。 下面是此文件应遵循的格式示例。
+### <a name="how-to-provide-a-theme"></a>如何提供主题
+若要使用 MAM SDK 向应用提供主题，需要在应用程序的 `onCreate` 方法中添加以下代码行：
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<styleOverrides>
-    <item
-        name="foreground_color"
-        resource="@color/red"/>
-    <item
-        name="accent_color"
-        resource="@color/blue"/>
-    <item
-        name="background_color"
-        resource="@color/green"/>
-    <item
-        name="logo_image"
-        resource="@drawable/app_logo"/>
-</styleOverrides>
+```java
+MAMThemeManager.setAppTheme(R.style.AppTheme);
 ```
 
-你必须重用应用中已存在的资源。 例如，必须在 colors.xml 文件中定义绿色并在此处引用它。 不能使用十六进制颜色代码“#0000ff”。 应用徽标的最大大小为 110 dip (dp)。 可以使用较小的徽标图像，但遵循最大大小会产生最佳外观。 如果超过 110 dip 限制，图像将缩小并可能会模糊。
+在上面的示例中，需要将 `R.style.AppTheme` 替换为希望 SDK 应用的样式主题。
 
-以下是允许的样式属性、其控制的 UI 元素、其 XML 属性项名称和每个属性所需资源类型的完整列表。
+## <a name="style-customization-deprecated"></a>样式自定义（已弃用）
 
-|样式属性 | 受影响的 UI 元素 | 属性项名称 | 所需资源类型 |
-| -- | -- | -- | -- |
-| 背景色 | PIN 屏幕背景色 <Br>PIN 框填充色 | background_color | 颜色 |
-| 前景色 | 前景文本颜色 <br> 处于默认状态的 PIN 边框 <br> 用户输入 PIN 时 PIN 框中的字符（包括经过模糊处理的字符）| foreground_color | 颜色|
-| 着色 | 突出显示时的 PIN 边框 <br> 超链接 |accent_color | 颜色 |
-| 应用徽标 | Intune 应用 PIN 屏幕上显示的大图标 | logo_image | 可绘制 |
+此方法现已弃用，自定义主题（如上）是自定义视图的首选方法。
 
 ## <a name="default-enrollment-optional"></a>默认注册（可选）
 以下指南面向：需要在应用启动时出现用户提示以自动注册 APP-WE 服务（本节中称为“默认注册”）；需要 Intune 应用保护策略以仅允许受 Intune 保护的用户使用你的集成了 SDK 的 Android LOB 应用  。 指南中还说明如何为集成了 SDK 的 Android LOB 应用启用 SSO。 可由非  Intune 用户使用的应用商店应用不支持此操作。

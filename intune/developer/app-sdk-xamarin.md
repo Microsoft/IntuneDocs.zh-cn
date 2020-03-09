@@ -5,7 +5,7 @@ keywords: sdk、Xamarin、intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10f3d4c54d9a8fcb797ae3359b1a833ac9080548
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: 183cc5ed233de4a3285cf5cfd3290aead9c1de72
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912693"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181902"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin Bindings
 
@@ -108,7 +108,7 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) 上提供了强调 Xamarin.iOS 应用中 MAM 功能的示例应用程序。
 
 > [!NOTE] 
-> 没有适用于 iOS 的重映射器。 集成到 Xamarin.Forms 应用应与集成到常规 Xamarin.iOS 项目的操作相同。 
+> 没有适用于 iOS/iPadOS 的重映射器。 集成到 Xamarin.Forms 应用应与集成到常规 Xamarin.iOS 项目的操作相同。 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 移动应用中启用 Intune 应用保护策略
 1. 向 Xamarin.Android 项目添加 [Microsoft.Intune.MAM.Xamarin.Android NuGet 包](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)。
@@ -133,10 +133,10 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 > [!NOTE]
 > 重映射器当前禁止在 Xamarin Android 应用中进行调试。 建议使用手动集成来调试应用程序。
 
-#### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重命名的方法](app-sdk-android.md#renamed-methods)
+#### <a name="renamed-methods"></a>[重命名的方法](app-sdk-android.md#renamed-methods)
 在许多情况下，Android 类中提供的方法已在 MAM 替换类中标记为最终方法。 在此情况下，MAM 替换类会提供应替代的具有类似名称的方法（使用“`MAM`”作为后缀）。 例如，从 `MAMActivity` 派生（而不是替代 `OnCreate()` 并调用 `base.OnCreate()`）时，`Activity` 必须替代 `OnMAMCreate()` 并调用 `base.OnMAMCreate()`。
 
-#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 应用程序](app-sdk-android.md#mamapplication)
+#### <a name="mam-application"></a>[MAM 应用程序](app-sdk-android.md#mamapplication)
 应用必须定义 `Android.App.Application` 类。 如果手动集成 MAM，则它必须继承自 `MAMApplication`。 确保你的子类用 `[Application]` 属性正确修饰并替代 `(IntPtr, JniHandleOwnership)` 构造函数。
 
 ```csharp
@@ -150,7 +150,7 @@ Intune SDK 依赖于 [Active Directory 身份验证库 (ADAL)](https://azure.mic
 > [!NOTE]
 > 在“调试”模式下部署时，MAM Xamarin 绑定的问题可能导致应用程序故障。 变通方法是必须将 `Debuggable=false` 属性添加到 `Application` 类，并且如果手动设置，则必须从清单中删除 `android:debuggable="true"` 标记。
 
-#### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[启用需要应用参与的功能](app-sdk-android.md#enable-features-that-require-app-participation)
+#### <a name="enable-features-that-require-app-participation"></a>[启用需要应用参与的功能](app-sdk-android.md#enable-features-that-require-app-participation)
 例如：确定应用是否需要 PIN
 
 ```csharp
@@ -170,7 +170,7 @@ return info?.PrimaryUser;
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
 ```
 
-#### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[注册来自 SDK 的通知](app-sdk-android.md#register-for-notifications-from-the-sdk)
+#### <a name="register-for-notifications-from-the-sdk"></a>[注册来自 SDK 的通知](app-sdk-android.md#register-for-notifications-from-the-sdk)
 应用必须通过创建 `MAMNotificationReceiver` 并向 `MAMNotificationReceiverRegistry` 注册，来注册来自 SDK 的通知。 此操作可通过在 `App.OnMAMCreate` 中提供接收方以及所需通知类型来实现，如以下示例所示：
 
 ```csharp
@@ -185,7 +185,7 @@ public override void OnMAMCreate()
     ...
 ```
 
-#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM 注册管理器](app-sdk-android.md#mamenrollmentmanager)
+#### <a name="mam-enrollment-manager"></a>[MAM 注册管理器](app-sdk-android.md#mamenrollmentmanager)
 
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();

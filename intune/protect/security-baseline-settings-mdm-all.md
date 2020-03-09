@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
-ms.translationtype: MTE75
+ms.openlocfilehash: a46532467f8de7caf8cc88fe60e7a5cbc10ba147
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075784"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256520"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>适用于 Intune 的 Windows MDM 安全基线设置
 
@@ -231,7 +231,7 @@ ms.locfileid: "77075784"
   此策略设置配置对 UNC 路径的安全访问。 如果你启用此策略，Windows 仅允许在完成附加安全要求后访问指定的 UNC 路径。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067243)
 
-  **默认值**：配置 Windows，使其仅允许在完成附加安全要求后访问指定的 UNC 路径。
+  **默认值**：配置 Windows，仅允许在满足附加安全要求后访问指定的 UNC 路径。
 
   如果选择了“配置 Windows，使其仅允许在完成附加安全要求后访问指定的 UNC 路径”  ，则可配置强化的 UNC 路径列表  。
 
@@ -364,7 +364,7 @@ ms.locfileid: "77075784"
   将“需要密码”  设置为“是”  时，以下设置将可用。
 
   - **密码最小字符集数**：  
-    强 PIN 或密码所需的复杂元素类型（大写和小写字母、数字和标点符号）的数量。 PIN 会对桌面设备和移动设备强制执行以下行为：1 - 仅数字 2 - 必须为数字和小写字母 3 - 必须为数字、小写字母和大写字母。 在桌面 Microsoft 帐户和域帐户中不支持。 4 - 必须为数字、小写字母、大写字母和特殊字符。 在桌面中不支持。 默认值为 1。  
+    强 PIN 或密码所需的复杂元素类型（大写和小写字母、数字和标点符号）的数量。 PIN 会对桌面设备和移动设备强制执行以下行为：1 - 仅数字 2 - 必须为数字和小写字母 3 - 必须为数字、小写字母和大写字母。 在桌面 Microsoft 帐户和域帐户中不支持。 4 - 必须为数字、小写字母、大写字母和特殊字符。 在桌面中不支持。  
     [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067055)
 
     **默认值**：3
@@ -1366,9 +1366,9 @@ ms.locfileid: "77075784"
 
   - 仅发送 NTLMv2 响应  - 客户端仅使用 NTLMv2 身份验证，并在服务器支持时使用 NTLMv2 会话安全性；域控制器接受 LM、NTLM 和 NTLMv2 身份验证。
 
-  - 仅发送 NTLMv2 响应。拒绝 LM  - 客户端仅使用 NTLMv2 身份验证，并在服务器支持时使用 NTLMv2 会话安全性。 域控制器拒绝 LM（接受 NTLM 和 NTLMv2 身份验证）。
+  - *仅发送 NTLMv2 响应。拒绝 LM* - 客户端仅使用 NTLMv2 身份验证，并在服务器支持时使用 NTLMv2 会话安全性。 域控制器拒绝 LM（接受 NTLM 和 NTLMv2 身份验证）。
 
-  - 仅发送 NTLMv2 响应。拒绝 LM 和 NTLM  - 客户端仅使用 NTLMv2 身份验证，并在服务器支持时使用 NTLMv2 会话安全性。 域控制器拒绝 LM 和 NTLM（仅接受 NTLMv2 身份验证）。
+  - *仅发送 NTLMv2 响应。拒绝 LM 和 NTLM* - 客户端仅使用 NTLMv2 身份验证，并在服务器支持时使用 NTLMv2 会话安全性。 域控制器拒绝 LM 和 NTLM（仅接受 NTLMv2 身份验证）。
 
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067189)
 
@@ -1779,7 +1779,7 @@ ms.locfileid: "77075784"
 
   -  如果你未配置此策略设置，则用户可自行在“控制面板”的“系统属性”中打开或关闭“请求的(寻求)远程协助”。 用户还可配置远程协助设置。
 
-  如果你启用此策略设置，则可通过两种方式允许帮助者提供远程协助：“仅允许帮助者查看计算机”或“允许帮助者远程控制计算机”。 “最长票证时间”策略设置对使用电子邮件或文件传输创建的远程协助邀请保持打开状态的时间量设置了限制。 “选择用于发送电子邮件邀请的方法”设置指定使用哪种电子邮件标准来发送远程协助邀请。 根据你的电子邮件程序，你可使用 Mailto  标准（邀请收件人通过 Internet 链接连接）或 SMAPI（简单 MAPI）标准（邀请附加到电子邮件消息）。 此策略设置在 Windows Vista 中不可用，因为 SMAPI 是唯一受支持的方法。 如果你启用此策略设置，则还应启用适当的防火墙例外，允许远程协助通信。  
+  如果启用此策略设置，则可以通过两种方式来允许帮助者提供远程协助：“仅允许帮助者查看计算机”或“允许帮助者远程控制计算机”。 “最长票证时间”策略设置对使用电子邮件或文件传输创建的远程协助邀请保持打开状态的时间量设置了限制。 “选择用于发送电子邮件邀请的方法”设置指定使用哪种电子邮件标准来发送远程协助邀请。 根据你的电子邮件程序，你可使用 Mailto  标准（邀请收件人通过 Internet 链接连接）或 SMAPI（简单 MAPI）标准（邀请附加到电子邮件消息）。 此策略设置在 Windows Vista 中不可用，因为 SMAPI 是唯一受支持的方法。 如果你启用此策略设置，则还应启用适当的防火墙例外，允许远程协助通信。  
   [了解详细信息](https://go.microsoft.com/fwlink/?linkid=2067198)
 
   **默认值**：禁用远程协助

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6f5d11cade1e22ca5d306dd1896e8136f9e7c1ed
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413773"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256384"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什么是 Microsoft Intune 设备管理？
 
@@ -34,23 +34,23 @@ ms.locfileid: "77413773"
 ## <a name="get-to-your-devices"></a>找到你的设备
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-3. 选择“设备”。 此视图显示有关各设备的详细信息，以及可以使用该设备进行的操作，包括：
+3. 选择“设备”  。 此视图显示有关各设备的详细信息，以及可以使用该设备进行的操作，包括：
 
-   - “概述”显示已注册设备的可视化快照，并显示正在使用不同平台（Android、iOS/iPadOS 等）的设备数量。
-   - “所有设备”显示你管理的已注册设备的列表。
+   - “概述”显示已注册设备的可视化快照，并显示正在使用不同平台（Android、iOS/iPadOS 等）的设备数量  。
+   - “所有设备”显示你管理的已注册设备的列表  。
 
-     使用“导出”功能，以 10,000 (Internet Explorer) 或 30,000（Microsoft Edge、Chrome）为增量创建一个包含所有设备的 .csv 列表。
+     使用“导出”功能，以 10,000 (Internet Explorer) 或 30,000（Microsoft Edge、Chrome）为增量创建一个包含所有设备的 .zip 列表  。
 
      选择任意设备以[查看有关该设备的详细信息](device-inventory.md)，包括硬件详细信息、已安装应用以及其符合性策略的状态等。
 
-   - “Azure AD 设备”显示注册或加入 Azure Active Directory (Azure AD) 的设备列表。 了解有关 [Azure AD 设备管理](https://docs.microsoft.com/azure/active-directory/device-management-introduction)的详细信息。
-   - “设备操作”含有在不同设备上执行的远程操作的历史记录，包括操作、操作状态、操作启动者和时间。
+   - “Azure AD 设备”显示注册或加入 Azure Active Directory (Azure AD) 的设备列表  。 了解有关 [Azure AD 设备管理](https://docs.microsoft.com/azure/active-directory/device-management-introduction)的详细信息。
+   - “设备操作”含有在不同设备上执行的远程操作的历史记录，包括操作、操作状态、操作启动者和时间  。
 
      ![监视设备操作的屏幕截图](./media/device-management/monitor-device-actions.png)
 
-   - “审核日志”记录了导致 Intune 出现变化的活动。 [审核日志](../fundamentals/monitor-audit-logs.md)可以提供更多信息。
-   - “TeamViewer 连接器”服务允许由 Intune 托管的 Android 设备用户从 IT 管理员处获取远程协助。 详细了解 [TeamViewer](teamviewer-support.md)。
-   - “帮助和支持”提供有关疑难解答提示、请求支持或检查 Intune 状态的快捷方式。
+   - “审核日志”记录了导致 Intune 出现变化的活动  。 [审核日志](../fundamentals/monitor-audit-logs.md)可以提供更多信息。
+   - “TeamViewer 连接器”服务允许由 Intune 托管的 Android 设备用户从 IT 管理员处获取远程协助  。 详细了解 [TeamViewer](teamviewer-support.md)。
+   - “帮助和支持”提供有关疑难解答提示、请求支持或检查 Intune 状态的快捷方式  。
 
 ## <a name="available-device-actions"></a>可用的设备操作
 可用的操作取决于设备平台和设备的配置。
@@ -61,7 +61,7 @@ ms.locfileid: "77413773"
   - [擦除](devices-wipe.md#wipe)
   - [远程锁定](device-remote-lock.md)
   - [重置密码](device-passcode-reset.md)
-  - [禁用激活锁](device-activation-lock-bypass.md)（仅限 iOS）
+  - [禁用激活锁](device-activation-lock-disable.md)（仅限 iOS）
   - [重新开始](device-fresh-start.md)（仅限 Windows）
   - [丢失模式](device-lost-mode.md)（仅限 iOS）
   - [查找设备](device-locate.md)（仅限 iOS）
@@ -75,5 +75,5 @@ ms.locfileid: "77413773"
 
 ## <a name="next-steps"></a>后续步骤
 
-- 在“所有设备”中选择某个设备，以查看有关该设备的详细信息。
-- 选择“设备操作”以查看对所管理设备执行的操作的状态。
+- 在“所有设备”中选择某个设备，以查看有关该设备的详细信息  。
+- 选择“设备操作”以查看对所管理设备执行的操作的状态  。

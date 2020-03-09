@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
-ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
+ms.openlocfilehash: a1eca1f8911e9c6aae3b3725cf15f04d954c5f48
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473759"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260310"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>通过 Apple 设备注册计划自动注册 iOS/iPadOS 设备
 
@@ -41,6 +41,8 @@ DEP 注册与 App Store 版公司门户应用不兼容。 可以授权用户访�
 若要允许在注册期间使用新式验证，请使用 DEP 配置文件中的“使用 VPP 安装公司门户”  （VPP 即批量购买计划）将应用推送到设备。 有关详细信息，请参阅[通过 Apple 设备注册计划自动注册 iOS/iPadOS 设备](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)。
 
 若要允许公司门户自动更新，并在已注册到 DEP 的设备上提供公司门户应用，请通过 Intune 将公司门户应用部署为已应用[应用程序配置策略](../apps/app-configuration-policies-use-ios.md)的必需批量购买计划 (VPP) 应用。
+
+注意：在自动设备注册期间，公司门户在单应用模式下运行时，由于使用单应用模式，单击“了解更多”链接将导致出现错误消息。 注册完成后，当设备不再处于单应用模式时，可以在公司门户中查看详细信息。 
 
 ## <a name="what-is-supervised-mode"></a>受监督模式简介
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 19ecbc632b924dda297b3692cabf5345b4724b30
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654067"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575783"
 ---
 # <a name="reference-for-devices-entities"></a>设备实体引用
 
@@ -249,7 +249,7 @@ ManagementAgentType  实体表示用于管理设备的代理。
 | rowLastModifiedDateTimeUTC | 上次在数据仓库中修改此设备时的 UTC 日期和时间。                                                                                                       |
 | 制造商               | 设备制造商                                                                                                                                                             |
 | model                      | 设备型号                                                                                                                                                                    |
-| operatingSystem            | 设备的操作系统。 Windows、iOS 等。                                                                                                                                   |
+| operatingSystem            | 设备的操作系统。 Windows、iOS/iPadOS 等。                                                                                                                                   |
 | isDeleted                  | 显示设备是否被删除的二进制文件。                                                                                                                                 |
 | androidSecurityPatchLevel  | Android 安全修补程序级别                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
@@ -262,7 +262,7 @@ ManagementAgentType  实体表示用于管理设备的代理。
 | IMEI                       | IMEI                                                                                                                                                                                   |
 | cellularTechnology         | 设备的移动电话技术                                                                                                                                                    |
 | WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
-| ICCD                       | 集成卡标识符                                                                                                                                                     |
+| ICCD                       | 集成线路卡标识符                                                                                                                                                     |
 
 ## <a name="devicepropertyhistories"></a>devicePropertyHistories
 

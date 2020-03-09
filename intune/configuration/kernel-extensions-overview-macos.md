@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 02/25/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,14 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
-ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
-ms.translationtype: MTE75
+ms.openlocfilehash: f8a516ce9dda525d5c7a48fcbc2c799471489d0d
+ms.sourcegitcommit: ff254acb94df88afc3e3e7b878084052adf40745
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76146763"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77600249"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>使用 Intune 添加 macOS 内核扩展
+
+> [!NOTE]
+> macOS 内核扩展正在替换为系统扩展。 有关详细信息，请参阅[支持提示：在 Intune 中为 macOS Catalina 10.15 使用系统扩展而不是内核扩展](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-using-system-extensions-instead-of-kernel-extensions/ba-p/1191413)。
 
 在 macOS 设备上，可添加内核级功能。 这些功能可访问正常程序无法访问的 OS 部分。 组织可能具有应用、设备功能等无法满足的特定需求或要求。 
 

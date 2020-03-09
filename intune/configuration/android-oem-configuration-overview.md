@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: 1bc811bcac80f8321284ece8d3860efc7164a270
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886688"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256316"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中通过 OEMConfig 使用和管理 Android 企业版设备
 
@@ -161,7 +161,8 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 | Spectralink - 设备 | com.spectralink.slnkdevicesettings  |  |
 | Spectralink - 日志记录 | com.spectralink.slnklogger |  |
 | Spectralink - VQO | com.spectralink.slnkvqo |  |
-| HMD 全球 | com.hmdglobal.app.oemconfig.ironman |  |
+| Seuic | com.seuic.seuicoemconfig | |
+| Unitech 电子设备 | com.unitech.oemconfig | |
 
 -----------------
 
@@ -169,6 +170,8 @@ OEMConfig 策略是一种特殊类型的设备配置策略，类似于[应用配
 
 > [!NOTE]
 > OEMConfig 应用必须先由 Intune 进行载入，然后才能使用 OEMConfig 配置文件进行配置。 应用受支持后，你无需就在租户中对其进行设置与 Microsoft 联系。 只须按照此页面上的指令进行操作即可。
+>
+> 如果 OEMConfig 应用程序的行为不正确，请与 OEMConfig 应用程序的开发人员联系。 Intune 不对个别 OEMConfig 应用的技术问题负责。
 
 ## <a name="next-steps"></a>后续步骤
 

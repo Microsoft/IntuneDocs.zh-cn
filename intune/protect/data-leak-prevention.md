@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 7f7a6203fcf641c41192eec8aaa0835939376d54
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514432"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575934"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>使用 Microsoft Intune 防止非受管理设备上的数据泄露
 
@@ -31,7 +31,7 @@ ms.locfileid: "77514432"
 
 使用 Intune 设置的应用保护策略在不由 Microsoft 设备管理解决方案管理的设备上也有效。 不会涉及设备上的个人数据；只有公司数据由 IT 部门管理。 
 
-可在运行 Windows、iOS 或 Android 的设备上为 Office 移动应用设置应用保护策略，以保护公司数据。 通过这些策略，设可以置基于应用的 PIN 或公司数据加密等策略，或更高级的设置，以限制用户能否在托管和非托管应用间使用剪切、复制、粘贴和另存为功能。 而且无需用户注册设备，即可远程擦除公司数据。
+可在运行 Windows、iOS/iPadOS 或 Android 的设备上为 Office 移动应用设置应用保护策略，以保护公司数据。 通过这些策略，设可以置基于应用的 PIN 或公司数据加密等策略，或更高级的设置，以限制用户能否在托管和非托管应用间使用剪切、复制、粘贴和另存为功能。 而且无需用户注册设备，即可远程擦除公司数据。
 
 Intune 应用保护策略独立于设备管理。 通过应用保护策略，可管理在托管设备和由 Intune 或非 Microsoft MDM 解决方案管理的设备上的 Office 移动应用。
 
@@ -42,7 +42,7 @@ Intune 应用保护策略独立于设备管理。 通过应用保护策略，可
 * 你的公司已准备好安全转换到云。
 * 你的公司使用 Office 365 Exchange Online、SharePoint Online、OneDrive for Business 或 Yammer。
 * 你的公司拥有 Microsoft 365、企业移动性 + 安全性 (EMS) 或 Azure 信息保护的许可证。
-* 你的公司允许用户从公司拥有或个人拥有的 Windows、iOS 或 Android 设备访问公司数据。
+* 你的公司允许用户从公司拥有或个人拥有的 Windows、iOS/iPadOS 或 Android 设备访问公司数据。
 * 你的公司不会要求在设备管理服务中注册个人拥有的设备。
 
 ## <a name="action-plan"></a>操作计划

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 07463f3bcac7d657659ece7fed2c40db53ee2122
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609165"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256367"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理从适用于企业的 Microsoft Store 批量采购的应用
 
@@ -51,7 +51,8 @@ ms.locfileid: "77609165"
 - 设备必须已加入 Active Directory 域服务、Azure AD 联接或工作区才可使用此功能。
 - 已注册的设备必须使用 Windows 10 的 1511 版本或更高版本。
 
-此外，从适用于企业的 Microsoft Store 同步的相关集和脱机授权应用现在会合并到 UI 的单个应用条目中。 各个包中的所有部署详细信息都会迁移到单个条目。 要在 Azure 门户中查看相关集，请从“应用”窗格中选择“应用许可证”   。
+> [!NOTE]
+如果禁用受管理设备上的 Store（通过策略或组策略手动进行），将无法安装联机许可应用。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>将适用于企业的 Microsoft 应用商店帐户与 Intune 关联
 在 Intune 控制台中启用同步之前，必须将你的应用商店帐户配置为将 Intune 作为一种管理工具使用：

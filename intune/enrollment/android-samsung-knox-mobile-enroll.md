@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 12/06/2018
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: ae445597cfd1afc4650c7a900ee335c939adedce
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692161"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260174"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung 的 Knox 移动注册自动注册 Android 设备
 
@@ -57,38 +57,44 @@ ms.locfileid: "75692161"
 
 ## <a name="create-mdm-profile"></a>创建 MDM 配置文件
 
-公司成功注册后，可以使用以下信息在 Knox 门户中为 Microsoft Intune 创建 MDM 配置文件。 可以在 Knox 门户中为 Android 和 Android Enterprise 创建 MDM 配置文件。 
+公司成功注册后，可以使用以下信息在 Knox 门户中为 Microsoft Intune 创建 MDM 配置文件。 可以在 Knox 门户中为 Android 和 Android Enterprise 创建 MDM 配置文件。
+- 若要创建 Android MDM 配置文件，请在 Knox 门户中选择“设备管理”作为配置文件类型  。 
+- 若要创建 Android Enterprise MDM 配置文件，请在 Knox 门户中选择“设备所有者”作为配置文件类型  。  
 
-### <a name="for-android-enterprise"></a>对于 Android Enterprise
+### <a name="for-android"></a>适用于 Android
 
 | MDM 配置文件字段| 是否必需？ | 值 | 
 |-------------------|-----------|-------| 
-|MDM Server URI     | 否        |将其留空。 
-|配置文件名称       | 是       |输入选择的配置文件名称。 
-|说明        | 否        |输入说明配置文件的文本。 
-|MDM 代理 APK      | 是       |https://aka.ms/intune_kme_deviceowner 
-|将此应用设置为 Google 设备所有者 | 是 | 选择此选项以注册到 Android Enterprise。 
-|支持的 MDM      | 是       |Microsoft Intune 
-|保持启用所有系统应用 | 否 | 选择此选项可确保所有应用都已启用并可供配置文件使用。 如果你未选中此选项，设备的应用托盘中只会显示一组有限的系统应用。 电子邮件应用等应用仍然处于隐藏状态。 
-|自定义 JSON        | 否        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":“输入 Intune 注册令牌字符串”}。 了解[如何创建注册配置文件](android-kiosk-enroll.md)。 
-| 添加法律协议 | 否 | 将其留空。 
+|配置文件名称       | 是       |输入选择的配置文件名称。 |
+|说明        | 否        |输入说明配置文件的文本。 |
+|MDM 信息     | 是        |选择“我的 MDM 不需要服务器 URI”  。| 
+|MDM 代理 APK      | 是       |https://aka.ms/intune_kme_deviceowner| 
+|自定义 JSON        | 是*        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":“输入 Intune 注册令牌字符串”}。 了解如何为[专用设备](android-kiosk-enroll.md)和[完全管理设备](android-fully-managed-enroll.md)创建注册令牌。 |
+|跳过安装向导  | 否        |选中此选项可以为最终用户跳过标准设备安装提示。|
+|允许最终用户取消注册 | 否 | 选择此选项以允许用户取消 KME。|
+| 隐私策略、EULA 和服务条款 | 否 | 将其留空。 |
+| 支持联系人详细信息 | 是 | 选择“编辑”以更新联系人详细信息 |
+|将 Knox 许可证与此配置文件关联 | 否 | 将此选项保持未选定状态。 使用 KME 注册 Intune 不需要使用 Knox 许可证。|
 
-### <a name="for-android"></a>适用于 Android
+\*在 Knox 门户中完成概要文件创建不需要此字段。 但是，Intune 确实要求填写此字段，以便配置文件可以在 Intune 中成功注册设备。
+
+### <a name="for-android-enterprise"></a>对于 Android Enterprise
 
 有关分步指南，请参阅 [Samsung 的“创建配置文件”](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm)说明。
 
 | MDM 配置文件字段| 是否必需？ | 值 |
 |-------------------|-----------|-------|
-|MDM Server URI     | 否        |将其留空。
-|配置文件名称       | 是       |输入选择的配置文件名称。
-|description        | 否        |输入说明配置文件的文本。
-|MDM 代理 APK      | 是       |https://aka.ms/intune_kme
-|将此应用设置为 Google 设备所有者 | 否 | 对于 Android，请将此选项保持未选定状态。 此选项仅适用于 Android Enterprise。
-|跳过安装向导  | 否        |选中此选项可以为最终用户跳过标准设备安装提示。
-|允许最终用户取消注册 | 否 | 选择此选项以允许用户取消 KME。
-|自定义 JSON        | 否        |将其留空。
-| 添加法律协议 | 否 | 将其留空。
-将 Knox 许可证与此配置文件关联 | 否 | 将此选项保持未选定状态。 使用 KME 注册 Intune 不需要使用 Knox 许可证。
+|配置文件名称       | 是       |输入选择的配置文件名称。|
+|说明        | 否        |输入说明配置文件的文本。|
+|选择 MDM | 是 | 选择 Microsoft Intune。 |
+|MDM 代理 APK      | 是       |https://aka.ms/intune_kme|
+|MDM Server URI     | 否        |将其留空。|
+|自定义 JSON 数据        | 否        |将其留空。|
+|双 DAR | 否 | 将其留空。|
+|注册的 QR 码 | 否 | 可以添加 QR 码以加快注册速度。|
+|系统应用程序 | 是 | 选择“保持启用所有系统应用”选项可确保所有应用都已启用并可供配置文件使用  。 如果你未选中此选项，设备的应用托盘中只会显示一组有限的系统应用。 电子邮件应用等应用仍然处于隐藏状态。 |
+|隐私策略、EULA 和服务条款 | 否 | 将其留空。|
+|公司名称 | 是 | 此名称将在设备注册期间显示。 |
 
 ## <a name="add-devices"></a>添加设备
 

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413749"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781918"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看设备详细信息
 
@@ -39,11 +39,16 @@ ms.locfileid: "77413749"
    - “概述”显示设备名称，并列出设备的某些关键属性，例如该设备是否是自带设备办公 (BYOD) 设备和设备的签入时间等  。 可以在设备上执行以下操作：
       - [停用](devices-wipe.md#retire)
       - [擦除](devices-wipe.md#wipe)
+      - [删除](devices-wipe.md#delete-devices-from-the-intune-portal)
       - [远程锁定](device-remote-lock.md)
-      - [同步设备](device-sync.md)
+      - [同步](device-sync.md)
       - [重置密码](device-passcode-reset.md)
       - [重启](device-restart.md)（仅限 Windows）
       - [重新开始](device-fresh-start.md)（仅限 Windows）
+      - [Autopilot 重置]()（仅限 Windows）
+      - [快速扫描](../configuration/device-restrictions-windows-10.md)（仅限 Windows 10）
+      - [完全扫描](../configuration/device-restrictions-windows-10.md)（仅限 Windows 10）
+       - [重命名设备](device-rename.md)
       - 开始远程协助会话
    - 使用“属性”可以将设备分配到[你创建的设备类别](../enrollment/device-group-mapping.md)，并将设备的所有权更改为个人设备或公司设备  。
    - “硬件”包括有关设备的详细信息，例如设备 ID、操作系统和版本、存储空间等详细信息  。

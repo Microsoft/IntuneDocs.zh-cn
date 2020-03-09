@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.openlocfilehash: b804eccfa6f860c77ab4a1a7f1fe5ae0f5baf101
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569449"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781815"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>查找 Intune 设备的主要用户
 
@@ -32,7 +32,7 @@ ms.locfileid: "77569449"
 
 1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 选择“设备”  > 选择一台设备。
-3. 在“概述”  页上，选择“查看更多”  ，则会看到列出的主要用户。
+3. 在“概述”页面上，可以看到列出的主要用户  。
 
 ## <a name="what-is-the-primary-user"></a>什么是主要用户？
 主要用户属性用于将许可的 Intune 用户映射到以下位置的设备：

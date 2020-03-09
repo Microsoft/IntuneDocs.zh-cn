@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 25d7c357c0ea313891f80433f33cd4ac57cfad2c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545918"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782091"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>在 Intune 中为未注册的设备启用移动威胁防御连接器
 
 在移动威胁防御 (MTD) 安装过程中，已配置了用于在移动威胁防御合作伙伴控制台中对威胁进行分类的策略，并且已在 Intune 中创建了应用保护策略。 如果已在 MTD 合作伙伴控制台中配置了 Intune 连接器，则现在可为 MTD 合作伙伴应用程序启用 MTD 连接。
 
 > [!NOTE]
-> 本文适用于支持应用保护策略的所有移动威胁防御合作伙伴：Better Mobile (Android)、Zimperium (Android/iOS)、Lookout for Work (Android/iOS)。
+> 本文适用于支持应用保护策略的所有移动威胁防御合作伙伴：
+>
+> - Better Mobile（Android、iOS/iPadOS）
+> - Zimperium（Android、iOS/iPadOS）
+> - Lookout for Work（Android、iOS/iPadOS）
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>MTD 应用的经典条件访问策略
 

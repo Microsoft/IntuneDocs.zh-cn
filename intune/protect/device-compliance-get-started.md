@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 45bcabf8c7dc932c9415fbd309bf09f53499fbcc
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515163"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781934"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在设备上设置规则以允许使用 Intune 访问组织中的资源
 
@@ -93,16 +93,13 @@ Intune 还包括一组内置的符合性策略设置。 以下内置策略在已
 
   如果设备未分配到符合性策略，则此设备在默认情况下被视为符合。 如果结合使用条件访问和符合性策略，建议将默认设置更改为“不符合”  。 如果最终用户因未分配有策略而不符合要求，[公司门户](../apps/company-portal-app.md)会显示“`No compliance policies have been assigned`”。
 
-
-> [!NOTE]
-> Intune 中暂时禁用了针对 iOS/iPadOS 设备的增强型越狱检测功能。
-
-- **增强型越狱检测**：启用后，此设置会导致 iOS/iPadOS 设备更频繁地使用 Intune 签入。 启用此属性将使用设备的位置服务，而且会影响电池的使用。 Intune 不会存储用户位置数据。
+- **增强型越狱检测**：启用后，此设置会导致 iOS/iPadOS 设备上更频繁地出现越狱设备状态。 此设置仅影响以阻止越狱设备的符合性策略为目标的设备。 启用此属性将使用设备的位置服务，而且可能会影响电池的使用。 Intune 不存储用户位置数据，该数据仅用于在后台更频繁地触发越狱检测。 
 
   启用此设置要求设备：
   - 在 OS 级别启用位置服务。
-  - 允许公司门户使用位置服务。
-  - 评估其越狱状态并且至少每 72 小时向 Intune 报告一次。 否则，设备将标记为“不符合”。 打开公司门户应用或将设备移动 500 米或更远距离会触发评估。 如果设备在 72 小时内未移动 500 米，则用户需要打开公司门户应用，以增强越狱评估。
+  - 始终允许公司门户使用位置服务。
+
+  打开公司门户应用或将设备实际移动大约 500 米或更远距离会触发评估。 在 iOS 13 及更高版本上，当设备提示用户继续允许公司门户在后台使用其位置时，此功能将要求用户选择“始终允许”。 如果用户不总是允许位置访问并配置了具有此设置的策略，则其设备将被标记为不合规。 请注意，Intune 不能保证每次重大位置更改都能确保越狱检测检查，因为这取决于设备当时的网络连接。
 
 - **符合性状态有效期(天)** ：输入设备报告所有已收到符合性策略的状态的时间段。 未在此时间段内返回状态的设备将被视为“不符合”。 默认值为 30 天。 最小值为 1 天。
 

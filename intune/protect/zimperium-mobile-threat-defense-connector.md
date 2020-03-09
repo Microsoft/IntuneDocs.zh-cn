@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 32ace832e44f1cb6d334f69a0c1f03cb41515b2f
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515231"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782042"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium 移动威胁防御连接器与 Intune
 
 可根据 Zimperium 进行的风险评估，使用条件访问控制移动设备对公司资源的访问，Zimperium 是与 Microsoft Intune 集成的移动威胁防御 (MTD) 解决方案。 基于从运行 Zimperium 应用的设备收集的遥测评估风险。
 
-可基于通过 Intune 设备符合性策略启用的 Zimperium 风险评估配置条件访问策略。 风险评估策略可以根据检测到的威胁，允许或阻止不符合要求的设备访问企业资源。
+可以基于通过注册设备的 Intune 设备合规性策略启动的 Zimperium 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止非合规设备访问公司资源。 对于未注册设备，可使用应用保护策略根据检测到的威胁强制执行阻止或选择性擦除操作。
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune 和 Zimperium 如何帮助你保护公司资源？
 
@@ -108,3 +108,5 @@ Intune 设备符合性策略包括基于 Zimperium 风险评估的 Zimperium 移
 - [创建 Zimperium 设备符合性策略](mtd-device-compliance-policy-create.md)
 
 - [启用 Zimperium MTD 连接器](mtd-connector-enable.md)
+
+- [创建 MTD 应用保护策略](../protect/mtd-app-protection-policy.md)

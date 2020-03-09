@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a52636a140778f6e78bfe081cda40b36ef2354f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbab3aae2e38e1ce7d3c8c526b706d70e0cf2b2a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509634"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781200"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>通过 Intune 启用 Better Mobile Threat Defense 连接器
 
 可根据 Better Mobile 进行的风险评估，使用条件访问控制移动设备对公司资源的访问，Better Mobile 是与 Microsoft Intune 集成的 Mobile Threat Defense (MTD) 解决方案。 基于从运行 Better Mobile 应用的设备收集的遥测评估风险。
 
-可以基于通过 Intune 设备符合性策略启动的 Better Mobile 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止不符合设备访问公司资源。
+可以基于通过已注册设备的 Intune 设备合规性策略启动的 Better Mobile 风险评估配置条件访问策略，从而根据检测到的威胁允许或阻止非合规设备访问公司资源。 对于未注册设备，可使用应用保护策略根据检测到的威胁强制执行阻止或选择性擦除操作。
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Intune 和 Better Mobile 如何帮助你保护公司资源？
 
@@ -105,3 +105,5 @@ Intune 设备符合性策略包括基于 Better Mobile 风险评估的 Mobile Th
 - [创建 Better Mobile 设备符合性策略](mtd-device-compliance-policy-create.md)
 
 - [启用 Better Mobile MTD 连接器](mtd-connector-enable.md)
+
+- [创建 MTD 应用保护策略](mtd-app-protection-policy.md) 

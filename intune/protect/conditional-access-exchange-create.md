@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 6650c091917ea265783044efd78b19a7e032e6a7
+ms.sourcegitcommit: 5511b4f2b8a3383176a7afe2a22ad5a8d42caf7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576074"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169291"
 ---
-# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>创建本地 Exchange 和旧版 Exchange Online Dedicated 的条件访问策略
+# <a name="configure-exchange-on-premises-access-for-intune"></a>配置 Intune 的 Exchange 本地访问权限
 
 本文介绍如何基于设备符合性配置本地 Exchange 的条件访问。
 
@@ -62,10 +62,29 @@ ms.locfileid: "77576074"
 
 ### <a name="support-for-mobile-devices"></a>对移动设备的支持
 
-- Windows Phone 8.1 及更高版本
-- iOS/iPadOS 上的本机电子邮件应用。
-- EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）。
-- EAS 邮件客户端 Android 工作配置文件设备  ：Android 工作配置文件设备上仅支持工作配置文件中的 Gmail 和 Nine Work for Android Enterprise    。 为了使条件访问适用于 Android 工作配置文件，必须为 Gmail 或 Nine Work for Android Enterprise 应用部署电子邮件配置文件，还要将这些应用部署为必需的安装。
+- **Windows Phone 8.1 及更高版本** - 若要创建条件访问策略，请参阅[创建条件访问策略](../protect/create-conditional-access-intune.md)
+- **iOS/iPadOS 的本机电子邮件应用** - 若要创建条件访问策略，请参阅[创建条件访问策略](../protect/create-conditional-access-intune.md)
+- **EAS 邮件客户端（如 Android 4 或更高版本上的 Gmail）** - 若要创建条件访问策略，请参阅[创建条件访问策略](../protect/create-conditional-access-intune.md)
+
+- **Android 工作配置文件设备上的 EAS 邮件客户端**- Android 工作配置文件设备上仅支持 Gmail 和 Nine Work for Android Enterprise   。 为了使条件访问适用于 Android 工作配置文件，必须为 Gmail 或 Nine Work for Android Enterprise 应用部署电子邮件配置文件，还要将这些应用部署为必需的安装   。 部署应用后，可以设置基于设备的条件访问。
+
+#### <a name="to-set-up-conditional-access-for-android-work-profile-devices"></a>为 Android 工作配置文件设备设置条件访问
+
+  1. 登录到 [Microsoft 终结点管理器管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+  
+  2. 将 Gmail 或九个工作应用部署为“需要”  。
+
+  3. 选择“设备” > “配置配置文件” > “创建配置文件”，为配置文件输入“名称”和“描述”      。
+
+  4. 在“平台”中选择“Android Enterprise”，在“配置文件类型”中选择“电子邮件”     。
+
+  5. 配置[电子邮件配置文件设置](https://docs.microsoft.com/intune/configuration/email-settings-android-enterprise#android-enterprise)。
+
+  6. 完成后，选择“确定”   > “创建”  以保存所做的更改。
+
+  7. 创建电子邮件配置文件后，[将其分配给组](https://docs.microsoft.com/intune/device-profile-assign)。
+
+  8. 设置[基于设备的条件访问](https://docs.microsoft.com/intune/protect/conditional-access-intune-common-ways-use#device-based-conditional-access)。
 
 > [!NOTE]
 > Microsoft Outlook for Android 和 Microsoft Outlook for iOS/iPadOS 不通过 Exchange 本地连接器支持。 如果想要将 Azure Active Directory 条件访问策略和 Intune 应用保护策略与本地邮箱的 Outlook for iOS/iPadOS 和 Outlook for Android 配合使用，请参阅[将混合新式身份验证与 Outlook for iOS/iPadOS 和 Outlook for Android 配合使用](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。

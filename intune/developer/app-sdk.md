@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcb3a9f817b0e765fee79342bcd212f33509209a
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 8d47d91388fffd0e5716d20be640c4afbad2862e
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653540"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576316"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK 概述
 Intune App SDK 可用于 iOS 和 Android，可让应用支持 Intune [应用保护策略](../apps/app-protection-policy.md)。 如果应用应用了应用保护策略，它可以由 Intune 托管，并被 Intune 识别为托管应用。 此 SDK 努力使应用开发者所需的代码更改数量降到最低。 你会发现可以在不改变应用行为的情况下启用大部分 SDK 功能。 为了增强最终用户和 IT 管理员体验，可利用 SDK 的 API 自定义应用行为以支持需要应用参与的功能。
@@ -56,7 +56,7 @@ IT 管理员可要求最终用户输入 PIN 以访问应用中的公司数据。
 IT 管理员可以要求用户使用其工作或学校帐户登录以访问该应用。 Intune App SDK 使用 Azure Active Directory 提供单一登录体验，其中一旦输入凭据就将在后续登录中重用该凭据。 我们还支持通过与 Azure Active Directory 联合的标识管理解决方案进行身份验证。
 
 ### <a name="check-device-health-and-compliance"></a>检查设备运行状况和合规性
-在最终用户访问应用之前，IT 管理员可以检查设备的运行状况及其是否符合 Intune 策略。 在 iOS 上，此策略将检查设备是否已越狱。 在 Android 上，此策略将检查设备是否已获得 root 权限。
+在最终用户访问应用之前，IT 管理员可以检查设备的运行状况及其是否符合 Intune 策略。 在 iOS/iPadOS 上，此策略将检查设备是否已越狱。 在 Android 上，此策略将检查设备是否已获得 root 权限。
 
 ### <a name="support-multi-identity"></a>支持多身份
 多身份支持功能是 SDK 的一种功能，其允许策略托管（企业）帐户和非托管（个人）帐户在单个应用中共存。

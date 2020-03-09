@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 11e757d22274a0e1cc327d9037a74e4ffac024dd
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653659"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576349"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune 应用包装工具准备 iOS 应用以便使用应用保护策略
 
@@ -198,15 +198,15 @@ ms.locfileid: "75653659"
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| 在应用包装工具可用的命令行属性上显示详细的使用情况信息。 |
-|**-aa**|（可选） `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` 即 `login.windows.net/common` |
-|**-ac**|（可选） `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` 这是 "客户端 ID" 字段中的 guid 来自应用注册边栏选项卡中应用的列表。 |
-|**-ar**|（可选） `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` 这是在应用注册中配置的重定向 URI。 通常，它将是 Microsoft Authenticator 应用程序在中转身份验证后返回到的应用程序的 URL 协议。 |
+|**-aa**|（可选）`<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`，即 `login.windows.net/common` |
+|**-ac**|（可选）`<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` 这是“客户端 ID”字段中的向导，来自“应用注册”边栏选项卡中的应用列表。 |
+|**-ar**|（可选）`<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` 这是在应用注册中配置的重定向 URI。 通常，它是在中转身份验证后 Microsoft Authenticator 应用将返回到的应用程序的 URL 协议。 |
 |**-v**| （可选）将详细信息输出到控制台。 建议使用此标志来调试任何错误。 |
 |**-e**| （可选）使用此标志可使应用包装工具在处理应用的过程中删除缺失的权利。 有关更多详细信息，请参阅[设置应用权利](#setting-app-entitlements)。|
 |**-xe**| （可选）打印应用中的 iOS 扩展，以及使用这些扩展需要哪些权利的相关信息。 有关更多详细信息，请参阅[设置应用权利](#setting-app-entitlements)。 |
 |**-x**| （可选）`<An array of paths to extension provisioning profiles>`。 如果应用需要扩展预配配置文件，使用此项。|
 |**-b**|（可选）如果希望已包装的输出应用与输入应用的绑定版本相同，使用不带参数的 -b（不推荐）。 <br/><br/> 如果希望已包装的应用具有自定义 CFBundleVersion，使用 `-b <custom bundle version>`。 如果选择指定自定义 CFBundleVersion，建议以最低有效组件递增本机应用的 CFBundleVersion，例如 1.0.0 -> 1.0.1。 |
-|**-citrix**|可有可无包含 Citrix XenMobile App SDK （仅限网络的变体）。 必须安装[CITRIX MDX 工具包](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html)才能使用此选项。 |
+|**-citrix**|（可选）包括 Citrix XenMobile App SDK（网络变体）。 必须安装 [Citrix MDX 工具包](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html)才能使用此选项。 |
 |**-f**|（可选）`<Path to a plist file specifying arguments.>` 如果选择使用 plist 模板指定其余 IntuneMAMPackager 属性（-i、-o 和 -p），使用 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 前的此标志。 请参阅“使用 plist 输入参数”。 |
 
 ### <a name="use-a-plist-to-input-arguments"></a>使用 plist 输入参数
@@ -221,14 +221,14 @@ ms.locfileid: "75653659"
 | 输出应用程序包路径 |字符串|empty| 与 -o 相同|
 | 预配配置文件路径 |字符串|empty| 与 -p 相同|
 | SHA-1 证书哈希 |字符串|empty| 与 -c 相同|
-| ADAL 颁发机构 |字符串|empty| 与 -aa 相同|
+| ADAL 机构 |字符串|empty| 与 -aa 相同|
 | ADAL 客户端 ID |字符串|empty| 与 -ac 相同|
-| ADAL 回复 URI |字符串|empty| 与 -ar 相同|
+| ADAL 答复 URI |字符串|empty| 与 -ar 相同|
 | 已启用详情 |布尔值|false| 与 -v 相同|
 | 删除缺失的权利 |布尔值|false| 与 -c 相同|
-| 防止默认生成更新 |Boolen|false| 相当于使用不带参数的 -b|
+| 防止默认生成更新 |布尔值|false| 相当于使用不带参数的 -b|
 | 生成字符串替代 |字符串|empty| 已包装输出应用的自定义 CFBundleVersion|
-| 包括 Citrix XenMobile App SDK （仅限网络的变体）|布尔值|false| 与-citrix 相同|
+| 包括 Citrix XenMobile App SDK（网络变体）|布尔值|false| 与 -citrix 相同|
 | 扩展预配配置文件路径 |字符串数组|empty| 应用的一系列扩展预配配置文件。
 
 将 IntuneMAMPackager 与 plist 一起作为唯一参数运行：
@@ -255,7 +255,7 @@ ms.locfileid: "75653659"
 * 应用程序本身已发布新的版本。 该应用的以前版本已包装且已上传到 Intune 控制台。
 * Intune App Wrapping Tool for iOS 已发布新的版本，该版本提供了重要的 bug 修补程序或新的特定 Intune 应用程序保护策略功能。 GitHub 存储库每 6-8 周会发布一次 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 的新版本。
 
-对于 iOS，尽管可以使用不同于最初对应用进行签名所用的证书/预配配置文件进行包装，但如果新预配配置文件中不包括在应用中指定的权利，包装将会失败。 “-e”命令行选项可用于从应用中删除任何缺少的权利，若在此方案中使用此选项来强制保证包装不失败，则可能导致应用中出现功能中断。
+对于 iOS/iPadOS，尽管可以使用不同于最初对应用进行签名所用的证书/预配配置文件进行包装，但如果新预配配置文件中不包括在应用中指定的权利，包装将会失败。 “-e”命令行选项可用于从应用中删除任何缺少的权利，若在此方案中使用此选项来强制保证包装不失败，则可能导致应用中出现功能中断。
 
 重新包装的一些最佳做法包括：
 
@@ -303,7 +303,7 @@ ms.locfileid: "75653659"
 
 ### <a name="collecting-crash-logs-from-the-system"></a>从系统收集崩溃日志
 
-您的应用程序可能会将有用信息记录到 iOS 客户端设备控制台。 在应用程序方面存在问题，并且你需要确定问题与应用包装工具有关还是与应用本身有关时，此信息很有用。 若要检索此信息，请使用以下步骤：
+应用可能会将有用的信息记录到 iOS 客户端设备控制台。 在应用程序方面存在问题，并且你需要确定问题与应用包装工具有关还是与应用本身有关时，此信息很有用。 若要检索此信息，请使用以下步骤：
 
 1. 通过运行应用，再现该问题。
 
@@ -419,7 +419,7 @@ ms.locfileid: "75653659"
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>具有 Citrix MDX mVPN 的 Intune App Wrapping Tool for iOS
 
-此功能是与适用于 iOS 的 Citrix MDX 应用包装器的集成。 对于常规的 Intune App Wrapping Tools，该集成只是一个附加的可选命令行标记 `-citrix`。
+此功能是与适用于 iOS/iPadOS 的 Citrix MDX 应用包装器的集成。 对于常规的 Intune App Wrapping Tools，该集成只是一个附加的可选命令行标记 `-citrix`。
 
 ### <a name="requirements"></a>要求
 
